@@ -2,7 +2,6 @@
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{\@mypartnumtocformat {I}{Part One}}{5}{part.1}%
-\ttl@starttoc {default@1}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}ag-}{7}{chapter.1}%
 \defcounter {refsection}{0}\relax 
@@ -23,8 +22,6 @@
 \contentsline {chapter}{\numberline {9}sequ/secut}{23}{chapter.9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{\@mypartnumtocformat {II}{Example Codes}}{25}{part.2}%
-\ttl@stoptoc {default@1}
-\ttl@starttoc {default@2}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {10}Text Chapter}{27}{chapter.10}%
 \defcounter {refsection}{0}\relax 
@@ -75,8 +72,6 @@
 \contentsline {section}{\numberline {11.10}Vocabulary}{31}{section.11.10}%
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{\@mypartnumtocformat {III}{Part Two}}{33}{part.3}%
-\ttl@stoptoc {default@2}
-\ttl@starttoc {default@3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {12}Presenting Information}{35}{chapter.12}%
 \defcounter {refsection}{0}\relax 

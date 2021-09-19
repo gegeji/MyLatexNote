@@ -58,13 +58,29 @@
 %	FONTS
 %----------------------------------------------------------------------------------------
 
+
 \usepackage{avant} % Use the Avantgarde font for headings
 %\usepackage{times} % Use the Times font for headings
-\usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Sym­bol, Chancery and Com­puter Modern fonts
+% \usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Sym­bol, Chancery and Com­puter Modern fonts
 
 \usepackage{microtype} % Slightly tweak font spacing for aesthetics
-\usepackage[utf8]{inputenc} % Required for including letters with accents
+%\usepackage[utf8]{inputenc} % Required for including letters with accents
 \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+
+% support CJK characters
+\usepackage{xeCJK}
+
+\setmainfont[BoldFont=cambriab.ttf, ItalicFont=cambriaz.ttf]{cambria.ttc}
+
+\setCJKmainfont[BoldFont=PingFang Heavy.ttf,ItalicFont=FZKTK.TTF]{FZPingXYSJW.TTF}
+\setCJKsansfont[BoldFont=PingFang Heavy.ttf,ItalicFont=PingFang Heavy.ttf]{PingFang Heavy.ttf}
+\setCJKmonofont[BoldFont=PingFang Heavy.ttf,ItalicFont=PingFang Heavy.ttf]{FZFSK.TTF}
+\xeCJKsetup{CJKmath = true}
+
+% support chemical equation arrows
+\usepackage[version=4]{mhchem}
+% \renewcommand{\rmdefault}{noto}
+% \renewcommand{\familydefault}{\sfdefault}
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY AND INDEX
