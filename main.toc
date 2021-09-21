@@ -21,67 +21,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {9}sequ/secut}{23}{chapter.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\@mypartnumtocformat {II}{Example Codes}}{25}{part.2}%
+\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{25}{chapter*.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Text Chapter}{27}{chapter.10}%
+\contentsline {section}{Articles}{25}{section*.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.1}Paragraphs of Text}{27}{section.10.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.2}Citation}{28}{section.10.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.3}Lists}{28}{section.10.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.3.1}Numbered List}{28}{subsection.10.3.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.3.2}Bullet Points}{28}{subsection.10.3.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.3.3}Descriptions and Definitions}{28}{subsection.10.3.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {11}In-text Elements}{29}{chapter.11}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.1}Theorems}{29}{section.11.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.1.1}Several equations}{29}{subsection.11.1.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.1.2}Single Line}{29}{subsection.11.1.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.2}Definitions}{29}{section.11.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.3}Notations}{30}{section.11.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.4}Remarks}{30}{section.11.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.5}Corollaries}{30}{section.11.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.6}Propositions}{30}{section.11.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.6.1}Several equations}{30}{subsection.11.6.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.6.2}Single Line}{30}{subsection.11.6.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.7}Examples}{30}{section.11.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.7.1}Equation and Text}{31}{subsection.11.7.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.7.2}Paragraph of Text}{31}{subsection.11.7.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.8}Exercises}{31}{section.11.8}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.9}Problems}{31}{section.11.9}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.10}Vocabulary}{31}{section.11.10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {part}{\@mypartnumtocformat {III}{Part Two}}{33}{part.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {12}Presenting Information}{35}{chapter.12}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.1}Table}{35}{section.12.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.2}Figure}{35}{section.12.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{37}{chapter*.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Articles}{37}{section*.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Books}{37}{section*.4}%
+\contentsline {section}{Books}{25}{section*.4}%
 \contentsfinish 

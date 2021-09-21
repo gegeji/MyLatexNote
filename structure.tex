@@ -59,7 +59,7 @@
 %----------------------------------------------------------------------------------------
 
 
-\usepackage{avant} % Use the Avantgarde font for headings
+% \usepackage{avant} % Use the Avantgarde font for headings
 %\usepackage{times} % Use the Times font for headings
 % \usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Sym­bol, Chancery and Com­puter Modern fonts
 
@@ -70,8 +70,13 @@
 % support CJK characters
 \usepackage{xeCJK}
 
-\setmainfont[BoldFont=cambriab.ttf, ItalicFont=cambriaz.ttf]{cambria.ttc}
+\setmainfont[BoldFont=NotoSerif-Bold.ttf, ItalicFont=NotoSerif-Italic.ttf]{NotoSerif-Regular.ttf}
+% \setmainfont[ItalicFont=NotoSerif-Italic.ttf]{RobotoSlab-VariableFont_wght.ttf}
+% \setsansfont{Fira Sans}
+% \setsansfont{Open Sans}
+% \setsansfont[BoldFont=SegUIVar.ttf, ItalicFont=SegUIVar.ttf]{SegUIVar.ttf}
 
+\setmonofont{Cascadia Code}
 \setCJKmainfont[BoldFont=PingFang Heavy.ttf,ItalicFont=FZKTK.TTF]{FZPingXYSJW.TTF}
 \setCJKsansfont[BoldFont=PingFang Heavy.ttf,ItalicFont=PingFang Heavy.ttf]{PingFang Heavy.ttf}
 \setCJKmonofont[BoldFont=PingFang Heavy.ttf,ItalicFont=PingFang Heavy.ttf]{FZFSK.TTF}
@@ -370,8 +375,24 @@ innerbottommargin=5pt]{cBox}
 \leftmargin=35pt % Indentation on the left
 \rightmargin=25pt}\item\ignorespaces % Indentation on the right
 \makebox[-2.5pt]{\begin{tikzpicture}[overlay]
-\node[draw=ocre!60,line width=1pt,circle,fill=ocre!25,font=\sffamily\bfseries,inner sep=2pt,outer sep=0pt] at (-15pt,0pt){\textcolor{ocre}{R}};\end{tikzpicture}} % Orange R in a circle
+\node[draw=ocre!60,line width=1pt,circle,fill=ocre!25,font=\sffamily\bfseries,inner sep=2pt,outer sep=0pt] at (-15pt,0pt){\textcolor{ocre}{!}};\end{tikzpicture}} % Orange ! in a circle
+
+% \makebox[-2.5pt]{
+%	\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%		%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%		%Flowchart: Connector [id:dp5263589531164479] 
+%		\draw  [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][line width=2.25]  (97.64,137.43) .. controls (97.64,131.86) and (102.29,127.34) .. (108.04,127.34) .. controls (113.79,127.34) and (118.45,131.86) .. (118.45,137.43) .. controls (118.45,143) and (113.79,147.51) .. (108.04,147.51) .. controls (102.29,147.51) and (97.64,143) .. (97.64,137.43) -- cycle ;
+%		%Shape: Star [id:dp8903341744926845] 
+%		\draw  [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (108.04,129.72) -- (110.48,134.31) -- (115.93,135.04) -- (111.99,138.62) -- (112.92,143.66) -- (108.04,141.28) -- (103.16,143.66) -- (104.1,138.62) -- (100.15,135.04) -- (105.6,134.31) -- cycle ;
+	
+%	\end{tikzpicture}	
+%}
+
+
 \advance\baselineskip -1pt}{\end{list}\vskip5pt} % Tighter line spacing and white space after remark
+
+
 
 %----------------------------------------------------------------------------------------
 %	SECTION NUMBERING IN THE MARGIN
@@ -532,3 +553,4 @@ addtohook={%
 \fi
 }
 }
+
