@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  21 SEP 2021 23:54
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  22 SEP 2021 12:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1791,17 +1791,16 @@ Package microtype Info: Character `textquotedblleft ' is missing
 Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
-)
+ [3
+
+])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [3
-
-] [4
-
-]
+ [4]
 \c@ttl@toc@default=\count493
  (./main.ptc) [5
+
 
 ] [6] (./vocabulary-index.tex (./vocabulary/ag.tex
 Chapter 1.
@@ -1903,7 +1902,25 @@ Overfull \hbox (18.5262pt too wide) in paragraph at lines 14--16
 Chapter 9.
 File: Pictures//chapter_head_1.pdf Graphic file (type pdf)
 <use Pictures//chapter_head_1.pdf>
-)) [23] [24
+) (./vocabulary/tran.tex [23] [24
+
+]
+Chapter 10.
+File: Pictures//chapter_head_1.pdf Graphic file (type pdf)
+<use Pictures//chapter_head_1.pdf>
+) (./vocabulary/sus.tex [25] [26
+
+]
+Chapter 11.
+File: Pictures//chapter_head_1.pdf Graphic file (type pdf)
+<use Pictures//chapter_head_1.pdf>
+) (./vocabulary/thesaurus.tex [27] [28
+
+]
+Chapter 12.
+File: Pictures//chapter_head_1.pdf Graphic file (type pdf)
+<use Pictures//chapter_head_1.pdf>
+)) [29] [30
 
 ]
 File: Pictures//chapter_head_1.pdf Graphic file (type pdf)
@@ -1921,7 +1938,7 @@ Package biblatex Warning: Type 'book' not found on input line 152.
 
 LaTeX Warning: Empty bibliography on input line 152.
 
-[25] [26
+[31] [32
 
 ] (./main.ind)
 \tf@ptc=\write7
@@ -1933,12 +1950,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36010 strings out of 476477
- 733541 string characters out of 5812099
- 1672113 words of memory out of 5000000
- 55797 multiletter control sequences out of 15000+600000
+ 36043 strings out of 476477
+ 734154 string characters out of 5812099
+ 1672395 words of memory out of 5000000
+ 55821 multiletter control sequences out of 15000+600000
  417096 words of font info for 126 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  89i,11n,92p,733b,4705s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (26 pages).
+Output written on main.pdf (32 pages).
