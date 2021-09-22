@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  22 SEP 2021 12:46
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  22 SEP 2021 14:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1085,23 +1085,23 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 
 Package hyperref Warning: Option `backref' has already been used,
-(hyperref)                setting the option has no effect on input line 541.
+(hyperref)                setting the option has no effect on input line 543.
 
 
 Package hyperref Warning: Option `pagebackref' has already been used,
-(hyperref)                setting the option has no effect on input line 541.
+(hyperref)                setting the option has no effect on input line 543.
 
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 541.
+(hyperref)                setting the option has no effect on input line 543.
 
-Package hyperref Info: Option `colorlinks' set `false' on input line 541.
-Package hyperref Info: Option `breaklinks' set `true' on input line 541.
+Package hyperref Info: Option `colorlinks' set `false' on input line 543.
+Package hyperref Info: Option `breaklinks' set `true' on input line 543.
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 541.
+(hyperref)                setting the option has no effect on input line 543.
 
-Package hyperref Info: Option `bookmarksopen' set `false' on input line 541.
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 543.
 (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
@@ -1952,7 +1952,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  36043 strings out of 476477
  734154 string characters out of 5812099
- 1672395 words of memory out of 5000000
+ 1672403 words of memory out of 5000000
  55821 multiletter control sequences out of 15000+600000
  417096 words of font info for 126 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
