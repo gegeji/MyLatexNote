@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  22 SEP 2021 14:50
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  23 SEP 2021 12:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1512,7 +1512,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 ) [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
@@ -1535,14 +1535,13 @@ Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
-
- []
+LaTeX Font Warning: Font shape `TU/CascadiaCode(0)/m/sc' undefined
+(Font)              using `TU/CascadiaCode(0)/m/n' instead on input line 90.
 
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `CascadiaCode' (encoding: TU).
@@ -1693,7 +1692,16 @@ Package microtype Info: Character `\textquestiondown ' is missing
 (microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+LaTeX Font Warning: Font shape `TU/FZFSK.TTF(0)/m/sc' undefined
+(Font)              using `TU/FZFSK.TTF(0)/m/n' instead on input line 90.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
@@ -1797,15 +1805,15 @@ Package microtype Info: Character `textquotedblright ' is missing
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [4]
+ [4] (./vocabulary-index.tex
 \c@ttl@toc@default=\count493
  (./main.ptc) [5
 
 
-] [6] (./vocabulary-index.tex (./vocabulary/ag.tex
+] [6] (./vocabulary/ag.tex
 Chapter 1.
-File: Pictures//chapter_head_1.pdf Graphic file (type pdf)
-<use Pictures//chapter_head_1.pdf>
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
 Package microtype Info: Character `textendash ' is missing
 (microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1848,8 +1856,8 @@ Package microtype Info: Character `textquotedblright ' is missing
 
 ]
 Chapter 2.
-File: Pictures//chapter_head_1.pdf Graphic file (type pdf)
-<use Pictures//chapter_head_1.pdf>
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
 
 Overfull \hbox (3.31935pt too wide) in paragraph at lines 6--8
 []\TU/NotoSerif-Regular.ttf(0)/m/it/10.95 an eloquent appeal for support \TU/NotoSerif-Regular.ttf(0)/m/n/10.95 showing a feeling or meaning without using words 
@@ -1859,38 +1867,42 @@ Overfull \hbox (3.31935pt too wide) in paragraph at lines 6--8
 
 ]
 Chapter 3.
-File: Pictures//chapter_head_1.pdf Graphic file (type pdf)
-<use Pictures//chapter_head_1.pdf>
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
 ) (./vocabulary/dict.tex [11] [12
 
 ]
 Chapter 4.
-File: Pictures//chapter_head_1.pdf Graphic file (type pdf)
-<use Pictures//chapter_head_1.pdf>
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
 ) (./vocabulary/audi.tex [13] [14
 
 ]
 Chapter 5.
-File: Pictures//chapter_head_1.pdf Graphic file (type pdf)
-<use Pictures//chapter_head_1.pdf>
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
 ) (./vocabulary/vis-vid.tex [15] [16
 
 ]
 Chapter 6.
-File: Pictures//chapter_head_1.pdf Graphic file (type pdf)
-<use Pictures//chapter_head_1.pdf>
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
 ) (./vocabulary/tain.tex [17] [18
 
 ]
 Chapter 7.
-File: Pictures//chapter_head_1.pdf Graphic file (type pdf)
-<use Pictures//chapter_head_1.pdf>
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
+
+LaTeX Font Warning: Font shape `TU/NotoSerif-Regular.ttf(0)/b/it' undefined
+(Font)              using `TU/NotoSerif-Regular.ttf(0)/b/n' instead on input line 40.
+
 ) (./vocabulary/prehend.tex [19] [20
 
 ]
 Chapter 8.
-File: Pictures//chapter_head_1.pdf Graphic file (type pdf)
-<use Pictures//chapter_head_1.pdf>
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
 
 Overfull \hbox (18.5262pt too wide) in paragraph at lines 14--16
 []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 (old-fashioned) understand or perceive. ”\TU/NotoSerif-Regular.ttf(0)/m/it/10.95 great art invites us to apprehend beauty\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 ”;to
@@ -1900,31 +1912,74 @@ Overfull \hbox (18.5262pt too wide) in paragraph at lines 14--16
 
 ]
 Chapter 9.
-File: Pictures//chapter_head_1.pdf Graphic file (type pdf)
-<use Pictures//chapter_head_1.pdf>
-) (./vocabulary/tran.tex [23] [24
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
+) (./vocabulary/ped.tex [23] [24
 
 ]
 Chapter 10.
-File: Pictures//chapter_head_1.pdf Graphic file (type pdf)
-<use Pictures//chapter_head_1.pdf>
-) (./vocabulary/sus.tex [25] [26
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
+Missing character: There is no ɪ (U+026A) in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ˈ (U+02C8) in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ː (U+02D0) in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ɪ (U+026A) in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ˈ (U+02C8) in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ˈ (U+02C8) in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ɪ (U+026A) in font [lmsans10-bold]:mapping=tex-text;!
+) (./vocabulary/ambul.tex [25] [26
 
 ]
 Chapter 11.
-File: Pictures//chapter_head_1.pdf Graphic file (type pdf)
-<use Pictures//chapter_head_1.pdf>
-) (./vocabulary/thesaurus.tex [27] [28
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
+Missing character: There is no ˈ (U+02C8) in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ˌ (U+02CC) in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ɪ (U+026A) in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ˈ (U+02C8) in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ː (U+02D0) in font [lmsans10-bold]:mapping=tex-text;!
+) (./vocabulary/cess-ceed.tex [27] [28
 
 ]
 Chapter 12.
-File: Pictures//chapter_head_1.pdf Graphic file (type pdf)
-<use Pictures//chapter_head_1.pdf>
-)) [29] [30
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
+Missing character: There is no ˈ (U+02C8) in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ɪ (U+026A) in font [lmsans10-bold]:mapping=tex-text;!
+) [29] [30
+
+] (./main.ptc) [31] [32] (./vocabulary/tran.tex
+Chapter 13.
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
+) (./vocabulary/sus.tex [33
+
+] [34
 
 ]
-File: Pictures//chapter_head_1.pdf Graphic file (type pdf)
-<use Pictures//chapter_head_1.pdf>
+Chapter 14.
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
+) (./vocabulary/new-words.tex) (./vocabulary/notes.tex [35] [36
+
+]
+Chapter 15.
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
+) (./vocabulary/thesaurus.tex [37] [38
+
+]
+Chapter 16.
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
+[39]
+Missing character: There is no → (U+2192) in font [NotoSerif-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no → (U+2192) in font [NotoSerif-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;!
+ [40])) [41] [42
+
+]
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
 
 
 Package biblatex Warning: Type 'article' not found on input line 146.
@@ -1938,24 +1993,27 @@ Package biblatex Warning: Type 'book' not found on input line 152.
 
 LaTeX Warning: Empty bibliography on input line 152.
 
-[31] [32
+[43] [44
 
 ] (./main.ind)
 \tf@ptc=\write7
 \openout7 = `main.ptc'.
 
  (./main.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36043 strings out of 476477
- 734154 string characters out of 5812099
- 1672403 words of memory out of 5000000
- 55821 multiletter control sequences out of 15000+600000
- 417096 words of font info for 126 fonts, out of 8000000 for 9000
+ 36146 strings out of 476477
+ 737029 string characters out of 5812099
+ 1680873 words of memory out of 5000000
+ 55901 multiletter control sequences out of 15000+600000
+ 417128 words of font info for 130 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  89i,11n,92p,733b,4705s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (32 pages).
+Output written on main.pdf (44 pages).
