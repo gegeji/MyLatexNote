@@ -1,64 +1,98 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\@mypartnumtocformat {I}{Roots}}{5}{part.1}%
+\contentsline {part}{\@mypartnumtocformat {I}{Basics of Linear Algebra}}{5}{part.1}%
 \ttl@starttoc {default@1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}ag-}{7}{chapter.1}%
+\contentsline {chapter}{\numberline {1}对向量的介绍}{7}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}loqu}{9}{chapter.2}%
+\contentsline {section}{\numberline {1.1}Vector}{7}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}log}{11}{chapter.3}%
+\contentsline {section}{\numberline {1.2}Vector Space}{8}{section.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}-dict}{13}{chapter.4}%
+\contentsline {section}{\numberline {1.3}向量运算}{8}{section.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}audi-}{15}{chapter.5}%
+\contentsline {section}{\numberline {1.4}内积}{9}{section.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}vis-}{17}{chapter.6}%
+\contentsline {subsection}{\numberline {1.4.1}常用的内积等式}{10}{subsection.1.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}-tain}{19}{chapter.7}%
+\contentsline {section}{\numberline {1.5}Cauchy-Schwartz Inequality}{10}{section.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}prehand/pris}{21}{chapter.8}%
+\contentsline {section}{\numberline {1.6}浮点运算}{10}{section.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}sequ/secut}{23}{chapter.9}%
+\contentsline {chapter}{\numberline {2}Linear Function}{11}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}ped}{25}{chapter.10}%
+\contentsline {section}{\numberline {2.1}Linear Function}{11}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {11}ambul, ambl}{27}{chapter.11}%
+\contentsline {section}{\numberline {2.2}泰勒展开}{12}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {12}cede, ceed, cess (走)}{29}{chapter.12}%
-\defcounter {refsection}{0}\relax 
-\contentsline {part}{\@mypartnumtocformat {II}{Collections of Notes}}{31}{part.2}%
+\contentsline {part}{\@mypartnumtocformat {II}{Example Codes}}{15}{part.2}%
 \ttl@stoptoc {default@1}
 \ttl@starttoc {default@2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {13}tran-}{33}{chapter.13}%
+\contentsline {chapter}{\numberline {3}Text Chapter}{17}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {14}sus}{35}{chapter.14}%
+\contentsline {section}{\numberline {3.1}Paragraphs of Text}{17}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {15}Miscellaneous Notes}{37}{chapter.15}%
+\contentsline {section}{\numberline {3.2}Citation}{18}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {15.1}}{37}{section.15.1}%
+\contentsline {section}{\numberline {3.3}Lists}{18}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {16}thesaurus}{39}{chapter.16}%
+\contentsline {subsection}{\numberline {3.3.1}Numbered List}{18}{subsection.3.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.1}main}{39}{section.16.1}%
+\contentsline {subsection}{\numberline {3.3.2}Bullet Points}{18}{subsection.3.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.2}cheap}{39}{section.16.2}%
+\contentsline {subsection}{\numberline {3.3.3}Descriptions and Definitions}{19}{subsection.3.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.3}journey}{39}{section.16.3}%
+\contentsline {chapter}{\numberline {4}In-text Elements}{21}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.4}violent}{40}{section.16.4}%
+\contentsline {section}{\numberline {4.1}Theorems}{21}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.5}unkind}{40}{section.16.5}%
+\contentsline {subsection}{\numberline {4.1.1}Several equations}{21}{subsection.4.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.6}careless}{41}{section.16.6}%
+\contentsline {subsection}{\numberline {4.1.2}Single Line}{21}{subsection.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.7}rude}{41}{section.16.7}%
+\contentsline {section}{\numberline {4.2}Definitions}{21}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{43}{chapter*.2}%
+\contentsline {section}{\numberline {4.3}Notations}{22}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Articles}{43}{section*.3}%
+\contentsline {section}{\numberline {4.4}Remarks}{22}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Books}{43}{section*.4}%
+\contentsline {section}{\numberline {4.5}Corollaries}{22}{section.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.6}Propositions}{22}{section.4.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.6.1}Several equations}{22}{subsection.4.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.6.2}Single Line}{22}{subsection.4.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.7}Examples}{22}{section.4.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.7.1}Equation and Text}{23}{subsection.4.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.7.2}Paragraph of Text}{23}{subsection.4.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.8}Exercises}{23}{section.4.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.9}Problems}{23}{section.4.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.10}Vocabulary}{23}{section.4.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\@mypartnumtocformat {III}{Part Two}}{25}{part.3}%
+\ttl@stoptoc {default@2}
+\ttl@starttoc {default@3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Presenting Information}{27}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Table}{27}{section.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Figure}{27}{section.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{29}{chapter*.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Articles}{29}{section*.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Books}{29}{section*.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{31}{section*.5}%
 \contentsfinish 
