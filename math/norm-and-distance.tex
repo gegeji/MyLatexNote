@@ -1,0 +1,221 @@
+\chapter{Norm and Distance}
+
+\section{Norm}
+
+\begin{definition}[Vector Norm]
+    在向量空间中存在一个函数 $ \|\cdot\|: \mathbb{R}^{n} \rightarrow \mathbb{R} $, 且满足以下条件
+
+\begin{itemize}
+    \item 齐次性： $ \|\alpha x\|=|\alpha|\|x\|, \quad \alpha \in \mathbb{R} $ 且 $ x \in \mathbb{R}^{n} $;
+    \item 三角不等式: $ \|x+y\| \leq\|x\|+\|y\|, \quad x, y \in \mathbb{R}^{n} $;
+    \item 非负性: $ \|x\| \geq {0}, \boldsymbol{x} \in \mathbb{R}^{n} $ 且 $ \|\boldsymbol{x}\|=0 \Leftrightarrow \boldsymbol{x}=0 $;
+\end{itemize}
+则称$\|\cdot\|$为向量范数。
+\end{definition}
+
+\begin{example}[$ \ell_{1} $-范数（曼哈顿范数， Manhattan norm）]
+    $$ \|x\|_{1}=\left|x_{1}\right|+\left|x_{2}\right|+\ldots+\left|x_{n}\right| \quad x, y \in \mathbb{R}^{n}, \alpha \in \mathbb{R} $$
+\end{example}
+
+\begin{proof}
+    $$ \|\alpha x\|_{1}=\left|\alpha x_{1}\right|+\left|\alpha x_{2}\right|+\cdots+\left|\alpha x_{n}\right|=|\alpha|\|x\|_{1} \geq 0 $$
+
+    $$ \|x+y\|_{1}=\left|x_{1}+y_{1}\right|+\cdots+\left|x_{n}+y_{n}\right| \leq\left|x_{1}\right|+\left|y_{1}\right|+\cdots+\left|x_{n}\right|+\left|y_{n}\right|=\|x\|_{1}+\|y\|_{1} $$
+\end{proof}
+
+\begin{example}[$ \ell_{2} $-范数（欧几里得范数，Euclidean norm）]
+    $$ \|x\|_{2}=\sqrt{\left(x_{1}^{2}+x_{2}^{2}+\cdots+x_{n}^{2}\right)}=\sqrt{x^{T} x}=(\langle x, x\rangle)^{\frac{1}{2}} $$
+\end{example}
+
+\begin{proof}
+    $$ \|\alpha x\|_{2}=(\langle\alpha x, \alpha x\rangle)^{\frac{1}{2}}=|\alpha|(\langle x, x\rangle)^{\frac{1}{2}}=|\alpha|\|x\|_{2} $$
+    
+    $$\begin{aligned} \|x+y\|_{2}^{2}&=\langle x+y, x+y\rangle=\langle x, x\rangle+\langle x, y\rangle+\langle y, x\rangle+\langle y, y\rangle  \\
+    &=\|x\|_{2}^{2}+2\langle x, y\rangle+\|y\|_{2}^{2} \leq\|x\|_{2}^{2}+2\|x\|_{2}\|y\|_{2}+\|y\|_{2}^{2}\\
+    &=\left(\|x\|_{2}+\|y\|_{2}\right)^{2} \end{aligned}$$
+
+    $$ \|x+y\|_{2} \leq\|x\|_{2}+\|y\|_{2} $$
+\end{proof}
+
+\begin{corollary}[柯西—施瓦茨不等式]
+    $$ |\langle x, y\rangle|^{2} \leq\langle x, x\rangle\langle y, y\rangle=\|x\|_{2}^{2}\|y\|_{2}^{2} $$
+\end{corollary}
+
+\begin{definition}[$ \ell_{\infty} $-范数]
+    $$ \|x\|_{\infty}=\max _{1 \leq i \leq n}\left|x_{i}\right|, x \in \mathbb{R}^{n} $$
+\end{definition}
+
+\begin{proof}
+    $$ \begin{aligned} \max _{1 \leq i \leq n}\left|x_{i}\right| 
+        &\leq \left(\left|x_{1}\right|^{p}+\cdots+\left|x_{i}\right|^{p}+\cdots+\left|x_{n}\right|^{p}\right)^{1 / p} \\
+        &\leq \left(n \max _{1 \leq i \leq n}\left|x_{i}\right|^{p}\right)^{1 / p}\\
+        &  =n^{1 / p} \max _{1 \leq i \leq n}\left|x_{i}\right| \\ &\rightarrow \max _{1 \leq i \leq n}\left|x_{i}\right| \quad(p \rightarrow \infty)\end{aligned}
+    $$
+\end{proof}
+
+\begin{definition}[$ \ell_{\mathrm{p}} $-范数]
+    $$ \|x\|_{p}=\left(x_{1}^{\mathrm{p}}+x_{2}^{p}+\cdots+x_{n}^{p}\right)^{\frac{1}{p}}, \quad x \in \mathbb{R}^{n}, p \ge 1 $$
+
+    $ \ell_{1} $ 范数 $ \|x\|_{1}$,$ \ell_{2} $-范数 $ \|x\|_{2} $, $ \ell_{\infty} $-范数是 $ \ell_{p} $-范数的特例。
+\end{definition}
+
+证明可以使用以下两条不等式
+
+\begin{theorem}[Minkowshi Inequality]
+    $$ \left(\sum_{i=1}^{n}\left|x_{i}+y_{i}\right|^{p}\right)^{\frac{1}{p}} \leq\left(\sum_{i=1}^{n}\left|x_{i}\right|^{p}\right)^{\frac{1}{p}}+\left(\sum_{i=1}^{n}\left|y_{i}\right|^{p}\right)^{\frac{1}{p}}, p \geq 1, x, y \in \mathbb{R}^{n} $$
+\end{theorem}
+
+\begin{theorem}[Hölder Inequality]
+    $$ \sum_{i=1}^{n}\left|x_{i} y_{i}\right| \leq\left(\sum_{i=1}^{n}\left|x_{i}\right|^{p}\right)^{1 / p}\left(\sum_{i=1}^{n}\left|y_{i}\right|^{q}\right)^{1 / q}, \frac{1}{p}+\frac{1}{q}=1,1<p, q<\infty $$
+\end{theorem}
+
+\section{Root Mean Square Value (RMS)}
+
+\begin{definition}[向量 $ x $的均方值 (mean-square value)]
+    向量 $ x \in \mathbb{R}^n $的均方值 (mean-square value)
+
+    $$ \frac{x_{1}^{2}+x_{2}^{2}+\cdots+x_{n}^{2}}{n}=\frac{\|x\|_{2}^{2}}{n} $$
+\end{definition}
+
+\begin{definition}[n维向量 $ x $ 的均方根(root-mean-square value, RMS)]
+    $$ \operatorname{rms}(x)=\sqrt{\frac{x_{1}^{2}+x_{2}^{2}+\cdots+x_{n}^{2}}{n}}=\frac{\|x\|_{2}}{\sqrt{n}} $$
+\end{definition}
+
+$ \operatorname{rms}(x) $ 给出了 $ \left|x_{i}\right| $ 的 “典型" (typical)值。例如, $ \mathrm{rms}(\mathbf{1})=1 $ (与$n$无关)。均方根(RMS)值对于比较不同长度的向量大小是比较有用的。
+
+\section{Chebyshev's Inequality}
+
+\begin{theorem}[Chebyshev's Inequality]
+$$
+\begin{aligned}
+    P(|X-\mu| \ge \varepsilon) \le \frac{\sigma^2}{\varepsilon^2}
+\end{aligned}
+$$
+
+$$
+ P(|X-\mu| < \varepsilon) \ge 1 - \frac{\sigma^2}{\varepsilon^2}
+$$
+\end{theorem}
+
+\begin{theorem}[Chebyshev's Inequality]
+    假设$k$为向量 $ x $ 分量满足条件 $ \left|x_{i}\right| \geq a $ 的个数，即 $ x_{i}^{2} \geq a^{2} $ 的个数。
+
+    因此: $ \|x\|_{2}^{2}=x_{1}^{2}+x_{2}^{2}+\cdots+x_{n}^{2} \geq k a^{2} $
+
+    将 $ a^{2} $ 移项，可得到 $ k \leq \frac{\|x\|_{2}^{2}}{a^{2}} $
+
+    满足 $ \left|x_{i}\right| \geq a $ 的 $ x_{i} $ 数量不会超过 $ \frac{\|\| \|_{2}^{2}}{a^{2}} $
+\end{theorem}
+
+\begin{corollary}[Chebyshev's Inequality Using RMS]
+    $$ \operatorname{rms}(x)=\sqrt{\frac{x_{1}^{2}+x_{2}^{2}+\cdots+x_{n}^{2}}{n}}=\frac{\|x\|_{2}}{\sqrt{n}} $$
+
+    $ \left|x_{i}\right| \geq a $ 的项数占整体的比例不会超过 $ \left(\frac{\operatorname{rms}(x)}{a}\right)^{2} $, 即 $ \frac{k}{n} \leq\left(\frac{\operatorname{rms}(x)}{a}\right)^{2} $
+\end{corollary}
+
+\section{Distance}
+
+\begin{definition}[Euclidean distance]
+    $n$维向量$a$和$b$之间的欧氏距离
+    $$ \operatorname{dist}(a, b)=\|a-b\|_{2} $$
+\end{definition}
+
+\begin{definition}[RMS deviation]
+    $ \operatorname{rms}(a-b) $ 是a和b之间的均方根偏差.
+\end{definition}
+
+\begin{theorem}[Trianglar Inequality]
+    $$ \|a-c\|_{2}=\|(a-b)+(b-c)\|_{2} \leq\|a-b\|_{2}+\|b-c\|_{2} $$
+\end{theorem}
+
+\subsection{Feature Distance and Nearest Neighbor}
+
+\begin{definition}[Feature Distance]
+    如果 $ x $ 和y分别为两个实体的特征向量, 那么它们的特征距离(feature distance)为 $ \|x-y\|_{2} $
+\end{definition}
+
+\begin{definition}
+    给定向量$x$，一个组向量$ Z_{1}, \ldots, Z_{m} $, 当$ \hat{q}_{j} $满足：
+
+    $$ \left\|x-z_{j}\right\|_{2} \leq\left\|x-z_{i}\right\|_{2}, \quad i=1, \ldots, m $$
+
+    则称 $ z_{j} $ 是 $ x $ 的最近邻(nearest neighbor)
+\end{definition}
+
+\section{Standard Derivation}
+
+\begin{definition}[算术平均值]
+    对于$n$维向量$x$
+
+    $$ \operatorname{avg}(x)=\frac{\mathbf{1}^{T} x}{n} $$
+\end{definition}
+
+\begin{definition}[De-meaned Vector]
+    $$ \tilde{x}=x-\operatorname{avg}(x) \mathbf{1} $$
+
+    因此 $ \operatorname{avg} \boldsymbol{g}(\tilde{x})=0 $
+\end{definition}
+
+\begin{definition}[$x$的标准差]
+    $$ \operatorname{std}(x)=\operatorname{rms}(\tilde{x})=\frac{\left\|x-\left(1^{T} x / n\right) 1\right\|_{2}}{\sqrt{n}} $$
+\end{definition}
+
+$\operatorname{std}(x)$表示数据元素的变化程度。对于常数$\alpha$，当且仅当$ x=\alpha \mathbf{1} $时，$ \operatorname{std}(x)=0 $.
+
+\begin{theorem}
+    $$ \operatorname{rms}(x)^{2}=\operatorname{avg}(x)^{2}+\operatorname{std}(x)^{2} $$
+\end{theorem}
+
+\section{Angle}
+
+\begin{definition}[两个非零向量 $ a $ 和$b$之间的角(angle)]
+    $$ \angle(a, b)=\arccos \left(\frac{a^{T} b}{\|a\|_{2}\|b\|_{2}}\right) $$
+
+    $ \angle(a, b) $ 的取值范围为 $ [0, \pi] $, 且满足$$ a^{T} b=\|a\|_{2}\|b\|_{2} \cos (\angle(a, b)) $$
+\end{definition}
+
+在二维和三维向量之中，这里的角与普通角度(ordinary angle)是一致的。
+
+\begin{itemize}
+    \item $\theta =\frac{\pi}{2}=90°$：a和b为正交，写作$a \perp b (a ^T b  =0)$。
+    \item $\theta =0$：a和b为同向的 $(a ^T  b=‖a ‖‖b  ‖)$。
+    \item $\theta =\pi =180°$： a和b为反向的$(a ^T   b  = - ‖a ‖‖b ‖)$。
+    \item $\theta <\frac{\pi}{2}=90°$：a和b成锐角$(a ^T b >0)$。
+    \item $\theta >\frac{\pi}{2}=90°$：a和b成钝角$(a ^T b <0)$。
+\end{itemize}
+
+\begin{definition}[球面的距离]
+    $$  \mathrm{R} \angle(a, b) $$
+\end{definition}
+
+\subsection{相关系数}
+
+给定向量$a$和$b$，其去均值向量为：
+
+$$ \tilde{a}=a-\operatorname{avg}(a) 1,  \tilde{b}=b-\operatorname{avg}(b) 1 $$
+
+\begin{definition}[$a$和$b$的相关系数]
+    $$ \rho=\frac{\tilde{a}^{T} \tilde{b}}{\|\tilde{a}\|_{2}\|\tilde{b}\|_{2}} = \cos \angle (\tilde{a}, \tilde{b}) $$
+
+    where  $ \tilde{a} \neq 0 $,  $ \tilde{b} \neq 0 $.
+\end{definition}
+
+\begin{example}
+    高度相关的向量：
+\begin{itemize}
+    \item 邻近地区的降雨时间序列。
+    \item 类型密切相关文档的单词计数向量。
+    \item 同行业中类似公司的日收益。
+\end{itemize}
+
+比较不相关的向量：
+\begin{itemize}
+    \item 无关的向量。
+    \item 音频信号(比如，在多轨录音中的不同轨)。
+\end{itemize}
+
+负相关的向量：
+\begin{itemize}
+    \item 深圳与墨尔本的每天气温变化
+\end{itemize}
+\end{example}

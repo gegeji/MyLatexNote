@@ -26,73 +26,37 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}泰勒展开}{12}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\@mypartnumtocformat {II}{Example Codes}}{15}{part.2}%
-\ttl@stoptoc {default@1}
-\ttl@starttoc {default@2}
+\contentsline {section}{\numberline {2.3}Regression Model}{14}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Text Chapter}{17}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Norm and Distance}{15}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Paragraphs of Text}{17}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Norm}{15}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Citation}{18}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Root Mean Square Value (RMS)}{17}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Lists}{18}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Chebyshev's Inequality}{17}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Numbered List}{18}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4}Distance}{17}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Bullet Points}{18}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.4.1}Feature Distance and Nearest Neighbor}{18}{subsection.3.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Descriptions and Definitions}{19}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.5}Standard Derivation}{18}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}In-text Elements}{21}{chapter.4}%
+\contentsline {section}{\numberline {3.6}Angle}{18}{section.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Theorems}{21}{section.4.1}%
+\contentsline {subsection}{\numberline {3.6.1}相关系数}{19}{subsection.3.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Several equations}{21}{subsection.4.1.1}%
+\contentsline {chapter}{\numberline {4}以$k$-Means算法为例的优化问题}{21}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Single Line}{21}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.1}Convex Set}{22}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Definitions}{21}{section.4.2}%
+\contentsline {section}{\numberline {4.2}向量偏导}{23}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Notations}{22}{section.4.3}%
+\contentsline {section}{\numberline {4.3}标量优化问题的例子}{24}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Remarks}{22}{section.4.4}%
+\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{25}{chapter*.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Corollaries}{22}{section.4.5}%
+\contentsline {section}{Articles}{25}{section*.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Propositions}{22}{section.4.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.1}Several equations}{22}{subsection.4.6.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.2}Single Line}{22}{subsection.4.6.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Examples}{22}{section.4.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.1}Equation and Text}{23}{subsection.4.7.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.2}Paragraph of Text}{23}{subsection.4.7.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.8}Exercises}{23}{section.4.8}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.9}Problems}{23}{section.4.9}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.10}Vocabulary}{23}{section.4.10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {part}{\@mypartnumtocformat {III}{Part Two}}{25}{part.3}%
-\ttl@stoptoc {default@2}
-\ttl@starttoc {default@3}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Presenting Information}{27}{chapter.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Table}{27}{section.5.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Figure}{27}{section.5.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{29}{chapter*.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Articles}{29}{section*.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Books}{29}{section*.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{31}{section*.5}%
+\contentsline {section}{Books}{25}{section*.4}%
 \contentsfinish 

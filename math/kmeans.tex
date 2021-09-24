@@ -1,0 +1,207 @@
+\chapter{以$k$-Means算法为例的优化问题}
+    
+\begin{problem}
+    \label{Problem:ClusteringCenter}
+    假设$N$个样本向量$ x_{1}, \ldots, x_{N} \in \mathbb{R}^{n} $，需要找到中心向量$z$满足
+
+    $$ \min _{z \in \mathbf{R}^{n}} \sum_{i=1}^{N}\left\|x_{i}-z\right\|_{2}^{2} $$
+\end{problem}
+
+\begin{definition}[高阶无穷小记号 $o$]
+    设 $ x, y $ 是同一变化过程中的无穷小，即 $ x \rightarrow 0, y \rightarrow 0 $, 如果它们极限
+$$
+\lim \frac{y}{x}=0
+$$
+
+则称 $ y $ 是 $ x $ 的高阶无穷小，记作 $ y=o(x) $.
+\end{definition}
+
+\begin{corollary}
+    $$ \lim \frac{y}{C x}=\frac{1}{C} \lim \frac{y}{x}=0 $$
+
+    也即则称 $ y $ 是 $ C x $ 的高阶无穷小，记作 $ y=o(C x) $ 。
+\end{corollary}
+
+\begin{proposition}[优化求解的必要条件]
+    假设函数$f$在$\hat{x}$可微，则有
+
+    $$ \hat{x}=\arg \min _{x \in \mathbb{R}^{n}} f(x) \Rightarrow \nabla f(\hat{x})=0 $$
+\end{proposition}
+
+\begin{proof}
+    假设函数$f$在$\hat{x}$一阶泰勒展开, 有
+
+    $$ f(x)=f(\hat{x})+\langle\nabla f(\hat{x}), x-\hat{x}\rangle+o\left(\|x-\hat{x}\|_{2}\right) $$
+
+    假设$ \delta f(\hat{x}) \neq 0 $, 则令 $ \tilde{x}=\hat{x}-t \nabla f(\hat{x}), t>0 $,可得
+
+    $$ f(\tilde{x})=f(\hat{x})-t\|\nabla f(\hat{x})\|_{2}^{2}+o\left(t\|\nabla f(\hat{x})\|_{2}\right) $$
+
+    当 $ t \rightarrow 0 $ 则$ t\|\nabla f(\hat{x})\|_{2} \rightarrow 0 $， 高阶无穷小$ {o }^{\prime}\left(t\|\nabla f(\hat{x})\|_{2}\right) \rightarrow 0 $
+
+    当$t$足够小时，存在$ t\|\nabla f(\hat{x})\|_{2} \geq o\left(t\|\nabla f(\hat{x})\|_{2}\right) $，即
+
+    $$ -t\|\nabla f(\hat{x})\|_{2}^{2}+o\left(t\|\nabla f(\hat{x})\|_{2}\right) \leq 0 $$
+
+    $$ f(\tilde{x})=f(\hat{x})-t\|\nabla f(\hat{x})\|_{2}^{2}+o\left(t\|\nabla f(\hat{x})\|_{2}\right) \leq f(\hat{x}) $$
+
+    与 $ \hat{x}=\arg \min _{\mathbf{R}^{n}} f(x) $ 矛盾。
+
+    $ \nabla f(\widehat{x})=0 $, 是最优问题解的必要条件。通常 $ \nabla f(\hat{x})=0 \not \Leftrightarrow \hat{x}=\arg \min _{\mathbf{R}^{n}} f(x) $。
+\end{proof}
+
+\begin{example}
+    $$ f(x)=-x^{2}, \quad x \in \mathbb{R}, \hat{x}=\operatorname{argmin}_{\mathbb{R}} f(x) $$
+
+    $ \nabla f(\hat{x})=0 $, 则有 $ -2 \hat{x}=0 $, 即 $ \hat{x}=0 $
+
+    $$ f(\hat{x})=0 \geq f(x), \quad x \in \mathbf{R} $$
+
+
+    (最大值!)
+\end{example}
+
+\section{Convex Set}
+
+\begin{definition}[凸集]
+    $ \forall x, y \in \Omega, \alpha \in \mathbb{R}, 0 \leq \alpha \leq 1 $有
+
+    $$ \alpha x+(1-\alpha) y \in \Omega $$
+
+    则定义域$ \Omega \in \mathbb{R}^{n} $称为凸的(Convex)集合
+
+    （域内两点连线之间都属于这个域）
+\end{definition}
+
+\begin{definition}[凸函数]
+    设函数 $ f(x) $ 定义于称为\textit{凸的定义域} $ \Omega \in \mathbb{R}^{n} $满足
+
+    $$ f(\alpha x+(1-\alpha) y) \leq \alpha f(x)+(1-\alpha) f(y), \forall x, y \in \Omega, \alpha \in \mathbf{R}, 0 \leq \alpha \leq 1 $$
+
+    称其为凸函数。
+\end{definition}
+
+% todo 图片
+
+\begin{example}
+    \label{Example:SquareIsConvex}
+    $$ f(x)=x^{2}, x \in \mathbf{R} $$
+
+    $$ \begin{aligned} f(\alpha x+(1-\alpha) y) &=(\alpha x+(1-\alpha) y)^{2} 
+    \\ &=\alpha^{2} x^{2}+2 \alpha(1-\alpha) x y+(1-\alpha)^{2} y^{2} 
+    \\ &=\alpha x^{2}+(1-\alpha) y^{2}+\left(\alpha^{2}-\alpha\right) x^{2}+\left(\alpha^{2}-\alpha\right) y^{2}+2 \alpha(1-\alpha) x y 
+    \\ &=\alpha x^{2}+(1-\alpha) y^{2}-\alpha(1-\alpha)(x-y)^{2}
+    \\ &\leq \alpha x^{2}+(1-\alpha) y^{2}=\alpha f(x)+(1-\alpha) f(y)
+    \end{aligned} $$
+\end{example}
+
+\begin{example}
+    \label{Example:NormIsConvex}
+    $ f(x)=\|x\| $, 其中 $ \| $ • $ \| $ 表示 $ \mathbb{R}^{n} $ 上的向量范数, $ x \in \mathbb{R}^{n} $.
+\end{example}
+
+\begin{proof}
+    \label{Example:L2NormIsConvex}
+    $$ \|\alpha x+(1-\alpha) y\| \leq\|\alpha x\|+\|(1-\alpha) y\|=|\alpha|\|x\|+|1-\alpha|\|y\| $$
+\end{proof}
+
+\begin{example}
+    $$ f(x)=\|x\|_{2}^{2}, x \in \mathbb{R}^{n} $$
+\end{example}
+
+\begin{theorem}[可微函数$f$是凸函数的充要条件]
+    \label{Theorem:ConvexDiffential}
+    $$ f(y) \geq f(x)+\langle\nabla f(x), y-x\rangle, \quad \forall x, y $$
+\end{theorem}
+
+\begin{proof}
+    首先，证明一维情况 $ f: \mathbb{R} \rightarrow \mathbb{R}, \alpha \in[0,1] $.
+
+    $ \Rightarrow  $ 充分条件: $ f(\alpha x+(1-\alpha) y)=f(x+(1-\alpha)(y-x)) \leq \alpha f(x)+(1-\alpha) f(y) $,有
+
+    $$ f(y) \geq f(x)+\frac{f(x+(1-\alpha)(y-x))-f(x)}{(1-\alpha)(y-x)}(y-x) $$
+
+    令 $ \alpha \rightarrow 1^- $, 则有 $ f(y) \geq f(x)+f^{\prime}(x)(y-x) $.
+
+    $ \Leftarrow  $ 必要条件：令 $ y \neq x, z=\alpha x+(1-\alpha) y$则有
+
+    $$  f(x) \geq f(z)+f^{\prime}(z)(x-z), f(y) \geq f(z)+f^{\prime}(z)(y-z)  $$
+
+    可得 
+    $$\begin{aligned}
+        \alpha f(x)+(1-\alpha) f(y) &\geq f(z)+\alpha f^{\prime}(z)(x-z)+(1-\alpha) f^{\prime}(z)(y-z) \\
+        &=f(z)+f^{\prime}(z)(\alpha x+(1-\alpha) y-z) \\
+        &=f(z)
+    \end{aligned}
+    $$
+
+    证明 $ n $ 维情况 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $.
+
+    $ \Rightarrow $ 充分条件：令 $ g(t)=f(t x+(1-t) y), t \in \mathbb{R} $, 则 $ g^{\prime}(t)=\langle\nabla f(t x+(1-t) y), x-y\rangle $ 由于 $ f $ 是凸函数, 证明 $ g(t) $ 也是凸函数；并可得 $ g(0) \geq g(1)+g^{\prime}(1)(-1) $, 得证.
+
+    $ \Leftarrow $ 必要条件：与一维类似。
+\end{proof}
+
+\begin{theorem}
+    如果可微函数$f$是凸函数，则有
+
+    $$ \hat{x}=\arg \min _{x \in \mathbb{R}^{n}} f(x) \Leftrightarrow \nabla f(\hat{x})=0 $$
+\end{theorem}
+
+\begin{proof}
+    已证 $ \hat{x}=\arg \min _{x \in \mathbb{R}^{n}} f(x) \Rightarrow $ 可得 $ \nabla f(\hat{x})=0 $
+
+    只需证 $ \nabla f(\hat{x})=0 \Rightarrow \hat{x}=\arg \min _{x \in \mathbb{R}^{n}} f(x) $.
+
+    由于函数 $ f $ 是可微凸的, 则有 $ \forall x \in \mathbb{R}^{n} $,
+$$
+\begin{aligned}
+f(x) & \geq f(\hat{x})+\langle\nabla f(\hat{x}), x-\hat{x}\rangle \\
+& \geq f(\hat{x})+\langle 0, x-\hat{x}\rangle \geq f(\hat{x})
+\end{aligned}
+$$
+
+可得 $ f(x) \geq f(\hat{x}), \hat{x}=\arg \min _{x \in \mathbb{R}^{n}} f(x) $.
+\end{proof}
+
+\section{向量偏导}
+
+\begin{definition}[向量对向量的导数]
+    \label{Definition:VectorVectorDerivative}
+    $$ x=\left[\begin{array}{c}x_{1} \\ \vdots \\ x_{n}\end{array}\right], z=\left[\begin{array}{c}z_{1} \\ \vdots \\ z_{n}\end{array}\right] $$
+
+    $$ \nabla f(z)=\left[\begin{array}{c}\frac{\partial f(z)}{\partial z_{1}} \\ \vdots \\ \frac{\partial f(z)}{\partial z_{n}}\end{array}\right] $$
+\end{definition}
+
+\begin{example}
+    $$ f(z)=x^{T} z+z^{T} z=\sum_{i=1}^{n}\left\{x_{i} z_{i}+z_{i}^{2}\right\} $$
+
+    $$ \nabla f(z)=\left[\begin{array}{c}\frac{\partial f(z)}{\partial z_{1}} \\ \vdots \\ \frac{\partial f(z)}{\partial z_{n}}\end{array}\right]=\left[\begin{array}{c}x_{1}+2 z_{1} \\ \vdots \\ x_{n}+2 z_{n}\end{array}\right]=x+2 z $$
+\end{example}
+
+% todo reference
+问题\ref{Problem:ClusteringCenter}中已知目标函数是凸函数。（见\ref{Example:SquareIsConvex}, \ref{Example:NormIsConvex}, \ref{Example:L2NormIsConvex}）
+
+则可以求解
+
+$$ f(z)=\sum_{i=1}^{N}\left\|x_{i}-z\right\|_{2}^{2}=\sum_{i=1}^{N}\left\langle x_{i}-z, x_{i}-z\right\rangle=\sum_{i=1}^{N}\left\{x_{i}^{T} x_{i}-2 x_{i}^{T} z+z_{i}^{T} z\right\} $$
+
+利用等价条件\ref{Theorem:ConvexDiffential}
+
+$$ \nabla f(z)=\sum_{i=1}^{N}\left\{-2 x_{i}+2 z\right\}=0 $$ (求导 \ref{Definition:VectorVectorDerivative})
+
+$$ z=\frac{1}{N} \sum_{i=1}^{N} x_{i} $$
+
+\section{标量优化问题的例子}
+
+\begin{problem}
+    假设$ a, b \in \mathbb{R}^{n}, a \neq 0, t \in \mathbb{R} $，当$t$ 多大时，$ta$到$b$之间的距离最小
+
+    $$ \min _{t}\|t a-b\|_{2}^{2} $$
+
+    $$ f(t)=\|t a-b\|_{2}^{2}=\langle t a-b, t a-b\rangle=t^{2} a^{T} a-2 t a^{T} b+b^{T} b $$
+
+    $$ \nabla f(t)=2 t a^{T} a-2 a^{T} b=0 $$
+
+    $$ t=\frac{a^{T} b}{a^{T} a}=\frac{a^{T} b}{\|a\|_{2}^{2}} $$
+\end{problem}
