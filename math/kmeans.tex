@@ -205,3 +205,59 @@ $$ z=\frac{1}{N} \sum_{i=1}^{N} x_{i} $$
 
     $$ t=\frac{a^{T} b}{a^{T} a}=\frac{a^{T} b}{\|a\|_{2}^{2}} $$
 \end{problem}
+
+\section{Clustering}
+
+将物理或抽象对象的集合分成由类似特征组成的多个类的过程称为\textit{聚类(clustering)}.
+
+
+
+目标：分成$k$个集合，尽量使得同一个集合中的向量彼此接近。
+
+\begin{notation}
+    给定N个n维向量 $ x_{1}, \ldots, x_{N} \in \mathbb{R}^{n} $
+
+    \begin{itemize}
+        \item 标签 $ c_{i} \in\{1,2, \cdots, k\} $ 表示向量 $ x_{i} $ 所属类别, 例如 $ c_{i}=2 $ 表示 $ x_{i} $ 属于第2类。
+        \item 对于 $ j=1, \ldots, k, \quad G_{j}=\left\{i: c_{i}=j\right\} $ 表示属于第j类的向量 $ x_{i} $ 的下标集合。
+        \item 向量 $ z_{j}, j=1, \ldots, k $, 表示同属于 $ j $ 类的向量 $ x_{i}, i \in G_{j} $ 的聚类中心。
+    \end{itemize}
+\end{notation}
+
+聚类目标是找到向量 $ x_{i} $ 的“标签 $ c_{i} $ ”和“聚类中心 $ z_{j} $ ”
+
+\begin{problem}
+    $$ \min _{z_{j}} \sum_{i \in G_{j}}\left\|x_{i}-z_{j}\right\|_{2}^{2}, j=1, \cdots, k $$
+
+    $$ c_{i}=\underset{j=\{1, \cdots, k\}}{\operatorname{argmin}}\left\|x_{i}-z_{j}\right\|_{2}^{2}, i=1,2, \ldots, N $$
+\end{problem}
+
+$k$-means算法是将 $ \mathrm{N} $ 向量 $ x_{i} \in \mathbb{R}^{n} $ 划分成$k$类的迭代聚类算法。
+
+\begin{algorithm}
+    \caption{$k$-means Algorithm}
+    在 $ \mathrm{N} $ 个点中随机选取$k$个点，分别作为聚类中心 $ z_{j} $\;
+    更新聚类标签 $ c_{i} $ : 计算每个点 $ x_{i} $ 到k个聚类中心 $ z_{j} $ 的距离, 并将其分配到最近的聚类中心 $ z_{j} $ 所在的聚类中 $ c_{i}=j $\;
+    更新聚类中心 $ z_{j} $ ：重新计算每个聚类现在的质心，并以其作作为新的聚类中心, 根据更新标签 $ c_{i} $, 更新属于第j类下标集合$ G_{j}=\left\{i: c_{i}=j\right\} $, 重新计算 $ c_{i} $ 类的聚类中心 $ z_{j} $\;
+    重复步骤2、3，直到所有聚类中心不再变化
+\end{algorithm}
+
+\begin{proof}
+    更新聚类标签 $ c_{i} $:
+
+    $$ \left\|x_{i}-z_{j}\right\|_{2}^{2}=\operatorname{argmin}\left\{\left\|x_{i}-z_{1}\right\|_{2}^{2},\left\|x_{i}-z_{2}\right\|_{2}^{2}, \cdots,\left\|x_{i}-z_{k}\right\|_{2}^{2}\right\} $$
+
+    更新聚类中心 $ z_{j} $：
+
+    $$ \nabla f_{j}\left(z_{j}\right)=\sum_{i \in G_{j}} 2\left(x_{i}-z_{j}\right)=0 $$
+$$ z_{j}=\frac{1}{\left|G_{j}\right|} \sum_{i \in G_{j}} x_{i} $$
+
+$ \left|G_{j}\right| $ 表示集合 $ G_{j} $ 中元素的数目。
+\end{proof}
+
+在每一次迭代中目标函数$J$都会下降, 直到聚类中心 $ z_{1}, \cdots, z_{k} $ 和 划分聚类标签集合 $ G_{1}, \cdots, G_{k} $ 不再变化。
+
+但是k-means算法依赖于初始随机生成的聚类中心，只可得到目标函数$J$的局部局部最优。
+
+解决方案：使用不同的(随机的)初始聚类中心运行k-means算法若干次，取目标函数$J$值最小的一次作为最终的聚类结果。
+
