@@ -154,9 +154,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.6}秩和检验}{47}{section.8.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.7}方差分析 (Analysis of Variance, ANOVA)}{48}{section.8.7}%
+\contentsline {section}{\numberline {8.7}方差分析 (Analysis of Variance, ANOVA)}{49}{section.8.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.7.1}单因素方差分析}{48}{subsection.8.7.1}%
+\contentsline {subsection}{\numberline {8.7.1}单因素方差分析}{49}{subsection.8.7.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.7.2}双因素方差分析方法}{51}{subsection.8.7.2}%
 \defcounter {refsection}{0}\relax 
@@ -166,21 +166,31 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.8}多元线性回归}{54}{section.8.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.8.1}回归模型的假设检验}{54}{subsection.8.8.1}%
+\contentsline {subsection}{\numberline {8.8.1}回归模型的假设检验}{55}{subsection.8.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.8.2}回归系数的假设检验和区间估计}{54}{subsection.8.8.2}%
+\contentsline {subsection}{\numberline {8.8.2}回归系数的假设检验和区间估计}{55}{subsection.8.8.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.8.3}利用回归模型进行预测}{55}{subsection.8.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.9}逐步回归}{55}{section.8.9}%
+\contentsline {section}{\numberline {8.9}逐步回归}{56}{section.8.9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.9.1}前进法}{56}{subsection.8.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.9.2}后退法}{56}{subsection.8.9.2}%
+\contentsline {subsection}{\numberline {8.9.2}后退法}{57}{subsection.8.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{57}{chapter*.6}%
+\contentsline {chapter}{\numberline {9}Bootstrap}{59}{chapter.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Articles}{57}{section*.7}%
+\contentsline {section}{\numberline {9.1}估计量的标准误差的Bootstrap估计}{59}{section.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Books}{57}{section*.8}%
+\contentsline {section}{\numberline {9.2}估计量的均方误差的Bootstrap估计}{60}{section.9.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.3}Bootstrap置信区间}{60}{section.9.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.4}参数Bootstrap方法}{61}{section.9.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{63}{chapter*.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Articles}{63}{section*.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Books}{63}{section*.8}%
 \contentsfinish 

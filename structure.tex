@@ -38,9 +38,21 @@
 \definecolor{ocre}{RGB}{76, 50, 168}
 \usepackage{calc}
 
-\usepackage{thmtools}
+%----------------------------------------------------------------------------------------
+%	My Custom Packages
+%----------------------------------------------------------------------------------------
+% unused packages
+% \usepackage{thmtools}
 % \usepackage{xpatch}
 % \xpatchcmd{\listoftheorems}{\@fileswfalse}{}{\typeout{yes}}{\typeout{no}}
+
+%	IPA
+% \usepackage{unitipa}
+
+
+\usepackage{algorithm2e}
+
+
 
 %----------------------------------------------------------------------------------------
 %	MARGINS
@@ -310,7 +322,7 @@
 \theoremstyle{ocrenum}
 \newtheorem{proposition}[dummy]{Proposition}
 
-% todo index vocabulary
+% use ``word'' environment to wrap vocabulary and add index
 \newenvironment{word}[1]{\begin{vocabulary}[#1] \index{#1}}{ \end{vocabulary}}
 
 %----------------------------------------------------------------------------------------
@@ -387,6 +399,8 @@ innerbottommargin=5pt]{cBox}
 \newenvironment{definition}{\begin{dBox}\begin{definitionT}}{\end{definitionT}\end{dBox}}	
 \newenvironment{example}{\begin{exampleT}}{\hfill{\tiny\ensuremath{\blacksquare}}\end{exampleT}}		
 \newenvironment{corollary}{\begin{cBox}\begin{corollaryT}}{\end{corollaryT}\end{cBox}}	
+% \newenvironment{algorithmNew}[1]{\begin{cBox}\begin{algorithm} \caption{#1} }{\end{algorithm}\end{cBox}}
+
 
 %----------------------------------------------------------------------------------------
 %	REMARK ENVIRONMENT
@@ -576,14 +590,5 @@ addtohook={%
 }
 }
 
-
-%----------------------------------------------------------------------------------------
-%	IPA
-%----------------------------------------------------------------------------------------
-% \usepackage{unitipa}
-
-%----------------------------------------------------------------------------------------
-%	Algorithm
-%----------------------------------------------------------------------------------------
-\usepackage{algorithm2e}
+% cleveref must be loaded after amsmath
 \usepackage{cleveref}

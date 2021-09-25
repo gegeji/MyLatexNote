@@ -429,7 +429,7 @@ $$
 
 我们先来看看 \( \boldsymbol{S}_{A} \) 的统计意义。因为 \( \overline{\boldsymbol{X}}_{\mathbf{\cdot} j} \) 是水平 \( \boldsymbol{A}_{j} \) 下所
 有 观 测 值 的平 均， 所 以 \( \sum_{j=1}^{s}\left(\bar{X}_{\cdot j}-\bar{X}\right)^{2} \) 反 映 了
-\( \overline{\boldsymbol{X}}_{\mathbf{- 1}}, \overline{\boldsymbol{X}}_{\cdot 2}, \cdots, \overline{\boldsymbol{X}}_{\boldsymbol{\cdot}} \) 差异的程度 \( _{\circ} \) 这种差异是甴于因素 \( \boldsymbol{A} \) 的
+\( \overline{\boldsymbol{X}}_{\mathbf{- 1}}, \overline{\boldsymbol{X}}_{\cdot 2}, \cdots, \overline{\boldsymbol{X}}_{\boldsymbol{\cdot}} \) 差异的程度 \( _{\circ} \) 这种差异是由于因素 \( \boldsymbol{A} \) 的
 不同水平所引起的，因此 \( S_{A} \) 称为因素 \( A \) 的平方和。类
 似地， \( \boldsymbol{S}_{B} \) 称为因素 \( \boldsymbol{B} \) 的平方和。至于 \( \boldsymbol{S}_{E} \) 的意义不甚明
 显，我们可以这样来理解：
@@ -533,7 +533,7 @@ $$
 现得到 \( \boldsymbol{n} \) 个独立观测数据 \( \left[b_{i}, a_{i 1}, \cdots, a_{i m}\right] \), 其中 \( b_{i} \) 为 \( y \) 的观察值, \( \boldsymbol{a}_{i 1}, \cdots, \boldsymbol{a}_{i m} \) 分别为 \( \boldsymbol{x}_{1}, \boldsymbol{x}_{2}, \cdots, \boldsymbol{x}_{m} \) 的 观察值,
 $$
 \begin{aligned}
-i=1, \cdots, n, n>m, \quad \text { 甴 }(7.19) \text { 得 } \\
+i=1, \cdots, n, n>m, \quad \text { 由 }(7.19) \text { 得 } \\
 \left\{\begin{array}{l}
 b_{i}=\beta_{0}+\beta_{1} a_{i 1}+\cdots+\beta_{m} a_{i m}+\varepsilon_{i} \\
 \varepsilon_{i} \sim N\left(0, \sigma^{2}\right), \quad i=1, \cdots, n .
@@ -581,7 +581,7 @@ $$
 $$
 \begin{array}{l}
 H_{0}^{(j)}: \beta_{j}=0, \quad j=0,1, \cdots, m \\
-\text { 甴 式(7.30), } \hat{\beta}_{j} \sim N\left(\beta_{j}, \sigma^{2} c_{j j}\right), c_{j j} \text { 是 }\left(X^{T} X\right)^{-1} \text { 中的 }
+\text { 由 式(7.30), } \hat{\beta}_{j} \sim N\left(\beta_{j}, \sigma^{2} c_{j j}\right), c_{j j} \text { 是 }\left(X^{T} X\right)^{-1} \text { 中的 }
 \end{array}
 $$
 \( \boldsymbol{H}_{0}^{(j)} \) 成 时
@@ -619,25 +619,25 @@ $$
 
 简单地说，就是所有对因变量影响显著的变量都应选入模型，而影响不显著的变量都不应选入模型；从便于应用的角度，变量的选择应使模型中变量个数尽可能少
 
-基本思想:记 \( \boldsymbol{S}=\left\{\boldsymbol{x}_{1}, \boldsymbol{x}_{2}, \cdots, \boldsymbol{x}_{m}\right\} \) 为⿲亻丨矢选的自变量集合
+基本思想:记 \( \boldsymbol{S}=\left\{\boldsymbol{x}_{1}, \boldsymbol{x}_{2}, \cdots, \boldsymbol{x}_{m}\right\} \) 为候选的自变量集合
 \( \boldsymbol{S}_{1} \subset \boldsymbol{S} \) 是从集合 \( \boldsymbol{S} \) 中选出的一个子集。设 \( \boldsymbol{S}_{1} \) 中有 \( \boldsymbol{l} \) 个自
-变量 \( (1 \leq l \leq m) \), 甴 \( S_{1} \) 和因变量 \( y \) 构造的回归模型的 残差平方和为 \( Q \), 则模型的残差方差 \( \boldsymbol{s}^{2}=\boldsymbol{Q} /(\boldsymbol{n}-\boldsymbol{l}-\mathbf{1}) \)
+变量 \( (1 \leq l \leq m) \), 由 \( S_{1} \) 和因变量 \( y \) 构造的回归模型的 残差平方和为 \( Q \), 则模型的残差方差 \( \boldsymbol{s}^{2}=\boldsymbol{Q} /(\boldsymbol{n}-\boldsymbol{l}-\mathbf{1}) \)
 \( \boldsymbol{n} \) 为数据样本容量。所选子集 \( \boldsymbol{S}_{1} \) 应使 \( \boldsymbol{s}^{2} \) 尽量小。通常回
-若模型中包含有对 \( y \) 影响很小的变量, 那么 \( Q \) 不会甴 于包含这些变量在内减少多少,却因 \( l \) 的增加可能使 \( s^{2} \) 反⿱丆巾增大, 同时这些对 \( \boldsymbol{y} \) 影响不显著的变量也会影响 模型的稳定性，因此可将残差方差 \( \boldsymbol{s}^{2} \) 最小作为衡量变
+若模型中包含有对 \( y \) 影响很小的变量, 那么 \( Q \) 不会由 于包含这些变量在内减少多少,却因 \( l \) 的增加可能使 \( s^{2} \) 反而增大, 同时这些对 \( \boldsymbol{y} \) 影响不显著的变量也会影响 模型的稳定性，因此可将残差方差 \( \boldsymbol{s}^{2} \) 最小作为衡量变
 量选择的一个数量标准。
 
-可以从另外一个角度考虑自变量 \( \boldsymbol{x}_{j} \) 的显著性。 \( \boldsymbol{y} \) 对 自变量 \( \boldsymbol{x}_{\mathbf{1}}, \boldsymbol{x}_{2}, \cdots, \boldsymbol{x}_{m} \) 线性回归的残差平方和为 \( \boldsymbol{Q} \), 回⿰丷⿱一日
-平方和为 \( U \), 在剔除掉 \( \boldsymbol{x}_{j} \) 后，用 \( \boldsymbol{y} \) 对其余的 \( \boldsymbol{m}-\mathbf{1} \) 个自
-为 \( U_{(j)} \), 则自变量 \( x_{j} \) 对回⿰丷⿱一日的贡献为
+可以从另外一个角度考虑自变量 \( \boldsymbol{x}_{j} \) 的显著性。 \( \boldsymbol{y} \) 对 自变量 \( \boldsymbol{x}_{\mathbf{1}}, \boldsymbol{x}_{2}, \cdots, \boldsymbol{x}_{m} \) 线性回归的残差平方和为 \( \boldsymbol{Q} \), 回归
+平方和为 \( U \), 在剔除掉 \( \boldsymbol{x}_{j} \) 后，用 \( \boldsymbol{y} \) 对其余的 \( \boldsymbol{m}-\mathbf{1} \) 个自变量做回归, 记所得的残差平方和为 $ Q_{(j)} $, 回归平方和
+为 \( U_{(j)} \), 则自变量 \( x_{j} \) 对回归的贡献为
 $$
 \Delta \boldsymbol{U}_{(j)}=\boldsymbol{U}-\boldsymbol{U}_{(j)}
 $$
-称为 \( \boldsymbol{x}_{\boldsymbol{j}} \) 的偏回归平方和。甴此构造偏 \( \boldsymbol{F} \) 统计量
+称为 \( \boldsymbol{x}_{\boldsymbol{j}} \) 的偏回归平方和。由此构造偏 \( \boldsymbol{F} \) 统计量
 $$
 F_{j}=\frac{\Delta U_{(j)} / 1}{Q /(n-m-1)}
 $$
 
-\( \boldsymbol{F}_{i} \) 服从自甴度为 \( (\mathbf{1}, \boldsymbol{n}-\boldsymbol{m}-\mathbf{1}) \) 的 \( \boldsymbol{F} \) 分布，此 \( \boldsymbol{F} \) 检验与式
+\( \boldsymbol{F}_{i} \) 服从自由度为 \( (\mathbf{1}, \boldsymbol{n}-\boldsymbol{m}-\mathbf{1}) \) 的 \( \boldsymbol{F} \) 分布，此 \( \boldsymbol{F} \) 检验与式
 方程中剔除变元时，回归平方和减少，残差平方和增 加。根据平方和分解式可知
 $$
 \Delta \boldsymbol{U}_{(j)}=\Delta \boldsymbol{Q}_{(j)}=\boldsymbol{Q}_{(j)}-\boldsymbol{Q}
@@ -648,7 +648,7 @@ $$
 
 \subsection{前进法}
 
-前进法的思想是变量甴少到多,每次增加一个, 直至
+前进法的思想是变量由少到多,每次增加一个, 直至
 没有可引入的变量为止。具体做法是首先将全部 \( \boldsymbol{m} \) 个 自变量分别对因变量 \( \boldsymbol{y} \) 建立一元线性回归方程, 利用
 归系数的 \( F \) 检验值, 记为 \( \left\{F_{1}^{1}, F_{2}^{1}, \cdots, F_{m}^{1}\right\} \), 选其最大者 记为
 $$
@@ -673,7 +673,11 @@ $$
 
 后退法易于掌握，我们使用 \( t \) 统计量做检验，与 \( \boldsymbol{F} \) 统
 计量做检验是等价的。具体步骤如下：
-（1）以全部自变量作为解释变量拟合方程。
-(2) 每一步都在未通过 \( \boldsymbol{t} \) 检验的自变量中选择一个
-\( \boldsymbol{t}_{j} \) 值最小的变量 \( \boldsymbol{x}_{j} \), 将它从模型中删除。
-(3) 直至所有的自变量均通过 \( \boldsymbol{t} \) 检验, 则算法终止。
+
+\begin{algorithm}
+    \caption{后退法}
+    以全部自变量作为解释变量拟合方程\;
+    每一步都在未通过 \( \boldsymbol{t} \) 检验的自变量中选择一个
+\( \boldsymbol{t}_{j} \) 值最小的变量 \( \boldsymbol{x}_{j} \), 将它从模型中删除\;
+    直至所有的自变量均通过 \( \boldsymbol{t} \) 检验, 则算法终止\;
+\end{algorithm}
