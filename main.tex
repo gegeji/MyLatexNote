@@ -41,9 +41,9 @@
 %----------------------------------------------------------------------------------------
 %	CONTENTS COMPILATION CONTROL
 %----------------------------------------------------------------------------------------
-% \newcommand*{\printmath}{}
+\newcommand*{\printmath}{}
 % \newcommand*{\printdemo}{}
-\newcommand*{\printvocabulary}{}
+%\newcommand*{\printvocabulary}{}
 
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
@@ -53,7 +53,7 @@
 
 \input{structure.tex} % Insert the commands.tex file which contains the majority of the structure behind the template
 
-%\hypersetup{pdftitle={Title},pdfauthor={Author}} % Uncomment and fill out to include PDF metadata for the author and title of the book
+\hypersetup{pdftitle={Title},pdfauthor={Author}} % Uncomment and fill out to include PDF metadata for the author and title of the book
 
 %----------------------------------------------------------------------------------------
 
@@ -63,16 +63,7 @@
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 
-\begingroup
-\thispagestyle{empty} % Suppress headers and footers on the title page
-\begin{tikzpicture}[remember picture,overlay]
-\node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{background.pdf}};
-\draw (current page.center) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering The Beauty of Embracing English\\[15pt] % Book title
-{\Large My English Note}\\[20pt] % Subtitle
-{\huge Xia Wenxuan}}}; % Author name
-\end{tikzpicture}
-\vfill
-\endgroup
+\input{title.tex}
 
 %----------------------------------------------------------------------------------------
 %	COPYRIGHT PAGE
@@ -99,7 +90,7 @@
 
 %\usechapterimagefalse % If you don't want to include a chapter image, use this to toggle images off - it can be enabled later with \usechapterimagetrue
 
-\chapterimage{chapter_head_1.pdf} % Table of contents heading image
+\chapterimage{chapter_head_3.png} % Table of contents heading image
 
 \pagestyle{empty} % Disable headers and footers for the following pages
 
@@ -119,23 +110,21 @@
 %	Vocabulary (USING CONDITIONAL COMPILATION)
 %----------------------------------------------------------------------------------------
 
-\ifdefined\printvocabulary
 \input{vocabulary/vocabulary-index.tex}
-\fi
+
 
 %----------------------------------------------------------------------------------------
 %	Optimization (USING CONDITIONAL COMPILATION)
 %----------------------------------------------------------------------------------------
-\ifdefined\printmath
+
 \input{math/math-index.tex}
-\fi
+
 %----------------------------------------------------------------------------------------
 %	DEMO PART (USING CONDITIONAL COMPILATION)
 %----------------------------------------------------------------------------------------
 
-\ifdefined\printdemo
+
 \input{demo.tex}
-\fi
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
