@@ -1,0 +1,97 @@
+\section{辛钦大数定律}
+
+\begin{theorem}[辛钦大数定律]
+    设随机变量序列$X_1,X_2, …$   相互独立，服从同一分布，具有数学期$E(X_i)=\mu, i=1,2,…$， 则对于任意正数ε ，有
+
+$$\lim _{n \rightarrow \infty} P\left\{\left|\frac{1}{n} \sum_{i=1}^{n} X_{i}-\mu\right|<\varepsilon\right\}=1$$
+
+则序列$\bar{X}=\frac{1}{n} \sum_{i=1}^{n} X_{i}$ 依概率收敛于$\mu$（很可能接近于$\mu$）.
+\end{theorem}
+
+另一表述：
+$$\ce{\overline{X} ->[P] \mu}$$
+
+\subsection{辛钦大数定律条件}
+
+\begin{itemize}
+    \item $X_1,X_2, …$ 相互独立
+    \item $X_1,X_2, …$ 服从同一分布
+    \item 不要求方差存在。
+\end{itemize}
+
+\begin{corollary}
+设$\ce{X_n ->[P] a}$, $\ce{Y_n ->[P] b}$则
+
+$$
+   g(X_n, Y_n)\ce{->[P]} g(a,b)
+$$
+\end{corollary}
+
+\section{伯努利大数定理}
+
+\begin{theorem}[伯努利大数定理]
+设$f_A$是n次独立重复试验中事件A的发生次数, p是每次试验中发生的概率, 则对于任意的正数$\varepsilon$.
+
+$$
+ \lim_{n \to \infty}\{ |f_A/n - p| < \varepsilon\} = 1  
+$$
+\end{theorem}
+
+贝努里大数定律表明，当重复试验次数n充分大时，事件A发生的频率nA/n与事件A的概率p有较大偏差的概率很小.
+
+\section{中心极限定理}
+
+\begin{theorem}[Lyapunov中心极限定理]
+    设$X_1,X_2,...$相互独立,他们拥有数学期望和方差
+
+$$
+ E(X_k) = \mu_k
+$$
+
+$$
+  D(X_k) = \sigma_k^2
+$$
+则有
+
+$$
+\begin{aligned} \lim _{n \rightarrow \infty} F_{n}(x) &=\lim _{n \rightarrow \infty} P\left\{\frac{\sum_{k=1}^{n} X_{k}-\sum_{k=1}^{n} \mu_{k}}{B_{n}} \leq x\right\}
+\\ &=\int_{-\infty}^{x} \frac{1}{\sqrt{2 \pi}} \mathrm{e}^{-\mathrm{t}^{2} / 2} \mathrm{~d} \mathrm{t}
+\\&=\Phi(x)
+ \end{aligned}
+ $$
+
+其中$B_n=\sqrt{D\left(\sum_{k=1}^{n} X_{k}\right)}$
+\end{theorem}
+
+\begin{theorem}
+    设$X_1,X_2,...$相互独立,他们服从同一分布,拥有数学期望和方差
+
+$$
+ E(X_k) = \mu
+$$
+
+$$
+  D(X_k) = \sigma^2
+$$
+则有
+
+$$\begin{aligned}
+\lim _{n \rightarrow \infty} F_{n}(x)&=\lim _{n \rightarrow \infty} P\left\{\frac{\sum_{i=1}^{n} X_{i}-n \mu}{\sigma \sqrt{n}} \leq x\right\}
+\\ &=\int_{-\infty}^{x} \frac{1}{\sqrt{2 \pi}} \mathrm{e}^{-\mathrm{t}^{2} / 2} \mathrm{~d} \mathrm{t}
+\\&=\Phi(x)
+\end{aligned}
+$$
+\end{theorem}
+
+\begin{theorem}[De Moivre-Laplace定理]
+设$\eta_{n}$服从参数为n,p的二项分布, 则对于任意$x$,有
+$$
+\lim _{n \rightarrow \infty} P\left\{\frac{\eta_{n}-n p}{\sqrt{n p(1-p)}} \leq x\right\}=\int_{-\infty}^{x} \frac{1}{\sqrt{2 \pi}} e^{-\frac{t^{2}}{2}} d t=\Phi(x)
+$$
+\end{theorem}
+
+\begin{proof}
+    证明: 将$\eta_{n}$拆分成$n$个相互独立,服从同一分布的随机变量$X_1,X_2,...$之和
+\end{proof}
+
+

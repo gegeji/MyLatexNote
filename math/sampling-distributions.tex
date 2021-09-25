@@ -1,0 +1,387 @@
+\section{统计量}
+
+不含任何未知参数的样本的函数称为统计量.
+它是完全由样本决定的量.
+
+\section{常见统计量}
+
+\begin{definition}[样本平均值]
+    $$\overline{X}=\frac{1}{n} \sum_{i=1}^{n} X_{i}$$
+\end{definition}
+
+\begin{definition}[样本方差]
+    $$S^{2}=\frac{1}{ n-1} \sum_{i=1}^{n}\left(X_{i}-\bar{X}\right)^{2}$$
+\end{definition}
+
+\begin{definition}[样本标准差]
+    $$S=\sqrt{\frac{1}{ { n-1} } \sum_{i=1}^{n}\left(X_{i}-\bar{X}\right)^{2}}$$
+\end{definition}
+
+\begin{definition}[样本 $k$ 阶原点矩]
+    $$A_{k}=\frac{1}{n} \sum_{i=1}^{n} X_{i}^{k}$$
+\end{definition}
+
+\begin{definition}[样本 $k$ 阶中心矩]
+    $$\boldsymbol{B}_{\boldsymbol{k}}=\frac{1}{\boldsymbol{n}} \sum_{i=1}^{n}\left(\boldsymbol{X}_{i}-\overline{\boldsymbol{X}}\right)^{k}$$
+\end{definition}
+
+\begin{definition}[$X$和$Y$的$k+p$阶混合原点矩]
+    若
+    $$E \left\{\left(X^ k\right)\left(Y^ p\right)\right\}, k, p=1,2, \ldots $$
+    存在, 则称它为$X$和$Y$的$k+p$阶混合原点矩
+\end{definition}
+
+\begin{definition}[$X$和$Y$的$k+l$阶混合中心矩]
+    若
+    $$ E\left\{[X-E(X)]^ k[Y-E(Y)]^l \right\},  k,l=1, \quad 2, \ldots $$
+    存在, 则称它为$X$和$Y$的$k+l$阶混合中心矩
+\end{definition}
+
+
+
+\section{卡方分布}
+
+\begin{definition}[卡方分布]
+    设$X_1,X_2,...X_n$相互独立, 都服从正态分布 $N(0,1)$ (都是来自总体 $N(0,1)$ 的样本), 则称随机变量：
+
+    $$
+        \chi^2 = X_1^2 + X_2^2 + ... + X_n^2
+    $$
+
+    所服从的分布为自由度为 $n$ 的$\chi^2$分布. 记作$\chi^2 \sim \chi^2(n)$
+\end{definition}
+
+\subsection{卡方分布性质}
+
+\begin{corollary}
+    $\chi^2(1) \sim X^2(1)$
+\end{corollary}
+
+\begin{corollary}[$\chi^2$分布的可加性]
+    若 $ X_{1} \sim \chi^{2}\left(n_{1}\right), X_{2} \sim \chi^{2}\left(n_{2}\right) $, 且 $ X_{1} $ 与 $ X_{2} $ 相互独立，则
+    $$
+        X_{1}+X_{2} \sim \chi^{2}\left(n_{1}+n_{2}\right)
+    $$
+\end{corollary}
+
+\begin{proof}
+    事实上, 卡方分布是Gamma分布的特殊情况。自由度为 $ n $ 的卡方分布 $ \chi_{n}^{2} $ 其实就是 $ \Gamma\left(\frac{n}{2}, \frac{1}{2}\right) $.
+
+    根据Gamma分布的矩生成函数（Moment Generating Function, MGF),若$ X_{1} \sim \chi_{n_{1}}^{2} $，$ X_{2} \sim \chi_{n_{2}}^{2} $,
+
+    那么 $ X_{1}, X_{2} $ 对应的MGF分别为
+    $$ M_{X_{1}}(t)=(1-2 t)^{-n_{1} / 2} $$
+    $$ M_{X_{2}}(t)=(1-2 t)^{-n_{2} / 2} $$
+    因为 $ X_{1}, X_{2} $ 相互独立, 那么 $ Y=X_{1}+X_{2} $ 的MGF为
+    $$ M_{Y}(t)=M_{X_{1}}(t) M_{X_{2}}(t)=(1-2 t)^{-\left(n_{1}+n_{2}\right) / 2} $$
+
+    由MGF的唯一性,
+    $$ \quad Y \sim \Gamma\left(\frac{n_{1}+n_{2}}{2}, \frac{1}{2}\right)=\chi_{n_{1}+n_{2}}^{2} $$
+\end{proof}
+
+\begin{corollary}[$\chi^2$分布的数学期望和方差]
+    $$E(\chi^2) = n$$
+    $$D(\chi^2) = 2n$$
+\end{corollary}
+
+\begin{proof}
+    $$
+        E(X) = 0\\
+        D(X) = 1\\
+        E(X_i^2) = 1\\
+        D(X_i^2) = 2
+    $$
+\end{proof}
+
+\begin{corollary}[卡方分布中心极限定理]
+    设$X_1,X_2,...X_n$相互独立, 都服从正态分布 N(0,1), $E(X)=\mu$, $D(X)=\sigma^2$, 则有
+    $$
+        P(\frac{\chi^2(n)-n}{\sqrt{2n}} \le x) \sim \Phi(x)
+    $$
+\end{corollary}
+
+\begin{proof}
+    $$
+        E(X) = 0\\
+        D(X) = 1\\
+        E(X_i^2) = 1\\
+        D(X_i^2) = 2
+    $$
+\end{proof}
+
+\begin{corollary}
+    $$
+        \frac{\chi^2(n)}{n} \leftarrow  \frac{1}{n} \sum^n_{i=1} X_i^2 = 1
+    $$
+\end{corollary}
+
+\begin{proof}
+    $$
+        E(X_i^2) = 1
+    $$
+\end{proof}
+
+\begin{definition}[卡方分布的上分位点]
+    $$
+        p(\chi^2 > \chi^2_\alpha(n)) = \alpha
+    $$
+\end{definition}
+
+\section{t 分布}
+
+\begin{definition}[自由度为 $t$ 的 t 分布]
+    设$X \sim N(0,1), Y \sim \chi^2(n)$,且 X,Y 相互独立,则称随机变量
+
+    $$
+        t = \frac{X}{\sqrt{Y/n}}
+    $$
+
+    为自由度为 $n$ 的 t 分布, 记作$t \sim t(n)$
+
+\end{definition}
+
+\subsection{t 分布性质}
+
+\begin{corollary}[t 分布数学期望和方差]
+    $$
+        E(t) = 0
+    $$
+    $$
+        D\big(t(n)\big) = \frac{n}{n-2}
+    $$
+\end{corollary}
+
+\begin{corollary}[t 分布的概率密度函数]
+    $n = 1$时 $$f(t)=\frac{1}{\pi (1+t^2)}(柯西密度)$$ 数学期望不存在.
+    $n>1$时, $h(t)$的图形关于 $t=0$ 对称.
+\end{corollary}
+
+\begin{corollary}
+    $n$ 足够大时 t 分布近似于 $N(0,1)$ 分布. 由于卡方分布
+    $$
+        n\to \infty 时, \frac{\chi^2(n)}{n} \to 1
+    $$
+    所以
+    $$
+        \begin{aligned}
+            t(n) =
+            \ce{\frac{N(0,1)}{\sqrt{\frac{\chi^2(n)}{n}}}
+            ->[n \to \infty]
+            N(0,1)}
+        \end{aligned}
+    $$
+\end{corollary}
+
+\begin{corollary}[与 F 分布的关系]
+    $$
+        \begin{aligned}
+            t^2(n) & = \frac{N(0,1)^2}{\chi^2 (n)/n}                    \\
+                   & = \frac{\chi ^2(1)/1}{ \chi ^2(n) / n} \sim F(1,n)
+        \end{aligned}
+    $$
+
+    $$
+        \frac{1}{t^2(n)} \sim F(n,1)
+    $$
+\end{corollary}
+
+\begin{definition}[t 分布的上分位点]
+    $$
+        t_{1-\alpha} (n) = -t_\alpha(n)
+    $$
+\end{definition}
+
+\section{F 分布}
+
+\begin{definition}[F 分布]
+    设$U \sim \chi^2(n_1), V \sim \chi^2(n_2)$, 且 U, V 相互独立, 则称随机变量
+
+    $$
+        F = \frac{U/n_1}{V/n_2}
+    $$
+
+    服从自由度为$n_1,n_2$的 F 分布. 记作$F \sim F(n_1,n_2)$
+\end{definition}
+
+\subsection{F 分布性质}
+
+\begin{corollary}[F 分布数学期望]
+    $$
+        E(F) =\frac{{ n_2} }{{ n_2}  - 2}
+    $$
+
+    即与$n_1$无关.
+\end{corollary}
+
+\begin{corollary}[$F(n_1,n_2),F(n_2,n_1)$的关系]
+    $$
+        \frac{1}{F(n_1,n_2)} \sim F(n_2,n_1)
+    $$
+\end{corollary}
+
+\begin{corollary}[与 t 分布的关系]
+    $$
+        \begin{aligned}
+            t^2(n) & = \frac{N(0,1)^2}{\chi^2 (n)/n}                    \\
+                   & = \frac{\chi ^2(1)/1}{ \chi ^2(n) / n} \sim F(1,n)
+        \end{aligned}
+    $$
+
+    $$
+        \frac{1}{t^2(n)} \sim F(n,1)
+    $$
+\end{corollary}
+
+\begin{corollary}[F 分布上 α 分位点的性质]
+    $$
+        F_{1-\alpha} (n_1,n_2) = \frac{1}{F_\alpha(n_2,n_1)}
+    $$
+\end{corollary}
+
+\section{正态总体的样本均值和样本方差的分布}
+
+\begin{definition}[正态总体的样本均值的数学期望、方差和样本方差的数学期望]
+    设总体$X\sim N(\mu,\sigma^2)$的均值为$\mu$, 方差为$σ^2$.
+
+    $X_1,X_2,...X_n$是来自$X$的一个样本, 样本均值是$\overline{X}$,样本方差是$S^2$,则有
+
+    $$
+        E(\overline{X}) = { \mu}
+    $$
+
+    $$
+        D(\overline{ X}) =  {\frac{\sigma^2}{n}}
+    $$
+
+    $$
+        E(S^2) = { \sigma^2}
+    $$
+\end{definition}
+
+\begin{corollary}[矩估计法原理]
+    $$\overline{X}=\frac{1}{n} \sum_{i=1}^{n} X_{i} \to E(X)$$
+
+    $$\frac{1}{n} \sum X_1^2 - \overline{X}^2 \to D(X) = E(X^2) - E(X)^2$$
+\end{corollary}
+
+\begin{theorem}[样本均值的分布]
+    设总体 X~N($\mu,\sigma^2$)的均值为$\mu$, 方差为$σ^2$, $X_1,X_2,...X_n$是来自$X$的一个样本, 样本均值是$\overline{X}$,则有
+
+    $$
+        {\overline{X} \sim N(\mu,\sigma^2/n) }
+    $$
+\end{theorem}
+
+\begin{proof}
+    $$
+        \sum^n_{i=1} X_i = X_1 + X_2 + ...\sim N(n\mu, n\sigma^2)
+    $$
+\end{proof}
+
+\begin{corollary}
+    $$
+        \frac{\overline{X}-\mu}{\sigma^2/n} = \frac{\sqrt{n}(\overline{X}-\mu)}{\sigma} \sim N(0,1)
+    $$
+\end{corollary}
+
+\begin{theorem}[样本方差的分布]
+    设总体 $X\sim N(\mu,\sigma^2)$的均值为$\mu$, 方差为$σ^2$, $X_1,X_2,...X_n$是来自$X$的一个样本, 样本均值是$\overline{X}$,样本方差是$S^2$,则有
+
+    $$
+        { \frac{(n-1)S^2}{\sigma^2} \sim \chi^2(n-1)}
+    $$
+
+    而且$\overline{X}$与$S^2$相互独立.
+\end{theorem}
+
+\begin{theorem}[样本均值和样本方差的关系]
+    设$X_1,X_2,...X_n$是总体 X~N($\mu,\sigma^2$)的样本,样本均值是$\overline{X}$,样本方差是$S^2$,则有
+
+    $$
+        {\frac{\overline{X}-\mu}{S / \sqrt{n}} = \frac{\sqrt{n}(\overline{X} - \mu)}{{ S}} \sim t(n-1)}
+    $$
+
+    对比
+
+    $$
+        \frac{\overline{X}-\mu}{\sigma^2/n} = \frac{\sqrt{n}(\overline{X}-\mu)}{{ \sigma}} \sim N(0,1)
+    $$
+
+    但是 n 很大时
+
+    $$
+        S^2 = \frac{1}{n} \sum_{i=1}^n X_i - (\overline{X})^2
+    $$
+
+    $$
+        S^2 \to E(X^2) - E(X)^2= \sigma^2
+    $$
+
+    $$
+        \therefore S \to \sigma
+    $$
+\end{theorem}
+
+\begin{theorem}[两总体样本均值差、样本方差比的分布]
+    设 $ X \sim N\left(\mu_{1}, \sigma_{1}^{2}\right), \quad Y \sim N\left(\mu_{2}, \sigma_{2}^{2}\right) $, 且 $ X $ 与Y独立,
+
+    $ X_{1}, X_{2}, \ldots, X_{n} $ 是来自 $ X $ 的样本, $ Y_{1}, Y_{2}, \ldots, Y_{n_{2}} $ 是取自 $ Y $ 的样本,
+
+    $ \overline{\boldsymbol{X}} $ 和 $ \overline{\boldsymbol{Y}} $ 分别是这两个样本的样本均值, $ \boldsymbol{S}_{1}^{2} $ 和 $ \boldsymbol{S}_{2}^{2} $ 分别是这两个样本的样本方差,则有
+
+    \begin{enumerate}
+        \item $\frac{S_1^2/S^2_2}{\sigma_1^2 / \sigma_2^2}$的分布
+              $$
+                  {
+                          \frac{S_1^2/S^2_2}{\sigma_1^2 / \sigma_2^2} \sim F(n_1 - 1, n_2 -1)}
+              $$
+        \item $$
+                  \frac{\overline{X} - \overline{Y}- (\mu_1 - \mu_2 )}{\sqrt{ \frac{(n_1 - 1) S_1^2 + (n_2 - 1 ) S_2^2 }{\sigma^2 (n_1+n_2-2)} }} \sim t(n_1+n_2-2)
+              $$
+    \end{enumerate}
+
+\end{theorem}
+
+\begin{proof}
+
+    1. $\frac{S_1^2/S^2_2}{\sigma_1^2 / \sigma_2^2}$的分布
+    $$
+        {
+                \frac{S_1^2/S^2_2}{\sigma_1^2 / \sigma_2^2} \sim F(n_1 - 1, n_2 -1)}
+    $$
+
+    当$\sigma^2_1 = \sigma^2_2= \sigma^2$时
+    $$
+        \overline{X} - \overline{Y} = N(\mu_1-\mu_2, \sigma^2 / n_1 + \sigma^2 /n_2)
+    $$
+
+    $$
+        \therefore U = \frac{\overline{X} - \overline{Y}- (\mu_1 - \mu_2 )}{\sigma \sqrt{ \frac{1}{n_1} + \frac{1}{n_2} }} \sim N(0,1)
+    $$
+
+
+    又因为
+
+    $$
+        \frac{n_1 -1}{\sigma^2}S_1^2 \sim \chi^2(n_1 - 1)
+    $$
+
+    $$ \frac{n_2 -1}{\sigma^2}S_2^2 \sim \chi^2(n_2 - 1) $$
+
+    $$
+        \therefore
+        V=\frac{n_1 -1}{\sigma^2}S_1^2 + \frac{n_2 -1}{\sigma^2}S_2^2 \sim \chi^2(n_1 + n_2 -2)
+    $$
+
+    2 和 3 相互独立,根据 t 分布定义,因此有
+
+    $$
+        \frac{\overline{X} - \overline{Y}- (\mu_1 - \mu_2 )}{S_w \sqrt{ \frac{1}{n_1} + \frac{1}{n_2} }} \sim t(n_1+n_2-2)
+    $$
+
+    代入$S_w^2 = \frac{(n_1 - 1) S_1^2 + (n_2 - 1 ) S_2^2  }{ (n_1+n_2-2)}$
+
+    $$
+        \frac{\overline{X} - \overline{Y}- (\mu_1 - \mu_2 )}{\sqrt{ \frac{(n_1 - 1) S_1^2 + (n_2 - 1 ) S_2^2 }{\sigma^2 (n_1+n_2-2)} }} \sim t(n_1+n_2-2)
+    $$
+\end{proof}

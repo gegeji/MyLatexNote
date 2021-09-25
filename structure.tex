@@ -36,7 +36,11 @@
 \usepackage{xcolor} % Required for specifying colors by name
 % \definecolor{ocre}{RGB}{243,102,25} % Define the orange color used for highlighting throughout the book
 \definecolor{ocre}{RGB}{76, 50, 168}
+\usepackage{calc}
 
+\usepackage{thmtools}
+% \usepackage{xpatch}
+% \xpatchcmd{\listoftheorems}{\@fileswfalse}{}{\typeout{yes}}{\typeout{no}}
 
 %----------------------------------------------------------------------------------------
 %	MARGINS
@@ -264,6 +268,18 @@
 {\small\sffamily\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
 \thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries---\nobreakspace#3.}}% Optional theorem note
 
+\newtheoremstyle{blacknumboxSpecial} % Theorem style name
+{0pt}% Space above
+{0pt}% Space below
+{\normalfont}% Body font
+{}% Indent amount
+{\small\bf\sffamily}% Theorem head font
+{\;}% Punctuation after theorem head
+{0.25em}% Space after theorem head
+{\small\sffamily\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
+\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries---\nobreakspace#3.}}% Optional theorem note
+
+
 % Non-boxed/non-framed environments
 \newtheoremstyle{ocrenum}% Theorem style name
 {5pt}% Space above
@@ -286,12 +302,16 @@
 \newtheorem{exerciseT}{Exercise}[chapter]
 \theoremstyle{blacknumex}
 \newtheorem{exampleT}{Example}[chapter]
-\theoremstyle{blacknumbox}
+\theoremstyle{blacknumboxSpecial} 
 \newtheorem{vocabulary}{Vocabulary}[chapter]
+\theoremstyle{blacknumbox}
 \newtheorem{definitionT}{Definition}[section]
 \newtheorem{corollaryT}[dummy]{Corollary}
 \theoremstyle{ocrenum}
 \newtheorem{proposition}[dummy]{Proposition}
+
+% todo index vocabulary
+\newenvironment{word}[1]{\begin{vocabulary}[#1] \index{#1}}{ \end{vocabulary}}
 
 %----------------------------------------------------------------------------------------
 %	DEFINITION OF COLORED BOXES
@@ -561,3 +581,9 @@ addtohook={%
 %	IPA
 %----------------------------------------------------------------------------------------
 % \usepackage{unitipa}
+
+%----------------------------------------------------------------------------------------
+%	Algorithm
+%----------------------------------------------------------------------------------------
+\usepackage{algorithm2e}
+\usepackage{cleveref}
