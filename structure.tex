@@ -323,7 +323,39 @@
 \newtheorem{proposition}[dummy]{Proposition}
 
 % use ``word'' environment to wrap vocabulary and add index
-\newenvironment{word}[1]{\begin{vocabulary}[#1] \index{#1}}{ \end{vocabulary}}
+% \newenvironment{word}[1]{\begin{vocabulary}[#1] \index{#1}}{ \end{vocabulary}}
+
+\usepackage{xparse}
+\NewDocumentEnvironment{wordRef}{ m o}{
+	% Start Code
+	\IfNoValueTF{#2}{
+		% if optional parameter is null
+		\begin{vocabulary}[#1]
+			\index{#1}
+			See #1 (Vocabulary \ref{#1}).
+		}{
+		\begin{vocabulary}[#1]
+			\index{#2}
+			See #2 (Vocabulary \ref{#2}).
+			
+	}
+}{	% End Code
+		\end{vocabulary}
+}
+\NewDocumentEnvironment{word}{mo}{
+	% Start Code
+	\IfNoValueTF{#2}{
+		\begin{vocabulary}[#1]
+			\label{#1}
+			\index{#1}
+		}{
+		\begin{vocabulary}[#1]
+			\label{#2}
+			\index{#2}
+	}
+}{% End Code
+		\end{vocabulary}
+}
 
 %----------------------------------------------------------------------------------------
 %	DEFINITION OF COLORED BOXES

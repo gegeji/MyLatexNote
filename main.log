@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  26 SEP 2021 13:52
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  27 SEP 2021 16:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1136,23 +1136,23 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 
 Package hyperref Warning: Option `backref' has already been used,
-(hyperref)                setting the option has no effect on input line 577.
+(hyperref)                setting the option has no effect on input line 609.
 
 
 Package hyperref Warning: Option `pagebackref' has already been used,
-(hyperref)                setting the option has no effect on input line 577.
+(hyperref)                setting the option has no effect on input line 609.
 
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 577.
+(hyperref)                setting the option has no effect on input line 609.
 
-Package hyperref Info: Option `colorlinks' set `false' on input line 577.
-Package hyperref Info: Option `breaklinks' set `true' on input line 577.
+Package hyperref Info: Option `colorlinks' set `false' on input line 609.
+Package hyperref Info: Option `breaklinks' set `true' on input line 609.
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 577.
+(hyperref)                setting the option has no effect on input line 609.
 
-Package hyperref Info: Option `bookmarksopen' set `false' on input line 577.
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 609.
 (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
@@ -1184,7 +1184,56 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count495
 \@quotereset=\count496
-(./main.aux)
+(./main.aux
+
+LaTeX Warning: Label `agent' multiply defined.
+
+
+LaTeX Warning: Label `agent@cref' multiply defined.
+
+
+LaTeX Warning: Label `department' multiply defined.
+
+
+LaTeX Warning: Label `department@cref' multiply defined.
+
+
+LaTeX Warning: Label `extract' multiply defined.
+
+
+LaTeX Warning: Label `extract@cref' multiply defined.
+
+
+LaTeX Warning: Label `insectcide' multiply defined.
+
+
+LaTeX Warning: Label `insectcide@cref' multiply defined.
+
+
+LaTeX Warning: Label `invade' multiply defined.
+
+
+LaTeX Warning: Label `invade@cref' multiply defined.
+
+
+LaTeX Warning: Label `occur' multiply defined.
+
+
+LaTeX Warning: Label `occur@cref' multiply defined.
+
+
+LaTeX Warning: Label `partner' multiply defined.
+
+
+LaTeX Warning: Label `partner@cref' multiply defined.
+
+
+LaTeX Warning: Label `pervade' multiply defined.
+
+
+LaTeX Warning: Label `pervade@cref' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
@@ -1868,17 +1917,16 @@ Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             Ignoring protrusion settings for this character.
  [3
 
-] [4])
+])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [5] [6
-
-] (./vocabulary/vocabulary-index.tex
+ [4] (./vocabulary/vocabulary-index.tex
 \c@ttl@toc@default=\count498
- (./main.ptc) [7
+ (./main.ptc) [5
 
-] [8] (./vocabulary/ag.tex
+
+] [6] (./roots/chap1.tex
 Chapter 1.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
@@ -1918,258 +1966,124 @@ Package microtype Info: Character `textquotedblleft ' is missing
 Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
-) (./vocabulary/loqu.tex [9
+[7
 
-] [10
-
-]
+]) (./roots/chap2.tex [8]
 Chapter 2.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-
-Overfull \hbox (3.31935pt too wide) in paragraph at lines 6--8
-[]\TU/NotoSerif-Regular.ttf(0)/m/it/10.95 an eloquent appeal for support \TU/NotoSerif-Regular.ttf(0)/m/n/10.95 showing a feeling or meaning without using words 
- []
-
-) (./vocabulary/log.tex [11] [12
+[9
 
 ]
+
+LaTeX Warning: Reference `sustain' on page 10 undefined on input line 69.
+
+
+LaTeX Warning: Reference `detain' on page 10 undefined on input line 72.
+
+) (./roots/chap3.tex [10]
 Chapter 3.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-) (./vocabulary/dict.tex [13] [14
+[11
 
 ]
+
+LaTeX Warning: Reference `concurrent' on page 12 undefined on input line 76.
+
+
+LaTeX Warning: Reference `impede, impediment' on page 12 undefined on input line 105.
+
+) (./roots/chap4.tex [12]
 Chapter 4.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-) (./vocabulary/audi.tex [15] [16
+
+Overfull \hbox (10.43062pt too wide) in paragraph at lines 33--33
+[]\TU/lmss/bx/n/10 Vocabulary 4.9 — participate, participation, participator. []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 See participate (Vocabulary []4.129[]). 
+ []
+
+[13
 
 ]
-Chapter 5.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-) (./vocabulary/vis-vid.tex [17] [18
 
-]
-Chapter 6.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-) [19] [20
+LaTeX Warning: Reference `detract' on page 14 undefined on input line 102.
 
-] (./main.ptc) [21] [22] (./vocabulary/tain.tex
-Chapter 7.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
+) [14] (./main.ptc) [15
+
+] [16] (./vocabulary/a.tex
 
 LaTeX Font Warning: Font shape `TU/NotoSerif-Regular.ttf(0)/b/it' undefined
-(Font)              using `TU/NotoSerif-Regular.ttf(0)/b/n' instead on input line 40.
+(Font)              using `TU/NotoSerif-Regular.ttf(0)/b/n' instead on input line 66.
 
-) (./vocabulary/prehend.tex [23
-
-] [24
-
-]
-Chapter 8.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-
-Overfull \hbox (18.5262pt too wide) in paragraph at lines 14--16
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/it/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/it/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/it/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/it/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/it/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/it/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+[17]
+Overfull \hbox (18.5262pt too wide) in paragraph at lines 106--108
 []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 (old-fashioned) understand or perceive. ”\TU/NotoSerif-Regular.ttf(0)/m/it/10.95 great art invites us to apprehend beauty\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 ”;to
  []
 
-) (./vocabulary/sequ-secut.tex [25] [26
 
-]
-Chapter 9.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-) [27] [28
-
-] (./main.ptc) [29] [30] (./vocabulary/ped.tex
-Chapter 10.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-Missing character: There is no ɪ (U+026A) in font [lmsans10-bold]:mapping=tex-text;!
-Missing character: There is no ˈ (U+02C8) in font [lmsans10-bold]:mapping=tex-text;!
-Missing character: There is no ː (U+02D0) in font [lmsans10-bold]:mapping=tex-text;!
-Missing character: There is no ɪ (U+026A) in font [lmsans10-bold]:mapping=tex-text;!
-Missing character: There is no ˈ (U+02C8) in font [lmsans10-bold]:mapping=tex-text;!
-Missing character: There is no ˈ (U+02C8) in font [lmsans10-bold]:mapping=tex-text;!
-Missing character: There is no ɪ (U+026A) in font [lmsans10-bold]:mapping=tex-text;!
-) (./vocabulary/ambul.tex [31
-
-] [32
-
-]
-Chapter 11.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-Missing character: There is no ˈ (U+02C8) in font [lmsans10-bold]:mapping=tex-text;!
-Missing character: There is no ˌ (U+02CC) in font [lmsans10-bold]:mapping=tex-text;!
-Missing character: There is no ɪ (U+026A) in font [lmsans10-bold]:mapping=tex-text;!
-Missing character: There is no ˈ (U+02C8) in font [lmsans10-bold]:mapping=tex-text;!
-Missing character: There is no ː (U+02D0) in font [lmsans10-bold]:mapping=tex-text;!
-) (./vocabulary/cess-ceed.tex [33] [34
-
-]
-Chapter 12.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-Missing character: There is no ˈ (U+02C8) in font [lmsans10-bold]:mapping=tex-text;!
-Missing character: There is no ɪ (U+026A) in font [lmsans10-bold]:mapping=tex-text;!
-) (./vocabulary/gress.tex [35] [36
-
-]
-Chapter 13.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-) (./vocabulary/grad.tex [37] [38
-
-]
-Chapter 14.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-) (./vocabulary/pass.tex [39] [40
-
-]
-Chapter 15.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-) [41] [42
-
-] (./main.ptc) [43] [44] (./vocabulary/tract.tex
-Chapter 16.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-[45
-
-]
-Overfull \hbox (4.01262pt too wide) in paragraph at lines 68--69
+Overfull \hbox (4.01262pt too wide) in paragraph at lines 136--137
 []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 to write a document containing the most important ideas or points from a speech,
  []
 
+) (./vocabulary/b.tex) (./vocabulary/c.tex [18]) (./vocabulary/d.tex
 
-Overfull \hbox (5.02621pt too wide) in paragraph at lines 86--88
-[]\TU/lmss/bx/n/10 Vocabulary 16.10 — retract, retractable. []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 if you retract something that you said or agreed,
+LaTeX Warning: Reference `detract' on page 19 undefined on input line 24.
+
+[19]) (./vocabulary/e.tex
+Overfull \hbox (3.31935pt too wide) in paragraph at lines 53--55
+[]\TU/NotoSerif-Regular.ttf(0)/m/it/10.95 an eloquent appeal for support \TU/NotoSerif-Regular.ttf(0)/m/n/10.95 showing a feeling or meaning without using words 
  []
 
-) (./vocabulary/sect-seg.tex [46]
-Chapter 17.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-) (./vocabulary/part.tex) (./vocabulary/port.tex) (./vocabulary/cide.tex) (./vocabulary/cise.tex) [47
+[20]) (./vocabulary/f.tex) (./vocabulary/g.tex) (./vocabulary/h.tex) (./vocabulary/i.tex [21]) (./vocabulary/j.tex) (./vocabulary/k.tex) (./vocabulary/l.tex) (./vocabulary/m.tex) (./vocabulary/n.tex) (./vocabulary/o.tex) (./vocabulary/p.tex [22]
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+ [23]) (./vocabulary/q.tex) (./vocabulary/r.tex
+Overfull \hbox (5.02621pt too wide) in paragraph at lines 8--10
+[]\TU/lmss/bx/n/10 Vocabulary 4.149 — retract, retractable. []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 if you retract something that you said or agreed,
+ []
 
-] [48
-
-] (./main.ptc) [49] [50] (./vocabulary/tran.tex
-Chapter 18.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-) (./vocabulary/sus.tex [51
-
-] [52
-
-]
-Chapter 19.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-) (./vocabulary/pre.tex [53] [54
-
-]
-Chapter 20.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-) (./vocabulary/pro.tex [55] [56
-
-]
-Chapter 21.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-) (./vocabulary/ex.tex [57] [58
-
-]
-Chapter 22.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-) (./vocabulary/com.tex [59] [60
-
-]
-Chapter 23.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-[61] [62
-
-]
-Chapter 24.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-) (./vocabulary/contra.tex [63] [64
-
-]
-Chapter 25.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-) (./vocabulary/ent.tex [65] [66
-
-]
-Chapter 26.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-) (./vocabulary/or.tex [67] [68
-
-]
-Chapter 27.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-) (./vocabulary/orium.tex [69] [70
-
-]
-Chapter 28.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-) (./vocabulary/pass.tex [71] [72
-
-]
-Chapter 29.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-) [73] [74
-
-] (./main.ptc) [75] [76] (./vocabulary/new-words.tex) (./vocabulary/notes.tex [77] [78
-
-]
-Chapter 30.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-) (./vocabulary/thesaurus.tex [79] [80
-
-]
-Chapter 31.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-[81]
-Missing character: There is no → (U+2192) in font [NotoSerif-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no → (U+2192) in font [NotoSerif-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;!
- [82])) (./math/math-index.tex) (./demo.tex) [83] [84
-
-]
+) (./vocabulary/s.tex [24]) (./vocabulary/t.tex) (./vocabulary/u.tex [25]) (./vocabulary/v.tex) (./vocabulary/w.tex) (./vocabulary/x.tex) (./vocabulary/y.tex) (./vocabulary/z.tex)) (./math/math-index.tex) (./demo.tex) [26]
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
 
 
-Package biblatex Warning: Type 'article' not found on input line 142.
+Package biblatex Warning: Type 'article' not found on input line 141.
 
 
-LaTeX Warning: Empty bibliography on input line 142.
+LaTeX Warning: Empty bibliography on input line 141.
 
 
-Package biblatex Warning: Type 'book' not found on input line 148.
+Package biblatex Warning: Type 'book' not found on input line 147.
 
 
-LaTeX Warning: Empty bibliography on input line 148.
+LaTeX Warning: Empty bibliography on input line 147.
 
-[85] [86
+[27
+
+] [28
 
 ] (./main.ind
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
@@ -2180,59 +2094,37 @@ Overfull \hbox (1.20001pt too wide) in paragraph at lines 3--4
  []
 
 
-Overfull \hbox (7.61609pt too wide) in paragraph at lines 17--18
-[]\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 apprehend, apprehension, apprehensive
- []
-
-
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 28--29
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 30--31
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 34--35
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 37--38
 [][] 
  []
 
 
-Overfull \hbox (1.05704pt too wide) in paragraph at lines 48--50
-[]\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 contradict, contradiction, contradictory
- []
+Underfull \vbox (badness 1867) has occurred while \output is active []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 53--54
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 56--57
 [][] 
  []
 
-
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 66--67
-[][] 
- []
-
-[87
+[29
 
 ]
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 85--86
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 73--74
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 93--94
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 95--96
 [][] 
  []
 
 
-Overfull \hbox (25.66533pt too wide) in paragraph at lines 95--97
-[]\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 impede /ɪmˈpiːd/\TU/FZPingXYSJW.TTF(0)/m/n/10.95 ，| \TU/NotoSerif-Regular.ttf(0)/m/n/10.95 impediment /ɪmˈpedəmənt/
- []
-
-
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 104--105
-[][] 
- []
-
-
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 110--111
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 103--104
 [][] 
  []
 
@@ -2242,41 +2134,46 @@ Overfull \hbox (1.20001pt too wide) in paragraph at lines 118--119
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 124--125
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 125--126
 [][] 
  []
 
 
-Overfull \hbox (21.13202pt too wide) in paragraph at lines 132--134
-[]\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 precede, preceding, precedence /ˈpresɪdəns/
- []
-
-
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 148--149
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 133--134
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 155--156
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 140--141
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 174--175
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 169--170
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 191--192
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 176--177
 [][] 
  []
 
-[88]
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 197--198
+[30]
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 195--196
 [][] 
  []
 
-[89
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 212--213
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 218--219
+[][] 
+ []
+
+[31
 
 ])
 \tf@ptc=\write7
@@ -2286,17 +2183,23 @@ Overfull \hbox (1.20001pt too wide) in paragraph at lines 197--198
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38953 strings out of 476477
- 797768 string characters out of 5812099
- 1740206 words of memory out of 5000000
- 58625 multiletter control sequences out of 15000+600000
- 417128 words of font info for 130 fonts, out of 8000000 for 9000
+ 39240 strings out of 476477
+ 808465 string characters out of 5812099
+ 1752540 words of memory out of 5000000
+ 58928 multiletter control sequences out of 15000+600000
+ 417136 words of font info for 131 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  89i,12n,92p,733b,4705s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (89 pages).
+Output written on main.pdf (31 pages).
