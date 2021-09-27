@@ -332,11 +332,12 @@
 		% if optional parameter is null
 		\begin{vocabulary}[#1]
 			\index{#1}
-			See #1 (Vocabulary \ref{#1}).
+			% See \textbf{#1} (Vocabulary \ref{#1}).
+			\hyperref[#1]{See \textbf{#1} (Vocabulary \ref{#1})}.
 		}{
 		\begin{vocabulary}[#1]
 			\index{#2}
-			See #2 (Vocabulary \ref{#2}).
+			\hyperref[#2]{See \textbf{#2} (Vocabulary \ref{#2})}.
 			
 	}
 }{	% End Code
