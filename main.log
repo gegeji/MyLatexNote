@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  27 SEP 2021 17:03
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  27 SEP 2021 23:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1204,12 +1204,6 @@ LaTeX Warning: Label `extract' multiply defined.
 LaTeX Warning: Label `extract@cref' multiply defined.
 
 
-LaTeX Warning: Label `insectcide' multiply defined.
-
-
-LaTeX Warning: Label `insectcide@cref' multiply defined.
-
-
 LaTeX Warning: Label `invade' multiply defined.
 
 
@@ -1821,6 +1815,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
 Package microtype Info: Character `textendash ' is missing
 (microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/it/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1917,16 +1916,17 @@ Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             Ignoring protrusion settings for this character.
  [3
 
-])
+] [4])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [4] (./vocabulary/vocabulary-index.tex
+ [5] [6
+
+] (./vocabulary/vocabulary-index.tex
 \c@ttl@toc@default=\count498
- (./main.ptc) [5
+ (./main.ptc) [7
 
-
-] [6] (./roots/chap1.tex
+] [8] (./roots/chap1.tex
 Chapter 1.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
@@ -1966,30 +1966,63 @@ Package microtype Info: Character `textquotedblleft ' is missing
 Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
-[7
-
-]) (./roots/chap2.tex [8]
-Chapter 2.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
 [9
 
-]) (./roots/chap3.tex [10]
-Chapter 3.
+]) (./roots/chap2.tex [10]
+Chapter 2.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
 [11
 
-]) (./roots/chap4.tex [12]
-Chapter 4.
+]) (./roots/chap3.tex [12]
+Chapter 3.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
 [13
 
-]) [14] (./main.ptc) [15
+]) (./roots/chap4.tex [14]
+Chapter 4.
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
+[15
 
-] [16]
+]) (./roots/my-root.tex [16]
 Chapter 5.
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
+[17
+
+]
+
+LaTeX Warning: Hyper reference `impart, imparter' on page 18 undefined on input line 147.
+
+
+LaTeX Warning: Reference `impart, imparter' on page 18 undefined on input line 147.
+
+[18]
+
+LaTeX Warning: Hyper reference `impartment' on page 19 undefined on input line 171.
+
+
+LaTeX Warning: Reference `impartment' on page 19 undefined on input line 171.
+
+
+LaTeX Warning: Hyper reference `aggressor' on page 19 undefined on input line 185.
+
+
+LaTeX Warning: Reference `aggressor' on page 19 undefined on input line 185.
+
+[19]
+
+LaTeX Warning: Hyper reference `detraction' on page 20 undefined on input line 262.
+
+
+LaTeX Warning: Reference `detraction' on page 20 undefined on input line 262.
+
+) [20] (./main.ptc) [21
+
+] [22]
+Chapter 6.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
 (./vocabulary/a.tex
@@ -2015,55 +2048,73 @@ Package microtype Info: Character `textquotedblleft ' is missing
 Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/it/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-[17
+[23
 
 ]
-Overfull \hbox (18.5262pt too wide) in paragraph at lines 106--108
+Overfull \hbox (2.7857pt too wide) in paragraph at lines 100--101
+[]\TU/lmss/bx/n/10 Vocabulary 6.17 — apportion, apportionment. []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 to decide how something should be shared
+ []
+
+
+Overfull \hbox (18.5262pt too wide) in paragraph at lines 110--112
 []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 (old-fashioned) understand or perceive. ”\TU/NotoSerif-Regular.ttf(0)/m/it/10.95 great art invites us to apprehend beauty\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 ”;to
  []
 
 
-Overfull \hbox (4.01262pt too wide) in paragraph at lines 136--137
+Overfull \hbox (4.01262pt too wide) in paragraph at lines 140--141
 []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 to write a document containing the most important ideas or points from a speech,
  []
 
-) (./vocabulary/b.tex [18]) (./vocabulary/c.tex [19]) (./vocabulary/d.tex) (./vocabulary/e.tex [20]
+) (./vocabulary/b.tex [24]) (./vocabulary/c.tex [25]) (./vocabulary/d.tex) (./vocabulary/e.tex
+Underfull \vbox (badness 1092) has occurred while \output is active []
+
+ [26]
 Overfull \hbox (3.31935pt too wide) in paragraph at lines 53--55
 []\TU/NotoSerif-Regular.ttf(0)/m/it/10.95 an eloquent appeal for support \TU/NotoSerif-Regular.ttf(0)/m/n/10.95 showing a feeling or meaning without using words 
  []
 
-[21]) (./vocabulary/f.tex) (./vocabulary/g.tex) (./vocabulary/h.tex) (./vocabulary/i.tex) (./vocabulary/j.tex) (./vocabulary/k.tex) (./vocabulary/l.tex) (./vocabulary/m.tex [22]) (./vocabulary/n.tex) (./vocabulary/o.tex) (./vocabulary/p.tex
+[27]) (./vocabulary/f.tex) (./vocabulary/g.tex) (./vocabulary/h.tex) (./vocabulary/i.tex [28]) (./vocabulary/j.tex) (./vocabulary/k.tex) (./vocabulary/l.tex) (./vocabulary/m.tex) (./vocabulary/n.tex) (./vocabulary/o.tex) (./vocabulary/p.tex [29]
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
- [23]
 Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
-) (./vocabulary/q.tex) (./vocabulary/r.tex
+ [30]
+Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no → (U+2192) in font [NotoSerif-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no → (U+2192) in font [NotoSerif-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;!
+
+
+LaTeX Warning: Reference `inserticide' on page 31 undefined on input line 217.
+
+) (./vocabulary/q.tex) (./vocabulary/r.tex [31]
 Overfull \hbox (5.02621pt too wide) in paragraph at lines 8--10
-[]\TU/lmss/bx/n/10 Vocabulary 5.116 — retract, retractable. []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 if you retract something that you said or agreed,
+[]\TU/lmss/bx/n/10 Vocabulary 6.123 — retract, retractable. []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 if you retract something that you said or agreed,
  []
 
-[24]) (./vocabulary/s.tex [25]) (./vocabulary/t.tex) (./vocabulary/u.tex) (./vocabulary/v.tex) (./vocabulary/w.tex) (./vocabulary/x.tex) (./vocabulary/y.tex) (./vocabulary/z.tex)) (./math/math-index.tex) (./demo.tex) [26]
+) (./vocabulary/s.tex [32]) (./vocabulary/t.tex) (./vocabulary/u.tex) (./vocabulary/v.tex) (./vocabulary/w.tex) (./vocabulary/x.tex) (./vocabulary/y.tex) (./vocabulary/z.tex)) (./math/math-index.tex) (./demo.tex) [33] [34
+
+]
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
 
 
-Package biblatex Warning: Type 'article' not found on input line 141.
+Package biblatex Warning: Type 'article' not found on input line 143.
 
 
-LaTeX Warning: Empty bibliography on input line 141.
+LaTeX Warning: Empty bibliography on input line 143.
 
 
-Package biblatex Warning: Type 'book' not found on input line 147.
+Package biblatex Warning: Type 'book' not found on input line 149.
 
 
-LaTeX Warning: Empty bibliography on input line 147.
+LaTeX Warning: Empty bibliography on input line 149.
 
-[27
-
-] [28
+[35] [36
 
 ] (./main.ind
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
@@ -2074,89 +2125,83 @@ Overfull \hbox (1.20001pt too wide) in paragraph at lines 3--4
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 30--31
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 33--34
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 37--38
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 40--41
 [][] 
  []
 
 
-Underfull \vbox (badness 1867) has occurred while \output is active []
-
-
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 55--56
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 62--63
 [][] 
  []
 
-
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 70--71
-[][] 
- []
-
-
-Underfull \vbox (badness 1565) has occurred while \output is active []
-
- [29
+[37
 
 ]
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 92--93
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 80--81
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 100--101
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 103--104
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 114--115
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 111--112
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 121--122
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 132--133
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 129--130
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 139--140
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 136--137
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 147--148
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 165--166
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 154--155
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 172--173
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 189--190
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 190--191
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 196--197
 [][] 
  []
 
-[30]
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 207--208
+[38]
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 215--216
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 213--214
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 232--233
 [][] 
  []
 
-[31
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 238--239
+[][] 
+ []
+
+[39
 
 ])
 \tf@ptc=\write7
@@ -2167,6 +2212,9 @@ Overfull \hbox (1.20001pt too wide) in paragraph at lines 213--214
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -2174,12 +2222,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39239 strings out of 476477
- 808319 string characters out of 5812099
- 1752504 words of memory out of 5000000
- 58928 multiletter control sequences out of 15000+600000
+ 39503 strings out of 476477
+ 823804 string characters out of 5812099
+ 1756471 words of memory out of 5000000
+ 59189 multiletter control sequences out of 15000+600000
  417136 words of font info for 131 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  89i,12n,92p,733b,4705s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (31 pages).
+Output written on main.pdf (39 pages).
