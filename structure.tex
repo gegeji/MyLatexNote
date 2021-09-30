@@ -323,10 +323,10 @@
 \newtheorem{proposition}[dummy]{Proposition}
 
 % use ``word'' environment to wrap vocabulary and add index
-% \newenvironment{word}[1]{\begin{vocabulary}[#1] \index{#1}}{ \end{vocabulary}}
+% \newenvironment{DefWord}[1]{\begin{vocabulary}[#1] \index{#1}}{ \end{vocabulary}}
 
 \usepackage{xparse}
-\NewDocumentEnvironment{wordRef}{ m o}{
+\NewDocumentEnvironment{RefWord}{ m o}{
 	% Start Code
 	\IfNoValueTF{#2}{
 		% if optional parameter is null
@@ -343,7 +343,7 @@
 }{	% End Code
 		\end{vocabulary}
 }
-\NewDocumentEnvironment{word}{mo}{
+\NewDocumentEnvironment{DefWord}{mo}{
 	% Start Code
 	\IfNoValueTF{#2}{
 		\begin{vocabulary}[#1]

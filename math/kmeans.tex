@@ -192,18 +192,56 @@ $$ \nabla f(z)=\sum_{i=1}^{N}\left\{-2 x_{i}+2 z\right\}=0 $$ (求导 \ref{Defin
 
 $$ z=\frac{1}{N} \sum_{i=1}^{N} x_{i} $$
 
-\section{标量优化问题的例子}
+\section{标量优化问题的例子：投影问题}
+
+\begin{figure}[htbp]
+    \begin{center}
+        
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Straight Lines [id:da6245666898381868] 
+\draw    (101,120) -- (179.63,53.38) ;
+\draw [shift={(181.15,52.09)}, rotate = 499.72] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da028563208619883484] 
+\draw    (101,120) -- (129.15,119.79) -- (224.15,119.1) ;
+\draw [shift={(226.15,119.09)}, rotate = 539.5799999999999] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da8014408982517005] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (181.15,62.09) -- (181.15,114.09) ;
+%Straight Lines [id:da3438902495351597] 
+\draw [color={rgb, 255:red, 236; green, 29; blue, 29 }  ,draw opacity=1 ][fill={rgb, 255:red, 223; green, 36; blue, 36 }  ,fill opacity=1 ][line width=2.25]    (101,120) -- (172.65,119.48) ;
+\draw [shift={(177.65,119.44)}, rotate = 539.5799999999999] [fill={rgb, 255:red, 236; green, 29; blue, 29 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
+
+% Text Node
+\draw (228,110.4) node [anchor=north west][inner sep=0.75pt]    {$a$};
+% Text Node
+\draw (188,39.4) node [anchor=north west][inner sep=0.75pt]    {$b$};
+% Text Node
+\draw (139,123.4) node [anchor=north west][inner sep=0.75pt]    {$\hat{t} a$};
+% Text Node
+\draw (190,76.4) node [anchor=north west][inner sep=0.75pt]    {$b-\hat{t} a$};
+
+
+\end{tikzpicture}
+
+    \end{center}
+
+
+\end{figure}
 
 \begin{problem}
     假设$ a, b \in \mathbb{R}^{n}, a \neq 0, t \in \mathbb{R} $，当$t$ 多大时，$ta$到$b$之间的距离最小
 
-    $$ \min _{t}\|t a-b\|_{2}^{2} $$
+    $$ \hat{t}=\min _{t}\|t a-b\|_{2}^{2} $$
 
     $$ f(t)=\|t a-b\|_{2}^{2}=\langle t a-b, t a-b\rangle=t^{2} a^{T} a-2 t a^{T} b+b^{T} b $$
 
     $$ \nabla f(t)=2 t a^{T} a-2 a^{T} b=0 $$
 
-    $$ t=\frac{a^{T} b}{a^{T} a}=\frac{a^{T} b}{\|a\|_{2}^{2}} $$
+    $$ \hat{t}=\frac{a^{T} b}{a^{T} a}=\frac{a^{T} b}{\|a\|_{2}^{2}} $$
 \end{problem}
 
 \section{Clustering}
@@ -230,6 +268,8 @@ $$ z=\frac{1}{N} \sum_{i=1}^{N} x_{i} $$
     $$ \min _{z_{j}} \sum_{i \in G_{j}}\left\|x_{i}-z_{j}\right\|_{2}^{2}, j=1, \cdots, k $$
 
     $$ c_{i}=\underset{j=\{1, \cdots, k\}}{\operatorname{argmin}}\left\|x_{i}-z_{j}\right\|_{2}^{2}, i=1,2, \ldots, N $$
+
+    
 \end{problem}
 
 $k$-means算法是将 $ \mathrm{N} $ 向量 $ x_{i} \in \mathbb{R}^{n} $ 划分成$k$类的迭代聚类算法。

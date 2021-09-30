@@ -2,299 +2,316 @@
 \nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{A}}};\vspace*{0.2cm}\nopagebreak
 
-  \item abstain\dotfill \hyperpage{11}, \hyperpage{30}
-  \item abstract\dotfill \hyperpage{16}, \hyperpage{30}
-  \item adversary\dotfill \hyperpage{31}
-  \item adversity\dotfill \hyperpage{17}, \hyperpage{31}
-  \item agency\dotfill \hyperpage{9}, \hyperpage{29}
-  \item agenda\dotfill \hyperpage{9}, \hyperpage{29}
-  \item agent\dotfill \hyperpage{9}, \hyperpage{22}, \hyperpage{29}
-  \item aggress\dotfill \hyperpage{9}, \hyperpage{13}, \hyperpage{24}, 
-		\hyperpage{29}
-  \item ambulance\dotfill \hyperpage{13}, \hyperpage{29}
-  \item ambulant\dotfill \hyperpage{13}, \hyperpage{29}
-  \item ambulate\dotfill \hyperpage{13}, \hyperpage{29}
-  \item apart\dotfill \hyperpage{15}, \hyperpage{29}
-  \item apartment\dotfill \hyperpage{15}, \hyperpage{23}, 
-		\hyperpage{29}
-  \item apportion\dotfill \hyperpage{15}, \hyperpage{21}, 
-		\hyperpage{30}
-  \item apprehend\dotfill \hyperpage{11}, \hyperpage{30}
+  \item abstain\dotfill \hyperpage{11}, \hyperpage{32}
+  \item abstract\dotfill \hyperpage{16}, \hyperpage{32}
+  \item acclaim\dotfill \hyperpage{20}, \hyperpage{23}, \hyperpage{33}
+  \item adversary\dotfill \hyperpage{33}
+  \item adversity\dotfill \hyperpage{17}, \hyperpage{33}
+  \item advocate\dotfill \hyperpage{20}, \hyperpage{33}
+  \item agency\dotfill \hyperpage{9}, \hyperpage{31}
+  \item agenda\dotfill \hyperpage{9}, \hyperpage{31}
+  \item agent\dotfill \hyperpage{9}, \hyperpage{25}, \hyperpage{31}
+  \item aggress\dotfill \hyperpage{9}, \hyperpage{13}, \hyperpage{26}, 
+		\hyperpage{31}
+  \item ambulance\dotfill \hyperpage{13}, \hyperpage{31}
+  \item ambulant\dotfill \hyperpage{13}, \hyperpage{31}
+  \item ambulate\dotfill \hyperpage{13}, \hyperpage{31}
+  \item apart\dotfill \hyperpage{15}, \hyperpage{31}
+  \item apartment\dotfill \hyperpage{15}, \hyperpage{26}, 
+		\hyperpage{31}
+  \item apportion\dotfill \hyperpage{15}, \hyperpage{23}, 
+		\hyperpage{32}
+  \item apprehend\dotfill \hyperpage{11}, \hyperpage{32}
   \item aspect\dotfill \hyperpage{19}
-  \item aspire\dotfill \hyperpage{19}, \hyperpage{21}, \hyperpage{31}
-  \item attain\dotfill \hyperpage{11}, \hyperpage{30}
-  \item attract\dotfill \hyperpage{16}, \hyperpage{30}
-  \item audible\dotfill \hyperpage{29}
-  \item audience\dotfill \hyperpage{9}, \hyperpage{29}
-  \item audio\dotfill \hyperpage{9}, \hyperpage{29}
-  \item audition\dotfill \hyperpage{9}, \hyperpage{29}
-  \item auditorium\dotfill \hyperpage{24}, \hyperpage{29}
-  \item avert\dotfill \hyperpage{17}, \hyperpage{31}
+  \item aspire\dotfill \hyperpage{19}, \hyperpage{23}, \hyperpage{33}
+  \item attain\dotfill \hyperpage{11}, \hyperpage{32}
+  \item attract\dotfill \hyperpage{16}, \hyperpage{32}
+  \item audible\dotfill \hyperpage{31}
+  \item audience\dotfill \hyperpage{9}, \hyperpage{31}
+  \item audio\dotfill \hyperpage{9}, \hyperpage{31}
+  \item audition\dotfill \hyperpage{9}, \hyperpage{31}
+  \item auditorium\dotfill \hyperpage{26}, \hyperpage{31}
+  \item avert\dotfill \hyperpage{17}, \hyperpage{33}
 
   \indexspace
 \nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{B}}};\vspace*{0.2cm}\nopagebreak
 
-  \item binary\dotfill \hyperpage{21}, \hyperpage{31}
-  \item bisect\dotfill \hyperpage{16}, \hyperpage{21}, \hyperpage{31}
+  \item binary\dotfill \hyperpage{24}, \hyperpage{33}
+  \item bisect\dotfill \hyperpage{16}, \hyperpage{24}, \hyperpage{33}
 
   \indexspace
 \nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{C}}};\vspace*{0.2cm}\nopagebreak
 
-  \item circumspect\dotfill \hyperpage{19}, \hyperpage{32}
-  \item compass\dotfill \hyperpage{14}, \hyperpage{22}, \hyperpage{31}
-  \item compel\dotfill \hyperpage{17}, \hyperpage{22}, \hyperpage{32}
-  \item comprehend\dotfill \hyperpage{11}, \hyperpage{31}
-  \item comprehensive\dotfill \hyperpage{11}, \hyperpage{31}
-  \item comprise\dotfill \hyperpage{11}, \hyperpage{31}
-  \item concise\dotfill \hyperpage{16}, \hyperpage{22}, \hyperpage{32}
-  \item concur\dotfill \hyperpage{14}, \hyperpage{22}, \hyperpage{31}
-  \item concurrent\dotfill \hyperpage{14}, \hyperpage{22}, 
-		\hyperpage{31}
-  \item consecutive\dotfill \hyperpage{11}, \hyperpage{32}
-  \item consequent\dotfill \hyperpage{11}, \hyperpage{32}
-  \item conspire\dotfill \hyperpage{19}, \hyperpage{22}, \hyperpage{32}
-  \item contract\dotfill \hyperpage{16}, \hyperpage{22}, \hyperpage{32}
-  \item contractor\dotfill \hyperpage{24}, \hyperpage{31}
-  \item contradict\dotfill \hyperpage{9}, \hyperpage{22}, 
-		\hyperpage{31}
-  \item controversial\dotfill \hyperpage{17}, \hyperpage{32}
-  \item convert\dotfill \hyperpage{17}, \hyperpage{22}, \hyperpage{32}
-  \item countable, uncountable\dotfill \hyperpage{42}
-  \item counterpart\dotfill \hyperpage{15}, \hyperpage{22}, 
-		\hyperpage{31}
-  \item course\dotfill \hyperpage{14}, \hyperpage{31}
+  \item circumspect\dotfill \hyperpage{19}, \hyperpage{34}
+  \item compass\dotfill \hyperpage{14}, \hyperpage{24}, \hyperpage{33}
+  \item compel\dotfill \hyperpage{17}, \hyperpage{24}, \hyperpage{34}
+  \item comprehend\dotfill \hyperpage{11}, \hyperpage{33}
+  \item comprehensive\dotfill \hyperpage{11}, \hyperpage{33}
+  \item comprise\dotfill \hyperpage{11}, \hyperpage{34}
+  \item concise\dotfill \hyperpage{16}, \hyperpage{24}, \hyperpage{34}
+  \item concur\dotfill \hyperpage{14}, \hyperpage{24}, \hyperpage{33}
+  \item concurrent\dotfill \hyperpage{14}, \hyperpage{24}, 
+		\hyperpage{33}
+  \item consecutive\dotfill \hyperpage{11}, \hyperpage{34}
+  \item consequent\dotfill \hyperpage{11}, \hyperpage{34}
+  \item conspire\dotfill \hyperpage{19}, \hyperpage{24}, \hyperpage{34}
+  \item contract\dotfill \hyperpage{16}, \hyperpage{24}, \hyperpage{34}
+  \item contractor\dotfill \hyperpage{26}, \hyperpage{33}
+  \item contradict\dotfill \hyperpage{9}, \hyperpage{24}, 
+		\hyperpage{33}
+  \item controversial\dotfill \hyperpage{17}, \hyperpage{34}
+  \item convert\dotfill \hyperpage{17}, \hyperpage{24}, \hyperpage{34}
+  \item countable, uncountable\dotfill \hyperpage{44}
+  \item counterpart\dotfill \hyperpage{15}, \hyperpage{24}, 
+		\hyperpage{33}
+  \item course\dotfill \hyperpage{14}, \hyperpage{33}
 
   \indexspace
 \nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{D}}};\vspace*{0.2cm}\nopagebreak
 
-  \item decide\dotfill \hyperpage{16}, \hyperpage{22}, \hyperpage{33}
-  \item depart\dotfill \hyperpage{15}, \hyperpage{22}, \hyperpage{33}
-  \item department\dotfill \hyperpage{15}, \hyperpage{23}, 
-		\hyperpage{33}
-  \item detain\dotfill \hyperpage{12}, \hyperpage{33}
-  \item detract\dotfill \hyperpage{16}, \hyperpage{22}, \hyperpage{25}, 
-		\hyperpage{33}
-  \item detractor\dotfill \hyperpage{24}, \hyperpage{33}
-  \item devolve\dotfill \hyperpage{17}, \hyperpage{22}, \hyperpage{33}
-  \item dialogue\dotfill \hyperpage{9}, \hyperpage{33}
-  \item disconnect\dotfill \hyperpage{22}, \hyperpage{33}
-  \item dispel\dotfill \hyperpage{17}, \hyperpage{22}, \hyperpage{33}
-  \item dissect\dotfill \hyperpage{16}, \hyperpage{33}
-  \item distract\dotfill \hyperpage{16}, \hyperpage{22}, \hyperpage{33}
-  \item diverse\dotfill \hyperpage{17}, \hyperpage{34}
-  \item divert\dotfill \hyperpage{17}, \hyperpage{34}
-  \item doctor\dotfill \hyperpage{24}, \hyperpage{33}
+  \item decide\dotfill \hyperpage{16}, \hyperpage{24}, \hyperpage{35}
+  \item depart\dotfill \hyperpage{15}, \hyperpage{24}, \hyperpage{35}
+  \item department\dotfill \hyperpage{15}, \hyperpage{26}, 
+		\hyperpage{35}
+  \item detain\dotfill \hyperpage{12}, \hyperpage{35}
+  \item detract\dotfill \hyperpage{16}, \hyperpage{24}, \hyperpage{28}, 
+		\hyperpage{35}
+  \item detractor\dotfill \hyperpage{26}, \hyperpage{35}
+  \item devolve\dotfill \hyperpage{17}, \hyperpage{24}, \hyperpage{36}
+  \item dialogue\dotfill \hyperpage{9}, \hyperpage{35}
+  \item disclaim\dotfill \hyperpage{20}, \hyperpage{24}, \hyperpage{36}
+  \item disconnect\dotfill \hyperpage{24}, \hyperpage{35}
+  \item dispel\dotfill \hyperpage{17}, \hyperpage{24}, \hyperpage{35}
+  \item dissect\dotfill \hyperpage{16}, \hyperpage{35}
+  \item distract\dotfill \hyperpage{16}, \hyperpage{24}, \hyperpage{35}
+  \item diverse\dotfill \hyperpage{17}, \hyperpage{36}
+  \item divert\dotfill \hyperpage{17}, \hyperpage{36}
+  \item doctor\dotfill \hyperpage{26}, \hyperpage{35}
 
   \indexspace
 \nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{E}}};\vspace*{0.2cm}\nopagebreak
 
-  \item eloquent\dotfill \hyperpage{10}, \hyperpage{35}
-  \item employee\dotfill \hyperpage{23}
-  \item employer\dotfill \hyperpage{23}
-  \item enterprise\dotfill \hyperpage{11}, \hyperpage{35}
-  \item epilogue\dotfill \hyperpage{9}, \hyperpage{35}
-  \item evade\dotfill \hyperpage{14}, \hyperpage{35}
-  \item evolve\dotfill \hyperpage{22}, \hyperpage{35}
-  \item ex-boyfriend\dotfill \hyperpage{23}, \hyperpage{34}
-  \item exceed\dotfill \hyperpage{13}, \hyperpage{34}
-  \item excess\dotfill \hyperpage{23}, \hyperpage{34}
-  \item excessive\dotfill \hyperpage{13}, \hyperpage{34}
-  \item exchange\dotfill \hyperpage{23}, \hyperpage{34}
-  \item excise\dotfill \hyperpage{16}, \hyperpage{23}, \hyperpage{35}
-  \item excurse\dotfill \hyperpage{23}, \hyperpage{34}
-  \item excursion\dotfill \hyperpage{14}, \hyperpage{34}
-  \item execute\dotfill \hyperpage{11}, \hyperpage{35}
-  \item exhale\dotfill \hyperpage{20}, \hyperpage{23}, \hyperpage{36}
+  \item eloquent\dotfill \hyperpage{10}, \hyperpage{37}
+  \item employee\dotfill \hyperpage{25}
+  \item employer\dotfill \hyperpage{25}
+  \item enterprise\dotfill \hyperpage{11}, \hyperpage{37}
+  \item epilogue\dotfill \hyperpage{9}, \hyperpage{37}
+  \item evade\dotfill \hyperpage{14}, \hyperpage{37}
+  \item evoke\dotfill \hyperpage{20}, \hyperpage{25}, \hyperpage{38}
+  \item evolve\dotfill \hyperpage{25}, \hyperpage{38}
+  \item ex-boyfriend\dotfill \hyperpage{25}, \hyperpage{37}
+  \item exceed\dotfill \hyperpage{13}, \hyperpage{36}
+  \item excess\dotfill \hyperpage{25}, \hyperpage{37}
+  \item excessive\dotfill \hyperpage{13}, \hyperpage{36}
+  \item exchange\dotfill \hyperpage{25}, \hyperpage{37}
+  \item excise\dotfill \hyperpage{16}, \hyperpage{25}, \hyperpage{37}
+  \item exclaim\dotfill \hyperpage{20}
+  \item exclaim, exclaimation\dotfill \hyperpage{25}
+  \item excurse\dotfill \hyperpage{25}, \hyperpage{37}
+  \item excursion\dotfill \hyperpage{14}, \hyperpage{36}
+  \item execute\dotfill \hyperpage{11}, \hyperpage{37}
+  \item exhale\dotfill \hyperpage{20}, \hyperpage{25}, \hyperpage{38}
   \item expect\dotfill \hyperpage{19}
-  \item expedite\dotfill \hyperpage{14}, \hyperpage{35}
-  \item expedition\dotfill \hyperpage{14}, \hyperpage{35}
-  \item expel\dotfill \hyperpage{17}, \hyperpage{23}, \hyperpage{35}
-  \item expire\dotfill \hyperpage{19}, \hyperpage{23}, \hyperpage{36}
-  \item external\dotfill \hyperpage{23}, \hyperpage{34}
-  \item extract\dotfill \hyperpage{16}, \hyperpage{23}, 
-		\hyperpage{34, 35}
-  \item extractor\dotfill \hyperpage{24}, \hyperpage{35}
+  \item expedite\dotfill \hyperpage{14}, \hyperpage{37}
+  \item expedition\dotfill \hyperpage{14}, \hyperpage{37}
+  \item expel\dotfill \hyperpage{17}, \hyperpage{25}, \hyperpage{38}
+  \item expire\dotfill \hyperpage{19}, \hyperpage{25}, \hyperpage{38}
+  \item external\dotfill \hyperpage{25}, \hyperpage{37}
+  \item extract\dotfill \hyperpage{16}, \hyperpage{25}, \hyperpage{37}
+  \item extractor\dotfill \hyperpage{26}, \hyperpage{37}
 
   \indexspace
 \nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{G}}};\vspace*{0.2cm}\nopagebreak
 
-  \item gradual\dotfill \hyperpage{13}, \hyperpage{36}
-  \item gradually\dotfill \hyperpage{13}, \hyperpage{36}
-  \item graduate\dotfill \hyperpage{13}, \hyperpage{36}
+  \item gradual\dotfill \hyperpage{13}, \hyperpage{38}
+  \item gradually\dotfill \hyperpage{13}, \hyperpage{38}
+  \item graduate\dotfill \hyperpage{13}, \hyperpage{38}
 
   \indexspace
 \nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{I}}};\vspace*{0.2cm}\nopagebreak
 
-  \item impart\dotfill \hyperpage{15}, \hyperpage{23}, \hyperpage{37}
-  \item imparter\dotfill \hyperpage{23}, \hyperpage{37}
-  \item impede\dotfill \hyperpage{14}, \hyperpage{37}
-  \item impel\dotfill \hyperpage{17}, \hyperpage{38}
-  \item imperial\dotfill \hyperpage{38}
-  \item imperialism\dotfill \hyperpage{25}, \hyperpage{38}
-  \item imperialist\dotfill \hyperpage{23}, \hyperpage{38}
-  \item imprison\dotfill \hyperpage{11}, \hyperpage{37}
-  \item incise\dotfill \hyperpage{16}, \hyperpage{37}
-  \item incisor\dotfill \hyperpage{16}, \hyperpage{24}, \hyperpage{38}
-  \item inhale\dotfill \hyperpage{20}, \hyperpage{23}, \hyperpage{38}
-  \item insect\dotfill \hyperpage{16}, \hyperpage{37}
-  \item insectcide\dotfill \hyperpage{16}, \hyperpage{22}, 
-		\hyperpage{37}
-  \item insecticide\dotfill \hyperpage{16}, \hyperpage{37}
-  \item inside\dotfill \hyperpage{23}, \hyperpage{37}
+  \item impart\dotfill \hyperpage{15}, \hyperpage{25, 26}, 
+		\hyperpage{39}
+  \item imparter\dotfill \hyperpage{25}, \hyperpage{39}
+  \item impede\dotfill \hyperpage{14}, \hyperpage{39}
+  \item impel\dotfill \hyperpage{17}, \hyperpage{40}
+  \item imperial\dotfill \hyperpage{40}
+  \item imperialism\dotfill \hyperpage{27}, \hyperpage{40}
+  \item imperialist\dotfill \hyperpage{26}, \hyperpage{40}
+  \item imprison\dotfill \hyperpage{11}, \hyperpage{39}
+  \item incise\dotfill \hyperpage{16}, \hyperpage{39}
+  \item incisor\dotfill \hyperpage{16}, \hyperpage{26}, \hyperpage{40}
+  \item inhale\dotfill \hyperpage{20}, \hyperpage{25}, \hyperpage{40}
+  \item insect\dotfill \hyperpage{16}, \hyperpage{39}
+  \item insectcide\dotfill \hyperpage{16}, \hyperpage{24}, 
+		\hyperpage{39}
+  \item insecticide\dotfill \hyperpage{16}, \hyperpage{39}
+  \item inside\dotfill \hyperpage{25}, \hyperpage{39}
   \item inspect\dotfill \hyperpage{19}
-  \item inspire\dotfill \hyperpage{19}, \hyperpage{38}
-  \item intersect\dotfill \hyperpage{16}, \hyperpage{23}, 
-		\hyperpage{37}
-  \item introspect\dotfill \hyperpage{19}, \hyperpage{23}
+  \item inspire\dotfill \hyperpage{19}, \hyperpage{40}
+  \item intersect\dotfill \hyperpage{16}, \hyperpage{25}, 
+		\hyperpage{39}
+  \item introspect\dotfill \hyperpage{19}, \hyperpage{25}
   \item introspective\dotfill \hyperpage{19}
-  \item introvert\dotfill \hyperpage{17}, \hyperpage{38}
-  \item invade\dotfill \hyperpage{14}, \hyperpage{23}, \hyperpage{37}
+  \item introvert\dotfill \hyperpage{17}, \hyperpage{40}
+  \item invade\dotfill \hyperpage{14}, \hyperpage{25}, \hyperpage{39}
+  \item invoke\dotfill \hyperpage{20}, \hyperpage{40}
+  \item irregular\dotfill \hyperpage{26}
+  \item irrelevant\dotfill \hyperpage{26}
+  \item irresponsible\dotfill \hyperpage{26}
+  \item irrevocable\dotfill \hyperpage{26}
 
   \indexspace
 \nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{L}}};\vspace*{0.2cm}\nopagebreak
 
-  \item lavender\dotfill \hyperpage{14}, \hyperpage{38}
-  \item loquacious\dotfill \hyperpage{10}, \hyperpage{38}
+  \item lavender\dotfill \hyperpage{14}, \hyperpage{40}
+  \item loquacious\dotfill \hyperpage{10}, \hyperpage{40}
 
   \indexspace
 \nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{M}}};\vspace*{0.2cm}\nopagebreak
 
-  \item maintain\dotfill \hyperpage{11}, \hyperpage{38}
-  \item monitor\dotfill \hyperpage{24}, \hyperpage{38}
-  \item monologue\dotfill \hyperpage{9}, \hyperpage{38}
+  \item maintain\dotfill \hyperpage{11}, \hyperpage{40}
+  \item monitor\dotfill \hyperpage{26}, \hyperpage{40}
+  \item monologue\dotfill \hyperpage{9}, \hyperpage{40}
 
   \indexspace
 \nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{O}}};\vspace*{0.2cm}\nopagebreak
 
-  \item obtain\dotfill \hyperpage{11}, \hyperpage{38}
-  \item occur\dotfill \hyperpage{14}, \hyperpage{24}, \hyperpage{38}
+  \item obtain\dotfill \hyperpage{11}, \hyperpage{40}
+  \item occur\dotfill \hyperpage{14}, \hyperpage{26}, \hyperpage{40}
 
   \indexspace
 \nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{P}}};\vspace*{0.2cm}\nopagebreak
 
-  \item partake\dotfill \hyperpage{15}, \hyperpage{23}, \hyperpage{40}
-  \item partial\dotfill \hyperpage{15}, \hyperpage{39}
-  \item participate\dotfill \hyperpage{15}, \hyperpage{24}, 
-		\hyperpage{39}
-  \item particular\dotfill \hyperpage{15}, \hyperpage{40}
-  \item partition\dotfill \hyperpage{15}, \hyperpage{40}
-  \item partner\dotfill \hyperpage{15}, \hyperpage{23}, \hyperpage{39}
-  \item pass\dotfill \hyperpage{14}, \hyperpage{40}
-  \item passage\dotfill \hyperpage{14}, \hyperpage{40}
-  \item passenger\dotfill \hyperpage{14}, \hyperpage{40}
-  \item pedal\dotfill \hyperpage{14}, \hyperpage{40}
-  \item perspective\dotfill \hyperpage{19}, \hyperpage{24}, 
+  \item partake\dotfill \hyperpage{15}, \hyperpage{25}, \hyperpage{42}
+  \item partial\dotfill \hyperpage{15}, \hyperpage{41}
+  \item participate\dotfill \hyperpage{15}, \hyperpage{26}, 
 		\hyperpage{41}
-  \item perspire\dotfill \hyperpage{19}, \hyperpage{24}, \hyperpage{42}
-  \item pervade\dotfill \hyperpage{14}, \hyperpage{24}, 
-		\hyperpage{40, 41}
-  \item pervert\dotfill \hyperpage{17}, \hyperpage{41}
-  \item pesticide\dotfill \hyperpage{16}, \hyperpage{41}
-  \item portion\dotfill \hyperpage{15}, \hyperpage{41}
-  \item preamble\dotfill \hyperpage{13}, \hyperpage{39}
-  \item precede\dotfill \hyperpage{13}, \hyperpage{24}, \hyperpage{39}
-  \item precise\dotfill \hyperpage{16}, \hyperpage{24}, \hyperpage{41}
-  \item predict\dotfill \hyperpage{9}, \hyperpage{24}, \hyperpage{39}
-  \item presecute\dotfill \hyperpage{11}, \hyperpage{41}
-  \item previous\dotfill \hyperpage{24}, \hyperpage{41}
-  \item prison\dotfill \hyperpage{11}, \hyperpage{41}
-  \item proceed\dotfill \hyperpage{13}, \hyperpage{24}, \hyperpage{39}
-  \item progress\dotfill \hyperpage{13}, \hyperpage{24}, \hyperpage{39}
-  \item prologue\dotfill \hyperpage{9}, \hyperpage{39}
-  \item propel\dotfill \hyperpage{17}, \hyperpage{24}, \hyperpage{41}
-  \item propeller\dotfill \hyperpage{17}, \hyperpage{24}, 
-		\hyperpage{41}
-  \item proportion\dotfill \hyperpage{15}, \hyperpage{22}, 
-		\hyperpage{40}
-  \item prosecute\dotfill \hyperpage{11}, \hyperpage{41}
-  \item prospect\dotfill \hyperpage{19}, \hyperpage{24}
-  \item protract\dotfill \hyperpage{16}, \hyperpage{24}, \hyperpage{41}
+  \item particular\dotfill \hyperpage{15}, \hyperpage{42}
+  \item partition\dotfill \hyperpage{15}, \hyperpage{42}
+  \item partner\dotfill \hyperpage{15}, \hyperpage{25}, \hyperpage{41}
+  \item pass\dotfill \hyperpage{14}, \hyperpage{42}
+  \item passage\dotfill \hyperpage{14}, \hyperpage{42}
+  \item passenger\dotfill \hyperpage{14}, \hyperpage{42}
+  \item pedal\dotfill \hyperpage{14}, \hyperpage{42}
+  \item perspective\dotfill \hyperpage{19}, \hyperpage{26}, 
+		\hyperpage{43}
+  \item perspire\dotfill \hyperpage{19}, \hyperpage{26}, \hyperpage{44}
+  \item pervade\dotfill \hyperpage{14}, \hyperpage{26}, 
+		\hyperpage{42, 43}
+  \item pervert\dotfill \hyperpage{17}, \hyperpage{43}
+  \item pesticide\dotfill \hyperpage{16}, \hyperpage{43}
+  \item portion\dotfill \hyperpage{15}, \hyperpage{43}
+  \item preamble\dotfill \hyperpage{13}, \hyperpage{41}
+  \item precede\dotfill \hyperpage{13}, \hyperpage{27}, \hyperpage{41}
+  \item precise\dotfill \hyperpage{16}, \hyperpage{27}, \hyperpage{43}
+  \item predict\dotfill \hyperpage{9}, \hyperpage{27}, \hyperpage{41}
+  \item presecute\dotfill \hyperpage{11}, \hyperpage{43}
+  \item previous\dotfill \hyperpage{27}, \hyperpage{43}
+  \item prison\dotfill \hyperpage{11}, \hyperpage{43}
+  \item proceed\dotfill \hyperpage{13}, \hyperpage{27}, \hyperpage{41}
+  \item proclaim\dotfill \hyperpage{20}, \hyperpage{27}, \hyperpage{45}
+  \item progress\dotfill \hyperpage{13}, \hyperpage{27}, \hyperpage{41}
+  \item prologue\dotfill \hyperpage{9}, \hyperpage{41}
+  \item propel\dotfill \hyperpage{17}, \hyperpage{27}, \hyperpage{43}
+  \item propeller\dotfill \hyperpage{17}, \hyperpage{27}, 
+		\hyperpage{43}
+  \item proportion\dotfill \hyperpage{15}, \hyperpage{24}, 
+		\hyperpage{42}
+  \item prosecute\dotfill \hyperpage{11}, \hyperpage{43}
+  \item prospect\dotfill \hyperpage{19}, \hyperpage{27}
+  \item protract\dotfill \hyperpage{16}, \hyperpage{27}, \hyperpage{43}
+  \item provoke\dotfill \hyperpage{20}, \hyperpage{27}, \hyperpage{44}
 
   \indexspace
 \nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{R}}};\vspace*{0.2cm}\nopagebreak
 
-  \item rebel\dotfill \hyperpage{24}, \hyperpage{43}
-  \item repel\dotfill \hyperpage{17}, \hyperpage{43}
+  \item rebel\dotfill \hyperpage{27}, \hyperpage{45}
+  \item reclaim\dotfill \hyperpage{20}, \hyperpage{27}, \hyperpage{46}
+  \item repel\dotfill \hyperpage{17}, \hyperpage{45}
   \item respect\dotfill \hyperpage{19}
-  \item respire\dotfill \hyperpage{20}, \hyperpage{25}, \hyperpage{43}
-  \item retain\dotfill \hyperpage{12}, \hyperpage{42}
-  \item retract\dotfill \hyperpage{16}, \hyperpage{42}
-  \item retrospect\dotfill \hyperpage{19}, \hyperpage{25}, 
-		\hyperpage{43}
+  \item respire\dotfill \hyperpage{20}, \hyperpage{27}, \hyperpage{45}
+  \item retain\dotfill \hyperpage{12}, \hyperpage{45}
+  \item retract\dotfill \hyperpage{16}, \hyperpage{45}
+  \item retrospect\dotfill \hyperpage{19}, \hyperpage{27}, 
+		\hyperpage{45}
   \item retrospective\dotfill \hyperpage{19}
-  \item revert\dotfill \hyperpage{17}, \hyperpage{24}, \hyperpage{43}
-  \item revolt\dotfill \hyperpage{25}, \hyperpage{43}
-  \item revolve\dotfill \hyperpage{18}, \hyperpage{24, 25}, 
-		\hyperpage{43}
+  \item revert\dotfill \hyperpage{17}, \hyperpage{27}, \hyperpage{45}
+  \item revoke\dotfill \hyperpage{27}, \hyperpage{46}
+  \item revoke, revocable, irrevocable\dotfill \hyperpage{20}
+  \item revolt\dotfill \hyperpage{27}, \hyperpage{45}
+  \item revolve\dotfill \hyperpage{18}, \hyperpage{27}, \hyperpage{45}
 
   \indexspace
 \nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{S}}};\vspace*{0.2cm}\nopagebreak
 
-  \item section\dotfill \hyperpage{15}, \hyperpage{43}
-  \item segment\dotfill \hyperpage{16}, \hyperpage{44}
-  \item sequel\dotfill \hyperpage{11}, \hyperpage{44}
-  \item sequence\dotfill \hyperpage{11}, \hyperpage{44}
-  \item spectacle\dotfill \hyperpage{19}, \hyperpage{45}
-  \item spectacular\dotfill \hyperpage{19}, \hyperpage{45}
-  \item spectator\dotfill \hyperpage{19}, \hyperpage{24}, 
-		\hyperpage{45}
+  \item section\dotfill \hyperpage{15}, \hyperpage{46}
+  \item segment\dotfill \hyperpage{16}, \hyperpage{46}
+  \item sequel\dotfill \hyperpage{11}, \hyperpage{47}
+  \item sequence\dotfill \hyperpage{11}, \hyperpage{46}
+  \item spectacle\dotfill \hyperpage{19}, \hyperpage{47}
+  \item spectacular\dotfill \hyperpage{19}, \hyperpage{47}
+  \item spectator\dotfill \hyperpage{19}, \hyperpage{26}, 
+		\hyperpage{47}
   \item spectrum\dotfill \hyperpage{19}
-  \item subconscious, subconsciously\dotfill \hyperpage{25}, 
-		\hyperpage{44}
-  \item subsequent\dotfill \hyperpage{11}, \hyperpage{44}
-  \item subtract\dotfill \hyperpage{16}, \hyperpage{25}, \hyperpage{44}
-  \item subvert\dotfill \hyperpage{17}, \hyperpage{25}, \hyperpage{44}
-  \item succession\dotfill \hyperpage{13}, \hyperpage{43}
-  \item successor\dotfill \hyperpage{13}, \hyperpage{43}
-  \item suicide\dotfill \hyperpage{16}, \hyperpage{44}
-  \item surprise\dotfill \hyperpage{11}, \hyperpage{43}
-  \item susceptible\dotfill \hyperpage{25}, \hyperpage{44}
+  \item subconscious, subconsciously\dotfill \hyperpage{27}, 
+		\hyperpage{47}
+  \item subsequent\dotfill \hyperpage{11}, \hyperpage{47}
+  \item subtract\dotfill \hyperpage{16}, \hyperpage{27}, \hyperpage{47}
+  \item subvert\dotfill \hyperpage{17}, \hyperpage{27}, \hyperpage{47}
+  \item succession\dotfill \hyperpage{13}, \hyperpage{46}
+  \item successor\dotfill \hyperpage{13}, \hyperpage{46}
+  \item suicide\dotfill \hyperpage{16}, \hyperpage{47}
+  \item surprise\dotfill \hyperpage{11}, \hyperpage{46}
+  \item susceptible\dotfill \hyperpage{27}, \hyperpage{47}
   \item suspect\dotfill \hyperpage{19}
-  \item suspect, suspicion\dotfill \hyperpage{25}, \hyperpage{44}
-  \item suspend, suspension\dotfill \hyperpage{25}, \hyperpage{44}
-  \item sustain\dotfill \hyperpage{11}, \hyperpage{44}
+  \item suspect, suspicion\dotfill \hyperpage{27}, \hyperpage{47}
+  \item suspend, suspension\dotfill \hyperpage{27}, \hyperpage{47}
+  \item sustain\dotfill \hyperpage{11}, \hyperpage{47}
 
   \indexspace
 \nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{T}}};\vspace*{0.2cm}\nopagebreak
 
-  \item traction\dotfill \hyperpage{16}, \hyperpage{45}
-  \item tractor\dotfill \hyperpage{16}, \hyperpage{24}, \hyperpage{45}
-  \item tranplant\dotfill \hyperpage{21}, \hyperpage{45}
-  \item transcipt\dotfill \hyperpage{21}, \hyperpage{45}
-  \item transfer\dotfill \hyperpage{21}, \hyperpage{45}
-  \item transform\dotfill \hyperpage{21}, \hyperpage{45}
-  \item transformer\dotfill \hyperpage{21}, \hyperpage{45}
-  \item transit\dotfill \hyperpage{21}, \hyperpage{45}
-  \item transmit\dotfill \hyperpage{21}, \hyperpage{45}
-  \item transport\dotfill \hyperpage{21}, \hyperpage{45}
-  \item transribe\dotfill \hyperpage{21}, \hyperpage{45}
-  \item trespass\dotfill \hyperpage{14}, \hyperpage{21}, \hyperpage{45}
+  \item traction\dotfill \hyperpage{16}, \hyperpage{48}
+  \item tractor\dotfill \hyperpage{16}, \hyperpage{26}, \hyperpage{48}
+  \item tranplant\dotfill \hyperpage{23}, \hyperpage{47}
+  \item transcipt\dotfill \hyperpage{23}, \hyperpage{47}
+  \item transfer\dotfill \hyperpage{23}, \hyperpage{47}
+  \item transform\dotfill \hyperpage{23}, \hyperpage{47}
+  \item transformer\dotfill \hyperpage{23}, \hyperpage{47}
+  \item transit\dotfill \hyperpage{23}, \hyperpage{47}
+  \item transmit\dotfill \hyperpage{23}, \hyperpage{47}
+  \item transport\dotfill \hyperpage{23}, \hyperpage{47}
+  \item transribe\dotfill \hyperpage{23}, \hyperpage{47}
+  \item trespass\dotfill \hyperpage{14}, \hyperpage{23}, \hyperpage{48}
 
   \indexspace
 \nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{U}}};\vspace*{0.2cm}\nopagebreak
 
-  \item upgrade\dotfill \hyperpage{13}, \hyperpage{45}
+  \item upgrade\dotfill \hyperpage{13}, \hyperpage{48}
 
   \indexspace
 \nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{V}}};\vspace*{0.2cm}\nopagebreak
 
-  \item visible\dotfill \hyperpage{9}, \hyperpage{45}
-  \item visual\dotfill \hyperpage{9}, \hyperpage{45}
-  \item VOLVE\dotfill \hyperpage{18}, \hyperpage{45}
+  \item visible\dotfill \hyperpage{9}, \hyperpage{48}
+  \item visual\dotfill \hyperpage{9}, \hyperpage{48}
+  \item vocal\dotfill \hyperpage{20}, \hyperpage{26}, \hyperpage{48}
+  \item vocation\dotfill \hyperpage{20}, \hyperpage{48}
+  \item VOLVE\dotfill \hyperpage{18}, \hyperpage{48}
 
 \end{theindex}

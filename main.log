@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  29 SEP 2021 23:37
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  1 OCT 2021 07:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1922,11 +1922,11 @@ Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             Ignoring protrusion settings for this character.
  [3
 
-] [4])
+] [4] [5])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [5] [6] (./vocabulary/vocabulary-index.tex
+ [6] (./vocabulary/vocabulary-index.tex
 \c@ttl@toc@default=\count498
  (./main.ptc) [7
 
@@ -2075,53 +2075,105 @@ LaTeX Warning: Reference `perspire' on page 19 undefined on input line 86.
 
 [19
 
-]) (./roots/my-root.tex [20]
+]
+
+LaTeX Warning: Hyper reference `revoke, revocable, irrevocable' on page 20 undefined on input line 113.
+
+
+LaTeX Warning: Reference `revoke, revocable, irrevocable' on page 20 undefined on input line 113.
+
+
+LaTeX Warning: Hyper reference `exclaim' on page 20 undefined on input line 148.
+
+
+LaTeX Warning: Reference `exclaim' on page 20 undefined on input line 148.
+
+
+LaTeX Warning: Hyper reference `reclaim' on page 20 undefined on input line 151.
+
+
+LaTeX Warning: Reference `reclaim' on page 20 undefined on input line 151.
+
+) [20] (./main.ptc) [21
+
+] [22] (./roots/my-root.tex
 Chapter 7.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-[21
+[23
 
-] [22]
+] [24]
 
-LaTeX Warning: Hyper reference `employer' on page 23 undefined on input line 149.
-
-
-LaTeX Warning: Reference `employer' on page 23 undefined on input line 149.
+LaTeX Warning: Hyper reference `employer' on page 25 undefined on input line 159.
 
 
-LaTeX Warning: Hyper reference `employee' on page 23 undefined on input line 152.
+LaTeX Warning: Reference `employer' on page 25 undefined on input line 159.
 
 
-LaTeX Warning: Reference `employee' on page 23 undefined on input line 152.
+LaTeX Warning: Hyper reference `employee' on page 25 undefined on input line 162.
 
 
-LaTeX Warning: Hyper reference `introspect' on page 23 undefined on input line 210.
+LaTeX Warning: Reference `employee' on page 25 undefined on input line 162.
 
 
-LaTeX Warning: Reference `introspect' on page 23 undefined on input line 210.
-
-[23]
-
-LaTeX Warning: Hyper reference `perspective' on page 24 undefined on input line 280.
+LaTeX Warning: Hyper reference `exclaim, exclaimation' on page 25 undefined on input line 198.
 
 
-LaTeX Warning: Reference `perspective' on page 24 undefined on input line 280.
+LaTeX Warning: Reference `exclaim, exclaimation' on page 25 undefined on input line 198.
 
 
-LaTeX Warning: Hyper reference `perspire' on page 24 undefined on input line 283.
+LaTeX Warning: Hyper reference `introspect' on page 25 undefined on input line 223.
 
 
-LaTeX Warning: Reference `perspire' on page 24 undefined on input line 283.
+LaTeX Warning: Reference `introspect' on page 25 undefined on input line 223.
 
 
-LaTeX Warning: Hyper reference `prospect' on page 24 undefined on input line 316.
+LaTeX Warning: Hyper reference `irregular' on page 25 undefined on input line 228.
 
 
-LaTeX Warning: Reference `prospect' on page 24 undefined on input line 316.
+LaTeX Warning: Reference `irregular' on page 25 undefined on input line 228.
 
-[24]) [25] [26
+[25]
 
-] (./main.ptc) [27] [28]
+LaTeX Warning: Hyper reference `irrevocable' on page 26 undefined on input line 231.
+
+
+LaTeX Warning: Reference `irrevocable' on page 26 undefined on input line 231.
+
+
+LaTeX Warning: Hyper reference `irrelevant' on page 26 undefined on input line 237.
+
+
+LaTeX Warning: Reference `irrelevant' on page 26 undefined on input line 237.
+
+
+LaTeX Warning: Hyper reference `perspective' on page 26 undefined on input line 309.
+
+
+LaTeX Warning: Reference `perspective' on page 26 undefined on input line 309.
+
+
+LaTeX Warning: Hyper reference `perspire' on page 26 undefined on input line 312.
+
+
+LaTeX Warning: Reference `perspire' on page 26 undefined on input line 312.
+
+[26]
+
+LaTeX Warning: Hyper reference `prospect' on page 27 undefined on input line 345.
+
+
+LaTeX Warning: Reference `prospect' on page 27 undefined on input line 345.
+
+
+LaTeX Warning: Hyper reference `reclaim' on page 27 undefined on input line 377.
+
+
+LaTeX Warning: Reference `reclaim' on page 27 undefined on input line 377.
+
+[27]) [28] (./main.ptc) [29
+
+] [30]
 Chapter 8.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
@@ -2148,7 +2200,7 @@ Package microtype Info: Character `textquotedblleft ' is missing
 Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/it/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-[29
+[31
 
 ]
 Overfull \hbox (2.7857pt too wide) in paragraph at lines 100--101
@@ -2170,7 +2222,7 @@ Overfull \hbox (9.79199pt too wide) in paragraph at lines 149--151
 []\TU/lmss/bx/n/10 Vocabulary 8.23 — avert. []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 to prevent something unpleasant from happening \TU/NotoSerif-Regular.ttf(0)/m/it/10.95 The tragedy
  []
 
-[30]
+[32]
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 
 Overfull \hbox (4.50212pt too wide) in paragraph at lines 164--165
@@ -2179,35 +2231,35 @@ Overfull \hbox (4.50212pt too wide) in paragraph at lines 164--165
 
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
-) (./vocabulary/b.tex) (./vocabulary/c.tex [31]
+) (./vocabulary/b.tex) (./vocabulary/c.tex [33]
 Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
- [32]) (./vocabulary/d.tex
+ [34]) (./vocabulary/d.tex
 Missing character: There is no ﹑ (U+FE51) in font [NotoSerif-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+ [35]
 Missing character: There is no ﹑ (U+FE51) in font [NotoSerif-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
- [33]
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
-) (./vocabulary/e.tex [34]
+) (./vocabulary/e.tex [36]
 Overfull \hbox (3.31935pt too wide) in paragraph at lines 53--55
 []\TU/NotoSerif-Regular.ttf(0)/m/it/10.95 an eloquent appeal for support \TU/NotoSerif-Regular.ttf(0)/m/n/10.95 showing a feeling or meaning without using words 
  []
 
-[35]) (./vocabulary/f.tex) (./vocabulary/g.tex) [36]
+[37]) (./vocabulary/f.tex) (./vocabulary/g.tex) [38]
 Chapter 9.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-(./vocabulary/h.tex) (./vocabulary/i.tex [37
+(./vocabulary/h.tex) (./vocabulary/i.tex [39
 
 ]
 Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
-) (./vocabulary/j.tex) (./vocabulary/k.tex) (./vocabulary/l.tex) (./vocabulary/m.tex) (./vocabulary/n.tex) (./vocabulary/o.tex) [38]
+) (./vocabulary/j.tex) (./vocabulary/k.tex) (./vocabulary/l.tex) (./vocabulary/m.tex) (./vocabulary/n.tex) (./vocabulary/o.tex) [40]
 Chapter 10.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
@@ -2215,13 +2267,13 @@ File: Pictures//chapter_head_3.png Graphic file (type bmp)
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
- [39
+ [41
 
 ]
 Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
- [40]
+ [42]
 Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 Missing character: There is no → (U+2192) in font [NotoSerif-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;!
@@ -2233,12 +2285,12 @@ Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 
 
-LaTeX Warning: Hyper reference `perspective' on page 41 undefined on input line 242.
+LaTeX Warning: Hyper reference `perspective' on page 43 undefined on input line 242.
 
 
-LaTeX Warning: Reference `perspective' on page 41 undefined on input line 242.
+LaTeX Warning: Reference `perspective' on page 43 undefined on input line 242.
 
-[41]
+[43]
 
 LaTeX Font Warning: Font shape `TU/FZPingXYSJW.TTF(0)/b/it' undefined
 (Font)              using `TU/FZPingXYSJW.TTF(0)/b/n' instead on input line 252.
@@ -2255,26 +2307,38 @@ Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 
-LaTeX Warning: Hyper reference `perspire' on page 42 undefined on input line 294.
+LaTeX Warning: Hyper reference `perspire' on page 44 undefined on input line 294.
 
 
-LaTeX Warning: Reference `perspire' on page 42 undefined on input line 294.
+LaTeX Warning: Reference `perspire' on page 44 undefined on input line 294.
 
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
-) (./vocabulary/q.tex) (./vocabulary/r.tex
-Overfull \hbox (5.02621pt too wide) in paragraph at lines 8--10
-[]\TU/lmss/bx/n/10 Vocabulary 10.36 — retract, retractable. []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 if you retract something that you said or agreed,
+
+Overfull \hbox (11.02747pt too wide) in paragraph at lines 301--302
+[]\TU/lmss/bx/n/10 Vocabulary 10.35 — provoke, provocation, provocative. []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 provocation /ˌprɒvəˈkeɪʃən/ provoca-
  []
 
-[42]
+[44]
 Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
 Missing character: There is no → (U+2192) in font [NotoSerif-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;!
-) (./vocabulary/s.tex [43] [44]
-Missing character: There is no – (U+2013) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
-) (./vocabulary/t.tex) (./vocabulary/u.tex) (./vocabulary/v.tex) (./vocabulary/w.tex) (./vocabulary/x.tex) (./vocabulary/y.tex) (./vocabulary/z.tex)) (./math/math-index.tex) (./demo.tex) [45] [46
+) (./vocabulary/q.tex) (./vocabulary/r.tex
+Overfull \hbox (5.02621pt too wide) in paragraph at lines 8--10
+[]\TU/lmss/bx/n/10 Vocabulary 10.38 — retract, retractable. []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 if you retract something that you said or agreed,
+ []
 
-]
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no → (U+2192) in font [NotoSerif-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;!
+[45]
+
+LaTeX Warning: Hyper reference `reclaim' on page 46 undefined on input line 80.
+
+
+LaTeX Warning: Reference `reclaim' on page 46 undefined on input line 80.
+
+) (./vocabulary/s.tex [46]
+Missing character: There is no – (U+2013) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+) (./vocabulary/t.tex [47]) (./vocabulary/u.tex) (./vocabulary/v.tex) (./vocabulary/w.tex) (./vocabulary/x.tex) (./vocabulary/y.tex) (./vocabulary/z.tex)) (./math/math-index.tex) (./demo.tex) [48]
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
 
@@ -2290,7 +2354,9 @@ Package biblatex Warning: Type 'book' not found on input line 149.
 
 LaTeX Warning: Empty bibliography on input line 149.
 
-[47] [48
+[49
+
+] [50
 
 ] (./main.ind
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
@@ -2301,89 +2367,88 @@ Overfull \hbox (1.20001pt too wide) in paragraph at lines 3--4
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 36--37
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 38--39
 [][] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 43--44
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 45--46
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 71--72
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 73--74
 [][] 
  []
 
 
 Underfull \vbox (badness 5091) has occurred while \output is active []
 
- [49
+ [51
 
 ]
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 93--94
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 96--97
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 124--125
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 129--130
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 132--133
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 137--138
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 161--162
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 172--173
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 168--169
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 179--180
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 176--177
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 187--188
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 183--184
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 194--195
 [][] 
  []
 
-[50]
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 225--226
-[][] 
- []
-
-
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 243--244
+[52]
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 238--239
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 271--272
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 258--259
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 288--289
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 286--287
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 294--295
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 303--304
 [][] 
  []
 
-[51])
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 309--310
+[][] 
+ []
+
+[53] [54
+
+])
 \tf@ptc=\write7
 \openout7 = `main.ptc'.
 
@@ -2402,12 +2467,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39709 strings out of 476477
- 830340 string characters out of 5812099
- 1760358 words of memory out of 5000000
- 59389 multiletter control sequences out of 15000+600000
+ 39751 strings out of 476477
+ 831434 string characters out of 5812099
+ 1762489 words of memory out of 5000000
+ 59429 multiletter control sequences out of 15000+600000
  417136 words of font info for 131 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  89i,12n,92p,733b,4705s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (51 pages).
+Output written on main.pdf (54 pages).
