@@ -1,0 +1,76 @@
+\chapter{Hidden Markov Map Matching}
+
+Source: \cite{newson2009hidden}.
+
+\section{论文动机}
+
+\subsection{原始数据}
+
+the raw input
+data consists of vehicle \textit{locations} measured by GPS, Each measured point consists of a time-stamped
+latitude/longitude pair. 
+
+The \textit{roads} are also represented in the
+conventional way, as a graph of nodes and edges.
+The \textit{nodes} are at
+intersections, dead ends, and road name changes, and the edges
+represent road segments between the nodes. Some \textit{edges} are
+directional to indicate one-way roads. Each node has an associated
+latitude/longitude to indicate its location, and each edge has a
+polyline （折线） of latitude/longitude pairs to represent its geometry.
+
+\section{其他论文的方法}
+
+create a (possibly smoothed) curve
+from the location measurements and attempt to find matching
+roads with similar geometry
+
+\begin{example}
+White et al. 
+present four algorithms, starting with the simple, nearest match
+scheme. 
+Their second algorithm \textbf{adds orientation information to
+the nearest match approach}, comparing the measured heading to
+the angle of the road. Their third algorithm evolves the second
+algorithm to \textbf{include connectivity constraints}, and their fourth
+algorithm does \textbf{curve matching}. 
+
+\begin{remark}
+    their most sophisticated algorithm, the fourth one, was
+outperformed by the simpler second algorithm when tested on a
+total of about 17 km of driving data.
+\end{remark}
+\end{example}
+
+builds up a
+topologically feasible path through the road network. Matches are
+determined by a similarity measure that weights errors based on
+distance and orientation. The algorithm was found to perform flawlessly, even though the GPS data was collected while
+\textit{Selective Availability} was turned on, leading to noisier location
+measurements than are available now.
+
+Kim and Kim [10] look at a
+way to measure how much each GPS point belongs to any given
+road, taking into account its distance from the road, the shape of
+the road segment, and the continuity of the path. The measure is
+used in a fuzzy matching scheme with learned parameters to
+optimize performance.
+
+Brakatsoulas et al. [3]. Their
+algorithm uses variations of the Fréchet distance to match the
+curve of the GPS trace to candidate paths in the road network.
+
+
+
+\section{论文贡献}
+
+maintaining a principled approach to the problem while simultaneously making
+the algorithm robust to location data that is both \textbf{geometrically noisy and temporally sparse}.
+
+a test of
+our map matching algorithm where we vary the levels of noise
+and sparseness of the sensed location data over a 50 mile urban
+drive
+
+\section{模型}
+

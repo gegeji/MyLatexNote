@@ -74,7 +74,7 @@ F_{n}(x)=\frac{1}{n} S(x),-\infty<x<\infty .
 $$
 容易得到的 $ \left(\boldsymbol{F}_{n}(\boldsymbol{x})\right. $ 的观察值仍以 $ \boldsymbol{F}_{n}(\boldsymbol{x}) $ 表示). 
 一般地,设 $ \boldsymbol{x}_{1}, \boldsymbol{x}_{2}, \cdots, \boldsymbol{x}_{n} $ 是总体 $ \boldsymbol{F} $ 的一个容量为 $ \boldsymbol{n} $ 的样本值
-先将 $ \boldsymbol{x}_{1}, \boldsymbol{x}_{2}, \cdots, \boldsymbol{x}_{n} $ 按自小到大的次序排列，并重新编号. 
+先将 $ \boldsymbol{x}_{1}, \boldsymbol{x}_{2}, \cdots, \boldsymbol{x}_{n} $ 按自小到大的次序排列, 并重新编号. 
 
 设为
 $$
@@ -91,22 +91,22 @@ F_{n}(x)=\left\{\begin{array}{ll}
 \end{array}\right.
 $$
 
-经验分布函数的任一个观察值 $F_n(x)$ 与总体分布函数 $F(x)$ 只有微小的差别，从而在实际上可当作 $F(x)$ 来使用. 
+经验分布函数的任一个观察值 $F_n(x)$ 与总体分布函数 $F(x)$ 只有微小的差别, 从而在实际上可当作 $F(x)$ 来使用. 
 
 \section{Q-Q图 (Quantile-quantile Plot)}
 
-Q-Q图是Quantile-Quantile Plot的简称，是检验拟合优度的好方法，目前在国外被广泛使用，它的图示方法简单直观，易于使用. 
+Q-Q图是Quantile-Quantile Plot的简称, 是检验拟合优度的好方法, 目前在国外被广泛使用, 它的图示方法简单直观, 易于使用. 
 
-现在我们希望知道观测数据与分布模型的拟合效果如何. 如果拟合效果好，观测数据的经验分布就应当非常接近分布模型的理论分布，而经验分布函数的分位数自然也应当与分布模型的理论分位数近似相等. 
+现在我们希望知道观测数据与分布模型的拟合效果如何. 如果拟合效果好, 观测数据的经验分布就应当非常接近分布模型的理论分布, 而经验分布函数的分位数自然也应当与分布模型的理论分位数近似相等. 
 
 \begin{algorithm}
     \caption{作Q-Q图}
     
 \KwIn{观测数据$x_1,x_2,\cdots,x_n$}
 将$x_1,x_2,\cdots,x_n$依大小顺序排列成：$x_{(1)}\le x_{(2)}\le\cdots\le x_{(n)}$\;
-取$y_i=F^{-1}((i-1/2)/n)，i=1,2,\cdots,n$\;
-将$(y_i,x_{(i)})，i=1,2,\cdots,n$，这$n$个点画在直角坐标图上\;
-如果这$n$个点看起来呈一条$45^\circ$角的直线，从$(0,0)$到$(1,1)$分布，我们就相信$x_1,x_2,\cdots,x_n$拟合分布$F(x)$的效果很好. 
+取$y_i=F^{-1}((i-1/2)/n), i=1,2,\cdots,n$\;
+将$(y_i,x_{(i)}), i=1,2,\cdots,n$, 这$n$个点画在直角坐标图上\;
+如果这$n$个点看起来呈一条$45^\circ$角的直线, 从$(0,0)$到$(1,1)$分布, 我们就相信$x_1,x_2,\cdots,x_n$拟合分布$F(x)$的效果很好. 
 \end{algorithm}
 
 \section{$\chi^2$拟合优度检验}
@@ -116,8 +116,8 @@ Q-Q图是Quantile-Quantile Plot的简称，是检验拟合优度的好方法，�
 \begin{algorithm}
 \caption{$\chi^2$拟合优度检验}
 建立待检假设$H_0$：总体X的分布函数为$F(x)$\;
-在数轴上选取$k-1$个分点$t_1,t_2,\cdots,t_{k-1}$，将数轴分成$k$个区间：$(-\infty,t_1)，[t_1,t_2)，…，[t_{k-2},t_{k-1})，[t_{k-1},+\infty)$，令$p_i$为分布函数$F(x)$的总体$X$在第$i$个区间内取值的概率，设$m_i$为$n$个样本观察值中落入第$i$个区间上的个数，也称为组频数\;
-选取统计量$\chi^2=\sum_{i=1}^{k}\frac{(m_i-np_i)^2}{np_i}=\sum_{i=1}^{k}{\frac{m_i^2}{np_i}-n}$，如果$H_0$为真，则$\chi^2 \sim \chi^2(k-1-r)$，其中$r$为分布函数$F(x)$中未知参数的个数\;
+在数轴上选取$k-1$个分点$t_1,t_2,\cdots,t_{k-1}$, 将数轴分成$k$个区间：$(-\infty,t_1), [t_1,t_2), …, [t_{k-2},t_{k-1}), [t_{k-1},+\infty)$, 令$p_i$为分布函数$F(x)$的总体$X$在第$i$个区间内取值的概率, 设$m_i$为$n$个样本观察值中落入第$i$个区间上的个数, 也称为组频数\;
+选取统计量$\chi^2=\sum_{i=1}^{k}\frac{(m_i-np_i)^2}{np_i}=\sum_{i=1}^{k}{\frac{m_i^2}{np_i}-n}$, 如果$H_0$为真, 则$\chi^2 \sim \chi^2(k-1-r)$, 其中$r$为分布函数$F(x)$中未知参数的个数\;
 对于给定的显著性水平 \( \alpha \), 确定 \( \chi_{\alpha}^{2} \), 使其满足 \( P\left\{\chi^{2}(k-1-r)>\chi_{\alpha}^{2}\right\}=\alpha_{\circ} \) \;
 依据样本计算统计量 \( \chi^{2} \) 的观察值, 作出判
 为总体 \( X \) 的分布函数为 \( F(x) \) \;
@@ -125,59 +125,59 @@ Q-Q图是Quantile-Quantile Plot的简称，是检验拟合优度的好方法，�
 
 \section{柯尔莫哥洛夫(Kolmogorov-Smirnov)检验}
 
-$\chi^2$拟合优度检验实际上是检验$p_i=F_0(a_i)-F_0(a_{i-1})=p_{i0}（i=1,2,\cdots,k）$的正确性，并未直接检验原假设的分布函数$F_0(x)$的正确性，柯尔莫哥洛夫检验直接针对原假设$H_0:F(x)=F_0(x)$，这里分布函数$F_0(x)$必须是连续型分布. 柯尔莫哥洛夫检验基于经验分布函数(或称样本分布函数)作为检验统计量，检验理论分布函数与样本分布函数的拟合优度. 
+$\chi^2$拟合优度检验实际上是检验$p_i=F_0(a_i)-F_0(a_{i-1})=p_{i0}（i=1,2,\cdots,k）$的正确性, 并未直接检验原假设的分布函数$F_0(x)$的正确性, 柯尔莫哥洛夫检验直接针对原假设$H_0:F(x)=F_0(x)$, 这里分布函数$F_0(x)$必须是连续型分布. 柯尔莫哥洛夫检验基于经验分布函数(或称样本分布函数)作为检验统计量, 检验理论分布函数与样本分布函数的拟合优度. 
 
-设总体X服从连续分布，$X_1,X_2,\cdots,X_n$是来自总体$X$的简单随机样本，$F_n$为经验分布函数. 当$H_0$为真时，根据大数定律，当$n$趋于无穷大时，经验分布函数$F_n(x)$依概率收敛总体分布函数$F_0(x)$. 定义$F_n(x)$到$F_0(x)$的距离为
-$$D_n={sup}_{-\infty<x<+\infty}\left|F_n(x)-F_0(x)\right|$$，
-当$n$趋于无穷大时，$D_n$依概率收敛到$0$. 
+设总体X服从连续分布, $X_1,X_2,\cdots,X_n$是来自总体$X$的简单随机样本, $F_n$为经验分布函数. 当$H_0$为真时, 根据大数定律, 当$n$趋于无穷大时, 经验分布函数$F_n(x)$依概率收敛总体分布函数$F_0(x)$. 定义$F_n(x)$到$F_0(x)$的距离为
+$$D_n={sup}_{-\infty<x<+\infty}\left|F_n(x)-F_0(x)\right|$$, 
+当$n$趋于无穷大时, $D_n$依概率收敛到$0$. 
 
 \begin{theorem}[Kolmogorov定理]  
-    在$F_0(x)$为连续分布的假定下，当原假设为真时，$\sqrt n D_n$的极限分布为
+    在$F_0(x)$为连续分布的假定下, 当原假设为真时, $\sqrt n D_n$的极限分布为
 $$ \lim _{n \rightarrow \infty} P\left\{\sqrt{n} D_{n} \leq t\right\}=1-2 \sum_{i=1}^{\infty}(-1)^{i-1} e^{-2 i^{2} t^{2}}, t>0 $$  
-在显著性水平$\alpha$下，一个合理的检验是：如果$\sqrt n D_n>k$，则拒绝原假设，其中k是合适的常数.    
+在显著性水平$\alpha$下, 一个合理的检验是：如果$\sqrt n D_n>k$, 则拒绝原假设, 其中k是合适的常数.    
 \end{theorem}
 
 \begin{algorithm}[]
     \caption{柯尔莫哥洛夫检验}
      （1）原假设和备择假设
-$$  H_0:F(x)=F_0(x)，H_1:F(x)\neq F_0(x)$$.\\
+$$  H_0:F(x)=F_0(x), H_1:F(x)\neq F_0(x)$$.\\
 （2）选取检验统计量
-$$D_n=\operatorname{sup}_{-\infty<x<+\infty} \left|F_n(x)-F_0(x)\right|$$，
-当$H_0$为真时，$D_n$有偏小趋势，则拟合得越好；
-当$H_0$不真时，$D_n$有偏大趋势，则拟合得越差. \\
+$$D_n=\operatorname{sup}_{-\infty<x<+\infty} \left|F_n(x)-F_0(x)\right|$$, 
+当$H_0$为真时, $D_n$有偏小趋势, 则拟合得越好；
+当$H_0$不真时, $D_n$有偏大趋势, 则拟合得越差. \\
 （3）确定拒绝域
-给定显著性水平$\alpha$，查$D_n$极限分布表，求出$t_\alpha$满足
-$P{\sqrt n D_n\geq t_\alpha}=\alpha$，
-作为临界值，即拒绝域为$[t_\alpha,+\infty)$. \\
+给定显著性水平$\alpha$, 查$D_n$极限分布表, 求出$t_\alpha$满足
+$P{\sqrt n D_n\geq t_\alpha}=\alpha$, 
+作为临界值, 即拒绝域为$[t_\alpha,+\infty)$. \\
 （4）作判断
-计算统计量的观察值，如果检验统计量$\sqrt n D_n$的观察值落在拒绝域中，则拒绝原假设，否则不拒绝原假设.    
+计算统计量的观察值, 如果检验统计量$\sqrt n D_n$的观察值落在拒绝域中, 则拒绝原假设, 否则不拒绝原假设.    
 \end{algorithm}
 
-注：对于固定的$\alpha$值，我们需要知道该$\alpha$值下检验的临界值. 常用的是在统计量为$D_n$时，各个$\alpha$值所对应的临界值如下：在$\alpha=0.1$的显著性水平下，检验的临界值是$1.22/\sqrt n$；在$\alpha=0.05$的显著性水平下，检验的临界值是$1.36/\sqrt n$；在$\alpha=0.01$的显著性水平下，检验的临界值是$1.63/\sqrt n$. 这里$n$为样本的个数. 当由样本计算出来的$D_n$值小于临界值时，说明不能拒绝原假设，所假设的分布是可以接受的；当由样本计算出来的$D_n$值大于临界值时，拒绝原假设，即所假设的分布是不能接受的. 
+注：对于固定的$\alpha$值, 我们需要知道该$\alpha$值下检验的临界值. 常用的是在统计量为$D_n$时, 各个$\alpha$值所对应的临界值如下：在$\alpha=0.1$的显著性水平下, 检验的临界值是$1.22/\sqrt n$；在$\alpha=0.05$的显著性水平下, 检验的临界值是$1.36/\sqrt n$；在$\alpha=0.01$的显著性水平下, 检验的临界值是$1.63/\sqrt n$. 这里$n$为样本的个数. 当由样本计算出来的$D_n$值小于临界值时, 说明不能拒绝原假设, 所假设的分布是可以接受的；当由样本计算出来的$D_n$值大于临界值时, 拒绝原假设, 即所假设的分布是不能接受的. 
 
 \section{秩和检验}
 
 \begin{algorithm}\caption{秩和检验}
 \KwIn{设分别从 \( X 、 Y \) 两总体中独立抽取大小为 \( n_{1} \) 和 \( n_{2} \) 的样
 本, 设 \( \boldsymbol{n}_{1} \leq \boldsymbol{n}_{2} \)} 
-将两个样本混合起来，按照数值大小统一编序由小到大，每个数据对应的序数称为秩. \;
-计算取自总体 \( X \) 的样本所对应的秩之和，用 \( \boldsymbol{T} \) 表 示\;
+将两个样本混合起来, 按照数值大小统一编序由小到大, 每个数据对应的序数称为秩. \;
+计算取自总体 \( X \) 的样本所对应的秩之和, 用 \( \boldsymbol{T} \) 表 示\;
 根据 \( \boldsymbol{n}_{1}, \boldsymbol{n}_{2} \) 与水平 \( \alpha \), 查秩和检验表, 得秩和下限 \( \boldsymbol{T}_{1} \) 与上限 \( \boldsymbol{T}_{\mathbf{2}} \) \;
 两总体分布有显著差异. 否则认为 \( X 、 Y \) 两总体分布
 在水平 \( \alpha \) 下无显著差异\;
 \end{algorithm}
 
-秩和检验的依据是，如果两总体分布无显著差异，那么$T$不应太大或太小，以$T_1$和$T_2$为上、下界的话，则$T$应在这两者之间，如果$T$太大或太小，则认为两总体的分布有显著差异. 
+秩和检验的依据是, 如果两总体分布无显著差异, 那么$T$不应太大或太小, 以$T_1$和$T_2$为上、下界的话, 则$T$应在这两者之间, 如果$T$太大或太小, 则认为两总体的分布有显著差异. 
 
 \section{方差分析 (Analysis of Variance, ANOVA)}
 
-在现实问题中，经常会遇到类似考察两台机床生产的零件尺寸是否相等，病人和正常人的某个生理指标是否一样，采用两种不同的治疗方案对同一类病人的治疗效果比较等问题. 这类问题通常会归纳为检验两个不同总体的均值是否相等，对这类问题的解决可以采用两个总体的均值检验方法. 但若检验总体多于两个，仍采用多总体均值检验方法会遇到困难. 
+在现实问题中, 经常会遇到类似考察两台机床生产的零件尺寸是否相等, 病人和正常人的某个生理指标是否一样, 采用两种不同的治疗方案对同一类病人的治疗效果比较等问题. 这类问题通常会归纳为检验两个不同总体的均值是否相等, 对这类问题的解决可以采用两个总体的均值检验方法. 但若检验总体多于两个, 仍采用多总体均值检验方法会遇到困难. 
 
 \subsection{单因素方差分析}
 
-只考虑一个因素A所关心的指标的影响，A取几个水平在每个水平上作若干个试验，假定试验过程中除因素自身外其他影响指标的因素都保持不变（只有随机因素存在）. 我们的任务是从试验结果推断，因素A对指标有无显著影响，即当A取不同水平时指标有无显著差异A取某个水平下的指标视为随机变量，判断A取不同水平时指标有无显著差别，相当于检验若千总体的均值是否相等. 
+只考虑一个因素A所关心的指标的影响, A取几个水平在每个水平上作若干个试验, 假定试验过程中除因素自身外其他影响指标的因素都保持不变（只有随机因素存在）. 我们的任务是从试验结果推断, 因素A对指标有无显著影响, 即当A取不同水平时指标有无显著差异A取某个水平下的指标视为随机变量, 判断A取不同水平时指标有无显著差别, 相当于检验若千总体的均值是否相等. 
 
-不妨设 $A$ 取 $r$ 个水平, 分别记为 $A_{1}, A_{2}, \cdots, A_{r} \circ$ 若在水平 $A_{i}$ 下总体 $X_{i} \sim N\left(\mu_{i}, \sigma^{2}\right), i=1,2, \cdots, r$, 这里 $\mu_{i}, \sigma^{2}$ 未知, $\mu_{i}$ 可以互不相同，但假定 $X_{i}$ 有相同的方差.  设在水平 $A_{i}$ 下作了n $n_{i}$ 次独立试验，即从总体 $X_{i}$ 中抽取样 本容量为 $n_{i}$ 的样本, 记作
+不妨设 $A$ 取 $r$ 个水平, 分别记为 $A_{1}, A_{2}, \cdots, A_{r} \circ$ 若在水平 $A_{i}$ 下总体 $X_{i} \sim N\left(\mu_{i}, \sigma^{2}\right), i=1,2, \cdots, r$, 这里 $\mu_{i}, \sigma^{2}$ 未知, $\mu_{i}$ 可以互不相同, 但假定 $X_{i}$ 有相同的方差.  设在水平 $A_{i}$ 下作了n $n_{i}$ 次独立试验, 即从总体 $X_{i}$ 中抽取样 本容量为 $n_{i}$ 的样本, 记作
 
 $$
 X_{i j}, j=1,2, \cdots, n_{i}
@@ -202,12 +202,12 @@ $$
 \end{table}
 
 
-表\cref{tab:anovaData}中对应 $A_{i}$ 行的数据称为第 $i$ 组数据. 判断 $\boldsymbol{A}$ 的 $\boldsymbol{r}$ 个水平对指标有无显著影响，相当于作以下的假设检验:
+表\cref{tab:anovaData}中对应 $A_{i}$ 行的数据称为第 $i$ 组数据. 判断 $\boldsymbol{A}$ 的 $\boldsymbol{r}$ 个水平对指标有无显著影响, 相当于作以下的假设检验:
 
 原假设 $H_{0}: \mu_{1}=\mu_{2}=\cdots=\mu_{r} ;$
 备择假设 $\boldsymbol{H}_{1}: \mu_{1}, \mu_{2}, \cdots, \mu_{r}$ 不全相等. 
 
-由于 \( X_{i j} \) 的取值既受不同水平 \( A_{i} \) 的影响, 又受 \( A_{i} \) 固 定下随机因素的影响，所以将它分解为
+由于 \( X_{i j} \) 的取值既受不同水平 \( A_{i} \) 的影响, 又受 \( A_{i} \) 固 定下随机因素的影响, 所以将它分解为
 $$
 X_{i j}=\mu_{i}+\varepsilon_{i j}, i=1,2, \cdots, r, j=1,2, \cdots, n_{i}\label{eq:anovaDecomposition}
 $$
@@ -216,7 +216,7 @@ $$
 \mu=\frac{1}{n} \sum_{i=1}^{r} n_{i} \mu_{i}, \quad n=\sum_{i=1}^{r} n_{i}, \quad \alpha_{i}=\mu_{i}-\mu, \quad i=1, \cdots, r
 $$
 称 \( \mu \) 为总均值, \( \alpha_{i} \) 是水平 \( A_{i} \) 下总体的平均值 \( \mu_{i} \) 与总评
-均值 \( \mu \) 的差异，习惯上称为指标 \( \boldsymbol{A}_{i} \) 的效应. 
+均值 \( \mu \) 的差异, 习惯上称为指标 \( \boldsymbol{A}_{i} \) 的效应. 
 
 \begin{definition}
 原假设 $H_{0}: \mu_{1}=\mu_{2}=\cdots=\mu_{r} ;$
@@ -257,10 +257,10 @@ $$
     
     $$ \begin{aligned} \text { 记 } S_{A}=& \sum_{i=1}^{r} n_{i}\left(\bar{X}_{i \cdot}-\bar{X}\right)^{2}, \\ S_{E}=& \sum_{i=1}^{r} \sum_{j=1}^{n_{i}}\left(X_{i j}-\bar{X}_{i \cdot}\right)^{2}, \\ \text { 则 } & S_{T}=S_{A}+S_{E}, \end{aligned} $$
     
-    \( \boldsymbol{S}_{\boldsymbol{A}} \) 是各组均值对总平均值的偏差平方和，反映 \( \boldsymbol{A} \) 不同水
-    平间的差异, 称为组间平方和; \( \boldsymbol{S}_{E} \) 是各组内的数据对样本均值偏差平方和的总和，反映了样本观测值与样本均
-    值的差异，称为组内平方和，而这种差异认为是由随机
-    误差引起的，因此也称为误差平方和. 
+    \( \boldsymbol{S}_{\boldsymbol{A}} \) 是各组均值对总平均值的偏差平方和, 反映 \( \boldsymbol{A} \) 不同水
+    平间的差异, 称为组间平方和; \( \boldsymbol{S}_{E} \) 是各组内的数据对样本均值偏差平方和的总和, 反映了样本观测值与样本均
+    值的差异, 称为组内平方和, 而这种差异认为是由随机
+    误差引起的, 因此也称为误差平方和. 
     
     注意到 \( \sum_{j=1}^{n_{i}}\left(X_{i j}-\bar{X}_{i 0}\right)^{2} \) 是总体 \( N\left(\mu_{i}, \sigma^{2}\right) \) 的样本方差
     的 \( \boldsymbol{n}_{\boldsymbol{i}}-\mathbf{1} \) 倍, 于是有
@@ -294,7 +294,7 @@ $$
     \frac{S_{A} /(r-1)}{S_{E} /(n-r)} \approx 1
     $$
     
-    该比值服从自由度 \( \boldsymbol{n}_{1}=\boldsymbol{r}-\mathbf{1}, \boldsymbol{n}_{2}=(\boldsymbol{n}-\boldsymbol{r}) \) 的 \( \boldsymbol{F} \) 分布，即
+    该比值服从自由度 \( \boldsymbol{n}_{1}=\boldsymbol{r}-\mathbf{1}, \boldsymbol{n}_{2}=(\boldsymbol{n}-\boldsymbol{r}) \) 的 \( \boldsymbol{F} \) 分布, 即
     $$
     F=\frac{S_{A} /(r-1)}{S_{E} /(n-r)} \sim F(r-1, n-r)
     $$
@@ -328,7 +328,7 @@ $$
 
 \subsection{双因素方差分析方法}
 
-如果要考虑两个因素对指标的影响，就要采用双因素方差分析. 它的基本思想是：对每个因素各取几个水平然后对各因素不同水平的每个组合作一次或若千次试验对所得数据进行方差分析. 对双因素方差分析可分为无重复和等重复试验两种情况，无重复试验只需检验两因素是否分别对指标有显著影响；而对等重复试验还要进步检验两因素是否对指标有显著的交互影响. 
+如果要考虑两个因素对指标的影响, 就要采用双因素方差分析. 它的基本思想是：对每个因素各取几个水平然后对各因素不同水平的每个组合作一次或若千次试验对所得数据进行方差分析. 对双因素方差分析可分为无重复和等重复试验两种情况, 无重复试验只需检验两因素是否分别对指标有显著影响；而对等重复试验还要进步检验两因素是否对指标有显著的交互影响. 
 
 设 \( \boldsymbol{A} \) 取 \( \boldsymbol{s} \) 个 水 平 \( \boldsymbol{A}_{\mathbf{1}}, \boldsymbol{A}_{2}, \cdots, \boldsymbol{A}_{s}, \quad \boldsymbol{B} \) 取 \( \boldsymbol{r} \) 个 水 平
 \( \boldsymbol{B}_{1}, \boldsymbol{B}_{2}, \cdots, \boldsymbol{B}_{r} \), 在 水平组合 \( \left(\boldsymbol{B}_{i}, \boldsymbol{A}_{j}\right) \) 下总体 \( \boldsymbol{X}_{i j} \) 服从正态
@@ -385,7 +385,7 @@ $$
 
 \subsection{无交互影响的双因素方差分析}
 
-没有交互影响，每组试验就不必重复，即可令 \( \boldsymbol{t}=\mathbf{1} \),
+没有交互影响, 每组试验就不必重复, 即可令 \( \boldsymbol{t}=\mathbf{1} \),
 过程大为简化. 
 $$
 \mu_{i j}=\mu+\alpha_{j}+\beta_{i}, \quad i=1, \cdots, r, j=1, \cdots, s,
@@ -417,8 +417,8 @@ r \sum_{j=1}^{s}\left(\bar{X}_{\cdot j}-\bar{X}\right)^{2} \\
 =S_{E}+S_{A}+S_{B}
 \end{array}
 $$
-可以验证，在上述平方和分解中交叉项均
-为 0，其中
+可以验证, 在上述平方和分解中交叉项均
+为 0, 其中
 $$
 \begin{array}{c}
 S_{E}=\sum_{i=1}^{r} \sum_{j=1}^{s}\left(X_{i j}-\bar{X}_{i \cdot}-\bar{X}_{\cdot j}+\bar{X}\right)^{2} \\
@@ -428,13 +428,13 @@ S_{B}= s \sum_{i=1}^{r}\left(\bar{X}_{i \cdot}-\bar{X}\right)^{2}
 $$
 
 我们先来看看 \( \boldsymbol{S}_{A} \) 的统计意义. 因为 \( \overline{\boldsymbol{X}}_{\mathbf{\cdot} j} \) 是水平 \( \boldsymbol{A}_{j} \) 下所
-有 观 测 值 的平 均， 所 以 \( \sum_{j=1}^{s}\left(\bar{X}_{\cdot j}-\bar{X}\right)^{2} \) 反 映 了
+有 观 测 值 的平 均,  所 以 \( \sum_{j=1}^{s}\left(\bar{X}_{\cdot j}-\bar{X}\right)^{2} \) 反 映 了
 \( \overline{\boldsymbol{X}}_{\mathbf{- 1}}, \overline{\boldsymbol{X}}_{\cdot 2}, \cdots, \overline{\boldsymbol{X}}_{\boldsymbol{\cdot}} \) 差异的程度 \( _{\circ} \) 这种差异是由于因素 \( \boldsymbol{A} \) 的
-不同水平所引起的，因此 \( S_{A} \) 称为因素 \( A \) 的平方和. 类
-似地， \( \boldsymbol{S}_{B} \) 称为因素 \( \boldsymbol{B} \) 的平方和. 至于 \( \boldsymbol{S}_{E} \) 的意义不甚明
-显，我们可以这样来理解：
+不同水平所引起的, 因此 \( S_{A} \) 称为因素 \( A \) 的平方和. 类
+似地,  \( \boldsymbol{S}_{B} \) 称为因素 \( \boldsymbol{B} \) 的平方和. 至于 \( \boldsymbol{S}_{E} \) 的意义不甚明
+显, 我们可以这样来理解：
 
-因为 \( S_{E}=S_{T}-S_{A}-S_{B} \), 在我们所考虑的两因素问题 中，除了因素 \( \boldsymbol{A} \) 和 \( \boldsymbol{B} \) 之外，剩余的再没有其它系统性 因素的影响，因此从总平方和中减去 \( \boldsymbol{S}_{A} \) 和 \( \boldsymbol{S}_{B} \) 之后，剩 下的数据变差只能归入随机误差, 故 \( S_{E} \) 反映了试验的 随机误差. 
+因为 \( S_{E}=S_{T}-S_{A}-S_{B} \), 在我们所考虑的两因素问题 中, 除了因素 \( \boldsymbol{A} \) 和 \( \boldsymbol{B} \) 之外, 剩余的再没有其它系统性 因素的影响, 因此从总平方和中减去 \( \boldsymbol{S}_{A} \) 和 \( \boldsymbol{S}_{B} \) 之后, 剩 下的数据变差只能归入随机误差, 故 \( S_{E} \) 反映了试验的 随机误差. 
 
 有了总平方和的分解式 \( S_{T}=S_{E}+S_{A}+S_{B} \), 以及各个
 验统计量应取为 \( \boldsymbol{S}_{A} \) 与 \( \boldsymbol{S}_{E} \) 的比. 
@@ -448,7 +448,7 @@ $$
 检验规则为
 
 \( F_{A}<F_{\alpha}(s-1,(r-1)(s-1)) \) 时接受 \( H_{01} \), 否则拒绝\( H_{01} \)；
-\( F_{B}<F_{\alpha}(r-1,(r-1)(s-1)) \) 时接受 \( H_{02} \)，否则拒绝\( H_{02} \)；
+\( F_{B}<F_{\alpha}(r-1,(r-1)(s-1)) \) 时接受 \( H_{02} \), 否则拒绝\( H_{02} \)；
 
 \begin{table}
    \begin{tabular}{c|c|c|c|c}
@@ -464,7 +464,7 @@ $$
 
 \subsection{关于交互效应的双因素方差分析}
 
-与前面方法类似，记
+与前面方法类似, 记
 $$
 \begin{array}{l}
 \bar{X}=\frac{1}{r s t} \sum_{i=1}^{r} \sum_{j=1}^{s} \sum_{k=1}^{t} X_{i j k}, \bar{X}_{i j \cdot}=\frac{1}{t} \sum_{k=1}^{t} X_{i j k}, \\
@@ -476,7 +476,7 @@ $$
 $$
 S_{T}=\sum_{i=1}^{r} \sum_{j=1}^{s} \sum_{k=1}^{t}\left(X_{i j k}-\bar{X}\right)^{2}
 $$
-进行分解，可待
+进行分解, 可待
 $$
 S_{T}=S_{E}+S_{A}+S_{B}+S_{A B},
 $$
@@ -490,7 +490,7 @@ S_{A B} &=t \sum_{i=1}^{r} \sum_{j=1}^{s}\left(\bar{X}_{i j \cdot}-\bar{X}_{i \c
 \end{aligned}
 $$
 
-称 \( S_{E} \) 为误差平方和， \( \boldsymbol{S}_{A} \) 为因素 \( \boldsymbol{A} \) 的平方和 \( ( \) 或列间平 方和 \( ), S_{B} \) 为因素 \( B \) 的平方和 (或行间平方和 \( ), S_{A B} \) 为 交互作用的平方和（或格间平方和 \( ) \) . 
+称 \( S_{E} \) 为误差平方和,  \( \boldsymbol{S}_{A} \) 为因素 \( \boldsymbol{A} \) 的平方和 \( ( \) 或列间平 方和 \( ), S_{B} \) 为因素 \( B \) 的平方和 (或行间平方和 \( ), S_{A B} \) 为 交互作用的平方和（或格间平方和 \( ) \) . 
 $$
 F_{A B}=\frac{\frac{S_{A B}}{(r-1)(s-1)}}{\frac{S_{E}}{r s(t-1)}} \sim F((r-1)(s-1), r s(t-1))
 $$
@@ -499,7 +499,7 @@ $$
 水平 \( \alpha \), 检验的结论为:
 为交互作用显著. 
 将试验数据按上述分析、计算的结果排成表 \( 7.20 \) 的
-形式，称为双因素方差分析表. 
+形式, 称为双因素方差分析表. 
 
 \begin{tabular}{|c|c|c|c|c|}
     \hline
@@ -564,15 +564,15 @@ $$
 F=\frac{U / m}{Q /(n-m-1)} \sim F(m, n-m-1),
 $$
 
-在显著性水平 \( \alpha \) 下，对于上 \( \alpha \) 分位数 \( \boldsymbol{F}_{\alpha}(\boldsymbol{m}, \boldsymbol{n}-\boldsymbol{m}-\mathbf{1}) \),
+在显著性水平 \( \alpha \) 下, 对于上 \( \alpha \) 分位数 \( \boldsymbol{F}_{\alpha}(\boldsymbol{m}, \boldsymbol{n}-\boldsymbol{m}-\mathbf{1}) \),
 注：接受 \( \boldsymbol{H}_{0} \) 只说明 \( \boldsymbol{y} \) 与 \( \boldsymbol{x}_{1}, \cdots, \boldsymbol{x}_{m} \) 的线性关系不明
-显，可能存在非线性关系，如平方关系.  还有一些衡量 \( y \) 与 \( x_{1}, \cdots, x_{m} \) 相关程度的指标，如 用回归平方和在总平方和中的比值定义复判定系数
+显, 可能存在非线性关系, 如平方关系.  还有一些衡量 \( y \) 与 \( x_{1}, \cdots, x_{m} \) 相关程度的指标, 如 用回归平方和在总平方和中的比值定义复判定系数
 $$
 \boldsymbol{R}^{2}=\frac{\boldsymbol{U}}{\boldsymbol{S S T}}
 $$
 
 \( \boldsymbol{R}=\sqrt{\boldsymbol{R}^{2}} \) 称为复相关系数, \( \boldsymbol{R} \) 越大, \( \boldsymbol{y} \) 与 \( \boldsymbol{x}_{1}, \cdots, \boldsymbol{x}_{m} \) 相关
-关系越宓切，通常， \( \boldsymbol{R} \) 大于 \( 0.8 \) (或 0.9) 才认为相关
+关系越宓切, 通常,  \( \boldsymbol{R} \) 大于 \( 0.8 \) (或 0.9) 才认为相关
 关系成立. 
 
 \subsection{回归系数的假设检验和区间估计}
@@ -589,7 +589,7 @@ $$
 t_{j}=\frac{\hat{\beta}_{j} / \sqrt{c_{j j}}}{\sqrt{Q /(n-m-1)}} \sim t(n-m-1)
 $$
 
-绝.  式(7.36)也可用于对 \( \beta_{j} \) 作区间估计，在置信水平 \( 1-\alpha 下, \beta_{j} \) 的置信区间为
+绝.  式(7.36)也可用于对 \( \beta_{j} \) 作区间估计, 在置信水平 \( 1-\alpha 下, \beta_{j} \) 的置信区间为
 $$
 \begin{array}{l}
 {\left[\hat{\beta}_{j}-t_{\frac{\alpha}{2}}(n-m-1) s \sqrt{c_{i j}}, \hat{\beta}_{j}+t_{\frac{\alpha}{2}}(n-m-1) s \sqrt{c_{i j}}\right]} \\
@@ -599,7 +599,7 @@ $$
 
 \subsection{利用回归模型进行预测}
 
-\( \left[x_{1}, \cdots, x_{m}\right] \) 的取值 \( \left[a_{01}, \cdots, a_{0 m}\right] \) 预测 \( y \) 的取值 \( b_{0}, b_{0} \) 是随 机的，显然其预测值（点估计）为
+\( \left[x_{1}, \cdots, x_{m}\right] \) 的取值 \( \left[a_{01}, \cdots, a_{0 m}\right] \) 预测 \( y \) 的取值 \( b_{0}, b_{0} \) 是随 机的, 显然其预测值（点估计）为
 $$
 \hat{b}_{0}=\hat{\beta}_{0}+\hat{\beta}_{1} a_{01}+\cdots+\hat{\beta}_{m} a_{0 m} .(7.38)
 $$
@@ -611,23 +611,23 @@ $$
 
 式中, \( \boldsymbol{z}_{\alpha} \) 是标准正态分布的上恙分位数. 
 对 \( \boldsymbol{b}_{0} \) 的区间估计方法可用于给出已知数据残差 \( \boldsymbol{e}_{i}=\boldsymbol{b}_{\boldsymbol{i}}-\hat{\boldsymbol{b}}_{\boldsymbol{i}}(\boldsymbol{i}=\mathbf{1}, \cdots, \boldsymbol{n}) \) 的⿱口直信区间, \( \boldsymbol{e}_{i} \) 服从均值为零的
-正态分布，所以若某个 \( e_{i} \) 的置信区间不包含零点, 则 认为这个数据是异常的，可予以剔除. 
+正态分布, 所以若某个 \( e_{i} \) 的置信区间不包含零点, 则 认为这个数据是异常的, 可予以剔除. 
 
 \section{逐步回归}
 
-实际问题中影响因变量的因素可能很多，有些可能关联性强一些，而有些可能影响弱一些. 人们总希望从中挑选出对因变量影响显著的自变量来建立回归模型，逐步回归是一种从众多变量中有效地选择重要变量的方法以下只讨论多元线性回归模型的情形
+实际问题中影响因变量的因素可能很多, 有些可能关联性强一些, 而有些可能影响弱一些. 人们总希望从中挑选出对因变量影响显著的自变量来建立回归模型, 逐步回归是一种从众多变量中有效地选择重要变量的方法以下只讨论多元线性回归模型的情形
 
-简单地说，就是所有对因变量影响显著的变量都应选入模型，而影响不显著的变量都不应选入模型；从便于应用的角度，变量的选择应使模型中变量个数尽可能少
+简单地说, 就是所有对因变量影响显著的变量都应选入模型, 而影响不显著的变量都不应选入模型；从便于应用的角度, 变量的选择应使模型中变量个数尽可能少
 
 基本思想:记 \( \boldsymbol{S}=\left\{\boldsymbol{x}_{1}, \boldsymbol{x}_{2}, \cdots, \boldsymbol{x}_{m}\right\} \) 为候选的自变量集合
 \( \boldsymbol{S}_{1} \subset \boldsymbol{S} \) 是从集合 \( \boldsymbol{S} \) 中选出的一个子集. 设 \( \boldsymbol{S}_{1} \) 中有 \( \boldsymbol{l} \) 个自
 变量 \( (1 \leq l \leq m) \), 由 \( S_{1} \) 和因变量 \( y \) 构造的回归模型的 残差平方和为 \( Q \), 则模型的残差方差 \( \boldsymbol{s}^{2}=\boldsymbol{Q} /(\boldsymbol{n}-\boldsymbol{l}-\mathbf{1}) \)
 \( \boldsymbol{n} \) 为数据样本容量. 所选子集 \( \boldsymbol{S}_{1} \) 应使 \( \boldsymbol{s}^{2} \) 尽量小. 通常回
-若模型中包含有对 \( y \) 影响很小的变量, 那么 \( Q \) 不会由 于包含这些变量在内减少多少,却因 \( l \) 的增加可能使 \( s^{2} \) 反而增大, 同时这些对 \( \boldsymbol{y} \) 影响不显著的变量也会影响 模型的稳定性，因此可将残差方差 \( \boldsymbol{s}^{2} \) 最小作为衡量变
+若模型中包含有对 \( y \) 影响很小的变量, 那么 \( Q \) 不会由 于包含这些变量在内减少多少,却因 \( l \) 的增加可能使 \( s^{2} \) 反而增大, 同时这些对 \( \boldsymbol{y} \) 影响不显著的变量也会影响 模型的稳定性, 因此可将残差方差 \( \boldsymbol{s}^{2} \) 最小作为衡量变
 量选择的一个数量标准. 
 
 可以从另外一个角度考虑自变量 \( \boldsymbol{x}_{j} \) 的显著性.  \( \boldsymbol{y} \) 对 自变量 \( \boldsymbol{x}_{\mathbf{1}}, \boldsymbol{x}_{2}, \cdots, \boldsymbol{x}_{m} \) 线性回归的残差平方和为 \( \boldsymbol{Q} \), 回归
-平方和为 \( U \), 在剔除掉 \( \boldsymbol{x}_{j} \) 后，用 \( \boldsymbol{y} \) 对其余的 \( \boldsymbol{m}-\mathbf{1} \) 个自变量做回归, 记所得的残差平方和为 $ Q_{(j)} $, 回归平方和
+平方和为 \( U \), 在剔除掉 \( \boldsymbol{x}_{j} \) 后, 用 \( \boldsymbol{y} \) 对其余的 \( \boldsymbol{m}-\mathbf{1} \) 个自变量做回归, 记所得的残差平方和为 $ Q_{(j)} $, 回归平方和
 为 \( U_{(j)} \), 则自变量 \( x_{j} \) 对回归的贡献为
 $$
 \Delta \boldsymbol{U}_{(j)}=\boldsymbol{U}-\boldsymbol{U}_{(j)}
@@ -637,14 +637,14 @@ $$
 F_{j}=\frac{\Delta U_{(j)} / 1}{Q /(n-m-1)}
 $$
 
-\( \boldsymbol{F}_{i} \) 服从自由度为 \( (\mathbf{1}, \boldsymbol{n}-\boldsymbol{m}-\mathbf{1}) \) 的 \( \boldsymbol{F} \) 分布，此 \( \boldsymbol{F} \) 检验与式
-方程中剔除变元时，回归平方和减少，残差平方和增 加. 根据平方和分解式可知
+\( \boldsymbol{F}_{i} \) 服从自由度为 \( (\mathbf{1}, \boldsymbol{n}-\boldsymbol{m}-\mathbf{1}) \) 的 \( \boldsymbol{F} \) 分布, 此 \( \boldsymbol{F} \) 检验与式
+方程中剔除变元时, 回归平方和减少, 残差平方和增 加. 根据平方和分解式可知
 $$
 \Delta \boldsymbol{U}_{(j)}=\Delta \boldsymbol{Q}_{(j)}=\boldsymbol{Q}_{(j)}-\boldsymbol{Q}
 $$
 残差平方和减少, 两者的增减量同样相等. 
 
-当自变量的个数较多时，求出所有可能的回归方程是非常困难的. 为此，人们提出了一些较为简便、实用、快速的选择自变量的方法. 这些方法各有优缺点，至今还没有绝对最优的方法，目前常用的方法有前进法、后退法、逐步回归法，而逐步回归法最受推崇. 
+当自变量的个数较多时, 求出所有可能的回归方程是非常困难的. 为此, 人们提出了一些较为简便、实用、快速的选择自变量的方法. 这些方法各有优缺点, 至今还没有绝对最优的方法, 目前常用的方法有前进法、后退法、逐步回归法, 而逐步回归法最受推崇. 
 
 \subsection{前进法}
 
@@ -654,7 +654,7 @@ $$
 $$
 F_{j}^{1}=\max \left\{F_{1}^{1}, F_{2}^{1}, \cdots, F_{m}^{1}\right\}
 $$
-给定显著性水平 \( \alpha \), 若 \( F_{j}^{1} \geq F_{\alpha}(1, n-2) \), 则首先将 \( \boldsymbol{x}_{j} \) 引 入回归方程，为了方便，不妨设 \( \boldsymbol{x}_{j} \) 就是 \( \boldsymbol{x}_{1} \) . 
+给定显著性水平 \( \alpha \), 若 \( F_{j}^{1} \geq F_{\alpha}(1, n-2) \), 则首先将 \( \boldsymbol{x}_{j} \) 引 入回归方程, 为了方便, 不妨设 \( \boldsymbol{x}_{j} \) 就是 \( \boldsymbol{x}_{1} \) . 
 
 接下来因变量 \( y \) 分别与 \( \left(x_{1}, x_{2}\right),\left(x_{1}, x_{3}\right), \cdots,\left(x_{1}, x_{m}\right) \) 建
 立二元 线性回归方程, 对 这 \( \boldsymbol{m}-\mathbf{1} \) 个回归方程 中 \( x_{2}, x_{3}, \cdots, x_{m} \) 的回归系数进行 \( F \) 检验, 利用 \( (7.43) \) 式计 算 \( \boldsymbol{F} \) 值, 记为 \( \left\{\boldsymbol{F}_{2}^{2}, \boldsymbol{F}_{3}^{2}, \cdots, \boldsymbol{F}_{m}^{2}\right\} \), 选其最大者记为
@@ -663,15 +663,15 @@ F_{j}^{2}=\max \left\{F_{2}^{2}, F_{3}^{2}, \cdots, F_{m}^{2}\right\}
 $$
 若 \( \boldsymbol{F}_{j}^{2} \geq \boldsymbol{F}_{\alpha} \mathbf{( 1 , n - 3 )} \), 则接着将 \( \boldsymbol{x}_{\boldsymbol{j}} \) 引入回归方程. 
 
-依上述方法接着做下去，直至所有未被引入方程的
+依上述方法接着做下去, 直至所有未被引入方程的
 入变量的个数. 这时, 得到的回归方程就是确定的方
 程. 
-有关，在用软件计算时，我们实际是使用显著性 \( \boldsymbol{P} \) 值
+有关, 在用软件计算时, 我们实际是使用显著性 \( \boldsymbol{P} \) 值
 做检验. 
 
 \subsection{后退法}
 
-后退法易于掌握，我们使用 \( t \) 统计量做检验，与 \( \boldsymbol{F} \) 统
+后退法易于掌握, 我们使用 \( t \) 统计量做检验, 与 \( \boldsymbol{F} \) 统
 计量做检验是等价的. 具体步骤如下：
 
 \begin{algorithm}

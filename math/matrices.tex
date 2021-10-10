@@ -31,12 +31,12 @@
     一个$n\times 1$矩阵杯称为一个列向量
 \end{definition}
 
-\begin{definition}[高形，宽形和方形矩阵]
+\begin{definition}[高形, 宽形和方形矩阵]
     一个大小为$m\times n$的矩阵为：
     \begin{itemize}
-        \item \textit{高}的，如果$m>n$
-        \item \textit{宽}的，如果$m<n$
-        \item \textit{方}的，如果$m=n$
+        \item \textit{高}的, 如果$m>n$
+        \item \textit{宽}的, 如果$m<n$
+        \item \textit{方}的, 如果$m=n$
     \end{itemize}
 \end{definition}
 
@@ -51,7 +51,7 @@
 分块矩阵位于同一行的子矩阵行维度必须相等,位于同一列的子矩阵列维度必须相等.
 
 \begin{definition}
-    矩阵 $ A \in \mathbb{R}^{m \times n} $ ，可通过其列向量($m$-vector)进行表示,假设其列向量为 $ a_{1}, \ldots, a_{n} \in \mathbb{R}^{m} $, 则有
+    矩阵 $ A \in \mathbb{R}^{m \times n} $ , 可通过其列向量($m$-vector)进行表示,假设其列向量为 $ a_{1}, \ldots, a_{n} \in \mathbb{R}^{m} $, 则有
 
     $$ A=\left[\begin{array}{lll}a_{1} & \cdots & a_{n}\end{array}\right] $$
 \end{definition}
@@ -79,7 +79,7 @@
 \begin{definition}[Transpose]
     矩阵A的转置表示为 $ A^{T} $
     
-    若 $A\in \mathbb{R}^{m \times n} $，则 $ A^{T} \in \mathbb{R}^{n \times m} $ ，其被定义为： $ \left(A^{T}\right)_{i j}=A_{j i}, i=1, \ldots, n ; j=1, \ldots, m $
+    若 $A\in \mathbb{R}^{m \times n} $, 则 $ A^{T} \in \mathbb{R}^{n \times m} $ , 其被定义为： $ \left(A^{T}\right)_{i j}=A_{j i}, i=1, \ldots, n ; j=1, \ldots, m $
 \end{definition}
 
 转置将原矩阵的行向量转化为列向量.
@@ -97,9 +97,9 @@
 \begin{definition}[共轭转置]
     矩阵$A$的共轭转置表示为 $ A^{\mathrm{H}} $
     
-    若 $ \mathrm{A} \in \mathbb{C}^{m \times n} $ ，则 $ A^{H} \in \mathbb{C}^{n \times m} $ ，其被 定义为: $ \left(A^{H}\right)_{i j}=\bar{A}_{j i}, i=1, \ldots, n ; j=1, \ldots, m $;
+    若 $ \mathrm{A} \in \mathbb{C}^{m \times n} $ , 则 $ A^{H} \in \mathbb{C}^{n \times m} $ , 其被 定义为: $ \left(A^{H}\right)_{i j}=\bar{A}_{j i}, i=1, \ldots, n ; j=1, \ldots, m $;
 
-    设矩阵 $ A \in \mathbb{C}^{m \times n} $ ，则其共轭转置为一个 $ n \times m $ 矩阵
+    设矩阵 $ A \in \mathbb{C}^{m \times n} $ , 则其共轭转置为一个 $ n \times m $ 矩阵
 
 $$
 A^{H}=\left[\begin{array}{cccc}
@@ -122,7 +122,7 @@ $$
 
 
 \begin{definition}[矩阵乘法]
-    设矩阵 $ A \in \mathbb{R}^{m \times p}, B \in \mathbb{R}^{p \times n} $,那么矩阵A与B的乘积，记 作C $ =A B $ ， 矩阵 $ C \in \mathbb{R}^{m \times n} $ 的第 i行第 $ j $ 列元素 $ C_{i j} $
+    设矩阵 $ A \in \mathbb{R}^{m \times p}, B \in \mathbb{R}^{p \times n} $,那么矩阵A与B的乘积, 记 作C $ =A B $ ,  矩阵 $ C \in \mathbb{R}^{m \times n} $ 的第 i行第 $ j $ 列元素 $ C_{i j} $
 
     $$
 \mathrm{C}_{i j}=\sum_{k=1}^{p} A_{i k} B_{k j}
@@ -175,7 +175,7 @@ $$
 \end{corollary}
 
 \begin{definition}[矩阵-向量乘积函数 $f(x)=A x$]
-    给定矩阵 $ A \in \mathbb{R}^{m \times n} $ ，定义函数 $ f: R^{n} \rightarrow R^{m}, f(x)=A x $，其中 $ A=\left[f\left(e_{1}\right) \ldots f\left(e_{n}\right)\right] $.
+    给定矩阵 $ A \in \mathbb{R}^{m \times n} $ , 定义函数 $ f: R^{n} \rightarrow R^{m}, f(x)=A x $, 其中 $ A=\left[f\left(e_{1}\right) \ldots f\left(e_{n}\right)\right] $.
 \end{definition}
 
 \begin{proof}
@@ -192,9 +192,9 @@ $$
 
 矩阵 $ A \in \mathbb{R}^{m \times n} $ 和向量 $ x \in \mathbb{R}^{n} $ 的乘积 $ \mathrm{y}=\mathrm{A} x $, 需要 $ (2 \mathrm{n}-1) \mathrm{m} $ flops;
 
-乘积 $ y \in \mathbb{R}^{m} $ ，每个元素需要做向量内积，需要 $ 2 n-1 $ flops;
+乘积 $ y \in \mathbb{R}^{m} $ , 每个元素需要做向量内积, 需要 $ 2 n-1 $ flops;
 
-当n足够大时，复杂度近似于2mn；
+当n足够大时, 复杂度近似于2mn；
 
 特殊情况:
 
@@ -214,13 +214,13 @@ $$
 \end{definition}
 
 \begin{definition}[单位矩阵]
-    为方形矩阵，其中对角线元素为1，其它元素为0.
+    为方形矩阵, 其中对角线元素为1, 其它元素为0.
 
     记作$I$或者 $ \mathrm{I}_{n} $.
 \end{definition}
 
 \begin{corollary}
-  $ \mathrm{I}_{n} $ 的每一列是一个单位向量，例如
+  $ \mathrm{I}_{n} $ 的每一列是一个单位向量, 例如
 
 $$
 \mathrm{I}_{3}=\left[\begin{array}{lll}
@@ -242,7 +242,7 @@ $$
 \end{definition}
 
 \begin{definition}[Diagonal Matrices]
-    对角线上元素不全为0，其余元素全为0.
+    对角线上元素不全为0, 其余元素全为0.
 \end{definition}
 
 \begin{definition}[下三角矩阵]
@@ -268,11 +268,11 @@ $$
 \end{proof}
 
 \begin{example}
-    $ f $ 对向量 $ x $ 中的元素进行升序排序，非线性;
+    $ f $ 对向量 $ x $ 中的元素进行升序排序, 非线性;
 \end{example}
 
 \begin{example}
-    $ f $ 将向量 $ x $ 中的元素替换成相应的绝对值，非线性;
+    $ f $ 将向量 $ x $ 中的元素替换成相应的绝对值, 非线性;
 \end{example}
 
 \begin{example}[反转矩阵]
@@ -284,7 +284,7 @@ $$
 \end{proof}
 
 \begin{example}[循环移位矩阵]
-    $ A=\left[\begin{array}{ccccc}0 & 0 & \cdots & 0 & 1 \\ 1 & 0 & \cdots & 0 & 0 \\ 0 & 1 & \cdots & 0 & 0 \\ \vdots & \vdots & \ddots & \vdots & \vdots \\ 0 & 0 & \cdots & 1 & 0\end{array}\right] $
+    $$ A=\left[\begin{array}{ccccc}0 & 0 & \cdots & 0 & 1 \\ 1 & 0 & \cdots & 0 & 0 \\ 0 & 1 & \cdots & 0 & 0 \\ \vdots & \vdots & \ddots & \vdots & \vdots \\ 0 & 0 & \cdots & 1 & 0\end{array}\right] $$
 \end{example}
 
 \begin{proof}
@@ -294,14 +294,14 @@ $$
 \begin{example}[旋转矩阵]
     $$ A=\left[\begin{array}{cc}\cos \theta & -\sin \theta \\ \sin \theta & \cos \theta\end{array}\right] $$
 
-    $ \mathrm{A} x $ 将向量 $ x $ 进行旋转，角度为 $ \theta $.
+    $ \mathrm{A} x $ 将向量 $ x $ 进行旋转, 角度为 $ \theta $.
 \end{example}
 
-\subsection{节点弧关联矩阵}
+\subsection{图论：节点弧关联矩阵}
 % todo: image
 
 \begin{definition}[关联矩阵]
-   假设有向图$G$有$m$个顶点， $ n $ 条弧, 则关联矩阵$A$大小为 $ m \times n $,其中 
+   假设有向图$G$有$m$个顶点,  $ n $ 条弧, 则关联矩阵$A$大小为 $ m \times n $,其中 
 
    $$ A_{i j}=\left\{\begin{array}{ll}1 & \text{如果点} i \text{是弧} j \text{的终点 } \\ -1 & \text {如果点}i \text{是弧}j \text{的起点} \\ 0 & \text { 其它 }\end{array}\right. $$
 \end{definition}
@@ -316,6 +316,99 @@ $$
 
     记为 $ c=a * b$
 \end{definition}
+
+\begin{example}
+    设$n=4,  m=3 $
+
+
+
+    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+    \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+    %uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+    
+    %Shape: Rectangle [id:dp6383640467867335] 
+    \draw  [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (110,54) -- (160.01,54) -- (160.01,79.16) -- (110,79.16) -- cycle ;
+    
+    %Shape: Rectangle [id:dp9915913508162717] 
+    \draw  [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (260.01,54) -- (310.02,54) -- (310.02,79.16) -- (260.01,79.16) -- cycle ;
+    %Shape: Rectangle [id:dp7574544776550791] 
+    \draw  [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (210,54) -- (260.01,54) -- (260.01,79.16) -- (210,79.16) -- cycle ;
+    %Shape: Rectangle [id:dp15668905720803483] 
+    \draw  [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (160,54) -- (210.01,54) -- (210.01,79.16) -- (160,79.16) -- cycle ;
+    
+    %Shape: Rectangle [id:dp517800094810728] 
+    \draw  [fill={rgb, 255:red, 126; green, 211; blue, 33 }  ,fill opacity=1 ] (11,90) -- (61.01,90) -- (61.01,115.16) -- (11,115.16) -- cycle ;
+    %Shape: Rectangle [id:dp15583903887589012] 
+    \draw  [fill={rgb, 255:red, 126; green, 211; blue, 33 }  ,fill opacity=1 ] (61,90) -- (111.01,90) -- (111.01,115.16) -- (61,115.16) -- cycle ;
+    %Shape: Rectangle [id:dp4794201673076599] 
+    \draw  [fill={rgb, 255:red, 126; green, 211; blue, 33 }  ,fill opacity=1 ] (111,90) -- (161.01,90) -- (161.01,115.16) -- (111,115.16) -- cycle ;
+    
+    %Shape: Rectangle [id:dp9652913856506695] 
+    \draw  [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (110,130) -- (160.01,130) -- (160.01,155.16) -- (110,155.16) -- cycle ;
+    
+    %Shape: Rectangle [id:dp6681556567962323] 
+    \draw  [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (260.01,130) -- (310.02,130) -- (310.02,155.16) -- (260.01,155.16) -- cycle ;
+    %Shape: Rectangle [id:dp0819288495364412] 
+    \draw  [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (210,130) -- (260.01,130) -- (260.01,155.16) -- (210,155.16) -- cycle ;
+    %Shape: Rectangle [id:dp015621153657017217] 
+    \draw  [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (160,130) -- (210.01,130) -- (210.01,155.16) -- (160,155.16) -- cycle ;
+    
+    %Shape: Rectangle [id:dp9772799588063847] 
+    \draw  [fill={rgb, 255:red, 126; green, 211; blue, 33 }  ,fill opacity=1 ] (61,166) -- (111.01,166) -- (111.01,191.16) -- (61,191.16) -- cycle ;
+    %Shape: Rectangle [id:dp8281584537494973] 
+    \draw  [fill={rgb, 255:red, 126; green, 211; blue, 33 }  ,fill opacity=1 ] (111,166) -- (161.01,166) -- (161.01,191.16) -- (111,191.16) -- cycle ;
+    %Shape: Rectangle [id:dp20253755057026024] 
+    \draw  [fill={rgb, 255:red, 126; green, 211; blue, 33 }  ,fill opacity=1 ] (161,166) -- (211.01,166) -- (211.01,191.16) -- (161,191.16) -- cycle ;
+    
+    
+    % Text Node
+    \draw (126,56.4) node [anchor=north west][inner sep=0.75pt]    {$a_{1}$};
+    % Text Node
+    \draw (176,56.4) node [anchor=north west][inner sep=0.75pt]    {$a_{2}$};
+    % Text Node
+    \draw (226,56.4) node [anchor=north west][inner sep=0.75pt]    {$a_{3}$};
+    % Text Node
+    \draw (276,55.4) node [anchor=north west][inner sep=0.75pt]    {$a_{4}$};
+    % Text Node
+    \draw (127,92.4) node [anchor=north west][inner sep=0.75pt]    {$b_{1}$};
+    % Text Node
+    \draw (77,92.4) node [anchor=north west][inner sep=0.75pt]    {$b_{2}$};
+    % Text Node
+    \draw (27,92.4) node [anchor=north west][inner sep=0.75pt]    {$b_{3}$};
+    % Text Node
+    \draw (77,168.4) node [anchor=north west][inner sep=0.75pt]    {$b_{3}$};
+    % Text Node
+    \draw (127,168.4) node [anchor=north west][inner sep=0.75pt]    {$b_{2}$};
+    % Text Node
+    \draw (177,168.4) node [anchor=north west][inner sep=0.75pt]    {$b_{1}$};
+    % Text Node
+    \draw (276,131.4) node [anchor=north west][inner sep=0.75pt]    {$a_{4}$};
+    % Text Node
+    \draw (226,132.4) node [anchor=north west][inner sep=0.75pt]    {$a_{3}$};
+    % Text Node
+    \draw (176,132.4) node [anchor=north west][inner sep=0.75pt]    {$a_{2}$};
+    % Text Node
+    \draw (126,132.4) node [anchor=north west][inner sep=0.75pt]    {$a_{1}$};
+    % Text Node
+    \draw (346,78.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 236; green, 92; blue, 109 }  ,opacity=1 ]  {$c_{1} \ =\ a_{1} b_{1}$};
+    % Text Node
+    \draw (341,155.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 236; green, 92; blue, 109 }  ,opacity=1 ]  {$c_{2} \ =\ a_{1} b_{2} +a_{2} b_{1}$};
+    
+    
+    \end{tikzpicture}
+    
+$$\begin{aligned}
+    c_{1}&=a_{1} b_{1}\\
+    c_{2}&=a_{1} b_{2}+a_{2} b_{1}\\
+    c_{3}&=a_{1} b_{3}+a_{2} b_{2}+a_{3} b_{1}\\
+    c_{4}&=a_{2} b_{3}+a_{3} b_{2}+a_{4} b_{1}\\
+    c_{5}&=a_{3} b_{3}+a_{4} b_{2}\\
+    c_{6}&=a_{4} b_{3}\\
+\end{aligned} $$
+
+
+\end{example}
 
 \begin{corollary}
     假设向量$a$和$b$分别是以下多项式的系数
@@ -340,7 +433,7 @@ $$
 \end{corollary}
 
 \begin{example}[Toeplitz Matrix]
-    4维向量a和3维向量 $ b $ ， 则 $ c=a^{*} b $
+    4维向量a和3维向量 $ b $ ,  则 $ c=a * b $
 
 $$
 \left[\begin{array}{l}
@@ -432,7 +525,7 @@ DFT矩阵W的第 $ k $ 行第 $ l $ 列的元素为 $ W_{k l}=\omega^{-(k-1)(l-1
 \subsection{Semi-Definite Matrices}
 
 \begin{definition}[半正定矩阵]
-    对称矩阵 $ A \in \mathbb{R}^{n \times n} $ 称为\textit{半正定矩阵}，满足以下条件
+    对称矩阵 $ A \in \mathbb{R}^{n \times n} $ 称为\textit{半正定矩阵}, 满足以下条件
 
 $$
 x^{T} A x \geq 0 \quad \forall x \in \mathbb{R}^{n}
@@ -440,7 +533,7 @@ $$
 \end{definition}
 
 \begin{definition}[正定矩阵]
-    对称矩阵 $ A \in \mathbb{R}^{n \times n} $ 称为正定矩阵，满足以下条件
+    对称矩阵 $ A \in \mathbb{R}^{n \times n} $ 称为正定矩阵, 满足以下条件
 $$
 x^{T} A x>0 \quad \forall x \neq 0
 $$
@@ -464,7 +557,7 @@ $$
 x^{T} A x>0 \quad \forall x \neq 0
 $$
 
-如果 $ a=4 $, 矩阵 $ A $ 为半正定矩阵，但不是正定矩阵:
+如果 $ a=4 $, 矩阵 $ A $ 为半正定矩阵, 但不是正定矩阵:
 $$
 x^{T} A x \geq 0 \quad \forall x, \quad x^{T} A x=0 \quad \exists x=\left[\begin{array}{l}
 2 \\
@@ -524,9 +617,8 @@ $$
 \end{proof}
 
 \begin{theorem}
-    如果Gram矩阵是正定的，则要满足
-
-    $$ x^{T} A x=x^{T} B^{T} B x=\|B x\|_{2}^{2}>0 ( \forall x \neq 0) $$.
+    如果Gram矩阵是正定的, 则要满足
+    $$ x^{T} A x=x^{T} B^{T} B x=\|B x\|_{2}^{2}>0 ( \forall x \neq 0) $$
 \end{theorem}
 
 \begin{corollary}
@@ -536,7 +628,9 @@ $$
 \begin{proof}
     $$\|B x\|_{2}^{2}>0 ( \forall x \neq 0)$$
 
-    注意和线性无关的定义进行参照.
+所以 $\forall x \neq 0, Bx \neq 0  $.
+
+    注意和线性无关 \ref{Def:LinearIndependence} 的定义进行参照.
 \end{proof}
 
 \chapter{Matrices Norms}
@@ -554,7 +648,7 @@ $$
         \item 非负性: $ \|A\| \geq 0, A \in \mathbb{R}^{m \times n} $ 且 $ \|A\|=0 \Leftrightarrow A=0 $;
     \end{itemize}
 
-则称 $ \|\cdot\| $ 为矩阵范数。
+则称 $ \|\cdot\| $ 为矩阵范数. 
 \end{definition}
 
 向量空间 $ \mathbb{R}^{m \times n} $ 矩阵范数:
@@ -572,7 +666,7 @@ $$
 \end{proof}
 
 \begin{definition}[从属于给定向量范数 $ \|x\|_{v} $ 的矩阵范数]
-    设 $ x \in \mathbb{R}^{n}, A \in \mathbb{R}^{m \times n},\|\cdot\|_{v} $ 为一种向量范数。则 $ \frac{\|A x\|_{v}}{\|x\|_{v}} $ 对所有 $ x \neq 0 $ 有最大值，令
+    设 $ x \in \mathbb{R}^{n}, A \in \mathbb{R}^{m \times n},\|\cdot\|_{v} $ 为一种向量范数. 则 $ \frac{\|A x\|_{v}}{\|x\|_{v}} $ 对所有 $ x \neq 0 $ 有最大值, 令
 
     $$ \|A\|_{v}=\max _{x \neq 0}\left\{\frac{\|A x\|_{v}}{\|x\|_{v}}\right\}=\max _{x \neq 0}\left\{\left\|A \frac{x}{\|x\|_{v}}\right\|_{v}\right\}=\max _{\|y\|_{v}=1}\left\{\|A y\|_{v}\right\} $$
 
@@ -582,7 +676,7 @@ $$
 \end{definition}
 
 \begin{proof}
-    可以验证 $ \|A\|_{v} $ 满足矩阵范数定义。
+    可以验证 $ \|A\|_{v} $ 满足矩阵范数定义. 
 
     $$ \|A\|_{v} \geq 0 $$
 
@@ -602,7 +696,7 @@ $$
 \begin{definition}[向量范数和算子范数相容]
     $$ \frac{\|A x\|_{v}}{\|x\|_{v}} \leq\|A\|_{v} \Rightarrow\|A x\|_{v} \leq\|A\|_{v}\|x\|_{v} $$
 
-    称向量范数和算子范数\textit{相容}。
+    称向量范数和算子范数\textit{相容}. 
 \end{definition}
 
 \begin{theorem}[算子范数服从乘法范数相容性]
@@ -691,22 +785,22 @@ $$
 \Delta x=A^{-1} \Delta b
 $$
 
-如果小的变化 $ \Delta b $ 导致小变化 $ \Delta x $, 则称解是\textit{稳定}的。如果小的变化 $ \Delta b $ 导致大变化 $ \Delta x $, 则称解\textit{不稳定}的。
+如果小的变化 $ \Delta b $ 导致小变化 $ \Delta x $, 则称解是\textit{稳定}的. 如果小的变化 $ \Delta b $ 导致大变化 $ \Delta x $, 则称解\textit{不稳定}的. 
 
 设$$ A=\frac{1}{2}\left[\begin{array}{cc}1 & 1 \\ 1+10^{-10} & 1-10^{-10}\end{array}\right], \quad A^{-1}=\left[\begin{array}{cc}1-10^{10} & 10^{10} \\ 1+10^{10} & -10^{10}\end{array}\right] $$
 
-若$ b=(1,1) $, 方程 $ A x $ 的解 $ x=(1,1) $ 。
-如果将b改为 $ b+\Delta b $ ，那么 $ x $ 的变化量为
+若$ b=(1,1) $, 方程 $ A x $ 的解 $ x=(1,1) $ . 
+如果将b改为 $ b+\Delta b $ , 那么 $ x $ 的变化量为
 
 $$ \Delta x=A^{-1} \Delta b=\left[\begin{array}{l}\Delta b_{1}-10^{10}\left(\Delta b_{1}-\Delta b_{2}\right) \\ \Delta b_{1}+10^{10}\left(\Delta b_{1}-\Delta b_{2}\right)\end{array}\right] $$
 
-很小变化 $ \Delta b $ 会导致非常大变化 $ \Delta x $！ 由矩阵$A$定义的问题，称为\textit{适定问题}或\textit{病态问题}。
+很小变化 $ \Delta b $ 会导致非常大变化 $ \Delta x $！ 由矩阵$A$定义的问题, 称为\textit{适定问题}或\textit{病态问题}. 
 
 \end{example}
 
 \section{绝对误差的界限}
 
-假设 $ A $ 是非奇异的，并给出定义:
+假设 $ A $ 是非奇异的, 并给出定义:
 
 \begin{notation}
     $$ x=A^{-1} b, \Delta x=A^{-1} \Delta b $$
@@ -717,20 +811,18 @@ $$
 \|\Delta x\|_{2} \leq\left\|A^{-1}\right\|_{2}\|\Delta b\|_{2}
 $$
 
-矩阵范数 $ \left\|A^{-1}\right\|_{2} $ 小时，当 $ \|\Delta b\|_{2} $ 变化很小, $ \|\Delta x\|_{2} $ 也很小; $ \left\|A^{-1}\right\|_{2} $ 大时， $ \|\Delta x\|_{2} $ 可能很大， 即使 $ \|\Delta b\|_{2} $ 很小。
+矩阵范数 $ \left\|A^{-1}\right\|_{2} $ 小时, 当 $ \|\Delta b\|_{2} $ 变化很小, $ \|\Delta x\|_{2} $ 也很小; $ \left\|A^{-1}\right\|_{2} $ 大时,  $ \|\Delta x\|_{2} $ 可能很大,  即使 $ \|\Delta b\|_{2} $ 很小. 
 
 \begin{definition}[非奇异矩阵 $ A $ 的条件数(condition number)]
     $$ \kappa(A)=\|A\|_{2}\left\|A^{-1}\right\|_{2} $$
 \end{definition}
-
-有如下性质：
 
 \begin{corollary}[非奇异矩阵 $ A $ 的条件数(condition number)性质]
     有如下性质：
 
     \begin{itemize}
         \item 对于所有 $ A $, 有 $ \kappa(A) \geq 1 $;
-        \item 如果 $ \kappa(A) $ 比较小接近1)， $ x $ 的相对误差接近 $ b $ 的相对误差;
-        \item 如果 $ \kappa(A) $ 比较大， $ x $ 的相对误差比 $ b $ 的相对误差大得多。
+        \item 如果 $ \kappa(A) $ 比较小 (接近1),  $ x $ 的相对误差接近 $ b $ 的相对误差;
+        \item 如果 $ \kappa(A) $ 比较大,  $ x $ 的相对误差比 $ b $ 的相对误差大得多. 
     \end{itemize}
 \end{corollary}

@@ -14,23 +14,24 @@ $$
 线性相关等价于至少有一个向量 $ a_{i} $ 是其它向量的线性组合. 
 
 \begin{corollary}
-    向量集 $ \left\{a_{1}\right\} $ 是线性相关的，当且仅当 $ a_{1}=0 $ . 
+    向量集 $ \left\{a_{1}\right\} $ 是线性相关的, 当且仅当 $ a_{1}=0 $ . 
 
-    向量集 $ \left\{a_{1}, a_{2}\right\} $ 是线性相关的， 当且仅当其中一个 $ a_{1}=\beta a_{2}, \beta \neq 0 $ . 
+    向量集 $ \left\{a_{1}, a_{2}\right\} $ 是线性相关的,  当且仅当其中一个 $ a_{1}=\beta a_{2}, \beta \neq 0 $ . 
 \end{corollary}
 
-\begin{definition}[线性独立 (linearly dependent)]
-    如果n维向量集 $ \left\{a_{1}, \ldots, a_{m}\right\} $ 不是线性相关的，即线性独立 (linearly dependent), 也称线性无关， 即：
+\begin{definition}[线性独立 (linearly independent)]
+    \label{Def:LinearIndependence}
+    如果n维向量集 $ \left\{a_{1}, \ldots, a_{m}\right\} $ 不是线性相关的, 即线性独立 (linearly dependent), 也称线性无关,  即：
 $$
 \beta_{1} a_{1}+\cdots+\beta_{m} a_{m}=0
 $$
-当且仅当 $ \beta_{1}=\cdots=\beta_{m}=0 $ ，上述等式成立. 
+当且仅当 $ \beta_{1}=\cdots=\beta_{m}=0 $ , 上述等式成立. 
 \end{definition}
 
 线性无关等价于不存在一个向量 $ a_{i} $ 是其它向量的线性组合. 
 
 \begin{corollary}
-    注：一个n维向量集最多有n个线性无关的向量, 也就是说如果 $ \mathrm{n} $ 维 向量集有 $ \mathrm{n}+1 $ 个向量，那它们必线性相关
+    注：一个n维向量集最多有n个线性无关的向量, 也就是说如果 $ \mathrm{n} $ 维 向量集有 $ \mathrm{n}+1 $ 个向量, 那它们必线性相关
 \end{corollary}
 
 \begin{example}
@@ -50,7 +51,7 @@ $$
 $$
 x=\beta_{1} a_{1}+\cdots \beta_{k} a_{k}
 $$
-则其系数 $ \beta_{1}, \ldots \beta_{k} $ 是唯一的，即如果有：
+则其系数 $ \beta_{1}, \ldots \beta_{k} $ 是唯一的, 即如果有：
 
 $$
 x=\gamma_{1} a_{1}+\cdots \gamma_{k} a_{k}
@@ -64,7 +65,7 @@ $$
 \left(\beta_{1}-\gamma_{1}\right) a_{1}+\cdots\left(\beta_{k}-\gamma_{k}\right) a_{k}=x-x=0
 $$
 
-由于向量 $ a_{1}, \ldots, a_{k} $ 线性无关，有 $ \beta_{1}-\gamma_{1}=\beta_{k}-\gamma_{k}=0 $ . 
+由于向量 $ a_{1}, \ldots, a_{k} $ 线性无关, 有 $ \beta_{1}-\gamma_{1}=\beta_{k}-\gamma_{k}=0 $ . 
 \end{proof}
 
 \section{basis}
@@ -86,7 +87,7 @@ $$
 \end{proof}
 
 \begin{example}
-    $ e_{1}, \ldots, e_{n} $ 是一组基，那么 $ b $ 在此基底下的分解为
+    $ e_{1}, \ldots, e_{n} $ 是一组基, 那么 $ b $ 在此基底下的分解为
 
     $$ b=b_{1} e_{1}+\cdots+b_{n} e_{n} ,b=\left[\begin{array}{c}b_{1} \\ \vdots \\ b_{n}\end{array}\right] \in \mathbb{R}^{n} $$
 \end{example}
@@ -94,11 +95,11 @@ $$
 \section{标准正交向量}
 
 \begin{definition}[Orthogonal Vectors]
-    在n维向量集 $ a_{1}, \ldots, a_{k} $ 中， 如果对于 $ i \neq j $, 都有 $ a_{i} \perp a_{j} $ ， 则称它们相互正交(orthogonal). 
+    在n维向量集 $ a_{1}, \ldots, a_{k} $ 中,  如果对于 $ i \neq j $, 都有 $ a_{i} \perp a_{j} $ ,  则称它们相互正交(orthogonal). 
 \end{definition}
 
 \begin{definition}[Orthonormal Vectors]
-    如果n维向量集 $ a_{1}, \ldots, a_{k} $ 相互正交，且每个向量的模长都为单位长度 1 ， 即对于 $ i=1, \ldots k $, 有 $ \left\|a_{i}\right\|_{2}^{2}=1 $, 则称它们是标准正交 (orthonormal)的. 
+    如果n维向量集 $ a_{1}, \ldots, a_{k} $ 相互正交, 且每个向量的模长都为单位长度 1 ,  即对于 $ i=1, \ldots k $, 有 $ \left\|a_{i}\right\|_{2}^{2}=1 $, 则称它们是标准正交 (orthonormal)的. 
 
     $$ a_{i}^{T} a_{j}=\left\{\begin{array}{ll}1 & i=j \\ 0 & i \neq j\end{array}\right. $$
 \end{definition}
@@ -108,11 +109,11 @@ $$
 \end{corollary}
 
 \begin{corollary}
-    根据线性无关的性质，必有向量集向量个数 $ k \leq n $
+    根据线性无关的性质, 必有向量集向量个数 $ k \leq n $
 \end{corollary}
 
 \begin{definition}[$n$维向量的一个标准正交基]
-    当 $ k=n $ 时， $ a_{1}, \ldots, a_{n} $ 是 $ n $ 维向量的一个标准正交基. 
+    当 $ k=n $ 时,  $ a_{1}, \ldots, a_{n} $ 是 $ n $ 维向量的一个标准正交基. 
 \end{definition}
 
 \begin{definition}[ $ x $ 在标准正交基下的标准正交分解]
@@ -143,16 +144,16 @@ $$
     }
 \end{algorithm}
 
-如果步骤2中未提前结束迭代，那么 $ a_{1}, \ldots, a_{k} $ 是线性独立的，而且 $ q_{1}, \ldots, q_{k} $ 是标准正交基. 
+如果步骤2中未提前结束迭代, 那么 $ a_{1}, \ldots, a_{k} $ 是线性独立的, 而且 $ q_{1}, \ldots, q_{k} $ 是标准正交基. 
 
-如果在第$j$次迭代中提前结束，说明 $ a_{j} $ 是 $ a_{1}, \ldots, a_{j-1} $ 的线性组合, 因此 $ a_{1}, \ldots, a_{k} $ 是线性相关的. 
+如果在第$j$次迭代中提前结束, 说明 $ a_{j} $ 是 $ a_{1}, \ldots, a_{j-1} $ 的线性组合, 因此 $ a_{1}, \ldots, a_{k} $ 是线性相关的. 
 
 \begin{theorem}
     $q_{1}, \ldots, q_{i-1}, q_{i} $ 是标准正交的. 
 \end{theorem}
 
 \begin{proof}
-    假设第 $ i-1 $ 次迭代成立， 即: $ \quad q_{r} \perp q_{s}, \forall r, s<i $.
+    假设第 $ i-1 $ 次迭代成立,  即: $ \quad q_{r} \perp q_{s}, \forall r, s<i $.
 
     正交化步骤保证有以下关系成立
     $$ \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
@@ -210,7 +211,7 @@ $$
 \end{corollary}
 
 \begin{proof}
-    归纳假设，每个 $ q_{i-1} $ 都是 $ a_{1}, \ldots, a_{i-1} $ 的线性组合：
+    归纳假设, 每个 $ q_{i-1} $ 都是 $ a_{1}, \ldots, a_{i-1} $ 的线性组合：
 
     $$ \begin{aligned}q_{2}&= \frac{a_{2}-\left(q_{1}^{T} a_{2}\right) q_{1}}{\left\|\tilde{q}_{2}\right\|_{2}}
         \\ &=

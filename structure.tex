@@ -36,6 +36,8 @@
 \usepackage{xcolor} % Required for specifying colors by name
 % \definecolor{ocre}{RGB}{243,102,25} % Define the orange color used for highlighting throughout the book
 \definecolor{ocre}{RGB}{76, 50, 168}
+\definecolor{coral}{RGB}{184, 84, 80}
+
 \usepackage{calc}
 
 %----------------------------------------------------------------------------------------
@@ -52,7 +54,7 @@
 
 \usepackage{algorithm2e}
 
-
+\usepackage{svg}
 
 %----------------------------------------------------------------------------------------
 %	MARGINS
@@ -110,7 +112,8 @@
 %----------------------------------------------------------------------------------------
 
 \usepackage[style=numeric,citestyle=numeric,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
-\addbibresource{bibliography.bib} % BibTeX bibliography file
+\addbibresource{E:/OneDrive/Library/library.bib}
+% \addbibresource{bibliography.bib} % BibTeX bibliography file
 \defbibheading{bibempty}{}
 
 \usepackage{calc} % For simpler calculation - used for spacing the index letter headings correctly
@@ -325,6 +328,7 @@
 % use ``word'' environment to wrap vocabulary and add index
 % \newenvironment{DefWord}[1]{\begin{vocabulary}[#1] \index{#1}}{ \end{vocabulary}}
 
+% define new environment: RefWord and DefWord for vocabulary.
 \usepackage{xparse}
 \NewDocumentEnvironment{RefWord}{ m o}{
 	% Start Code
@@ -443,24 +447,32 @@ innerbottommargin=5pt]{cBox}
 \begin{list}{}{
 \leftmargin=35pt % Indentation on the left
 \rightmargin=25pt}\item\ignorespaces % Indentation on the right
-\makebox[-2.5pt]{\begin{tikzpicture}[overlay]
-\node[draw=ocre!60,line width=1pt,circle,fill=ocre!25,font=\sffamily\bfseries,inner sep=2pt,outer sep=0pt] at (-15pt,0pt){\textcolor{ocre}{!}};\end{tikzpicture}} % Orange ! in a circle
 
-% \makebox[-2.5pt]{
-%	\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-%		%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
-
-%		%Flowchart: Connector [id:dp5263589531164479] 
-%		\draw  [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][line width=2.25]  (97.64,137.43) .. controls (97.64,131.86) and (102.29,127.34) .. (108.04,127.34) .. controls (113.79,127.34) and (118.45,131.86) .. (118.45,137.43) .. controls (118.45,143) and (113.79,147.51) .. (108.04,147.51) .. controls (102.29,147.51) and (97.64,143) .. (97.64,137.43) -- cycle ;
-%		%Shape: Star [id:dp8903341744926845] 
-%		\draw  [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (108.04,129.72) -- (110.48,134.31) -- (115.93,135.04) -- (111.99,138.62) -- (112.92,143.66) -- (108.04,141.28) -- (103.16,143.66) -- (104.1,138.62) -- (100.15,135.04) -- (105.6,134.31) -- cycle ;
+%\makebox[-2.5pt]{
 	
-%	\end{tikzpicture}	
+\begin{tikzpicture}[overlay]
+\node[draw=coral!60,line width=1pt,circle,fill=coral!25,font=\sffamily\bfseries,inner sep=2pt,outer sep=0pt] at (-15pt,0pt){\textcolor{coral}{!}};\end{tikzpicture}
+
+%} % Orange ! in a circle
+
+% Candidate 1 (use svg directly)
+%\makebox[-1pt]{
+	%\begin{figure}[htbp]
+		%\includegraphics[scale=1,bb=0 0 30 30]{remarksymbol.svg}
+		%\includegraphics{remarksymbol.svg}
+		%\includegraphics[scale=0.25]{remarkSymbol.png}
+	%\end{figure}
 %}
+
 
 
 \advance\baselineskip -1pt}{\end{list}\vskip5pt} % Tighter line spacing and white space after remark
 
+% Candidate 2 (use png)
+%\newenvironment{remark}{\begin{figure}[htbp]
+%	\centering
+%	\includegraphics{remarkSymbol.png}
+%\end{figure}}{}
 
 
 %----------------------------------------------------------------------------------------
@@ -625,3 +637,7 @@ addtohook={%
 
 % cleveref must be loaded after amsmath
 \usepackage{cleveref}
+
+% for the long section
+% \section[Hidden Markov Map Matching Through Noise and Sparseness]{\texorpdfstring{Hidden Markov Map Matching\\ Through Noise and Sparseness}{Hidden Markov Map Matching Through Noise and Sparseness}}
+% the optional parameter is for TOC display, the second one is for TeX display, the third one is for PDF string

@@ -8,10 +8,10 @@
     \( \left[\begin{array}{c}-1.1 \\ 0.0 \\ 3.6 \\ -7.2\end{array}\right] \) 或者 \( \quad\left(\begin{array}{c}-1.1 \\ 0.0 \\ 3.6 \\ -7.2\end{array}\right) \) 或者 \( \quad(-1.1,0,3.6,-7.2) \)
 \end{definition}
 
-表中的数字是\textit{元素}(\textit{项、系数、分量}). 元素的数量是向量的\textit{大小}(\textit{维数，长度}). 大小为n的向量称为\textit{$n$维向量}. 
+表中的数字是\textit{元素}(\textit{项、系数、分量}). 元素的数量是向量的\textit{大小}(\textit{维数, 长度}). 大小为n的向量称为\textit{$n$维向量}. 
 向量中的数字通常被称作\textit{标量}. 
 
-用符号来表示向量，比如$\alpha$ ，$b$，一般小写字母表示. 其它表示形式 $\boldsymbol{g}, \vec{a}$
+用符号来表示向量, 比如$\alpha$ , $b$, 一般小写字母表示. 其它表示形式 $\boldsymbol{g}, \vec{a}$
 
 \begin{definition}[n维向量 \( a \) 的第 \( i \) 元素]
     n维向量 \( a \) 的第i \( i \) 元素表示为 \( a_{i} \).
@@ -20,7 +20,7 @@
 \end{definition}
 
 \begin{definition}[$a=b$]
-    对于所有$i$，如果有$a_i = b_i$，则称两个相同大小的向量$a$和$b$是相等的，可写成$a = b$
+    对于所有$i$, 如果有$a_i = b_i$, 则称两个相同大小的向量$a$和$b$是相等的, 可写成$a = b$
 \end{definition}
 
 \begin{definition}[stacked vector]
@@ -40,15 +40,15 @@
 \end{definition}
 
 \begin{definition}[单位向量]
-    当第i项为1，其余项为0时表示为$e_i$
+    当第i项为1, 其余项为0时表示为$e_i$
 
     $$ {e}_{1}=\left[\begin{array}{l}1 \\ 0 \\ 0\end{array}\right], \quad e_{2}=\left[\begin{array}{l}0 \\ 1 \\ 0\end{array}\right], \quad e_{3}=\left[\begin{array}{l}0 \\ 0 \\ 1\end{array}\right] $$
 \end{definition}
 
 \begin{definition}[稀疏向量]
-    如果一个向量的许多项都是0，该向量为稀疏(Sparse)的. 稀疏向量能在计算机上高效地存储和操作. 
+    如果一个向量的许多项都是0, 该向量为稀疏(Sparse)的. 稀疏向量能在计算机上高效地存储和操作. 
 
-$\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros)，有时用 $\ell_0$表示 . 
+$\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros), 有时用 $\ell_0$表示 . 
 
 \end{definition}
 
@@ -69,7 +69,7 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros)，
     \item \( x+y=y+x \) (交换律) 
     \item \( x+(y+z)=(x+y)+z \) (结合律)
     \item \( V \) 存在一个零元素, 记作0, \( x+0=x \)
-    \item 存在 \( x \) 的负元素，记作 \( -x \), 满足 \( x+(-x)=0 \)
+    \item 存在 \( x \) 的负元素, 记作 \( -x \), 满足 \( x+(-x)=0 \)
     \item \( \forall x \in V \), 都有 \( 1 x=x, 1 \in P \)
     \item \( \lambda(\mu x)=(\lambda \mu) x \)
     \item \( (\lambda+\mu) x=\lambda x+\mu x \)
@@ -86,7 +86,7 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros)，
 \end{corollary}
 
 \begin{definition}[数域]
-    数的非空集合$P$,且其中任意两个数的和、差、积、商(除数不为零)仍属于该集合，则称数集$P$为一个数域. 
+    数的非空集合$P$,且其中任意两个数的和、差、积、商(除数不为零)仍属于该集合, 则称数集$P$为一个数域. 
 \end{definition}
 
 \begin{example}
@@ -107,9 +107,9 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros)，
 \section{向量运算}
 
 \begin{definition}[向量加法]
-    $n$维向量$a$和$b$可以相加，求和形式表示为$a + b$.
+    $n$维向量$a$和$b$可以相加, 求和形式表示为$a + b$.
 
-    设向量 \( a, {b}, {C} \) 是向量空间 \( V \) 的元素，即 \( a, {b}, {c} \in V_{\text {.  }} \)
+    设向量 \( a, {b}, {C} \) 是向量空间 \( V \) 的元素, 即 \( a, {b}, {c} \in V_{\text {.  }} \)
 
 \begin{enumerate}
     \item 交换律： \( a+b=b+a \)
@@ -120,7 +120,7 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros)，
 \end{definition}
 
 \begin{corollary}[向量位移相加]
-    如果二维向量$a$和$b$都表示位移，则它们的位移之和为$a + b$
+    如果二维向量$a$和$b$都表示位移, 则它们的位移之和为$a + b$
 \end{corollary}
 
 \begin{example}
@@ -188,7 +188,7 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros)，
 \end{definition}
 
 \begin{example}
-    在向量空间 \( \mathbb{R}^{n} \) 上， 计算两个向量对应项相乘之后求和函数
+    在向量空间 \( \mathbb{R}^{n} \) 上,  计算两个向量对应项相乘之后求和函数
     \[ \langle a, b\rangle=a_{1} b_{1}+a_{2} b_{2}+\cdots+a_{n} b_{n}=a^{T}_{b} \]
 
 where \( a=\left[\begin{array}{c}a_{1} \\ a_{2} \\ \vdots \\ a_{n}\end{array}\right], b=\left[\begin{array}{c}b_{1} \\ b_{2} \\ \vdots \\ b_{n}\end{array}\right] \in \mathbb{R}^{n} \).
@@ -283,7 +283,7 @@ $$
     
 \( |\langle x, y\rangle|^{2} \leq\langle x, x\rangle\langle y, y\rangle \)
 
-当$ |\langle x, y\rangle|^{2}=\langle x, x\rangle\langle y, y\rangle $ 时， 有 $ \left\langle x, x\rangle^2 +2 \lambda\langle y, x\rangle+\lambda^{2}\langle y, y\rangle=0\right. $
+当$ |\langle x, y\rangle|^{2}=\langle x, x\rangle\langle y, y\rangle $ 时,  有 $ \left\langle x, x\rangle^2 +2 \lambda\langle y, x\rangle+\lambda^{2}\langle y, y\rangle=0\right. $
 
 也即 \( \langle x+\lambda y, x+\lambda y\rangle=0 \), 因此 \( x+\lambda y=0 \), 即 \( x=-\lambda y \).
 \end{proof}
@@ -292,7 +292,7 @@ $$
 
 计算机以浮点格式存储(实)数值. 
 
-基本的算术运算(加法，乘法等)被称为浮点运算(flop). 
+基本的算术运算(加法, 乘法等)被称为浮点运算(flop). 
 
 算法或操作的时间复杂度：作为输入维数的函数所需要的浮点运算总数. 
 
@@ -306,10 +306,10 @@ $$
     假设有$n$维向量$x$和$y$：
 
     \begin{itemize}
-        \item $x+y$需要$n$次加法，所以时间复杂度为 ($n$)flops. 
-        \item $x^T y$ 需要$n$次乘法和$n - 1$次加法，所以时间复杂度为$(2n - 1)$flops. 
-        \item 对于$x^T y$，通常将其时间复杂度简化为$2n$，甚至为$n$. 
-        \item 当$x$或$y$是稀疏的时候，算法的实际运算时间会比理论时间更少. 
+        \item $x+y$需要$n$次加法, 所以时间复杂度为 ($n$)flops. 
+        \item $x^T y$ 需要$n$次乘法和$n - 1$次加法, 所以时间复杂度为$(2n - 1)$flops. 
+        \item 对于$x^T y$, 通常将其时间复杂度简化为$2n$, 甚至为$n$. 
+        \item 当$x$或$y$是稀疏的时候, 算法的实际运算时间会比理论时间更少. 
     \end{itemize}
 \end{corollary}
 

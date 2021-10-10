@@ -2,7 +2,6 @@
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{\@mypartnumtocformat {I}{Map Matching}}{3}{part.1}%
-\ttl@starttoc {default@1}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Hidden Markov Map Matching}{4}{chapter.1}%
 \defcounter {refsection}{0}\relax 

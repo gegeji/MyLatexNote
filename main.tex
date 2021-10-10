@@ -41,15 +41,17 @@
 %----------------------------------------------------------------------------------------
 %	CONTENTS COMPILATION CONTROL
 %----------------------------------------------------------------------------------------
-\newcommand*{\printmath}{}
-% \newcommand*{\printdemo}{}
+%\newcommand*{\printmath}{}
+%\newcommand*{\printdemo}{}
 % \newcommand*{\printvocabulary}{}
+\newcommand*{\printpapernotes}{}
 
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
+% \documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
+\documentclass[11pt,fleqn, twoside, openany]{book} % remove blank pages between chapters
 
 \input{structure.tex} % Insert the commands.tex file which contains the majority of the structure behind the template
 
@@ -110,43 +112,43 @@
 %----------------------------------------------------------------------------------------
 
 
-%----------------------------------------------------------------------------------------
-%	Vocabulary (USING CONDITIONAL COMPILATION)
-%----------------------------------------------------------------------------------------
+
 
 \input{vocabulary/vocabulary-index.tex}
 
-%----------------------------------------------------------------------------------------
-%	Optimization (USING CONDITIONAL COMPILATION)
-%----------------------------------------------------------------------------------------
-
 \input{math/math-index.tex}
 
-%----------------------------------------------------------------------------------------
-%	DEMO PART (USING CONDITIONAL COMPILATION)
-%----------------------------------------------------------------------------------------
-
+\input{paperNotes/paper-index.tex}
 
 \input{demo.tex}
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
+\printbibliography
 
-\chapter*{Bibliography}
-\addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliography}} % Add a Bibliography heading to the table of contents
+% For print bibliography according to their type,
+% For unknown reasons, this does not work.
+
+%\chapter*{Bibliography}
+% \addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliography}} % Add a Bibliography heading to the table of contents
+
+
+
+% For print bibliography according to their type,
+% For unknown reasons, this does not work.
+%------------------------------------------------
+
+
+% \section*{Articles}
+% \addcontentsline{toc}{section}{Articles}
+% \printbibliography[heading=bibempty,type=article]
 
 %------------------------------------------------
 
-\section*{Articles}
-\addcontentsline{toc}{section}{Articles}
-\printbibliography[heading=bibempty,type=article]
-
-%------------------------------------------------
-
-\section*{Books}
-\addcontentsline{toc}{section}{Books}
-\printbibliography[heading=bibempty,type=book]
+% \section*{Books}
+% \addcontentsline{toc}{section}{Books}
+% \printbibliography[heading=bibempty,type=book]
 
 %----------------------------------------------------------------------------------------
 %	INDEX

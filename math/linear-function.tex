@@ -85,7 +85,7 @@ $ f(\alpha x+\beta y)=\alpha f(x)+\beta f(y), \alpha+\beta=1, \alpha, \beta \in 
 \section{泰勒展开}
 
 \begin{definition}[函数$f$第$i$个分量的一阶偏导数]
-    假设 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ ，函数 $ f $ 在 $ z $ 点可微
+    假设 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ , 函数 $ f $ 在 $ z $ 点可微
 
     $$ \begin{aligned} \frac{\partial f}{\partial z_{i}}(z) &=\lim _{t \rightarrow 0} \frac{f\left(z_{1}, \cdots, z_{i-1}, z_{i}+t, z_{i+1}, \cdots, z_{n}\right)-f(z)}{t} \\ &=\lim _{t \rightarrow 0} \frac{f\left(z+t e_{i}\right)-f(z)}{t} \end{aligned} $$
 \end{definition}
@@ -95,7 +95,7 @@ $ f(\alpha x+\beta y)=\alpha f(x)+\beta f(y), \alpha+\beta=1, \alpha, \beta \in 
 \end{definition}
 
 \begin{definition}[Taylor's Approximation]
-    假设 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ ，函数 $ f $ 在 $ z $ 点充分光滑, 即处处可导.
+    假设 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ , 函数 $ f $ 在 $ z $ 点充分光滑, 即处处可导.
 
     $$\begin{aligned} f(x)&=f(z)+\frac{\partial f}{\partial x_{1}}(z)\left(x_{1}-z_{1}\right)+\frac{\partial f}{\partial x_{2}}(z)\left(x_{2}-z_{2}\right)+\cdots+\frac{\partial f}{\partial x_{n}}(z)\left(x_{n}-z_{n}\right) 
     \\ & +\frac{1}{2 !} \sum_{j=1}^{n} \sum_{i=1}^{n} \frac{\partial f^{2}}{\partial x_{i} \partial x_{j}}(z)\left(x_{i}-z_{i}\right)\left(x_{\mathrm{j}}-z_{j}\right)+\cdots \end{aligned}$$
@@ -156,14 +156,14 @@ $ f(\alpha x+\beta y)=\alpha f(x)+\beta f(y), \alpha+\beta=1, \alpha, \beta \in 
     $$ \hat{f}(x)=f(z)+\frac{\partial f}{\partial x_{1}}(z)\left(x_{1}-z_{1}\right)+\ldots+\frac{\partial f}{\partial x_{1}}(z)\left(x_{n}-z_{n}\right) $$
 \end{definition}
 
-当$x$非常接近$z$时，$ \hat{f}(x) $ 也非常接近 $ f(z) $.  
+当$x$非常接近$z$时, $ \hat{f}(x) $ 也非常接近 $ f(z) $.  
 $ \hat{f}(x) $ 是关于 $ x $ 的一个仿射函数. 
 
 \begin{corollary}[一阶泰勒公式的内积形式]
     $$ \hat{f}(x)=f(z)+\nabla f(z)^{T}(x-z) \quad (\nabla f(z)=\left[\begin{array}{c}\frac{\partial f}{\partial x_{1}}(z) \\ \vdots \\ \frac{\partial f}{\partial x_{n}}(z)\end{array}\right]) $$
 \end{corollary} 
 
-一维时，$ \hat{f}(x)=f(z)+f^{\prime}(z)(x-z) $.
+一维时, $ \hat{f}(x)=f(z)+f^{\prime}(z)(x-z) $.
 
 \begin{example}
     $$ f(x)=x_{1}-3 x_{2}+e^{2 x_{1}+x_{2}-1} $$
@@ -179,5 +179,5 @@ $ \hat{f}(x) $ 是关于 $ x $ 的一个仿射函数.
     回归模型(regression model)为关于$x$的仿射函数
     $$ \hat{y}=x^{T} \beta+v $$
 
-    $x$是\textit{特征向量(feature vector)}，它的元素$x_i$称为\textit{回归元(regressors)}. n维向量 $ \beta $ 是\textit{权重向量(weight vector)}. 标量 $ v $ 是\textit{偏移量(offset)}. 标量 $ \hat{y} $ 是\textit{预测值(prediction)}. 表示某个实际结果或因变量，用$y$表示. 
+    $x$是\textit{特征向量(feature vector)}, 它的元素$x_i$称为\textit{回归元(regressors)}. n维向量 $ \beta $ 是\textit{权重向量(weight vector)}. 标量 $ v $ 是\textit{偏移量(offset)}. 标量 $ \hat{y} $ 是\textit{预测值(prediction)}. 表示某个实际结果或因变量, 用$y$表示. 
 \end{definition}

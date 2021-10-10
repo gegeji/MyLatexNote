@@ -1,0 +1,65 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{newson2009hidden}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=f006051634592eaa1a5361962494d0df}{%
+           family={Newson},
+           familyi={N\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=bb1bff5ea73182eeea844783a9f274ef}{%
+           family={Krumm},
+           familyi={K\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{d55dcb1bbadc25da1ad1040be15b2eb1}
+      \strng{fullhash}{d55dcb1bbadc25da1ad1040be15b2eb1}
+      \strng{bibnamehash}{d55dcb1bbadc25da1ad1040be15b2eb1}
+      \strng{authorbibnamehash}{d55dcb1bbadc25da1ad1040be15b2eb1}
+      \strng{authornamehash}{d55dcb1bbadc25da1ad1040be15b2eb1}
+      \strng{authorfullhash}{d55dcb1bbadc25da1ad1040be15b2eb1}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The problem of matching measured latitude/longitude points to roads is becoming increasingly important. This paper describes a novel, principled map matching algorithm that uses a Hidden Markov Model (HMM) to find the most likely road route represented by a time-stamped sequence of latitude/longitude pairs. The HMM elegantly accounts for measurement noise and the layout of the road network. We test our algorithm on ground truth data collected from a GPS receiver in a vehicle. Our test shows how the algorithm breaks down as the sampling rate of the GPS is reduced. We also test the effect of increasing amounts of additional measurement noise in order to assess how well our algorithm could deal with the inaccuracies of other location measurement systems, such as those based on WiFi and cell tower multilateration. We provide our GPS data and road network representation as a standard test set for other researchers to use in their map matching work. This map shows our test GPS data taken on a drive in Seattle, WA, USA and its eastern suburbs. The trip starts in the upper right corner near Marymoor Park. The data was sampled at 1 Hz using a RoyalTek RBT-2300 GPS logger. The drive took place on Saturday, January 17, 2009 starting at 20:27:37 UTC (12:27:37 local time) and ending at 22:34:28 UTC (14:34:28 local time), for an elapsed time of 02:06:51. A much higher resolution map is available here. Test trip GPS data text file | Excel 2007 file Example format: Date (UTC) Time (UTC, hh:mm:ss) Latitude (degrees) Longitude (degrees) 17-Jan-2009 20:27:37 47.66748333 -122.1070833 17-Jan-2009 20:27:38 47.66750000 -122.1070667 Road network data (40 km radius around greater Seattle, WA, USA area) text file | Excel 2007 file Example format: Edge ID From Node ID To Node ID Two Way Speed (m/s) Vertex Count LINESTRING(latitude1 longitude1, latitude2 longitude2, ...) 883991900000 883991900000 883991900001 1 22.22222222 10 LINESTRING(-122.732318937778 47.8899192810059, -122.732139229774 47.8903403878212, -122.731820046902 47.8910404443741, -122.731310427189 47.8921294212341, -122.730749845505 47.8933900594711, -122.730208039284 47.894441485405, -122.729588449001 47.8957316279411, -122.729159295559 47.8968098759651, -122.727560698986 47.9000902175903, -122.72741317749 47.900390625) 883991900001 883991900002 883991900003 1 11.1111111111111 4 LINESTRING(-122.71107852459 47.8776508569717, -122.712398171425 47.8788793087006, -122.71447956562 47.8810706734657, -122.715329825878 47.8818699717522) Note that it is always permissible to travel from the "From Node" to the "To Node" on an edge. If "Two Way" is 1, then it is also permissible to travel the opposite direction. Ground truth path (Edge ID in order encountered on test trip) text file | Excel 2007 file Example format: Edge ID Traversed From to To 884147800801 1 884147800802 1}
+      \field{booktitle}{17th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (ACM SIGSPATIAL GIS 2009), November 4-6, Seattle, WA}
+      \field{edition}{17th ACM S}
+      \field{title}{{Hidden Markov Map Matching Through Noise and Sparseness}}
+      \field{year}{2009}
+      \field{pages}{336\bibrangedash 343}
+      \range{pages}{8}
+      \verb{file}
+      \verb :E\:/OneDrive/旧文档/Mendeley Desktop/Newson, Krumm - Hidden Markov Map Matching Through Noise and Sparseness - 2009.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.microsoft.com/en-us/research/publication/hidden-markov-map-matching-noise-sparseness/
+      \endverb
+      \verb{url}
+      \verb https://www.microsoft.com/en-us/research/publication/hidden-markov-map-matching-noise-sparseness/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
