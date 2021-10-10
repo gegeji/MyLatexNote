@@ -1,0 +1,9 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'math-main.blg'
+[98] biber-MSWIN32:340> INFO - === 
+[136] Biber.pm:415> INFO - Reading 'math-main.bcf'
+[242] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[248] Utils.pm:395> WARN - The file 'math-main.bcf' does not contain any citations!
+[257] bbl.pm:654> INFO - Writing 'math-main.bbl' with encoding 'UTF-8'
+[257] bbl.pm:757> INFO - Output to math-main.bbl
+[257] Biber.pm:128> INFO - WARNINGS: 1

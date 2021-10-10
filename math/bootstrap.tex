@@ -1,30 +1,30 @@
 设总体的分布$F$未知，但已知有一个容量为$n$的来自分
 布$F$的数据样本，自这一样本按放回抽样的方法抽取一
 个容量为$n$的样本，这种样本称为bootstrap样本或称
-为自助样本。相继地，独立地自原始样本中取很多个
+为自助样本. 相继地，独立地自原始样本中取很多个
 Bootstrap样本，利用这些样本对总体$F$进行统计推断，
-这种方法称为非参数Bootstrap方法，又称自助法。这
+这种方法称为非参数Bootstrap方法，又称自助法. 这
 一方法可以用于当人们对总体知之甚少的情况，它是近
-代统计中的一种用于数据处理的重要实用方法。这种方
+代统计中的一种用于数据处理的重要实用方法. 这种方
 法的实现需要在计算机上作大量的计算，随着计算机威
-力的增长，它已成为一种流行的方法。
+力的增长，它已成为一种流行的方法. 
 
 \section{估计量的标准误差的Bootstrap估计}
 
-在估计总体未知参数 $ \theta $ 时，人们不但要给出 $ \theta $ 的估计 $ \hat{\theta} $, 还需指出这一估计 $ \hat{\theta} $ 的精度。通常我们用估计量 $ \hat{\theta} $
-的标准差 $ \sqrt{D(\hat{\theta})} $ 来度量估计的精度。估计量 $ \hat{\theta} $ 的标准差 $ \sigma_{\hat{\theta}}=\sqrt{D(\hat{\theta})} $ 也称为\textit{估计量 $ \hat{\theta} $ 的标准误差}。
+在估计总体未知参数 $ \theta $ 时，人们不但要给出 $ \theta $ 的估计 $ \hat{\theta} $, 还需指出这一估计 $ \hat{\theta} $ 的精度. 通常我们用估计量 $ \hat{\theta} $
+的标准差 $ \sqrt{D(\hat{\theta})} $ 来度量估计的精度. 估计量 $ \hat{\theta} $ 的标准差 $ \sigma_{\hat{\theta}}=\sqrt{D(\hat{\theta})} $ 也称为\textit{估计量 $ \hat{\theta} $ 的标准误差}. 
 
-设$ \boldsymbol{X}_{1}, \boldsymbol{X}_{2}, \cdots, X_{n} $ 是来自 $ \mathcal{F}(x) $ 为分布函数的总体的样本, $ \theta $ 是我们感兴趣的未知参数, 用 $ \hat{\boldsymbol{\theta}}=\hat{\boldsymbol{\theta}}\left(\boldsymbol{X}_{1}, \boldsymbol{X}_{2}, \cdots, \boldsymbol{X}_{n}\right) $ 作为 $ \theta $ 的估计量，在应用中 $ \hat{\theta} $ 的抽样分布常是很难处理的, 这样, $ \sqrt{D(\hat{\theta})} $ 常没有一个简单的表达式，不过我们可以用计算机模拟的方法来求 得 $ \sqrt{D(\hat{\theta})} $ 的估计。
+设$ \boldsymbol{X}_{1}, \boldsymbol{X}_{2}, \cdots, X_{n} $ 是来自 $ \mathcal{F}(x) $ 为分布函数的总体的样本, $ \theta $ 是我们感兴趣的未知参数, 用 $ \hat{\boldsymbol{\theta}}=\hat{\boldsymbol{\theta}}\left(\boldsymbol{X}_{1}, \boldsymbol{X}_{2}, \cdots, \boldsymbol{X}_{n}\right) $ 作为 $ \theta $ 的估计量，在应用中 $ \hat{\theta} $ 的抽样分布常是很难处理的, 这样, $ \sqrt{D(\hat{\theta})} $ 常没有一个简单的表达式，不过我们可以用计算机模拟的方法来求 得 $ \sqrt{D(\hat{\theta})} $ 的估计. 
 
 为此, 自 $ \boldsymbol{F} $ 产生很多容量为 $ \boldsymbol{n} $ 的样本 (例如 $ \boldsymbol{B 个 ) ,} $ 对 于每一个样本计算 $ \hat{\theta} $ 的值, 得 $ \hat{\theta}_{1}, \hat{\theta}_{2}, \cdots, \hat{\theta}_{B} $, 则 $ \sqrt{D(\hat{\theta})} $ 可以用
 
 $$ \hat{\sigma}_{\hat{\theta}}=\sqrt{\frac{1}{B-1} \sum_{i=1}^{B}\left(\hat{\theta}_{i}-\bar{\theta}\right)^{2}} $$
 
-来估计，其中 $ \bar{\theta}=\frac{1}{B} \sum_{i=1}^{B} \hat{\theta}_{i} $ 。
+来估计，其中 $ \bar{\theta}=\frac{1}{B} \sum_{i=1}^{B} \hat{\theta}_{i} $ . 
 
-然而$F$常常是未知的，这样就无法产生模拟样本，需要另外的方法。
+然而$F$常常是未知的，这样就无法产生模拟样本，需要另外的方法. 
 
-设分布 $ F $ 未知, $ x_{1}, x_{2}, \cdots, x_{n} $ 是来自 $ F $ 的样本值，$ \boldsymbol{F}_{n} $ 是相应的经验分布函数。当 $ n $ 很大时, $ F_{n} $ 接近 $ F $ 。1用 $ F_{n} $ 代替上一段中的 $ F $, 在 $ F_{n} $ 中抽样。在 $ F_{n} $ 中抽样, 就是在原始样本 $ \boldsymbol{x}_{1}, \boldsymbol{x}_{2}, \cdots, \boldsymbol{x}_{n} $ 中每次随机地取一个个体作放回抽样。如此得到一个容量为 $ \boldsymbol{n} $ 的样本$ \boldsymbol{x}_{1}^{*}, \boldsymbol{x}_{2}^{*}, \cdots, \boldsymbol{x}_{n}^{*} $, 这就是第一段中所说的 Bootstrap 样本。用Bootstrap样本按上一段中计算估计$ \hat{\theta}\left(x_{1}, x_{2}, \cdots, x_{n}\right) $ 那样求出 $ \theta $ 的估计 $ \hat{\theta}^{*}=\hat{\theta}\left(x_{1}^{*}, x_{2}^{*}, \cdots, x_{n}^{*}\right) $估计 $ \hat{\theta}^{*} $ 称为 $ \theta $ 的 Bootstrap 估计。
+设分布 $ F $ 未知, $ x_{1}, x_{2}, \cdots, x_{n} $ 是来自 $ F $ 的样本值，$ \boldsymbol{F}_{n} $ 是相应的经验分布函数. 当 $ n $ 很大时, $ F_{n} $ 接近 $ F $ . 1用 $ F_{n} $ 代替上一段中的 $ F $, 在 $ F_{n} $ 中抽样. 在 $ F_{n} $ 中抽样, 就是在原始样本 $ \boldsymbol{x}_{1}, \boldsymbol{x}_{2}, \cdots, \boldsymbol{x}_{n} $ 中每次随机地取一个个体作放回抽样. 如此得到一个容量为 $ \boldsymbol{n} $ 的样本$ \boldsymbol{x}_{1}^{*}, \boldsymbol{x}_{2}^{*}, \cdots, \boldsymbol{x}_{n}^{*} $, 这就是第一段中所说的 Bootstrap 样本. 用Bootstrap样本按上一段中计算估计$ \hat{\theta}\left(x_{1}, x_{2}, \cdots, x_{n}\right) $ 那样求出 $ \theta $ 的估计 $ \hat{\theta}^{*}=\hat{\theta}\left(x_{1}^{*}, x_{2}^{*}, \cdots, x_{n}^{*}\right) $估计 $ \hat{\theta}^{*} $ 称为 $ \theta $ 的 Bootstrap 估计. 
 
 
 
@@ -41,26 +41,26 @@ $$
 \hat{\sigma}_{\hat{\theta}}=\sqrt{\frac{1}{B-1} \sum_{i=1}^{B}\left(\hat{\theta}_{i}^{*}-\bar{\theta}^{*}\right)^{2}}
 $$
 
-来估计, 其中 $ \bar{\theta}^{\star}=\frac{1}{B} \sum_{i=1}^{B} \hat{\theta}_{i}^{*} $, 上式就是 $ \sqrt{D(\hat{\theta})} $ 的 Bootstrap 估计。
+来估计, 其中 $ \bar{\theta}^{\star}=\frac{1}{B} \sum_{i=1}^{B} \hat{\theta}_{i}^{*} $, 上式就是 $ \sqrt{D(\hat{\theta})} $ 的 Bootstrap 估计. 
 
 \begin{algorithm}
     \caption{求 $ \sqrt{D(\hat{\theta})} $ 的 Bootstrap 估计}
     自原始数据样本 $ x_{1}, x_{2}, \cdots, x_{n} $ 按放回抽样的方法, 抽得容量为 $ n $ 的样本 $ x_{1}^{*}, x_{2}^{*}, \cdots, x_{n}^{*} $ (称为\textit{Bootstrap 样本})\;
-    相继地、独立地求出 $ B(B \geq 1000) $ 个容量为 $ n $ 的Bootstrap 样本, $ x_{1}^{*_{i}}, x_{2}^{*_{i}}, \cdots, x_{n}^{*_{i}}, \boldsymbol{i}=\mathbf{1}, \mathbf{2}, \cdots, \boldsymbol{B} $ 。 对于第$ \boldsymbol{i} $ 个 Bootstrap 样本, 计算 $ \hat{\theta}_{i}^{*}=\hat{\theta}\left(x_{1}^{* i}, x_{2}^{* i}, \cdots, x_{n}^{* i}\right) $,$ \boldsymbol{i}=\mathbf{1}, \mathbf{2}, \cdots, B \quad\left(\hat{\theta}_{i}^{*}\right. $ 称为 $ \theta $ 的第 $ \boldsymbol{i} $ 个 \textit{Bootstrap 估计})\;
+    相继地、独立地求出 $ B(B \geq 1000) $ 个容量为 $ n $ 的Bootstrap 样本, $ x_{1}^{*_{i}}, x_{2}^{*_{i}}, \cdots, x_{n}^{*_{i}}, \boldsymbol{i}=\mathbf{1}, \mathbf{2}, \cdots, \boldsymbol{B} $ .  对于第$ \boldsymbol{i} $ 个 Bootstrap 样本, 计算 $ \hat{\theta}_{i}^{*}=\hat{\theta}\left(x_{1}^{* i}, x_{2}^{* i}, \cdots, x_{n}^{* i}\right) $,$ \boldsymbol{i}=\mathbf{1}, \mathbf{2}, \cdots, B \quad\left(\hat{\theta}_{i}^{*}\right. $ 称为 $ \theta $ 的第 $ \boldsymbol{i} $ 个 \textit{Bootstrap 估计})\;
     计算$ \hat{\sigma}_{\hat{\theta}}=\sqrt{\frac{1}{B-1} \sum_{i=1}^{B}\left(\hat{\theta}_{i}^{*}-\bar{\theta}^{*}\right)^{2}} $, 其中 $ \bar{\theta}^{*}=\frac{1}{B} \sum_{i=1}^{B} \hat{\theta}_{i}^{*} $
 \end{algorithm}
 
 \section{估计量的均方误差的Bootstrap估计}
 
-设 $ X=\left(X_{1}, X_{2}, \cdots, X_{n}\right) $ 是来自总体 $ F $ 的样本, $ F $ 未知,$ \boldsymbol{R}=\boldsymbol{R}(\boldsymbol{X}) $ 是感兴趣的随机变量，它依赖于样本 $ \boldsymbol{X}_{\circ} $ 。假设我们希望去估计 $ R $ 的分布的某些特征。例如 $ R $ 的数学期望 $ E_{F}(\boldsymbol{R}) $, 就可以按照上面所说的三个步骤1 $ ^{\circ}, 2^{\circ} $$ 3^{\circ} $ 进行，只是在 $ 2^{\circ} $ 中对于第 $ \boldsymbol{i} $ 个 Bootstrap 样本$ \boldsymbol{x}_{i}^{*}=\left(x_{1}^{* i}, x_{2}^{* i}, \cdots, x_{n}^{* i}\right) $, 计算 $ R_{i}^{*}=R_{i}^{*}\left(x_{i}^{*}\right) $ 代替计算 $ \theta_{i}^{*} $, 且在 $ 3^{\circ} $ 中计算感兴趣的 $ R $ 的特征。例如如果希望估计$ \boldsymbol{E}_{F}(\boldsymbol{R}) $ 就计算
+设 $ X=\left(X_{1}, X_{2}, \cdots, X_{n}\right) $ 是来自总体 $ F $ 的样本, $ F $ 未知,$ \boldsymbol{R}=\boldsymbol{R}(\boldsymbol{X}) $ 是感兴趣的随机变量，它依赖于样本 $ \boldsymbol{X}_{\circ} $ . 假设我们希望去估计 $ R $ 的分布的某些特征. 例如 $ R $ 的数学期望 $ E_{F}(\boldsymbol{R}) $, 就可以按照上面所说的三个步骤1 $ ^{\circ}, 2^{\circ} $$ 3^{\circ} $ 进行，只是在 $ 2^{\circ} $ 中对于第 $ \boldsymbol{i} $ 个 Bootstrap 样本$ \boldsymbol{x}_{i}^{*}=\left(x_{1}^{* i}, x_{2}^{* i}, \cdots, x_{n}^{* i}\right) $, 计算 $ R_{i}^{*}=R_{i}^{*}\left(x_{i}^{*}\right) $ 代替计算 $ \theta_{i}^{*} $, 且在 $ 3^{\circ} $ 中计算感兴趣的 $ R $ 的特征. 例如如果希望估计$ \boldsymbol{E}_{F}(\boldsymbol{R}) $ 就计算
 
 $$ E_{*}\left(R^{*}\right)=\frac{1}{B} \sum_{i=1}^{B} R_{i}^{*} $$
 
 \section{Bootstrap置信区间}
 
-设 $ X=\left(X_{1}, X_{2}, \cdots, X_{n}\right) $ 是来自总体 $ F $ 容量为 $ n $ 的样本 $ \boldsymbol{x}=\left(\boldsymbol{x}_{1}, \boldsymbol{x}_{2}, \cdots, \boldsymbol{x}_{n}\right) $ 是一个已知的样本值。 $ \boldsymbol{F} $ 中含有未知参数 $ \theta, \hat{\theta}=\hat{\theta}\left(X_{1}, X_{2}, \cdots, X_{n}\right) $ 是 $ \theta $ 的估计量。现在来求 $ \theta $ 的置信水平为 $ 1-\alpha $ 的置信区间。
+设 $ X=\left(X_{1}, X_{2}, \cdots, X_{n}\right) $ 是来自总体 $ F $ 容量为 $ n $ 的样本 $ \boldsymbol{x}=\left(\boldsymbol{x}_{1}, \boldsymbol{x}_{2}, \cdots, \boldsymbol{x}_{n}\right) $ 是一个已知的样本值.  $ \boldsymbol{F} $ 中含有未知参数 $ \theta, \hat{\theta}=\hat{\theta}\left(X_{1}, X_{2}, \cdots, X_{n}\right) $ 是 $ \theta $ 的估计量. 现在来求 $ \theta $ 的置信水平为 $ 1-\alpha $ 的置信区间. 
 
-相继地, 独立地从样本 $ \boldsymbol{x}=\left(x_{1}, x_{2}, \cdots, x_{n}\right) $ 中抽出 $ B $ 个 容量为 $ n $ 的 Bootstrap 样本，对于每个 Bootstrap 样 本求出 $ \theta $ 的 Bootstrap 估计: $ \hat{\theta}_{1}^{*}, \hat{\theta}_{2}^{*}, \cdots, \hat{\theta}_{B}^{*} $ 。 将它们自 小到大排序，得
+相继地, 独立地从样本 $ \boldsymbol{x}=\left(x_{1}, x_{2}, \cdots, x_{n}\right) $ 中抽出 $ B $ 个 容量为 $ n $ 的 Bootstrap 样本，对于每个 Bootstrap 样 本求出 $ \theta $ 的 Bootstrap 估计: $ \hat{\theta}_{1}^{*}, \hat{\theta}_{2}^{*}, \cdots, \hat{\theta}_{B}^{*} $ .  将它们自 小到大排序，得
 
 $$ \hat{\theta}_{(1)}^{*} \leq \hat{\theta}_{(2)}^{*} \leq \cdots \leq \hat{\theta}_{(B)}^{*} $$
 
@@ -77,16 +77,16 @@ $$
 
 $$ P\left\{\hat{\theta}_{\left(k_{1}\right)}^{*}<\theta<\hat{\theta}_{\left(k_{2}\right)}^{*}\right\}=1-\alpha $$
 
-于是由上式就得到 $ \theta $ 的置信水平为 $ 1-\alpha $ 的近似置信区 间 $ \left(\hat{\theta}_{\left(k_{1}\right)}^{*}, \hat{\theta}_{\left(k_{2}\right)}^{*}\right) $, 这一区间称为 $ \theta $ 的置信水平为 $ 1-\alpha $ 的Bootstrap置信区间。这种求置信区间的方法称为分位数法。
+于是由上式就得到 $ \theta $ 的置信水平为 $ 1-\alpha $ 的近似置信区 间 $ \left(\hat{\theta}_{\left(k_{1}\right)}^{*}, \hat{\theta}_{\left(k_{2}\right)}^{*}\right) $, 这一区间称为 $ \theta $ 的置信水平为 $ 1-\alpha $ 的Bootstrap置信区间. 这种求置信区间的方法称为分位数法. 
 
 \section{参数Bootstrap方法}
 
-假设所研究的总体的分布函数 $ F(x ; \beta) $ 的形式已知, 但 其中包含未知参数 $ \beta （ \beta $ 可以是向量)。现在已知有一个 来自 $ F(x ; \beta) $ 的样本
+假设所研究的总体的分布函数 $ F(x ; \beta) $ 的形式已知, 但 其中包含未知参数 $ \beta （ \beta $ 可以是向量). 现在已知有一个 来自 $ F(x ; \beta) $ 的样本
 
 $$ X_{1}, X_{2}, \cdots, X_{n} $$
 
-利用这一样本求出 $ \beta $ 的最大似然估计 $ \hat{\beta} $ 。在 $ F(x ; \beta) $ 中以 $ \hat{\beta} $ 代替 $ \beta $ 得到 $ F(x ; \hat{\beta}) $, 接着在 $ F(x ; \hat{\beta}) $ 中产生容量为 $ n $ 的 样本
+利用这一样本求出 $ \beta $ 的最大似然估计 $ \hat{\beta} $ . 在 $ F(x ; \beta) $ 中以 $ \hat{\beta} $ 代替 $ \beta $ 得到 $ F(x ; \hat{\beta}) $, 接着在 $ F(x ; \hat{\beta}) $ 中产生容量为 $ n $ 的 样本
 
 $$ X_{1}^{*}, X_{2}^{*}, \cdots, X_{n}^{*} \sim F(x ; \hat{\beta}) $$
 
-这种样本可以产生很多个,例如产生 $ B(B \geq 1000) $ 个, 就可以利用这些样本对总体进行统计推断，其做法与 非参数 Bootstrap 方法一样。这种方法称为参数 Bootstrap 方法。
+这种样本可以产生很多个,例如产生 $ B(B \geq 1000) $ 个, 就可以利用这些样本对总体进行统计推断，其做法与 非参数 Bootstrap 方法一样. 这种方法称为参数 Bootstrap 方法. 

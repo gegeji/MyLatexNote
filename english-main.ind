@@ -204,8 +204,9 @@
   \item passage\dotfill \hyperpage{14}, \hyperpage{42}
   \item passenger\dotfill \hyperpage{14}, \hyperpage{42}
   \item pedal\dotfill \hyperpage{14}, \hyperpage{42}
+  \item persecute\dotfill \hyperpage{11}, \hyperpage{43}
   \item perspective\dotfill \hyperpage{19}, \hyperpage{26}, 
-		\hyperpage{43}
+		\hyperpage{44}
   \item perspire\dotfill \hyperpage{19}, \hyperpage{26}, \hyperpage{44}
   \item pervade\dotfill \hyperpage{14}, \hyperpage{26}, 
 		\hyperpage{42, 43}
@@ -216,7 +217,6 @@
   \item precede\dotfill \hyperpage{13}, \hyperpage{27}, \hyperpage{41}
   \item precise\dotfill \hyperpage{16}, \hyperpage{27}, \hyperpage{43}
   \item predict\dotfill \hyperpage{9}, \hyperpage{27}, \hyperpage{41}
-  \item presecute\dotfill \hyperpage{11}, \hyperpage{43}
   \item previous\dotfill \hyperpage{27}, \hyperpage{43}
   \item prison\dotfill \hyperpage{11}, \hyperpage{43}
   \item proceed\dotfill \hyperpage{13}, \hyperpage{27}, \hyperpage{41}
@@ -241,7 +241,7 @@
   \item reclaim\dotfill \hyperpage{20}, \hyperpage{27}, \hyperpage{46}
   \item repel\dotfill \hyperpage{17}, \hyperpage{45}
   \item respect\dotfill \hyperpage{19}
-  \item respire\dotfill \hyperpage{20}, \hyperpage{27}, \hyperpage{45}
+  \item respire\dotfill \hyperpage{20}, \hyperpage{27}, \hyperpage{46}
   \item retain\dotfill \hyperpage{12}, \hyperpage{45}
   \item retract\dotfill \hyperpage{16}, \hyperpage{45}
   \item retrospect\dotfill \hyperpage{19}, \hyperpage{27}, 
@@ -260,7 +260,7 @@
   \item section\dotfill \hyperpage{15}, \hyperpage{46}
   \item segment\dotfill \hyperpage{16}, \hyperpage{46}
   \item sequel\dotfill \hyperpage{11}, \hyperpage{47}
-  \item sequence\dotfill \hyperpage{11}, \hyperpage{46}
+  \item sequence\dotfill \hyperpage{11}, \hyperpage{47}
   \item spectacle\dotfill \hyperpage{19}, \hyperpage{47}
   \item spectacular\dotfill \hyperpage{19}, \hyperpage{47}
   \item spectator\dotfill \hyperpage{19}, \hyperpage{26}, 
@@ -287,14 +287,14 @@
 
   \item traction\dotfill \hyperpage{16}, \hyperpage{48}
   \item tractor\dotfill \hyperpage{16}, \hyperpage{26}, \hyperpage{48}
-  \item tranplant\dotfill \hyperpage{23}, \hyperpage{47}
+  \item tranplant\dotfill \hyperpage{23}, \hyperpage{48}
   \item transcipt\dotfill \hyperpage{23}, \hyperpage{47}
   \item transfer\dotfill \hyperpage{23}, \hyperpage{47}
   \item transform\dotfill \hyperpage{23}, \hyperpage{47}
   \item transformer\dotfill \hyperpage{23}, \hyperpage{47}
   \item transit\dotfill \hyperpage{23}, \hyperpage{47}
-  \item transmit\dotfill \hyperpage{23}, \hyperpage{47}
-  \item transport\dotfill \hyperpage{23}, \hyperpage{47}
+  \item transmit\dotfill \hyperpage{23}, \hyperpage{48}
+  \item transport\dotfill \hyperpage{23}, \hyperpage{48}
   \item transribe\dotfill \hyperpage{23}, \hyperpage{47}
   \item trespass\dotfill \hyperpage{14}, \hyperpage{23}, \hyperpage{48}
 

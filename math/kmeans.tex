@@ -19,7 +19,7 @@ $$
 \begin{corollary}
     $$ \lim \frac{y}{C x}=\frac{1}{C} \lim \frac{y}{x}=0 $$
 
-    也即则称 $ y $ 是 $ C x $ 的高阶无穷小，记作 $ y=o(C x) $ 。
+    也即则称 $ y $ 是 $ C x $ 的高阶无穷小，记作 $ y=o(C x) $ . 
 \end{corollary}
 
 \begin{proposition}[优化求解的必要条件]
@@ -45,9 +45,9 @@ $$
 
     $$ f(\tilde{x})=f(\hat{x})-t\|\nabla f(\hat{x})\|_{2}^{2}+o\left(t\|\nabla f(\hat{x})\|_{2}\right) \leq f(\hat{x}) $$
 
-    与 $ \hat{x}=\arg \min _{\mathbf{R}^{n}} f(x) $ 矛盾。
+    与 $ \hat{x}=\arg \min _{\mathbf{R}^{n}} f(x) $ 矛盾. 
 
-    $ \nabla f(\widehat{x})=0 $, 是最优问题解的必要条件。通常 $ \nabla f(\hat{x})=0 \not \Leftrightarrow \hat{x}=\arg \min _{\mathbf{R}^{n}} f(x) $。
+    $ \nabla f(\widehat{x})=0 $, 是最优问题解的必要条件. 通常 $ \nabla f(\hat{x})=0 \not \Leftrightarrow \hat{x}=\arg \min _{\mathbf{R}^{n}} f(x) $. 
 \end{proof}
 
 \begin{example}
@@ -78,7 +78,7 @@ $$
 
     $$ f(\alpha x+(1-\alpha) y) \leq \alpha f(x)+(1-\alpha) f(y), \forall x, y \in \Omega, \alpha \in \mathbf{R}, 0 \leq \alpha \leq 1 $$
 
-    称其为凸函数。
+    称其为凸函数. 
 \end{definition}
 
 % todo 图片
@@ -139,7 +139,7 @@ $$
 
     $ \Rightarrow $ 充分条件：令 $ g(t)=f(t x+(1-t) y), t \in \mathbb{R} $, 则 $ g^{\prime}(t)=\langle\nabla f(t x+(1-t) y), x-y\rangle $ 由于 $ f $ 是凸函数, 证明 $ g(t) $ 也是凸函数；并可得 $ g(0) \geq g(1)+g^{\prime}(1)(-1) $, 得证.
 
-    $ \Leftarrow $ 必要条件：与一维类似。
+    $ \Leftarrow $ 必要条件：与一维类似. 
 \end{proof}
 
 \begin{theorem}
@@ -180,7 +180,7 @@ $$
 \end{example}
 
 % todo reference
-问题\ref{Problem:ClusteringCenter}中已知目标函数是凸函数。（见\ref{Example:SquareIsConvex}, \ref{Example:NormIsConvex}, \ref{Example:L2NormIsConvex}）
+问题\ref{Problem:ClusteringCenter}中已知目标函数是凸函数. （见\ref{Example:SquareIsConvex}, \ref{Example:NormIsConvex}, \ref{Example:L2NormIsConvex}）
 
 则可以求解
 
@@ -250,15 +250,15 @@ $$ z=\frac{1}{N} \sum_{i=1}^{N} x_{i} $$
 
 
 
-目标：分成$k$个集合，尽量使得同一个集合中的向量彼此接近。
+目标：分成$k$个集合，尽量使得同一个集合中的向量彼此接近. 
 
 \begin{notation}
     给定N个n维向量 $ x_{1}, \ldots, x_{N} \in \mathbb{R}^{n} $
 
     \begin{itemize}
-        \item 标签 $ c_{i} \in\{1,2, \cdots, k\} $ 表示向量 $ x_{i} $ 所属类别, 例如 $ c_{i}=2 $ 表示 $ x_{i} $ 属于第2类。
-        \item 对于 $ j=1, \ldots, k, \quad G_{j}=\left\{i: c_{i}=j\right\} $ 表示属于第j类的向量 $ x_{i} $ 的下标集合。
-        \item 向量 $ z_{j}, j=1, \ldots, k $, 表示同属于 $ j $ 类的向量 $ x_{i}, i \in G_{j} $ 的聚类中心。
+        \item 标签 $ c_{i} \in\{1,2, \cdots, k\} $ 表示向量 $ x_{i} $ 所属类别, 例如 $ c_{i}=2 $ 表示 $ x_{i} $ 属于第2类. 
+        \item 对于 $ j=1, \ldots, k, \quad G_{j}=\left\{i: c_{i}=j\right\} $ 表示属于第j类的向量 $ x_{i} $ 的下标集合. 
+        \item 向量 $ z_{j}, j=1, \ldots, k $, 表示同属于 $ j $ 类的向量 $ x_{i}, i \in G_{j} $ 的聚类中心. 
     \end{itemize}
 \end{notation}
 
@@ -272,7 +272,7 @@ $$ z=\frac{1}{N} \sum_{i=1}^{N} x_{i} $$
     
 \end{problem}
 
-$k$-means算法是将 $ \mathrm{N} $ 向量 $ x_{i} \in \mathbb{R}^{n} $ 划分成$k$类的迭代聚类算法。
+$k$-means算法是将 $ \mathrm{N} $ 向量 $ x_{i} \in \mathbb{R}^{n} $ 划分成$k$类的迭代聚类算法. 
 
 \begin{algorithm}
     \caption{$k$-means Algorithm}
@@ -292,12 +292,12 @@ $k$-means算法是将 $ \mathrm{N} $ 向量 $ x_{i} \in \mathbb{R}^{n} $ 划分�
     $$ \nabla f_{j}\left(z_{j}\right)=\sum_{i \in G_{j}} 2\left(x_{i}-z_{j}\right)=0 $$
 $$ z_{j}=\frac{1}{\left|G_{j}\right|} \sum_{i \in G_{j}} x_{i} $$
 
-$ \left|G_{j}\right| $ 表示集合 $ G_{j} $ 中元素的数目。
+$ \left|G_{j}\right| $ 表示集合 $ G_{j} $ 中元素的数目. 
 \end{proof}
 
-在每一次迭代中目标函数$J$都会下降, 直到聚类中心 $ z_{1}, \cdots, z_{k} $ 和 划分聚类标签集合 $ G_{1}, \cdots, G_{k} $ 不再变化。
+在每一次迭代中目标函数$J$都会下降, 直到聚类中心 $ z_{1}, \cdots, z_{k} $ 和 划分聚类标签集合 $ G_{1}, \cdots, G_{k} $ 不再变化. 
 
-但是k-means算法依赖于初始随机生成的聚类中心，只可得到目标函数$J$的局部局部最优。
+但是k-means算法依赖于初始随机生成的聚类中心，只可得到目标函数$J$的局部局部最优. 
 
-解决方案：使用不同的(随机的)初始聚类中心运行k-means算法若干次，取目标函数$J$值最小的一次作为最终的聚类结果。
+解决方案：使用不同的(随机的)初始聚类中心运行k-means算法若干次，取目标函数$J$值最小的一次作为最终的聚类结果. 
 

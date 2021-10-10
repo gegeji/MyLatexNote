@@ -1,6 +1,6 @@
 \chapter{Norm and Distance}
 
-\section{Norm}
+\section{Vector Norm}
 
 \begin{definition}[Vector Norm]
     在向量空间中存在一个函数 $ \|\cdot\|: \mathbb{R}^{n} \rightarrow \mathbb{R} $, 且满足以下条件
@@ -10,7 +10,7 @@
     \item 三角不等式: $ \|x+y\| \leq\|x\|+\|y\|, \quad x, y \in \mathbb{R}^{n} $;
     \item 非负性: $ \|x\| \geq {0}, \boldsymbol{x} \in \mathbb{R}^{n} $ 且 $ \|\boldsymbol{x}\|=0 \Leftrightarrow \boldsymbol{x}=0 $;
 \end{itemize}
-则称$\|\cdot\|$为向量范数。
+则称$\|\cdot\|$为向量范数. 
 \end{definition}
 
 \begin{example}[$ \ell_{1} $-范数（曼哈顿范数， Manhattan norm）]
@@ -56,7 +56,7 @@
 \begin{definition}[$ \ell_{\mathrm{p}} $-范数]
     $$ \|x\|_{p}=\left(x_{1}^{\mathrm{p}}+x_{2}^{p}+\cdots+x_{n}^{p}\right)^{\frac{1}{p}}, \quad x \in \mathbb{R}^{n}, p \ge 1 $$
 
-    $ \ell_{1} $ 范数 $ \|x\|_{1}$,$ \ell_{2} $-范数 $ \|x\|_{2} $, $ \ell_{\infty} $-范数是 $ \ell_{p} $-范数的特例。
+    $ \ell_{1} $ 范数 $ \|x\|_{1}$,$ \ell_{2} $-范数 $ \|x\|_{2} $, $ \ell_{\infty} $-范数是 $ \ell_{p} $-范数的特例. 
 \end{definition}
 
 证明可以使用以下两条不等式
@@ -81,7 +81,7 @@
     $$ \operatorname{rms}(x)=\sqrt{\frac{x_{1}^{2}+x_{2}^{2}+\cdots+x_{n}^{2}}{n}}=\frac{\|x\|_{2}}{\sqrt{n}} $$
 \end{definition}
 
-$ \operatorname{rms}(x) $ 给出了 $ \left|x_{i}\right| $ 的 “典型" (typical)值。例如, $ \mathrm{rms}(\mathbf{1})=1 $ (与$n$无关)。均方根(RMS)值对于比较不同长度的向量大小是比较有用的。
+$ \operatorname{rms}(x) $ 给出了 $ \left|x_{i}\right| $ 的 “典型" (typical)值. 例如, $ \mathrm{rms}(\mathbf{1})=1 $ (与$n$无关). 均方根(RMS)值对于比较不同长度的向量大小是比较有用的. 
 
 \section{Chebyshev's Inequality}
 
@@ -98,7 +98,7 @@ $$
 \end{theorem}
 
 \begin{theorem}[Chebyshev's Inequality]
-    假设$k$为向量 $ x $ 分量满足条件 $ \left|x_{i}\right| \geq a $ 的个数，即 $ x_{i}^{2} \geq a^{2} $ 的个数。
+    假设$k$为向量 $ x $ 分量满足条件 $ \left|x_{i}\right| \geq a $ 的个数，即 $ x_{i}^{2} \geq a^{2} $ 的个数. 
 
     因此: $ \|x\|_{2}^{2}=x_{1}^{2}+x_{2}^{2}+\cdots+x_{n}^{2} \geq k a^{2} $
 
@@ -160,7 +160,7 @@ $$
     $$ \operatorname{std}(x)=\operatorname{rms}(\tilde{x})=\frac{\left\|x-\left(1^{T} x / n\right) 1\right\|_{2}}{\sqrt{n}} $$
 \end{definition}
 
-$\operatorname{std}(x)$表示数据元素的变化程度。对于常数$\alpha$，当且仅当$ x=\alpha \mathbf{1} $时，$ \operatorname{std}(x)=0 $.
+$\operatorname{std}(x)$表示数据元素的变化程度. 对于常数$\alpha$，当且仅当$ x=\alpha \mathbf{1} $时，$ \operatorname{std}(x)=0 $.
 
 \begin{theorem}
     $$ \operatorname{rms}(x)^{2}=\operatorname{avg}(x)^{2}+\operatorname{std}(x)^{2} $$
@@ -174,14 +174,14 @@ $\operatorname{std}(x)$表示数据元素的变化程度。对于常数$\alpha$�
     $ \angle(a, b) $ 的取值范围为 $ [0, \pi] $, 且满足$$ a^{T} b=\|a\|_{2}\|b\|_{2} \cos (\angle(a, b)) $$
 \end{definition}
 
-在二维和三维向量之中，这里的角与普通角度(ordinary angle)是一致的。
+在二维和三维向量之中，这里的角与普通角度(ordinary angle)是一致的. 
 
 \begin{itemize}
-    \item $\theta =\frac{\pi}{2}=90°$：a和b为正交，写作$a \perp b (a ^T b  =0)$。
-    \item $\theta =0$：a和b为同向的 $(a ^T  b=‖a ‖‖b  ‖)$。
-    \item $\theta =\pi =180°$： a和b为反向的$(a ^T   b  = - ‖a ‖‖b ‖)$。
-    \item $\theta <\frac{\pi}{2}=90°$：a和b成锐角$(a ^T b >0)$。
-    \item $\theta >\frac{\pi}{2}=90°$：a和b成钝角$(a ^T b <0)$。
+    \item $\theta =\frac{\pi}{2}=90°$：a和b为正交，写作$a \perp b (a ^T b  =0)$. 
+    \item $\theta =0$：a和b为同向的 $(a ^T  b=‖a ‖‖b  ‖)$. 
+    \item $\theta =\pi =180°$： a和b为反向的$(a ^T   b  = - ‖a ‖‖b ‖)$. 
+    \item $\theta <\frac{\pi}{2}=90°$：a和b成锐角$(a ^T b >0)$. 
+    \item $\theta >\frac{\pi}{2}=90°$：a和b成钝角$(a ^T b <0)$. 
 \end{itemize}
 
 \begin{definition}[球面的距离]
@@ -203,15 +203,15 @@ $$ \tilde{a}=a-\operatorname{avg}(a) 1,  \tilde{b}=b-\operatorname{avg}(b) 1 $$
 \begin{example}
     高度相关的向量：
 \begin{itemize}
-    \item 邻近地区的降雨时间序列。
-    \item 类型密切相关文档的单词计数向量。
-    \item 同行业中类似公司的日收益。
+    \item 邻近地区的降雨时间序列. 
+    \item 类型密切相关文档的单词计数向量. 
+    \item 同行业中类似公司的日收益. 
 \end{itemize}
 
 比较不相关的向量：
 \begin{itemize}
-    \item 无关的向量。
-    \item 音频信号(比如，在多轨录音中的不同轨)。
+    \item 无关的向量. 
+    \item 音频信号(比如，在多轨录音中的不同轨). 
 \end{itemize}
 
 负相关的向量：

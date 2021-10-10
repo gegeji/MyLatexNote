@@ -151,6 +151,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.36}tion}{28}{section.7.36}%
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.37}tail}{28}{section.7.37}%
+\defcounter {refsection}{0}\relax 
 \contentsline {part}{\@mypartnumtocformat {III}{All Words}}{29}{part.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {8}A - G}{31}{chapter.8}%

@@ -1,206 +1,208 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\@mypartnumtocformat {I}{All Roots}}{7}{part.1}%
+\contentsline {part}{\@mypartnumtocformat {I}{Basics of Linear Algebra}}{7}{part.1}%
 \ttl@starttoc {default@1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Hearing, Seeing, Saying, Doing}{9}{chapter.1}%
+\contentsline {chapter}{\numberline {1}对向量的介绍}{9}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}vis}{9}{section.1.1}%
+\contentsline {section}{\numberline {1.1}Vector}{9}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}audi- (声音)}{9}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Vector Space}{10}{section.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}{ag- (做，加强)}}{9}{section.1.3}%
+\contentsline {section}{\numberline {1.3}向量运算}{10}{section.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}dict (doing)}{9}{section.1.4}%
+\contentsline {section}{\numberline {1.4}内积}{11}{section.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}log (saying)}{9}{section.1.5}%
+\contentsline {subsection}{\numberline {1.4.1}常用的内积等式}{12}{subsection.1.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}loqu (saying)}{10}{section.1.6}%
+\contentsline {section}{\numberline {1.5}Cauchy-Schwartz Inequality}{12}{section.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Holding, Seizing, Following}{11}{chapter.2}%
+\contentsline {section}{\numberline {1.6}浮点运算}{12}{section.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}prehand/pris}{11}{section.2.1}%
+\contentsline {chapter}{\numberline {2}Linear Function}{13}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}sequ/secut (following)}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.1}Linear Function}{13}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}tain (握、持)}{11}{section.2.3}%
+\contentsline {section}{\numberline {2.2}泰勒展开}{14}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Feet, Running, Walking}{13}{chapter.3}%
+\contentsline {section}{\numberline {2.3}Regression Model}{16}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}cede, ceed, cess (走)}{13}{section.3.1}%
+\contentsline {chapter}{\numberline {3}Norm and Distance}{17}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}grad (walking)}{13}{section.3.2}%
+\contentsline {section}{\numberline {3.1}Norm}{17}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}gress (walk)}{13}{section.3.3}%
+\contentsline {section}{\numberline {3.2}Root Mean Square Value (RMS)}{19}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}ambul, ambl (walking)}{13}{section.3.4}%
+\contentsline {section}{\numberline {3.3}Chebyshev's Inequality}{19}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}cur, curs, cours(to run)}{14}{section.3.5}%
+\contentsline {section}{\numberline {3.4}Distance}{19}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}pass (to walk through)}{14}{section.3.6}%
+\contentsline {subsection}{\numberline {3.4.1}Feature Distance and Nearest Neighbor}{20}{subsection.3.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}ped (feet)}{14}{section.3.7}%
+\contentsline {section}{\numberline {3.5}Standard Derivation}{20}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.8}vad}{14}{section.3.8}%
+\contentsline {section}{\numberline {3.6}Angle}{20}{section.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Dragging, Cutting, Parting}{15}{chapter.4}%
+\contentsline {subsection}{\numberline {3.6.1}相关系数}{21}{subsection.3.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}part}{15}{section.4.1}%
+\contentsline {chapter}{\numberline {4}以$k$-Means算法为例的优化问题}{23}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}port}{15}{section.4.2}%
+\contentsline {section}{\numberline {4.1}Convex Set}{24}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}sect (to cut/to divide)}{15}{section.4.3}%
+\contentsline {section}{\numberline {4.2}向量偏导}{25}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}tract (to draw/to drag)}{16}{section.4.4}%
+\contentsline {section}{\numberline {4.3}标量优化问题的例子：投影问题}{26}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}cide/cise (cutting)}{16}{section.4.5}%
+\contentsline {section}{\numberline {4.4}Clustering}{27}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Turning, Rolling and Pushing}{17}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Linear Independence}{29}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}pel (pushing)}{17}{section.5.1}%
+\contentsline {section}{\numberline {5.1}线性相关、线性无关}{29}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}vert (turn and rolling)}{17}{section.5.2}%
+\contentsline {section}{\numberline {5.2}basis}{30}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}volv (turn and rolling)}{17}{section.5.3}%
+\contentsline {section}{\numberline {5.3}标准正交向量}{30}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Looking, Breathing and Calling}{19}{chapter.6}%
+\contentsline {section}{\numberline {5.4}Gram-Schmidt Algorithm}{31}{section.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}spect}{19}{section.6.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}spir (to breatge)}{19}{section.6.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}hal (breathe)}{20}{section.6.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}voc, vok (call)}{20}{section.6.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.5}claim (call)}{20}{section.6.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {part}{\@mypartnumtocformat {II}{Other Roots}}{21}{part.2}%
+\contentsline {part}{\@mypartnumtocformat {II}{Statistics}}{33}{part.2}%
 \ttl@stoptoc {default@1}
 \ttl@starttoc {default@2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Other Roots}{23}{chapter.7}%
+\contentsline {chapter}{\numberline {6}Random Variables}{35}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}a (加强)}{23}{section.7.1}%
+\contentsline {section}{\numberline {6.1}随机变量的引入}{35}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}ac (加强)}{23}{section.7.2}%
+\contentsline {section}{\numberline {6.2}随机变量的特点}{35}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}ap}{23}{section.7.3}%
+\contentsline {section}{\numberline {6.3}优势}{35}{section.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}tran-}{23}{section.7.4}%
+\contentsline {section}{\numberline {6.4}常见随机变量}{35}{section.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.5}tres （横穿）}{23}{section.7.5}%
+\contentsline {subsection}{\numberline {6.4.1}离散型随机变量}{35}{subsection.6.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.6}bi (两个)}{24}{section.7.6}%
+\contentsline {subsection}{\numberline {6.4.2}两点分布}{36}{subsection.6.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.7}cide}{24}{section.7.7}%
+\contentsline {subsection}{\numberline {6.4.3}(n 重)伯努利试验, 二项分布}{36}{subsection.6.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.8}com (共同)}{24}{section.7.8}%
+\contentsline {subsubsection}{二项分布性质}{36}{section*.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.9}con (共同; 全部; inside out)}{24}{section.7.9}%
+\contentsline {subsubsection}{二项分布单峰性质}{36}{section*.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.10}contra (opposite)}{24}{section.7.10}%
+\contentsline {subsection}{\numberline {6.4.4}泊松分布}{36}{subsection.6.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.11}counter}{24}{section.7.11}%
+\contentsline {subsection}{\numberline {6.4.5}连续型随机变量}{37}{subsection.6.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.12}de (向下; 加强)}{24}{section.7.12}%
+\contentsline {subsection}{\numberline {6.4.6}均匀分布}{37}{subsection.6.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.13}dis (separate; out)}{24}{section.7.13}%
+\contentsline {subsection}{\numberline {6.4.7}指数分布}{37}{subsection.6.4.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.14}e (forward)}{25}{section.7.14}%
+\contentsline {subsection}{\numberline {6.4.8}正态分布}{37}{subsection.6.4.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.15}-ent (person)}{25}{section.7.15}%
+\contentsline {subsection}{\numberline {6.4.9}标准正态分布}{37}{subsection.6.4.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.16}er (person)}{25}{section.7.16}%
+\contentsline {section}{\numberline {6.5}随机变量的分布函数}{37}{section.6.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.17}ex (出去; 向外)}{25}{section.7.17}%
+\contentsline {section}{\numberline {6.6}随机变量的分布函数性质}{37}{section.6.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.18}impart (进入……里面)}{25}{section.7.18}%
+\contentsline {section}{\numberline {6.7}连续型随机变量及其概率密度}{37}{section.6.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.19}in}{25}{section.7.19}%
+\contentsline {section}{\numberline {6.8}随机变量的数字特征}{38}{section.6.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.20}inter (在中间)}{25}{section.7.20}%
+\contentsline {subsection}{\numberline {6.8.1}方差}{38}{subsection.6.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.21}introspect}{25}{section.7.21}%
+\contentsline {subsubsection}{方差性质}{38}{section*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.22}ir}{26}{section.7.22}%
+\contentsline {subsection}{\numberline {6.8.2}协方差}{38}{subsection.6.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.23}ist}{26}{section.7.23}%
+\contentsline {subsubsection}{协方差性质}{38}{section*.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.24}ment}{26}{section.7.24}%
+\contentsline {subsection}{\numberline {6.8.3}相关系数}{39}{subsection.6.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.25}oc (toward)}{26}{section.7.25}%
+\contentsline {subsection}{\numberline {6.8.4}X, Y 不相关时候的性质}{39}{subsection.6.8.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.26}or (人)}{26}{section.7.26}%
+\contentsline {chapter}{\numberline {7}Law of Large Numbers and Central Limit Theorem}{41}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.27}orium}{26}{section.7.27}%
+\contentsline {section}{\numberline {7.1}辛钦大数定律}{41}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.28}per (穿过)}{26}{section.7.28}%
+\contentsline {subsection}{\numberline {7.1.1}辛钦大数定律条件}{41}{subsection.7.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.29}pre (before)}{27}{section.7.29}%
+\contentsline {section}{\numberline {7.2}伯努利大数定理}{41}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.30}pro- (moving forward)}{27}{section.7.30}%
+\contentsline {section}{\numberline {7.3}中心极限定理}{42}{section.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.31}re (again, back)}{27}{section.7.31}%
+\contentsline {chapter}{\numberline {8}Sampling Distribution}{43}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.32}retro (向后，倒退)}{27}{section.7.32}%
+\contentsline {section}{\numberline {8.1}统计量}{43}{section.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.33}sub (向下)}{27}{section.7.33}%
+\contentsline {section}{\numberline {8.2}常见统计量}{43}{section.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.34}sus}{27}{section.7.34}%
+\contentsline {section}{\numberline {8.3}卡方分布}{44}{section.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.35}-sm}{27}{section.7.35}%
+\contentsline {subsection}{\numberline {8.3.1}卡方分布性质}{44}{subsection.8.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.36}tion}{28}{section.7.36}%
+\contentsline {section}{\numberline {8.4}t 分布}{45}{section.8.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\@mypartnumtocformat {III}{All Words}}{29}{part.3}%
-\ttl@stoptoc {default@2}
-\ttl@starttoc {default@3}
+\contentsline {subsection}{\numberline {8.4.1}t 分布性质}{45}{subsection.8.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}A - G}{31}{chapter.8}%
+\contentsline {section}{\numberline {8.5}F 分布}{46}{section.8.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}A, a}{31}{section.8.1}%
+\contentsline {subsection}{\numberline {8.5.1}F 分布性质}{46}{subsection.8.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}B, b}{33}{section.8.2}%
+\contentsline {section}{\numberline {8.6}正态总体的样本均值和样本方差的分布}{47}{section.8.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}C, c}{33}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Hypothesis Testing}{51}{chapter.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}D, d}{35}{section.8.4}%
+\contentsline {section}{\numberline {9.1}正态总体均值方差的检验法}{51}{section.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.5}E, e}{36}{section.8.5}%
+\contentsline {section}{\numberline {9.2}经验分布函数}{51}{section.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.6}G, g}{38}{section.8.6}%
+\contentsline {section}{\numberline {9.3}Q-Q图 (Quantile-quantile Plot)}{51}{section.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}H - O}{39}{chapter.9}%
+\contentsline {section}{\numberline {9.4}$\chi ^2$拟合优度检验}{53}{section.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}I, i}{39}{section.9.1}%
+\contentsline {section}{\numberline {9.5}柯尔莫哥洛夫(Kolmogorov-Smirnov)检验}{53}{section.9.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.2}L, l}{40}{section.9.2}%
+\contentsline {section}{\numberline {9.6}秩和检验}{53}{section.9.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.3}M, m}{40}{section.9.3}%
+\contentsline {section}{\numberline {9.7}方差分析 (Analysis of Variance, ANOVA)}{55}{section.9.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.4}O, o}{40}{section.9.4}%
+\contentsline {subsection}{\numberline {9.7.1}单因素方差分析}{55}{subsection.9.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}P - Z}{41}{chapter.10}%
+\contentsline {subsection}{\numberline {9.7.2}双因素方差分析方法}{57}{subsection.9.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.1}P, p}{41}{section.10.1}%
+\contentsline {subsection}{\numberline {9.7.3}无交互影响的双因素方差分析}{58}{subsection.9.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.2}R, r}{45}{section.10.2}%
+\contentsline {subsection}{\numberline {9.7.4}关于交互效应的双因素方差分析}{59}{subsection.9.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.3}S, s}{46}{section.10.3}%
+\contentsline {section}{\numberline {9.8}多元线性回归}{60}{section.9.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.4}T, t}{47}{section.10.4}%
+\contentsline {subsection}{\numberline {9.8.1}回归模型的假设检验}{61}{subsection.9.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.5}U, u}{48}{section.10.5}%
+\contentsline {subsection}{\numberline {9.8.2}回归系数的假设检验和区间估计}{61}{subsection.9.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.6}V, v}{48}{section.10.6}%
+\contentsline {subsection}{\numberline {9.8.3}利用回归模型进行预测}{61}{subsection.9.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{49}{chapter*.2}%
+\contentsline {section}{\numberline {9.9}逐步回归}{62}{section.9.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Articles}{49}{section*.3}%
+\contentsline {subsection}{\numberline {9.9.1}前进法}{62}{subsection.9.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Books}{49}{section*.4}%
+\contentsline {subsection}{\numberline {9.9.2}后退法}{63}{subsection.9.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{51}{section*.5}%
+\contentsline {chapter}{\numberline {10}Bootstrap}{65}{chapter.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.1}估计量的标准误差的Bootstrap估计}{65}{section.10.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.2}估计量的均方误差的Bootstrap估计}{66}{section.10.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.3}Bootstrap置信区间}{66}{section.10.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.4}参数Bootstrap方法}{67}{section.10.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{69}{chapter*.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Articles}{69}{section*.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Books}{69}{section*.8}%
 \contentsfinish 
