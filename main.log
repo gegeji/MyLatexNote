@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  10 OCT 2021 19:33
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  11 OCT 2021 09:04
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1170,23 +1170,23 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 
 Package hyperref Warning: Option `backref' has already been used,
-(hyperref)                setting the option has no effect on input line 632.
+(hyperref)                setting the option has no effect on input line 623.
 
 
 Package hyperref Warning: Option `pagebackref' has already been used,
-(hyperref)                setting the option has no effect on input line 632.
+(hyperref)                setting the option has no effect on input line 623.
 
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 632.
+(hyperref)                setting the option has no effect on input line 623.
 
-Package hyperref Info: Option `colorlinks' set `false' on input line 632.
-Package hyperref Info: Option `breaklinks' set `true' on input line 632.
+Package hyperref Info: Option `colorlinks' set `false' on input line 623.
+Package hyperref Info: Option `breaklinks' set `true' on input line 623.
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 632.
+(hyperref)                setting the option has no effect on input line 623.
 
-Package hyperref Info: Option `bookmarksopen' set `false' on input line 632.
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 623.
 (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
@@ -1860,12 +1860,70 @@ Package microtype Info: Character `\textquestiondown ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 [4
 
-])) (./demo.tex) [5]
+]
+Overfull \hbox (1.42189pt too wide) in paragraph at lines 85--88
+\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 The HMM models processes that involve a path through many possible states, where
+ []
+
+File: Pictures//hmm-hmm-of-observation.png Graphic file (type bmp)
+<Pictures//hmm-hmm-of-observation.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: Pictures//HMM-mapping.png Graphic file (type bmp)
+<Pictures//HMM-mapping.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)) (./demo.tex) [5] [6]
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
- [6
+ [7
 
-] (./main.ind)
+] [8
+
+] (./main.ind
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 3--4
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 10--11
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 16--17
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 22--23
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 28--29
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 34--35
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 40--41
+[][] 
+ []
+
+[9
+
+
+])
 \tf@ptc=\write7
 \openout7 = `main.ptc'.
 
@@ -1878,12 +1936,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39597 strings out of 476477
- 809213 string characters out of 5812099
- 1769947 words of memory out of 5000000
- 59336 multiletter control sequences out of 15000+600000
+ 39645 strings out of 476477
+ 811562 string characters out of 5812099
+ 1779049 words of memory out of 5000000
+ 59382 multiletter control sequences out of 15000+600000
  413095 words of font info for 110 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,11n,97p,2952b,4713s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,11n,97p,2952b,4705s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (6 pages).
+Output written on main.pdf (9 pages).

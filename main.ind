@@ -1,0 +1,44 @@
+\begin{theindex}
+\nopagebreak
+\tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{E}}};\vspace*{0.2cm}\nopagebreak
+
+  \item edges\dotfill \hyperpage{4}
+  \item emission probability\dotfill \hyperpage{5}
+
+  \indexspace
+\nopagebreak
+\tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{F}}};\vspace*{0.2cm}\nopagebreak
+
+  \item Fréchet distance\dotfill \hyperpage{5}
+
+  \indexspace
+\nopagebreak
+\tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{G}}};\vspace*{0.2cm}\nopagebreak
+
+  \item great circle distance\dotfill \hyperpage{5}
+
+  \indexspace
+\nopagebreak
+\tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{L}}};\vspace*{0.2cm}\nopagebreak
+
+  \item locations\dotfill \hyperpage{4}
+
+  \indexspace
+\nopagebreak
+\tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{N}}};\vspace*{0.2cm}\nopagebreak
+
+  \item nodes\dotfill \hyperpage{4}
+
+  \indexspace
+\nopagebreak
+\tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{R}}};\vspace*{0.2cm}\nopagebreak
+
+  \item roads\dotfill \hyperpage{4}
+
+  \indexspace
+\nopagebreak
+\tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{S}}};\vspace*{0.2cm}\nopagebreak
+
+  \item Selective Availability\dotfill \hyperpage{5}
+
+\end{theindex}
