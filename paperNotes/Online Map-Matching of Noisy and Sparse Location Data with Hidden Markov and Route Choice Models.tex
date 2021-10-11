@@ -1,0 +1,111 @@
+\chapter{Online Map-Matching of Noisy and Sparse Location Data}
+
+Source: \cite{Jagadeesh2017}
+
+\section{论文动机}
+    蜂窝网络/WiFi定位不精确性更高，现有算法对于这两种定位的处理不足够。
+    
+利用司机的驾驶选择信息 (\term{route choice}).
+最简单办法：决定性的路径选择准则
+
+\begin{example}
+    Koutsopoulos generated \textbf{a number of candidate paths} in a
+search graph and selected the path with the minimum length
+from among a subset of paths whose \textbf{travel times are within
+a threshold}.
+
+Sarlas replaced the deterministic route choice criteria with a
+\textbf{probabilistic logit route choice model}.
+
+Miwa et al. applied a logit route choice model in
+a \textbf{piecewise manner for short portions of the location sequence}
+to select the best among several candidate paths.
+\end{example}
+
+在线匹配：Instead of generating an unique best
+fitting path, their solution produces \textbf{a set of potential paths
+along with a likelihood} that the location measurements are
+recorded from each path.
+
+\cite{newson2009hidden} 用到了HMM，此外\term{Conditional Random Fields (CRF)}也用于地图匹配
+
+\section{本文贡献}
+
+拓展了HMM的地图匹配算法、引入了司机路径选择的模型
+
+\section{论文模型-HMM Based Online Map-Matching}
+
+\subsection{基本概念}
+
+A \term{location observation} (or simply \term{observation}) $ o_{t} $ consists of the measured latitude, longitude and timestamp corresponding to a mobile user's location at time step $ t $. 
+
+A \term{road network} is a directed graph $ G=(V, E) $, where $ V $ is a set of nodes corresponding to intersections or endpoints of the road segments and $ E $ is a set of edges representing \term{road segments}. Each road segment has a number of attributes including road class, length and \term{free-flow travel time}.
+
+A \term{path} $ p $ between nodes $ u $ and $ v $ is a sequence of connected road segments (edges) $ e_{1}, \ldots, e_{n} $ such that $ u $ is the start node of $ e_{1} $ and $ v $ is the end node of $ e_{n} $. 
+
+\begin{remark}
+   本文假设：a path does not necessarily start and end at nodes. It could start or end at any point that lies along the centerline of any road segment.  
+\end{remark}
+
+denote the $ k^{t h} $ state at time step $ t $ as $ s_{t, k} . $ The hidden true state at time step $ t $ is denoted as $ s_{t}^{*} $.
+
+Given a sequence of $ N $ observations $ o_{1: N}=\left\{o_{1}, \ldots, o_{N}\right\} $ and a road network $ G $, the map-matching problem is to find the path $ p $ in $ G $ corresponding to $ o_{1: N} $.
+
+\subsection{HMM模型的建立}
+The location observations are subject to measurement noise
+and therefore the true on-road locations corresponding to them
+are unknown.
+
+在实际中只考虑在GPS测量点附近的路段（在4倍标准差以内）
+
+HMM性质：
+\begin{itemize}
+    \item the observation $ o_{t} $ at time step $ t $ depends only on the hidden state $ s_{t}^{*} $ at that time.
+    \item (\term{Markov property}) states that the hidden state $ s_{t}^{*} $ at time step $ t $ depends only on the hidden state $ s_{t-1}^{*} $ at time step $ t-1 $ and is not influenced by the history of hidden states before that.
+\end{itemize}
+
+对于一个GPS记录点$ o_{t} $, each state $ s_{t, k} $ is assigned an \term{emission probability} $ P\left(o_{t} \mid s_{t, k}\right) $。 状态转移概率是 $ P\left(s_{t, k} \mid s_{t-1, j}\right) $
+
+\subsection{Emission Probability}
+
+(同\cite{newson2009hidden})
+
+For a given state $ s_{t, k} $ and a location observation $ o_{t} $, the emission probability is given as
+$$
+P\left(o_{t} \mid s_{t, k}\right)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{g\left(o t, s_{t, k}\right)^{2}}{2 \sigma^{2}}}
+$$
+
+\begin{remark}
+    the location measurement error may not strictly conform to the above model, especially in dense urban networks. 但是它模型简单而且在前人工作中性能还不错。
+\end{remark}
+
+\subsection{Transition Probability}
+
+the path with the minimum \term{free-flow travel time}, found using
+the well-known Dijkstra’s algorithm, as the optimal path.
+
+\cite{newson2009hidden}用的是大圆距离与路径距离之间的差值。(有问题 \ref{Comment:HMM-TransitionProbability})
+
+对于空间，本文提出由两个时间状态之内大圆距离与路径距离之间的差值除以时间的比率
+
+$$ y\left(s_{t-1, j}, s_{t, k}\right)=\frac{d\left(s_{t-1, j}, s_{t, k}\right)-g\left(s_{t-1, j}, s_{t, k}\right)}{\Delta T} $$
+
+the driving distance
+between two points on the road network is the length of the
+minimum-travel-time path between them found by Dijkstra
+algorithm
+
+对于时间，定义时间上的难以置信性。（\textbf{考虑到了时间上的转移概率}）
+
+$$
+z\left(s_{t-1, j}, s_{t, k}\right)=\frac{\max \left(\left(f\left(s_{t-1, j}, s_{t, k}\right)-\Delta T\right), 0\right)}{\Delta T}
+$$
+
+where $ f\left(s_{t-1, j}, s_{t, k}\right) $ is the \term{free-flow travel time}, in seconds, of the optimal path between states $ s_{t-1, j} $ and $ s_{t, k} $.
+
+define the transition probability of moving from state $ s_{t-1, j} $ to state $ s_{t, k} $ as
+$$
+P\left(s_{t, k} \mid s_{t-1, j}\right)=\lambda_{y} e^{-\lambda_{y} y\left(s_{t-1, j}, s_{t, k}\right)} \lambda_{z} e^{-\lambda_{z} z\left(s_{t-1, j}, s_{t, k}\right)}
+$$
+
+\section{Online Viterbi Inference}

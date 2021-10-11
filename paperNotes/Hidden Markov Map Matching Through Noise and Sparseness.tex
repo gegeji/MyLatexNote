@@ -107,9 +107,104 @@ others and where the state measurements are uncertain.
     \includegraphics[scale=0.4  ]{HMM-mapping.png}
 \end{figure}
 
-对于给定的$z_{t},r_{i} $有\term{emission probability}$ x_{t, i}$
+对于给定的$z_{t},r_{i} $有\term{emission probability}$ x_{t, i}$。
 
 估计方法：
-The \term{great circle distance} on the surface of the earth between the measured point and the candidate match is $ \| z_{t}- x_{t, i} \|_{great\_circle}$. For the correct match, this difference is due to GPS noise. model GPS noise as zero-mean Gaussian 
+The \term{great circle distance} on the surface of the earth between the measured point and the candidate match is $ \| z_{t}- x_{t, i} \|_{great\_circle}$. For the correct match, this difference is due to GPS noise. 噪声认为是零均值的高斯噪声。
+
+$$ p\left(z_{t} \mid r_{i}\right)=\frac{1}{\sqrt{2 \pi} \sigma_{z}} e^{-0.5\left(\frac{\left\|z_{t}-x_{t, i}\right\|_{\text {great circle }}}{\sigma_{z}}\right)^{2}} $$
+
+$\sigma_{z}$是GPS测量的方差（需要估计）。
+
+对于初始状态$ \pi_{i} ,i=1 \ldots N_{r} $（指定一开始车辆在所有路段上的可能性），为了简化使用$$ \pi_{i}=p\left(z_{1} \mid r_{i}\right) $$
+
+\subsection{转移概率}
+
+Each measurement $ z_{t} $ has a list of possible road matches, as does the next measurement $ z_{t+1} $. 
+
+作者认为\textbf{测量距离和大圆距离相近的状态转移才是比较好的}，否则会绕路（概率下降）。
+
+计算发现大圆距离与路径距离的差值绝对值近似于：
+
+$$ p\left(d_{t}\right)=\frac{1}{\beta} e^{-d_{t} / \beta} $$
+
+路径距离$ d_{t}=\left|\left\|z_{t}-z_{t+1}\right\|_{\text {great circle }}-\left\|x_{t, i^{*}}-x_{t+1, j^{*}}\right\|_{\text {route }}\right| $是动态规划(\term{Viterbi algorithm})得到的路线距离。对于$z_t$和候选路段$r_i$，匹配出在路段上的点是$ x_{t, i} $。
+
+\begin{remark}
+      \label{Comment:HMM-TransitionProbability}
+
+      the transition probability
+        dependence on the current and previous observations
+    violates the properties of an ideal HMM
+
+    the great-circle distance between
+the observed locations may introduce significant errors in
+estimating the circuitousness of a path (在定位误差大的情况下)
+
+transition probabilities computed
+based on the above measure of circuitousness vary greatly for
+equally plausible transition paths depending on the sampling
+interval
+\end{remark}
+
+\section{算法的实现}
+
+\begin{itemize}
+    \item 数据预处理的时候对于离上一个GPS点位置超过$ 2 \sigma_{z} $的点进行剔除
+    \item 将离GPS位置观测值200米以外路段的观测概率设为0
+    \item 对于大圆距离和路径距离超过2公里路径的观察概率设为0
+    \item 对于明显超速的路径的概率设为0
+    \item 当明显无法匹配的时候，移除一些点，尝试重新连接，如果仍旧无法连接，引入匹配断点
+\end{itemize}
+
+\subsection{参数估计}
+
+估计GPS误差：
+$ \sigma_{z} $ using the \term{median absolute deviation (MAD)}
+
+$$ \sigma_{z}=1.4826 \mathrm{median}_{\mathrm{t}}\left(\left\|z_{t}-x_{t, i}\right\|_{\text {great circle }}\right) $$
+
+the point on $ r_{i}^{*} $ （人工匹配的路段） nearest $ z_{t} $ is $ x_{t, i}^{*} $.
+
+估计路径距离与大圆距离之间的差值：
+
+$$ \begin{aligned} \beta=\frac{1}{\ln (2)} \operatorname{median}_{t} &\left(\mid\left\|z_{t}-z_{t+1}\right\|_{\text {great circle }}\right.\\ &\left.-\left\|x_{t, i^{*}}-x_{t+1, j} *\right\|_{\text {route }} \mid\right) \end{aligned} $$
 
 
+
+\section{实验}
+
+数据：真实驾车GPS数据、高斯噪声模拟数据
+
+评价指标：reported error
+  $$ \left(\mathrm{d}-+\mathrm{d}_{+}\right) / \mathrm{d}_{0} $$ 
+
+  $d_{-}  $ =length erroneously subtracted,
+  $ d_{+} $=length erroneously added
+
+ 
+
+其他两种指标：
+
+  Locations on Road. 
+  \begin{remark}
+      This accuracy measure
+  says that the matched point should be in the
+  same location as the actual vehicle. Since we
+  measured the vehicle’s location with inherently
+  noisy GPS, we do not know its actual location.
+  \end{remark}
+
+  Road Segment.
+  \begin{remark}
+      This accuracy measure says
+  that the matched point should be on the same
+  road segment as the actual vehicle. While the
+  correct road segment is easier to guess than the
+  correct location, it is still ambiguous at
+  intersections, where a noisy measurement could
+  match to any of the roads converging at that
+  point.
+  \end{remark}
+  
+   

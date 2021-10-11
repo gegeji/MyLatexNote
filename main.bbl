@@ -19,6 +19,46 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{Jagadeesh2017}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7c249531e1937517c3d0bf4fe8368b3d}{%
+           family={Jagadeesh},
+           familyi={J\bibinitperiod},
+           given={George\bibnamedelima R.},
+           giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=d83c6173f26bcffab793294ad72d8a7a}{%
+           family={Srikanthan},
+           familyi={S\bibinitperiod},
+           given={Thambipillai},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{dca4375e445332d96d26c9f1496d2def}
+      \strng{fullhash}{dca4375e445332d96d26c9f1496d2def}
+      \strng{bibnamehash}{dca4375e445332d96d26c9f1496d2def}
+      \strng{authorbibnamehash}{dca4375e445332d96d26c9f1496d2def}
+      \strng{authornamehash}{dca4375e445332d96d26c9f1496d2def}
+      \strng{authorfullhash}{dca4375e445332d96d26c9f1496d2def}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{With the growing use of crowdsourced location data from smartphones for transportation applications, the task of map-matching raw location sequence data to travel paths in the road network becomes more important. High-frequency sampling of smartphone locations using accurate but power-hungry positioning technologies is not practically feasible as it consumes an undue amount of the smartphone's bandwidth and battery power. Hence, there exists a need to develop robust algorithms for map-matching inaccurate and sparse location data in an accurate and timely manner. This paper addresses the above-mentioned need by presenting a novel map-matching solution that combines the widely used approach based on a hidden Markov model (HMM) with the concept of drivers' route choice. Our algorithm uses an HMM tailored for noisy and sparse data to generate partial map-matched paths in an online manner. We use a route choice model, estimated from real drive data, to reassess each HMM-generated partial path along with a set of feasible alternative paths. We evaluated the proposed algorithm with real world as well as synthetic location data under varying levels of measurement noise and temporal sparsity. The results show that the map-matching accuracy of our algorithm is significantly higher than that of the state of the art, especially at high levels of noise.}
+      \field{issn}{15249050}
+      \field{journaltitle}{IEEE Transactions on Intelligent Transportation Systems}
+      \field{number}{9}
+      \field{title}{{Online Map-Matching of Noisy and Sparse Location Data with Hidden Markov and Route Choice Models}}
+      \field{volume}{18}
+      \field{year}{2017}
+      \field{pages}{2423\bibrangedash 2434}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/TITS.2017.2647967
+      \endverb
+      \verb{file}
+      \verb :E\:/OneDrive/旧文档/Mendeley Desktop/Jagadeesh, Srikanthan - Online Map-Matching of Noisy and Sparse Location Data with Hidden Markov and Route Choice Models - 2017.pdf:pdf
+      \endverb
+      \keyw{Map-matching,hidden Markov model,location,route choice model}
+    \endentry
     \entry{newson2009hidden}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=f006051634592eaa1a5361962494d0df}{%

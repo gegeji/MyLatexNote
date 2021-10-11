@@ -1,8 +1,25 @@
-\indexentry{locations|hyperpage}{4}
-\indexentry{roads|hyperpage}{4}
-\indexentry{nodes|hyperpage}{4}
-\indexentry{edges|hyperpage}{4}
-\indexentry{Selective Availability|hyperpage}{5}
-\indexentry{Fréchet distance|hyperpage}{5}
-\indexentry{emission probability|hyperpage}{5}
-\indexentry{great circle distance|hyperpage}{5}
+\indexentry{locations|hyperpage}{6}
+\indexentry{roads|hyperpage}{6}
+\indexentry{nodes|hyperpage}{6}
+\indexentry{edges|hyperpage}{6}
+\indexentry{Selective Availability|hyperpage}{7}
+\indexentry{Fréchet distance|hyperpage}{7}
+\indexentry{emission probability|hyperpage}{7}
+\indexentry{great circle distance|hyperpage}{7}
+\indexentry{Viterbi algorithm|hyperpage}{8}
+\indexentry{median absolute deviation (MAD)|hyperpage}{9}
+\indexentry{route choice|hyperpage}{11}
+\indexentry{Conditional Random Fields (CRF)|hyperpage}{11}
+\indexentry{location observation|hyperpage}{12}
+\indexentry{observation|hyperpage}{12}
+\indexentry{road network|hyperpage}{12}
+\indexentry{road segments|hyperpage}{12}
+\indexentry{free-flow travel time|hyperpage}{12}
+\indexentry{path|hyperpage}{12}
+\indexentry{Markov property|hyperpage}{12}
+\indexentry{emission probability|hyperpage}{12}
+\indexentry{free-flow travel time|hyperpage}{13}
+\indexentry{free-flow travel time|hyperpage}{13}
+\indexentry{state sequence|hyperpage}{15}
+\indexentry{observation sequence|hyperpage}{15}
+\indexentry{极大似然估计法|hyperpage}{20}
