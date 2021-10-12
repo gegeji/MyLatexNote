@@ -43,7 +43,7 @@ limitation：花销很大，算法限制
 
 supercomputing
 　　Keynote： DreamWorks
-　　雪花❄️动画（图形学）电影动画渲染 → 渲染时间久 由高性能完成精细的场景渲染
+　　雪花❄️动画（图形学）电影动画渲染 $\rightarrow$  渲染时间久 由高性能完成精细的场景渲染
 　　
 > 大数据是云计算的motivation
 隐私
@@ -58,10 +58,10 @@ supercomputing
 - 产生速度快，数据处理需要高效率
 　　- `streaming processing` 
 　　- 丢包：如果处理速率不够快，会丢包
-　　- zoom 多方会议，带宽受限，数据传输调度？→用户体验↑
+　　- zoom 多方会议，带宽受限，数据传输调度？$\rightarrow$ 用户体验↑
 - 多样性 variety
 　　- 结构性/非结构性/半结构性数据，语音
-　　- 搜索喜马拉雅：只能搜索`metadata` （文件名/小说名/属性），无法根据内容讲某个细节搜索→非结构化数据索引
+　　- 搜索喜马拉雅：只能搜索`metadata` （文件名/小说名/属性），无法根据内容讲某个细节搜索$\rightarrow$ 非结构化数据索引
 　　- 复杂性 分析和处理的难度大
 　　
 
@@ -75,16 +75,16 @@ $$G=f(x), f云计算, x大数据$$
 
 salesforce，VMware虚拟化技术，MapReduce模型
 
-搜索引擎：输入keyword，爬虫机器人🤖（cache），**分布式**索引查询→汇总→**分布式**排序
+搜索引擎：输入keyword，爬虫机器人🤖（cache），**分布式**索引查询$\rightarrow$ 汇总$\rightarrow$ **分布式**排序
 
 分布式化：
-MapReduce框架 map→shuffle（交换）→reduce；写到memory：spark；数据恢复？
+MapReduce框架 map$\rightarrow$ shuffle（交换）$\rightarrow$ reduce；写到memory：spark；数据恢复？
 S3 `Simple Storage Service`  
 EC2 
 >Amazon Elastic Compute Cloud（Amazon EC2 云服务器）是一种 Web 云服务，能在云中提供安全且可调整大小的计算能力。该服务旨在让开发人员能够更轻松地进行 Web 规模的云计算。Amazon EC2 云服务器的 Web 云服务接口非常简单，您可以最小的阻力轻松获取容量，随之配置容量。使用该服务，您将能完全控制您的计算资源，并能在亚马逊成熟且行之有效的计算环境中运行。
 Amazon EC2 云服务器提供最广泛、最深入的计算平台，可选择处理器、存储、联网、操作系统和购买模式。我们提供最快的云处理器，是唯一的 400 Gbps 以太网网络云。我们拥有最强大的针对机器学习培训和图形工作负载的 GPU 云服务器实例，以及云中每次推理成本最低的云服务器实例。与任何其它云相比，AWS 均运行更多的 SAP、HPC、机器学习和 Windows 工作负载。单击此处了解 Amazon EC2 云服务器的最新功能。
 
-机器，使用时长（小时→分钟→秒）等数据模型变化
+机器，使用时长（小时$\rightarrow$ 分钟$\rightarrow$ 秒）等数据模型变化
 
 serverless 无服务器
 > 开发者再也不用过多考虑服务器的问题，计算资源作为服务而不是服务器的概念出现。Serverless是一种构建和管理基于微服务架构的完整流程，
@@ -103,19 +103,19 @@ serverless 无服务器
 降低开销
 云函数在未执行时不产生任何费用，所以对一些无需常驻的业务进程来说，开销将大幅降低。云函数执行时按请求数和计算资源的运行时间收费，价格优势明显，对初创期的开发者十分友好。
 
-容器 （轻量级虚拟机），没有OS层→层很薄，可以快速部署 iaas
+容器 （轻量级虚拟机），没有OS层$\rightarrow$ 层很薄，可以快速部署 iaas
 docker 
 Google cloud（TensorFlow←data flow服务），azure，IBM cloud
-⭐做系统级的工作难以被取代：工程师→架构师*
+⭐做系统级的工作难以被取代：工程师$\rightarrow$ 架构师*
 中层压力大
 
 ## 云：网络的发展
 
 物联网 IoT 万物互联
-传感器数据量→网络传输带宽有限
+传感器数据量$\rightarrow$ 网络传输带宽有限
 传感器电量小 power consumption
 
-边缘计算→减少带宽，数据预处理→减少了耗电量
+边缘计算$\rightarrow$ 减少带宽，数据预处理$\rightarrow$ 减少了耗电量
 
 ## HoloLens
 
@@ -134,7 +134,7 @@ gfs BigTable Google APP engine
 
 P（platform）aaS， S（software）aaS， i（infrastructure）aas
 
-技术→产品→*落地应用*
+技术$\rightarrow$ 产品$\rightarrow$ *落地应用*
 对于用户来说最少的管理，最少地与供应商互动
 
 ## 云服务特点　
@@ -163,7 +163,7 @@ SaaS 直接提供软件
 | 种类 | 缺点 | 优点 |
 |:----:|:----:|:----:|
 |   公有云   |   对外部用户，安全性较低，功能拓展较低，数据风险较高   |  弹性扩容强    |
-|  私有云    |   （与公有云相反）   |   扩容性差（私有云多用户之间服务隔离性会差一些→云性能不稳定性，用户多时共享性能会差）   |
+|  私有云    |   （与公有云相反）   |   扩容性差（私有云多用户之间服务隔离性会差一些$\rightarrow$ 云性能不稳定性，用户多时共享性能会差）   |
 |   混合云（用户少时私有云，其他公有云）   |    管理成本很高，任务迁移、数据移动以及用户体验稳定问题  |      |
 
 ## 影响
@@ -193,7 +193,7 @@ Oregon州免税 1.8GW
 
 # Amazon开启虚拟机
 
-选择ami（guest OS image）：支持的virtualization type (paravirtual 半虚拟化→性能不一致)
+选择ami（guest OS image）：支持的virtualization type (paravirtual 半虚拟化$\rightarrow$ 性能不一致)
 
 Windows不支持HVM
 
@@ -209,11 +209,11 @@ SQL……
 
 ## CPU虚拟化
 
-一个core→一个虚拟机
+一个core$\rightarrow$ 一个虚拟机
 
 if 单核？
 应该也是支持
-一个虚拟机：可以视为一个application，模拟多CPU并发运行→允许一个平台同时运行多个虚拟机操作系统
+一个虚拟机：可以视为一个application，模拟多CPU并发运行$\rightarrow$ 允许一个平台同时运行多个虚拟机操作系统
 
 
 `concurrent 并行` ：同时进行
@@ -228,13 +228,13 @@ core （locigal CPU，逻辑处理器）
 超线程：一个核变2个核（某些硬件存在2份，如registers，加快运算单元运算，一个线程block时执行另一线程）
 
 ### 虚拟CPU性能取决于2级调度的效率
-guest application→虚拟CPU调度
-虚拟CPU发出指令→vmm调度→物理核
+guest application$\rightarrow$ 虚拟CPU调度
+虚拟CPU发出指令$\rightarrow$ vmm调度$\rightarrow$ 物理核
 物理核：任务队列
 
 ### *调度*：不同任务之间、不同io/网络等
 
-MapReduce→Hadoop /，spark *spark的调度*
+MapReduce$\rightarrow$ Hadoop /，spark *spark的调度*
 
 ### CPU全虚拟化
 
@@ -247,7 +247,7 @@ ring 3 application
 
 `ring compression` ，`二进制代码翻译` （假如指令不支持虚拟化时）
 
-guest OS下发指令→monitor捕捉、模拟、转换
+guest OS下发指令$\rightarrow$ monitor捕捉、模拟、转换
 
 此等级机制避免直接下达命令到CPU
 
@@ -264,9 +264,9 @@ monitor运行在root模式运行，虚拟机支持非root的ring0，硬件区分
 
 ## 内存虚拟化
 
-真实物理内存→其他存储，️超过物理内存时performance下降
+真实物理内存$\rightarrow$ 其他存储，️超过物理内存时performance下降
 
-→虚拟地址空间，分配虚拟地址
+$\rightarrow$ 虚拟地址空间，分配虚拟地址
 
 $虚拟地址↔^{translation}实际地址$
 
@@ -281,10 +281,10 @@ $虚拟地址↔^{translation}实际地址$
 
 ### 全虚拟化
 
- page table：虚拟地址→物理地址；有相关技术加速检索
+ page table：虚拟地址$\rightarrow$ 物理地址；有相关技术加速检索
 
-shadow 页表（客户机页表）：维护进程的虚拟地址→guest os地址（guest physical address，如虚拟机申请的）
-p2m页表/哈希函数 GPA地址→机器地址……填充到在硬件上起作用的影子页表
+shadow 页表（客户机页表）：维护进程的虚拟地址$\rightarrow$ guest os地址（guest physical address，如虚拟机申请的）
+p2m页表/哈希函数 GPA地址$\rightarrow$ 机器地址……填充到在硬件上起作用的影子页表
 
 ### 半虚拟化
 
@@ -294,7 +294,7 @@ vmm跨层维护页表 virtual address直接翻译成physical address
 
 ### 内存硬件辅助虚拟化
 
-ept 拓展页表 vmm将ept设置到CPU中，加速GPA→ma过程，再加速va→ma过程
+ept 拓展页表 vmm将ept设置到CPU中，加速GPA$\rightarrow$ ma过程，再加速va$\rightarrow$ ma过程
 
 ## 常见的虚拟化产品
 
@@ -315,7 +315,7 @@ VMware
 
 base image包含OS等，APP image在base image之上
 
-→serverless依赖于轻量级容器技术，执行毫秒级高性能要求任务，重量级容器启动慢，轻量级只包含minimal set，deploy快
+$\rightarrow$ serverless依赖于轻量级容器技术，执行毫秒级高性能要求任务，重量级容器启动慢，轻量级只包含minimal set，deploy快
 
 docker是容器引擎的解决方案 封装Cgroup、namespace等，提供了接口和api，支持生成、发布、部署等
 
@@ -325,9 +325,9 @@ docker：
 
 秒级的交付和部署，
 eg 搜索服务
-不定时的服务需求，需要尽快返回结果→尽快部署
+不定时的服务需求，需要尽快返回结果$\rightarrow$ 尽快部署
 
-集群：基础运行收费（：只有运行时才能autoscale）+用户request多收费→适用于中小企业
+集群：基础运行收费（：只有运行时才能autoscale）+用户request多收费$\rightarrow$ 适用于中小企业
 10tasks：查询的数据库、代码等需先存入️中
 当有新请求时，️自动部署新容器
 
@@ -390,11 +390,11 @@ host machine(hardware)
 
 特点：分区（逻辑上的分区） 隔离（同一主机上的虚拟机之间相互隔离） 封装（整个系统保存在文件中）
 
-虚拟机上读取数据？ 硬件磁盘挂载在硬件上 guest OS转换请求到hypervisor→OS→硬件 以隔离不同虚拟机，overhead大
+虚拟机上读取数据？ 硬件磁盘挂载在硬件上 guest OS转换请求到hypervisor$\rightarrow$ OS$\rightarrow$ 硬件 以隔离不同虚拟机，overhead大
 
 ## 划分
 
-软件辅助的虚拟化技术 （软件产生异常→宿主机陷入异常→触发虚拟化）hyperv
+软件辅助的虚拟化技术 （软件产生异常$\rightarrow$ 宿主机陷入异常$\rightarrow$ 触发虚拟化）hyperv
 
 > Hyper-V specifically provides hardware virtualization. That means each virtual machine runs on virtual hardware. Hyper-V lets you create virtual hard drives, virtual switches, and a number of other virtual devices all of which can be added to virtual machines
 
@@ -414,7 +414,7 @@ Discover a robust, bare-metal hypervisor that installs directly onto your physic
 
 > THE XEN PROJECT IS FOCUSED ON ADVANCING VIRTUALIZATION IN A NUMBER OF DIFFERENT COMMERCIAL AND OPEN SOURCE APPLICATIONS, INCLUDING SERVER VIRTUALIZATION, INFRASTRUCTURE AS A SERVICES (IAAS), DESKTOP VIRTUALIZATION, SECURITY APPLICATIONS, EMBEDDED AND HARDWARE APPLIANCES, AND AUTOMOTIVE/AVIATION
 
-服务器虚拟化：一台服务器→多台服务器
+服务器虚拟化：一台服务器$\rightarrow$ 多台服务器
 存储：
 　　对资源池的巨大文件系统管理 
 　　存储资源统一整合管理：目录树🌲管理
@@ -456,7 +456,7 @@ io虚拟化
 
 # 容器技术
 
-容器的威胁模型（外部容器的攻击）→云的安全性研究
+容器的威胁模型（外部容器的攻击）$\rightarrow$ 云的安全性研究
 
 
 # MapReduce
@@ -476,8 +476,8 @@ io虚拟化
 
 背景1：“摩尔定律”，CPU性能不断发展：单核、单核多核心、
 
-`软硬协同` ：软件硬件不断发展，硬件发展→需要有相应软件充分利用计算资源
-；TensorFlow 单精度浮点计算（对精度要求不高）→专门设计AI芯片，专门加速单精度浮点数
+`软硬协同` ：软件硬件不断发展，硬件发展$\rightarrow$ 需要有相应软件充分利用计算资源
+；TensorFlow 单精度浮点计算（对精度要求不高）$\rightarrow$ 专门设计AI芯片，专门加速单精度浮点数
 
 double/float计算效率不同，double速度可能变慢
 
@@ -485,15 +485,15 @@ double/float计算效率不同，double速度可能变慢
 
 ### 网络 
 
-1 2 3 4并行 （flat）1→2 local路由很快
+1 2 3 4并行 （flat）1$\rightarrow$ 2 local路由很快
 
 1 2 （上一级网关1）3 4 （上一级网关2）…… （fat-tree：路由层次少，减少出局域网时损耗）
 
-1→3会变慢，通过很多路由器
+1$\rightarrow$ 3会变慢，通过很多路由器
 
 当flat上挂载太多机器，需要级联（层次型）
 
-infiniteband（贵） 以太网→万兆以太网，速度可以接近infiniband
+infiniteband（贵） 以太网$\rightarrow$ 万兆以太网，速度可以接近infiniband
 
 考虑计算任务应分配到哪些机器，平衡计算资源（如计算任务对于某些部件经常读写）
 
@@ -503,7 +503,7 @@ eg 快排
 
 4g数据快排设分配到4台机器排序有序
 
-归并？→算法设计？考虑到网络通信实现数据合并（`并行编程` ），如何使得效率较高、减少慢速通信带来损耗
+归并？$\rightarrow$ 算法设计？考虑到网络通信实现数据合并（`并行编程` ），如何使得效率较高、减少慢速通信带来损耗
 
 每次需要针对问题设计分布式算法带来问题：算法设计者不一定对系统底层很了解，需要多次与工程师沟通
 

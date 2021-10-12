@@ -53,7 +53,7 @@
 
 
 \usepackage{algorithm2e}
-
+\usepackage{tabularx} % adjustable width tables
 \usepackage{svg}
 
 %----------------------------------------------------------------------------------------
@@ -444,7 +444,7 @@ innerbottommargin=5pt]{cBox}
 %	REMARK ENVIRONMENT
 %----------------------------------------------------------------------------------------
 
-\newenvironment{remark}{\par\vspace{1pt}\small % Vertical white space above the remark and smaller font size
+\newenvironment{remark}{\par\vspace{0.125pt}\small % Vertical white space above the remark and smaller font size
 \begin{list}{}{
 \leftmargin=35pt % Indentation on the left
 \rightmargin=25pt}\item\ignorespaces % Indentation on the right
@@ -466,8 +466,7 @@ innerbottommargin=5pt]{cBox}
 %}
 
 
-
-\advance\baselineskip -1pt}{\end{list}\vskip5pt} % Tighter line spacing and white space after remark
+\advance\baselineskip -0.5pt}{\end{list}\vskip0.125pt} % Tighter line spacing and white space after remark
 
 % Candidate 2 (use png)
 %\newenvironment{remark}{\begin{figure}[htbp]

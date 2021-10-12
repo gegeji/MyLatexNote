@@ -42,7 +42,7 @@
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics{cloud-development-of-cloud-computing.png}
+    \includegraphics[width=\textwidth]{cloud-development-of-cloud-computing.png}
 \end{figure}
 
 \subsection{其他技术的发展}
@@ -50,12 +50,13 @@
 \begin{itemize}
     \item 5G
     \item 移动互联网
-    \item 物联网
+    \item 物联网: 传感器数据量$\rightarrow$, 网络传输带宽有限, 传感器电量小(power consumption 控制, \term{边缘计算} $\rightarrow$ 减少传输带宽，通过数据预处理$\rightarrow$ 减少耗电量)
+    \item AR \term{增强现实}: HoloLens, 虚拟地图导航, 终端设备的定位（室内，三维建模，构建场景地图）
 \end{itemize}
 
 \subsection{国外云计算厂商}
 
-亚马逊的云计算称为Amazon Web Services（AWS）.率先在全球提供了弹性计算云EC2（Elastic Computing Cloud）和简单存储服务S3（Simple Storage Service），为企业提供计算和存储服务。收费的服务项目包括存储空间、带宽、CPU资源以及月租费。AWS服务的种类非常齐全. 
+\textbf{亚马逊}的云计算称为Amazon Web Services（AWS）(\textbf{便宜，提供infrastructure}).率先在全球提供了弹性计算云EC2（Elastic Computing Cloud）和简单存储服务S3（Simple Storage Service），为企业提供计算和存储服务。收费的服务项目包括存储空间、带宽、CPU资源以及月租费。AWS服务的种类非常齐全. 
 机器，计费使用时长（以小时, 分钟再到按照秒计算）等数据模型变化,技术不断进步.
 
 \begin{definition}[Amazon Elastic Compute Cloud]
@@ -70,7 +71,7 @@
     (AWS 上的无服务器)无服务器是一种用于描述服务、实践和策略的方式，使您能够构建更敏捷的应用程序，从而能够更快地创新和响应变化。凭借无服务器计算，容量预置和补丁等基础设施管理任务由 AWS 处理，以便您能够专注于编写为客户服务的代码。AWS Lambda 等无服务器服务具有自动扩展、内置高可用性以及按价值付费的计费模型。Lambda 是一种事件驱动的计算服务，使您能够运行代码来响应来自 200 多个本地集成的 AWS 和 SaaS 源的事件 — 所有这些都无需管理任何服务器。
 \end{definition}
 
-\begin{definition}
+\begin{definition}[AWS Lambda]
     AWS Lambda 是一种无服务器的计算服务，让您无需预置或管理服务器、创建可感知工作负载的集群扩展逻辑、维护事件集成或管理运行时，即可运行代码。借助 Lambda，您几乎可以为任何类型的应用程序或后端服务运行代码，而且完全无需管理。只需将您的代码以 ZIP 文件或容器映像的形式上传，Lambda 便会自动、精确地分配计算执行能力，并根据传入的请求或事件运行您的代码，以适应任何规模的流量。您可以将您的代码设置为自动从 200 多个 AWS 服务和 SaaS 应用程序触发，或者直接从任何 Web 或移动应用程序调用。您可以使用自己喜欢的语言（Node.js、Python、Go、Java 等）编写 Lambda 函数，并使用无服务器和容器工具（例如 AWS SAM 或 Docker CLI）来构建、测试和部署您的函数。
 \end{definition}
 
@@ -92,23 +93,35 @@
 \end{itemize}
 \end{definition}
 
-谷歌是最大的云计算技术的使用者. 谷歌已经允许第三方在谷歌的云计算中通过\term{Google App Engine}运行大型并行应用程序. 发表学术论文的形式公开其云计算三大法宝：\term{Google File System} (GFS)、\term{MapReduce}和\term{BigTable}. 基于TensorFlow
+\textbf{谷歌}是最大的云计算技术的使用者 (\textbf{platform，自带系统}). 谷歌已经允许第三方在谷歌的云计算中通过\term{Google App Engine}运行大型并行应用程序. 发表学术论文的形式公开其云计算三大法宝：\term{Google File System} (GFS)、\term{MapReduce}和\term{BigTable}. 基于TensorFlow推出了DataFlow.
 
 
-微软紧跟云计算步伐，推出了Microsoft Azure. 微软将为Windows Azure用户推出许多新的功能，不但能更简单地将现有的应用程序转移到云中，而且可以加强云托管应用程序的可用服务，充分体现 出微软的“云”+“端”战略。在中国，微软2014年3月27日宣布由世纪互联负责运营的Microsoft Azure公 有云服务正式商用，这是国内首个正式商用的国际公有云服务平台。
+\textbf{微软}推出了Microsoft Azure(\textbf{licensed 软件，程序托管}). 微软将为Windows Azure用户推出许多新的功能，不但能更简单地将现有的应用程序转移到云中，而且可以加强云托管应用程序的可用服务，充分体现 出微软的“云”+“端”战略。在中国，微软2014年3月27日宣布由世纪互联负责运营的Microsoft Azure公 有云服务正式商用，这是国内首个正式商用的国际公有云服务平台。
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics{cloud-cloud-computing-biosphere.png}
+    \includegraphics[width=\textwidth]{cloud-cloud-computing-biosphere.png}
 \end{figure}
+
+\subsection{国内云计算厂商}
+
+华为，阿里是第一梯队
+
+阿里云（淘宝所提出的需求） 
+
+腾讯云 
+
+华为云（政府云，云桌面）
+
+百度，短视频
+
+实时推荐系统：快手/抖音，字节跳动
 
 \subsection{其他原因}
 
 个人使用计算机的不灵活性:
 
 \begin{itemize}
-    
-    
     \item 刚高价购买的最新版的应用程序，过了不久就需要进行更新
     \item 你刚刚购买完电脑，就出现了新的型号
     \item 电脑因为太多的不灵活的软件，负载过重而宕机，导致保存的数据全部丢失
@@ -119,11 +132,11 @@
 
 \begin{itemize}
     
-    
     \item IT部门的工作人员经常忙于穿梭于各个办公楼之间解决员工电脑的各种系统错误，各种应用软件的错误
     \item 企业为了测试新开发的应用软件，需要购买一大批电脑，而当测试完毕之后，大部分设备处于闲置
     \item 为了应付市场的快速变化，急需一批计算资源，但是审批资金、购买设备、安装平台可能需要花费2周左右的时间，会耽误市场机会
     \item 高价购买了某家公司的软件之后，使用一段时间之后，发现不能完全满足需求，但是又无法退货
+    \item Amazon，黑五高峰时段需要增加服务器，但是平时浪费
 \end{itemize}
 
 云计算提出前的互联网遇到的难题:
@@ -138,6 +151,10 @@
 \begin{definition}[Big Data]
     海量数据或巨量数据，其规模巨大到无法通过目前主流的计算机系统在合理时间内获取、存储、管理.
 \end{definition}
+
+例子:DreamWorks 雪花❄️动画（图形学）电影动画渲染, 渲染时间久, 由高性能完成精细的场景渲染
+
+搜索引擎：输入keyword，爬虫机器人（cache），分布式索引查询$\rightarrow$ 汇总$\rightarrow$ 分布式排序
 
 \subsection{大数据的特征}
 
@@ -157,13 +174,104 @@
 
 
 
-\section{云计算基本思想 (通用性)}
+\section{云计算}
+
+\begin{definition}[云计算]
+    云计算是一种商业计算模型。它将计算任务分布在大量计算机构成的\textbf{资源池}上，使各种应用系统能够根据需要获取计算力、存储空间和信息服务。
+
+    云计算是一种\textbf{无处不在}、便捷且\textbf{按需}对一个共享的可配置计算资源（包括网络、服务器、存储、应用和服务）进行网络访问的模式，它能够通过最少量的管理以及与服务提供商的互动实现计算资源的迅速供给和释放。
+\end{definition}
+
+\subsection{基本思想 (通用性)}
 
 \begin{itemize}
     \item 基本能力(所有的计算能力、存储能力、和各种各样功能的应用)都可通过网络获得
     \item 云应对用户硬件友好, 不需要不停地更换昂贵的高性能电脑
     \item 不需要用户安装复杂软件
-    \item  数据保证安全（备份）
+    \item 数据保证安全（备份）
 \end{itemize}
 
-\term{三备份}，仍旧可能会丢失
+\term{三备份}，仍旧可能会丢失.
+
+特点:
+\begin{itemize}
+    \item 资源池（公有云）
+    \item 服务可度量（以分钟/GB/...计算）
+    \item 弹性
+    \item 按需自助服务
+    \item 资源池
+    \item 技术$\rightarrow$ 产品$\rightarrow$ 落地应用, 对于用户来说最少的管理，最少地与供应商互动
+\end{itemize}
+
+\subsection{云计算的服务模式}
+
+\begin{definition}[IaaS（Infrastructure as a Service）]
+    将\textbf{硬件设备等基础资源}封装成服务供用户使用
+
+    如：Amazon EC2/S3. kvm，ceph（文件管理，OpenStack（私有云）等
+\end{definition}
+
+\begin{definition}[PaaS（Platform as a Service）]
+    对资源的抽象层次更进一步，提供用户\textbf{应用程序运行环境}
+
+    如：Google App Engine, Microsoft Azure, GitHub gitlab kubernates docker
+\end{definition}
+
+\begin{definition}[SaaS（Software as a Service）]
+    Verizon， cloudblue ，cloud scripting
+
+    直接提供软件
+\end{definition}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{cloud-iaas-paas-saas.png}
+\end{figure}
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabularx}{0.8\textwidth}{
+        | >{\raggedright\arraybackslash}X 
+        | >{\raggedright\arraybackslash}X 
+        | >{\raggedright\arraybackslash}X |}
+    \hline
+    种类 & 缺点 & 优点 \\ \hline
+    \term{公有云}   &  对外部用户，安全性较低，功能拓展较低，数据风险较高  &  弹性扩容强  \\ \hline
+    \term{私有云}   &  （与公有云相反）  &  扩容性差（私有云多用户之间服务隔离性会差一些$\rightarrow$ 云性能不稳定性，用户多时共享性能会差）  \\ \hline
+    \term{混合云}（用户少时私有云，其他公有云）   &   管理成本很高，任务迁移、数据移动以及用户体验稳定问题  &    \\ \hline
+    \end{tabularx}
+    \end{table}
+
+    还有一种\term{社区云}
+
+\subsection{对于商业模式的影响}
+
+中型公司自建数据中心，管理费用太高, 上云可以成本降低，数据丢失风险下降
+类比量贩式KTV,超市, 量多单价下降. 
+
+云使得使用计算服务价格下降，资源利用率上升，节约成本 (\textbf{云计算将计算变成了大众用得上和用得起的“水和电”})
+
+电费:不同地区电费差异，地震️因素有差异，能源主要用于冷却费用
+高峰电费，低峰电费有差异，需要进行全球调度
+
+国内如:云南贵州内蒙古
+
+
+
+\chapter{云安全}
+
+\term{threat model}：假设平台是安全的
+
+\begin{definition}[同态加密 (Homomorphic Encryption)]
+    直接将原文加密，然后在密文上进行各种运算，最终得到结果的密文，形式化的表示为：
+
+    $$ x_{1}, x_{2}, \ldots, x_{n} \rightarrow\left[x_{1}\right],\left[x_{2}\right], \ldots,\left[x_{n}\right] $$
+
+    $$ f\left(\left[x_{1}\right],\left[x_{2}\right], \ldots,\left[x_{n}\right]\right) \rightarrow\left[f\left(x_{1}, x_{2}, \ldots, x_{n}\right)\right] $$
+    
+    直接在密文上操作和在明文上操作然后加密，效果是一样
+
+    可用于云上加密
+
+limitation：花销很大，算法限制
+\end{definition}

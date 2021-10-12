@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  12 OCT 2021 10:06
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  12 OCT 2021 15:28
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -376,6 +376,25 @@ Package: relsize 2013/03/29 ver 4.1
 \c@algocf=\count297
 \algocf@algoframe=\box69
 \algocf@algobox=\box70
+) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+ (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/04/20 v2.5e Tabular extension package (FMi)
+\col@sep=\dimen270
+\ar@mcellbox=\box71
+\extrarowheight=\dimen271
+\NC@list=\toks30
+\extratabsurround=\skip73
+\backup@length=\skip74
+\ar@cellbox=\box72
+)
+\TX@col@width=\dimen272
+\TX@old@table=\dimen273
+\TX@old@col=\dimen274
+\TX@target=\dimen275
+\TX@delta=\dimen276
+\TX@cols=\count298
+\TX@ftn=\toks31
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/svg/svg.sty
 Package: svg 2020/11/26 v2.02k (include SVG pictures)
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
@@ -415,9 +434,9 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 ))
-\c@svg@param@lastpage=\count298
-\svg@box=\box71
-\c@svg@param@currpage=\count299
+\c@svg@param@lastpage=\count299
+\svg@box=\box73
+\c@svg@param@currpage=\count300
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/transparent/transparent.sty
 Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
 
@@ -429,26 +448,26 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count300
-\Gm@cntv=\count301
-\c@Gm@tempcnt=\count302
-\Gm@bindingoffset=\dimen270
-\Gm@wd@mp=\dimen271
-\Gm@odd@mp=\dimen272
-\Gm@even@mp=\dimen273
-\Gm@layoutwidth=\dimen274
-\Gm@layoutheight=\dimen275
-\Gm@layouthoffset=\dimen276
-\Gm@layoutvoffset=\dimen277
-\Gm@dimlist=\toks30
+\Gm@cnth=\count301
+\Gm@cntv=\count302
+\c@Gm@tempcnt=\count303
+\Gm@bindingoffset=\dimen277
+\Gm@wd@mp=\dimen278
+\Gm@odd@mp=\dimen279
+\Gm@even@mp=\dimen280
+\Gm@layoutwidth=\dimen281
+\Gm@layoutheight=\dimen282
+\Gm@layouthoffset=\dimen283
+\Gm@layoutvoffset=\dimen284
+\Gm@dimlist=\toks32
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2021/03/14 v2.8c Micro-typographical refinements (RS)
-\MT@toks=\toks31
-\MT@count=\count303
+\MT@toks=\toks33
+\MT@count=\count304
 LaTeX Info: Redefining \textls on input line 790.
-\MT@outer@kern=\dimen278
+\MT@outer@kern=\dimen285
 LaTeX Info: Redefining \textmicrotypecontext on input line 1374.
-\MT@listname@count=\count304
+\MT@listname@count=\count305
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/microtype/microtype-xetex.def
 File: microtype-xetex.def 2021/03/14 v2.8c Definitions specific to xetex (RS)
 LaTeX Info: Redefining \lsstyle on input line 254.
@@ -469,18 +488,18 @@ Package: ctexhook 2021/06/20 v2.5.7 Document and package hooks (CTEX)
 Package: l3keys2e 2021-06-18 LaTeX2e option processing using LaTeX3 keys
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2021-06-18 L3 Experimental prototype document functions
-\l__xtemplate_tmp_dim=\dimen279
-\l__xtemplate_tmp_int=\count305
+\l__xtemplate_tmp_dim=\dimen286
+\l__xtemplate_tmp_int=\count306
 \l__xtemplate_tmp_muskip=\muskip16
-\l__xtemplate_tmp_skip=\skip73
+\l__xtemplate_tmp_skip=\skip75
 )
-\l__xeCJK_tmp_int=\count306
-\l__xeCJK_tmp_box=\box72
-\l__xeCJK_tmp_dim=\dimen280
-\l__xeCJK_tmp_skip=\skip74
-\g__xeCJK_space_factor_int=\count307
-\l__xeCJK_begin_int=\count308
-\l__xeCJK_end_int=\count309
+\l__xeCJK_tmp_int=\count307
+\l__xeCJK_tmp_box=\box74
+\l__xeCJK_tmp_dim=\dimen287
+\l__xeCJK_tmp_skip=\skip76
+\g__xeCJK_space_factor_int=\count308
+\l__xeCJK_begin_int=\count309
+\l__xeCJK_end_int=\count310
 \c__xeCJK_CJK_class_int=\XeTeXcharclass1
 \c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
 \c__xeCJK_FullRight_class_int=\XeTeXcharclass3
@@ -489,67 +508,67 @@ Package: xtemplate 2021-06-18 L3 Experimental prototype document functions
 \c__xeCJK_NormalSpace_class_int=\XeTeXcharclass6
 \c__xeCJK_CM_class_int=\XeTeXcharclass7
 \c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
-\l__xeCJK_last_skip=\skip75
-\g__xeCJK_node_int=\count310
-\c__xeCJK_CJK_node_dim=\dimen281
-\c__xeCJK_CJK-space_node_dim=\dimen282
-\c__xeCJK_default_node_dim=\dimen283
-\c__xeCJK_default-space_node_dim=\dimen284
-\c__xeCJK_CJK-widow_node_dim=\dimen285
-\c__xeCJK_normalspace_node_dim=\dimen286
-\l__xeCJK_ccglue_skip=\skip76
-\l__xeCJK_ecglue_skip=\skip77
-\l__xeCJK_punct_kern_skip=\skip78
-\l__xeCJK_last_penalty_int=\count311
-\l__xeCJK_last_bound_dim=\dimen287
-\l__xeCJK_last_kern_dim=\dimen288
-\l__xeCJK_widow_penalty_int=\count312
+\l__xeCJK_last_skip=\skip77
+\g__xeCJK_node_int=\count311
+\c__xeCJK_CJK_node_dim=\dimen288
+\c__xeCJK_CJK-space_node_dim=\dimen289
+\c__xeCJK_default_node_dim=\dimen290
+\c__xeCJK_default-space_node_dim=\dimen291
+\c__xeCJK_CJK-widow_node_dim=\dimen292
+\c__xeCJK_normalspace_node_dim=\dimen293
+\l__xeCJK_ccglue_skip=\skip78
+\l__xeCJK_ecglue_skip=\skip79
+\l__xeCJK_punct_kern_skip=\skip80
+\l__xeCJK_last_penalty_int=\count312
+\l__xeCJK_last_bound_dim=\dimen294
+\l__xeCJK_last_kern_dim=\dimen295
+\l__xeCJK_widow_penalty_int=\count313
 
 Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
 (xtemplate)             argument(s) on line 2335.
 
-\l__xeCJK_fixed_punct_width_dim=\dimen289
-\l__xeCJK_mixed_punct_width_dim=\dimen290
-\l__xeCJK_middle_punct_width_dim=\dimen291
-\l__xeCJK_fixed_margin_width_dim=\dimen292
-\l__xeCJK_mixed_margin_width_dim=\dimen293
-\l__xeCJK_middle_margin_width_dim=\dimen294
-\l__xeCJK_bound_punct_width_dim=\dimen295
-\l__xeCJK_bound_margin_width_dim=\dimen296
-\l__xeCJK_margin_minimum_dim=\dimen297
-\l__xeCJK_kerning_total_width_dim=\dimen298
-\l__xeCJK_same_align_margin_dim=\dimen299
-\l__xeCJK_different_align_margin_dim=\dimen300
-\l__xeCJK_kerning_margin_width_dim=\dimen301
-\l__xeCJK_kerning_margin_minimum_dim=\dimen302
-\l__xeCJK_bound_dim=\dimen303
-\l__xeCJK_reverse_bound_dim=\dimen304
-\l__xeCJK_margin_dim=\dimen305
-\l__xeCJK_minimum_bound_dim=\dimen306
-\l__xeCJK_kerning_margin_dim=\dimen307
-\g__xeCJK_family_int=\count313
-\l__xeCJK_fam_int=\count314
-\g__xeCJK_fam_allocation_int=\count315
-\l__xeCJK_verb_case_int=\count316
-\l__xeCJK_verb_exspace_skip=\skip79
+\l__xeCJK_fixed_punct_width_dim=\dimen296
+\l__xeCJK_mixed_punct_width_dim=\dimen297
+\l__xeCJK_middle_punct_width_dim=\dimen298
+\l__xeCJK_fixed_margin_width_dim=\dimen299
+\l__xeCJK_mixed_margin_width_dim=\dimen300
+\l__xeCJK_middle_margin_width_dim=\dimen301
+\l__xeCJK_bound_punct_width_dim=\dimen302
+\l__xeCJK_bound_margin_width_dim=\dimen303
+\l__xeCJK_margin_minimum_dim=\dimen304
+\l__xeCJK_kerning_total_width_dim=\dimen305
+\l__xeCJK_same_align_margin_dim=\dimen306
+\l__xeCJK_different_align_margin_dim=\dimen307
+\l__xeCJK_kerning_margin_width_dim=\dimen308
+\l__xeCJK_kerning_margin_minimum_dim=\dimen309
+\l__xeCJK_bound_dim=\dimen310
+\l__xeCJK_reverse_bound_dim=\dimen311
+\l__xeCJK_margin_dim=\dimen312
+\l__xeCJK_minimum_bound_dim=\dimen313
+\l__xeCJK_kerning_margin_dim=\dimen314
+\g__xeCJK_family_int=\count314
+\l__xeCJK_fam_int=\count315
+\g__xeCJK_fam_allocation_int=\count316
+\l__xeCJK_verb_case_int=\count317
+\l__xeCJK_verb_exspace_skip=\skip81
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.sty
 Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
-\l__fontspec_script_int=\count317
-\l__fontspec_language_int=\count318
-\l__fontspec_strnum_int=\count319
-\l__fontspec_tmp_int=\count320
-\l__fontspec_tmpa_int=\count321
-\l__fontspec_tmpb_int=\count322
-\l__fontspec_tmpc_int=\count323
-\l__fontspec_em_int=\count324
-\l__fontspec_emdef_int=\count325
-\l__fontspec_strong_int=\count326
-\l__fontspec_strongdef_int=\count327
-\l__fontspec_tmpa_dim=\dimen308
-\l__fontspec_tmpb_dim=\dimen309
-\l__fontspec_tmpc_dim=\dimen310
+\l__fontspec_script_int=\count318
+\l__fontspec_language_int=\count319
+\l__fontspec_strnum_int=\count320
+\l__fontspec_tmp_int=\count321
+\l__fontspec_tmpa_int=\count322
+\l__fontspec_tmpb_int=\count323
+\l__fontspec_tmpc_int=\count324
+\l__fontspec_em_int=\count325
+\l__fontspec_emdef_int=\count326
+\l__fontspec_strong_int=\count327
+\l__fontspec_strongdef_int=\count328
+\l__fontspec_tmpa_dim=\dimen315
+\l__fontspec_tmpb_dim=\dimen316
+\l__fontspec_tmpc_dim=\dimen317
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
@@ -628,153 +647,153 @@ Package fontspec Info: Font family 'FZPingXYSJW.TTF(0)' created for font
 Package: mhchem 2018/06/22 v4.08 for typesetting chemical formulae
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2021/04/20 v2.17j AMS math features
-\@mathmargin=\skip80
+\@mathmargin=\skip82
 
 For additional information on amsmath, use the `?' option.
 (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks32
-\ex@=\dimen311
+\@emptytoks=\toks34
+\ex@=\dimen318
 )) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen312
+\pmbraise@=\dimen319
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count328
+\inf@bad=\count329
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count329
-\leftroot@=\count330
+\uproot@=\count330
+\leftroot@=\count331
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count331
-\DOTSCASE@=\count332
+\classnum@=\count332
+\DOTSCASE@=\count333
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box73
-\strutbox@=\box74
-\big@size=\dimen313
+\Mathstrutbox@=\box75
+\strutbox@=\box76
+\big@size=\dimen320
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count333
-\c@MaxMatrixCols=\count334
+\macc@depth=\count334
+\c@MaxMatrixCols=\count335
 \dotsspace@=\muskip17
-\c@parentequation=\count335
-\dspbrk@lvl=\count336
-\tag@help=\toks33
-\row@=\count337
-\column@=\count338
-\maxfields@=\count339
-\andhelp@=\toks34
-\eqnshift@=\dimen314
-\alignsep@=\dimen315
-\tagshift@=\dimen316
-\tagwidth@=\dimen317
-\totwidth@=\dimen318
-\lineht@=\dimen319
-\@envbody=\toks35
-\multlinegap=\skip81
-\multlinetaggap=\skip82
-\mathdisplay@stack=\toks36
+\c@parentequation=\count336
+\dspbrk@lvl=\count337
+\tag@help=\toks35
+\row@=\count338
+\column@=\count339
+\maxfields@=\count340
+\andhelp@=\toks36
+\eqnshift@=\dimen321
+\alignsep@=\dimen322
+\tagshift@=\dimen323
+\tagwidth@=\dimen324
+\totwidth@=\dimen325
+\lineht@=\dimen326
+\@envbody=\toks37
+\multlinegap=\skip83
+\multlinetaggap=\skip84
+\mathdisplay@stack=\toks38
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/chemgreek/chemgreek.sty
 Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use in chemistry (CN)
-\l__chemgreek_tmpa_int=\count340
-\g__chemgreek_tmpa_int=\count341
+\l__chemgreek_tmpa_int=\count341
+\g__chemgreek_tmpa_int=\count342
 )
-\l__mhchem_ce_distanceFromLastComma_int=\count342
-\__mhchem_arrow_extPgfLength_skip=\skip83
-\mhchem@minispace@tmp=\skip84
-\mhchem@minibackspace@tmp=\skip85
-\mhchem@bondwidth=\skip86
-\mhchem@bondheight=\skip87
-\mhchem@smallbondwidth@tmpA=\skip88
-\mhchem@smallbondwidth@tmpB=\skip89
-\mhchem@smallbondwidth=\skip90
-\mhchem@bondtmp@minussidebearingleft=\skip91
-\mhchem@bondtmp@minussidebearingright=\skip92
-\l__mhchem_option_version_int=\count343
-\mhchem@option@minusmathsidebearingleft=\dimen320
-\mhchem@option@minusmathsidebearingright=\dimen321
-\mhchem@option@minustextsidebearingleft=\dimen322
-\mhchem@option@minustextsidebearingright=\dimen323
+\l__mhchem_ce_distanceFromLastComma_int=\count343
+\__mhchem_arrow_extPgfLength_skip=\skip85
+\mhchem@minispace@tmp=\skip86
+\mhchem@minibackspace@tmp=\skip87
+\mhchem@bondwidth=\skip88
+\mhchem@bondheight=\skip89
+\mhchem@smallbondwidth@tmpA=\skip90
+\mhchem@smallbondwidth@tmpB=\skip91
+\mhchem@smallbondwidth=\skip92
+\mhchem@bondtmp@minussidebearingleft=\skip93
+\mhchem@bondtmp@minussidebearingright=\skip94
+\l__mhchem_option_version_int=\count344
+\mhchem@option@minusmathsidebearingleft=\dimen327
+\mhchem@option@minusmathsidebearingright=\dimen328
+\mhchem@option@minustextsidebearingleft=\dimen329
+\mhchem@option@minustextsidebearingright=\dimen330
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2020/12/31 v3.16 programmable bibliographies (PK/MW)
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count344
+\etb@tempcnta=\count345
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count345
+\lrq@indent=\count346
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count346
-\c@listtotal=\count347
-\c@listcount=\count348
-\c@liststart=\count349
-\c@liststop=\count350
-\c@citecount=\count351
-\c@citetotal=\count352
-\c@multicitecount=\count353
-\c@multicitetotal=\count354
-\c@instcount=\count355
-\c@maxnames=\count356
-\c@minnames=\count357
-\c@maxitems=\count358
-\c@minitems=\count359
-\c@citecounter=\count360
-\c@maxcitecounter=\count361
-\c@savedcitecounter=\count362
-\c@uniquelist=\count363
-\c@uniquename=\count364
-\c@refsection=\count365
-\c@refsegment=\count366
-\c@maxextratitle=\count367
-\c@maxextratitleyear=\count368
-\c@maxextraname=\count369
-\c@maxextradate=\count370
-\c@maxextraalpha=\count371
-\c@abbrvpenalty=\count372
-\c@highnamepenalty=\count373
-\c@lownamepenalty=\count374
-\c@maxparens=\count375
-\c@parenlevel=\count376
-\blx@tempcnta=\count377
-\blx@tempcntb=\count378
-\blx@tempcntc=\count379
-\blx@maxsection=\count380
-\blx@maxsegment@0=\count381
-\blx@notetype=\count382
-\blx@parenlevel@text=\count383
-\blx@parenlevel@foot=\count384
-\blx@sectionciteorder@0=\count385
-\blx@entrysetcounter=\count386
-\blx@biblioinstance=\count387
-\labelnumberwidth=\skip93
-\labelalphawidth=\skip94
-\biblabelsep=\skip95
-\bibitemsep=\skip96
-\bibnamesep=\skip97
-\bibinitsep=\skip98
-\bibparsep=\skip99
-\bibhang=\skip100
+\c@tabx@nest=\count347
+\c@listtotal=\count348
+\c@listcount=\count349
+\c@liststart=\count350
+\c@liststop=\count351
+\c@citecount=\count352
+\c@citetotal=\count353
+\c@multicitecount=\count354
+\c@multicitetotal=\count355
+\c@instcount=\count356
+\c@maxnames=\count357
+\c@minnames=\count358
+\c@maxitems=\count359
+\c@minitems=\count360
+\c@citecounter=\count361
+\c@maxcitecounter=\count362
+\c@savedcitecounter=\count363
+\c@uniquelist=\count364
+\c@uniquename=\count365
+\c@refsection=\count366
+\c@refsegment=\count367
+\c@maxextratitle=\count368
+\c@maxextratitleyear=\count369
+\c@maxextraname=\count370
+\c@maxextradate=\count371
+\c@maxextraalpha=\count372
+\c@abbrvpenalty=\count373
+\c@highnamepenalty=\count374
+\c@lownamepenalty=\count375
+\c@maxparens=\count376
+\c@parenlevel=\count377
+\blx@tempcnta=\count378
+\blx@tempcntb=\count379
+\blx@tempcntc=\count380
+\blx@maxsection=\count381
+\blx@maxsegment@0=\count382
+\blx@notetype=\count383
+\blx@parenlevel@text=\count384
+\blx@parenlevel@foot=\count385
+\blx@sectionciteorder@0=\count386
+\blx@entrysetcounter=\count387
+\blx@biblioinstance=\count388
+\labelnumberwidth=\skip95
+\labelalphawidth=\skip96
+\biblabelsep=\skip97
+\bibitemsep=\skip98
+\bibnamesep=\skip99
+\bibinitsep=\skip100
+\bibparsep=\skip101
+\bibhang=\skip102
 \blx@bcfin=\read4
 \blx@bcfout=\write4
 \blx@langwohyphens=\language88
-\c@mincomprange=\count388
-\c@maxcomprange=\count389
-\c@mincompwidth=\count390
+\c@mincomprange=\count389
+\c@maxcomprange=\count390
+\c@mincompwidth=\count391
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -784,88 +803,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count391
-\c@savedafterword=\count392
-\c@annotator=\count393
-\c@savedannotator=\count394
-\c@author=\count395
-\c@savedauthor=\count396
-\c@bookauthor=\count397
-\c@savedbookauthor=\count398
-\c@commentator=\count399
-\c@savedcommentator=\count400
-\c@editor=\count401
-\c@savededitor=\count402
-\c@editora=\count403
-\c@savededitora=\count404
-\c@editorb=\count405
-\c@savededitorb=\count406
-\c@editorc=\count407
-\c@savededitorc=\count408
-\c@foreword=\count409
-\c@savedforeword=\count410
-\c@holder=\count411
-\c@savedholder=\count412
-\c@introduction=\count413
-\c@savedintroduction=\count414
-\c@namea=\count415
-\c@savednamea=\count416
-\c@nameb=\count417
-\c@savednameb=\count418
-\c@namec=\count419
-\c@savednamec=\count420
-\c@translator=\count421
-\c@savedtranslator=\count422
-\c@shortauthor=\count423
-\c@savedshortauthor=\count424
-\c@shorteditor=\count425
-\c@savedshorteditor=\count426
-\c@labelname=\count427
-\c@savedlabelname=\count428
-\c@institution=\count429
-\c@savedinstitution=\count430
-\c@lista=\count431
-\c@savedlista=\count432
-\c@listb=\count433
-\c@savedlistb=\count434
-\c@listc=\count435
-\c@savedlistc=\count436
-\c@listd=\count437
-\c@savedlistd=\count438
-\c@liste=\count439
-\c@savedliste=\count440
-\c@listf=\count441
-\c@savedlistf=\count442
-\c@location=\count443
-\c@savedlocation=\count444
-\c@organization=\count445
-\c@savedorganization=\count446
-\c@origlocation=\count447
-\c@savedoriglocation=\count448
-\c@origpublisher=\count449
-\c@savedorigpublisher=\count450
-\c@publisher=\count451
-\c@savedpublisher=\count452
-\c@language=\count453
-\c@savedlanguage=\count454
-\c@origlanguage=\count455
-\c@savedoriglanguage=\count456
-\c@pageref=\count457
-\c@savedpageref=\count458
-\shorthandwidth=\skip101
-\shortjournalwidth=\skip102
-\shortserieswidth=\skip103
-\shorttitlewidth=\skip104
-\shortauthorwidth=\skip105
-\shorteditorwidth=\skip106
-\locallabelnumberwidth=\skip107
-\locallabelalphawidth=\skip108
-\localshorthandwidth=\skip109
-\localshortjournalwidth=\skip110
-\localshortserieswidth=\skip111
-\localshorttitlewidth=\skip112
-\localshortauthorwidth=\skip113
-\localshorteditorwidth=\skip114
+\c@afterword=\count392
+\c@savedafterword=\count393
+\c@annotator=\count394
+\c@savedannotator=\count395
+\c@author=\count396
+\c@savedauthor=\count397
+\c@bookauthor=\count398
+\c@savedbookauthor=\count399
+\c@commentator=\count400
+\c@savedcommentator=\count401
+\c@editor=\count402
+\c@savededitor=\count403
+\c@editora=\count404
+\c@savededitora=\count405
+\c@editorb=\count406
+\c@savededitorb=\count407
+\c@editorc=\count408
+\c@savededitorc=\count409
+\c@foreword=\count410
+\c@savedforeword=\count411
+\c@holder=\count412
+\c@savedholder=\count413
+\c@introduction=\count414
+\c@savedintroduction=\count415
+\c@namea=\count416
+\c@savednamea=\count417
+\c@nameb=\count418
+\c@savednameb=\count419
+\c@namec=\count420
+\c@savednamec=\count421
+\c@translator=\count422
+\c@savedtranslator=\count423
+\c@shortauthor=\count424
+\c@savedshortauthor=\count425
+\c@shorteditor=\count426
+\c@savedshorteditor=\count427
+\c@labelname=\count428
+\c@savedlabelname=\count429
+\c@institution=\count430
+\c@savedinstitution=\count431
+\c@lista=\count432
+\c@savedlista=\count433
+\c@listb=\count434
+\c@savedlistb=\count435
+\c@listc=\count436
+\c@savedlistc=\count437
+\c@listd=\count438
+\c@savedlistd=\count439
+\c@liste=\count440
+\c@savedliste=\count441
+\c@listf=\count442
+\c@savedlistf=\count443
+\c@location=\count444
+\c@savedlocation=\count445
+\c@organization=\count446
+\c@savedorganization=\count447
+\c@origlocation=\count448
+\c@savedoriglocation=\count449
+\c@origpublisher=\count450
+\c@savedorigpublisher=\count451
+\c@publisher=\count452
+\c@savedpublisher=\count453
+\c@language=\count454
+\c@savedlanguage=\count455
+\c@origlanguage=\count456
+\c@savedoriglanguage=\count457
+\c@pageref=\count458
+\c@savedpageref=\count459
+\shorthandwidth=\skip103
+\shortjournalwidth=\skip104
+\shortserieswidth=\skip105
+\shorttitlewidth=\skip106
+\shortauthorwidth=\skip107
+\shorteditorwidth=\skip108
+\locallabelnumberwidth=\skip109
+\locallabelalphawidth=\skip110
+\localshorthandwidth=\skip111
+\localshortjournalwidth=\skip112
+\localshortserieswidth=\skip113
+\localshorttitlewidth=\skip114
+\localshortauthorwidth=\skip115
+\localshorteditorwidth=\skip116
 Package biblatex Info: Trying to load enhanced support for Unicode engines...
 Package biblatex Info: ... file 'blx-unicode.def' found.
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/biblatex/blx-unicode.def)
@@ -878,19 +897,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
-\c@textcitecount=\count459
-\c@textcitetotal=\count460
-\c@textcitemaxnames=\count461
-\c@biburlbigbreakpenalty=\count462
-\c@biburlbreakpenalty=\count463
-\c@biburlnumpenalty=\count464
-\c@biburlucpenalty=\count465
-\c@biburllcpenalty=\count466
+\c@textcitecount=\count460
+\c@textcitetotal=\count461
+\c@textcitemaxnames=\count462
+\c@biburlbigbreakpenalty=\count463
+\c@biburlbreakpenalty=\count464
+\c@biburlnumpenalty=\count465
+\c@biburlucpenalty=\count466
+\c@biburllcpenalty=\count467
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count467
+\c@smartand=\count468
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -900,8 +919,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count468
-\c@bbx:relatedtotal=\count469
+\c@bbx:relatedcount=\count469
+\c@bbx:relatedtotal=\count470
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -938,18 +957,18 @@ Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 Writing index file main.idx
 (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2021/07/05 v2.14 TOC entries
-\ttl@leftsep=\dimen324
+\ttl@leftsep=\dimen331
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip115
-\f@nch@O@elh=\skip116
-\f@nch@O@erh=\skip117
-\f@nch@O@olh=\skip118
-\f@nch@O@orh=\skip119
-\f@nch@O@elf=\skip120
-\f@nch@O@erf=\skip121
-\f@nch@O@olf=\skip122
-\f@nch@O@orf=\skip123
+\f@nch@headwidth=\skip117
+\f@nch@O@elh=\skip118
+\f@nch@O@erh=\skip119
+\f@nch@O@olh=\skip120
+\f@nch@O@orh=\skip121
+\f@nch@O@elf=\skip122
+\f@nch@O@erf=\skip123
+\f@nch@O@olf=\skip124
+\f@nch@O@orf=\skip125
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
@@ -961,23 +980,23 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks37
-\thm@bodyfont=\toks38
-\thm@headfont=\toks39
-\thm@notefont=\toks40
-\thm@headpunct=\toks41
-\thm@preskip=\skip124
-\thm@postskip=\skip125
-\thm@headsep=\skip126
-\dth@everypar=\toks42
+\thm@style=\toks39
+\thm@bodyfont=\toks40
+\thm@headfont=\toks41
+\thm@notefont=\toks42
+\thm@headpunct=\toks43
+\thm@preskip=\skip126
+\thm@postskip=\skip127
+\thm@headsep=\skip128
+\dth@everypar=\toks44
 )
-\c@notation=\count470
-\c@dummy=\count471
-\c@problem=\count472
-\c@exerciseT=\count473
-\c@exampleT=\count474
-\c@vocabulary=\count475
-\c@definitionT=\count476
+\c@notation=\count471
+\c@dummy=\count472
+\c@problem=\count473
+\c@exerciseT=\count474
+\c@exampleT=\count475
+\c@vocabulary=\count476
+\c@definitionT=\count477
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/mdframed/mdframed.sty
 Package: mdframed 2013/07/01 1.9b: mdframed
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/zref/zref-abspage.sty
@@ -996,101 +1015,101 @@ Package zref Info: New property: page on input line 766.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\c@abspage=\count477
+\c@abspage=\count478
 Package zref Info: New property: abspage on input line 66.
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/needspace/needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
-\mdf@templength=\skip127
-\c@mdf@globalstyle@cnt=\count478
-\mdf@skipabove@length=\skip128
-\mdf@skipbelow@length=\skip129
-\mdf@leftmargin@length=\skip130
-\mdf@rightmargin@length=\skip131
-\mdf@innerleftmargin@length=\skip132
-\mdf@innerrightmargin@length=\skip133
-\mdf@innertopmargin@length=\skip134
-\mdf@innerbottommargin@length=\skip135
-\mdf@splittopskip@length=\skip136
-\mdf@splitbottomskip@length=\skip137
-\mdf@outermargin@length=\skip138
-\mdf@innermargin@length=\skip139
-\mdf@linewidth@length=\skip140
-\mdf@innerlinewidth@length=\skip141
-\mdf@middlelinewidth@length=\skip142
-\mdf@outerlinewidth@length=\skip143
-\mdf@roundcorner@length=\skip144
-\mdf@footenotedistance@length=\skip145
-\mdf@userdefinedwidth@length=\skip146
-\mdf@needspace@length=\skip147
-\mdf@frametitleaboveskip@length=\skip148
-\mdf@frametitlebelowskip@length=\skip149
-\mdf@frametitlerulewidth@length=\skip150
-\mdf@frametitleleftmargin@length=\skip151
-\mdf@frametitlerightmargin@length=\skip152
-\mdf@shadowsize@length=\skip153
-\mdf@extratopheight@length=\skip154
-\mdf@subtitleabovelinewidth@length=\skip155
-\mdf@subtitlebelowlinewidth@length=\skip156
-\mdf@subtitleaboveskip@length=\skip157
-\mdf@subtitlebelowskip@length=\skip158
-\mdf@subtitleinneraboveskip@length=\skip159
-\mdf@subtitleinnerbelowskip@length=\skip160
-\mdf@subsubtitleabovelinewidth@length=\skip161
-\mdf@subsubtitlebelowlinewidth@length=\skip162
-\mdf@subsubtitleaboveskip@length=\skip163
-\mdf@subsubtitlebelowskip@length=\skip164
-\mdf@subsubtitleinneraboveskip@length=\skip165
-\mdf@subsubtitleinnerbelowskip@length=\skip166
+\mdf@templength=\skip129
+\c@mdf@globalstyle@cnt=\count479
+\mdf@skipabove@length=\skip130
+\mdf@skipbelow@length=\skip131
+\mdf@leftmargin@length=\skip132
+\mdf@rightmargin@length=\skip133
+\mdf@innerleftmargin@length=\skip134
+\mdf@innerrightmargin@length=\skip135
+\mdf@innertopmargin@length=\skip136
+\mdf@innerbottommargin@length=\skip137
+\mdf@splittopskip@length=\skip138
+\mdf@splitbottomskip@length=\skip139
+\mdf@outermargin@length=\skip140
+\mdf@innermargin@length=\skip141
+\mdf@linewidth@length=\skip142
+\mdf@innerlinewidth@length=\skip143
+\mdf@middlelinewidth@length=\skip144
+\mdf@outerlinewidth@length=\skip145
+\mdf@roundcorner@length=\skip146
+\mdf@footenotedistance@length=\skip147
+\mdf@userdefinedwidth@length=\skip148
+\mdf@needspace@length=\skip149
+\mdf@frametitleaboveskip@length=\skip150
+\mdf@frametitlebelowskip@length=\skip151
+\mdf@frametitlerulewidth@length=\skip152
+\mdf@frametitleleftmargin@length=\skip153
+\mdf@frametitlerightmargin@length=\skip154
+\mdf@shadowsize@length=\skip155
+\mdf@extratopheight@length=\skip156
+\mdf@subtitleabovelinewidth@length=\skip157
+\mdf@subtitlebelowlinewidth@length=\skip158
+\mdf@subtitleaboveskip@length=\skip159
+\mdf@subtitlebelowskip@length=\skip160
+\mdf@subtitleinneraboveskip@length=\skip161
+\mdf@subtitleinnerbelowskip@length=\skip162
+\mdf@subsubtitleabovelinewidth@length=\skip163
+\mdf@subsubtitlebelowlinewidth@length=\skip164
+\mdf@subsubtitleaboveskip@length=\skip165
+\mdf@subsubtitlebelowskip@length=\skip166
+\mdf@subsubtitleinneraboveskip@length=\skip167
+\mdf@subsubtitleinnerbelowskip@length=\skip168
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
 File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 )
-\mdf@frametitlebox=\box75
-\mdf@footnotebox=\box76
-\mdf@splitbox@one=\box77
-\mdf@splitbox@two=\box78
-\mdf@splitbox@save=\box79
-\mdfsplitboxwidth=\skip167
-\mdfsplitboxtotalwidth=\skip168
-\mdfsplitboxheight=\skip169
-\mdfsplitboxdepth=\skip170
-\mdfsplitboxtotalheight=\skip171
-\mdfframetitleboxwidth=\skip172
-\mdfframetitleboxtotalwidth=\skip173
-\mdfframetitleboxheight=\skip174
-\mdfframetitleboxdepth=\skip175
-\mdfframetitleboxtotalheight=\skip176
-\mdffootnoteboxwidth=\skip177
-\mdffootnoteboxtotalwidth=\skip178
-\mdffootnoteboxheight=\skip179
-\mdffootnoteboxdepth=\skip180
-\mdffootnoteboxtotalheight=\skip181
-\mdftotallinewidth=\skip182
-\mdfboundingboxwidth=\skip183
-\mdfboundingboxtotalwidth=\skip184
-\mdfboundingboxheight=\skip185
-\mdfboundingboxdepth=\skip186
-\mdfboundingboxtotalheight=\skip187
-\mdf@freevspace@length=\skip188
-\mdf@horizontalwidthofbox@length=\skip189
-\mdf@verticalmarginwhole@length=\skip190
-\mdf@horizontalspaceofbox=\skip191
-\mdfsubtitleheight=\skip192
-\mdfsubsubtitleheight=\skip193
-\c@mdfcountframes=\count479
+\mdf@frametitlebox=\box77
+\mdf@footnotebox=\box78
+\mdf@splitbox@one=\box79
+\mdf@splitbox@two=\box80
+\mdf@splitbox@save=\box81
+\mdfsplitboxwidth=\skip169
+\mdfsplitboxtotalwidth=\skip170
+\mdfsplitboxheight=\skip171
+\mdfsplitboxdepth=\skip172
+\mdfsplitboxtotalheight=\skip173
+\mdfframetitleboxwidth=\skip174
+\mdfframetitleboxtotalwidth=\skip175
+\mdfframetitleboxheight=\skip176
+\mdfframetitleboxdepth=\skip177
+\mdfframetitleboxtotalheight=\skip178
+\mdffootnoteboxwidth=\skip179
+\mdffootnoteboxtotalwidth=\skip180
+\mdffootnoteboxheight=\skip181
+\mdffootnoteboxdepth=\skip182
+\mdffootnoteboxtotalheight=\skip183
+\mdftotallinewidth=\skip184
+\mdfboundingboxwidth=\skip185
+\mdfboundingboxtotalwidth=\skip186
+\mdfboundingboxheight=\skip187
+\mdfboundingboxdepth=\skip188
+\mdfboundingboxtotalheight=\skip189
+\mdf@freevspace@length=\skip190
+\mdf@horizontalwidthofbox@length=\skip191
+\mdf@verticalmarginwhole@length=\skip192
+\mdf@horizontalspaceofbox=\skip193
+\mdfsubtitleheight=\skip194
+\mdfsubsubtitleheight=\skip195
+\c@mdfcountframes=\count480
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count480
-\c@mdf@env@i=\count481
-\c@mdf@env@ii=\count482
-\c@mdf@zref@counter=\count483
+\mdf@envdepth=\count481
+\c@mdf@env@i=\count482
+\c@mdf@env@ii=\count483
+\c@mdf@zref@counter=\count484
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-\esp=\skip194
-\ecart=\skip195
+\esp=\skip196
+\ecart=\skip197
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/pdfescape/pdfescape.sty
@@ -1100,9 +1119,9 @@ Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-\@linkdim=\dimen325
-\Hy@linkcounter=\count484
-\Hy@pagecounter=\count485
+\@linkdim=\dimen332
+\Hy@linkcounter=\count485
+\Hy@pagecounter=\count486
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
@@ -1110,7 +1129,7 @@ File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel lan
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count486
+\Hy@SavedSpaceFactor=\count487
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
 )
@@ -1121,17 +1140,17 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count487
+\c@Hy@tempcnt=\count488
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen326
+\XeTeXLinkMargin=\dimen333
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count488
-\Field@Width=\dimen327
-\Fld@charsize=\dimen328
+\Fld@menulength=\count489
+\Field@Width=\dimen334
+\Fld@charsize=\dimen335
 Package hyperref Info: Hyper figures OFF on input line 6076.
 Package hyperref Info: Link nesting OFF on input line 6081.
 Package hyperref Info: Hyper index ON on input line 6084.
@@ -1141,9 +1160,9 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6101.
 Package hyperref Info: PDF/A mode OFF on input line 6106.
 LaTeX Info: Redefining \ref on input line 6146.
 LaTeX Info: Redefining \pageref on input line 6150.
-\Hy@abspage=\count489
-\c@Item=\count490
-\c@Hfootnote=\count491
+\Hy@abspage=\count490
+\c@Item=\count491
+\c@Hfootnote=\count492
 )
 Package hyperref Info: Driver (autodetected): hxetex.
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/hyperref/hxetex.def
@@ -1151,11 +1170,11 @@ File: hxetex.def 2021-06-07 v7.00m Hyperref driver for XeTeX
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\pdfm@box=\box80
-\c@Hy@AnnotLevel=\count492
-\HyField@AnnotCount=\count493
-\Fld@listcount=\count494
-\c@bookmark@seq@number=\count495
+\pdfm@box=\box82
+\c@Hy@AnnotLevel=\count493
+\HyField@AnnotCount=\count494
+\Fld@listcount=\count495
+\c@bookmark@seq@number=\count496
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/base/atveryend-ltx.sty
@@ -1166,7 +1185,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
-\Hy@SectionHShift=\skip196
+\Hy@SectionHShift=\skip198
 )
 
 Package hyperref Warning: Option `backref' has already been used,
@@ -1191,7 +1210,7 @@ Package hyperref Info: Option `bookmarksopen' set `false' on input line 623.
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
 File: bkm-dvipdfm.def 2020-11-06 v1.29 bookmark driver for dvipdfm (HO)
-\BKM@id=\count496
+\BKM@id=\count497
 )) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
@@ -1216,64 +1235,9 @@ LaTeX Font Info:    Overwriting symbol font `CJKmath' in version `bold'
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count497
-\@quotereset=\count498
-(./main.aux
-
-LaTeX Warning: Label `invigorate' multiply defined.
-
-
-LaTeX Warning: Label `invigorate@cref' multiply defined.
-
-
-LaTeX Warning: Label `aggress' multiply defined.
-
-
-LaTeX Warning: Label `aggress@cref' multiply defined.
-
-
-LaTeX Warning: Label `agent' multiply defined.
-
-
-LaTeX Warning: Label `agent@cref' multiply defined.
-
-
-LaTeX Warning: Label `department' multiply defined.
-
-
-LaTeX Warning: Label `department@cref' multiply defined.
-
-
-LaTeX Warning: Label `extract' multiply defined.
-
-
-LaTeX Warning: Label `extract@cref' multiply defined.
-
-
-LaTeX Warning: Label `invade' multiply defined.
-
-
-LaTeX Warning: Label `invade@cref' multiply defined.
-
-
-LaTeX Warning: Label `occur' multiply defined.
-
-
-LaTeX Warning: Label `occur@cref' multiply defined.
-
-
-LaTeX Warning: Label `partner' multiply defined.
-
-
-LaTeX Warning: Label `partner@cref' multiply defined.
-
-
-LaTeX Warning: Label `pervade' multiply defined.
-
-
-LaTeX Warning: Label `pervade@cref' multiply defined.
-
-)
+\@quotelevel=\count498
+\@quotereset=\count499
+(./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
@@ -1454,220 +1418,12 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count499
+\c@section@level=\count500
 )
 LaTeX Info: Redefining \ref on input line 63.
 LaTeX Info: Redefining \pageref on input line 63.
 LaTeX Info: Redefining \nameref on input line 63.
- (./title.tex
-File: Pictures//background.pdf Graphic file (type pdf)
-<use Pictures//background.pdf>
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmss' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-Package fontspec Info: Font family 'PingFangHeavy.ttf(0)' created for font
-(fontspec)             'PingFang Heavy.ttf' with options
-(fontspec)             [Script={CJK},BoldFont={PingFang
-(fontspec)             Heavy.ttf},ItalicFont={PingFang Heavy.ttf}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"[PingFang
-(fontspec)             Heavy.ttf]/OT:script=hani;language=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"[PingFang
-(fontspec)             Heavy.ttf]/OT:script=hani;language=dflt;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"[PingFang
-(fontspec)             Heavy.ttf]/OT:script=hani;language=dflt;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
-
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/20.74'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/20.74'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/20.74'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/20.74'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/20.74'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/20.74'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/17.28'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/17.28'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/17.28'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/17.28'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/17.28'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/17.28'.
-(microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
- (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
- (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `FZPingXYSJW.TTF' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-Package microtype Info: Character `\textendash ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\AE ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotesinglbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotedblbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textexclamdown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textquestiondown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textendash ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/20.74'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\AE ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/20.74'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotesinglbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/20.74'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotedblbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/20.74'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/20.74'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/20.74'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/20.74'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/20.74'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textexclamdown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/20.74'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textquestiondown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/20.74'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textendash ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/17.28'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\AE ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/17.28'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotesinglbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/17.28'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotedblbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/17.28'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/17.28'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/17.28'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/17.28'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/17.28'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textexclamdown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/17.28'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textquestiondown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/17.28'.
-(microtype)             Ignoring protrusion settings for this character.
- (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
-)) [1
-
-]
+ (./title.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
@@ -1757,6 +1513,22 @@ Package microtype Info: Character `textquotedblleft ' is missing
 Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/6'.
 (microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 84.
+(d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 84.
+ (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `FZPingXYSJW.TTF' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 Package microtype Info: Character `\textendash ' is missing
 (microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1847,6 +1619,9 @@ Package microtype Info: Character `\textexclamdown ' is missing
 Package microtype Info: Character `\textquestiondown ' is missing
 (microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6'.
 (microtype)             Ignoring protrusion settings for this character.
+ (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+)
 
 LaTeX Font Warning: Font shape `TU/FZFSK.TTF(0)/m/sc' undefined
 (Font)              using `TU/FZFSK.TTF(0)/m/n' instead on input line 84.
@@ -1884,9 +1659,52 @@ Package microtype Info: Character `textquotedblleft ' is missing
 Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/it/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-[2]
+[1
+
+]
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/20.74'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/20.74'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/20.74'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/20.74'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/20.74'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/20.74'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Package fontspec Info: Font family 'PingFangHeavy.ttf(0)' created for font
+(fontspec)             'PingFang Heavy.ttf' with options
+(fontspec)             [Script={CJK},BoldFont={PingFang
+(fontspec)             Heavy.ttf},ItalicFont={PingFang Heavy.ttf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"[PingFang
+(fontspec)             Heavy.ttf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"[PingFang
+(fontspec)             Heavy.ttf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"[PingFang
+(fontspec)             Heavy.ttf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+
  (./main.toc
 Package microtype Info: Character `textendash ' is missing
 (microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/14.4'.
@@ -1960,18 +1778,19 @@ Package microtype Info: Character `textquotedblleft ' is missing
 Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
- [3
+ [2
 
-] [4] [5])
+])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [6] (./vocabulary/vocabulary-index.tex
-\c@ttl@toc@default=\count500
- (./main.ptc) [7
+ [3] [4
 
+] (./vocabulary/vocabulary-index.tex) (./math/math-index.tex) (./paperNotes/paper-index.tex
+\c@ttl@toc@default=\count501
+ (./main.ptc) [5
 
-] (./roots/chap1.tex
+] (./paperNotes/Hidden Markov Map Matching Through Noise and Sparseness.tex
 Chapter 1.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
@@ -2011,365 +1830,331 @@ Package microtype Info: Character `textquotedblleft ' is missing
 Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
-[8
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textendash ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+[6
 
-]) (./roots/chap2.tex [9]
+]
+Overfull \hbox (1.42189pt too wide) in paragraph at lines 85--88
+\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 The HMM models processes that involve a path through many possible states, where
+ []
+
+File: Pictures//hmm-hmm-of-observation.png Graphic file (type bmp)
+<Pictures//hmm-hmm-of-observation.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: Pictures//HMM-mapping.png Graphic file (type bmp)
+<Pictures//HMM-mapping.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7] [8] [9]) (./paperNotes/Online Map-Matching of Noisy and Sparse Location Data with Hidden Markov and Route Choice Models.tex [10]
 Chapter 2.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-[10
 
-]) (./roots/chap3.tex [11]
+Underfull \vbox (badness 3118) has occurred while \output is active []
+
+ [11
+
+]
+Overfull \hbox (10.97711pt too wide) in paragraph at lines 67--68
+[]\TU/FZPingXYSJW.TTF(0)/m/n/10.95 对 于 一 个 \TU/NotoSerif-Regular.ttf(0)/m/n/10.95 GPS \TU/FZPingXYSJW.TTF(0)/m/n/10.95 记 录 点 $\OML/cmm/m/it/10.95 o[]$\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 , each state $\OML/cmm/m/it/10.95 s[]$ \TU/NotoSerif-Regular.ttf(0)/m/n/10.95 is assigned an \TU/NotoSerif-Regular.ttf(0)/m/it/10.95 emission probability[] $\OML/cmm/m/it/10.95 P []$\TU/FZPingXYSJW.TTF(0)/m/n/10.95 。|
+ []
+
+[12] [13]
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Overfull \hbox (13.51152pt too wide) in paragraph at lines 161--162
+\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 Average road class (road classes are numbered from 1, starting with the highest);$\OML/cmm/m/it/10.95 NCC$\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 :
+ []
+
+) [14] (./main.ptc) [15
+
+] (./paperNotes/Hidden Markov Model.tex
 Chapter 3.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-[12
-
-]) (./roots/chap4.tex [13]
-Chapter 4.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-[14
-
-]) (./roots/chap5.tex [15]
-Chapter 5.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
+Package mdframed Info: mdframed works in twoside mode on input line 12.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 12.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 54.
 [16
 
-]) (./roots/chap6.tex [17]
-Chapter 6.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-
-LaTeX Warning: Hyper reference `expect' on page 18 undefined on input line 9.
-
-
-LaTeX Warning: Reference `expect' on page 18 undefined on input line 9.
-
-
-LaTeX Warning: Hyper reference `respect' on page 18 undefined on input line 12.
-
-
-LaTeX Warning: Reference `respect' on page 18 undefined on input line 12.
-
-
-LaTeX Warning: Hyper reference `aspect' on page 18 undefined on input line 15.
-
-
-LaTeX Warning: Reference `aspect' on page 18 undefined on input line 15.
-
-
-LaTeX Warning: Hyper reference `inspect' on page 18 undefined on input line 18.
-
-
-LaTeX Warning: Reference `inspect' on page 18 undefined on input line 18.
-
-
-LaTeX Warning: Hyper reference `suspect' on page 18 undefined on input line 21.
-
-
-LaTeX Warning: Reference `suspect' on page 18 undefined on input line 21.
-
-
-LaTeX Warning: Hyper reference `prospect' on page 18 undefined on input line 26.
-
-
-LaTeX Warning: Reference `prospect' on page 18 undefined on input line 26.
-
-
-LaTeX Warning: Hyper reference `introspect' on page 18 undefined on input line 30.
-
-
-LaTeX Warning: Reference `introspect' on page 18 undefined on input line 30.
-
-
-LaTeX Warning: Hyper reference `introspective' on page 18 undefined on input line 33.
-
-
-LaTeX Warning: Reference `introspective' on page 18 undefined on input line 33.
-
-
-LaTeX Warning: Hyper reference `spectrum' on page 18 undefined on input line 36.
-
-
-LaTeX Warning: Reference `spectrum' on page 18 undefined on input line 36.
-
-
-LaTeX Warning: Hyper reference `retrospective' on page 18 undefined on input line 45.
-
-
-LaTeX Warning: Reference `retrospective' on page 18 undefined on input line 45.
-
-
-LaTeX Warning: Hyper reference `perspire' on page 18 undefined on input line 86.
-
-
-LaTeX Warning: Reference `perspire' on page 18 undefined on input line 86.
-
-[18
-
-]
-
-LaTeX Warning: Hyper reference `revoke, revocable, irrevocable' on page 19 undefined on input line 113.
-
-
-LaTeX Warning: Reference `revoke, revocable, irrevocable' on page 19 undefined on input line 113.
-
-
-LaTeX Warning: Hyper reference `exclaim' on page 19 undefined on input line 148.
-
-
-LaTeX Warning: Reference `exclaim' on page 19 undefined on input line 148.
-
-
-LaTeX Warning: Hyper reference `reclaim' on page 19 undefined on input line 151.
-
-
-LaTeX Warning: Reference `reclaim' on page 19 undefined on input line 151.
-
-) (./roots/chap7.tex [19]
-Chapter 7.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
-Missing character: There is no – (U+2013) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
-Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
-Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
-
-LaTeX Font Warning: Font shape `TU/NotoSerif-Regular.ttf(0)/b/it' undefined
-(Font)              using `TU/NotoSerif-Regular.ttf(0)/b/n' instead on input line 61.
-
-[20
-
-]
-Overfull \hbox (71.42146pt too wide) in paragraph at lines 83--85
-[]\TU/lmss/bx/n/10 Vocabulary 7.11 — autobiography, autobiographical, autobiographer. []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 autobiographical /ˌɔːtəbaɪəˈɡræfɪkəl
- []
-
-Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
-Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
-Missing character: There is no ─ (U+2500) in font [NotoSerif-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no ─ (U+2500) in font [NotoSerif-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no ─ (U+2500) in font [NotoSerif-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no ─ (U+2500) in font [NotoSerif-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;!
-) [21] (./main.ptc) [22
-
-] (./roots/my-root.tex
-Chapter 8.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-[23
-
-] [24]
-
-LaTeX Warning: Hyper reference `employer' on page 25 undefined on input line 138.
-
-
-LaTeX Warning: Reference `employer' on page 25 undefined on input line 138.
-
-
-LaTeX Warning: Hyper reference `employee' on page 25 undefined on input line 141.
-
-
-LaTeX Warning: Reference `employee' on page 25 undefined on input line 141.
-
-
-LaTeX Warning: Hyper reference `exclaim, exclaimation' on page 25 undefined on input line 177.
-
-
-LaTeX Warning: Reference `exclaim, exclaimation' on page 25 undefined on input line 177.
-
-
-LaTeX Warning: Hyper reference `biography, biography' on page 25 undefined on input line 182.
-
-
-LaTeX Warning: Reference `biography, biography' on page 25 undefined on input line 182.
-
-
-LaTeX Warning: Hyper reference `typography' on page 25 undefined on input line 185.
-
-
-LaTeX Warning: Reference `typography' on page 25 undefined on input line 185.
-
-
-LaTeX Warning: Hyper reference `geography' on page 25 undefined on input line 188.
-
-
-LaTeX Warning: Reference `geography' on page 25 undefined on input line 188.
-
-
-LaTeX Warning: Hyper reference `introspect' on page 25 undefined on input line 218.
-
-
-LaTeX Warning: Reference `introspect' on page 25 undefined on input line 218.
-
-
-LaTeX Warning: Hyper reference `irregular' on page 25 undefined on input line 223.
-
-
-LaTeX Warning: Reference `irregular' on page 25 undefined on input line 223.
-
-
-LaTeX Warning: Hyper reference `irrevocable' on page 25 undefined on input line 226.
-
-
-LaTeX Warning: Reference `irrevocable' on page 25 undefined on input line 226.
-
-[25]
-
-LaTeX Warning: Hyper reference `irrelevant' on page 26 undefined on input line 232.
-
-
-LaTeX Warning: Reference `irrelevant' on page 26 undefined on input line 232.
-
-
-LaTeX Warning: Hyper reference `perspire' on page 26 undefined on input line 307.
-
-
-LaTeX Warning: Reference `perspire' on page 26 undefined on input line 307.
-
-[26]
-
-LaTeX Warning: Hyper reference `prospect' on page 27 undefined on input line 340.
-
-
-LaTeX Warning: Reference `prospect' on page 27 undefined on input line 340.
-
-
-LaTeX Warning: Hyper reference `reclaim' on page 27 undefined on input line 372.
-
-
-LaTeX Warning: Reference `reclaim' on page 27 undefined on input line 372.
-
-
-LaTeX Warning: Hyper reference `biosphere' on page 27 undefined on input line 408.
-
-
-LaTeX Warning: Reference `biosphere' on page 27 undefined on input line 408.
-
-[27]
-
-LaTeX Warning: Hyper reference `hemisphere' on page 28 undefined on input line 411.
-
-
-LaTeX Warning: Reference `hemisphere' on page 28 undefined on input line 411.
-
-
-LaTeX Warning: Hyper reference `atmosphere' on page 28 undefined on input line 414.
-
-
-LaTeX Warning: Reference `atmosphere' on page 28 undefined on input line 414.
-
-) [28] (./main.ptc) [29
-
-]
-Chapter 9.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-(./vocabulary/a.tex
+] [17]
 Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/it/10.95'.
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/7'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/it/10.95'.
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/7'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/it/10.95'.
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/7'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/it/10.95'.
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/7'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/it/10.95'.
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/7'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/it/10.95'.
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/7'.
 (microtype)             Ignoring protrusion settings for this character.
- [30
-
-]
-Overfull \hbox (2.7857pt too wide) in paragraph at lines 100--101
-[]\TU/lmss/bx/n/10 Vocabulary 9.17 — apportion, apportionment. []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 to decide how something should be shared
- []
-
-
-Overfull \hbox (18.5262pt too wide) in paragraph at lines 110--112
-[]\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 (old-fashioned) understand or perceive. ”\TU/NotoSerif-Regular.ttf(0)/m/it/10.95 great art invites us to apprehend beauty\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 ”;to
- []
-
-
-Overfull \hbox (4.01262pt too wide) in paragraph at lines 140--141
-[]\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 to write a document containing the most important ideas or points from a speech,
- []
-
-
-Overfull \hbox (9.79199pt too wide) in paragraph at lines 149--151
-[]\TU/lmss/bx/n/10 Vocabulary 9.23 — avert. []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 to prevent something unpleasant from happening \TU/NotoSerif-Regular.ttf(0)/m/it/10.95 The tragedy
- []
-
-[31]
-Overfull \hbox (4.50212pt too wide) in paragraph at lines 164--165
-[]\TU/lmss/bx/n/10 Vocabulary 9.25 — adversary. []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 a country or person you are fighting or competing against
- []
-
-) (./vocabulary/b.tex) (./vocabulary/c.tex [32] [33]) (./vocabulary/d.tex [34]) (./vocabulary/e.tex [35]
-Overfull \hbox (3.31935pt too wide) in paragraph at lines 53--55
-[]\TU/NotoSerif-Regular.ttf(0)/m/it/10.95 an eloquent appeal for support \TU/NotoSerif-Regular.ttf(0)/m/n/10.95 showing a feeling or meaning without using words 
- []
-
-[36]) (./vocabulary/f.tex) (./vocabulary/g.tex) [37]
-Chapter 10.
+Package microtype Info: Character `\textendash ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textendash ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package mdframed Info: mdframed works in twoside mode on input line 136.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 136.
+Package mdframed Info: mdframed works in twoside mode on input line 163.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 163.
+ [18] [19]
+Package mdframed Info: mdframed works in twoside mode on input line 195.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 195.
+Package mdframed Info: mdframed works in twoside mode on input line 220.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 220.
+Package mdframed Info: mdframed works in twoside mode on input line 249.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 249.
+Package mdframed Info: Not enough space on this page on input line 254.
+ [20]
+Package mdframed Info: Not enough space on this page on input line 254.
+Package mdframed Info: mdframed works in twoside mode on input line 256.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 256.
+Package mdframed Info: mdframed works in twoside mode on input line 263.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 263.
+ [21]
+Package mdframed Info: mdframed works in twoside mode on input line 303.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 303.
+ [22] [23]
+Package mdframed Info: mdframed works in twoside mode on input line 461.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 461.
+Package mdframed Info: mdframed works in twoside mode on input line 468.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 468.
+ [24]
+Package mdframed Info: Not enough space on this page on input line 476.
+Package mdframed Info: mdframed works in twoside mode on input line 478.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 478.
+)) (./cloud-computing/cloud-index.tex) (./demo.tex) [25]
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-(./vocabulary/h.tex) (./vocabulary/i.tex [38
-
-]) (./vocabulary/j.tex) (./vocabulary/k.tex) (./vocabulary/l.tex) (./vocabulary/m.tex) (./vocabulary/n.tex) (./vocabulary/o.tex) [39]
-Chapter 11.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-(./vocabulary/p.tex [40
-
-] [41] [42]
-Overfull \hbox (4.34492pt too wide) in paragraph at lines 251--253
-[]\TU/NotoSerif-Regular.ttf(0)/b/it/10.95 from somebody’s/a feminist/Christian/global etc perspective \TU/NotoSerif-Regular.ttf(0)/m/it/10.95 The novel is writ-
- []
-
-
-LaTeX Font Warning: Font shape `TU/FZPingXYSJW.TTF(0)/b/it' undefined
-(Font)              using `TU/FZPingXYSJW.TTF(0)/b/n' instead on input line 257.
-
-Missing character: There is no – (U+2013) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
-
-LaTeX Warning: Hyper reference `perspire' on page 43 undefined on input line 299.
-
-
-LaTeX Warning: Reference `perspire' on page 43 undefined on input line 299.
-
-
-Overfull \hbox (11.02747pt too wide) in paragraph at lines 306--307
-[]\TU/lmss/bx/n/10 Vocabulary 11.35 — provoke, provocation, provocative. []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 provocation /ˌprɒvəˈkeɪʃən/ provoca-
- []
-
-[43]) (./vocabulary/q.tex) (./vocabulary/r.tex
-Overfull \hbox (5.02621pt too wide) in paragraph at lines 8--10
-[]\TU/lmss/bx/n/10 Vocabulary 11.38 — retract, retractable. []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 if you retract something that you said or agreed,
- []
-
-[44]
-
-LaTeX Warning: Hyper reference `reclaim' on page 45 undefined on input line 80.
-
-
-LaTeX Warning: Reference `reclaim' on page 45 undefined on input line 80.
-
-) (./vocabulary/s.tex [45]
-Missing character: There is no – (U+2013) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
-) (./vocabulary/t.tex [46]) (./vocabulary/u.tex) (./vocabulary/v.tex) (./vocabulary/w.tex) (./vocabulary/x.tex) (./vocabulary/y.tex) (./vocabulary/z.tex)) (./math/math-index.tex) (./paperNotes/paper-index.tex) (./cloud-computing/cloud-index.tex) (./demo.tex)
-
-LaTeX Warning: Empty bibliography on input line 131.
-
-[47] [48
+ [26
 
 ] (./main.ind
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
@@ -2380,7 +2165,37 @@ Overfull \hbox (1.20001pt too wide) in paragraph at lines 3--4
  []
 
 
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 9--10
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 16--17
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 23--24
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 30--31
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 37--38
+[][] 
+ []
+
+
 Overfull \hbox (1.20001pt too wide) in paragraph at lines 44--45
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 50--51
 [][] 
  []
 
@@ -2389,79 +2204,42 @@ Overfull \hbox (1.20001pt too wide) in paragraph at lines 57--58
 [][] 
  []
 
-[49
 
-]
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 63--64
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 72--73
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 79--80
+[][] 
+ []
+
+
 Overfull \hbox (1.20001pt too wide) in paragraph at lines 85--86
 [][] 
  []
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 109--110
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 91--92
 [][] 
  []
 
+Invalid UTF-8 byte or sequence at line 97 replaced by U+FFFD.
+Missing character: There is no � (U+FFFD) in font [lmsans10-bold]:mapping=tex-text;!
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 142--143
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 97--98
 [][] 
  []
 
-
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 151--152
-[][] 
- []
+[27
 
 
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 157--158
-[][] 
- []
-
-[50]
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 193--194
-[][] 
- []
-
-
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 200--201
-[][] 
- []
-
-
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 209--210
-[][] 
- []
-
-
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 216--217
-[][] 
- []
-
-
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 261--262
-[][] 
- []
-
-
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 282--283
-[][] 
- []
-
-
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 311--312
-[][] 
- []
-
-[51]
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 329--330
-[][] 
- []
-
-
-Overfull \hbox (1.20001pt too wide) in paragraph at lines 336--337
-[][] 
- []
-
-[52
+] [28
 
 ])
 \tf@ptc=\write7
@@ -2471,23 +2249,17 @@ Overfull \hbox (1.20001pt too wide) in paragraph at lines 336--337
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40683 strings out of 476477
- 848453 string characters out of 5812099
- 1808632 words of memory out of 5000000
- 60307 multiletter control sequences out of 15000+600000
- 417136 words of font info for 131 fonts, out of 8000000 for 9000
+ 40066 strings out of 476477
+ 826697 string characters out of 5812099
+ 1794529 words of memory out of 5000000
+ 59767 multiletter control sequences out of 15000+600000
+ 416999 words of font info for 134 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,12n,97p,733b,4705s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,13n,97p,2952b,4709s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (52 pages).
+Output written on main.pdf (28 pages).
