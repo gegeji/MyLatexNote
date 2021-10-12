@@ -109,3 +109,9 @@ P\left(s_{t, k} \mid s_{t-1, j}\right)=\lambda_{y} e^{-\lambda_{y} y\left(s_{t-1
 $$
 
 \section{Online Viterbi Inference}
+
+维特比算法通过递归算法可以找出HMM中最可能的序列。
+
+$$ \begin{aligned} V_{1, k} &=P\left(o_{1} \mid s_{1, k}\right) \\ V_{t, k} &=P\left(o_{t} \mid s_{t, k}\right) \max _{j}\left(V_{t-1, j} P\left(s_{t, k} \mid s_{t-1, j}\right)\right) \end{aligned} $$
+
+\section{短期路径选择模型}
