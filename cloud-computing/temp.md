@@ -412,7 +412,7 @@ Manage complex, modern apps as easily as traditional apps and VMs on modern vSph
 > VMware ESXi: The Purpose-Built Bare Metal Hypervisor
 Discover a robust, bare-metal hypervisor that installs directly onto your physical server. With direct access to and control of underlying resources, VMware ESXi effectively partitions hardware to consolidate applications and cut costs. It’s the industry leader for efficient architecture, setting the standard for reliability, performance, and support
 
-> THE XEN PROJECT IS FOCUSED ON ADVANCING VIRTUALIZATION IN A NUMBER OF DIFFERENT COMMERCIAL AND OPEN SOURCE APPLICATIONS, INCLUDING SERVER VIRTUALIZATION, INFRASTRUCTURE AS A SERVICES (IAAS), DESKTOP VIRTUALIZATION, SECURITY APPLICATIONS, EMBEDDED AND HARDWARE APPLIANCES, AND AUTOMOTIVE/AVIATION
+> the xen project is focused on advancing virtualization in a number of different commercial and open source applications, including server virtualization, infrastructure as a services (iaas), desktop virtualization, security applications, embedded and hardware appliances, and automotive/aviation
 
 服务器虚拟化：一台服务器$\rightarrow$ 多台服务器
 存储：

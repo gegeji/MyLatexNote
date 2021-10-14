@@ -137,14 +137,7 @@ $$ p\left(d_{t}\right)=\frac{1}{\beta} e^{-d_{t} / \beta} $$
         dependence on the current and previous observations
     violates the properties of an ideal HMM
 
-    the great-circle distance between
-the observed locations may introduce significant errors in
-estimating the circuitousness of a path (在定位误差大的情况下)
-
-transition probabilities computed
-based on the above measure of circuitousness vary greatly for
-equally plausible transition paths depending on the sampling
-interval
+    这个度量没有考虑不同采样频率的差异性. 它依赖于当前和先前位置观测之间的距离, 受到位置测量误差的不利影响. 在高位置误差的影响下误差大 \cite{Jagadeesh2017}.
 \end{remark}
 
 \section{算法的实现}
@@ -182,7 +175,7 @@ $$ \begin{aligned} \beta=\frac{1}{\ln (2)} \operatorname{median}_{t} &\left(\mid
   $d_{-}  $ =length erroneously subtracted,
   $ d_{+} $=length erroneously added
 
- 
+
 
 其他两种指标：
 

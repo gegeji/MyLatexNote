@@ -203,7 +203,7 @@
     \item 技术$\rightarrow$ 产品$\rightarrow$ 落地应用, 对于用户来说最少的管理，最少地与供应商互动
 \end{itemize}
 
-\subsection{云计算的服务模式}
+\subsection{云计算的服务模式（部署模式）}
 
 \begin{definition}[IaaS（Infrastructure as a Service）]
     将\textbf{硬件设备等基础资源}封装成服务供用户使用
@@ -218,9 +218,10 @@
 \end{definition}
 
 \begin{definition}[SaaS（Software as a Service）]
-    Verizon， cloudblue ，cloud scripting
+    直接提供软件，针对性更强，它将某些特定应用软件功能封装成服务
+    
+    如：Salesforce online CRM，Verizon， cloudblue ，cloud scripting
 
-    直接提供软件
 \end{definition}
 
 \begin{figure}[htbp]
@@ -238,7 +239,7 @@
     种类 & 缺点 & 优点 \\ \hline
     \term{公有云}   &  对外部用户，安全性较低，功能拓展较低，数据风险较高  &  弹性扩容强  \\ \hline
     \term{私有云}   &  （与公有云相反）  &  扩容性差（私有云多用户之间服务隔离性会差一些$\rightarrow$ 云性能不稳定性，用户多时共享性能会差）  \\ \hline
-    \term{混合云}（用户少时私有云，其他公有云）   &   管理成本很高，任务迁移、数据移动以及用户体验稳定问题  &    \\ \hline
+    \term{混合云}（用户少时私有云，其他公有云）   &   管理成本很高，任务迁移、数据移动以及用户体验稳定问题；不易实现，公有云的支持？  &    \\ \hline
     \end{tabularx}
     \end{table}
 
@@ -275,3 +276,5 @@
 
 limitation：花销很大，算法限制
 \end{definition}
+
+容器的威胁模型（外部容器的攻击）$\rightarrow$ 云的安全性研究

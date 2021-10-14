@@ -1,4 +1,4 @@
-\chapter{Online Map-Matching of Noisy and Sparse Location Data}
+\chapter{Online Map-Matching}
 
 Source: \cite{Jagadeesh2017}
 
@@ -95,7 +95,7 @@ between two points on the road network is the length of the
 minimum-travel-time path between them found by Dijkstra
 algorithm
 
-对于时间，定义时间上的难以置信性。（\textbf{考虑到了时间上的转移概率}）
+对于时间，定义时间上的难以置信性。（\textbf{考虑到了时间上的转移概率}）该度量有助于为自由流旅行时间大于采样间隔的路径分配低的过渡概率。(修正模型)
 
 $$
 z\left(s_{t-1, j}, s_{t, k}\right)=\frac{\max \left(\left(f\left(s_{t-1, j}, s_{t, k}\right)-\Delta T\right), 0\right)}{\Delta T}
@@ -107,6 +107,8 @@ define the transition probability of moving from state $ s_{t-1, j} $ to state $
 $$
 P\left(s_{t, k} \mid s_{t-1, j}\right)=\lambda_{y} e^{-\lambda_{y} y\left(s_{t-1, j}, s_{t, k}\right)} \lambda_{z} e^{-\lambda_{z} z\left(s_{t-1, j}, s_{t, k}\right)}
 $$
+
+$\lambda_{y}, \lambda_{z}$根据经验估计
 
 \section{Online Viterbi Inference}
 
@@ -143,6 +145,8 @@ in a directed graph [20].
 
 概率模型如CRF不受马尔可夫独立性假设的影响,但是高阶CRF的参数难以推导. 现有CRF方法只考虑一阶(相邻状态)的依赖性. 条件随机场?
 
+因此需要利用路径选择模型对HMM匹配的结果进行修正.
+
 \section{多项Logit模型 (Multinomial Logit Model)}
 
 假设: 路径选择通过\term{utility}进行衡量, 司机会选择最高utility的路径, 假设所有司机都是相同的. (部分文献会考虑司机的特征, 本文不考虑) 参考logistic回归
@@ -158,7 +162,9 @@ $$ V_{i}=\beta_{F T T} F T T_{i}+\beta_{N T S} N T S_{i}+\beta_{A R C} A R C_{i}
 
 可以化简为:$ V_{i}=\boldsymbol{\beta}^{\prime} \boldsymbol{x}_{i} $
 
-$FTT$: Free-flow travel time (in seconds); $N T S$: Number of traffic signals; $ARC$: Average road class (road classes are numbered from 1, starting with the highest);$NCC$: Number of class changes. In a multinomial logit model, the random term $ \varepsilon_{i} $ is assumed to be independent and identically \term{Gumbel distributed}. (随机因子已被标准化的, 同时假设随机因子/未观察的因素对于所有已观察因素的影响是相等的)
+$FTT$: Free-flow travel time (in seconds); $N T S$: Number of traffic signals; $ARC$: Average road class (road classes are numbered from 1, starting with the highest); $NCC$: Number of class changes. In a multinomial logit model, the random term $ \varepsilon_{i} $ is assumed to be independent and identically \term{Gumbel distributed}. (随机因子已被标准化的, 同时假设随机因子/未观察的因素对于所有已观察因素的影响是相等的)
+
+司机选择某条路径的概率是
 
 $$ P\left(p_{i} \mid C\right)=\frac{e^{\boldsymbol{\beta}^{\prime} x_{i}}}{\sum_{p_{j} \in C} e^{\beta^{\prime} x_{j}}} $$
 
@@ -171,7 +177,44 @@ $$ P\left(p_{i} \mid C\right)=\frac{e^{\boldsymbol{\beta}^{\prime} x_{i}}}{\sum_
 $k$最短路径
 
 \begin{remark}
-    
+    这种方法可能会生成许多相似的路径.
 \end{remark}
 
-考虑整段行程中某几分钟之内的行程. 
+link-penalty approach: 对于重复的路段施加正则项
+
+考虑整段行程中某几分钟之内的行程. 经验数据: 短距离之内一般不超过5条备选路径. 
+
+HMM生成的路径与最短驾驶时间路径(2条不一样)会直接加入备选集中. 通过膨胀它们的旅行时间在最短旅行时间准则的情况下降低被其他后续路段接上的可能性.
+
+\begin{remark}
+    直接对接近开始或者终点的路段施加惩罚可能会选择不合理的路径. ($\rightarrow$计算式考虑链路到起点/终点的距离)
+\end{remark}
+
+惩罚式:
+
+\begin{definition}[inflated travel time]
+    The inflated travel time of link $ e $, with start node $ u $ and end node $ v $, lying along path $ p_{i} $ between start point $ q $ and end point $ r $ is given by
+
+$$ \tau^{\prime}(e)=\tau(e)+\tau(e) \omega \frac{\min \left(d_{i}(q, u), d_{i}(v, r)\right)}{d_{i}(q, r)} $$
+
+where $ \tau(e) $ is the original travel time of link $ e, \omega $ is the inflation factor and the function $ d_{i} $ gives the driving distance
+between two points along path $p_i$.
+\end{definition}
+
+另外3条可选路径: 限制与已有路径的重复率小于$\alpha$, 且不可以严重超速.
+
+训练: 需要估计$\beta$. 司机选择的真实路径作为第一条可选路径,其他通过上述准则生成. 通过极大似然估计法进行估计.
+
+\section{整体算法}
+
+HMM首先匹配一部分路段(在线维特比算法), 然后通过路径选择模型计算出候选集中几条候选路径选择的概率,再计算在这条路径上行驶得到这个GPS的概率(高斯分布),选择最可能的路径.
+
+\section{实验}
+
+评价指标:
+
+$$ F_{\text {score }}=2 \times \frac{\text { precision } \times \text { recall }}{\text { precision }+\text { recall }} $$
+
+$$precision  =\frac{L_{\text {correct }}}{L_{\text {matched }}} $$
+
+$$recall = \frac{L_{correct}}{L_{truth}}$$

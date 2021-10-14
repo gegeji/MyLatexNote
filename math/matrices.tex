@@ -603,7 +603,7 @@ $$
 \end{theorem}
 
 \begin{definition}[Gram矩阵]
-    矩阵Gram矩阵 $ A $
+    Gram矩阵 $ A $
 
     $$ A=B^{T} B $$
 \end{definition}
@@ -622,7 +622,7 @@ $$
 \end{theorem}
 
 \begin{corollary}
-    如果Gram矩阵是正定的, 则$B$的列向量是线性无关的
+    如果Gram矩阵是正定的, 则$B$的列向量是线性无关的.
 \end{corollary}
 
 \begin{proof}
@@ -690,6 +690,10 @@ $$
     \end{aligned}$$
 
 \end{proof}
+
+\begin{remark}
+    在本书中若未明确说明, $\|A \|$表示的是算子范数.
+\end{remark}
 
 由定义 $ \|A\|_{v}=\max _{x \neq 0}\left\{\frac{\|A x\|_{v}}{\|x\|_{v}}\right\} $ 可得
 
@@ -803,7 +807,9 @@ $$ \Delta x=A^{-1} \Delta b=\left[\begin{array}{l}\Delta b_{1}-10^{10}\left(\Del
 假设 $ A $ 是非奇异的, 并给出定义:
 
 \begin{notation}
-    $$ x=A^{-1} b, \Delta x=A^{-1} \Delta b $$
+    $$ x=A^{-1} b$$ 
+    
+    $$ \Delta x=A^{-1} \Delta b $$
 \end{notation}
 
 $ \|\Delta x\| $ 的上界为：
@@ -812,6 +818,28 @@ $$
 $$
 
 矩阵范数 $ \left\|A^{-1}\right\|_{2} $ 小时, 当 $ \|\Delta b\|_{2} $ 变化很小, $ \|\Delta x\|_{2} $ 也很小; $ \left\|A^{-1}\right\|_{2} $ 大时,  $ \|\Delta x\|_{2} $ 可能很大,  即使 $ \|\Delta b\|_{2} $ 很小. 
+
+\section{相对误差的界限}
+
+假设 $ b \neq 0 $; 因此 $ x \neq 0$
+
+$\|\Delta x\|_{2} /\|x\|_{2} $ 的上界为:
+
+$$ 
+\begin{aligned}
+    &\|\Delta x\|_{2}=\left\|A^{-1} \Delta b\right\|_{2} \leq\left\|A^{-1}\right\|_{2}\|\Delta b\|_{2}(向量范数和算子范数相容)\\
+    \Rightarrow& \frac{\|\Delta x\|_{2}}{\|x\|_{2}} \leq \frac{\left\|A^{-1}\right\|_{2}\|\Delta b\|_{2}}{\|x\|_{2}}=\frac{\|A\|_{2}\left\|A^{-1}\right\|_{2}\|\Delta b\|_{2}}{\|x\|_{2}\|A\|_{2}} \leq \frac{\|A\|_{2}\left\|A^{-1}\right\|_{2}\|\Delta b\|_{2}}{\|b\|_{2}}
+\end{aligned}
+$$
+
+由 $ \|b\|_{2}=\|A x\|_{2} \leq\|A\|_{2}\|x\|_{2} $, 可得
+
+$$ \frac{\|\Delta x\|_{2}}{\|x\|_{2}} \leq\|A\|_{2}\left\|A^{-1}\right\|_{2} \frac{\|\Delta b\|_{2}}{\|b\|_{2}} $$
+
+$ \|A\|_{2}\left\|A^{-1}\right\|_{2} $ 小，当 $ \|\Delta b\|_{2} /\|b\|_{2} $ 相对变化很小时， $ \|\Delta x\|_{2} /\|x\|_{2} $ 也 变化很小;
+
+$ \|A\|_{2}\left\|A^{-1}\right\|_{2} $ 大, $ \|\Delta x\|_{2} /\|x\|_{2} $ 可远远大于 $ \|\Delta b\|_{2} /\|b\|_{2} $.
+
 
 \begin{definition}[非奇异矩阵 $ A $ 的条件数(condition number)]
     $$ \kappa(A)=\|A\|_{2}\left\|A^{-1}\right\|_{2} $$
@@ -823,6 +851,8 @@ $$
     \begin{itemize}
         \item 对于所有 $ A $, 有 $ \kappa(A) \geq 1 $;
         \item 如果 $ \kappa(A) $ 比较小 (接近1),  $ x $ 的相对误差接近 $ b $ 的相对误差;
-        \item 如果 $ \kappa(A) $ 比较大,  $ x $ 的相对误差比 $ b $ 的相对误差大得多. 
+        \item 如果 $ \kappa(A) $ 比较大（超过100）,  $ x $ 的相对误差比 $ b $ 的相对误差大得多. 
     \end{itemize}
 \end{corollary}
+
+
