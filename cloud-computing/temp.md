@@ -410,7 +410,7 @@ Manage complex, modern apps as easily as traditional apps and VMs on modern vSph
 基于硬件的虚拟化：省略OS层 如xen，依赖虚拟化层进行管理，不依赖于主机OS，可直接调用硬件 缺点：依赖于虚拟化层，需要对虚拟化层进行开发， VMware ESXi, ⭐XEN
 
 > VMware ESXi: The Purpose-Built Bare Metal Hypervisor
-Discover a robust, bare-metal hypervisor that installs directly onto your physical server. With direct access to and control of underlying resources, VMware ESXi effectively partitions hardware to consolidate applications and cut costs. It’s the industry leader for efficient architecture, setting the standard for reliability, performance, and support
+Discover a robust, bare-metal hypervisor that installs directly onto your physical server. With direct access to and control of underlying resources, VMware ESXi effectively partitions hardware to consolidate applications and cut costs. It's the industry leader for efficient architecture, setting the standard for reliability, performance, and support
 
 > the xen project is focused on advancing virtualization in a number of different commercial and open source applications, including server virtualization, infrastructure as a services (iaas), desktop virtualization, security applications, embedded and hardware appliances, and automotive/aviation
 
