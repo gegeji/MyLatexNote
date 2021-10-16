@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  14 OCT 2021 23:21
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  15 OCT 2021 18:32
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1256,7 +1256,74 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count502
 \@quotereset=\count503
-(./main.aux)
+(./main.aux
+
+LaTeX Warning: Label `dismiss' multiply defined.
+
+
+LaTeX Warning: Label `dismiss@cref' multiply defined.
+
+
+LaTeX Warning: Label `invigorate' multiply defined.
+
+
+LaTeX Warning: Label `invigorate@cref' multiply defined.
+
+
+LaTeX Warning: Label `aggress' multiply defined.
+
+
+LaTeX Warning: Label `aggress@cref' multiply defined.
+
+
+LaTeX Warning: Label `agent' multiply defined.
+
+
+LaTeX Warning: Label `agent@cref' multiply defined.
+
+
+LaTeX Warning: Label `department' multiply defined.
+
+
+LaTeX Warning: Label `department@cref' multiply defined.
+
+
+LaTeX Warning: Label `extract' multiply defined.
+
+
+LaTeX Warning: Label `extract@cref' multiply defined.
+
+
+LaTeX Warning: Label `invade' multiply defined.
+
+
+LaTeX Warning: Label `invade@cref' multiply defined.
+
+
+LaTeX Warning: Label `occur' multiply defined.
+
+
+LaTeX Warning: Label `occur@cref' multiply defined.
+
+
+LaTeX Warning: Label `partner' multiply defined.
+
+
+LaTeX Warning: Label `partner@cref' multiply defined.
+
+
+LaTeX Warning: Label `pervade' multiply defined.
+
+
+LaTeX Warning: Label `pervade@cref' multiply defined.
+
+
+LaTeX Warning: Label `transmit' multiply defined.
+
+
+LaTeX Warning: Label `transmit@cref' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
@@ -1543,13 +1610,13 @@ Package microtype Info: Character `textquotedblleft ' is missing
 Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/17.28'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -1948,198 +2015,37 @@ Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             Ignoring protrusion settings for this character.
  [3
 
-]
-Package microtype Info: Character `\textendash ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\AE ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotesinglbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotedblbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textexclamdown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textquestiondown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textendash ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\AE ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotesinglbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotedblbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textexclamdown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textquestiondown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textendash ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\AE ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotesinglbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotedblbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textexclamdown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textquestiondown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textendash ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\AE ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotesinglbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotedblbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textexclamdown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textquestiondown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
- [4] [5])
+] [4] [5])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [6] (./vocabulary/vocabulary-index.tex) (./math/math-index.tex
+ [6] (./vocabulary/vocabulary-index.tex
 \c@ttl@toc@default=\count505
  (./main.ptc) [7
 
 
-] (./math/vector.tex
+] (./roots/chap1.tex
 Chapter 1.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-Package mdframed Info: mdframed works in twoside mode on input line 5.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 5.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textendash ' is missing
 (microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -2158,1362 +2064,559 @@ Package microtype Info: Character `textquotedblleft ' is missing
 Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/FZPingXYSJW.TTF(0)/b/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package mdframed Info: mdframed works in twoside mode on input line 16.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 16.
-Package mdframed Info: mdframed works in twoside mode on input line 22.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 22.
-Package mdframed Info: mdframed works in twoside mode on input line 26.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 26.
-Package mdframed Info: mdframed works in twoside mode on input line 34.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 34.
-Package mdframed Info: mdframed works in twoside mode on input line 38.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 38.
-Package mdframed Info: mdframed works in twoside mode on input line 42.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 42.
+[8
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8
-
-]
-Package mdframed Info: Not enough space on this page on input line 46.
-Package mdframed Info: mdframed works in twoside mode on input line 48.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 48.
-Package mdframed Info: mdframed works in twoside mode on input line 59.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 59.
-Package mdframed Info: mdframed works in twoside mode on input line 80.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 80.
-Package mdframed Info: mdframed works in twoside mode on input line 84.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 84.
-Package mdframed Info: mdframed works in twoside mode on input line 88.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 88.
-Package mdframed Info: mdframed works in twoside mode on input line 109.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 109.
-Package mdframed Info: mdframed works in twoside mode on input line 122.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 122.
- [9]
-Package mdframed Info: Not enough space on this page on input line 124.
-Package mdframed Info: mdframed works in twoside mode on input line 154.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 154.
-Package mdframed Info: mdframed works in twoside mode on input line 165.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 165.
-Package mdframed Info: mdframed works in twoside mode on input line 178.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 178.
- [10]
-Package mdframed Info: mdframed works in twoside mode on input line 216.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 216.
-Package mdframed Info: mdframed works in twoside mode on input line 220.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 220.
-Package mdframed Info: mdframed works in twoside mode on input line 224.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 224.
-Package mdframed Info: mdframed works in twoside mode on input line 228.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 228.
-Package mdframed Info: mdframed works in twoside mode on input line 232.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 232.
-Package mdframed Info: mdframed works in twoside mode on input line 236.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 236.
- [11]
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package mdframed Info: mdframed works in twoside mode on input line 269.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 269.
-Package mdframed Info: mdframed works in twoside mode on input line 305.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 305.
-Package mdframed Info: Not enough space on this page on input line 314.
- [12]
-Package mdframed Info: Not enough space on this page on input line 314.
-) (./math/linear-function.tex [13]
+]) (./roots/chap2.tex [9]
 Chapter 2.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-Package mdframed Info: mdframed works in twoside mode on input line 5.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 5.
-Package mdframed Info: mdframed works in twoside mode on input line 36.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 36.
-Package mdframed Info: mdframed works in twoside mode on input line 42.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 42.
-[14
+[10
 
-]
-Package mdframed Info: Not enough space on this page on input line 46.
-Package mdframed Info: mdframed works in twoside mode on input line 50.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 50.
-Package mdframed Info: mdframed works in twoside mode on input line 59.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 59.
-Package mdframed Info: mdframed works in twoside mode on input line 75.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 75.
-Package mdframed Info: mdframed works in twoside mode on input line 79.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 79.
-Package mdframed Info: mdframed works in twoside mode on input line 87.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 87.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package mdframed Info: mdframed works in twoside mode on input line 93.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 93.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 95.
-Package mdframed Info: You first box width is to small
- mdframed fixed it
-(mdframed)              on input line 95.
- [15]
-Package mdframed Info: mdframed works in twoside mode on input line 97.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 97.
-Package mdframed Info: mdframed works in twoside mode on input line 136.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 136.
-Package mdframed Info: mdframed works in twoside mode on input line 141.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 141.
-Package mdframed Info: You first box width is to small
- mdframed fixed it
-(mdframed)              on input line 146.
- [16]
-Package mdframed Info: mdframed works in twoside mode on input line 148.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 148.
-Package mdframed Info: mdframed works in twoside mode on input line 153.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 153.
-Package mdframed Info: mdframed works in twoside mode on input line 162.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 162.
-Package mdframed Info: mdframed works in twoside mode on input line 178.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 178.
- [17]) (./math/norm-and-distance.tex [18]
+]) (./roots/chap3.tex [11]
 Chapter 3.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-Package mdframed Info: mdframed works in twoside mode on input line 5.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 5.
-[19
+[12
 
-]
-Package mdframed Info: mdframed works in twoside mode on input line 40.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 40.
-Package mdframed Info: mdframed works in twoside mode on input line 44.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 44.
-Package mdframed Info: mdframed works in twoside mode on input line 56.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 56.
-Package mdframed Info: mdframed works in twoside mode on input line 64.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 64.
-Package mdframed Info: mdframed works in twoside mode on input line 68.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 68.
-Package mdframed Info: mdframed works in twoside mode on input line 74.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 74.
- [20]
-Package mdframed Info: mdframed works in twoside mode on input line 80.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 80.
-Package mdframed Info: mdframed works in twoside mode on input line 88.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 88.
-Package mdframed Info: mdframed works in twoside mode on input line 100.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 100.
-Package mdframed Info: mdframed works in twoside mode on input line 110.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 110.
-Package mdframed Info: mdframed works in twoside mode on input line 118.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 118.
-Package mdframed Info: mdframed works in twoside mode on input line 123.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 123.
-Package mdframed Info: mdframed works in twoside mode on input line 127.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 127.
- [21]
-Package mdframed Info: mdframed works in twoside mode on input line 133.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 133.
-Package mdframed Info: mdframed works in twoside mode on input line 137.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 137.
-Package mdframed Info: mdframed works in twoside mode on input line 147.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 147.
-Package mdframed Info: mdframed works in twoside mode on input line 153.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 153.
-Package mdframed Info: mdframed works in twoside mode on input line 159.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 159.
-Package mdframed Info: mdframed works in twoside mode on input line 165.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 165.
-Package mdframed Info: mdframed works in twoside mode on input line 171.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 171.
- [22]
-Package mdframed Info: mdframed works in twoside mode on input line 187.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 187.
-Package mdframed Info: mdframed works in twoside mode on input line 197.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 197.
-) (./math/kmeans.tex [23]
+]) (./roots/chap4.tex [13]
 Chapter 4.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/20.74'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/20.74'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/20.74'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/20.74'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/20.74'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/20.74'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textendash ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\AE ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotesinglbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotedblbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textexclamdown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textquestiondown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-Package mdframed Info: mdframed works in twoside mode on input line 10.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 10.
-Package mdframed Info: mdframed works in twoside mode on input line 19.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 19.
-[24
+[14
 
-]
-Package mdframed Info: mdframed works in twoside mode on input line 66.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 66.
-Package mdframed Info: mdframed works in twoside mode on input line 76.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 76.
-Package mdframed Info: mdframed works in twoside mode on input line 112.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 112.
- [25]
-Package mdframed Info: Not enough space on this page on input line 115.
-Package mdframed Info: mdframed works in twoside mode on input line 145.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 145.
-Package mdframed Info: mdframed works in twoside mode on input line 169.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 169.
-
-
-Package mdframed Warning: You got a bad break
-(mdframed)                because the last box will be empty
-(mdframed)                you have to change it manually
-(mdframed)                by changing the text, the space
-(mdframed)                or something else on input line 174.
-
-[26] [27]) (./math/linear-independent.tex [28]
+]) (./roots/chap5.tex [15]
 Chapter 5.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-Package mdframed Info: mdframed works in twoside mode on input line 5.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 5.
-Package mdframed Info: mdframed works in twoside mode on input line 16.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 16.
-Package mdframed Info: mdframed works in twoside mode on input line 22.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 22.
-Package mdframed Info: mdframed works in twoside mode on input line 33.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 33.
-[29
+[16
 
-]
-Package mdframed Info: mdframed works in twoside mode on input line 49.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 49.
-Package mdframed Info: mdframed works in twoside mode on input line 73.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 73.
-Package mdframed Info: mdframed works in twoside mode on input line 77.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 77.
-Package mdframed Info: mdframed works in twoside mode on input line 97.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 97.
-Package mdframed Info: mdframed works in twoside mode on input line 101.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 101.
- [30]
-Package mdframed Info: mdframed works in twoside mode on input line 107.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 107.
-Package mdframed Info: mdframed works in twoside mode on input line 111.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 111.
-Package mdframed Info: mdframed works in twoside mode on input line 115.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 115.
-Package mdframed Info: mdframed works in twoside mode on input line 119.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 119.
-Package mdframed Info: mdframed works in twoside mode on input line 151.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 151.
- [31]
-Package mdframed Info: mdframed works in twoside mode on input line 185.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 185.
-Package mdframed Info: mdframed works in twoside mode on input line 204.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 204.
-Package mdframed Info: mdframed works in twoside mode on input line 209.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 209.
- [32]
-Package mdframed Info: Not enough space on this page on input line 211.
-Package mdframed Info: mdframed works in twoside mode on input line 230.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 230.
-Package mdframed Info: mdframed works in twoside mode on input line 245.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 245.
-) [33] (./main.ptc) [34
-
-] (./math/matrices.tex
+]) (./roots/chap6.tex [17]
 Chapter 6.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-Package mdframed Info: mdframed works in twoside mode on input line 5.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 5.
-Package mdframed Info: mdframed works in twoside mode on input line 21.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 21.
-Package mdframed Info: mdframed works in twoside mode on input line 25.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 25.
-Package mdframed Info: mdframed works in twoside mode on input line 29.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 29.
-Package mdframed Info: mdframed works in twoside mode on input line 34.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 34.
-Package mdframed Info: mdframed works in twoside mode on input line 43.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 43.
-[35
+
+LaTeX Warning: Hyper reference `expect' on page 18 undefined on input line 9.
+
+
+LaTeX Warning: Reference `expect' on page 18 undefined on input line 9.
+
+
+LaTeX Warning: Hyper reference `respect' on page 18 undefined on input line 12.
+
+
+LaTeX Warning: Reference `respect' on page 18 undefined on input line 12.
+
+
+LaTeX Warning: Hyper reference `aspect' on page 18 undefined on input line 15.
+
+
+LaTeX Warning: Reference `aspect' on page 18 undefined on input line 15.
+
+
+LaTeX Warning: Hyper reference `inspect' on page 18 undefined on input line 18.
+
+
+LaTeX Warning: Reference `inspect' on page 18 undefined on input line 18.
+
+
+LaTeX Warning: Hyper reference `suspect' on page 18 undefined on input line 21.
+
+
+LaTeX Warning: Reference `suspect' on page 18 undefined on input line 21.
+
+
+LaTeX Warning: Hyper reference `prospect' on page 18 undefined on input line 26.
+
+
+LaTeX Warning: Reference `prospect' on page 18 undefined on input line 26.
+
+
+LaTeX Warning: Hyper reference `introspect' on page 18 undefined on input line 30.
+
+
+LaTeX Warning: Reference `introspect' on page 18 undefined on input line 30.
+
+
+LaTeX Warning: Hyper reference `introspective' on page 18 undefined on input line 33.
+
+
+LaTeX Warning: Reference `introspective' on page 18 undefined on input line 33.
+
+
+LaTeX Warning: Hyper reference `spectrum' on page 18 undefined on input line 36.
+
+
+LaTeX Warning: Reference `spectrum' on page 18 undefined on input line 36.
+
+
+LaTeX Warning: Hyper reference `retrospective' on page 18 undefined on input line 45.
+
+
+LaTeX Warning: Reference `retrospective' on page 18 undefined on input line 45.
+
+
+LaTeX Warning: Hyper reference `perspire' on page 18 undefined on input line 86.
+
+
+LaTeX Warning: Reference `perspire' on page 18 undefined on input line 86.
+
+[18
 
 ]
-Package mdframed Info: mdframed works in twoside mode on input line 53.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 53.
-Package mdframed Info: mdframed works in twoside mode on input line 59.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 59.
-Package mdframed Info: mdframed works in twoside mode on input line 67.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 67.
-Package mdframed Info: mdframed works in twoside mode on input line 73.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 73.
-Package mdframed Info: mdframed works in twoside mode on input line 79.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 79.
-Package mdframed Info: mdframed works in twoside mode on input line 87.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 87.
-Package mdframed Info: mdframed works in twoside mode on input line 97.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 97.
-Package mdframed Info: mdframed works in twoside mode on input line 114.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 114.
- [36]
-Package mdframed Info: mdframed works in twoside mode on input line 124.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 124.
-Package mdframed Info: mdframed works in twoside mode on input line 135.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 135.
-Package mdframed Info: mdframed works in twoside mode on input line 146.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 146.
-Package mdframed Info: mdframed works in twoside mode on input line 150.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 150.
-Package mdframed Info: mdframed works in twoside mode on input line 162.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 162.
-Package mdframed Info: mdframed works in twoside mode on input line 177.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 177.
- [37]
-Package mdframed Info: mdframed works in twoside mode on input line 210.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 210.
-Package mdframed Info: mdframed works in twoside mode on input line 216.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 216.
-Package mdframed Info: mdframed works in twoside mode on input line 222.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 222.
-Package mdframed Info: mdframed works in twoside mode on input line 236.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 236.
-Package mdframed Info: mdframed works in twoside mode on input line 240.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 240.
-Package mdframed Info: mdframed works in twoside mode on input line 244.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 244.
-Package mdframed Info: mdframed works in twoside mode on input line 248.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 248.
-Package mdframed Info: mdframed works in twoside mode on input line 252.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 252.
- [38] [39]
-Package mdframed Info: mdframed works in twoside mode on input line 303.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 303.
-Package mdframed Info: mdframed works in twoside mode on input line 312.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 312.
-Package mdframed Info: mdframed works in twoside mode on input line 413.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 413.
-Package mdframed Info: mdframed works in twoside mode on input line 422.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 422.
- [40]
-Package mdframed Info: Not enough space on this page on input line 429.
-Package mdframed Info: mdframed works in twoside mode on input line 431.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 431.
-Package mdframed Info: mdframed works in twoside mode on input line 475.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 475.
-Package mdframed Info: mdframed works in twoside mode on input line 483.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 483.
-Package mdframed Info: mdframed works in twoside mode on input line 509.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 509.
-Package mdframed Info: mdframed works in twoside mode on input line 521.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 521.
-Package mdframed Info: Not enough space on this page on input line 523.
- [41]
-Package mdframed Info: Not enough space on this page on input line 523.
-Package mdframed Info: mdframed works in twoside mode on input line 527.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 527.
-Package mdframed Info: mdframed works in twoside mode on input line 535.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 535.
-Package mdframed Info: mdframed works in twoside mode on input line 542.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 542.
-Package mdframed Info: mdframed works in twoside mode on input line 577.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 577.
-Package mdframed Info: mdframed works in twoside mode on input line 590.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 590.
-Package mdframed Info: Not enough space on this page on input line 596.
- [42]
-Package mdframed Info: Not enough space on this page on input line 596.
-Package mdframed Info: mdframed works in twoside mode on input line 598.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 598.
-Package mdframed Info: mdframed works in twoside mode on input line 605.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 605.
-Package mdframed Info: mdframed works in twoside mode on input line 611.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 611.
-Package mdframed Info: mdframed works in twoside mode on input line 619.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 619.
-Package mdframed Info: mdframed works in twoside mode on input line 624.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 624.
- [43]
+
+LaTeX Warning: Hyper reference `revoke, revocable, irrevocable' on page 19 undefined on input line 113.
+
+
+LaTeX Warning: Reference `revoke, revocable, irrevocable' on page 19 undefined on input line 113.
+
+
+LaTeX Warning: Hyper reference `exclaim' on page 19 undefined on input line 148.
+
+
+LaTeX Warning: Reference `exclaim' on page 19 undefined on input line 148.
+
+
+LaTeX Warning: Hyper reference `reclaim' on page 19 undefined on input line 151.
+
+
+LaTeX Warning: Reference `reclaim' on page 19 undefined on input line 151.
+
+) (./roots/chap7.tex [19]
 Chapter 7.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-Package mdframed Info: mdframed works in twoside mode on input line 640.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 640.
-Package mdframed Info: mdframed works in twoside mode on input line 668.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 668.
-[44
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no – (U+2013) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+[20
 
 ]
-Package mdframed Info: Not enough space on this page on input line 676.
-Package mdframed Info: mdframed works in twoside mode on input line 700.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 700.
-Package mdframed Info: mdframed works in twoside mode on input line 706.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 706.
-Package mdframed Info: mdframed works in twoside mode on input line 720.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 720.
- [45]
-Package mdframed Info: Not enough space on this page on input line 722.
-Package mdframed Info: mdframed works in twoside mode on input line 724.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 724.
-Package mdframed Info: mdframed works in twoside mode on input line 728.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 728.
- [46]
+
+LaTeX Font Warning: Font shape `TU/NotoSerif-Regular.ttf(0)/b/it' undefined
+(Font)              using `TU/NotoSerif-Regular.ttf(0)/b/n' instead on input line 66.
+
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/it/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/it/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/it/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/it/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/it/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/NotoSerif-Regular.ttf(0)/b/it/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Overfull \hbox (71.42146pt too wide) in paragraph at lines 93--95
+[]\TU/lmss/bx/n/10 Vocabulary 7.13 — autobiography, autobiographical, autobiographer. []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 autobiographical /ˌɔːtəbaɪəˈɡræfɪkəl
+ []
+
+Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ─ (U+2500) in font [NotoSerif-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ─ (U+2500) in font [NotoSerif-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ─ (U+2500) in font [NotoSerif-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ─ (U+2500) in font [NotoSerif-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;!
+[21]) (./roots/chap8.tex [22]
 Chapter 8.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-[47
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+[23
 
 ]
-Package mdframed Info: mdframed works in twoside mode on input line 844.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 844.
-Package mdframed Info: mdframed works in twoside mode on input line 848.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 848.
-) (./math/matrix-inverse.tex [48]
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+ [24]
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+
+Overfull \hbox (0.64728pt too wide) in paragraph at lines 222--224
+[]\TU/NotoSerif-Regular.ttf(0)/b/it/10.95 commit yourself to (doing) something \TU/NotoSerif-Regular.ttf(0)/m/it/10.95 The banks have \TU/NotoSerif-Regular.ttf(0)/b/it/10.95 committed themselves
+ []
+
+[25]
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+ [26]
+Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹔ (U+FE54) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no → (U+2192) in font [NotoSerif-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ﹑ (U+FE51) in font [NotoSerif-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no ﹐ (U+FE50) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+) [27] (./main.ptc) [28
+
+] (./roots/my-root.tex
 Chapter 9.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-Package mdframed Info: mdframed works in twoside mode on input line 5.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 5.
-Package mdframed Info: mdframed works in twoside mode on input line 21.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 21.
-[49
+[29
 
 ]
-Package mdframed Info: mdframed works in twoside mode on input line 38.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 38.
-Package mdframed Info: mdframed works in twoside mode on input line 48.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 48.
-Package mdframed Info: mdframed works in twoside mode on input line 58.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 58.
-Package mdframed Info: mdframed works in twoside mode on input line 72.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 72.
-Package mdframed Info: mdframed works in twoside mode on input line 78.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 78.
-Package mdframed Info: mdframed works in twoside mode on input line 90.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 90.
-Package mdframed Info: mdframed works in twoside mode on input line 100.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 100.
-Package mdframed Info: Not enough space on this page on input line 102.
- [50]
-Package mdframed Info: Not enough space on this page on input line 102.
-Package mdframed Info: mdframed works in twoside mode on input line 112.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 112.
-Package mdframed Info: mdframed works in twoside mode on input line 122.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 122.
-Package mdframed Info: mdframed works in twoside mode on input line 181.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 181.
-Package mdframed Info: mdframed works in twoside mode on input line 202.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 202.
- [51]
-Package mdframed Info: Not enough space on this page on input line 206.
-Package mdframed Info: mdframed works in twoside mode on input line 222.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 222.
-Package mdframed Info: mdframed works in twoside mode on input line 238.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 238.
-Package mdframed Info: mdframed works in twoside mode on input line 249.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 249.
-Package mdframed Info: mdframed works in twoside mode on input line 260.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 260.
- [52]) [53] (./main.ptc) [54
 
-] (./math/fourier.tex
+LaTeX Warning: Hyper reference `deject' on page 30 undefined on input line 117.
+
+
+LaTeX Warning: Reference `deject' on page 30 undefined on input line 117.
+
+
+LaTeX Warning: Hyper reference `eject, ejection' on page 30 undefined on input line 149.
+
+
+LaTeX Warning: Reference `eject, ejection' on page 30 undefined on input line 149.
+
+[30]
+
+LaTeX Warning: Hyper reference `employer' on page 31 undefined on input line 168.
+
+
+LaTeX Warning: Reference `employer' on page 31 undefined on input line 168.
+
+
+LaTeX Warning: Hyper reference `employee' on page 31 undefined on input line 171.
+
+
+LaTeX Warning: Reference `employee' on page 31 undefined on input line 171.
+
+
+LaTeX Warning: Hyper reference `exclaim, exclaimation' on page 31 undefined on input line 207.
+
+
+LaTeX Warning: Reference `exclaim, exclaimation' on page 31 undefined on input line 207.
+
+
+LaTeX Warning: Hyper reference `biography, biography' on page 31 undefined on input line 212.
+
+
+LaTeX Warning: Reference `biography, biography' on page 31 undefined on input line 212.
+
+
+LaTeX Warning: Hyper reference `typography' on page 31 undefined on input line 215.
+
+
+LaTeX Warning: Reference `typography' on page 31 undefined on input line 215.
+
+
+LaTeX Warning: Hyper reference `geography' on page 31 undefined on input line 218.
+
+
+LaTeX Warning: Reference `geography' on page 31 undefined on input line 218.
+
+
+LaTeX Warning: Hyper reference `photograph' on page 31 undefined on input line 220.
+
+
+LaTeX Warning: Reference `photograph' on page 31 undefined on input line 220.
+
+
+LaTeX Warning: Hyper reference `inject' on page 31 undefined on input line 242.
+
+
+LaTeX Warning: Reference `inject' on page 31 undefined on input line 242.
+
+[31]
+
+LaTeX Warning: Hyper reference `introspect' on page 32 undefined on input line 253.
+
+
+LaTeX Warning: Reference `introspect' on page 32 undefined on input line 253.
+
+
+LaTeX Warning: Hyper reference `irregular' on page 32 undefined on input line 258.
+
+
+LaTeX Warning: Reference `irregular' on page 32 undefined on input line 258.
+
+
+LaTeX Warning: Hyper reference `irrevocable' on page 32 undefined on input line 261.
+
+
+LaTeX Warning: Reference `irrevocable' on page 32 undefined on input line 261.
+
+
+LaTeX Warning: Hyper reference `irrelevant' on page 32 undefined on input line 267.
+
+
+LaTeX Warning: Reference `irrelevant' on page 32 undefined on input line 267.
+
+
+LaTeX Warning: Hyper reference `misconception' on page 32 undefined on input line 294.
+
+
+LaTeX Warning: Reference `misconception' on page 32 undefined on input line 294.
+
+
+LaTeX Warning: Hyper reference `misfortune' on page 32 undefined on input line 297.
+
+
+LaTeX Warning: Reference `misfortune' on page 32 undefined on input line 297.
+
+
+LaTeX Warning: Hyper reference `mislead' on page 32 undefined on input line 300.
+
+
+LaTeX Warning: Reference `mislead' on page 32 undefined on input line 300.
+
+
+LaTeX Warning: Hyper reference `misinterpret' on page 32 undefined on input line 303.
+
+
+LaTeX Warning: Reference `misinterpret' on page 32 undefined on input line 303.
+
+[32]
+
+LaTeX Warning: Hyper reference `perspire' on page 33 undefined on input line 367.
+
+
+LaTeX Warning: Reference `perspire' on page 33 undefined on input line 367.
+
+
+LaTeX Warning: Hyper reference `prospect' on page 33 undefined on input line 400.
+
+
+LaTeX Warning: Reference `prospect' on page 33 undefined on input line 400.
+
+
+LaTeX Warning: Hyper reference `reclaim' on page 33 undefined on input line 438.
+
+
+LaTeX Warning: Reference `reclaim' on page 33 undefined on input line 438.
+
+
+LaTeX Warning: Hyper reference `recreate' on page 33 undefined on input line 443.
+
+
+LaTeX Warning: Reference `recreate' on page 33 undefined on input line 443.
+
+[33]
+
+LaTeX Warning: Hyper reference `biosphere' on page 34 undefined on input line 483.
+
+
+LaTeX Warning: Reference `biosphere' on page 34 undefined on input line 483.
+
+
+LaTeX Warning: Hyper reference `hemisphere' on page 34 undefined on input line 486.
+
+
+LaTeX Warning: Reference `hemisphere' on page 34 undefined on input line 486.
+
+
+LaTeX Warning: Hyper reference `atmosphere' on page 34 undefined on input line 489.
+
+
+LaTeX Warning: Reference `atmosphere' on page 34 undefined on input line 489.
+
+) [34] (./main.ptc) [35
+
+]
 Chapter 10.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-Package mdframed Info: mdframed works in twoside mode on input line 5.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 5.
-Package mdframed Info: mdframed works in twoside mode on input line 13.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 13.
-Package mdframed Info: mdframed works in twoside mode on input line 21.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 21.
-Package mdframed Info: mdframed works in twoside mode on input line 25.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 25.
-Package mdframed Info: mdframed works in twoside mode on input line 29.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 29.
-
-Underfull \vbox (badness 1400) has occurred while \output is active []
-
- [55
+(./vocabulary/a.tex [36
 
 ]
-Package mdframed Info: mdframed works in twoside mode on input line 43.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 43.
-Package mdframed Info: mdframed works in twoside mode on input line 51.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 51.
-Package mdframed Info: mdframed works in twoside mode on input line 62.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 62.
- [56]
-Package mdframed Info: mdframed works in twoside mode on input line 104.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 104.
-Package mdframed Info: mdframed works in twoside mode on input line 125.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 125.
-Package mdframed Info: mdframed works in twoside mode on input line 136.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 136.
-Package mdframed Info: Not enough space on this page on input line 147.
- [57]
-Package mdframed Info: Not enough space on this page on input line 147.
-Package mdframed Info: mdframed works in twoside mode on input line 149.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 149.
-Package mdframed Info: mdframed works in twoside mode on input line 168.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 168.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 202.
- [58]
-Package mdframed Info: mdframed works in twoside mode on input line 204.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 204.
- [59]
-Package mdframed Info: mdframed works in twoside mode on input line 258.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 258.
-Package mdframed Info: mdframed works in twoside mode on input line 267.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 267.
-Package mdframed Info: mdframed works in twoside mode on input line 273.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 273.
-Package mdframed Info: mdframed works in twoside mode on input line 277.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 277.
-) [60] (./main.ptc) [61
+Overfull \hbox (8.2857pt too wide) in paragraph at lines 100--101
+[]\TU/lmss/bx/n/10 Vocabulary 10.17 — apportion, apportionment. []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 to decide how something should be shared
+ []
 
-]
+
+Overfull \hbox (18.5262pt too wide) in paragraph at lines 110--112
+[]\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 (old-fashioned) understand or perceive. ”\TU/NotoSerif-Regular.ttf(0)/m/it/10.95 great art invites us to apprehend beauty\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 ”;to
+ []
+
+
+Overfull \hbox (4.01262pt too wide) in paragraph at lines 140--141
+[]\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 to write a document containing the most important ideas or points from a speech,
+ []
+
+[37]) (./vocabulary/b.tex) (./vocabulary/c.tex [38] [39]) (./vocabulary/d.tex [40]) (./vocabulary/e.tex [41]
+Overfull \hbox (3.31935pt too wide) in paragraph at lines 53--55
+[]\TU/NotoSerif-Regular.ttf(0)/m/it/10.95 an eloquent appeal for support \TU/NotoSerif-Regular.ttf(0)/m/n/10.95 showing a feeling or meaning without using words 
+ []
+
+[42]) (./vocabulary/f.tex) (./vocabulary/g.tex) [43]
 Chapter 11.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-(./math/random-variables.tex [62
+(./vocabulary/h.tex) (./vocabulary/i.tex [44
 
-]
-Package mdframed Info: mdframed works in twoside mode on input line 120.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 120.
- [63]
-Package mdframed Info: Not enough space on this page on input line 126.
- [64]
-Package mdframed Info: mdframed works in twoside mode on input line 239.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 239.
- [65]
-Package mdframed Info: mdframed works in twoside mode on input line 307.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 307.
-Package mdframed Info: mdframed works in twoside mode on input line 311.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 311.
-) [66]
+]) (./vocabulary/j.tex) (./vocabulary/k.tex) (./vocabulary/l.tex) (./vocabulary/m.tex) (./vocabulary/n.tex) (./vocabulary/o.tex) [45]
 Chapter 12.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-(./math/law-of-large-numbers.tex
-Package mdframed Info: mdframed works in twoside mode on input line 3.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 3.
-Package mdframed Info: mdframed works in twoside mode on input line 22.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 22.
-Package mdframed Info: mdframed works in twoside mode on input line 32.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 32.
- [67
+(./vocabulary/p.tex [46
 
-]
-Package mdframed Info: mdframed works in twoside mode on input line 44.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 44.
-Package mdframed Info: mdframed works in twoside mode on input line 66.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 66.
-Package mdframed Info: mdframed works in twoside mode on input line 86.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 86.
-) [68]
-Chapter 13.
+] [47] [48]
+Overfull \hbox (4.34492pt too wide) in paragraph at lines 251--253
+[]\TU/NotoSerif-Regular.ttf(0)/b/it/10.95 from somebody’s/a feminist/Christian/global etc perspective \TU/NotoSerif-Regular.ttf(0)/m/it/10.95 The novel is writ-
+ []
+
+
+LaTeX Font Warning: Font shape `TU/FZPingXYSJW.TTF(0)/b/it' undefined
+(Font)              using `TU/FZPingXYSJW.TTF(0)/b/n' instead on input line 257.
+
+Missing character: There is no – (U+2013) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+
+LaTeX Warning: Hyper reference `perspire' on page 49 undefined on input line 299.
+
+
+LaTeX Warning: Reference `perspire' on page 49 undefined on input line 299.
+
+
+Overfull \hbox (11.02747pt too wide) in paragraph at lines 306--307
+[]\TU/lmss/bx/n/10 Vocabulary 12.35 — provoke, provocation, provocative. []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 provocation /ˌprɒvəˈkeɪʃən/ provoca-
+ []
+
+[49]) (./vocabulary/q.tex) (./vocabulary/r.tex
+Overfull \hbox (5.02621pt too wide) in paragraph at lines 8--10
+[]\TU/lmss/bx/n/10 Vocabulary 12.38 — retract, retractable. []\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 if you retract something that you said or agreed,
+ []
+
+[50]
+
+LaTeX Warning: Hyper reference `reclaim' on page 51 undefined on input line 80.
+
+
+LaTeX Warning: Reference `reclaim' on page 51 undefined on input line 80.
+
+) (./vocabulary/s.tex [51]
+Missing character: There is no – (U+2013) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+) (./vocabulary/t.tex [52]) (./vocabulary/u.tex) (./vocabulary/v.tex) (./vocabulary/w.tex) (./vocabulary/x.tex) (./vocabulary/y.tex) (./vocabulary/z.tex)) (./math/math-index.tex) (./paperNotes/paper-index.tex) (./cloud-computing/cloud-index.tex) (./demo.tex)
+
+LaTeX Warning: Empty bibliography on input line 131.
+
+[53] [54
+
+] (./main.ind
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-(./math/sampling-distributions.tex
-Package mdframed Info: mdframed works in twoside mode on input line 8.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 8.
-Package mdframed Info: mdframed works in twoside mode on input line 12.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 12.
-Package mdframed Info: mdframed works in twoside mode on input line 16.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 16.
-Package mdframed Info: mdframed works in twoside mode on input line 20.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 20.
-Package mdframed Info: mdframed works in twoside mode on input line 24.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 24.
-Package mdframed Info: You first box width is to small
- mdframed fixed it
-(mdframed)              on input line 26.
- [69
 
-]
-Package mdframed Info: mdframed works in twoside mode on input line 28.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 28.
-Package mdframed Info: mdframed works in twoside mode on input line 34.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 34.
-Package mdframed Info: mdframed works in twoside mode on input line 44.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 44.
-Package mdframed Info: mdframed works in twoside mode on input line 56.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 56.
-Package mdframed Info: mdframed works in twoside mode on input line 60.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 60.
-Package mdframed Info: mdframed works in twoside mode on input line 82.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 82.
- [70]
-Package mdframed Info: Not enough space on this page on input line 85.
-Package mdframed Info: mdframed works in twoside mode on input line 96.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 96.
-Package mdframed Info: mdframed works in twoside mode on input line 112.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 112.
-Package mdframed Info: mdframed works in twoside mode on input line 124.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 124.
-Package mdframed Info: mdframed works in twoside mode on input line 132.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 132.
-Package mdframed Info: mdframed works in twoside mode on input line 145.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 145.
-
-
-Package mdframed Warning: You got a bad break
-(mdframed)                because the last box will be empty
-(mdframed)                you have to change it manually
-(mdframed)                by changing the text, the space
-(mdframed)                or something else on input line 152.
-
-[71]
-Package mdframed Info: mdframed works in twoside mode on input line 154.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 154.
-Package mdframed Info: mdframed works in twoside mode on input line 159.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 159.
-Package mdframed Info: mdframed works in twoside mode on input line 175.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 175.
-Package mdframed Info: mdframed works in twoside mode on input line 188.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 188.
-Package mdframed Info: mdframed works in twoside mode on input line 196.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 196.
-Package mdframed Info: mdframed works in twoside mode on input line 208.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 208.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 214.
- [72]
-Package mdframed Info: mdframed works in twoside mode on input line 216.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 216.
-Package mdframed Info: mdframed works in twoside mode on input line 222.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 222.
-Package mdframed Info: mdframed works in twoside mode on input line 235.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 235.
-Missing character: There is no α (U+03B1) in font [lmsans10-bold]:mapping=tex-text;!
-Package mdframed Info: mdframed works in twoside mode on input line 243.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 243.
-Missing character: There is no σ ("3C3) in font cmmi10!
-Package mdframed Info: mdframed works in twoside mode on input line 261.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 261.
-Package mdframed Info: mdframed works in twoside mode on input line 267.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 267.
-Missing character: There is no σ ("3C3) in font cmmi10!
- [73]
-Package mdframed Info: mdframed works in twoside mode on input line 281.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 281.
-Package mdframed Info: mdframed works in twoside mode on input line 287.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 287.
-Missing character: There is no σ ("3C3) in font cmmi10!
-Package mdframed Info: mdframed works in twoside mode on input line 297.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 297.
-Package mdframed Info: mdframed works in twoside mode on input line 325.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 325.
- [74]) [75]
-Chapter 14.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-(./math/hypothesis-testing.tex
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 6.
-
-
-Overfull \hbox (788.07448pt too wide) in paragraph at lines 9--66
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 3--4
 [][] 
  []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 112.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\chi' on input line 112.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 112.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 112.
-
-[76
-
-] [77]
-Package mdframed Info: mdframed works in twoside mode on input line 134.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 134.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htbp') on input line 140.
-
-[78] [79]
-Overfull \hbox (6.68932pt too wide) in paragraph at lines 180--181
-[]\TU/FZPingXYSJW.TTF(0)/m/n/10.95 不 妨 设 $\OML/cmm/m/it/10.95 A$ \TU/FZPingXYSJW.TTF(0)/m/n/10.95 取 $\OML/cmm/m/it/10.95 r$ \TU/FZPingXYSJW.TTF(0)/m/n/10.95 个 水 平\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 , \TU/FZPingXYSJW.TTF(0)/m/n/10.95 分 别 记 为 $\OML/cmm/m/it/10.95 A[]; A[]; []  ; A[]\OMS/cmsy/m/n/10.95 ^^N$ \TU/FZPingXYSJW.TTF(0)/m/n/10.95 若 在 水 平 $\OML/cmm/m/it/10.95 A[]$ \TU/FZPingXYSJW.TTF(0)/m/n/10.95 下 总 体 $\OML/cmm/m/it/10.95 X[] \OMS/cmsy/m/n/10.95 ^^X \OML/cmm/m/it/10.95 N [] ; i \OT1/cmr/m/n/10.95 =
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 47--48
+[][] 
  []
 
-Package mdframed Info: mdframed works in twoside mode on input line 221.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 221.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 228.
-[80] [81] [82] [83] [84]
-Overfull \hbox (50.07733pt too wide) in paragraph at lines 544--546
-[]\TU/FZPingXYSJW.TTF(0)/m/n/10.95 记 $\OML/cmm/m/it/10.95 X \OT1/cmr/m/n/10.95 = [] \OML/cmm/m/it/10.95 ;  Y \OT1/cmr/m/n/10.95 = [] \OML/cmm/m/it/10.95 ;  []$ $" \OT1/cmr/m/n/10.95 = [][] \OML/cmm/m/it/10.95 ;  ^^L \OT1/cmr/m/n/10.95 = [][]$ 
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 60--61
+[][] 
  []
 
-Missing character: There is no 丆 (U+4E06) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
-[85]
-Missing character: There is no ⿱ (U+2FF1) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
- [86]) [87] [88]
-Chapter 15.
-File: Pictures//chapter_head_3.png Graphic file (type bmp)
-<Pictures//chapter_head_3.png>
-(./math/bootstrap.tex [89
+[55
 
-] [90])) (./paperNotes/paper-index.tex) (./cloud-computing/cloud-index.tex) (./demo.tex)
+]
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 93--94
+[][] 
+ []
 
-LaTeX Warning: Empty bibliography on input line 131.
 
-[91] [92
+Overfull \hbox (3.34215pt too wide) in paragraph at lines 104--106
+[]\TU/NotoSerif-Regular.ttf(0)/m/n/10.95 desperate, desperately, desperation, des-
+ []
 
-] (./main.ind)
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 127--128
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 162--163
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 171--172
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 181--182
+[][] 
+ []
+
+[56]
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 219--220
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 225--226
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 232--233
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 247--248
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 256--257
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 305--306
+[][] 
+ []
+
+[57]
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 330--331
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 362--363
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 386--387
+[][] 
+ []
+
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 394--395
+[][] 
+ []
+
+[58])
 \tf@ptc=\write7
 \openout7 = `main.ptc'.
 
@@ -3521,17 +2624,23 @@ LaTeX Warning: Empty bibliography on input line 131.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41751 strings out of 476477
- 865540 string characters out of 5812099
- 1826166 words of memory out of 5000000
- 61397 multiletter control sequences out of 15000+600000
- 424823 words of font info for 176 fonts, out of 8000000 for 9000
+ 42160 strings out of 476477
+ 876531 string characters out of 5812099
+ 1831007 words of memory out of 5000000
+ 61768 multiletter control sequences out of 15000+600000
+ 417136 words of font info for 131 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,18n,97p,1145b,4706s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,12n,97p,1145b,4705s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (92 pages).
+Output written on main.pdf (58 pages).

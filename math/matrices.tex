@@ -602,10 +602,14 @@ A_{i i}=e_{i}^{T} A e_{i} \geq 0
 $$
 \end{theorem}
 
-\begin{definition}[Gram矩阵]
-    Gram矩阵 $ A $
+\begin{definition}[实矩阵$A$的Gram矩阵]
+    \label{Def:Gram}
 
-    $$ A=B^{T} B $$
+    $$ G=A^{T} A=\left[\begin{array}{c}a_{1}^{T} \\ a_{2}^{T} \\ \vdots \\ a_{n}^{T}\end{array}\right]\left[a_{1}, a_{2}, \cdots, a_{n}\right]=\left[\begin{array}{cccc}a_{1}^{T} a_{1} & a_{1}^{T} a_{2} & \cdots & a_{1}^{T} a_{n} \\ a_{2}^{T} a_{1} & a_{2}^{T} a_{2} & \cdots & a_{2}^{T} a_{n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n}^{T} a_{1} & a_{n}^{T} a_{2} & \cdots & a_{n}^{T} a_{n}\end{array}\right] $$
+\end{definition}
+
+\begin{definition}[复矩阵的$A$的Gram 矩阵]
+    $$ G=A^{H} A=\left[\begin{array}{cccc}a_{1}^{H} a_{1} & a_{1}^{H} a_{2} & \cdots & a_{1}^{H} a_{n} \\ a_{2}^{H} a_{1} & a_{2}^{H} a_{2} & \cdots & a_{2}^{H} a_{n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n}^{H} a_{1} & a_{n}^{H} a_{2} & \cdots & a_{n}^{H} a_{n}\end{array}\right] $$
 \end{definition}
 
 \begin{theorem}

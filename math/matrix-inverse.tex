@@ -95,6 +95,8 @@ $$
     $$
 A x=b \Rightarrow  x=X A x=X b
 $$
+
+    列满秩时(下面证明), 列向量线性无关, 所以其零空间中只有零解，方程 $ {Ax}={b} $ 可能有一个唯一解 ($b$在$A$的列空间中, 此特解就是全部解, 因为通常的特解可以通过零空间中的向量扩展出一组解集，而此时零空间只有$0$向量）, 也可能无解 ($b$不在$A$的列空间中）。
 \end{proof}
 
 \begin{theorem}
@@ -107,6 +109,9 @@ $$
     $$
 x=Y b  \Rightarrow  A x=A Y b=b
 $$
+
+
+右逆就是研究 $m \times n $ 矩阵$A$行满秩的情况, 此时 $ \mathrm{n}>\mathrm{m}=\operatorname{rank}(\mathrm{A}) $ 。对称的, 其左零空间中仅有零向量，即没有行向量的线性组合能够得到零向量。（$N(A ^T ) = \{0\}$）
 \end{proof}
 
 \begin{theorem}
@@ -200,9 +205,11 @@ $$
     则当该等式 $ A x=0 $ 成立时，其解 $ x=0 $, 则A的列向量线性无关。 
     
     \begin{corollary}
-        如果 $ A \in \mathbb{R}^{m \times n} $有左逆，则有 $ m \geq n  $。
+        如果 $ A \in \mathbb{R}^{m \times n} $有左逆，则有 $ m \geq n = r $。
 
-    即$A$是高或方的矩阵, 如 $ A=\left[\begin{array}{ll}1 & 0 \\ 0 & 1 \\ 0 & 0\end{array}\right] $.
+    即$A$是高或方的矩阵, 如 $ A=\left[\begin{array}{ll}1 & 0 \\ 0 & 1 \\ 0 & 0\end{array}\right] $. 
+    
+    此时$A$的行向量可能线性相关，而$A$的列向量线性无关。$N(A) = \{0\}$.
     \end{corollary}
     
 
@@ -230,7 +237,7 @@ $$
     
     由矩阵乘法的定义，存在一个 $r \times n$ 矩阵 $R$, 使得 $A = CR$. ($A$ 的 $(i,j)$ 元素是 $c_i$ 与 $R$ 的第 $j$ 个行向量的点积.)
 
-现在，由于 $A = CR$, $A$ 的每个行向量是 $R$ 的行向量的线性组合，这意味着 $A$ 的行向量空间被包含于 $R$ 的行向量空间之中. 因此 $A 的行秩 \leq R的行秩$. 但R仅有$r$行, 所以$R的行秩 \leq r = A的列秩$. 这就证明了$A的行秩 \leq A的列秩$.
+现在，由于 $A = CR$, $A$ 的每个行向量是 $R$ 的行向量的线性组合，这意味着 $A$ 的行向量空间被包含于 $R$ 的行向量空间之中. 因此 $A 的行秩 \leq R的行秩$. 但$R$仅有$r$行, 所以$R的行秩 \leq r = A的列秩$. 这就证明了$A的行秩 \leq A的列秩$.
 
 把上述证明过程中的“行”与“列”交换，利用对偶性质同样可证$A的列秩 \leq A的行秩$。更简单的方法是考虑A的转置矩阵 $A^\mathrm{T}$，则$A的列秩 =  A^\mathrm{T}的行秩 \leq  A^\mathrm{T}的列秩 = A的行秩$. 这证明了$A$的列秩等于$A$的行秩. 证毕.
 \end{proof}
@@ -247,9 +254,13 @@ $$
     即 $ A^{T} \in \mathbb{R}^{n \times m} $.
     
     \begin{corollary}
-     如果 $ A \in \mathbb{R}^{m \times n} $有左逆，则有 $ m \leq n  $。
+     如果 $ A \in \mathbb{R}^{m \times n} $有左逆，则有 $r= m \leq n  $。
 
-    即$A$是宽或方的矩阵.   
+    即$A$是宽或方的矩阵. 
+
+    此时$A$的列向量可能线性相关，而$A$的行向量线性无关。
+    
+    $N(A^T) = \{0\}, \operatorname{dim} N(A) = n-r, r=m$. ($Ax=b$有无穷解) 
     \end{corollary}
     
     根据定理“矩阵的行秩等于列秩”，$ A^{T} $ 的列向量线性无关，则矩阵 $ A $ 有$m$个线性无关列向量（行向量），即通过 Gram-Schmidt 正交化可得$m$个正交基。
@@ -290,3 +301,109 @@ $$
 
 \end{proof}
 
+\section{转置和共轭转置的逆}
+
+\begin{theorem}[转置 $ A^{T} $ 和共轭转置 $ A^{\mathrm{H}} $ ]
+    如果矩阵$A$为非奇异矩阵，则其转置 $ A^{T} $ 和共轭转置 $ A^{\mathrm{H}} $ 都为非奇异矩阵，则有
+$$
+\begin{array}{l}
+\left(A^{T}\right)^{-1}=\left(A^{-1}\right)^{T}, \quad\left(A^{H}\right)^{-1}=\left(A^{-1}\right)^{H} \\
+\end{array}
+$$
+\end{theorem}
+
+\begin{proof}
+    $$\left(A A^{-1}\right)^{T}=I \Rightarrow \underbrace{\left(A^{-1}\right)^{T}}_{\text{the inverse of }A^T}   A^{T}=I$$
+\end{proof}
+
+\begin{corollary}
+    如果矩阵A和矩阵B都为非奇异矩阵，则乘积AB也为非 奇异矩阵
+$$
+\begin{array}{l}
+(A B)^{-1}=B^{-1} A^{-1} \\
+\end{array}
+$$
+\end{corollary}
+
+\begin{proof}
+    $$(A B) \underbrace{B^{-1} A^{-1}} _{\text{the inverse of AB}}=I$$
+\end{proof}
+
+\section{Gram Matrix}
+
+Definition: refer to \ref{Def:GRAM}.
+
+\begin{corollary}
+    矩阵 $ A \in \mathbb{R}^{m \times n}, \quad \mathrm{G}=A^{T} A $
+
+矩阵 $ A $ 列向量线性无关 $ \Leftrightarrow $ Gram矩阵G非奇异.
+\end{corollary}
+
+\begin{proof}
+    " $ \Rightarrow $ ": 
+    
+    假设矩阵 $ A $ 列向量线性无关, $ A^{T} A $ 奇异。 则存在 $ A^{T} A x=0, x \neq 0 $, 可得 $ x^{T} A^{T} A x=\|A x\|_{2}^{2}=0 $, 即 $ A x=0 $ 与列向量线性无关劣盾.
+
+    " $ \Leftarrow $ ":
+    
+    假设 $ A^{T} A $ 非奇异, 矩阵 $ A $ 列向量线性相关。 则有 $ A x=0, x \neq 0 $, 可得 $ A^{T} A x=0 $, 即 $ A^{T} A $ 是奇异矩阵。
+\end{proof}
+
+\section{伪逆}
+
+\begin{definition}[Pseudo-inverse]
+    $$ A^{\dagger}=A^{T}\left(A A^{T}\right)^{-1} $$
+
+    $$A^{\dagger} = V \Sigma^+ U^T$$
+\end{definition}
+
+\begin{theorem}
+    伪逆 $ A^{\dagger} $ 为 $ A $ 的右逆
+\end{theorem}
+
+\begin{proof}
+    $$ A A^{\dagger}=A A^{T}\left(A A^{T}\right)^{-1}=\left(A A^{T}\right)^{-1}\left(A A^{T}\right)=I $$
+\end{proof}
+
+\begin{theorem}
+    当$A$为方阵时，右逆等于矩阵的逆
+\end{theorem}
+
+\begin{proof}
+    $$ A^{\dagger}=A^{T}\left(A A^{T}\right)^{-1}=A^{T} A^{-T} A^{-1}=A^{-1} $$
+\end{proof}
+
+\begin{corollary}
+    以下三个结论为等价的，对于实矩阵$A$
+
+    \begin{itemize}
+        \item $A$是可左逆的
+        \item $A$的列向量线性无关
+        \item $ A^{T} A $ 为非奇异矩阵
+    \end{itemize}
+\end{corollary}
+
+\begin{corollary}
+    以下三个结论为等价的，对于实矩阵$A$
+
+    \begin{itemize}
+        \item $A$是可右逆的 
+        \item $A$的行向量线性无关
+        \item $ A A^{T} $ 为非奇异矩阵
+    \end{itemize}
+\end{corollary}
+
+\begin{figure}
+    \caption{$ A \boldsymbol{x}^{+} $ in the column space goes back to $ A^{+} A \boldsymbol{x}^{+}=\boldsymbol{x}^{+} $in the row space}
+    \includegraphics[width=\textwidth]{math-pseudoinverse.png}
+\end{figure}
+
+The pseudoinverse $ A^{+} $is the $ n $ by $ m $ matrix that makes $ A A^{+} $and $ A^{+} A $ into projections. 
+
+Trying for $ A A^{-1}=A^{-1} A=I $, 
+
+\begin{remark}
+    $ A A^{+}= $projection matrix onto the column space of $ A $
+
+    $ A^{+} A= $ projection matrix onto the row space of $ A $
+\end{remark}
