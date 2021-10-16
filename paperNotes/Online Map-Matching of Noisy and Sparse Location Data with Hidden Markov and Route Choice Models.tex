@@ -3,7 +3,7 @@
 Source: \cite{Jagadeesh2017}
 
 \section{论文动机}
-    蜂窝网络/WiFi定位不精确性更高，现有算法对于这两种定位的处理不足够。
+    蜂窝网络/WiFi定位不精确性更高，现有算法对于这两种定位的处理不足够. 
     
 利用司机的驾驶选择信息 (\term{route choice}).
 最简单办法：决定性的路径选择准则
@@ -64,7 +64,7 @@ HMM性质：
     \item (\term{Markov property}) states that the hidden state $ s_{t}^{*} $ at time step $ t $ depends only on the hidden state $ s_{t-1}^{*} $ at time step $ t-1 $ and is not influenced by the history of hidden states before that.
 \end{itemize}
 
-对于一个GPS记录点$ o_{t} $, each state $ s_{t, k} $ is assigned an \term{emission probability} $ P\left(o_{t} \mid s_{t, k}\right) $。 状态转移概率是 $ P\left(s_{t, k} \mid s_{t-1, j}\right) $
+对于一个GPS记录点$ o_{t} $, each state $ s_{t, k} $ is assigned an \term{emission probability} $ P\left(o_{t} \mid s_{t, k}\right) $.  状态转移概率是 $ P\left(s_{t, k} \mid s_{t-1, j}\right) $
 
 \subsection{Emission Probability}
 
@@ -76,7 +76,7 @@ P\left(o_{t} \mid s_{t, k}\right)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{g\left
 $$
 
 \begin{remark}
-    the location measurement error may not strictly conform to the above model, especially in dense urban networks. 但是它模型简单而且在前人工作中性能还不错。
+    the location measurement error may not strictly conform to the above model, especially in dense urban networks. 但是它模型简单而且在前人工作中性能还不错. 
 \end{remark}
 
 \subsection{Transition Probability}
@@ -84,7 +84,7 @@ $$
 the path with the minimum \term{free-flow travel time}, found using
 the well-known Dijkstra’s algorithm, as the optimal path.
 
-\cite{newson2009hidden}用的是大圆距离与路径距离之间的差值。(有问题 \ref{Comment:HMM-TransitionProbability})
+\cite{newson2009hidden}用的是大圆距离与路径距离之间的差值. (有问题 \ref{Comment:HMM-TransitionProbability})
 
 对于空间，本文提出由两个时间状态之内大圆距离与路径距离之间的差值除以时间的比率
 
@@ -95,7 +95,7 @@ between two points on the road network is the length of the
 minimum-travel-time path between them found by Dijkstra
 algorithm
 
-对于时间，定义时间上的难以置信性。（\textbf{考虑到了时间上的转移概率}）该度量有助于为自由流旅行时间大于采样间隔的路径分配低的过渡概率。(修正模型)
+对于时间，定义时间上的难以置信性. （\textbf{考虑到了时间上的转移概率}）该度量有助于为自由流旅行时间大于采样间隔的路径分配低的过渡概率. (修正模型)
 
 $$
 z\left(s_{t-1, j}, s_{t, k}\right)=\frac{\max \left(\left(f\left(s_{t-1, j}, s_{t, k}\right)-\Delta T\right), 0\right)}{\Delta T}
@@ -112,7 +112,7 @@ $\lambda_{y}, \lambda_{z}$根据经验估计
 
 \section{Online Viterbi Inference}
 
-维特比算法通过递归算法可以找出HMM中最可能的序列。
+维特比算法通过递归算法可以找出HMM中最可能的序列. 
 
 $$ \begin{aligned} V_{1, k} &=P\left(o_{1} \mid s_{1, k}\right) \\ V_{t, k} &=P\left(o_{t} \mid s_{t, k}\right) \max _{j}\left(V_{t-1, j} P\left(s_{t, k} \mid s_{t-1, j}\right)\right) \end{aligned} $$
 

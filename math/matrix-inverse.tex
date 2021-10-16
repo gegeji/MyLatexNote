@@ -1,5 +1,78 @@
 \chapter{Inverse}
 
+\section{Fundamental Theorem of Linear Algebra}
+
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Shape: Rectangle [id:dp8564537788335302] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}] (221.63,153.4) -- (253.96,185.17) -- (225.93,213.7) -- (193.59,181.93) -- cycle ;
+%Shape: Rectangle [id:dp7748103688398633] 
+\draw   (159.81,65.14) -- (236.34,135.27) -- (193.59,181.93) -- (117.06,111.79) -- cycle ;
+%Shape: Rectangle [id:dp3534850306924755] 
+\draw   (193.59,181.93) -- (260.03,242.81) -- (218.64,287.99) -- (152.2,227.1) -- cycle ;
+
+%Shape: Rectangle [id:dp11468847928918202] 
+\draw   (477.03,52.53) -- (398.27,134.34) -- (440.51,175) -- (519.26,93.19) -- cycle ;
+%Shape: Rectangle [id:dp8320016424104848] 
+\draw   (440.51,175) -- (372.14,246.02) -- (413.05,285.39) -- (481.41,214.38) -- cycle ;
+
+%Straight Lines [id:da413550032058265] 
+\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=2.25]    (193.59,181.93) -- (217.74,155.81) ;
+\draw [shift={(221.14,152.14)}, rotate = 492.75] [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
+%Straight Lines [id:da05215716031511208] 
+\draw [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][line width=2.25]    (193.59,181.93) -- (222.99,209.56) ;
+\draw [shift={(226.64,212.99)}, rotate = 223.23] [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
+%Straight Lines [id:da20598638562684246] 
+\draw [color={rgb, 255:red, 65; green, 117; blue, 5 }  ,draw opacity=1 ][line width=2.25]    (193.59,181.93) -- (248.97,184.9) ;
+\draw [shift={(253.96,185.17)}, rotate = 183.08] [fill={rgb, 255:red, 65; green, 117; blue, 5 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
+%Straight Lines [id:da9574000480451021] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (221.14,152.14) -- (435.64,119.99) ;
+\draw [shift={(328.39,136.06)}, rotate = 531.48] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+%Straight Lines [id:da8574440156945131] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (253.96,185.17) -- (435.64,119.99) ;
+\draw [shift={(344.8,152.58)}, rotate = 520.26] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+%Straight Lines [id:da26442247252775863] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (226.64,212.99) -- (440.51,175) ;
+\draw [shift={(333.57,193.99)}, rotate = 529.9300000000001] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+%Shape: Rectangle [id:dp41111107193098295] 
+\draw   (186.5,176.41) -- (193.59,182.93) -- (186.84,190.28) -- (179.74,183.76) -- cycle ;
+%Shape: Rectangle [id:dp37902094791189933] 
+\draw   (447.27,167.65) -- (454.36,174.17) -- (447.61,181.52) -- (440.51,175) -- cycle ;
+%Straight Lines [id:da3897829543263125] 
+\draw [color={rgb, 255:red, 108; green, 108; blue, 215 }  ,draw opacity=1 ][line width=2.25]    (440.51,175) -- (436.08,124.97) ;
+\draw [shift={(435.64,119.99)}, rotate = 444.94] [fill={rgb, 255:red, 108; green, 108; blue, 215 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
+
+% Text Node
+\draw (10,62) node [anchor=north west][inner sep=0.75pt]   [align=left] {Row Space $\displaystyle A^{T} y$\\dim $\displaystyle r$};
+% Text Node
+\draw (22,240) node [anchor=north west][inner sep=0.75pt]   [align=left] {Nullspace $\displaystyle Ax=0$\\dim $\displaystyle n-r$};
+% Text Node
+\draw (510,39) node [anchor=north west][inner sep=0.75pt]   [align=left] {Column Space $\displaystyle Ax$\\dim $\displaystyle r$};
+% Text Node
+\draw (462,245) node [anchor=north west][inner sep=0.75pt]   [align=left] {Left Nullspace $\displaystyle A^{T} y=0$\\dim $\displaystyle m-r$};
+% Text Node
+\draw (291,112.4) node [anchor=north west][inner sep=0.75pt]    {$A\textcolor[rgb]{0.55,0.34,0.16}{x_{r}} =\textcolor[rgb]{0.42,0.42,0.84}{b}$};
+% Text Node
+\draw (202,136.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,opacity=1 ]  {$x_{r}$};
+% Text Node
+\draw (207,210.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,opacity=1 ]  {$x_{n}$};
+% Text Node
+\draw (443,111.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 108; green, 108; blue, 215 }  ,opacity=1 ]  {$b$};
+% Text Node
+\draw (331,158.4) node [anchor=north west][inner sep=0.75pt]    {$A\textcolor[rgb]{0.25,0.46,0.02}{x} =\textcolor[rgb]{0.42,0.42,0.84}{b}$};
+% Text Node
+\draw (301,202.4) node [anchor=north west][inner sep=0.75pt]    {$A\textcolor[rgb]{0.96,0.65,0.14}{x_{n}} =0$};
+% Text Node
+\draw (250,164.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 65; green, 117; blue, 5 }  ,opacity=1 ]  {$x$};
+
+
+\end{tikzpicture}
+
 \section{Left Inverse, Right Inverse, Inverse}
 
 \begin{definition}[$A$的左逆]
@@ -88,7 +161,7 @@ $$
 \subsection{线性方程组求解}
 
 \begin{theorem}
-    如果矩阵$A$可左逆，假设 $ X $ 是矩阵$A$的左逆，则\textbf{至多}一个解, 如有解则 $ x=X b $ 。
+    如果矩阵$A$可左逆，假设 $ X $ 是矩阵$A$的左逆，则\textbf{至多}一个解, 如有解则 $ x=X b $ . 
 \end{theorem}
 
 \begin{proof}
@@ -96,11 +169,11 @@ $$
 A x=b \Rightarrow  x=X A x=X b
 $$
 
-    列满秩时(下面证明), 列向量线性无关, 所以其零空间中只有零解，方程 $ {Ax}={b} $ 可能有一个唯一解 ($b$在$A$的列空间中, 此特解就是全部解, 因为通常的特解可以通过零空间中的向量扩展出一组解集，而此时零空间只有$0$向量）, 也可能无解 ($b$不在$A$的列空间中）。
+    列满秩时(下面证明), 列向量线性无关, 所以其零空间中只有零解，方程 $ {Ax}={b} $ 可能有一个唯一解 ($b$在$A$的列空间中, 此特解就是全部解, 因为通常的特解可以通过零空间中的向量扩展出一组解集，而此时零空间只有$0$向量）, 也可能无解 ($b$不在$A$的列空间中）. 
 \end{proof}
 
 \begin{theorem}
-    如果矩阵$A$可右逆，假设 $ Y $ 是矩阵$A$的右逆，则\textbf{至少}一个解, 即 $ x=\mathrm{Y} b $ 。
+    如果矩阵$A$可右逆，假设 $ Y $ 是矩阵$A$的右逆，则\textbf{至少}一个解, 即 $ x=\mathrm{Y} b $ . 
 \end{theorem}
 
 \begin{proof}
@@ -111,7 +184,7 @@ x=Y b  \Rightarrow  A x=A Y b=b
 $$
 
 
-右逆就是研究 $m \times n $ 矩阵$A$行满秩的情况, 此时 $ \mathrm{n}>\mathrm{m}=\operatorname{rank}(\mathrm{A}) $ 。对称的, 其左零空间中仅有零向量，即没有行向量的线性组合能够得到零向量。（$N(A ^T ) = \{0\}$）
+右逆就是研究 $m \times n $ 矩阵$A$行满秩的情况, 此时 $ \mathrm{n}>\mathrm{m}=\operatorname{rank}(\mathrm{A}) $ . 对称的, 其左零空间中仅有零向量，即没有行向量的线性组合能够得到零向量. （$N(A ^T ) = \{0\}$）
 \end{proof}
 
 \begin{theorem}
@@ -119,8 +192,13 @@ $$
 $$
 A x=b  \Rightarrow  x=A^{-1} b
 $$
-唯一解。
+唯一解. 
 \end{theorem}
+
+\begin{corollary}
+    
+\end{corollary}
+
 
 \section{非奇异矩阵}
 
@@ -135,7 +213,7 @@ $$
         \item $A$可逆
     \end{enumerate}
 
-    此时矩阵$A$为非奇异矩阵，由条件1与3，可得$A$为可逆矩阵。
+    此时矩阵$A$为非奇异矩阵，由条件1与3，可得$A$为可逆矩阵. 
 \end{theorem}
 
 \begin{proof}
@@ -202,14 +280,14 @@ $$
     A x=x_{1} a_{1}+x_{2} a_{2}+\cdots+x_{n} a_{n}=0
     $$
 
-    则当该等式 $ A x=0 $ 成立时，其解 $ x=0 $, 则A的列向量线性无关。 
+    则当该等式 $ A x=0 $ 成立时，其解 $ x=0 $, 则A的列向量线性无关.  
     
     \begin{corollary}
-        如果 $ A \in \mathbb{R}^{m \times n} $有左逆，则有 $ m \geq n = r $。
+        如果 $ A \in \mathbb{R}^{m \times n} $有左逆，则有 $ m \geq n = r $. 
 
     即$A$是高或方的矩阵, 如 $ A=\left[\begin{array}{ll}1 & 0 \\ 0 & 1 \\ 0 & 0\end{array}\right] $. 
     
-    此时$A$的行向量可能线性相关，而$A$的列向量线性无关。$N(A) = \{0\}$.
+    此时$A$的行向量可能线性相关，而$A$的列向量线性无关. $N(A) = \{0\}$.
     \end{corollary}
     
 
@@ -223,7 +301,7 @@ $$
 
     $$A x-A y=A(x-y)=0 \Rightarrow x=y$$
 
-    当 $ b \in \mathbb{R}^{m}, b \notin\left\{y \mid y=A x, x \in \mathbb{R}^{n}\right\} $ 时（即$b$不在$A$的列空间，$ m \geq n  $时），线性方程组无解。 $ A x=b $ 至多一个解，如有解则 $ x=X b $ 。
+    当 $ b \in \mathbb{R}^{m}, b \notin\left\{y \mid y=A x, x \in \mathbb{R}^{n}\right\} $ 时（即$b$不在$A$的列空间，$ m \geq n  $时），线性方程组无解.  $ A x=b $ 至多一个解，如有解则 $ x=X b $ . 
 \end{proof}
 
 \begin{theorem}
@@ -239,7 +317,7 @@ $$
 
 现在，由于 $A = CR$, $A$ 的每个行向量是 $R$ 的行向量的线性组合，这意味着 $A$ 的行向量空间被包含于 $R$ 的行向量空间之中. 因此 $A 的行秩 \leq R的行秩$. 但$R$仅有$r$行, 所以$R的行秩 \leq r = A的列秩$. 这就证明了$A的行秩 \leq A的列秩$.
 
-把上述证明过程中的“行”与“列”交换，利用对偶性质同样可证$A的列秩 \leq A的行秩$。更简单的方法是考虑A的转置矩阵 $A^\mathrm{T}$，则$A的列秩 =  A^\mathrm{T}的行秩 \leq  A^\mathrm{T}的列秩 = A的行秩$. 这证明了$A$的列秩等于$A$的行秩. 证毕.
+把上述证明过程中的“行”与“列”交换，利用对偶性质同样可证$A的列秩 \leq A的行秩$. 更简单的方法是考虑A的转置矩阵 $A^\mathrm{T}$，则$A的列秩 =  A^\mathrm{T}的行秩 \leq  A^\mathrm{T}的列秩 = A的行秩$. 这证明了$A$的列秩等于$A$的行秩. 证毕.
 \end{proof}
 
 \begin{theorem}
@@ -249,27 +327,27 @@ $$
 \begin{proof}
     $$ \mathrm{X}^{T} A^{T}=(A X)^{T}=I $$
     
-    则有 $ \mathrm{X}^{T} $ 是 $ A^{T} $ 的左逆, $ A^{T} $ 的列向量线性无关。 
+    则有 $ \mathrm{X}^{T} $ 是 $ A^{T} $ 的左逆, $ A^{T} $ 的列向量线性无关.  
 
     即 $ A^{T} \in \mathbb{R}^{n \times m} $.
     
     \begin{corollary}
-     如果 $ A \in \mathbb{R}^{m \times n} $有左逆，则有 $r= m \leq n  $。
+     如果 $ A \in \mathbb{R}^{m \times n} $有左逆，则有 $r= m \leq n  $. 
 
     即$A$是宽或方的矩阵. 
 
-    此时$A$的列向量可能线性相关，而$A$的行向量线性无关。
+    此时$A$的列向量可能线性相关，而$A$的行向量线性无关. 
     
     $N(A^T) = \{0\}, \operatorname{dim} N(A) = n-r, r=m$. ($Ax=b$有无穷解) 
     \end{corollary}
     
-    根据定理“矩阵的行秩等于列秩”，$ A^{T} $ 的列向量线性无关，则矩阵 $ A $ 有$m$个线性无关列向量（行向量），即通过 Gram-Schmidt 正交化可得$m$个正交基。
+    根据定理“矩阵的行秩等于列秩”，$ A^{T} $ 的列向量线性无关，则矩阵 $ A $ 有$m$个线性无关列向量（行向量），即通过 Gram-Schmidt 正交化可得$m$个正交基. 
 
-    $ \forall b \in \mathbb{R}^{m} $, 有 $ b \in\left\{y \mid y=A x, x \in \mathbb{R}^{n}\right\} (m \leq n ) $, 方程 $ A x=b $ 有解，其解为 $ x=X b $ 。
+    $ \forall b \in \mathbb{R}^{m} $, 有 $ b \in\left\{y \mid y=A x, x \in \mathbb{R}^{n}\right\} (m \leq n ) $, 方程 $ A x=b $ 有解，其解为 $ x=X b $ . 
 \end{proof}
 
 \begin{theorem}
-    $(b)$: 若方阵A列向量线性无关，则A可右逆。
+    $(b)$: 若方阵A列向量线性无关，则A可右逆. 
 \end{theorem}
 
 \begin{proof}
@@ -342,11 +420,11 @@ Definition: refer to \ref{Def:GRAM}.
 \begin{proof}
     " $ \Rightarrow $ ": 
     
-    假设矩阵 $ A $ 列向量线性无关, $ A^{T} A $ 奇异。 则存在 $ A^{T} A x=0, x \neq 0 $, 可得 $ x^{T} A^{T} A x=\|A x\|_{2}^{2}=0 $, 即 $ A x=0 $ 与列向量线性无关劣盾.
+    假设矩阵 $ A $ 列向量线性无关, $ A^{T} A $ 奇异.  则存在 $ A^{T} A x=0, x \neq 0 $, 可得 $ x^{T} A^{T} A x=\|A x\|_{2}^{2}=0 $, 即 $ A x=0 $ 与列向量线性无关劣盾.
 
     " $ \Leftarrow $ ":
     
-    假设 $ A^{T} A $ 非奇异, 矩阵 $ A $ 列向量线性相关。 则有 $ A x=0, x \neq 0 $, 可得 $ A^{T} A x=0 $, 即 $ A^{T} A $ 是奇异矩阵。
+    假设 $ A^{T} A $ 非奇异, 矩阵 $ A $ 列向量线性相关.  则有 $ A x=0, x \neq 0 $, 可得 $ A^{T} A x=0 $, 即 $ A^{T} A $ 是奇异矩阵. 
 \end{proof}
 
 \section{伪逆}

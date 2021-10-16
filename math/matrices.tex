@@ -19,16 +19,17 @@
 \end{notation}
 
 \begin{definition}[标量]
-    不区分一个$1\times 1$矩阵和一个标量
+    不区分一个$1\times 1$矩阵和一个标量. 
 \end{definition}
 
 \begin{definition}[向量]
-    不区分一个$n\times 1$矩阵和一个向量
+    不区分一个$n\times 1$矩阵和一个向量. 
 \end{definition}
 
 \begin{definition}[行向量, 列向量]
-    一个$1\times n$矩阵被称为一个行向量
-    一个$n\times 1$矩阵杯称为一个列向量
+    一个$1\times n$矩阵被称为一个行向量. 
+    
+    一个$n\times 1$矩阵杯称为一个列向量. 
 \end{definition}
 
 \begin{definition}[高形, 宽形和方形矩阵]
@@ -173,6 +174,33 @@ x_{n}
 \end{array}\right]=x_{1} a_{1}+\cdots+x_{n} a_{n}
 $$
 \end{corollary}
+
+可以引出$A$的Row Picture和Column Picture的概念。
+
+\begin{example}
+    $$\left\{\begin{matrix} 
+        x - 2y=1 \\  
+        3x+2y=11 
+      \end{matrix}\right. $$
+
+    \begin{center}
+        \begin{figure}[htbp]
+        \begin{subfigure}[b]{0.8\textwidth}
+            \centering
+            \caption{Row Picture}
+        \includegraphics[width=\textwidth]{math-row-picture.png}
+        \end{subfigure}
+    
+       
+        \begin{subfigure}[b]{0.8\textwidth}
+            \centering
+            \caption{Column Picture}
+        \includegraphics[width=\textwidth]{math-column-picture.png}
+        \end{subfigure}
+        \end{figure}
+    \end{center}
+    
+\end{example}
 
 \begin{definition}[矩阵-向量乘积函数 $f(x)=A x$]
     给定矩阵 $ A \in \mathbb{R}^{m \times n} $ , 定义函数 $ f: R^{n} \rightarrow R^{m}, f(x)=A x $, 其中 $ A=\left[f\left(e_{1}\right) \ldots f\left(e_{n}\right)\right] $.
