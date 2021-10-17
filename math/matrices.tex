@@ -216,6 +216,63 @@ $$
     因此 $ f(x)=A x $, 其中 $ A=\left[f\left(e_{1}\right) \ldots f\left(e_{n}\right)\right] $
 \end{proof}
 
+\subsection{矩阵乘法的算法复杂度}
+
+\subsubsection{一般矩阵的乘法}
+
+$ C=A B $ with $ A $ of size $ m \times p $ and $ B $ of size $ p \times n $
+
+The product matrix $ C $ has size $ m \times n $, so there are $ m n $ elements to compute. 
+
+The $ i, j $ element of $ C $ is the inner product of row $ i $ of $ A $ with column $ j $ of $ B . $ This is an inner product of vectors of length $ p $ and requires $ 2 p-1 $ flops. Therefore the total is $ m n(2 p-1) $ flops, which we approximate as $ 2 m n p $ flops. $O(mnp)$
+
+\subsubsection{稀疏矩阵的乘法}
+
+Suppose that $ A $ is $ m \times p $ and sparse, and $ B $ is $ p \times n $, but not necessarily sparse. 
+
+The inner product of the $ i $ th row $ a_{i}^{T} $ of $ A $ with the $ j $ th column of $ B $ requires no more than $ 2 \operatorname{nnz}\left(a_{i}^{T}\right) $ flops. 
+
+Summing over $ i=1, \ldots, m $ and $ j=1, \ldots, n $ we get $ 2 \mathbf{n n z}(A) n $ flops. 
+
+If $ B $ is sparse, the total number of flops is no more that $ 2 \mathbf{n n z}(B) m $ flops. 
+
+\begin{remark}
+    Note that these formulas agree with the one given above, $ 2 m n p $, when the sparse matrices have all entries nonzero.
+\end{remark}
+
+\subsubsection{三重矩阵相乘}
+
+$$ D=A B C $$
+
+with $ A $ of size $ m \times n, B $ of size $ n \times p $, and $ C $ of size $ p \times q $. 
+
+The matrix $ D $ can be computed in two ways, as $ (A B) C $ and as $ A(B C) $. 
+
+In the first method we start with $ A B(2 m n p $ flops) and then form $ D=(A B) C(2 m p q $ flops $ ) $, for a total of $ 2 m p(n+q) $ flops. 
+
+In the second method we compute the product $ B C $ (2npq flops) and then form $ D=A(B C)(2 m n q $ flops), for a total of $ 2 n q(m+p) $ flops.
+
+\begin{remark}
+    You might guess that the total number of flops required is the same with the two methods, but it turns out it is not. The first method is less expensive when $ 2 m p(n+q)<2 n q(m+p) $, i.e., when
+$$
+\frac{1}{n}+\frac{1}{q}<\frac{1}{m}+\frac{1}{p}
+$$
+\end{remark}
+
+\begin{example}
+    As a more specific example, consider the product 
+    
+    $$ a b^{T} c $$
+    
+    where $ a, b, c $ are $ n $ vectors. 
+    
+    If we first evaluate the outer product $ a b^{T} $, the cost is $ n^{2} $ flops, and we need to store $ n^{2} $ values. We then multiply the vector $ c $ by this $ n \times n $ matrix, which costs $ 2 n^{2} $ flops. The total cost is $ 3 n^{2} $ flops.
+
+    If we first evaluate the inner product $b^Tc$, the cost is $2n$ flops, and we only need to store one number (the result). Multiplying the vector a by this number costs $n$ flops, so the total cost is $3n$ flops. For $n$ large, there is a dramatic difference between $3n$ and $3n^2$ flops.
+
+    (The storage requirements are also dramatically different for the two methods of evaluating $ab^Tc$: $1$ number versus $n^2$ numbers.)
+\end{example}
+
 \subsection{矩阵向量乘积复杂度}
 
 矩阵 $ A \in \mathbb{R}^{m \times n} $ 和向量 $ x \in \mathbb{R}^{n} $ 的乘积 $ \mathrm{y}=\mathrm{A} x $, 需要 $ (2 \mathrm{n}-1) \mathrm{m} $ flops;
@@ -868,9 +925,9 @@ $$
 
 $$ \frac{\|\Delta x\|_{2}}{\|x\|_{2}} \leq\|A\|_{2}\left\|A^{-1}\right\|_{2} \frac{\|\Delta b\|_{2}}{\|b\|_{2}} $$
 
-$ \|A\|_{2}\left\|A^{-1}\right\|_{2} $ 小，当 $ \|\Delta b\|_{2} /\|b\|_{2} $ 相对变化很小时， $ \|\Delta x\|_{2} /\|x\|_{2} $ 也 变化很小;
+$ \|A\|_{2}\left\|A^{-1}\right\|_{2} $ 小，当 $ \frac{\|\Delta b\|_{2}}{\|b\|_{2}}  $ 相对变化很小时， $ \frac{\|\Delta x\|_{2}}{\|x\|_{2}}  $ 也 变化很小;
 
-$ \|A\|_{2}\left\|A^{-1}\right\|_{2} $ 大, $ \|\Delta x\|_{2} /\|x\|_{2} $ 可远远大于 $ \|\Delta b\|_{2} /\|b\|_{2} $.
+$ \|A\|_{2}\left\|A^{-1}\right\|_{2} $ 大, $ \frac{\|\Delta x\|_{2}}{\|x\|_{2}}  $ 可远远大于 $ \frac{\|\Delta b\|_{2}}{\|b\|_{2}}  $.
 
 
 \begin{definition}[非奇异矩阵 $ A $ 的条件数(condition number)]

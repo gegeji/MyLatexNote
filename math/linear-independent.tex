@@ -169,7 +169,7 @@ $$
 \end{proof}
 
 \begin{algorithm}
-    \caption{Gram-Schmidt Algorithm (Another Algorithm)}
+    \caption{Gram-Schmidt Algorithm for Three Vectors}
     \KwIn{Three independent vectors $ \boldsymbol{a}, \boldsymbol{b}, \boldsymbol{c} $}
     \KwOut{Three orthonormal vectors $ \boldsymbol{q}_{1}=\boldsymbol{A} /\|\boldsymbol{A}\|, \boldsymbol{q}_{2}=\boldsymbol{B} /\|\boldsymbol{B}\|, \boldsymbol{q}_{3}=\boldsymbol{C} /\|\boldsymbol{C}\| $.}
     Choose $ \boldsymbol{A}=\boldsymbol{a} $\;
@@ -221,7 +221,7 @@ $$
 $$ q_{3}=
 \frac{a_{3}-\left(q_{1}^{T} a_{3}\right) q_{1}-\left(q_{2}^{T} a_{3}\right) q_{2}}{\left\|\tilde{q}_{3}\right\|_2 }  $$
 
-通过对 $ i $ 的归纳证明,可得$ q_{i} $ 是 $ a_{1}, \ldots, a_{i} $ 的一个线性组合.
+通过对 $ i $ 的归纳证明,可得$ q_{i} $ 是 $ a_{1}, \ldots, a_{i} $ 的线性组合.
 \end{proof}
 
 
