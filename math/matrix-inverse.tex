@@ -208,6 +208,11 @@ $$
     \end{tabular}
     \end{table}
 
+    The set
+    of linear equations is called \term{over-determined} if $ m>n $,  \term{under-determined} if $m \leq n$, and \term{square} if $m = n$.
+
+    A set of equations with zero right-hand side, $ A x=0 $, is called a \term{homogeneous} set of equations. Any homogeneous set of equations has $ x=0 $ as a solution.
+
 \section{Invertible Matrices}
 
 \begin{theorem}
@@ -415,12 +420,15 @@ $$
     $$(A B) \underbrace{B^{-1} A^{-1}} _{\text{the inverse of AB}}=I$$
 \end{proof}
 
-\section{Gram Matrix}
+\section{Gram Matrix非奇异的性质}
 
-Definition: refer to \ref{Def:GRAM}.
+\label{Sect:GramNonSingular}
+
+
+Definition: refer to \ref{Def:Gram}.
 
 \begin{corollary}
-    矩阵 $ A \in \mathbb{R}^{m \times n}, \quad \mathrm{G}=A^{T} A $
+    矩阵 $ A \in \mathbb{R}^{m \times n},  \mathrm{G}=A^{T} A $
 
 矩阵 $ A $ 列向量线性无关 $ \Leftrightarrow $ Gram矩阵G非奇异.
 \end{corollary}

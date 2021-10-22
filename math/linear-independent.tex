@@ -68,7 +68,7 @@ $$
 由于向量 $ a_{1}, \ldots, a_{k} $ 线性无关, 有 $ \beta_{1}-\gamma_{1}=\beta_{k}-\gamma_{k}=0 $ . 
 \end{proof}
 
-\section{basis}
+\section{Basis}
 
 \begin{definition}[基 (basis)]
     n个线性独立的n维向量 $ a_{1}, \ldots, a_{n} $ 的集合
@@ -95,10 +95,12 @@ $$
 \section{标准正交向量}
 
 \begin{definition}[Orthogonal Vectors]
+    \label{Def:OrthogonalVectors}
     在n维向量集 $ a_{1}, \ldots, a_{k} $ 中,  如果对于 $ i \neq j $, 都有 $ a_{i} \perp a_{j} $ ,  则称它们相互正交(orthogonal). 
 \end{definition}
 
 \begin{definition}[Orthonormal Vectors]
+    \label{Def:OrthonormalVectors}
     如果n维向量集 $ a_{1}, \ldots, a_{k} $ 相互正交, 且每个向量的模长都为单位长度 1 ,  即对于 $ i=1, \ldots k $, 有 $ \left\|a_{i}\right\|_{2}^{2}=1 $, 则称它们是标准正交 (orthonormal)的. 
 
     $$ a_{i}^{T} a_{j}=\left\{\begin{array}{ll}1 & i=j \\ 0 & i \neq j\end{array}\right. $$
@@ -109,8 +111,58 @@ $$
 \end{corollary}
 
 \begin{corollary}
-    根据线性无关的性质, 必有向量集向量个数 $ k \leq n $
+    根据线性无关的性质, 必有向量集向量个数 $ k \leq n $.
 \end{corollary}
+
+\begin{proof}
+    The proof is by induction on the dimension $n$.
+
+    First consider a linearly independent collection $ a_{1}, \ldots, a_{k} $ of 1-vectors. We must have $ a_{1} \neq 0 $. This means that every element $ a_{i} $ of the collection can be expressed as a multiple $ a_{i}=\left(a_{i} / a_{1}\right) a_{1} $ of the first element $ a_{1} $. This contradicts linear independence unless $ k=1 $.
+
+    Next suppose $ n \geq 2 $ and the independence-dimension inequality holds for dimension $ n-1 $. 
+    
+    Let $ a_{1}, \ldots, a_{k} $ be a linearly independent list of $ n $-vectors. We need to show that $ k \leq n $. We partition the vectors as
+
+    $$
+    a_{i}=\left[\begin{array}{r}
+    b_{i} \\
+    \alpha_{i}
+    \end{array}\right], \quad i=1, \ldots, k
+    $$
+    where $ b_{i} $ is an $ (n-1) $-vector and $ \alpha_{i} $ is a scalar.
+
+    First suppose that $ \alpha_{1}=\cdots=\alpha_{k}=0 $. Then the vectors $ b_{1}, \ldots, b_{k} $ are linearly independent: $ \sum_{i=1}^{k} \beta_{i} b_{i}=0 $ holds if and only if $ \sum_{i=1}^{k} \beta_{i} a_{i}=0 $, which is only possible for $ \beta_{1}=\cdots=\beta_{k}=0 $ because the vectors $ a_{i} $ are linearly independent. The vectors $ b_{1}, \ldots, b_{k} $ therefore form a linearly independent collection of $ (n-1) $ -vectors. By the induction hypothesis we have $ k \leq n-1 $, so certainly $ k \leq n $.
+
+    Next suppose that the scalars $ \alpha_{i} $ are not all zero. Assume $ \alpha_{j} \neq 0 . $ We define a collection of $ k-1 $ vectors $ c_{i} $ of length $ n-1 $ as follows:
+
+    $$c_{i}=\left\{\begin{matrix} 
+        b_{i}-\frac{\alpha_{i}}{\alpha_{j}} b_{j}, \quad i=1, \ldots, j-1  \\  
+       b_{i+1}-\frac{\alpha_{i+1}}{\alpha_{j}} b_{j}, \quad i=j, \ldots, k-1  
+     \end{matrix}\right. $$
+
+     These $ k-1 $ vectors are linearly independent: If $ \sum_{i=1}^{k-1} \beta_{i} c_{i}=0 $ then
+
+    \begin{equation}
+        \label{eqn:k-leq-n}
+        \sum_{i=1}^{j-1} \beta_{i}\left[\begin{array}{c}
+        b_{i} \\
+        \alpha_{i}
+        \end{array}\right]+\gamma\left[\begin{array}{c}
+        b_{j} \\
+        \alpha_{j}
+        \end{array}\right]+\sum_{i=j+1}^{k} \beta_{i-1}\left[\begin{array}{c}
+        b_{i} \\
+        \alpha_{i}
+        \end{array}\right]=0
+    \end{equation}
+
+    with
+    $$
+    \gamma=-\frac{1}{\alpha_{j}}\left(\sum_{i=1}^{j-1} \beta_{i} \alpha_{i}+\sum_{i=j+1}^{k} \beta_{i-1} \alpha_{i}\right)
+    $$
+
+    Since the vectors $ a_{i}=\left(b_{i}, \alpha_{i}\right) $ are linearly independent, the \cref{eqn:k-leq-n} only holds when all the coefficients $ \beta_{i} $ and $ \gamma $ are all zero. This in turns implies that the vectors $ c_{1}, \ldots, c_{k-1} $ are linearly independent. By the induction hypothesis $ k-1 \leq n-1 $ so we have established that $ k \leq n $
+\end{proof}
 
 \begin{definition}[$n$维向量的一个标准正交基]
     当 $ k=n $ 时,  $ a_{1}, \ldots, a_{n} $ 是 $ n $ 维向量的一个标准正交基. 

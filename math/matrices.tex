@@ -46,7 +46,7 @@
 
     $$ A=\left[\begin{array}{ll}B & C \\ D & E\end{array}\right] $$
 
-    其中$B,C,D,E$都是矩阵(被称为\textit{矩阵$A$的子矩阵})
+    其中$B,C,D,E$都是矩阵(被称为\textit{矩阵$A$的子矩阵}).
 \end{definition}
 
 分块矩阵位于同一行的子矩阵行维度必须相等,位于同一列的子矩阵列维度必须相等.
@@ -216,6 +216,25 @@ $$
     因此 $ f(x)=A x $, 其中 $ A=\left[f\left(e_{1}\right) \ldots f\left(e_{n}\right)\right] $
 \end{proof}
 
+\subsection{Matrix Power}
+
+\begin{definition}[Matrix Power]
+    It makes sense to multiply a square matrix $ A $ by itself to form $ A A $. We refer to this matrix as $ A^{2} $. Similarly, if $ k $ is a positive integer, then $ k $ copies of $ A $ multiplied together is denoted $ A^{k} $. If $ k $ and $ l $ are positive integers, and $ A $ is square, then $ A^{k} A^{l}=A^{k+l} $ and $ \left(A^{k}\right)^{l}=A^{k l} $. 
+    
+    $$ \left(A^{\ell+1}\right)_{i j}=\sum_{k=1}^{n} A_{i k}\left(A^{\ell}\right)_{k j} $$
+
+    By convention we take $ A^{0}=I $, which makes the
+    formulas above hold for all nonnegative integer values of $k$ and $l$.
+\end{definition}
+
+ \begin{example}[Paths in a directed graph]
+        $$ A_{i j}=\left\{\begin{array}{ll}1 & \text { there is a edge from vertex } j \text { to vertex } i \\ 0 & \text { otherwise }\end{array}\right. $$
+\end{example}
+
+\begin{example}[Linear dynamical system]
+    $$ x_{t+\ell}=A^{\ell} x_{t} $$
+\end{example}
+
 \subsection{矩阵乘法的算法复杂度}
 
 \subsubsection{一般矩阵的乘法}
@@ -330,6 +349,8 @@ $$
     对角线上元素不全为0, 其余元素全为0.
 \end{definition}
 
+对角矩阵用于膨胀 (dilation).
+
 \begin{definition}[下三角矩阵]
     方形矩阵且当 $ i<j $ 时 $ A_{i j}=0 $.
 \end{definition}
@@ -337,6 +358,8 @@ $$
 \begin{definition}[上三角矩阵]
     方形矩阵且当 $ i>j $ 时 $ A_{i j}=0 $
 \end{definition}
+
+通过Gram-Schmidt正交化算法可以化为上三角或者下三角矩阵。
 
 \subsection{$f(x)=A x$中的$A$}
 
@@ -381,6 +404,23 @@ $$
 
     $ \mathrm{A} x $ 将向量 $ x $ 进行旋转, 角度为 $ \theta $.
 \end{example}
+
+\begin{example}[Reflection Matrices]
+    Suppose that $y$ is the vector obtained by reflecting $x$ through the line
+    that passes through the origin, inclined $\theta$ radians with respect to horizontal. Then
+
+    $$ y=\left[\begin{array}{rr}\cos (2 \theta) & \sin (2 \theta) \\ \sin (2 \theta) & -\cos (2 \theta)\end{array}\right] x $$
+\end{example}
+
+\subsection{Selectors}
+
+\begin{definition}[Selector matrices]
+    
+\end{definition}
+
+\begin{definition}[Downsampling]
+    
+\end{definition}
 
 \subsection{图论：节点弧关联矩阵}
 % todo: image
@@ -687,6 +727,8 @@ A_{i i}=e_{i}^{T} A e_{i} \geq 0
 $$
 \end{theorem}
 
+\section{Gram 矩阵}
+
 \begin{definition}[实矩阵$A$的Gram矩阵]
     \label{Def:Gram}
 
@@ -761,7 +803,7 @@ $$
 
     即$$ \|A\|_{v}=\max _{x \neq 0}\left\{\frac{\|A x\|_{v}}{\|x\|_{v}}\right\} $$
 
-    $ \|A\|_{v} $ 称为从属于给定向量范数 $ \|x\|_{v} $ 的矩阵范数, 简称为从属范数或算子范数.
+    $ \|A\|_{v} $ 称为从属于给定向量范数 $ \|x\|_{v} $ 的矩阵范数, 简称为\term{从属范数}或\term{算子范数}.
 \end{definition}
 
 \begin{proof}

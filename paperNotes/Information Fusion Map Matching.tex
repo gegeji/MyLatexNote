@@ -1,0 +1,160 @@
+\chapter{Map-Matching with Information Fusion}
+
+Source: \cite{Hu2017a}
+
+\section{Motivation}
+
+地图匹配的主要问题：
+
+\begin{itemize}
+    \item noisy/lost data
+    \item low/unstable sampling rate
+\end{itemize}
+
+原始的GPS信号有两种类型的误差：
+
+\begin{itemize}
+    \item 测量误差（近似二维高斯分布）
+    \item 采样误差 （椭圆）；传统方法只通过道路拓扑关系寻找一条轨迹，但是无法处理采样误差
+\end{itemize}
+
+已有方法需要的假设较多，现实情况很复杂：
+
+\begin{itemize}
+    \item low/unstable sampling rate (节省能源)
+    \item 由于传感器等原因造成的数据字段丢失
+    \item 真实的传感器不止会报告GPS位置还会报告速度
+    \item 已有方法只考虑静态的经纬度位置，忽略了移动速度
+\end{itemize}
+
+\section{模型的特点}
+
+信息融合
+
+考虑全局性影响： 一辆车的移动会受附近车辆的影响
+
+考虑了移动物体的状态
+
+\section{模型设计}
+
+基于真实数据建立一个描述移动物体的模型
+
+\begin{definition}[Sampling Tuple]
+    $\langle longitude, latitude, timestamp, speed,direction \rangle$
+\end{definition}
+
+\begin{definition}
+    $ T $ is a sequence of sampling tuples with a time interval between two consecutive sampling tuples not exceeding a certain threshold $ \Delta T,  $ i.e., $ T: S_{1} \longrightarrow S_{2} \longrightarrow \cdots S_{i} \cdots \longrightarrow S_{n} \quad $ where $ 0<S_{i+1} . t-S_{i} . t<\Delta T $ and $ 1 \leq i<n . $ 
+\end{definition}
+
+\begin{definition}[Road Segment]
+    有向边
+
+    two terminal points $r.s, r.e$
+
+    length $r.length$
+
+    speed constraint $r.speed$
+\end{definition}
+
+\begin{definition}[Road Network]
+    $G(V,E)$
+\end{definition}
+
+\begin{definition}[route]
+    A route $RO$ is a set of connected road segments on road network $ G $, i.e., $ R O: r_{1} \longrightarrow r_{2} \longrightarrow \cdots \longrightarrow $ $ \left.r_{k} \cdots r_{n}\right) $, where $ r_{k+1} . s=r_{k} \cdot e(1 \leq k<n) $. Obviously, the start point and end point of a route can be represented as RO.s $ =r_{1} . $ sand RO.e $ =r_{n} . e . $
+\end{definition}
+
+\begin{definition}[Road Segment Projection]
+    $$ C_{i}=\arg \min _{\forall C_{i} \in r_{i}} \operatorname{dist}\left(r_{i}, S\right) $$
+\end{definition}
+
+\begin{definition}[Candidate Points]
+    a set of points that a sampling tuple projected to a set of road segments within a threshold
+\end{definition}
+
+\section{算法}
+
+\subsection{准备候选路段}
+
+在给定半径$R$，投影得到candidate road segments (CRS) and candidate points (CP) for each $S_i$
+
+\begin{remark}
+    如何投影？如果投影端点在$R$以外？
+\end{remark}
+
+\subsection{历史速度挖掘}
+
+按照日为周期求加权平均
+
+$$ V_{(T)}=\frac{\sum_{i=1}^{12} v_{i} \times\left(1-\frac{\left|T-t_{i}\right|}{24}\right)}{12} $$
+
+\subsection{Surrounding Speed Estimation}
+
+考虑轨迹当时的道路状况，认为马路对向车流对于现在车速度没有影响。
+
+计算同一时间段出现在同一路段同向车流的平均速度。
+
+\begin{remark}
+    假如数据缺失？
+\end{remark}
+
+\subsection{空间分析}
+
+\subsubsection{观察概率}
+
+定义\term{观察概率}
+
+$$ N\left(x_{i}^{j}\right)=\frac{1}{\delta \sqrt{2 \pi}} e^{-\frac{\left(x_{i}^{j}-\mu\right)^{2}}{2 \delta^{2}}} $$
+
+where $ x_{i}^{j}=\operatorname{dist}\left(C_{i}^{j}, S_{i}\right) $ is the distance between $ C_{i}^{j} $ （候选点） and $ S_{i} $ （采样位置点）.
+
+\subsubsection{转移概率}
+
+假设以最短路径运行。
+
+$$ W\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right)=\frac{d_{(i-1) \rightarrow i}}{w_{(i-1, j) \rightarrow(i, k)}} $$
+
+where $ d_{(i-1) \rightarrow i}=\operatorname{dist}\left(S_{i}, S_{i-1}\right) $ is the Euclidean distance between $ S_{i} $ and $ S_{i-1} $ （采样点的欧几里得距离）, and $ w_{(i-1, j) \longrightarrow(i, k)} $ is the length of the shortest path from $ C_{i-1}^{j} $ to $ C_{i}^{k} $（候选点的最短路径距离）.
+
+\subsubsection{选择概率}
+
+考虑轨迹方向和候选路段方向的相似性
+
+$$ D\left(C_{i}^{j}\right)=1-\frac{\arccos \frac{\overrightarrow{D_{c}} \cdot \overrightarrow{D_{s}}}{\left|\vec{D}_{c}\right|\left|\overrightarrow{{D}_{s}}\right|}}{2 \pi} $$
+
+where $ \overrightarrow{D_{S}} $ is the moving object's direction vector, and $ \overrightarrow{D_{C}} $ is the candidate road segment's direction vector.
+
+可能性结果函数：
+
+$$ S\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right)=N\left(x_{i}^{j}\right) \cdot W\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right) \cdot D\left(C_{i}^{j}\right) $$
+
+\section{时间分析}
+
+速度限制很难反映实际状况。道路匹配将匹配一个速度状况与轨迹相似的路段。
+
+考虑建立一个参考速度
+
+$$ V_{r e f}=\alpha \cdot V_{(T)}+\beta \cdot V_{(v)} $$
+
+$ \alpha $ and $ \beta $ are two parameters which are the weighting factors. $ V_{(T)} $ is the history speed, $ V_{(v)} $ is the surrounding speed, and $ V_{\text {ref }} $ is the result. $\alpha + \beta = 1$.
+
+时间上的候选路段可能性(余弦相似性)
+
+$$ T\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right)=\frac{\sum_{i=1}^{n}\left(r . v_{r e f}^{i} \times \bar{v}_{(i-1, j) \rightarrow(i, k)}\right)}{\sqrt{\sum_{i=1}^{n}\left(r \cdot v_{r e f}^{i}\right)^{2}} \times \sqrt{\sum_{i=1}^{n}\left(\bar{v}_{(i-1, j) \rightarrow(i, k)}\right)^{2}}} $$
+
+\section{结果匹配}
+
+对于轨迹 $ S_{1} \longrightarrow S_{2} \longrightarrow \cdots \longrightarrow S_{n} $，构造一个新图 $ G_{c}\left(V_{c}, E_{c}\right) $。$V_c$是候选点， $E_c$是权值边。
+
+定义候选点$C_{i-1}^{j}$到$C_{i}^{k}$的权值是
+
+$$ I F\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right)=S\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right) \times T\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right) $$
+
+轨迹$T_c$的分数是
+
+$$ I F\left(T_{c}\right)=\sum_{i=2}^{m} I F\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right) $$
+
+最终匹配的路段是
+
+$$RO = \arg \max IF(T_c)$$

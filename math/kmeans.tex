@@ -1,5 +1,7 @@
-\chapter{以$k$-Means算法为例的优化问题}
+\chapter{优化问题初步}
     
+\section{优化问题引入}
+
 \begin{problem}
     \label{Problem:ClusteringCenter}
     假设$N$个样本向量$ x_{1}, \ldots, x_{N} \in \mathbb{R}^{n} $, 需要找到中心向量$z$满足
@@ -192,7 +194,7 @@ $$ \nabla f(z)=\sum_{i=1}^{N}\left\{-2 x_{i}+2 z\right\}=0 $$ (求导 \ref{Defin
 
 $$ z=\frac{1}{N} \sum_{i=1}^{N} x_{i} $$
 
-\section{标量优化问题的例子：投影问题}
+\section{投影问题: 标量优化问题}
 
 \begin{figure}[htbp]
     \begin{center}
@@ -237,12 +239,73 @@ $$ z=\frac{1}{N} \sum_{i=1}^{N} x_{i} $$
 
     $$ \hat{t}=\min _{t}\|t a-b\|_{2}^{2} $$
 
+    定义
     $$ f(t)=\|t a-b\|_{2}^{2}=\langle t a-b, t a-b\rangle=t^{2} a^{T} a-2 t a^{T} b+b^{T} b $$
+
+    可以验证$f(t)$满足凸函数的定义。
 
     $$ \nabla f(t)=2 t a^{T} a-2 a^{T} b=0 $$
 
     $$ \hat{t}=\frac{a^{T} b}{a^{T} a}=\frac{a^{T} b}{\|a\|_{2}^{2}} $$
 \end{problem}
+
+
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,371); %set diagram left start at 0, and has height of 371
+
+%Straight Lines [id:da055809839407445105] 
+\draw    (12.54,89.33) -- (14.23,285.69) ;
+%Straight Lines [id:da12985171386013317] 
+\draw    (14.23,285.69) -- (154.84,285.69) ;
+%Straight Lines [id:da5377763269926785] 
+\draw [color={rgb, 255:red, 215; green, 155; blue, 0 }  ,draw opacity=1 ][line width=2.25]    (14.23,285.69) -- (58.81,97.49) ;
+\draw [shift={(59.97,92.63)}, rotate = 463.33] [fill={rgb, 255:red, 215; green, 155; blue, 0 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (16.07,-7.72) -- (0,0) -- (16.07,7.72) -- (10.67,0) -- cycle    ;
+%Straight Lines [id:da49492424918304767] 
+\draw [color={rgb, 255:red, 130; green, 179; blue, 102 }  ,draw opacity=1 ][line width=2.25]    (14.23,285.69) -- (158.55,239.37) ;
+\draw [shift={(163.31,237.84)}, rotate = 522.2] [fill={rgb, 255:red, 130; green, 179; blue, 102 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (16.07,-7.72) -- (0,0) -- (16.07,7.72) -- (10.67,0) -- cycle    ;
+%Straight Lines [id:da8103869094631817] 
+\draw [color={rgb, 255:red, 184; green, 84; blue, 80 }  ,draw opacity=1 ][line width=2.25]    (14.23,285.69) -- (104.33,257.48) ;
+\draw [shift={(109.1,255.99)}, rotate = 522.62] [fill={rgb, 255:red, 184; green, 84; blue, 80 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (16.07,-7.72) -- (0,0) -- (16.07,7.72) -- (10.67,0) -- cycle    ;
+%Straight Lines [id:da03005700586607185] 
+\draw [line width=1.5]  [dash pattern={on 5.63pt off 4.5pt}]  (59.97,92.63) -- (109.1,255.99) ;
+%Shape: Rectangle [id:dp5894620344568704] 
+\draw   (0.64,3.19) -- (495.64,3.19) -- (495.64,370.19) -- (0.64,370.19) -- cycle ;
+
+% Text Node
+\draw (61.02,72.24) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{b}$};
+% Text Node
+\draw (110.52,260.07) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{p=}\hat{x}\boldsymbol{a}$};
+% Text Node
+\draw (168.58,227.91) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{a}$};
+% Text Node
+\draw (110.81,158.31) node [anchor=north west][inner sep=0.75pt]   [align=left] {error $\displaystyle \boldsymbol{e} =\boldsymbol{b-p}$};
+% Text Node
+\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 157; green, 217; blue, 123 }  ,fill opacity=1 ]  (301,48) .. controls (301,45.24) and (303.24,43) .. (306,43) -- (403,43) .. controls (405.76,43) and (408,45.24) .. (408,48) -- (408,65) .. controls (408,67.76) and (405.76,70) .. (403,70) -- (306,70) .. controls (303.24,70) and (301,67.76) .. (301,65) -- cycle  ;
+\draw (304,47.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{a^{T}( b} -\hat{x}\boldsymbol{a}) =0$};
+% Text Node
+\draw (304,77.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{a^{T} b} -\hat{x}\boldsymbol{a^{T} a} =0$};
+% Text Node
+\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 157; green, 217; blue, 123 }  ,fill opacity=1 ]  (301,116) .. controls (301,113.24) and (303.24,111) .. (306,111) -- (362,111) .. controls (364.76,111) and (367,113.24) .. (367,116) -- (367,159) .. controls (367,161.76) and (364.76,164) .. (362,164) -- (306,164) .. controls (303.24,164) and (301,161.76) .. (301,159) -- cycle  ;
+\draw (304,115.4) node [anchor=north west][inner sep=0.75pt]    {$\hat{x} =\boldsymbol{\frac{a^{T} b}{a^{T} a}}$};
+% Text Node
+\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 157; green, 217; blue, 123 }  ,fill opacity=1 ]  (302,184) .. controls (302,181.24) and (304.24,179) .. (307,179) -- (465,179) .. controls (467.76,179) and (470,181.24) .. (470,184) -- (470,227) .. controls (470,229.76) and (467.76,232) .. (465,232) -- (307,232) .. controls (304.24,232) and (302,229.76) .. (302,227) -- cycle  ;
+\draw (305,183.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{p} =\hat{x}\boldsymbol{a=\frac{a^{T} b}{a^{T} a} a=a\frac{a^{T} b}{a^{T} a}}$};
+% Text Node
+\draw (86.05,128.12) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{b}$};
+% Text Node
+\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 157; green, 217; blue, 123 }  ,fill opacity=1 ]  (303,259) .. controls (303,256.24) and (305.24,254) .. (308,254) -- (365,254) .. controls (367.76,254) and (370,256.24) .. (370,259) -- (370,302) .. controls (370,304.76) and (367.76,307) .. (365,307) -- (308,307) .. controls (305.24,307) and (303,304.76) .. (303,302) -- cycle  ;
+\draw (306,258.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{P=\frac{\boldsymbol{a} a^{T}}{a^{T} a}}$};
+
+
+\end{tikzpicture}
 
 \section{Clustering}
 
