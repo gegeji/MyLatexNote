@@ -2,37 +2,38 @@
 \nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{H}}};\vspace*{0.2cm}\nopagebreak
 
-  \item homogeneous\dotfill \hyperpage{58}
+  \item homogeneous\dotfill \hyperpage{56}
 
   \indexspace
 \nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{O}}};\vspace*{0.2cm}\nopagebreak
 
-  \item over-determined\dotfill \hyperpage{58}
+  \item over-determined\dotfill \hyperpage{56}
 
   \indexspace
 \nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{S}}};\vspace*{0.2cm}\nopagebreak
 
-  \item square\dotfill \hyperpage{58}
+  \item square\dotfill \hyperpage{56}
 
   \indexspace
 \nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{U}}};\vspace*{0.2cm}\nopagebreak
 
-  \item under-determined\dotfill \hyperpage{58}
+  \item under-determined\dotfill \hyperpage{56}
 
   \indexspace
 \nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{�}}};\vspace*{0.2cm}\nopagebreak
 
-  \item 上三角(Upper Triangular)矩阵\dotfill \hyperpage{71}
-  \item 从属范数\dotfill \hyperpage{52}
+  \item 上三角(Upper Triangular)矩阵\dotfill \hyperpage{69}
+  \item 下三角(Lower Triangular)矩阵\dotfill \hyperpage{69}
+  \item 从属范数\dotfill \hyperpage{50}
 
   \indexspace
 \nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{�}}};\vspace*{0.2cm}\nopagebreak
 
-  \item 算子范数\dotfill \hyperpage{52}
+  \item 算子范数\dotfill \hyperpage{50}
 
 \end{theindex}

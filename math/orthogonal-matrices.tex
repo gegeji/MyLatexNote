@@ -8,7 +8,7 @@
 
 \subsection{Gram 矩阵与标准正交的关系}
 
-Definition: refer to \ref{Def:Gram}. 关于它与非奇异的性质，参见 \ref{Sect:GramNonSingular}.
+For the definition of Gram matrices, refer to \ref{Def:Gram}. 关于它与非奇异的性质，参见 \ref{Sect:GramNonSingular}.
 
 \begin{theorem}
     如果A的Gram矩阵为单位矩阵，则 $ A \in \mathbb{R}^{m \times n} $ 具有标准正交列.
@@ -72,7 +72,7 @@ $$
     $$ \angle(A x, A y)=\arccos \left(\frac{(A x)^{T}(A y)}{\|A x\|_{2}\|A y\|_{2}}\right)=\arccos \left(\frac{x^{T} y}{\|x\|_{2}\|y\|_{2}}\right)=\angle(x, y) $$
 \end{proof}
 
-\subsection{左可逆性}
+\subsection{左可逆性与正交的关系}
 
 
 如果矩阵 $ A \in \mathbb{R}^{m \times n} $ 有标准正交列，则：
@@ -231,7 +231,7 @@ A=\left[\begin{array}{cc}
 $$
 \end{example}
 
-\begin{example}
+\begin{example}[Rotation Matrices in  $\mathbb{R}^{3}$]
     $$ A=\left[\begin{array}{ccc}\cos \theta & 0 & -\sin \theta \\ 0 & 1 & 0 \\ \sin \theta & 0 & \cos \theta\end{array}\right] $$
 
     描述了在 $ \mathbb{R}^{3} $ 中 $ \left(x_{1}, x_{3}\right) $ 平面的旋转。
@@ -248,13 +248,13 @@ $$
 \end{definition}
 
 \begin{theorem}
-    反射矩阵(reflector matrix)是对称的
+    反射矩阵(reflector matrix)是对称的.
 
     $$A^T=A$$
 \end{theorem}
 
 \begin{theorem}
-    反射矩阵(reflector matrix)是正交的
+    反射矩阵(reflector matrix)是正交的。
 
 \end{theorem}
 
@@ -336,14 +336,14 @@ $$
 $$ \begin{aligned}\|x-z\|_{2}^{2} &=\|x-y+y-z\|_{2}^{2} 
     \\ &=\|x-y\|_{2}^{2}+2(x-y)^{T}(y-z)+\|y-z\|_{2}^{2} 
     \\ &=\|x-y\|_{2}^{2}+2\left(a^{T} x\right) a^{T}(y-z)+\|y-z\|_{2}^{2}
-    \\ &=\|x-y\|_{2}^{2}+\|y-z\|_{2}^{2} \quad (因为  a^{T} y=a^{T} Z )
+    \\ &=\|x-y\|_{2}^{2}+\|y-z\|_{2}^{2} \quad (因为  a^{T} y=a^{T} z = 0)
     \\ &\ge \|x-y\|_{2}^{2}
 \end{aligned} $$
 
 \end{proof}
 
 \begin{corollary}
-    $ x $ 通过超平面的反射由反射算子的乘积给出：
+    $ x $ 通过超平面的反射由反射算子的乘积给出
 
     $$ z=y+(y-x)=\left(I-2 a a^{T}\right) x $$
 \end{corollary}
@@ -372,7 +372,7 @@ $$
 A x=b
 $$
 
-的解为:
+解为:
 $$
 x=A^{-1} b=A^{T} b
 $$
@@ -387,22 +387,22 @@ $$
     \item 平面旋转：$O(1)$ flop。
 \end{itemize}
 
-\section{标准列正交的高矩阵}
+\section{列标准正交的高矩阵}
 
 \begin{theorem}
-    假设矩阵 $ A \in \mathbb{R}^{m \times n} $ 是高的 $ (\mathrm{m}>\mathrm{n}) $, 具有标准正交列,则有:
+    假设矩阵 $ A \in \mathbb{R}^{m \times n} $ 是高的 $ {m}>{n}) $, 具有标准正交列,则有
 
-    $ A^{T} $ 具有标准正交行
+    $ A^{T} $ 具有标准正交行.
 \end{theorem}
 
 \begin{theorem}
-    $ A^{T} $ 是 $ A $ 的一个左逆
+    $ A^{T} $ 是 $ A $ 的一个左逆。
 
     $$A^T A =I$$
 \end{theorem}
 
 \begin{theorem}
-    $ A $ 没有右逆
+    $ A $ 没有右逆。
 \end{theorem}
 
 \section{值域范围、列空间}
@@ -448,7 +448,11 @@ C( A)\\
 
 \end{tikzpicture}
 
-假设矩阵 $ A \in \mathbb{R}^{m \times n} $ 具有标准正交列,向量 $ A x $ 与b的最短距离：
+\begin{problem}
+    假设矩阵 $ A \in \mathbb{R}^{m \times n} $ \textbf{具有标准正交列},求投影$b$在$C(A)$上的投影。
+\end{problem}
+
+即向量 $ A x $ 与$b$有最短距离
 
 $$
 \min _{x}\|A x-b\|_{2}^{2}
@@ -463,24 +467,19 @@ $ A A^{T} b $ 称为向量 $ \mathrm{b} \in \mathbb{R}^{m} $ 在 $ \operatorname
 
 \begin{theorem}
     $$ A x=A A^{T} b \in \operatorname{range}(A) $$
+
+    且是$b$在$C(A)$上的投影。
 \end{theorem}
 
 \begin{proof}
+    1.
     $$ A x=A A^{T} b \in \operatorname{range}(A) $$
 
-    $ \hat{x}=A^{T} b $ 满足 $ \|A \hat{x}-b\|<\|A x-b\| $, 对于所有 $ x \neq \hat{x}_{\text {。 }} $
+    2. 可以证明$ \hat{x}=A^{T} b $ 满足 $ \|A \hat{x}-b\|<\|A x-b\| $, 对于所有 $ x \neq \hat{x} $。
 
     b到range(A)内任意点 $ A x $ 的距离的平方和为:
 
-$$
-\begin{aligned}
-\|A x-b\|_{2}^{2} &=\|A(x-\hat{x})+A \hat{x}-b\|_{2}^{2} \quad\left(其中 \hat{x}=A^{T} b\right) \\
-&=\|A(x-\hat{x})\|_{2}^{2}+\|A \hat{x}-b\|_{2}^{2}+2(x-\hat{x})^{T} A^{T}(A \hat{x}-b) \\
-&=\|A(x-\hat{x})\|_{2}^{2}+\|A \hat{x}-b\|_{2}^{2} \\
-&=\left\|\left.(x-\hat{x})\right|_{2} ^{2}+\right\| A \hat{x}-b \|_{2}^{2} \\
-& \geq\|A \hat{x}-b\|_{2}^{2}
-\end{aligned}
-$$
+    $$ \begin{aligned}\|A x-b\|_{2}^{2} &=\|A(x-\hat{x})+A \hat{x}-b\|_{2}^{2} \quad\left(\text {其中 } \hat{x}=A^{T} b\right) \\ &=\|A(x-\hat{x})\|_{2}^{2}+\|A \hat{x}-b\|_{2}^{2}+2(x-\hat{x})^{T} A^{T}(A \hat{x}-b) \\ &=\|A(x-\hat{x})\|_{2}^{2}+\|A \hat{x}-b\|_{2}^{2} \\ &=\|(x-\hat{x})\|_{2}^{2}+\|A \hat{x}-b\|_{2}^{2} \\ & \geq\|A \hat{x}-b\|_{2}^{2} \end{aligned} $$
 当且仅当 $ x=\hat{x} $, 等号成立。
 
 第3行成立是因为 $ A^{T}(A \hat{x}-b)=\hat{x}-A^{T} b=0 $ 。
@@ -490,7 +489,10 @@ $$
 
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
-\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+\begin{figure}
+    \centering
+    \caption{Projection of $\boldsymbol{b}$ into the column space of $\boldsymbol{A}$, $A$ is any matrice. Sourced from \cite{Strang1993IntroductionTL}.}
+    \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
 %uncomment if require: \path (0,350); %set diagram left start at 0, and has height of 350
 
 %Straight Lines [id:da0833896477217686] 
@@ -562,3 +564,4 @@ $$
 
 
 \end{tikzpicture}
+\end{figure}

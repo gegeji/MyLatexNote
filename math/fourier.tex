@@ -2,47 +2,6 @@
 
 \section{基本概念}
 
-\begin{definition}[复数域的Gram矩阵]
-    如果 $ A \in \mathbb{C}^{m \times n} $ 的Gram矩阵为单位矩阵，则 $ A $ 具有正交列：
-
-$$
-\begin{aligned}
-A^{H} A&=\left[\begin{array}{lllll}
-a_{1} & a_{2} & \cdots & a_{n}
-\end{array}\right]^{H}\left[\begin{array}{lccc}
-a_{1} & a_{2} & \cdots & a_{n}
-\end{array}\right] \\
-&=\left[\begin{array}{cccc}
-a_{1}^{H} a_{1} & a_{1}^{H} a_{2} & \cdots & a_{1}^{H} a_{n} \\
-a_{2}^{H} a_{1} & a_{2}^{H} a_{2} & \cdots & a_{2}^{H} a_{n} \\
-\vdots & \vdots & & \vdots \\
-a_{n}^{H} a_{1} & a_{n}^{H} a_{2} & \cdots & a_{n}^{H} a_{n}
-\end{array}\right] \\
-&=\left[\begin{array}{cccc}
-1 & 0 & \cdots & 0 \\
-0 & 1 & \cdots & 0 \\
-\vdots & \vdots & \ddots & \vdots \\
-0 & 0 & \cdots & 1
-\end{array}\right]
-\\ &=I
-\end{aligned}
-$$
-\end{definition}
-
-Gram矩阵列有单位范数： $ \left\|a_{i}\right\|_{2}^{2}=a_{i}^{H} a_{i}=1 $ 。
-
-Gram矩阵列是相互正交的：对于 $ i \neq j, a_{i}^{H} a_{j}=0 $ 。
-
-\begin{definition}[酉矩阵]
-    列正交的方形复数矩阵称为酉矩阵。
-\end{definition}
-
-\begin{definition}[酉矩阵的逆]
-    $$ \left.\begin{array}{c}A^{H} A=I \\ A \text { 是方的 }\end{array}\right\} \quad \Rightarrow \quad A A^{H}=I $$
-\end{definition}
-
-酉矩阵是具有逆 $ A^{H} $ 的非奇异矩阵。 如果 $ A $ 是酉矩阵, 那么 $ A^{H} $ 也是酉矩阵。
-
 \begin{definition}[Complex Numbers]
     $$ C=R+j I $$
 
@@ -97,6 +56,47 @@ $$ f(t)=A_{0}+\sum_{n=1}^{\infty} A_{n} \sin \left(n \omega t+\varphi_{n}\right)
     $$ \begin{array}{ll}\int_{-\pi}^{\pi} \cos n x \mathrm{~d} x=0 & (n=1,2,3, \cdots), \\ \int_{-\pi}^{\pi} \sin n x \mathrm{~d} x=0 & (n=1,2,3, \cdots),\\ \cdots
     \end{array} $$
 \end{definition}
+
+\begin{definition}[复数域的Gram矩阵]
+    如果 $ A \in \mathbb{C}^{m \times n} $ 的Gram矩阵为单位矩阵，则 $ A $ 具有正交列：
+
+$$
+\begin{aligned}
+A^{H} A&=\left[\begin{array}{lllll}
+a_{1} & a_{2} & \cdots & a_{n}
+\end{array}\right]^{H}\left[\begin{array}{lccc}
+a_{1} & a_{2} & \cdots & a_{n}
+\end{array}\right] \\
+&=\left[\begin{array}{cccc}
+a_{1}^{H} a_{1} & a_{1}^{H} a_{2} & \cdots & a_{1}^{H} a_{n} \\
+a_{2}^{H} a_{1} & a_{2}^{H} a_{2} & \cdots & a_{2}^{H} a_{n} \\
+\vdots & \vdots & & \vdots \\
+a_{n}^{H} a_{1} & a_{n}^{H} a_{2} & \cdots & a_{n}^{H} a_{n}
+\end{array}\right] \\
+&=\left[\begin{array}{cccc}
+1 & 0 & \cdots & 0 \\
+0 & 1 & \cdots & 0 \\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \cdots & 1
+\end{array}\right]
+\\ &=I
+\end{aligned}
+$$
+\end{definition}
+
+Gram矩阵列有单位范数： $ \left\|a_{i}\right\|_{2}^{2}=a_{i}^{H} a_{i}=1 $ 。
+
+Gram矩阵列是相互正交的：对于 $ i \neq j, a_{i}^{H} a_{j}=0 $ 。
+
+\begin{definition}[酉矩阵]
+    列正交的方形复数矩阵称为酉矩阵。
+\end{definition}
+
+\begin{definition}[酉矩阵的逆]
+    $$ \left.\begin{array}{c}A^{H} A=I \\ A \text { 是方的 }\end{array}\right\} \quad \Rightarrow \quad A A^{H}=I $$
+\end{definition}
+
+酉矩阵是具有逆 $ A^{H} $ 的非奇异矩阵。 如果 $ A $ 是酉矩阵, 那么 $ A^{H} $ 也是酉矩阵。
 
 \section{Fourier Series}
 

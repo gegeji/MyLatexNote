@@ -58,6 +58,7 @@
 
 \hypersetup{pdftitle={Title},pdfauthor={Author}} % Uncomment and fill out to include PDF metadata for the author and title of the book
 
+% ignore abstract field in citation files
 \DeclareSourcemap{
   \maps[datatype=bibtex]{
     \map{
@@ -69,6 +70,8 @@
 
 \begin{document}
 
+% remove ';' at the end of each algorithm line
+\SetEndCharOfAlgoLine{}
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------

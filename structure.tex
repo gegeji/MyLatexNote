@@ -83,38 +83,6 @@
 	%showframe, % Uncomment to show how the type block is set on the page
 }
 
-%----------------------------------------------------------------------------------------
-%	FONTS
-%----------------------------------------------------------------------------------------
-
-
-% \usepackage{avant} % Use the Avantgarde font for headings
-%\usepackage{times} % Use the Times font for headings
-% \usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Sym­bol, Chancery and Com­puter Modern fonts
-
-\usepackage{microtype} % Slightly tweak font spacing for aesthetics
-%\usepackage[utf8]{inputenc} % Required for including letters with accents
-\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
-
-% support CJK characters
-\usepackage{xeCJK}
-
-\setmainfont[BoldFont=NotoSerif-Bold.ttf, ItalicFont=NotoSerif-Italic.ttf]{NotoSerif-Regular.ttf}
-% \setmainfont[ItalicFont=NotoSerif-Italic.ttf]{RobotoSlab-VariableFont_wght.ttf}
-% \setsansfont{Fira Sans}
-% \setsansfont{Open Sans}
-% \setsansfont[BoldFont=SegUIVar.ttf, ItalicFont=SegUIVar.ttf]{SegUIVar.ttf}
-
-\setmonofont{Cascadia Code}
-\setCJKmainfont[BoldFont=PingFang Heavy.ttf,ItalicFont=FZKTK.TTF]{FZPingXYSJW.TTF}
-\setCJKsansfont[BoldFont=PingFang Heavy.ttf,ItalicFont=PingFang Heavy.ttf]{PingFang Heavy.ttf}
-\setCJKmonofont[BoldFont=PingFang Heavy.ttf,ItalicFont=PingFang Heavy.ttf]{FZFSK.TTF}
-\xeCJKsetup{CJKmath = true}
-
-% support chemical equation arrows
-\usepackage[version=4]{mhchem}
-% \renewcommand{\rmdefault}{noto}
-% \renewcommand{\familydefault}{\sfdefault}
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY AND INDEX
@@ -650,3 +618,50 @@ addtohook={%
 % for the long section
 % \section[Hidden Markov Map Matching Through Noise and Sparseness]{\texorpdfstring{Hidden Markov Map Matching\\ Through Noise and Sparseness}{Hidden Markov Map Matching Through Noise and Sparseness}}
 % the optional parameter is for TOC display, the second one is for TeX display, the third one is for PDF string
+
+%----------------------------------------------------------------------------------------
+%	FONTS
+%----------------------------------------------------------------------------------------
+
+
+% \usepackage{avant} % Use the Avantgarde font for headings
+%\usepackage{times} % Use the Times font for headings
+% \usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Sym­bol, Chancery and Com­puter Modern fonts
+
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+%\usepackage[utf8]{inputenc} % Required for including letters with accents
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+
+% support CJK characters
+\usepackage{xeCJK}
+
+
+% \setmainfont[ItalicFont=NotoSerif-Italic.ttf]{RobotoSlab-VariableFont_wght.ttf}
+% \setsansfont{Fira Sans}
+% \setsansfont{Open Sans}
+% \setsansfont[BoldFont=SegUIVar.ttf, ItalicFont=SegUIVar.ttf]{SegUIVar.ttf}
+%\usepackage{tgbonum}
+% \usepackage{tgbonum}
+
+% support chemical equation arrows
+% todo fixme this will raise error
+%\usepackage[version=4]{mhchem}
+
+
+% \renewcommand{\rmdefault}{noto}
+% \renewcommand{\familydefault}{\sfdefault}
+
+% \setmathfont{baskervillef}
+\usepackage[baskerville,vvarbb]{newtxmath}
+\usepackage[cal=boondoxo]{mathalfa}
+\usepackage{baskervillef}
+
+% \usepackage{unicode-math}
+
+% \setmainfont[BoldFont=NotoSerif-Bold.ttf, ItalicFont=NotoSerif-Italic.ttf]{NotoSerif-Regular.ttf}
+\setmonofont{Cascadia Code}
+\setCJKmainfont[BoldFont=PingFang Heavy.ttf,ItalicFont=FZKTK.TTF]{FZPingXYSJW.TTF}
+\setCJKsansfont[BoldFont=PingFang Heavy.ttf,ItalicFont=PingFang Heavy.ttf]{PingFang Heavy.ttf}
+\setCJKmonofont[BoldFont=PingFang Heavy.ttf,ItalicFont=PingFang Heavy.ttf]{FZFSK.TTF}
+\xeCJKsetup{CJKmath = true}

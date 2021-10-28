@@ -424,8 +424,7 @@ $$
 
 \label{Sect:GramNonSingular}
 
-
-Definition: refer to \ref{Def:Gram}.
+Gram矩阵的定义见 \ref{Def:Gram}.
 
 \begin{corollary}
     矩阵 $ A \in \mathbb{R}^{m \times n},  \mathrm{G}=A^{T} A $
@@ -488,100 +487,5 @@ Definition: refer to \ref{Def:Gram}.
 \end{corollary}
 
  
-%    \includegraphics[width=\textwidth]{math-pseudoinverse.png}
-
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-\begin{figure} 
-
-    \caption{$ A \boldsymbol{x}^{+} $ in the column space goes back to $ A^{+} A \boldsymbol{x}^{+}=\boldsymbol{x}^{+} $in the row space}
-\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-%uncomment if require: \path (0,378); %set diagram left start at 0, and has height of 378
-
-%Shape: Rectangle [id:dp8596899930926358] 
-\draw  [dash pattern={on 0.84pt off 2.51pt}] (412.64,146.65) -- (440.94,174.46) -- (412.24,203.67) -- (383.93,175.86) -- cycle ;
-%Shape: Rectangle [id:dp144129295466213] 
-\draw   (159.81,65.14) -- (236.34,135.27) -- (193.59,181.93) -- (117.06,111.79) -- cycle ;
-%Shape: Rectangle [id:dp4244539260616451] 
-\draw   (193.59,181.93) -- (260.03,242.81) -- (218.64,287.99) -- (152.2,227.1) -- cycle ;
-
-%Shape: Rectangle [id:dp10811540545272225] 
-\draw   (477.03,51.53) -- (398.27,133.34) -- (440.51,174) -- (519.26,92.19) -- cycle ;
-%Shape: Rectangle [id:dp952165170642489] 
-\draw   (440.51,174) -- (372.14,245.02) -- (413.05,284.39) -- (481.41,213.38) -- cycle ;
-
-%Straight Lines [id:da43480021093829335] 
-\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=2.25]    (193.59,181.93) -- (187.34,138.27) ;
-\draw [shift={(186.64,133.33)}, rotate = 441.85] [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
-%Straight Lines [id:da6356667569876433] 
-\draw [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][line width=2.25]    (440.51,175) -- (415.75,200.11) ;
-\draw [shift={(412.24,203.67)}, rotate = 314.6] [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
-%Straight Lines [id:da22563123154133025] 
-\draw [color={rgb, 255:red, 65; green, 117; blue, 5 }  ,draw opacity=1 ][line width=2.25]    (440.51,175) -- (388.93,175.78) ;
-\draw [shift={(383.93,175.86)}, rotate = 359.13] [fill={rgb, 255:red, 65; green, 117; blue, 5 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
-%Shape: Rectangle [id:dp12172823301153524] 
-\draw   (186.5,176.41) -- (193.59,182.93) -- (186.84,190.28) -- (179.74,183.76) -- cycle ;
-%Shape: Rectangle [id:dp9349834759264539] 
-\draw   (447.27,167.65) -- (454.36,174.17) -- (447.61,181.52) -- (440.51,175) -- cycle ;
-%Straight Lines [id:da2510398254796229] 
-\draw [color={rgb, 255:red, 108; green, 108; blue, 215 }  ,draw opacity=1 ][line width=2.25]    (440.51,175) -- (416.14,150.21) ;
-\draw [shift={(412.64,146.65)}, rotate = 405.49] [fill={rgb, 255:red, 108; green, 108; blue, 215 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
-%Straight Lines [id:da5471202445204062] 
-\draw  [dash pattern={on 4.5pt off 4.5pt}]  (383.93,175.86) -- (186.64,133.33) ;
-\draw [shift={(285.28,154.59)}, rotate = 372.15999999999997] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-%Straight Lines [id:da12114390650727058] 
-\draw  [dash pattern={on 4.5pt off 4.5pt}]  (412.64,146.65) -- (186.64,133.33) ;
-\draw [shift={(299.64,139.99)}, rotate = 363.37] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-%Straight Lines [id:da8219115744539653] 
-\draw  [dash pattern={on 4.5pt off 4.5pt}]  (412.24,203.67) -- (193.59,181.93) ;
-\draw [shift={(302.92,192.8)}, rotate = 365.68] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-
-% Text Node
-\draw (74,15) node [anchor=north west][inner sep=0.75pt]   [align=left] {Row Space $\displaystyle A^{T} y$\\dim $\displaystyle r$};
-% Text Node
-\draw (63,299) node [anchor=north west][inner sep=0.75pt]   [align=left] {Nullspace $\displaystyle Ax=0$\\dim $\displaystyle n-r$};
-% Text Node
-\draw (434,8) node [anchor=north west][inner sep=0.75pt]   [align=left] {Column Space $\displaystyle Ax$\\dim $\displaystyle r$};
-% Text Node
-\draw (419,298) node [anchor=north west][inner sep=0.75pt]   [align=left] {Left Nullspace $\displaystyle A^{T} y=0$\\dim $\displaystyle m-r$};
-% Text Node
-\draw (173,114.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,opacity=1 ]  {$x^{\dagger }$};
-% Text Node
-\draw (417,202.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,opacity=1 ]  {$e$};
-% Text Node
-\draw (423,132.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 108; green, 108; blue, 215 }  ,opacity=1 ]  {$p$};
-% Text Node
-\draw (370,167.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 65; green, 117; blue, 5 }  ,opacity=1 ]  {$b$};
-% Text Node
-\draw (473,153.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 108; green, 108; blue, 215 }  ,opacity=1 ]  {$ \begin{array}{l}
-\textcolor[rgb]{0.42,0.42,0.84}{p}\textcolor[rgb]{0,0,0}{=A}\textcolor[rgb]{0.55,0.34,0.16}{x^{\dagger }}\\
-\textcolor[rgb]{0,0,0}{=AA^{\dagger }}\textcolor[rgb]{0.25,0.46,0.02}{b}\\
-\end{array}$};
-% Text Node
-\draw (276,197.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger } e=0$};
-% Text Node
-\draw (241,160.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger }\textcolor[rgb]{0.25,0.46,0.02}{b} =\textcolor[rgb]{0.55,0.34,0.16}{x^{\dagger }}$};
-% Text Node
-\draw (287,113.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger }\textcolor[rgb]{0.42,0.42,0.84}{p} =\textcolor[rgb]{0.55,0.34,0.16}{x^{\dagger }}$};
-% Text Node
-\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 209; green, 154; blue, 102 }  ,fill opacity=1 ][dash pattern={on 0.84pt off 2.51pt}]  (205,318) .. controls (205,315.24) and (207.24,313) .. (210,313) -- (400,313) .. controls (402.76,313) and (405,315.24) .. (405,318) -- (405,355) .. controls (405,357.76) and (402.76,360) .. (400,360) -- (210,360) .. controls (207.24,360) and (205,357.76) .. (205,355) -- cycle  ;
-\draw (208,317.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger } A=\begin{bmatrix}
-I & 0\\
-0 & 0
-\end{bmatrix} \ \begin{matrix}
-( row\ space)\\
-( nullspace)
-\end{matrix}$};
 
 
-\end{tikzpicture}
-\end{figure}
-
-The pseudoinverse $ A^{+} $is the $ n $ by $ m $ matrix that makes $ A A^{+} $and $ A^{+} A $ into projections. 
-
-Trying for $ A A^{-1}=A^{-1} A=I $, 
-
-\begin{remark}
-    $ A A^{+}= $projection matrix onto the column space of $ A $
-
-    $ A^{+} A= $ projection matrix onto the row space of $ A $
-\end{remark}

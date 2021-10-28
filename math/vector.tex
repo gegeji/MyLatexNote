@@ -60,8 +60,8 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros), �
     设 \( V \) 是非空子集, \( P \) 是一数域, 向量空间$V$满足：
 
     \begin{enumerate}
-        \item 向量加法: \( V+V \rightarrow V \), 记作 \( \forall x, y \in V \), 则 \( x+y \in V( \) 加法封闭)
-        \item 标量乘法: \( F \times V \rightarrow V \), 记作 \( \forall x \in V, \lambda \in P \), 则 \( \lambda x \in V( \) 乘法封闭)
+        \item 向量加法: \( V+V \rightarrow V \), 记作 \( \forall x, y \in V \), 则 \( x+y \in V \) (加法封闭)
+        \item 标量乘法: \( F \times V \rightarrow V \), 记作 \( \forall x \in V, \lambda \in P \), 则 \( \lambda x \in V \) (乘法封闭)
     \end{enumerate}
 
 上述两个运算满足下列八条规则 \( (\forall x, y, z \in V, \lambda, \mu \in P) \) 
@@ -250,7 +250,7 @@ Here we have $ a^{T} b=2 $, which is the number of objects in both $ A $ and $ B
 
 \begin{example}[Weights, features, and score]
     When the vector $f$ represents a set of \textit{features} of
-    an object, and $w$ is a vector of the same size (often called a \textit{weight vector} ), the
+    an object, and $w$ is a vector of the same size (often called a \textit{weight vector}), the
     inner product $w^T f$ is the sum of the feature values, scaled (or weighted) by
     the weights, and is sometimes called a \textit{score}.
 \end{example}

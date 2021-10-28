@@ -16,5 +16,31 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{Strang1993IntroductionTL}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=255ea163938dc18cc15b38571534f350}{%
+           family={Strang},
+           familyi={S\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{255ea163938dc18cc15b38571534f350}
+      \strng{fullhash}{255ea163938dc18cc15b38571534f350}
+      \strng{bibnamehash}{255ea163938dc18cc15b38571534f350}
+      \strng{authorbibnamehash}{255ea163938dc18cc15b38571534f350}
+      \strng{authornamehash}{255ea163938dc18cc15b38571534f350}
+      \strng{authorfullhash}{255ea163938dc18cc15b38571534f350}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Introduction to Linear Algebra}}
+      \field{year}{1993}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
