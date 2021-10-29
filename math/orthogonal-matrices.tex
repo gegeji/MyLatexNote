@@ -193,9 +193,8 @@ $$
 
 \section{平面旋转}
 
-
-
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+\begin{FigureCenter}{An example of rotation}
+    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
 \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
 %uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
@@ -219,6 +218,9 @@ $$
 
 
 \end{tikzpicture}
+\end{FigureCenter}
+
+
 
 \begin{example}[Rotation Matrices in  $\mathbb{R}^{2}$]
     在一个2维平面的旋转可以用矩阵表示为
@@ -264,9 +266,8 @@ $$
 
 \subsection{反射算子的几何解释}
 
-
-
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+\begin{FigureCenter}{Reflection}
+    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
 \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
 %uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
@@ -316,11 +317,14 @@ $$
 
 
 \end{tikzpicture}
+\end{FigureCenter}
+
+
 
 $ H=\left\{u \mid a^{T} u=0\right\} $ 是与 $ a $ 正交的向量的(超)平面。
 
 \begin{corollary}
-    如果 $ \|a\|_{2}=1, \quad x $ 在 $ H $ 上的投影
+    如果 $ \|a\|_{2}=1, \quad x $ 在 $ H $ 上的投影为
 
     $$ y=x-\left(a^{T} x\right) a=x-a\left(a^{T} x\right)=\left(I-a a^{T}\right) x $$
 \end{corollary}
@@ -390,7 +394,7 @@ $$
 \section{列标准正交的高矩阵}
 
 \begin{theorem}
-    假设矩阵 $ A \in \mathbb{R}^{m \times n} $ 是高的 $ {m}>{n}) $, 具有标准正交列,则有
+    假设矩阵 $ A \in \mathbb{R}^{m \times n} $ 是高的 $ ({m}>{n}) $, 具有标准正交列,则有
 
     $ A^{T} $ 具有标准正交行.
 \end{theorem}
@@ -417,9 +421,10 @@ $$
     $$ \operatorname{range}(A)=\left\{A x \mid x \in \mathbb{R}^{n}\right\} $$
 \end{definition}
 
-\subsection{投影到$A$的列空间}
+\subsection{投影到列标准正交的矩阵$A$的列空间}
 
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+\begin{FigureCenter}{Projection onto the column space of $A$, $A$ has orthonormal columns}
+    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
 \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
 %uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
@@ -447,6 +452,9 @@ C( A)\\
 
 
 \end{tikzpicture}
+
+\end{FigureCenter}
+
 
 \begin{problem}
     假设矩阵 $ A \in \mathbb{R}^{m \times n} $ \textbf{具有标准正交列},求投影$b$在$C(A)$上的投影。
@@ -485,13 +493,9 @@ $ A A^{T} b $ 称为向量 $ \mathrm{b} \in \mathbb{R}^{m} $ 在 $ \operatorname
 第3行成立是因为 $ A^{T}(A \hat{x}-b)=\hat{x}-A^{T} b=0 $ 。
 \end{proof}
 
+\begin{FigureCenter}{Projection of $\boldsymbol{b}$ into the column space of $\boldsymbol{A}$, $A$ is any matrice. Sourced from \cite{Strang1993IntroductionTL}}
+    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
-
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-
-\begin{figure}
-    \centering
-    \caption{Projection of $\boldsymbol{b}$ into the column space of $\boldsymbol{A}$, $A$ is any matrice. Sourced from \cite{Strang1993IntroductionTL}.}
     \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
 %uncomment if require: \path (0,350); %set diagram left start at 0, and has height of 350
 
@@ -563,5 +567,9 @@ $ A A^{T} b $ 称为向量 $ \mathrm{b} \in \mathbb{R}^{m} $ 在 $ \operatorname
 \draw (343.93,295.55) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{P=A\left( A^{T} A\right)^{-1} A^{T}}$};
 
 
-\end{tikzpicture}
-\end{figure}
+    \end{tikzpicture}
+
+\end{FigureCenter}
+
+
+    

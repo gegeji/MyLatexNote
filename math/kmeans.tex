@@ -196,43 +196,37 @@ $$ z=\frac{1}{N} \sum_{i=1}^{N} x_{i} $$
 
 \section{投影问题: 标量优化问题}
 
-\begin{figure}[htbp]
-    \begin{center}
-        
+\begin{FigureCenter}{Projection onto a line}
+    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt
 
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+    \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+    %uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
 
-\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+    %Straight Lines [id:da6245666898381868] 
+    \draw    (101,120) -- (179.63,53.38) ;
+    \draw [shift={(181.15,52.09)}, rotate = 499.72] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+    %Straight Lines [id:da028563208619883484] 
+    \draw    (101,120) -- (129.15,119.79) -- (224.15,119.1) ;
+    \draw [shift={(226.15,119.09)}, rotate = 539.5799999999999] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+    %Straight Lines [id:da8014408982517005] 
+    \draw  [dash pattern={on 0.84pt off 2.51pt}]  (181.15,62.09) -- (181.15,114.09) ;
+    %Straight Lines [id:da3438902495351597] 
+    \draw [color={rgb, 255:red, 236; green, 29; blue, 29 }  ,draw opacity=1 ][fill={rgb, 255:red, 223; green, 36; blue, 36 }  ,fill opacity=1 ][line width=2.25]    (101,120) -- (172.65,119.48) ;
+    \draw [shift={(177.65,119.44)}, rotate = 539.5799999999999] [fill={rgb, 255:red, 236; green, 29; blue, 29 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
 
-%Straight Lines [id:da6245666898381868] 
-\draw    (101,120) -- (179.63,53.38) ;
-\draw [shift={(181.15,52.09)}, rotate = 499.72] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da028563208619883484] 
-\draw    (101,120) -- (129.15,119.79) -- (224.15,119.1) ;
-\draw [shift={(226.15,119.09)}, rotate = 539.5799999999999] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da8014408982517005] 
-\draw  [dash pattern={on 0.84pt off 2.51pt}]  (181.15,62.09) -- (181.15,114.09) ;
-%Straight Lines [id:da3438902495351597] 
-\draw [color={rgb, 255:red, 236; green, 29; blue, 29 }  ,draw opacity=1 ][fill={rgb, 255:red, 223; green, 36; blue, 36 }  ,fill opacity=1 ][line width=2.25]    (101,120) -- (172.65,119.48) ;
-\draw [shift={(177.65,119.44)}, rotate = 539.5799999999999] [fill={rgb, 255:red, 236; green, 29; blue, 29 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
-
-% Text Node
-\draw (228,110.4) node [anchor=north west][inner sep=0.75pt]    {$a$};
-% Text Node
-\draw (188,39.4) node [anchor=north west][inner sep=0.75pt]    {$b$};
-% Text Node
-\draw (139,123.4) node [anchor=north west][inner sep=0.75pt]    {$\hat{t} a$};
-% Text Node
-\draw (190,76.4) node [anchor=north west][inner sep=0.75pt]    {$b-\hat{t} a$};
+    % Text Node
+    \draw (228,110.4) node [anchor=north west][inner sep=0.75pt]    {$a$};
+    % Text Node
+    \draw (188,39.4) node [anchor=north west][inner sep=0.75pt]    {$b$};
+    % Text Node
+    \draw (139,123.4) node [anchor=north west][inner sep=0.75pt]    {$\hat{t} a$};
+    % Text Node
+    \draw (190,76.4) node [anchor=north west][inner sep=0.75pt]    {$b-\hat{t} a$};
 
 
-\end{tikzpicture}
+    \end{tikzpicture}
+\end{FigureCenter}
 
-    \end{center}
-
-
-\end{figure}
 
 \begin{problem}
     假设$ a, b \in \mathbb{R}^{n}, a \neq 0, t \in \mathbb{R} $, 当$t$ 多大时, $ta$到$b$之间的距离最小
@@ -252,11 +246,8 @@ $$ z=\frac{1}{N} \sum_{i=1}^{N} x_{i} $$
 
 
 
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-
-
-
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+\begin{FigureCenter}{Projection onto a line from the prospective of linear algebra.}
+    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
 \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
 %uncomment if require: \path (0,371); %set diagram left start at 0, and has height of 371
@@ -304,8 +295,10 @@ $$ z=\frac{1}{N} \sum_{i=1}^{N} x_{i} $$
 \draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 157; green, 217; blue, 123 }  ,fill opacity=1 ]  (303,259) .. controls (303,256.24) and (305.24,254) .. (308,254) -- (365,254) .. controls (367.76,254) and (370,256.24) .. (370,259) -- (370,302) .. controls (370,304.76) and (367.76,307) .. (365,307) -- (308,307) .. controls (305.24,307) and (303,304.76) .. (303,302) -- cycle  ;
 \draw (306,258.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{P=\frac{\boldsymbol{a} a^{T}}{a^{T} a}}$};
 
-
 \end{tikzpicture}
+\end{FigureCenter}
+
+
 
 \section{Clustering}
 

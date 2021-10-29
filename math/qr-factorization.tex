@@ -28,12 +28,12 @@
 
 \begin{algorithm}[htbp]
     \caption{Forward Substitution}
-    $ x_{1}= \frac{b_{1} }{A_{11} }  $\;
-$ x_{2}=\frac{b_{2}-A_{21} x_{1}}{A_{22}}$\;
-$  x_{3} =\frac{b_{3}-A_{31} x_{1}-A_{32} x_{2}}{A_{33}} $ \;
+    $ x_{1}= \dfrac{b_{1} }{A_{11} }  $\;
+$ x_{2}=\dfrac{b_{2}-A_{21} x_{1}}{A_{22}}$\;
+$  x_{3} =\dfrac{b_{3}-A_{31} x_{1}-A_{32} x_{2}}{A_{33}} $ \;
     $\cdots$  \;
     $x_{n} =
-    \frac{b_{n}-A_{n 1} x_{1}-A_{n 2} x_{2}-\cdots-A_{n, n-1} x_{n-1}}{A_{n n}} $\;
+    \dfrac{b_{n}-A_{n 1} x_{1}-A_{n 2} x_{2}-\cdots-A_{n, n-1} x_{n-1}}{A_{n n}} $\;
 \end{algorithm}
 
 \begin{problem}
@@ -45,11 +45,11 @@ $  x_{3} =\frac{b_{3}-A_{31} x_{1}-A_{32} x_{2}}{A_{33}} $ \;
 \begin{algorithm}[htbp]
     \caption{Backward Substitution}
 
-    $ x_{n}= \frac{b_{n}}{A_{n n}} $\;
-    $ x_{n-1}= \frac{b_{n-1}-A_{n-1, n} x_{n}}{A_{n-1, n-1}} $ \;
-    $ x_{n-2}= \frac{b_{n-2}-A_{n-2, n-1} x_{n-1}-A_{n-2, n} x_{n}}{ A_{n-2, n-2}} $\;
+    $ x_{n}= \dfrac{b_{n}}{A_{n n}} $\;
+    $ x_{n-1}= \dfrac{b_{n-1}-A_{n-1, n} x_{n}}{A_{n-1, n-1}} $ \;
+    $ x_{n-2}= \dfrac{b_{n-2}-A_{n-2, n-1} x_{n-1}-A_{n-2, n} x_{n}}{ A_{n-2, n-2}} $\;
     $\cdots$\;
-    $ x_{1}=\frac{b_{1}-A_{12} x_{2}-A_{13} x_{3}-\cdots-A_{1 n} x_{n}}{A_{11}}  $\;
+    $ x_{1}=\dfrac{b_{1}-A_{12} x_{2}-A_{13} x_{3}-\cdots-A_{1 n} x_{n}}{A_{11}}  $\;
 \end{algorithm}
 
 时间复杂度： $ 1+3+\ldots+2 \mathrm{n}-1=\mathrm{n}^{2} $ flops
@@ -94,13 +94,7 @@ $$
 对角元素 $ R_{i i} $ 是非零的。若 $ R_{i i}<0 $, 改变 $ R_{i i}, \cdots, R_{i n} $ 和向量 $ q_{i} $ 的符号。大多数定义要求 $ R_{i i}>0 $,使得$Q$和$R$是唯一的。
 \end{definition}
 
-QR分解依赖于Gram-Schmidit正交化法。（参见\ref{Chap:Gram-Schmidt Algorithm}）.QR分解的思想可以用于加快求逆矩阵速度。
-
-$$\begin{aligned}
-   Ax = b &\Rightarrow x = A^{-1} b \\
-QRx = b &\Rightarrow x = R^{-1} \left(Q^Tb\right)
-\end{aligned}
-$$
+QR分解依赖于Gram-Schmidit正交化法。（参见\ref{Chap:Gram-Schmidt Algorithm}）
 
 \begin{remark}
     Gram-Schmidt(正交化) $$ \quad \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
@@ -192,7 +186,21 @@ $$
     \item 带约束的最小二乘问题
 \end{itemize}
 
-\subsection{QR分解和伪逆、逆}
+\subsection{QR分解和求解 $Ax = b$ }
+
+QR分解的思想可以用于加快求逆矩阵速度。
+
+\begin{corollary}
+    
+
+$$\begin{aligned}
+   Ax = b &\Rightarrow x = A^{-1} b \\
+QRx = b &\Rightarrow x = R^{-1} \left(Q^Tb\right)
+\end{aligned}
+$$
+\end{corollary}
+
+\subsection{QR分解和求解伪逆、逆}
 
 \begin{definition}[线性无关列向量的矩阵$A$的伪逆]
     $$A^{\dagger}=\left(A^{T} A\right)^{-1} A^{T}$$
@@ -244,7 +252,7 @@ y \in \operatorname{range}(A) & \Leftrightarrow \quad y=A x, x \in \mathbb{R}^{n
 $$
 \end{proof}
 
-\subsection{往$A$列空间上的投影}
+\subsection{往$A$列空间上的投影也是往$Q$上的投影}
 
 结合 $A=Q R$ 和 $A^{\dagger}=R^{-1} Q^{T}$, 可得：
 
@@ -265,14 +273,12 @@ $$
 \end{aligned}
 $$
 
-$Q Q^{T} x$ 是 $x$ 在 $Q$ 值域上的投影
+$Q Q^{T} x$ 是 $x$ 在 $Q$ 值域上的投影.
 
+\begin{FigureCenter}{Projecting onto the column space of $A$ is also projecting onto the column space of $Q$}
+    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt
 
-
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-
-\begin{figure}[htbp]
-    \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
 %uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
 
 %Shape: Parallelogram [id:dp16734778977883136] 
@@ -299,99 +305,101 @@ C( A) & =C( Q)\\
 
 
 \end{tikzpicture}
-\end{figure}
+\end{FigureCenter}
 
 
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-\begin{figure}[htbp]
+\begin{FigureCenter}{$ A \boldsymbol{x}^{\dagger} $ in the column space goes back to $ A^{\dagger} A \boldsymbol{x}^{\dagger}=\boldsymbol{x}^{\dagger}$ in the row space}
+    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt
 
-    \caption{$ A \boldsymbol{x}^{+} $ in the column space goes back to $ A^{+} A \boldsymbol{x}^{+}=\boldsymbol{x}^{+} $in the row space}
-\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-%uncomment if require: \path (0,378); %set diagram left start at 0, and has height of 378
+    \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+        %uncomment if require: \path (0,378); %set diagram left start at 0, and has height of 378
+        
+        %Shape: Rectangle [id:dp8596899930926358] 
+        \draw  [dash pattern={on 0.84pt off 2.51pt}] (412.64,146.65) -- (440.94,174.46) -- (412.24,203.67) -- (383.93,175.86) -- cycle ;
+        %Shape: Rectangle [id:dp144129295466213] 
+        \draw   (159.81,65.14) -- (236.34,135.27) -- (193.59,181.93) -- (117.06,111.79) -- cycle ;
+        %Shape: Rectangle [id:dp4244539260616451] 
+        \draw   (193.59,181.93) -- (260.03,242.81) -- (218.64,287.99) -- (152.2,227.1) -- cycle ;
+        
+        %Shape: Rectangle [id:dp10811540545272225] 
+        \draw   (477.03,51.53) -- (398.27,133.34) -- (440.51,174) -- (519.26,92.19) -- cycle ;
+        %Shape: Rectangle [id:dp952165170642489] 
+        \draw   (440.51,174) -- (372.14,245.02) -- (413.05,284.39) -- (481.41,213.38) -- cycle ;
+        
+        %Straight Lines [id:da43480021093829335] 
+        \draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=2.25]    (193.59,181.93) -- (187.34,138.27) ;
+        \draw [shift={(186.64,133.33)}, rotate = 441.85] [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
+        %Straight Lines [id:da6356667569876433] 
+        \draw [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][line width=2.25]    (440.51,175) -- (415.75,200.11) ;
+        \draw [shift={(412.24,203.67)}, rotate = 314.6] [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
+        %Straight Lines [id:da22563123154133025] 
+        \draw [color={rgb, 255:red, 65; green, 117; blue, 5 }  ,draw opacity=1 ][line width=2.25]    (440.51,175) -- (388.93,175.78) ;
+        \draw [shift={(383.93,175.86)}, rotate = 359.13] [fill={rgb, 255:red, 65; green, 117; blue, 5 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
+        %Shape: Rectangle [id:dp12172823301153524] 
+        \draw   (186.5,176.41) -- (193.59,182.93) -- (186.84,190.28) -- (179.74,183.76) -- cycle ;
+        %Shape: Rectangle [id:dp9349834759264539] 
+        \draw   (447.27,167.65) -- (454.36,174.17) -- (447.61,181.52) -- (440.51,175) -- cycle ;
+        %Straight Lines [id:da2510398254796229] 
+        \draw [color={rgb, 255:red, 108; green, 108; blue, 215 }  ,draw opacity=1 ][line width=2.25]    (440.51,175) -- (416.14,150.21) ;
+        \draw [shift={(412.64,146.65)}, rotate = 405.49] [fill={rgb, 255:red, 108; green, 108; blue, 215 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
+        %Straight Lines [id:da5471202445204062] 
+        \draw  [dash pattern={on 4.5pt off 4.5pt}]  (383.93,175.86) -- (186.64,133.33) ;
+        \draw [shift={(285.28,154.59)}, rotate = 372.15999999999997] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        %Straight Lines [id:da12114390650727058] 
+        \draw  [dash pattern={on 4.5pt off 4.5pt}]  (412.64,146.65) -- (186.64,133.33) ;
+        \draw [shift={(299.64,139.99)}, rotate = 363.37] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        %Straight Lines [id:da8219115744539653] 
+        \draw  [dash pattern={on 4.5pt off 4.5pt}]  (412.24,203.67) -- (193.59,181.93) ;
+        \draw [shift={(302.92,192.8)}, rotate = 365.68] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        
+        % Text Node
+        \draw (74,15) node [anchor=north west][inner sep=0.75pt]   [align=left] {Row Space $\displaystyle A^{T} y$\\dim $\displaystyle r$};
+        % Text Node
+        \draw (63,299) node [anchor=north west][inner sep=0.75pt]   [align=left] {Nullspace $\displaystyle Ax=0$\\dim $\displaystyle n-r$};
+        % Text Node
+        \draw (434,8) node [anchor=north west][inner sep=0.75pt]   [align=left] {Column Space $\displaystyle Ax$\\dim $\displaystyle r$};
+        % Text Node
+        \draw (419,298) node [anchor=north west][inner sep=0.75pt]   [align=left] {Left Nullspace $\displaystyle A^{T} y=0$\\dim $\displaystyle m-r$};
+        % Text Node
+        \draw (173,114.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,opacity=1 ]  {$x^{\dagger }$};
+        % Text Node
+        \draw (417,202.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,opacity=1 ]  {$e$};
+        % Text Node
+        \draw (423,132.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 108; green, 108; blue, 215 }  ,opacity=1 ]  {$p$};
+        % Text Node
+        \draw (370,167.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 65; green, 117; blue, 5 }  ,opacity=1 ]  {$b$};
+        % Text Node
+        \draw (473,153.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 108; green, 108; blue, 215 }  ,opacity=1 ]  {$ \begin{array}{l}
+        \textcolor[rgb]{0.42,0.42,0.84}{p}\textcolor[rgb]{0,0,0}{=A}\textcolor[rgb]{0.55,0.34,0.16}{x^{\dagger }}\\
+        \textcolor[rgb]{0,0,0}{=AA^{\dagger }}\textcolor[rgb]{0.25,0.46,0.02}{b}\\
+        \end{array}$};
+        % Text Node
+        \draw (276,197.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger } e=0$};
+        % Text Node
+        \draw (241,160.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger }\textcolor[rgb]{0.25,0.46,0.02}{b} =\textcolor[rgb]{0.55,0.34,0.16}{x^{\dagger }}$};
+        % Text Node
+        \draw (287,113.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger }\textcolor[rgb]{0.42,0.42,0.84}{p} =\textcolor[rgb]{0.55,0.34,0.16}{x^{\dagger }}$};
+        % Text Node
+        \draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 209; green, 154; blue, 102 }  ,fill opacity=1 ][dash pattern={on 0.84pt off 2.51pt}]  (205,318) .. controls (205,315.24) and (207.24,313) .. (210,313) -- (400,313) .. controls (402.76,313) and (405,315.24) .. (405,318) -- (405,355) .. controls (405,357.76) and (402.76,360) .. (400,360) -- (210,360) .. controls (207.24,360) and (205,357.76) .. (205,355) -- cycle  ;
+        \draw (208,317.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger } A=\begin{bmatrix}
+        I & 0\\
+        0 & 0
+        \end{bmatrix} \ \begin{matrix}
+        ( row\ space)\\
+        ( nullspace)
+        \end{matrix}$};
+        
+        
+        \end{tikzpicture}
+\end{FigureCenter}
 
-%Shape: Rectangle [id:dp8596899930926358] 
-\draw  [dash pattern={on 0.84pt off 2.51pt}] (412.64,146.65) -- (440.94,174.46) -- (412.24,203.67) -- (383.93,175.86) -- cycle ;
-%Shape: Rectangle [id:dp144129295466213] 
-\draw   (159.81,65.14) -- (236.34,135.27) -- (193.59,181.93) -- (117.06,111.79) -- cycle ;
-%Shape: Rectangle [id:dp4244539260616451] 
-\draw   (193.59,181.93) -- (260.03,242.81) -- (218.64,287.99) -- (152.2,227.1) -- cycle ;
 
-%Shape: Rectangle [id:dp10811540545272225] 
-\draw   (477.03,51.53) -- (398.27,133.34) -- (440.51,174) -- (519.26,92.19) -- cycle ;
-%Shape: Rectangle [id:dp952165170642489] 
-\draw   (440.51,174) -- (372.14,245.02) -- (413.05,284.39) -- (481.41,213.38) -- cycle ;
+        
 
-%Straight Lines [id:da43480021093829335] 
-\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=2.25]    (193.59,181.93) -- (187.34,138.27) ;
-\draw [shift={(186.64,133.33)}, rotate = 441.85] [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
-%Straight Lines [id:da6356667569876433] 
-\draw [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][line width=2.25]    (440.51,175) -- (415.75,200.11) ;
-\draw [shift={(412.24,203.67)}, rotate = 314.6] [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
-%Straight Lines [id:da22563123154133025] 
-\draw [color={rgb, 255:red, 65; green, 117; blue, 5 }  ,draw opacity=1 ][line width=2.25]    (440.51,175) -- (388.93,175.78) ;
-\draw [shift={(383.93,175.86)}, rotate = 359.13] [fill={rgb, 255:red, 65; green, 117; blue, 5 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
-%Shape: Rectangle [id:dp12172823301153524] 
-\draw   (186.5,176.41) -- (193.59,182.93) -- (186.84,190.28) -- (179.74,183.76) -- cycle ;
-%Shape: Rectangle [id:dp9349834759264539] 
-\draw   (447.27,167.65) -- (454.36,174.17) -- (447.61,181.52) -- (440.51,175) -- cycle ;
-%Straight Lines [id:da2510398254796229] 
-\draw [color={rgb, 255:red, 108; green, 108; blue, 215 }  ,draw opacity=1 ][line width=2.25]    (440.51,175) -- (416.14,150.21) ;
-\draw [shift={(412.64,146.65)}, rotate = 405.49] [fill={rgb, 255:red, 108; green, 108; blue, 215 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
-%Straight Lines [id:da5471202445204062] 
-\draw  [dash pattern={on 4.5pt off 4.5pt}]  (383.93,175.86) -- (186.64,133.33) ;
-\draw [shift={(285.28,154.59)}, rotate = 372.15999999999997] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-%Straight Lines [id:da12114390650727058] 
-\draw  [dash pattern={on 4.5pt off 4.5pt}]  (412.64,146.65) -- (186.64,133.33) ;
-\draw [shift={(299.64,139.99)}, rotate = 363.37] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-%Straight Lines [id:da8219115744539653] 
-\draw  [dash pattern={on 4.5pt off 4.5pt}]  (412.24,203.67) -- (193.59,181.93) ;
-\draw [shift={(302.92,192.8)}, rotate = 365.68] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-
-% Text Node
-\draw (74,15) node [anchor=north west][inner sep=0.75pt]   [align=left] {Row Space $\displaystyle A^{T} y$\\dim $\displaystyle r$};
-% Text Node
-\draw (63,299) node [anchor=north west][inner sep=0.75pt]   [align=left] {Nullspace $\displaystyle Ax=0$\\dim $\displaystyle n-r$};
-% Text Node
-\draw (434,8) node [anchor=north west][inner sep=0.75pt]   [align=left] {Column Space $\displaystyle Ax$\\dim $\displaystyle r$};
-% Text Node
-\draw (419,298) node [anchor=north west][inner sep=0.75pt]   [align=left] {Left Nullspace $\displaystyle A^{T} y=0$\\dim $\displaystyle m-r$};
-% Text Node
-\draw (173,114.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,opacity=1 ]  {$x^{\dagger }$};
-% Text Node
-\draw (417,202.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,opacity=1 ]  {$e$};
-% Text Node
-\draw (423,132.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 108; green, 108; blue, 215 }  ,opacity=1 ]  {$p$};
-% Text Node
-\draw (370,167.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 65; green, 117; blue, 5 }  ,opacity=1 ]  {$b$};
-% Text Node
-\draw (473,153.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 108; green, 108; blue, 215 }  ,opacity=1 ]  {$ \begin{array}{l}
-\textcolor[rgb]{0.42,0.42,0.84}{p}\textcolor[rgb]{0,0,0}{=A}\textcolor[rgb]{0.55,0.34,0.16}{x^{\dagger }}\\
-\textcolor[rgb]{0,0,0}{=AA^{\dagger }}\textcolor[rgb]{0.25,0.46,0.02}{b}\\
-\end{array}$};
-% Text Node
-\draw (276,197.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger } e=0$};
-% Text Node
-\draw (241,160.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger }\textcolor[rgb]{0.25,0.46,0.02}{b} =\textcolor[rgb]{0.55,0.34,0.16}{x^{\dagger }}$};
-% Text Node
-\draw (287,113.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger }\textcolor[rgb]{0.42,0.42,0.84}{p} =\textcolor[rgb]{0.55,0.34,0.16}{x^{\dagger }}$};
-% Text Node
-\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 209; green, 154; blue, 102 }  ,fill opacity=1 ][dash pattern={on 0.84pt off 2.51pt}]  (205,318) .. controls (205,315.24) and (207.24,313) .. (210,313) -- (400,313) .. controls (402.76,313) and (405,315.24) .. (405,318) -- (405,355) .. controls (405,357.76) and (402.76,360) .. (400,360) -- (210,360) .. controls (207.24,360) and (205,357.76) .. (205,355) -- cycle  ;
-\draw (208,317.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger } A=\begin{bmatrix}
-I & 0\\
-0 & 0
-\end{bmatrix} \ \begin{matrix}
-( row\ space)\\
-( nullspace)
-\end{matrix}$};
-
-
-\end{tikzpicture}
-\end{figure}
-
-The pseudoinverse $ A^{+} $ is the $ n $ by $ m $ matrix that makes $ A A^{+} $ and $ A^{+} A $ into projections. 
+The pseudoinverse $ A^{\dagger} $ is the $ n $ by $ m $ matrix that makes $ A A^{\dagger} $ and $ A^{\dagger} A $ into projections. 
 
 \begin{remark}
-    Trying for $ A A^{-1}=A^{-1} A=I $, $ A A^{+}= $ projection matrix onto the column space of $ A $ (refer to \ref{})
+    Trying for $ A A^{-1}=A^{-1} A=I $, $ A A^{\dagger}= $ projection matrix onto the column space of $ A $ (refer to \ref{})
 
     $ A^{+} A= $ projection matrix onto the row space of $ A $
 \end{remark}
@@ -490,7 +498,7 @@ $R_{2 k} =q_{2}^{T} a_{k} $\;
 $R_{k-1, k} =q_{k-1}^{T} a_{k}$ \;
 $\tilde{q}_{k} =a_{k}-\left(R_{1 k} q_{1}+R_{2 k} q_{2}+\cdots+R_{k-1, k} q_{k-1}\right)$ \;
 $R_{k k} =\left\|\tilde{q}_{k}\right\|_{2}$ \;
- $q_{k} =\frac{1}{R_{k k}} \tilde{q}_{k}$ \;
+ $q_{k} =\dfrac{1}{R_{k k}} \tilde{q}_{k}$ \;
 }
 \end{algorithm}
 
@@ -500,7 +508,7 @@ $R_{k k} =\left\|\tilde{q}_{k}\right\|_{2}$ \;
 \begin{aligned}
 \left[\begin{array}{lll}
 a_{1} & a_{2} & a_{3}
-\end{array}\right]=\left[\begin{array}{rrr}
+\end{array}\right] &=\left[\begin{array}{rrr}
 -1 & -1 & 1 \\
 1 & 3 & 3 \\
 -1 & -1 & 5 \\
@@ -553,7 +561,9 @@ $$
 1
 \end{array}\right]
 $$
+
 将其单位化得到：
+
 $$
 R_{22}=\left\|\tilde{q}_{2}\right\|=2, \quad q_{2}=\frac{1}{R_{22}} \tilde{q}_{2}=\left[\begin{array}{c}
 1 / 2 \\
@@ -628,7 +638,7 @@ $$ \begin{aligned} \sum_{k=1}^{n}((4 m-1)(k-1)+3 m) &=(4 m-1) \frac{n(n-1)}{2}+3
 
 对于稀疏矩阵（空间存储小于$m \times n$）的QR分解，时间复杂度可以低于$O(2mn^2)$. 
 
-对于普通矩阵使用QR分解求节线性方程组，正交分解需要$2 n^3$ flops, 计算$Q^T b$需要$2n^2$ flops, 第三步回代求解$Rx = Q^Tb$需要$n^2$ flops.(总时间复杂度是$O(n^3)$). 
+对于普通矩阵使用QR分解求解线性方程组，正交分解需要$2 n^3$ flops, 计算$Q^T b$需要$2n^2$ flops, 第三步回代求解$Rx = Q^Tb$需要$n^2$ flops.(总时间复杂度是$O(n^3)$). 
 
 \begin{algorithm}[htbp]
     \KwIn{$n \times n$ invertible matrix $A$}
@@ -654,7 +664,7 @@ $$ \begin{aligned} \sum_{k=1}^{n}((4 m-1)(k-1)+3 m) &=(4 m-1) \frac{n(n-1)}{2}+3
     }
 \end{algorithm}
 
-时间复杂度是$O(3n^3)$. 对于稀疏矩阵求解线性方程组，时间复杂度接近$\operatorname{nnz}(A)$
+对于通过QR分解求逆，时间复杂度是$O(3n^3)$. 对于稀疏矩阵求解线性方程组，时间复杂度接近$\operatorname{nnz}(A)$
 
 \section{The disadvantage of QR Algorithm}
 
@@ -742,70 +752,70 @@ $$ H^{T} H=I $$
 \end{theorem}
     
 
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+\begin{FigureCenter}{Reflection of $x$}
+    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+    \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+    %uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+    
+    %Shape: Parallelogram [id:dp7838939596356449] 
+    \draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 213; green, 213; blue, 213 }  ,fill opacity=1 ] (386.97,225.43) -- (240.09,293.42) -- (240.13,95.65) -- (387,27.67) -- cycle ;
+    %Straight Lines [id:da6147749821862796] 
+    \draw [color={rgb, 255:red, 109; green, 180; blue, 232 }  ,draw opacity=1 ][line width=2.25]    (314,185.67) -- (313.74,121.96) ;
+    \draw [shift={(313.72,116.96)}, rotate = 449.76] [fill={rgb, 255:red, 109; green, 180; blue, 232 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
+    %Straight Lines [id:da41583656892756826] 
+    \draw [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][line width=1.5]  [dash pattern={on 1.69pt off 2.76pt}]  (314,185.67) -- (136,118.67) ;
+    %Straight Lines [id:da16926502578383218] 
+    \draw [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][line width=2.25]    (242,158.67) -- (140.68,120.43) ;
+    \draw [shift={(136,118.67)}, rotate = 380.66999999999996] [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
+    %Straight Lines [id:da9973542879627482] 
+    \draw [color={rgb, 255:red, 252; green, 132; blue, 147 }  ,draw opacity=1 ][line width=2.25]    (314,185.67) -- (486.78,117.1) ;
+    \draw [shift={(491.43,115.25)}, rotate = 518.35] [fill={rgb, 255:red, 252; green, 132; blue, 147 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
+    %Straight Lines [id:da33840798922577653] 
+    \draw [color={rgb, 255:red, 161; green, 206; blue, 94 }  ,draw opacity=1 ][line width=1.5]  [dash pattern={on 1.69pt off 2.76pt}]  (314,185.67) -- (135,183.96) ;
+    %Straight Lines [id:da7106398441661397] 
+    \draw [color={rgb, 255:red, 161; green, 206; blue, 94 }  ,draw opacity=1 ][line width=2.25]    (242,184.96) -- (140,184.01) ;
+    \draw [shift={(135,183.96)}, rotate = 360.53999999999996] [fill={rgb, 255:red, 161; green, 206; blue, 94 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
+    %Straight Lines [id:da3197102975021888] 
+    \draw [color={rgb, 255:red, 161; green, 206; blue, 94 }  ,draw opacity=1 ][line width=2.25]    (314,185.67) -- (485.43,180.69) ;
+    \draw [shift={(490.43,180.55)}, rotate = 538.3399999999999] [fill={rgb, 255:red, 161; green, 206; blue, 94 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
+    %Straight Lines [id:da07789590448724115] 
+    \draw  [dash pattern={on 4.5pt off 4.5pt}]  (136,118.67) -- (135,183.96) ;
+    %Straight Lines [id:da5486690595919534] 
+    \draw  [dash pattern={on 4.5pt off 4.5pt}]  (313.72,116.96) -- (136,118.67) ;
+    %Straight Lines [id:da1919773551202424] 
+    \draw  [dash pattern={on 4.5pt off 4.5pt}]  (491.43,115.25) -- (313.72,116.96) ;
+    %Straight Lines [id:da06488229558680647] 
+    \draw  [dash pattern={on 4.5pt off 4.5pt}]  (491.43,115.25) -- (490.43,180.55) ;
+    %Straight Lines [id:da5187220488118582] 
+    \draw [color={rgb, 255:red, 65; green, 117; blue, 5 }  ,draw opacity=1 ][line width=2.25]    (314,185.67) -- (397.22,183.25) ;
+    \draw [shift={(402.22,183.11)}, rotate = 538.3399999999999] [fill={rgb, 255:red, 65; green, 117; blue, 5 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
+    
+    % Text Node
+    \draw (108,107.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{Hx}$};
+    % Text Node
+    \draw (307,97.4) node [anchor=north west][inner sep=0.75pt]    {$u$};
+    % Text Node
+    \draw  [color={rgb, 255:red, 12; green, 12; blue, 12 }  ,draw opacity=0 ][fill={rgb, 255:red, 247; green, 140; blue, 105 }  ,fill opacity=1 ]  (286,73) .. controls (286,70.24) and (288.24,68) .. (291,68) -- (346,68) .. controls (348.76,68) and (351,70.24) .. (351,73) -- (351,89) .. controls (351,91.76) and (348.76,94) .. (346,94) -- (291,94) .. controls (288.24,94) and (286,91.76) .. (286,89) -- cycle  ;
+    \draw (289,72) node [anchor=north west][inner sep=0.75pt]   [align=left] {$\displaystyle \boldsymbol{Hu=u}$};
+    % Text Node
+    \draw (87,196.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{-c_{1} v=H( c_{1} v)}$};
+    % Text Node
+    \draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 247; green, 140; blue, 105 }  ,fill opacity=1 ]  (490,86) .. controls (490,83.24) and (492.24,81) .. (495,81) -- (579,81) .. controls (581.76,81) and (584,83.24) .. (584,86) -- (584,102) .. controls (584,104.76) and (581.76,107) .. (579,107) -- (495,107) .. controls (492.24,107) and (490,104.76) .. (490,102) -- cycle  ;
+    \draw (493,85.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{x=u+c_{1} v}$};
+    % Text Node
+    \draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 247; green, 140; blue, 105 }  ,fill opacity=1 ]  (365,213) .. controls (365,210.24) and (367.24,208) .. (370,208) -- (428,208) .. controls (430.76,208) and (433,210.24) .. (433,213) -- (433,229) .. controls (433,231.76) and (430.76,234) .. (428,234) -- (370,234) .. controls (367.24,234) and (365,231.76) .. (365,229) -- cycle  ;
+    \draw (368,212.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{v}^{T}\boldsymbol{u} =0$};
+    % Text Node
+    \draw (483,183.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{c_{1} v} ,\boldsymbol{c_{1} =v}^{T}\boldsymbol{x}$};
+    % Text Node
+    \draw (396,187.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{v}$};
+    
+    
+    \end{tikzpicture}
+\end{FigureCenter}
 
 
-
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-
-\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
-
-%Shape: Parallelogram [id:dp7838939596356449] 
-\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 213; green, 213; blue, 213 }  ,fill opacity=1 ] (386.97,225.43) -- (240.09,293.42) -- (240.13,95.65) -- (387,27.67) -- cycle ;
-%Straight Lines [id:da6147749821862796] 
-\draw [color={rgb, 255:red, 109; green, 180; blue, 232 }  ,draw opacity=1 ][line width=2.25]    (314,185.67) -- (313.74,121.96) ;
-\draw [shift={(313.72,116.96)}, rotate = 449.76] [fill={rgb, 255:red, 109; green, 180; blue, 232 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
-%Straight Lines [id:da41583656892756826] 
-\draw [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][line width=1.5]  [dash pattern={on 1.69pt off 2.76pt}]  (314,185.67) -- (136,118.67) ;
-%Straight Lines [id:da16926502578383218] 
-\draw [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][line width=2.25]    (242,158.67) -- (140.68,120.43) ;
-\draw [shift={(136,118.67)}, rotate = 380.66999999999996] [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
-%Straight Lines [id:da9973542879627482] 
-\draw [color={rgb, 255:red, 252; green, 132; blue, 147 }  ,draw opacity=1 ][line width=2.25]    (314,185.67) -- (486.78,117.1) ;
-\draw [shift={(491.43,115.25)}, rotate = 518.35] [fill={rgb, 255:red, 252; green, 132; blue, 147 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
-%Straight Lines [id:da33840798922577653] 
-\draw [color={rgb, 255:red, 161; green, 206; blue, 94 }  ,draw opacity=1 ][line width=1.5]  [dash pattern={on 1.69pt off 2.76pt}]  (314,185.67) -- (135,183.96) ;
-%Straight Lines [id:da7106398441661397] 
-\draw [color={rgb, 255:red, 161; green, 206; blue, 94 }  ,draw opacity=1 ][line width=2.25]    (242,184.96) -- (140,184.01) ;
-\draw [shift={(135,183.96)}, rotate = 360.53999999999996] [fill={rgb, 255:red, 161; green, 206; blue, 94 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
-%Straight Lines [id:da3197102975021888] 
-\draw [color={rgb, 255:red, 161; green, 206; blue, 94 }  ,draw opacity=1 ][line width=2.25]    (314,185.67) -- (485.43,180.69) ;
-\draw [shift={(490.43,180.55)}, rotate = 538.3399999999999] [fill={rgb, 255:red, 161; green, 206; blue, 94 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
-%Straight Lines [id:da07789590448724115] 
-\draw  [dash pattern={on 4.5pt off 4.5pt}]  (136,118.67) -- (135,183.96) ;
-%Straight Lines [id:da5486690595919534] 
-\draw  [dash pattern={on 4.5pt off 4.5pt}]  (313.72,116.96) -- (136,118.67) ;
-%Straight Lines [id:da1919773551202424] 
-\draw  [dash pattern={on 4.5pt off 4.5pt}]  (491.43,115.25) -- (313.72,116.96) ;
-%Straight Lines [id:da06488229558680647] 
-\draw  [dash pattern={on 4.5pt off 4.5pt}]  (491.43,115.25) -- (490.43,180.55) ;
-%Straight Lines [id:da5187220488118582] 
-\draw [color={rgb, 255:red, 65; green, 117; blue, 5 }  ,draw opacity=1 ][line width=2.25]    (314,185.67) -- (397.22,183.25) ;
-\draw [shift={(402.22,183.11)}, rotate = 538.3399999999999] [fill={rgb, 255:red, 65; green, 117; blue, 5 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
-
-% Text Node
-\draw (108,107.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{Hx}$};
-% Text Node
-\draw (307,97.4) node [anchor=north west][inner sep=0.75pt]    {$u$};
-% Text Node
-\draw  [color={rgb, 255:red, 12; green, 12; blue, 12 }  ,draw opacity=0 ][fill={rgb, 255:red, 247; green, 140; blue, 105 }  ,fill opacity=1 ]  (286,73) .. controls (286,70.24) and (288.24,68) .. (291,68) -- (346,68) .. controls (348.76,68) and (351,70.24) .. (351,73) -- (351,89) .. controls (351,91.76) and (348.76,94) .. (346,94) -- (291,94) .. controls (288.24,94) and (286,91.76) .. (286,89) -- cycle  ;
-\draw (289,72) node [anchor=north west][inner sep=0.75pt]   [align=left] {$\displaystyle \boldsymbol{Hu=u}$};
-% Text Node
-\draw (87,196.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{-c_{1} v=H( c_{1} v)}$};
-% Text Node
-\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 247; green, 140; blue, 105 }  ,fill opacity=1 ]  (490,86) .. controls (490,83.24) and (492.24,81) .. (495,81) -- (579,81) .. controls (581.76,81) and (584,83.24) .. (584,86) -- (584,102) .. controls (584,104.76) and (581.76,107) .. (579,107) -- (495,107) .. controls (492.24,107) and (490,104.76) .. (490,102) -- cycle  ;
-\draw (493,85.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{x=u+c_{1} v}$};
-% Text Node
-\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 247; green, 140; blue, 105 }  ,fill opacity=1 ]  (365,213) .. controls (365,210.24) and (367.24,208) .. (370,208) -- (428,208) .. controls (430.76,208) and (433,210.24) .. (433,213) -- (433,229) .. controls (433,231.76) and (430.76,234) .. (428,234) -- (370,234) .. controls (367.24,234) and (365,231.76) .. (365,229) -- cycle  ;
-\draw (368,212.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{v}^{T}\boldsymbol{u} =0$};
-% Text Node
-\draw (483,183.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{c_{1} v} ,\boldsymbol{c_{1} =v}^{T}\boldsymbol{x}$};
-% Text Node
-\draw (396,187.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{v}$};
-
-
-\end{tikzpicture}
 
 \begin{proof}
     $$\begin{aligned}
@@ -901,12 +911,8 @@ $$
 \subsubsection{构造的反射算子几何意义}
 
 
-
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-
-
-
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+\begin{FigureCenter}{构造的反射算子的几何图示}
+    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
 \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
 %uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
@@ -942,6 +948,8 @@ $$
 
 
 \end{tikzpicture}
+\end{FigureCenter}
+
 
 关于超平面 $ \left\{x \mid w^{T} x=0\right\} $, 其法向量：
 $$
@@ -964,50 +972,53 @@ $$
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 对于 $ i>j $ 和 $ j \leq k $, 第 $ \mathrm{i}, \mathrm{j} $ 个位置的元素为零。
 
-\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+\begin{FigureCenter}{The structure of $ H_{k} H_{k-1} \ldots H_{1} A $}
+    \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+        %uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+        
+        %Shape: Rectangle [id:dp6272763265145869] 
+        \draw  [fill={rgb, 255:red, 189; green, 189; blue, 189 }  ,fill opacity=1 ] (313,30) -- (453.39,30) -- (453.39,248.71) -- (313,248.71) -- cycle ;
+        %Shape: Rectangle [id:dp1811444148627901] 
+        \draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (313,95.38) -- (383,95.38) -- (383,248.71) -- (313,248.71) -- cycle ;
+        %Shape: Right Triangle [id:dp6024983200469929] 
+        \draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (313,29.38) -- (383,95.38) -- (313,95.38) -- cycle ;
+        
+        %Straight Lines [id:da17687674689557986] 
+        \draw    (466.39,38) -- (466.39,92.38) ;
+        \draw [shift={(466.39,95.38)}, rotate = 270] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        \draw [shift={(466.39,35)}, rotate = 90] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        %Straight Lines [id:da19218796013321793] 
+        \draw    (466.39,98.38) -- (466.39,244.38) ;
+        \draw [shift={(466.39,247.38)}, rotate = 270] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        \draw [shift={(466.39,95.38)}, rotate = 90] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        %Straight Lines [id:da4247865332087235] 
+        \draw    (318.39,257.97) -- (379.39,257.41) ;
+        \draw [shift={(382.39,257.38)}, rotate = 539.47] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        \draw [shift={(315.39,258)}, rotate = 359.47] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        %Straight Lines [id:da09293842736310576] 
+        \draw    (385.39,257.38) -- (451.39,257.38) ;
+        \draw [shift={(454.39,257.38)}, rotate = 180] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        \draw [shift={(382.39,257.38)}, rotate = 0] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        
+        % Text Node
+        \draw (470.39,55.4) node [anchor=north west][inner sep=0.75pt]    {$k$};
+        % Text Node
+        \draw (467.39,163.78) node [anchor=north west][inner sep=0.75pt]    {$m-k$};
+        % Text Node
+        \draw (341.39,263.4) node [anchor=north west][inner sep=0.75pt]    {$k$};
+        % Text Node
+        \draw (395.39,265.4) node [anchor=north west][inner sep=0.75pt]    {$n-k$};
+        % Text Node
+        \draw (160.39,128.4) node [anchor=north west][inner sep=0.75pt]    {$H_{n} H_{n-1} \cdots H_{1} A=$};
+        % Text Node
+        \draw (341.39,152.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{0}$};
+        % Text Node
+        \draw (371.39,47) node [anchor=north west][inner sep=0.75pt]   [align=left] {Non-zeros};
+        
+        
+        \end{tikzpicture}        
+\end{FigureCenter}
 
-%Shape: Rectangle [id:dp6272763265145869] 
-\draw  [fill={rgb, 255:red, 189; green, 189; blue, 189 }  ,fill opacity=1 ] (313,30) -- (453.39,30) -- (453.39,248.71) -- (313,248.71) -- cycle ;
-%Shape: Rectangle [id:dp1811444148627901] 
-\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (313,95.38) -- (383,95.38) -- (383,248.71) -- (313,248.71) -- cycle ;
-%Shape: Right Triangle [id:dp6024983200469929] 
-\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (313,29.38) -- (383,95.38) -- (313,95.38) -- cycle ;
-
-%Straight Lines [id:da17687674689557986] 
-\draw    (466.39,38) -- (466.39,92.38) ;
-\draw [shift={(466.39,95.38)}, rotate = 270] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-\draw [shift={(466.39,35)}, rotate = 90] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-%Straight Lines [id:da19218796013321793] 
-\draw    (466.39,98.38) -- (466.39,244.38) ;
-\draw [shift={(466.39,247.38)}, rotate = 270] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-\draw [shift={(466.39,95.38)}, rotate = 90] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-%Straight Lines [id:da4247865332087235] 
-\draw    (318.39,257.97) -- (379.39,257.41) ;
-\draw [shift={(382.39,257.38)}, rotate = 539.47] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-\draw [shift={(315.39,258)}, rotate = 359.47] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-%Straight Lines [id:da09293842736310576] 
-\draw    (385.39,257.38) -- (451.39,257.38) ;
-\draw [shift={(454.39,257.38)}, rotate = 180] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-\draw [shift={(382.39,257.38)}, rotate = 0] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-
-% Text Node
-\draw (470.39,55.4) node [anchor=north west][inner sep=0.75pt]    {$k$};
-% Text Node
-\draw (467.39,163.78) node [anchor=north west][inner sep=0.75pt]    {$m-k$};
-% Text Node
-\draw (341.39,263.4) node [anchor=north west][inner sep=0.75pt]    {$k$};
-% Text Node
-\draw (395.39,265.4) node [anchor=north west][inner sep=0.75pt]    {$n-k$};
-% Text Node
-\draw (160.39,128.4) node [anchor=north west][inner sep=0.75pt]    {$H_{n} H_{n-1} \cdots H_{1} A=$};
-% Text Node
-\draw (341.39,152.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{0}$};
-% Text Node
-\draw (371.39,47) node [anchor=north west][inner sep=0.75pt]   [align=left] {Non-zeros};
-
-
-\end{tikzpicture}
 
 
 
@@ -1030,64 +1041,63 @@ $$H_2A_1= A_{2}=\left[\begin{array}{cccccccc}X & X & X & X & X & X & X & X \\ 0 
 
 下面的算法用 $ \left[\begin{array}{l}R \\ 0\end{array}\right] $ 来代替 $ A \in \mathbb{R}^{m \times n} $.
 
+\begin{FigureCenter}{$A$的结构}
+    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt
 
+    \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+        %uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+        
+        %Shape: Rectangle [id:dp6871792923402225] 
+        \draw  [fill={rgb, 255:red, 189; green, 189; blue, 189 }  ,fill opacity=1 ] (333,28) -- (473.39,28) -- (473.39,246.71) -- (333,246.71) -- cycle ;
+        %Shape: Rectangle [id:dp8707939685410495] 
+        \draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (333,93.38) -- (403,93.38) -- (403,246.71) -- (333,246.71) -- cycle ;
+        %Shape: Right Triangle [id:dp15297612966191965] 
+        \draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (333,27.38) -- (403,93.38) -- (333,93.38) -- cycle ;
+        
+        %Straight Lines [id:da37642223834770605] 
+        \draw    (486.39,36) -- (486.39,90.38) ;
+        \draw [shift={(486.39,93.38)}, rotate = 270] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        \draw [shift={(486.39,33)}, rotate = 90] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        %Straight Lines [id:da1511742331917798] 
+        \draw    (486.39,96.38) -- (486.39,242.38) ;
+        \draw [shift={(486.39,245.38)}, rotate = 270] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        \draw [shift={(486.39,93.38)}, rotate = 90] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        %Straight Lines [id:da9300057482807336] 
+        \draw    (338.39,255.97) -- (399.39,255.41) ;
+        \draw [shift={(402.39,255.38)}, rotate = 539.47] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        \draw [shift={(335.39,256)}, rotate = 359.47] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        %Straight Lines [id:da8104730881110522] 
+        \draw    (405.39,255.38) -- (471.39,255.38) ;
+        \draw [shift={(474.39,255.38)}, rotate = 180] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        \draw [shift={(402.39,255.38)}, rotate = 0] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        %Shape: Rectangle [id:dp3957948372583875] 
+        \draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 255; green, 147; blue, 147 }  ,fill opacity=1 ] (403,93.38) -- (473.39,93.38) -- (473.39,246.42) -- (403,246.42) -- cycle ;
+        %Straight Lines [id:da6423678439002216] 
+        \draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=3]    (403,93.38) -- (403,246.42) ;
+        %Straight Lines [id:da15094884239960105] 
+        \draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=2.25]  [dash pattern={on 6.75pt off 4.5pt}]  (403,93.38) -- (473.39,93.38) ;
+        %Straight Lines [id:da6820341280353248] 
+        \draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=2.25]  [dash pattern={on 6.75pt off 4.5pt}]  (473.39,93.38) -- (473.39,246.42) ;
+        %Straight Lines [id:da3968465055227026] 
+        \draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=2.25]  [dash pattern={on 6.75pt off 4.5pt}]  (403,246.42) -- (473.39,246.42) ;
+        
+        % Text Node
+        \draw (490.39,53.4) node [anchor=north west][inner sep=0.75pt]    {$k$};
+        % Text Node
+        \draw (487.39,161.78) node [anchor=north west][inner sep=0.75pt]    {$m-k$};
+        % Text Node
+        \draw (361.39,261.4) node [anchor=north west][inner sep=0.75pt]    {$k$};
+        % Text Node
+        \draw (415.39,263.4) node [anchor=north west][inner sep=0.75pt]    {$n-k$};
+        % Text Node
+        \draw (361.39,150.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{0}$};
+        % Text Node
+        \draw (387.39,49) node [anchor=north west][inner sep=0.75pt]   [align=left] {Non-zeros};
+        
+        
+        \end{tikzpicture}
+\end{FigureCenter}
 
-\begin{center}
-    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-
-\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
-
-%Shape: Rectangle [id:dp6871792923402225] 
-\draw  [fill={rgb, 255:red, 189; green, 189; blue, 189 }  ,fill opacity=1 ] (333,28) -- (473.39,28) -- (473.39,246.71) -- (333,246.71) -- cycle ;
-%Shape: Rectangle [id:dp8707939685410495] 
-\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (333,93.38) -- (403,93.38) -- (403,246.71) -- (333,246.71) -- cycle ;
-%Shape: Right Triangle [id:dp15297612966191965] 
-\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (333,27.38) -- (403,93.38) -- (333,93.38) -- cycle ;
-
-%Straight Lines [id:da37642223834770605] 
-\draw    (486.39,36) -- (486.39,90.38) ;
-\draw [shift={(486.39,93.38)}, rotate = 270] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-\draw [shift={(486.39,33)}, rotate = 90] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-%Straight Lines [id:da1511742331917798] 
-\draw    (486.39,96.38) -- (486.39,242.38) ;
-\draw [shift={(486.39,245.38)}, rotate = 270] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-\draw [shift={(486.39,93.38)}, rotate = 90] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-%Straight Lines [id:da9300057482807336] 
-\draw    (338.39,255.97) -- (399.39,255.41) ;
-\draw [shift={(402.39,255.38)}, rotate = 539.47] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-\draw [shift={(335.39,256)}, rotate = 359.47] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-%Straight Lines [id:da8104730881110522] 
-\draw    (405.39,255.38) -- (471.39,255.38) ;
-\draw [shift={(474.39,255.38)}, rotate = 180] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-\draw [shift={(402.39,255.38)}, rotate = 0] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-%Shape: Rectangle [id:dp3957948372583875] 
-\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 255; green, 147; blue, 147 }  ,fill opacity=1 ] (403,93.38) -- (473.39,93.38) -- (473.39,246.42) -- (403,246.42) -- cycle ;
-%Straight Lines [id:da6423678439002216] 
-\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=3]    (403,93.38) -- (403,246.42) ;
-%Straight Lines [id:da15094884239960105] 
-\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=2.25]  [dash pattern={on 6.75pt off 4.5pt}]  (403,93.38) -- (473.39,93.38) ;
-%Straight Lines [id:da6820341280353248] 
-\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=2.25]  [dash pattern={on 6.75pt off 4.5pt}]  (473.39,93.38) -- (473.39,246.42) ;
-%Straight Lines [id:da3968465055227026] 
-\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=2.25]  [dash pattern={on 6.75pt off 4.5pt}]  (403,246.42) -- (473.39,246.42) ;
-
-% Text Node
-\draw (490.39,53.4) node [anchor=north west][inner sep=0.75pt]    {$k$};
-% Text Node
-\draw (487.39,161.78) node [anchor=north west][inner sep=0.75pt]    {$m-k$};
-% Text Node
-\draw (361.39,261.4) node [anchor=north west][inner sep=0.75pt]    {$k$};
-% Text Node
-\draw (415.39,263.4) node [anchor=north west][inner sep=0.75pt]    {$n-k$};
-% Text Node
-\draw (361.39,150.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{0}$};
-% Text Node
-\draw (387.39,49) node [anchor=north west][inner sep=0.75pt]   [align=left] {Non-zeros};
-
-
-\end{tikzpicture}
-\end{center}
 
 
 \begin{algorithm}[htbp]
