@@ -207,17 +207,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {corollaryT}{\ifthmt@listswap Corollary~5.1.1\else \numberline {5.1.1}Corollary\fi }{31}{corollaryT.1}%
 \defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~5.1.2\else \numberline {5.1.2}Corollary\fi }{31}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {definitionT}{\ifthmt@listswap Definition~5.1.2\else \numberline {5.1.2}Definition\fi \thmtformatoptarg {线性独立 (linearly independent)}}{31}{definitionT.5.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {corollaryT}{\ifthmt@listswap Corollary~5.1.2\else \numberline {5.1.2}Corollary\fi }{31}{corollaryT.2}%
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~5.1.3\else \numberline {5.1.3}Corollary\fi }{31}{corollaryT.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {exampleT}{\ifthmt@listswap Example~5.1\else \numberline {5.1}Example\fi }{31}{exampleT.5.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {exampleT}{\ifthmt@listswap Example~5.2\else \numberline {5.2}Example\fi }{31}{exampleT.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theoremeT}{\ifthmt@listswap Theorem~5.1.3\else \numberline {5.1.3}Theorem\fi }{32}{theoremeT.3}%
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~5.1.4\else \numberline {5.1.4}Theorem\fi }{32}{theoremeT.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionT}{\ifthmt@listswap Definition~5.2.1\else \numberline {5.2.1}Definition\fi \thmtformatoptarg {基 (basis)}}{32}{definitionT.5.2.1}%
+\contentsline {definitionT}{\ifthmt@listswap Definition~5.2.1\else \numberline {5.2.1}Definition\fi \thmtformatoptarg {基 (Basis)}}{32}{definitionT.5.2.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {definitionT}{\ifthmt@listswap Definition~5.2.2\else \numberline {5.2.2}Definition\fi \thmtformatoptarg {向量 $ b $ 在基底 $ a_{1}, \ldots , a_{n} $ 下的分解}}{32}{definitionT.5.2.2}%
 \defcounter {refsection}{0}\relax 
@@ -225,13 +227,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {definitionT}{\ifthmt@listswap Definition~5.3.1\else \numberline {5.3.1}Definition\fi \thmtformatoptarg {Orthogonal Vectors}}{32}{definitionT.5.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionT}{\ifthmt@listswap Definition~5.3.2\else \numberline {5.3.2}Definition\fi \thmtformatoptarg {Orthonormal Vectors}}{32}{definitionT.5.3.2}%
+\contentsline {definitionT}{\ifthmt@listswap Definition~5.3.2\else \numberline {5.3.2}Definition\fi \thmtformatoptarg {Orthonormal Vectors}}{33}{definitionT.5.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {corollaryT}{\ifthmt@listswap Corollary~5.3.1\else \numberline {5.3.1}Corollary\fi }{33}{corollaryT.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {corollaryT}{\ifthmt@listswap Corollary~5.3.2\else \numberline {5.3.2}Corollary\fi }{33}{corollaryT.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionT}{\ifthmt@listswap Definition~5.3.3\else \numberline {5.3.3}Definition\fi \thmtformatoptarg {$n$维向量的一个标准正交基}}{33}{definitionT.5.3.3}%
+\contentsline {definitionT}{\ifthmt@listswap Definition~5.3.3\else \numberline {5.3.3}Definition\fi \thmtformatoptarg {$n$维向量的一个标准正交基}}{34}{definitionT.5.3.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {definitionT}{\ifthmt@listswap Definition~5.3.4\else \numberline {5.3.4}Definition\fi \thmtformatoptarg { $ x $ 在标准正交基下的标准正交分解}}{34}{definitionT.5.3.4}%
 \defcounter {refsection}{0}\relax 
@@ -397,7 +399,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {definitionT}{\ifthmt@listswap Definition~7.1.5\else \numberline {7.1.5}Definition\fi \thmtformatoptarg {$A$的行范数}}{52}{definitionT.7.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionT}{\ifthmt@listswap Definition~7.1.6\else \numberline {7.1.6}Definition\fi \thmtformatoptarg {$A$的2−范数}}{52}{definitionT.7.1.6}%
+\contentsline {definitionT}{\ifthmt@listswap Definition~7.1.6\else \numberline {7.1.6}Definition\fi \thmtformatoptarg {$A$的2-范数}}{52}{definitionT.7.1.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {exampleT}{\ifthmt@listswap Example~7.2\else \numberline {7.2}Example\fi }{52}{exampleT.7.2}%
 \defcounter {refsection}{0}\relax 
@@ -455,7 +457,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {corollaryT}{\ifthmt@listswap Corollary~9.5.2\else \numberline {9.5.2}Corollary\fi }{60}{corollaryT.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {corollaryT}{\ifthmt@listswap Corollary~9.6.1\else \numberline {9.6.1}Corollary\fi }{60}{corollaryT.1}%
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~9.6.1\else \numberline {9.6.1}Corollary\fi \thmtformatoptarg {Gram Matrix 可逆等价于$A$列线性无关}}{60}{corollaryT.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {definitionT}{\ifthmt@listswap Definition~9.7.1\else \numberline {9.7.1}Definition\fi \thmtformatoptarg {Pseudo-inverse}}{60}{definitionT.9.7.1}%
 \defcounter {refsection}{0}\relax 
@@ -487,7 +489,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {definitionT}{\ifthmt@listswap Definition~10.2.1\else \numberline {10.2.1}Definition\fi \thmtformatoptarg {正交矩阵}}{64}{definitionT.10.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theoremeT}{\ifthmt@listswap Theorem~10.2.1\else \numberline {10.2.1}Theorem\fi }{64}{theoremeT.1}%
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~10.2.1\else \numberline {10.2.1}Theorem\fi \thmtformatoptarg {正交矩阵满足非奇异性}}{64}{theoremeT.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {corollaryT}{\ifthmt@listswap Corollary~10.2.2\else \numberline {10.2.2}Corollary\fi }{64}{corollaryT.2}%
 \defcounter {refsection}{0}\relax 
@@ -515,9 +517,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {theoremeT}{\ifthmt@listswap Theorem~10.5.2\else \numberline {10.5.2}Theorem\fi }{66}{theoremeT.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {corollaryT}{\ifthmt@listswap Corollary~10.5.3\else \numberline {10.5.3}Corollary\fi }{66}{corollaryT.3}%
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~10.5.3\else \numberline {10.5.3}Theorem\fi }{66}{theoremeT.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {corollaryT}{\ifthmt@listswap Corollary~10.5.4\else \numberline {10.5.4}Corollary\fi }{67}{corollaryT.4}%
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~10.5.4\else \numberline {10.5.4}Corollary\fi }{66}{corollaryT.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~10.5.5\else \numberline {10.5.5}Corollary\fi }{67}{corollaryT.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {corollaryT}{\ifthmt@listswap Corollary~10.6.1\else \numberline {10.6.1}Corollary\fi \thmtformatoptarg {正交矩阵乘积的正交性}}{67}{corollaryT.1}%
 \defcounter {refsection}{0}\relax 
@@ -527,7 +531,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {theoremeT}{\ifthmt@listswap Theorem~10.8.3\else \numberline {10.8.3}Theorem\fi }{67}{theoremeT.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionT}{\ifthmt@listswap Definition~10.9.1\else \numberline {10.9.1}Definition\fi \thmtformatoptarg {向量集合张成的空间}}{67}{definitionT.10.9.1}%
+\contentsline {definitionT}{\ifthmt@listswap Definition~10.9.1\else \numberline {10.9.1}Definition\fi \thmtformatoptarg {向量集合张成的空间}}{68}{definitionT.10.9.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {definitionT}{\ifthmt@listswap Definition~10.9.2\else \numberline {10.9.2}Definition\fi \thmtformatoptarg {$A$的范围（列空间）}}{68}{definitionT.10.9.2}%
 \defcounter {refsection}{0}\relax 
@@ -537,11 +541,11 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionT}{\ifthmt@listswap Definition~11.0.1\else \numberline {11.0.1}Definition\fi \thmtformatoptarg {Lower Triangular Matrices}}{70}{definitionT.11.0.1}%
+\contentsline {definitionT}{\ifthmt@listswap Definition~11.1.1\else \numberline {11.1.1}Definition\fi \thmtformatoptarg {Lower Triangular Matrices}}{70}{definitionT.11.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionT}{\ifthmt@listswap Definition~11.0.2\else \numberline {11.0.2}Definition\fi \thmtformatoptarg {Upper Triangular Matrices}}{70}{definitionT.11.0.2}%
+\contentsline {definitionT}{\ifthmt@listswap Definition~11.1.2\else \numberline {11.1.2}Definition\fi \thmtformatoptarg {Upper Triangular Matrices}}{70}{definitionT.11.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionT}{\ifthmt@listswap Definition~11.0.3\else \numberline {11.0.3}Definition\fi \thmtformatoptarg {单位上三角矩阵，单位下三角矩阵}}{70}{definitionT.11.0.3}%
+\contentsline {definitionT}{\ifthmt@listswap Definition~11.1.3\else \numberline {11.1.3}Definition\fi \thmtformatoptarg {单位上三角矩阵，单位下三角矩阵}}{70}{definitionT.11.1.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {problem}{\ifthmt@listswap Problem~11.1\else \numberline {11.1}Problem\fi }{70}{problem.11.1}%
 \defcounter {refsection}{0}\relax 
@@ -553,9 +557,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {theoremeT}{\ifthmt@listswap Theorem~11.1.3\else \numberline {11.1.3}Theorem\fi }{71}{theoremeT.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionT}{\ifthmt@listswap Definition~11.2.1\else \numberline {11.2.1}Definition\fi \thmtformatoptarg {QR Factorization}}{72}{definitionT.11.2.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {corollaryT}{\ifthmt@listswap Corollary~11.2.1\else \numberline {11.2.1}Corollary\fi }{72}{corollaryT.1}%
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.2.1\else \numberline {11.2.1}Theorem\fi \thmtformatoptarg {QR Factorization}}{72}{theoremeT.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {corollaryT}{\ifthmt@listswap Corollary~11.2.2\else \numberline {11.2.2}Corollary\fi }{72}{corollaryT.2}%
 \defcounter {refsection}{0}\relax 
@@ -563,9 +565,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {corollaryT}{\ifthmt@listswap Corollary~11.2.4\else \numberline {11.2.4}Corollary\fi }{72}{corollaryT.4}%
 \defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~11.2.5\else \numberline {11.2.5}Corollary\fi }{72}{corollaryT.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~11.2.6\else \numberline {11.2.6}Corollary\fi }{72}{corollaryT.6}%
+\defcounter {refsection}{0}\relax 
 \contentsline {exampleT}{\ifthmt@listswap Example~11.1\else \numberline {11.1}Example\fi }{72}{exampleT.11.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {exampleT}{\ifthmt@listswap Example~11.2\else \numberline {11.2}Example\fi }{73}{exampleT.11.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.2.7\else \numberline {11.2.7}Theorem\fi }{73}{theoremeT.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {corollaryT}{\ifthmt@listswap Corollary~11.3.1\else \numberline {11.3.1}Corollary\fi }{73}{corollaryT.1}%
 \defcounter {refsection}{0}\relax 
@@ -579,41 +587,41 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {theoremeT}{\ifthmt@listswap Theorem~11.3.5\else \numberline {11.3.5}Theorem\fi }{75}{theoremeT.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.4.1\else \numberline {11.4.1}Theorem\fi }{75}{theoremeT.1}%
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.3.6\else \numberline {11.3.6}Theorem\fi }{75}{theoremeT.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {corollaryT}{\ifthmt@listswap Corollary~11.5.1\else \numberline {11.5.1}Corollary\fi }{77}{corollaryT.1}%
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.3.7\else \numberline {11.3.7}Theorem\fi }{75}{theoremeT.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {corollaryT}{\ifthmt@listswap Corollary~11.5.2\else \numberline {11.5.2}Corollary\fi }{77}{corollaryT.2}%
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~11.4.1\else \numberline {11.4.1}Corollary\fi }{77}{corollaryT.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {corollaryT}{\ifthmt@listswap Corollary~11.5.3\else \numberline {11.5.3}Corollary\fi }{77}{corollaryT.3}%
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~11.4.2\else \numberline {11.4.2}Corollary\fi }{77}{corollaryT.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.5.4\else \numberline {11.5.4}Theorem\fi }{77}{theoremeT.4}%
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~11.4.3\else \numberline {11.4.3}Corollary\fi }{77}{corollaryT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.4.4\else \numberline {11.4.4}Theorem\fi }{77}{theoremeT.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {exampleT}{\ifthmt@listswap Example~11.3\else \numberline {11.3}Example\fi }{78}{exampleT.11.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {exampleT}{\ifthmt@listswap Example~11.4\else \numberline {11.4}Example\fi }{80}{exampleT.11.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.7.1\else \numberline {11.7.1}Theorem\fi }{81}{theoremeT.1}%
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.6.1\else \numberline {11.6.1}Theorem\fi }{81}{theoremeT.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.7.2\else \numberline {11.7.2}Theorem\fi }{82}{theoremeT.2}%
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.6.2\else \numberline {11.6.2}Theorem\fi }{82}{theoremeT.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionT}{\ifthmt@listswap Definition~11.7.1\else \numberline {11.7.1}Definition\fi }{82}{definitionT.11.7.1}%
+\contentsline {definitionT}{\ifthmt@listswap Definition~11.6.1\else \numberline {11.6.1}Definition\fi }{82}{definitionT.11.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.7.3\else \numberline {11.7.3}Theorem\fi }{82}{theoremeT.3}%
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.6.3\else \numberline {11.6.3}Theorem\fi }{83}{theoremeT.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionT}{\ifthmt@listswap Definition~11.7.2\else \numberline {11.7.2}Definition\fi \thmtformatoptarg {Constructed Householder Matrix}}{82}{definitionT.11.7.2}%
+\contentsline {definitionT}{\ifthmt@listswap Definition~11.6.2\else \numberline {11.6.2}Definition\fi \thmtformatoptarg {Constructed Householder Matrix}}{83}{definitionT.11.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.7.4\else \numberline {11.7.4}Theorem\fi }{82}{theoremeT.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.7.5\else \numberline {11.7.5}Theorem\fi }{85}{theoremeT.5}%
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.6.4\else \numberline {11.6.4}Theorem\fi }{83}{theoremeT.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {problem}{\ifthmt@listswap Problem~11.3\else \numberline {11.3}Problem\fi }{86}{problem.11.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionT}{\ifthmt@listswap Definition~11.8.1\else \numberline {11.8.1}Definition\fi \thmtformatoptarg { $ v_{1}, \ldots , v_{n} $ 的完整表示}}{87}{definitionT.11.8.1}%
+\contentsline {definitionT}{\ifthmt@listswap Definition~11.7.1\else \numberline {11.7.1}Definition\fi \thmtformatoptarg { $ v_{1}, \ldots , v_{n} $ 的完整表示}}{88}{definitionT.11.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.8.1\else \numberline {11.8.1}Theorem\fi }{87}{theoremeT.1}%
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.7.1\else \numberline {11.7.1}Theorem\fi }{88}{theoremeT.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionT}{\ifthmt@listswap Definition~11.8.2\else \numberline {11.8.2}Definition\fi }{87}{definitionT.11.8.2}%
+\contentsline {definitionT}{\ifthmt@listswap Definition~11.7.2\else \numberline {11.7.2}Definition\fi }{88}{definitionT.11.7.2}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

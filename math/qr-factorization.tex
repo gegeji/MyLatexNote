@@ -1,4 +1,6 @@
-\chapter{QR Factorization and Householder Transformation}
+\chapter{QR分解与Householder变换}
+
+\section{Triangular Matrices}
 
 \begin{definition}[Lower Triangular Matrices]
     矩阵 $ \mathrm{A} \in \mathbb{R}^{n \times n} $ 为\term{下三角(Lower Triangular)矩阵}, $ A_{i j}=0, j>i $ 。
@@ -16,7 +18,7 @@
     对角元素 $ a_{i i} $ 都等于 1的上（下）三角矩阵。
 \end{definition}
 
-\section{高斯消元法}
+\subsection{高斯消元法}
 
 \begin{problem}
     当 $ A $ 是具有非零对角元素的下三角矩阵时，解 $ A x=b $ 。
@@ -54,6 +56,8 @@ $  x_{3} =\dfrac{b_{3}-A_{31} x_{1}-A_{32} x_{2}}{A_{33}} $ \;
 
 时间复杂度： $ 1+3+\ldots+2 \mathrm{n}-1=\mathrm{n}^{2} $ flops
 
+\subsection{The Inverses of Triangular Matrices}
+
 \begin{theorem}
     对角元素非零的三角矩阵A是非奇异的，即:
 $$
@@ -79,7 +83,7 @@ $$ n^{2}+(n-1)^{2}+\cdots+1 \approx \frac{1}{3} n^{3}\text{ flops }$$
 
 如果矩阵 $ A \in \mathbb{R}^{m \times n} $ 的列向量线性无关，则可以将其分解为
 
-\begin{definition}[QR Factorization]
+\begin{theorem}[QR Factorization]
     
     $$\begin{aligned} A&=\left[\begin{array}{llll}a_{1} & a_{2} & \cdots & a_{n}\end{array}\right]\\
     &=\left[\begin{array}{llll}q_{1} & q_{2} & \cdots & q_{n}\end{array}\right]\left[\begin{array}{cccc}R_{11} & R_{12} & \cdots & R_{1 n} \\ 0 & R_{22} & \cdots & R_{2 n} \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & R_{n n}\end{array}\right]\\
@@ -92,19 +96,9 @@ $$
 $$
 
 对角元素 $ R_{i i} $ 是非零的。若 $ R_{i i}<0 $, 改变 $ R_{i i}, \cdots, R_{i n} $ 和向量 $ q_{i} $ 的符号。大多数定义要求 $ R_{i i}>0 $,使得$Q$和$R$是唯一的。
-\end{definition}
+\end{theorem}
 
-QR分解依赖于Gram-Schmidit正交化法。（参见\ref{Chap:Gram-Schmidt Algorithm}）
 
-\begin{remark}
-    Gram-Schmidt(正交化) $$ \quad \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
-
-    $$ \begin{aligned}
-        a_{i}&=\left(q_{1}^{T} a_{i}\right) q_{1}+\cdots+\left(q_{i-1}^{T} a_{i}\right) q_{i-1} + \left\|\tilde{q}_{i}\right\|_{2} q_{i}
-        \\ &=R_{1 i} q_{1}+\cdots+R_{i i} q_{i}
-    \end{aligned}
-      $$
-\end{remark}
 
 \begin{corollary}
     $ Q \in \mathbb{R}^{m \times n} $ 具有标准正交列 $ \left(Q^{T} Q=I\right) $.
@@ -122,8 +116,15 @@ QR分解依赖于Gram-Schmidit正交化法。（参见\ref{Chap:Gram-Schmidt Alg
      $ R $ 是非奇异的(对角元素是非零的).
 \end{corollary}
 
+\begin{corollary}
+    $$ R=Q^{-1} A \Rightarrow R=Q^{T} A $$
+\end{corollary}
+
+QR分解可通过Gram-Schmidit正交化法（参见\ref{Chap:Gram-Schmidt Algorithm}）、Householder变换等进行。
+
+
 \begin{algorithm}[htbp]
-    \caption{QR Decompostion Algorithm}
+    \caption{QR Decomposition Using Gram-Schmidt Algorithm}
     
     设矩阵 $ A $ 的列向量依次为 $ a_{1}, a_{2}, \cdots, a_{n} $ ，由于 $ A $ 为非奇异矩阵, 则列向量线性无关\;
     对列向量 $ a_{1}, a_{2}, \ldots, a_{n} $ 按照Gram-Schmidt方法进行正交化，然后单位化\;
@@ -143,7 +144,6 @@ QR分解依赖于Gram-Schmidit正交化法。（参见\ref{Chap:Gram-Schmidt Alg
 
     $$ A=Q R=\left[\begin{array}{ccc}\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} & 0 \\ \frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}} & 0 \\ 0 & 0 & 1\end{array}\right]\left[\begin{array}{ccc}\sqrt{2} & 0 & \frac{1}{\sqrt{2}} \\ 0 & \sqrt{2} & -\frac{1}{\sqrt{2}} \\ 0 & 0 & 2\end{array}\right] $$
 
-    $$ \begin{aligned}\left[\begin{array}{rrr}-1 & -1 & 1 \\ 1 & 3 & 3 \\ -1 & -1 & 5 \\ 1 & 3 & 7\end{array}\right] &=\left[\begin{array}{rrr}-1 / 2 & 1 / 2 & -1 / 2 \\ 1 / 2 & 1 / 2 & -1 / 2 \\ -1 / 2 & 1 / 2 & 1 / 2 \\ 1 / 2 & 1 / 2 & 1 / 2\end{array}\right]\left[\begin{array}{ccc}2 & 4 & 2 \\ 0 & 2 & 8 \\ 0 & 0 & 4\end{array}\right] \\ &=\left[\begin{array}{lll}q_{1} & q_{2} & q_{3}\end{array}\right]\left[\begin{array}{ccc}R_{11} & R_{12} & R_{13} \\ 0 & R_{22} & R_{23} \\ 0 & 0 & R_{33}\end{array}\right] \\ &=Q R \end{aligned} $$
 \end{example}
 
 \begin{example}
@@ -176,6 +176,23 @@ R_{11} & R_{12} & R_{13} \\
 $$
 \end{example}
 
+\subsection{复矩阵的QR分解}
+
+\begin{theorem}
+    如果 $A \in \mathbb{C}^{m \times n}$ 的列向量是线性无关的，则可以将其分解为
+$$
+A=Q R
+$$
+
+$Q \in \boldsymbol{C}^{m \times n}$ 具有正交列。 $\left(Q^{H} Q=I\right)$
+
+$R \in \boldsymbol{C}^{n \times n}$ 具有实非零对角元素的上三角矩阵。
+\end{theorem}
+
+大多数情况下，会优先选择对角线元素 $R_{i i}$ 为正数。
+
+如果没有特别说明，之后默认矩阵$A$都是实数的。
+
 \section{QR分解的应用}
 
 可用QR分解求解以下问题：
@@ -191,8 +208,6 @@ $$
 QR分解的思想可以用于加快求逆矩阵速度。
 
 \begin{corollary}
-    
-
 $$\begin{aligned}
    Ax = b &\Rightarrow x = A^{-1} b \\
 QRx = b &\Rightarrow x = R^{-1} \left(Q^Tb\right)
@@ -211,7 +226,7 @@ $$
 
 对于普通矩阵使用QR分解求解线性方程组，正交分解需要$2 n^3$ flops, 计算$Q^T b$需要$2n^2$ flops, 第三步回代求解$Rx = Q^Tb$需要$n^2$ flops.(总时间复杂度是$O(n^3)$). 
 
-对于稀疏矩阵求解线性方程组，时间复杂度接近$\operatorname{nnz}(A)$。内存使用和复杂度在很大程度上取决于系数矩阵的稀疏模式。按照顺序，存储器使用量通常是$\operatorname{nnz}(A)+n$的适度倍数，$\operatorname{nnz}(A)+n$是指定问题数据$A$和$b$所需的标量数量，通常远小于$n^2+n$，(如果A和b不是稀疏时存储它们所需的标量数)。求解稀疏线性方程的flop数通常也更接近$\operatorname{nnz}(A)$，而不是$n^3$（矩阵$A$不稀疏时的阶数）。
+对于稀疏矩阵求解线性方程组，时间复杂度接近$\operatorname{nnz}(A)$。内存使用和复杂度在很大程度上取决于系数矩阵的稀疏模式。内存使用量通常是$\operatorname{nnz}(A)+n$的适度倍数，$\operatorname{nnz}(A)+n$是指定问题数据$A$和$b$所需的标量数量，通常远小于$n^2+n$(如果A和b不是稀疏时存储它们所需的标量数)。求解稀疏线性方程的flop数通常也更接近$\operatorname{nnz}(A)$，而不是$n^3$（矩阵$A$不稀疏时的阶数）。
 
 
 \subsection{QR分解和求解伪逆 $A^{\dagger}$、逆 $A^{-1}$}
@@ -241,7 +256,7 @@ $$
 
 \begin{corollary}
     对于方阵非奇异矩阵 ${A} = QR$
-    $$RB = Q^T$$
+    $$RA^{-1} = Q^T$$
 \end{corollary}
 
 \begin{proof}
@@ -265,7 +280,7 @@ $$
 
 对于通过QR分解求$A^{-1}$，QR分解需要$2n^3$ flops， $n$次回代需要$n^3$ flops，时间复杂度是$O(3n^3)$.
 
-\subsection{$A$的列空间与$Q$的关系}
+\subsection{$A$的列空间和$Q$的列空间相同}
 
 矩阵 $A \in \mathbb{R}^{m \times n}$ 的值域范围定义为:
 $$
@@ -273,9 +288,7 @@ $$
 $$
 
 \begin{theorem}
-    假设$A$有线性无关的列向量，且其QR因子为 $Q, R$
-
-    $Q$ 和 $A$ 的值域范围相同（有相同的列空间）。
+    假设$A$有线性无关的列向量，且其QR因子为 $Q, R$，则$Q$ 和 $A$ 的值域范围相同（有相同的列空间）。
 
 \end{theorem}
 
@@ -284,24 +297,34 @@ $$
 \begin{proof}
     $$
 \begin{aligned}
-y \in \operatorname{range}(A) & \Leftrightarrow \quad y=A x, x \in \mathbb{R}^{n} \\
-\Leftrightarrow & y=Q R x, z=R x \\
-& \Leftrightarrow \quad y=Q z, z \in \mathbb{R}^{n} \\
-& \Leftrightarrow \quad y \in \operatorname{range}(Q)
+y \in \operatorname{range}(A) & \Leftrightarrow  y=A x, x \in \mathbb{R}^{n} \\
+& \Leftrightarrow  y=Q R x, z=R x \\
+& \Leftrightarrow  y=Q z, z \in \mathbb{R}^{n} \\
+& \Leftrightarrow  y \in \operatorname{range}(Q)
 \end{aligned}
 $$
 \end{proof}
 
-\subsection{往$A$列空间上的投影也是往$Q$上的投影}
+\subsection{往$A$列空间上的投影也是往$Q$列空间上的投影}
 
 结合 $A=Q R$ 和 $A^{\dagger}=R^{-1} Q^{T}$, 可得：
 
-$$
+\begin{theorem}
+    $$
 A A^{\dagger}=Q R R^{-1} Q^{T}=Q Q^{T}
 $$
+\end{theorem}
+
+\begin{theorem}
+    $$
+R^{\mathrm{T}} R \widehat{\boldsymbol{x}}=R^{\mathrm{T}} Q^{\mathrm{T}} \boldsymbol{b} \text { or } R \widehat{\boldsymbol{x}}=Q^{\mathrm{T}} \boldsymbol{b} \text { or } \quad \widehat{\boldsymbol{x}}=R^{-1} Q^{\mathrm{T}} \boldsymbol{b}
+$$
+
+可以用于求解最小二乘法，而不用直接求解$Ax=b$（当$A$不可逆时）
+\end{theorem}
 
 \begin{remark}
-    注意在 $A A^{\dagger}$ 中乘积的顺序与 $A^{\dagger} A=$ 的差异。
+    注意在 $A A^{\dagger}$ 中乘积的顺序与 $A^{\dagger} A=I$ 的差异。
 \end{remark}
 
 $$
@@ -313,7 +336,7 @@ $$
 \end{aligned}
 $$
 
-$Q Q^{T} x$ 是 $x$ 在 $Q$ 值域上的投影.
+$Q Q^{T} x$ 是 $x$ 在 $Q$ 值域（列空间）上的投影，也是往$A$的列空间上的投影（见\ref{chap:projection-onto-a}）. 
 
 \begin{FigureCenter}{Projecting onto the column space of $A$ is also projecting onto the column space of $Q$}
     \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt
@@ -444,24 +467,12 @@ The pseudoinverse $ A^{\dagger} $ is the $ n $ by $ m $ matrix that makes $ A A^
     $ A^{+} A= $ projection matrix onto the row space of $ A $
 \end{remark}
 
-\section{复矩阵的QR分解}
 
-\begin{theorem}
-    如果 $A \in \mathbb{C}^{m \times n}$ 的列向量是线性无关的，则可以将其分解为
-$$
-A=Q R
-$$
-
-$Q \in \boldsymbol{C}^{m \times n}$ 具有正交列。 $\left(Q^{H} Q=I\right)$
-
-$R \in \boldsymbol{C}^{n \times n}$ 具有实非零对角元素的上三角矩阵。
-\end{theorem}
-
-大多数情况下，会优先选择对角线元素 $R_{i i}$ 为正数。
-
-如果没有特别说明，之后默认矩阵$A$都是实数的。
 
 \section{QR Algorithm Using Gram-Schmidt Algorithm}
+Gram-Schmidt QR算法将逐列计算$Q$和$R$.
+
+
 
 $k$步后我们得到了QR的部分分解：
 $$
@@ -495,10 +506,22 @@ $A = Q R$矩阵中的$R$矩阵为
     $$R_{1 k}=q_{1}^{T} a_{k},  R_{2 k}=q_{2}^{T} a_{k}, \ldots,  R_{k-1, k}=q_{k-1}^{T} a_{k}$$
 \end{theorem}
 
+\begin{remark}
+    Gram-Schmidt正交化的两条基本公式
+    $$ \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
+
+    $$ \begin{aligned}
+        a_{i}&=\left(q_{1}^{T} a_{i}\right) q_{1}+\cdots+\left(q_{i-1}^{T} a_{i}\right) q_{i-1} +\underbrace{
+\left\|\tilde{q}_{i}\right\|_{2} q_{i}}_{\widetilde{q}_{i}}
+        \\ &=R_{1 i} q_{1}+\cdots+R_{i i} q_{i}
+    \end{aligned}
+      $$
+\end{remark}
+
 \begin{proof}
 
 
-    假设已经实现$k−1$列的因数分解，方程 $A= QR$的第$k$列可以计算为：
+    假设已经实现$k - 1$列的因数分解，方程 $A= QR$的第$k$列可以计算为：
 $$
 a_{k}=R_{1 k} q_{1}+R_{2 k} q_{2}+\cdots+R_{k-1, k} q_{k-1}+R_{k k} q_{k}
 $$
@@ -507,16 +530,14 @@ $$
 $$
 \tilde{q}_{k}=a_{k}-R_{1 k} q_{1}-R_{2 k} q_{2}-\cdots-R_{k-1, k} q_{k-1} \neq 0
 $$
-都将是非零的.
+都将是非零的.（由于$a_{1}, \ldots, a_{k}$ 是线性无关的，即$q_{1}, \ldots, q_{i-1}, q_{i} $ 是线性无关的，假设Gram-Schmidt算法过程中没有出现中途退出的状况）
 
-$a_{1}, \ldots, a_{k}$ 是线性无关的.
-
-因此:
+因此
 $$
 a_{k} \notin \operatorname{span}\left\{q_{1}, \ldots, q_{k-1}\right\}=\operatorname{span}\left\{a_{1}, \ldots, a_{k-1}\right\}
 $$
 
-$q_{k}$ 是 $\tilde{q}_{k}$ 的单位化：选择 $R_{k k}=\left\|\tilde{q}_{k}\right\|_{2}$, 以及 $q_{k}=\left(1 / R_{k k}\right) \tilde{q}_{k}$ 。 
+$q_{k}$ 是 $\tilde{q}_{k}$ 的单位化：选择 $R_{k k}=\left\|\tilde{q}_{k}\right\|_{2}$, 以及 $q_{k}=\left(\dfrac{1}{R_{kk}} \right) \tilde{q}_{k}$ 。 
 
 $\tilde{q}_{k}$ 和 $q_{k}$ 正交于 $q_{1}, \ldots, q_{k-1}$, 则 $R_{1 k}, \ldots, R_{k-1, k}$ 为:
 
@@ -618,6 +639,7 @@ Q和R的第三列:
 
 正交化计算:
 $\tilde{q}_{3}=a_{3}-R_{13} q_{1}-R_{23} q_{2}=\left[\begin{array}{l}1 \\ 3 \\ 5 \\ 7\end{array}\right]-2\left[\begin{array}{r}-1 / 2 \\ 1 / 2 \\ -1 / 2 \\ 1 / 2\end{array}\right]-8\left[\begin{array}{l}1 / 2 \\ 1 / 2 \\ 1 / 2 \\ 1 / 2\end{array}\right]=\left[\begin{array}{r}-2 \\ -2 \\ 2 \\ 2\end{array}\right]$
+
 将其单位化得到：
 $$
 R_{33}=\left\|\tilde{q}_{3}\right\|=4, \quad q_{3}=\frac{1}{R_{33}} \tilde{q}_{3}=\left[\begin{array}{c}
@@ -658,15 +680,13 @@ R_{11} & R_{12} & R_{13} \\
 $$
 \end{example}
 
-
-
 \subsection{基于Gram-Schmidt方法进行QR分解的时间复杂度}
 
 Gram-Schmidt方法第$k$次循环的复杂度：
 
 \begin{itemize}
     \item $ a_{k} $ 有k-1个 $ q_{i}^{T} a_{k} $ 内积操作: $ (\mathrm{k}-1)(2 \mathrm{~m}-1) $ flops
-    \item 计算 $ \tilde{q}_{k}: 2(\mathrm{k}-1) \mathrm{m} $ flops. $$ \quad \tilde{q}_{k}=a_{k}-a_{k}^{T} q_{1} q_{1}-a_{k}^{T} q_{2} q_{2}-\cdots-a_{k}^{T} q_{k-1} q_{k-1} $$
+    \item 计算 $ \tilde{q}_{k}: 2(\mathrm{k}-1) \mathrm{m} $ flops. $$ \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
     \item 计算 $ R_{k k} $ 和 $ q_{k}: 3 \mathrm{~m} $ flops。 $  R_{k k}=\left\|\tilde{q}_{k}\right\|_{2}, q_{k}=\tilde{q}_{k} / R_{k k} $
 \end{itemize}
 
@@ -680,16 +700,11 @@ $$ \begin{aligned} \sum_{k=1}^{n}((4 m-1)(k-1)+3 m) &=(4 m-1) \frac{n(n-1)}{2}+3
 
 
 
+\section{The Numerical Instability of QR Decomposition based on Gram-Schmidt Algorithm}
 
+Gram-Schmidt算法复杂度为$2mn^2$ flops. 在实际情况中\textbf{不推荐使用(}容易被舍入误差影响)。
 
-
-
-
-\section{The Numerical Instability of QR Decomposition based on Gram–Schmidt Algorithm}
-
-Gram–Schmidt算法复杂度为$2mn^2$ flops. 在实际情况中\textbf{不推荐使用(}容易被舍入误差影响)。
-
-修正Gram–Schmidt算法复杂度为$2mn^2$ flops，有更好的数值计算性能。
+修正Gram-Schmidt算法复杂度为$2mn^2$ flops，有更好的数值计算性能。修正之处在于求解投影时每次只减去一个投影。
 
 Householder算法复杂度为 $ 2 m n^{2}-(2 / 3) n^{3} $ flops 。
 将$Q$表示为初等正交矩阵的乘积。是最广泛使用的算法(在\textsc{MATLAB}和\textsc{Julia}中的\textsc{qr}函数使用该算法)。
@@ -697,8 +712,7 @@ Householder算法复杂度为 $ 2 m n^{2}-(2 / 3) n^{3} $ flops 。
 本书中认为QR分解的复杂度为$Q(2mn^2)$.
 
 \begin{example}
-    \begin{verbatim}
-
+    \begin{lstlisting}[caption=Gram Schmidt,language=matlab]
 [m,n]=size(A);
 Q = zeros(m,n);
 R = zeros(n,n);
@@ -708,20 +722,19 @@ for k = 1:n
     R(k,k) = norm(v);
     Q(:,k)=v/R(k,k);
 end;
-    \end{verbatim}
+    \end{lstlisting}
 
-    矩阵 $ A=U S V $,其中 $ U $ 和 $ V $ 是正交矩阵， $ S $ 是对角矩阵，即：
+    构造一个矩阵 $ A=U S V $,其中 $ U $ 和 $ V $ 是正交矩阵， $ S $ 是对角矩阵
     $$
     S_{i i}=10^{-10(i-1) /(n-1)}, \quad i=1, \cdots, n
     $$
 
-    把Gram–Schmidt算法应用到一个大小为 $ \mathrm{m}=\mathrm{n}=50 $ 的方形矩阵$A$上。
+    把Gram-Schmidt算法应用到一个大小为 $ \mathrm{m}=\mathrm{n}=50 $ 的方形矩阵$A$上。
 
-    \begin{figure}[htbp]
-        \centering
-        \includegraphics{qr-matlab-error.png}
-        
-    \end{figure}
+    \begin{FigureCenter}{$\max _{1 \leq i<k}\left|q_{i}^{T} q_{k}\right|$}
+        \includegraphics{qr-matlab-error.eps}
+    \end{FigureCenter}
+
 
     图中显示了 $ q_{k} $ 与前面列之间的正交性的偏差:
 
@@ -730,6 +743,24 @@ end;
     $$
 
     失去正交性是由于\textbf{浮点数存储的舍入误差}。
+
+    \begin{lstlisting}[caption=modified Gram-Schmidt,language=matlab]
+for j = 1:n
+    v=A(:,j);
+    for i=1:j-1
+        R(i,j)=Q(:,i)'*v;
+        v=v-R(i,j)*Q(:,i);
+    end
+    R(j,j)= norm(v);
+    Q(:,j)=v/R(j,j);
+end
+    \end{lstlisting}
+
+    \begin{FigureCenter}{在同一组数据中使用修正Gram-Schmidt算法求得的误差，$e_{k}=\max _{1 \leq i<k}\left|q_{i}^{T} q_{k}\right|,  k=2, \ldots, n$}
+        \includegraphics{modified-qr-matlab-error.eps}
+    \end{FigureCenter}
+
+    修正Gram-Schmidt算法的误差更小。
 \end{example}
 
 \section{QR Decomposition Using Householder Transformation}
@@ -755,7 +786,7 @@ $$
 Q & \tilde{Q}
 \end{array}\right]=H_{1} H_{2} \cdots H_{n}
 $$
-每个 $ H_{i} \in \mathbb{R}^{m \times m} $ 是对称的正交的 “反射算子” (reflector)。
+每个 $ H_{i} \in \mathbb{R}^{m \times m} $ 是对称正交的Householder矩阵。
 
 
 \subsection{Householder Matrix}
@@ -857,16 +888,17 @@ $$ H^{T} H=I $$
     \end{aligned}$$
 \end{proof}
 
-矩阵向量积 $ H x $ 能化简为:
+\begin{theorem}
+    矩阵向量积 $ H x $ 能化简为
 $$
 H x=x-2\left(v^{T} x\right) v
 $$
+\end{theorem}
+
 
 \subsubsection{$Hx$的算法复杂度}
 
-\begin{theorem}
     如果 $ v $ 和 $ x $ 的长度是 $ p $, 复杂度是 $ 4 p $ flops 。
-\end{theorem}
 
 
 \subsection{构造反射算子}
@@ -912,7 +944,7 @@ $$
 \begin{theorem}
     Householder矩阵 $ H=I-2 v v^{T}=I-2 \frac{w w^{T}}{\|w\|_{2}^{2}} $ 将 $ y $ 映射为
 
-   $$ H y = \left[\begin{array}{c}-\operatorname{sign}\left(y_{1}\right)\|y\|_{2} \\ 0 \\ \vdots \\ 0\end{array}\right] $$
+   $$ H y = \left[\begin{array}{c}-\operatorname{sign}\left(y_{1}\right)\|y\|_{2} \\ 0 \\ \vdots \\ 0\end{array}\right] = r_1 $$
 \end{theorem}
 
 
@@ -927,7 +959,7 @@ $$
  $$
 \end{proof}
 
-即Householder变换的结果$Hy$只保留一个元素的值，其余元素的值变为0. 又因为$H$是正交、对称的，它与向量正交化有一定联系。
+即Householder变换的结果$Hy$只保留一个元素的值，其余元素的值变为0. 又因为$H$是正交、对称的，它与QR分解求解$R$有一定联系。
 
 \subsubsection{构造的Householder矩阵几何意义}
 
@@ -988,10 +1020,22 @@ R \\
 \end{array}\right]
 $$
 
-第k个步骤之后，矩阵 $ H_{k} H_{k-1} \ldots H_{1} A $ 具有以下结构
+与LU分解相类似，
+$$
+Q_{32} Q_{31} Q_{21} A=R \quad \text { means } \quad A=\left(Q_{21}^{-1} Q_{31}^{-1} Q_{32}^{-1}\right) R=Q R
+$$
+
+$H$的逆是它本身
+
+$$
+\left(H_{n-1} \ldots H_{1}\right) A=R \quad \text { means }  \quad A=\left(H_{1} \ldots H_{n-1}\right) R=Q R
+$$
+
+第k个步骤之后，矩阵 $ H_{k} H_{k-1} \ldots H_{1} A $ 具有以下结构:
 
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 对于 $ i>j $ 和 $ j \leq k $, 第 $ \mathrm{i}, \mathrm{j} $ 个位置的元素为零。
+
 
 \begin{FigureCenter}{The structure of $ H_{k} H_{k-1} \ldots H_{1} A $}
     \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
@@ -1053,16 +1097,10 @@ $$H_1A = A_{1}=\left[\begin{array}{llllllll}X & X & X & X & X & X & X & X \\ 0 &
 
 $$H_2A_1= A_{2}=\left[\begin{array}{cccccccc}X & X & X & X & X & X & X & X \\ 0 & X & X & X & X & X & X & X \\ 0 & 0 & X & X & X & X & X & X \\ 0 & 0 & X & X & X & X & X & X \\ 0 & 0 & X & X & X & X & X & X \\ 0 & 0 & X & X & X & X & X & X \\ 0 & 0 & X & X & X & X & X & X \\ 0 & 0 & X & X & X & X & X & X\end{array}\right] $$
 
-\begin{theorem}
-    第$k$个步骤之后，矩阵 $ H_{k} H_{k-1} \ldots H_{1} A $ 具有以下结构:
-
-对于 $ i>j $ 和 $ j \leq k $, 第 $ \mathrm{i}, \mathrm{j} $ 个位置的元素为零.
-\end{theorem}
-
 
 下面的算法用 $ \left[\begin{array}{l}R \\ 0\end{array}\right] $ 来代替 $ A \in \mathbb{R}^{m \times n} $.
 
-\begin{FigureCenter}{$A$的结构}
+\begin{FigureCenter}{迭代计算过程中$A$的结构}
     \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt
 
     \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
@@ -1123,15 +1161,20 @@ $$H_2A_1= A_{2}=\left[\begin{array}{cccccccc}X & X & X & X & X & X & X & X \\ 0 
 
 \begin{algorithm}[htbp]
     \caption{QR Decomposition Using Householder Transformation}
+    \KwIn{Matrix $A$}
+    \KwOut{$v_1, \cdots, v_n$ ($Q$), $A=
+    \left[\begin{array}{c}
+    R \\
+    0
+    \end{array}\right]$ ($R$)
+    }
 
     \For(){$k$ in $1:n$}{
         令 $ y=A_{k: m, k} \in \mathbb{R}^{m-k+1} $, 计算向量 $ v_{k} $
     $$ w=y+\operatorname{sign}\left(y_{1}\right)\|y\| e_{1}, \quad v_{k}=\frac{1}{\|w\|} w $$\;
     将 $ A_{k: m, k: n} \in \mathbb{R}^{(m-k+1) \times(n-k+1)} $ 与反射矩阵 $ I-2 v_{k} v_{k}^{T} $ 相乘
     $$ A_{k: m, k: n}:=A_{k: m, k: n}-2 v_{k}\left(v_{k}^{T} A_{k: m, k: n}\right) $$\;
-
     }
-    
 \end{algorithm}
 
 \begin{proof}
@@ -1272,7 +1315,7 @@ Householder方法第$k$次循环的复杂度:
 
 $$ \begin{aligned} \sum_{k=1}^{n} 4(m-k+1)(n-k+2) & \approx \int_{0}^{n} 4(m-t)(n-t+1) d t \\ & \approx 2 m n^{2}-\frac{2}{3} n^{3} \text { flops } \end{aligned} $$
 
-\section{$Q$因子}
+\section{Householder变换进行QR分解的 $Q$ 因子}
 
 Householder算法返回向量 $ v_{1}, \ldots, v_{n} $, 其定义为:
 

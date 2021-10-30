@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  30 OCT 2021 09:43
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  30 OCT 2021 17:34
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -502,83 +502,105 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \sift@deathcycles=\count306
 \@vwid@loff=\dimen296
 \@vwid@roff=\dimen297
-)) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
+)) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count307
+\lst@gtempboxa=\box76
+\lst@token=\toks34
+\lst@length=\count308
+\lst@currlwidth=\dimen298
+\lst@column=\count309
+\lst@pos=\count310
+\lst@lostspace=\dimen299
+\lst@width=\dimen300
+\lst@newlines=\count311
+\lst@lineno=\count312
+\lst@maxwidth=\dimen301
+ (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count313
+\lst@skipnumbers=\count314
+\lst@framebox=\box77
+) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count307
-\Gm@cntv=\count308
-\c@Gm@tempcnt=\count309
-\Gm@bindingoffset=\dimen298
-\Gm@wd@mp=\dimen299
-\Gm@odd@mp=\dimen300
-\Gm@even@mp=\dimen301
-\Gm@layoutwidth=\dimen302
-\Gm@layoutheight=\dimen303
-\Gm@layouthoffset=\dimen304
-\Gm@layoutvoffset=\dimen305
-\Gm@dimlist=\toks34
+\Gm@cnth=\count315
+\Gm@cntv=\count316
+\c@Gm@tempcnt=\count317
+\Gm@bindingoffset=\dimen302
+\Gm@wd@mp=\dimen303
+\Gm@odd@mp=\dimen304
+\Gm@even@mp=\dimen305
+\Gm@layoutwidth=\dimen306
+\Gm@layoutheight=\dimen307
+\Gm@layouthoffset=\dimen308
+\Gm@layoutvoffset=\dimen309
+\Gm@dimlist=\toks35
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2020/12/31 v3.16 programmable bibliographies (PK/MW)
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count310
+\etb@tempcnta=\count318
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count311
+\lrq@indent=\count319
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count312
-\c@listtotal=\count313
-\c@listcount=\count314
-\c@liststart=\count315
-\c@liststop=\count316
-\c@citecount=\count317
-\c@citetotal=\count318
-\c@multicitecount=\count319
-\c@multicitetotal=\count320
-\c@instcount=\count321
-\c@maxnames=\count322
-\c@minnames=\count323
-\c@maxitems=\count324
-\c@minitems=\count325
-\c@citecounter=\count326
-\c@maxcitecounter=\count327
-\c@savedcitecounter=\count328
-\c@uniquelist=\count329
-\c@uniquename=\count330
-\c@refsection=\count331
-\c@refsegment=\count332
-\c@maxextratitle=\count333
-\c@maxextratitleyear=\count334
-\c@maxextraname=\count335
-\c@maxextradate=\count336
-\c@maxextraalpha=\count337
-\c@abbrvpenalty=\count338
-\c@highnamepenalty=\count339
-\c@lownamepenalty=\count340
-\c@maxparens=\count341
-\c@parenlevel=\count342
-\blx@tempcnta=\count343
-\blx@tempcntb=\count344
-\blx@tempcntc=\count345
-\blx@maxsection=\count346
-\blx@maxsegment@0=\count347
-\blx@notetype=\count348
-\blx@parenlevel@text=\count349
-\blx@parenlevel@foot=\count350
-\blx@sectionciteorder@0=\count351
-\blx@entrysetcounter=\count352
-\blx@biblioinstance=\count353
+\c@tabx@nest=\count320
+\c@listtotal=\count321
+\c@listcount=\count322
+\c@liststart=\count323
+\c@liststop=\count324
+\c@citecount=\count325
+\c@citetotal=\count326
+\c@multicitecount=\count327
+\c@multicitetotal=\count328
+\c@instcount=\count329
+\c@maxnames=\count330
+\c@minnames=\count331
+\c@maxitems=\count332
+\c@minitems=\count333
+\c@citecounter=\count334
+\c@maxcitecounter=\count335
+\c@savedcitecounter=\count336
+\c@uniquelist=\count337
+\c@uniquename=\count338
+\c@refsection=\count339
+\c@refsegment=\count340
+\c@maxextratitle=\count341
+\c@maxextratitleyear=\count342
+\c@maxextraname=\count343
+\c@maxextradate=\count344
+\c@maxextraalpha=\count345
+\c@abbrvpenalty=\count346
+\c@highnamepenalty=\count347
+\c@lownamepenalty=\count348
+\c@maxparens=\count349
+\c@parenlevel=\count350
+\blx@tempcnta=\count351
+\blx@tempcntb=\count352
+\blx@tempcntc=\count353
+\blx@maxsection=\count354
+\blx@maxsegment@0=\count355
+\blx@notetype=\count356
+\blx@parenlevel@text=\count357
+\blx@parenlevel@foot=\count358
+\blx@sectionciteorder@0=\count359
+\blx@entrysetcounter=\count360
+\blx@biblioinstance=\count361
 \labelnumberwidth=\skip75
 \labelalphawidth=\skip76
 \biblabelsep=\skip77
@@ -590,9 +612,9 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@bcfin=\read4
 \blx@bcfout=\write4
 \blx@langwohyphens=\language88
-\c@mincomprange=\count354
-\c@maxcomprange=\count355
-\c@mincompwidth=\count356
+\c@mincomprange=\count362
+\c@maxcomprange=\count363
+\c@mincompwidth=\count364
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -602,74 +624,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count357
-\c@savedafterword=\count358
-\c@annotator=\count359
-\c@savedannotator=\count360
-\c@author=\count361
-\c@savedauthor=\count362
-\c@bookauthor=\count363
-\c@savedbookauthor=\count364
-\c@commentator=\count365
-\c@savedcommentator=\count366
-\c@editor=\count367
-\c@savededitor=\count368
-\c@editora=\count369
-\c@savededitora=\count370
-\c@editorb=\count371
-\c@savededitorb=\count372
-\c@editorc=\count373
-\c@savededitorc=\count374
-\c@foreword=\count375
-\c@savedforeword=\count376
-\c@holder=\count377
-\c@savedholder=\count378
-\c@introduction=\count379
-\c@savedintroduction=\count380
-\c@namea=\count381
-\c@savednamea=\count382
-\c@nameb=\count383
-\c@savednameb=\count384
-\c@namec=\count385
-\c@savednamec=\count386
-\c@translator=\count387
-\c@savedtranslator=\count388
-\c@shortauthor=\count389
-\c@savedshortauthor=\count390
-\c@shorteditor=\count391
-\c@savedshorteditor=\count392
-\c@labelname=\count393
-\c@savedlabelname=\count394
-\c@institution=\count395
-\c@savedinstitution=\count396
-\c@lista=\count397
-\c@savedlista=\count398
-\c@listb=\count399
-\c@savedlistb=\count400
-\c@listc=\count401
-\c@savedlistc=\count402
-\c@listd=\count403
-\c@savedlistd=\count404
-\c@liste=\count405
-\c@savedliste=\count406
-\c@listf=\count407
-\c@savedlistf=\count408
-\c@location=\count409
-\c@savedlocation=\count410
-\c@organization=\count411
-\c@savedorganization=\count412
-\c@origlocation=\count413
-\c@savedoriglocation=\count414
-\c@origpublisher=\count415
-\c@savedorigpublisher=\count416
-\c@publisher=\count417
-\c@savedpublisher=\count418
-\c@language=\count419
-\c@savedlanguage=\count420
-\c@origlanguage=\count421
-\c@savedoriglanguage=\count422
-\c@pageref=\count423
-\c@savedpageref=\count424
+\c@afterword=\count365
+\c@savedafterword=\count366
+\c@annotator=\count367
+\c@savedannotator=\count368
+\c@author=\count369
+\c@savedauthor=\count370
+\c@bookauthor=\count371
+\c@savedbookauthor=\count372
+\c@commentator=\count373
+\c@savedcommentator=\count374
+\c@editor=\count375
+\c@savededitor=\count376
+\c@editora=\count377
+\c@savededitora=\count378
+\c@editorb=\count379
+\c@savededitorb=\count380
+\c@editorc=\count381
+\c@savededitorc=\count382
+\c@foreword=\count383
+\c@savedforeword=\count384
+\c@holder=\count385
+\c@savedholder=\count386
+\c@introduction=\count387
+\c@savedintroduction=\count388
+\c@namea=\count389
+\c@savednamea=\count390
+\c@nameb=\count391
+\c@savednameb=\count392
+\c@namec=\count393
+\c@savednamec=\count394
+\c@translator=\count395
+\c@savedtranslator=\count396
+\c@shortauthor=\count397
+\c@savedshortauthor=\count398
+\c@shorteditor=\count399
+\c@savedshorteditor=\count400
+\c@labelname=\count401
+\c@savedlabelname=\count402
+\c@institution=\count403
+\c@savedinstitution=\count404
+\c@lista=\count405
+\c@savedlista=\count406
+\c@listb=\count407
+\c@savedlistb=\count408
+\c@listc=\count409
+\c@savedlistc=\count410
+\c@listd=\count411
+\c@savedlistd=\count412
+\c@liste=\count413
+\c@savedliste=\count414
+\c@listf=\count415
+\c@savedlistf=\count416
+\c@location=\count417
+\c@savedlocation=\count418
+\c@organization=\count419
+\c@savedorganization=\count420
+\c@origlocation=\count421
+\c@savedoriglocation=\count422
+\c@origpublisher=\count423
+\c@savedorigpublisher=\count424
+\c@publisher=\count425
+\c@savedpublisher=\count426
+\c@language=\count427
+\c@savedlanguage=\count428
+\c@origlanguage=\count429
+\c@savedoriglanguage=\count430
+\c@pageref=\count431
+\c@savedpageref=\count432
 \shorthandwidth=\skip83
 \shortjournalwidth=\skip84
 \shortserieswidth=\skip85
@@ -696,19 +718,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
-\c@textcitecount=\count425
-\c@textcitetotal=\count426
-\c@textcitemaxnames=\count427
-\c@biburlbigbreakpenalty=\count428
-\c@biburlbreakpenalty=\count429
-\c@biburlnumpenalty=\count430
-\c@biburlucpenalty=\count431
-\c@biburllcpenalty=\count432
+\c@textcitecount=\count433
+\c@textcitetotal=\count434
+\c@textcitemaxnames=\count435
+\c@biburlbigbreakpenalty=\count436
+\c@biburlbreakpenalty=\count437
+\c@biburlnumpenalty=\count438
+\c@biburlucpenalty=\count439
+\c@biburllcpenalty=\count440
 \biburlbigskip=\muskip17
 \biburlnumskip=\muskip18
 \biburlucskip=\muskip19
 \biburllcskip=\muskip20
-\c@smartand=\count433
+\c@smartand=\count441
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -718,8 +740,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count434
-\c@bbx:relatedtotal=\count435
+\c@bbx:relatedcount=\count442
+\c@bbx:relatedtotal=\count443
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -756,7 +778,7 @@ Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 Writing index file main.idx
 (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2021/07/05 v2.14 TOC entries
-\ttl@leftsep=\dimen306
+\ttl@leftsep=\dimen310
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip97
@@ -777,49 +799,49 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2000/06/29 v2.01 AMS text
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks35
-\ex@=\dimen307
+\@emptytoks=\toks36
+\ex@=\dimen311
 )) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen308
+\pmbraise@=\dimen312
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count436
+\inf@bad=\count444
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count437
-\leftroot@=\count438
+\uproot@=\count445
+\leftroot@=\count446
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count439
-\DOTSCASE@=\count440
+\classnum@=\count447
+\DOTSCASE@=\count448
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box76
-\strutbox@=\box77
-\big@size=\dimen309
+\Mathstrutbox@=\box78
+\strutbox@=\box79
+\big@size=\dimen313
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count441
-\c@MaxMatrixCols=\count442
+\macc@depth=\count449
+\c@MaxMatrixCols=\count450
 \dotsspace@=\muskip21
-\c@parentequation=\count443
-\dspbrk@lvl=\count444
-\tag@help=\toks36
-\row@=\count445
-\column@=\count446
-\maxfields@=\count447
-\andhelp@=\toks37
-\eqnshift@=\dimen310
-\alignsep@=\dimen311
-\tagshift@=\dimen312
-\tagwidth@=\dimen313
-\totwidth@=\dimen314
-\lineht@=\dimen315
-\@envbody=\toks38
+\c@parentequation=\count451
+\dspbrk@lvl=\count452
+\tag@help=\toks37
+\row@=\count453
+\column@=\count454
+\maxfields@=\count455
+\andhelp@=\toks38
+\eqnshift@=\dimen314
+\alignsep@=\dimen315
+\tagshift@=\dimen316
+\tagwidth@=\dimen317
+\totwidth@=\dimen318
+\lineht@=\dimen319
+\@envbody=\toks39
 \multlinegap=\skip107
 \multlinetaggap=\skip108
-\mathdisplay@stack=\toks39
+\mathdisplay@stack=\toks40
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -833,24 +855,24 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks40
-\thm@bodyfont=\toks41
-\thm@headfont=\toks42
-\thm@notefont=\toks43
-\thm@headpunct=\toks44
+\thm@style=\toks41
+\thm@bodyfont=\toks42
+\thm@headfont=\toks43
+\thm@notefont=\toks44
+\thm@headpunct=\toks45
 \thm@preskip=\skip109
 \thm@postskip=\skip110
 \thm@headsep=\skip111
-\dth@everypar=\toks45
+\dth@everypar=\toks46
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/thmtools/thmtools.sty
 Package: thmtools 2020/08/01 v0.72
-\thmt@toks=\toks46
-\c@thmt@dummyctr=\count448
+\thmt@toks=\toks47
+\c@thmt@dummyctr=\count456
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/thmtools/thm-patch.sty
 Package: thm-patch 2020/08/01 v0.72
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/thmtools/parseargs.sty
 Package: parseargs 2020/08/01 v0.72
-\@parsespec=\toks47
+\@parsespec=\toks48
 )) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/thmtools/thm-kv.sty
 Package: thm-kv 2020/08/01 v0.72
 Package thm-kv Info: Theorem names will be uppercased on input line 42.
@@ -865,15 +887,15 @@ Package: thm-listof 2020/08/01 v0.72
 Package: thm-restate 2020/08/01 v0.72
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/thmtools/thm-amsthm.sty
 Package: thm-amsthm 2020/08/01 v0.72
-\thmt@style@headstyle=\toks48
+\thmt@style@headstyle=\toks49
 ))
-\c@notation=\count449
-\c@dummy=\count450
-\c@problem=\count451
-\c@exerciseT=\count452
-\c@exampleT=\count453
-\c@vocabulary=\count454
-\c@definitionT=\count455
+\c@notation=\count457
+\c@dummy=\count458
+\c@problem=\count459
+\c@exerciseT=\count460
+\c@exampleT=\count461
+\c@vocabulary=\count462
+\c@definitionT=\count463
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/mdframed/mdframed.sty
 Package: mdframed 2013/07/01 1.9b: mdframed
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/zref/zref-abspage.sty
@@ -892,13 +914,13 @@ Package zref Info: New property: page on input line 766.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\c@abspage=\count456
+\c@abspage=\count464
 Package zref Info: New property: abspage on input line 66.
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/needspace/needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
 \mdf@templength=\skip112
-\c@mdf@globalstyle@cnt=\count457
+\c@mdf@globalstyle@cnt=\count465
 \mdf@skipabove@length=\skip113
 \mdf@skipbelow@length=\skip114
 \mdf@leftmargin@length=\skip115
@@ -941,11 +963,11 @@ Package: needspace 2010/09/12 v1.3d reserve vertical space
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
 File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 )
-\mdf@frametitlebox=\box78
-\mdf@footnotebox=\box79
-\mdf@splitbox@one=\box80
-\mdf@splitbox@two=\box81
-\mdf@splitbox@save=\box82
+\mdf@frametitlebox=\box80
+\mdf@footnotebox=\box81
+\mdf@splitbox@one=\box82
+\mdf@splitbox@two=\box83
+\mdf@splitbox@save=\box84
 \mdfsplitboxwidth=\skip152
 \mdfsplitboxtotalwidth=\skip153
 \mdfsplitboxheight=\skip154
@@ -973,16 +995,16 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \mdf@horizontalspaceofbox=\skip176
 \mdfsubtitleheight=\skip177
 \mdfsubsubtitleheight=\skip178
-\c@mdfcountframes=\count458
+\c@mdfcountframes=\count466
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count459
-\c@mdf@env@i=\count460
-\c@mdf@env@ii=\count461
-\c@mdf@zref@counter=\count462
+\mdf@envdepth=\count467
+\c@mdf@env@i=\count468
+\c@mdf@env@ii=\count469
+\c@mdf@zref@counter=\count470
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
 \esp=\skip179
@@ -996,9 +1018,9 @@ Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-\@linkdim=\dimen316
-\Hy@linkcounter=\count463
-\Hy@pagecounter=\count464
+\@linkdim=\dimen320
+\Hy@linkcounter=\count471
+\Hy@pagecounter=\count472
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
@@ -1006,7 +1028,7 @@ File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel lan
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count465
+\Hy@SavedSpaceFactor=\count473
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
 )
@@ -1017,17 +1039,17 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count466
+\c@Hy@tempcnt=\count474
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen317
+\XeTeXLinkMargin=\dimen321
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count467
-\Field@Width=\dimen318
-\Fld@charsize=\dimen319
+\Fld@menulength=\count475
+\Field@Width=\dimen322
+\Fld@charsize=\dimen323
 Package hyperref Info: Hyper figures OFF on input line 6076.
 Package hyperref Info: Link nesting OFF on input line 6081.
 Package hyperref Info: Hyper index ON on input line 6084.
@@ -1037,9 +1059,9 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6101.
 Package hyperref Info: PDF/A mode OFF on input line 6106.
 LaTeX Info: Redefining \ref on input line 6146.
 LaTeX Info: Redefining \pageref on input line 6150.
-\Hy@abspage=\count468
-\c@Item=\count469
-\c@Hfootnote=\count470
+\Hy@abspage=\count476
+\c@Item=\count477
+\c@Hfootnote=\count478
 )
 Package hyperref Info: Driver (autodetected): hxetex.
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/hyperref/hxetex.def
@@ -1047,11 +1069,11 @@ File: hxetex.def 2021-06-07 v7.00m Hyperref driver for XeTeX
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\pdfm@box=\box83
-\c@Hy@AnnotLevel=\count471
-\HyField@AnnotCount=\count472
-\Fld@listcount=\count473
-\c@bookmark@seq@number=\count474
+\pdfm@box=\box85
+\c@Hy@AnnotLevel=\count479
+\HyField@AnnotCount=\count480
+\Fld@listcount=\count481
+\c@bookmark@seq@number=\count482
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/base/atveryend-ltx.sty
@@ -1066,28 +1088,28 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 
 Package hyperref Warning: Option `backref' has already been used,
-(hyperref)                setting the option has no effect on input line 615.
+(hyperref)                setting the option has no effect on input line 641.
 
 
 Package hyperref Warning: Option `pagebackref' has already been used,
-(hyperref)                setting the option has no effect on input line 615.
+(hyperref)                setting the option has no effect on input line 641.
 
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 615.
+(hyperref)                setting the option has no effect on input line 641.
 
-Package hyperref Info: Option `colorlinks' set `false' on input line 615.
-Package hyperref Info: Option `breaklinks' set `true' on input line 615.
+Package hyperref Info: Option `colorlinks' set `false' on input line 641.
+Package hyperref Info: Option `breaklinks' set `true' on input line 641.
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 615.
+(hyperref)                setting the option has no effect on input line 641.
 
-Package hyperref Info: Option `bookmarksopen' set `false' on input line 615.
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 641.
 (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
 File: bkm-dvipdfm.def 2020-11-06 v1.29 bookmark driver for dvipdfm (HO)
-\BKM@id=\count475
+\BKM@id=\count483
 )) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
@@ -1102,15 +1124,16 @@ LaTeX Info: Redefining \Cpagerefrange on input line 2370.
 LaTeX Info: Redefining \labelcref on input line 2370.
 LaTeX Info: Redefining \labelcpageref on input line 2370.
 Package cleveref Info: `amsthm' support loaded on input line 3026.
+Package cleveref Info: `listings' support loaded on input line 3131.
 Package cleveref Info: `algorithm2e' support loaded on input line 3147.
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2021/03/14 v2.8c Micro-typographical refinements (RS)
-\MT@toks=\toks49
-\MT@count=\count476
+\MT@toks=\toks50
+\MT@count=\count484
 LaTeX Info: Redefining \textls on input line 790.
-\MT@outer@kern=\dimen320
+\MT@outer@kern=\dimen324
 LaTeX Info: Redefining \textmicrotypecontext on input line 1374.
-\MT@listname@count=\count477
+\MT@listname@count=\count485
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/microtype/microtype-xetex.def
 File: microtype-xetex.def 2021/03/14 v2.8c Definitions specific to xetex (RS)
 LaTeX Info: Redefining \lsstyle on input line 254.
@@ -1131,18 +1154,18 @@ Package: ctexhook 2021/06/20 v2.5.7 Document and package hooks (CTEX)
 Package: l3keys2e 2021-06-18 LaTeX2e option processing using LaTeX3 keys
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2021-06-18 L3 Experimental prototype document functions
-\l__xtemplate_tmp_dim=\dimen321
-\l__xtemplate_tmp_int=\count478
+\l__xtemplate_tmp_dim=\dimen325
+\l__xtemplate_tmp_int=\count486
 \l__xtemplate_tmp_muskip=\muskip22
 \l__xtemplate_tmp_skip=\skip182
 )
-\l__xeCJK_tmp_int=\count479
-\l__xeCJK_tmp_box=\box84
-\l__xeCJK_tmp_dim=\dimen322
+\l__xeCJK_tmp_int=\count487
+\l__xeCJK_tmp_box=\box86
+\l__xeCJK_tmp_dim=\dimen326
 \l__xeCJK_tmp_skip=\skip183
-\g__xeCJK_space_factor_int=\count480
-\l__xeCJK_begin_int=\count481
-\l__xeCJK_end_int=\count482
+\g__xeCJK_space_factor_int=\count488
+\l__xeCJK_begin_int=\count489
+\l__xeCJK_end_int=\count490
 \c__xeCJK_CJK_class_int=\XeTeXcharclass1
 \c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
 \c__xeCJK_FullRight_class_int=\XeTeXcharclass3
@@ -1152,69 +1175,73 @@ Package: xtemplate 2021-06-18 L3 Experimental prototype document functions
 \c__xeCJK_CM_class_int=\XeTeXcharclass7
 \c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
 \l__xeCJK_last_skip=\skip184
-\g__xeCJK_node_int=\count483
-\c__xeCJK_CJK_node_dim=\dimen323
-\c__xeCJK_CJK-space_node_dim=\dimen324
-\c__xeCJK_default_node_dim=\dimen325
-\c__xeCJK_default-space_node_dim=\dimen326
-\c__xeCJK_CJK-widow_node_dim=\dimen327
-\c__xeCJK_normalspace_node_dim=\dimen328
+\g__xeCJK_node_int=\count491
+\c__xeCJK_CJK_node_dim=\dimen327
+\c__xeCJK_CJK-space_node_dim=\dimen328
+\c__xeCJK_default_node_dim=\dimen329
+\c__xeCJK_default-space_node_dim=\dimen330
+\c__xeCJK_CJK-widow_node_dim=\dimen331
+\c__xeCJK_normalspace_node_dim=\dimen332
 \l__xeCJK_ccglue_skip=\skip185
 \l__xeCJK_ecglue_skip=\skip186
 \l__xeCJK_punct_kern_skip=\skip187
-\l__xeCJK_last_penalty_int=\count484
-\l__xeCJK_last_bound_dim=\dimen329
-\l__xeCJK_last_kern_dim=\dimen330
-\l__xeCJK_widow_penalty_int=\count485
+\l__xeCJK_last_penalty_int=\count492
+\l__xeCJK_last_bound_dim=\dimen333
+\l__xeCJK_last_kern_dim=\dimen334
+\l__xeCJK_widow_penalty_int=\count493
 
 Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
 (xtemplate)             argument(s) on line 2335.
 
-\l__xeCJK_fixed_punct_width_dim=\dimen331
-\l__xeCJK_mixed_punct_width_dim=\dimen332
-\l__xeCJK_middle_punct_width_dim=\dimen333
-\l__xeCJK_fixed_margin_width_dim=\dimen334
-\l__xeCJK_mixed_margin_width_dim=\dimen335
-\l__xeCJK_middle_margin_width_dim=\dimen336
-\l__xeCJK_bound_punct_width_dim=\dimen337
-\l__xeCJK_bound_margin_width_dim=\dimen338
-\l__xeCJK_margin_minimum_dim=\dimen339
-\l__xeCJK_kerning_total_width_dim=\dimen340
-\l__xeCJK_same_align_margin_dim=\dimen341
-\l__xeCJK_different_align_margin_dim=\dimen342
-\l__xeCJK_kerning_margin_width_dim=\dimen343
-\l__xeCJK_kerning_margin_minimum_dim=\dimen344
-\l__xeCJK_bound_dim=\dimen345
-\l__xeCJK_reverse_bound_dim=\dimen346
-\l__xeCJK_margin_dim=\dimen347
-\l__xeCJK_minimum_bound_dim=\dimen348
-\l__xeCJK_kerning_margin_dim=\dimen349
-\g__xeCJK_family_int=\count486
-\l__xeCJK_fam_int=\count487
-\g__xeCJK_fam_allocation_int=\count488
-\l__xeCJK_verb_case_int=\count489
+\l__xeCJK_fixed_punct_width_dim=\dimen335
+\l__xeCJK_mixed_punct_width_dim=\dimen336
+\l__xeCJK_middle_punct_width_dim=\dimen337
+\l__xeCJK_fixed_margin_width_dim=\dimen338
+\l__xeCJK_mixed_margin_width_dim=\dimen339
+\l__xeCJK_middle_margin_width_dim=\dimen340
+\l__xeCJK_bound_punct_width_dim=\dimen341
+\l__xeCJK_bound_margin_width_dim=\dimen342
+\l__xeCJK_margin_minimum_dim=\dimen343
+\l__xeCJK_kerning_total_width_dim=\dimen344
+\l__xeCJK_same_align_margin_dim=\dimen345
+\l__xeCJK_different_align_margin_dim=\dimen346
+\l__xeCJK_kerning_margin_width_dim=\dimen347
+\l__xeCJK_kerning_margin_minimum_dim=\dimen348
+\l__xeCJK_bound_dim=\dimen349
+\l__xeCJK_reverse_bound_dim=\dimen350
+\l__xeCJK_margin_dim=\dimen351
+\l__xeCJK_minimum_bound_dim=\dimen352
+\l__xeCJK_kerning_margin_dim=\dimen353
+\g__xeCJK_family_int=\count494
+\l__xeCJK_fam_int=\count495
+\g__xeCJK_fam_allocation_int=\count496
+\l__xeCJK_verb_case_int=\count497
 \l__xeCJK_verb_exspace_skip=\skip188
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.sty
 Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
-\l__fontspec_script_int=\count490
-\l__fontspec_language_int=\count491
-\l__fontspec_strnum_int=\count492
-\l__fontspec_tmp_int=\count493
-\l__fontspec_tmpa_int=\count494
-\l__fontspec_tmpb_int=\count495
-\l__fontspec_tmpc_int=\count496
-\l__fontspec_em_int=\count497
-\l__fontspec_emdef_int=\count498
-\l__fontspec_strong_int=\count499
-\l__fontspec_strongdef_int=\count500
-\l__fontspec_tmpa_dim=\dimen350
-\l__fontspec_tmpb_dim=\dimen351
-\l__fontspec_tmpc_dim=\dimen352
+\l__fontspec_script_int=\count498
+\l__fontspec_language_int=\count499
+\l__fontspec_strnum_int=\count500
+\l__fontspec_tmp_int=\count501
+\l__fontspec_tmpa_int=\count502
+\l__fontspec_tmpb_int=\count503
+\l__fontspec_tmpc_int=\count504
+\l__fontspec_em_int=\count505
+\l__fontspec_emdef_int=\count506
+\l__fontspec_strong_int=\count507
+\l__fontspec_strongdef_int=\count508
+\l__fontspec_tmpa_dim=\dimen354
+\l__fontspec_tmpb_dim=\dimen355
+\l__fontspec_tmpc_dim=\dimen356
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
+) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
+Package: xeCJK-listings 2021/06/20 v3.8.7 xeCJK patch file for listings
+\l__xeCJK_listings_max_char_int=\count509
+\l__xeCJK_listings_flag_int=\count510
+) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
 File: xeCJK.cfg 2021/06/20 v3.8.7 Configuration file for xeCJK package
 )) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/newtx/newtxmath.sty
 Package: newtxmath 2021/06/01 v1.655
@@ -1223,12 +1250,12 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/oberdiek/centernot.sty
 Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 )
-\tx@cntz=\count501
+\tx@cntz=\count511
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/kastrup/binhex.tex)
-\tx@Isdigit=\count502
-\tx@IsAlNum=\count503
-\tx@tA=\toks50
-\tx@tB=\toks51
+\tx@Isdigit=\count512
+\tx@IsAlNum=\count513
+\tx@tA=\toks51
+\tx@tB=\toks52
 \tx@su=\read5
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 360.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -1305,7 +1332,7 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 \symlargesymbolsTXA=\mathgroup9
 LaTeX Font Info:    Overwriting symbol font `largesymbolsTXA' in version `bold'
 (Font)                  U/ntxexa/m/n --> U/ntxexa/b/n on input line 629.
-\tx@sbptoks=\toks52
+\tx@sbptoks=\toks53
 LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 852.
 LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 853.
 LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 854.
@@ -1338,9 +1365,9 @@ File: ly1enc.def 2009/07/22 v0.7 TeX 'n ANSI encoding (DPC/KB)
 )) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/xstring/xstring.sty (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count504
+\integerpart=\count514
 Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
-\decimalpart=\count505
+\decimalpart=\count515
 Invalid UTF-8 byte or sequence at line 79 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 79 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 83 replaced by U+FFFD.
@@ -1522,12 +1549,12 @@ Package fontspec Info: Font family 'CascadiaCode(0)' created for font
 (fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
 (fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
 
-LaTeX Font Info:    Trying to load font information for T1+BaskervilleF-TLF on input line 680.
+LaTeX Font Info:    Trying to load font information for T1+BaskervilleF-TLF on input line 706.
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/baskervillef/T1BaskervilleF-TLF.fd
 File: T1BaskervilleF-TLF.fd 2016/11/15 (autoinst) Font definitions for T1/BaskervilleF-TLF.
 )
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 680.
+(Font)              scaled to size 10.95pt on input line 706.
 
 Package fontspec Info: Font family 'FZPingXYSJW.TTF(0)' created for font
 (fontspec)             'FZPingXYSJW.TTF' with options
@@ -1552,8 +1579,8 @@ Package fontspec Info: Font family 'FZPingXYSJW.TTF(0)' created for font
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count506
-\@quotereset=\count507
+\@quotelevel=\count516
+\@quotereset=\count517
 \symCJKmath=\mathgroup255
 LaTeX Font Info:    Overwriting symbol font `CJKmath' in version `bold'
 (Font)                  TU/FZPingXYSJW.TTF(0)/m/n --> TU/FZPingXYSJW.TTF(0)/b/n on input line 71.
@@ -1612,7 +1639,9 @@ File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 LaTeX Font Info:    ... okay on input line 71.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count518
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1680,7 +1709,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count508
+\c@section@level=\count519
 )
 LaTeX Info: Redefining \ref on input line 71.
 LaTeX Info: Redefining \pageref on input line 71.
@@ -1695,8 +1724,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `BaskervilleF-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\c@mv@tabular=\count509
-\c@mv@boldtabular=\count510
+\c@mv@tabular=\count520
+\c@mv@boldtabular=\count521
  (./title.tex
 File: Pictures//background.pdf Graphic file (type pdf)
 <use Pictures//background.pdf>
@@ -2691,17 +2720,14 @@ Package microtype Info: Character `\textexclamdown ' is missing
 Package microtype Info: Character `\textquestiondown ' is missing
 (microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5.5'.
 (microtype)             Ignoring protrusion settings for this character.
- [4]
-Missing character: There is no – (U+2013) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
- [5] [6])
+ [4] [5] [6])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [7] [8
-
-] (./vocabulary/vocabulary-index.tex) (./math/math-index.tex
-\c@ttl@toc@default=\count511
+ [7] [8] (./vocabulary/vocabulary-index.tex) (./math/math-index.tex
+\c@ttl@toc@default=\count522
  (./main.ptc) [9
+
 
 ] (./math/vector.tex
 Chapter 1.
@@ -3169,94 +3195,93 @@ Package mdframed Info: mdframed works in twoside mode on input line 16.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 16.
-Package mdframed Info: mdframed works in twoside mode on input line 22.
+Package mdframed Info: mdframed works in twoside mode on input line 19.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 22.
-Package mdframed Info: mdframed works in twoside mode on input line 33.
+(mdframed)              on input line 19.
+Package mdframed Info: mdframed works in twoside mode on input line 23.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 33.
-[31
+(mdframed)              on input line 23.
+Package mdframed Info: mdframed works in twoside mode on input line 34.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 34.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31
 
 ]
-Package mdframed Info: mdframed works in twoside mode on input line 49.
+Package mdframed Info: mdframed works in twoside mode on input line 50.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 49.
-Package mdframed Info: mdframed works in twoside mode on input line 73.
+(mdframed)              on input line 50.
+Package mdframed Info: mdframed works in twoside mode on input line 74.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 73.
-Package mdframed Info: mdframed works in twoside mode on input line 77.
+(mdframed)              on input line 74.
+Package mdframed Info: mdframed works in twoside mode on input line 78.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 77.
-Package mdframed Info: mdframed works in twoside mode on input line 97.
+(mdframed)              on input line 78.
+Package mdframed Info: mdframed works in twoside mode on input line 98.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 97.
-Package mdframed Info: mdframed works in twoside mode on input line 102.
+(mdframed)              on input line 98.
+Package mdframed Info: mdframed works in twoside mode on input line 103.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 102.
-
-
-Package mdframed Warning: You got a bad break
-(mdframed)                because the last box will be empty
-(mdframed)                you have to change it manually
-(mdframed)                by changing the text, the space
-(mdframed)                or something else on input line 107.
-
-[32]
-Package mdframed Info: mdframed works in twoside mode on input line 109.
+(mdframed)              on input line 103.
+Package mdframed Info: Not enough space on this page on input line 108.
+ [32]
+Package mdframed Info: Not enough space on this page on input line 108.
+Package mdframed Info: mdframed works in twoside mode on input line 110.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 109.
-Package mdframed Info: mdframed works in twoside mode on input line 113.
+(mdframed)              on input line 110.
+Package mdframed Info: mdframed works in twoside mode on input line 114.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 113.
-Package mdframed Info: mdframed works in twoside mode on input line 167.
+(mdframed)              on input line 114.
+Package mdframed Info: mdframed works in twoside mode on input line 168.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 167.
-Package mdframed Info: mdframed works in twoside mode on input line 171.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 171.
-Package mdframed Info: Not enough space on this page on input line 177.
+(mdframed)              on input line 168.
+Package mdframed Info: Not enough space on this page on input line 170.
  [33]
-Package mdframed Info: Not enough space on this page on input line 177.
-Package mdframed Info: mdframed works in twoside mode on input line 203.
+Package mdframed Info: Not enough space on this page on input line 170.
+Package mdframed Info: mdframed works in twoside mode on input line 172.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 203.
-Package mdframed Info: mdframed works in twoside mode on input line 237.
+(mdframed)              on input line 172.
+Package mdframed Info: mdframed works in twoside mode on input line 209.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 237.
+(mdframed)              on input line 209.
  [34]
-Package mdframed Info: mdframed works in twoside mode on input line 256.
+Package mdframed Info: mdframed works in twoside mode on input line 245.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 256.
-Package mdframed Info: mdframed works in twoside mode on input line 261.
+(mdframed)              on input line 245.
+Package mdframed Info: mdframed works in twoside mode on input line 264.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 261.
+(mdframed)              on input line 264.
+Package mdframed Info: mdframed works in twoside mode on input line 269.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 269.
  [35]
-Package mdframed Info: mdframed works in twoside mode on input line 282.
+Package mdframed Info: mdframed works in twoside mode on input line 290.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 282.
-Package mdframed Info: mdframed works in twoside mode on input line 297.
+(mdframed)              on input line 290.
+Package mdframed Info: mdframed works in twoside mode on input line 305.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 297.
-) [36] (./main.ptc
-Missing character: There is no – (U+2013) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
-) [37
+(mdframed)              on input line 305.
+) [36] (./main.ptc) [37
 
 ] (./math/matrices.tex
 Chapter 6.
@@ -3530,7 +3555,6 @@ Package mdframed Info: mdframed works in twoside mode on input line 865.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 865.
-Missing character: There is no − ("2212) in font ec-lmssbx10!
  [52]
 Chapter 8.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
@@ -3710,254 +3734,266 @@ Package mdframed Info: mdframed works in twoside mode on input line 116.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 116.
-Package mdframed Info: mdframed works in twoside mode on input line 124.
+Package mdframed Info: mdframed works in twoside mode on input line 123.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 124.
-Package mdframed Info: mdframed works in twoside mode on input line 128.
+(mdframed)              on input line 123.
+Package mdframed Info: mdframed works in twoside mode on input line 127.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 128.
+(mdframed)              on input line 127.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 133.
+(Font)              scaled to size 7.3pt on input line 132.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 133.
+(Font)              scaled to size 5.5pt on input line 132.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 143.
+(Font)              scaled to size 8.0pt on input line 142.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
-(Font)              scaled to size 6.1pt on input line 143.
-Package mdframed Info: mdframed works in twoside mode on input line 147.
+(Font)              scaled to size 6.1pt on input line 142.
+Package mdframed Info: mdframed works in twoside mode on input line 146.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 147.
-Package mdframed Info: mdframed works in twoside mode on input line 155.
+(mdframed)              on input line 146.
+Package mdframed Info: mdframed works in twoside mode on input line 154.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 155.
-Package mdframed Info: mdframed works in twoside mode on input line 159.
+(mdframed)              on input line 154.
+Package mdframed Info: mdframed works in twoside mode on input line 158.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 159.
-Package mdframed Info: mdframed works in twoside mode on input line 173.
+(mdframed)              on input line 158.
+Package mdframed Info: mdframed works in twoside mode on input line 172.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 173.
+(mdframed)              on input line 172.
  [64]
-Package mdframed Info: mdframed works in twoside mode on input line 244.
+Package mdframed Info: mdframed works in twoside mode on input line 243.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 244.
-Package mdframed Info: mdframed works in twoside mode on input line 252.
+(mdframed)              on input line 243.
+Package mdframed Info: mdframed works in twoside mode on input line 251.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 252.
-Package mdframed Info: Not enough space on this page on input line 256.
+(mdframed)              on input line 251.
+Package mdframed Info: Not enough space on this page on input line 255.
  [65]
-Package mdframed Info: Not enough space on this page on input line 256.
-Package mdframed Info: mdframed works in twoside mode on input line 258.
+Package mdframed Info: Not enough space on this page on input line 255.
+Package mdframed Info: mdframed works in twoside mode on input line 257.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 258.
-Package mdframed Info: mdframed works in twoside mode on input line 326.
+(mdframed)              on input line 257.
+Package mdframed Info: mdframed works in twoside mode on input line 266.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 326.
-Package mdframed Info: mdframed works in twoside mode on input line 349.
+(mdframed)              on input line 266.
+Package mdframed Info: mdframed works in twoside mode on input line 331.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 349.
-Package mdframed Info: Not enough space on this page on input line 353.
+(mdframed)              on input line 331.
  [66]
-Package mdframed Info: Not enough space on this page on input line 353.
-Package mdframed Info: mdframed works in twoside mode on input line 361.
+Package mdframed Info: mdframed works in twoside mode on input line 354.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 361.
-Package mdframed Info: mdframed works in twoside mode on input line 396.
+(mdframed)              on input line 354.
+Package mdframed Info: mdframed works in twoside mode on input line 366.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 396.
-Package mdframed Info: mdframed works in twoside mode on input line 402.
+(mdframed)              on input line 366.
+Package mdframed Info: mdframed works in twoside mode on input line 403.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 402.
-Package mdframed Info: mdframed works in twoside mode on input line 408.
+(mdframed)              on input line 403.
+Package mdframed Info: mdframed works in twoside mode on input line 409.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 408.
-Package mdframed Info: mdframed works in twoside mode on input line 414.
+(mdframed)              on input line 409.
+Package mdframed Info: mdframed works in twoside mode on input line 415.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 414.
-Package mdframed Info: mdframed works in twoside mode on input line 420.
+(mdframed)              on input line 415.
+Package mdframed Info: mdframed works in twoside mode on input line 421.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 420.
+(mdframed)              on input line 421.
+Package mdframed Info: Not enough space on this page on input line 425.
  [67]
-Package mdframed Info: Not enough space on this page on input line 422.
-Package mdframed Info: mdframed works in twoside mode on input line 476.
+Package mdframed Info: Not enough space on this page on input line 425.
+Package mdframed Info: mdframed works in twoside mode on input line 427.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 476.
+(mdframed)              on input line 427.
+Package mdframed Info: mdframed works in twoside mode on input line 485.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 485.
  [68]) (./math/qr-factorization.tex [69]
 Chapter 11.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-Package mdframed Info: mdframed works in twoside mode on input line 3.
+Package mdframed Info: mdframed works in twoside mode on input line 5.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3.
-Package mdframed Info: mdframed works in twoside mode on input line 9.
+(mdframed)              on input line 5.
+Package mdframed Info: mdframed works in twoside mode on input line 11.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 9.
-Package mdframed Info: mdframed works in twoside mode on input line 15.
+(mdframed)              on input line 11.
+Package mdframed Info: mdframed works in twoside mode on input line 17.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 15.
-Package mdframed Info: mdframed works in twoside mode on input line 57.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 57.
+(mdframed)              on input line 17.
 [70
 
 ]
-Package mdframed Info: Not enough space on this page on input line 62.
-Package mdframed Info: mdframed works in twoside mode on input line 64.
+Package mdframed Info: mdframed works in twoside mode on input line 61.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 64.
-Package mdframed Info: mdframed works in twoside mode on input line 70.
+(mdframed)              on input line 61.
+Package mdframed Info: mdframed works in twoside mode on input line 68.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 70.
-Package mdframed Info: mdframed works in twoside mode on input line 82.
+(mdframed)              on input line 68.
+Package mdframed Info: mdframed works in twoside mode on input line 74.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 82.
+(mdframed)              on input line 74.
+Package mdframed Info: mdframed works in twoside mode on input line 86.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 86.
 Package mdframed Info: You first box width is to small
  mdframed fixed it
-(mdframed)              on input line 95.
+(mdframed)              on input line 99.
  [71]
-Package mdframed Info: mdframed works in twoside mode on input line 109.
+Package mdframed Info: mdframed works in twoside mode on input line 103.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 109.
-Package mdframed Info: mdframed works in twoside mode on input line 113.
+(mdframed)              on input line 103.
+Package mdframed Info: mdframed works in twoside mode on input line 107.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 113.
-Package mdframed Info: mdframed works in twoside mode on input line 117.
+(mdframed)              on input line 107.
+Package mdframed Info: mdframed works in twoside mode on input line 111.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 117.
-Package mdframed Info: mdframed works in twoside mode on input line 121.
+(mdframed)              on input line 111.
+Package mdframed Info: mdframed works in twoside mode on input line 115.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 121.
+(mdframed)              on input line 115.
+Package mdframed Info: mdframed works in twoside mode on input line 119.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 119.
  [72]
-Package mdframed Info: mdframed works in twoside mode on input line 193.
+Package mdframed Info: mdframed works in twoside mode on input line 181.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 193.
+(mdframed)              on input line 181.
+Package mdframed Info: mdframed works in twoside mode on input line 210.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 210.
  [73]
-Package mdframed Info: mdframed works in twoside mode on input line 219.
+Package mdframed Info: mdframed works in twoside mode on input line 234.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 219.
-Package mdframed Info: mdframed works in twoside mode on input line 223.
+(mdframed)              on input line 234.
+Package mdframed Info: mdframed works in twoside mode on input line 238.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 223.
-Package mdframed Info: mdframed works in twoside mode on input line 235.
+(mdframed)              on input line 238.
+Package mdframed Info: mdframed works in twoside mode on input line 250.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 235.
-Package mdframed Info: mdframed works in twoside mode on input line 242.
+(mdframed)              on input line 250.
+Package mdframed Info: mdframed works in twoside mode on input line 257.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 242.
-Package mdframed Info: mdframed works in twoside mode on input line 275.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 275.
+(mdframed)              on input line 257.
  [74]
-Package mdframed Info: Not enough space on this page on input line 280.
-
-
-LaTeX Warning: Reference `' on page 75 undefined on input line 442.
-
-Package mdframed Info: mdframed works in twoside mode on input line 449.
+Package mdframed Info: mdframed works in twoside mode on input line 290.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 449.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 458.
+(mdframed)              on input line 290.
+Package mdframed Info: mdframed works in twoside mode on input line 312.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 312.
+Package mdframed Info: mdframed works in twoside mode on input line 318.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 318.
+
+
+LaTeX Warning: Reference `' on page 75 undefined on input line 465.
+
 [75] [76]
-Package mdframed Info: mdframed works in twoside mode on input line 480.
+Package mdframed Info: mdframed works in twoside mode on input line 491.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 480.
-Package mdframed Info: mdframed works in twoside mode on input line 484.
+(mdframed)              on input line 491.
+Package mdframed Info: mdframed works in twoside mode on input line 495.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 484.
-Package mdframed Info: mdframed works in twoside mode on input line 488.
+(mdframed)              on input line 495.
+Package mdframed Info: mdframed works in twoside mode on input line 499.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 488.
-Package mdframed Info: mdframed works in twoside mode on input line 492.
+(mdframed)              on input line 499.
+Package mdframed Info: mdframed works in twoside mode on input line 503.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 492.
-Missing character: There is no − ("2212) in font rm-lmr10!
- [77] [78]
-Missing character: There is no – (U+2013) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
-Missing character: There is no – (U+2013) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+(mdframed)              on input line 503.
+ [77] [78] (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 716.
  [79]
-Missing character: There is no – (U+2013) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
-File: Pictures//qr-matlab-error.png Graphic file (type bmp)
-<Pictures//qr-matlab-error.png>
- [80]
-Package mdframed Info: mdframed works in twoside mode on input line 763.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 763.
- [81]
-Package mdframed Info: mdframed works in twoside mode on input line 867.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 867.
-Package mdframed Info: mdframed works in twoside mode on input line 876.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 876.
-Package mdframed Info: mdframed works in twoside mode on input line 889.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 889.
-Package mdframed Info: mdframed works in twoside mode on input line 902.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 902.
+File: Pictures//qr-matlab-error.eps Graphic file (type eps)
+<Pictures//qr-matlab-error.eps>
 
-Overfull \hbox (37.91809pt too wide) in paragraph at lines 903--904
-[]\T1/lmss/bx/n/10 Definition 11.7.2 --- Con-structed House-holder Ma-trix. []\TU/FZPingXYSJW.TTF(0)/m/n/10.95 将 $\OML/zbami/m/it/10.95 y$ \TU/FZPingXYSJW.TTF(0)/m/n/10.95 变 换 为 单 位 基 向 量 $\OML/zbami/m/it/10.95 e \U/ntxmia/m/it/10.95 = \LMS/ntxsy/m/n/10.95 »\OT1/lmr/m/n/10.95 1\OML/zbami/m/it/10.95 ; \OT1/lmr/m/n/10.95 0\OML/zbami/m/it/10.95 ; \OT1/lmr/m/n/10.95 0\OML/zbami/m/it/10.95 ; []  ; \OT1/lmr/m/n/10.95 0\LMS/ntxsy/m/n/10.95 ¼[]$
+Underfull \hbox (badness 1253) in paragraph at lines 760--760
+[]\T1/BaskervilleF-TLF/m/n/10.95 Figure 11.4: |\TU/FZPingXYSJW.TTF(0)/m/n/10.95 在 同 一 组 数 据 中 使 用 修 正 \T1/BaskervilleF-TLF/m/n/10.95 Gram-Schmidt \TU/FZPingXYSJW.TTF(0)/m/n/10.95 算 法 求 得 的 误 差，| $\OML/zbami/m/it/10.95 e[] \U/ntxmia/m/it/10.95 =
  []
 
-Package mdframed Info: mdframed works in twoside mode on input line 912.
+File: Pictures//modified-qr-matlab-error.eps Graphic file (type eps)
+<Pictures//modified-qr-matlab-error.eps>
+[80]
+Package mdframed Info: mdframed works in twoside mode on input line 794.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 912.
-[82] [83]
-Package mdframed Info: mdframed works in twoside mode on input line 1056.
+(mdframed)              on input line 794.
+ [81]
+Package mdframed Info: mdframed works in twoside mode on input line 891.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1056.
- [84]
-Package mdframed Info: Not enough space on this page on input line 1060.
- [85] [86]
+(mdframed)              on input line 891.
+Package mdframed Info: mdframed works in twoside mode on input line 908.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 908.
+Package mdframed Info: mdframed works in twoside mode on input line 921.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 921.
+ [82]
+Package mdframed Info: Not enough space on this page on input line 923.
+Package mdframed Info: mdframed works in twoside mode on input line 934.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 934.
+
+Overfull \hbox (37.91809pt too wide) in paragraph at lines 935--936
+[]\T1/lmss/bx/n/10 Definition 11.6.2 --- Con-structed House-holder Ma-trix. []\TU/FZPingXYSJW.TTF(0)/m/n/10.95 将 $\OML/zbami/m/it/10.95 y$ \TU/FZPingXYSJW.TTF(0)/m/n/10.95 变 换 为 单 位 基 向 量 $\OML/zbami/m/it/10.95 e \U/ntxmia/m/it/10.95 = \LMS/ntxsy/m/n/10.95 »\OT1/lmr/m/n/10.95 1\OML/zbami/m/it/10.95 ; \OT1/lmr/m/n/10.95 0\OML/zbami/m/it/10.95 ; \OT1/lmr/m/n/10.95 0\OML/zbami/m/it/10.95 ; []  ; \OT1/lmr/m/n/10.95 0\LMS/ntxsy/m/n/10.95 ¼[]$
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 944.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 944.
+[83] [84] [85] [86] [87]
 Package microtype Info: Character `\textendash ' is missing
 (microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -4051,25 +4087,25 @@ Package microtype Info: Character `\textquestiondown ' is missing
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1275.
+(hyperref)                removing `math shift' on input line 1318.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1275.
+(hyperref)                removing `math shift' on input line 1318.
 
-Package mdframed Info: mdframed works in twoside mode on input line 1279.
+Package mdframed Info: mdframed works in twoside mode on input line 1322.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1279.
-Package mdframed Info: mdframed works in twoside mode on input line 1289.
+(mdframed)              on input line 1322.
+Package mdframed Info: mdframed works in twoside mode on input line 1332.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1289.
-Package mdframed Info: mdframed works in twoside mode on input line 1303.
+(mdframed)              on input line 1332.
+Package mdframed Info: mdframed works in twoside mode on input line 1346.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1303.
-[87]) [88] (./main.ptc) [89
+(mdframed)              on input line 1346.
+) [88] (./main.ptc) [89
 
 ] (./math/fourier.tex
 Chapter 12.
@@ -5078,7 +5114,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 216
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 218
- []\T1/BaskervilleF-TLF/m/n/10.95 32
+ []\T1/BaskervilleF-TLF/m/n/10.95 31
  []
 
 
@@ -5133,7 +5169,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 238
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 240
- []\T1/BaskervilleF-TLF/m/n/10.95 35
+ []\T1/BaskervilleF-TLF/m/n/10.95 34
  []
 
 
@@ -5148,7 +5184,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 244
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 246
- []\T1/BaskervilleF-TLF/m/n/10.95 36
+ []\T1/BaskervilleF-TLF/m/n/10.95 35
  []
 
 
@@ -5157,8 +5193,8 @@ Overfull \hbox (12.26398pt too wide) detected at line 248
  []
 
 
-Overfull \hbox (12.26398pt too wide) detected at line 252
- []\T1/BaskervilleF-TLF/m/n/10.95 38
+Overfull \hbox (12.26398pt too wide) detected at line 250
+ []\T1/BaskervilleF-TLF/m/n/10.95 36
  []
 
 
@@ -5193,7 +5229,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 264
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 266
- []\T1/BaskervilleF-TLF/m/n/10.95 39
+ []\T1/BaskervilleF-TLF/m/n/10.95 38
  []
 
 
@@ -5233,7 +5269,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 280
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 282
- []\T1/BaskervilleF-TLF/m/n/10.95 40
+ []\T1/BaskervilleF-TLF/m/n/10.95 39
  []
 
 
@@ -5268,7 +5304,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 294
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 296
- []\T1/BaskervilleF-TLF/m/n/10.95 42
+ []\T1/BaskervilleF-TLF/m/n/10.95 40
  []
 
 
@@ -5283,7 +5319,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 300
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 302
- []\T1/BaskervilleF-TLF/m/n/10.95 43
+ []\T1/BaskervilleF-TLF/m/n/10.95 42
  []
 
 
@@ -5303,7 +5339,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 308
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 310
- []\T1/BaskervilleF-TLF/m/n/10.95 44
+ []\T1/BaskervilleF-TLF/m/n/10.95 43
  []
 
 
@@ -5348,7 +5384,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 326
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 328
- []\T1/BaskervilleF-TLF/m/n/10.95 45
+ []\T1/BaskervilleF-TLF/m/n/10.95 44
  []
 
 
@@ -5378,7 +5414,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 338
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 340
- []\T1/BaskervilleF-TLF/m/n/10.95 46
+ []\T1/BaskervilleF-TLF/m/n/10.95 45
  []
 
 
@@ -5398,7 +5434,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 346
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 348
- []\T1/BaskervilleF-TLF/m/n/10.95 47
+ []\T1/BaskervilleF-TLF/m/n/10.95 46
  []
 
 
@@ -5428,7 +5464,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 358
 
 [133]
 Overfull \hbox (12.26398pt too wide) detected at line 360
- []\T1/BaskervilleF-TLF/m/n/10.95 48
+ []\T1/BaskervilleF-TLF/m/n/10.95 47
  []
 
 
@@ -5463,7 +5499,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 372
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 374
- []\T1/BaskervilleF-TLF/m/n/10.95 49
+ []\T1/BaskervilleF-TLF/m/n/10.95 48
  []
 
 
@@ -5487,8 +5523,8 @@ Overfull \hbox (12.26398pt too wide) detected at line 382
  []
 
 
-Overfull \hbox (12.26398pt too wide) detected at line 386
- []\T1/BaskervilleF-TLF/m/n/10.95 50
+Overfull \hbox (12.26398pt too wide) detected at line 384
+ []\T1/BaskervilleF-TLF/m/n/10.95 49
  []
 
 
@@ -5498,7 +5534,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 388
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 390
- []\T1/BaskervilleF-TLF/m/n/10.95 51
+ []\T1/BaskervilleF-TLF/m/n/10.95 50
  []
 
 
@@ -5513,7 +5549,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 394
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 396
- []\T1/BaskervilleF-TLF/m/n/10.95 52
+ []\T1/BaskervilleF-TLF/m/n/10.95 51
  []
 
 
@@ -5521,7 +5557,6 @@ Overfull \hbox (12.26398pt too wide) detected at line 398
  []\T1/BaskervilleF-TLF/m/n/10.95 52
  []
 
-Missing character: There is no − ("2212) in font BaskervilleF-Regular-tlf-t1!
 
 Overfull \hbox (12.26398pt too wide) detected at line 400
  []\T1/BaskervilleF-TLF/m/n/10.95 52
@@ -5533,13 +5568,13 @@ Overfull \hbox (12.26398pt too wide) detected at line 402
  []
 
 
-Overfull \hbox (12.26398pt too wide) detected at line 406
- []\T1/BaskervilleF-TLF/m/n/10.95 53
+Overfull \hbox (12.26398pt too wide) detected at line 404
+ []\T1/BaskervilleF-TLF/m/n/10.95 52
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 408
- []\T1/BaskervilleF-TLF/m/n/10.95 54
+ []\T1/BaskervilleF-TLF/m/n/10.95 53
  []
 
 
@@ -5553,8 +5588,8 @@ Overfull \hbox (12.26398pt too wide) detected at line 412
  []
 
 
-Overfull \hbox (12.26398pt too wide) detected at line 416
- []\T1/BaskervilleF-TLF/m/n/10.95 55
+Overfull \hbox (12.26398pt too wide) detected at line 414
+ []\T1/BaskervilleF-TLF/m/n/10.95 54
  []
 
 
@@ -5574,7 +5609,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 422
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 424
- []\T1/BaskervilleF-TLF/m/n/10.95 56
+ []\T1/BaskervilleF-TLF/m/n/10.95 55
  []
 
 
@@ -5604,7 +5639,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 434
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 436
- []\T1/BaskervilleF-TLF/m/n/10.95 57
+ []\T1/BaskervilleF-TLF/m/n/10.95 56
  []
 
 
@@ -5619,7 +5654,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 440
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 442
- []\T1/BaskervilleF-TLF/m/n/10.95 58
+ []\T1/BaskervilleF-TLF/m/n/10.95 57
  []
 
 
@@ -5629,7 +5664,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 444
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 446
- []\T1/BaskervilleF-TLF/m/n/10.95 59
+ []\T1/BaskervilleF-TLF/m/n/10.95 58
  []
 
 
@@ -5649,7 +5684,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 452
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 454
- []\T1/BaskervilleF-TLF/m/n/10.95 60
+ []\T1/BaskervilleF-TLF/m/n/10.95 59
  []
 
 
@@ -5669,7 +5704,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 460
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 462
- []\T1/BaskervilleF-TLF/m/n/10.95 61
+ []\T1/BaskervilleF-TLF/m/n/10.95 60
  []
 
 
@@ -5688,13 +5723,13 @@ Overfull \hbox (12.26398pt too wide) detected at line 468
  []
 
 
-Overfull \hbox (12.26398pt too wide) detected at line 472
- []\T1/BaskervilleF-TLF/m/n/10.95 62
+Overfull \hbox (12.26398pt too wide) detected at line 470
+ []\T1/BaskervilleF-TLF/m/n/10.95 61
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 474
- []\T1/BaskervilleF-TLF/m/n/10.95 63
+ []\T1/BaskervilleF-TLF/m/n/10.95 62
  []
 
 
@@ -5724,7 +5759,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 484
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 486
- []\T1/BaskervilleF-TLF/m/n/10.95 64
+ []\T1/BaskervilleF-TLF/m/n/10.95 63
  []
 
 
@@ -5769,7 +5804,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 502
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 504
- []\T1/BaskervilleF-TLF/m/n/10.95 65
+ []\T1/BaskervilleF-TLF/m/n/10.95 64
  []
 
 
@@ -5794,7 +5829,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 512
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 514
- []\T1/BaskervilleF-TLF/m/n/10.95 66
+ []\T1/BaskervilleF-TLF/m/n/10.95 65
  []
 
 
@@ -5809,12 +5844,12 @@ Overfull \hbox (12.26398pt too wide) detected at line 518
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 520
- []\T1/BaskervilleF-TLF/m/n/10.95 67
+ []\T1/BaskervilleF-TLF/m/n/10.95 66
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 522
- []\T1/BaskervilleF-TLF/m/n/10.95 67
+ []\T1/BaskervilleF-TLF/m/n/10.95 66
  []
 
 
@@ -5839,7 +5874,7 @@ Overfull \hbox (12.26398pt too wide) detected at line 530
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 532
- []\T1/BaskervilleF-TLF/m/n/10.95 68
+ []\T1/BaskervilleF-TLF/m/n/10.95 67
  []
 
 
@@ -5853,13 +5888,13 @@ Overfull \hbox (12.26398pt too wide) detected at line 536
  []
 
 
-Overfull \hbox (12.26398pt too wide) detected at line 540
- []\T1/BaskervilleF-TLF/m/n/10.95 70
+Overfull \hbox (12.26398pt too wide) detected at line 538
+ []\T1/BaskervilleF-TLF/m/n/10.95 68
  []
 
 
-Overfull \hbox (12.26398pt too wide) detected at line 542
- []\T1/BaskervilleF-TLF/m/n/10.95 70
+Overfull \hbox (12.26398pt too wide) detected at line 540
+ []\T1/BaskervilleF-TLF/m/n/10.95 68
  []
 
 
@@ -5879,12 +5914,12 @@ Overfull \hbox (12.26398pt too wide) detected at line 548
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 550
- []\T1/BaskervilleF-TLF/m/n/10.95 71
+ []\T1/BaskervilleF-TLF/m/n/10.95 70
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 552
- []\T1/BaskervilleF-TLF/m/n/10.95 71
+ []\T1/BaskervilleF-TLF/m/n/10.95 70
  []
 
 
@@ -5894,12 +5929,12 @@ Overfull \hbox (12.26398pt too wide) detected at line 554
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 556
- []\T1/BaskervilleF-TLF/m/n/10.95 72
+ []\T1/BaskervilleF-TLF/m/n/10.95 71
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 558
- []\T1/BaskervilleF-TLF/m/n/10.95 72
+ []\T1/BaskervilleF-TLF/m/n/10.95 71
  []
 
 [135]
@@ -5924,147 +5959,147 @@ Overfull \hbox (12.26398pt too wide) detected at line 566
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 568
- []\T1/BaskervilleF-TLF/m/n/10.95 73
+ []\T1/BaskervilleF-TLF/m/n/10.95 72
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 570
+ []\T1/BaskervilleF-TLF/m/n/10.95 72
+ []
+
+
+Overfull \hbox (12.26398pt too wide) detected at line 572
+ []\T1/BaskervilleF-TLF/m/n/10.95 72
+ []
+
+
+Overfull \hbox (12.26398pt too wide) detected at line 574
  []\T1/BaskervilleF-TLF/m/n/10.95 73
  []
 
 
-Overfull \hbox (12.07782pt too wide) detected at line 572
+Overfull \hbox (12.26398pt too wide) detected at line 576
+ []\T1/BaskervilleF-TLF/m/n/10.95 73
+ []
+
+
+Overfull \hbox (12.26398pt too wide) detected at line 578
+ []\T1/BaskervilleF-TLF/m/n/10.95 73
+ []
+
+
+Overfull \hbox (12.07782pt too wide) detected at line 580
  []\T1/BaskervilleF-TLF/m/n/10.95 74
  []
 
 
-Overfull \hbox (12.07782pt too wide) detected at line 574
+Overfull \hbox (12.07782pt too wide) detected at line 582
  []\T1/BaskervilleF-TLF/m/n/10.95 74
  []
 
 
-Overfull \hbox (12.07782pt too wide) detected at line 576
+Overfull \hbox (12.07782pt too wide) detected at line 584
  []\T1/BaskervilleF-TLF/m/n/10.95 74
  []
 
 
-Overfull \hbox (12.07782pt too wide) detected at line 578
+Overfull \hbox (12.07782pt too wide) detected at line 586
  []\T1/BaskervilleF-TLF/m/n/10.95 74
  []
 
 
-Overfull \hbox (12.12163pt too wide) detected at line 580
+Overfull \hbox (12.12163pt too wide) detected at line 588
  []\T1/BaskervilleF-TLF/m/n/10.95 75
  []
 
 
-Overfull \hbox (12.12163pt too wide) detected at line 582
+Overfull \hbox (12.12163pt too wide) detected at line 590
  []\T1/BaskervilleF-TLF/m/n/10.95 75
  []
 
 
-Overfull \hbox (12.26398pt too wide) detected at line 584
- []\T1/BaskervilleF-TLF/m/n/10.95 77
- []
-
-
-Overfull \hbox (12.26398pt too wide) detected at line 586
- []\T1/BaskervilleF-TLF/m/n/10.95 77
- []
-
-
-Overfull \hbox (12.26398pt too wide) detected at line 588
- []\T1/BaskervilleF-TLF/m/n/10.95 77
- []
-
-
-Overfull \hbox (12.26398pt too wide) detected at line 590
- []\T1/BaskervilleF-TLF/m/n/10.95 77
- []
-
-
-Overfull \hbox (12.26398pt too wide) detected at line 592
- []\T1/BaskervilleF-TLF/m/n/10.95 78
+Overfull \hbox (12.12163pt too wide) detected at line 592
+ []\T1/BaskervilleF-TLF/m/n/10.95 75
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 594
- []\T1/BaskervilleF-TLF/m/n/10.95 80
+ []\T1/BaskervilleF-TLF/m/n/10.95 77
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 596
- []\T1/BaskervilleF-TLF/m/n/10.95 81
+ []\T1/BaskervilleF-TLF/m/n/10.95 77
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 598
- []\T1/BaskervilleF-TLF/m/n/10.95 82
+ []\T1/BaskervilleF-TLF/m/n/10.95 77
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 600
- []\T1/BaskervilleF-TLF/m/n/10.95 82
+ []\T1/BaskervilleF-TLF/m/n/10.95 77
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 602
- []\T1/BaskervilleF-TLF/m/n/10.95 82
+ []\T1/BaskervilleF-TLF/m/n/10.95 78
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 604
- []\T1/BaskervilleF-TLF/m/n/10.95 82
+ []\T1/BaskervilleF-TLF/m/n/10.95 80
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 606
- []\T1/BaskervilleF-TLF/m/n/10.95 82
+ []\T1/BaskervilleF-TLF/m/n/10.95 81
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 608
- []\T1/BaskervilleF-TLF/m/n/10.95 85
+ []\T1/BaskervilleF-TLF/m/n/10.95 82
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 610
- []\T1/BaskervilleF-TLF/m/n/10.95 86
+ []\T1/BaskervilleF-TLF/m/n/10.95 82
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 612
- []\T1/BaskervilleF-TLF/m/n/10.95 87
+ []\T1/BaskervilleF-TLF/m/n/10.95 83
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 614
- []\T1/BaskervilleF-TLF/m/n/10.95 87
+ []\T1/BaskervilleF-TLF/m/n/10.95 83
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 616
- []\T1/BaskervilleF-TLF/m/n/10.95 87
+ []\T1/BaskervilleF-TLF/m/n/10.95 83
+ []
+
+
+Overfull \hbox (12.26398pt too wide) detected at line 618
+ []\T1/BaskervilleF-TLF/m/n/10.95 86
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 620
- []\T1/BaskervilleF-TLF/m/n/10.95 90
+ []\T1/BaskervilleF-TLF/m/n/10.95 88
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 622
- []\T1/BaskervilleF-TLF/m/n/10.95 90
+ []\T1/BaskervilleF-TLF/m/n/10.95 88
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 624
- []\T1/BaskervilleF-TLF/m/n/10.95 90
- []
-
-
-Overfull \hbox (12.26398pt too wide) detected at line 626
- []\T1/BaskervilleF-TLF/m/n/10.95 90
+ []\T1/BaskervilleF-TLF/m/n/10.95 88
  []
 
 
@@ -6074,97 +6109,97 @@ Overfull \hbox (12.26398pt too wide) detected at line 628
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 630
- []\T1/BaskervilleF-TLF/m/n/10.95 91
+ []\T1/BaskervilleF-TLF/m/n/10.95 90
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 632
- []\T1/BaskervilleF-TLF/m/n/10.95 91
+ []\T1/BaskervilleF-TLF/m/n/10.95 90
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 634
- []\T1/BaskervilleF-TLF/m/n/10.95 91
+ []\T1/BaskervilleF-TLF/m/n/10.95 90
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 636
- []\T1/BaskervilleF-TLF/m/n/10.95 91
+ []\T1/BaskervilleF-TLF/m/n/10.95 90
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 638
- []\T1/BaskervilleF-TLF/m/n/10.95 92
+ []\T1/BaskervilleF-TLF/m/n/10.95 91
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 640
- []\T1/BaskervilleF-TLF/m/n/10.95 92
+ []\T1/BaskervilleF-TLF/m/n/10.95 91
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 642
- []\T1/BaskervilleF-TLF/m/n/10.95 93
+ []\T1/BaskervilleF-TLF/m/n/10.95 91
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 644
- []\T1/BaskervilleF-TLF/m/n/10.95 93
+ []\T1/BaskervilleF-TLF/m/n/10.95 91
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 646
- []\T1/BaskervilleF-TLF/m/n/10.95 93
+ []\T1/BaskervilleF-TLF/m/n/10.95 92
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 648
- []\T1/BaskervilleF-TLF/m/n/10.95 93
+ []\T1/BaskervilleF-TLF/m/n/10.95 92
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 650
- []\T1/BaskervilleF-TLF/m/n/10.95 94
+ []\T1/BaskervilleF-TLF/m/n/10.95 93
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 652
- []\T1/BaskervilleF-TLF/m/n/10.95 94
+ []\T1/BaskervilleF-TLF/m/n/10.95 93
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 654
- []\T1/BaskervilleF-TLF/m/n/10.95 95
+ []\T1/BaskervilleF-TLF/m/n/10.95 93
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 656
- []\T1/BaskervilleF-TLF/m/n/10.95 95
+ []\T1/BaskervilleF-TLF/m/n/10.95 93
+ []
+
+
+Overfull \hbox (12.26398pt too wide) detected at line 658
+ []\T1/BaskervilleF-TLF/m/n/10.95 94
  []
 
 [136]
-Overfull \hbox (12.26398pt too wide) detected at line 658
- []\T1/BaskervilleF-TLF/m/n/10.95 95
- []
-
-
 Overfull \hbox (12.26398pt too wide) detected at line 660
- []\T1/BaskervilleF-TLF/m/n/10.95 96
+ []\T1/BaskervilleF-TLF/m/n/10.95 94
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 662
- []\T1/BaskervilleF-TLF/m/n/10.95 96
+ []\T1/BaskervilleF-TLF/m/n/10.95 95
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 664
- []\T1/BaskervilleF-TLF/m/n/10.95 96
+ []\T1/BaskervilleF-TLF/m/n/10.95 95
  []
 
 
 Overfull \hbox (12.26398pt too wide) detected at line 666
- []\T1/BaskervilleF-TLF/m/n/10.95 96
+ []\T1/BaskervilleF-TLF/m/n/10.95 95
  []
 
 
@@ -6183,73 +6218,73 @@ Overfull \hbox (12.26398pt too wide) detected at line 672
  []
 
 
-Overfull \hbox (18.39597pt too wide) detected at line 676
+Overfull \hbox (12.26398pt too wide) detected at line 674
+ []\T1/BaskervilleF-TLF/m/n/10.95 96
+ []
+
+
+Overfull \hbox (12.26398pt too wide) detected at line 676
+ []\T1/BaskervilleF-TLF/m/n/10.95 96
+ []
+
+
+Overfull \hbox (12.26398pt too wide) detected at line 678
+ []\T1/BaskervilleF-TLF/m/n/10.95 96
+ []
+
+
+Overfull \hbox (12.26398pt too wide) detected at line 680
+ []\T1/BaskervilleF-TLF/m/n/10.95 96
+ []
+
+
+Overfull \hbox (18.39597pt too wide) detected at line 684
  []\T1/BaskervilleF-TLF/m/n/10.95 101
  []
 
 
-Overfull \hbox (18.39597pt too wide) detected at line 678
+Overfull \hbox (18.39597pt too wide) detected at line 686
  []\T1/BaskervilleF-TLF/m/n/10.95 102
  []
 
 
-Overfull \hbox (18.39597pt too wide) detected at line 680
- []\T1/BaskervilleF-TLF/m/n/10.95 103
- []
-
-
-Overfull \hbox (18.39597pt too wide) detected at line 682
- []\T1/BaskervilleF-TLF/m/n/10.95 103
- []
-
-
-Overfull \hbox (18.39597pt too wide) detected at line 686
- []\T1/BaskervilleF-TLF/m/n/10.95 104
- []
-
-
 Overfull \hbox (18.39597pt too wide) detected at line 688
- []\T1/BaskervilleF-TLF/m/n/10.95 104
+ []\T1/BaskervilleF-TLF/m/n/10.95 103
  []
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 690
- []\T1/BaskervilleF-TLF/m/n/10.95 104
- []
-
-
-Overfull \hbox (18.39597pt too wide) detected at line 692
- []\T1/BaskervilleF-TLF/m/n/10.95 105
+ []\T1/BaskervilleF-TLF/m/n/10.95 103
  []
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 694
- []\T1/BaskervilleF-TLF/m/n/10.95 105
+ []\T1/BaskervilleF-TLF/m/n/10.95 104
  []
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 696
- []\T1/BaskervilleF-TLF/m/n/10.95 105
+ []\T1/BaskervilleF-TLF/m/n/10.95 104
+ []
+
+
+Overfull \hbox (18.39597pt too wide) detected at line 698
+ []\T1/BaskervilleF-TLF/m/n/10.95 104
  []
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 700
- []\T1/BaskervilleF-TLF/m/n/10.95 106
+ []\T1/BaskervilleF-TLF/m/n/10.95 105
  []
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 702
- []\T1/BaskervilleF-TLF/m/n/10.95 106
+ []\T1/BaskervilleF-TLF/m/n/10.95 105
  []
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 704
- []\T1/BaskervilleF-TLF/m/n/10.95 106
- []
-
-
-Overfull \hbox (18.39597pt too wide) detected at line 706
- []\T1/BaskervilleF-TLF/m/n/10.95 106
+ []\T1/BaskervilleF-TLF/m/n/10.95 105
  []
 
 
@@ -6259,22 +6294,22 @@ Overfull \hbox (18.39597pt too wide) detected at line 708
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 710
- []\T1/BaskervilleF-TLF/m/n/10.95 107
+ []\T1/BaskervilleF-TLF/m/n/10.95 106
  []
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 712
- []\T1/BaskervilleF-TLF/m/n/10.95 107
+ []\T1/BaskervilleF-TLF/m/n/10.95 106
  []
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 714
- []\T1/BaskervilleF-TLF/m/n/10.95 107
+ []\T1/BaskervilleF-TLF/m/n/10.95 106
  []
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 716
- []\T1/BaskervilleF-TLF/m/n/10.95 107
+ []\T1/BaskervilleF-TLF/m/n/10.95 106
  []
 
 
@@ -6289,22 +6324,22 @@ Overfull \hbox (18.39597pt too wide) detected at line 720
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 722
- []\T1/BaskervilleF-TLF/m/n/10.95 108
+ []\T1/BaskervilleF-TLF/m/n/10.95 107
  []
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 724
- []\T1/BaskervilleF-TLF/m/n/10.95 108
+ []\T1/BaskervilleF-TLF/m/n/10.95 107
  []
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 726
- []\T1/BaskervilleF-TLF/m/n/10.95 108
+ []\T1/BaskervilleF-TLF/m/n/10.95 107
  []
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 728
- []\T1/BaskervilleF-TLF/m/n/10.95 108
+ []\T1/BaskervilleF-TLF/m/n/10.95 107
  []
 
 
@@ -6319,22 +6354,22 @@ Overfull \hbox (18.39597pt too wide) detected at line 732
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 734
- []\T1/BaskervilleF-TLF/m/n/10.95 109
+ []\T1/BaskervilleF-TLF/m/n/10.95 108
  []
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 736
- []\T1/BaskervilleF-TLF/m/n/10.95 109
+ []\T1/BaskervilleF-TLF/m/n/10.95 108
  []
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 738
- []\T1/BaskervilleF-TLF/m/n/10.95 109
+ []\T1/BaskervilleF-TLF/m/n/10.95 108
  []
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 740
- []\T1/BaskervilleF-TLF/m/n/10.95 109
+ []\T1/BaskervilleF-TLF/m/n/10.95 108
  []
 
 
@@ -6349,23 +6384,22 @@ Overfull \hbox (18.39597pt too wide) detected at line 744
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 746
- []\T1/BaskervilleF-TLF/m/n/10.95 110
+ []\T1/BaskervilleF-TLF/m/n/10.95 109
  []
 
-Missing character: There is no α ("3B1) in font BaskervilleF-Regular-tlf-t1!
 
 Overfull \hbox (18.39597pt too wide) detected at line 748
- []\T1/BaskervilleF-TLF/m/n/10.95 110
+ []\T1/BaskervilleF-TLF/m/n/10.95 109
  []
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 750
- []\T1/BaskervilleF-TLF/m/n/10.95 110
+ []\T1/BaskervilleF-TLF/m/n/10.95 109
  []
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 752
- []\T1/BaskervilleF-TLF/m/n/10.95 110
+ []\T1/BaskervilleF-TLF/m/n/10.95 109
  []
 
 
@@ -6373,33 +6407,54 @@ Overfull \hbox (18.39597pt too wide) detected at line 754
  []\T1/BaskervilleF-TLF/m/n/10.95 110
  []
 
+Missing character: There is no α ("3B1) in font BaskervilleF-Regular-tlf-t1!
 
 Overfull \hbox (18.39597pt too wide) detected at line 756
- []\T1/BaskervilleF-TLF/m/n/10.95 111
+ []\T1/BaskervilleF-TLF/m/n/10.95 110
  []
 
 [137]
 Overfull \hbox (18.39597pt too wide) detected at line 758
- []\T1/BaskervilleF-TLF/m/n/10.95 111
+ []\T1/BaskervilleF-TLF/m/n/10.95 110
  []
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 760
- []\T1/BaskervilleF-TLF/m/n/10.95 111
+ []\T1/BaskervilleF-TLF/m/n/10.95 110
  []
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 762
+ []\T1/BaskervilleF-TLF/m/n/10.95 110
+ []
+
+
+Overfull \hbox (18.39597pt too wide) detected at line 764
  []\T1/BaskervilleF-TLF/m/n/10.95 111
  []
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 766
- []\T1/BaskervilleF-TLF/m/n/10.95 115
+ []\T1/BaskervilleF-TLF/m/n/10.95 111
  []
 
 
 Overfull \hbox (18.39597pt too wide) detected at line 768
+ []\T1/BaskervilleF-TLF/m/n/10.95 111
+ []
+
+
+Overfull \hbox (18.39597pt too wide) detected at line 770
+ []\T1/BaskervilleF-TLF/m/n/10.95 111
+ []
+
+
+Overfull \hbox (18.39597pt too wide) detected at line 774
+ []\T1/BaskervilleF-TLF/m/n/10.95 115
+ []
+
+
+Overfull \hbox (18.39597pt too wide) detected at line 776
  []\T1/BaskervilleF-TLF/m/n/10.95 117
  []
 
@@ -6440,6 +6495,13 @@ Overfull \hbox (1.20001pt too wide) in paragraph at lines 35--36
 [][] 
  []
 
+Invalid UTF-8 byte or sequence at line 42 replaced by U+FFFD.
+Missing character: There is no � ("FFFD) in font ec-lmssbx10!
+
+Overfull \hbox (1.20001pt too wide) in paragraph at lines 42--43
+[][] 
+ []
+
 [139
 
 
@@ -6463,12 +6525,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46240 strings out of 476477
- 942754 string characters out of 5812099
- 1837779 words of memory out of 5000000
- 65752 multiletter control sequences out of 15000+600000
- 906860 words of font info for 299 fonts, out of 8000000 for 9000
+ 48027 strings out of 476477
+ 965621 string characters out of 5812099
+ 1937519 words of memory out of 5000000
+ 67517 multiletter control sequences out of 15000+600000
+ 922902 words of font info for 301 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,21n,97p,1145b,4760s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,21n,97p,1145b,6144s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on main.pdf (139 pages).

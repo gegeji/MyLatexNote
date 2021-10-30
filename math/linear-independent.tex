@@ -15,7 +15,8 @@ $$
 
 \begin{corollary}
     向量集 $ \left\{a_{1}\right\} $ 是线性相关的, 当且仅当 $ a_{1}=0 $ . 
-
+\end{corollary}
+\begin{corollary}
     向量集 $ \left\{a_{1}, a_{2}\right\} $ 是线性相关的,  当且仅当其中一个 $ a_{1}=\beta a_{2}, \beta \neq 0 $ . 
 \end{corollary}
 
@@ -70,7 +71,7 @@ $$
 
 \section{Basis}
 
-\begin{definition}[基 (basis)]
+\begin{definition}[基 (Basis)]
     n个线性独立的n维向量 $ a_{1}, \ldots, a_{n} $ 的集合
 \end{definition}
 
@@ -179,6 +180,11 @@ $$
     这个分解可以用于计算不同标准正交基下的系数. 
 
 \begin{proof}
+    由于正交向量的性质
+    $$ a_{i}^{T} a_{j}=\left\{\begin{array}{ll}1 & i=j \\ 0 & i \neq j\end{array}\right. $$
+
+    所以
+
     $$ a_{i}^{T} x=\left(a_{1}^{T} x\right) a_{i}^{T} a_{1}+\cdots+\left(a_{i}^{T} x\right) a_{i}^{T} a_{i}+\cdots+\left(a_{n}^{T} x\right) a_{i}^{T} a_{n}=a_{i}^{T} x $$
 \end{proof}
 
@@ -201,6 +207,8 @@ $$
 如果在第$j$次迭代中提前结束, 说明 $ a_{j} $ 是 $ a_{1}, \ldots, a_{j-1} $ 的线性组合, 因此 $ a_{1}, \ldots, a_{k} $ 是线性相关的. 
 
 \begin{theorem}
+    \label{thm: qs-are-orthogonal}
+
     $q_{1}, \ldots, q_{i-1}, q_{i} $ 是标准正交的. 
 \end{theorem}
 

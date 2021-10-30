@@ -39,7 +39,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {10.3}{\ignorespaces Projection onto the column space of $A$, $A$ has orthonormal columns\relax }}{68}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10.4}{\ignorespaces Projection of $\boldsymbol {b}$ into the column space of $\boldsymbol {A}$, $A$ is any matrice. Sourced from \cite {Strang1993IntroductionTL}\relax }}{69}{figure.caption.18}%
+\contentsline {figure}{\numberline {10.4}{\ignorespaces Projection of $\boldsymbol {b}$ into the column space of ${A}$, $A$ is any matrice. Sourced from \cite {Strang1993IntroductionTL}\relax }}{69}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -47,13 +47,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {11.2}{\ignorespaces $ A \boldsymbol {x}^{\dagger } $ in the column space goes back to $ A^{\dagger } A \boldsymbol {x}^{\dagger }=\boldsymbol {x}^{\dagger }$ in the row space\relax }}{76}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.3}{\ignorespaces Reflection of $x$\relax }}{81}{figure.caption.28}%
+\contentsline {figure}{\numberline {11.3}{\ignorespaces $\qopname \relax m{max}_{1 \leq i<k}\left |q_{i}^{T} q_{k}\right |$\relax }}{80}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.4}{\ignorespaces 构造的Householder矩阵的几何图示\relax }}{83}{figure.caption.31}%
+\contentsline {figure}{\numberline {11.4}{\ignorespaces 在同一组数据中使用修正Gram-Schmidt算法求得的误差，$e_{k}=\qopname \relax m{max}_{1 \leq i<k}\left |q_{i}^{T} q_{k}\right |, k=2, \ldots , n$\relax }}{81}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.5}{\ignorespaces The structure of $ H_{k} H_{k-1} \ldots H_{1} A $\relax }}{84}{figure.caption.32}%
+\contentsline {figure}{\numberline {11.5}{\ignorespaces Reflection of $x$\relax }}{82}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.6}{\ignorespaces $A$的结构\relax }}{85}{figure.caption.33}%
+\contentsline {figure}{\numberline {11.6}{\ignorespaces 构造的Householder矩阵的几何图示\relax }}{84}{figure.caption.32}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {11.7}{\ignorespaces The structure of $ H_{k} H_{k-1} \ldots H_{1} A $\relax }}{84}{figure.caption.33}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {11.8}{\ignorespaces 迭代计算过程中$A$的结构\relax }}{85}{figure.caption.34}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

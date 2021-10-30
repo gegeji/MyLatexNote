@@ -113,8 +113,7 @@ $$
     所有列两两相互正交的\textbf{方形}实矩阵。
 \end{definition}
 
-\begin{theorem}
-    正交矩阵满足非奇异性.
+\begin{theorem}[正交矩阵满足非奇异性]
     
     即如果矩阵 $ A $ 是正交的，则$ A $ 是可逆的，左逆等于右逆，且它的逆为 $ A^{T} $.
 
@@ -126,7 +125,7 @@ $$
 \end{corollary}
 
 \begin{corollary}
-    $ A $ 的行是标准正交的，即范数为1且相互正交。
+    $ A $ 的行是标准正交的，即$a_i$范数为1且相互正交。
 \end{corollary}
 
 \begin{remark}
@@ -264,6 +263,12 @@ $$
     $$ A^{T} A=\left(I-2 a a^{T}\right)\left(I-2 a a^{T}\right)=I-4 a a^{T}+4 a a^{T} a a^{T}=I $$
 \end{proof}
 
+\begin{theorem}
+    反射矩阵是对合矩阵(Involutory matrix)，即它的逆是它本身。
+
+    $$H =  H^{-1}$$
+\end{theorem}
+
 \subsection{The Geometry of Householder Transformation}
 
 \begin{FigureCenter}{Elementary Reflection}
@@ -381,6 +386,8 @@ $$
 x=A^{-1} b=A^{T} b
 $$
 
+
+\subsection{The Complexity of the Multiplication $Ax$ of Orthogonal Matrix $A$}
 可以在 $ 2 \mathrm{n}^{2} $ 个flop内计算矩阵向量乘法。 
 
 如果A有特殊性质，代价将会小于$n^2$。例如，
@@ -412,7 +419,7 @@ $$
 \section{值域范围、列空间}
 
 \begin{definition}[向量集合张成的空间]
-    一个向量集合张成的空间是其所有线性组合的集合
+    一个向量集合张成的空间是其所有线性组合的集合.
 
     $$ \operatorname{span}\left(a_{1}, a_{2}, \cdots, a_{n}\right)=\left\{x_{1} a_{1}+x_{2} a_{2}+\cdots+x_{n} a_{n} \mid x \in \mathbb{R}^{n}\right\} $$
 \end{definition}
@@ -422,6 +429,8 @@ $$
 \end{definition}
 
 \subsection{投影到列标准正交的矩阵$A$的列空间}
+\label{chap:projection-onto-a}
+
 
 \begin{FigureCenter}{Projection onto the column space of $A$, $A$ has orthonormal columns}
     \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
@@ -471,12 +480,12 @@ $$ \begin{aligned} f(x) &=\|A x-b\|_{2}^{2}
 
 $$ \nabla f(x)=2 x-2 A^{T} b=0 \Rightarrow x=A^{T} b $$
 
-$ A A^{T} b $ 称为向量 $ \mathrm{b} \in \mathbb{R}^{m} $ 在 $ \operatorname{range} (A)$上的正交投影。
+$ A A^{T} b $ 称为向量 $ \mathrm{b} \in \mathbb{R}^{m} $ 在 $ \operatorname{range} (A)$上的\term{正交投影}。
 
 \begin{theorem}
     $$ A x=A A^{T} b \in \operatorname{range}(A) $$
 
-    且是$b$在$C(A)$上的投影。
+    且是$b$在$C(A)$上的\term{投影}。
 \end{theorem}
 
 \begin{proof}
@@ -493,7 +502,7 @@ $ A A^{T} b $ 称为向量 $ \mathrm{b} \in \mathbb{R}^{m} $ 在 $ \operatorname
 第3行成立是因为 $ A^{T}(A \hat{x}-b)=\hat{x}-A^{T} b=0 $ 。
 \end{proof}
 
-\begin{FigureCenter}{Projection of $\boldsymbol{b}$ into the column space of $\boldsymbol{A}$, $A$ is any matrice. Sourced from \cite{Strang1993IntroductionTL}}
+\begin{FigureCenter}{Projection of $\boldsymbol{b}$ into the column space of ${A}$, $A$ is any matrice. Sourced from \cite{Strang1993IntroductionTL}}
     \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
     \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]

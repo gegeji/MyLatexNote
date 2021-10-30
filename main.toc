@@ -163,17 +163,25 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {10.7}具有正交矩阵的线性方程}{67}{section.10.7}%
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.7.1}The Complexity of the Multiplication $Ax$ of Orthogonal Matrix $A$}{67}{subsection.10.7.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {10.8}列标准正交的高矩阵}{67}{section.10.8}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {10.9}值域范围、列空间}{67}{section.10.9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {10.9.1}投影到列标准正交的矩阵$A$的列空间}{68}{subsection.10.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {11}QR Factorization and Householder Transformation}{70}{chapter.11}%
+\contentsline {chapter}{\numberline {11}QR分解与Householder变换}{70}{chapter.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.1}高斯消元法}{70}{section.11.1}%
+\contentsline {section}{\numberline {11.1}Triangular Matrices}{70}{section.11.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.1.1}高斯消元法}{70}{subsection.11.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.1.2}The Inverses of Triangular Matrices}{71}{subsection.11.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {11.2}QR Factorization}{71}{section.11.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.2.1}复矩阵的QR分解}{73}{subsection.11.2.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {11.3}QR分解的应用}{73}{section.11.3}%
 \defcounter {refsection}{0}\relax 
@@ -181,39 +189,37 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {11.3.2}QR分解和求解伪逆 $A^{\dagger }$、逆 $A^{-1}$}{74}{subsection.11.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.3.3}$A$的列空间与$Q$的关系}{74}{subsection.11.3.3}%
+\contentsline {subsection}{\numberline {11.3.3}$A$的列空间和$Q$的列空间相同}{75}{subsection.11.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.3.4}往$A$列空间上的投影也是往$Q$上的投影}{75}{subsection.11.3.4}%
+\contentsline {subsection}{\numberline {11.3.4}往$A$列空间上的投影也是往$Q$列空间上的投影}{75}{subsection.11.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.4}复矩阵的QR分解}{75}{section.11.4}%
+\contentsline {section}{\numberline {11.4}QR Algorithm Using Gram-Schmidt Algorithm}{77}{section.11.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.5}QR Algorithm Using Gram-Schmidt Algorithm}{77}{section.11.5}%
+\contentsline {subsection}{\numberline {11.4.1}Gram-Schmidt Algorithm}{78}{subsection.11.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.5.1}Gram-Schmidt Algorithm}{78}{subsection.11.5.1}%
+\contentsline {subsection}{\numberline {11.4.2}基于Gram-Schmidt方法进行QR分解的时间复杂度}{79}{subsection.11.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.5.2}基于Gram-Schmidt方法进行QR分解的时间复杂度}{79}{subsection.11.5.2}%
+\contentsline {section}{\numberline {11.5}The Numerical Instability of QR Decomposition based on Gram-Schmidt Algorithm}{79}{section.11.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.6}The Numerical Instability of QR Decomposition based on Gram–Schmidt Algorithm}{79}{section.11.6}%
+\contentsline {section}{\numberline {11.6}QR Decomposition Using Householder Transformation}{81}{section.11.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.7}QR Decomposition Using Householder Transformation}{80}{section.11.7}%
+\contentsline {subsection}{\numberline {11.6.1}Householder Matrix}{81}{subsection.11.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.7.1}Householder Matrix}{81}{subsection.11.7.1}%
+\contentsline {subsubsection}{$Hx$的算法复杂度}{82}{section*.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{$Hx$的算法复杂度}{82}{section*.29}%
+\contentsline {subsection}{\numberline {11.6.2}构造反射算子}{82}{subsection.11.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.7.2}构造反射算子}{82}{subsection.11.7.2}%
+\contentsline {subsubsection}{构造的Householder矩阵几何意义}{83}{section*.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{构造的Householder矩阵几何意义}{83}{section*.30}%
+\contentsline {subsection}{\numberline {11.6.3}Householder三角化}{84}{subsection.11.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.7.3}Householder三角化}{83}{subsection.11.7.3}%
+\contentsline {subsection}{\numberline {11.6.4}An Example for Householder Algorithm}{86}{subsection.11.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.7.4}An Example for Householder Algorithm}{86}{subsection.11.7.4}%
+\contentsline {subsection}{\numberline {11.6.5}Complexity of Householder Algorithm}{88}{subsection.11.6.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.7.5}Complexity of Householder Algorithm}{87}{subsection.11.7.5}%
+\contentsline {section}{\numberline {11.7}Householder变换进行QR分解的 $Q$ 因子}{88}{section.11.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.8}$Q$因子}{87}{section.11.8}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.8.1}矩阵-向量积 $ H_{k} x $算法复杂度}{88}{subsection.11.8.1}%
+\contentsline {subsection}{\numberline {11.7.1}矩阵-向量积 $ H_{k} x $算法复杂度}{88}{subsection.11.7.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{\@mypartnumtocformat {III}{Extensive Reading}}{89}{part.3}%
 \defcounter {refsection}{0}\relax 
@@ -247,9 +253,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {14.4.3}(n 重)伯努利试验, 二项分布}{100}{subsection.14.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{二项分布性质}{100}{section*.35}%
+\contentsline {subsubsection}{二项分布性质}{100}{section*.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{二项分布单峰性质}{100}{section*.36}%
+\contentsline {subsubsection}{二项分布单峰性质}{100}{section*.37}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {14.4.4}泊松分布}{100}{subsection.14.4.4}%
 \defcounter {refsection}{0}\relax 
@@ -273,11 +279,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {14.8.1}方差}{102}{subsection.14.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{方差性质}{102}{section*.37}%
+\contentsline {subsubsection}{方差性质}{102}{section*.38}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {14.8.2}协方差}{102}{subsection.14.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{协方差性质}{102}{section*.38}%
+\contentsline {subsubsection}{协方差性质}{102}{section*.39}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {14.8.3}相关系数}{103}{subsection.14.8.3}%
 \defcounter {refsection}{0}\relax 
@@ -361,5 +367,5 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {18.4}参数Bootstrap方法}{127}{section.18.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{139}{section*.53}%
+\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{139}{section*.54}%
 \contentsfinish 

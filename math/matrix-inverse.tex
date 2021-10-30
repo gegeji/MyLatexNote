@@ -428,7 +428,7 @@ $$
 
 Gram矩阵的定义见 \ref{Def:Gram}.
 
-\begin{corollary}
+\begin{corollary}[Gram Matrix 可逆等价于$A$列线性无关]
     矩阵 $ A \in \mathbb{R}^{m \times n},  \mathrm{G}=A^{T} A $
 
 矩阵 $ A $ 列向量线性无关 $ \Leftrightarrow $ Gram矩阵G非奇异.
@@ -437,7 +437,7 @@ Gram矩阵的定义见 \ref{Def:Gram}.
 \begin{proof}
     " $ \Rightarrow $ ": 
     
-    假设矩阵 $ A $ 列向量线性无关, $ A^{T} A $ 奇异.  则存在 $ A^{T} A x=0, x \neq 0 $, 可得 $ x^{T} A^{T} A x=\|A x\|_{2}^{2}=0 $, 即 $ A x=0 $ 与列向量线性无关劣盾.
+    假设矩阵 $ A $ 列向量线性无关, $ A^{T} A $ 奇异.  则存在 $ A^{T} A x=0, x \neq 0 $, 可得 $ x^{T} A^{T} A x=\|A x\|_{2}^{2}=0 $, 即 $ A x=0 $ 与列向量线性无矛盾.
 
     " $ \Leftarrow $ ":
     
