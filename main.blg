@@ -1,0 +1,18 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'main.blg'
+[99] biber-MSWIN32:340> INFO - === 
+[135] Biber.pm:415> INFO - Reading 'main.bcf'
+[240] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
+[255] Biber.pm:4340> INFO - Processing section 0
+[267] Biber.pm:4531> INFO - Looking for bibtex format file 'E:/OneDrive/Library/library.bib' for section 0
+[329] bibtex.pm:1689> INFO - LaTeX decoding ...
+[783] bibtex.pm:1494> INFO - Found BibTeX data source 'E:/OneDrive/Library/library.bib'
+[799] Utils.pm:395> WARN - Duplicate entry key: '7031960' in file 'E:/OneDrive/Library/library.bib', skipping ...
+[838] Utils.pm:395> WARN - BibTeX subsystem: C:\Users\xwx\AppData\Local\Temp\biber_tmp_sbun\7f56027f9015dc497dc7645faffbdd71_26008.utf8, line 6, warning: 172 characters of junk seen at toplevel
+[849] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[849] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[849] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[849] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[850] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[851] bbl.pm:757> INFO - Output to main.bbl
+[851] Biber.pm:128> INFO - WARNINGS: 2

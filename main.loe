@@ -1,0 +1,768 @@
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~1.1.1\else \numberline {1.1.1}Definition\fi \thmtformatoptarg {Vector}}{10}{definitionT.1.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~1.1.2\else \numberline {1.1.2}Definition\fi \thmtformatoptarg {n维向量 \( a \) 的第 \( i \) 元素}}{10}{definitionT.1.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~1.1.3\else \numberline {1.1.3}Definition\fi \thmtformatoptarg {$a=b$}}{10}{definitionT.1.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~1.1.4\else \numberline {1.1.4}Definition\fi \thmtformatoptarg {stacked vector}}{10}{definitionT.1.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~1.1.5\else \numberline {1.1.5}Definition\fi \thmtformatoptarg {零向量}}{10}{definitionT.1.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~1.1.6\else \numberline {1.1.6}Definition\fi \thmtformatoptarg {全一向量}}{10}{definitionT.1.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~1.1.7\else \numberline {1.1.7}Definition\fi \thmtformatoptarg {单位向量}}{11}{definitionT.1.1.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~1.1.8\else \numberline {1.1.8}Definition\fi \thmtformatoptarg {稀疏向量}}{11}{definitionT.1.1.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~1.2.1\else \numberline {1.2.1}Definition\fi \thmtformatoptarg {向量空间$V$}}{11}{definitionT.1.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~1.2.1\else \numberline {1.2.1}Corollary\fi }{11}{corollaryT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~1.2.2\else \numberline {1.2.2}Corollary\fi }{11}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~1.2.2\else \numberline {1.2.2}Definition\fi \thmtformatoptarg {数域}}{11}{definitionT.1.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~1.1\else \numberline {1.1}Example\fi }{11}{exampleT.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~1.2\else \numberline {1.2}Example\fi }{11}{exampleT.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~1.3\else \numberline {1.3}Example\fi }{11}{exampleT.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~1.3.1\else \numberline {1.3.1}Definition\fi \thmtformatoptarg {向量加法}}{11}{definitionT.1.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~1.3.1\else \numberline {1.3.1}Corollary\fi \thmtformatoptarg {向量位移相加}}{12}{corollaryT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~1.4\else \numberline {1.4}Example\fi }{12}{exampleT.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~1.3.2\else \numberline {1.3.2}Definition\fi \thmtformatoptarg {标量与向量的乘法}}{12}{definitionT.1.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~1.3.3\else \numberline {1.3.3}Definition\fi \thmtformatoptarg {线性组合}}{12}{definitionT.1.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~1.5\else \numberline {1.5}Example\fi }{12}{exampleT.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~1.4.1\else \numberline {1.4.1}Definition\fi \thmtformatoptarg {内积}}{12}{definitionT.1.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~1.6\else \numberline {1.6}Example\fi }{12}{exampleT.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~1.4.1\else \numberline {1.4.1}Corollary\fi \thmtformatoptarg {选出第$i$项}}{13}{corollaryT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~1.4.2\else \numberline {1.4.2}Corollary\fi \thmtformatoptarg {向量每一项之和}}{13}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~1.4.3\else \numberline {1.4.3}Corollary\fi \thmtformatoptarg {向量每一项的平方和}}{13}{corollaryT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~1.4.4\else \numberline {1.4.4}Corollary\fi \thmtformatoptarg {向量元素的平均值}}{13}{corollaryT.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~1.4.5\else \numberline {1.4.5}Corollary\fi \thmtformatoptarg {Selective sum}}{13}{corollaryT.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~1.4.2\else \numberline {1.4.2}Definition\fi \thmtformatoptarg {The sum of block vectors}}{13}{definitionT.1.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~1.7\else \numberline {1.7}Example\fi \thmtformatoptarg {计算同时出现的项目数}}{14}{exampleT.1.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~1.8\else \numberline {1.8}Example\fi \thmtformatoptarg {Weights, features, and score}}{14}{exampleT.1.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~1.9\else \numberline {1.9}Example\fi }{14}{exampleT.1.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~1.5.1\else \numberline {1.5.1}Theorem\fi \thmtformatoptarg {Cauchy-Schwartz Inequality}}{14}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~1.6.1\else \numberline {1.6.1}Corollary\fi }{14}{corollaryT.1}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~2.1.1\else \numberline {2.1.1}Definition\fi \thmtformatoptarg {Linear Function}}{16}{definitionT.2.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~2.1\else \numberline {2.1}Example\fi }{16}{exampleT.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~2.2\else \numberline {2.2}Example\fi }{16}{exampleT.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~2.1.1\else \numberline {2.1.1}Theorem\fi }{16}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~2.1.2\else \numberline {2.1.2}Definition\fi \thmtformatoptarg {内积函数 (inner product function)}}{17}{definitionT.2.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~2.1.2\else \numberline {2.1.2}Corollary\fi }{17}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~2.1.3\else \numberline {2.1.3}Corollary\fi }{17}{corollaryT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~2.1.3\else \numberline {2.1.3}Definition\fi \thmtformatoptarg {仿射函数 (affine function)}}{17}{definitionT.2.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~2.1.4\else \numberline {2.1.4}Theorem\fi }{17}{theoremeT.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~2.2.1\else \numberline {2.2.1}Definition\fi \thmtformatoptarg {函数$f$第$i$个分量的一阶偏导数}}{17}{definitionT.2.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~2.2.2\else \numberline {2.2.2}Definition\fi \thmtformatoptarg {$f$在点$z$的梯度}}{17}{definitionT.2.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~2.2.3\else \numberline {2.2.3}Definition\fi \thmtformatoptarg {Taylor's Approximation}}{18}{definitionT.2.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~2.3\else \numberline {2.3}Example\fi }{18}{exampleT.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~2.2.1\else \numberline {2.2.1}Corollary\fi \thmtformatoptarg {n阶泰勒多项式}}{18}{corollaryT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~2.2.2\else \numberline {2.2.2}Corollary\fi \thmtformatoptarg {对于高阶余项的公式}}{18}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~2.2.3\else \numberline {2.2.3}Corollary\fi \thmtformatoptarg {麦克劳林(Maclaurin)公式}}{19}{corollaryT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~2.2.4\else \numberline {2.2.4}Definition\fi \thmtformatoptarg {一阶泰勒公式}}{19}{definitionT.2.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~2.2.4\else \numberline {2.2.4}Corollary\fi \thmtformatoptarg {一阶泰勒公式的内积形式}}{19}{corollaryT.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~2.4\else \numberline {2.4}Example\fi }{19}{exampleT.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~2.3.1\else \numberline {2.3.1}Definition\fi \thmtformatoptarg {Regression Model}}{19}{definitionT.2.3.1}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~3.1.1\else \numberline {3.1.1}Definition\fi \thmtformatoptarg {Vector Norm}}{20}{definitionT.3.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~3.1\else \numberline {3.1}Example\fi \thmtformatoptarg {$ \ell _{1} $-范数（曼哈顿范数, Manhattan norm）}}{20}{exampleT.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~3.2\else \numberline {3.2}Example\fi \thmtformatoptarg {$ \ell _{2} $-范数（欧几里得范数, Euclidean norm）}}{20}{exampleT.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~3.1.1\else \numberline {3.1.1}Corollary\fi \thmtformatoptarg {柯西—施瓦茨不等式}}{21}{corollaryT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~3.1.2\else \numberline {3.1.2}Definition\fi \thmtformatoptarg {$ \ell _{\infty } $-范数}}{21}{definitionT.3.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~3.1.3\else \numberline {3.1.3}Definition\fi \thmtformatoptarg {$ \ell _{\mathrm {p}} $-范数}}{21}{definitionT.3.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~3.1.2\else \numberline {3.1.2}Theorem\fi \thmtformatoptarg {Minkowshi Inequality}}{21}{theoremeT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~3.1.3\else \numberline {3.1.3}Theorem\fi \thmtformatoptarg {Hölder Inequality}}{21}{theoremeT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~3.2.1\else \numberline {3.2.1}Definition\fi \thmtformatoptarg {向量 $ x $的均方值 (mean-square value)}}{22}{definitionT.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~3.2.2\else \numberline {3.2.2}Definition\fi \thmtformatoptarg {n维向量 $ x $ 的均方根(root-mean-square value, RMS)}}{22}{definitionT.3.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~3.3.1\else \numberline {3.3.1}Theorem\fi \thmtformatoptarg {Chebyshev's Inequality}}{22}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~3.3.2\else \numberline {3.3.2}Theorem\fi \thmtformatoptarg {Chebyshev's Inequality}}{22}{theoremeT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~3.3.3\else \numberline {3.3.3}Corollary\fi \thmtformatoptarg {Chebyshev's Inequality Using RMS}}{22}{corollaryT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~3.4.1\else \numberline {3.4.1}Definition\fi \thmtformatoptarg {Euclidean distance}}{22}{definitionT.3.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~3.4.2\else \numberline {3.4.2}Definition\fi \thmtformatoptarg {RMS deviation}}{22}{definitionT.3.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~3.4.1\else \numberline {3.4.1}Theorem\fi \thmtformatoptarg {Trianglar Inequality}}{22}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~3.4.3\else \numberline {3.4.3}Definition\fi \thmtformatoptarg {Feature Distance}}{23}{definitionT.3.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~3.4.4\else \numberline {3.4.4}Definition\fi }{23}{definitionT.3.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~3.5.1\else \numberline {3.5.1}Definition\fi \thmtformatoptarg {算术平均值}}{23}{definitionT.3.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~3.5.2\else \numberline {3.5.2}Definition\fi \thmtformatoptarg {De-meaned Vector}}{23}{definitionT.3.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~3.5.3\else \numberline {3.5.3}Definition\fi \thmtformatoptarg {$x$的标准差}}{23}{definitionT.3.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~3.5.1\else \numberline {3.5.1}Theorem\fi }{23}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~3.6.1\else \numberline {3.6.1}Definition\fi \thmtformatoptarg {两个非零向量 $ a $ 和$b$之间的角(angle)}}{23}{definitionT.3.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~3.6.2\else \numberline {3.6.2}Definition\fi \thmtformatoptarg {球面的距离}}{23}{definitionT.3.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~3.6.3\else \numberline {3.6.3}Definition\fi \thmtformatoptarg {$a$和$b$的相关系数}}{24}{definitionT.3.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~3.3\else \numberline {3.3}Example\fi }{24}{exampleT.3.3}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {problem}{\ifthmt@listswap Problem~4.1\else \numberline {4.1}Problem\fi }{25}{problem.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~4.1.1\else \numberline {4.1.1}Definition\fi \thmtformatoptarg {高阶无穷小记号 $o$}}{25}{definitionT.4.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~4.1.1\else \numberline {4.1.1}Corollary\fi }{25}{corollaryT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\ifthmt@listswap Proposition~4.1.2\else \numberline {4.1.2}Proposition\fi \thmtformatoptarg {优化求解的必要条件}}{25}{proposition.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~4.1\else \numberline {4.1}Example\fi }{26}{exampleT.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~4.2.1\else \numberline {4.2.1}Definition\fi \thmtformatoptarg {凸集}}{26}{definitionT.4.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~4.2.2\else \numberline {4.2.2}Definition\fi \thmtformatoptarg {凸函数}}{26}{definitionT.4.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~4.2\else \numberline {4.2}Example\fi }{26}{exampleT.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~4.3\else \numberline {4.3}Example\fi }{26}{exampleT.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~4.4\else \numberline {4.4}Example\fi }{27}{exampleT.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~4.2.1\else \numberline {4.2.1}Theorem\fi \thmtformatoptarg {可微函数$f$是凸函数的充要条件}}{27}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~4.2.2\else \numberline {4.2.2}Theorem\fi }{27}{theoremeT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~4.3.1\else \numberline {4.3.1}Definition\fi \thmtformatoptarg {向量对向量的导数}}{27}{definitionT.4.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~4.5\else \numberline {4.5}Example\fi }{28}{exampleT.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {problem}{\ifthmt@listswap Problem~4.2\else \numberline {4.2}Problem\fi }{28}{problem.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {notation}{\ifthmt@listswap Notation~4.1\else \numberline {4.1}Notation\fi }{29}{notation.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {problem}{\ifthmt@listswap Problem~4.3\else \numberline {4.3}Problem\fi }{29}{problem.4.3}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~5.1.1\else \numberline {5.1.1}Definition\fi \thmtformatoptarg {线性相关(linearly dependent)}}{31}{definitionT.5.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~5.1.1\else \numberline {5.1.1}Corollary\fi }{31}{corollaryT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~5.1.2\else \numberline {5.1.2}Definition\fi \thmtformatoptarg {线性独立 (linearly independent)}}{31}{definitionT.5.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~5.1.2\else \numberline {5.1.2}Corollary\fi }{31}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~5.1\else \numberline {5.1}Example\fi }{31}{exampleT.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~5.2\else \numberline {5.2}Example\fi }{31}{exampleT.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~5.1.3\else \numberline {5.1.3}Theorem\fi }{32}{theoremeT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~5.2.1\else \numberline {5.2.1}Definition\fi \thmtformatoptarg {基 (basis)}}{32}{definitionT.5.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~5.2.2\else \numberline {5.2.2}Definition\fi \thmtformatoptarg {向量 $ b $ 在基底 $ a_{1}, \ldots , a_{n} $ 下的分解}}{32}{definitionT.5.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~5.3\else \numberline {5.3}Example\fi }{32}{exampleT.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~5.3.1\else \numberline {5.3.1}Definition\fi \thmtformatoptarg {Orthogonal Vectors}}{32}{definitionT.5.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~5.3.2\else \numberline {5.3.2}Definition\fi \thmtformatoptarg {Orthonormal Vectors}}{32}{definitionT.5.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~5.3.1\else \numberline {5.3.1}Corollary\fi }{33}{corollaryT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~5.3.2\else \numberline {5.3.2}Corollary\fi }{33}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~5.3.3\else \numberline {5.3.3}Definition\fi \thmtformatoptarg {$n$维向量的一个标准正交基}}{33}{definitionT.5.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~5.3.4\else \numberline {5.3.4}Definition\fi \thmtformatoptarg { $ x $ 在标准正交基下的标准正交分解}}{34}{definitionT.5.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~5.4.1\else \numberline {5.4.1}Theorem\fi }{34}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~5.4.2\else \numberline {5.4.2}Corollary\fi }{35}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~5.4.3\else \numberline {5.4.3}Corollary\fi }{35}{corollaryT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~5.4.4\else \numberline {5.4.4}Corollary\fi }{35}{corollaryT.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~5.4.5\else \numberline {5.4.5}Corollary\fi }{36}{corollaryT.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~5.4.6\else \numberline {5.4.6}Corollary\fi }{36}{corollaryT.6}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.1.1\else \numberline {6.1.1}Definition\fi \thmtformatoptarg {矩阵}}{38}{definitionT.6.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {notation}{\ifthmt@listswap Notation~6.1\else \numberline {6.1}Notation\fi }{38}{notation.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.1.2\else \numberline {6.1.2}Definition\fi \thmtformatoptarg {标量}}{38}{definitionT.6.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.1.3\else \numberline {6.1.3}Definition\fi \thmtformatoptarg {向量}}{38}{definitionT.6.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.1.4\else \numberline {6.1.4}Definition\fi \thmtformatoptarg {行向量, 列向量}}{38}{definitionT.6.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.1.5\else \numberline {6.1.5}Definition\fi \thmtformatoptarg {高形, 宽形和方形矩阵}}{38}{definitionT.6.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.1.6\else \numberline {6.1.6}Definition\fi \thmtformatoptarg {分块矩阵}}{38}{definitionT.6.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.1.7\else \numberline {6.1.7}Definition\fi }{39}{definitionT.6.1.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.1.8\else \numberline {6.1.8}Definition\fi }{39}{definitionT.6.1.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.2.1\else \numberline {6.2.1}Definition\fi \thmtformatoptarg {矩阵数乘}}{39}{definitionT.6.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.2.2\else \numberline {6.2.2}Definition\fi \thmtformatoptarg {矩阵加法}}{39}{definitionT.6.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.2.3\else \numberline {6.2.3}Definition\fi \thmtformatoptarg {Transpose}}{39}{definitionT.6.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~6.2.1\else \numberline {6.2.1}Corollary\fi \thmtformatoptarg {转置的性质}}{39}{corollaryT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.2.4\else \numberline {6.2.4}Definition\fi \thmtformatoptarg {共轭转置}}{39}{definitionT.6.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~6.2.2\else \numberline {6.2.2}Corollary\fi \thmtformatoptarg {共轭转置的性质}}{39}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.2.5\else \numberline {6.2.5}Definition\fi \thmtformatoptarg {矩阵乘法}}{40}{definitionT.6.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~6.2.3\else \numberline {6.2.3}Corollary\fi \thmtformatoptarg {矩阵乘法性质}}{40}{corollaryT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.2.6\else \numberline {6.2.6}Definition\fi \thmtformatoptarg {分块矩阵乘法}}{40}{definitionT.6.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.2.7\else \numberline {6.2.7}Definition\fi \thmtformatoptarg {矩阵-向量乘积 $Ax$}}{40}{definitionT.6.2.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~6.2.4\else \numberline {6.2.4}Corollary\fi }{40}{corollaryT.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~6.1\else \numberline {6.1}Example\fi }{40}{exampleT.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.2.8\else \numberline {6.2.8}Definition\fi \thmtformatoptarg {矩阵-向量乘积函数 $f(x)=A x$}}{40}{definitionT.6.2.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.2.9\else \numberline {6.2.9}Definition\fi \thmtformatoptarg {Matrix Power}}{42}{definitionT.6.2.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~6.2\else \numberline {6.2}Example\fi \thmtformatoptarg {Paths in a directed graph}}{42}{exampleT.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~6.3\else \numberline {6.3}Example\fi \thmtformatoptarg {Linear dynamical system}}{42}{exampleT.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~6.4\else \numberline {6.4}Example\fi }{43}{exampleT.6.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.3.1\else \numberline {6.3.1}Definition\fi \thmtformatoptarg {Zero Matrix}}{43}{definitionT.6.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.3.2\else \numberline {6.3.2}Definition\fi \thmtformatoptarg {单位矩阵}}{43}{definitionT.6.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~6.3.1\else \numberline {6.3.1}Corollary\fi }{43}{corollaryT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.3.3\else \numberline {6.3.3}Definition\fi \thmtformatoptarg {Symmetric Matrices}}{44}{definitionT.6.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.3.4\else \numberline {6.3.4}Definition\fi \thmtformatoptarg {Hermitian Matrices}}{44}{definitionT.6.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.3.5\else \numberline {6.3.5}Definition\fi \thmtformatoptarg {Diagonal Matrices}}{44}{definitionT.6.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.3.6\else \numberline {6.3.6}Definition\fi \thmtformatoptarg {下三角矩阵}}{44}{definitionT.6.3.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.3.7\else \numberline {6.3.7}Definition\fi \thmtformatoptarg {上三角矩阵}}{44}{definitionT.6.3.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~6.5\else \numberline {6.5}Example\fi \thmtformatoptarg {Permutation Matrices}}{44}{exampleT.6.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~6.6\else \numberline {6.6}Example\fi }{44}{exampleT.6.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~6.7\else \numberline {6.7}Example\fi }{44}{exampleT.6.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~6.8\else \numberline {6.8}Example\fi \thmtformatoptarg {反转矩阵}}{44}{exampleT.6.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~6.9\else \numberline {6.9}Example\fi \thmtformatoptarg {循环移位矩阵}}{45}{exampleT.6.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~6.10\else \numberline {6.10}Example\fi \thmtformatoptarg {旋转矩阵}}{45}{exampleT.6.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~6.11\else \numberline {6.11}Example\fi \thmtformatoptarg {Reflection Matrices}}{45}{exampleT.6.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.3.8\else \numberline {6.3.8}Definition\fi \thmtformatoptarg {Selector matrices}}{45}{definitionT.6.3.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.3.9\else \numberline {6.3.9}Definition\fi \thmtformatoptarg {Downsampling}}{45}{definitionT.6.3.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.3.10\else \numberline {6.3.10}Definition\fi \thmtformatoptarg {关联矩阵}}{45}{definitionT.6.3.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.3.11\else \numberline {6.3.11}Definition\fi \thmtformatoptarg {一维卷积}}{46}{definitionT.6.3.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~6.12\else \numberline {6.12}Example\fi }{46}{exampleT.6.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~6.3.2\else \numberline {6.3.2}Corollary\fi }{46}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~6.3.3\else \numberline {6.3.3}Corollary\fi \thmtformatoptarg {卷积性质}}{46}{corollaryT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~6.3.4\else \numberline {6.3.4}Corollary\fi }{47}{corollaryT.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~6.13\else \numberline {6.13}Example\fi \thmtformatoptarg {Toeplitz Matrix}}{47}{exampleT.6.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.3.12\else \numberline {6.3.12}Definition\fi \thmtformatoptarg {多项式}}{47}{definitionT.6.3.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.3.13\else \numberline {6.3.13}Definition\fi \thmtformatoptarg {Vandermonde Matrices}}{47}{definitionT.6.3.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.3.14\else \numberline {6.3.14}Definition\fi \thmtformatoptarg {Discrete Fourier Transform (DFT)}}{47}{definitionT.6.3.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.3.15\else \numberline {6.3.15}Definition\fi \thmtformatoptarg {Discrete Inverse Fourier Transform}}{47}{definitionT.6.3.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.3.16\else \numberline {6.3.16}Definition\fi \thmtformatoptarg {半正定矩阵}}{48}{definitionT.6.3.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.3.17\else \numberline {6.3.17}Definition\fi \thmtformatoptarg {正定矩阵}}{48}{definitionT.6.3.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.3.18\else \numberline {6.3.18}Definition\fi \thmtformatoptarg {二次型}}{48}{definitionT.6.3.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~6.14\else \numberline {6.14}Example\fi }{48}{exampleT.6.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~6.3.5\else \numberline {6.3.5}Corollary\fi }{48}{corollaryT.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~6.3.6\else \numberline {6.3.6}Theorem\fi \thmtformatoptarg {正定矩阵对角元素性质}}{48}{theoremeT.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~6.3.7\else \numberline {6.3.7}Theorem\fi \thmtformatoptarg {半正定矩阵对角元素性质}}{48}{theoremeT.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.4.1\else \numberline {6.4.1}Definition\fi \thmtformatoptarg {实矩阵$A$的Gram矩阵}}{49}{definitionT.6.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~6.4.2\else \numberline {6.4.2}Definition\fi \thmtformatoptarg {复矩阵的$A$的Gram 矩阵}}{49}{definitionT.6.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~6.4.1\else \numberline {6.4.1}Theorem\fi }{49}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~6.4.2\else \numberline {6.4.2}Theorem\fi }{49}{theoremeT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~6.4.3\else \numberline {6.4.3}Corollary\fi }{49}{corollaryT.3}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~7.1.1\else \numberline {7.1.1}Definition\fi \thmtformatoptarg {Matrix Norm}}{50}{definitionT.7.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~7.1\else \numberline {7.1}Example\fi \thmtformatoptarg {F-范数(Frobenius norm)}}{50}{exampleT.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~7.1.2\else \numberline {7.1.2}Definition\fi \thmtformatoptarg {从属于给定向量范数 $ \|x\|_{v} $ 的矩阵范数}}{51}{definitionT.7.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~7.1.3\else \numberline {7.1.3}Definition\fi \thmtformatoptarg {向量范数和算子范数相容}}{51}{definitionT.7.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~7.1.1\else \numberline {7.1.1}Theorem\fi \thmtformatoptarg {算子范数服从乘法范数相容性}}{51}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~7.1.4\else \numberline {7.1.4}Definition\fi \thmtformatoptarg {$A$的列范数}}{52}{definitionT.7.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~7.1.5\else \numberline {7.1.5}Definition\fi \thmtformatoptarg {$A$的行范数}}{52}{definitionT.7.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~7.1.6\else \numberline {7.1.6}Definition\fi \thmtformatoptarg {$A$的2−范数}}{52}{definitionT.7.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~7.2\else \numberline {7.2}Example\fi }{52}{exampleT.7.2}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~8.1\else \numberline {8.1}Example\fi }{53}{exampleT.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {notation}{\ifthmt@listswap Notation~8.1\else \numberline {8.1}Notation\fi }{54}{notation.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~8.3.1\else \numberline {8.3.1}Definition\fi \thmtformatoptarg {非奇异矩阵 $ A $ 的条件数(condition number)}}{54}{definitionT.8.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~8.3.1\else \numberline {8.3.1}Corollary\fi \thmtformatoptarg {非奇异矩阵 $ A $ 的条件数(condition number)性质}}{54}{corollaryT.1}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~9.1.1\else \numberline {9.1.1}Definition\fi \thmtformatoptarg {$A$的左逆}}{55}{definitionT.9.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~9.1\else \numberline {9.1}Example\fi }{55}{exampleT.9.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~9.1.2\else \numberline {9.1.2}Definition\fi \thmtformatoptarg {$A$的右逆}}{55}{definitionT.9.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~9.2\else \numberline {9.2}Example\fi }{55}{exampleT.9.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~9.1.1\else \numberline {9.1.1}Theorem\fi }{56}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~9.1.2\else \numberline {9.1.2}Theorem\fi }{56}{theoremeT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~9.1.3\else \numberline {9.1.3}Theorem\fi }{56}{theoremeT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~9.1.3\else \numberline {9.1.3}Definition\fi }{56}{definitionT.9.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~9.2.1\else \numberline {9.2.1}Definition\fi }{56}{definitionT.9.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~9.2.1\else \numberline {9.2.1}Theorem\fi }{56}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~9.2.2\else \numberline {9.2.2}Theorem\fi }{57}{theoremeT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~9.2.3\else \numberline {9.2.3}Theorem\fi }{57}{theoremeT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~9.4.1\else \numberline {9.4.1}Theorem\fi }{57}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~9.4.2\else \numberline {9.4.2}Theorem\fi }{58}{theoremeT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~9.4.3\else \numberline {9.4.3}Corollary\fi }{58}{corollaryT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~9.4.4\else \numberline {9.4.4}Theorem\fi }{59}{theoremeT.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~9.4.5\else \numberline {9.4.5}Theorem\fi }{59}{theoremeT.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~9.4.6\else \numberline {9.4.6}Corollary\fi }{59}{corollaryT.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~9.4.7\else \numberline {9.4.7}Theorem\fi }{59}{theoremeT.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~9.5.1\else \numberline {9.5.1}Theorem\fi \thmtformatoptarg {转置 $ A^{T} $ 和共轭转置 $ A^{\mathrm {H}} $ }}{60}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~9.5.2\else \numberline {9.5.2}Corollary\fi }{60}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~9.6.1\else \numberline {9.6.1}Corollary\fi }{60}{corollaryT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~9.7.1\else \numberline {9.7.1}Definition\fi \thmtformatoptarg {Pseudo-inverse}}{60}{definitionT.9.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~9.7.1\else \numberline {9.7.1}Theorem\fi }{61}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~9.7.2\else \numberline {9.7.2}Theorem\fi }{61}{theoremeT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~9.7.3\else \numberline {9.7.3}Corollary\fi }{61}{corollaryT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~9.7.4\else \numberline {9.7.4}Corollary\fi }{61}{corollaryT.4}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~10.1.1\else \numberline {10.1.1}Theorem\fi }{62}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~10.1.2\else \numberline {10.1.2}Theorem\fi }{63}{theoremeT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~10.1.3\else \numberline {10.1.3}Theorem\fi }{63}{theoremeT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~10.1.4\else \numberline {10.1.4}Theorem\fi }{63}{theoremeT.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~10.1.5\else \numberline {10.1.5}Theorem\fi }{63}{theoremeT.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~10.1.6\else \numberline {10.1.6}Theorem\fi }{63}{theoremeT.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~10.1.7\else \numberline {10.1.7}Theorem\fi }{63}{theoremeT.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~10.1.8\else \numberline {10.1.8}Theorem\fi }{64}{theoremeT.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~10.2.1\else \numberline {10.2.1}Definition\fi \thmtformatoptarg {正交矩阵}}{64}{definitionT.10.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~10.2.1\else \numberline {10.2.1}Theorem\fi }{64}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~10.2.2\else \numberline {10.2.2}Corollary\fi }{64}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~10.2.3\else \numberline {10.2.3}Corollary\fi }{64}{corollaryT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {notation}{\ifthmt@listswap Notation~10.1\else \numberline {10.1}Notation\fi }{64}{notation.10.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~10.3.1\else \numberline {10.3.1}Definition\fi \thmtformatoptarg {置换}}{64}{definitionT.10.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~10.3.1\else \numberline {10.3.1}Theorem\fi }{64}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~10.3.2\else \numberline {10.3.2}Corollary\fi }{64}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~10.3.3\else \numberline {10.3.3}Corollary\fi }{65}{corollaryT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~10.1\else \numberline {10.1}Example\fi }{65}{exampleT.10.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~10.2\else \numberline {10.2}Example\fi \thmtformatoptarg {Rotation Matrices in $\vvmathbb {R}^{2}$}}{65}{exampleT.10.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~10.3\else \numberline {10.3}Example\fi \thmtformatoptarg {Rotation Matrices in $\vvmathbb {R}^{3}$}}{65}{exampleT.10.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~10.5.1\else \numberline {10.5.1}Definition\fi \thmtformatoptarg {Householder matrix, reflator matrix}}{65}{definitionT.10.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~10.5.1\else \numberline {10.5.1}Theorem\fi }{66}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~10.5.2\else \numberline {10.5.2}Theorem\fi }{66}{theoremeT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~10.5.3\else \numberline {10.5.3}Corollary\fi }{66}{corollaryT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~10.5.4\else \numberline {10.5.4}Corollary\fi }{67}{corollaryT.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~10.6.1\else \numberline {10.6.1}Corollary\fi \thmtformatoptarg {正交矩阵乘积的正交性}}{67}{corollaryT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~10.8.1\else \numberline {10.8.1}Theorem\fi }{67}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~10.8.2\else \numberline {10.8.2}Theorem\fi }{67}{theoremeT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~10.8.3\else \numberline {10.8.3}Theorem\fi }{67}{theoremeT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~10.9.1\else \numberline {10.9.1}Definition\fi \thmtformatoptarg {向量集合张成的空间}}{67}{definitionT.10.9.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~10.9.2\else \numberline {10.9.2}Definition\fi \thmtformatoptarg {$A$的范围（列空间）}}{68}{definitionT.10.9.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {problem}{\ifthmt@listswap Problem~10.1\else \numberline {10.1}Problem\fi }{68}{problem.10.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~10.9.1\else \numberline {10.9.1}Theorem\fi }{68}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~11.0.1\else \numberline {11.0.1}Definition\fi \thmtformatoptarg {Lower Triangular Matrices}}{70}{definitionT.11.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~11.0.2\else \numberline {11.0.2}Definition\fi \thmtformatoptarg {Upper Triangular Matrices}}{70}{definitionT.11.0.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~11.0.3\else \numberline {11.0.3}Definition\fi \thmtformatoptarg {单位上三角矩阵，单位下三角矩阵}}{70}{definitionT.11.0.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {problem}{\ifthmt@listswap Problem~11.1\else \numberline {11.1}Problem\fi }{70}{problem.11.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {problem}{\ifthmt@listswap Problem~11.2\else \numberline {11.2}Problem\fi }{70}{problem.11.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.1.1\else \numberline {11.1.1}Theorem\fi }{71}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.1.2\else \numberline {11.1.2}Theorem\fi \thmtformatoptarg {高斯消元法}}{71}{theoremeT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.1.3\else \numberline {11.1.3}Theorem\fi }{71}{theoremeT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~11.2.1\else \numberline {11.2.1}Definition\fi \thmtformatoptarg {QR Factorization}}{72}{definitionT.11.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~11.2.1\else \numberline {11.2.1}Corollary\fi }{72}{corollaryT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~11.2.2\else \numberline {11.2.2}Corollary\fi }{72}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~11.2.3\else \numberline {11.2.3}Corollary\fi }{72}{corollaryT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~11.2.4\else \numberline {11.2.4}Corollary\fi }{72}{corollaryT.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~11.1\else \numberline {11.1}Example\fi }{72}{exampleT.11.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~11.2\else \numberline {11.2}Example\fi }{73}{exampleT.11.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~11.3.1\else \numberline {11.3.1}Corollary\fi }{73}{corollaryT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~11.3.1\else \numberline {11.3.1}Definition\fi \thmtformatoptarg {线性无关列向量的矩阵$A$的伪逆}}{74}{definitionT.11.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.3.2\else \numberline {11.3.2}Theorem\fi }{74}{theoremeT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~11.3.3\else \numberline {11.3.3}Corollary\fi }{74}{corollaryT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~11.3.4\else \numberline {11.3.4}Corollary\fi }{74}{corollaryT.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.3.5\else \numberline {11.3.5}Theorem\fi }{75}{theoremeT.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.4.1\else \numberline {11.4.1}Theorem\fi }{75}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~11.5.1\else \numberline {11.5.1}Corollary\fi }{77}{corollaryT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~11.5.2\else \numberline {11.5.2}Corollary\fi }{77}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~11.5.3\else \numberline {11.5.3}Corollary\fi }{77}{corollaryT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.5.4\else \numberline {11.5.4}Theorem\fi }{77}{theoremeT.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~11.3\else \numberline {11.3}Example\fi }{78}{exampleT.11.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exampleT}{\ifthmt@listswap Example~11.4\else \numberline {11.4}Example\fi }{80}{exampleT.11.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.7.1\else \numberline {11.7.1}Theorem\fi }{81}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.7.2\else \numberline {11.7.2}Theorem\fi }{82}{theoremeT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~11.7.1\else \numberline {11.7.1}Definition\fi }{82}{definitionT.11.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.7.3\else \numberline {11.7.3}Theorem\fi }{82}{theoremeT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~11.7.2\else \numberline {11.7.2}Definition\fi \thmtformatoptarg {Constructed Householder Matrix}}{82}{definitionT.11.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.7.4\else \numberline {11.7.4}Theorem\fi }{82}{theoremeT.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.7.5\else \numberline {11.7.5}Theorem\fi }{85}{theoremeT.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {problem}{\ifthmt@listswap Problem~11.3\else \numberline {11.3}Problem\fi }{86}{problem.11.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~11.8.1\else \numberline {11.8.1}Definition\fi \thmtformatoptarg { $ v_{1}, \ldots , v_{n} $ 的完整表示}}{87}{definitionT.11.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~11.8.1\else \numberline {11.8.1}Theorem\fi }{87}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~11.8.2\else \numberline {11.8.2}Definition\fi }{87}{definitionT.11.8.2}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~12.1.1\else \numberline {12.1.1}Definition\fi \thmtformatoptarg {Complex Numbers}}{90}{definitionT.12.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~12.1.2\else \numberline {12.1.2}Definition\fi \thmtformatoptarg {Complex Number in Polar Coordinates}}{90}{definitionT.12.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~12.1.1\else \numberline {12.1.1}Theorem\fi \thmtformatoptarg {Euler's Formular}}{90}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~12.1.2\else \numberline {12.1.2}Corollary\fi }{90}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~12.1.3\else \numberline {12.1.3}Definition\fi \thmtformatoptarg {正弦函数}}{90}{definitionT.12.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~12.1.4\else \numberline {12.1.4}Definition\fi \thmtformatoptarg {三角级数}}{91}{definitionT.12.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~12.1.5\else \numberline {12.1.5}Definition\fi \thmtformatoptarg {三角函数系}}{91}{definitionT.12.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~12.1.6\else \numberline {12.1.6}Definition\fi \thmtformatoptarg {复数域的Gram矩阵}}{91}{definitionT.12.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~12.1.7\else \numberline {12.1.7}Definition\fi \thmtformatoptarg {酉矩阵}}{91}{definitionT.12.1.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~12.1.8\else \numberline {12.1.8}Definition\fi \thmtformatoptarg {酉矩阵的逆}}{92}{definitionT.12.1.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~12.2.1\else \numberline {12.2.1}Definition\fi \thmtformatoptarg {傅里叶级数}}{92}{definitionT.12.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~12.2.1\else \numberline {12.2.1}Theorem\fi \thmtformatoptarg {收敛定理, 狄利克雷 (Dirichlet) 充分条件}}{93}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~12.2.2\else \numberline {12.2.2}Corollary\fi }{93}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~12.2.2\else \numberline {12.2.2}Definition\fi \thmtformatoptarg {正弦级数}}{93}{definitionT.12.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~12.2.3\else \numberline {12.2.3}Definition\fi \thmtformatoptarg {余弦级数}}{93}{definitionT.12.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~12.2.3\else \numberline {12.2.3}Theorem\fi }{94}{theoremeT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~12.2.4\else \numberline {12.2.4}Definition\fi \thmtformatoptarg {傅里叶级数的复数形式}}{94}{definitionT.12.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~12.3.1\else \numberline {12.3.1}Definition\fi \thmtformatoptarg {The Fourier transform of a continuous function $ f(t) $ of a continuous variable $ t $}}{95}{definitionT.12.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~12.3.2\else \numberline {12.3.2}Definition\fi \thmtformatoptarg {inverse Fourier transform}}{95}{definitionT.12.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~12.4.1\else \numberline {12.4.1}Definition\fi \thmtformatoptarg {Discrete Fourier Transform}}{95}{definitionT.12.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~12.4.2\else \numberline {12.4.2}Definition\fi \thmtformatoptarg {inverse discrete Fourier transform (IDFT)}}{96}{definitionT.12.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~12.4.3\else \numberline {12.4.3}Definition\fi \thmtformatoptarg {离散傅里叶变换矩阵$W$}}{96}{definitionT.12.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~12.4.1\else \numberline {12.4.1}Corollary\fi }{96}{corollaryT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~12.4.2\else \numberline {12.4.2}Corollary\fi }{96}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~12.4.3\else \numberline {12.4.3}Corollary\fi }{96}{corollaryT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~12.4.4\else \numberline {12.4.4}Corollary\fi }{96}{corollaryT.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~12.4.4\else \numberline {12.4.4}Definition\fi \thmtformatoptarg {离散傅里叶反变换}}{96}{definitionT.12.4.4}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~14.4.1\else \numberline {14.4.1}Theorem\fi \thmtformatoptarg {泊松定理}}{101}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~14.8.1\else \numberline {14.8.1}Theorem\fi \thmtformatoptarg {切比雪夫不等式}}{102}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~14.8.2\else \numberline {14.8.2}Corollary\fi }{103}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~14.8.3\else \numberline {14.8.3}Theorem\fi }{103}{theoremeT.3}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~15.1.1\else \numberline {15.1.1}Theorem\fi \thmtformatoptarg {辛钦大数定律}}{104}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~15.1.2\else \numberline {15.1.2}Corollary\fi }{104}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~15.2.1\else \numberline {15.2.1}Theorem\fi \thmtformatoptarg {伯努利大数定理}}{104}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~15.3.1\else \numberline {15.3.1}Theorem\fi \thmtformatoptarg {Lyapunov中心极限定理}}{105}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~15.3.2\else \numberline {15.3.2}Theorem\fi }{105}{theoremeT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~15.3.3\else \numberline {15.3.3}Theorem\fi \thmtformatoptarg {De Moivre-Laplace定理}}{105}{theoremeT.3}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~16.2.1\else \numberline {16.2.1}Definition\fi \thmtformatoptarg {样本平均值}}{106}{definitionT.16.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~16.2.2\else \numberline {16.2.2}Definition\fi \thmtformatoptarg {样本方差}}{106}{definitionT.16.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~16.2.3\else \numberline {16.2.3}Definition\fi \thmtformatoptarg {样本标准差}}{106}{definitionT.16.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~16.2.4\else \numberline {16.2.4}Definition\fi \thmtformatoptarg {样本 $k$ 阶原点矩}}{106}{definitionT.16.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~16.2.5\else \numberline {16.2.5}Definition\fi \thmtformatoptarg {样本 $k$ 阶中心矩}}{106}{definitionT.16.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~16.2.6\else \numberline {16.2.6}Definition\fi \thmtformatoptarg {$X$和$Y$的$k+p$阶混合原点矩}}{107}{definitionT.16.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~16.2.7\else \numberline {16.2.7}Definition\fi \thmtformatoptarg {$X$和$Y$的$k+l$阶混合中心矩}}{107}{definitionT.16.2.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~16.3.1\else \numberline {16.3.1}Definition\fi \thmtformatoptarg {卡方分布}}{107}{definitionT.16.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~16.3.1\else \numberline {16.3.1}Corollary\fi }{107}{corollaryT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~16.3.2\else \numberline {16.3.2}Corollary\fi \thmtformatoptarg {$\chi ^2$分布的可加性}}{107}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~16.3.3\else \numberline {16.3.3}Corollary\fi \thmtformatoptarg {$\chi ^2$分布的数学期望和方差}}{107}{corollaryT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~16.3.4\else \numberline {16.3.4}Corollary\fi \thmtformatoptarg {卡方分布中心极限定理}}{108}{corollaryT.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~16.3.5\else \numberline {16.3.5}Corollary\fi }{108}{corollaryT.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~16.3.2\else \numberline {16.3.2}Definition\fi \thmtformatoptarg {卡方分布的上分位点}}{108}{definitionT.16.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~16.4.1\else \numberline {16.4.1}Definition\fi \thmtformatoptarg {自由度为 $t$ 的 t 分布}}{108}{definitionT.16.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~16.4.1\else \numberline {16.4.1}Corollary\fi \thmtformatoptarg {t 分布数学期望和方差}}{108}{corollaryT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~16.4.2\else \numberline {16.4.2}Corollary\fi \thmtformatoptarg {t 分布的概率密度函数}}{108}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~16.4.3\else \numberline {16.4.3}Corollary\fi }{109}{corollaryT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~16.4.4\else \numberline {16.4.4}Corollary\fi \thmtformatoptarg {与 F 分布的关系}}{109}{corollaryT.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~16.4.2\else \numberline {16.4.2}Definition\fi \thmtformatoptarg {t 分布的上分位点}}{109}{definitionT.16.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~16.5.1\else \numberline {16.5.1}Definition\fi \thmtformatoptarg {F 分布}}{109}{definitionT.16.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~16.5.1\else \numberline {16.5.1}Corollary\fi \thmtformatoptarg {F 分布数学期望}}{109}{corollaryT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~16.5.2\else \numberline {16.5.2}Corollary\fi \thmtformatoptarg {$F(n_1,n_2),F(n_2,n_1)$的关系}}{109}{corollaryT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~16.5.3\else \numberline {16.5.3}Corollary\fi \thmtformatoptarg {与 t 分布的关系}}{110}{corollaryT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~16.5.4\else \numberline {16.5.4}Corollary\fi \thmtformatoptarg {F 分布上 α 分位点的性质}}{110}{corollaryT.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~16.6.1\else \numberline {16.6.1}Definition\fi \thmtformatoptarg {正态总体的样本均值的数学期望、方差和样本方差的数学期望}}{110}{definitionT.16.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~16.6.1\else \numberline {16.6.1}Corollary\fi \thmtformatoptarg {矩估计法原理}}{110}{corollaryT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~16.6.2\else \numberline {16.6.2}Theorem\fi \thmtformatoptarg {样本均值的分布}}{110}{theoremeT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~16.6.3\else \numberline {16.6.3}Corollary\fi }{111}{corollaryT.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~16.6.4\else \numberline {16.6.4}Theorem\fi \thmtformatoptarg {样本方差的分布}}{111}{theoremeT.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~16.6.5\else \numberline {16.6.5}Theorem\fi \thmtformatoptarg {样本均值和样本方差的关系}}{111}{theoremeT.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~16.6.6\else \numberline {16.6.6}Theorem\fi \thmtformatoptarg {两总体样本均值差、样本方差比的分布}}{111}{theoremeT.6}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~17.5.1\else \numberline {17.5.1}Theorem\fi \thmtformatoptarg {Kolmogorov定理}}{115}{theoremeT.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionT}{\ifthmt@listswap Definition~17.7.1\else \numberline {17.7.1}Definition\fi }{117}{definitionT.17.7.1}%

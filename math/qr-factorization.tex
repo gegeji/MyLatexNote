@@ -1,4 +1,4 @@
-\chapter{QR Factorization}
+\chapter{QR Factorization and Householder Transformation}
 
 \begin{definition}[Lower Triangular Matrices]
     矩阵 $ \mathrm{A} \in \mathbb{R}^{n \times n} $ 为\term{下三角(Lower Triangular)矩阵}, $ A_{i j}=0, j>i $ 。
@@ -186,7 +186,7 @@ $$
     \item 带约束的最小二乘问题
 \end{itemize}
 
-\subsection{QR分解和求解 $Ax = b$ }
+\subsection{QR分解和求解线性方程组$Ax = b$}
 
 QR分解的思想可以用于加快求逆矩阵速度。
 
@@ -200,7 +200,21 @@ QRx = b &\Rightarrow x = R^{-1} \left(Q^Tb\right)
 $$
 \end{corollary}
 
-\subsection{QR分解和求解伪逆、逆}
+\begin{algorithm}[htbp]
+    \caption[]{Solving Linear Equations via QR Decomposition}
+    \KwIn{$n \times n$ invertible matrix $A$}
+    \caption{Solving linear equations via QR factorization}
+    QR factorization. Compute the QR factorization $ A=Q R $\;
+    Compute $ Q^{T} b $\;
+    Back substitution. Solve the triangular equation $ R x=Q^{T} b $ using back substitution\;
+\end{algorithm}
+
+对于普通矩阵使用QR分解求解线性方程组，正交分解需要$2 n^3$ flops, 计算$Q^T b$需要$2n^2$ flops, 第三步回代求解$Rx = Q^Tb$需要$n^2$ flops.(总时间复杂度是$O(n^3)$). 
+
+对于稀疏矩阵求解线性方程组，时间复杂度接近$\operatorname{nnz}(A)$。内存使用和复杂度在很大程度上取决于系数矩阵的稀疏模式。按照顺序，存储器使用量通常是$\operatorname{nnz}(A)+n$的适度倍数，$\operatorname{nnz}(A)+n$是指定问题数据$A$和$b$所需的标量数量，通常远小于$n^2+n$，(如果A和b不是稀疏时存储它们所需的标量数)。求解稀疏线性方程的flop数通常也更接近$\operatorname{nnz}(A)$，而不是$n^3$（矩阵$A$不稀疏时的阶数）。
+
+
+\subsection{QR分解和求解伪逆 $A^{\dagger}$、逆 $A^{-1}$}
 
 \begin{definition}[线性无关列向量的矩阵$A$的伪逆]
     $$A^{\dagger}=\left(A^{T} A\right)^{-1} A^{T}$$
@@ -219,11 +233,37 @@ $$
 \end{theorem}
 
 \begin{corollary}
-    对于方阵非奇异矩阵 $\mathrm{A}$, 其逆为
+    对于方阵非奇异矩阵 ${A}$, 其逆为
 $$
 A^{-1}=(Q R)^{-1}=R^{-1} Q^{T}
 $$
 \end{corollary}
+
+\begin{corollary}
+    对于方阵非奇异矩阵 ${A} = QR$
+    $$RB = Q^T$$
+\end{corollary}
+
+\begin{proof}
+    $$\begin{aligned}
+        A = QR\\
+        \Rightarrow & A A^{-1} = QRA^{-1}\\
+        \Rightarrow & I = Q\underbrace{RA^{-1} }_{Q^{-1}}
+    \end{aligned}$$
+\end{proof}
+
+\begin{algorithm}[htbp]
+    \caption{Computing the inverse via QR factorization}
+    \KwIn{$n \times n$ invertible matrix $A$}
+
+    QR factorization. Compute the QR factorization $ A=Q R $\;
+
+    \For(){$ i=1, \ldots, n $}{
+        Solve the triangular equation $ R b_{i}=\tilde{q}_{i} $ using back substitution.
+    }
+\end{algorithm}
+
+对于通过QR分解求$A^{-1}$，QR分解需要$2n^3$ flops， $n$次回代需要$n^3$ flops，时间复杂度是$O(3n^3)$.
 
 \subsection{$A$的列空间与$Q$的关系}
 
@@ -483,7 +523,7 @@ $\tilde{q}_{k}$ 和 $q_{k}$ 正交于 $q_{1}, \ldots, q_{k-1}$, 则 $R_{1 k}, \l
 $$R_{1 k}=q_{1}^{T} a_{k},  R_{2 k}=q_{2}^{T} a_{k}, \ldots,  R_{k-1, k}=q_{k-1}^{T} a_{k}$$
 \end{proof}
 
-\section{Gram-Schmidt Algorithm}
+\subsection{Gram-Schmidt Algorithm}
 
 \begin{algorithm}[htbp]
     \caption{QR Decomposition Using Gram-Schmidt Algorithm}
@@ -620,7 +660,7 @@ $$
 
 
 
-\section{QR分解的时间复杂度}
+\subsection{基于Gram-Schmidt方法进行QR分解的时间复杂度}
 
 Gram-Schmidt方法第$k$次循环的复杂度：
 
@@ -638,35 +678,14 @@ $$ \begin{aligned} \sum_{k=1}^{n}((4 m-1)(k-1)+3 m) &=(4 m-1) \frac{n(n-1)}{2}+3
 
 对于稀疏矩阵（空间存储小于$m \times n$）的QR分解，时间复杂度可以低于$O(2mn^2)$. 
 
-对于普通矩阵使用QR分解求解线性方程组，正交分解需要$2 n^3$ flops, 计算$Q^T b$需要$2n^2$ flops, 第三步回代求解$Rx = Q^Tb$需要$n^2$ flops.(总时间复杂度是$O(n^3)$). 
-
-\begin{algorithm}[htbp]
-    \KwIn{$n \times n$ invertible matrix $A$}
-    \caption{Solving linear equations via QR factorization}
-    QR factorization. Compute the QR factorization $ A=Q R $\;
-    Compute $ Q^{T} b $\;
-    Back substitution. Solve the triangular equation $ R x=Q^{T} b $ using back substitution\;
-\end{algorithm}
-
-\begin{theorem}
-    对于通过QR分解求逆，设$ B=A^{-1} $，则$$ A^{-1}=R^{-1} Q^{T}, RB = Q^T $$
-\end{theorem}
 
 
-\begin{algorithm}[htbp]
-    \caption{Computing the inverse via QR factorization}
-    \KwIn{$n \times n$ invertible matrix $A$}
 
-    QR factorization. Compute the QR factorization $ A=Q R $\;
 
-    \For(){$ i=1, \ldots, n $}{
-        Solve the triangular equation $ R b_{i}=\tilde{q}_{i} $ using back substitution.
-    }
-\end{algorithm}
 
-对于通过QR分解求逆，时间复杂度是$O(3n^3)$. 对于稀疏矩阵求解线性方程组，时间复杂度接近$\operatorname{nnz}(A)$
 
-\section{The disadvantage of QR Algorithm}
+
+\section{The Numerical Instability of QR Decomposition based on Gram–Schmidt Algorithm}
 
 Gram–Schmidt算法复杂度为$2mn^2$ flops. 在实际情况中\textbf{不推荐使用(}容易被舍入误差影响)。
 
@@ -713,7 +732,7 @@ end;
     失去正交性是由于\textbf{浮点数存储的舍入误差}。
 \end{example}
 
-\section{Householder Algorithm}
+\section{QR Decomposition Using Householder Transformation}
 
 Householder算法是QR分解常用的算法(MATLAB和Julia中的qr函数)。与Gram-Schmidt相比，对舍入误差更有鲁棒性。
 
@@ -739,7 +758,7 @@ $$
 每个 $ H_{i} \in \mathbb{R}^{m \times m} $ 是对称的正交的 “反射算子” (reflector)。
 
 
-\subsection{反射算子}
+\subsection{Householder Matrix}
 
 \begin{theorem}
     $ H=I-2 v v^{T} $, 其中 $ \|v\|_{2}=1 $, $ H x $ 是 $ x $ 关于超平面 $ \left\{u \mid v^{T} u=0\right\} $ 反对称.
@@ -868,7 +887,7 @@ $$
 \end{definition}
 
 \begin{theorem}
-    向量 $ W $ 满足 $$ \|w\|_{2}^{2}=2 y^{T} w $$
+    向量 $ w $ 满足 $$ \|w\|_{2}^{2}=2 y^{T} w $$
 \end{theorem}
 
 $$
@@ -880,16 +899,18 @@ $$
 \end{aligned}
 $$
 
-\begin{theorem}
+\begin{definition}[Constructed Householder Matrix]
+将$y$变换为单位基向量$e=[1,0,0,\cdots,0]^T$乘以一个常数的Householder矩阵为
+
     $$ H=I-2 \frac{w w^{T}}{\|w\|_{2}^{2}} $$
-\end{theorem}
+\end{definition}
 
 \begin{proof}
     $$ H=I-2 v v^{T}=I-2 \frac{w w^{T}}{\|w\|_{2}^{2}} \quad(v=\frac{1}{\|w\|_{2}} w) $$
 \end{proof}
 
 \begin{theorem}
-    反射算子 $ H=I-2 v v^{T}=I-2 \frac{w w^{T}}{\|w\|_{2}^{2}} $ 将 $ y $ 映射为
+    Householder矩阵 $ H=I-2 v v^{T}=I-2 \frac{w w^{T}}{\|w\|_{2}^{2}} $ 将 $ y $ 映射为
 
    $$ H y = \left[\begin{array}{c}-\operatorname{sign}\left(y_{1}\right)\|y\|_{2} \\ 0 \\ \vdots \\ 0\end{array}\right] $$
 \end{theorem}
@@ -906,12 +927,12 @@ $$
  $$
 \end{proof}
 
-即只保留一个元素的值，其余元素的值变为0. 又因为$H$是正交、对称的，它与向量正交化有一定联系。
+即Householder变换的结果$Hy$只保留一个元素的值，其余元素的值变为0. 又因为$H$是正交、对称的，它与向量正交化有一定联系。
 
-\subsubsection{构造的反射算子几何意义}
+\subsubsection{构造的Householder矩阵几何意义}
 
 
-\begin{FigureCenter}{构造的反射算子的几何图示}
+\begin{FigureCenter}{构造的Householder矩阵的几何图示}
     \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
 \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
@@ -1101,7 +1122,7 @@ $$H_2A_1= A_{2}=\left[\begin{array}{cccccccc}X & X & X & X & X & X & X & X \\ 0 
 
 
 \begin{algorithm}[htbp]
-    \caption{Householder算法}
+    \caption{QR Decomposition Using Householder Transformation}
 
     \For(){$k$ in $1:n$}{
         令 $ y=A_{k: m, k} \in \mathbb{R}^{m-k+1} $, 计算向量 $ v_{k} $
