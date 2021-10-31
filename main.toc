@@ -111,261 +111,267 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.1}矩阵范数}{50}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}适定问题}{53}{chapter.8}%
+\contentsline {chapter}{\numberline {8}适定问题}{54}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}The Definition of Well-posed Problem}{53}{section.8.1}%
+\contentsline {section}{\numberline {8.1}The Definition of Well-posed Problem}{54}{section.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}绝对误差的界限}{54}{section.8.2}%
+\contentsline {section}{\numberline {8.2}绝对误差的界限}{55}{section.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}相对误差的界限}{54}{section.8.3}%
+\contentsline {section}{\numberline {8.3}相对误差的界限}{55}{section.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Inverse of Matrices}{55}{chapter.9}%
+\contentsline {chapter}{\numberline {9}Inverse of Matrices}{56}{chapter.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}Left Inverse, Right Inverse, Inverse}{55}{section.9.1}%
+\contentsline {section}{\numberline {9.1}Left Inverse, Right Inverse, Inverse}{56}{section.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.2}Linear Equation Systems}{56}{section.9.2}%
+\contentsline {section}{\numberline {9.2}Linear Equation Systems}{57}{section.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.1}线性方程组求解}{56}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.1}线性方程组求解}{57}{subsection.9.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.3}Fundamental Theorem of Linear Algebra}{57}{section.9.3}%
+\contentsline {section}{\numberline {9.3}Fundamental Theorem of Linear Algebra}{58}{section.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.4}Invertible Matrices}{57}{section.9.4}%
+\contentsline {section}{\numberline {9.4}Invertible Matrices}{58}{section.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.5}转置和共轭转置的逆}{60}{section.9.5}%
+\contentsline {section}{\numberline {9.5}转置和共轭转置的逆}{61}{section.9.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.6}Gram Matrix非奇异的性质}{60}{section.9.6}%
+\contentsline {section}{\numberline {9.6}Gram Matrix非奇异的性质}{61}{section.9.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.7}伪逆}{60}{section.9.7}%
+\contentsline {section}{\numberline {9.7}伪逆}{61}{section.9.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Orthogonal Matrices}{62}{chapter.10}%
+\contentsline {chapter}{\numberline {10}Orthogonal Matrices}{64}{chapter.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.1}预备知识}{62}{section.10.1}%
+\contentsline {section}{\numberline {10.1}预备知识}{64}{section.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1.1}标准正交向量}{62}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.1.1}标准正交向量}{64}{subsection.10.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1.2}Gram 矩阵与标准正交的关系}{62}{subsection.10.1.2}%
+\contentsline {subsection}{\numberline {10.1.2}Gram 矩阵与标准正交的关系}{64}{subsection.10.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1.3}矩阵-向量乘积与标准正交的关系}{62}{subsection.10.1.3}%
+\contentsline {subsection}{\numberline {10.1.3}矩阵-向量乘积与标准正交的关系}{64}{subsection.10.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1.4}左可逆性与正交的关系}{63}{subsection.10.1.4}%
+\contentsline {subsection}{\numberline {10.1.4}左可逆性与正交的关系}{65}{subsection.10.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.2}正交矩阵}{64}{section.10.2}%
+\contentsline {section}{\numberline {10.2}正交矩阵}{66}{section.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.3}Permutation Matrices}{64}{section.10.3}%
+\contentsline {section}{\numberline {10.3}Permutation Matrices}{66}{section.10.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.4}平面旋转}{65}{section.10.4}%
+\contentsline {section}{\numberline {10.4}平面旋转}{67}{section.10.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.5}Householder Matrix}{65}{section.10.5}%
+\contentsline {section}{\numberline {10.5}Householder Matrix}{67}{section.10.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.5.1}The Geometry of Householder Transformation}{66}{subsection.10.5.1}%
+\contentsline {subsection}{\numberline {10.5.1}The Geometry of Householder Transformation}{68}{subsection.10.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.6}正交矩阵乘积}{67}{section.10.6}%
+\contentsline {section}{\numberline {10.6}正交矩阵乘积}{69}{section.10.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.7}具有正交矩阵的线性方程}{67}{section.10.7}%
+\contentsline {section}{\numberline {10.7}具有正交矩阵的线性方程}{69}{section.10.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.7.1}The Complexity of the Multiplication $Ax$ of Orthogonal Matrix $A$}{67}{subsection.10.7.1}%
+\contentsline {subsection}{\numberline {10.7.1}The Complexity of the Multiplication $Ax$ of Orthogonal Matrix $A$}{69}{subsection.10.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.8}列标准正交的高矩阵}{67}{section.10.8}%
+\contentsline {section}{\numberline {10.8}列标准正交的高矩阵}{69}{section.10.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.9}值域范围、列空间}{67}{section.10.9}%
+\contentsline {section}{\numberline {10.9}值域范围、列空间}{69}{section.10.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.9.1}投影到列标准正交的矩阵$A$的列空间}{68}{subsection.10.9.1}%
+\contentsline {subsection}{\numberline {10.9.1}投影到列标准正交的矩阵$A$的列空间}{70}{subsection.10.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {11}QR分解与Householder变换}{70}{chapter.11}%
+\contentsline {chapter}{\numberline {11}QR分解与Householder变换}{72}{chapter.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.1}Triangular Matrices}{70}{section.11.1}%
+\contentsline {section}{\numberline {11.1}Triangular Matrices}{72}{section.11.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.1.1}高斯消元法}{70}{subsection.11.1.1}%
+\contentsline {subsection}{\numberline {11.1.1}高斯消元法}{72}{subsection.11.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.1.2}The Inverses of Triangular Matrices}{71}{subsection.11.1.2}%
+\contentsline {subsection}{\numberline {11.1.2}The Inverses of Triangular Matrices}{73}{subsection.11.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.2}QR Factorization}{71}{section.11.2}%
+\contentsline {section}{\numberline {11.2}QR Factorization}{73}{section.11.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.2.1}复矩阵的QR分解}{73}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.1}复矩阵的QR分解}{76}{subsection.11.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.3}QR分解的应用}{73}{section.11.3}%
+\contentsline {section}{\numberline {11.3}QR分解的应用}{76}{section.11.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.3.1}QR分解和求解线性方程组$Ax = b$}{73}{subsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.3.1}QR分解和求解线性方程组$Ax = b$}{76}{subsection.11.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.3.2}QR分解和求解伪逆 $A^{\dagger }$、逆 $A^{-1}$}{74}{subsection.11.3.2}%
+\contentsline {subsection}{\numberline {11.3.2}QR分解和求解伪逆 $A^{\dagger }$、逆 $A^{-1}$}{76}{subsection.11.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.3.3}$A$的列空间和$Q$的列空间相同}{75}{subsection.11.3.3}%
+\contentsline {subsection}{\numberline {11.3.3}$A$的列空间和$Q$的列空间相同}{77}{subsection.11.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.3.4}往$A$列空间上的投影也是往$Q$列空间上的投影}{75}{subsection.11.3.4}%
+\contentsline {subsection}{\numberline {11.3.4}往$A$列空间上的投影也是往$Q$列空间上的投影}{78}{subsection.11.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.4}QR Algorithm Using Gram-Schmidt Algorithm}{77}{section.11.4}%
+\contentsline {section}{\numberline {11.4}QR Algorithm Using Gram-Schmidt Algorithm}{79}{section.11.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.4.1}Gram-Schmidt Algorithm}{78}{subsection.11.4.1}%
+\contentsline {subsection}{\numberline {11.4.1}Gram-Schmidt Algorithm}{80}{subsection.11.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.4.2}基于Gram-Schmidt方法进行QR分解的时间复杂度}{79}{subsection.11.4.2}%
+\contentsline {subsection}{\numberline {11.4.2}基于Gram-Schmidt方法进行QR分解的时间复杂度}{81}{subsection.11.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.5}The Numerical Instability of QR Decomposition based on Gram-Schmidt Algorithm}{79}{section.11.5}%
+\contentsline {section}{\numberline {11.5}The Numerical Instability of QR Decomposition based on Gram-Schmidt Algorithm}{82}{section.11.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.6}QR Decomposition Using Householder Transformation}{81}{section.11.6}%
+\contentsline {section}{\numberline {11.6}QR Decomposition Using Householder Transformation}{84}{section.11.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.6.1}Householder Matrix}{81}{subsection.11.6.1}%
+\contentsline {subsection}{\numberline {11.6.1}Householder Matrix}{84}{subsection.11.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{$Hx$的算法复杂度}{82}{section*.30}%
+\contentsline {subsubsection}{$Hx$的算法复杂度}{85}{section*.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.6.2}构造反射算子}{82}{subsection.11.6.2}%
+\contentsline {subsection}{\numberline {11.6.2}构造反射算子}{85}{subsection.11.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{构造的Householder矩阵几何意义}{83}{section*.31}%
+\contentsline {subsubsection}{构造的Householder矩阵几何意义}{86}{section*.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.6.3}Householder三角化}{84}{subsection.11.6.3}%
+\contentsline {subsection}{\numberline {11.6.3}Householder三角化}{87}{subsection.11.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.6.4}An Example for Householder Algorithm}{86}{subsection.11.6.4}%
+\contentsline {subsection}{\numberline {11.6.4}An Example for Householder Algorithm}{88}{subsection.11.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.6.5}Complexity of Householder Algorithm}{88}{subsection.11.6.5}%
+\contentsline {subsection}{\numberline {11.6.5}Complexity of Householder Algorithm}{90}{subsection.11.6.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.7}Householder变换进行QR分解的 $Q$ 因子}{88}{section.11.7}%
+\contentsline {section}{\numberline {11.7}Householder变换进行QR分解的 $Q$ 因子}{90}{section.11.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.7.1}矩阵-向量积 $ H_{k} x $算法复杂度}{88}{subsection.11.7.1}%
+\contentsline {subsection}{\numberline {11.7.1}矩阵-向量积 $ H_{k} x $算法复杂度}{91}{subsection.11.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\@mypartnumtocformat {III}{Extensive Reading}}{89}{part.3}%
+\contentsline {section}{\numberline {11.8}Fast Orthogonalization}{91}{section.11.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {12}Fourier Series, Fourier Transform}{90}{chapter.12}%
+\contentsline {part}{\@mypartnumtocformat {III}{Extensive Reading}}{93}{part.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.1}基本概念}{90}{section.12.1}%
+\contentsline {chapter}{\numberline {12}Fourier Series, Fourier Transform}{94}{chapter.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.2}Fourier Series}{92}{section.12.2}%
+\contentsline {section}{\numberline {12.1}基本概念}{94}{section.12.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.3}Fourier transform}{95}{section.12.3}%
+\contentsline {section}{\numberline {12.2}Fourier Series}{96}{section.12.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.4}Discrete Fourier Transform}{95}{section.12.4}%
+\contentsline {section}{\numberline {12.3}Fourier transform}{99}{section.12.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {13}Factorization of Matrices}{97}{chapter.13}%
+\contentsline {section}{\numberline {12.4}Discrete Fourier Transform}{99}{section.12.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\@mypartnumtocformat {IV}{Statistics}}{98}{part.4}%
+\contentsline {chapter}{\numberline {13}Factorization of Matrices}{101}{chapter.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {14}Random Variables}{99}{chapter.14}%
+\contentsline {section}{\numberline {13.1}主要的矩阵分解}{101}{section.13.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14.1}随机变量的引入}{99}{section.14.1}%
+\contentsline {section}{\numberline {13.2}$A=LU$}{101}{section.13.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14.2}随机变量的特点}{99}{section.14.2}%
+\contentsline {part}{\@mypartnumtocformat {IV}{Statistics}}{102}{part.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14.3}优势}{99}{section.14.3}%
+\contentsline {chapter}{\numberline {14}Random Variables}{103}{chapter.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14.4}常见随机变量}{99}{section.14.4}%
+\contentsline {section}{\numberline {14.1}随机变量的引入}{103}{section.14.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.4.1}离散型随机变量}{99}{subsection.14.4.1}%
+\contentsline {section}{\numberline {14.2}随机变量的特点}{103}{section.14.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.4.2}两点分布}{100}{subsection.14.4.2}%
+\contentsline {section}{\numberline {14.3}优势}{103}{section.14.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.4.3}(n 重)伯努利试验, 二项分布}{100}{subsection.14.4.3}%
+\contentsline {section}{\numberline {14.4}常见随机变量}{103}{section.14.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{二项分布性质}{100}{section*.36}%
+\contentsline {subsection}{\numberline {14.4.1}离散型随机变量}{103}{subsection.14.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{二项分布单峰性质}{100}{section*.37}%
+\contentsline {subsection}{\numberline {14.4.2}两点分布}{104}{subsection.14.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.4.4}泊松分布}{100}{subsection.14.4.4}%
+\contentsline {subsection}{\numberline {14.4.3}(n 重)伯努利试验, 二项分布}{104}{subsection.14.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.4.5}连续型随机变量}{101}{subsection.14.4.5}%
+\contentsline {subsubsection}{二项分布性质}{104}{section*.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.4.6}均匀分布}{101}{subsection.14.4.6}%
+\contentsline {subsubsection}{二项分布单峰性质}{104}{section*.39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.4.7}指数分布}{101}{subsection.14.4.7}%
+\contentsline {subsection}{\numberline {14.4.4}泊松分布}{104}{subsection.14.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.4.8}正态分布}{101}{subsection.14.4.8}%
+\contentsline {subsection}{\numberline {14.4.5}连续型随机变量}{105}{subsection.14.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.4.9}标准正态分布}{101}{subsection.14.4.9}%
+\contentsline {subsection}{\numberline {14.4.6}均匀分布}{105}{subsection.14.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14.5}随机变量的分布函数}{101}{section.14.5}%
+\contentsline {subsection}{\numberline {14.4.7}指数分布}{105}{subsection.14.4.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14.6}随机变量的分布函数性质}{101}{section.14.6}%
+\contentsline {subsection}{\numberline {14.4.8}正态分布}{105}{subsection.14.4.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14.7}连续型随机变量及其概率密度}{101}{section.14.7}%
+\contentsline {subsection}{\numberline {14.4.9}标准正态分布}{105}{subsection.14.4.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14.8}随机变量的数字特征}{102}{section.14.8}%
+\contentsline {section}{\numberline {14.5}随机变量的分布函数}{105}{section.14.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.8.1}方差}{102}{subsection.14.8.1}%
+\contentsline {section}{\numberline {14.6}随机变量的分布函数性质}{105}{section.14.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{方差性质}{102}{section*.38}%
+\contentsline {section}{\numberline {14.7}连续型随机变量及其概率密度}{105}{section.14.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.8.2}协方差}{102}{subsection.14.8.2}%
+\contentsline {section}{\numberline {14.8}随机变量的数字特征}{106}{section.14.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{协方差性质}{102}{section*.39}%
+\contentsline {subsection}{\numberline {14.8.1}方差}{106}{subsection.14.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.8.3}相关系数}{103}{subsection.14.8.3}%
+\contentsline {subsubsection}{方差性质}{106}{section*.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.8.4}X, Y 不相关时候的性质}{103}{subsection.14.8.4}%
+\contentsline {subsection}{\numberline {14.8.2}协方差}{106}{subsection.14.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {15}大数定律和中心极限定理}{104}{chapter.15}%
+\contentsline {subsubsection}{协方差性质}{106}{section*.41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {15.1}辛钦大数定律}{104}{section.15.1}%
+\contentsline {subsection}{\numberline {14.8.3}相关系数}{107}{subsection.14.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {15.1.1}辛钦大数定律条件}{104}{subsection.15.1.1}%
+\contentsline {subsection}{\numberline {14.8.4}X, Y 不相关时候的性质}{107}{subsection.14.8.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {15.2}伯努利大数定理}{104}{section.15.2}%
+\contentsline {chapter}{\numberline {15}大数定律和中心极限定理}{108}{chapter.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {15.3}中心极限定理}{105}{section.15.3}%
+\contentsline {section}{\numberline {15.1}辛钦大数定律}{108}{section.15.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {16}Sampling Distribution}{106}{chapter.16}%
+\contentsline {subsection}{\numberline {15.1.1}辛钦大数定律条件}{108}{subsection.15.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.1}统计量}{106}{section.16.1}%
+\contentsline {section}{\numberline {15.2}伯努利大数定理}{108}{section.15.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.2}常见统计量}{106}{section.16.2}%
+\contentsline {section}{\numberline {15.3}中心极限定理}{109}{section.15.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.3}卡方分布}{107}{section.16.3}%
+\contentsline {chapter}{\numberline {16}Sampling Distribution}{110}{chapter.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.3.1}卡方分布性质}{107}{subsection.16.3.1}%
+\contentsline {section}{\numberline {16.1}统计量}{110}{section.16.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.4}t 分布}{108}{section.16.4}%
+\contentsline {section}{\numberline {16.2}常见统计量}{110}{section.16.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.4.1}t 分布性质}{108}{subsection.16.4.1}%
+\contentsline {section}{\numberline {16.3}卡方分布}{111}{section.16.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.5}F 分布}{109}{section.16.5}%
+\contentsline {subsection}{\numberline {16.3.1}卡方分布性质}{111}{subsection.16.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.5.1}F 分布性质}{109}{subsection.16.5.1}%
+\contentsline {section}{\numberline {16.4}t 分布}{112}{section.16.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.6}正态总体的样本均值和样本方差的分布}{110}{section.16.6}%
+\contentsline {subsection}{\numberline {16.4.1}t 分布性质}{112}{subsection.16.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {17}Hypothesis Testing}{113}{chapter.17}%
+\contentsline {section}{\numberline {16.5}F 分布}{113}{section.16.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {17.1}正态总体均值方差的检验法}{113}{section.17.1}%
+\contentsline {subsection}{\numberline {16.5.1}F 分布性质}{113}{subsection.16.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {17.2}经验分布函数}{113}{section.17.2}%
+\contentsline {section}{\numberline {16.6}正态总体的样本均值和样本方差的分布}{114}{section.16.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {17.3}Q-Q图 (Quantile-quantile Plot)}{113}{section.17.3}%
+\contentsline {chapter}{\numberline {17}Hypothesis Testing}{117}{chapter.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {17.4}卡方拟合优度检验}{115}{section.17.4}%
+\contentsline {section}{\numberline {17.1}正态总体均值方差的检验法}{117}{section.17.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {17.5}柯尔莫哥洛夫(Kolmogorov-Smirnov)检验}{115}{section.17.5}%
+\contentsline {section}{\numberline {17.2}经验分布函数}{117}{section.17.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {17.6}秩和检验}{115}{section.17.6}%
+\contentsline {section}{\numberline {17.3}Q-Q图 (Quantile-quantile Plot)}{117}{section.17.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {17.7}方差分析 (Analysis of Variance, ANOVA)}{117}{section.17.7}%
+\contentsline {section}{\numberline {17.4}卡方拟合优度检验}{119}{section.17.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.7.1}单因素方差分析}{117}{subsection.17.7.1}%
+\contentsline {section}{\numberline {17.5}柯尔莫哥洛夫(Kolmogorov-Smirnov)检验}{119}{section.17.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.7.2}双因素方差分析方法}{119}{subsection.17.7.2}%
+\contentsline {section}{\numberline {17.6}秩和检验}{119}{section.17.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.7.3}无交互影响的双因素方差分析}{120}{subsection.17.7.3}%
+\contentsline {section}{\numberline {17.7}方差分析 (Analysis of Variance, ANOVA)}{121}{section.17.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.7.4}关于交互效应的双因素方差分析}{121}{subsection.17.7.4}%
+\contentsline {subsection}{\numberline {17.7.1}单因素方差分析}{121}{subsection.17.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {17.8}多元线性回归}{122}{section.17.8}%
+\contentsline {subsection}{\numberline {17.7.2}双因素方差分析方法}{123}{subsection.17.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.8.1}回归模型的假设检验}{122}{subsection.17.8.1}%
+\contentsline {subsection}{\numberline {17.7.3}无交互影响的双因素方差分析}{124}{subsection.17.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.8.2}回归系数的假设检验和区间估计}{123}{subsection.17.8.2}%
+\contentsline {subsection}{\numberline {17.7.4}关于交互效应的双因素方差分析}{125}{subsection.17.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.8.3}利用回归模型进行预测}{123}{subsection.17.8.3}%
+\contentsline {section}{\numberline {17.8}多元线性回归}{126}{section.17.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {17.9}逐步回归}{123}{section.17.9}%
+\contentsline {subsection}{\numberline {17.8.1}回归模型的假设检验}{126}{subsection.17.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.9.1}前进法}{124}{subsection.17.9.1}%
+\contentsline {subsection}{\numberline {17.8.2}回归系数的假设检验和区间估计}{127}{subsection.17.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.9.2}后退法}{124}{subsection.17.9.2}%
+\contentsline {subsection}{\numberline {17.8.3}利用回归模型进行预测}{127}{subsection.17.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {18}Bootstrap}{125}{chapter.18}%
+\contentsline {section}{\numberline {17.9}逐步回归}{127}{section.17.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {18.1}估计量的标准误差的Bootstrap估计}{125}{section.18.1}%
+\contentsline {subsection}{\numberline {17.9.1}前进法}{128}{subsection.17.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {18.2}估计量的均方误差的Bootstrap估计}{126}{section.18.2}%
+\contentsline {subsection}{\numberline {17.9.2}后退法}{128}{subsection.17.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {18.3}Bootstrap置信区间}{126}{section.18.3}%
+\contentsline {chapter}{\numberline {18}Bootstrap}{129}{chapter.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {18.4}参数Bootstrap方法}{127}{section.18.4}%
+\contentsline {section}{\numberline {18.1}估计量的标准误差的Bootstrap估计}{129}{section.18.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{139}{section*.54}%
+\contentsline {section}{\numberline {18.2}估计量的均方误差的Bootstrap估计}{130}{section.18.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {18.3}Bootstrap置信区间}{130}{section.18.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {18.4}参数Bootstrap方法}{131}{section.18.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{143}{section*.56}%
 \contentsfinish 

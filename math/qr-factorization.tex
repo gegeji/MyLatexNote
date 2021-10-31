@@ -176,6 +176,58 @@ R_{11} & R_{12} & R_{13} \\
 $$
 \end{example}
 
+\begin{theorem}[满秩矩阵$A$的 QR 分解的存在唯一性]
+
+    设 $A \in \mathbb{C}^{m \times n}(m \geq n)$. 则存在一个单位列正交矩阵 $Q \in \mathbb{C}^{m \times n}$ (即 $Q^{H} Q=$ $\left.I_{n \times n}\right)$ 和一个上三角矩阵 $R \in \mathbb{C}^{n \times n}$, 使得
+$$
+A=Q R
+$$
+若 $A$ 列满秩, 则存在一个具有正对角线元素的上三角矩阵 $R$ 使得上式成立, 且此时 $Q R$ 分解唯一, 即 $Q$ 和 $R$ 都唯一.
+\end{theorem}
+
+\begin{proof}
+    存在性: 
+    
+    由于 $A$ 列满秩, 由 Gram-Schmidt 正交化过程可知, 存在上三角矩阵 $R=\left[r_{i j}\right]_{n \times n}$ 满足 $r_{j j}>0$, 使得 $A=Q R$, 其中 $Q$ 单位列正交.
+
+    唯一性: 
+    
+    假设 $A$ 存在 QR 分解
+$$
+A=Q_{1} R_{1}=Q_{2} R_{2}
+$$
+
+其中 $Q_{1}, Q_{2} \in \mathbb{C}^{m \times n}$ 单位列正交, $R_{1}, R_{2} \in \mathbb{C}^{n \times n}$ 为具有正对角元素的上三角矩阵. 则有
+
+\begin{equation}
+    \label{eqn: q1-q2-r}
+    Q_{1}=Q_{2} R_{2} R_{1}^{-1}
+\end{equation}
+
+
+由于 $R_{1}, R_{2}$ 均为上三角矩阵, 所以 $R_{2} R_{1}^{-1}$ 也是上三角矩阵, 且其对角线元素为 $R_{2}(i, i) / R_{1}(i, i)$, $i=1,2, \ldots, n$. 由 \cref{eqn: q1-q2-r} 可得
+
+$$
+1=\left\|Q_{1}\right\|_{2}=\left\|Q_{2} R_{2} R_{1}^{-1}\right\|_{2}=\left\|R_{2} R_{1}^{-1}\right\|_{2}
+$$
+
+所以
+$$
+\frac{R_{2}(i, i)}{R_{1}(i, i)} \leq 1, \quad i=1,2, \ldots, n
+$$
+同理可证 $R_{1}(i, i) / R_{2}(i, i) \leq 1$. 所以
+$$
+R_{1}(i, i)=R_{2}(i, i), \quad i=1,2, \ldots, n
+$$
+又 $\left\|Q_{1}\right\|_{F}^{2}=\operatorname{tr}\left(Q_{1}^{T} Q_{1}\right)=n$, 所以由 \cref{eqn: q1-q2-r} 可知
+$$
+\left\|R_{2} R_{1}^{-1}\right\|_{F}^{2}=\left\|Q_{2} R_{2} R_{1}^{-1}\right\|_{F}^{2}=\left\|Q_{1}\right\|_{F}^{2}=n
+$$
+由于 $R_{2} R_{1}^{-1}$ 的对角线元素都是 1 , 所以 $R_{2} R_{1}^{-1}$ 只能是单位矩阵, 即 $R_{2}=R_{1}$. 因此 $Q_{2}=A R_{2}^{-1}=$ $A R_{1}^{-1}=Q_{1}$, 即 $A$ 的 $\mathrm{QR}$ 分解是唯一的.
+
+\end{proof}
+
+
 \subsection{复矩阵的QR分解}
 
 \begin{theorem}
@@ -372,88 +424,98 @@ C( A) & =C( Q)\\
 
 
 \begin{FigureCenter}{$ A \boldsymbol{x}^{\dagger} $ in the column space goes back to $ A^{\dagger} A \boldsymbol{x}^{\dagger}=\boldsymbol{x}^{\dagger}$ in the row space}
-    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt
+    
 
-    \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-        %uncomment if require: \path (0,378); %set diagram left start at 0, and has height of 378
-        
-        %Shape: Rectangle [id:dp8596899930926358] 
-        \draw  [dash pattern={on 0.84pt off 2.51pt}] (412.64,146.65) -- (440.94,174.46) -- (412.24,203.67) -- (383.93,175.86) -- cycle ;
-        %Shape: Rectangle [id:dp144129295466213] 
-        \draw   (159.81,65.14) -- (236.34,135.27) -- (193.59,181.93) -- (117.06,111.79) -- cycle ;
-        %Shape: Rectangle [id:dp4244539260616451] 
-        \draw   (193.59,181.93) -- (260.03,242.81) -- (218.64,287.99) -- (152.2,227.1) -- cycle ;
-        
-        %Shape: Rectangle [id:dp10811540545272225] 
-        \draw   (477.03,51.53) -- (398.27,133.34) -- (440.51,174) -- (519.26,92.19) -- cycle ;
-        %Shape: Rectangle [id:dp952165170642489] 
-        \draw   (440.51,174) -- (372.14,245.02) -- (413.05,284.39) -- (481.41,213.38) -- cycle ;
-        
-        %Straight Lines [id:da43480021093829335] 
-        \draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=2.25]    (193.59,181.93) -- (187.34,138.27) ;
-        \draw [shift={(186.64,133.33)}, rotate = 441.85] [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
-        %Straight Lines [id:da6356667569876433] 
-        \draw [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][line width=2.25]    (440.51,175) -- (415.75,200.11) ;
-        \draw [shift={(412.24,203.67)}, rotate = 314.6] [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
-        %Straight Lines [id:da22563123154133025] 
-        \draw [color={rgb, 255:red, 65; green, 117; blue, 5 }  ,draw opacity=1 ][line width=2.25]    (440.51,175) -- (388.93,175.78) ;
-        \draw [shift={(383.93,175.86)}, rotate = 359.13] [fill={rgb, 255:red, 65; green, 117; blue, 5 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
-        %Shape: Rectangle [id:dp12172823301153524] 
-        \draw   (186.5,176.41) -- (193.59,182.93) -- (186.84,190.28) -- (179.74,183.76) -- cycle ;
-        %Shape: Rectangle [id:dp9349834759264539] 
-        \draw   (447.27,167.65) -- (454.36,174.17) -- (447.61,181.52) -- (440.51,175) -- cycle ;
-        %Straight Lines [id:da2510398254796229] 
-        \draw [color={rgb, 255:red, 108; green, 108; blue, 215 }  ,draw opacity=1 ][line width=2.25]    (440.51,175) -- (416.14,150.21) ;
-        \draw [shift={(412.64,146.65)}, rotate = 405.49] [fill={rgb, 255:red, 108; green, 108; blue, 215 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
-        %Straight Lines [id:da5471202445204062] 
-        \draw  [dash pattern={on 4.5pt off 4.5pt}]  (383.93,175.86) -- (186.64,133.33) ;
-        \draw [shift={(285.28,154.59)}, rotate = 372.15999999999997] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-        %Straight Lines [id:da12114390650727058] 
-        \draw  [dash pattern={on 4.5pt off 4.5pt}]  (412.64,146.65) -- (186.64,133.33) ;
-        \draw [shift={(299.64,139.99)}, rotate = 363.37] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-        %Straight Lines [id:da8219115744539653] 
-        \draw  [dash pattern={on 4.5pt off 4.5pt}]  (412.24,203.67) -- (193.59,181.93) ;
-        \draw [shift={(302.92,192.8)}, rotate = 365.68] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-        
-        % Text Node
-        \draw (74,15) node [anchor=north west][inner sep=0.75pt]   [align=left] {Row Space $\displaystyle A^{T} y$\\dim $\displaystyle r$};
-        % Text Node
-        \draw (63,299) node [anchor=north west][inner sep=0.75pt]   [align=left] {Nullspace $\displaystyle Ax=0$\\dim $\displaystyle n-r$};
-        % Text Node
-        \draw (434,8) node [anchor=north west][inner sep=0.75pt]   [align=left] {Column Space $\displaystyle Ax$\\dim $\displaystyle r$};
-        % Text Node
-        \draw (419,298) node [anchor=north west][inner sep=0.75pt]   [align=left] {Left Nullspace $\displaystyle A^{T} y=0$\\dim $\displaystyle m-r$};
-        % Text Node
-        \draw (173,114.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,opacity=1 ]  {$x^{\dagger }$};
-        % Text Node
-        \draw (417,202.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,opacity=1 ]  {$e$};
-        % Text Node
-        \draw (423,132.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 108; green, 108; blue, 215 }  ,opacity=1 ]  {$p$};
-        % Text Node
-        \draw (370,167.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 65; green, 117; blue, 5 }  ,opacity=1 ]  {$b$};
-        % Text Node
-        \draw (473,153.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 108; green, 108; blue, 215 }  ,opacity=1 ]  {$ \begin{array}{l}
-        \textcolor[rgb]{0.42,0.42,0.84}{p}\textcolor[rgb]{0,0,0}{=A}\textcolor[rgb]{0.55,0.34,0.16}{x^{\dagger }}\\
-        \textcolor[rgb]{0,0,0}{=AA^{\dagger }}\textcolor[rgb]{0.25,0.46,0.02}{b}\\
-        \end{array}$};
-        % Text Node
-        \draw (276,197.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger } e=0$};
-        % Text Node
-        \draw (241,160.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger }\textcolor[rgb]{0.25,0.46,0.02}{b} =\textcolor[rgb]{0.55,0.34,0.16}{x^{\dagger }}$};
-        % Text Node
-        \draw (287,113.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger }\textcolor[rgb]{0.42,0.42,0.84}{p} =\textcolor[rgb]{0.55,0.34,0.16}{x^{\dagger }}$};
-        % Text Node
-        \draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 209; green, 154; blue, 102 }  ,fill opacity=1 ][dash pattern={on 0.84pt off 2.51pt}]  (205,318) .. controls (205,315.24) and (207.24,313) .. (210,313) -- (400,313) .. controls (402.76,313) and (405,315.24) .. (405,318) -- (405,355) .. controls (405,357.76) and (402.76,360) .. (400,360) -- (210,360) .. controls (207.24,360) and (205,357.76) .. (205,355) -- cycle  ;
-        \draw (208,317.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger } A=\begin{bmatrix}
-        I & 0\\
-        0 & 0
-        \end{bmatrix} \ \begin{matrix}
-        ( row\ space)\\
-        ( nullspace)
-        \end{matrix}$};
-        
-        
-        \end{tikzpicture}
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,457); %set diagram left start at 0, and has height of 457
+
+%Shape: Rectangle [id:dp8596899930926358] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}] (412.64,146.65) -- (440.94,174.46) -- (412.24,203.67) -- (383.93,175.86) -- cycle ;
+%Shape: Rectangle [id:dp144129295466213] 
+\draw   (159.81,65.14) -- (236.34,135.27) -- (193.59,181.93) -- (117.06,111.79) -- cycle ;
+%Shape: Rectangle [id:dp4244539260616451] 
+\draw   (193.59,181.93) -- (260.03,242.81) -- (218.64,287.99) -- (152.2,227.1) -- cycle ;
+
+%Shape: Rectangle [id:dp10811540545272225] 
+\draw   (477.03,51.53) -- (398.27,133.34) -- (440.51,174) -- (519.26,92.19) -- cycle ;
+%Shape: Rectangle [id:dp952165170642489] 
+\draw   (440.51,174) -- (372.14,245.02) -- (413.05,284.39) -- (481.41,213.38) -- cycle ;
+
+%Straight Lines [id:da43480021093829335] 
+\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=2.25]    (193.59,181.93) -- (187.34,138.27) ;
+\draw [shift={(186.64,133.33)}, rotate = 441.85] [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
+%Straight Lines [id:da6356667569876433] 
+\draw [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][line width=2.25]    (440.51,175) -- (415.75,200.11) ;
+\draw [shift={(412.24,203.67)}, rotate = 314.6] [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
+%Straight Lines [id:da22563123154133025] 
+\draw [color={rgb, 255:red, 65; green, 117; blue, 5 }  ,draw opacity=1 ][line width=2.25]    (440.51,175) -- (388.93,175.78) ;
+\draw [shift={(383.93,175.86)}, rotate = 359.13] [fill={rgb, 255:red, 65; green, 117; blue, 5 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
+%Shape: Rectangle [id:dp12172823301153524] 
+\draw   (186.5,176.41) -- (193.59,182.93) -- (186.84,190.28) -- (179.74,183.76) -- cycle ;
+%Shape: Rectangle [id:dp9349834759264539] 
+\draw   (447.27,167.65) -- (454.36,174.17) -- (447.61,181.52) -- (440.51,175) -- cycle ;
+%Straight Lines [id:da2510398254796229] 
+\draw [color={rgb, 255:red, 108; green, 108; blue, 215 }  ,draw opacity=1 ][line width=2.25]    (440.51,175) -- (416.14,150.21) ;
+\draw [shift={(412.64,146.65)}, rotate = 405.49] [fill={rgb, 255:red, 108; green, 108; blue, 215 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
+%Straight Lines [id:da5471202445204062] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (383.93,175.86) -- (186.64,133.33) ;
+\draw [shift={(285.28,154.59)}, rotate = 372.15999999999997] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+%Straight Lines [id:da12114390650727058] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (412.64,146.65) -- (186.64,133.33) ;
+\draw [shift={(299.64,139.99)}, rotate = 363.37] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+%Straight Lines [id:da8219115744539653] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (412.24,203.67) -- (193.59,181.93) ;
+\draw [shift={(302.92,192.8)}, rotate = 365.68] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+
+% Text Node
+\draw (9,64) node [anchor=north west][inner sep=0.75pt]   [align=left] {Row Space $\displaystyle A^{T} y$\\dim $\displaystyle r$};
+% Text Node
+\draw (16,217) node [anchor=north west][inner sep=0.75pt]   [align=left] {Nullspace $\displaystyle Ax=0$\\dim $\displaystyle n-r$};
+% Text Node
+\draw (506,32) node [anchor=north west][inner sep=0.75pt]   [align=left] {Column Space $\displaystyle Ax$\\dim $\displaystyle r$};
+% Text Node
+\draw (469,224) node [anchor=north west][inner sep=0.75pt]   [align=left] {Left Nullspace $\displaystyle A^{T} y=0$\\dim $\displaystyle m-r$};
+% Text Node
+\draw (173,114.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,opacity=1 ]  {$x^{\dagger }$};
+% Text Node
+\draw (417,202.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,opacity=1 ]  {$e$};
+% Text Node
+\draw (423,132.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 108; green, 108; blue, 215 }  ,opacity=1 ]  {$p$};
+% Text Node
+\draw (370,167.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 65; green, 117; blue, 5 }  ,opacity=1 ]  {$b$};
+% Text Node
+\draw (473,153.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 108; green, 108; blue, 215 }  ,opacity=1 ]  {$ \begin{array}{l}
+\textcolor[rgb]{0.42,0.42,0.84}{p}\textcolor[rgb]{0,0,0}{=A}\textcolor[rgb]{0.55,0.34,0.16}{x}\textcolor[rgb]{0.55,0.34,0.16}{^{\dagger }}\\
+\textcolor[rgb]{0,0,0}{=AA}\textcolor[rgb]{0,0,0}{^{\dagger }}\textcolor[rgb]{0.25,0.46,0.02}{b}\\
+\end{array}$};
+% Text Node
+\draw (276,197.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger } e=0$};
+% Text Node
+\draw (241,160.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger }\textcolor[rgb]{0.25,0.46,0.02}{b} =\textcolor[rgb]{0.55,0.34,0.16}{x}\textcolor[rgb]{0.55,0.34,0.16}{^{\dagger }}$};
+% Text Node
+\draw (287,113.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger }\textcolor[rgb]{0.42,0.42,0.84}{p} =\textcolor[rgb]{0.55,0.34,0.16}{x}\textcolor[rgb]{0.55,0.34,0.16}{^{\dagger }}$};
+% Text Node
+\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 249; green, 192; blue, 139 }  ,fill opacity=1 ][dash pattern={on 0.84pt off 2.51pt}]  (208,43) .. controls (208,40.24) and (210.24,38) .. (213,38) -- (418,38) .. controls (420.76,38) and (423,40.24) .. (423,43) -- (423,83) .. controls (423,85.76) and (420.76,88) .. (418,88) -- (213,88) .. controls (210.24,88) and (208,85.76) .. (208,83) -- cycle  ;
+\draw (211,42.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger } A=\begin{bmatrix}
+I & 0\\
+0 & 0
+\end{bmatrix} \ \begin{matrix}
+(\text{row\ space})\\
+(\text{nullspace})
+\end{matrix}$};
+% Text Node
+\draw (122,133) node [anchor=north west][inner sep=0.75pt]   [align=left] {text};
+% Text Node
+\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 249; green, 192; blue, 139 }  ,fill opacity=1 ]  (191,307) .. controls (191,304.24) and (193.24,302) .. (196,302) -- (443,302) .. controls (445.76,302) and (448,304.24) .. (448,307) -- (448,347) .. controls (448,349.76) and (445.76,352) .. (443,352) -- (196,352) .. controls (193.24,352) and (191,349.76) .. (191,347) -- cycle  ;
+\draw (194,306.4) node [anchor=north west][inner sep=0.75pt]    {$\begin{matrix}
+A & \text{Row\ space\ to\ column\ space}\\
+A^{\dagger } & \text{Column\ space\ to\ row\ space}
+\end{matrix}$};
+
+
+\end{tikzpicture}
 \end{FigureCenter}
 
 
@@ -1020,16 +1082,6 @@ R \\
 \end{array}\right]
 $$
 
-与LU分解相类似，
-$$
-Q_{32} Q_{31} Q_{21} A=R \quad \text { means } \quad A=\left(Q_{21}^{-1} Q_{31}^{-1} Q_{32}^{-1}\right) R=Q R
-$$
-
-$H$的逆是它本身
-
-$$
-\left(H_{n-1} \ldots H_{1}\right) A=R \quad \text { means }  \quad A=\left(H_{1} \ldots H_{n-1}\right) R=Q R
-$$
 
 第k个步骤之后，矩阵 $ H_{k} H_{k-1} \ldots H_{1} A $ 具有以下结构:
 
@@ -1171,7 +1223,9 @@ $$H_2A_1= A_{2}=\left[\begin{array}{cccccccc}X & X & X & X & X & X & X & X \\ 0 
 
     \For(){$k$ in $1:n$}{
         令 $ y=A_{k: m, k} \in \mathbb{R}^{m-k+1} $, 计算向量 $ v_{k} $
-    $$ w=y+\operatorname{sign}\left(y_{1}\right)\|y\| e_{1}, \quad v_{k}=\frac{1}{\|w\|} w $$\;
+    $$ w=y+\operatorname{sign}\left(y_{1}\right)\|y\| e_{1}$$
+    $$ v_{k}=\frac{1}{\|w\|} w $$\;
+
     将 $ A_{k: m, k: n} \in \mathbb{R}^{(m-k+1) \times(n-k+1)} $ 与反射矩阵 $ I-2 v_{k} v_{k}^{T} $ 相乘
     $$ A_{k: m, k: n}:=A_{k: m, k: n}-2 v_{k}\left(v_{k}^{T} A_{k: m, k: n}\right) $$\;
     }
@@ -1368,3 +1422,124 @@ $H_{1} H_{2}, \ldots H_{n} $或其转置的乘积的复杂度为：
 $$ \sum_{k=1}^{n} 4(m-k+1) \approx 4 m n-2 n^{2}  \text{ flops}$$
 
 其复杂度约等于$m \times n$矩阵的矩阵-向量乘积($2mn$ flops)。 
+
+
+\section{Fast Orthogonalization}
+
+\begin{remark}
+    This section is quoted from \cite{Strang1993IntroductionTL}.
+\end{remark}
+
+There are three ways to reach the important factorization $A=Q R$. 
+
+\textbf{Gram-Schmidt} works to find the orthonormal vectors in $Q .$ Then $R$ is upper triangular because of the order of Gram-Schmidt steps. 
+
+Now we look at better methods (Householder and Givens), which use a product of specially simple $Q$ 's that we know are orthogonal.
+
+Elimination gives $A=L U$, orthogonalization gives $A=Q R$. We don't want a triangular $L$, we want an orthogonal $Q . L$ is a product of $E^{\prime}$ s from elimination, with 1's on the diagonal and the multiplier $\ell_{i j}$ below. \textbf{$Q$ will be a product of orthogonal matrices.}
+
+There are two simple orthogonal matrices to take the place of the $E$'s. The \term{reflection matrices} $I-2 u \boldsymbol{u}^{\mathrm{T}}$ are named after \textit{Householder}. The \term{plane rotation matrices} are named after \textit{Givens}. The simple matrix that rotates the $x y$ plane by $\theta$ is $Q_{21}$:  
+
+\begin{definition}[Givens Rotation in the 1-2 plane]
+    $$Q_{21}=\left[\begin{array}{crc}
+        \cos \theta & -\sin \theta & 0 \\
+        \sin \theta & \cos \theta & 0 \\
+        0 & 0 & 1
+        \end{array}\right]$$
+\end{definition}
+
+Use $Q_{21}$ the way you used $E_{21}$, to produce a zero in the $(2,1)$ position. That determines the angle $\theta$. Bill Hager gives this example in Applied Numerical Linear Algebra:
+
+\begin{example}[使用Givens进行QR分解]
+    $$
+    Q_{21} A=\left[\begin{array}{rrr}
+    .6 & .8 & 0 \\
+    -.8 & .6 & 0 \\
+    0 & 0 & 1
+    \end{array}\right]\left[\begin{array}{rrr}
+    90 & -153 & 114 \\
+    120 & -79 & -223 \\
+    200 & -40 & 395
+    \end{array}\right]=\left[\begin{array}{crr}
+    150 & -155 & -110 \\
+    \mathbb{0} & 75 & -225 \\
+    200 & -40 & 395
+    \end{array}\right]
+    $$
+
+    The zero came from $-8(90)+.6(120)$. No need to find $\theta$, what we needed was $\cos \theta$
+$$
+\cos \theta=\frac{90}{\sqrt{90^{2}+120^{2}}} \quad \text { and } \quad \sin \theta=\frac{-120}{\sqrt{90^{2}+120^{2}}}
+$$
+
+Now we attack the $(3,1)$ entry. The rotation will be in rows and columns 3 and 1 . The numbers $\cos \theta$ and $\sin \theta$ are determined from 150 and 200 , instead of 90 and 120 .
+$$
+Q_{31} Q_{21} A=\left[\begin{array}{rrr}
+.6 & 0 & .8 \\
+0 & 1 & 0 \\
+-.8 & 0 & .6
+\end{array}\right]\left[\begin{array}{rrr}
+150 & \cdot & \cdot \\
+0 & \cdot & \cdot \\
+200 & \cdot & \cdot
+\end{array}\right]=\left[\begin{array}{rrr}
+250 & -125 & 250 \\
+\mathbb{0} & 75 & -225 \\
+\mathbb{0} & 100 & 325
+\end{array}\right]
+$$
+One more step to $R$. The $(3,2)$ entry has to go. The numbers $\cos \theta$ and $\sin \theta$ now come from 75 and 100 . The rotation is now in rows and columns 2 and 3:
+
+
+$$Q_{32} Q_{31} Q_{21} A=\left[\begin{array}{rrr}
+    1 & 0 & 0 \\
+    0 & .6 & .8 \\
+    0 & -.8 & .6
+    \end{array}\right]\left[\begin{array}{rrr}
+    250 & -125 & \cdot \\
+    0 & 75 & \cdot \\
+    0 & 100 & \cdot
+    \end{array}\right]=\left[\begin{array}{rrr}
+    250 & -125 & 250 \\
+    \mathbb{0} & 125 & 125 \\
+    \mathbb{0} & \mathbb{0} & 375
+    \end{array}\right]$$
+
+    We have reached the upper triangular $R$. What is $Q ?$ Move the plane rotations $Q_{i j}$ to the other side to find $A=Q R$-just as you moved the elimination matrices $E_{i j}$ to the other side to find $A=L U$ :
+
+    \begin{theorem}
+      $$
+    Q_{32} Q_{31} Q_{21} A=R \quad \text { means } \quad A=\left(Q_{21}^{-1} Q_{31}^{-1} Q_{32}^{-1}\right) R=Q R
+    $$  
+    \end{theorem}
+    
+    The inverse of each $Q_{i j}$ is $Q_{i j}^{\mathrm{T}}$ (rotation through $\left.-\theta\right)$. The inverse of $E_{i j}$ was not an orthogonal matrix! \textbf{$L U$ and $Q R$ are similar but $L$ and $Q$ are not the same.}
+\end{example}
+
+Householder reflections are faster than rotations because each one clears out a whole column below the diagonal. Watch how the first column $a_{1}$ of $A$ becomes column $r_{1}$ of $R$ :
+
+\begin{example}[Reflection by $H_1$]
+    $$H_1 = I - 2 u_1 u_1^T$$
+
+    $$H_{1} \boldsymbol{a}_{1}=\left[\begin{array}{c}
+        \left\|\boldsymbol{a}_{1}\right\| \\
+        0 \\
+        \vdots \\
+        0
+        \end{array}\right] \text { or }\left[\begin{array}{c}
+        -\left\|\boldsymbol{a}_{1}\right\| \\
+        0 \\
+        \vdots \\
+        0
+        \end{array}\right]=r_{1}$$
+
+
+The length was not changed, and $u_{1}$ is in the direction of $a_{1}-r_{1}$. We have $n-1$ entries in the unit vector $\boldsymbol{u}_{1}$ to get $n-1$ zeros in $\boldsymbol{r}_{1}$. (Rotations had one angle $\theta$ to get one zero.) When we reach column $k$, we have $n-k$ available choices in the unit vector $u_{k}$. This leads to $n-k$ zeros in $\boldsymbol{r}_{k}$. We just store the u's and $\boldsymbol{r}$ 's to know the final $Q$ and $R$ :
+
+\begin{theorem}[$H$的逆是它本身]
+    $$
+\left(H_{n-1} \ldots H_{1}\right) A=R \quad \text { means }  \quad A=\left(H_{1} \ldots H_{n-1}\right) R=Q R
+$$
+\end{theorem}
+
+\end{example}

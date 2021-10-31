@@ -29,35 +29,39 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Four Subspace of Matrix $A$\relax }}{57}{figure.caption.13}%
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Four Subspace of Matrix $A$\relax }}{58}{figure.caption.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.2}{\ignorespaces $ A \boldsymbol {x}^{\dagger } $ in the column space goes back to $ A^{\dagger } A \boldsymbol {x}^{\dagger }=\boldsymbol {x}^{\dagger }$ in the row space\relax }}{63}{figure.caption.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.3}{\ignorespaces Projection from row space to column space\relax }}{63}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10.1}{\ignorespaces An example of rotation\relax }}{65}{figure.caption.15}%
+\contentsline {figure}{\numberline {10.1}{\ignorespaces An example of rotation\relax }}{67}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10.2}{\ignorespaces Elementary Reflection\relax }}{66}{figure.caption.16}%
+\contentsline {figure}{\numberline {10.2}{\ignorespaces Elementary Reflection\relax }}{68}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10.3}{\ignorespaces Projection onto the column space of $A$, $A$ has orthonormal columns\relax }}{68}{figure.caption.17}%
+\contentsline {figure}{\numberline {10.3}{\ignorespaces Projection onto the column space of $A$, $A$ has orthonormal columns\relax }}{70}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10.4}{\ignorespaces Projection of $\boldsymbol {b}$ into the column space of ${A}$, $A$ is any matrice. Sourced from \cite {Strang1993IntroductionTL}\relax }}{69}{figure.caption.18}%
+\contentsline {figure}{\numberline {10.4}{\ignorespaces Projection of $\boldsymbol {b}$ into the column space of ${A}$, $A$ is any matrice. Sourced from \cite {Strang1993IntroductionTL}\relax }}{71}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.1}{\ignorespaces Projecting onto the column space of $A$ is also projecting onto the column space of $Q$\relax }}{76}{figure.caption.24}%
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Projecting onto the column space of $A$ is also projecting onto the column space of $Q$\relax }}{78}{figure.caption.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.2}{\ignorespaces $ A \boldsymbol {x}^{\dagger } $ in the column space goes back to $ A^{\dagger } A \boldsymbol {x}^{\dagger }=\boldsymbol {x}^{\dagger }$ in the row space\relax }}{76}{figure.caption.25}%
+\contentsline {figure}{\numberline {11.2}{\ignorespaces $ A \boldsymbol {x}^{\dagger } $ in the column space goes back to $ A^{\dagger } A \boldsymbol {x}^{\dagger }=\boldsymbol {x}^{\dagger }$ in the row space\relax }}{79}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.3}{\ignorespaces $\qopname \relax m{max}_{1 \leq i<k}\left |q_{i}^{T} q_{k}\right |$\relax }}{80}{figure.caption.27}%
+\contentsline {figure}{\numberline {11.3}{\ignorespaces $\qopname \relax m{max}_{1 \leq i<k}\left |q_{i}^{T} q_{k}\right |$\relax }}{83}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.4}{\ignorespaces 在同一组数据中使用修正Gram-Schmidt算法求得的误差，$e_{k}=\qopname \relax m{max}_{1 \leq i<k}\left |q_{i}^{T} q_{k}\right |, k=2, \ldots , n$\relax }}{81}{figure.caption.28}%
+\contentsline {figure}{\numberline {11.4}{\ignorespaces 在同一组数据中使用修正Gram-Schmidt算法求得的误差，$e_{k}=\qopname \relax m{max}_{1 \leq i<k}\left |q_{i}^{T} q_{k}\right |, k=2, \ldots , n$\relax }}{83}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.5}{\ignorespaces Reflection of $x$\relax }}{82}{figure.caption.29}%
+\contentsline {figure}{\numberline {11.5}{\ignorespaces Reflection of $x$\relax }}{84}{figure.caption.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.6}{\ignorespaces 构造的Householder矩阵的几何图示\relax }}{84}{figure.caption.32}%
+\contentsline {figure}{\numberline {11.6}{\ignorespaces 构造的Householder矩阵的几何图示\relax }}{86}{figure.caption.34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.7}{\ignorespaces The structure of $ H_{k} H_{k-1} \ldots H_{1} A $\relax }}{84}{figure.caption.33}%
+\contentsline {figure}{\numberline {11.7}{\ignorespaces The structure of $ H_{k} H_{k-1} \ldots H_{1} A $\relax }}{87}{figure.caption.35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.8}{\ignorespaces 迭代计算过程中$A$的结构\relax }}{85}{figure.caption.34}%
+\contentsline {figure}{\numberline {11.8}{\ignorespaces 迭代计算过程中$A$的结构\relax }}{88}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

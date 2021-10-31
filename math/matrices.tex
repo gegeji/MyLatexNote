@@ -863,8 +863,30 @@ $$
 \end{definition}
 
 \begin{definition}[$A$的2-范数]
-    $$ \|A\|_{2}=\max _{x \neq 0}\left( \frac{\|A x\|_{2}}{\|x\|_{2}}  \right)=\sqrt{\lambda_{\max }\left(A^{T} A\right)} $$
+    \begin{equation}
+        \label{eqn:a-l2-norm}
+        \|A\|_{2}=\max _{x \neq 0}\left( \frac{\|A x\|_{2}}{\|x\|_{2}}  \right)=\sqrt{\lambda_{\max }\left(A^{T} A\right)}
+    \end{equation}
+    $$  $$
 \end{definition}
+
+\begin{proof}
+    For any $A$ Choose $x$ to be the eigenvector of $A^{\mathrm{T}} A$ with largest eigenvalue $\lambda_{\max } .$ The ratio in equation \ref{eqn:a-l2-norm} is $\boldsymbol{x}^{\mathrm{T}} A^{\mathrm{T}} A \boldsymbol{x}=\boldsymbol{x}^{\mathrm{T}}\left(\lambda_{\max }\right) \boldsymbol{x}$ divided by $\boldsymbol{x}^{\mathrm{T}} \boldsymbol{x}$. This is $\lambda_{\max }$.
+
+No $\boldsymbol{x}$ can give a larger ratio. The symmetric matrix $A^{\mathrm{T}} A$ has eigenvalues $\lambda_{1}, \ldots, \lambda_{n}$ and orthonormal eigenvectors $q_{1}, \boldsymbol{q}_{2}, \ldots, \boldsymbol{q}_{n} .$ Every $\boldsymbol{x}$ is a combination of those vectors. Try this combination in the ratio and remember that $\boldsymbol{q}_{i}^{\mathrm{T}} \boldsymbol{q}_{j}=0$ :
+$$
+\frac{\boldsymbol{x}^{\mathrm{T}} A^{\mathrm{T}} A \boldsymbol{x}}{\boldsymbol{x}^{\mathrm{T}} \boldsymbol{x}}=\frac{\left(c_{1} \boldsymbol{q}_{1}+\cdots+c_{n} \boldsymbol{q}_{n}\right)^{\mathrm{T}}\left(c_{1} \lambda_{1} \boldsymbol{q}_{1}+\cdots+c_{n} \lambda_{n} \boldsymbol{q}_{n}\right)}{\left(c_{1} \boldsymbol{q}_{1}+\cdots+c_{n} \boldsymbol{q}_{n}\right)^{\mathrm{T}}\left(c_{1} \boldsymbol{q}_{1}+\cdots+c_{n} \boldsymbol{q}_{n}\right)}=\frac{c_{1}^{2} \lambda_{1}+\cdots+c_{n}^{2} \lambda_{n}}{c_{1}^{2}+\cdots+c_{n}^{2}}
+$$
+The maximum ratio $\lambda_{\max }$ is when all $c$ 's are zero, except the one that multiplies $\lambda_{\max }$.
+\end{proof}
+
+\begin{remark}
+    The ratio in equation \ref{eqn:a-l2-norm} is the Rayleigh quotient for the symmetric matrix $A^{\mathrm{T}} A$. Its maximum is the largest eigenvalue $\lambda_{\max }\left(A^{\mathrm{T}} A\right) .$ The minimum ratio is $\lambda_{\min }\left(A^{\mathrm{T}} A\right)$. If you substitute any vector $\boldsymbol{x}$ into the Rayleigh quotient $\boldsymbol{x}^{\mathrm{T}} A^{\mathrm{T}} A \boldsymbol{x} / \boldsymbol{x}^{\mathrm{T}} \boldsymbol{x}$, you are guaranteed to get a number between $\lambda_{\min }\left(A^{\mathrm{T}} A\right)$ and $\lambda_{\max }\left(A^{\mathrm{T}} A\right)$.
+\end{remark}
+
+\begin{remark}
+    The norm $\|A\|$ equals the largest singular value $\sigma_{\max }$ of $A$. The singular values $\sigma_{1}, \ldots, \sigma_{r}$ are the square roots of the positive eigenvalues of $A^{\mathrm{T}} A$. So certainly $\sigma_{\max }=\left(\lambda_{\max }\right)^{1 / 2}$. Since $U$ and $V$ are orthogonal in $A=U \Sigma V^{\mathrm{T}}$, the norm is $\|\boldsymbol{A}\|=$ $\sigma_{\max }$.
+\end{remark}
 
 \begin{example}
     求矩阵$A$的各种常用范数

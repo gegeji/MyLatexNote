@@ -449,7 +449,11 @@ Gram矩阵的定义见 \ref{Def:Gram}.
 \begin{definition}[Pseudo-inverse]
     $$ A^{\dagger}=A^{T}\left(A A^{T}\right)^{-1} $$
 
-    $$A^{\dagger} = V \Sigma^+ U^T$$
+    $$A^{\dagger} = V \Sigma^+ U^T = \left[v_{1} \cdots v_{r} \cdots v_{n}\right]\left[\begin{array}{lll}
+        \sigma_{1}^{-1} & & \\
+        & \ddots & \\
+        & & \sigma_{r}^{-1}
+        \end{array}\right]\left[u_{1} \cdots u_{r} \cdots u_{m}\right]^{\mathrm{T}}$$
 \end{definition}
 
 \begin{theorem}
@@ -467,6 +471,10 @@ Gram矩阵的定义见 \ref{Def:Gram}.
 \begin{proof}
     $$ A^{\dagger}=A^{T}\left(A A^{T}\right)^{-1}=A^{T} A^{-T} A^{-1}=A^{-1} $$
 \end{proof}
+
+\begin{theorem}
+    
+\end{theorem}
 
 \begin{corollary}
     以下三个结论为等价的，对于实矩阵$A$
@@ -488,6 +496,197 @@ Gram矩阵的定义见 \ref{Def:Gram}.
     \end{itemize}
 \end{corollary}
 
- 
+By choosing good bases, $A$ multiplies $\boldsymbol{v}_{i}$ in the row space to give $\sigma_{i} \boldsymbol{u}_{i}$ in the column space. $A^{-1}$ must do the opposite! 
 
 
+
+If $A \boldsymbol{v}=\sigma \boldsymbol{u}$ then $A^{-1} \boldsymbol{u}=\boldsymbol{v} / \sigma$. The singular values of $A^{-1}$ are $1 / \sigma$, just as the eigenvalues of $A^{-1}$ are $1 / \lambda$. The bases are reversed. The $u$ 's are in the row space of $A^{-1}$, the $v$ 's are in the column space.
+
+The pseudoinverse $A^{+}$is an $n$ by $m$ matrix. \textbf{If $A^{-1}$ exists, then $A^{+}$is the same as $A^{-1}$}. In that case $m=n=r$ and we are inverting $U \Sigma V^{\mathrm{T}}$ to get $V \Sigma^{-1} U^{\mathrm{T}}$. 
+
+The new symbol $A^{+}$is needed when $r<m$ or $r<n$. Then $A$ has no two-sided inverse, but it has a \textit{pseudo}inverse $A^{+}$with that same rank $r$ :
+
+$$
+A^{+} \boldsymbol{u}_{i}=\frac{1}{\sigma_{i}} \boldsymbol{v}_{i} \quad \text { for } i \leq r \quad \text { and } \quad A^{+} \boldsymbol{u}_{i}=\mathbf{0} \quad \text { for } i>r
+$$
+
+The vectors $\boldsymbol{u}_{1}, \ldots, \boldsymbol{u}_{r}$ in the column space of $A$ go back to $\boldsymbol{v}_{1}, \ldots, \boldsymbol{v}_{r}$ in the row space.
+
+
+The other vectors $\boldsymbol{u}_{r+1}, \ldots, \boldsymbol{u}_{m}$ are in the left nullspace, and $A^{+}$sends them to zero. When we know what happens to all those basis vectors, we know $A^{+}$.
+
+Notice the pseudoinverse of the diagonal matrix $\Sigma .$ Each $\sigma$ in $\Sigma$ is replaced by $\sigma^{-1}$ in $\Sigma^{+} .$The product $\Sigma^{+} \Sigma$ is as near to the identity as we can get. It is a projection matrix, $\Sigma^{+} \Sigma$ is partly $I$ and otherwise zero. We can invert the $\sigma$ 's, but we can't do anything about the zero rows and columns. 
+
+\begin{FigureCenter}{$ A \boldsymbol{x}^{\dagger} $ in the column space goes back to $ A^{\dagger} A \boldsymbol{x}^{\dagger}=\boldsymbol{x}^{\dagger}$ in the row space}
+    
+
+    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+    
+    \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+    %uncomment if require: \path (0,457); %set diagram left start at 0, and has height of 457
+    
+    %Shape: Rectangle [id:dp8596899930926358] 
+    \draw  [dash pattern={on 0.84pt off 2.51pt}] (412.64,146.65) -- (440.94,174.46) -- (412.24,203.67) -- (383.93,175.86) -- cycle ;
+    %Shape: Rectangle [id:dp144129295466213] 
+    \draw   (159.81,65.14) -- (236.34,135.27) -- (193.59,181.93) -- (117.06,111.79) -- cycle ;
+    %Shape: Rectangle [id:dp4244539260616451] 
+    \draw   (193.59,181.93) -- (260.03,242.81) -- (218.64,287.99) -- (152.2,227.1) -- cycle ;
+    
+    %Shape: Rectangle [id:dp10811540545272225] 
+    \draw   (477.03,51.53) -- (398.27,133.34) -- (440.51,174) -- (519.26,92.19) -- cycle ;
+    %Shape: Rectangle [id:dp952165170642489] 
+    \draw   (440.51,174) -- (372.14,245.02) -- (413.05,284.39) -- (481.41,213.38) -- cycle ;
+    
+    %Straight Lines [id:da43480021093829335] 
+    \draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=2.25]    (193.59,181.93) -- (187.34,138.27) ;
+    \draw [shift={(186.64,133.33)}, rotate = 441.85] [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
+    %Straight Lines [id:da6356667569876433] 
+    \draw [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][line width=2.25]    (440.51,175) -- (415.75,200.11) ;
+    \draw [shift={(412.24,203.67)}, rotate = 314.6] [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
+    %Straight Lines [id:da22563123154133025] 
+    \draw [color={rgb, 255:red, 65; green, 117; blue, 5 }  ,draw opacity=1 ][line width=2.25]    (440.51,175) -- (388.93,175.78) ;
+    \draw [shift={(383.93,175.86)}, rotate = 359.13] [fill={rgb, 255:red, 65; green, 117; blue, 5 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
+    %Shape: Rectangle [id:dp12172823301153524] 
+    \draw   (186.5,176.41) -- (193.59,182.93) -- (186.84,190.28) -- (179.74,183.76) -- cycle ;
+    %Shape: Rectangle [id:dp9349834759264539] 
+    \draw   (447.27,167.65) -- (454.36,174.17) -- (447.61,181.52) -- (440.51,175) -- cycle ;
+    %Straight Lines [id:da2510398254796229] 
+    \draw [color={rgb, 255:red, 108; green, 108; blue, 215 }  ,draw opacity=1 ][line width=2.25]    (440.51,175) -- (416.14,150.21) ;
+    \draw [shift={(412.64,146.65)}, rotate = 405.49] [fill={rgb, 255:red, 108; green, 108; blue, 215 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
+    %Straight Lines [id:da5471202445204062] 
+    \draw  [dash pattern={on 4.5pt off 4.5pt}]  (383.93,175.86) -- (186.64,133.33) ;
+    \draw [shift={(285.28,154.59)}, rotate = 372.15999999999997] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+    %Straight Lines [id:da12114390650727058] 
+    \draw  [dash pattern={on 4.5pt off 4.5pt}]  (412.64,146.65) -- (186.64,133.33) ;
+    \draw [shift={(299.64,139.99)}, rotate = 363.37] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+    %Straight Lines [id:da8219115744539653] 
+    \draw  [dash pattern={on 4.5pt off 4.5pt}]  (412.24,203.67) -- (193.59,181.93) ;
+    \draw [shift={(302.92,192.8)}, rotate = 365.68] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+    
+    % Text Node
+    \draw (9,64) node [anchor=north west][inner sep=0.75pt]   [align=left] {Row Space $\displaystyle A^{T} y$\\dim $\displaystyle r$};
+    % Text Node
+    \draw (16,217) node [anchor=north west][inner sep=0.75pt]   [align=left] {Nullspace $\displaystyle Ax=0$\\dim $\displaystyle n-r$};
+    % Text Node
+    \draw (506,32) node [anchor=north west][inner sep=0.75pt]   [align=left] {Column Space $\displaystyle Ax$\\dim $\displaystyle r$};
+    % Text Node
+    \draw (469,224) node [anchor=north west][inner sep=0.75pt]   [align=left] {Left Nullspace $\displaystyle A^{T} y=0$\\dim $\displaystyle m-r$};
+    % Text Node
+    \draw (173,114.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,opacity=1 ]  {$x^{\dagger }$};
+    % Text Node
+    \draw (417,202.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,opacity=1 ]  {$e$};
+    % Text Node
+    \draw (423,132.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 108; green, 108; blue, 215 }  ,opacity=1 ]  {$p$};
+    % Text Node
+    \draw (370,167.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 65; green, 117; blue, 5 }  ,opacity=1 ]  {$b$};
+    % Text Node
+    \draw (473,153.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 108; green, 108; blue, 215 }  ,opacity=1 ]  {$ \begin{array}{l}
+    \textcolor[rgb]{0.42,0.42,0.84}{p}\textcolor[rgb]{0,0,0}{=A}\textcolor[rgb]{0.55,0.34,0.16}{x}\textcolor[rgb]{0.55,0.34,0.16}{^{\dagger }}\\
+    \textcolor[rgb]{0,0,0}{=AA}\textcolor[rgb]{0,0,0}{^{\dagger }}\textcolor[rgb]{0.25,0.46,0.02}{b}\\
+    \end{array}$};
+    % Text Node
+    \draw (276,197.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger } e=0$};
+    % Text Node
+    \draw (241,160.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger }\textcolor[rgb]{0.25,0.46,0.02}{b} =\textcolor[rgb]{0.55,0.34,0.16}{x}\textcolor[rgb]{0.55,0.34,0.16}{^{\dagger }}$};
+    % Text Node
+    \draw (287,113.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger }\textcolor[rgb]{0.42,0.42,0.84}{p} =\textcolor[rgb]{0.55,0.34,0.16}{x}\textcolor[rgb]{0.55,0.34,0.16}{^{\dagger }}$};
+    % Text Node
+    \draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 249; green, 192; blue, 139 }  ,fill opacity=1 ][dash pattern={on 0.84pt off 2.51pt}]  (208,43) .. controls (208,40.24) and (210.24,38) .. (213,38) -- (418,38) .. controls (420.76,38) and (423,40.24) .. (423,43) -- (423,83) .. controls (423,85.76) and (420.76,88) .. (418,88) -- (213,88) .. controls (210.24,88) and (208,85.76) .. (208,83) -- cycle  ;
+    \draw (211,42.4) node [anchor=north west][inner sep=0.75pt]    {$A^{\dagger } A=\begin{bmatrix}
+    I & 0\\
+    0 & 0
+    \end{bmatrix} \ \begin{matrix}
+    (\text{row\ space})\\
+    (\text{nullspace})
+    \end{matrix}$};
+    % Text Node
+    \draw (122,133) node [anchor=north west][inner sep=0.75pt]   [align=left] {text};
+    % Text Node
+    \draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 249; green, 192; blue, 139 }  ,fill opacity=1 ]  (191,307) .. controls (191,304.24) and (193.24,302) .. (196,302) -- (443,302) .. controls (445.76,302) and (448,304.24) .. (448,307) -- (448,347) .. controls (448,349.76) and (445.76,352) .. (443,352) -- (196,352) .. controls (193.24,352) and (191,349.76) .. (191,347) -- cycle  ;
+    \draw (194,306.4) node [anchor=north west][inner sep=0.75pt]    {$\begin{matrix}
+    A & \text{Row\ space\ to\ column\ space}\\
+    A^{\dagger } & \text{Column\ space\ to\ row\ space}
+    \end{matrix}$};
+    
+    
+    \end{tikzpicture}
+    \end{FigureCenter}
+
+\begin{FigureCenter}{Projection from row space to column space}
+    
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,376); %set diagram left start at 0, and has height of 376
+
+%Shape: Rectangle [id:dp8564537788335302] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}] (221.63,153.4) -- (253.96,185.17) -- (225.93,213.7) -- (193.59,181.93) -- cycle ;
+%Shape: Rectangle [id:dp7748103688398633] 
+\draw   (159.81,65.14) -- (236.34,135.27) -- (193.59,181.93) -- (117.06,111.79) -- cycle ;
+%Shape: Rectangle [id:dp3534850306924755] 
+\draw   (193.59,181.93) -- (260.03,242.81) -- (218.64,287.99) -- (152.2,227.1) -- cycle ;
+
+%Shape: Rectangle [id:dp11468847928918202] 
+\draw   (477.03,52.53) -- (398.27,134.34) -- (440.51,175) -- (519.26,93.19) -- cycle ;
+%Shape: Rectangle [id:dp8320016424104848] 
+\draw   (440.51,175) -- (372.14,246.02) -- (413.05,285.39) -- (481.41,214.38) -- cycle ;
+
+%Straight Lines [id:da413550032058265] 
+\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=2.25]    (193.59,181.93) -- (217.74,155.81) ;
+\draw [shift={(221.14,152.14)}, rotate = 492.75] [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
+%Straight Lines [id:da05215716031511208] 
+\draw [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][line width=2.25]    (193.59,181.93) -- (222.99,209.56) ;
+\draw [shift={(226.64,212.99)}, rotate = 223.23] [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
+%Straight Lines [id:da20598638562684246] 
+\draw [color={rgb, 255:red, 65; green, 117; blue, 5 }  ,draw opacity=1 ][line width=2.25]    (193.59,181.93) -- (248.97,184.9) ;
+\draw [shift={(253.96,185.17)}, rotate = 183.08] [fill={rgb, 255:red, 65; green, 117; blue, 5 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
+%Straight Lines [id:da9574000480451021] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (221.14,152.14) -- (435.64,119.99) ;
+\draw [shift={(328.39,136.06)}, rotate = 531.48] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+%Straight Lines [id:da8574440156945131] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (253.96,185.17) -- (435.64,119.99) ;
+\draw [shift={(344.8,152.58)}, rotate = 520.26] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+%Straight Lines [id:da26442247252775863] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (226.64,212.99) -- (440.51,175) ;
+\draw [shift={(333.57,193.99)}, rotate = 529.9300000000001] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+%Shape: Rectangle [id:dp41111107193098295] 
+\draw   (186.5,176.41) -- (193.59,182.93) -- (186.84,190.28) -- (179.74,183.76) -- cycle ;
+%Shape: Rectangle [id:dp37902094791189933] 
+\draw   (447.27,167.65) -- (454.36,174.17) -- (447.61,181.52) -- (440.51,175) -- cycle ;
+%Straight Lines [id:da3897829543263125] 
+\draw [color={rgb, 255:red, 108; green, 108; blue, 215 }  ,draw opacity=1 ][line width=2.25]    (440.51,175) -- (436.08,124.97) ;
+\draw [shift={(435.64,119.99)}, rotate = 444.94] [fill={rgb, 255:red, 108; green, 108; blue, 215 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (8.57,-4.12) -- (0,0) -- (8.57,4.12) -- cycle    ;
+
+% Text Node
+\draw (10,62) node [anchor=north west][inner sep=0.75pt]   [align=left] {Row Space $\displaystyle A^{T} y$\\dim $\displaystyle r$};
+% Text Node
+\draw (22,240) node [anchor=north west][inner sep=0.75pt]   [align=left] {Nullspace $\displaystyle Ax=0$\\dim $\displaystyle n-r$};
+% Text Node
+\draw (510,39) node [anchor=north west][inner sep=0.75pt]   [align=left] {Column Space $\displaystyle Ax$\\dim $\displaystyle r$};
+% Text Node
+\draw (462,245) node [anchor=north west][inner sep=0.75pt]   [align=left] {Left Nullspace $\displaystyle A^{T} y=0$\\dim $\displaystyle m-r$};
+% Text Node
+\draw (291,112.4) node [anchor=north west][inner sep=0.75pt]    {$A\textcolor[rgb]{0.55,0.34,0.16}{x}\textcolor[rgb]{0.55,0.34,0.16}{_{r}} =\textcolor[rgb]{0.42,0.42,0.84}{b}$};
+% Text Node
+\draw (202,136.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,opacity=1 ]  {$x_{r}$};
+% Text Node
+\draw (207,210.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,opacity=1 ]  {$x_{n}$};
+% Text Node
+\draw (443,111.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 108; green, 108; blue, 215 }  ,opacity=1 ]  {$b$};
+% Text Node
+\draw (331,158.4) node [anchor=north west][inner sep=0.75pt]    {$A\textcolor[rgb]{0.25,0.46,0.02}{x} =\textcolor[rgb]{0.42,0.42,0.84}{b}$};
+% Text Node
+\draw (301,202.4) node [anchor=north west][inner sep=0.75pt]    {$A\textcolor[rgb]{0.96,0.65,0.14}{x}\textcolor[rgb]{0.96,0.65,0.14}{_{n}} =0$};
+% Text Node
+\draw (250,164.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 65; green, 117; blue, 5 }  ,opacity=1 ]  {$x$};
+% Text Node
+\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 249; green, 192; blue, 139 }  ,fill opacity=1 ]  (191,305) .. controls (191,302.24) and (193.24,300) .. (196,300) -- (443,300) .. controls (445.76,300) and (448,302.24) .. (448,305) -- (448,345) .. controls (448,347.76) and (445.76,350) .. (443,350) -- (196,350) .. controls (193.24,350) and (191,347.76) .. (191,345) -- cycle  ;
+\draw (194,304.4) node [anchor=north west][inner sep=0.75pt]    {$\begin{matrix}
+A & \text{Row\ space\ to\ column\ space}\\
+A^{\dagger } & \text{Column\ space\ to\ row\ space}
+\end{matrix}$};
+
+
+\end{tikzpicture}
+\end{FigureCenter}
