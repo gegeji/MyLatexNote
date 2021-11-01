@@ -276,17 +276,42 @@ $$
 \end{theorem}
 
 \begin{proof}
-    令 \( \lambda \in \mathbb{R} \), 则有 \( 0 \leq\langle x+\lambda y, x+\lambda y\rangle \) \( =\langle x, x\rangle+\lambda\langle y, x\rangle+\lambda\langle x, y\rangle+\lambda^{2}\langle y, y\rangle \) \( =\langle x, x\rangle+2 \lambda\langle y, x\rangle+\lambda^{2}\langle y, y\rangle \) 
+    令 $\lambda \in \mathbb{R}$, 则有 
     
-    则有 \( \lambda^{2}\langle y, y\rangle+2 \lambda\langle y, x\rangle+\langle x, x\rangle \geq 0, \forall \lambda \in \mathbb{R} . \)
+    $$0 \leq\langle x+\lambda y, x+\lambda y\rangle=\langle x, x\rangle+\lambda\langle y, x\rangle+\lambda\langle x, y\rangle+\lambda^{2}\langle y, y\rangle=\langle x, x\rangle+2 \lambda\langle y, x\rangle+\lambda^{2}\langle y, y\rangle$$
+则 
 
-    \( \nabla=(2\langle y, x\rangle)^{2}-4\langle y, y\rangle\langle x, x\rangle \leq 0 \)
-    
-\( |\langle x, y\rangle|^{2} \leq\langle x, x\rangle\langle y, y\rangle \)
+$$\lambda^{2}\langle y, y\rangle+2 \lambda\langle y, x\rangle+\langle x, x\rangle \geq 0, \forall \lambda \in \mathbb{R}$$
 
-当$ |\langle x, y\rangle|^{2}=\langle x, x\rangle\langle y, y\rangle $ 时,  有 $ \left\langle x, x\rangle^2 +2 \lambda\langle y, x\rangle+\lambda^{2}\langle y, y\rangle=0\right. $
+所以
+$$
+\begin{aligned}
+&\nabla=(2\langle y, x\rangle)^{2}-4\langle y, y\rangle\langle x, x\rangle \leq 0 \\
+&|\langle x, y\rangle|^{2} \leq\langle x, x\rangle\langle y, y\rangle
+\end{aligned}
+$$
 
-也即 \( \langle x+\lambda y, x+\lambda y\rangle=0 \), 因此 \( x+\lambda y=0 \), 即 \( x=-\lambda y \).
+当 $|\langle x, y\rangle|^{2}=\langle x, x\rangle\langle y, y\rangle$ 时, 有 $$\langle x, x\rangle^{2}+2 \lambda\langle y, x\rangle+\lambda^{2}\langle y, y\rangle=0$$
+
+也即 $$\langle x+\lambda y, x+\lambda y\rangle=0$$
+
+因此 $x+\lambda y=0$, 即 $x=-\lambda y$。
+\end{proof}
+
+\begin{theorem}
+    $$\left(\sum_{i=1}^{n} u_{i} v_{i}\right)^{2} \leq\left(\sum_{i=1}^{n} u_{i}^{2}\right)\left(\sum_{i=1}^{n} v_{i}^{2}\right)$$
+\end{theorem}
+
+\begin{proof}
+    The Cauchy-Schwarz inequality can be proved using only ideas from elementary algebra in this case. Consider the following quadratic polynomial in $x$
+$$
+0 \leq\left(u_{1} x+v_{1}\right)^{2}+\cdots+\left(u_{n} x+v_{n}\right)^{2}=\left(\sum_{i} u_{i}^{2}\right) x^{2}+2\left(\sum_{i} u_{i} v_{i}\right) x+\sum_{i} v_{i}^{2}
+$$
+Since it is nonnegative, it has at most one real root for $x$, hence its discriminant is less than or equal to zero. That is,
+$$
+\left(\sum_{i} u_{i} v_{i}\right)^{2}-\left(\sum_{i} u_{i}^{2}\right)\left(\sum_{i} v_{i}^{2}\right) \leq 0
+$$
+which yields the Cauchy-Schwarz inequality.
 \end{proof}
 
 \section{浮点运算}

@@ -67,7 +67,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {theoremeT}{\ifthmt@listswap Theorem~1.5.1\else \numberline {1.5.1}Theorem\fi \thmtformatoptarg {Cauchy-Schwartz Inequality}}{14}{theoremeT.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {corollaryT}{\ifthmt@listswap Corollary~1.6.1\else \numberline {1.6.1}Corollary\fi }{14}{corollaryT.1}%
+\contentsline {theoremeT}{\ifthmt@listswap Theorem~1.5.2\else \numberline {1.5.2}Theorem\fi }{15}{theoremeT.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollaryT}{\ifthmt@listswap Corollary~1.6.1\else \numberline {1.6.1}Corollary\fi }{15}{corollaryT.1}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

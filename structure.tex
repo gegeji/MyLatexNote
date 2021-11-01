@@ -43,15 +43,6 @@
 %----------------------------------------------------------------------------------------
 %	My Custom Packages
 %----------------------------------------------------------------------------------------
-% todo (2021-10-28 15:36): clean up code
-% unused packages
-% \usepackage{thmtools}
-% \usepackage{xpatch}
-% \xpatchcmd{\listoftheorems}{\@fileswfalse}{}{\typeout{yes}}{\typeout{no}}
-
-%	IPA
-% \usepackage{unitipa}
-
 
 \usepackage{algorithm2e}
 \usepackage{tabularx} % adjustable width tables
@@ -61,12 +52,13 @@
 \usepackage{caption}
 \usepackage{subcaption}
 
-% for tikz scaling
+% for scaling tikz tool
 % \usepackage{environ}
 \usepackage{adjustbox}
 
 % code listing
 \usepackage{listings}
+% basic style, sourced from overleaf tutorial
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
@@ -246,7 +238,7 @@
 %----------------------------------------------------------------------------------------
 
 \usepackage{amsmath,amsfonts,amssymb,amsthm} % For math equations, theorems, symbols, etc
-\usepackage{thmtools}
+% \usepackage{thmtools}
 
 
 \newcommand{\intoo}[2]{\mathopen{]}#1\,;#2\mathclose{[}}
@@ -265,7 +257,9 @@
 {\;}% Punctuation after theorem head
 {0.25em}% Space after theorem head
 {\small\sffamily\color{ocre}\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
-\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries\color{black}---\nobreakspace#3.}} % Optional theorem note
+\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries\color{black}---\nobreakspace#3.}% Optional theorem note
+\addcontentsline{lod}{section}{(#1)~\protect\numberline{#2}{#3}}} % add line to list of theorems; #1 is theorem name, #2 #3 is the name of theorem
+
 
 \newtheoremstyle{blacknumex}% Theorem style name
 {5pt}% Space above
@@ -278,6 +272,7 @@
 {\small\sffamily{\tiny\ensuremath{\blacksquare}}\nobreakspace\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
 \thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries---\nobreakspace#3.}}% Optional theorem note
 
+
 \newtheoremstyle{blacknumbox} % Theorem style name
 {0pt}% Space above
 {0pt}% Space below
@@ -287,9 +282,11 @@
 {\;}% Punctuation after theorem head
 {0.25em}% Space after theorem head
 {\small\sffamily\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
-\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries---\nobreakspace#3.}}% Optional theorem note
+\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries---\nobreakspace#3.}% Optional theorem note
+\addcontentsline{lod}{section}{(#1)~\protect\numberline{#2}{#3}}} % add line to list of theorems
 
-\newtheoremstyle{blacknumboxSpecial} % Theorem style name
+
+\newtheoremstyle{blacknumboxVocabulary} % Theorem style name
 {0pt}% Space above
 {0pt}% Space below
 {\normalfont}% Body font
@@ -298,7 +295,8 @@
 {\;}% Punctuation after theorem head
 {0.25em}% Space after theorem head
 {\small\sffamily\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
-\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries---\nobreakspace#3.}}% Optional theorem note
+\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries---\nobreakspace#3.}% Optional theorem note
+}
 
 
 % Non-boxed/non-framed environments
@@ -312,22 +310,28 @@
 {0.25em}% Space after theorem head
 {\small\sffamily\color{ocre}\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
 \thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries\color{black}---\nobreakspace#3.}} % Optional theorem note
+
 \makeatother
 
 % Defines the theorem text style for each type of theorem to one of the three styles above
 \newcounter{dummy} 
 \numberwithin{dummy}{section}
+
 \theoremstyle{ocrenumbox}
 \newtheorem{theoremeT}[dummy]{Theorem}
 \newtheorem{problem}{Problem}[chapter]
 \newtheorem{exerciseT}{Exercise}[chapter]
+
 \theoremstyle{blacknumex}
 \newtheorem{exampleT}{Example}[chapter]
-\theoremstyle{blacknumboxSpecial} 
+
+\theoremstyle{blacknumboxVocabulary} 
 \newtheorem{vocabulary}{Vocabulary}[chapter]
+
 \theoremstyle{blacknumbox}
 \newtheorem{definitionT}{Definition}[section]
 \newtheorem{corollaryT}[dummy]{Corollary}
+
 \theoremstyle{ocrenum}
 \newtheorem{proposition}[dummy]{Proposition}
 
@@ -380,6 +384,9 @@
 }{
 	\end{figure}
 }
+
+
+
 
 %----------------------------------------------------------------------------------------
 %	DEFINITION OF COLORED BOXES
@@ -455,7 +462,34 @@ innerbottommargin=5pt]{cBox}
 \newenvironment{definition}{\begin{dBox}\begin{definitionT}}{\end{definitionT}\end{dBox}}	
 \newenvironment{example}{\begin{exampleT}}{\hfill{\tiny\ensuremath{\blacksquare}}\end{exampleT}}		
 \newenvironment{corollary}{\begin{cBox}\begin{corollaryT}}{\end{corollaryT}\end{cBox}}	
-% \newenvironment{algorithmNew}[1]{\begin{cBox}\begin{algorithm} \caption{#1} }{\end{algorithm}\end{cBox}}
+
+\makeatletter
+% A command to create the new List of Definitions
+\newcommand\listofdefinitions{%
+  \chapter{List Of Definitions}\@starttoc{lod}}
+
+% initial definitions to save the chapter info (name and number)
+\def\thischaptertitle{}
+\def\thischapternumber{}
+\newtoggle{noDefs}
+
+\apptocmd{\@chapter}%
+  {\gdef\thischaptertitle{#1}\gdef\thischapternumber{\thechapter}%
+    \global\toggletrue{noDefs}}{}{}
+
+% the defn environment does the job: the first time it is used after a \chapter command, 
+% it writes the information of the chapter to the LoD
+\AtBeginDocument{%
+  \AtBeginEnvironment{definition}{%
+    \iftoggle{noDefs}{
+      \addcontentsline{lod}{chapter}{\chaptername~\thischapternumber\hspace{1em}\thischaptertitle}{}
+      \global\togglefalse{noDefs}
+    }{}
+  }%
+}
+
+\makeatother
+
 
 
 %----------------------------------------------------------------------------------------
@@ -467,31 +501,12 @@ innerbottommargin=5pt]{cBox}
 \leftmargin=35pt % Indentation on the left
 \rightmargin=25pt}\item\ignorespaces % Indentation on the right
 
-%\makebox[-2.5pt]{
-	
+% coral red circle, with ! insides it	
 \begin{tikzpicture}[overlay]
 \node[draw=coral!60,line width=1pt,circle,fill=coral!25,font=\sffamily\bfseries,inner sep=2pt,outer sep=0pt] at (-15pt,0pt){\textcolor{coral}{!}};\end{tikzpicture}
 
-% todo (2021-10-28 15:35): clean up
-%} % Orange ! in a circle
-
-% Candidate 1 (use svg directly)
-%\makebox[-1pt]{
-	%\begin{figure}[htbp]
-		%\includegraphics[scale=1,bb=0 0 30 30]{remarksymbol.svg}
-		%\includegraphics{remarksymbol.svg}
-		%\includegraphics[scale=0.25]{remarkSymbol.png}
-	%\end{figure}
-%}
-
-
 \advance\baselineskip -0.5pt}{\end{list}\vskip0.125pt} % Tighter line spacing and white space after remark
 
-% Candidate 2 (use png)
-%\newenvironment{remark}{\begin{figure}[htbp]
-%	\centering
-%	\includegraphics{remarkSymbol.png}
-%\end{figure}}{}
 
 
 %----------------------------------------------------------------------------------------
@@ -654,8 +669,7 @@ addtohook={%
 }
 }
 
-% cleveref must be loaded after amsmath
-\usepackage{cleveref}
+
 
 % for the long section
 % \section[Hidden Markov Map Matching Through Noise and Sparseness]{\texorpdfstring{Hidden Markov Map Matching\\ Through Noise and Sparseness}{Hidden Markov Map Matching Through Noise and Sparseness}}
@@ -678,7 +692,7 @@ addtohook={%
 % support CJK characters
 \usepackage{xeCJK}
 
-% todo (2021-10-28 15:35): clean up code
+% use Noto Serif as italic font
 % \setmainfont[ItalicFont=NotoSerif-Italic.ttf]{RobotoSlab-VariableFont_wght.ttf}
 % \setsansfont{Fira Sans}
 % \setsansfont{Open Sans}
@@ -687,23 +701,36 @@ addtohook={%
 % \usepackage{tgbonum}
 
 % support chemical equation arrows, deprecated
-% todo fixme this will raise error
+% This may cause error sometimes.
 %\usepackage[version=4]{mhchem}
 
+% use baskerville
+%\usepackage[baskerville,vvarbb]{newtxmath}
+%\usepackage[cal=boondoxo]{mathalfa}
+%\usepackage{baskervillef}
 
-% \renewcommand{\rmdefault}{noto}
-% \renewcommand{\familydefault}{\sfdefault}
+% use fira sans
+%\usepackage[sfdefault,lining]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
+% \usepackage[fakebold]{firamath-otf}
 
-% \setmathfont{baskervillef}
-\usepackage[baskerville,vvarbb]{newtxmath}
-\usepackage[cal=boondoxo]{mathalfa}
-\usepackage{baskervillef}
+%use scholax
+\usepackage[p,osf]{scholax}
+\usepackage[scaled=1.075,ncf,vvarbb]{newtxmath}% need to scale up math package
+% vvarbb selects the STIX version of blackboard bold.
 
-% \usepackage{unicode-math}
-
+% set Chinese font
 % \setmainfont[BoldFont=NotoSerif-Bold.ttf, ItalicFont=NotoSerif-Italic.ttf]{NotoSerif-Regular.ttf}
 \setmonofont{Cascadia Code}
 \setCJKmainfont[BoldFont=PingFang Heavy.ttf,ItalicFont=FZKTK.TTF]{FZPingXYSJW.TTF}
 \setCJKsansfont[BoldFont=PingFang Heavy.ttf,ItalicFont=PingFang Heavy.ttf]{PingFang Heavy.ttf}
 \setCJKmonofont[BoldFont=PingFang Heavy.ttf,ItalicFont=PingFang Heavy.ttf]{FZFSK.TTF}
 \xeCJKsetup{CJKmath = true}
+
+%----------------------------------------------------------------------------------------
+% Special packages which is needed to loaded last
+%----------------------------------------------------------------------------------------
+% cleveref must be loaded after amsmath
+\usepackage{cleveref}
+
+% warning: unicode-math may need to be load last
+% \usepackage{unicode-math}

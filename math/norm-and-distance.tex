@@ -134,7 +134,7 @@ $$
     如果 $ x $ 和y分别为两个实体的特征向量, 那么它们的特征距离(feature distance)为 $ \|x-y\|_{2} $
 \end{definition}
 
-\begin{definition}
+\begin{definition}[Nearest Neighbor]
     给定向量$x$, 一个组向量$ Z_{1}, \ldots, Z_{m} $, 当$ \hat{q}_{j} $满足：
 
     $$ \left\|x-z_{j}\right\|_{2} \leq\left\|x-z_{i}\right\|_{2}, \quad i=1, \ldots, m $$
@@ -178,8 +178,8 @@ $\operatorname{std}(x)$表示数据元素的变化程度. 对于常数$\alpha$, 
 
 \begin{itemize}
     \item $\theta =\frac{\pi}{2}=90°$：a和b为正交, 写作$a \perp b (a ^T b  =0)$. 
-    \item $\theta =0$：a和b为同向的 $(a ^T  b=‖a ‖‖b  ‖)$. 
-    \item $\theta =\pi =180°$： a和b为反向的$(a ^T   b  = - ‖a ‖‖b ‖)$. 
+    \item $\theta =0$：a和b为同向的 $(a ^T  b=\| a \| \| b  \| )$. 
+    \item $\theta =\pi =180°$： a和b为反向的$(a ^T   b  = - \| a \| \| b \| )$. 
     \item $\theta <\frac{\pi}{2}=90°$：a和b成锐角$(a ^T b >0)$. 
     \item $\theta >\frac{\pi}{2}=90°$：a和b成钝角$(a ^T b <0)$. 
 \end{itemize}
