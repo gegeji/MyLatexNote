@@ -1,0 +1,671 @@
+\chapter{LU分解}
+
+\section{Solving Linear Equation Systems}
+
+\subsection{Linear Equation Systems}
+\begin{example}
+    $$A \boldsymbol{x}=\boldsymbol{b} \Leftrightarrow \displaystyle \begin{matrix}
+              & x+ & 2 & y+ & 3 & z= & 6 \\
+            2 & x+ & 5 & y+ & 2 & z= & 4 \\
+            6 & x- & 3 & y+ &   & z= & 2
+        \end{matrix} $$
+\end{example}
+
+见Row Picture，Column Picture的概念。
+
+\subsection{Elimination}
+
+\begin{example}[Elimination]
+    Before
+
+    \begin{center}
+        $\displaystyle \begin{matrix}
+                  & x- & 2 & y & = & 1  \\
+                3 & x+ & 2 & y & = & 11
+            \end{matrix}$
+    \end{center}
+
+    After
+    \begin{center}
+        $\displaystyle \begin{matrix}
+                 & x- & 2 & y & = & 1 \\
+                 &    & 8 & y & = & 8
+            \end{matrix}$
+    \end{center}
+
+\end{example}
+
+\begin{definition}[Pivot]
+    The first nonzero in the row that does elimination. \textbf{Zero is not allowed as a pivot.}
+\end{definition}
+
+\begin{definition}[Multiplier]
+    (Entry to eliminate) divided by (pivot)
+\end{definition}
+
+消元法通过elimination matrices $E$进行消元操作，使得主对角线以下的元素为0. Multiply the $ j^{\text {th }} $ equation by $ \ell_{i j} $ and subtract from the $ i^{\text {th }} $ equation. (This eliminates $ x_{j} $ from equation $ i $.) We need a lot of these simple matrices $ E_{i j} $, one for every nonzero to be eliminated below the main diagonal.
+
+\begin{definition}[Elementary matrix, Elimination matrix]
+    The elementary matrix or elimination matrix $ E_{i j} $ has the extra nonzero entry $ -\ell $ in the $ i, j $ position. Then $ E_{i j} $ subtracts a multiple $ \ell $ of row $ j $ from row $ i $.
+\end{definition}
+
+\begin{theorem}
+    消元法的本质是
+
+    $$Ax= b \Rightarrow EAx = Eb$$
+\end{theorem}
+
+\begin{definition}[Permutation matrices $P$]
+    $  P_{i j} $ is the identity matrix with rows $ i $ and $ j $ reversed. When this "permutation matrix" $ P_{i j} $ multiplies a matrix, it exchanges rows $ i $ and $ j $.
+\end{definition}
+
+\begin{definition}[Augmented matrix]
+    $$\displaystyle \left[\begin{matrix}
+                A & b
+            \end{matrix}\right]$$
+\end{definition}
+
+\subsubsection{Computing $A^{-1}$ by Gauss-Jordan Elimination}
+
+\begin{center}
+    Multiply $\displaystyle \left[\begin{matrix}
+                A & I
+            \end{matrix}\right]$ by $\displaystyle A^{-1}$ to get $\displaystyle \left[\begin{matrix}
+                I & A^{-1}
+            \end{matrix}\right]$
+\end{center}
+
+
+\begin{example}
+    $$ \begin{aligned}\left[\begin{array}{llll}K & e_{1} & e_{2} & e_{3}\end{array}\right] & =\left[\begin{array}{rrrrrr}\mathbf{2} & -\mathbf{1} & \mathbf{0} & 1 & 0 & 0 \\ -\mathbf{1} & \mathbf{2} & -\mathbf{1} & 0 & 1 & 0 \\ \mathbf{0} & -\mathbf{1} & \mathbf{2} & 0 & 0 & 1\end{array}\right] \quad \text { Start Gauss-Jordan on } K                                                  \\ & \rightarrow\left[\begin{array}{rrrrrr}2 & -1 & 0 & 1 & 0 & 0 \\ \mathbf{0} & \frac{3}{2} & -\mathbf{1} & \frac{1}{2} & \mathbf{1} & \mathbf{0} \\ 0 & -1 & 2 & 0 & 0 & 1\end{array}\right] \quad\left(\frac{\mathbf{1}}{\mathbf{2}} \text { row } 1+\text { row 2 }\right) \\ & \rightarrow\left[\begin{array}{rrrrrr}2 & -1 & 0 & 1 & 0 & 0 \\ 0 & \frac{3}{2} & -1 & \frac{1}{2} & 1 & 0 \\ \mathbf{0} & \mathbf{0} & \frac{4}{3} & \frac{1}{3} & \frac{2}{3} & \mathbf{1}\end{array}\right] \quad \left(\frac{\mathbf{2}}{3} \text { row 2 + row 3}\right)\\
+               \left(\begin{array}{c}\text { Zero above } \\ \text { third pivot }\end{array}\right) & \rightarrow\left[\begin{array}{rrrrrr}2 & -1 & 0 & 1 & 0 & 0 \\ 0 & \frac{3}{2} & 0 & \frac{3}{4} & \frac{3}{2} & \frac{3}{4} \\ 0 & 0 & \frac{4}{3} & \frac{1}{3} & \frac{2}{3} & 1\end{array}\right] \quad\left(\frac{3}{4} \text{ row } \mathbf{3}+ \text{ row } \mathbf{2}\right) \\
+               \left(\begin{array}{l}\text { Zero above } \\ \text { second pivot }\end{array}\right) & \rightarrow\left[\begin{array}{cccccc}2 & 0 & 0 & \frac{3}{2} & 1 & \frac{1}{2} \\ 0 & \frac{3}{2} & 0 & \frac{3}{4} & \frac{3}{2} & \frac{3}{4} \\ 0 & 0 & \frac{4}{3} & \frac{1}{3} & \frac{2}{3} & 1\end{array}\right] \quad\left(\frac{2}{3} \text{ row } 2+ \text{ row }1 \right)
+        \end{aligned} $$
+
+
+    它变成Reduced echelon form $R$.
+
+    \begin{center}
+        $\displaystyle \begin{matrix}
+                ( divided\ by\ 2)                      \\
+                \left( divided\ by\ \frac{3}{2}\right) \\
+                \left( divided\ by\ \frac{4}{3}\right)
+            \end{matrix}\left[\begin{matrix}
+                    1 & 0 & 0 & \frac{3}{4} & \frac{1}{2} & \frac{1}{4} \\
+                    0 & 1 & 0 & \frac{1}{2} & 1           & \frac{1}{2} \\
+                    0 & 0 & 1 & \frac{1}{4} & \frac{1}{2} & \frac{3}{4}
+                \end{matrix}\right] =\left[\begin{matrix}
+                    I & x_{1} & x_{2} & x_{3}
+                \end{matrix}\right] =\ \left[\begin{matrix}
+                    I & K^{-1}
+                \end{matrix}\right]$
+    \end{center}
+
+
+    \begin{enumerate}
+        \item $ K $ is symmetric across its main diagonal. Then $ K^{-1} $ is also symmetric.
+        \item $ K $ is tridiagonal (only three nonzero diagonals). But $ K^{-1} $ is a dense matrix with no zeros. That is another reason we don't often compute inverse matrices. The inverse of a band matrix is generally a dense matrix.
+        \item The product of pivots is $ 2\left(\frac{3}{2}\right)\left(\frac{4}{3}\right)=4 $. This number 4 is the determinant of $ K $.
+    \end{enumerate}
+
+    $ K^{-1} $ involves division by the determinant of $ K \quad K^{-1}=\frac{1}{4}\left[\begin{array}{lll}3 & 2 & 1 \\ 2 & 4 & 2 \\ 1 & 2 & 3\end{array}\right] $.
+
+    This is why an invertible matrix cannot have a zero determinant: we need to divide.
+
+\end{example}
+
+\section{LU分解}
+
+$ \left(E_{32} E_{31} E_{21}\right) A=U \quad $ becomes $ \quad A=\left(E_{21}^{-1} E_{31}^{-1} E_{32}^{-1}\right) U \quad $ which is $ \quad A=L U $
+
+\begin{theorem}
+    When a row of $A$ starts with zeros, so does that row of $L$.
+
+    When a column of $A$ starts with zeros, so does that column of $U$.
+\end{theorem}
+
+\begin{example}[The key reason why $ A $ equals $ L U$]
+    Ask yourself about the pivot rows that are subtracted from lower rows. Are they the original rows of $ A ? $ No, elimination probably changed them.
+
+    Are they rows of $ U ? $ Yes, the pivot rows never change again.
+
+    When computing the third row of $ U $, we subtract multiples of earlier rows of $ U $ (not rows of $ A ! $ ):
+    $$ \text{Row 3 of }  U=(\text{Row 3 of }  A)-\ell_{31}(
+        \text{Row 1 of } U)-\ell_{32}(\text{Row 2 of }  of  U) $$
+
+    Rewrite this equation to see that the row $ \left[\begin{array}{lll}\ell_{31} & \ell_{32} & 1\end{array}\right] $ is multiplying the matrix $ U $ :
+
+    $$ (\text{Row 3 of } A)=\ell_{31}(\text{Row 1 of }  U)+\ell_{32}(\text{Row 2 of } U)+1(\text{Row 3 of }  U) $$
+
+    This is exactly row 3 of $ A=L U . $
+
+    That row of $
+        L $ holds $ \ell_{31}, \ell_{32}, 1 . $ All rows look like this, whatever the size of $ A $. With no row exchanges, we have $ A=L U $.
+\end{example}
+
+\begin{definition}[$A$的LU分解]
+    $$ A=\left(\begin{array}{ccccc}a_{11} & \cdots & a_{1 k} & \cdots & a_{1 n} \\ \vdots & \ddots & \vdots & & \vdots \\ a_{k 1} & \cdots & a_{k k} & \cdots & a_{k n} \\ \vdots & & \vdots & \ddots & \vdots \\ a_{n 1} & \cdots & a_{n k} & \cdots & a_{n n}\end{array}\right) =LU $$
+
+    where $ L=\left(\begin{array}{cccc}1 & 0 & \cdots & 0 \\ l_{21} & 1 & \ddots & 0 \\ \vdots & \vdots & \ddots & 0 \\ l_{n 1} & l_{n 2} & \cdots & 1\end{array}\right) , U=\left(\begin{array}{cccc}u_{11} & u_{12} & \cdots & u_{1 n} \\ 0 & u_{22} & \cdots & u_{2 n} \\ \vdots & 0 & \ddots & \vdots \\ 0 & 0 & 0 & u_{n n}\end{array}\right) $
+\end{definition}
+
+所以
+$$
+    \begin{aligned}
+        A & =\left(\begin{array}{ccccc}a_{11} & \cdots & a_{1 r} & \cdots & a_{1 n} \\ \vdots & \ddots & \vdots & & \vdots \\ a_{r 1} & \cdots & a_{r r} & \cdots & a_{r n} \\ \vdots & & \vdots & \ddots & \vdots \\ a_{n 1} & \cdots & a_{n r} & \cdots & a_{n n}\end{array}\right)                                               \\
+          & =\left(\begin{array}{ccccc}1 & 0 & 0 & \cdots & 0 \\ \vdots & \ddots & 0 & \ddots & 0 \\ l_{r 1} & \cdots & 1 & \ddots & \vdots \\ \vdots & & \vdots & \ddots & 0 \\ l_{n 1} & \cdots & l_{n r} & \cdots & 1\end{array}\right) \cdot \left(\begin{array}{cccc}u_{11} & u_{12} & \cdots & u_{1 n} \\ 0 & u_{22} & \cdots & u_{2 n} \\ \vdots & 0 & \ddots & \vdots \\ 0 & 0 & 0 & u_{n n}\end{array}\right)
+    \end{aligned}
+$$
+
+\subsection{$A = LDU$}
+
+$A=LU$是不对称的。但是可以改写为对称形式。
+
+Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \ddots & \\ & & & d_{n}\end{array}\right]\left[\begin{array}{cccc}1 & u_{12} / d_{1} & u_{13} / d_{1} & \cdot \\ & 1 & u_{23} / d_{2} & \cdot \\ & & \ddots & \vdots \\ & & & 1\end{array}\right] $.
+
+\begin{example}
+    \begin{center}
+        $(A= LU) \left[\begin{array}{ll}1 & 0 \\ 3 & 1\end{array}\right]\left[\begin{array}{ll}2 & 8 \\ 0 & 5\end{array}\right] \quad $ splits further into $(A= LDU) \left[\begin{array}{ll}1 & 0 \\ 3 & 1\end{array}\right]\left[\begin{array}{ll}2 & \\ & 5\end{array}\right]\left[\begin{array}{ll}1 & 4 \\ 0 & 1\end{array}\right] $
+    \end{center}
+\end{example}
+
+\begin{theorem}
+    当$A$是对称矩阵的时候，且消元的时候不需要行交换：
+
+    $S = LDL^T$
+\end{theorem}
+
+
+\begin{example}
+    $$ \left[\begin{array}{ll}1 & 2 \\ 2 & 7\end{array}\right]=\left[\begin{array}{ll}\mathbf{1} & 0 \\ \mathbf{2} & \mathbf{1}\end{array}\right] \quad\left[\begin{array}{ll}1 & 0 \\ 0 & 3\end{array}\right] \quad\left[\begin{array}{ll}\mathbf{1} & \mathbf{2} \\ 0 & \mathbf{1}\end{array}\right] $$
+\end{example}
+
+
+\subsection{$L$、$U$矩阵的性质}
+
+根据矩阵的乘法原理, 有
+
+\begin{theorem}
+    $ A $ 的第一行元素 $ a_{1 j} $ 为
+    $$
+        a_{1 j}=u_{1 j}, j=1, \cdots, n
+    $$
+\end{theorem}
+
+\begin{corollary}
+    $ U $ 的第一行元素 $ u_{1 j} $ 为
+    $$
+        u_{1 j}=a_{1 j}, j=1, \cdots, n
+    $$
+\end{corollary}
+
+\begin{proof}
+    $$\displaystyle \begin{aligned}A & =\left(\begin{array}{ c c c c c }
+                \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{11}}} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\cdots }} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{1r}}} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\cdots }} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{1n}}} \\
+                \vdots                                               & \ddots                                                & \vdots                                               &                                                       & \vdots                                               \\
+                a_{r1}                                               & \cdots                                                & a_{rr}                                               & \cdots                                                & a_{rn}                                               \\
+                \vdots                                               &                                                       & \vdots                                               & \ddots                                                & \vdots                                               \\
+                a_{n1}                                               & \cdots                                                & a_{nr}                                               & \cdots                                                & a_{nn}
+            \end{array}\right)
+               \\ &=\left(\begin{array}{ c c c c c }
+                \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{1}} & 0      & 0      & \cdots & 0      \\
+                \vdots                                          & \ddots & 0      & \ddots & 0      \\
+                l_{r1}                                          & \cdots & 1      & \cdots & \vdots \\
+                \vdots                                          & \ddots & \vdots & \ddots & 0      \\
+                l_{n1}                                          & \cdots & l_{nr} & \cdots & 1
+            \end{array}\right) \cdot \left(\begin{array}{ c c c c c }
+                \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{u_{11}}} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\cdots }} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{u_{1r}}} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\cdots }} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{u_{1n}}} \\
+                0                                                    & \ddots                                                & \vdots                                               & \ddots                                                & \vdots                                               \\
+                0                                                    & 0                                                     & u_{rr}                                               & \cdots                                                & u_{rn}                                               \\
+                \vdots                                               & \ddots                                                & 0                                                    & \ddots                                                & \vdots                                               \\
+                0                                                    & \cdots                                                & 0                                                    & 0                                                     & u_{nn}
+            \end{array}\right)\end{aligned}$$
+\end{proof}
+
+\begin{corollary}
+    $ L $ 的第一列元素 $ l_{i1} $ 为
+
+    $$ l_{i 1}=\frac{a_{i 1}}{u_{11}} , i=2,3, \cdots, n $$
+\end{corollary}
+
+\begin{proof}
+    $$\displaystyle \begin{aligned} A & =\left(\begin{array}{ c c c c c }
+                \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{11}}}  & \cdots & a_{1r} & \cdots & a_{1n} \\
+                \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\vdots }} & \ddots & \vdots &        & \vdots \\
+                \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{r1}}}  & \cdots & a_{rr} & \cdots & a_{rn} \\
+                \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\vdots }} &        & \vdots & \ddots & \vdots \\
+                \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{n1}}}  & \cdots & a_{nr} & \cdots & a_{nn}
+            \end{array}\right)                                               \\
+                  & =\left(\begin{array}{ c c c c c }
+                \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{1}}       & 0      & 0      & \cdots & 0      \\
+                \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\vdots }} & \ddots & 0      & \ddots & 0      \\
+                \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{l_{r1}}}  & \cdots & 1      & \ddots & \vdots \\
+                \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\vdots }} &        & \vdots & \ddots & 0      \\
+                \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{l_{n1}}}  & \cdots & l_{nr} & \cdots & 1
+            \end{array}\right) \cdot \left(\begin{array}{ c c c c c }
+                \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{u_{11}}} & \cdots & u_{1r} & \cdots & u_{1n} \\
+                0                                                    & \ddots & \vdots & \ddots & \vdots \\
+                0                                                    & 0      & u_{rr} & \cdots & u_{rn} \\
+                \vdots                                               & \ddots & 0      & \ddots & \vdots \\
+                0                                                    & \cdots & 0      & 0      & u_{nn}
+            \end{array}\right)
+        \end{aligned}$$
+\end{proof}
+
+\begin{theorem}
+    $ A $ 的第 $ r $ 行主对角线以右元素元素 $ a_{1 j}(j=1, \cdots, n) $ 为
+
+    $$a_{r j}=\sum_{k=1}^{r} l_{r k} u_{k j}, r=1,2, \cdots, n,j=r, \cdots, n $$
+\end{theorem}
+
+\begin{proof}
+    $$\displaystyle
+        \begin{aligned}
+            A & =\left(\begin{array}{ c c c c c }
+                a_{11} & \cdots & a_{1r}                                               & \cdots                                                & a_{1n}                                               \\
+                \vdots & \ddots & \vdots                                               &                                                       & \vdots                                               \\
+                a_{r1} & \cdots & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{rr}}} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\cdots }} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{rn}}} \\
+                \vdots &        & \vdots                                               & \ddots                                                & \vdots                                               \\
+                a_{n1} & \cdots & a_{nr}                                               & \cdots                                                & a_{nn}
+            \end{array}\right)                                               \\
+              & =\left(\begin{array}{ c c c c c }
+                1      & 0      & 0                                               & \cdots & 0 \\
+                \vdots & \ddots & 0                                               & \ddots & 0 \\
+                l_{r1} & \cdots & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{1}} & \cdots & 0 \\
+                \vdots & \cdots & \vdots                                          & \ddots & 0 \\
+                l_{n1} & \cdots & l_{nr}                                          & \cdots & 1
+            \end{array}\right) \cdot \left(\begin{array}{ c c c c c }
+                u_{11} & \cdots & u_{1r}                                               & \cdots                                                & u_{1n}                                               \\
+                0      & \ddots & \vdots                                               & \ddots                                                & \vdots                                               \\
+                0      & 0      & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{u_{rr}}} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\cdots }} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{u_{rn}}} \\
+                \vdots & \ddots & 0                                                    & \ddots                                                & \vdots                                               \\
+                0      & \cdots & 0                                                    & 0                                                     & u_{nn}
+            \end{array}\right)
+        \end{aligned}
+    $$
+\end{proof}
+
+\begin{corollary}
+    $U$第 $ r $ 行主对角线以右元素 $ u_{r j} $
+
+    $$ u_{r j}=a_{r j}-\sum_{k=1}^{r-1} l_{r k} u_{k j}, j = r, \cdots, n $$
+\end{corollary}
+
+\begin{proof}
+    $$\begin{aligned}
+                        & a_{r j}=\sum_{k=1}^{r} l_{r k} u_{k j}, r=1,2, \cdots, n,j=r, \cdots, n                     \\
+            \Rightarrow & a_{r j}=\sum_{k=1}^{r - 1} l_{r k} u_{k j} + l_{rr} u_{rj}, r=1,2, \cdots, n,j=r, \cdots, n \\
+            \Rightarrow & u_{r j}=a_{r j}-\sum_{k=1}^{r-1} l_{r k} u_{k j}, j = r, \cdots, n
+        \end{aligned}$$
+\end{proof}
+
+
+\begin{corollary}
+    $U$的对角线元素$u_{r r}$
+
+    $$ u_{r r}=a_{r r}-\sum_{k=1}^{r-1} l_{r k} u_{k r} $$
+\end{corollary}
+
+
+\begin{theorem}
+    $ A $ 的第 $ r $ 列元素主对角线以下元素 $ a_{i r}(i=r+1, \cdots, n) $ 为
+
+    $$a_{i r}=\sum_{k=1}^{r} l_{i k} u_{k r}, i=r+1, \cdots, n, r=1,2, \cdots, n-1 $$
+\end{theorem}
+
+\begin{proof}
+    $$\displaystyle
+        \begin{aligned}
+            A & =\left(\begin{array}{ c c c c c }
+                a_{11} & \cdots & a_{1r}                                                & \cdots & a_{1n} \\
+                \vdots & \ddots & \vdots                                                &        & \vdots \\
+                a_{r1} & \cdots & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{rr}}}  & \cdots & a_{rn} \\
+                \vdots &        & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\vdots }} & \ddots & \vdots \\
+                a_{n1} & \cdots & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{nr}}}  & \cdots & a_{nn}
+            \end{array}\right)                                               \\
+              & =\left(\begin{array}{ c c c c c }
+                1      & 0      & 0                                                     & \cdots & 0 \\
+                \vdots & \ddots & 0                                                     & \ddots & 0 \\
+                l_{r1} & \cdots & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{1}}       & \cdots & 0 \\
+                \vdots & \cdots & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\vdots }} & \ddots & 0 \\
+                l_{n1} & \cdots & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{l_{nr}}}  & \cdots & 1
+            \end{array}\right) \cdot \left(\begin{array}{ c c c c c }
+                u_{11} & \cdots & u_{1r}                                               & \cdots & u_{1n} \\
+                0      & \ddots & \vdots                                               & \ddots & \vdots \\
+                0      & 0      & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{u_{rr}}} & \cdots & u_{rn} \\
+                \vdots & \ddots & 0                                                    & \ddots & \vdots \\
+                0      & \cdots & 0                                                    & 0      & u_{nn}
+            \end{array}\right)\end{aligned}
+    $$
+\end{proof}
+
+\begin{corollary}
+    显然, $ r=1 $ 时
+
+    $$ a_{i 1}=l_{i 1} u_{11} , i=2,3, \cdots, n $$
+\end{corollary}
+
+\begin{corollary}
+    $L$第 $ r $ 列主对角线以下元素 $ l_{i r} $
+
+    $$ l_{i r}=\frac{a_{i r}-\sum_{k=1}^{r-1} l_{i k} u_{k r}}{u_{r r}}, i = r + 1, \cdots, n $$
+\end{corollary}
+
+
+
+
+
+
+\subsection{Complexity of LU Decomposition}
+
+求解 $ A x=b, A $ 为非奇异矩阵，LU算法为求解方程组 $ A x=b $ 的标准解法，复杂度: $ \frac{2}{3} n^{3}+2 n^{2} \approx \frac{2}{3} n^{3} $ flops
+
+\begin{enumerate}
+    \item 对矩阵 $ A $ 进行LU分解 $ \left(\frac{2}{3} n^{3}\right. $ flops $ ) $
+    \item 回代法: 求解 $ L y=b\left(n^{2}\right. $ flops $ ) $
+    \item 回代法: 求解 $ U x=y\left(n^{2}\right. $ flops $ ) $
+\end{enumerate}
+
+
+\subsection{Example of LU Decomposition}
+
+\begin{example}
+    对矩阵 $ A $ 进行 $ L U $ 分解
+    $$
+        A=\left[\begin{array}{lll}
+                8 & 2 & 9 \\
+                4 & 9 & 4 \\
+                6 & 7 & 9
+            \end{array}\right]
+    $$
+
+
+    $$ A=\left[\begin{array}{lll}8 & 2 & 9 \\ 4 & 9 & 4 \\ 6 & 7 & 9\end{array}\right]=\left[\begin{array}{ccc}1 & 0 & 0 \\ l_{21} & 1 & 0 \\ l_{31} & L_{32} & 1\end{array}\right]\left[\begin{array}{ccc}u_{11} & u_{12} & u_{13} \\ 0 & u_{22} & u_{23} \\ 0 & 0 & u_{33}\end{array}\right] $$
+
+    计算$U$的第一行和 $ L $ 的第一列
+
+    $$ \left(u_{11}, u_{12}, u_{13}\right)=(8,2,9) , \left(l_{21}, l_{31}\right)=\left(\frac{1}{2}, \frac{3}{4}\right) $$
+
+    然后计算$U$的第二行和$L$的第二列
+
+    $$ u_{22}=a_{22}-l_{21} u_{12}=8 ,
+        u_{23}=a_{23}-l_{21} u_{13}=-\frac{1}{2} , l_{32}=\frac{a_{32}-l_{31} u_{12}}{u_{22}}=\frac{11}{16} $$
+
+
+    最后计算$U$的第三行
+
+    $$ u_{33}=a_{33}-l_{31}  u_{13}-l_{32} u_{23}=-\frac{83}{32} $$
+
+\end{example}
+
+\section{Problem of LU Decomposition}
+
+
+\begin{example}
+    $$ A=\left[\begin{array}{ccc}1 & 0 & 0 \\ 0 & 0 & 2 \\ 0 & 1 & -1\end{array}\right]=\left[\begin{array}{ccc}1 & 0 & 0 \\ l_{21} & 1 & 0 \\ l_{31} & L_{32} & 1\end{array}\right]\left[\begin{array}{ccc}u_{11} & u_{12} & u_{13} \\ 0 & u_{22} & u_{23} \\ 0 & 0 & u_{33}\end{array}\right] $$
+
+    计算$U$的第一行和$L$的第一列
+    $$
+        \left[\begin{array}{ccc}
+                1 & 0 & 0  \\
+                0 & 0 & 2  \\
+                0 & 1 & -1
+            \end{array}\right]=\left[\begin{array}{ccc}
+                1 & 0      & 0 \\
+                0 & 1      & 0 \\
+                0 & l_{32} & 1
+            \end{array}\right]\left[\begin{array}{ccc}
+                1 & 0      & 0      \\
+                0 & u_{22} & u_{23} \\
+                0 & 0      & u_{33}
+            \end{array}\right]
+    $$
+
+    然后计算U的第二行和L的第二列
+    $$
+        \begin{array}{l}
+            u_{22}=a_{22}-l_{21} u_{12}=0 \\
+            u_{23}=a_{23}-l_{21} u_{13}=2
+        \end{array} \quad l_{32}=\frac{a_{32}-l_{31} u_{12}}{u_{22}}=\frac{1}{\boldsymbol{0}}
+    $$
+    即该矩阵无法 $ \mathrm{LU} $ 分解！
+\end{example}
+
+\section{\texorpdfstring{$PA=LU$}{PA=LU}}
+
+\begin{theorem}
+    非奇异矩阵 $ \mathrm{A} \in \mathbb{R}^{n \times n} $ ，则可分解为 $ A=P^{T} L U $
+
+    $ P $ 是一个置换矩阵， $ L $ 为下三角矩阵并且对角线元素全为 $ 1 ， U $ 为 上三角矩阵
+\end{theorem}
+
+
+$PA=LU$分解方法不唯一，随着 $ P $ 的选择不同， $L$、$U$也不同。
+
+\begin{example}[$PA=LU$]
+
+
+    $ A=\left[\begin{array}{lll}0 & 5 & 5 \\ 2 & 9 & 0 \\ 6 & 8 & 8\end{array}\right], P_{1}=\left[\begin{array}{lll}0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0\end{array}\right], P_{2}=\left[\begin{array}{lll}0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1\end{array}\right] $
+
+    易知
+    $$P_{1}^{T}=P_{1}^{-1}=P_{1}, P_{2}^{T}=P_{2}^{-1}=P_{2}$$
+
+    计算可得
+    $$ P_{1} A=\left[\begin{array}{lll}6 & 8 & 8 \\ 2 & 9 & 0 \\ 0 & 5 & 5\end{array}\right], P_{2} A=\left[\begin{array}{lll}2 & 9 & 0 \\ 0 & 5 & 5 \\ 6 & 8 & 8\end{array}\right] $$
+
+    LU分解不唯一:
+
+    $$
+        P_{1} A=\left[\begin{array}{lll}
+                6 & 8 & 8 \\
+                2 & 9 & 0 \\
+                0 & 5 & 5
+            \end{array}\right]=\left[\begin{array}{ccc}
+                1           & 0             & 0 \\
+                \frac{1}{3} & 1             & 0 \\
+                0           & \frac{15}{19} & 1
+            \end{array}\right]\left[\begin{array}{ccc}
+                6 & 8            & 8              \\
+                0 & \frac{19}{3} & \frac{-8}{3}   \\
+                0 & 0            & \frac{135}{19}
+            \end{array}\right]=L_{1} U_{1} \Rightarrow A=P_{1} L_{1} U_{1}
+    $$
+
+
+    $$ P_{2} A=\left[\begin{array}{lll}2 & 9 & 0 \\ 0 & 5 & 5 \\ 6 & 8 & 8\end{array}\right]=\left[\begin{array}{ccc}1 & 0 & 0 \\ 0 & 1 & 0 \\ 3 & \frac{-19}{5} & 1\end{array}\right]\left[\begin{array}{ccc}2 & 9 & 2 \\ 0 & 5 & 5 \\ 0 & 0 & 27\end{array}\right]=L_{2} U_{2} \Rightarrow A=P_{2} L_{2} U_{2} $$
+
+\end{example}
+
+
+\begin{theorem}
+    这个方法等价于对$A$进行行初等变换然后对 $ P A $ 进行分解 $ P A=L U $
+\end{theorem}
+
+\subsubsection{The Complexity of $PA = LU$}
+
+复杂度: $ \frac{2}{3} n^{3} $ flops
+
+
+
+\section{舍入误差的影响}
+
+\begin{example}
+    $$ \left[\begin{array}{cc}10^{-5} & 1 \\ 1 & 1\end{array}\right]\left[\begin{array}{l}x_{1} \\ x_{2}\end{array}\right]=\left[\begin{array}{l}1 \\ 0\end{array}\right] $$
+
+    解得： $$ x_{1}=-\frac{1}{1-10^{-5}}, x_{2}=\frac{1}{1-10^{-5}} $$
+
+    使用LU分解求解上述上述方程，并且使用以下两个置换矩阵:
+    $$
+        P_{1}=\left[\begin{array}{ll}
+                1 & 0 \\
+                0 & 1
+            \end{array}\right] \quad \text { or } \quad P_{2}=\left[\begin{array}{ll}
+                0 & 1 \\
+                1 & 0
+            \end{array}\right]
+    $$
+
+    计算过程中，中间结果四舍五入到小数点后四位。
+
+    选择1: $  P_{1}=I $。
+
+    $$
+        \left[\begin{array}{cc}
+                10^{-5} & 1 \\
+                1       & 1
+            \end{array}\right]=\left[\begin{array}{cc}
+                1      & 0 \\
+                10^{5} & 1
+            \end{array}\right]\left[\begin{array}{cc}
+                10^{-5} & 1        \\
+                0       & 1-10^{5}
+            \end{array}\right]
+    $$
+
+    $L$和$U$四舍五入到小数点后四位
+    $$
+        L=\left[\begin{array}{cc}
+                1      & 0 \\
+                10^{5} & 1
+            \end{array}\right], \quad U=\left[\begin{array}{cc}
+                10^{-5} & 1       \\
+                0       & -10^{5}
+            \end{array}\right]
+    $$
+
+    向前回代
+    $$
+        \left[\begin{array}{cc}
+                1      & 0 \\
+                10^{5} & 1
+            \end{array}\right]\left[\begin{array}{l}
+                z_{1} \\
+                z_{2}
+            \end{array}\right]=\left[\begin{array}{l}
+                1 \\
+                0
+            \end{array}\right] \Rightarrow z_{1}=1, z_{2}=-10^{5}
+    $$
+
+    向后回代
+    $$
+        \left[\begin{array}{cc}
+                10^{-5} & 1       \\
+                0       & -10^{5}
+            \end{array}\right]\left[\begin{array}{l}
+                x_{1} \\
+                x_{2}
+            \end{array}\right]=\left[\begin{array}{l}
+                1 \\
+                -10^{-5}
+            \end{array}\right] \Rightarrow x_{1}=0, x_{2}=1
+    $$
+
+    \begin{remark}
+        $ x_{1} $ 的误差为 $ 100 \% $。
+    \end{remark}
+
+
+
+    选择2：行进行交换。
+
+    $$ \left[\begin{array}{cc}1 & 1 \\ 10^{-5} & 1\end{array}\right]=\left[\begin{array}{cc}1 & 0 \\ 10^{-5} & 1\end{array}\right]\left[\begin{array}{cc}1 & 1 \\ 0 & 1-10^{-5}\end{array}\right] $$
+
+    $L$和$U$四舍五入到小数点后四位
+    $$
+        L=\left[\begin{array}{cc}
+                1       & 0 \\
+                10^{-5} & 1
+            \end{array}\right], \quad U=\left[\begin{array}{ll}
+                1 & 1 \\
+                0 & 1
+            \end{array}\right]
+    $$
+
+    向前回代
+    $$
+        \left[\begin{array}{cc}
+                1       & 0 \\
+                10^{-5} & 1
+            \end{array}\right]\left[\begin{array}{l}
+                z_{1} \\
+                z_{2}
+            \end{array}\right]=\left[\begin{array}{l}
+                0 \\
+                1
+            \end{array}\right] \Rightarrow z_{1}=0, z_{2}=1
+    $$
+
+    向后回代
+    $$
+        \left[\begin{array}{ll}
+                1 & 1 \\
+                0 & 1
+            \end{array}\right]\left[\begin{array}{l}
+                x_{1} \\
+                x_{2}
+            \end{array}\right]=\left[\begin{array}{l}
+                0 \\
+                1
+            \end{array}\right] \Rightarrow x_{1}=-1, x_{2}=1
+    $$
+
+    \begin{remark}
+        $ x_{1}, x_{2} $ 的误差约为 $ 10^{-5} $。
+    \end{remark}
+
+\end{example}
+
+
+不同置换矩阵 $ P $ ，算法可能导致产生不同的误差的结果; 由于数值存储存在误差:
+第一种 $ P_{1} $ 行交换，算法不稳定;
+第二种 $ P_{2} $ 行交换, 算法是稳定得到 “准确” 近似解;
+
+在数值分析中，一些比较简单的规则去挑选置换矩阵 $ P  $， 使 得算法结果比较稳定。
+$$
+    \left[\begin{array}{cc}
+            10^{-5} & 1 \\
+            1       & 1
+        \end{array}\right]\left[\begin{array}{l}
+            x_{1} \\
+            x_{2}
+        \end{array}\right]=\left[\begin{array}{l}
+            1 \\
+            0
+        \end{array}\right] \quad\left[\begin{array}{cc}
+            1       & 1 \\
+            10^{-5} & 1
+        \end{array}\right]\left[\begin{array}{l}
+            x_{1} \\
+            x_{2}
+        \end{array}\right]=\left[\begin{array}{l}
+            0 \\
+            1
+        \end{array}\right]
+$$
+
+
+
+
+
+\section{稀疏线性方程组}
+
+\begin{theorem}
+    如果矩阵 $ \mathrm{A} $ 是系稀疏矩阵, 则它一般可以被分解为
+    $$
+        A=P_{1} L U P_{2}
+    $$
+
+    矩阵 $ P_{1}, P_{2} $ 都为置换矩阵
+\end{theorem}
+
+\begin{corollary}
+    对矩阵 $ \mathrm{A} $ 进行行变换和列变换得到: $ \tilde{A}=P_{1}^{T} A P_{2}^{T} $
+
+    然后进行分解: $ \widetilde{\mathrm{A}}=L U $
+\end{corollary}
+
+
+
+$ P_{1} $ 和 $ P_{2} $ 的选择会影响 $ {L} $ 和$U$的稀疏度.
+

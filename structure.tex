@@ -26,7 +26,10 @@
 
 \usepackage{tikz} % Required for drawing custom shapes
 
-\usepackage[english]{babel} % English language/hyphenation
+\usepackage[japanese,main=english, provide=*]{babel} % English language/hyphenation
+\babelfont[japanese]{rm}
+          [Renderer=HarfBuzz]{IPAMincho}
+
 
 \usepackage{enumitem} % Customize lists
 \setlist{nolistsep} % Reduce spacing between bullet points and numbered lists
@@ -258,7 +261,7 @@
 {0.25em}% Space after theorem head
 {\small\sffamily\color{ocre}\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
 \thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries\color{black}---\nobreakspace#3.}% Optional theorem note
-\addcontentsline{lod}{section}{(#1)~\protect\numberline{#2}{#3}}} % add line to list of theorems; #1 is theorem name, #2 #3 is the name of theorem
+\addcontentsline{lod}{subsection}{(#1)\quad\protect\numberline{#2}{#3}}} % add line to list of theorems; #1 is theorem name, #2 #3 is the name of theorem
 
 
 \newtheoremstyle{blacknumex}% Theorem style name
@@ -283,7 +286,7 @@
 {0.25em}% Space after theorem head
 {\small\sffamily\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
 \thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries---\nobreakspace#3.}% Optional theorem note
-\addcontentsline{lod}{section}{(#1)~\protect\numberline{#2}{#3}}} % add line to list of theorems
+\addcontentsline{lod}{subsection}{(#1)\quad\protect\numberline{#2}{#3}}} % add line to list of theorems
 
 
 \newtheoremstyle{blacknumboxVocabulary} % Theorem style name
@@ -482,11 +485,12 @@ innerbottommargin=5pt]{cBox}
 \AtBeginDocument{%
   \AtBeginEnvironment{definition}{%
     \iftoggle{noDefs}{
-      \addcontentsline{lod}{chapter}{\chaptername~\thischapternumber\hspace{1em}\thischaptertitle}{}
+      \addcontentsline{lod}{chapter}{\chaptername~\thischapternumber\hspace{0.5em}\thischaptertitle}{}
       \global\togglefalse{noDefs}
     }{}
   }%
 }
+
 
 \makeatother
 
@@ -569,7 +573,8 @@ innerbottommargin=5pt]{cBox}
 \fill[ocre!20](0cm,0cm) rectangle (\paperwidth,-\paperheight);
 \node[anchor=north] at (4cm,-3.25cm){\color{ocre!40}\fontsize{220}{100}\sffamily\bfseries\thepart}; 
 \node[anchor=south east] at (\paperwidth-1cm,-\paperheight+1cm){\parbox[t][][t]{8.5cm}{
-\printcontents{l}{0}{\setcounter{tocdepth}{1}}% The depth to which the Part mini table of contents displays headings; 0 for chapters only, 1 for chapters and sections and 2 for chapters, sections and subsections
+\printcontents{l}{0}{\setcounter{tocdepth}{2}}% The depth to which the Part mini table of contents displays headings; 0 for chapters only, 1 for chapters and sections and 2 for chapters, sections and subsections
+% for displaying section in TOC
 }};
 \node[anchor=north east] at (\paperwidth-1.5cm,-3.25cm){\parbox[t][][t]{15cm}{\strut\raggedleft\color{white}\fontsize{30}{30}\sffamily\bfseries#2}};
 \end{tikzpicture}};

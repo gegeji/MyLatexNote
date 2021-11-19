@@ -2,6 +2,10 @@
 
 \section{基本概念}
 
+\begin{definition}[波]
+    波的基本属性：\textbf{频率、振幅、相位}。
+\end{definition}
+
 \begin{definition}[Complex Numbers]
     $$ C=R+j I $$
 
@@ -48,7 +52,7 @@ $$ f(t)=A_{0}+\sum_{n=1}^{\infty} A_{n} \sin \left(n \omega t+\varphi_{n}\right)
     其中 $ a_{0}, a_{n}, b_{n}(n=1,2,3, \cdots) $ 都是常数. 
 \end{definition}
 
-\begin{definition}[三角函数系]
+\begin{definition}[三角函数系（基波）]
     $$ 1, \cos x, \sin x, \cos 2 x, \sin 2 x, \cdots, \cos n x, \sin n x, \cdots $$
 
     在区间 $ [-\pi, \pi] $ 上正交, 就是指在三角函数系 $ (7-4) $ 中任何不同的两个函数的 乘积在区间 $ [-\pi, \boldsymbol{\pi}] $ 上的积分等于零, 即
@@ -294,7 +298,7 @@ $$
 
 \end{proof}
 
-\section{Fourier transform}
+\section{Fourier Transform}
 
 \begin{definition}[The Fourier transform of a continuous function $ f(t) $ of a continuous variable $ t $]
     $$F(\mu) = \Im\{f(t)\}=\int_{-\infty}^{\infty} f(t) e^{-j 2 \pi \mu t} d t $$
@@ -304,6 +308,10 @@ $$
 F(\mu)=\int_{-\infty}^{\infty} f(t)[\cos (2 \pi \mu t)-j \sin (2 \pi \mu t)] d t
 $$
 \end{definition}
+
+傅里叶变换将一个复杂的波变换成不同的正弦波（基波），时频图（时域、频域、某一刻相位）。对于任意一个时域的曲线，均可以分解成为不同的基波的
+
+$$时域f(t) \Leftrightarrow F(u,v) 频域$$
 
 \begin{definition}[inverse Fourier transform]
     $$ f(t)=\int_{-\infty}^{\infty} F(\mu) e^{j 2 \pi \mu t} d \mu $$

@@ -1,0 +1,48 @@
+\chapter{Principal Component Analysis}
+
+\section{1维}
+
+$ x=m+a e $
+$ a_{i}=\left|x_{i}-m\right| \cdot|e| \cdot \cos (\theta)=e \bullet\left(x_{i}-m\right)=e^{T}\left(x_{i}-m\right) $
+
+\begin{problem}
+    如何确定最优e方向使 $ E_{1}(e) $ 最小?
+
+    即e方向确定以后，所有样本点投影 到这个直线产生投影点。这些投影点 到原样本点的距离之和即为 $ E_{1}(\mathrm{e}) $
+\end{problem}
+
+
+$ E_{1}(e)=\sum_{i=1}^{n}\left\|x-x_{i}\right\|^{2}=\sum_{i=1}^{n}\left\|m+a_{i} e-x_{i}\right\|^{2}=\sum_{i=1}^{n}\left\|a_{i} e-\left(x_{i}-m\right)\right\|^{2} $ ($x$是原始点，$x_i$是相应投影点)
+$ =\sum_{i=1}^{n} a_{i}^{2}\|e\|^{2}-2 \sum_{i=1}^{n} a_{i} e^{T}\left(x_{i}-m\right)+\sum_{i=1}^{n}\left\|x_{i}-m\right\|^{2} $
+
+$ E_{1}(e)=\sum_{i=1}^{n} a_{i}^{2}-2 \sum_{k=i}^{n} a_{i}^{2}+\sum_{i=1}^{n}\left\|x_{i}-m\right\|^{2} $
+$ =-\sum_{i=1}^{n} a_{i}^{2}+\sum_{i=1}^{n}\left\|x_{i}-m\right\|^{2} $
+$ =-\sum_{i=1}^{n}\left[e^{T}\left(x_{i}-m\right)\right]^{2}+\sum_{i=1}^{n}\left\|x_{i}-m\right\|^{2} $
+$ =-\sum_{i=1}^{n} e^{T}\left(x_{i}-m\right)\left(x_{i}-m\right)^{T} e+\sum_{i=1}^{n}\left\|x_{i}-m\right\|^{2} $
+$ =-e^{T}\left[\sum_{i=1}^{n}\left(x_{i}-m\right)\left(x_{i}-m\right)^{T}\right] e+\sum_{i=1}^{n}\left\|x_{i}-m\right\|^{2} $
+$ =-e^{T} S e+\sum_{i=1}^{n}\left\|x_{i}-m\right\|^{2} \quad (\text{const.}) $
+
+S为散布矩阵, 是样本协方差的n-1倍
+$$
+\begin{array}{l}
+\text { 令 }\|e\|=1 \\
+y=e^{T} S e-\lambda\left(e^{T} e-1\right)
+\end{array}
+$$
+
+求导得 $ S e=\lambda e $，$e$是$S$特征向量时最大, $S$为散布矩阵，是样本协方差的$n-1$倍
+
+$$ e^{T} S e=\lambda e^{T} e=\lambda $$
+
+特征值越大对应特征向量对重建效果最好
+
+\section{多维}
+
+(投影到多条直线 $ e_{\mathrm{t}} $ )
+$$
+x=m+\sum_{k=1}^{t} a_{k} e_{k}, t \leq d
+$$
+
+$$ E_{t}\left(e_{1}, e_{2}, \ldots, e_{t}\right)=\sum_{i=1}^{n}\left\|\left(m+\sum_{k=1}^{t} a_{i k} e_{k}\right)-x_{i}\right\|^{2} $$
+
+$ e_{k}(k=1,2, \ldots, t) $ 分别对应S的前 $ t $ 个特征值（从大到小）对应的特征向量

@@ -72,11 +72,11 @@ $$
 \section{Basis}
 
 \begin{definition}[基 (Basis)]
-    n个线性独立的n维向量 $ a_{1}, \ldots, a_{n} $ 的集合
+    $n$个线性独立的$n$维向量 $ a_{1}, \ldots, a_{n} $ 的集合
 \end{definition}
 
 \begin{definition}[向量 $ b $ 在基底 $ a_{1}, \ldots, a_{n} $ 下的分解]
-    任何一个n维向量 $ b $ 都可以用它们的线性组合来表示
+    任何一个$n$维向量 $ b $ 都可以用它们的线性组合来表示
 
 $$
 b=\beta_{1} a_{1}+\cdots+\beta_{n} a_{n}
@@ -193,7 +193,7 @@ $$
 \begin{algorithm}[htbp]
     \caption{Gram-Schmidt Algorithm}
     \KwIn{$ \mathrm{n} $ 维向量 $ a_{1}, \ldots, a_{k} $}
-    \KwOut{若这些向量线性无关时 $ q_{1}, \ldots, q_{k} $（标准正交基）；若线性相关时判断 $a_j$ 是 $ a_{1}, \ldots, a_{j-1} $ 的线性组合 }
+    \KwOut{若这些向量线性无关，返回标准正交基$ q_{1}, \ldots, q_{k} $；若线性相关时判断 $a_j$ 是 $ a_{1}, \ldots, a_{j-1} $ 的线性组合 }
     $ q_{1}=a_{1} /\left\|a_{1}\right\|_{2} $\;
     \While(){$i=2,\cdots,k$}{
         正交化: $ \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $\;
@@ -219,7 +219,8 @@ $$
     $$ \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
 
     等式两边同时乘以 $ q_{j}^{T}, j=1, \ldots, i-1 $
-    $$ \begin{aligned} q_{j}^{T} \tilde{q}_{i} &=q_{j}^{T} a_{i}-\left(q_{1}^{T} a_{i}\right)\left(q_{j}^{T} q_{1}\right)-\cdots-\left(q_{i-1}^{T} a_{i}\right)\left(q_{j}^{T} q_{i-1}\right) \\ &=q_{j}^{T} a_{i}-q_{j}^{T} a_{i}=0  \end{aligned} $$
+    $$ \begin{aligned} q_{j}^{T} \tilde{q}_{i} &=q_{j}^{T} a_{i}-\left(q_{1}^{T} a_{i}\right)\left(q_{j}^{T} q_{1}\right)-\cdots-\left(q_{i-1}^{T} a_{i}\right)\left(q_{j}^{T} q_{i-1}\right) \\ &=q_{j}^{T} a_{i}-q_{j}^{T} a_{i}
+        \\ &=0  \end{aligned} $$
 
     $ \because q_{j}^{T} q_{r}=0, j \neq r, q_{j}^{T} q_{j}=1 $
 

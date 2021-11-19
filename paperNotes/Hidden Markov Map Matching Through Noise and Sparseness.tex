@@ -132,7 +132,7 @@ Each measurement $ z_{t} $ has a list of possible road matches, as does the next
 
 $$ p\left(d_{t}\right)=\frac{1}{\beta} e^{-d_{t} / \beta} $$
 
-路径距离$ d_{t}=\left|\left\|z_{t}-z_{t+1}\right\|_{\text {great circle }}-\left\|x_{t, i^{*}}-x_{t+1, j^{*}}\right\|_{\text {route }}\right| $是动态规划(\term{Viterbi algorithm})得到的路线距离. 对于$z_t$和候选路段$r_i$，匹配出在路段上的点是$ x_{t, i} $. 
+路径距离$ d_{t}=\left| \left\|z_{t}-z_{t+1}\right\|_{\text {great circle }}-\left\|x_{t, i^{*}}-x_{t+1, j^{*}}\right\|_{\text {route }}\right| $是动态规划(\term{Viterbi algorithm})得到的路线距离. 对于$z_t$和候选路段$r_i$，匹配出在路段上的点是$ x_{t, i} $. 
 
 \begin{remark}
       \label{Comment:HMM-TransitionProbability}

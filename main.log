@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  1 NOV 2021 18:27
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  17 NOV 2021 19:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -276,66 +276,90 @@ File: babel.def 2021/06/28 3.61 Babel common definitions
 \bbl@readstream=\read3
 )
 \bbl@dirlevel=\count283
- (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
-Package babel Info: Hyphen rules for 'canadian' set to \l@english
-(babel)             (\language0). Reported on input line 102.
-Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language21). Reported on input line 105.
-Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language21). Reported on input line 108.
-)) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty
+ (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/babel-japanese/japanese.ldf
+Language: japanese 2021/02/13 v3.1 Japanese support for babel (texjporg)
+Package babel Info: No hyphenation patterns are available for Japanese,
+(babel)             so I will use the patterns preloaded for \language=0
+(babel)             instead on input line 37.
+Package babel Info: Hyphen rules for 'japanese' set to \l@english
+(babel)             (\language0). Reported on input line 38.
+) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/babel/locale/en/babel-english.tex)
+Package babel Info: Importing data for english
+(babel)             from babel-en.ini. Reported on input line 1161.
+Package babel Info: Hyphen rules for 'english' set to \l@english
+(babel)             (\language0). Reported on input line 1161.
+) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+ (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count284
+\l__fontspec_language_int=\count285
+\l__fontspec_strnum_int=\count286
+\l__fontspec_tmp_int=\count287
+\l__fontspec_tmpa_int=\count288
+\l__fontspec_tmpb_int=\count289
+\l__fontspec_tmpc_int=\count290
+\l__fontspec_em_int=\count291
+\l__fontspec_emdef_int=\count292
+\l__fontspec_strong_int=\count293
+\l__fontspec_strongdef_int=\count294
+\l__fontspec_tmpa_dim=\dimen192
+\l__fontspec_tmpb_dim=\dimen193
+\l__fontspec_tmpc_dim=\dimen194
+ (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip50
-\enit@outerparindent=\dimen192
+\enit@outerparindent=\dimen195
 \enit@toks=\toks29
 \enit@inbox=\box62
-\enit@count@id=\count284
-\enitdp@description=\count285
+\enit@count@id=\count295
+\enitdp@description=\count296
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen193
-\lightrulewidth=\dimen194
-\cmidrulewidth=\dimen195
-\belowrulesep=\dimen196
-\belowbottomsep=\dimen197
-\aboverulesep=\dimen198
-\abovetopsep=\dimen199
-\cmidrulesep=\dimen256
-\cmidrulekern=\dimen257
-\defaultaddspace=\dimen258
-\@cmidla=\count286
-\@cmidlb=\count287
-\@aboverulesep=\dimen259
-\@belowrulesep=\dimen260
-\@thisruleclass=\count288
-\@lastruleclass=\count289
-\@thisrulewidth=\dimen261
+\heavyrulewidth=\dimen196
+\lightrulewidth=\dimen197
+\cmidrulewidth=\dimen198
+\belowrulesep=\dimen199
+\belowbottomsep=\dimen256
+\aboverulesep=\dimen257
+\abovetopsep=\dimen258
+\cmidrulesep=\dimen259
+\cmidrulekern=\dimen260
+\defaultaddspace=\dimen261
+\@cmidla=\count297
+\@cmidlb=\count298
+\@aboverulesep=\dimen262
+\@belowrulesep=\dimen263
+\@thisruleclass=\count299
+\@lastruleclass=\count300
+\@thisrulewidth=\dimen264
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count290
-\calc@Bcount=\count291
-\calc@Adimen=\dimen262
-\calc@Bdimen=\dimen263
+\calc@Acount=\count301
+\calc@Bcount=\count302
+\calc@Adimen=\dimen265
+\calc@Bdimen=\dimen266
 \calc@Askip=\skip51
 \calc@Bskip=\skip52
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count292
+\calc@Ccount=\count303
 \calc@Cskip=\skip53
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Invalid UTF-8 byte or sequence at line 284 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 299 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 550 replaced by U+FFFD.
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count293
+\c@AlgoLine=\count304
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \algocf@hangindent=\skip54
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count294
+\c@checkoddpage=\count305
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/relsize/relsize.sty
@@ -349,12 +373,12 @@ Package: relsize 2013/03/29 ver 4.1
 \skiplength=\skip60
 \algomargin=\skip61
 \skipalgocfslide=\skip62
-\algowidth=\dimen264
-\inoutsize=\dimen265
-\inoutindent=\dimen266
-\interspacetitleruled=\dimen267
-\interspacealgoruled=\dimen268
-\interspacetitleboxruled=\dimen269
+\algowidth=\dimen267
+\inoutsize=\dimen268
+\inoutindent=\dimen269
+\interspacetitleruled=\dimen270
+\interspacealgoruled=\dimen271
+\interspacetitleboxruled=\dimen272
 \algocf@ruledwidth=\skip63
 \algocf@inoutbox=\box63
 \algocf@inputbox=\box64
@@ -371,29 +395,29 @@ Package: relsize 2013/03/29 ver 4.1
 \algoheightrule=\skip70
 \algotitleheightruledefault=\skip71
 \algotitleheightrule=\skip72
-\c@algocfline=\count295
-\c@algocfproc=\count296
-\c@algocf=\count297
+\c@algocfline=\count306
+\c@algocfproc=\count307
+\c@algocf=\count308
 \algocf@algoframe=\box69
 \algocf@algobox=\box70
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/04/20 v2.5e Tabular extension package (FMi)
-\col@sep=\dimen270
+\col@sep=\dimen273
 \ar@mcellbox=\box71
-\extrarowheight=\dimen271
+\extrarowheight=\dimen274
 \NC@list=\toks30
 \extratabsurround=\skip73
 \backup@length=\skip74
 \ar@cellbox=\box72
 )
-\TX@col@width=\dimen272
-\TX@old@table=\dimen273
-\TX@old@col=\dimen274
-\TX@target=\dimen275
-\TX@delta=\dimen276
-\TX@cols=\count298
+\TX@col@width=\dimen275
+\TX@old@table=\dimen276
+\TX@old@col=\dimen277
+\TX@target=\dimen278
+\TX@delta=\dimen279
+\TX@cols=\count309
 \TX@ftn=\toks31
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/svg/svg.sty
 Package: svg 2020/11/26 v2.02k (include SVG pictures)
@@ -426,9 +450,9 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
-\c@svg@param@lastpage=\count299
+\c@svg@param@lastpage=\count310
 \svg@box=\box73
-\c@svg@param@currpage=\count300
+\c@svg@param@currpage=\count311
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/transparent/transparent.sty
 Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
 
@@ -439,21 +463,21 @@ Package transparent Warning: Loading aborted, because pdfTeX is not running in P
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen277
-\captionmargin@=\dimen278
-\captionwidth=\dimen279
-\caption@tempdima=\dimen280
-\caption@indent=\dimen281
-\caption@parindent=\dimen282
-\caption@hangindent=\dimen283
+\captionmargin=\dimen280
+\captionmargin@=\dimen281
+\captionwidth=\dimen282
+\caption@tempdima=\dimen283
+\caption@indent=\dimen284
+\caption@parindent=\dimen285
+\caption@hangindent=\dimen286
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count301
-\c@continuedfloat=\count302
+\c@caption@flags=\count312
+\c@continuedfloat=\count313
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
-\c@subfigure=\count303
-\c@subtable=\count304
+\c@subfigure=\count314
+\c@subtable=\count315
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/xkeyval/xkeyval.sty
@@ -462,7 +486,7 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 \XKV@toks=\toks32
 \XKV@tempa@toks=\toks33
 )
-\XKV@depth=\count305
+\XKV@depth=\count316
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/adjustbox/adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
@@ -472,45 +496,45 @@ Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \collectedbox=\box74
 )
-\tc@llx=\dimen284
-\tc@lly=\dimen285
-\tc@urx=\dimen286
-\tc@ury=\dimen287
+\tc@llx=\dimen287
+\tc@lly=\dimen288
+\tc@urx=\dimen289
+\tc@ury=\dimen290
 Package trimclip Info: Using driver 'tc-xetex.def'.
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/adjustbox/tc-xetex.def
 File: tc-xetex.def 2019/01/04 v2.2 Clipping driver for xetex
 ))
-\adjbox@Width=\dimen288
-\adjbox@Height=\dimen289
-\adjbox@Depth=\dimen290
-\adjbox@Totalheight=\dimen291
-\adjbox@pwidth=\dimen292
-\adjbox@pheight=\dimen293
-\adjbox@pdepth=\dimen294
-\adjbox@ptotalheight=\dimen295
+\adjbox@Width=\dimen291
+\adjbox@Height=\dimen292
+\adjbox@Depth=\dimen293
+\adjbox@Totalheight=\dimen294
+\adjbox@pwidth=\dimen295
+\adjbox@pheight=\dimen296
+\adjbox@pdepth=\dimen297
+\adjbox@ptotalheight=\dimen298
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box75
-\sift@deathcycles=\count306
-\@vwid@loff=\dimen296
-\@vwid@roff=\dimen297
+\sift@deathcycles=\count317
+\@vwid@loff=\dimen299
+\@vwid@roff=\dimen300
 )) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count307
+\lst@mode=\count318
 \lst@gtempboxa=\box76
 \lst@token=\toks34
-\lst@length=\count308
-\lst@currlwidth=\dimen298
-\lst@column=\count309
-\lst@pos=\count310
-\lst@lostspace=\dimen299
-\lst@width=\dimen300
-\lst@newlines=\count311
-\lst@lineno=\count312
-\lst@maxwidth=\dimen301
+\lst@length=\count319
+\lst@currlwidth=\dimen301
+\lst@column=\count320
+\lst@pos=\count321
+\lst@lostspace=\dimen302
+\lst@width=\dimen303
+\lst@newlines=\count322
+\lst@lineno=\count323
+\lst@maxwidth=\dimen304
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count313
-\lst@skipnumbers=\count314
+\c@lstnumber=\count324
+\lst@skipnumbers=\count325
 \lst@framebox=\box77
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
@@ -521,78 +545,78 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count315
-\Gm@cntv=\count316
-\c@Gm@tempcnt=\count317
-\Gm@bindingoffset=\dimen302
-\Gm@wd@mp=\dimen303
-\Gm@odd@mp=\dimen304
-\Gm@even@mp=\dimen305
-\Gm@layoutwidth=\dimen306
-\Gm@layoutheight=\dimen307
-\Gm@layouthoffset=\dimen308
-\Gm@layoutvoffset=\dimen309
+\Gm@cnth=\count326
+\Gm@cntv=\count327
+\c@Gm@tempcnt=\count328
+\Gm@bindingoffset=\dimen305
+\Gm@wd@mp=\dimen306
+\Gm@odd@mp=\dimen307
+\Gm@even@mp=\dimen308
+\Gm@layoutwidth=\dimen309
+\Gm@layoutheight=\dimen310
+\Gm@layouthoffset=\dimen311
+\Gm@layoutvoffset=\dimen312
 \Gm@dimlist=\toks35
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2020/12/31 v3.16 programmable bibliographies (PK/MW)
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count318
+\etb@tempcnta=\count329
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count319
+\lrq@indent=\count330
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count320
-\c@listtotal=\count321
-\c@listcount=\count322
-\c@liststart=\count323
-\c@liststop=\count324
-\c@citecount=\count325
-\c@citetotal=\count326
-\c@multicitecount=\count327
-\c@multicitetotal=\count328
-\c@instcount=\count329
-\c@maxnames=\count330
-\c@minnames=\count331
-\c@maxitems=\count332
-\c@minitems=\count333
-\c@citecounter=\count334
-\c@maxcitecounter=\count335
-\c@savedcitecounter=\count336
-\c@uniquelist=\count337
-\c@uniquename=\count338
-\c@refsection=\count339
-\c@refsegment=\count340
-\c@maxextratitle=\count341
-\c@maxextratitleyear=\count342
-\c@maxextraname=\count343
-\c@maxextradate=\count344
-\c@maxextraalpha=\count345
-\c@abbrvpenalty=\count346
-\c@highnamepenalty=\count347
-\c@lownamepenalty=\count348
-\c@maxparens=\count349
-\c@parenlevel=\count350
-\blx@tempcnta=\count351
-\blx@tempcntb=\count352
-\blx@tempcntc=\count353
-\blx@maxsection=\count354
-\blx@maxsegment@0=\count355
-\blx@notetype=\count356
-\blx@parenlevel@text=\count357
-\blx@parenlevel@foot=\count358
-\blx@sectionciteorder@0=\count359
-\blx@entrysetcounter=\count360
-\blx@biblioinstance=\count361
+\c@tabx@nest=\count331
+\c@listtotal=\count332
+\c@listcount=\count333
+\c@liststart=\count334
+\c@liststop=\count335
+\c@citecount=\count336
+\c@citetotal=\count337
+\c@multicitecount=\count338
+\c@multicitetotal=\count339
+\c@instcount=\count340
+\c@maxnames=\count341
+\c@minnames=\count342
+\c@maxitems=\count343
+\c@minitems=\count344
+\c@citecounter=\count345
+\c@maxcitecounter=\count346
+\c@savedcitecounter=\count347
+\c@uniquelist=\count348
+\c@uniquename=\count349
+\c@refsection=\count350
+\c@refsegment=\count351
+\c@maxextratitle=\count352
+\c@maxextratitleyear=\count353
+\c@maxextraname=\count354
+\c@maxextradate=\count355
+\c@maxextraalpha=\count356
+\c@abbrvpenalty=\count357
+\c@highnamepenalty=\count358
+\c@lownamepenalty=\count359
+\c@maxparens=\count360
+\c@parenlevel=\count361
+\blx@tempcnta=\count362
+\blx@tempcntb=\count363
+\blx@tempcntc=\count364
+\blx@maxsection=\count365
+\blx@maxsegment@0=\count366
+\blx@notetype=\count367
+\blx@parenlevel@text=\count368
+\blx@parenlevel@foot=\count369
+\blx@sectionciteorder@0=\count370
+\blx@entrysetcounter=\count371
+\blx@biblioinstance=\count372
 \labelnumberwidth=\skip75
 \labelalphawidth=\skip76
 \biblabelsep=\skip77
@@ -604,9 +628,9 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@bcfin=\read4
 \blx@bcfout=\write4
 \blx@langwohyphens=\language88
-\c@mincomprange=\count362
-\c@maxcomprange=\count363
-\c@mincompwidth=\count364
+\c@mincomprange=\count373
+\c@maxcomprange=\count374
+\c@mincompwidth=\count375
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -616,74 +640,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count365
-\c@savedafterword=\count366
-\c@annotator=\count367
-\c@savedannotator=\count368
-\c@author=\count369
-\c@savedauthor=\count370
-\c@bookauthor=\count371
-\c@savedbookauthor=\count372
-\c@commentator=\count373
-\c@savedcommentator=\count374
-\c@editor=\count375
-\c@savededitor=\count376
-\c@editora=\count377
-\c@savededitora=\count378
-\c@editorb=\count379
-\c@savededitorb=\count380
-\c@editorc=\count381
-\c@savededitorc=\count382
-\c@foreword=\count383
-\c@savedforeword=\count384
-\c@holder=\count385
-\c@savedholder=\count386
-\c@introduction=\count387
-\c@savedintroduction=\count388
-\c@namea=\count389
-\c@savednamea=\count390
-\c@nameb=\count391
-\c@savednameb=\count392
-\c@namec=\count393
-\c@savednamec=\count394
-\c@translator=\count395
-\c@savedtranslator=\count396
-\c@shortauthor=\count397
-\c@savedshortauthor=\count398
-\c@shorteditor=\count399
-\c@savedshorteditor=\count400
-\c@labelname=\count401
-\c@savedlabelname=\count402
-\c@institution=\count403
-\c@savedinstitution=\count404
-\c@lista=\count405
-\c@savedlista=\count406
-\c@listb=\count407
-\c@savedlistb=\count408
-\c@listc=\count409
-\c@savedlistc=\count410
-\c@listd=\count411
-\c@savedlistd=\count412
-\c@liste=\count413
-\c@savedliste=\count414
-\c@listf=\count415
-\c@savedlistf=\count416
-\c@location=\count417
-\c@savedlocation=\count418
-\c@organization=\count419
-\c@savedorganization=\count420
-\c@origlocation=\count421
-\c@savedoriglocation=\count422
-\c@origpublisher=\count423
-\c@savedorigpublisher=\count424
-\c@publisher=\count425
-\c@savedpublisher=\count426
-\c@language=\count427
-\c@savedlanguage=\count428
-\c@origlanguage=\count429
-\c@savedoriglanguage=\count430
-\c@pageref=\count431
-\c@savedpageref=\count432
+\c@afterword=\count376
+\c@savedafterword=\count377
+\c@annotator=\count378
+\c@savedannotator=\count379
+\c@author=\count380
+\c@savedauthor=\count381
+\c@bookauthor=\count382
+\c@savedbookauthor=\count383
+\c@commentator=\count384
+\c@savedcommentator=\count385
+\c@editor=\count386
+\c@savededitor=\count387
+\c@editora=\count388
+\c@savededitora=\count389
+\c@editorb=\count390
+\c@savededitorb=\count391
+\c@editorc=\count392
+\c@savededitorc=\count393
+\c@foreword=\count394
+\c@savedforeword=\count395
+\c@holder=\count396
+\c@savedholder=\count397
+\c@introduction=\count398
+\c@savedintroduction=\count399
+\c@namea=\count400
+\c@savednamea=\count401
+\c@nameb=\count402
+\c@savednameb=\count403
+\c@namec=\count404
+\c@savednamec=\count405
+\c@translator=\count406
+\c@savedtranslator=\count407
+\c@shortauthor=\count408
+\c@savedshortauthor=\count409
+\c@shorteditor=\count410
+\c@savedshorteditor=\count411
+\c@labelname=\count412
+\c@savedlabelname=\count413
+\c@institution=\count414
+\c@savedinstitution=\count415
+\c@lista=\count416
+\c@savedlista=\count417
+\c@listb=\count418
+\c@savedlistb=\count419
+\c@listc=\count420
+\c@savedlistc=\count421
+\c@listd=\count422
+\c@savedlistd=\count423
+\c@liste=\count424
+\c@savedliste=\count425
+\c@listf=\count426
+\c@savedlistf=\count427
+\c@location=\count428
+\c@savedlocation=\count429
+\c@organization=\count430
+\c@savedorganization=\count431
+\c@origlocation=\count432
+\c@savedoriglocation=\count433
+\c@origpublisher=\count434
+\c@savedorigpublisher=\count435
+\c@publisher=\count436
+\c@savedpublisher=\count437
+\c@language=\count438
+\c@savedlanguage=\count439
+\c@origlanguage=\count440
+\c@savedoriglanguage=\count441
+\c@pageref=\count442
+\c@savedpageref=\count443
 \shorthandwidth=\skip83
 \shortjournalwidth=\skip84
 \shortserieswidth=\skip85
@@ -710,19 +734,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
-\c@textcitecount=\count433
-\c@textcitetotal=\count434
-\c@textcitemaxnames=\count435
-\c@biburlbigbreakpenalty=\count436
-\c@biburlbreakpenalty=\count437
-\c@biburlnumpenalty=\count438
-\c@biburlucpenalty=\count439
-\c@biburllcpenalty=\count440
+\c@textcitecount=\count444
+\c@textcitetotal=\count445
+\c@textcitemaxnames=\count446
+\c@biburlbigbreakpenalty=\count447
+\c@biburlbreakpenalty=\count448
+\c@biburlnumpenalty=\count449
+\c@biburlucpenalty=\count450
+\c@biburllcpenalty=\count451
 \biburlbigskip=\muskip17
 \biburlnumskip=\muskip18
 \biburlucskip=\muskip19
 \biburllcskip=\muskip20
-\c@smartand=\count441
+\c@smartand=\count452
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -732,8 +756,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count442
-\c@bbx:relatedtotal=\count443
+\c@bbx:relatedcount=\count453
+\c@bbx:relatedtotal=\count454
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -770,7 +794,7 @@ Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 Writing index file main.idx
 (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2021/07/05 v2.14 TOC entries
-\ttl@leftsep=\dimen310
+\ttl@leftsep=\dimen313
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip97
@@ -792,44 +816,44 @@ Package: amstext 2000/06/29 v2.01 AMS text
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks36
-\ex@=\dimen311
+\ex@=\dimen314
 )) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen312
+\pmbraise@=\dimen315
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count444
+\inf@bad=\count455
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count445
-\leftroot@=\count446
+\uproot@=\count456
+\leftroot@=\count457
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count447
-\DOTSCASE@=\count448
+\classnum@=\count458
+\DOTSCASE@=\count459
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
 \Mathstrutbox@=\box78
 \strutbox@=\box79
-\big@size=\dimen313
+\big@size=\dimen316
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count449
-\c@MaxMatrixCols=\count450
+\macc@depth=\count460
+\c@MaxMatrixCols=\count461
 \dotsspace@=\muskip21
-\c@parentequation=\count451
-\dspbrk@lvl=\count452
+\c@parentequation=\count462
+\dspbrk@lvl=\count463
 \tag@help=\toks37
-\row@=\count453
-\column@=\count454
-\maxfields@=\count455
+\row@=\count464
+\column@=\count465
+\maxfields@=\count466
 \andhelp@=\toks38
-\eqnshift@=\dimen314
-\alignsep@=\dimen315
-\tagshift@=\dimen316
-\tagwidth@=\dimen317
-\totwidth@=\dimen318
-\lineht@=\dimen319
+\eqnshift@=\dimen317
+\alignsep@=\dimen318
+\tagshift@=\dimen319
+\tagwidth@=\dimen320
+\totwidth@=\dimen321
+\lineht@=\dimen322
 \@envbody=\toks39
 \multlinegap=\skip107
 \multlinetaggap=\skip108
@@ -857,13 +881,13 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headsep=\skip111
 \dth@everypar=\toks46
 )
-\c@notation=\count456
-\c@dummy=\count457
-\c@problem=\count458
-\c@exerciseT=\count459
-\c@exampleT=\count460
-\c@vocabulary=\count461
-\c@definitionT=\count462
+\c@notation=\count467
+\c@dummy=\count468
+\c@problem=\count469
+\c@exerciseT=\count470
+\c@exampleT=\count471
+\c@vocabulary=\count472
+\c@definitionT=\count473
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/mdframed/mdframed.sty
 Package: mdframed 2013/07/01 1.9b: mdframed
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/zref/zref-abspage.sty
@@ -884,13 +908,13 @@ Package zref Info: New property: page on input line 766.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\c@abspage=\count463
+\c@abspage=\count474
 Package zref Info: New property: abspage on input line 66.
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/needspace/needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
 \mdf@templength=\skip112
-\c@mdf@globalstyle@cnt=\count464
+\c@mdf@globalstyle@cnt=\count475
 \mdf@skipabove@length=\skip113
 \mdf@skipbelow@length=\skip114
 \mdf@leftmargin@length=\skip115
@@ -965,16 +989,16 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \mdf@horizontalspaceofbox=\skip176
 \mdfsubtitleheight=\skip177
 \mdfsubsubtitleheight=\skip178
-\c@mdfcountframes=\count465
+\c@mdfcountframes=\count476
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count466
-\c@mdf@env@i=\count467
-\c@mdf@env@ii=\count468
-\c@mdf@zref@counter=\count469
+\mdf@envdepth=\count477
+\c@mdf@env@i=\count478
+\c@mdf@env@ii=\count479
+\c@mdf@zref@counter=\count480
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
 \esp=\skip179
@@ -988,9 +1012,9 @@ Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-\@linkdim=\dimen320
-\Hy@linkcounter=\count470
-\Hy@pagecounter=\count471
+\@linkdim=\dimen323
+\Hy@linkcounter=\count481
+\Hy@pagecounter=\count482
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
@@ -998,7 +1022,7 @@ File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel lan
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count472
+\Hy@SavedSpaceFactor=\count483
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
 )
@@ -1009,17 +1033,17 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count473
+\c@Hy@tempcnt=\count484
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen321
+\XeTeXLinkMargin=\dimen324
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count474
-\Field@Width=\dimen322
-\Fld@charsize=\dimen323
+\Fld@menulength=\count485
+\Field@Width=\dimen325
+\Fld@charsize=\dimen326
 Package hyperref Info: Hyper figures OFF on input line 6076.
 Package hyperref Info: Link nesting OFF on input line 6081.
 Package hyperref Info: Hyper index ON on input line 6084.
@@ -1029,9 +1053,9 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6101.
 Package hyperref Info: PDF/A mode OFF on input line 6106.
 LaTeX Info: Redefining \ref on input line 6146.
 LaTeX Info: Redefining \pageref on input line 6150.
-\Hy@abspage=\count475
-\c@Item=\count476
-\c@Hfootnote=\count477
+\Hy@abspage=\count486
+\c@Item=\count487
+\c@Hfootnote=\count488
 )
 Package hyperref Info: Driver (autodetected): hxetex.
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/hyperref/hxetex.def
@@ -1040,10 +1064,10 @@ File: hxetex.def 2021-06-07 v7.00m Hyperref driver for XeTeX
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
 \pdfm@box=\box85
-\c@Hy@AnnotLevel=\count478
-\HyField@AnnotCount=\count479
-\Fld@listcount=\count480
-\c@bookmark@seq@number=\count481
+\c@Hy@AnnotLevel=\count489
+\HyField@AnnotCount=\count490
+\Fld@listcount=\count491
+\c@bookmark@seq@number=\count492
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/base/atveryend-ltx.sty
@@ -1058,36 +1082,36 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 
 Package hyperref Warning: Option `backref' has already been used,
-(hyperref)                setting the option has no effect on input line 656.
+(hyperref)                setting the option has no effect on input line 661.
 
 
 Package hyperref Warning: Option `pagebackref' has already been used,
-(hyperref)                setting the option has no effect on input line 656.
+(hyperref)                setting the option has no effect on input line 661.
 
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 656.
+(hyperref)                setting the option has no effect on input line 661.
 
-Package hyperref Info: Option `colorlinks' set `false' on input line 656.
-Package hyperref Info: Option `breaklinks' set `true' on input line 656.
+Package hyperref Info: Option `colorlinks' set `false' on input line 661.
+Package hyperref Info: Option `breaklinks' set `true' on input line 661.
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 656.
+(hyperref)                setting the option has no effect on input line 661.
 
-Package hyperref Info: Option `bookmarksopen' set `false' on input line 656.
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 661.
 (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
 File: bkm-dvipdfm.def 2020-11-06 v1.29 bookmark driver for dvipdfm (HO)
-\BKM@id=\count482
+\BKM@id=\count493
 )) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2021/03/14 v2.8c Micro-typographical refinements (RS)
 \MT@toks=\toks47
-\MT@count=\count483
+\MT@count=\count494
 LaTeX Info: Redefining \textls on input line 790.
-\MT@outer@kern=\dimen324
+\MT@outer@kern=\dimen327
 LaTeX Info: Redefining \textmicrotypecontext on input line 1374.
-\MT@listname@count=\count484
+\MT@listname@count=\count495
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/microtype/microtype-xetex.def
 File: microtype-xetex.def 2021/03/14 v2.8c Definitions specific to xetex (RS)
 LaTeX Info: Redefining \lsstyle on input line 254.
@@ -1108,18 +1132,18 @@ Package: ctexhook 2021/06/20 v2.5.7 Document and package hooks (CTEX)
 Package: l3keys2e 2021-06-18 LaTeX2e option processing using LaTeX3 keys
 ) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2021-06-18 L3 Experimental prototype document functions
-\l__xtemplate_tmp_dim=\dimen325
-\l__xtemplate_tmp_int=\count485
+\l__xtemplate_tmp_dim=\dimen328
+\l__xtemplate_tmp_int=\count496
 \l__xtemplate_tmp_muskip=\muskip22
 \l__xtemplate_tmp_skip=\skip182
 )
-\l__xeCJK_tmp_int=\count486
+\l__xeCJK_tmp_int=\count497
 \l__xeCJK_tmp_box=\box86
-\l__xeCJK_tmp_dim=\dimen326
+\l__xeCJK_tmp_dim=\dimen329
 \l__xeCJK_tmp_skip=\skip183
-\g__xeCJK_space_factor_int=\count487
-\l__xeCJK_begin_int=\count488
-\l__xeCJK_end_int=\count489
+\g__xeCJK_space_factor_int=\count498
+\l__xeCJK_begin_int=\count499
+\l__xeCJK_end_int=\count500
 \c__xeCJK_CJK_class_int=\XeTeXcharclass1
 \c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
 \c__xeCJK_FullRight_class_int=\XeTeXcharclass3
@@ -1129,69 +1153,49 @@ Package: xtemplate 2021-06-18 L3 Experimental prototype document functions
 \c__xeCJK_CM_class_int=\XeTeXcharclass7
 \c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
 \l__xeCJK_last_skip=\skip184
-\g__xeCJK_node_int=\count490
-\c__xeCJK_CJK_node_dim=\dimen327
-\c__xeCJK_CJK-space_node_dim=\dimen328
-\c__xeCJK_default_node_dim=\dimen329
-\c__xeCJK_default-space_node_dim=\dimen330
-\c__xeCJK_CJK-widow_node_dim=\dimen331
-\c__xeCJK_normalspace_node_dim=\dimen332
+\g__xeCJK_node_int=\count501
+\c__xeCJK_CJK_node_dim=\dimen330
+\c__xeCJK_CJK-space_node_dim=\dimen331
+\c__xeCJK_default_node_dim=\dimen332
+\c__xeCJK_default-space_node_dim=\dimen333
+\c__xeCJK_CJK-widow_node_dim=\dimen334
+\c__xeCJK_normalspace_node_dim=\dimen335
 \l__xeCJK_ccglue_skip=\skip185
 \l__xeCJK_ecglue_skip=\skip186
 \l__xeCJK_punct_kern_skip=\skip187
-\l__xeCJK_last_penalty_int=\count491
-\l__xeCJK_last_bound_dim=\dimen333
-\l__xeCJK_last_kern_dim=\dimen334
-\l__xeCJK_widow_penalty_int=\count492
+\l__xeCJK_last_penalty_int=\count502
+\l__xeCJK_last_bound_dim=\dimen336
+\l__xeCJK_last_kern_dim=\dimen337
+\l__xeCJK_widow_penalty_int=\count503
 
 Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
 (xtemplate)             argument(s) on line 2335.
 
-\l__xeCJK_fixed_punct_width_dim=\dimen335
-\l__xeCJK_mixed_punct_width_dim=\dimen336
-\l__xeCJK_middle_punct_width_dim=\dimen337
-\l__xeCJK_fixed_margin_width_dim=\dimen338
-\l__xeCJK_mixed_margin_width_dim=\dimen339
-\l__xeCJK_middle_margin_width_dim=\dimen340
-\l__xeCJK_bound_punct_width_dim=\dimen341
-\l__xeCJK_bound_margin_width_dim=\dimen342
-\l__xeCJK_margin_minimum_dim=\dimen343
-\l__xeCJK_kerning_total_width_dim=\dimen344
-\l__xeCJK_same_align_margin_dim=\dimen345
-\l__xeCJK_different_align_margin_dim=\dimen346
-\l__xeCJK_kerning_margin_width_dim=\dimen347
-\l__xeCJK_kerning_margin_minimum_dim=\dimen348
-\l__xeCJK_bound_dim=\dimen349
-\l__xeCJK_reverse_bound_dim=\dimen350
-\l__xeCJK_margin_dim=\dimen351
-\l__xeCJK_minimum_bound_dim=\dimen352
-\l__xeCJK_kerning_margin_dim=\dimen353
-\g__xeCJK_family_int=\count493
-\l__xeCJK_fam_int=\count494
-\g__xeCJK_fam_allocation_int=\count495
-\l__xeCJK_verb_case_int=\count496
+\l__xeCJK_fixed_punct_width_dim=\dimen338
+\l__xeCJK_mixed_punct_width_dim=\dimen339
+\l__xeCJK_middle_punct_width_dim=\dimen340
+\l__xeCJK_fixed_margin_width_dim=\dimen341
+\l__xeCJK_mixed_margin_width_dim=\dimen342
+\l__xeCJK_middle_margin_width_dim=\dimen343
+\l__xeCJK_bound_punct_width_dim=\dimen344
+\l__xeCJK_bound_margin_width_dim=\dimen345
+\l__xeCJK_margin_minimum_dim=\dimen346
+\l__xeCJK_kerning_total_width_dim=\dimen347
+\l__xeCJK_same_align_margin_dim=\dimen348
+\l__xeCJK_different_align_margin_dim=\dimen349
+\l__xeCJK_kerning_margin_width_dim=\dimen350
+\l__xeCJK_kerning_margin_minimum_dim=\dimen351
+\l__xeCJK_bound_dim=\dimen352
+\l__xeCJK_reverse_bound_dim=\dimen353
+\l__xeCJK_margin_dim=\dimen354
+\l__xeCJK_minimum_bound_dim=\dimen355
+\l__xeCJK_kerning_margin_dim=\dimen356
+\g__xeCJK_family_int=\count504
+\l__xeCJK_fam_int=\count505
+\g__xeCJK_fam_allocation_int=\count506
+\l__xeCJK_verb_case_int=\count507
 \l__xeCJK_verb_exspace_skip=\skip188
- (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.sty
-Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
- (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
-Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
-\l__fontspec_script_int=\count497
-\l__fontspec_language_int=\count498
-\l__fontspec_strnum_int=\count499
-\l__fontspec_tmp_int=\count500
-\l__fontspec_tmpa_int=\count501
-\l__fontspec_tmpb_int=\count502
-\l__fontspec_tmpc_int=\count503
-\l__fontspec_em_int=\count504
-\l__fontspec_emdef_int=\count505
-\l__fontspec_strong_int=\count506
-\l__fontspec_strongdef_int=\count507
-\l__fontspec_tmpa_dim=\dimen354
-\l__fontspec_tmpb_dim=\dimen355
-\l__fontspec_tmpc_dim=\dimen356
- (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (d:/ProgramFiles/texlive/2021/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
+ (d:/ProgramFiles/texlive/2021/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
 Package: xeCJK-listings 2021/06/20 v3.8.7 xeCJK patch file for listings
 \l__xeCJK_listings_max_char_int=\count508
 \l__xeCJK_listings_flag_int=\count509
@@ -1505,12 +1509,12 @@ Package fontspec Info: Font family 'CascadiaCode(0)' created for font
 (fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
 (fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
 
-LaTeX Font Info:    Trying to load font information for T1+TeXGyreScholaX-TLF on input line 724.
+LaTeX Font Info:    Trying to load font information for T1+TeXGyreScholaX-TLF on input line 729.
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/scholax/T1TeXGyreScholaX-TLF.fd
 File: T1TeXGyreScholaX-TLF.fd 2017/07/11 (autoinst) Font definitions for T1/TeXGyreScholaX-TLF.
 )
 LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 724.
+(Font)              scaled to size 10.95pt on input line 729.
 
 Package fontspec Info: Font family 'FZPingXYSJW.TTF(0)' created for font
 (fontspec)             'FZPingXYSJW.TTF' with options
@@ -1562,7 +1566,71 @@ File: T1TeXGyreScholaX-OsF.fd 2017/07/11 (autoinst) Font definitions for T1/TeXG
 )
 LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 71.
- (./main.aux)
+ (./main.aux
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 5.
+ (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+
+Package fontspec Info: Font family 'PingFangHeavy.ttf(0)' created for font
+(fontspec)             'PingFang Heavy.ttf' with options
+(fontspec)             [Script={CJK},BoldFont={PingFang
+(fontspec)             Heavy.ttf},ItalicFont={PingFang Heavy.ttf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"[PingFang
+(fontspec)             Heavy.ttf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"[PingFang
+(fontspec)             Heavy.ttf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"[PingFang
+(fontspec)             Heavy.ttf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+
+LaTeX Font Info:    Trying to load font information for T1+CascadiaCode(0) on input line 5.
+LaTeX Font Info:    No file T1CascadiaCode(0).fd. on input line 5.
+
+
+LaTeX Font Warning: Font shape `T1/CascadiaCode(0)/m/n' undefined
+(Font)              using `T1/cmr/m/n' instead on input line 5.
+
+
+Package fontspec Info: Font family 'FZFSK.TTF(0)' created for font 'FZFSK.TTF'
+(fontspec)             with options [Script={CJK},BoldFont={PingFang
+(fontspec)             Heavy.ttf},ItalicFont={PingFang Heavy.ttf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[FZFSK.TTF]/OT:script=hani;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"[PingFang
+(fontspec)             Heavy.ttf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"[PingFang
+(fontspec)             Heavy.ttf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+
+
+Package babel Info: The following font families will use the default
+(babel)             settings for all or some languages:
+(babel)             * \rmfamily = TeXGyreScholaX-OsF
+(babel)               TeXGyreScholaX-Regular-osf-t1 at 10.95pt
+(babel)             * \sffamily = lmss
+(babel)               ec-lmss10 at 10.95pt
+(babel)             * \ttfamily = CascadiaCode(0)
+(babel)               "Cascadia Code Regular/OT:script=latn;language=dflt;" at 10.95pt
+(babel)             There is nothing intrinsically wrong with it, but
+(babel)             'babel' will no set Script and Language, which could
+(babel)             be relevant in some languages. If your document uses
+(babel)             these families, consider redefining them with \babelfont.
+(babel)             Reported on input line 5.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/zncfmi/m/it on input line 71.
@@ -1655,6 +1723,12 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+Package biblatex Info: Trying to load language 'japanese'...
+Package biblatex Info: ... file 'japanese.lbx' not found.
+
+Package biblatex Warning: Language 'japanese' not supported.
+(biblatex)                Using dummy definitions on input line 71.
+
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -1712,33 +1786,10 @@ LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/m/n' will be
 (Font)              scaled to size 24.88pt on input line 6.
 LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/b/n' will be
 (Font)              scaled to size 24.88pt on input line 6.
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 6.
- (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/lm/t1lmss.fd
-File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-Package fontspec Info: Font family 'PingFangHeavy.ttf(0)' created for font
-(fontspec)             'PingFang Heavy.ttf' with options
-(fontspec)             [Script={CJK},BoldFont={PingFang
-(fontspec)             Heavy.ttf},ItalicFont={PingFang Heavy.ttf}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"[PingFang
-(fontspec)             Heavy.ttf]/OT:script=hani;language=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"[PingFang
-(fontspec)             Heavy.ttf]/OT:script=hani;language=dflt;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"[PingFang
-(fontspec)             Heavy.ttf]/OT:script=hani;language=dflt;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
-
 LaTeX Font Info:    Trying to load font information for OT1+TeXGyreScholaX-TLF on input line 8.
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/scholax/OT1TeXGyreScholaX-TLF.fd
 File: OT1TeXGyreScholaX-TLF.fd 2017/07/11 (autoinst) Font definitions for OT1/TeXGyreScholaX-TLF.
@@ -2487,38 +2538,6 @@ LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/m/sc' will be
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/TeXGyreScholaX-OsF/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Trying to load font information for T1+CascadiaCode(0) on input line 94.
-LaTeX Font Info:    No file T1CascadiaCode(0).fd. on input line 94.
-
-LaTeX Font Warning: Font shape `T1/CascadiaCode(0)/m/sc' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 94.
-
-(d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `CascadiaCode' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-Package fontspec Info: Font family 'FZFSK.TTF(0)' created for font 'FZFSK.TTF'
-(fontspec)             with options [Script={CJK},BoldFont={PingFang
-(fontspec)             Heavy.ttf},ItalicFont={PingFang Heavy.ttf}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[FZFSK.TTF]/OT:script=hani;language=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"[PingFang
-(fontspec)             Heavy.ttf]/OT:script=hani;language=dflt;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"[PingFang
-(fontspec)             Heavy.ttf]/OT:script=hani;language=dflt;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
-
-
 
 LaTeX Font Warning: Font shape `TU/CascadiaCode(0)/m/sc' undefined
 (Font)              using `TU/CascadiaCode(0)/m/n' instead on input line 94.
@@ -2836,17 +2855,18 @@ Package microtype Info: Character `\textexclamdown ' is missing
 Package microtype Info: Character `\textquestiondown ' is missing
 (microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5.5'.
 (microtype)             Ignoring protrusion settings for this character.
- [4] [5])
+ [4] [5] [6])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [6] (./vocabulary/vocabulary-index.tex) (./math/math-index.tex
-\c@ttl@toc@default=\count521
- (./main.ptc) [7
+ [7] [8
 
+] (./vocabulary/vocabulary-index.tex) (./math/math-index.tex
+\c@ttl@toc@default=\count521
+ (./main.ptc) [9
 
 ] (./math/vector.tex
-Chapter 1.
+\bbl@ensure@english {Chapter} 1.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
 Package mdframed Info: mdframed works in twoside mode on input line 5.
@@ -2986,7 +3006,7 @@ Package mdframed Info: mdframed detected package amsthm
 
 Underfull \vbox (badness 8056) has occurred while \output is active []
 
- [8
+ [10
 
 ]
 Package mdframed Info: mdframed works in twoside mode on input line 48.
@@ -3069,7 +3089,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 122.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 122.
- [9]
+ [11]
 Package mdframed Info: Not enough space on this page on input line 124.
 Package mdframed Info: mdframed works in twoside mode on input line 155.
 Package mdframed Info: mdframed detected package amsthm 
@@ -3083,7 +3103,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 179.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 179.
- [10]
+ [12]
 Package mdframed Info: mdframed works in twoside mode on input line 217.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -3108,7 +3128,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 237.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 237.
- [11]
+ [13]
 LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/b/n' will be
 (Font)              scaled to size 6.5pt on input line 245.
 LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/b/n' will be
@@ -3117,28 +3137,32 @@ Package mdframed Info: mdframed works in twoside mode on input line 270.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 270.
-Package mdframed Info: mdframed works in twoside mode on input line 301.
+Package mdframed Info: mdframed works in twoside mode on input line 304.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 301.
- [12]
-Package mdframed Info: Not enough space on this page on input line 303.
-Package mdframed Info: mdframed works in twoside mode on input line 331.
+(mdframed)              on input line 304.
+ [14]
+Package mdframed Info: Not enough space on this page on input line 306.
+Package mdframed Info: mdframed works in twoside mode on input line 320.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 331.
-LaTeX Font Info:    Trying to load font information for TS1+TeXGyreScholaX-OsF on input line 335.
+(mdframed)              on input line 320.
+Package mdframed Info: mdframed works in twoside mode on input line 340.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 340.
+LaTeX Font Info:    Trying to load font information for TS1+TeXGyreScholaX-OsF on input line 344.
  (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/scholax/TS1TeXGyreScholaX-OsF.fd
 File: TS1TeXGyreScholaX-OsF.fd 2017/07/11 (autoinst) Font definitions for TS1/TeXGyreScholaX-OsF.
 )
 LaTeX Font Info:    Font shape `TS1/TeXGyreScholaX-OsF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 335.
+(Font)              scaled to size 10.95pt on input line 344.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `TeXGyreScholaX-OsF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) (./math/linear-function.tex [13]
-Chapter 2.
+) (./math/linear-function.tex [15]
+\bbl@ensure@english {Chapter} 2.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
 Package mdframed Info: mdframed works in twoside mode on input line 5.
@@ -3156,7 +3180,7 @@ Package mdframed Warning: You got a bad break
 (mdframed)                by changing the text, the space
 (mdframed)                or something else on input line 40.
 
-[14
+[16
 
 ]
 Package mdframed Info: mdframed works in twoside mode on input line 42.
@@ -3187,7 +3211,7 @@ LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/b/n' will be
 (Font)              scaled to size 10.0pt on input line 87.
 LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/b/n' will be
 (Font)              scaled to size 7.3pt on input line 87.
- [15]
+ [17]
 Package mdframed Info: mdframed works in twoside mode on input line 93.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -3203,7 +3227,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 139.
- [16]
+ [18]
 Package mdframed Info: mdframed works in twoside mode on input line 141.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -3225,17 +3249,17 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 178.
 Package mdframed Info: Not enough space on this page on input line 183.
- [17]
+ [19]
 Package mdframed Info: Not enough space on this page on input line 183.
-) (./math/norm-and-distance.tex [18]
-Chapter 3.
+) (./math/norm-and-distance.tex [20]
+\bbl@ensure@english {Chapter} 3.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
 Package mdframed Info: mdframed works in twoside mode on input line 5.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 5.
-[19
+[21
 
 ]
 Package mdframed Info: mdframed works in twoside mode on input line 40.
@@ -3262,7 +3286,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 74.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 74.
- [20]
+ [22]
 Package mdframed Info: mdframed works in twoside mode on input line 80.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -3291,7 +3315,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 127.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 127.
- [21]
+ [23]
 Package mdframed Info: Not enough space on this page on input line 129.
 Package mdframed Info: mdframed works in twoside mode on input line 133.
 Package mdframed Info: mdframed detected package amsthm 
@@ -3325,7 +3349,7 @@ Missing character: There is no ° ("B0) in font TeXGyreScholaX-Regular-tlf-ot1G!
 Missing character: There is no ° ("B0) in font TeXGyreScholaX-Regular-tlf-ot1G!
 Missing character: There is no ° ("B0) in font TeXGyreScholaX-Regular-tlf-ot1G!
 Missing character: There is no ° ("B0) in font TeXGyreScholaX-Regular-tlf-ot1G!
- [22]
+ [24]
 Package mdframed Info: mdframed works in twoside mode on input line 187.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -3334,8 +3358,8 @@ Package mdframed Info: mdframed works in twoside mode on input line 197.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 197.
-) (./math/kmeans.tex [23]
-Chapter 4.
+) (./math/kmeans.tex [25]
+\bbl@ensure@english {Chapter} 4.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
 Package mdframed Info: mdframed works in twoside mode on input line 12.
@@ -3346,7 +3370,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 21.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 21.
-[24
+[26
 
 ]
 Package mdframed Info: mdframed works in twoside mode on input line 68.
@@ -3358,7 +3382,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 78.
 Missing character: There is no • ("2022) in font TeXGyreScholaX-Regular-osf-t1!
- [25]
+ [27]
 Package mdframed Info: mdframed works in twoside mode on input line 114.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -3371,11 +3395,11 @@ Package mdframed Info: mdframed works in twoside mode on input line 171.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 171.
- [26] [27]
+ [28] [29]
 LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 335.
- [28]) (./math/linear-independent.tex [29]
-Chapter 5.
+(Font)              scaled to size 8.0pt on input line 363.
+ [30] [31]) (./math/linear-independent.tex [32]
+\bbl@ensure@english {Chapter} 5.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
 Package mdframed Info: mdframed works in twoside mode on input line 5.
@@ -3401,7 +3425,7 @@ Package mdframed Info: mdframed detected package amsthm
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30
+ [33
 
 ]
 Package mdframed Info: mdframed works in twoside mode on input line 50.
@@ -3425,7 +3449,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 103.
 Package mdframed Info: Not enough space on this page on input line 108.
- [31]
+ [34]
 Package mdframed Info: Not enough space on this page on input line 108.
 Package mdframed Info: mdframed works in twoside mode on input line 110.
 Package mdframed Info: mdframed detected package amsthm 
@@ -3439,7 +3463,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 168.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 168.
- [32]
+ [35]
 Package mdframed Info: Not enough space on this page on input line 170.
 Package mdframed Info: mdframed works in twoside mode on input line 172.
 Package mdframed Info: mdframed detected package amsthm 
@@ -3449,32 +3473,81 @@ Package mdframed Info: mdframed works in twoside mode on input line 209.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 209.
- [33]
-Package mdframed Info: mdframed works in twoside mode on input line 245.
+ [36]
+Package mdframed Info: mdframed works in twoside mode on input line 246.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 245.
-Package mdframed Info: mdframed works in twoside mode on input line 264.
+(mdframed)              on input line 246.
+Package mdframed Info: mdframed works in twoside mode on input line 265.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 264.
-Package mdframed Info: mdframed works in twoside mode on input line 269.
+(mdframed)              on input line 265.
+Package mdframed Info: mdframed works in twoside mode on input line 270.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 269.
- [34]
-Package mdframed Info: mdframed works in twoside mode on input line 290.
+(mdframed)              on input line 270.
+ [37]
+Package mdframed Info: mdframed works in twoside mode on input line 291.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 290.
-Package mdframed Info: mdframed works in twoside mode on input line 305.
+(mdframed)              on input line 291.
+Package mdframed Info: mdframed works in twoside mode on input line 306.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 305.
-) [35] (./main.ptc) [36
+(mdframed)              on input line 306.
+) [38] (./main.ptc
+LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 97.
+LaTeX Font Info:    Font shape `OML/zncfmi/m/it' will be
+(Font)              scaled to size 9.67497pt on input line 97.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 9.67497pt on input line 97.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 9.67497pt on input line 97.
+LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 97.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 9.67497pt on input line 97.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 9.67497pt on input line 97.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 9.67497pt on input line 97.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 9.67497pt on input line 97.
+Package microtype Info: Character `\textendash ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+) [39
 
 ] (./math/matrices.tex
-Chapter 6.
+\bbl@ensure@english {Chapter} 6.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
 Package mdframed Info: mdframed works in twoside mode on input line 5.
@@ -3501,7 +3574,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 44.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 44.
-[37
+[40
 
 ]
 Package mdframed Info: mdframed works in twoside mode on input line 54.
@@ -3536,7 +3609,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 115.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 115.
- [38]
+ [41]
 Package mdframed Info: Not enough space on this page on input line 122.
 Package mdframed Info: mdframed works in twoside mode on input line 125.
 Package mdframed Info: mdframed detected package amsthm 
@@ -3567,13 +3640,13 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 209.
 Package mdframed Info: Not enough space on this page on input line 211.
- [39] [40]
+ [42] [43]
 Package mdframed Info: Not enough space on this page on input line 211.
 Package mdframed Info: mdframed works in twoside mode on input line 225.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 225.
- [41] [42]
+ [44] [45]
 Package mdframed Info: mdframed works in twoside mode on input line 318.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -3606,13 +3679,30 @@ Package mdframed Info: mdframed works in twoside mode on input line 362.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 362.
- [43]
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 368.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 368.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 368.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 368.
+
+[46]
 Package mdframed Info: mdframed works in twoside mode on input line 421.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 421.
 Package mdframed Info: Not enough space on this page on input line 423.
- [44]
+ [47]
 Package mdframed Info: Not enough space on this page on input line 423.
 Package mdframed Info: mdframed works in twoside mode on input line 425.
 Package mdframed Info: mdframed detected package amsthm 
@@ -3634,7 +3724,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 553.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 553.
- [45]
+ [48]
 Package mdframed Info: Not enough space on this page on input line 560.
 Package mdframed Info: mdframed works in twoside mode on input line 562.
 Package mdframed Info: mdframed detected package amsthm 
@@ -3657,7 +3747,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 652.
 Package mdframed Info: Not enough space on this page on input line 654.
- [46]
+ [49]
 Package mdframed Info: Not enough space on this page on input line 654.
 Package mdframed Info: mdframed works in twoside mode on input line 658.
 Package mdframed Info: mdframed detected package amsthm 
@@ -3680,7 +3770,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 721.
 Package mdframed Info: Not enough space on this page on input line 727.
- [47]
+ [50]
 Package mdframed Info: Not enough space on this page on input line 727.
 Package mdframed Info: mdframed works in twoside mode on input line 729.
 Package mdframed Info: mdframed detected package amsthm 
@@ -3706,8 +3796,8 @@ Package mdframed Info: mdframed works in twoside mode on input line 761.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 761.
- [48]
-Chapter 7.
+ [51]
+\bbl@ensure@english {Chapter} 7.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
 Package mdframed Info: mdframed works in twoside mode on input line 777.
@@ -3718,7 +3808,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 805.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 805.
-[49
+[52
 
 ]
 Package mdframed Info: Not enough space on this page on input line 813.
@@ -3734,7 +3824,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 857.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 857.
- [50]
+ [53]
 Package mdframed Info: mdframed works in twoside mode on input line 861.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -3844,23 +3934,31 @@ Overfull \hbox (21.6488pt too wide) in paragraph at lines 884--885
 \T1/TeXGyreScholaX-OsF/m/n/10 Its max-i-mum is the largest eigen-value $\OML/zncfmi/m/it/10 ^^U[] [] :$ \T1/TeXGyreScholaX-OsF/m/n/10 The min-i-mum ra-tio is $\OML/zncfmi/m/it/10 ^^U[] []$\T1/TeXGyreScholaX-OsF/m/n/10 .
  []
 
-[51] [52]
-Chapter 8.
+[54] [55]
+\bbl@ensure@english {Chapter} 8.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-[53
+[56
 
 ]
 Package mdframed Info: mdframed works in twoside mode on input line 1003.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1003.
-Package mdframed Info: mdframed works in twoside mode on input line 1007.
+LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/m/it' will be
+(Font)              scaled to size 8.0pt on input line 1004.
+LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 1004.
+LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 1004.
+LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/m/it' will be
+(Font)              scaled to size 7.3pt on input line 1004.
+Package mdframed Info: mdframed works in twoside mode on input line 1009.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1007.
-) (./math/matrix-inverse.tex [54]
-Chapter 9.
+(mdframed)              on input line 1009.
+) (./math/matrix-inverse.tex [57]
+\bbl@ensure@english {Chapter} 9.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
 Package mdframed Info: mdframed works in twoside mode on input line 5.
@@ -3871,7 +3969,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 21.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 21.
-[55
+[58
 
 ]
 Package mdframed Info: mdframed works in twoside mode on input line 38.
@@ -3902,7 +4000,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 102.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 102.
- [56]
+ [59]
 Package mdframed Info: Not enough space on this page on input line 104.
 Package mdframed Info: mdframed works in twoside mode on input line 117.
 Package mdframed Info: mdframed detected package amsthm 
@@ -3917,7 +4015,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 220.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 220.
-[57]
+[60]
 Package mdframed Info: mdframed works in twoside mode on input line 279.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -3931,7 +4029,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 322.
 Package mdframed Info: Not enough space on this page on input line 324.
- [58]
+ [61]
 Package mdframed Info: Not enough space on this page on input line 324.
 
 Overfull \hbox (8.35301pt too wide) in paragraph at lines 329--330
@@ -3950,7 +4048,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 364.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 364.
-[59]
+[62]
 Package mdframed Info: mdframed works in twoside mode on input line 399.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -3967,7 +4065,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 449.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 449.
- [60]
+ [63]
 Package mdframed Info: mdframed works in twoside mode on input line 459.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -3988,7 +4086,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 489.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 489.
- [61]
+ [64]
 Overfull \hbox (38.37677pt too wide) in paragraph at lines 612--613
  [][] 
  []
@@ -3998,8 +4096,8 @@ Overfull \hbox (40.62677pt too wide) in paragraph at lines 691--692
  [][] 
  []
 
-) (./math/orthogonal-matrices.tex [62] [63]
-Chapter 10.
+) (./math/orthogonal-matrices.tex [65] [66]
+\bbl@ensure@english {Chapter} 10.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
 Package mdframed Info: mdframed works in twoside mode on input line 13.
@@ -4010,7 +4108,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 28.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 28.
-[64
+[67
 
 ]
 Package mdframed Info: Not enough space on this page on input line 31.
@@ -4038,7 +4136,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 102.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 102.
- [65]
+ [68]
 Package mdframed Info: mdframed works in twoside mode on input line 112.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -4056,11 +4154,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 127.
 LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 132.
-LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/m/n' will be
 (Font)              scaled to size 5.5pt on input line 132.
-LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 142.
 LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/m/it' will be
 (Font)              scaled to size 6.1pt on input line 142.
 Package mdframed Info: mdframed works in twoside mode on input line 146.
@@ -4075,7 +4169,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 158.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 158.
- [66]
+ [69]
 Package mdframed Info: mdframed works in twoside mode on input line 172.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -4085,7 +4179,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 243.
 Package mdframed Info: Not enough space on this page on input line 249.
- [67]
+ [70]
 Package mdframed Info: Not enough space on this page on input line 249.
 Package mdframed Info: mdframed works in twoside mode on input line 251.
 Package mdframed Info: mdframed detected package amsthm 
@@ -4103,7 +4197,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 331.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 331.
- [68]
+ [71]
 Package mdframed Info: mdframed works in twoside mode on input line 354.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -4112,6 +4206,23 @@ Package mdframed Info: mdframed works in twoside mode on input line 366.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 366.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 390.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 390.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 390.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 390.
+
 Package mdframed Info: mdframed works in twoside mode on input line 403.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -4121,7 +4232,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 409.
 Package mdframed Info: Not enough space on this page on input line 413.
- [69]
+[72]
 Package mdframed Info: Not enough space on this page on input line 413.
 Package mdframed Info: mdframed works in twoside mode on input line 415.
 Package mdframed Info: mdframed detected package amsthm 
@@ -4135,11 +4246,19 @@ Package mdframed Info: mdframed works in twoside mode on input line 427.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 427.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 431.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 431.
+
 Package mdframed Info: mdframed works in twoside mode on input line 485.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 485.
-
 
 Package mdframed Warning: You got a bad break
 (mdframed)                because the last box will be empty
@@ -4150,15 +4269,15 @@ Package mdframed Warning: You got a bad break
 Package mdframed Info: You first box width is to small
  mdframed fixed it
 (mdframed)              on input line 489.
-[70]
+[73]
 
-LaTeX Warning: Citation 'Strang1993IntroductionTL' on page 71 undefined on input line 506.
+LaTeX Warning: Citation 'Strang1993IntroductionTL' on page 74 undefined on input line 506.
 
 
-LaTeX Warning: Citation 'Strang1993IntroductionTL' on page 71 undefined on input line 506.
+LaTeX Warning: Citation 'Strang1993IntroductionTL' on page 74 undefined on input line 506.
 
-) (./math/qr-factorization.tex [71]
-Chapter 11.
+) (./math/qr-factorization.tex [74]
+\bbl@ensure@english {Chapter} 11.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
 Package mdframed Info: mdframed works in twoside mode on input line 5.
@@ -4173,366 +4292,740 @@ Package mdframed Info: mdframed works in twoside mode on input line 17.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 17.
-[72
+[75
+
+] [76]
+Package mdframed Info: mdframed works in twoside mode on input line 64.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 64.
+Package mdframed Info: mdframed works in twoside mode on input line 71.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 71.
+Package mdframed Info: mdframed works in twoside mode on input line 77.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 77.
+Package mdframed Info: mdframed works in twoside mode on input line 89.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 89.
+Package mdframed Info: mdframed works in twoside mode on input line 106.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 106.
+Package mdframed Info: mdframed works in twoside mode on input line 110.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 110.
+Package mdframed Info: mdframed works in twoside mode on input line 114.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 114.
+Package mdframed Info: mdframed works in twoside mode on input line 118.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 118.
+Package mdframed Info: mdframed works in twoside mode on input line 122.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 122.
+ [77]
+Package mdframed Info: Not enough space on this page on input line 124.
+Package mdframed Info: mdframed works in twoside mode on input line 238.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 238.
+ [78]
+Package mdframed Info: mdframed works in twoside mode on input line 251.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 251.
+Package mdframed Info: mdframed works in twoside mode on input line 277.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 277.
+ [79]
+Overfull \hbox (1.35504pt too wide) in paragraph at lines 314--316
+\OML/zncfmi/m/it/10.95 R[]R[]$\T1/TeXGyreScholaX-OsF/m/n/10.95 , and tak-ing the trans-pose yields a lower-triangular ex-pres-sion for $[][][][]$. There-
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 330.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 330.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 355.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 355.
+
+Package mdframed Info: mdframed works in twoside mode on input line 359.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 359.
+[80]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 381.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 381.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\dagger' on input line 381.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 381.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 381.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 381.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 381.
+
+Package mdframed Info: mdframed works in twoside mode on input line 383.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 383.
+Package mdframed Info: mdframed works in twoside mode on input line 387.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 387.
+Package mdframed Info: mdframed works in twoside mode on input line 399.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 399.
+Package mdframed Info: mdframed works in twoside mode on input line 406.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 406.
+[81]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 432.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 432.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 432.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 432.
+
+Package mdframed Info: mdframed works in twoside mode on input line 439.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 439.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 457.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 457.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 457.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 457.
+
+Package mdframed Info: mdframed works in twoside mode on input line 461.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 461.
+Package mdframed Info: mdframed works in twoside mode on input line 467.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 467.
+[82]
+Overfull \hbox (38.37677pt too wide) in paragraph at lines 615--616
+ [][] 
+ []
+
+[83]
+
+LaTeX Warning: Reference `' on page 84 undefined on input line 624.
+
+Package mdframed Info: mdframed works in twoside mode on input line 650.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 650.
+Package mdframed Info: mdframed works in twoside mode on input line 654.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 654.
+Package mdframed Info: mdframed works in twoside mode on input line 658.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 658.
+Package mdframed Info: mdframed works in twoside mode on input line 662.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 662.
+[84] [85] [86] (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+File: Pictures//qr-matlab-error.eps Graphic file (type eps)
+<Pictures//qr-matlab-error.eps>
+ [87]
+File: Pictures//modified-qr-matlab-error.eps Graphic file (type eps)
+<Pictures//modified-qr-matlab-error.eps>
+
+Underfull \vbox (badness 2165) has occurred while \output is active []
+
+ [88]
+Package mdframed Info: mdframed works in twoside mode on input line 990.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 990.
+ (./Pictures/tikz-householder-matrix.tex) [89]
+Package mdframed Info: mdframed works in twoside mode on input line 1028.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1028.
+Package mdframed Info: mdframed works in twoside mode on input line 1045.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1045.
+ [90]
+Package mdframed Info: mdframed works in twoside mode on input line 1058.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1058.
+Package mdframed Info: mdframed works in twoside mode on input line 1071.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1071.
+Package mdframed Info: mdframed works in twoside mode on input line 1081.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1081.
+ (./Pictures/tikz-geometry-of-householder-Hx.tex) [91] [92]
+Package mdframed Info: mdframed works in twoside mode on input line 1274.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1274.
+ [93] [94] [95]
+LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 1422.
+LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/m/n' will be
+(Font)              scaled to size 8.8pt on input line 1422.
+LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/m/n' will be
+(Font)              scaled to size 6.6pt on input line 1422.
+LaTeX Font Info:    Font shape `OML/zncfmi/m/it' will be
+(Font)              scaled to size 12.89996pt on input line 1422.
+LaTeX Font Info:    Font shape `OML/zncfmi/m/it' will be
+(Font)              scaled to size 9.45998pt on input line 1422.
+LaTeX Font Info:    Font shape `OML/zncfmi/m/it' will be
+(Font)              scaled to size 7.09499pt on input line 1422.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 12.89996pt on input line 1422.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 9.45998pt on input line 1422.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 7.09499pt on input line 1422.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 12.89996pt on input line 1422.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 9.45998pt on input line 1422.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 7.09499pt on input line 1422.
+LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 1422.
+LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/b/n' will be
+(Font)              scaled to size 8.8pt on input line 1422.
+LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/b/n' will be
+(Font)              scaled to size 6.6pt on input line 1422.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 12.89996pt on input line 1422.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 9.45998pt on input line 1422.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 7.09499pt on input line 1422.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 12.89996pt on input line 1422.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 9.45998pt on input line 1422.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 7.09499pt on input line 1422.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 12.89996pt on input line 1422.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 9.45998pt on input line 1422.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 7.09499pt on input line 1422.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 12.89996pt on input line 1422.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 9.45998pt on input line 1422.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 7.09499pt on input line 1422.
+Package microtype Info: Character `\textendash ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textendash ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textendash ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
+(microtype)             Ignoring protrusion settings for this character.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1422.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1422.
+
+Package mdframed Info: mdframed works in twoside mode on input line 1426.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1426.
+[96]
+Package mdframed Info: mdframed works in twoside mode on input line 1436.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1436.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1450.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1450.
+
+Package mdframed Info: mdframed works in twoside mode on input line 1452.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1452.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1468.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1468.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1468.
+
+
+LaTeX Warning: Citation 'Strang1993IntroductionTL' on page 97 undefined on input line 1482.
+
+Package mdframed Info: mdframed works in twoside mode on input line 1495.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1495.
+[97]
+Package mdframed Info: mdframed works in twoside mode on input line 1562.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1562.
+ [98]
+Package mdframed Info: mdframed works in twoside mode on input line 1591.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1591.
+Package mdframed Info: mdframed works in twoside mode on input line 1632.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1632.
+Package mdframed Info: mdframed works in twoside mode on input line 1636.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1636.
+Package mdframed Info: mdframed works in twoside mode on input line 1640.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1640.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1645.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 1645.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1645.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1645.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 1645.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 1645.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1645.
+
+Package mdframed Info: mdframed works in twoside mode on input line 1647.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1647.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1651.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 1651.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1651.
+
+[99]
+Package mdframed Info: mdframed works in twoside mode on input line 1657.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1657.
+) (./math/lu-decomposition.tex [100]
+\bbl@ensure@english {Chapter} 12.
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
+Package mdframed Info: mdframed works in twoside mode on input line 38.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 38.
+Package mdframed Info: mdframed works in twoside mode on input line 42.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 42.
+Package mdframed Info: mdframed works in twoside mode on input line 48.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 48.
+[101
 
 ]
-Package mdframed Info: mdframed works in twoside mode on input line 61.
+Package mdframed Info: Not enough space on this page on input line 50.
+Package mdframed Info: mdframed works in twoside mode on input line 52.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 61.
-Package mdframed Info: mdframed works in twoside mode on input line 68.
+(mdframed)              on input line 52.
+Package mdframed Info: mdframed works in twoside mode on input line 58.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 68.
-Package mdframed Info: mdframed works in twoside mode on input line 74.
+(mdframed)              on input line 58.
+Package mdframed Info: mdframed works in twoside mode on input line 62.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 74.
-Package mdframed Info: mdframed works in twoside mode on input line 86.
+(mdframed)              on input line 62.
+ [102]
+Package mdframed Info: mdframed works in twoside mode on input line 121.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 86.
-Package mdframed Info: You first box width is to small
- mdframed fixed it
-(mdframed)              on input line 99.
- [73]
-Package mdframed Info: mdframed works in twoside mode on input line 103.
+(mdframed)              on input line 121.
+Package mdframed Info: mdframed works in twoside mode on input line 146.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 103.
-Package mdframed Info: mdframed works in twoside mode on input line 107.
+(mdframed)              on input line 146.
+
+Underfull \vbox (badness 3536) has occurred while \output is active []
+
+ [103]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 160.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 160.
+
+Package mdframed Info: mdframed works in twoside mode on input line 172.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 107.
-Package mdframed Info: mdframed works in twoside mode on input line 111.
+(mdframed)              on input line 172.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 184.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 184.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 184.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 184.
+
+Package mdframed Info: mdframed works in twoside mode on input line 188.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 111.
-Package mdframed Info: mdframed works in twoside mode on input line 115.
+(mdframed)              on input line 188.
+Package mdframed Info: mdframed works in twoside mode on input line 195.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 115.
-Package mdframed Info: mdframed works in twoside mode on input line 119.
+(mdframed)              on input line 195.
+
+Underfull \vbox (badness 2478) has occurred while \output is active []
+
+ [104]
+Package mdframed Info: mdframed works in twoside mode on input line 225.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 119.
- [74]
-Package mdframed Info: mdframed works in twoside mode on input line 179.
+(mdframed)              on input line 225.
+Package mdframed Info: mdframed works in twoside mode on input line 255.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 179.
- [75]
-Package mdframed Info: mdframed works in twoside mode on input line 233.
+(mdframed)              on input line 255.
+
+Underfull \vbox (badness 3815) has occurred while \output is active []
+
+ [105]
+Package mdframed Info: mdframed works in twoside mode on input line 288.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 233.
-Package mdframed Info: mdframed works in twoside mode on input line 262.
+(mdframed)              on input line 288.
+Package mdframed Info: mdframed works in twoside mode on input line 303.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 262.
- [76]
-Package mdframed Info: mdframed works in twoside mode on input line 286.
+(mdframed)              on input line 303.
+Package mdframed Info: mdframed works in twoside mode on input line 310.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 286.
-Package mdframed Info: mdframed works in twoside mode on input line 290.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 290.
-Package mdframed Info: mdframed works in twoside mode on input line 302.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 302.
-Package mdframed Info: mdframed works in twoside mode on input line 309.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 309.
+(mdframed)              on input line 310.
+
+Underfull \vbox (badness 1308) has occurred while \output is active []
+
+ [106]
 Package mdframed Info: mdframed works in twoside mode on input line 342.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 342.
- [77]
-Package mdframed Info: Not enough space on this page on input line 345.
-Package mdframed Info: mdframed works in twoside mode on input line 364.
+Package mdframed Info: mdframed works in twoside mode on input line 348.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 364.
-Package mdframed Info: mdframed works in twoside mode on input line 370.
+(mdframed)              on input line 348.
+ [107]
+Package mdframed Info: mdframed works in twoside mode on input line 436.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 370.
+(mdframed)              on input line 436.
+ [108]
+Package mdframed Info: mdframed works in twoside mode on input line 480.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 480.
+ [109]
+Package mdframed Info: mdframed works in twoside mode on input line 653.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 653.
+Package mdframed Info: mdframed works in twoside mode on input line 662.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 662.
+) [110] (./main.ptc) [111
 
-Overfull \hbox (38.37677pt too wide) in paragraph at lines 518--519
- [][] 
- []
+] (./math/least-squares.tex
+\bbl@ensure@english {Chapter} 13.
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
+[112
 
-
-LaTeX Warning: Reference `' on page 78 undefined on input line 527.
-
-[78] [79]
-Package mdframed Info: mdframed works in twoside mode on input line 553.
+]
+Package mdframed Info: mdframed works in twoside mode on input line 90.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 553.
-Package mdframed Info: mdframed works in twoside mode on input line 557.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 557.
-Package mdframed Info: mdframed works in twoside mode on input line 561.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 561.
-Package mdframed Info: mdframed works in twoside mode on input line 565.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 565.
- [80] [81] (d:/ProgramFiles/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 778.
- [82]
-File: Pictures//qr-matlab-error.eps Graphic file (type eps)
-<Pictures//qr-matlab-error.eps>
-File: Pictures//modified-qr-matlab-error.eps Graphic file (type eps)
-<Pictures//modified-qr-matlab-error.eps>
- [83]
-Package mdframed Info: mdframed works in twoside mode on input line 856.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 856.
- [84]
-Package mdframed Info: mdframed works in twoside mode on input line 953.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 953.
-Package mdframed Info: mdframed works in twoside mode on input line 970.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 970.
-Package mdframed Info: You first box width is to small
- mdframed fixed it
-(mdframed)              on input line 981.
- [85]
-Package mdframed Info: mdframed works in twoside mode on input line 983.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 983.
-Package mdframed Info: mdframed works in twoside mode on input line 996.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 996.
-Package mdframed Info: mdframed works in twoside mode on input line 1006.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1006.
- [86] [87] [88] [89] [90]
-LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 1372.
-LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/m/n' will be
-(Font)              scaled to size 8.8pt on input line 1372.
-LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/m/n' will be
-(Font)              scaled to size 6.6pt on input line 1372.
-LaTeX Font Info:    Font shape `OML/zncfmi/m/it' will be
-(Font)              scaled to size 12.89996pt on input line 1372.
-LaTeX Font Info:    Font shape `OML/zncfmi/m/it' will be
-(Font)              scaled to size 9.45998pt on input line 1372.
-LaTeX Font Info:    Font shape `OML/zncfmi/m/it' will be
-(Font)              scaled to size 7.09499pt on input line 1372.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 12.89996pt on input line 1372.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 9.45998pt on input line 1372.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 7.09499pt on input line 1372.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 12.89996pt on input line 1372.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 9.45998pt on input line 1372.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 7.09499pt on input line 1372.
-LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 1372.
-LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/b/n' will be
-(Font)              scaled to size 8.8pt on input line 1372.
-LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/b/n' will be
-(Font)              scaled to size 6.6pt on input line 1372.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 12.89996pt on input line 1372.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 9.45998pt on input line 1372.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 7.09499pt on input line 1372.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 12.89996pt on input line 1372.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 9.45998pt on input line 1372.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 7.09499pt on input line 1372.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 12.89996pt on input line 1372.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 9.45998pt on input line 1372.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 7.09499pt on input line 1372.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 12.89996pt on input line 1372.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 9.45998pt on input line 1372.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 7.09499pt on input line 1372.
-Package microtype Info: Character `\textendash ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\AE ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotesinglbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotedblbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textexclamdown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textquestiondown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textendash ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\AE ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotesinglbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotedblbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textexclamdown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textquestiondown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textendash ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\AE ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotesinglbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotedblbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textexclamdown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textquestiondown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
-(microtype)             Ignoring protrusion settings for this character.
+(mdframed)              on input line 90.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1372.
+(hyperref)                removing `math shift' on input line 99.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1372.
+(hyperref)                removing `math shift' on input line 99.
 
-Package mdframed Info: mdframed works in twoside mode on input line 1376.
+Package mdframed Info: mdframed works in twoside mode on input line 108.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1376.
-Package mdframed Info: mdframed works in twoside mode on input line 1386.
+(mdframed)              on input line 108.
+Package mdframed Info: mdframed works in twoside mode on input line 123.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1386.
-Package mdframed Info: You first box width is to small
- mdframed fixed it
-(mdframed)              on input line 1398.
-[91]
-Package mdframed Info: mdframed works in twoside mode on input line 1400.
+(mdframed)              on input line 123.
+[113]
+Package mdframed Info: Not enough space on this page on input line 132.
+Package mdframed Info: mdframed works in twoside mode on input line 134.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1400.
+(mdframed)              on input line 134.
+ [114] [115]
+Package mdframed Info: mdframed works in twoside mode on input line 285.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 285.
+Package mdframed Info: mdframed works in twoside mode on input line 297.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 297.
+Package mdframed Info: mdframed works in twoside mode on input line 306.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 306.
+ [116] [117]
+Package mdframed Info: mdframed works in twoside mode on input line 471.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 471.
+Package mdframed Info: mdframed works in twoside mode on input line 490.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 490.
 
 
-LaTeX Warning: Citation 'Strang1993IntroductionTL' on page 92 undefined on input line 1430.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 502.
 
-Package mdframed Info: mdframed works in twoside mode on input line 1443.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\alpha' on input line 502.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 502.
+
+[118]
+Package mdframed Info: mdframed works in twoside mode on input line 517.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1443.
-[92]
-Package mdframed Info: mdframed works in twoside mode on input line 1510.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1510.
-Package mdframed Info: mdframed works in twoside mode on input line 1539.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1539.
- [93]
-Package mdframed Info: Not enough space on this page on input line 1543.
-) [94] (./main.ptc) [95
+(mdframed)              on input line 517.
+) [119] (./main.ptc) [120
 
 ] (./math/fourier.tex
-Chapter 12.
+\bbl@ensure@english {Chapter} 14.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
 Package mdframed Info: mdframed works in twoside mode on input line 5.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 5.
-Package mdframed Info: mdframed works in twoside mode on input line 13.
+Package mdframed Info: mdframed works in twoside mode on input line 9.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 13.
-Package mdframed Info: mdframed works in twoside mode on input line 21.
+(mdframed)              on input line 9.
+Package mdframed Info: mdframed works in twoside mode on input line 17.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 21.
+(mdframed)              on input line 17.
 Package mdframed Info: mdframed works in twoside mode on input line 25.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -4541,111 +5034,112 @@ Package mdframed Info: mdframed works in twoside mode on input line 29.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 29.
-
-Underfull \vbox (badness 1067) has occurred while \output is active []
-
- [96
+Package mdframed Info: mdframed works in twoside mode on input line 33.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 33.
+[121
 
 ]
-Package mdframed Info: mdframed works in twoside mode on input line 43.
+Package mdframed Info: mdframed works in twoside mode on input line 47.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 43.
-Package mdframed Info: mdframed works in twoside mode on input line 51.
+(mdframed)              on input line 47.
+Package mdframed Info: mdframed works in twoside mode on input line 55.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 51.
-Package mdframed Info: mdframed works in twoside mode on input line 60.
+(mdframed)              on input line 55.
+Package mdframed Info: mdframed works in twoside mode on input line 64.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 60.
-Package mdframed Info: mdframed works in twoside mode on input line 91.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 91.
- [97]
-Package mdframed Info: Not enough space on this page on input line 93.
+(mdframed)              on input line 64.
+ [122]
 Package mdframed Info: mdframed works in twoside mode on input line 95.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 95.
-Package mdframed Info: mdframed works in twoside mode on input line 103.
+Package mdframed Info: mdframed works in twoside mode on input line 99.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 103.
- [98]
-Package mdframed Info: mdframed works in twoside mode on input line 145.
+(mdframed)              on input line 99.
+Package mdframed Info: mdframed works in twoside mode on input line 107.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 145.
-Package mdframed Info: mdframed works in twoside mode on input line 166.
+(mdframed)              on input line 107.
+ [123]
+Package mdframed Info: mdframed works in twoside mode on input line 149.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 166.
-Package mdframed Info: mdframed works in twoside mode on input line 177.
+(mdframed)              on input line 149.
+Package mdframed Info: mdframed works in twoside mode on input line 170.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 177.
-Package mdframed Info: mdframed works in twoside mode on input line 190.
+(mdframed)              on input line 170.
+Package mdframed Info: mdframed works in twoside mode on input line 181.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 190.
- [99]
-Package mdframed Info: mdframed works in twoside mode on input line 209.
+(mdframed)              on input line 181.
+Package mdframed Info: mdframed works in twoside mode on input line 194.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 209.
-Package mdframed Info: mdframed works in twoside mode on input line 245.
+(mdframed)              on input line 194.
+ [124]
+Package mdframed Info: mdframed works in twoside mode on input line 213.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 245.
- [100]
-Package mdframed Info: mdframed works in twoside mode on input line 299.
+(mdframed)              on input line 213.
+Package mdframed Info: mdframed works in twoside mode on input line 249.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 299.
-Package mdframed Info: mdframed works in twoside mode on input line 308.
+(mdframed)              on input line 249.
+
+Underfull \vbox (badness 3930) has occurred while \output is active []
+
+ [125]
+Package mdframed Info: mdframed works in twoside mode on input line 303.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 308.
-Package mdframed Info: Not enough space on this page on input line 310.
- [101]
-Package mdframed Info: Not enough space on this page on input line 310.
-Package mdframed Info: mdframed works in twoside mode on input line 315.
+(mdframed)              on input line 303.
+ [126]
+Package mdframed Info: mdframed works in twoside mode on input line 316.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 315.
-Package mdframed Info: mdframed works in twoside mode on input line 319.
+(mdframed)              on input line 316.
+Package mdframed Info: mdframed works in twoside mode on input line 323.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 319.
-Package mdframed Info: mdframed works in twoside mode on input line 324.
+(mdframed)              on input line 323.
+Package mdframed Info: mdframed works in twoside mode on input line 327.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 324.
-Package mdframed Info: mdframed works in twoside mode on input line 330.
+(mdframed)              on input line 327.
+Package mdframed Info: mdframed works in twoside mode on input line 332.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 330.
-Package mdframed Info: mdframed works in twoside mode on input line 337.
+(mdframed)              on input line 332.
+Package mdframed Info: mdframed works in twoside mode on input line 338.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 337.
-Package mdframed Info: mdframed works in twoside mode on input line 341.
+(mdframed)              on input line 338.
+Package mdframed Info: mdframed works in twoside mode on input line 345.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 341.
-Package mdframed Info: mdframed works in twoside mode on input line 347.
+(mdframed)              on input line 345.
+Package mdframed Info: mdframed works in twoside mode on input line 349.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 347.
- [102]
-Package mdframed Info: mdframed works in twoside mode on input line 357.
+(mdframed)              on input line 349.
+ [127]
+Package mdframed Info: mdframed works in twoside mode on input line 355.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 357.
-) (./math/factorization.tex [103]
-Chapter 13.
+(mdframed)              on input line 355.
+Package mdframed Info: mdframed works in twoside mode on input line 365.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 365.
+) (./math/factorization.tex [128]
+\bbl@ensure@english {Chapter} 15.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
 
@@ -4660,7 +5154,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 LaTeX Warning: Empty bibliography on input line 141.
 
-[104
+[129
 
 ]
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
@@ -4679,21 +5173,19 @@ Overfull \hbox (1.21999pt too wide) in paragraph at lines 56--56
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [105
+ [130
 
 ]
-Chapter 14.
+\bbl@ensure@english {Chapter} 16.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-(./main.lod [106
+(./main.lod [131
 
-] [107] [108] [109] [110] [111] [112])
+] [132] [133] [134] [135] [136] [137])
 \tf@lod=\write8
 \openout8 = `main.lod'.
 
- [113] [114
-
-]
+ [138]
 No file main.ind.
 \tf@ptc=\write9
 \openout9 = `main.ptc'.
@@ -4715,12 +5207,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47296 strings out of 476477
- 950281 string characters out of 5812099
- 1922719 words of memory out of 5000000
- 66856 multiletter control sequences out of 15000+600000
- 603578 words of font info for 296 fonts, out of 8000000 for 9000
+ 47723 strings out of 476477
+ 964150 string characters out of 5812099
+ 1933362 words of memory out of 5000000
+ 67262 multiletter control sequences out of 15000+600000
+ 614539 words of font info for 310 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,21n,97p,1145b,6127s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,23n,97p,1145b,4732s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (114 pages).
+Output written on main.pdf (138 pages).

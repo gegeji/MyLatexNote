@@ -1000,7 +1000,9 @@ $ \|A\|_{2}\left\|A^{-1}\right\|_{2} $ 小，当 $ \frac{\|\Delta b\|_{2}}{\|b\|
 $ \|A\|_{2}\left\|A^{-1}\right\|_{2} $ 大, $ \frac{\|\Delta x\|_{2}}{\|x\|_{2}}  $ 可远远大于 $ \frac{\|\Delta b\|_{2}}{\|b\|_{2}}  $.
 
 
-\begin{definition}[非奇异矩阵 $ A $ 的条件数(condition number)]
+\begin{definition}[非奇异矩阵 $ A $ 的条件数(condition number) ]        
+    条件数\footnote{\href{https://blogs.mathworks.com/cleve/2017/07/17/what-is-the-condition-number-of-a-matrix/?from=cn}{MathWorks Blog}}定义
+
     $$ \kappa(A)=\|A\|_{2}\left\|A^{-1}\right\|_{2} $$
 \end{definition}
 
@@ -1013,5 +1015,6 @@ $ \|A\|_{2}\left\|A^{-1}\right\|_{2} $ 大, $ \frac{\|\Delta x\|_{2}}{\|x\|_{2}}
         \item 如果 $ \kappa(A) $ 比较大（超过100）,  $ x $ 的相对误差比 $ b $ 的相对误差大得多. 
     \end{itemize}
 \end{corollary}
+
 
 

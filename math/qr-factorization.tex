@@ -30,6 +30,8 @@
 
 \begin{algorithm}[htbp]
     \caption{Forward Substitution}
+    \KwIn{$A \in R^{n \times n} (A是下三角矩阵), b \in R^{n \times 1}$}
+    \KwOut{$x \in R^{n \times 1}$}
     $ x_{1}= \dfrac{b_{1} }{A_{11} }  $\;
 $ x_{2}=\dfrac{b_{2}-A_{21} x_{1}}{A_{22}}$\;
 $  x_{3} =\dfrac{b_{3}-A_{31} x_{1}-A_{32} x_{2}}{A_{33}} $ \;
@@ -46,7 +48,8 @@ $  x_{3} =\dfrac{b_{3}-A_{31} x_{1}-A_{32} x_{2}}{A_{33}} $ \;
 
 \begin{algorithm}[htbp]
     \caption{Backward Substitution}
-
+    \KwIn{$A \in R^{n \times n} (A是上三角矩阵), b \in R^{n \times 1}$}
+    \KwOut{$x \in R^{n \times 1}$}
     $ x_{n}= \dfrac{b_{n}}{A_{n n}} $\;
     $ x_{n-1}= \dfrac{b_{n-1}-A_{n-1, n} x_{n}}{A_{n-1, n-1}} $ \;
     $ x_{n-2}= \dfrac{b_{n-2}-A_{n-2, n-1} x_{n-1}-A_{n-2, n} x_{n}}{ A_{n-2, n-2}} $\;
@@ -85,10 +88,10 @@ $$ n^{2}+(n-1)^{2}+\cdots+1 \approx \frac{1}{3} n^{3}\text{ flops }$$
 
 \begin{theorem}[QR Factorization]
     
-    $$\begin{aligned} A&=\left[\begin{array}{llll}a_{1} & a_{2} & \cdots & a_{n}\end{array}\right]\\
-    &=\left[\begin{array}{llll}q_{1} & q_{2} & \cdots & q_{n}\end{array}\right]\left[\begin{array}{cccc}R_{11} & R_{12} & \cdots & R_{1 n} \\ 0 & R_{22} & \cdots & R_{2 n} \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & R_{n n}\end{array}\right]\\
-    &=QR
-    \end{aligned}$$
+    $$\begin{aligned} A_{n  \times n}&=\left[\begin{array}{llll}a_{1} & a_{2} & \cdots & a_{n}\end{array}\right]\\
+        &=\left[\begin{array}{llll}q_{1} & q_{2} & \cdots & q_{n}\end{array}\right]\left[\begin{array}{cccc}R_{11} & R_{12} & \cdots & R_{1 n} \\ 0 & R_{22} & \cdots & R_{2 n} \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & R_{n n}\end{array}\right]\\
+        &=Q_{n  \times n}R_{n  \times  n}
+        \end{aligned}$$
 
 向量 $ q_{1}, \ldots, q_{n} \in \mathbb{R}^{m} $ 是标准正交向量：
 $$
@@ -176,57 +179,151 @@ R_{11} & R_{12} & R_{13} \\
 $$
 \end{example}
 
-\begin{theorem}[满秩矩阵$A$的 QR 分解的存在唯一性]
+\subsection{QR分解的存在唯一性}
 
-    设 $A \in \mathbb{C}^{m \times n}(m \geq n)$. 则存在一个单位列正交矩阵 $Q \in \mathbb{C}^{m \times n}$ (即 $Q^{H} Q=$ $\left.I_{n \times n}\right)$ 和一个上三角矩阵 $R \in \mathbb{C}^{n \times n}$, 使得
+可以证明，QR分解具有唯一性\footnote{\href{http://math.ecnu.edu.cn/~jypan/Teaching/SciComp/}{SciComp}} \footnote{\href{https://www.math.purdue.edu/~kkloste/cs515fa14/qr-uniqueness.pdf}{Kyle Kloster's Website}}。
+
+
+% \begin{theorem}[满秩矩阵$A$的 QR 分解的存在唯一性]
+
+%     设 $A \in \mathbb{C}^{m \times n}(m \geq n)$. 则存在一个单位列正交矩阵 $Q \in \mathbb{C}^{m \times n}$ (即 $Q^{H} Q=$ $\left.I_{n \times n}\right)$ 和一个上三角矩阵 $R \in \mathbb{C}^{n \times n}$, 使得
+% $$
+% A=Q R
+% $$
+% 若 $A$ 列满秩, 则存在一个具有正对角线元素的上三角矩阵 $R$ 使得上式成立, 且此时 $Q R$ 分解唯一, 即 $Q$ 和 $R$ 都唯一.
+% \end{theorem}
+
+% \begin{proof}
+%     存在性: 
+    
+%     由于 $A$ 列满秩, 由 Gram-Schmidt 正交化过程可知, 存在上三角矩阵 $R=\left[r_{i j}\right]_{n \times n}$ 满足 $r_{j j}>0$, 使得 $A=Q R$, 其中 $Q$ 单位列正交.
+
+%     唯一性: 
+    
+%     假设 $A$ 存在 QR 分解
+% $$
+% A=Q_{1} R_{1}=Q_{2} R_{2}
+% $$
+
+% 其中 $Q_{1}, Q_{2} \in \mathbb{C}^{m \times n}$ 单位列正交, $R_{1}, R_{2} \in \mathbb{C}^{n \times n}$ 为具有正对角元素的上三角矩阵. 则有
+
+% \begin{equation}
+%     \label{eqn: q1-q2-r}
+%     Q_{1}=Q_{2} R_{2} R_{1}^{-1}
+% \end{equation}
+
+
+% 由于 $R_{1}, R_{2}$ 均为上三角矩阵, 所以 $R_{2} R_{1}^{-1}$ 也是上三角矩阵, 且其对角线元素为 $R_{2}(i, i) / R_{1}(i, i)$, $i=1,2, \ldots, n$. 由 \cref{eqn: q1-q2-r} 可得
+
+% $$
+% 1=\left\|Q_{1}\right\|_{2}=\left\|Q_{2} R_{2} R_{1}^{-1}\right\|_{2}=\left\|R_{2} R_{1}^{-1}\right\|_{2}
+% $$
+
+% 所以
+% $$
+% \frac{R_{2}(i, i)}{R_{1}(i, i)} \leq 1, \quad i=1,2, \ldots, n
+% $$
+% 同理可证 $R_{1}(i, i) / R_{2}(i, i) \leq 1$. 所以
+% $$
+% R_{1}(i, i)=R_{2}(i, i), \quad i=1,2, \ldots, n
+% $$
+% 又 $\left\|Q_{1}\right\|_{F}^{2}=\operatorname{tr}\left(Q_{1}^{T} Q_{1}\right)=n$, 所以由 \cref{eqn: q1-q2-r} 可知
+% $$
+% \left\|R_{2} R_{1}^{-1}\right\|_{F}^{2}=\left\|Q_{2} R_{2} R_{1}^{-1}\right\|_{F}^{2}=\left\|Q_{1}\right\|_{F}^{2}=n
+% $$
+% 由于 $R_{2} R_{1}^{-1}$ 的对角线元素都是 1 , 所以 $R_{2} R_{1}^{-1}$ 只能是单位矩阵, 即 $R_{2}=R_{1}$. 因此 $Q_{2}=A R_{2}^{-1}=$ $A R_{1}^{-1}=Q_{1}$, 即 $A$ 的 $\mathrm{QR}$ 分解是唯一的.
+
+% \end{proof}
+
+\begin{theorem}[$m=n $矩阵$A$进行QR分解的唯一性]
+    If $ \boldsymbol{A}=\boldsymbol{Q}_{1} \boldsymbol{R}_{1}=\boldsymbol{Q}_{2} \boldsymbol{R}_{2} $ are two QR decompositions of full rank, square $ A $, then
 $$
-A=Q R
+\begin{array}{l}
+\boldsymbol{Q}_{2}=\boldsymbol{Q}_{1} \boldsymbol{S} \\
+\boldsymbol{R}_{2}=\boldsymbol{S} \boldsymbol{R}_{1}
+\end{array}
 $$
-若 $A$ 列满秩, 则存在一个具有正对角线元素的上三角矩阵 $R$ 使得上式成立, 且此时 $Q R$ 分解唯一, 即 $Q$ 和 $R$ 都唯一.
+for some square diagonal $ \boldsymbol{S} $ with entries $ \pm 1 $. 
+
+If we require the diagonal entries of $ \boldsymbol{R} $ to be positive, then the decomposition is unique.
+\end{theorem}
+
+\begin{theorem}[$m<n $矩阵$A$进行QR分解的唯一性]
+    
+    If $$\boldsymbol{A}=\boldsymbol{Q}_{1}\left[\begin{array}{ll}\boldsymbol{R}_{1} & \boldsymbol{N}_{1}\end{array}\right]=\boldsymbol{Q}_{2}\left[\begin{array}{ll}\boldsymbol{R}_{2} & \boldsymbol{N}_{2}\end{array}\right]$$ are two QR decompositions of a full rank, $m \times n$ matrix $\boldsymbol{A}$ with $m<n$, then
+
+    
+$$
+\boldsymbol{Q}_{2}=\boldsymbol{Q}_{1} \boldsymbol{S}, \quad \boldsymbol{R}_{2}=\boldsymbol{S R}_{1}, \quad \text { and } \quad \boldsymbol{N}_{2}=\boldsymbol{S} \boldsymbol{N}_{1}
+$$
+for square diagonal $S$ with entries $\pm 1$. 
+
+If we require the diagonal entries of $\boldsymbol{R}$ to be positive, then the decomposition is unique.
+
 \end{theorem}
 
 \begin{proof}
-    存在性: 
+    Let $\boldsymbol{Q}_{1}\left[\begin{array}{ll}\boldsymbol{R}_{1} & \boldsymbol{N}_{1}\end{array}\right]=\boldsymbol{Q}_{2}\left[\begin{array}{ll}\boldsymbol{R}_{2} & \boldsymbol{N}_{2}\end{array}\right]$ with $\boldsymbol{Q}_{i}$ being $m \times m$ and orthogonal, $\boldsymbol{R}_{i}$ being $m \times m$ and upper triangular, and $\boldsymbol{N}_{i}$ being an arbitrary $m \times(n-m)$ matrix. 
     
-    由于 $A$ 列满秩, 由 Gram-Schmidt 正交化过程可知, 存在上三角矩阵 $R=\left[r_{i j}\right]_{n \times n}$ 满足 $r_{j j}>0$, 使得 $A=Q R$, 其中 $Q$ 单位列正交.
-
-    唯一性: 
+    Then multiplying through yields $\boldsymbol{Q}_{1} \boldsymbol{R}_{1}=\boldsymbol{Q}_{2} \boldsymbol{R}_{2}$, two $\mathrm{QR}$ decompositions of a full rank, $m \times m$ matrix. 
     
-    假设 $A$ 存在 QR 分解
-$$
-A=Q_{1} R_{1}=Q_{2} R_{2}
-$$
-
-其中 $Q_{1}, Q_{2} \in \mathbb{C}^{m \times n}$ 单位列正交, $R_{1}, R_{2} \in \mathbb{C}^{n \times n}$ 为具有正对角元素的上三角矩阵. 则有
-
-\begin{equation}
-    \label{eqn: q1-q2-r}
-    Q_{1}=Q_{2} R_{2} R_{1}^{-1}
-\end{equation}
-
-
-由于 $R_{1}, R_{2}$ 均为上三角矩阵, 所以 $R_{2} R_{1}^{-1}$ 也是上三角矩阵, 且其对角线元素为 $R_{2}(i, i) / R_{1}(i, i)$, $i=1,2, \ldots, n$. 由 \cref{eqn: q1-q2-r} 可得
-
-$$
-1=\left\|Q_{1}\right\|_{2}=\left\|Q_{2} R_{2} R_{1}^{-1}\right\|_{2}=\left\|R_{2} R_{1}^{-1}\right\|_{2}
-$$
-
-所以
-$$
-\frac{R_{2}(i, i)}{R_{1}(i, i)} \leq 1, \quad i=1,2, \ldots, n
-$$
-同理可证 $R_{1}(i, i) / R_{2}(i, i) \leq 1$. 所以
-$$
-R_{1}(i, i)=R_{2}(i, i), \quad i=1,2, \ldots, n
-$$
-又 $\left\|Q_{1}\right\|_{F}^{2}=\operatorname{tr}\left(Q_{1}^{T} Q_{1}\right)=n$, 所以由 \cref{eqn: q1-q2-r} 可知
-$$
-\left\|R_{2} R_{1}^{-1}\right\|_{F}^{2}=\left\|Q_{2} R_{2} R_{1}^{-1}\right\|_{F}^{2}=\left\|Q_{1}\right\|_{F}^{2}=n
-$$
-由于 $R_{2} R_{1}^{-1}$ 的对角线元素都是 1 , 所以 $R_{2} R_{1}^{-1}$ 只能是单位矩阵, 即 $R_{2}=R_{1}$. 因此 $Q_{2}=A R_{2}^{-1}=$ $A R_{1}^{-1}=Q_{1}$, 即 $A$ 的 $\mathrm{QR}$ 分解是唯一的.
-
+    Using the theorem above, we get that $\boldsymbol{Q}_{2}=\boldsymbol{Q}_{1} \boldsymbol{S}$ and $\boldsymbol{R}_{2}=\boldsymbol{S} \boldsymbol{R}_{1}$ for a diagonal matrix $\boldsymbol{S}$ with entries $\pm 1$. 
+    
+    Looking at the right-most partition of the original product yields $\boldsymbol{Q}_{1} \boldsymbol{N}_{1}=\boldsymbol{Q}_{2} \boldsymbol{N}_{2}$. But we've shown $\boldsymbol{Q}_{2}=\boldsymbol{Q}_{1} \boldsymbol{S}$, so now we have $\boldsymbol{Q}_{1} \boldsymbol{N}_{1}=\boldsymbol{Q}_{1} \boldsymbol{S} \boldsymbol{N}_{2}$. 
+    
+    Left-multiplying by $\boldsymbol{Q}_{1}^{T}$ and then by $\boldsymbol{S}$ then proves $\boldsymbol{N}_{2}=\boldsymbol{S} \boldsymbol{N}_{1}$, completing the theorem.
 \end{proof}
 
+\begin{theorem}[$m>n $矩阵$A$进行QR分解的唯一性]
+
+    If $\boldsymbol{A}=\left[\begin{array}{ll}\boldsymbol{Q}_{1} & \boldsymbol{U}_{1}\end{array}\right]\left[\begin{array}{c}\boldsymbol{R}_{1} \\ 0\end{array}\right]=\left[\begin{array}{ll}\boldsymbol{Q}_{2} & \boldsymbol{U}_{2}\end{array}\right]\left[\begin{array}{c}\boldsymbol{R}_{2} \\ 0\end{array}\right]$ are two QR decompositions of a full rank, $m \times n$ matrix ${\boldsymbol{A}}$ with $m>n$, then
+
+$$
+\boldsymbol{Q}_{2}=\boldsymbol{Q}_{1} \boldsymbol{S}, \quad \boldsymbol{R}_{2}=\boldsymbol{S} \boldsymbol{R}_{1}, \quad \text { and } \quad \boldsymbol{U}_{2}=\boldsymbol{U}_{1} \boldsymbol{T}
+$$
+for square diagonal $\boldsymbol{S}$ with entries $\pm 1$, and square orthogonal $\boldsymbol{T}$. 
+
+If we require the diagonal entries of $\boldsymbol{R}$ to be positive, then $\boldsymbol{Q}$ and $\boldsymbol{R}$ are unique.
+\end{theorem}
+
+\begin{proof}
+    Let $\boldsymbol{A}$ be full rank and $m \times n$ with $m>n$. Suppose it has decompositions
+$$
+\boldsymbol{A}=\tilde{\boldsymbol{Q}}_{1} \tilde{\boldsymbol{R}}_{1}=\tilde{\boldsymbol{Q}}_{2} \tilde{\boldsymbol{R}}_{2}
+$$
+for $m \times m$ orthogonal matrices $\tilde{\boldsymbol{Q}}_{i}, m \times n$ and upper-triangular matrices $\tilde{\boldsymbol{R}}_{i}$. (We know we can do this because the QR decomposition always exists).
+
+Since $m>n$, we can write $\tilde{\boldsymbol{Q}}_{i}=\left[\begin{array}{ll}\boldsymbol{Q}_{i} & \boldsymbol{U}_{i}\end{array}\right]$ and $\tilde{\boldsymbol{R}}_{i}=\left[\begin{array}{c}\boldsymbol{R}_{i} \\ 0\end{array}\right]$ where $\boldsymbol{Q}_{i}$ is $m \times n$ and $\boldsymbol{U}_{i}$ is $m \times(m-n)$. Then
+$$
+\boldsymbol{A}=\tilde{\boldsymbol{Q}}_{i} \tilde{\boldsymbol{R}}_{i}=\left[\begin{array}{ll}
+\boldsymbol{Q}_{i} & \boldsymbol{U}_{i}
+\end{array}\right]\left[\begin{array}{c}
+\boldsymbol{R}_{i} \\
+0
+\end{array}\right]=\boldsymbol{Q}_{i} \boldsymbol{R}_{i}
+$$
+
+where $\boldsymbol{R}_{i}$ is square, upper-triangular, invertible (because $\boldsymbol{A}$ is full rank), and the columns of $\boldsymbol{Q}_{i}$ are orthonormal so $\boldsymbol{Q}_{i}$ satisfies $\boldsymbol{Q}_{i}^{T} \boldsymbol{Q}_{i}=\boldsymbol{I}$.
+Then we have
+$$
+\boldsymbol{Q}_{1} \boldsymbol{R}_{1}=\boldsymbol{Q}_{2} \boldsymbol{R}_{2}
+$$
+and left-multiplying by $\boldsymbol{Q}_{2}^{T}$ and right-multiplying by $\boldsymbol{R}_{1}^{-1}$ yields
+$$
+\boldsymbol{Q}_{2}^{T} \boldsymbol{Q}_{1}=\boldsymbol{R}_{2} \boldsymbol{R}_{1}^{-1}
+$$
+Note that the right-hand side of Eqn (2) is upper-triangular (since $\boldsymbol{R}_{i}$ is). On the other hand, left-multiplying Eqn (1) by $\boldsymbol{Q}_{1}^{T}$ and right-multiplying by $\boldsymbol{R}_{2}^{-1}$ gives $Q_{1}^{T} Q_{2}=R_{1} R_{2}^{-1}$, and taking the transpose yields a lower-triangular expression for $\boldsymbol{Q}_{2}^{T} \boldsymbol{Q}_{1}$. Therefore $\boldsymbol{Q}_{1}^{T} \boldsymbol{Q}_{2}=\boldsymbol{R}_{1} \boldsymbol{R}_{2}^{-1}$ is both lower- and upper-triangular, and so it is diagonal. Call it $\boldsymbol{D}$. Then right-multiplying Eqn (1) by $\boldsymbol{R}_{2}^{-1}$ yields
+$$
+\boldsymbol{Q}_{2} \boldsymbol{R}_{2} \boldsymbol{R}_{2}^{-1}=\boldsymbol{Q}_{2}=\boldsymbol{Q}_{1} \boldsymbol{R}_{1} \boldsymbol{R}_{2}^{-1}=\boldsymbol{Q}_{1} \boldsymbol{D}
+$$
+and so $\boldsymbol{Q}_{2}=Q_{1} \boldsymbol{D}$. Multiplying this by its transpose and using orthogonality of $\boldsymbol{Q}_{i}$ we get $\boldsymbol{I}=\boldsymbol{Q}_{2}^{T} \boldsymbol{Q}_{2}=\left(\boldsymbol{Q}_{1} \boldsymbol{D}\right)^{T}\left(\boldsymbol{Q}_{1} \boldsymbol{D}\right)=\boldsymbol{D}^{T} \boldsymbol{Q}_{1}^{T} \boldsymbol{Q}_{1} \boldsymbol{D}=\boldsymbol{D}^{T} \boldsymbol{D}=\boldsymbol{D}^{2}$. This proves $\boldsymbol{D}^{2}=\boldsymbol{I}$, so $\boldsymbol{D}=\boldsymbol{S}$, a diagonal matrix with entries $\pm 1$. So $\boldsymbol{Q}_{2}=\boldsymbol{Q}_{1} \boldsymbol{S}$. Left multiplying Eqn (1) by $\boldsymbol{Q}_{2}^{T}=\boldsymbol{S Q}_{1}^{T}$ then yields
+
+$$
+\boldsymbol{S} \boldsymbol{Q}   _{1}^{T} \boldsymbol{Q}_{1} \boldsymbol{R}_{1}=\boldsymbol{S R}_{1}=\boldsymbol{Q}_{2}^{T} \boldsymbol{Q}_{2} \boldsymbol{R}_{2}=\boldsymbol{R}_{2}
+$$
+proving that $\boldsymbol{R}_{2}=\boldsymbol{S R}_{1}$.
+
+\end{proof}
 
 \subsection{复矩阵的QR分解}
 
@@ -583,7 +680,7 @@ $A = Q R$矩阵中的$R$矩阵为
 \begin{proof}
 
 
-    假设已经实现$k - 1$列的因数分解，方程 $A= QR$的第$k$列可以计算为：
+    假设已经实现$k - 1$列的QR分解，方程 $A= QR$的第$k$列可以计算为：
 $$
 a_{k}=R_{1 k} q_{1}+R_{2 k} q_{2}+\cdots+R_{k-1, k} q_{k-1}+R_{k k} q_{k}
 $$
@@ -610,15 +707,15 @@ $$R_{1 k}=q_{1}^{T} a_{k},  R_{2 k}=q_{2}^{T} a_{k}, \ldots,  R_{k-1, k}=q_{k-1}
 
 \begin{algorithm}[htbp]
     \caption{QR Decomposition Using Gram-Schmidt Algorithm}
-\KwIn{矩阵$A \mathbb{R}^{m \times n}$ ，列向量 $a_{1}, \ldots, a_{n}$ 线性无关}
+
+\KwIn{矩阵$A \in \mathbb{R}^{m \times n}$ ，列向量 $a_{1}, \ldots, a_{n}$ 线性无关}
+\KwOut{分解得到的$Q$、$R$矩阵}
 
     $R_{11}=\left\|a_{1}\right\|_{2}$ \;
      $q_{1}=\frac{1}{R_{11}} a_{1}$ \;
 \For(){$k=2$ to $n$}{
-$R_{1 k} =q_{1}^{T} a_{k}$ \;
-$R_{2 k} =q_{2}^{T} a_{k} $\;
- $\vdots$ \;
-$R_{k-1, k} =q_{k-1}^{T} a_{k}$ \;
+    \For(){$l=1$ to $k-1$}{
+$R_{l, k} =q_{l}^{T} a_{k}$ \;}
 $\tilde{q}_{k} =a_{k}-\left(R_{1 k} q_{1}+R_{2 k} q_{2}+\cdots+R_{k-1, k} q_{k-1}\right)$ \;
 $R_{k k} =\left\|\tilde{q}_{k}\right\|_{2}$ \;
  $q_{k} =\dfrac{1}{R_{k k}} \tilde{q}_{k}$ \;
@@ -783,8 +880,20 @@ for k = 1:n
     v= A(:,k)-Q(:,1:k-1)*R(1:k-1,k);
     R(k,k) = norm(v);
     Q(:,k)=v/R(k,k);
-end;
+end
     \end{lstlisting}
+
+    \begin{algorithm}[htbp]
+        \caption{Gram-Schmidt的MATLAB算法}
+        \KwIn{矩阵$A$}
+        \KwOut{QR分解得到的矩阵$Q$、$R$}
+        \For(){$k = 1$ to $n$}{
+            $R_{\mathrm{jk}} =q_j^T a_k ,j<k,j=1,\ldotp \ldotp \ldotp ,k-1$\;
+            $v={\tilde{q} }_k =a_k -Q_{:,1:k-1} R_{1:k-1,k}$\;
+            $R_{\mathrm{kk}} ={\left\|{\tilde{q} }_k \right\|}_2$\;
+            $q_k =\left(\frac{1}{R_{kk} }\right){\tilde{q} }_k$\;
+        }
+    \end{algorithm}
 
     构造一个矩阵 $ A=U S V $,其中 $ U $ 和 $ V $ 是正交矩阵， $ S $ 是对角矩阵
     $$
@@ -793,7 +902,7 @@ end;
 
     把Gram-Schmidt算法应用到一个大小为 $ \mathrm{m}=\mathrm{n}=50 $ 的方形矩阵$A$上。
 
-    \begin{FigureCenter}{$\max _{1 \leq i<k}\left|q_{i}^{T} q_{k}\right|$}
+    \begin{FigureCenter}{$\max _{1 \leq i<k}\left|q_{i}^{T} q_{k}\right|$ (Gram-Schmidt Algorithm)}
         \includegraphics{qr-matlab-error.eps}
     \end{FigureCenter}
 
@@ -818,6 +927,22 @@ for j = 1:n
 end
     \end{lstlisting}
 
+    \begin{algorithm}[htbp]
+        \KwIn{矩阵$A$}
+        \KwOut{QR分解得到的矩阵$Q$、$R$}
+        \caption{Modified Gram-Schmidt Algorithm}
+        \For(){$j=1$ to $n$}{
+            $v={\tilde{q} }_k =a_k$\;
+            \For(){$i=1$ to $j-1$}{
+                $R_{ij} = q_i^T v$\;
+                $v = v - R_{ij} q_i$\;
+            }
+            $R_{\mathrm{kk}} ={\left\|{\tilde{q} }_k \right\|}_2$\;
+            $q_k =\left(\frac{1}{R_{kk} }\right){\tilde{q} }_k$\;
+
+        }
+    \end{algorithm}
+
     \begin{FigureCenter}{在同一组数据中使用修正Gram-Schmidt算法求得的误差，$e_{k}=\max _{1 \leq i<k}\left|q_{i}^{T} q_{k}\right|,  k=2, \ldots, n$}
         \includegraphics{modified-qr-matlab-error.eps}
     \end{FigureCenter}
@@ -829,8 +954,8 @@ end
 
 Householder算法是QR分解常用的算法(MATLAB和Julia中的qr函数)。与Gram-Schmidt相比，对舍入误差更有鲁棒性。
 
-Householder算法计算一个 “完整的” QR因数分解：
-$$ A=\left[\begin{array}{ll}Q & \tilde{Q}\end{array}\right]\left[\begin{array}{l}R \\ 0\end{array}\right], \quad\left[\begin{array}{ll}Q & \tilde{Q}\end{array}\right]  是正交的矩阵$$
+Householder算法计算一个 “完整的” QR分解：
+$$ A_{m \times n}=\left[\begin{array}{ll}Q_{m \times n} & \tilde{Q}_{m \times (m-n)}\end{array}\right]\left[\begin{array}{l}R_{n  \times  n} \\ 0_{(m-n) \times n}\end{array}\right], \quad\left[\begin{array}{ll}Q & \tilde{Q}\end{array}\right]  是列正交的矩阵$$
 
 \begin{proof}
     $$
@@ -842,6 +967,14 @@ $$ A=\left[\begin{array}{ll}Q & \tilde{Q}\end{array}\right]\left[\begin{array}{l
     $$
 \end{proof}
 
+where $ R $ is an $ n \times n $ upper triangular matrix, $0$ is an $ (m-n) \times n $ zero matrix, $ Q  $ is $ m \times n,\tilde{Q} $ is $ m \times(m-n) $, and $ Q $ and $ \tilde{Q} $ both have orthogonal columns. 
+
+\begin{remark}
+    $A \in R^{m \times n}, m \ge n$，当$m < n$时列线性相关，无法进行QR分解。
+\end{remark}
+
+
+
 完整的Q因子被构造成正交矩阵的乘积：
 $$
 \left[\begin{array}{ll}
@@ -849,6 +982,7 @@ Q & \tilde{Q}
 \end{array}\right]=H_{1} H_{2} \cdots H_{n}
 $$
 每个 $ H_{i} \in \mathbb{R}^{m \times m} $ 是对称正交的Householder矩阵。
+
 
 
 \subsection{Householder Matrix}
@@ -859,72 +993,13 @@ $$
     $ H $ 是对称的 
     $$ H^{T}=H $$
 
-$ H $ 是正交的 
+$ H $ \textbf{是正交的}
 $$ H^{T} H=I $$
 \end{theorem}
     
 
 \begin{FigureCenter}{Reflection of $x$}
-    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-
-    \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-    %uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
-    
-    %Shape: Parallelogram [id:dp7838939596356449] 
-    \draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 213; green, 213; blue, 213 }  ,fill opacity=1 ] (386.97,225.43) -- (240.09,293.42) -- (240.13,95.65) -- (387,27.67) -- cycle ;
-    %Straight Lines [id:da6147749821862796] 
-    \draw [color={rgb, 255:red, 109; green, 180; blue, 232 }  ,draw opacity=1 ][line width=2.25]    (314,185.67) -- (313.74,121.96) ;
-    \draw [shift={(313.72,116.96)}, rotate = 449.76] [fill={rgb, 255:red, 109; green, 180; blue, 232 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
-    %Straight Lines [id:da41583656892756826] 
-    \draw [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][line width=1.5]  [dash pattern={on 1.69pt off 2.76pt}]  (314,185.67) -- (136,118.67) ;
-    %Straight Lines [id:da16926502578383218] 
-    \draw [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][line width=2.25]    (242,158.67) -- (140.68,120.43) ;
-    \draw [shift={(136,118.67)}, rotate = 380.66999999999996] [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
-    %Straight Lines [id:da9973542879627482] 
-    \draw [color={rgb, 255:red, 252; green, 132; blue, 147 }  ,draw opacity=1 ][line width=2.25]    (314,185.67) -- (486.78,117.1) ;
-    \draw [shift={(491.43,115.25)}, rotate = 518.35] [fill={rgb, 255:red, 252; green, 132; blue, 147 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
-    %Straight Lines [id:da33840798922577653] 
-    \draw [color={rgb, 255:red, 161; green, 206; blue, 94 }  ,draw opacity=1 ][line width=1.5]  [dash pattern={on 1.69pt off 2.76pt}]  (314,185.67) -- (135,183.96) ;
-    %Straight Lines [id:da7106398441661397] 
-    \draw [color={rgb, 255:red, 161; green, 206; blue, 94 }  ,draw opacity=1 ][line width=2.25]    (242,184.96) -- (140,184.01) ;
-    \draw [shift={(135,183.96)}, rotate = 360.53999999999996] [fill={rgb, 255:red, 161; green, 206; blue, 94 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
-    %Straight Lines [id:da3197102975021888] 
-    \draw [color={rgb, 255:red, 161; green, 206; blue, 94 }  ,draw opacity=1 ][line width=2.25]    (314,185.67) -- (485.43,180.69) ;
-    \draw [shift={(490.43,180.55)}, rotate = 538.3399999999999] [fill={rgb, 255:red, 161; green, 206; blue, 94 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
-    %Straight Lines [id:da07789590448724115] 
-    \draw  [dash pattern={on 4.5pt off 4.5pt}]  (136,118.67) -- (135,183.96) ;
-    %Straight Lines [id:da5486690595919534] 
-    \draw  [dash pattern={on 4.5pt off 4.5pt}]  (313.72,116.96) -- (136,118.67) ;
-    %Straight Lines [id:da1919773551202424] 
-    \draw  [dash pattern={on 4.5pt off 4.5pt}]  (491.43,115.25) -- (313.72,116.96) ;
-    %Straight Lines [id:da06488229558680647] 
-    \draw  [dash pattern={on 4.5pt off 4.5pt}]  (491.43,115.25) -- (490.43,180.55) ;
-    %Straight Lines [id:da5187220488118582] 
-    \draw [color={rgb, 255:red, 65; green, 117; blue, 5 }  ,draw opacity=1 ][line width=2.25]    (314,185.67) -- (397.22,183.25) ;
-    \draw [shift={(402.22,183.11)}, rotate = 538.3399999999999] [fill={rgb, 255:red, 65; green, 117; blue, 5 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
-    
-    % Text Node
-    \draw (108,107.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{Hx}$};
-    % Text Node
-    \draw (307,97.4) node [anchor=north west][inner sep=0.75pt]    {$u$};
-    % Text Node
-    \draw  [color={rgb, 255:red, 12; green, 12; blue, 12 }  ,draw opacity=0 ][fill={rgb, 255:red, 247; green, 140; blue, 105 }  ,fill opacity=1 ]  (286,73) .. controls (286,70.24) and (288.24,68) .. (291,68) -- (346,68) .. controls (348.76,68) and (351,70.24) .. (351,73) -- (351,89) .. controls (351,91.76) and (348.76,94) .. (346,94) -- (291,94) .. controls (288.24,94) and (286,91.76) .. (286,89) -- cycle  ;
-    \draw (289,72) node [anchor=north west][inner sep=0.75pt]   [align=left] {$\displaystyle \boldsymbol{Hu=u}$};
-    % Text Node
-    \draw (87,196.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{-c_{1} v=H( c_{1} v)}$};
-    % Text Node
-    \draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 247; green, 140; blue, 105 }  ,fill opacity=1 ]  (490,86) .. controls (490,83.24) and (492.24,81) .. (495,81) -- (579,81) .. controls (581.76,81) and (584,83.24) .. (584,86) -- (584,102) .. controls (584,104.76) and (581.76,107) .. (579,107) -- (495,107) .. controls (492.24,107) and (490,104.76) .. (490,102) -- cycle  ;
-    \draw (493,85.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{x=u+c_{1} v}$};
-    % Text Node
-    \draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 247; green, 140; blue, 105 }  ,fill opacity=1 ]  (365,213) .. controls (365,210.24) and (367.24,208) .. (370,208) -- (428,208) .. controls (430.76,208) and (433,210.24) .. (433,213) -- (433,229) .. controls (433,231.76) and (430.76,234) .. (428,234) -- (370,234) .. controls (367.24,234) and (365,231.76) .. (365,229) -- cycle  ;
-    \draw (368,212.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{v}^{T}\boldsymbol{u} =0$};
-    % Text Node
-    \draw (483,183.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{c_{1} v} ,\boldsymbol{c_{1} =v}^{T}\boldsymbol{x}$};
-    % Text Node
-    \draw (396,187.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{v}$};
-    
-    
-    \end{tikzpicture}
+    \input{Pictures/tikz-householder-matrix.tex}
 \end{FigureCenter}
 
 
@@ -1026,49 +1101,14 @@ $$
 \subsubsection{构造的Householder矩阵几何意义}
 
 
-\begin{FigureCenter}{构造的Householder矩阵的几何图示}
-    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-
-\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
-
-%Straight Lines [id:da029865045800250956] 
-\draw    (118.48,198.47) -- (513.53,197.71) ;
-%Straight Lines [id:da7648219943630132] 
-\draw    (249.95,81.42) -- (422.95,297.42) ;
-%Straight Lines [id:da0029727641306782626] 
-\draw [color={rgb, 255:red, 252; green, 132; blue, 147 }  ,draw opacity=1 ][line width=2.25]    (344.25,197.82) -- (370.82,84.25) ;
-\draw [shift={(371.96,79.38)}, rotate = 463.17] [fill={rgb, 255:red, 252; green, 132; blue, 147 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
-%Straight Lines [id:da8143455838821552] 
-\draw [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][line width=2.25]    (344.25,197.82) -- (228.57,198.09) ;
-\draw [shift={(223.57,198.11)}, rotate = 359.87] [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
-%Straight Lines [id:da703987286749107] 
-\draw  [dash pattern={on 4.5pt off 4.5pt}]  (297.77,138.74) -- (223.57,198.11) ;
-%Straight Lines [id:da00886805291354964] 
-\draw  [dash pattern={on 4.5pt off 4.5pt}]  (371.96,79.38) -- (297.77,138.74) ;
-%Straight Lines [id:da1380735800367292] 
-\draw [color={rgb, 255:red, 152; green, 195; blue, 245 }  ,draw opacity=1 ][line width=2.25]    (223.57,198.11) -- (368.05,82.5) ;
-\draw [shift={(371.96,79.38)}, rotate = 501.34] [fill={rgb, 255:red, 152; green, 195; blue, 245 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
-
-% Text Node
-\draw (302.81,99.57) node [anchor=north west][inner sep=0.75pt]    {$w$};
-% Text Node
-\draw (159,208.4) node [anchor=north west][inner sep=0.75pt]    {$-\operatorname{sign}( y_{1}) \| y\| e_{1}$};
-% Text Node
-\draw (360.24,141.91) node [anchor=north west][inner sep=0.75pt]  [rotate=-357.61]  {$y$};
-% Text Node
-\draw (455,175) node [anchor=north west][inner sep=0.75pt]   [align=left] {坐标轴};
-% Text Node
-\draw (394,237) node [anchor=north west][inner sep=0.75pt]   [align=left] {超平面$\displaystyle \left\{x|w^{T} x=0\right\}$};
-
-
-\end{tikzpicture}
+\begin{FigureCenter}{构造的Householder矩阵的几何意义}
+   \input{Pictures/tikz-geometry-of-householder-Hx.tex}
 \end{FigureCenter}
 
 
-关于超平面 $ \left\{x \mid w^{T} x=0\right\} $, 其法向量：
+关于超平面 $ \left\{x \mid w^{T} x=0\right\} $, 其法向量$w,v$：
 $$
-v=\frac{w}{\|w\|_{2}}, w=y+\operatorname{sign}\left(y_{1}\right)\|y\|_{2} e_{1}
+w=y+\operatorname{sign}\left(y_{1}\right)\|y\|_{2} e_{1},v=\frac{w}{\|w\|_{2}}
 $$
 反射算子$H$将 $ y $ 映射到向量 $ -\operatorname{sign}\left(y_{1}\right)\|y\|_{2} e_{1} $ 。
 
@@ -1136,12 +1176,12 @@ $$
         \end{tikzpicture}        
 \end{FigureCenter}
 
-
+其过程如下：
 
 
 $$ A=\left[\begin{array}{llllllll}X & X & X & X & X & X & X & X \\ X & X & X & X & X & X & X & X \\ X & X & X & X & X & X & X & X \\ X & X & X & X & X & X & X & X \\ X & X & X & X & X & X & X & X \\ X & X & X & X & X & X & X & X \\ X & X & X & X & X & X & X & X \\ X & X & X & X & X & X & X & X\end{array}\right] $$
 
-在第一次处理之后，第一列只剩下第一个元素不为0.
+在第一次处理之后，$A_1$第一列只剩下第一个元素不为0.
 
 $$H_1A = A_{1}=\left[\begin{array}{llllllll}X & X & X & X & X & X & X & X \\ 0 & X & X & X & X & X & X & X \\ 0 & X & X & X & X & X & X & X \\ 0 & X & X & X & X & X & X & X \\ 0 & X & X & X & X & X & X & X \\ 0 & X & X & X & X & X & X & X \\ 0 & X & X & X & X & X & X & X \\ 0 & X & X & X & X & X & X & X\end{array}\right] $$
 
@@ -1150,7 +1190,7 @@ $$H_1A = A_{1}=\left[\begin{array}{llllllll}X & X & X & X & X & X & X & X \\ 0 &
 $$H_2A_1= A_{2}=\left[\begin{array}{cccccccc}X & X & X & X & X & X & X & X \\ 0 & X & X & X & X & X & X & X \\ 0 & 0 & X & X & X & X & X & X \\ 0 & 0 & X & X & X & X & X & X \\ 0 & 0 & X & X & X & X & X & X \\ 0 & 0 & X & X & X & X & X & X \\ 0 & 0 & X & X & X & X & X & X \\ 0 & 0 & X & X & X & X & X & X\end{array}\right] $$
 
 
-下面的算法用 $ \left[\begin{array}{l}R \\ 0\end{array}\right] $ 来代替 $ A \in \mathbb{R}^{m \times n} $.
+
 
 \begin{FigureCenter}{迭代计算过程中$A$的结构}
     \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt
@@ -1209,12 +1249,12 @@ $$H_2A_1= A_{2}=\left[\begin{array}{cccccccc}X & X & X & X & X & X & X & X \\ 0 
         \end{tikzpicture}
 \end{FigureCenter}
 
-
+\subsection{Household-QR Algorithm}
 
 \begin{algorithm}[htbp]
     \caption{QR Decomposition Using Householder Transformation}
     \KwIn{Matrix $A$}
-    \KwOut{$v_1, \cdots, v_n$ ($Q$), $A=
+    \KwOut{$v_1, \cdots, v_n, v_k \in \mathbb{R}^{m-k+1} $ ($Q$), $A=
     \left[\begin{array}{c}
     R \\
     0
@@ -1231,16 +1271,19 @@ $$H_2A_1= A_{2}=\left[\begin{array}{cccccccc}X & X & X & X & X & X & X & X \\ 0 
     }
 \end{algorithm}
 
-\begin{proof}
-    在步骤2中，将 $ A_{k: m, k: n} $ 与反射算子 $ I-2 v_{k} v_{k}^{T} $ 相乘
+\begin{theorem}
+     在算法步骤2中，将 $ A_{k: m, k: n} $ 与反射算子 $ I-2 v_{k} v_{k}^{T} $ 相乘
 
-$$ \left(I-2 v_{k} v_{k}^{T}\right) A_{k: m, k: n}=A_{k: m, k: n}-2 v_{k}\left(v_{k}^{T} A_{k: m, k: n}\right) $$
+    $$ \left(I-2 v_{k} v_{k}^{T}\right) A_{k: m, k: n}=A_{k: m, k: n}-2 v_{k}\left(v_{k}^{T} A_{k: m, k: n}\right) $$
 
-等价于用 $ H_{k} \in \mathbb{R}^{m \times m} $ 乘以 $ A $
+    等价于用 $ H_{k} \in \mathbb{R}^{m \times m} $ 乘以 $ A \in \mathbb{R}^{m \times n}  $
 
-$$ H_{k}=\left[\begin{array}{cc}I & 0 \\ 0 & I-2 v_{k} v_{k}^{T}\end{array}\right]=I-2\left[\begin{array}{c}0 \\ v_{k}\end{array}\right]\left[\begin{array}{l}0 \\ v_{k}\end{array}\right]^{T} $$
+    $$ H_{k}=\left[\begin{array}{cc}I & 0 \\ 0 & I-2 v_{k} v_{k}^{T}\end{array}\right]=I-2\left[\begin{array}{c}0 \\ v_{k}\end{array}\right]\left[\begin{array}{l}0 \\ v_{k}\end{array}\right]^{T} $$
+\end{theorem}
 
-算法将下列矩阵来代替 $ A $
+   
+
+算法的最终结果将下列矩阵来代替 $ A\in \mathbb{R}^{m \times n}  $
 $$
 \left[\begin{array}{c}
 R \\
@@ -1249,7 +1292,7 @@ R \\
 $$
 
 返回向量 $ v_{1}, \ldots, v_{n} $, 其中 $ v_{k} $ 的长度为 $ m-k+1 $ 。
-\end{proof}
+
 
 
 \subsection{An Example for Householder Algorithm}
@@ -1349,25 +1392,32 @@ I & 0 \\
 \end{array}\right]
 $$
 
+总的求解式为
 
     $$ \begin{aligned} H_{3} H_{2} H_{1} A &=\left[\begin{array}{cc}I_{2} & 0 \\ 0 & I_{2}-2 v_{3} v_{3}^{T}\end{array}\right]\left[\begin{array}{cc}I_{1} & 0 \\ 0 & I_{3}-2 v_{2} v_{2}^{T}\end{array}\right]\left(I_{4}-2 v_{1} v_{1}^{T}\right) A \\ &=\left[\begin{array}{cc}I_{2} & 0 \\ 0 & I_{2}-2 v_{3} v_{3}^{T}\end{array}\right]\left[\begin{array}{cc}I_{1} & 0 \\ 0 & I_{3}-2 v_{2} v_{2}^{T}\end{array}\right]\left[\begin{array}{ccc}2 & 4 & 2 \\ 0 & 4 / 3 & 8 / 3 \\ 0 & 2 / 3 & 16 / 3 \\ 0 & 4 / 3 & 20 / 3\end{array}\right] \\ &=\left[\begin{array}{cc}I_{2} & 0 \\ 0 & I_{2}-2 v_{3} v_{3}^{T}\end{array}\right]\left[\begin{array}{rrr}2 & 4 & 2 \\ 0 & -2 & -8 \\ 0 & 0 & 16 / 5 \\ 0 & 0 & 12 / 5\end{array}\right] \\ &=\left[\begin{array}{rrr}2 & 4 & 2 \\ 0 & -2 & -8 \\ 0 & 0 & -4 \\ 0 & 0 & 0\end{array}\right] \end{aligned} $$
 \end{problem}
 
 \subsection{Complexity of Householder Algorithm}
 
+$$ H_{k}=\left[\begin{array}{cc}I & 0 \\ 0 & I-2 v_{k} v_{k}^{T}\end{array}\right]=I-2\left[\begin{array}{c}0 \\ v_{k}\end{array}\right]\left[\begin{array}{l}0 \\ v_{k}\end{array}\right]^{T} $$
+
 Householder方法第$k$次循环的复杂度:
 
 \begin{itemize}
-    \item $ v_{k}^{T} A_{k: m, k: n} $ 的乘积： $ (2(\mathrm{~m}-\mathrm{k}+1)-1)(\mathrm{n}-\mathrm{k}+1) $ flops
+    \item $ v_{k}^{T} A_{k: m, k: n} $ 的乘积： $ (2({m}-{k}+1)-1)({n}-{k}+1) $ flops
     \item $ v_{k} $ 的外积： $ (m-k+1)(n-k+1) $ flops
-    \item $ A_{k: m, k: n} $ 的减法： $ (\mathrm{m}-\mathrm{k}+1)(\mathrm{n}-\mathrm{k}+1) $ flops
+    \item $ A_{k: m, k: n} $ 的减法： $ ({m}-{k}+1)({n}-{k}+1) $ flops
 \end{itemize}
 
-第$k$次循环的总和： $ 4(\mathrm{~m}-\mathrm{k}+1)(\mathrm{n}-\mathrm{k}+1) $ flops
+第$k$次循环的总和： $ 4({m}-{k}+1)({n}-{k}+1) $ flops
 
 计算 $ R $ 和 $ v_{1}, \ldots, v_{n} $ 的总复杂度
 
-$$ \begin{aligned} \sum_{k=1}^{n} 4(m-k+1)(n-k+2) & \approx \int_{0}^{n} 4(m-t)(n-t+1) d t \\ & \approx 2 m n^{2}-\frac{2}{3} n^{3} \text { flops } \end{aligned} $$
+$$ \begin{aligned} \sum_{k=1}^{n} 4(m-k+1)(n-k+\boldsymbol{2}) & \approx \int_{0}^{n} 4(m-t)(n-t+1) d t \\ & \approx 2 m n^{2}-\frac{2}{3} n^{3} \text { flops } \end{aligned} $$
+
+\begin{remark}
+    $\sum_{k=1}^{n} 4(m-k+1)(n-k+\boldsymbol{2})$ 是因为
+\end{remark}
 
 \section{Householder变换进行QR分解的 $Q$ 因子}
 
@@ -1397,6 +1447,8 @@ Q & \tilde{Q}
 $$
 \end{theorem}
 
+\subsection{Multiplication with $Q$ factor}
+
 \begin{definition}[矩阵-向量积 $ H_{k} x $]
     矩阵-向量积 $ H_{k} x $ 定义为：
 $$
@@ -1424,7 +1476,7 @@ $$ \sum_{k=1}^{n} 4(m-k+1) \approx 4 m n-2 n^{2}  \text{ flops}$$
 其复杂度约等于$m \times n$矩阵的矩阵-向量乘积($2mn$ flops)。 
 
 
-\section{Fast Orthogonalization}
+\section{Fast Orthogonalization (Givens and Householder)}
 
 \begin{remark}
     This section is quoted from \cite{Strang1993IntroductionTL}.
@@ -1462,7 +1514,7 @@ Use $Q_{21}$ the way you used $E_{21}$, to produce a zero in the $(2,1)$ positio
     200 & -40 & 395
     \end{array}\right]=\left[\begin{array}{crr}
     150 & -155 & -110 \\
-    \mathbb{0} & 75 & -225 \\
+    \mathbf{0} & 75 & -225 \\
     200 & -40 & 395
     \end{array}\right]
     $$
@@ -1484,8 +1536,8 @@ Q_{31} Q_{21} A=\left[\begin{array}{rrr}
 200 & \cdot & \cdot
 \end{array}\right]=\left[\begin{array}{rrr}
 250 & -125 & 250 \\
-\mathbb{0} & 75 & -225 \\
-\mathbb{0} & 100 & 325
+\mathbf{0} & 75 & -225 \\
+\mathbf{0} & 100 & 325
 \end{array}\right]
 $$
 One more step to $R$. The $(3,2)$ entry has to go. The numbers $\cos \theta$ and $\sin \theta$ now come from 75 and 100 . The rotation is now in rows and columns 2 and 3:
@@ -1501,8 +1553,8 @@ $$Q_{32} Q_{31} Q_{21} A=\left[\begin{array}{rrr}
     0 & 100 & \cdot
     \end{array}\right]=\left[\begin{array}{rrr}
     250 & -125 & 250 \\
-    \mathbb{0} & 125 & 125 \\
-    \mathbb{0} & \mathbb{0} & 375
+    \mathbf{0} & 125 & 125 \\
+    \mathbf{0} & \mathbf{0} & 375
     \end{array}\right]$$
 
     We have reached the upper triangular $R$. What is $Q ?$ Move the plane rotations $Q_{i j}$ to the other side to find $A=Q R$-just as you moved the elimination matrices $E_{i j}$ to the other side to find $A=L U$ :
@@ -1543,3 +1595,106 @@ $$
 \end{theorem}
 
 \end{example}
+
+
+\section{Recap： QR Decomposition}
+
+\subsection{分治策略}
+
+求解线性方程组 $ A x=b $, 矩阵 $ A \in \mathbb{R}^{n \times n} $ 分解成“结构简单” 的矩阵相乘:
+$$
+A=A_{1} A_{2} \cdots A_{k}
+$$
+
+\begin{example}[求解k个线性方程组 $ A_{1} A_{2} \cdots A_{k} x=b $]
+    $$\displaystyle \begin{matrix}
+        A_{1}\textcolor[rgb]{0.72,0.33,0.31}{\boldsymbol{\underbrace{\boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{(}\textcolor[rgb]{0.72,0.33,0.31}{A}\textcolor[rgb]{0.72,0.33,0.31}{_{2}}\textcolor[rgb]{0.72,0.33,0.31}{\cdots A}\textcolor[rgb]{0.72,0.33,0.31}{_{k}}\textcolor[rgb]{0.72,0.33,0.31}{x}\textcolor[rgb]{0.72,0.33,0.31}{)}}}_{z_{1}}}} & = & b\\
+        \textcolor[rgb]{0,0,0}{A}\textcolor[rgb]{0,0,0}{_{2}}\textcolor[rgb]{0.6,0.76,0.96}{\underbrace{\boldsymbol{( A_{3} \cdots A_{k} x)}}_{\boldsymbol{z_{2}}}} & = & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{z}\textcolor[rgb]{0.72,0.33,0.31}{_{1}}}\\
+        \cdots  &  & \\
+        A_{k-1}\textcolor[rgb]{0.63,0.81,0.37}{\boldsymbol{\underbrace{(\textcolor[rgb]{0.63,0.81,0.37}{A}\textcolor[rgb]{0.63,0.81,0.37}{_{k}}\textcolor[rgb]{0.63,0.81,0.37}{x}\textcolor[rgb]{0.63,0.81,0.37}{)}}_{z_{k-1}}}} & = & \boldsymbol{\textcolor[rgb]{0.96,0.65,0.14}{z}\textcolor[rgb]{0.96,0.65,0.14}{_{k-2}}}\\
+        \boldsymbol{A_{k} x} & = & \boldsymbol{\textcolor[rgb]{0.63,0.81,0.37}{z}\textcolor[rgb]{0.63,0.81,0.37}{_{k-1}}}
+        \end{matrix}$$
+\end{example}
+
+\begin{example}[QR分解$Ax = b$]
+    $$
+\begin{aligned}
+    Q y&=b\\
+    R x&=y
+\end{aligned}
+$$
+\end{example}
+
+通常\textbf{分解复杂度远大于求解复杂度}。
+
+\subsection{非奇异矩阵的QR分解}
+
+\begin{theorem}
+    任意非奇异矩阵 $ A \in \mathbb{R}^{n \times n} $, 都可以进行QR分解。
+\end{theorem}
+
+\begin{corollary}
+    $ Q \in \mathbb{R}^{n \times n} $ 是一个正交矩阵
+\end{corollary}
+
+\begin{corollary}
+    $ R \in \mathbb{R}^{n \times n} $ 是一个上三角矩阵并且对角元素都为正数
+\end{corollary}
+
+
+\subsection{使用QR分解求$A^{-1}$可以转换成$R^{-1} Q^{T}$}
+
+\begin{theorem}
+    $ A^{-1}=(Q R)^{-1}=R^{-1} Q^{-1}=R^{-1} Q^{T} $
+\end{theorem}
+
+\subsection{QR分解求解$A^{-1}$}
+
+
+计算非奇异矩阵 $ \mathrm{A} \in \mathbb{R}^{n \times n} $ 的逆 $ \mathrm{A}^{-1} $, $X=\left[x_{1}, x_{2}, \cdots, x_{n}\right], x_{i} \in \mathbb{R}^{n}, i=1, \cdots, n$，$I=\left[e_{1}, e_{2}, \cdots, e_{n}\right], e_{i} \in \mathbb{R}^{n}, i=1, \cdots, n$
+：
+
+\begin{theorem}[QR分解求解$A^{-1}$]
+    $$R x_{1}= Q^{T} e_{1}, R x_{2}=Q^{T} e_{2}, \cdots, R x_{n}=Q^{T} e_{n}$$
+\end{theorem}
+
+$$\begin{aligned}
+    &AX = I \\
+    \Rightarrow&   Q R X=I \\
+    \Rightarrow&   R X =Q^{T} I \\
+    \Rightarrow&  R x_{1}= Q^{T} e_{1}, R x_{2}=Q^{T} e_{2}, \cdots, R x_{n}=Q^{T} e_{n}
+\end{aligned}$$
+
+
+
+\subsubsection{The Complexity of $ Q R X=I $}
+
+复杂度: $ 2 n^{3}+n^{3} \approx 3 n^{3} $ flops
+
+\begin{itemize}
+    \item QR分解复杂度: $ 2 n^{3} $
+    \item 回代法：一次回代 $ n^{2} $, 则$n$次回代 $ n^{3} $
+\end{itemize}
+
+
+\subsection{QR分解求解线性方程组}
+
+使用 $ Q R $ 分解求解线性方程组 $ A x=b $, 矩阵 $ A \in \mathbb{R}^{n \times n} $ 为非奇异矩阵
+
+\begin{algorithm}[htbp]
+    \caption{QR分解求解线性方程组}
+    首先对 $ A $ 进行 $ Q R $ 分解，得到 $ A=Q R $\;
+    计算 $ y=Q^{T} b $\;
+    通过回代法求解 $ R x=y $\;
+\end{algorithm}
+
+
+\subsubsection{The Complexity of Solving Linear Equation Systems Using QR Decomposition}
+
+复杂度: $ 2 n^{3}+3 n^{2} \approx 2 n^{3} $ flops 
+
+\begin{itemize}
+    \item QR分解复杂度: $ 2 n^{3} $
+    \item 矩阵向量乘法: $ 2 n^{2} $
+    \item 回代法： $ n^{2} $
+\end{itemize}

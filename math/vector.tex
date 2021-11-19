@@ -268,11 +268,14 @@ Here we have $ a^{T} b=2 $, which is the number of objects in both $ A $ and $ B
 
 \section{Cauchy-Schwartz Inequality}
 \begin{theorem}[Cauchy-Schwartz Inequality]
+    \label{thm:cauchy-schwartz=inequality}
     设 \( \langle \cdot,\cdot \rangle \) 是向量空间 \( V \) 上的内积, \( \forall x, y \in V \), 则有
 
     $$
 |\langle x, y\rangle|^{2} \leq\langle x, x\rangle\langle y, y\rangle
 $$
+
+    当$x=-\lambda y$时，有$|\langle x, y\rangle|^{2}=\langle x, x\rangle\langle y, y\rangle$。
 \end{theorem}
 
 \begin{proof}
@@ -313,6 +316,12 @@ $$
 $$
 which yields the Cauchy-Schwarz inequality.
 \end{proof}
+
+\begin{corollary}
+    $$|\langle a,b \rangle| \le \| a \|_2 \| b \|_2 \Rightarrow
+    \langle a,b \rangle \ge -\| a \|_2 \| b \|_2
+    $$
+\end{corollary}
 
 \section{浮点运算}
 

@@ -186,6 +186,9 @@ $$
 
 则可以求解
 
+\begin{proof}
+    
+
 $$ f(z)=\sum_{i=1}^{N}\left\|x_{i}-z\right\|_{2}^{2}=\sum_{i=1}^{N}\left\langle x_{i}-z, x_{i}-z\right\rangle=\sum_{i=1}^{N}\left\{x_{i}^{T} x_{i}-2 x_{i}^{T} z+z_{i}^{T} z\right\} $$
 
 利用等价条件\ref{Theorem:ConvexDiffential}
@@ -193,38 +196,63 @@ $$ f(z)=\sum_{i=1}^{N}\left\|x_{i}-z\right\|_{2}^{2}=\sum_{i=1}^{N}\left\langle 
 $$ \nabla f(z)=\sum_{i=1}^{N}\left\{-2 x_{i}+2 z\right\}=0 $$ (求导 \ref{Definition:VectorVectorDerivative})
 
 $$ z=\frac{1}{N} \sum_{i=1}^{N} x_{i} $$
+\end{proof}
+% todo (2021-11-02 19:29): another solution
+
+另解：
+
+\begin{proof}
+    $ J\left(x_{0}\right)=\sum_{i=1}^{n}\left\|x_{0}-x_{i}\right\|^{2} ， $ 其中 $ m=\frac{1}{n} \sum_{i=1}^{n} x_{i} $
+
+    $$\begin{aligned}
+        J\left(x_{0}\right)&=\sum_{i=1}^{n}\left\|\left(x_{0}-m\right)-\left(x_{i}-m\right)\right\|^{2} \\
+        &=\sum_{i=1}^{n}\left\|x_{0}-m\right\|^{2}-2 \sum_{i=1}^{n}\left(x_{0}-m\right)^{T}\left(x_{i}-m\right)+\sum_{i=1}^{n}\left\|x_{i}-m\right\|^{2} \\
+        &= \sum_{i=1}^{n}\left\|x_{0}-m\right\|^{2}-2\left(x_{0}-m\right)^{T} \sum_{i=1}^{n}\left(x_{i}-m\right)+\sum_{i=1}^{n}\left\|x_{i}-m\right\|^{2}
+    \end{aligned}$$
+
+
+因为
+$$ \sum_{i=1}^{n}\left(x_{i}-m\right)=\sum_{i=1}^{n} x_{i}-n m=\sum_{i=1}^{n} x_{i}-n \cdot \frac{1}{n} \sum_{i=1}^{n} x_{i}=0 $$
+
+所以有 $$ J\left(x_{0}\right)=\sum_{i=1}^{n}\left\|x_{0}-m\right\|^{2}+\sum_{i=1}^{n}\left\|x_{i}-m\right\|^{2} $$
+
+即当$x_0$等于均值时，有最小均方.
+\end{proof}
 
 \section{投影问题: 标量优化问题}
 
 \begin{FigureCenter}{Projection onto a line}
-    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt
+   
 
-    \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-    %uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
-    %Straight Lines [id:da6245666898381868] 
-    \draw    (101,120) -- (179.63,53.38) ;
-    \draw [shift={(181.15,52.09)}, rotate = 499.72] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-    %Straight Lines [id:da028563208619883484] 
-    \draw    (101,120) -- (129.15,119.79) -- (224.15,119.1) ;
-    \draw [shift={(226.15,119.09)}, rotate = 539.5799999999999] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-    %Straight Lines [id:da8014408982517005] 
-    \draw  [dash pattern={on 0.84pt off 2.51pt}]  (181.15,62.09) -- (181.15,114.09) ;
-    %Straight Lines [id:da3438902495351597] 
-    \draw [color={rgb, 255:red, 236; green, 29; blue, 29 }  ,draw opacity=1 ][fill={rgb, 255:red, 223; green, 36; blue, 36 }  ,fill opacity=1 ][line width=2.25]    (101,120) -- (172.65,119.48) ;
-    \draw [shift={(177.65,119.44)}, rotate = 539.5799999999999] [fill={rgb, 255:red, 236; green, 29; blue, 29 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
 
-    % Text Node
-    \draw (228,110.4) node [anchor=north west][inner sep=0.75pt]    {$a$};
-    % Text Node
-    \draw (188,39.4) node [anchor=north west][inner sep=0.75pt]    {$b$};
-    % Text Node
-    \draw (139,123.4) node [anchor=north west][inner sep=0.75pt]    {$\hat{t} a$};
-    % Text Node
-    \draw (190,76.4) node [anchor=north west][inner sep=0.75pt]    {$b-\hat{t} a$};
+%Straight Lines [id:da8764321810021003] 
+\draw [color={rgb, 255:red, 215; green, 155; blue, 0 }  ,draw opacity=1 ][line width=1.5]    (152,230) -- (286,230.46) ;
+\draw [shift={(290,230.47)}, rotate = 180.2] [fill={rgb, 255:red, 215; green, 155; blue, 0 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (11.61,-5.58) -- (0,0) -- (11.61,5.58) -- cycle    ;
+%Straight Lines [id:da47866964225433306] 
+\draw [color={rgb, 255:red, 184; green, 84; blue, 80 }  ,draw opacity=1 ][line width=3]    (152,230) -- (206,230.26) ;
+\draw [shift={(212,230.29)}, rotate = 180.28] [fill={rgb, 255:red, 184; green, 84; blue, 80 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (16.97,-8.15) -- (0,0) -- (16.97,8.15) -- cycle    ;
+%Straight Lines [id:da7728847142920288] 
+\draw [color={rgb, 255:red, 130; green, 179; blue, 102 }  ,draw opacity=1 ][line width=2.25]    (152,230) -- (207.49,117.78) ;
+\draw [shift={(209.71,113.29)}, rotate = 476.31] [fill={rgb, 255:red, 130; green, 179; blue, 102 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
+%Straight Lines [id:da29849014601149504] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (209.71,113.29) -- (212,230.29) ;
+
+% Text Node
+\draw (210,90.4) node [anchor=north west][inner sep=0.75pt]    {$b$};
+% Text Node
+\draw (193,237.4) node [anchor=north west][inner sep=0.75pt]    {$\hat{t} a$};
+% Text Node
+\draw (298,222.4) node [anchor=north west][inner sep=0.75pt]    {$a$};
+% Text Node
+\draw (221,167.4) node [anchor=north west][inner sep=0.75pt]    {$b-\hat{t} a$};
 
 
-    \end{tikzpicture}
+\end{tikzpicture}
+
 \end{FigureCenter}
 
 
@@ -246,7 +274,7 @@ $$ z=\frac{1}{N} \sum_{i=1}^{N} x_{i} $$
 
 
 
-\begin{FigureCenter}{Projection onto a line from the prospective of linear algebra.}
+\begin{FigureCenter}{Projection onto a line from the prospective of linear algebra}
     \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
 \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
