@@ -129,7 +129,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9.3}Fundamental Theorem of Linear Algebra}{60}{section.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.4}Invertible Matrices}{60}{section.9.4}%
+\contentsline {section}{\numberline {9.4}Invertible Matrices}{61}{section.9.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9.5}转置和共轭转置的逆}{63}{section.9.5}%
 \defcounter {refsection}{0}\relax 
@@ -235,7 +235,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {11.9.2}非奇异矩阵的QR分解}{99}{subsection.11.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.9.3}使用QR分解求$A^{-1}$可以转换成$R^{-1} Q^{T}$}{99}{subsection.11.9.3}%
+\contentsline {subsection}{\numberline {11.9.3}使用QR分解求$A^{-1}$可以转换成$R^{-1} Q^{T}$}{100}{subsection.11.9.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {11.9.4}QR分解求解$A^{-1}$}{100}{subsection.11.9.4}%
 \defcounter {refsection}{0}\relax 

@@ -26,9 +26,9 @@
 
 \usepackage{tikz} % Required for drawing custom shapes
 
-\usepackage[japanese,main=english, provide=*]{babel} % English language/hyphenation
-\babelfont[japanese]{rm}
-          [Renderer=HarfBuzz]{IPAMincho}
+\usepackage[main=english, provide=*]{babel} % English language/hyphenation
+% \babelfont[japanese]{rm}
+%          [Renderer=HarfBuzz]{IPAMincho}
 
 
 \usepackage{enumitem} % Customize lists
@@ -38,7 +38,8 @@
 
 \usepackage{xcolor} % Required for specifying colors by name
 % \definecolor{ocre}{RGB}{243,102,25} % Define the orange color used for highlighting throughout the book
-\definecolor{ocre}{RGB}{76, 50, 168}
+\definecolor{violet}{RGB}{76, 50, 168}
+\definecolor{lightViolet}{RGB}{234, 229, 255}
 \definecolor{coral}{RGB}{184, 84, 80}
 \definecolor{grass}{RGB}{130,179,102}
 
@@ -59,6 +60,9 @@
 % for scaling tikz tool
 % \usepackage{environ}
 \usepackage{adjustbox}
+
+% in companion with babel/polyglossia
+\usepackage{csquotes}
 
 % code listing
 \usepackage{listings}
@@ -140,9 +144,9 @@
 \titlecontents{chapter}
 	[1.25cm] % Left indentation
 	{\addvspace{12pt}\large\sffamily\bfseries} % Spacing and font options for chapters
-	{\color{ocre!60}\contentslabel[\Large\thecontentslabel]{1.25cm}\color{ocre}} % Formatting of numbered sections of this type
-	{\color{ocre}} % Formatting of numberless sections of this type
-	{\color{ocre!60}\normalsize\;\titlerule*[.5pc]{.}\;\thecontentspage} % Formatting of the filler to the right of the heading and the page number
+	{\color{violet!60}\contentslabel[\Large\thecontentslabel]{1.25cm}\color{violet}} % Formatting of numbered sections of this type
+	{\color{violet}} % Formatting of numberless sections of this type
+	{\color{violet!60}\normalsize\;\titlerule*[.5pc]{.}\;\thecontentspage} % Formatting of the filler to the right of the heading and the page number
 
 % Section text styling
 \titlecontents{section}
@@ -184,9 +188,9 @@
 \titlecontents{lchapter}
 	[0em] % Left indentation
 	{\addvspace{15pt}\large\sffamily\bfseries} % Spacing and font options for chapters
-	{\color{ocre}\contentslabel[\Large\thecontentslabel]{1.25cm}\color{ocre}} % Chapter number
+	{\color{violet}\contentslabel[\Large\thecontentslabel]{1.25cm}\color{violet}} % Chapter number
 	{}  
-	{\color{ocre}\normalsize\sffamily\bfseries\;\titlerule*[.5pc]{.}\;\thecontentspage} % Page number
+	{\color{violet}\normalsize\sffamily\bfseries\;\titlerule*[.5pc]{.}\;\thecontentspage} % Page number
 
 % Section text styling
 \titlecontents{lsection}
@@ -252,15 +256,15 @@
 \newtheorem{notation}{Notation}[chapter]
 
 % Boxed/framed environments
-\newtheoremstyle{ocrenumbox}% Theorem style name
+\newtheoremstyle{violetnumbox}% Theorem style name
 {0pt}% Space above
 {0pt}% Space below
 {\normalfont}% Body font
 {}% Indent amount
-{\small\bf\sffamily\color{ocre}}% Theorem head font
+{\small\bf\sffamily\color{violet}}% Theorem head font
 {\;}% Punctuation after theorem head
 {0.25em}% Space after theorem head
-{\small\sffamily\color{ocre}\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
+{\small\sffamily\color{violet}\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
 \thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries\color{black}---\nobreakspace#3.}% Optional theorem note
 \addcontentsline{lod}{subsection}{(#1)\quad\protect\numberline{#2}{#3}}} % add line to list of theorems; #1 is theorem name, #2 #3 is the name of theorem
 
@@ -304,15 +308,15 @@
 
 
 % Non-boxed/non-framed environments
-\newtheoremstyle{ocrenum}% Theorem style name
+\newtheoremstyle{violetnum}% Theorem style name
 {5pt}% Space above
 {5pt}% Space below
 {\normalfont}% Body font
 {}% Indent amount
-{\small\bf\sffamily\color{ocre}}% Theorem head font
+{\small\bf\sffamily\color{violet}}% Theorem head font
 {\;}% Punctuation after theorem head
 {0.25em}% Space after theorem head
-{\small\sffamily\color{ocre}\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
+{\small\sffamily\color{violet}\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
 \thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries\color{black}---\nobreakspace#3.}} % Optional theorem note
 
 \makeatother
@@ -321,7 +325,7 @@
 \newcounter{dummy} 
 \numberwithin{dummy}{section}
 
-\theoremstyle{ocrenumbox}
+\theoremstyle{violetnumbox}
 \newtheorem{theoremeT}[dummy]{Theorem}
 \newtheorem{problemT}{Problem}[chapter]
 \newtheorem{exerciseT}{Exercise}[chapter]
@@ -336,7 +340,7 @@
 \newtheorem{definitionT}{Definition}[section]
 \newtheorem{corollaryT}[dummy]{Corollary}
 
-\theoremstyle{ocrenum}
+\theoremstyle{violetnum}
 \newtheorem{proposition}[dummy]{Proposition}
 
 % define new environment: RefWord and DefWord for vocabulary.
@@ -396,13 +400,19 @@
 %	DEFINITION OF COLORED BOXES
 %----------------------------------------------------------------------------------------
 
-\RequirePackage[framemethod=default]{mdframed} % Required for creating the theorem, definition, exercise and corollary boxes
+%\RequirePackage[framemethod=default]{mdframed} % Required for creating the theorem, definition, exercise and corollary boxes
+\RequirePackage[framemethod=TikZ]{mdframed} % for supporting rounder corners, warning: 'framemethod=pstricks' will not work with XeLatex
+
+\mdfsetup{
+	roundcorner=5pt
+}
 
 % Theorem box
 \newmdenv[skipabove=7pt,
 skipbelow=7pt,
-backgroundcolor=black!5,
-linecolor=ocre,
+% backgroundcolor=black!5, % grey
+backgroundcolor=lightViolet,
+linecolor=violet,
 innerleftmargin=5pt,
 innerrightmargin=5pt,
 innertopmargin=5pt,
@@ -417,8 +427,8 @@ rightline=false,
 leftline=true,
 topline=false,
 bottomline=false,
-backgroundcolor=ocre!10,
-linecolor=ocre,
+backgroundcolor=violet!10,
+linecolor=violet,
 innerleftmargin=5pt,
 innerrightmargin=5pt,
 innertopmargin=5pt,
@@ -434,7 +444,7 @@ rightline=false,
 leftline=true,
 topline=false,
 bottomline=false,
-linecolor=ocre,
+linecolor=violet,
 innerleftmargin=5pt,
 innerrightmargin=5pt,
 innertopmargin=0pt,
@@ -443,11 +453,16 @@ rightmargin=0cm,
 linewidth=4pt,
 innerbottommargin=0pt]{dBox}	
 
+\mdfsetup{
+	roundcorner=5pt
+}
+
 % Corollary box
 \newmdenv[skipabove=7pt,
 skipbelow=7pt,
 rightline=false,
 leftline=true,
+%leftline=false,
 topline=false,
 bottomline=false,
 linecolor=gray,
@@ -462,7 +477,7 @@ innerbottommargin=5pt]{cBox}
 
 % Creates an environment for each type of theorem and assigns it a theorem text style from the "Theorem Styles" section above and a colored box from above
 \newenvironment{theorem}{\begin{tBox}\begin{theoremeT}}{\end{theoremeT}\end{tBox}}
-\newenvironment{exercise}{\begin{eBox}\begin{exerciseT}}{\hfill{\color{ocre}\tiny\ensuremath{\blacksquare}}\end{exerciseT}\end{eBox}}				  
+\newenvironment{exercise}{\begin{eBox}\begin{exerciseT}}{\hfill{\color{violet}\tiny\ensuremath{\blacksquare}}\end{exerciseT}\end{eBox}}				  
 \newenvironment{definition}{\begin{dBox}\begin{definitionT}}{\end{definitionT}\end{dBox}}	
 \newenvironment{problem}{\begin{problemT}}{\hfill{\tiny\ensuremath{\blacksquare}}\end{problemT}}
 \newenvironment{example}{\begin{exampleT}}{\hfill{\tiny\ensuremath{\blacksquare}}\end{exampleT}}		
@@ -521,7 +536,7 @@ innerbottommargin=5pt]{cBox}
 %----------------------------------------------------------------------------------------
 
 \makeatletter
-\renewcommand{\@seccntformat}[1]{\llap{\textcolor{ocre}{\csname the#1\endcsname}\hspace{1em}}}                    
+\renewcommand{\@seccntformat}[1]{\llap{\textcolor{violet}{\csname the#1\endcsname}\hspace{1em}}}                    
 \renewcommand{\section}{\@startsection{section}{1}{\z@}
 {-4ex \@plus -1ex \@minus -.4ex}
 {1ex \@plus.2ex }
@@ -546,13 +561,13 @@ innerbottommargin=5pt]{cBox}
 % Numbered part in the table of contents
 \newcommand{\@mypartnumtocformat}[2]{%
 	\setlength\fboxsep{0pt}%
-	\noindent\colorbox{ocre!20}{\strut\parbox[c][.7cm]{\ecart}{\color{ocre!70}\Large\sffamily\bfseries\centering#1}}\hskip\esp\colorbox{ocre!40}{\strut\parbox[c][.7cm]{\linewidth-\ecart-\esp}{\Large\sffamily\centering#2}}%
+	\noindent\colorbox{violet!20}{\strut\parbox[c][.7cm]{\ecart}{\color{violet!70}\Large\sffamily\bfseries\centering#1}}\hskip\esp\colorbox{violet!40}{\strut\parbox[c][.7cm]{\linewidth-\ecart-\esp}{\Large\sffamily\centering#2}}%
 }
 
 % Unnumbered part in the table of contents
 \newcommand{\@myparttocformat}[1]{%
 	\setlength\fboxsep{0pt}%
-	\noindent\colorbox{ocre!40}{\strut\parbox[c][.7cm]{\linewidth}{\Large\sffamily\centering#1}}%
+	\noindent\colorbox{violet!40}{\strut\parbox[c][.7cm]{\linewidth}{\Large\sffamily\centering#1}}%
 }
 
 \newlength\esp
@@ -573,10 +588,10 @@ innerbottommargin=5pt]{cBox}
 {\thispagestyle{empty}%
 \begin{tikzpicture}[remember picture,overlay]%
 \node at (current page.north west){\begin{tikzpicture}[remember picture,overlay]%	
-\fill[ocre!20](0cm,0cm) rectangle (\paperwidth,-\paperheight);
-\node[anchor=north] at (4cm,-3.25cm){\color{ocre!40}\fontsize{220}{100}\sffamily\bfseries\thepart}; 
+\fill[violet!20](0cm,0cm) rectangle (\paperwidth,-\paperheight);
+\node[anchor=north] at (4cm,-3.25cm){\color{violet!40}\fontsize{220}{100}\sffamily\bfseries\thepart}; 
 \node[anchor=south east] at (\paperwidth-1cm,-\paperheight+1cm){\parbox[t][][t]{8.5cm}{
-\printcontents{l}{0}{\setcounter{tocdepth}{0}}% The depth to which the Part mini table of contents displays headings; 0 for chapters only, 1 for chapters and sections and 2 for chapters, sections and subsections
+\printcontents{l}{0}{\setcounter{tocdepth}{1}}% The depth to which the Part mini table of contents displays headings; 0 for chapters only, 1 for chapters and sections and 2 for chapters, sections and subsections
 % for displaying section in TOC
 }};
 \node[anchor=north east] at (\paperwidth-1.5cm,-3.25cm){\parbox[t][][t]{15cm}{\strut\raggedleft\color{white}\fontsize{30}{30}\sffamily\bfseries#2}};
@@ -589,13 +604,13 @@ innerbottommargin=5pt]{cBox}
 {\thispagestyle{empty}%
 \begin{tikzpicture}[remember picture,overlay]%
 \node at (current page.north west){\begin{tikzpicture}[remember picture,overlay]%	
-\fill[ocre!20](0cm,0cm) rectangle (\paperwidth,-\paperheight);
+\fill[violet!20](0cm,0cm) rectangle (\paperwidth,-\paperheight);
 \node[anchor=north east] at (\paperwidth-1.5cm,-3.25cm){\parbox[t][][t]{15cm}{\strut\raggedleft\color{white}\fontsize{30}{30}\sffamily\bfseries#1}};
 \end{tikzpicture}};
 \end{tikzpicture}}
 \addcontentsline{toc}{part}{\texorpdfstring{%
 \setlength\fboxsep{0pt}%
-\noindent\protect\colorbox{ocre!40}{\strut\protect\parbox[c][.7cm]{\linewidth}{\Large\sffamily\protect\centering #1\quad\mbox{}}}}{#1}}%
+\noindent\protect\colorbox{violet!40}{\strut\protect\parbox[c][.7cm]{\linewidth}{\Large\sffamily\protect\centering #1\quad\mbox{}}}}{#1}}%
 \@endpart}
 \def\@endpart{\vfil\newpage
 \if@twoside
@@ -627,7 +642,7 @@ innerbottommargin=5pt]{cBox}
 \node at (current page.north west)
 {\begin{tikzpicture}[remember picture,overlay]
 \node[anchor=north west,inner sep=0pt] at (0,0) {\ifusechapterimage\includegraphics[width=\paperwidth]{\thechapterimage}\fi};
-\draw[anchor=west] (\Gm@lmargin,-9cm) node [line width=2pt,rounded corners=15pt,draw=ocre,fill=white,fill opacity=0.5,inner sep=15pt]{\strut\makebox[22cm]{}};
+\draw[anchor=west] (\Gm@lmargin,-9cm) node [line width=2pt,rounded corners=15pt,draw=violet,fill=white,fill opacity=0.5,inner sep=15pt]{\strut\makebox[22cm]{}};
 \draw[anchor=west] (\Gm@lmargin+.3cm,-9cm) node {\huge\sffamily\bfseries\color{black}\thechapter\autodot~#1\strut};
 \end{tikzpicture}};
 \end{tikzpicture}
@@ -636,7 +651,7 @@ innerbottommargin=5pt]{cBox}
 \node at (current page.north west)
 {\begin{tikzpicture}[remember picture,overlay]
 \node[anchor=north west,inner sep=0pt] at (0,0) {\ifusechapterimage\includegraphics[width=\paperwidth]{\thechapterimage}\fi};
-\draw[anchor=west] (\Gm@lmargin,-9cm) node [line width=2pt,rounded corners=15pt,draw=ocre,fill=white,fill opacity=0.5,inner sep=15pt]{\strut\makebox[22cm]{}};
+\draw[anchor=west] (\Gm@lmargin,-9cm) node [line width=2pt,rounded corners=15pt,draw=violet,fill=white,fill opacity=0.5,inner sep=15pt]{\strut\makebox[22cm]{}};
 \draw[anchor=west] (\Gm@lmargin+.3cm,-9cm) node {\huge\sffamily\bfseries\color{black}#1\strut};
 \end{tikzpicture}};
 \end{tikzpicture}
@@ -649,7 +664,7 @@ innerbottommargin=5pt]{cBox}
 \node at (current page.north west)
 {\begin{tikzpicture}[remember picture,overlay]
 \node[anchor=north west,inner sep=0pt] at (0,0) {\ifusechapterimage\includegraphics[width=\paperwidth]{\thechapterimage}\fi};
-\draw[anchor=west] (\Gm@lmargin,-9cm) node [line width=2pt,rounded corners=15pt,draw=ocre,fill=white,fill opacity=0.5,inner sep=15pt]{\strut\makebox[22cm]{}};
+\draw[anchor=west] (\Gm@lmargin,-9cm) node [line width=2pt,rounded corners=15pt,draw=violet,fill=white,fill opacity=0.5,inner sep=15pt]{\strut\makebox[22cm]{}};
 \draw[anchor=west] (\Gm@lmargin+.3cm,-9cm) node {\huge\sffamily\bfseries\color{black}#1\strut};
 \end{tikzpicture}};
 \end{tikzpicture}
@@ -661,7 +676,9 @@ innerbottommargin=5pt]{cBox}
 %----------------------------------------------------------------------------------------
 
 \usepackage{hyperref}
-\hypersetup{hidelinks,backref=true,pagebackref=true,hyperindex=true,colorlinks=false,breaklinks=true,urlcolor=ocre,bookmarks=true,bookmarksopen=false}
+% \hypersetup{hidelinks,backref=true,pagebackref=true,hyperindex=true,colorlinks=false,breaklinks=true,urlcolor=violet,bookmarks=true,bookmarksopen=false}
+\hypersetup{hidelinks,colorlinks=false,breaklinks=true,urlcolor=violet,bookmarksopen=false}
+
 
 \usepackage{bookmark}
 \bookmarksetup{
@@ -672,7 +689,7 @@ addtohook={%
 \bookmarksetup{bold}%
 \fi
 \ifnum\bookmarkget{level}=-1 % part
-\bookmarksetup{color=ocre,bold}%
+\bookmarksetup{color=violet,bold}%
 \fi
 }
 }

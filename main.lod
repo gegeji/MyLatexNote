@@ -193,9 +193,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{(Corollary)\hskip 1em\relax \numberline {5.4.2}{}}{37}{dummy.5.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{(Corollary)\hskip 1em\relax \numberline {5.4.3}{}}{37}{dummy.5.4.3}%
+\contentsline {subsection}{(Corollary)\hskip 1em\relax \numberline {5.4.3}{}}{38}{dummy.5.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{(Corollary)\hskip 1em\relax \numberline {5.4.4}{}}{37}{dummy.5.4.4}%
+\contentsline {subsection}{(Corollary)\hskip 1em\relax \numberline {5.4.4}{}}{38}{dummy.5.4.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{(Corollary)\hskip 1em\relax \numberline {5.4.5}{}}{38}{dummy.5.4.5}%
 \defcounter {refsection}{0}\relax 
@@ -349,7 +349,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{(Theorem)\hskip 1em\relax \numberline {9.2.3}{}}{60}{dummy.9.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{(Theorem)\hskip 1em\relax \numberline {9.4.1}{}}{60}{dummy.9.4.1}%
+\contentsline {subsection}{(Theorem)\hskip 1em\relax \numberline {9.4.1}{}}{61}{dummy.9.4.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{(Theorem)\hskip 1em\relax \numberline {9.4.2}{}}{61}{dummy.9.4.2}%
 \defcounter {refsection}{0}\relax 
@@ -441,7 +441,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{(Problem)\hskip 1em\relax \numberline {10.1}{}}{73}{problemT.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{(Theorem)\hskip 1em\relax \numberline {10.9.1}{}}{74}{dummy.10.9.1}%
+\contentsline {subsection}{(Theorem)\hskip 1em\relax \numberline {10.9.1}{}}{73}{dummy.10.9.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\bbl@ensure@english {Chapter}~11\hspace {0.5em}QR分解与Householder变换}{75}{section.11.1}%
 \defcounter {refsection}{0}\relax 
@@ -527,7 +527,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{(Definition)\hskip 1em\relax \numberline {11.7.2}{矩阵-向量积 $ H_{k} x $}}{97}{definitionT.11.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{(Definition)\hskip 1em\relax \numberline {11.8.1}{Givens Rotation in the 1-2 plane}}{97}{definitionT.11.8.1}%
+\contentsline {subsection}{(Definition)\hskip 1em\relax \numberline {11.8.1}{Givens Rotation in the 1-2 plane}}{98}{definitionT.11.8.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{(Theorem)\hskip 1em\relax \numberline {11.8.1}{}}{98}{dummy.11.8.1}%
 \defcounter {refsection}{0}\relax 
@@ -537,9 +537,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{(Corollary)\hskip 1em\relax \numberline {11.9.2}{}}{99}{dummy.11.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{(Corollary)\hskip 1em\relax \numberline {11.9.3}{}}{99}{dummy.11.9.3}%
+\contentsline {subsection}{(Corollary)\hskip 1em\relax \numberline {11.9.3}{}}{100}{dummy.11.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{(Theorem)\hskip 1em\relax \numberline {11.9.4}{}}{99}{dummy.11.9.4}%
+\contentsline {subsection}{(Theorem)\hskip 1em\relax \numberline {11.9.4}{}}{100}{dummy.11.9.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{(Theorem)\hskip 1em\relax \numberline {11.9.5}{QR分解求解$A^{-1}$}}{100}{dummy.11.9.5}%
 \defcounter {refsection}{0}\relax 
