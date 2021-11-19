@@ -129,6 +129,7 @@
 %----------------------------------------------------------------------------------------
 
 \usepackage{titletoc} % Required for manipulating the table of contents
+% \usepackage{tocloft} % custom list of definitions
 
 \contentsmargin{0cm} % Removes the default margin
 
@@ -266,7 +267,7 @@
 {0.25em}% Space after theorem head
 {\small\sffamily\color{violet}\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
 \thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries\color{black}---\nobreakspace#3.}% Optional theorem note
-\addcontentsline{lod}{subsection}{(#1)\quad\protect\numberline{#2}{#3}}} % add line to list of theorems; #1 is theorem name, #2 #3 is the name of theorem
+\addcontentsline{lod}{section}{(#1)\quad\protect\numberline{#2}{#3}}} % add line to list of theorems; #1 is theorem name, #2 #3 is the name of theorem
 
 
 \newtheoremstyle{blacknumex}% Theorem style name
@@ -291,7 +292,7 @@
 {0.25em}% Space after theorem head
 {\small\sffamily\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
 \thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries---\nobreakspace#3.}% Optional theorem note
-\addcontentsline{lod}{subsection}{(#1)\quad\protect\numberline{#2}{#3}}} % add line to list of theorems
+\addcontentsline{lod}{section}{(#1)\quad\protect\numberline{#2}{#3}}} % add line to list of theorems
 
 
 \newtheoremstyle{blacknumboxVocabulary} % Theorem style name
@@ -475,6 +476,8 @@ rightmargin=0cm,
 linewidth=4pt,
 innerbottommargin=5pt]{cBox}
 
+% \usepackage{etoolbox}
+
 % Creates an environment for each type of theorem and assigns it a theorem text style from the "Theorem Styles" section above and a colored box from above
 \newenvironment{theorem}{\begin{tBox}\begin{theoremeT}}{\end{theoremeT}\end{tBox}}
 \newenvironment{exercise}{\begin{eBox}\begin{exerciseT}}{\hfill{\color{violet}\tiny\ensuremath{\blacksquare}}\end{exerciseT}\end{eBox}}				  
@@ -483,10 +486,28 @@ innerbottommargin=5pt]{cBox}
 \newenvironment{example}{\begin{exampleT}}{\hfill{\tiny\ensuremath{\blacksquare}}\end{exampleT}}		
 \newenvironment{corollary}{\begin{cBox}\begin{corollaryT}}{\end{corollaryT}\end{cBox}}	
 
+% lod: List of Definition
+
 \makeatletter
 % A command to create the new List of Definitions
 \newcommand\listofdefinitions{%
-  \chapter{List Of Definitions}\@starttoc{lod}}
+\chapter{List Of Definitions}\@starttoc{lod}}
+%\newcommand\listofdefinitions{%
+%\null\hfill\textbf{\Large\contentsname}\hfill\null\par
+%  \@mkboth{\MakeUppercase\contentsname}{\MakeUppercase\contentsname}%
+%\@starttoc{lod}}
+
+%\usepackage{etoc}
+%\makeatletter
+%    \etocsettocstyle
+%    {\section *{\Huge\contentsname%
+% FOLLOWING TWO LINES OPTIONAL DEPENDING ON YOUR NEED
+%                \@mkboth {\MakeUppercase \contentsname}
+%                         {\MakeUppercase \contentsname}%
+%    }}
+%    {}%
+%\def\etocstandarddisplaystyle{\etocarticlestyle}
+%\makeatother
 
 % initial definitions to save the chapter info (name and number)
 \def\thischaptertitle{}
@@ -495,7 +516,7 @@ innerbottommargin=5pt]{cBox}
 
 \apptocmd{\@chapter}%
   {\gdef\thischaptertitle{#1}\gdef\thischapternumber{\thechapter}%
-    \global\toggletrue{noDefs}}{}{}
+   \global\toggletrue{noDefs}}{}{}
 
 % the defn environment does the job: the first time it is used after a \chapter command, 
 % it writes the information of the chapter to the LoD
@@ -508,10 +529,50 @@ innerbottommargin=5pt]{cBox}
     }{}
   }%
 }
-
-
 \makeatother
 
+% candidate: use thmtools to print list of definitions
+%\usepackage{thmtools}
+%\colorlet{shadecolor}{lightgray!25}
+
+%\newtheorem{thm}{Theorem}[chapter]
+
+%\newtheoremstyle{definitionsty}{3pt}{3pt}{\slshape}{}{\bfseries}{.}{.5em}{}
+%\theoremstyle{definitionsty}
+%\newtheorem{tdefn}{Definition}[chapter]
+%\newenvironment{defn}
+%  {\begin{shaded}\begin{tdefn}}
+%  {\end{tdefn}\end{shaded}}
+
+%\usepackage{etoolbox}
+%\makeatletter
+%\patchcmd\thmtlo@chaptervspacehack
+%  {\addtocontents{loe}{\protect\addvspace{10\p@}}}
+%  {\addtocontents{loe}{\protect\thmlopatch@endchapter\protect\thmlopatch@chapter{\thechapter}}}
+%  {}{}
+%\AtEndDocument{\addtocontents{loe}{\protect\thmlopatch@endchapter}}
+%\long\def\thmlopatch@chapter#1#2\thmlopatch@endchapter{%
+%  \setbox\z@=\vbox{#2}%
+%  \ifdim\ht\z@>\z@
+%    \hbox{\bfseries\chaptername\ #1}\nobreak
+%    #2
+%    \addvspace{10\p@}
+%  \fi
+%}
+%\def\thmlopatch@endchapter{}
+
+%\makeatother
+%\renewcommand{\thmtformatoptarg}[1]{ #1}
+%\renewcommand{\listtheoremname}{List of definitions}
+
+% candidate: use tocloft to define custom list of definitions
+%\newcommand{\listmytheoremsname}{List of Definitions, Theorems, Corollaries}
+%\newlistof{myentry}{ety}{\listmytheoremsname}
+%\newcommand{\mydefinition}[1]{%
+%\refstepcounter{mydefinition}%
+%\par\noindent\textbf{Definition \themydefinition. #1}
+%\addcontentsline{ety}{mydefinition}
+%{\protect\numberline{\thechapter.\themyentry}#1}\par}
 
 
 %----------------------------------------------------------------------------------------

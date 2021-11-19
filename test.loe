@@ -1,0 +1,8 @@
+\thmlopatch@endchapter \thmlopatch@chapter {1}
+\contentsline {tdefn}{\ifthmt@listswap Definition\nobreakspace {}1.1\else \numberline {1.1}Definition\fi \thmtformatoptarg {My hilarious definition}}{1}{}%
+\thmlopatch@endchapter \thmlopatch@chapter {2}
+\contentsline {thm}{\ifthmt@listswap Theorem\nobreakspace {}2.1\else \numberline {2.1}Theorem\fi }{3}{}%
+\thmlopatch@endchapter \thmlopatch@chapter {3}
+\contentsline {tdefn}{\ifthmt@listswap Definition\nobreakspace {}3.1\else \numberline {3.1}Definition\fi \thmtformatoptarg {My hilarious definition 2}}{5}{}%
+\contentsline {thm}{\ifthmt@listswap Theorem\nobreakspace {}3.1\else \numberline {3.1}Theorem\fi }{5}{}%
+\thmlopatch@endchapter 

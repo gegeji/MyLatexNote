@@ -72,6 +72,10 @@
 
 % remove ';' at the end of each algorithm line
 \SetEndCharOfAlgoLine{}
+
+\apptocmd{\@chapter}%
+  {\gdef\thischaptertitle{#1}\gdef\thischapternumber{\thechapter}%
+    \global\toggletrue{noDefs}}{}{}
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
@@ -167,11 +171,15 @@
 %	INDEX
 %----------------------------------------------------------------------------------------
 % list of figures
-\listoffigures
-
+%\listoffigures
+\addcontentsline{toc}{chapter}{\textcolor{violet}{Theorem}} % Add an Index heading to the table of contents
 
 % add list theorems
-% \listoftheorems[swapnumber]
+%\listoftheorems
+
+
+%\part{lala}
+
 \listofdefinitions
 
 \cleardoublepage % Make sure the index starts on an odd (right side) page
