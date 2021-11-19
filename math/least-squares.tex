@@ -6,7 +6,9 @@
     已知测量量路段长度： $ A D=89, A C=67, B D=53, A B=35, C D=20 $ $ , x_{1}, x_{2} $ 和 $ x_{3} $ 的长度是多少?
 \end{problem}
 
-% todo (2021-11-11 18:19): figure
+\begin{FigureCenter}{Measurement Problem}
+    \input{tikz_images/measurement-problem.tex}
+\end{FigureCenter}
 
 由 $ x_{1}, x_{2} $ 和 $ x_{3} $ 的关系可得方程组:
 $$
@@ -96,20 +98,7 @@ $$ \min _{x}\|A x-b\|_{2}^{2}=\min _{x} \sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i 
     当残差 $ \hat{r}=A \hat{x}-b=0 $ 时，则 $ \hat{x} $ 是线性方程组 $ A x=b $ 的解; 否则其为误差最小平方和意义下方程组的近似解。
 \end{theorem}
 
-\section{投影与$A$列空间的关系}
 
-矩阵 $ \mathrm{A} \in \mathbb{R}^{m \times n} $ 的列 $ a_{1}, a_{2}, \ldots, a_{n} \in \mathbb{R}^{m} $ 的最小二乘法问题
-$$
-\hat{x}=\underset{x}{\arg \underset{x}{\min}}\|A x-b\|_{2}^{2} ,\|A x-b\|_{2}^{2}=\left\|\sum_{j=1}^{n} a_{j} x_{j}-b\right\|_{2}^{2}
-$$
-
-% todo (2021-11-11 18:30): figure
-
-\begin{theorem}[投影与$A$列空间的关系]
-    $ A \hat{x} \in \operatorname{range}(A) $是$A$的列空间中最接近$b$的向量。 
-    
-    $ \hat{r}=A \hat{x} -b$正交于$A$的列空间（值域空间） $ \operatorname{range}(A) $。
-\end{theorem}
 
 \section{求解最小二乘法}
 
@@ -272,13 +261,33 @@ $A$的列向量无关时，则 $ \hat{x}=\left(A^{T} A\right)^{-1} A^{T} b $。
 
 \end{proof}
 
-\section{几何解释}
+\section{The Geometry of Least Squares: 投影与$A$列空间的关系}
 
-残余向量 $ \hat{r}=A \hat{x}-b $ 满足 $ A^{T} \hat{r}=A^{T}(A \hat{x}-b)=0 $.
+\begin{FigureCenter}{Projection of $\boldsymbol{b}$ into the column space of ${A}$, $A$ is any matrice. Sourced from \cite{Strang1993IntroductionTL}}
+    \input{tikz_images/projection-onto-the-column-space-of-A-strang.tex}
+\end{FigureCenter}
 
-残余向量 $ \hat{r} $ 正交于 $ A $ 的每一列,因此正交于$ \operatorname{range}(A) $
+\begin{FigureCenter}{Projecting onto the column space of $A$ is also projecting onto the column space of $Q$}
+    \input{tikz_images/projection-onto-a-is-also-onto-q.tex}
+\end{FigureCenter}
 
-向量 $ b $ 在 $ \operatorname{range}(A) $ 上的投影是 $ A\left(A^{T} A\right)^{-1} A^{T} b $
+矩阵 $ \mathrm{A} \in \mathbb{R}^{m \times n} $ 的列 $ a_{1}, a_{2}, \ldots, a_{n} \in \mathbb{R}^{m} $ 的最小二乘法问题
+$$
+\hat{x}=\underset{x}{\arg \underset{x}{\min}}\|A x-b\|_{2}^{2} ,\|A x-b\|_{2}^{2}=\left\|\sum_{j=1}^{n} a_{j} x_{j}-b\right\|_{2}^{2}
+$$
+
+向量 $ b $ 在 $ \operatorname{range}(A) $ 上的投影是 $ A\left(A^{T} A\right)^{-1} A^{T} b $。
+
+残余向量 $ \hat{r}=A \hat{x}-b $ 满足 $ A^{T} \hat{r}=A^{T}(A \hat{x}-b)=0 $。残余向量 $ \hat{r} $ 正交于 $ A $ 的每一列,因此正交于$ \operatorname{range}(A) $。
+
+
+
+
+\begin{theorem}[投影与$A$列空间的关系]
+    $ A \hat{x} \in \operatorname{range}(A) $是$A$的列空间中最接近$b$的向量。 
+    
+    $ \hat{r}=A \hat{x} -b$正交于$A$的列空间（值域空间） $ \operatorname{range}(A) $。
+\end{theorem}
 
 \section{正规方程}
 
@@ -317,16 +326,6 @@ $$
 $$
 \end{theorem}
 
-\subsection{The Complexity of Solving Least Square Problem via QR Decomposition}
-
-算法复杂度：
-
-\begin{itemize}
-    \item 首先对A进行QR分解 $ A=Q R\left(2 m n^{2}\right. $ flops $ ) $
-    \item 计算矩阵向量乘积 $ d=Q^{T} b(2 \mathrm{mn} $ flops $ ) $
-    \item 通过回代求解 $ R x=d\left(n^{2}\right. $ flops $ ) $
-    \item 复杂度: $ 2 m n^{2} $ flops
-\end{itemize}
 
 \begin{example}
     $$
@@ -372,7 +371,21 @@ $$
 
 \end{example}
 
-\section{求解正规方程可能带来的输入误差}
+
+\subsection{The Complexity of Solving Least Square Problem via QR Decomposition}
+
+算法复杂度：
+
+\begin{itemize}
+    \item 首先对A进行QR分解 $ A=Q R\left(2 m n^{2}\right. $ flops $ ) $
+    \item 计算矩阵向量乘积 $ d=Q^{T} b(2 \mathrm{mn} $ flops $ ) $
+    \item 通过回代求解 $ R x=d\left(n^{2}\right. $ flops $ ) $
+    \item 复杂度: $ 2 m n^{2} $ flops
+\end{itemize}
+
+
+
+\section{求解正规方程可能带来的严重误差}
 
 直接求解正规方程组求解：
 $$
@@ -388,7 +401,7 @@ A=\left[\begin{array}{cc}
 1 & -1 \\
 0 & 10^{-5} \\
 0 & 0
-\end{array}\right], \quad b=\left[\begin{array}{c}
+\end{array}\right],  b=\left[\begin{array}{c}
 0 \\
 10^{-5} \\
 1
@@ -405,7 +418,7 @@ A^{T} A=\left[\begin{array}{cc}
 \end{array}\right] \approx\left[\begin{array}{cc}
 1 & -1 \\
 -1 & 1
-\end{array}\right], \quad A^{T} b=\left[\begin{array}{c}
+\end{array}\right], A^{T} b=\left[\begin{array}{c}
 0 \\
 10^{-10}
 \end{array}\right] \Rightarrow x=\left[\begin{array}{c}
@@ -422,14 +435,14 @@ Q=\left[\begin{array}{ll}
 1 & 0 \\
 0 & 1 \\
 0 & 0
-\end{array}\right], \quad R=\left[\begin{array}{cc}
+\end{array}\right],  R=\left[\begin{array}{cc}
 1 & -1 \\
 0 & 10^{-5}
 \end{array}\right]
 $$
 
 $$\begin{aligned}
-    \hat{x}=\left(A^{T} A\right)^{-1} A^{T} b=R^{-1} Q^{T} b \\
+    &\hat{x}=\left(A^{T} A\right)^{-1} A^{T} b=R^{-1} Q^{T} b \\
     \Rightarrow& R x=Q^{T} b\\
     \Rightarrow& \left[\begin{array}{cc}1 & -1 \\ 0 & 10^{-5}\end{array}\right]\left[\begin{array}{l}x_{1} \\ x_{2}\end{array}\right]=\left[\begin{array}{l}0 \\ 10^{-5}\end{array}\right] \\
     \Rightarrow& x=\left[\begin{array}{l}1 \\ 1\end{array}\right]
@@ -447,7 +460,7 @@ $$\begin{aligned}
 $$
 f(x)=\|A x-b\|_{2}^{2}=\sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i j} x_{j}-b_{i}\right)^{2}
 $$
-为使目标函数最小, 令最优解 $ \hat{x}: \quad \hat{x}=\arg \underset{x}{ \min } f(x) $
+为使目标函数最小, 可求最优解 $ \hat{x}: \quad \hat{x}=\arg \underset{x}{ \min } f(x) $。
 
 \begin{problem}
     $ A \in \mathbb{R}^{\mathrm{m} \times n} $ 列向量线性相关或n非常大$
@@ -475,26 +488,33 @@ $$
 
     所以有
     $$
-\left\langle\nabla f\left(x^{(k)}\right), x^{(k+1)}-x^{(k)}\right\rangle \geq-\left\|\nabla f\left(x^{(k)}\right)\right\|_{2}\left\|x^{(k+1)}-x^{(k)}\right\|_{2}
+\left\langle\nabla f\left(x^{(k)}\right), x^{(k+1)}-x^{(k)}\right\rangle \geq -\left\|\nabla f\left(x^{(k)}\right)\right\|_{2}\left\|x^{(k+1)}-x^{(k)}\right\|_{2}
 $$
 
 当 $ x^{(k+1)}-x^{(k)}=-\alpha_{k} \nabla f\left(x^{(k)}\right), \alpha_{k}>0 $ 时，等式成立。
-\end{corollary}
 
-此时$f\left(x^{(k+1)}\right)-f\left(x^{(k)}\right) \le 0$。
+由于$-\left\|\nabla f\left(x^{(k)}\right)\right\|_{2}\left\|x^{(k+1)}-x^{(k)}\right\|_{2}$是非负的，此时$f\left(x^{(k+1)}\right)-f\left(x^{(k)}\right) \le 0$。
+\end{corollary}
 
 迭代公式为 
 
 $$  x^{(k+1)}=x^{(k)}-\alpha_{k} \nabla f\left(x^{(k)}\right) , f\left(x^{(k+1)}\right)<f\left(x^{(k)}\right) $$
 
-\begin{definition}[梯度下降法]
+
+\begin{definition}[梯度下降法求解最小二乘法]
     $$
 \min _{x \in \mathbb{R}^{n}} \frac{1}{2}\|A x-b\|_{2}^{2}, \quad A \in \mathbb{R}^{m \times n}, b \in \mathbb{R}^{m}
 $$
 
-令 $ f(x)=\frac{1}{2}\|A x-b\|_{2}^{2} $, 则 $ f $ 为凸函数, 并有 $ \nabla f(x)=A^{T}(A x-b) $
+令 $$ f(x)=\frac{1}{2}\|A x-b\|_{2}^{2} $$
 
-则 $ A^{T} A \in \mathbb{R}^{n \times n} $ ，列向量\textbf{线性相关}导致其\textbf{不可逆}或$n$非常大。通过梯度下降法迭代求解
+则 $ f $ 为凸函数, 并有 $ \nabla f(x)=A^{T}(A x-b) $。
+
+则 $ A^{T} A \in \mathbb{R}^{n \times n} $ 。如果列向量\textbf{线性相关}会导致其\textbf{不可逆}或$n$非常大。可以通过梯度下降法迭代
+
+$$  x^{(k+1)}=x^{(k)}-\alpha_{k} \nabla f\left(x^{(k)}\right) , f\left(x^{(k+1)}\right)<f\left(x^{(k)}\right) $$
+
+求解
 
 $$ x^{(k+1)}=x^{(k)}-\alpha^{(k)} A^{T}\left(A x^{(k)}-b\right) $$
 \end{definition}
@@ -502,6 +522,12 @@ $$ x^{(k+1)}=x^{(k)}-\alpha^{(k)} A^{T}\left(A x^{(k)}-b\right) $$
 \section{估计学习率（步长）$\alpha$}
 
 \begin{problem}
+    $$
+    \min _{x \in \mathbb{R}^{n}} \frac{1}{2}\|A x-b\|_{2}^{2}, \quad A \in \mathbb{R}^{m \times n}, b \in \mathbb{R}^{m}
+    $$
+    
+    令 $ f(x)=\frac{1}{2}\|A x-b\|_{2}^{2} $
+
     $$ x^{(k+1)}=x^{(k)}-\alpha^{(k)} A^{T}\left(A x^{(k)}-b\right) $$
 
     需要估计 $ \alpha^{(k)} $。
@@ -521,10 +547,21 @@ $$
 \begin{proof}
     令 $ g(\alpha)=f\left(x^{(k)}-\alpha A^{T}\left(A x^{(k)}-b\right)\right) $ 是关于 $ \alpha $ 的 凸函数, 则有
 
-    % todo (2021-11-12 07:39): complete proof
 $$
 \min _{\alpha} g(\alpha) \Rightarrow g^{\prime}(\alpha)=0 \Rightarrow \alpha^{(k)}=\frac{\left\|A^{T}\left(A x^{(k)}-b\right)\right\|_{2}^{2}}{\left\|A A^{T}\left(A x^{(k)}-b\right)\right\|_{2}^{2}}
 $$
+
+
+$$\begin{aligned}
+    & f(x)=\frac{1}{2}\|A x-b\|_{2}^{2}, g\left(\alpha^{(k)}\right)=f\left({\color{ocre} x^{(k)}-\alpha^{(k)} A^{T}\left(A x^{(k)}-b\right)} \right) \\
+    \Rightarrow & g\left(\alpha^{(k)}\right)=\frac{1}{2}\left\|A\left({\color{ocre} x^{(k)}-\alpha^{(k)} A^{T}\left(A x^{(k)}-b\right)} \right)-b\right\|_{2}^{2} \\
+    &=\frac{1}{2}\left\|\left({\color{coral} A x^{(k)}-b} \right)-\left({\color{grass} \alpha^{(k)} A^{T}\left(A x^{(k)}-b\right)} \right)\right\|_{2}^{2} \\
+    &=\frac{1}{2}\left(\left({\color{coral} A x^{(k)}-b} \right)^{T}\left({\color{coral} A x^{(k)}-b} \right)+\left({\color{grass} \alpha^{(k)} A^{T}\left(A x^{(k)}-b\right)} \right)^{T}\left({\color{grass} \alpha^{(k)} A^{T}\left(A x^{(k)}-b\right)} \right)\right) \\
+    &-\left({\color{coral} A x^{(k)}-b} \right)^{T}\left({\color{grass} \alpha^{(k)} A^{T}\left(A x^{(k)}-b\right)} \right) \\
+    \Rightarrow & g^{\prime}\left(\alpha^{(k)}\right)=\alpha^{(k)}\left(A^{T}\left(A x^{(k)}-b\right)\right)^{T}\left(A^{T}\left(A x^{(k)}-b\right)\right)-\left(A x^{(k)}-b\right)^{T}\left(A^{T}\left(A x^{(k)}-b\right)\right)=0 \\
+    \Rightarrow &\alpha^{(k)}=\frac{\left\|A^{T}\left(A x^{(k)}-b\right)\right\|_{2}^{2}}{\left\|A A^{T}\left(A x^{(k)}-b\right)\right\|_{2}^{2}}
+    \end{aligned}$$
+
 \end{proof}
 
 

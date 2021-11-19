@@ -40,6 +40,7 @@
 % \definecolor{ocre}{RGB}{243,102,25} % Define the orange color used for highlighting throughout the book
 \definecolor{ocre}{RGB}{76, 50, 168}
 \definecolor{coral}{RGB}{184, 84, 80}
+\definecolor{grass}{RGB}{130,179,102}
 
 \usepackage{calc}
 
@@ -322,7 +323,7 @@
 
 \theoremstyle{ocrenumbox}
 \newtheorem{theoremeT}[dummy]{Theorem}
-\newtheorem{problem}{Problem}[chapter]
+\newtheorem{problemT}{Problem}[chapter]
 \newtheorem{exerciseT}{Exercise}[chapter]
 
 \theoremstyle{blacknumex}
@@ -463,6 +464,7 @@ innerbottommargin=5pt]{cBox}
 \newenvironment{theorem}{\begin{tBox}\begin{theoremeT}}{\end{theoremeT}\end{tBox}}
 \newenvironment{exercise}{\begin{eBox}\begin{exerciseT}}{\hfill{\color{ocre}\tiny\ensuremath{\blacksquare}}\end{exerciseT}\end{eBox}}				  
 \newenvironment{definition}{\begin{dBox}\begin{definitionT}}{\end{definitionT}\end{dBox}}	
+\newenvironment{problem}{\begin{problemT}}{\hfill{\tiny\ensuremath{\blacksquare}}\end{problemT}}
 \newenvironment{example}{\begin{exampleT}}{\hfill{\tiny\ensuremath{\blacksquare}}\end{exampleT}}		
 \newenvironment{corollary}{\begin{cBox}\begin{corollaryT}}{\end{corollaryT}\end{cBox}}	
 
@@ -482,6 +484,7 @@ innerbottommargin=5pt]{cBox}
 
 % the defn environment does the job: the first time it is used after a \chapter command, 
 % it writes the information of the chapter to the LoD
+% todo
 \AtBeginDocument{%
   \AtBeginEnvironment{definition}{%
     \iftoggle{noDefs}{
@@ -573,7 +576,7 @@ innerbottommargin=5pt]{cBox}
 \fill[ocre!20](0cm,0cm) rectangle (\paperwidth,-\paperheight);
 \node[anchor=north] at (4cm,-3.25cm){\color{ocre!40}\fontsize{220}{100}\sffamily\bfseries\thepart}; 
 \node[anchor=south east] at (\paperwidth-1cm,-\paperheight+1cm){\parbox[t][][t]{8.5cm}{
-\printcontents{l}{0}{\setcounter{tocdepth}{2}}% The depth to which the Part mini table of contents displays headings; 0 for chapters only, 1 for chapters and sections and 2 for chapters, sections and subsections
+\printcontents{l}{0}{\setcounter{tocdepth}{0}}% The depth to which the Part mini table of contents displays headings; 0 for chapters only, 1 for chapters and sections and 2 for chapters, sections and subsections
 % for displaying section in TOC
 }};
 \node[anchor=north east] at (\paperwidth-1.5cm,-3.25cm){\parbox[t][][t]{15cm}{\strut\raggedleft\color{white}\fontsize{30}{30}\sffamily\bfseries#2}};
@@ -739,3 +742,6 @@ addtohook={%
 
 % warning: unicode-math may need to be load last
 % \usepackage{unicode-math}
+
+
+

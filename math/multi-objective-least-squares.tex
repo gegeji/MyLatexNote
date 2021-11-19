@@ -1,0 +1,258 @@
+\chapter{Multi-objective Least Squares}
+
+\section{Definition of Multi-objective Least Squares}
+
+\begin{problem}
+    假设有以下多个目标
+
+$$
+J_{1}(x)=\left\|A_{1} x-b_{1}\right\|_{2}^{2}, \cdots, J_{k}(x)=\left\|A_{k} x-b_{k}\right\|_{2}^{2}
+$$
+
+矩阵 $ A_{i} \in \mathbb{R}^{m_{i} \times n} $, 向量 $ b_{i} \in \mathbb{R}^{m_{i}} $;
+
+寻找一个向量 $ x \in \mathbb{R}^{n} $ 使得这 $ k $ 个目标 $ _{i}(x), i=1, \cdots, k $最小。
+\end{problem}
+
+可以将上述多目标规划问题转换为加权最小二乘法问题。
+
+\begin{problem}[加权最小二乘法问题]
+    $$
+\min _{x}\left\{J(x)=\lambda_{1} J_{1}(x)+\cdots \lambda_{k} J_{k}(x)=\lambda_{1}\left\|A_{1} x-b_{1}\right\|_{2}^{2}+\cdots+\lambda_{k}\left\|A_{k} x-b_{k}\right\|_{2}^{2}\right\}
+$$
+
+$ \lambda_{i}>0, i=1, \cdots, k $, 表示不同目标的相对重要程度。
+
+$$
+\begin{aligned}
+J(x)&=\lambda_{1}\left\|A_{1} x-b_{1}\right\|_{2}^{2}+\cdots+\lambda_{k}\left\|A_{k} x-b_{k}\right\|_{2}^{2} \\
+&=\left\|\sqrt{\lambda_{1}}\left(A_{1} x-b_{1}\right)\right\|_{2}^{2}+\cdots+\left\|\sqrt{\lambda_{k}}\left(A_{k} x-b_{k}\right)\right\|_{2}^{2}
+\end{aligned}
+$$
+\end{problem}
+
+利用 $ \ell_{2} $ 范数平方的可加性, 目标函数 $ J(x) $ 可以写成紧密形式：
+$$
+J(x)=\left\|\left[\begin{array}{c}
+\sqrt{\lambda_{1}}\left(A_{1} x-b_{1}\right) \\
+\vdots \\
+\sqrt{\lambda_{k}}\left(A_{k} x-b_{k}\right)
+\end{array}\right]\right\|_{2}^{2}
+$$
+进一步可简化为 $ J(x)=\|\tilde{A} x-\tilde{b}\|_{2}^{2} $, 其中
+$$
+\tilde{A}=\left[\begin{array}{c}
+\sqrt{\lambda_{1}} A_{1} \\
+\vdots \\
+\sqrt{\lambda_{k}} A_{k}
+\end{array}\right], \quad \tilde{b}=\left[\begin{array}{c}
+\sqrt{\lambda_{1}} b_{1} \\
+\vdots \\
+\sqrt{\lambda_{k}} b_{k}
+\end{array}\right]
+$$
+因此将多目标问题转化为单目标问题，使用最小二乘法进行求解。
+
+\begin{example}[双目标规划问题]
+    $$ \min _{x}\left\|A_{1} x-b_{1}\right\|_{2}^{2}+\lambda\left\|A_{2} x-b_{2}\right\|_{2}^{2}, A_{1}, A_{2} \in \mathbb{R}^{10 \times 5} $$
+
+
+\end{example}
+
+
+\section{求解多目标最小二乘问题}
+
+$$
+\tilde{A}=\left[\begin{array}{c}
+\sqrt{\lambda_{1}} A_{1} \\
+\vdots \\
+\sqrt{\lambda_{k}} A_{k}
+\end{array}\right], \quad \tilde{b}=\left[\begin{array}{c}
+\sqrt{\lambda_{1}} b_{1} \\
+\vdots \\
+\sqrt{\lambda_{k}} b_{k}
+\end{array}\right]
+$$
+
+
+如果$\tilde{A}$的列向量线性无关时，则该问题的解唯一；
+
+每一个矩阵$A_i$的行向量可以线性相关；
+
+$$\begin{aligned} \hat{x}&=\left(\tilde{A}^{T} \tilde{A}\right)^{-1} \tilde{A}^{T} \tilde{b} \\
+&= \left(\lambda_{1} A_{1}{ }^{T} A_{1}+\cdots+\lambda_{k} A_{k}{ }^{T} A_{k}\right)^{-1}\left(\lambda_{1} A_{1}{ }^{T} b_{1}+\cdots+\lambda_{k} A_{k}{ }^{T} b_{k}\right) \end{aligned} $$
+
+可对 $ \tilde{A} $ 进行QR分解计算 $ \hat{x} $ 。
+
+\section{正则化数据拟合}
+
+线性模型拟合数据 $ \left(x^{(1)}, y^{(1)}\right), \cdots,\left(x^{(N)}, y^{(N)}\right) $
+$$
+\hat{f}(x)=\theta_{1} f_{1}(x)+\cdots \theta_{p} f_{p}(x), \theta=\left[\theta_{1}, \cdots, \theta_{p}\right]^{T}
+$$
+$ f_{1}(x) $ 为常数函数，且恒等于 $1$ 。
+
+较大的参数 $ \theta_{i} $ 会让模型对 $ f_{i}(x) $ 的变化更加敏感。 让参数 $ \theta_{2}, \ldots, \theta_{p} $ 更小，可以避免模型过拟合。
+
+即可引出两个目标函数:
+$$
+J_{1}(\theta)=\sum_{k=1}^{N}\left(\hat{f}\left(x^{(k)}\right)-y^{(k)}\right)^{2}, \quad J_{2}(\theta)=\sum_{j=2}^{p} \theta_{j}^{2}
+$$
+首要目标 $ J_{1}(\theta) $ 是误差的平方和。
+
+$$
+\min _{\theta} J_{1}(\theta)+\lambda J_{2}(\theta)=\sum_{k=1}^{N}\left(\hat{f}\left(x^{(k)}\right)-y^{(k)}\right)^{2}+\lambda \sum_{j=2}^{p} \theta_{j}^{2}
+$$
+正则化参数 $ \lambda>0 $ ；
+该问题等价于最小二乘法问题:
+$$
+\min _{\theta}\left\|\left[\begin{array}{r}
+A_{1} \\
+\sqrt{\lambda} A_{2}
+\end{array}\right] \theta-\left[\begin{array}{l}
+y_{d \times 1} \\
+0
+\end{array}\right]\right\|_{2}^{2}
+$$
+
+$$ A_{1}=\left[\begin{array}{cccc}1 & f_{2}\left(x^{(1)}\right) & \ldots & f_{p}\left(x^{(1)}\right) \\ 1 & f_{2}\left(x^{(2)}\right) & \ldots & f_{p}\left(x^{(2)}\right) \\ \vdots & \vdots & \vdots & \vdots \\ 1 & f_{2}\left(x^{(N)}\right) & \cdots & f_{p}\left(x^{(N)}\right)\end{array}\right],  A_{2}=\left[\begin{array}{ccccc}0 & 1 & 0 & \cdots & 0 \\ 0 & 0 & 1 & \cdots & 0 \\ \vdots & \vdots & \vdots & \ddots & 0 \\ 0 & 0 & 0 & \cdots & 1\end{array}\right], y=\left[\begin{array}{c}y^{(1)} \\ \vdots \\ y^{(N)}\end{array}\right] $$
+
+% todo (2021-11-19 09:15): figure
+
+\section{图像逆问题}
+
+\begin{problem}
+    $$ y=A x_{e x}+v $$
+
+向量 $ x_{e x} \in \mathbb{R}^{n} $ 表示未知原始信息(需要估计)
+向量 $ v \in \mathbb{R}^{m} $ 表示未知的误差或者噪声
+向量 $ y \in \mathbb{R}^{m} $ 为观测的已知数据
+矩阵 $ A \in \mathbb{R}^{m \times n} $ 将测量值 $ y $ 和原始信息 $ x_{e x} $ 之间的关系
+
+最小二乘估计法:
+$$
+\min _{x}\|A x-y\|_{2}^{2}
+$$
+\end{problem}
+
+利用未知 $ x_{e x} $ 先验信息，对目标进行约束，构成多目标优化问题。 
+
+例如：Tikhonov 正则化
+$$
+\min _{x}\|A x-y\|_{2}^{2}+\lambda\|x\|_{2}^{2}, \lambda>0
+$$
+目标在于使 $ \|A x-y\|_{2}^{2} $ 足够小，同时 $ x $ 的能量也要小; 该优化模型等价于求解:
+$$
+\left(A^{T} A+\lambda I\right) x=A^{T} y
+$$
+即使矩阵A的列线性相关时，也有唯一解!
+
+\section{信号去噪}
+
+观察信号向量 $ y \in \mathbb{R}^{n} $ ，
+$$
+y=x_{e x}+v
+$$
+$ x_{e x} \in \mathbb{R}^{n} $ 是未知信号, $ v \in \mathbb{R}^{n} $ 是噪声。
+
+目标是找一个信号变换缓慢，信号既有光滑性，同时逼近 $ y $ ， 其优化模型：
+$$
+\min _{x}\|x-y\|_{2}^{2}+\lambda \sum_{i=1}^{n-1}\left(x_{i+1}-x_{i}\right)^{2}, \lambda>0
+$$
+
+\begin{definition}[差分矩阵]
+    令矩阵 $ D \in \mathbb{R}^{(n-1) \times n} $ 为差分矩阵：
+$$ D=\left[\begin{array}{ccccccc}-1 & 1 & 0 & \cdots & 0 & 0 & 0 \\ 0 & -1 & 1 & \cdots & 0 & 0 & 0 \\ \vdots & \vdots & \vdots & \ldots & \vdots & \vdots & \vdots \\ 0 & 0 & 0 & \cdots & -1 & 1 & 0 \\ 0 & 0 & 0 & \cdots & 0 & -1 & 1\end{array}\right] $$
+
+\end{definition}
+
+
+则有 $ \sum_{i=1}^{n-1}\left(x_{i+1}-x_{i}\right)^{2}=\|D x\|_{2}^{2} $
+
+$$ \min _{x}\left\|\left[\begin{array}{c}I \\ \sqrt{\lambda} D\end{array}\right] x-\left[\begin{array}{l}y \\ 0\end{array}\right]\right\|_{2}^{2} $$
+
+优化模型等价于求解线性方程:
+$$
+\left(I+\lambda D^{T} D\right) x=y
+$$
+
+二维图像 $ X \in \mathbb{R}^{M \times N} $ ， 可按列存储成向量 $ x \in \mathbb{R}^{M N} $ :
+$$
+x=\left[\begin{array}{c}
+X_{1: M, 1} \\
+X_{1: M, 2} \\
+\vdots \\
+X_{1: M, N}
+\end{array}\right] $$ 
+
+\begin{example}[\textsf{reshape}]
+    $$ 
+X=\left[\begin{array}{ll}
+1 & 2 \\
+4 & 5
+\end{array}\right] \Rightarrow x=\left[\begin{array}{l}
+1 \\
+4 \\
+2 \\
+5
+\end{array}\right]
+$$
+\end{example}
+
+$$
+y=A x_{e x}+v
+$$
+
+未知图像 $ x_{e x} \in \mathbb{R}^{M N} $ ，观察图像 $ y \in \mathbb{R}^{M N} $;
+模糊矩阵 $ A \in \mathbb{R}^{M N \times M N} $ 是已知观测图像与未知图像关系噪声 $ v \in \mathbb{R}^{M N} $ (未知)
+
+图像具有光滑性：图像相邻两个像素值之间变化不大。
+
+\begin{itemize}
+    \item 水平方向： $ X\left[n_{1}, n_{2}+1\right] \approx X\left[n_{1}, n_{2}\right] $
+    \item 垂直方向： $ X\left[n_{1}+1, n_{2}\right] \approx X\left[n_{1}, n_{2}\right] $
+\end{itemize}
+
+\begin{definition}[垂直差分矩阵]
+    
+    垂直差分矩阵是大小为 $ N \times N $ 的块矩阵，每块大小 $ (M-1)   \times M $。
+    $$D_{v}=\left[\begin{array}{cccc}
+        D & 0 & \cdots & 0 \\
+        0 & D & \cdots & 0 \\
+        \vdots & \vdots & \ddots & \vdots \\
+        0 & 0 & \vdots & D
+        \end{array}\right], D=\left[\begin{array}{ccccccc}
+        -1 & 1 & 0 & \cdots & 0 & 0 & 0 \\
+        0 & -1 & 1 & \cdots & 0 & 0 & 0 \\
+        \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots \\
+        0 & 0 & 0 & \cdots & 0 & -1 & 1
+        \end{array}\right] $$
+\end{definition}
+
+$$
+\begin{array}{c}
+X=\left[\begin{array}{ll}
+1 & 2 \\
+4 & 5
+\end{array}\right] \Rightarrow x=\left[\begin{array}{l}
+1 \\
+4 \\
+2 \\
+5
+\end{array}\right], D_{v} x \Rightarrow\left[\begin{array}{l}
+4-1 \\
+5-2
+\end{array}\right]
+\end{array}
+$$
+
+$$
+\hat{x}=\arg \min _{x}\|A x-y\|_{2}^{2}+\lambda\left\|D_{v} x\right\|_{2}^{2}+\lambda\left\|D_{h} x\right\|_{2}^{2}, \lambda>0
+$$
+
+$ \|A x-y\|_{2}^{2} $ 称为保证项: 保证 $ A \hat{x} \approx y $.
+
+$ \lambda\left\|D_{v} x\right\|_{2}^{2}+\lambda\left\|D_{h} x\right\|_{2}^{2} $ 为惩罚项，惩罚相邻像素值的差异变化
+$$
+\left\|D_{h} x\right\|_{2}^{2}+\left\|D_{v} x\right\|_{2}^{2}=\sum_{i=1}^{M} \sum_{j=1}^{N-1}\left(X_{i, j+1}-X_{i j}\right)^{2}+\sum_{i=1}^{M-1} \sum_{j=1}^{N}\left(X_{i+1, j}-X_{i j}\right)^{2}
+$$

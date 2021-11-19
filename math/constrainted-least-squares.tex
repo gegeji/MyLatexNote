@@ -1,0 +1,365 @@
+\chapter{Constrained Least Squares}
+
+\begin{problem}
+    $$
+\begin{array}{l}
+\min _{x}\left\{f(x)=2 x_{1}^{2}+x_{2}^{2}\right\} \\
+\text { s.t. } \quad h(x)=x_{1}+x_{2}-1=0
+\end{array}
+$$
+
+直接利用无约束优化问题求解： 
+$$ \nabla f(x)=\left[\begin{array}{l}4 x_{1} \\ 2 x_{2}\end{array}\right]=0 \Rightarrow x=\left[\begin{array}{l}0 \\ 0\end{array}\right] $$
+
+显然不满足约束条件 $ x_{1}+x_{2}-1=0+0-1 \neq 0 $, 不是优化问题的解。
+\end{problem}
+
+由约束条件可得 $ x_{1}=1-x_{2} $ ， 代入目标函数则有 $ f(x)=3 x_{2}^{2}-4 x_{2}+2 $ ， 即当 $ \hat{x}_{2}=\frac{2}{3} $ 时，目标函数值最小，并有 $ \hat{x}_{1}=1-\hat{x}_{2}=\frac{1}{3} $ 。
+
+% todo (2021-11-19 08:42): figure
+
+惩罚未能满足约束条件, 引入拉格朗日函数 (Lagrange Function)
+$$
+L(x, \lambda)=f(x)-\lambda h(x)=2 x_{1}^{2}+x_{2}^{2}+\lambda\left(1-x_{1}-x_{2}\right)
+$$
+
+$$ \left.\begin{array}{l}\frac{\partial L}{\partial x_{1}}=4 x_{1}-\lambda=0 \\ \frac{\partial L}{\partial x_{2}}=2 x_{2}-\lambda=0 \\ \frac{\partial L}{\partial \lambda}=1-x_{1}-x_{2}=0\end{array}\right\} \Rightarrow \hat{x}_{1}=\frac{1}{3}, \hat{x}_{2}=\frac{2}{3}, \hat{\lambda}=\frac{4}{3} $$
+
+\begin{definition}[Lagrange Functions]
+    $ \min _{x} / \max f(x) $
+s.t. $ \quad h_{i}(x)=0, i \in I \triangleq\{1, \cdots, p\} $
+$ g_{j}(x) \leq 0, j \in J \triangleq\{1, \cdots, q\} $
+
+假设 $ \lambda_{i} \in \mathbb{R}, i \in \mathrm{I}, u_{j} \in \mathbb{R}^{+}, j \in J $, 拉格朗日乘子(Lagrange Multipliers) 
+
+引入拉格朗日函数: $ L(x, \lambda, u)=f(x)-\sum_{i \in I} \lambda_{i} h_{i}(x)-\sum_{j \in J} u_{j} g_{j}(x), \quad \lambda=\left[\begin{array}{c}\lambda_{1} \\ \vdots \\ \lambda_{p}\end{array}\right], u=\left[\begin{array}{c}u_{1} \\ \vdots \\ u_{q}\end{array}\right] $
+
+$$ \nabla_{x} L(x, \lambda, u)=\nabla_{x} f(x)-\sum_{i \in I} \lambda_{i} \nabla_{x} h_{i}(x)-\sum_{j \in J} u_{j} \nabla_{x} g_{j}(x)=0 $$
+\end{definition}
+
+\begin{theorem}[Karush-Kuhn-Tucker Conditions]
+    $ h_{i}(x)=0, i \in I $
+$ \lambda_{i} h_{i}(x)=0, i \in I $
+$ g_{j}(x) \leq 0, j \in J $
+$ u_{j} g_{j}(x)=0, j \in J $
+$ u_{j} \geq 0, j \in J $
+\end{theorem}
+
+\href{https://zhuanlan.zhihu.com/p/38163970}{Example}
+
+\href{https://zhuanlan.zhihu.com/p/26514613}{Example 2}
+
+\section{An Example for Karush-Kuhn-Tucker Conditions}
+
+\begin{example}
+    % todo (2021-11-19 09:08): figure
+
+    \begin{problem}
+    $ \max _{x}\left\{f(x)=20 x_{1}+10 x_{2}\right\} $
+s.t. $ \quad g_{1}(x)=x_{1}^{2}+x_{2}^{2} \leq 1, g_{2}(x)=x_{1}+2 x_{2} \leq 2 $
+
+\end{problem}
+$ g_{3}(x)=-x_{1} \leq 0, g_{4}(x)=-x_{2} \leq 0 $
+
+$ \nabla_{x} L(x, u)=\nabla_{x} f(x)-u_{1} \nabla_{x} g_{1}(x)-u_{2} \nabla_{x} g_{2}(x)-u_{3} \nabla_{x} g_{3}(x)-u_{4} \nabla_{x} g_{4}(x)=0, u_{j} \geq 0 $
+
+$ \nabla_{x} f(x)=\left[\begin{array}{c}20 \\ 10\end{array}\right], \nabla_{x} g_{1}(x)=\left[\begin{array}{c}2 x_{1} \\ 2 x_{2}\end{array}\right], \nabla_{x} g_{2}(x)=\left[\begin{array}{l}1 \\ 2\end{array}\right], \nabla_{x} g_{3}(x)=\left[\begin{array}{l}-1 \\ 0\end{array}\right], \nabla_{x} g_{4}(x)=\left[\begin{array}{l}0 \\ -1\end{array}\right] . $
+
+$$ \nabla_{x} f(x)=u_{1} \nabla_{x} g_{1}(x), \nabla_{x} f(x) \neq u_{2} \nabla_{x} g_{2}(x), \nabla_{x} f(x) \neq u_{3} \nabla_{x} g_{3}(x), \nabla_{x} f(x) \neq u_{4} \nabla_{x} g_{4}(x) $$
+
+$$ u_{2}=u_{3}=u_{4}=0, \quad u_{1} \neq 0 $$
+
+$$
+\text { 即 } \nabla_{x} f(x)=u_{1} \nabla_{x} g_{1}(x),\left[\begin{array}{c}
+20 \\
+10
+\end{array}\right]=u_{1}\left[\begin{array}{c}
+2 x_{1} \\
+2 x_{2}
+\end{array}\right] \Rightarrow x_{1}=2 x_{2} \text {, 代入 } g_{1}(x)=x_{1}^{2}+x_{2}^{2}-1=5 x_{2}^{2}-1=0 \text {. }
+$$
+由于 $ x_{2} \geq 0 $, 可得 $ \left[\begin{array}{l}x_{1} \\ x_{2}\end{array}\right]=\frac{\sqrt{5}}{5}\left[\begin{array}{l}2 \\ 1\end{array}\right], u_{1}=5 \sqrt{5} $.
+
+\end{example}
+
+\section{Supplement Material: Karush-Kuhn-Tucker (KKT)条件}
+
+Cited from \url{https://zhuanlan.zhihu.com/p/38163970}.
+
+\subsection{等式约束优化问题}
+
+给定一个目标函数 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $, 我们希望找到 $ \mathbf{x} \in \mathbb{R}^{n} $, 在满足约束条件 $ g(\mathbf{x})=0 $ 的前提下, 使得 $ f(\mathbf{x}) $ 有最小值。这个约束优化问题记为
+$$
+\begin{array}{ll}
+\min & f(\mathbf{x}) \\
+\text { s.t. } & g(\mathbf{x})=0
+\end{array}
+$$
+为方便分析, 假设 $ f $ 与 $ g $ 是连续可导函数。 Lagrange乘数法是等式约束优化问题的典型解法。定 义Lagrangian函数
+$$
+L(\mathbf{x}, \lambda)=f(\mathbf{x})+\lambda g(\mathbf{x})
+$$
+其中 $ \lambda $ 称为Lagrange乘数。 Lagrange乘数法将原本的约束优化问题转换成等价的无约束优化问题
+$$
+\min _{\mathbf{x}, \lambda} L(\mathbf{x}, \lambda)
+$$
+
+计算 $ L $ 对 $ \mathbf{x} $ 与 $ \lambda $ 的偏导数并设为零，可得最优解的必要条件：
+$$
+\begin{array}{l}
+\nabla_{\mathbf{x}} L=\frac{\partial L}{\partial \mathbf{x}}=\nabla f+\lambda \nabla g=\mathbf{0} \\
+\nabla_{\lambda} L=\frac{\partial L}{\partial \lambda}=g(\mathbf{x})=0
+\end{array}
+$$
+其中第一式为定常方程式(stationary equation), 第二式为约束条件。解开上面 $ n+1 $ 个方程式可 得 $ L(\mathbf{x}, \lambda) $ 的驻点(stationary point) $ \mathbf{x}^{\star} $ 以及 $ \lambda $ 的值(正负数皆可能)。
+
+\subsection{不等式约束优化问题}
+
+接下来我们将约束等式 $ g(\mathbf{x})=0 $ 推广为不等式 $ g(\mathbf{x}) \leq 0 $ 。考虑这个问题
+$$
+\begin{array}{ll}
+\min & f(\mathbf{x}) \\
+\text { s.t. } & g(\mathbf{x}) \leq 0
+\end{array}
+$$
+约束不等式 $ g(\mathbf{x}) \leq 0 $ 称为原始可行性(primal feasibility), 据此我们定义可行域(feasible region) $ K=\mathbf{x} \in \mathbb{R}^{n} \mid g(\mathbf{x}) \leq 0 $ 。假设 $ \mathbf{x}^{\star} $ 为满足约束条件的最佳解, 分开两种情况讨论:
+
+(1) $ g\left(\mathbf{x}^{*}\right)<0 $, 最佳解位于 $ K $ 的内部, 称为内部解(interior solution), 这时约束条㑅是无效的 (inactive);
+(2) $ g\left(\mathbf{x}^{*}\right)=0 $, 最佳解落在 $ K $ 的边界, 称为边界解(boundary solution), 此时约束条件是有效 的 (active).
+
+这两种情况的最佳解具有不同的必要条件。
+(1)内部解：在约束条件无效的情形下， $ g(\mathbf{x}) $ 不起作用, 约束优化问题退化为无约束优化问题, 因 此驻点 $ \mathbf{x}^{\star} $ 满足 $ \nabla f=\mathbf{0} $ 且 $ \lambda=0 $ 。
+
+(2)边界解：在约束条件有效的情形下, 约束不等式变成等式 $g(\mathbf{x})=0$, 这与前述Lagrange乘数法 的情况相同。我们可以证明驻点 $\mathbf{x}^{\star}$ 发生于 $\nabla f \in \operatorname{span} \nabla g$, 换句话说, 存在 $\lambda$ 使得 $\nabla f=-\lambda \nabla g$, 但这里 $\lambda$ 的正负号是有其意义的。因为我们希望最小化 $f$, 梯度 $\nabla f$ (函数 $f$ 在 点 $\mathbf{x}$ 的最陡上升方向)应该指向可行域 $K$ 的内部(因为你的最优解最小值是在边界取得的), 但 $\nabla g$ 指向 $K$ 的外部(即 $g(\mathbf{x})>0$ 的区域, 因为你的约束是小于等于0), 因此 $\lambda \geq 0$, 称为对偶可 行性(dual feasibility)。
+
+因此, 不论是内部解或边界解, $\lambda g(\mathbf{x})=0$ 恒成立, 称为互补松弛性(complementary slackness)。整合上述两种情况, 最佳解的必要条件包括Lagrangian函数 $L(\mathbf{x}, \lambda)$ 的定常方程式、 原始可行性、对偶可行性，以及互补松弛性：
+$$
+\begin{aligned}
+\nabla_{\mathbf{x}} L &=\nabla f+\lambda \nabla g=\mathbf{0} \\
+g(\mathbf{x}) & \leq 0 \\
+\lambda & \geq 0 \\
+\lambda g(\mathbf{x}) &=0
+\end{aligned}
+$$
+这些条件合称为Karush-Kuhn-Tucker (KKT)条件。如果我们要最大化 $f(\mathbf{x})$ 且受限于 $g(\mathbf{x}) \leq 0$, 那么对偶可行性要改成 $\lambda \leq 0$ 。
+上面结果可推广至多个约束等式与约束不等式的情况。考虑标准约束优化问题(或称非线性规划)：
+$$
+\begin{array}{ll}
+\min & f(\mathbf{x}) \\
+\text { s.t. } & g_{j}(\mathbf{x})=0, \quad j=1, \ldots, m \\
+& h_{k}(\mathbf{x}) \leq 0, \quad k=1, \ldots, p
+\end{array}
+$$
+
+定义Lagrangian 函数
+$$
+L\left(\mathbf{x},\left\{\lambda_{j}\right\},\left\{\mu_{k}\right\}\right)=f(\mathbf{x})+\sum_{j=1}^{m} \lambda_{j} g_{j}(\mathbf{x})+\sum_{k=1}^{p} \mu_{k} h_{k}(\mathbf{x})
+$$
+其中 $ \lambda_{j} $ 是对应 $ g_{j}(\mathbf{x})=0 $ 的Lagrange乘数, $ \mu_{k} $ 是对应 $ h_{k}(\mathbf{x}) \leq 0 $ 的Lagrange乘数(或称KKT 乘数)。 KKT条件包括
+$$
+\begin{aligned}
+\nabla_{\mathbf{x}} L &=\mathbf{0} \\
+g_{j}(\mathbf{x}) &=0, \quad j=1, \ldots, m \\
+h_{k}(\mathbf{x}) & \leq 0 \\
+\mu_{k} & \geq 0 \\
+\mu_{k} h_{k}(\mathbf{x}) &=0, \quad k=1, \ldots, p
+\end{aligned}
+$$
+
+\subsection{An Example}
+
+\begin{problem}
+
+    考虑这个问题
+$$
+\begin{array}{ll}
+\min & x_{1}^{2}+x_{2}^{2} \\
+\text { s.t. } & x_{1}+x_{2}=1 \\
+& x_{2} \leq \alpha
+\end{array}
+$$
+其中 $ \left(x_{1}, x_{2}\right) \in \mathbb{R}^{2}, \alpha $ 为实数。
+\end{problem}
+
+写出Lagrangigan函数
+$$
+L\left(x_{1}, x_{2}, \lambda, \mu\right)=x_{1}^{2}+x_{2}^{2}+\lambda\left(1-x_{1}-x_{2}\right)+\mu\left(x_{2}-\alpha\right)
+$$
+
+KKT 方程组如下:
+$$
+\begin{aligned}
+\frac{\partial L}{\partial x_{i}} &=0, \quad i=1,2 \\
+x_{1}+x_{2} &=1 \\
+x_{2}-\alpha & \leq 0 \\
+\mu & \geq 0 \\
+\mu\left(x_{2}-\alpha\right) &=0
+\end{aligned}
+$$
+求偏导可得 $ \frac{\partial L}{\partial x_{1}}=2 x_{1}-\lambda=0 $ 且 $ \frac{\partial L}{\partial x_{2}}=2 x_{2}-\lambda+\mu=0 $, 分别解出 $ x_{1}=\frac{\lambda}{2} $ 且 $ x_{2}=\frac{\lambda}{2}-\frac{\mu}{2} $ 。代入约束等式 $ x_{1}+x_{2}=\lambda-\frac{\mu}{2}=1 $ 或 $ \lambda=\frac{\mu}{2}+1 $ 。合并上面结果,
+$$
+x_{1}=\frac{\mu}{4}+\frac{1}{2}, \quad x_{2}=-\frac{\mu}{4}+\frac{1}{2}
+$$
+
+最后再加入约束不等式 $ -\frac{\mu}{4}+\frac{1}{2} \leq \alpha $ 或 $ \mu \geq 2-4 \alpha $ 。底下分开三种情况讨论。
+(1) $ \alpha>\frac{1}{2} $ : 不难验证 $ \mu=0>2-4 \alpha $ 满足所有的KKT条件, 约束不等式是无效的, $ x_{1}^{\star}=x_{2}^{\star}=\frac{1}{2} $ 是内部解，目标函数的极小值是 $ \frac{1}{2} 。 $
+(2) $ \alpha=\frac{1}{2} $ : 如同 $ 1, \quad \mu=0=2-4 \alpha $ 满足所有的KKT条件, $ \quad x_{1}^{\star}=x_{2}^{\star}=\frac{1}{2} $ 是边界解, 因为 $ x_{2}^{\star}=\alpha $
+
+(3) $ \alpha<\frac{1}{2} $ : 这时约束不等式是有效的, $ \mu=2-4 \alpha>0 $, 则 $ x_{1}^{\star}=1-\alpha $ 且 $ x_{2}^{\star}=\alpha $, 目标函数 的极小值是 $ (1-\alpha)^{2}+\alpha^{2} 。 $
+
+\section{Supplement Material: 浅谈最优化问题的KKT条件}
+
+Cited from \url{https://zhuanlan.zhihu.com/p/26514613}.
+
+对于具有等式和不等式约束的一般优化问题
+$$
+\begin{array}{l}
+\min f(\mathbf{x}) \\
+\text { s.t. } g_{j}(\mathbf{x}) \leq 0(j=1,2, \cdots, m) \\
+h_{k}(\mathbf{x})=0(k=1,2, \cdots, l)
+\end{array}
+$$
+$ \mathrm{KKT} $ 条件给出了判断 $ \mathrm{x}^{*} $ 是否为最优解的必要条件, 即：
+$$
+\left\{\begin{array}{l}
+\frac{\partial f}{\partial x_{i}}+\sum_{j=1}^{m} \mu_{j} \frac{\partial g_{j}}{\partial x_{i}}+\sum_{k=1}^{l} \lambda_{k} \frac{\partial h_{k}}{\partial x_{i}}=0,(i=1,2, \ldots, n) \\
+h_{k}(\mathbf{x})=0,(k=1,2, \cdots, l) \\
+\mu_{j} g_{j}(\mathbf{x})=0,(j=1,2, \cdots, m) \\
+\mu_{j} \geq 0
+\end{array}\right.
+$$
+
+\subsection{等式约束优化问题}
+
+所谓的等式约束优化问题是指
+$$
+\begin{array}{l}
+\min f\left(x_{1}, x_{2}, \ldots, x_{n}\right) \\
+\text { s.t. } h_{k}\left(x_{1}, x_{2}, \ldots, x_{n}\right)=0
+\end{array}
+$$
+我们令 $ L(\mathbf{x}, \lambda)=f(\mathbf{x})+\sum_{k=1}^{l} \lambda_{k} h_{k}(\mathbf{x}) $, 函数 $ L(x, y) $ 称为Lagrange函数, 参数 $ \lambda $ 称为Lagrange乘 子.
+再联立方程组： $ \left\{\begin{array}{l}\frac{\partial L}{\partial x_{i}}=0(i=1,2, \cdots, n) \\ \frac{\partial L}{\partial \lambda_{k}}=0(k=1,2, \cdots, l)\end{array}\right. $,
+
+得到的解为可能极值点，由于我们用的是必要条件，具体是否为极值点需根据问题本身的具体情况检验. 这个方程组称为等式约束的极值必要条件.
+
+上式我们对 $ n $ 个 $ x_{i} $ 和 $ l $ 个 $ \lambda_{k} $ 分别求偏导, 回想一下在无约束优化问题 $ f\left(x_{1}, x_{2}, \ldots, x_{n}\right)=0 $ 中, 我 们根据极值的必要条件, 分别令 $ \frac{\partial f}{\partial x_{i}}=0 $, 求出可能的极值点. 因此可以联想到：等式约束下的 Lagrange乘数法引入了 $ l $ 个Lagrange乘子，或许我们可以把 $ \lambda_{k} $ 也看作优化变量（ $ x_{i} $ 就叫做优化 变量）. 相当于将优化变量个数增加到 $ (n+l) $ 个, $ x_{i} $ 与 $ \lambda_{k} $ 一视同仁, 均为优化变量, 均对它们求 偏导.
+
+\subsection{不等式约束优化问题}
+
+以上我们讨论了等式约束的情形，接下来我们来介绍不等式约束的优化问题.我们先给出其主要思想：转化的思想——将不等式约束条件变成等式约束条件.具体做法：引入松弛变量.松弛变量也是优化变量，也需要一视同仁求偏导.
+
+具体而言, 我们先看一个一元函数的例子：
+$$
+\min f(x)
+$$
+$$
+\text { s.t. } g_{1}(x)=a-x \leq 0
+$$
+$$
+g_{2}(x)=x-b \leq 0
+$$
+（注：优化问题中，我们必须求得一个确定的值，因此不妨令所有的不等式均取到等号，即 $ \leq $ 的 情况.)
+
+对于约束 $ g_{1} $ 和 $ g_{2} $, 我们分别引入两个松弛变量 $ a_{1}^{2} $ 和 $ b_{1}^{2} $, 得到 $ h_{1}\left(x, a_{1}\right)=g_{1}+a_{1}^{2}=0 $ 和 $ h_{2}\left(x, b_{1}\right)=g_{2}+b_{1}^{2}=0 $. 注意, 这里直接加上平方项 $ a_{1}^{2} 、 b_{1}^{2} $ 而非 $ a_{1} 、 b_{1} $, 是因为 $ g_{1} $ 和 $ g_{2} $ 这两个 不等式的左边必须加上一个正数才能使不等式变为等式. 若只加上 $ a_{1} $ 和 $ b_{1} $, 又会引入新的约束 $ a_{1} \geq 0 $ 和 $ b_{1} \geq 0 $, 这不符合我们的意愿.
+
+% todo (2021-11-19 09:29): figure
+
+
+由此我们将不等式约束转化为了等式约束, 并得到Lagrange函数
+$$
+L\left(x, a_{1}, b_{1}, \mu_{1}, \mu_{2}\right)=f(x)+\mu_{1}\left(a-x+a_{1}^{2}\right)+\mu_{2}\left(x-b+b_{1}^{2}\right)
+$$
+我们再按照等式约束优化问题（极值必要条件）对其求解, 联立方程
+$$
+\left\{\begin{array}{l}
+\frac{\partial F}{\partial x}=\frac{\partial f}{\partial x}+\mu_{1} \frac{d g_{1}}{d x}+\mu_{2} \frac{d g_{2}}{d x}=\frac{d f}{d x}-\mu_{1}+\mu_{2}=0 \\
+\frac{\partial F}{\partial \mu_{1}}=g_{1}+a_{1}^{2}=0, \quad \frac{\partial F}{\partial \mu_{2}}=g_{2}+b_{1}^{2}=0 \\
+\frac{\partial F}{\partial a_{1}}=2 \mu_{1} a_{1}=0, \quad \frac{\partial F}{\partial b_{1}}=2 \mu_{2} b_{1}=0 \\
+\mu_{1} \geq 0, \quad \mu_{2} \geq 0
+\end{array}\right.
+$$
+
+(注: 这里的 $\mu_{1} \geq 0, \mu_{2} \geq 0$ 先承认, 我们待会再解释! (先上车再买票, 手动斜眼). 实际上对 于不等式约束前的乘子, 我们要求其大于等于 0 )
+得出方程组后, 便开始动手解它. 看到第3行的两式 $\mu_{1} a_{1}=0$ 和 $\mu_{1} a_{1}=0$ 比较简单, 我们就从它们 入手吧
+对于 $\mu_{1} a_{1}=0$, 我们有两种情况:
+情形 $1: \quad \mu_{1}=0, a_{1} \neq 0$
+此时由于乘子 $\mu_{1}=0$, 因此 $g_{1}$ 与其相乘为零, 可以理解为约束 $g_{1}$ 不起作用, 且有 $g_{1}(x)=a-x<0 .$
+情形2: $\quad \mu_{1} \geq 0, a_{1}=0$
+此时 $g_{1}(x)=a-x=0$ 且 $\mu_{1}>0$, 可以理解为约束 $g_{1}$ 起作用, 且有 $g_{1}(x)=0$.
+合并情形 1 和情形 2 得: $\mu_{1} g_{1}=0$, 且在约束起作用时 $\mu_{1}>0, g_{1}(x)=0$; 约束不起作用时 $\mu_{1}=0, g_{1}(x)<0 .$
+同样地, 分析 $\mu_{2} b_{1}=0$, 可得出约束 $g_{2}$ 起作用和不起作用的情形, 并分析得到 $\mu_{2} g_{2}=0$.
+
+由此, 方程组（极值必要条件）转化为
+$$
+\left\{\begin{array}{l}
+\frac{d f}{d x}+\mu_{1} \frac{d g_{1}}{d x}+\mu_{2} \frac{d g_{2}}{d x}=0 \\
+\mu_{1} g_{1}(x)=0, \mu_{2} g_{2}(x)=0 \\
+\mu_{1} \geq 0, \mu_{2} \geq 0
+\end{array}\right.
+$$
+
+这是一元一次的情形. 类似地, 对于多元多次不等式约束问题
+$$
+\begin{array}{l}
+\min f(\mathbf{x}) \\
+\text { s.t. } g_{j}(\mathbf{x}) \leq 0(j=1,2, \cdots, m)
+\end{array}
+$$
+我们有
+$$
+\left\{\begin{array}{l}
+\frac{\partial f\left(x^{*}\right)}{\partial x_{i}}+\sum_{j=1}^{m} \mu_{j} \frac{\partial g_{j}\left(x^{*}\right)}{\partial x_{i}}=0(i=1,2, \ldots, n) \\
+\mu_{j} g_{j}\left(x^{*}\right)=0(j=1,2, \ldots, m) \\
+\mu_{j} \geq 0(j=1,2, \ldots, m)
+\end{array}\right.
+$$
+
+上式便称为不等式约束优化问题的KKT（Karush-Kuhn-Tucker）条件. $ \mu_{j} $ 称为KKT乘子, 且约束 起作用时 $ \mu_{j} \geq 0, g_{j}(x)=0 $ ； 约束不起作用时 $ \mu_{j}=0, g_{j}(x)<0 $.
+别急, 还木有完, 我们还剩最后一个问题没有解决：为什么KKT乘子必须大于等于零一我将用几 何性质来解释.
+由于
+$$
+\frac{\partial f\left(x^{*}\right)}{\partial x_{i}}+\sum_{j=1}^{m} \mu_{j} \frac{\partial g_{j}\left(x^{*}\right)}{\partial x_{i}}=0(i=1,2, \ldots, n)
+$$
+
+用梯度表示: $ \nabla f\left(\mathbf{x}^{*}\right)+\sum_{j \in J} \mu_{j} \nabla g_{j}\left(\mathbf{x}^{*}\right)=0, J $ 为起作用约束的集合.
+移项: $ -\nabla f\left(\mathbf{x}^{*}\right)=\sum_{j \in J} \mu_{j} \nabla g_{j}\left(\mathbf{x}^{*}\right) $,
+
+注意到梯度为向量. 上式表示在约束极小值点 $ \mathbf{x}^{*} $ 处，函数 $ f\left(\mathbf{x}^{*}\right) $ 的负梯度一定可以表示成：所有起 作用约束在该点的梯度（等值线的法向量）的线性组合.（复习课本中梯度的性质：某点梯度的方 向就是函数等值线 $ f(\mathbf{x})=C $ 在这点的法线方向, 等值线就是地理的等高线)
+
+为方便作图, 假设现在只有两个起作用约束, 我们作出图形如下图.注意我们上面推导过, 约束起 作用时 $ g_{j}(\mathbf{x})=0 $, 所以此时约束在几何上应该是一簇约束平面.我们假设在 $ \mathbf{x}^{*} $ 取得极小值点, 若 同时满足 $ g_{1}(\mathbf{x})=0 $ 和 $ g_{2}(\mathbf{x})=0 $, 则 $ \mathbf{x}^{k} $ 一定在这两个平面的交线上, 且 $ -\nabla f\left(\mathbf{x}^{*}\right)=\sum_{j \in J} \mu_{j} \nabla g_{j}\left(\mathbf{x}^{*}\right) $, 即 $ -\nabla f\left(\mathbf{x}^{k}\right) 、 \nabla g_{1}\left(\mathbf{x}^{k}\right) $ 和 $ \nabla g_{2}\left(\mathbf{x}^{k}\right) $ 共面.
+
+% todo (2021-11-19 09:32): figure
+
+下图是在点 $ \mathbf{x}^{k} $ 处沿 $ x_{1} O x_{2} $ 面的截面, 过点 $ \mathbf{x}^{k} $ 作目标函数的负梯度 $ -\nabla f\left(\mathbf{x}^{k}\right) $, 它垂直于目标函数 的等值线 $ f(\mathbf{x})=C $ （高数课本：一点的梯度与等值线相互垂直），且指向目标函数 $ f(\mathbf{x}) $ 的最速减 小方向.再作约束函数 $ g_{1}(\mathbf{x})=0 $ 和 $ g_{2}(\mathbf{x})=0 $ 的梯度 $ \nabla g_{1}\left(\mathbf{x}^{k}\right) $ 和 $ \nabla g_{2}\left(\mathbf{x}^{k}\right) $, 它们分别垂直 $ g_{1}(\mathbf{x})=0 $ 和 $ g_{2}(\mathbf{x})=0 $ 两曲面在 $ \mathbf{x}^{k} $ 的切平面, 并形成一个雉形夹角区域.此时, 可能有 $ \mathrm{a} 、 \mathrm{~b} $ 两种 情形：
+
+我们先来看情形 $\mathrm{b}$ ：若3个向量的位置关系如 b所示, 即 $-\nabla f$ 落在 $\nabla g_{1}$ 和 $\nabla g_{2}$ 所形成的雉角区外的 一侧. 此时, 作等值面 $f(\mathbf{x})=C$ 在点 $\mathbf{x}^{k}$ 的切平面（它与 $-\nabla f\left(\mathbf{x}^{k}\right)$ 垂直）, 我们发现：沿着与负 梯度 $-\nabla f$ 成锐角的方向移动（如下图红色箭头方向）, 只要在红色区域取值, 目标函数 $f(\mathbf{x})$ 总 能减小.而红色区域是可行域 $(f(\mathbf{x})=C$, C取不同的常数能得到不同的等值线, 因此能取到红色 区域）, 因此既可减小目标函数值, 又不破坏约束条件. 这说明 $\mathbf{x}^{k}$ 仍可沿约束曲面移动而不破坏约 束条件, 且目标函数值还能够减小.所以 $\mathbf{x}^{k}$ 不是稳定的最优点, 即不是局部极值点.
+
+反过头来看情形a: $ -\nabla f $ 落在 $ \nabla g_{1} $ 和 $ \nabla g_{2} $ 形成的雉角内. 此时, 同样作 $ f(\mathbf{x})=C $ 在点 $ \mathbf{x}^{k} $ 与 $ -\nabla f $ 垂直的切平面. 当从 $ \mathbf{x}^{k} $ 出发沿着与负梯度 $ -\nabla f $ 成锐角的方向移动时, 虽然能使目标函数值减小, 但此时任何一点都不在可行区域内. 显然, 此时 $ \mathbf{x}^{k} $ 就是局部最优点 $ \mathbf{x}^{*} $, 再做任何移动都将破坏约 束条件, 故它是稳定点.
+
+由于 $ -\nabla f\left(\mathbf{x}^{*}\right) $ 和 $ \nabla g_{1}\left(\mathbf{x}^{*}\right) 、 \nabla g_{2}\left(\mathbf{x}^{*}\right) $ 在一个平面内, 所以前者可看成是后两者的线性组合. 又由 上面的几何分析知, $ -\nabla f\left(\mathbf{x}^{*}\right) $ 在 $ \nabla g_{1}\left(\mathbf{x}^{*}\right) $ 和 $ \nabla g_{2}\left(\mathbf{x}^{*}\right) $ 的夹角之间, 所以线性组合的系数为正, 有
+$$
+-\nabla f\left(\mathbf{x}^{*}\right)=\mu_{1} \nabla g_{1}\left(\mathbf{x}^{*}\right)+\mu_{2} \nabla g_{2}\left(\mathbf{x}^{*}\right), \text { 且 } \mu_{1}>0, \mu_{2}>0 \text {. }
+$$
+这就是 $ \mu_{j}>0 $ 的原因. 类似地, 当有多个不等式约束同时起作用时, 要求 $ -\nabla f\left(\mathbf{x}^{*}\right) $ 处于 $ \nabla g_{j}\left(\mathbf{x}^{*}\right) $ 形成的超角锥（高维图形, 我姑且称之为 “超” ）之内.
+
+\subsection{总结：同时包含等式和不等式约束的一般优化问题}
+
+$$
+\begin{array}{l}
+\min f(\mathbf{x}) \\
+\text { s.t. } g_{j}(\mathbf{x}) \leq 0(j=1,2, \cdots, m) \\
+h_{k}(\mathbf{x})=0(k=1,2, \cdots, l)
+\end{array}
+$$
+KKT条件 $ \left(\mathrm{x}^{*}\right. $ 是最优解的必要条件 $ ) $ 为
+$$
+\left\{\begin{array}{l}
+\frac{\partial f}{\partial x_{i}}+\sum_{j=1}^{m} \mu_{j} \frac{\partial g_{j}}{\partial x_{i}}+\sum_{k=1}^{l} \lambda_{k} \frac{\partial h_{k}}{\partial x_{i}}=0,(i=1,2, \ldots, n) \\
+h_{k}(\mathbf{x})=0,(k=1,2, \cdots, l) \\
+\mu_{j} g_{j}(\mathbf{x})=0,(j=1,2, \cdots, m) \\
+\mu_{j} \geq 0
+\end{array}\right.
+$$
+
+注意，对于等式约束的Lagrange乘子，并没有非负的要求！以后求其极值点，不必再引入松弛变量，直接使用KKT条件判断！

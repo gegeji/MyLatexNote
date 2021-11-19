@@ -301,7 +301,8 @@ $$
 因此 $x+\lambda y=0$, 即 $x=-\lambda y$。
 \end{proof}
 
-\begin{theorem}
+\begin{theorem}[Cauchy-Schwarz 不等式的矩阵元素形式]
+
     $$\left(\sum_{i=1}^{n} u_{i} v_{i}\right)^{2} \leq\left(\sum_{i=1}^{n} u_{i}^{2}\right)\left(\sum_{i=1}^{n} v_{i}^{2}\right)$$
 \end{theorem}
 
@@ -317,10 +318,17 @@ $$
 which yields the Cauchy-Schwarz inequality.
 \end{proof}
 
-\begin{corollary}
-    $$|\langle a,b \rangle| \le \| a \|_2 \| b \|_2 \Rightarrow
-    \langle a,b \rangle \ge -\| a \|_2 \| b \|_2
+\begin{corollary}[Cauchy-Schwarz不等式变体]
+    由Cauchy-Schwarz不等式
     $$
+    |\langle x, y\rangle|^{2} \leq\langle x, x\rangle\langle y, y\rangle
+    $$
+
+    可以推得
+    $$\begin{aligned}
+        |\langle a,b \rangle| &\le \| a \|_2 \| b \|_2\\
+        \langle a,b \rangle &\ge -\| a \|_2 \| b \|_2
+    \end{aligned} $$
 \end{corollary}
 
 \section{浮点运算}
@@ -333,9 +341,7 @@ which yields the Cauchy-Schwarz inequality.
 
 算法复杂度通常以非常粗略地近似估算. 
 
-（程序）执行时间的粗略估计：计算机速度/flops
-
-目前的计算机大约是$1$Gflops/秒($10^9$flops/秒)
+（程序）执行时间的粗略估计：计算机速度/flops，目前的计算机大约是$1$Gflops/秒($10^9$flops/秒)。
 
 \begin{corollary}
     假设有$n$维向量$x$和$y$：
