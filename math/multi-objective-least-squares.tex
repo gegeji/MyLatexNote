@@ -62,7 +62,8 @@ $$
 
 \section{求解多目标最小二乘问题}
 
-$$
+\begin{problem}
+    $$
 \tilde{A}=\left[\begin{array}{c}
 \sqrt{\lambda_{1}} A_{1} \\
 \vdots \\
@@ -74,23 +75,40 @@ $$
 \end{array}\right]
 $$
 
+$$
+\tilde{A}=\left[\begin{array}{c}
+\sqrt{\lambda_{1}} A_{1} \\
+\vdots \\
+\sqrt{\lambda_{k}} A_{k}
+\end{array}\right], \tilde{b}=\left[\begin{array}{c}
+\sqrt{\lambda_{1}} b_{1} \\
+\vdots \\
+\sqrt{\lambda_{k}} b_{k}
+\end{array}\right]
+$$
+\end{problem}
 
-如果$\tilde{A}$的列向量线性无关时，则该问题的解唯一；
 
-每一个矩阵$A_i$的行向量可以线性相关；
+如果$\tilde{A}$的列向量线性无关时，则该问题的解唯一
 
 $$\begin{aligned} \hat{x}&=\left(\tilde{A}^{T} \tilde{A}\right)^{-1} \tilde{A}^{T} \tilde{b} \\
 &= \left(\lambda_{1} A_{1}{ }^{T} A_{1}+\cdots+\lambda_{k} A_{k}{ }^{T} A_{k}\right)^{-1}\left(\lambda_{1} A_{1}{ }^{T} b_{1}+\cdots+\lambda_{k} A_{k}{ }^{T} b_{k}\right) \end{aligned} $$
 
-可对 $ \tilde{A} $ 进行QR分解计算 $ \hat{x} $ 。
+可对 $ \tilde{A} $ 进行QR分解计算 $ \hat{x} $ 。每一个矩阵$A_i$的行向量可以线性相关。
+
+
 
 \section{正则化数据拟合}
 
-线性模型拟合数据 $ \left(x^{(1)}, y^{(1)}\right), \cdots,\left(x^{(N)}, y^{(N)}\right) $
-$$
+\begin{problem}
+    线性模型拟合数据 $ \left(x^{(1)}, y^{(1)}\right), \cdots,\left(x^{(N)}, y^{(N)}\right) $
+
+    $$
 \hat{f}(x)=\theta_{1} f_{1}(x)+\cdots \theta_{p} f_{p}(x), \theta=\left[\theta_{1}, \cdots, \theta_{p}\right]^{T}
 $$
 $ f_{1}(x) $ 为常数函数，且恒等于 $1$ 。
+\end{problem}
+
 
 较大的参数 $ \theta_{i} $ 会让模型对 $ f_{i}(x) $ 的变化更加敏感。 让参数 $ \theta_{2}, \ldots, \theta_{p} $ 更小，可以避免模型过拟合。
 
@@ -103,9 +121,12 @@ $$
 $$
 \min _{\theta} J_{1}(\theta)+\lambda J_{2}(\theta)=\sum_{k=1}^{N}\left(\hat{f}\left(x^{(k)}\right)-y^{(k)}\right)^{2}+\lambda \sum_{j=2}^{p} \theta_{j}^{2}
 $$
-正则化参数 $ \lambda>0 $ ；
+正则化参数 $ \lambda>0 $。
+
 该问题等价于最小二乘法问题:
-$$
+
+\begin{problem}
+    $$
 \min _{\theta}\left\|\left[\begin{array}{r}
 A_{1} \\
 \sqrt{\lambda} A_{2}
@@ -116,6 +137,8 @@ y_{d \times 1} \\
 $$
 
 $$ A_{1}=\left[\begin{array}{cccc}1 & f_{2}\left(x^{(1)}\right) & \ldots & f_{p}\left(x^{(1)}\right) \\ 1 & f_{2}\left(x^{(2)}\right) & \ldots & f_{p}\left(x^{(2)}\right) \\ \vdots & \vdots & \vdots & \vdots \\ 1 & f_{2}\left(x^{(N)}\right) & \cdots & f_{p}\left(x^{(N)}\right)\end{array}\right],  A_{2}=\left[\begin{array}{ccccc}0 & 1 & 0 & \cdots & 0 \\ 0 & 0 & 1 & \cdots & 0 \\ \vdots & \vdots & \vdots & \ddots & 0 \\ 0 & 0 & 0 & \cdots & 1\end{array}\right], y=\left[\begin{array}{c}y^{(1)} \\ \vdots \\ y^{(N)}\end{array}\right] $$
+\end{problem}
+
 
 % todo (2021-11-19 09:15): figure
 
@@ -124,66 +147,51 @@ $$ A_{1}=\left[\begin{array}{cccc}1 & f_{2}\left(x^{(1)}\right) & \ldots & f_{p}
 \begin{problem}
     $$ y=A x_{e x}+v $$
 
-向量 $ x_{e x} \in \mathbb{R}^{n} $ 表示未知原始信息(需要估计)
-向量 $ v \in \mathbb{R}^{m} $ 表示未知的误差或者噪声
-向量 $ y \in \mathbb{R}^{m} $ 为观测的已知数据
-矩阵 $ A \in \mathbb{R}^{m \times n} $ 将测量值 $ y $ 和原始信息 $ x_{e x} $ 之间的关系
+向量 $ x_{e x} \in \mathbb{R}^{n} $ 表示未知原始信息(需要估计)，
+向量 $ v \in \mathbb{R}^{m} $ 表示未知的误差或者噪声，
+向量 $ y \in \mathbb{R}^{m} $ 为观测的已知数据，
+矩阵 $ A \in \mathbb{R}^{m \times n} $ 将测量值 $ y $ 和原始信息 $ x_{e x} $ 之间的关系。
 
-最小二乘估计法:
+
+\end{problem}
+
+使用最小二乘估计法进行估计
 $$
 \min _{x}\|A x-y\|_{2}^{2}
 $$
-\end{problem}
-
 利用未知 $ x_{e x} $ 先验信息，对目标进行约束，构成多目标优化问题。 
 
-例如：Tikhonov 正则化
-$$
+例如可以使用岭回归进行求解。
+
+
+\begin{definition}[Tikhonov 正则化]
+    $$
 \min _{x}\|A x-y\|_{2}^{2}+\lambda\|x\|_{2}^{2}, \lambda>0
 $$
-目标在于使 $ \|A x-y\|_{2}^{2} $ 足够小，同时 $ x $ 的能量也要小; 该优化模型等价于求解:
+\end{definition}
+
+目标在于使 $ \|A x-y\|_{2}^{2} $ 足够小，同时 $ x $ 的能量也要小。
+
+\begin{theorem}[岭回归问题的标准方程]
+    该优化模型等价于求解
 $$
 \left(A^{T} A+\lambda I\right) x=A^{T} y
 $$
-即使矩阵A的列线性相关时，也有唯一解!
+\end{theorem}
 
-\section{信号去噪}
+即使矩阵$A$的列线性相关时，也有唯一解。
 
-观察信号向量 $ y \in \mathbb{R}^{n} $ ，
-$$
-y=x_{e x}+v
-$$
-$ x_{e x} \in \mathbb{R}^{n} $ 是未知信号, $ v \in \mathbb{R}^{n} $ 是噪声。
-
-目标是找一个信号变换缓慢，信号既有光滑性，同时逼近 $ y $ ， 其优化模型：
-$$
-\min _{x}\|x-y\|_{2}^{2}+\lambda \sum_{i=1}^{n-1}\left(x_{i+1}-x_{i}\right)^{2}, \lambda>0
-$$
-
-\begin{definition}[差分矩阵]
-    令矩阵 $ D \in \mathbb{R}^{(n-1) \times n} $ 为差分矩阵：
-$$ D=\left[\begin{array}{ccccccc}-1 & 1 & 0 & \cdots & 0 & 0 & 0 \\ 0 & -1 & 1 & \cdots & 0 & 0 & 0 \\ \vdots & \vdots & \vdots & \ldots & \vdots & \vdots & \vdots \\ 0 & 0 & 0 & \cdots & -1 & 1 & 0 \\ 0 & 0 & 0 & \cdots & 0 & -1 & 1\end{array}\right] $$
-
+\begin{definition}[图像转换为列向量存储]
+    二维图像 $ X \in \mathbb{R}^{M \times N} $ ， 可按列存储成向量 $ x \in \mathbb{R}^{M N} $ :
+    $$
+    x=\left[\begin{array}{c}
+    X_{1: M, 1} \\
+    X_{1: M, 2} \\
+    \vdots \\
+    X_{1: M, N}
+    \end{array}\right] $$ 
 \end{definition}
 
-
-则有 $ \sum_{i=1}^{n-1}\left(x_{i+1}-x_{i}\right)^{2}=\|D x\|_{2}^{2} $
-
-$$ \min _{x}\left\|\left[\begin{array}{c}I \\ \sqrt{\lambda} D\end{array}\right] x-\left[\begin{array}{l}y \\ 0\end{array}\right]\right\|_{2}^{2} $$
-
-优化模型等价于求解线性方程:
-$$
-\left(I+\lambda D^{T} D\right) x=y
-$$
-
-二维图像 $ X \in \mathbb{R}^{M \times N} $ ， 可按列存储成向量 $ x \in \mathbb{R}^{M N} $ :
-$$
-x=\left[\begin{array}{c}
-X_{1: M, 1} \\
-X_{1: M, 2} \\
-\vdots \\
-X_{1: M, N}
-\end{array}\right] $$ 
 
 \begin{example}[\textsf{reshape}]
     $$ 
@@ -204,9 +212,9 @@ y=A x_{e x}+v
 $$
 
 未知图像 $ x_{e x} \in \mathbb{R}^{M N} $ ，观察图像 $ y \in \mathbb{R}^{M N} $;
-模糊矩阵 $ A \in \mathbb{R}^{M N \times M N} $ 是已知观测图像与未知图像关系噪声 $ v \in \mathbb{R}^{M N} $ (未知)
+模糊矩阵 $ A \in \mathbb{R}^{M N \times M N} $ 是已知观测图像与未知图像关系噪声 $ v \in \mathbb{R}^{M N} $ (未知)。
 
-图像具有光滑性：图像相邻两个像素值之间变化不大。
+图像具有光滑性：\textbf{图像相邻两个像素值之间变化不大}。
 
 \begin{itemize}
     \item 水平方向： $ X\left[n_{1}, n_{2}+1\right] \approx X\left[n_{1}, n_{2}\right] $
@@ -229,6 +237,7 @@ $$
         \end{array}\right] $$
 \end{definition}
 
+\begin{example}
 $$
 \begin{array}{c}
 X=\left[\begin{array}{ll}
@@ -245,8 +254,12 @@ X=\left[\begin{array}{ll}
 \end{array}\right]
 \end{array}
 $$
+\end{example}
 
-$$
+定义优化问题
+
+\begin{problem}
+     $$
 \hat{x}=\arg \min _{x}\|A x-y\|_{2}^{2}+\lambda\left\|D_{v} x\right\|_{2}^{2}+\lambda\left\|D_{h} x\right\|_{2}^{2}, \lambda>0
 $$
 
@@ -256,3 +269,48 @@ $ \lambda\left\|D_{v} x\right\|_{2}^{2}+\lambda\left\|D_{h} x\right\|_{2}^{2} $ 
 $$
 \left\|D_{h} x\right\|_{2}^{2}+\left\|D_{v} x\right\|_{2}^{2}=\sum_{i=1}^{M} \sum_{j=1}^{N-1}\left(X_{i, j+1}-X_{i j}\right)^{2}+\sum_{i=1}^{M-1} \sum_{j=1}^{N}\left(X_{i+1, j}-X_{i j}\right)^{2}
 $$
+\end{problem}
+
+求解这个模型可以得到图像逆退化的近似变换。
+
+
+
+
+
+\section{信号去噪}
+
+观察信号向量 $ y \in \mathbb{R}^{n} $ ，
+$$
+y=x_{e x}+v
+$$
+$ x_{e x} \in \mathbb{R}^{n} $ 是未知信号, $ v \in \mathbb{R}^{n} $ 是噪声。
+
+% todo (2021-11-20 07:53): figure
+
+\begin{problem}
+    目标是找一个近似信号$x$变换缓慢，信号既有光滑性，同时逼近 $ y $ ， 其优化模型为
+$$
+\min _{x}\|x-y\|_{2}^{2}+\lambda \sum_{i=1}^{n-1}\left(x_{i+1}-x_{i}\right)^{2}, \lambda>0
+$$
+\end{problem}
+
+
+\begin{definition}[差分矩阵]
+    令矩阵 $ D \in \mathbb{R}^{(n-1) \times n} $ 为差分矩阵：
+$$ D=\left[\begin{array}{ccccccc}-1 & 1 & 0 & \cdots & 0 & 0 & 0 \\ 0 & -1 & 1 & \cdots & 0 & 0 & 0 \\ \vdots & \vdots & \vdots & \ldots & \vdots & \vdots & \vdots \\ 0 & 0 & 0 & \cdots & -1 & 1 & 0 \\ 0 & 0 & 0 & \cdots & 0 & -1 & 1\end{array}\right] $$
+
+\end{definition}
+
+
+则有 $ \sum_{i=1}^{n-1}\left(x_{i+1}-x_{i}\right)^{2}=\|D x\|_{2}^{2} $
+
+优化模型等价于
+
+$$ \min _{x}\left\|\left[\begin{array}{c}I \\ \sqrt{\lambda} D\end{array}\right] x-\left[\begin{array}{l}y \\ 0\end{array}\right]\right\|_{2}^{2} $$
+
+优化模型等价于求解线性方程
+
+$$
+\left(I+\lambda D^{T} D\right) x=y
+$$
+

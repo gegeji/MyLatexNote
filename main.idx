@@ -10,3 +10,16 @@
 \indexentry{上三角(Upper Triangular)矩阵|hyperpage}{75}
 \indexentry{reflection matrices|hyperpage}{97}
 \indexentry{plane rotation matrices|hyperpage}{97}
+\indexentry{Lagrange乘数|hyperpage}{129}
+\indexentry{定常方程式(stationary equation)|hyperpage}{130}
+\indexentry{约束条件|hyperpage}{130}
+\indexentry{原始可行性(primal feasibility)|hyperpage}{130}
+\indexentry{可行域(feasible region)|hyperpage}{130}
+\indexentry{无效的 (inactive)|hyperpage}{130}
+\indexentry{有效的 (active)|hyperpage}{130}
+\indexentry{对偶可行性(dual feasibility)。|hyperpage}{130}
+\indexentry{互补松弛性(complementary slackness)|hyperpage}{130}
+\indexentry{Lagrange函数|hyperpage}{132}
+\indexentry{Lagrange乘子|hyperpage}{132}
+\indexentry{优化变量|hyperpage}{133}
+\indexentry{松弛变量|hyperpage}{133}
