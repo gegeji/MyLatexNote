@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  20 NOV 2021 10:39
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  24 NOV 2021 15:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2832,15 +2832,17 @@ Package microtype Info: Character `\textexclamdown ' is missing
 Package microtype Info: Character `\textquestiondown ' is missing
 (microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/5.5'.
 (microtype)             Ignoring protrusion settings for this character.
- [4] [5] [6])
+ [4] [5] [6]
+Missing character: There is no – (U+2013) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no – (U+2013) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+ [7])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [7] [8
-
-] (./vocabulary/vocabulary-index.tex) (./math/math-index.tex
+ [8] (./vocabulary/vocabulary-index.tex) (./math/math-index.tex
 \c@ttl@toc@default=\count525
  (./main.ptc) [9
+
 
 ] (./math/vector.tex
 \bbl@ensure@english {Chapter} 1.
@@ -3852,32 +3854,172 @@ File: Pictures//chapter_head_3.png Graphic file (type bmp)
 [56
 
 ]
-Package mdframed Info: mdframed works in twoside mode on input line 1003.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1003.
-LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 1004.
-LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 1004.
 LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 1004.
+(Font)              scaled to size 12.0pt on input line 981.
+LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/m/n' will be
+(Font)              scaled to size 8.8pt on input line 981.
+LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/m/n' will be
+(Font)              scaled to size 6.6pt on input line 981.
 LaTeX Font Info:    Font shape `OML/zncfmi/m/it' will be
-(Font)              scaled to size 9.67497pt on input line 1004.
+(Font)              scaled to size 12.89996pt on input line 981.
+LaTeX Font Info:    Font shape `OML/zncfmi/m/it' will be
+(Font)              scaled to size 9.45998pt on input line 981.
+LaTeX Font Info:    Font shape `OML/zncfmi/m/it' will be
+(Font)              scaled to size 7.09499pt on input line 981.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 9.67497pt on input line 1004.
+(Font)              scaled to size 12.89996pt on input line 981.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 9.45998pt on input line 981.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 7.09499pt on input line 981.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 9.67497pt on input line 1004.
+(Font)              scaled to size 12.89996pt on input line 981.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 9.45998pt on input line 981.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 7.09499pt on input line 981.
 LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 1004.
+(Font)              scaled to size 12.0pt on input line 981.
+LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/b/n' will be
+(Font)              scaled to size 8.8pt on input line 981.
+LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/b/n' will be
+(Font)              scaled to size 6.6pt on input line 981.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 9.67497pt on input line 1004.
+(Font)              scaled to size 12.89996pt on input line 981.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 9.45998pt on input line 981.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 7.09499pt on input line 981.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 9.67497pt on input line 1004.
+(Font)              scaled to size 12.89996pt on input line 981.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 9.45998pt on input line 981.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 7.09499pt on input line 981.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 9.67497pt on input line 1004.
+(Font)              scaled to size 12.89996pt on input line 981.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 9.45998pt on input line 981.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 7.09499pt on input line 981.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 9.67497pt on input line 1004.
+(Font)              scaled to size 12.89996pt on input line 981.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 9.45998pt on input line 981.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 7.09499pt on input line 981.
+Package microtype Info: Character `\textendash ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textendash ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textendash ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/m/n' will be
+(Font)              scaled to size 8.8pt on input line 981.
+LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 981.
+LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 981.
+LaTeX Font Info:    Font shape `OML/zncfmi/m/it' will be
+(Font)              scaled to size 9.67497pt on input line 981.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 9.67497pt on input line 981.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 9.67497pt on input line 981.
+LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 981.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 9.67497pt on input line 981.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 9.67497pt on input line 981.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 9.67497pt on input line 981.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 9.67497pt on input line 981.
 Package microtype Info: Character `\textendash ' is missing
 (microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/9'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -3909,9 +4051,11 @@ Package microtype Info: Character `\textquestiondown ' is missing
 (microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/9'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 1004.
-LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/m/it' will be
-(Font)              scaled to size 7.3pt on input line 1004.
+(Font)              scaled to size 7.3pt on input line 981.
+Package mdframed Info: mdframed works in twoside mode on input line 1003.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1003.
 Package mdframed Info: mdframed works in twoside mode on input line 1009.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -4114,6 +4258,8 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 127.
 LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/m/n' will be
 (Font)              scaled to size 5.5pt on input line 132.
+LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/m/it' will be
+(Font)              scaled to size 8.0pt on input line 142.
 LaTeX Font Info:    Font shape `T1/TeXGyreScholaX-OsF/m/it' will be
 (Font)              scaled to size 6.1pt on input line 142.
 Package mdframed Info: mdframed works in twoside mode on input line 146.
@@ -4390,151 +4536,6 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 1246.
  [93] [94] [95]
-LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 1394.
-LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/m/n' will be
-(Font)              scaled to size 8.8pt on input line 1394.
-LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/m/n' will be
-(Font)              scaled to size 6.6pt on input line 1394.
-LaTeX Font Info:    Font shape `OML/zncfmi/m/it' will be
-(Font)              scaled to size 12.89996pt on input line 1394.
-LaTeX Font Info:    Font shape `OML/zncfmi/m/it' will be
-(Font)              scaled to size 9.45998pt on input line 1394.
-LaTeX Font Info:    Font shape `OML/zncfmi/m/it' will be
-(Font)              scaled to size 7.09499pt on input line 1394.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 12.89996pt on input line 1394.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 9.45998pt on input line 1394.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 7.09499pt on input line 1394.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 12.89996pt on input line 1394.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 9.45998pt on input line 1394.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 7.09499pt on input line 1394.
-LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 1394.
-LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/b/n' will be
-(Font)              scaled to size 8.8pt on input line 1394.
-LaTeX Font Info:    Font shape `OT1/TeXGyreScholaX-TLF/b/n' will be
-(Font)              scaled to size 6.6pt on input line 1394.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 12.89996pt on input line 1394.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 9.45998pt on input line 1394.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 7.09499pt on input line 1394.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 12.89996pt on input line 1394.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 9.45998pt on input line 1394.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 7.09499pt on input line 1394.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 12.89996pt on input line 1394.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 9.45998pt on input line 1394.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 7.09499pt on input line 1394.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 12.89996pt on input line 1394.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 9.45998pt on input line 1394.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 7.09499pt on input line 1394.
-Package microtype Info: Character `\textendash ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\AE ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotesinglbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotedblbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textexclamdown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textquestiondown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textendash ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\AE ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotesinglbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotedblbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textexclamdown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textquestiondown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/8.8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textendash ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\AE ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotesinglbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotedblbase ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotleft ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guillemotright ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textexclamdown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\textquestiondown ' is missing
-(microtype)             in font `\TU/FZPingXYSJW.TTF(0)/m/n/6.6'.
-(microtype)             Ignoring protrusion settings for this character.
-
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1394.
@@ -4713,7 +4714,10 @@ Package mdframed Info: mdframed works in twoside mode on input line 662.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 662.
-) [110] (./main.ptc) [111
+) [110] (./main.ptc
+Missing character: There is no – (U+2013) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+Missing character: There is no – (U+2013) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+) [111
 
 ] (./math/least-squares.tex
 \bbl@ensure@english {Chapter} 13.
@@ -4857,73 +4861,237 @@ Package mdframed Info: Not enough space on this page on input line 302.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
 (./tikz_images/constrainted-least-square.tex)
-Package mdframed Info: mdframed works in twoside mode on input line 33.
+Package mdframed Info: mdframed works in twoside mode on input line 35.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 33.
+(mdframed)              on input line 35.
  [127
 
 ]
-Package mdframed Info: mdframed works in twoside mode on input line 49.
+Package mdframed Info: mdframed works in twoside mode on input line 51.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 49.
- [128]
+(mdframed)              on input line 51.
+
 Overfull \hbox (35.88525pt too wide) detected at line 85
 \LMS/ntxsy/m/n/10.95 r[]\OML/zncfmi/m/it/10.95 f\LMS/ntxsy/m/n/10.95 ¹\OML/zncfmi/m/it/10.95 x\LMS/ntxsy/m/n/10.95 º \U/ntxmia/m/it/10.95 = [] \OML/zncfmi/m/it/10.95 ; \LMS/ntxsy/m/n/10.95 r[]\OML/zncfmi/m/it/10.95 g[]\LMS/ntxsy/m/n/10.95 ¹\OML/zncfmi/m/it/10.95 x\LMS/ntxsy/m/n/10.95 º \U/ntxmia/m/it/10.95 = [] \OML/zncfmi/m/it/10.95 ; \LMS/ntxsy/m/n/10.95 r[]\OML/zncfmi/m/it/10.95 g[]\LMS/ntxsy/m/n/10.95 ¹\OML/zncfmi/m/it/10.95 x\LMS/ntxsy/m/n/10.95 º \U/ntxmia/m/it/10.95 = [] \OML/zncfmi/m/it/10.95 ; \LMS/ntxsy/m/n/10.95 r[]\OML/zncfmi/m/it/10.95 g[]\LMS/ntxsy/m/n/10.95 ¹\OML/zncfmi/m/it/10.95 x\LMS/ntxsy/m/n/10.95 º \U/ntxmia/m/it/10.95 = [] \OML/zncfmi/m/it/10.95 ; \LMS/ntxsy/m/n/10.95 r[]\OML/zncfmi/m/it/10.95 g[]\LMS/ntxsy/m/n/10.95 ¹\OML/zncfmi/m/it/10.95 x\LMS/ntxsy/m/n/10.95 º \U/ntxmia/m/it/10.95 = [] \OML/zncfmi/m/it/10.95 :
  []
 
-Package mdframed Info: mdframed works in twoside mode on input line 139.
+[128]
+Missing character: There is no ■ ("25A0) in font TeXGyreScholaX-Regular-osf-t1!
+ [129] [130] [131] [132]
+Package mdframed Info: mdframed works in twoside mode on input line 418.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 139.
-Package mdframed Info: mdframed works in twoside mode on input line 147.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 147.
-Package mdframed Info: Not enough space on this page on input line 152.
-[129]
-Package mdframed Info: Not enough space on this page on input line 152.
-Package mdframed Info: mdframed works in twoside mode on input line 154.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 154.
-Package mdframed Info: mdframed works in twoside mode on input line 201.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 201.
-Package mdframed Info: mdframed works in twoside mode on input line 206.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 206.
-Package mdframed Info: mdframed works in twoside mode on input line 218.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 218.
+(mdframed)              on input line 418.
+Missing character: There is no К ("41A) in font TeXGyreScholaX-Regular-osf-t1!
 
-Overfull \hbox (1.16907pt too wide) in paragraph at lines 219--220
-[][][]\T1/lmss/bx/n/10 Theorem 15.2.5 []--- Karush-Kuh-n--Tucker (KKT) \TU/FZPingXYSJW.TTF(0)/b/n/10 条 件\T1/lmss/bx/n/10 .[] [][][][]\TU/FZPingXYSJW.TTF(0)/m/n/10.95 最 佳 解 的 必 要 条 件 包 括 \T1/TeXGyreScholaX-OsF/m/n/10.95 La-grangian
+Overfull \hbox (18.72563pt too wide) detected at line 451
+[][]
  []
 
-[130]
-Package mdframed Info: Not enough space on this page on input line 231.
-Package mdframed Info: mdframed works in twoside mode on input line 236.
+Package mdframed Info: mdframed works in twoside mode on input line 463.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 236.
-Package mdframed Info: mdframed works in twoside mode on input line 246.
+(mdframed)              on input line 463.
+[133] [134]
+Missing character: There is no ■ ("25A0) in font TeXGyreScholaX-Regular-osf-t1!
+ [135]
+Package mdframed Info: mdframed works in twoside mode on input line 676.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 246.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [131]
-Package mdframed Info: mdframed works in twoside mode on input line 314.
+(mdframed)              on input line 676.
+Package mdframed Info: mdframed works in twoside mode on input line 684.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 314.
- [132] [133] [134]) [135] (./main.ptc) [136
+(mdframed)              on input line 684.
+Package mdframed Info: mdframed works in twoside mode on input line 691.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 691.
+ [136]
+Package mdframed Info: mdframed works in twoside mode on input line 739.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 739.
+Package mdframed Info: mdframed works in twoside mode on input line 744.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 744.
+Package mdframed Info: mdframed works in twoside mode on input line 756.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 756.
+Package mdframed Info: mdframed works in twoside mode on input line 774.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 774.
+Package mdframed Info: mdframed works in twoside mode on input line 784.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 784.
+ [137]
+Package mdframed Info: mdframed works in twoside mode on input line 850.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 850.
+Package mdframed Info: You first box width is to small
+ mdframed fixed it
+(mdframed)              on input line 868.
+ [138] [139]
+Package mdframed Info: mdframed works in twoside mode on input line 972.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 972.
+Package mdframed Info: Not enough space on this page on input line 982.
+ [140]
+Package mdframed Info: Not enough space on this page on input line 982.
+Package mdframed Info: mdframed works in twoside mode on input line 986.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 986.
+Package mdframed Info: mdframed works in twoside mode on input line 1025.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1025.
+Package mdframed Info: mdframed works in twoside mode on input line 1032.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1032.
+File: Pictures//KKT-geometry-1.jpg Graphic file (type bmp)
+<Pictures//KKT-geometry-1.jpg>
+ [141]
+File: Pictures//KKT-geometry-2.jpg Graphic file (type bmp)
+<Pictures//KKT-geometry-2.jpg>
+Package mdframed Info: mdframed works in twoside mode on input line 1055.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1055.
+File: Pictures//KKT-geometry-3.jpg Graphic file (type bmp)
+<Pictures//KKT-geometry-3.jpg>
+ [142]
+Package mdframed Info: mdframed works in twoside mode on input line 1078.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1078.
+ [143]
+Package mdframed Info: mdframed works in twoside mode on input line 1110.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1110.
+Package mdframed Info: mdframed works in twoside mode on input line 1116.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1116.
+Package mdframed Info: mdframed works in twoside mode on input line 1120.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1120.
+Package mdframed Info: mdframed works in twoside mode on input line 1124.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1124.
+Package mdframed Info: mdframed works in twoside mode on input line 1128.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1128.
+Package mdframed Info: mdframed works in twoside mode on input line 1137.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1137.
+Package mdframed Info: mdframed works in twoside mode on input line 1141.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1141.
+Package mdframed Info: mdframed works in twoside mode on input line 1147.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1147.
+Package mdframed Info: mdframed works in twoside mode on input line 1161.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1161.
+Package mdframed Info: mdframed works in twoside mode on input line 1174.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1174.
+Package mdframed Info: Not enough space on this page on input line 1185.
+ [144]
+Package mdframed Info: Not enough space on this page on input line 1185.
+Package mdframed Info: mdframed works in twoside mode on input line 1187.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1187.
+Package mdframed Info: mdframed works in twoside mode on input line 1193.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1193.
+Package mdframed Info: mdframed works in twoside mode on input line 1209.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1209.
+Package mdframed Info: mdframed works in twoside mode on input line 1219.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1219.
+Package mdframed Info: mdframed works in twoside mode on input line 1236.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1236.
+Package mdframed Info: mdframed works in twoside mode on input line 1242.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1242.
+Package mdframed Info: mdframed works in twoside mode on input line 1251.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1251.
+ [145]
+Package mdframed Info: Not enough space on this page on input line 1253.
+Package mdframed Info: mdframed works in twoside mode on input line 1272.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1272.
+Package mdframed Info: mdframed works in twoside mode on input line 1310.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1310.
+Package mdframed Info: mdframed works in twoside mode on input line 1319.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1319.
+Package mdframed Info: mdframed works in twoside mode on input line 1324.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1324.
+ [146]
+Package mdframed Info: Not enough space on this page on input line 1326.
+Package mdframed Info: mdframed works in twoside mode on input line 1332.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1332.
+Package mdframed Info: mdframed works in twoside mode on input line 1336.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1336.
+Package mdframed Info: mdframed works in twoside mode on input line 1340.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1340.
+Package mdframed Info: mdframed works in twoside mode on input line 1352.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1352.
+Package mdframed Info: mdframed works in twoside mode on input line 1372.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1372.
+ [147]
+Package mdframed Info: mdframed works in twoside mode on input line 1384.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1384.
+) [148] (./main.ptc) [149
 
 ] (./math/fourier.tex
 \bbl@ensure@english {Chapter} 16.
@@ -4953,7 +5121,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 33.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 33.
-[137
+[150
 
 ]
 Package mdframed Info: mdframed works in twoside mode on input line 47.
@@ -4968,7 +5136,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 64.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 64.
- [138]
+ [151]
 Package mdframed Info: mdframed works in twoside mode on input line 95.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -4981,7 +5149,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 107.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 107.
- [139]
+ [152]
 Package mdframed Info: mdframed works in twoside mode on input line 149.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -4998,7 +5166,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 194.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 194.
- [140]
+ [153]
 Package mdframed Info: mdframed works in twoside mode on input line 213.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -5010,12 +5178,12 @@ Package mdframed Info: mdframed detected package amsthm
 
 Underfull \vbox (badness 3930) has occurred while \output is active []
 
- [141]
+ [154]
 Package mdframed Info: mdframed works in twoside mode on input line 303.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 303.
- [142]
+ [155]
 Package mdframed Info: mdframed works in twoside mode on input line 316.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -5044,7 +5212,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 349.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 349.
- [143]
+ [156]
 Package mdframed Info: mdframed works in twoside mode on input line 355.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -5053,36 +5221,28 @@ Package mdframed Info: mdframed works in twoside mode on input line 365.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 365.
-) (./math/factorization.tex [144]
+) (./math/factorization.tex [157]
 \bbl@ensure@english {Chapter} 17.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 19.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 19.
-
 )) (./paperNotes/paper-index.tex) (./cloud-computing/cloud-index.tex) (./demo.tex)
 
 LaTeX Warning: Empty bibliography on input line 145.
 
-[145
+[158
 
 ]
 \bbl@ensure@english {Chapter} 18.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-(./main.lod [146
+(./main.lod [159
 
-] [147] [148] [149] [150] [151]
+] [160] [161] [162] [163] [164]
 Overfull \hbox (1.23805pt too wide) detected at line 482
 \T1/lmss/bx/n/10.95 11.2.10 
  []
 
-[152]
+[165]
 Overfull \hbox (1.23805pt too wide) detected at line 580
 \T1/lmss/bx/n/10.95 12.2.10 
  []
@@ -5092,11 +5252,221 @@ Overfull \hbox (1.23805pt too wide) detected at line 582
 \T1/lmss/bx/n/10.95 12.2.11 
  []
 
-[153] [154])
+[166]
+Overfull \hbox (1.23805pt too wide) detected at line 676
+\T1/lmss/bx/n/10.95 15.13.1 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 678
+\T1/lmss/bx/n/10.95 15.13.1 
+ []
+
+[167]
+Overfull \hbox (1.23805pt too wide) detected at line 680
+\T1/lmss/bx/n/10.95 15.13.2 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 684
+\T1/lmss/bx/n/10.95 15.13.3 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 686
+\T1/lmss/bx/n/10.95 15.13.4 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 688
+\T1/lmss/bx/n/10.95 15.13.5 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 690
+\T1/lmss/bx/n/10.95 15.13.2 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 692
+\T1/lmss/bx/n/10.95 15.13.6 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 696
+\T1/lmss/bx/n/10.95 15.14.1 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 700
+\T1/lmss/bx/n/10.95 15.14.2 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 702
+\T1/lmss/bx/n/10.95 15.14.3 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 706
+\T1/lmss/bx/n/10.95 15.14.4 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 708
+\T1/lmss/bx/n/10.95 15.14.5 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 710
+\T1/lmss/bx/n/10.95 15.14.6 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 712
+\T1/lmss/bx/n/10.95 15.14.7 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 714
+\T1/lmss/bx/n/10.95 15.15.1 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 716
+\T1/lmss/bx/n/10.95 15.15.2 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 718
+\T1/lmss/bx/n/10.95 15.15.3 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 720
+\T1/lmss/bx/n/10.95 15.15.1 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 722
+\T1/lmss/bx/n/10.95 15.15.4 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 724
+\T1/lmss/bx/n/10.95 15.15.2 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 726
+\T1/lmss/bx/n/10.95 15.15.3 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 728
+\T1/lmss/bx/n/10.95 15.15.4 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 730
+\T1/lmss/bx/n/10.95 15.15.5 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 732
+\T1/lmss/bx/n/10.95 15.15.6 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 734
+\T1/lmss/bx/n/10.95 15.15.5 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 736
+\T1/lmss/bx/n/10.95 15.15.7 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 738
+\T1/lmss/bx/n/10.95 15.15.6 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 740
+\T1/lmss/bx/n/10.95 15.15.8 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 742
+\T1/lmss/bx/n/10.95 15.15.7 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 744
+\T1/lmss/bx/n/10.95 15.15.9 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 746
+\T1/lmss/bx/n/10.95 15.15.8 
+ []
+
+
+Overfull \hbox (7.26054pt too wide) detected at line 750
+\T1/lmss/bx/n/10.95 15.15.10 
+ []
+
+
+Overfull \hbox (7.26054pt too wide) detected at line 752
+\T1/lmss/bx/n/10.95 15.15.11 
+ []
+
+
+Overfull \hbox (7.26054pt too wide) detected at line 754
+\T1/lmss/bx/n/10.95 15.15.12 
+ []
+
+
+Overfull \hbox (1.23805pt too wide) detected at line 756
+\T1/lmss/bx/n/10.95 15.15.9 
+ []
+
+
+Overfull \hbox (7.26054pt too wide) detected at line 758
+\T1/lmss/bx/n/10.95 15.15.10 
+ []
+
+[168]
+Overfull \hbox (7.26054pt too wide) detected at line 760
+\T1/lmss/bx/n/10.95 15.15.11 
+ []
+
+
+Overfull \hbox (7.26054pt too wide) detected at line 762
+\T1/lmss/bx/n/10.95 15.15.12 
+ []
+
+
+Overfull \hbox (7.26054pt too wide) detected at line 764
+\T1/lmss/bx/n/10.95 15.15.13 
+ []
+
+
+Overfull \hbox (7.26054pt too wide) detected at line 766
+\T1/lmss/bx/n/10.95 15.15.14 
+ []
+
+
+Overfull \hbox (7.26054pt too wide) detected at line 768
+\T1/lmss/bx/n/10.95 15.15.15 
+ []
+
+)
 \tf@lod=\write7
 \openout7 = `main.lod'.
 
- [155] [156
+ [169] [170
 
 ]
 No file main.ind.
@@ -5120,12 +5490,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48275 strings out of 476477
- 974812 string characters out of 5812099
- 1953079 words of memory out of 5000000
- 67786 multiletter control sequences out of 15000+600000
- 611762 words of font info for 309 fonts, out of 8000000 for 9000
+ 48474 strings out of 476477
+ 984928 string characters out of 5812099
+ 1954590 words of memory out of 5000000
+ 67980 multiletter control sequences out of 15000+600000
+ 611819 words of font info for 310 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  99i,23n,97p,1145b,4732s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (156 pages).
+Output written on main.pdf (170 pages).

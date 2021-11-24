@@ -1,5 +1,7 @@
 \chapter{Constrained Least Squares}
 
+\section{Karush–Kuhn–Tucker Conditions}
+
 \begin{problem}
     $$
 \begin{array}{l}
@@ -57,16 +59,14 @@ $$ \nabla_{x} L(x, \lambda, u)=\nabla_{x} f(x)-\sum_{i \in I} \lambda_{i} \nabla
 
 \end{theorem}
 
-%\href{https://zhuanlan.zhihu.com/p/38163970}{Example}
 
-%\href{https://zhuanlan.zhihu.com/p/26514613}{Example 2}
+\subsection{An Example for Karush-Kuhn-Tucker Conditions}
 
-\section{An Example for Karush-Kuhn-Tucker Conditions}
 
-\begin{example}
     % todo (2021-11-19 09:08): figure
 
-    \begin{problem}
+\begin{problem}
+    求解
 $$
 \begin{aligned}
     &\max _{x}\left\{f(x)=20 x_{1}+10 x_{2}\right\} \\
@@ -115,11 +115,548 @@ $$g_{1}(x)=x_{1}^{2}+x_{2}^{2}-1=5 x_{2}^{2}-1=0$$
 
 由于 $ x_{2} \geq 0 $, 可得 $ \left[\begin{array}{l}x_{1} \\ x_{2}\end{array}\right]=\frac{\sqrt{5}}{5}\left[\begin{array}{l}2 \\ 1\end{array}\right], u_{1}=5 \sqrt{5} $.
 
+\section{优化问题：最小范数优化问题}
+
+\begin{problem}
+    $ \min _{x}\|x\|_{2}^{2} $
+s.t. $ \quad C x=d $
+\end{problem}
+
+■ 矩阵C $ \in \mathbb{R}^{p \times n} $, 向量 $ d \in \mathbb{R}^{p} $;
+- 在大多数应用中 $ p<n_{2} C x=d $ 是一个欠定方程；
+- 在直线 $ C x=d $ 中，寻找范数最小的解。
+
+假设矩阵C行向量线性无关
+- 对任意一个 $ \mathrm{d}, C x=d $ 至少有一个解;
+- 矩阵C为宽的或者方的 $ (p \leq n) $;
+- 当 $ p<n $ ，有无穷多个解。
+
+\subsection{An example}
+
+矩阵 $ C \in \mathbb{R}^{2 \times 10} $, 向量 $ d \in \mathbb{R}^{2} $ :
+$$
+C x=\left[\begin{array}{ccccc}
+19 / 2 & 17 / 2 & 15 / 2 & \cdots & 1 / 2 \\
+1 & 1 & 1 & \cdots & 1
+\end{array}\right] x=\left[\begin{array}{l}
+1 \\
+0
+\end{array}\right]
+$$
+
+有趣的解：只有两个非0元素的解
+$$
+x=\left[\begin{array}{c}
+1 \\
+-1 \\
+0 \\
+\vdots \\
+0
+\end{array}\right], \quad x=\left[\begin{array}{c}
+0 \\
+1 \\
+-1 \\
+\vdots \\
+0
+\end{array}\right], \cdots
+$$
+
+\section{优化问题：点到线的最短距离}
+
+\begin{problem}
+    给定点 $ a \neq 0 $ ，点到线最短距离问题:
+$$
+\begin{array}{ll}
+\min _{x} & \|x-a\|_{2}^{2} \\
+\text { s. t. } & C x=d
+\end{array}
+$$
+
+\end{problem}
+
+令 $ y=x-a $, 则点到线的最短距离问题， 可等价为最小范数问题:
+
+\begin{problem}
+    $$
+\begin{array}{ll}
+\min _{y} & \|y\|_{2}^{2} \\
+\text { s. t. } & C y=d-C a
+\end{array}
+$$
+\end{problem}
+
+则 $ x=y+a $ 是点到线最短距离问题的解。
+
+\section{最小范数优化问题}
+
+\begin{problem}
+    $$
+\begin{array}{l}
+\min _{x} \frac{1}{2}\|x\|_{2}^{2} \\
+\text { s.t. } C x=d
+\end{array}
+$$
+\end{problem}
+
+引入拉格朗日函数:
+$$
+L(x, \lambda)=\frac{1}{2}\|x\|_{2}^{2}-\lambda^{T}(C x-d)
+$$
+对拉格朗日函数求导:
+$$
+\nabla_{x} L(x, \lambda)=x-C^{T} \lambda=0 \Rightarrow x=C^{T} \lambda
+$$
+
+"矩阵C行线性无关," 可得:
+$$
+C x=C C^{T} \lambda=d, \lambda=\left(C C^{T}\right)^{-1} d
+$$
+则有:
+$$
+\hat{x}=C^{T} \lambda=C^{T}\left(C C^{T}\right)^{-1} d=C^{\dagger} d
+$$
+
+\begin{proof}
+    1.首先证明解 $ \hat{x} $ 满足等式 $ \hat{x}=C^{T} \lambda=C^{T}\left(C C^{T}\right)^{-1} d=C^{\dagger} d $.
+$$
+C \hat{x}=C C^{T}\left(C C^{T}\right)^{-1} d=d
+$$
+2. 在 $ C x=d, x \neq \hat{x} $ 的情况下，
+$$
+\begin{aligned}
+\hat{x}^{T}(x-\hat{x}) &=d^{T}\left(C C^{T}\right)^{-1} C(x-\hat{x}) \\
+&=d^{T}\left(C C^{T}\right)^{-1}(C x-C \hat{x}) \\
+&=d^{T}\left(C C^{T}\right)^{-1}(d-d) \\
+&=0
+\end{aligned}
+$$
+
+3.在 $ C x=d, x \neq \hat{x} $ 的情况下，证明 $ \|x\|_{2}^{2}>\|\hat{x}\|_{2}^{2} $
+$$
+\begin{aligned}
+\|x\|_{2}^{2} &=\|\hat{x}+x-\hat{x}\|_{2}^{2} \\
+&=\|\hat{x}\|_{2}^{2}+2 \hat{x}^{T}(x-\hat{x})+\|x-\hat{x}\|_{2}^{2} \\
+&=\|\hat{x}\|_{2}^{2}+\|x-\hat{x}\|_{2}^{2} \\
+&>\|\hat{x}\|_{2}^{2}
+\end{aligned}
+$$
+\end{proof}
+
+\section{QR分解求解}
+
+对矩阵 $ C^{T} \in \mathbb{R}^{n \times p} $ 进行 $ Q R $ 分解， $ C^{T}=Q R $
+$$
+\begin{aligned}
+\hat{x} &=C^{T}\left(C C^{T}\right)^{-1} d \\
+&=Q R\left(R^{T} Q^{T} Q R\right)^{-1} d \\
+&=Q R\left(R^{T} R\right)^{-1} d \\
+&=Q R^{-T} d
+\end{aligned}
+$$
+
+复杂度：
+- 1. 矩阵 $ C^{T}=Q R $ 分解， $ C^{T}=Q R\left(2 n p^{2}\right. $ flops $ ) $
+- 2.回代法求解 $ R^{T} z=d\left(p^{2}\right. $ flops $ ) $
+- 3.计算 $ \hat{x}=Q z(2 n p $ flops $ ) $
+- 总复杂度: $ \left(\approx 2 n p^{2}\right. $ flops $ ) $
+
+\begin{example}
+    $$
+C=\left[\begin{array}{cccc}
+1 & -1 & 1 & 1 \\
+1 & 0 & 1 / 2 & 1 / 2
+\end{array}\right], \quad d=\left[\begin{array}{l}
+0 \\
+1
+\end{array}\right]
+$$
+对矩阵 $ C^{T} $ 进行 $ Q R $ 分解， $ C^{T}=Q R $
+$$
+\left[\begin{array}{cc}
+1 & 1 \\
+-1 & 0 \\
+1 & 1 / 2 \\
+1 & 1 / 2
+\end{array}\right]=\left[\begin{array}{cc}
+1 / 2 & 1 / \sqrt{2} \\
+-1 / 2 & 1 / \sqrt{2} \\
+1 / 2 & 0 \\
+1 / 2 & 0
+\end{array}\right]\left[\begin{array}{cc}
+2 & 1 \\
+0 & 1 / \sqrt{2}
+\end{array}\right]
+$$
+通过回代法求解 $ R^{T} Z=d $
+$$
+\left[\begin{array}{cc}
+2 & 0 \\
+1 & 1 / \sqrt{2}
+\end{array}\right]\left[\begin{array}{l}
+z_{1} \\
+z_{2}
+\end{array}\right]=\left[\begin{array}{l}
+0 \\
+1
+\end{array}\right]
+$$
+
+$$
+\text { 解 } Z_{1}=0, Z_{2}=\sqrt{2}
+$$
+得 $ \hat{x}=Q z=(1,1,0,0) $
 \end{example}
 
-\section{Supplement Material: Karush-Kuhn-Tucker (KKT)条件}
+\subsection{An Example}
 
-Cited from \url{https://zhuanlan.zhihu.com/p/38163970}.
+\begin{example}
+    $$ C=\left[\begin{array}{cccc}1 & -1 & 1 & 1 \\ 1 & 0 & 1 / 2 & 1 / 2\end{array}\right], \quad d=\left[\begin{array}{l}0 \\ 1\end{array}\right] $$
+\end{example}
+
+对矩阵 $ C^{T} $ 进行 $ \mathrm{QR} $ 分解， $ C^{T}=Q R $
+$$
+\left[\begin{array}{cc}
+1 & 1 \\
+-1 & 0 \\
+1 & 1 / 2 \\
+1 & 1 / 2
+\end{array}\right]=\left[\begin{array}{cc}
+1 / 2 & 1 / \sqrt{2} \\
+-1 / 2 & 1 / \sqrt{2} \\
+1 / 2 & 0 \\
+1 / 2 & 0
+\end{array}\right]\left[\begin{array}{cc}
+2 & 1 \\
+0 & 1 / \sqrt{2}
+\end{array}\right]
+$$
+通过回代法求解 $ R^{T} Z=d $
+$$
+\left[\begin{array}{cc}
+2 & 0 \\
+1 & 1 / \sqrt{2}
+\end{array}\right]\left[\begin{array}{l}
+z_{1} \\
+z_{2}
+\end{array}\right]=\left[\begin{array}{l}
+0 \\
+1
+\end{array}\right]
+$$
+
+
+$$
+\text { 解 } Z_{1}=0, Z_{2}=\sqrt{2}
+$$
+得 $ \hat{x}=Q z=(1,1,0,0) $
+
+
+\section{优化问题：分段多项式拟合问题}
+
+两个多项式 $ f(x), g(x) $ 对于样本点 $ \left(x_{1}, y_{1}\right), \ldots,\left(x_{N}, y_{N}\right) $ 进行拟合
+$$
+\begin{array}{l}
+f\left(x_{i}\right) \approx y_{i}, x_{i} \leq a \\
+g\left(x_{i}\right) \approx y_{i}, x_{i}>a
+\end{array}
+$$
+拟合要求：函数值和导数值必须在分段位置 $ a $ 连续
+$$
+f(a)=g(a), f^{\prime}(a)=g^{\prime}(a)
+$$
+
+假设样本点 $ \left(x_{1}, y_{1}\right), \ldots,\left(x_{N}, y_{N}\right) \in \mathbb{R}^{2} $ ，有 $ x_{1}, \ldots, x_{M} \leq a $, $ x_{M+1}, \ldots, x_{N}>a $
+$ \mathrm{d} $ 阶多项式 $ f(x)=\theta_{1}+\theta_{2} x+\cdots+\theta_{d} x^{d-1} $, $ g(x)=\theta_{d+1}+\theta_{d+2} x \ldots+\theta_{2 d} x^{d-1} $
+
+$$ A=\left[\begin{array}{cccccccc}1 & x_{1} & \cdots & x_{1}^{d-1} & 0 & 0 & \cdots & 0 \\ \vdots & \vdots & & \vdots & \vdots & \vdots & & \vdots \\ 1 & x_{M} & \cdots & x_{M}^{d-1} & 0 & 0 & \cdots & 0 \\ 0 & 0 & \cdots & 0 & 1 & x_{M+1} & \cdots & x_{M+1}^{d-1} \\ \vdots & \vdots & & \vdots & \vdots & \vdots & & \vdots \\ 0 & 0 & \cdots & 0 & 1 & x_{N} & \cdots & x_{N}^{d-1}\end{array}\right], \theta=\left[\begin{array}{c}\theta_{1} \\ \vdots \\ \theta_{d} \\ \theta_{d+1} \\ \vdots \\ \theta_{2 d}\end{array}\right], b=\left[\begin{array}{c}y_{1} \\ \vdots \\ y_{M} \\ y_{M+1} \\ \vdots \\ y_{N}\end{array}\right] $$
+
+$$ A \theta \approx b $$
+
+$ C=\left[\begin{array}{cccccccc}1 & a & \cdots & a^{d-1} & -1 & -a & \cdots & -a^{d-1} \\ 0 & 1 & \cdots & (d-1) a^{d-2} & 0 & -1 & \cdots & -(d-1) a^{d-2}\end{array}\right], d=\left[\begin{array}{l}0 \\ 0\end{array}\right] $
+$ C \theta=d $
+
+$$ \begin{array}{ll}\min _{\theta} & \sum_{i=1}^{M}\left(f\left(x_{i}\right)-y_{i}\right)^{2}+\sum_{i=M+1}^{N}\left(g\left(x_{i}\right)-y_{i}\right)^{2} \\ \text { s.t. } & f(a)=g(a), f^{\prime}(a)=g^{\prime}(a)\end{array} $$
+
+$ \min _{\theta}\|A \theta-b\|_{2}^{2} $
+s.t. $ \quad C \theta=d $
+
+
+
+\section{先验假设}
+
+1. 堆叠矩阵列线性无关
+$$
+\left[\begin{array}{l}
+A \\
+C
+\end{array}\right] \in \mathbb{R}^{(m+p) \times n}
+$$
+2.矩阵 $ C \in \mathbb{R}^{p \times n \text { 行线性无关 }} $
+假设 1 是一个比 $ A $ 可右逆更弱的条件 $ p \leq n \leq m+p $
+
+\section{优化问题：最小二乘法约束KKT条件}
+
+$ \min _{x} \frac{1}{2}\|A x-b\|_{2}^{2} $
+s.t. $ \quad C x=d $
+
+引入拉格朗日函数:
+$$
+L(x, z)=\frac{1}{2}\|A x-b\|_{2}^{2}-z^{T}(d-C x), z \in \mathbb{R}^{p}
+$$
+对拉格朗日函数求导:
+$$
+\begin{array}{l}
+\nabla_{x} L(x, z)=A^{T}(A x-b)+C^{T} z=0 \\
+\nabla_{z} L(x, z)=C x-d=0
+\end{array}
+$$
+
+$$ \left[\begin{array}{cc}A^{T} A & C^{T} \\ \mathrm{C} & 0\end{array}\right]\left[\begin{array}{l}x \\ z\end{array}\right]=\left[\begin{array}{l}A^{T} b \\ d\end{array}\right] $$
+
+\section{KKT最优条件}
+
+\begin{theorem}[优化条件Karush-Kuhn-Tucker(KKT)等式]
+    令 $ \hat{x} $ 是约束优化问题的解，则有
+$$
+\left[\begin{array}{cc}
+A^{T} A & c^{T} \\
+& 0
+\end{array}\right]\left[\begin{array}{l}
+\hat{x} \\
+z
+\end{array}\right]=\left[\begin{array}{l}
+A^{T} b \\
+d
+\end{array}\right],\left[\begin{array}{l}
+\hat{x} \\
+z
+\end{array}\right] \in \mathbb{R}^{n+p}
+$$
+\end{theorem}
+
+
+特殊情况
+- 最小二乘法问题：当 $ p=0 $ 时，即为正规方程 $ A^{T} A \hat{x}=A^{T} b $
+- 最小范数问题: 当 $ A=I, b=0 $ 时，可以推导得到 $ C \hat{x}=b, \hat{x}+C^{T} z=0 $
+
+\begin{proof}
+    假设 $ x $ 满足 $ C x=d,(\hat{x}, z) $ 满足КKT等式.
+
+    $$\begin{aligned}
+        \| Ax-b\| _{2}^{2} & =\| A(x-\hat{x} )+A\hat{x} -b\| _{2}^{2}\\
+         & =\| A(x-\hat{x} )\| _{2}^{2} +\| A\hat{x} -b\| _{2}^{2} +2(x-\hat{x} )^{T} A^{T} (A\hat{x} -b)\\
+         & = \| A(x-\hat{x} )\| _{2}^{2} +\| A\hat{x} -b\| _{2}^{2} -2(\textcolor[rgb]{0.96,0.65,0.14}{x-\hat{x}} )^{T}\textcolor[rgb]{0.72,0.33,0.31}{C^{T} z\ }\textcolor[rgb]{0,0,0}{(}\textcolor[rgb]{0.96,0.65,0.14}{A^{T} A\hat{x} +C^{T} z=A^{T} b}\textcolor[rgb]{0,0,0}{)(}\textcolor[rgb]{0.72,0.33,0.31}{Cx=C\hat{x} =d}\textcolor[rgb]{0,0,0}{)}\\
+         & =\| A(x-\hat{x} )\| _{2}^{2} +\| A\hat{x} -b\| _{2}^{2}\\
+         & \geq \| A\hat{x} -b\| _{2}^{2}
+        \end{aligned}$$
+
+        $ \hat{x} $ 是唯一性，因为假设矩阵A列线性无关， C行线性无关，即
+$$
+\begin{aligned}
+A^{T} A(\hat{x}-x) &=0 \Rightarrow x=\hat{x} \\
+C^{T}(\hat{z}-z) &=0 \Rightarrow \hat{z}=z \\
+A^{T} A \hat{x}+C^{T} z &=A^{T} b
+\end{aligned}
+$$
+\end{proof}
+
+\begin{theorem}
+    如果矩阵A列线性无关， C行线性无关，则矩阵
+$$
+\left[\begin{array}{cc}
+A^{T} A & C^{T} \\
+\mathrm{C} & 0
+\end{array}\right]
+$$
+为非奇异矩阵
+\end{theorem}
+
+\begin{proof}
+    $$ \begin{aligned}\left[\begin{array}{cc}A^{T} A & C^{T} \\ \mathrm{C} & 0\end{array}\right]\left[\begin{array}{c}x \\ z\end{array}\right]=0 & \Rightarrow x^{T}\left(A^{T} A x+C^{T} z\right)=0, C x=0 \\ & \Rightarrow\|A x\|_{2}^{2}+(C x)^{T} z=\|A x\|_{2}^{2}=0, C x=0 \\ & \Rightarrow A x=0, C x=0 \\ & \Rightarrow x=0 \quad \text { A列线性无关 } \end{aligned} $$
+
+    由于 $ A^{T} \mathrm{~A} x+C^{T} \mathrm{z}=0 $, 则当 $ x=0 $ 时，有 $ \mathrm{z}=0 $ 。 C行线性无关
+\end{proof}
+
+如果矩阵A列线性无关和 $ C $ 行线性无关不同时成立，则矩阵
+$$
+\left[\begin{array}{cc}
+A^{T} A & C^{T} \\
+\mathrm{C} & 0
+\end{array}\right]
+$$
+为奇异矩阵
+如果 $ \mathrm{A} $ 列线性相关，则存在 $ x \neq 0 $, 使得 $ A x=0 $, 则
+$$
+\left[\begin{array}{cc}
+A^{T} A & C^{T} \\
+\mathrm{C} & 0
+\end{array}\right]\left[\begin{array}{l}
+x \\
+0
+\end{array}\right]=0
+$$
+如果 $ C $ 行线性相关，则存在 $ z \neq 0 $, 使得 $ C^{T} Z=0 $, 则
+$$
+\left[\begin{array}{cc}
+A^{T} A & C^{T} \\
+\mathrm{C} & 0
+\end{array}\right]\left[\begin{array}{l}
+0 \\
+\mathrm{z}
+\end{array}\right]=0
+$$
+因此该矩阵为奇异矩阵
+
+\section{LU分解求解}
+
+$$
+\left[\begin{array}{cc}
+A^{T} A & C^{T} \\
+C & 0
+\end{array}\right]\left[\begin{array}{l}
+x \\
+z
+\end{array}\right]=\left[\begin{array}{c}
+A^{T} b \\
+d
+\end{array}\right]
+$$
+算法:
+计算 $ H=A^{T} A\left(2 m n^{2}\right. $ flops $ ) $ 。
+计算 $ c=A^{T} b(2 \mathrm{mn} $ flops $ ) $ 。
+用LU分解法求解下列线性方程 $ \left((2 / 3)(p+n)^{3}\right. $ flops $ ) $ :
+$$
+\left[\begin{array}{cc}
+H & C^{T} \\
+C & 0
+\end{array}\right]\left[\begin{array}{l}
+x \\
+z
+\end{array}\right]=\left[\begin{array}{l}
+c \\
+d
+\end{array}\right]
+$$
+
+复杂度为: $ 2 m n^{2}+(2 / 3)(p+n)^{3} $ flops 。
+
+\section{QR分解求解}
+
+由于 $ \hat{x} $ 满足 $ C \hat{x}=d $ ，则有 $ C^{\mathrm{T}} C \hat{x}=C^{\mathrm{T}} d $ ，可得
+$$
+L(x, z)=\frac{1}{2}\|A x-b\|_{2}^{2}-z^{T}(d-C x)
+$$
+KKT条件:
+$$
+\begin{aligned}
+\nabla_{x} L(x, z) &=A^{T}(A \hat{x}-b)+C^{T} z+C^{T} C \hat{x}-C^{T} d=0 \\
+& \Rightarrow\left(A^{T} A+C^{T} C\right) \hat{x}+C^{T}(z-d)=A^{T} b \\
+\nabla_{z} L(x, z) &=C \hat{x}-d=0
+\end{aligned}
+$$
+
+令 $ w=z-d $ ， KKT条件写成：
+$$
+\left[\begin{array}{cc}
+A^{T} A+C^{T} C & C^{T} \\
+C & 0
+\end{array}\right]\left[\begin{array}{l}
+\hat{x} \\
+w
+\end{array}\right]=\left[\begin{array}{c}
+A^{T} b \\
+d
+\end{array}\right]
+$$
+假设 1 保证了 $ A^{T} A+C^{T} C $ 是非奇异的，即存在以下 $ Q R $ 因子分解：
+$ \left[\begin{array}{l}A \\ C\end{array}\right] $ 列向量无关，则 $ \left[\begin{array}{l}A \\ C\end{array}\right]=Q R=\left[\begin{array}{l}Q_{1} \\ Q_{2}\end{array}\right] R=\left[\begin{array}{l}Q_{1} R \\ Q_{2} R\end{array}\right] $
+
+代入QR分解，可得：
+$$
+\left[\begin{array}{cc}
+R^{T} R & R^{T} Q_{2}^{T} \\
+Q_{2} R & 0
+\end{array}\right]\left[\begin{array}{c}
+\hat{x} \\
+w
+\end{array}\right]=\left[\begin{array}{c}
+R^{T} Q_{1}^{T} b \\
+d
+\end{array}\right]
+$$
+将第一个方程两边乘 $ R^{-T} $ 和并令变量 $ y=R \hat{x} $ 相乘，可得:
+$$
+\left[\begin{array}{cc}
+I & Q_{2}^{T} \\
+Q_{2} & 0
+\end{array}\right]\left[\begin{array}{l}
+y \\
+w
+\end{array}\right]=\left[\begin{array}{c}
+Q_{1}^{T} b \\
+d
+\end{array}\right]
+$$
+
+矩阵 $ C=Q_{2} R \Rightarrow Q_{2}=C R^{-1}, Q_{2} $ 具有行线性无关:
+$$
+Q_{2}^{T} u=R^{-T} C^{T} u=0 \quad \Rightarrow \quad C^{T} u=0 \quad \Rightarrow \quad u=0
+$$
+因为 $ C $ 行线性无关的(假设2)。
+
+利用 $ Q_{2}^{T} $ 的 $ Q R $ 分解来求解:
+$$
+\left[\begin{array}{cc}
+I & Q_{2}^{T} \\
+Q_{2} & 0
+\end{array}\right]\left[\begin{array}{l}
+y \\
+w
+\end{array}\right]=\left[\begin{array}{c}
+Q_{1}^{T} b \\
+d
+\end{array}\right]
+$$
+方程第1行可得 $ y=Q_{1}^{T} b-Q_{2}^{T} w $ ，并代入第二行:
+$$
+Q_{2} y=d \Rightarrow Q_{2} Q_{2}^{T} w=Q_{2} Q_{1}^{T} b-d
+$$
+用 $ \mathrm{QR} $ 分解 $ Q_{2}^{T}=\tilde{Q} \tilde{R} $ 来解这个关于 $ w $ 的方程:
+$$
+\tilde{R}^{T} \tilde{R} w=\tilde{R}^{T} \tilde{Q}^{T} Q_{1}^{T} b-d
+$$
+
+上式可以简化为：
+$$
+\tilde{R} w=\tilde{Q}^{T} Q_{1}^{T} b-\tilde{R}^{-T} d
+$$
+
+$$ \left[\begin{array}{cc}A^{T} A+C^{T} C & C^{T} \\ C & 0\end{array}\right]\left[\begin{array}{c}\hat{x} \\ w\end{array}\right]=\left[\begin{array}{c}A^{T} b \\ d\end{array}\right] \quad \tilde{R} w=\tilde{Q}^{T} Q_{1}^{T} b-\tilde{R}^{-T} d $$
+
+算法过程:
+1. 计算两个QR分解:
+$$
+\left[\begin{array}{l}
+{ }_{C}^{A} \\
+C
+\end{array}\right]=\left[\begin{array}{l}
+Q_{1} \\
+Q_{2}
+\end{array}\right] R, Q_{2}^{T}=\tilde{Q} \tilde{R}
+$$
+2. 用前代法求解 $ \tilde{R}^{T} u=d $ ，计算 $ c=\tilde{Q}^{T} Q_{1}^{T} b-u $ 。
+3. 用回代法求解 $ \tilde{R} w=c $ ，计算 $ y=Q_{1}^{T} b-Q_{2}^{T} w $ 。
+4. 用回代法计算 $ R \hat{x}=y_{\circ} $
+复杂度: $ Q R $ 分解有 $ 2(p+m) n^{2}+2 n p^{2} $ 次flops。
+
+\section{复杂度QR vs LU}
+
+假设 $ p<n $ :
+■ LU复杂度: $ 2 m n^{2}+(2 / 3)(p+n)^{3}<2 m n^{2}+(16 / 3) n^{3} $
+QR复杂度: $ 2(p+m) n^{2}+2 n p^{2}<2 m n^{2}+4 n^{3} $
+稳定性: $ \mathrm{QR} $ 分解避免直接计算 $ A^{T} \mathrm{~A}_{\circ} $
+
+\section[Supplement Material: Karush-Kuhn-Tucker (KKT)条件]{Supplement Material: Karush-Kuhn-Tucker (KKT)条件\footnote{Cited from \url{https://zhuanlan.zhihu.com/p/38163970}.}}
 
 \subsection{等式约束优化问题}
 
@@ -156,6 +693,7 @@ $$
 $$
 \begin{array}{l}
 \nabla_{\mathbf{x}} L=\dfrac{\partial L}{\partial \mathbf{x}}=\nabla f+\lambda \nabla g=\mathbf{0} \\
+\\
 \nabla_{\lambda} L=\dfrac{\partial L}{\partial \lambda}=g(\mathbf{x})=0
 \end{array}
 $$
@@ -216,7 +754,7 @@ $$
 整合上述两种情况, 
 
 \begin{theorem}[Karush-Kuhn-Tucker (KKT)条件]
-    最佳解的必要条件包括Lagrangian函数 $L(\mathbf{x}, \lambda)$ 的定常方程式、 原始可行性、对偶可行性，以及互补松弛性：
+    最佳解的必要条件包括：Lagrangian函数 $L(\mathbf{x}, \lambda)$ 的定常方程式、 原始可行性、对偶可行性，以及互补松弛性：
 $$
 \begin{aligned}
 \nabla_{\mathbf{x}} L &=\nabla f+\lambda \nabla g=\mathbf{0} \\
@@ -225,7 +763,7 @@ g(\mathbf{x}) & \leq 0 \\
 \lambda g(\mathbf{x}) &=0
 \end{aligned}
 $$
-这些条件合称为Karush-Kuhn-Tucker (KKT)条件。
+这些条件合称为\term{Karush-Kuhn-Tucker (KKT)条件}。
 
 如果我们要最大化 $f(\mathbf{x})$ 且受限于 $g(\mathbf{x}) \leq 0$, 那么对偶可行性要改成 $\lambda \leq 0$ 。
 \end{theorem}
@@ -263,8 +801,7 @@ $$
 
 \end{theorem}
 
-
-\subsection{An Example}
+\subsection{拉格朗日乘子法的例子}
 
 \begin{problem}
 
@@ -307,20 +844,19 @@ $$
     \item $ \alpha<\frac{1}{2} $ : 这时约束不等式是有效的, $ \mu=2-4 \alpha>0 $, 则 $ x_{1}^{\star}=1-\alpha $ 且 $ x_{2}^{\star}=\alpha $, 目标函数的极小值是 $ (1-\alpha)^{2}+\alpha^{2} $。
 \end{enumerate}
 
-\section{Supplement Material: 浅谈最优化问题的KKT条件}
+\section[Supplement Material: 浅谈最优化问题的KKT条件]{Supplement Material: 浅谈最优化问题的KKT条件\footnote{Cited from \url{https://zhuanlan.zhihu.com/p/26514613}.}}
 
-Cited from \url{https://zhuanlan.zhihu.com/p/26514613}.
 
 \begin{theorem}[KKT条件]
     对于具有等式和不等式约束的一般优化问题
 $$
-\begin{array}{l}
-\min f(\mathbf{x}) \\
-\text { s.t. } g_{j}(\mathbf{x}) \leq 0(j=1,2, \cdots, m) \\
-h_{k}(\mathbf{x})=0(k=1,2, \cdots, l)
-\end{array}
+\begin{aligned}
+&\min f(\mathbf{x}) \\
+\text { s.t. }& g_{j}(\mathbf{x}) \leq 0(j=1,2, \cdots, m) \\
+&h_{k}(\mathbf{x})=0(k=1,2, \cdots, l)
+\end{aligned}
 $$
-$ \mathrm{KKT} $ 条件给出了判断 $ \mathrm{x}^{*} $ 是否为最优解的必要条件, 即：
+$ \mathrm{KKT} $ 条件给出了判断 $ \mathrm{x}^{*} $ 是否为最优解的\textbf{必要条件}, 即：
 $$
 \left\{\begin{array}{l}
 \frac{\partial f}{\partial x_{i}}+\sum_{j=1}^{m} \mu_{j} \frac{\partial g_{j}}{\partial x_{i}}+\sum_{k=1}^{l} \lambda_{k} \frac{\partial h_{k}}{\partial x_{i}}=0,(i=1,2, \ldots, n) \\
@@ -348,17 +884,22 @@ $$
 
 我们令 $ L(\mathbf{x}, \lambda)=f(\mathbf{x})+\sum_{k=1}^{l} \lambda_{k} h_{k}(\mathbf{x}) $, 函数 $ L(x, y) $ 称为\term{Lagrange函数}, 参数 $ \lambda $ 称为\term{Lagrange乘子}.
 
-再联立方程组： $ \left\{\begin{array}{l}\frac{\partial L}{\partial x_{i}}=0(i=1,2, \cdots, n) \\ \frac{\partial L}{\partial \lambda_{k}}=0(k=1,2, \cdots, l)\end{array}\right. $,
+再联立方程组： 
+$$ \left\{\begin{array}{l}\frac{\partial L}{\partial x_{i}}=0(i=1,2, \cdots, n) \\ \frac{\partial L}{\partial \lambda_{k}}=0(k=1,2, \cdots, l)\end{array}\right. $$
 
-得到的解为可能极值点，由于我们用的是必要条件，具体是否为极值点需根据问题本身的具体情况检验. 这个方程组称为等式约束的\textbf{极值必要条件}.
+得到的解为可能极值点，由于我们用的是必要条件，具体是否为极值点需根据问题本身的具体情况检验. 这个方程组称为\textbf{等式约束的极值必要条件}.
 
-上式我们对 $ n $ 个 $ x_{i} $ 和 $ l $ 个 $ \lambda_{k} $ 分别求偏导, 回想一下在无约束优化问题 $$ f\left(x_{1}, x_{2}, \ldots, x_{n}\right)=0 $$ 中, 我们根据极值的必要条件, 分别令 $ \frac{\partial f}{\partial x_{i}}=0 $, 求出可能的极值点. 
+上式我们对 $ n $ 个 $ x_{i} $ 和 $ l $ 个 $ \lambda_{k} $ 分别求偏导, 回想一下在\term{无约束优化问题} 
+$$ f\left(x_{1}, x_{2}, \ldots, x_{n}\right)=0 $$ 
+中, 我们根据极值的必要条件, 分别令 $ \frac{\partial f}{\partial x_{i}}=0 $, 求出可能的极值点. 
 
-因此可以联想到：等式约束下的 Lagrange乘数法引入了 $ l $ 个Lagrange乘子，或许我们可以把 $ \lambda_{k} $ 也看作优化变量（ $ x_{i} $ 就叫做\term{优化变量}）. 相当于将优化变量个数增加到 $ (n+l) $ 个, $ x_{i} $ 与 $ \lambda_{k} $ 一视同仁, 均为优化变量, 均对它们求偏导.
+因此可以联想到：等式约束下的 Lagrange乘数法引入了 $ l $ 个Lagrange乘子，或许我们可以\textbf{把 $ \lambda_{k} $ 也看作优化变量}（ $ x_{i} $ 就叫做\term{优化变量}）. 相当于将优化变量个数增加到 $ (n+l) $ 个, $ x_{i} $ 与 $ \lambda_{k} $ 一视同仁, 均为优化变量, 均对它们求偏导.
 
 \subsection{不等式约束优化问题}
 
-以上我们讨论了等式约束的情形，接下来我们来介绍不等式约束的优化问题.我们先给出其主要思想：转化的思想——将不等式约束条件变成等式约束条件.具体做法：引入\term{松弛变量}.松弛变量也是优化变量，也需要一视同仁求偏导.
+以上我们讨论了等式约束的情形，接下来我们来介绍不等式约束的优化问题.
+
+我们先给出其主要思想：\textbf{转化}的思想——\textbf{将不等式约束条件变成等式约束条件}.具体做法是\textbf{引入}\term{松弛变量}.松弛变量也是优化变量，也需要一视同仁求偏导.
 
 具体而言, 我们先看一个一元函数的例子：
 
@@ -382,8 +923,13 @@ $$
 \end{remark}
 
 
-
-% todo (2021-11-19 09:29): figure
+$$\begin{aligned}
+    g_1(x) &= a - x \le 0 \\
+    g_2(x) &= x - b \le 0
+\end{aligned} \Rightarrow \begin{aligned}
+    &h_{1}\left(x, a_{1}\right)=g_{1}(x)+a_{1}^{2}=a-x+a_{1}^{2}=0\\
+    &h_{2}\left(x, b_{1}\right)=g_{2}(x)+b_{1}^{2}=x-b+b_{1}^{2}=0
+\end{aligned}$$
 
 
 由此我们将不等式约束转化为了等式约束, 并得到Lagrange函数
@@ -402,7 +948,9 @@ $$
 \end{array}\right.
 $$
 
-(注: 这里的 $\mu_{1} \geq 0, \mu_{2} \geq 0$ 先承认. 实际上对于不等式约束前的乘子, 我们要求其大于等于 0 )
+\begin{remark}
+    对于不等式约束前的乘子, 我们要求其大于等于 0. ($\mu_{1} \geq 0, \mu_{2} \geq 0$)
+\end{remark}
 
 得出方程组后, 便开始动手解它. 看到第3行的两式 $\mu_{1} a_{1}=0$ 和 $\mu_{1} a_{1}=0$ 比较简单, 我们就从它们入手吧.
 
@@ -416,11 +964,13 @@ $$
 
 此时 $g_{1}(x)=a-x=0$ 且 $\mu_{1}>0$, 可以理解为约束 $g_{1}$ 起作用, 且有 $g_{1}(x)=0$.
 
-合并情形 1 和情形 2 得: $\mu_{1} g_{1}=0$, 且在约束起作用时 $\mu_{1}>0, g_{1}(x)=0$; 约束不起作用时 $\mu_{1}=0, g_{1}(x)<0 .$
+合并情形 1 和情形 2 得: \textbf{$\mu_{1} g_{1}=0$, 且在约束起作用时 $\mu_{1}>0, g_{1}(x)=0$; 约束不起作用时 $\mu_{1}=0, g_{1}(x)<0 .$}
 
 同样地, 分析 $\mu_{2} b_{1}=0$, 可得出约束 $g_{2}$ 起作用和不起作用的情形, 并分析得到 $\mu_{2} g_{2}=0$.
 
-由此, 方程组（极值必要条件）转化为
+由此, 
+\begin{theorem}[一元一次优化式的KKT条件]
+    方程组（极值必要条件）转化为
 $$
 \left\{\begin{array}{l}
 \frac{d f}{d x}+\mu_{1} \frac{d g_{1}}{d x}+\mu_{2} \frac{d g_{2}}{d x}=0 \\
@@ -429,14 +979,19 @@ $$
 \end{array}\right.
 $$
 
-这是一元一次的情形. 类似地, 对于多元多次不等式约束问题
+\end{theorem}
+
+ 这是一元一次的情形.类似地, 
+
+\begin{corollary}
+    对于多元多次不等式约束问题
 $$
 \begin{array}{l}
 \min f(\mathbf{x}) \\
 \text { s.t. } g_{j}(\mathbf{x}) \leq 0(j=1,2, \cdots, m)
 \end{array}
 $$
-我们有
+有
 $$
 \left\{\begin{array}{l}
 \frac{\partial f\left(x^{*}\right)}{\partial x_{i}}+\sum_{j=1}^{m} \mu_{j} \frac{\partial g_{j}\left(x^{*}\right)}{\partial x_{i}}=0(i=1,2, \ldots, n) \\
@@ -446,28 +1001,71 @@ $$
 $$
 
 上式便称为不等式约束优化问题的KKT（Karush-Kuhn-Tucker）条件. $ \mu_{j} $ 称为KKT乘子, 且约束 起作用时 $ \mu_{j} \geq 0, g_{j}(x)=0 $ ； 约束不起作用时 $ \mu_{j}=0, g_{j}(x)<0 $.
+\end{corollary}
 
-还剩最后一个问题没有解决：为什么KKT乘子必须大于等于零——我将用几何性质来解释.
-由于
+\subsection{KKT乘子必须大于等于0}
+
+\begin{problem}
+    还剩最后一个问题没有解决：为什么KKT乘子必须大于等于零？
+\end{problem}
+
+我将用几何性质来解释. 由于
 $$
 \frac{\partial f\left(x^{*}\right)}{\partial x_{i}}+\sum_{j=1}^{m} \mu_{j} \frac{\partial g_{j}\left(x^{*}\right)}{\partial x_{i}}=0(i=1,2, \ldots, n)
 $$
 
-用梯度表示: $ \nabla f\left(\mathbf{x}^{*}\right)+\sum_{j \in J} \mu_{j} \nabla g_{j}\left(\mathbf{x}^{*}\right)=0, J $ 为起作用约束的集合.
+用梯度表示 $$ \nabla f\left(\mathbf{x}^{*}\right)+\sum_{j \in J} \mu_{j} \nabla g_{j}\left(\mathbf{x}^{*}\right)=0$$
 
-移项: $ -\nabla f\left(\mathbf{x}^{*}\right)=\sum_{j \in J} \mu_{j} \nabla g_{j}\left(\mathbf{x}^{*}\right) $,
+$J$ 为起作用约束的集合.
 
-注意到梯度为向量. 上式表示在约束极小值点 $ \mathbf{x}^{*} $ 处，函数 $ f\left(\mathbf{x}^{*}\right) $ 的负梯度一定可以表示成：所有起 作用约束在该点的梯度（等值线的法向量）的线性组合.（复习课本中梯度的性质：某点梯度的方向就是函数等值线 $ f(\mathbf{x})=C $ 在这点的法线方向, 等值线就是地理的等高线)
+移项可得 $$ -\nabla f\left(\mathbf{x}^{*}\right)=\sum_{j \in J} \mu_{j} \nabla g_{j}\left(\mathbf{x}^{*}\right) $$
 
-为方便作图, 假设现在只有两个起作用约束, 我们作出图形如下图.注意我们上面推导过, 约束起 作用时 $ g_{j}(\mathbf{x})=0 $, 所以此时约束在几何上应该是一簇约束平面.我们假设在 $ \mathbf{x}^{*} $ 取得极小值点, 若 同时满足 $ g_{1}(\mathbf{x})=0 $ 和 $ g_{2}(\mathbf{x})=0 $, 则 $ \mathbf{x}^{k} $ 一定在这两个平面的交线上, 且 $ -\nabla f\left(\mathbf{x}^{*}\right)=\sum_{j \in J} \mu_{j} \nabla g_{j}\left(\mathbf{x}^{*}\right) $, 即 $ -\nabla f\left(\mathbf{x}^{k}\right) 、 \nabla g_{1}\left(\mathbf{x}^{k}\right) $ 和 $ \nabla g_{2}\left(\mathbf{x}^{k}\right) $ 共面.
+注意到梯度为向量. 
 
-% todo (2021-11-19 09:32): figure
+\begin{theorem}
+    $$ -\nabla f\left(\mathbf{x}^{*}\right)=\sum_{j \in J} \mu_{j} \nabla g_{j}\left(\mathbf{x}^{*}\right) $$
 
-下图是在点 $ \mathbf{x}^{k} $ 处沿 $ x_{1} O x_{2} $ 面的截面, 过点 $ \mathbf{x}^{k} $ 作目标函数的负梯度 $ -\nabla f\left(\mathbf{x}^{k}\right) $, 它垂直于目标函数 的等值线 $ f(\mathbf{x})=C $ （高数课本：一点的梯度与等值线相互垂直），且指向目标函数 $ f(\mathbf{x}) $ 的最速减 小方向.再作约束函数 $ g_{1}(\mathbf{x})=0 $ 和 $ g_{2}(\mathbf{x})=0 $ 的梯度 $ \nabla g_{1}\left(\mathbf{x}^{k}\right) $ 和 $ \nabla g_{2}\left(\mathbf{x}^{k}\right) $, 它们分别垂直 $ g_{1}(\mathbf{x})=0 $ 和 $ g_{2}(\mathbf{x})=0 $ 两曲面在 $ \mathbf{x}^{k} $ 的切平面, 并形成一个雉形夹角区域.此时, 可能有 $ \mathrm{a} 、 \mathrm{~b} $ 两种 情形：
+    在约束极小值点 $ \mathbf{x}^{*} $ 处，函数 $ f\left(\mathbf{x}^{*}\right) $ 的负梯度一定可以表示成：所有起作用约束在该点的梯度（等值线的法向量）的线性组合.
+\end{theorem}
 
-我们先来看情形 $\mathrm{b}$ ：若3个向量的位置关系如 b所示, 即 $-\nabla f$ 落在 $\nabla g_{1}$ 和 $\nabla g_{2}$ 所形成的雉角区外的 一侧. 此时, 作等值面 $f(\mathbf{x})=C$ 在点 $\mathbf{x}^{k}$ 的切平面（它与 $-\nabla f\left(\mathbf{x}^{k}\right)$ 垂直）, 我们发现：沿着与负 梯度 $-\nabla f$ 成锐角的方向移动（如下图红色箭头方向）, 只要在红色区域取值, 目标函数 $f(\mathbf{x})$ 总 能减小.而红色区域是可行域 $(f(\mathbf{x})=C$, C取不同的常数能得到不同的等值线, 因此能取到红色 区域）, 因此既可减小目标函数值, 又不破坏约束条件. 这说明 $\mathbf{x}^{k}$ 仍可沿约束曲面移动而不破坏约 束条件, 且目标函数值还能够减小.所以 $\mathbf{x}^{k}$ 不是稳定的最优点, 即不是局部极值点.
 
-反过头来看情形a: $ -\nabla f $ 落在 $ \nabla g_{1} $ 和 $ \nabla g_{2} $ 形成的雉角内. 此时, 同样作 $ f(\mathbf{x})=C $ 在点 $ \mathbf{x}^{k} $ 与 $ -\nabla f $ 垂直的切平面. 当从 $ \mathbf{x}^{k} $ 出发沿着与负梯度 $ -\nabla f $ 成锐角的方向移动时, 虽然能使目标函数值减小, 但此时任何一点都不在可行区域内. 显然, 此时 $ \mathbf{x}^{k} $ 就是局部最优点 $ \mathbf{x}^{*} $, 再做任何移动都将破坏约 束条件, 故它是稳定点.
+\begin{corollary}[梯度的性质]
+    复习课本中梯度的性质：某点梯度的方向就是函数等值线 $ f(\mathbf{x})=C $ 。（在这点的法线方向, 等值线就是地理的等高线。）
+\end{corollary}
+
+为方便作图, 假设现在\textbf{只有两个约束条件起约束作用}, 我们作出图形如图\ref{fig:kkt-1}.
+
+\begin{FigureCenter}{}
+    \label{fig:kkt-1}
+    \includegraphics[width=0.5\textwidth]{KKT-geometry-1.jpg}
+\end{FigureCenter}
+
+
+注意我们上面推导过, 约束起作用时 $ g_{j}(\mathbf{x})=0 $, 所以此时约束在几何上应该是一簇\textbf{约束平面}.
+
+我们假设在 $ \mathbf{x}^{*} $ 取得极小值点, 若同时满足 $ g_{1}(\mathbf{x})=0 $ 和 $ g_{2}(\mathbf{x})=0 $, 则 $ \mathbf{x}^{k} $ 一定在这两个平面的交线上, 且 $ -\nabla f\left(\mathbf{x}^{*}\right)=\sum_{j \in J} \mu_{j} \nabla g_{j}\left(\mathbf{x}^{*}\right) $, 即 $ -\nabla f\left(\mathbf{x}^{k}\right) 、 \nabla g_{1}\left(\mathbf{x}^{k}\right) $ 和 $ \nabla g_{2}\left(\mathbf{x}^{k}\right) $ 共面.
+
+\begin{FigureCenter}{}
+    \label{fig:kkt-2}
+    \includegraphics[width=\textwidth]{KKT-geometry-2.jpg}
+\end{FigureCenter}
+
+图\ref{fig:kkt-2}是在点 $ \mathbf{x}^{k} $ 处沿 $ x_{1} O x_{2} $ 面的截面, 过点 $ \mathbf{x}^{k} $ 作目标函数的负梯度 $ -\nabla f\left(\mathbf{x}^{k}\right) $, 它垂直于目标函数 的等值线 $ f(\mathbf{x})=C $ ，且指向目标函数 $ f(\mathbf{x}) $ 的最速减小方向.
+
+\begin{corollary}
+    一点的梯度与等值线相互垂直。
+\end{corollary}
+
+再作约束函数 $ g_{1}(\mathbf{x})=0 $ 和 $ g_{2}(\mathbf{x})=0 $ 的梯度 $ \nabla g_{1}\left(\mathbf{x}^{k}\right) $ 和 $ \nabla g_{2}\left(\mathbf{x}^{k}\right) $, 它们分别垂直 $ g_{1}(\mathbf{x})=0 $ 和 $ g_{2}(\mathbf{x})=0 $ 两曲面在 $ \mathbf{x}^{k} $ 的切平面, 并形成一个雉形夹角区域.此时, 可能有 $ \mathrm{a} 、 \mathrm{~b} $ 两种情形：
+
+\begin{FigureCenter}{}
+    \label{fig:kkt-3}
+    \includegraphics[width=0.5\textwidth]{KKT-geometry-3.jpg}
+\end{FigureCenter}
+
+我们先来看情形 $\mathrm{b}$ ：若3个向量的位置关系如\ref{fig:kkt-3}所示, 即 $-\nabla f$ 落在 $\nabla g_{1}$ 和 $\nabla g_{2}$ 所形成的锥角区外的 一侧. 此时, 作等值面 $f(\mathbf{x})=C$ 在点 $\mathbf{x}^{k}$ 的切平面（它与 $-\nabla f\left(\mathbf{x}^{k}\right)$ 垂直）, 我们发现：沿着与负 梯度 $-\nabla f$ 成锐角的方向移动（如下图红色箭头方向）, 只要在红色区域取值, 目标函数 $f(\mathbf{x})$ 总 能减小.而红色区域是可行域 $(f(\mathbf{x})=C$, C取不同的常数能得到不同的等值线, 因此能取到红色 区域）, 因此既可减小目标函数值, 又不破坏约束条件. 这说明 $\mathbf{x}^{k}$ 仍可沿约束曲面移动而不破坏约 束条件, 且目标函数值还能够减小.所以 $\mathbf{x}^{k}$ 不是稳定的最优点, 即不是局部极值点.
+
+反过头来看情形a: $ -\nabla f $ 落在 $ \nabla g_{1} $ 和 $ \nabla g_{2} $ 形成的锥角内. 此时, 同样作 $ f(\mathbf{x})=C $ 在点 $ \mathbf{x}^{k} $ 与 $ -\nabla f $ 垂直的切平面. 当从 $ \mathbf{x}^{k} $ 出发沿着与负梯度 $ -\nabla f $ 成锐角的方向移动时, 虽然能使目标函数值减小, 但此时任何一点都不在可行区域内. 显然, 此时 $ \mathbf{x}^{k} $ 就是局部最优点 $ \mathbf{x}^{*} $, 再做任何移动都将破坏约 束条件, 故它是稳定点.
 
 由于 $ -\nabla f\left(\mathbf{x}^{*}\right) $ 和 $ \nabla g_{1}\left(\mathbf{x}^{*}\right) 、 \nabla g_{2}\left(\mathbf{x}^{*}\right) $ 在一个平面内, 所以前者可看成是后两者的线性组合. 又由 上面的几何分析知, $ -\nabla f\left(\mathbf{x}^{*}\right) $ 在 $ \nabla g_{1}\left(\mathbf{x}^{*}\right) $ 和 $ \nabla g_{2}\left(\mathbf{x}^{*}\right) $ 的夹角之间, 所以线性组合的系数为正, 有
 $$
@@ -477,7 +1075,8 @@ $$
 
 \subsection{总结：同时包含等式和不等式约束的一般优化问题}
 
-$$
+\begin{theorem}[同时包含等式和不等式约束的一般优化问题的KKT条件]
+    $$
 \begin{array}{l}
 \min f(\mathbf{x}) \\
 \text { s.t. } g_{j}(\mathbf{x}) \leq 0(j=1,2, \cdots, m) \\
@@ -493,5 +1092,312 @@ h_{k}(\mathbf{x})=0,(k=1,2, \cdots, l) \\
 \mu_{j} \geq 0
 \end{array}\right.
 $$
+\end{theorem}
 
-注意，对于等式约束的Lagrange乘子，并没有非负的要求！以后求其极值点，不必再引入松弛变量，直接使用KKT条件判断！
+\begin{remark}
+    对于等式约束的Lagrange乘子，并没有非负的要求。
+\end{remark}
+
+\begin{remark}
+    以后求其极值点，不必再引入松弛变量，直接使用KKT条件判断。
+\end{remark}
+
+
+\section[Supplement Material: 凸优化、拉格朗日乘子法和KKT条件]{Supplement Material: 凸优化、拉格朗日乘子法和KKT条件\footnote{Cited from \url{https://zhuanlan.zhihu.com/p/59928816}.}}
+
+\subsection{凸集的概念}
+
+\begin{definition}[点、（直）线、线段]
+    $ x_{1} \neq x_{2} $ 是 $ \mathbb{R}^{n} $ 中的两\term{点}, $ \theta \in \mathbb{R} $, 那么 $ y=x_{2}+\theta\left(x_{1}-x_{2}\right) $ 表示穿过两点的\term{线}。
+
+    当 $ 0 \leqslant \theta \leqslant 1 $ 时, $ y $ 是 $ x_{1} $ 到 $ x_{2} $ 的\term{线段}，$ y $ 也可以表示成 $ y=\theta x_{1}+(1-\theta) x_{2} $。
+\end{definition}
+
+\begin{definition}[仿射集]
+    一个集合 $ C \subseteq \mathbb{R}^{n} $ 是\term{仿射集}如果其中任意两个不同的点的连线仍包含于 $ C $ 。
+\end{definition}
+
+\begin{definition}[凸集]
+    一个集合 $ C \subseteq \mathbb{R}^{n} $ 是凸集, 如果任意两点之间的线段仍包含于 $ C $ 。即 $ \forall x_{1}, x_{2} \in C $, 任意 $ 0 \leqslant \theta \leqslant 1 $, 有 $ \theta x_{1}+(1-\theta) x_{2} \in C $ 。
+\end{definition}
+
+\begin{theorem}
+    两个凸集的交集仍是凸集。
+\end{theorem}
+
+\begin{definition}[凸函数]
+    一个函数 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 是\term{凸函数}如果定义域是凸集而且对任意定义域的 $ x, y, 0 \leqslant \theta \leqslant 1 $ 有
+$$
+f(\theta x+(1-\theta) y) \leqslant \theta f(x)+(1-\theta) f(y)
+$$
+\end{definition}
+
+二维时候的几何意义是, 如果两点的线段总位于函数曲线之上, 那么该函数是凸函数。
+
+\begin{theorem}
+    $ f $ 是凸的, 那么 $ -f $ 是 凹的。
+\end{theorem}
+
+\begin{theorem}
+    
+仿射函数既凸又凹。
+\end{theorem}
+
+
+\begin{theorem}[$ \alpha- $sublevel 集]
+    给定凸函数 $ f$，则$\{x \in D(f): f(x) \leqslant \alpha\} $是一个凸集。
+\end{theorem}
+
+\begin{proof}
+    对任意 $ x, y \in D(f) $ 使得 $$ f(x) \leqslant \alpha, f(y) \leqslant \alpha $$
+    
+    有 $$ f(\theta x+(1-\theta) y) \leqslant \theta f(x)+(1-\theta) f(y) \leqslant \theta \alpha+(1-\theta) \alpha $$
+    
+    也就是说如果 $ x, y $ 属于 $ \alpha- $ sublevel 集，那么二者之间的线段上的点也可以使得 $ f \leqslant \alpha ， $ 即二者之间的线段也包含于 $ \alpha- $ sublevel 集。
+\end{proof}
+
+\subsection{凸优化}
+
+\begin{definition}[优化问题]
+    \term{优化问题}有如下形式：
+
+    $$
+\begin{array}{ll}
+\operatorname{minimize} & f_{0}(x) \\
+\text { subject to } & f_{i}(x) \leqslant b_{i}, i=1, \ldots, m
+\end{array}
+$$
+
+$ x=\left(x_{1}, \ldots, x_{n}\right) $ 是\term{优化变量}, 函数 $ f_{0}: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 是\term{目标函数}, 函数 $ f_{i}: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 是\term{约束函数}。 $ b_{i} $ 是约束。使得 $ f_{0}(x) $ 在约束条件下最小的 $ x^{*} $ 叫做\term{最优点}, 或问题的\term{解}。
+\end{definition}
+
+\begin{definition}[凸优化]
+    \term{凸优化}问题有如下形式：
+
+    $$
+    \begin{array}{ll}
+    \operatorname{minimize} & f(x) \\
+    \text { subject to } & x \in C
+    \end{array}
+    $$
+    
+    $ f $ 是凸函数, $ C $ 是凸集。
+\end{definition}
+
+\begin{corollary}
+    凸集可以表示成某些个凸集的交集。
+\end{corollary}
+
+所以凸优化问题一般表示为
+
+\begin{definition}[凸优化问题]
+    \label{def:convex-problem}
+
+    $$
+    \begin{array}{ll}
+    \operatorname{minimize} & f(x) \\
+    \text { subject to } & g_{i}(x) \leqslant 0, i=1, \ldots, m \\
+    & h_{j}(x)=0, j=1, \ldots, p
+    \end{array}
+    $$
+
+    其中 $ g_{i} $ 是\term{凸函数}, $ h_{j} $ 是\term{仿射函数}。 
+\end{definition}
+
+$ g_{i}(x) \leqslant 0 $叫做 \term{$ 0- $sublevel集}, 是凸集。
+
+\begin{theorem}
+    $ h_{j}(x)=0 $ 也是凸集。
+\end{theorem}
+
+\begin{proof}
+    $$ h\left(\theta x_{1}+(1-\theta) x_{2}\right)=\theta h\left(x_{1}\right)+(1-\theta) h\left(x_{2}\right)=0 $$
+\end{proof}
+
+凸优化问题的特点是, \textbf{所有局部最优点都是全局最优点}。
+
+\begin{definition}[二次规划]
+    如果一个凸优化问题的 $ g_{i} $ 都是仿射函数, 且 $ f $ 是凸二次函数, 那么它叫做二次规划:
+    $$
+    \begin{array}{ll}
+    \operatorname{minimize} & \frac{1}{2} x^{\top} P x+c^{\top} x+d \\
+    \text { subject to } & g_{i}(x) \leqslant 0, i=1, \ldots, m \\
+    & h_{j}(x)=0, j=1, \ldots, p
+    \end{array}
+    $$
+
+    其中 $ P $ 是一个对称半正定矩阵(使得 $ \left.\frac{1}{2} x^{\top} P x \geqslant 0\right) $ 。
+\end{definition}
+
+
+
+\subsection{拉格朗日对偶性}
+
+\begin{theorem}
+    对于没有限制的凸函数, 最优点 $ x^{*} $ 一定满足 $ \nabla_{x} f\left(x^{*}\right)=0 $。
+\end{theorem}
+
+然而对于有限制条件的凸优化问题却不是这样。拉格朗日对偶性可以将有限制的凸优化问题转化为没有限制的问题, 来求解凸优化问题。
+
+\begin{definition}[拉格朗日函数]
+    给定一个凸优化问题, 拉格朗日算子是一个函数 $ \mathcal{L}: \mathbb{R}^{n} \times \mathbb{R}^{m} \times \mathbb{R}^{p} \rightarrow \mathbb{R} $, 定义为:
+    $$
+    \mathcal{L}(x, \alpha, \beta)=f(x)+\sum_{i=1}^{m} \alpha_{i} g_{i}(x)+\sum_{i=1}^{p} \beta_{i} h_{i}(x)
+    $$
+
+    $ x \in \mathbb{R}^{n} $ 叫做\term{主变量(primal variable)}。 $ \alpha \in \mathbb{R}^{m}, \beta \in \mathbb{R}^{p} $ 统称对偶变量或拉格朗日乘子。
+\end{definition}
+
+\begin{theorem}
+    总存在一个拉格朗日乘子, 使得没有限制的拉格朗日算子相对于 $ x $ 的最小值, 等于原凸优化问题的最优值
+\end{theorem}
+
+后文会证明。
+
+\subsubsection{主问题}
+
+为了说明拉格朗日算子和原凸优化问题的关系，需要引入主问题和对偶问题。
+
+考虑优化问题:
+
+\begin{problem}
+    \label{pbl:primal}
+    $$
+\min _{x}\left[\max _{\alpha, \beta, \alpha_{i} \geqslant 0} \mathcal{L}(x, \alpha, \beta)\right]=\min _{x} \theta_{\mathcal{P}}(x)
+$$
+
+括号内的 $ \theta_{\mathcal{P}}: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 叫做\term{主目标(primal objective)}, 等号右边的没有限制的最小化问题叫做\term{主问题(primal problem)}。 用 $ x^{*} $ 表示\term{主问题的解},$ p^{*}=\theta_{\mathcal{P}}\left(x^{*}\right) $ 表示\term{主目标的最优值}。
+\end{problem}
+
+\begin{definition}[primal feasible]
+    $ x $ 是\term{主可行的(primal feasible)}如果 $ g_{i}(x) \leqslant 0, h_{j}(x)=0 $ 。
+\end{definition}
+
+
+$$
+\begin{aligned}
+\theta_{\mathcal{P}}(x) &=\max _{\alpha, \beta, \alpha_{i} \geqslant 0} \mathcal{L}(x, \alpha, \beta) \\
+&=\max _{\alpha, \beta, \alpha_{i} \geqslant 0}\left[f(x)+\sum_{i=1}^{m} \alpha_{i} g_{i}(x)+\sum_{i=1}^{p} \beta_{i} h_{i}(x)\right] \\
+&=f(x)+\max _{\alpha, \beta, \alpha_{i} \geqslant 0}\left[\sum_{i=1}^{m} \alpha_{i} g_{i}(x)+\sum_{i=1}^{p} \beta_{i} h_{i}(x)\right]
+\end{aligned}
+$$
+
+观察最后一个式子：
+
+\begin{itemize}
+    \item 如果任何一个 $ g_{i}(x)>0 $, 那么最大化 $ \theta_{\mathcal{P}}(x) $ 只需要将相应的 $ \alpha_{i} $ 设置为无限大。
+    \item 如果 $ g_{i}(x) \leqslant 0 $, 因为 $ \alpha_{i} \geqslant 0 $, 所以 $ \theta_{\mathcal{P}}(x) $ 最大时, 必然有 $ \alpha_{i}=0 $ 。
+\end{itemize}
+
+相似地：
+
+\begin{itemize}
+    \item 如果 $ h_{i} \neq 0 $, 那么最大化 $ \theta_{\mathcal{P}}(x) $ 只需要将相应的 $ \beta_{i} $ 设置为 $ h_{i}(x) $ 的相同符号且绝对值无限大。
+    \item 如果 $ h_{i}(x)=0 $, 那么 $ \sum_{i=1}^{p} \beta_{i} h_{i}(x) $ 项的最大值为0 。
+\end{itemize}
+
+综上, 有
+$$
+\theta_{\mathcal{P}}(x)=\left\{\begin{array}{ll}
+f(x)+0 & x \text { 为主可行的 } \\
+f(x)+\infty & x \text { 不是主可行的 }
+\end{array}\right.
+$$
+因此当 $ x $ 主可行时, 主问题\ref{pbl:primal}的最优值等于原凸优化问题\ref{def:convex-problem}的最优值。
+
+\subsubsection{对偶问题}
+
+\begin{definition}[对偶问题]
+    对调主问题的最大最小操作:
+$$
+\max _{\alpha, \beta, \alpha \geqslant 0}\left[\min _{x} \mathcal{L}(x, \alpha, \beta)\right]=\max _{\alpha, \beta, \alpha \geqslant 0} \theta_{\mathcal{D}}(\alpha, \beta)
+$$
+
+$ \theta_{\mathcal{D}}(\alpha, \beta): \mathbb{R}^{m} \times \mathbb{R}^{p} \rightarrow \mathbb{R} $ 是\term{对偶目标(dual objective)}，等号右边的有限制的最大化问题叫做\term{对偶问题}。 用 $ \left(\alpha^{*}, \beta^{*}\right) $ 表示\term{对偶问题的解}， $ d^{*}=\theta_{\mathcal{D}}\left(\alpha^{*}, \beta^{*}\right) $ 表示\term{对偶目标的最优值}。
+\end{definition}
+
+\begin{definition}[对偶可行]
+    如果 $ \alpha_{i}(x) \geqslant 0 $ ，$ (\alpha, \beta) $ 是对偶可行的。
+\end{definition}
+
+
+\begin{theorem}
+    如果 $ (\alpha, \beta) $ 是对偶可行的，那么 $ \theta_{\mathcal{D}}(\alpha, \beta) \leqslant p^{*} $.
+\end{theorem}
+
+\begin{proof}
+    $$ \begin{aligned} \theta_{\mathcal{D}}(\alpha, \beta) &=\min _{x} \mathcal{L}(x, \alpha, \beta) \\ & \leqslant \mathcal{L}\left(x^{*}, \alpha, \beta\right) \\ &=f\left(x^{*}\right)+\sum_{i=1}^{m} \alpha_{i} g_{i}\left(x^{*}\right)+\sum_{i=1}^{p} \beta_{i} h_{i}\left(x^{*}\right) \\ & \leqslant f\left(x^{*}\right)=p^{*} \end{aligned} $$
+\end{proof}
+
+\begin{theorem}[弱对偶性]
+    对任意主问题和对偶问题，有 $ d^{*} \leqslant p^{*} $.
+\end{theorem}
+
+\begin{theorem}[强对偶性]
+    对任意主问题和对偶问题, 如果满足某个条件(constraint qualifications), 那 么 $ d^{*}=p^{*} $ 。最常用的constraint qualification是Slater's condition: 所有的不等式限制都严格满 足 (即 $ g_{i}(x)<0 $ ) 。
+\end{theorem}
+
+\begin{theorem}[Slater 条件]
+    设定义在 $ \mathcal{D} $ 上的函数 $ f_{i}(\cdot), i=1,2, \cdots, n $ 为凸函数, $ g_{j}(\cdot), j=1,2, \cdots, m $ 为 仿射函数, 考虑凸优化问题
+
+    $$
+    \min _{\mathbf{x}} f_{0}(\mathbf{x}), \quad \text { s.t. } f_{i}(\mathbf{x}) \leq 0, g_{i}(\mathbf{x}) \leq 0
+    $$
+
+    如果存在点 $ \mathrm{x} \in $ relint $ \mathcal{D} $ （即 $ \mathcal{D} $ 的相对内点）, 则强对偶性成立.
+\end{theorem}
+
+实践中, 几乎所有的凸优化问题都满足某种constraint qualification, 所以 主问题和对偶问题有相同的最优值。
+
+\begin{theorem}[互补松弛性 (complementary slackness, KKT complementarity)]
+    如果强对偶性满足, 那么 $ \alpha_{i}^{*} g\left(x_{i}^{*}\right)=0, i=1, \ldots, m $
+    
+\end{theorem}
+
+\begin{proof}
+    $$
+    \begin{aligned}
+    p^{*}=d^{*}=\theta_{\mathcal{D}}\left(\alpha^{*}, \beta^{*}\right) &=\min _{x} \mathcal{L}\left(x, \alpha^{*}, \beta^{*}\right) \\
+    & \leqslant \mathcal{L}\left(x^{*}, \alpha^{*}, \beta^{*}\right) \\
+    &=f\left(x^{*}\right)+\sum_{i=1}^{m} \alpha_{i}^{*} g_{i}\left(x^{*}\right)+\sum_{i=1}^{p} \beta_{i}^{*} h_{i}\left(x^{*}\right) \\
+    & \leqslant f\left(x^{*}\right)=p^{*}
+    \end{aligned}
+    $$
+
+    因为第一个和最后一个表达式相等, 所以中间所有的小于等于号都是等号, 有 $$ \sum_{i=1}^{m} \alpha_{i}^{*} g_{i}\left(x^{*}\right)+\sum_{i=1}^{p} \beta_{i}^{*} h_{i}\left(x^{*}\right)=0 $$
+
+    因为 $ \alpha_{i}^{*} \geqslant 0 ， h_{i}\left(x^{*}\right)=0 $, 所以 $ \alpha_{i}^{*} $ 和 $ g_{i}\left(x^{*}\right) $ 至少有一个是 0 。
+\end{proof}
+
+\begin{theorem}
+    设 $ x^{*} \in \mathbb{R}^{n}, \alpha^{*} \in \mathbb{R}^{m}, \beta^{*} \in \mathbb{R}^{p} $, 下列条件为 $ \mathrm{KKT} $ 条件:
+
+    \begin{enumerate}
+        \item (主可行) $ g_{i}\left(x^{*}\right) \leqslant 0, i=1, \ldots, m, h_{j}\left(x^{*}\right)=0, j=1, \ldots, p $
+        \item (对偶可行) $ \alpha_{i}^{*} \geqslant 0, i=1, \ldots, m $
+        \item (互补松弛性) $ \alpha_{i}^{*} g\left(x_{i}^{*}\right)=0, i=1, \ldots, m $
+        \item (Lagrangian Stationary) $ \nabla_{x} \mathcal{L}\left(x^{*}, \alpha^{*}, \beta^{*}\right)=0 $
+    \end{enumerate}
+
+\end{theorem}
+
+\begin{theorem}
+    对于凸优化问题, 有:
+
+$ x^{*} $ 原始最优， $ \left(\alpha^{*}, \beta^{*}\right) $ 对偶最优，且有$$ 强对偶性 \Leftrightarrow  满足  K K T  条件$$
+\end{theorem}
+
+\subsection{总结}
+
+
+给定一个\term{凸优化}问题, \term{拉格朗日算子}将凸优化问题的目标函数和限制考虑进一个函数中, 在拉格朗日算子基础上可以定义\term{主问题}和\term{对偶问题}。
+
+\term{主问题}是先调整 $ (\alpha, \beta) $ 使拉格朗日算子最大(变为主目标), 再调整 $ x $ 使主目标最小。 $ x $ 主可行时, 主目标等于原凸优化问题的目标函数, 主目标的最小值等于原凸优化问题的最小值。
+
+\term{对偶问题}是先调整 $ x $ 使拉格朗日算子最小(变为对偶目标, 因为拉格朗日算子是关于 $ x $ 的没有限制 的凸函数, 所以变为对偶目标时其对 $ x $ 的偏导数为 0 ), 再调整使对偶目标最大。 $ (\alpha, \beta) $ 对偶可行 时, 对偶目标小于等于主目标的最小值。
+
+\term{弱对偶性}指对偶目标的最大值小于等于主目标的最小值。强对偶性指对偶目标的最大值等于主目标的最小值。
+
+$$对偶目标的最大值=主目标的最小值=原凸优化问题的最小值 \Leftrightarrow^{当且仅当}满足KKT条件$$
+
+因此，当对偶问题比原凸优化问题容易求解时，可以通过求解对偶问题来解原凸优化问题。
