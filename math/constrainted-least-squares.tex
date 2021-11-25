@@ -30,11 +30,11 @@ $$
 L(x, \lambda)=f(x)-\lambda h(x)=2 x_{1}^{2}+x_{2}^{2}+\lambda\left(1-x_{1}-x_{2}\right)
 $$
 
-$$ \left.\begin{array}{l}\frac{\partial L}{\partial x_{1}}=4 x_{1}-\lambda=0 \\ \frac{\partial L}{\partial x_{2}}=2 x_{2}-\lambda=0 \\ \frac{\partial L}{\partial \lambda}=1-x_{1}-x_{2}=0\end{array}\right\} \Rightarrow \hat{x}_{1}=\frac{1}{3}, \hat{x}_{2}=\frac{2}{3}, \hat{\lambda}=\frac{4}{3} $$
+$$ \left.\begin{array}{l}\frac{\partial L}{\partial x_{1}}=4 x_{1}-\lambda=0 \\ \frac{\partial L}{\partial x_{2}}=2 x_{2}-\lambda=0 \\ \frac{\partial L}{\partial \lambda}=1-x_{1}-x_{2}=0\end{array}\right \} \Rightarrow \hat{x}_{1}=\frac{1}{3}, \hat{x}_{2}=\frac{2}{3}, \hat{\lambda}=\frac{4}{3} $$
 
 \begin{definition}[Lagrange Functions]
     $$\begin{aligned}
-        &\min _{x} / \max f(x) \\
+        &\min _{x} / \max_{x} f(x) \\
 \text{ s.t. } & h_{i}(x)=0, i \in I \triangleq\{1, \cdots, p\} \\
 &g_{j}(x) \leq 0, j \in J \triangleq\{1, \cdots, q\}
     \end{aligned}$$
@@ -48,7 +48,16 @@ $ \lambda_{i} \in \mathbb{R}, i \in \mathrm{I}, u_{j} \in \mathbb{R}^{+}, j \in 
 $$ \nabla_{x} L(x, \lambda, u)=\nabla_{x} f(x)-\sum_{i \in I} \lambda_{i} \nabla_{x} h_{i}(x)-\sum_{j \in J} u_{j} \nabla_{x} g_{j}(x)=0 $$
 \end{definition}
 
-\begin{theorem}[Karush-Kuhn-Tucker Conditions] KKT条件包括：
+\begin{theorem}[Karush-Kuhn-Tucker Conditions] 
+    对于优化问题
+
+    $$\begin{aligned}
+        &\min _{x} / \max f(x) \\
+\text{ s.t. } & h_{i}(x)=0, i \in I \triangleq\{1, \cdots, p\} \\
+&g_{j}(x) \leq 0, j \in J \triangleq\{1, \cdots, q\}
+    \end{aligned}$$
+    
+    KKT条件包括：
 \begin{itemize}
     \item $ h_{i}(x)=0, i \in I $
     \item $ \lambda_{i} h_{i}(x)=0, i \in I $
@@ -118,33 +127,47 @@ $$g_{1}(x)=x_{1}^{2}+x_{2}^{2}-1=5 x_{2}^{2}-1=0$$
 \section{优化问题：最小范数优化问题}
 
 \begin{problem}
-    $ \min _{x}\|x\|_{2}^{2} $
-s.t. $ \quad C x=d $
+
+$$\begin{aligned}
+    & \min _{x}\|x\|_{2}^{2}\\
+   \text{s.t.} &C x=d 
+\end{aligned}$$
+
+矩阵C $ \in \mathbb{R}^{p \times n} $, 向量 $ d \in \mathbb{R}^{p} $
 \end{problem}
 
-■ 矩阵C $ \in \mathbb{R}^{p \times n} $, 向量 $ d \in \mathbb{R}^{p} $;
-- 在大多数应用中 $ p<n_{2} C x=d $ 是一个欠定方程；
-- 在直线 $ C x=d $ 中，寻找范数最小的解。
 
-假设矩阵C行向量线性无关
-- 对任意一个 $ \mathrm{d}, C x=d $ 至少有一个解;
-- 矩阵C为宽的或者方的 $ (p \leq n) $;
-- 当 $ p<n $ ，有无穷多个解。
+在大多数应用中 $ p<n,  C x=d $ 是一个\textbf{欠定方程}。这时，$C x=d$表示为一条直线。它的几何意义是在直线 $ C x=d $ 中，寻找范数最小的解。
 
-\subsection{An example}
+假如$p = n$，$C x=d$表示一个点。
+
+% todo (2021-11-24 18:40): figure
+
+
+
+假设矩阵$C$行向量线性无关时，有：
+\begin{itemize}
+    \item 对任意一个 $ \mathrm{d}, C x=d $ 至少有一个解;
+    \item 矩阵$C$为宽的或者方的 $ (p \leq n) $;
+    \item 当 $ p<n $，有无穷多个解。
+\end{itemize}
+
+\subsection{最小范数优化问题的例子}
 
 矩阵 $ C \in \mathbb{R}^{2 \times 10} $, 向量 $ d \in \mathbb{R}^{2} $ :
-$$
-C x=\left[\begin{array}{ccccc}
-19 / 2 & 17 / 2 & 15 / 2 & \cdots & 1 / 2 \\
-1 & 1 & 1 & \cdots & 1
-\end{array}\right] x=\left[\begin{array}{l}
-1 \\
-0
-\end{array}\right]
-$$
 
-有趣的解：只有两个非0元素的解
+$$Cx=d$$
+
+$$\displaystyle \underbrace{\left[\begin{array}{ c c c c c }
+    19/2 & 17/2 & 15/2 & \cdots  & 1/2\\
+    1 & 1 & 1 & \cdots  & 1
+    \end{array}\right]}_{C} x=\underbrace{\left[\begin{array}{ l }
+    1\\
+    0
+    \end{array}\right]}_{d}$$
+
+这个方程只有一组含有两个非0元素的解。
+
 $$
 x=\left[\begin{array}{c}
 1 \\
@@ -198,30 +221,41 @@ $$
 $$
 \end{problem}
 
-引入拉格朗日函数:
+引入拉格朗日函数
 $$
 L(x, \lambda)=\frac{1}{2}\|x\|_{2}^{2}-\lambda^{T}(C x-d)
 $$
-对拉格朗日函数求导:
+
+对拉格朗日函数求导
 $$
 \nabla_{x} L(x, \lambda)=x-C^{T} \lambda=0 \Rightarrow x=C^{T} \lambda
 $$
 
-"矩阵C行线性无关," 可得:
+由矩阵$C$行线性无关可得
 $$
 C x=C C^{T} \lambda=d, \lambda=\left(C C^{T}\right)^{-1} d
 $$
-则有:
+
+则有
 $$
 \hat{x}=C^{T} \lambda=C^{T}\left(C C^{T}\right)^{-1} d=C^{\dagger} d
 $$
 
+以上得到的是$\hat{x}=C^{\dagger} d$是问题最优解的必要条件。
+
+\begin{proposition}
+    $\hat{x}=C^{\dagger} d$是问题最优解。
+\end{proposition}
+
 \begin{proof}
     1.首先证明解 $ \hat{x} $ 满足等式 $ \hat{x}=C^{T} \lambda=C^{T}\left(C C^{T}\right)^{-1} d=C^{\dagger} d $.
+
 $$
 C \hat{x}=C C^{T}\left(C C^{T}\right)^{-1} d=d
 $$
-2. 在 $ C x=d, x \neq \hat{x} $ 的情况下，
+
+2. 在 $ C x=d, x \neq \hat{x} $ 的情况下
+
 $$
 \begin{aligned}
 \hat{x}^{T}(x-\hat{x}) &=d^{T}\left(C C^{T}\right)^{-1} C(x-\hat{x}) \\
@@ -231,7 +265,8 @@ $$
 \end{aligned}
 $$
 
-3.在 $ C x=d, x \neq \hat{x} $ 的情况下，证明 $ \|x\|_{2}^{2}>\|\hat{x}\|_{2}^{2} $
+3.在 $ C x=d, x \neq \hat{x} $ 的情况下，证明 $ \|x\|_{2}^{2}>\|\hat{x}\|_{2}^{2} $.
+
 $$
 \begin{aligned}
 \|x\|_{2}^{2} &=\|\hat{x}+x-\hat{x}\|_{2}^{2} \\
@@ -242,7 +277,7 @@ $$
 $$
 \end{proof}
 
-\section{QR分解求解}
+\section{QR分解求解最小范数优化问题}
 
 对矩阵 $ C^{T} \in \mathbb{R}^{n \times p} $ 进行 $ Q R $ 分解， $ C^{T}=Q R $
 $$
@@ -254,11 +289,19 @@ $$
 \end{aligned}
 $$
 
-复杂度：
-- 1. 矩阵 $ C^{T}=Q R $ 分解， $ C^{T}=Q R\left(2 n p^{2}\right. $ flops $ ) $
-- 2.回代法求解 $ R^{T} z=d\left(p^{2}\right. $ flops $ ) $
-- 3.计算 $ \hat{x}=Q z(2 n p $ flops $ ) $
-- 总复杂度: $ \left(\approx 2 n p^{2}\right. $ flops $ ) $
+\subsection{QR分解求解最小范数优化问题的复杂度}
+
+总复杂度: $ \approx 2 n p^{2} $ flops
+
+\begin{itemize}
+    \item 矩阵 $ C^{T}=Q R $ 分解， $ C^{T}=Q R\left(2 n p^{2}\right. $ flops $ ) $
+    \item 回代法求解 $ R^{T} z=d\left(p^{2}\right. $ flops $ ) $
+    \item 计算 $ \hat{x}=Q z(2 n p $ flops $ ) $
+\end{itemize}
+
+
+
+\subsection{QR分解求解最小范数优化问题的例子}
 
 \begin{example}
     $$
@@ -301,98 +344,95 @@ z_{2}
 \end{array}\right]
 $$
 
-$$
-\text { 解 } Z_{1}=0, Z_{2}=\sqrt{2}
-$$
-得 $ \hat{x}=Q z=(1,1,0,0) $
+解得$
+ z_{1}=0, z_{2}=\sqrt{2}
+$。
+
+可得 $ \hat{x}=Q z=(1,1,0,0) $
 \end{example}
-
-\subsection{An Example}
-
-\begin{example}
-    $$ C=\left[\begin{array}{cccc}1 & -1 & 1 & 1 \\ 1 & 0 & 1 / 2 & 1 / 2\end{array}\right], \quad d=\left[\begin{array}{l}0 \\ 1\end{array}\right] $$
-\end{example}
-
-对矩阵 $ C^{T} $ 进行 $ \mathrm{QR} $ 分解， $ C^{T}=Q R $
-$$
-\left[\begin{array}{cc}
-1 & 1 \\
--1 & 0 \\
-1 & 1 / 2 \\
-1 & 1 / 2
-\end{array}\right]=\left[\begin{array}{cc}
-1 / 2 & 1 / \sqrt{2} \\
--1 / 2 & 1 / \sqrt{2} \\
-1 / 2 & 0 \\
-1 / 2 & 0
-\end{array}\right]\left[\begin{array}{cc}
-2 & 1 \\
-0 & 1 / \sqrt{2}
-\end{array}\right]
-$$
-通过回代法求解 $ R^{T} Z=d $
-$$
-\left[\begin{array}{cc}
-2 & 0 \\
-1 & 1 / \sqrt{2}
-\end{array}\right]\left[\begin{array}{l}
-z_{1} \\
-z_{2}
-\end{array}\right]=\left[\begin{array}{l}
-0 \\
-1
-\end{array}\right]
-$$
-
-
-$$
-\text { 解 } Z_{1}=0, Z_{2}=\sqrt{2}
-$$
-得 $ \hat{x}=Q z=(1,1,0,0) $
 
 
 \section{优化问题：分段多项式拟合问题}
 
-两个多项式 $ f(x), g(x) $ 对于样本点 $ \left(x_{1}, y_{1}\right), \ldots,\left(x_{N}, y_{N}\right) $ 进行拟合
-$$
+\begin{problem}
+    假设样本点 $ \left(x_{1}, y_{1}\right), \ldots,\left(x_{N}, y_{N}\right) \in \mathbb{R}^{2} $ ，有 $ x_{1}, \ldots, x_{M} \leq a $, $ x_{M+1}, \ldots, x_{N}>a $。
+
+    设$ \mathrm{d} $ 阶多项式 
+
+    $$
+    \begin{aligned}
+        f(x)&=\theta_{1}+\theta_{2} x+\cdots+\theta_{d} x^{d-1}\\
+        g(x)&=\theta_{d+1}+\theta_{d+2} x \ldots+\theta_{2 d} x^{d-1}
+    \end{aligned}
+    $$
+
+    两个多项式 $ f(x), g(x) $ 对于样本点 $ \left(x_{1}, y_{1}\right), \ldots,\left(x_{N}, y_{N}\right) $ 进行拟合
+
+    $$
+    \begin{array}{l}
+    f\left(x_{i}\right) \approx y_{i}, x_{i} \leq a \\
+    g\left(x_{i}\right) \approx y_{i}, x_{i}>a
+    \end{array}
+    $$
+
+    拟合要求：函数值和导数值必须在分段位置 $ a $ 连续
+    $$
+    f(a)=g(a), f^{\prime}(a)=g^{\prime}(a)
+    $$
+\end{problem}
+
+对于$
 \begin{array}{l}
 f\left(x_{i}\right) \approx y_{i}, x_{i} \leq a \\
 g\left(x_{i}\right) \approx y_{i}, x_{i}>a
 \end{array}
-$$
-拟合要求：函数值和导数值必须在分段位置 $ a $ 连续
-$$
-f(a)=g(a), f^{\prime}(a)=g^{\prime}(a)
-$$
-
-假设样本点 $ \left(x_{1}, y_{1}\right), \ldots,\left(x_{N}, y_{N}\right) \in \mathbb{R}^{2} $ ，有 $ x_{1}, \ldots, x_{M} \leq a $, $ x_{M+1}, \ldots, x_{N}>a $
-$ \mathrm{d} $ 阶多项式 $ f(x)=\theta_{1}+\theta_{2} x+\cdots+\theta_{d} x^{d-1} $, $ g(x)=\theta_{d+1}+\theta_{d+2} x \ldots+\theta_{2 d} x^{d-1} $
+$，可以构造矩阵
 
 $$ A=\left[\begin{array}{cccccccc}1 & x_{1} & \cdots & x_{1}^{d-1} & 0 & 0 & \cdots & 0 \\ \vdots & \vdots & & \vdots & \vdots & \vdots & & \vdots \\ 1 & x_{M} & \cdots & x_{M}^{d-1} & 0 & 0 & \cdots & 0 \\ 0 & 0 & \cdots & 0 & 1 & x_{M+1} & \cdots & x_{M+1}^{d-1} \\ \vdots & \vdots & & \vdots & \vdots & \vdots & & \vdots \\ 0 & 0 & \cdots & 0 & 1 & x_{N} & \cdots & x_{N}^{d-1}\end{array}\right], \theta=\left[\begin{array}{c}\theta_{1} \\ \vdots \\ \theta_{d} \\ \theta_{d+1} \\ \vdots \\ \theta_{2 d}\end{array}\right], b=\left[\begin{array}{c}y_{1} \\ \vdots \\ y_{M} \\ y_{M+1} \\ \vdots \\ y_{N}\end{array}\right] $$
 
+则$f(a)=g(a)$可以转化为
+
 $$ A \theta \approx b $$
 
-$ C=\left[\begin{array}{cccccccc}1 & a & \cdots & a^{d-1} & -1 & -a & \cdots & -a^{d-1} \\ 0 & 1 & \cdots & (d-1) a^{d-2} & 0 & -1 & \cdots & -(d-1) a^{d-2}\end{array}\right], d=\left[\begin{array}{l}0 \\ 0\end{array}\right] $
-$ C \theta=d $
+对于$f(a)=g(a), f^{\prime}(a)=g^{\prime}(a)$，可以构造矩阵
 
-$$ \begin{array}{ll}\min _{\theta} & \sum_{i=1}^{M}\left(f\left(x_{i}\right)-y_{i}\right)^{2}+\sum_{i=M+1}^{N}\left(g\left(x_{i}\right)-y_{i}\right)^{2} \\ \text { s.t. } & f(a)=g(a), f^{\prime}(a)=g^{\prime}(a)\end{array} $$
+$$ C=\left[\begin{array}{cccccccc}1 & a & \cdots & a^{d-1} & -1 & -a & \cdots & -a^{d-1} \\ 0 & 1 & \cdots & (d-1) a^{d-2} & 0 & -1 & \cdots & -(d-1) a^{d-2}\end{array}\right], d=\left[\begin{array}{l}0 \\ 0\end{array}\right] $$
 
-$ \min _{\theta}\|A \theta-b\|_{2}^{2} $
-s.t. $ \quad C \theta=d $
+$$ C \theta=d $$
+
+\begin{problem}
+     $$\begin{array}{ll}\min _{\theta} & \sum_{i=1}^{M}\left(f\left(x_{i}\right)-y_{i}\right)^{2}+\sum_{i=M+1}^{N}\left(g\left(x_{i}\right)-y_{i}\right)^{2} \\ \text { s.t. } & f(a)=g(a), f^{\prime}(a)=g^{\prime}(a)\end{array}$$
+\end{problem}
 
 
+\begin{problem}
+    $$\begin{aligned}
+        &\min _{\theta}\|A \theta-b\|_{2}^{2}\\
+       \text{s.t.} &C \theta=d
+    \end{aligned}$$
+
+\end{problem}
 
 \section{先验假设}
 
-1. 堆叠矩阵列线性无关
+\begin{proposition}
+    堆叠矩阵列线性无关
 $$
 \left[\begin{array}{l}
 A \\
 C
 \end{array}\right] \in \mathbb{R}^{(m+p) \times n}
 $$
-2.矩阵 $ C \in \mathbb{R}^{p \times n \text { 行线性无关 }} $
-假设 1 是一个比 $ A $ 可右逆更弱的条件 $ p \leq n \leq m+p $
+\end{proposition}
+
+\begin{proposition}
+    矩阵 $ C \in \mathbb{R}^{p \times n} $行线性无关
+
+\end{proposition}
+
+假设 1 是一个比 $ A $ 可右逆更弱的条件。 
+
+$ p \leq n \leq m+p $
 
 \section{优化问题：最小二乘法约束KKT条件}
 

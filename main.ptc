@@ -318,31 +318,33 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {15.1}Karush–Kuhn–Tucker Conditions}{127}{section.15.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {15.1.1}An Example for Karush-Kuhn-Tucker Conditions}{128}{subsection.15.1.1}%
+\contentsline {subsection}{\numberline {15.1.1}An Example for Karush-Kuhn-Tucker Conditions}{129}{subsection.15.1.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {15.2}优化问题：最小范数优化问题}{129}{section.15.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {15.2.1}An example}{129}{subsection.15.2.1}%
+\contentsline {subsection}{\numberline {15.2.1}最小范数优化问题的例子}{130}{subsection.15.2.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {15.3}优化问题：点到线的最短距离}{130}{section.15.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {15.4}最小范数优化问题}{130}{section.15.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {15.5}QR分解求解}{131}{section.15.5}%
+\contentsline {section}{\numberline {15.5}QR分解求解最小范数优化问题}{131}{section.15.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {15.5.1}An Example}{131}{subsection.15.5.1}%
+\contentsline {subsection}{\numberline {15.5.1}QR分解求解最小范数优化问题的复杂度}{131}{subsection.15.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {15.5.2}QR分解求解最小范数优化问题的例子}{131}{subsection.15.5.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {15.6}优化问题：分段多项式拟合问题}{132}{section.15.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {15.7}先验假设}{132}{section.15.7}%
+\contentsline {section}{\numberline {15.7}先验假设}{133}{section.15.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {15.8}优化问题：最小二乘法约束KKT条件}{133}{section.15.8}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {15.9}KKT最优条件}{133}{section.15.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {15.10}LU分解求解}{134}{section.15.10}%
+\contentsline {section}{\numberline {15.10}LU分解求解}{135}{section.15.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {15.11}QR分解求解}{134}{section.15.11}%
+\contentsline {section}{\numberline {15.11}QR分解求解}{135}{section.15.11}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {15.12}复杂度QR vs LU}{136}{section.15.12}%
 \defcounter {refsection}{0}\relax 
@@ -350,51 +352,51 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {15.13.1}等式约束优化问题}{136}{subsection.15.13.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {15.13.2}不等式约束优化问题}{136}{subsection.15.13.2}%
+\contentsline {subsection}{\numberline {15.13.2}不等式约束优化问题}{137}{subsection.15.13.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {15.13.3}拉格朗日乘子法的例子}{138}{subsection.15.13.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {15.14}Supplement Material: 浅谈最优化问题的KKT条件}{138}{section.15.14}%
+\contentsline {section}{\numberline {15.14}Supplement Material: 浅谈最优化问题的KKT条件}{139}{section.15.14}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {15.14.1}等式约束优化问题}{139}{subsection.15.14.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {15.14.2}不等式约束优化问题}{139}{subsection.15.14.2}%
+\contentsline {subsection}{\numberline {15.14.2}不等式约束优化问题}{140}{subsection.15.14.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {15.14.3}KKT乘子必须大于等于0}{141}{subsection.15.14.3}%
+\contentsline {subsection}{\numberline {15.14.3}KKT乘子必须大于等于0}{142}{subsection.15.14.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {15.14.4}总结：同时包含等式和不等式约束的一般优化问题}{143}{subsection.15.14.4}%
+\contentsline {subsection}{\numberline {15.14.4}总结：同时包含等式和不等式约束的一般优化问题}{144}{subsection.15.14.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {15.15}Supplement Material: 凸优化、拉格朗日乘子法和KKT条件}{144}{section.15.15}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {15.15.1}凸集的概念}{144}{subsection.15.15.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {15.15.2}凸优化}{144}{subsection.15.15.2}%
+\contentsline {subsection}{\numberline {15.15.2}凸优化}{145}{subsection.15.15.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {15.15.3}拉格朗日对偶性}{145}{subsection.15.15.3}%
+\contentsline {subsection}{\numberline {15.15.3}拉格朗日对偶性}{146}{subsection.15.15.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{主问题}{146}{section*.53}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{对偶问题}{146}{section*.54}%
+\contentsline {subsubsection}{对偶问题}{147}{section*.54}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {15.15.4}总结}{148}{subsection.15.15.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\@mypartnumtocformat {IV}{Extensive Reading}}{149}{part.4}%
+\contentsline {part}{\@mypartnumtocformat {IV}{Extensive Reading}}{150}{part.4}%
 \ttl@stoptoc {default@3}
 \ttl@starttoc {default@4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {16}Fourier Series, Fourier Transform}{150}{chapter.16}%
+\contentsline {chapter}{\numberline {16}Fourier Series, Fourier Transform}{151}{chapter.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.1}基本概念}{150}{section.16.1}%
+\contentsline {section}{\numberline {16.1}基本概念}{151}{section.16.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.2}Fourier Series}{152}{section.16.2}%
+\contentsline {section}{\numberline {16.2}Fourier Series}{153}{section.16.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.3}Fourier Transform}{155}{section.16.3}%
+\contentsline {section}{\numberline {16.3}Fourier Transform}{156}{section.16.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.4}Discrete Fourier Transform}{156}{section.16.4}%
+\contentsline {section}{\numberline {16.4}Discrete Fourier Transform}{157}{section.16.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {17}Factorization of Matrices}{158}{chapter.17}%
+\contentsline {chapter}{\numberline {17}Factorization of Matrices}{159}{chapter.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {17.1}主要的矩阵分解}{158}{section.17.1}%
+\contentsline {section}{\numberline {17.1}主要的矩阵分解}{159}{section.17.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {18}List Of Definitions}{159}{chapter.18}%
+\contentsline {chapter}{\numberline {18}List Of Definitions}{160}{chapter.18}%
 \contentsfinish 
