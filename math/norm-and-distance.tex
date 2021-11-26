@@ -97,15 +97,22 @@ $$
 $$
 \end{theorem}
 
+    
+
+   
 \begin{theorem}[Chebyshev's Inequality]
     假设$k$为向量 $ x $ 分量满足条件 $ \left|x_{i}\right| \geq a $ 的个数, 即 $ x_{i}^{2} \geq a^{2} $ 的个数. 
 
-    因此: $ \|x\|_{2}^{2}=x_{1}^{2}+x_{2}^{2}+\cdots+x_{n}^{2} \geq k a^{2} $
+    则满足 $ \left|x_{i}\right| \geq a $ 的 $ x_{i} $ 数量不会超过 $ \frac{\| x \|_{2}^{2}}{a^{2}} $。
+\end{theorem}
 
+\begin{proof}
+    假设$k$为向量 $ x $ 分量满足条件 $ \left|x_{i}\right| \geq a $ 的个数, 即 $ x_{i}^{2} \geq a^{2} $ 的个数。
+    
     将 $ a^{2} $ 移项, 可得到 $ k \leq \frac{\|x\|_{2}^{2}}{a^{2}} $
 
-    满足 $ \left|x_{i}\right| \geq a $ 的 $ x_{i} $ 数量不会超过 $ \frac{\|\| \|_{2}^{2}}{a^{2}} $
-\end{theorem}
+    因此$$ \|x\|_{2}^{2}=x_{1}^{2}+x_{2}^{2}+\cdots+x_{n}^{2} \geq k a^{2} $$
+\end{proof}
 
 \begin{corollary}[Chebyshev's Inequality Using RMS]
     $$ \operatorname{rms}(x)=\sqrt{\frac{x_{1}^{2}+x_{2}^{2}+\cdots+x_{n}^{2}}{n}}=\frac{\|x\|_{2}}{\sqrt{n}} $$

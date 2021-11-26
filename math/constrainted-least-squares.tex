@@ -25,34 +25,45 @@ $$ f(x)=3 x_{2}^{2}-4 x_{2}+2 $$
     \input{tikz_images/constrainted-least-square.tex}
 \end{FigureCenter}
 
-惩罚未能满足约束条件, 引入拉格朗日函数 (Lagrange Function)
+惩罚未能满足约束条件, 引入\term{拉格朗日函数 (Lagrange Function)}
 $$
 L(x, \lambda)=f(x)-\lambda h(x)=2 x_{1}^{2}+x_{2}^{2}+\lambda\left(1-x_{1}-x_{2}\right)
 $$
+
+对拉格朗日函数进行求导
 
 $$ \left.\begin{array}{l}\frac{\partial L}{\partial x_{1}}=4 x_{1}-\lambda=0 \\ \frac{\partial L}{\partial x_{2}}=2 x_{2}-\lambda=0 \\ \frac{\partial L}{\partial \lambda}=1-x_{1}-x_{2}=0\end{array}\right \} \Rightarrow \hat{x}_{1}=\frac{1}{3}, \hat{x}_{2}=\frac{2}{3}, \hat{\lambda}=\frac{4}{3} $$
 
 \begin{definition}[Lagrange Functions]
     $$\begin{aligned}
-        &\min _{x} / \max_{x} f(x) \\
+        \min _{x} / \max_{x}& f(x) \\
 \text{ s.t. } & h_{i}(x)=0, i \in I \triangleq\{1, \cdots, p\} \\
 &g_{j}(x) \leq 0, j \in J \triangleq\{1, \cdots, q\}
     \end{aligned}$$
 
 $ \lambda_{i} \in \mathbb{R}, i \in \mathrm{I}, u_{j} \in \mathbb{R}^{+}, j \in J $称为拉格朗日乘子(Lagrange Multipliers) 。
 
-引入拉格朗日函数 $$ L(x, \lambda, u)=f(x)-\sum_{i \in I} \lambda_{i} h_{i}(x)-\sum_{j \in J} u_{j} g_{j}(x),  \lambda=\left[\begin{array}{c}\lambda_{1} \\ \vdots \\ \lambda_{p}\end{array}\right], u=\left[\begin{array}{c}u_{1} \\ \vdots \\ u_{q}\end{array}\right] $$
+引入拉格朗日函数 $$ L(x, \lambda, u)=f(x)-\sum_{i \in I} \lambda_{i} h_{i}(x)-\sum_{j \in J} u_{j} g_{j}(x)   $$
+
+设$\lambda=\left[\begin{array}{c}\lambda_{1} \\ \vdots \\ \lambda_{p}\end{array}\right], u=\left[\begin{array}{c}u_{1} \\ \vdots \\ u_{q}\end{array}\right]$,$h(x),g(x)$如果可以视为一个向量
+
+则拉格朗日乘子式可写成
+
+
+$$ L(x, \lambda, u)=f(x) - \lambda^T h(x) - u^T g(x)$$
 
 对拉格朗日函数进行求导
 
 $$ \nabla_{x} L(x, \lambda, u)=\nabla_{x} f(x)-\sum_{i \in I} \lambda_{i} \nabla_{x} h_{i}(x)-\sum_{j \in J} u_{j} \nabla_{x} g_{j}(x)=0 $$
+
+
 \end{definition}
 
 \begin{theorem}[Karush-Kuhn-Tucker Conditions] 
     对于优化问题
 
     $$\begin{aligned}
-        &\min _{x} / \max f(x) \\
+        \min _{x} / \max_x &f(x) \\
 \text{ s.t. } & h_{i}(x)=0, i \in I \triangleq\{1, \cdots, p\} \\
 &g_{j}(x) \leq 0, j \in J \triangleq\{1, \cdots, q\}
     \end{aligned}$$
@@ -65,20 +76,16 @@ $$ \nabla_{x} L(x, \lambda, u)=\nabla_{x} f(x)-\sum_{i \in I} \lambda_{i} \nabla
     \item $ u_{j} g_{j}(x)=0, j \in J $
     \item $ u_{j} \geq 0, j \in J $
 \end{itemize}
-
 \end{theorem}
 
 
 \subsection{An Example for Karush-Kuhn-Tucker Conditions}
-
-
-    % todo (2021-11-19 09:08): figure
-
+   
 \begin{problem}
     求解
 $$
 \begin{aligned}
-    &\max _{x}\left\{f(x)=20 x_{1}+10 x_{2}\right\} \\
+    \max _{x}&\left\{f(x)=20 x_{1}+10 x_{2}\right\} \\
   \text{ s.t. }  &   g_{1}(x)=x_{1}^{2}+x_{2}^{2} \leq 1 \\
   & g_{2}(x)=x_{1}+2 x_{2} \leq 2 \\
   &  g_{3}(x)=-x_{1} \leq 0 \\
@@ -87,11 +94,16 @@ $$
 $$
 \end{problem}
 
+\begin{FigureCenter}{An Example for Karush-Kuhn-Tucker Conditions}
+    \input{tikz_images/kkt-example.tex}
+\end{FigureCenter}
+
+
 对拉格朗日函数求导
 $$ \nabla_{x} L(x, u)=\nabla_{x} f(x)-u_{1} \nabla_{x} g_{1}(x)-u_{2} \nabla_{x} g_{2}(x)-u_{3} \nabla_{x} g_{3}(x)-u_{4} \nabla_{x} g_{4}(x)=0, u_{j} \geq 0 $$
 
 计算各个部分，可得
-$$ \nabla_{x} f(x)=\left[\begin{array}{c}20 \\ 10\end{array}\right], \nabla_{x} g_{1}(x)=\left[\begin{array}{c}2 x_{1} \\ 2 x_{2}\end{array}\right], \nabla_{x} g_{2}(x)=\left[\begin{array}{l}1 \\ 2\end{array}\right], \nabla_{x} g_{3}(x)=\left[\begin{array}{l}-1 \\ 0\end{array}\right], \nabla_{x} g_{4}(x)=\left[\begin{array}{l}0 \\ -1\end{array}\right] . $$
+$$ \nabla_{x} f(x)=\left[\begin{array}{c}20 \\ 10\end{array}\right], \nabla_{x} g_{1}(x)=\left[\begin{array}{c}2 x_{1} \\ 2 x_{2}\end{array}\right], \nabla_{x} g_{2}(x)=\left[\begin{array}{l}1 \\ 2\end{array}\right], \nabla_{x} g_{3}(x)=\left[\begin{array}{l}-1 \\ 0\end{array}\right], \nabla_{x} g_{4}(x)=\left[\begin{array}{l}0 \\ -1\end{array}\right]$$
 
 检测边界条件，可知
 $$ \nabla_{x} f(x)=u_{1} \nabla_{x} g_{1}(x), \nabla_{x} f(x) \neq u_{2} \nabla_{x} g_{2}(x), \nabla_{x} f(x) \neq u_{3} \nabla_{x} g_{3}(x), \nabla_{x} f(x) \neq u_{4} \nabla_{x} g_{4}(x) $$
@@ -117,23 +129,26 @@ x_{1}&=2 x_{2}
 \end{aligned}
 $$
 
-代入
+由KKT条件得$ u_{j} g_{j}(x)=0, j \in J $。由于$ u_{2}=u_{3}=u_{4}=0, \quad u_{1} \neq 0 $，所以$g_1(x) = 0$。
+
+
+将上式代入
 
 $$g_{1}(x)=x_{1}^{2}+x_{2}^{2}-1=5 x_{2}^{2}-1=0$$
 
 
-由于 $ x_{2} \geq 0 $, 可得 $ \left[\begin{array}{l}x_{1} \\ x_{2}\end{array}\right]=\frac{\sqrt{5}}{5}\left[\begin{array}{l}2 \\ 1\end{array}\right], u_{1}=5 \sqrt{5} $.
+由于 $ x_{2} \geq 0 $, 可得 $x = \left[\begin{array}{l}x_{1} \\ x_{2}\end{array}\right]=\frac{\sqrt{5}}{5}\left[\begin{array}{l}2 \\ 1\end{array}\right], u_{1}=5 \sqrt{5} $.
 
 \section{优化问题：最小范数优化问题}
 
 \begin{problem}
 
 $$\begin{aligned}
-    & \min _{x}\|x\|_{2}^{2}\\
+    \min _{x} &\|x\|_{2}^{2}\\
    \text{s.t.} &C x=d 
 \end{aligned}$$
 
-矩阵C $ \in \mathbb{R}^{p \times n} $, 向量 $ d \in \mathbb{R}^{p} $
+矩阵C $ \in \mathbb{R}^{p \times n} $, 向量 $ d \in \mathbb{R}^{p} $.
 \end{problem}
 
 
@@ -141,7 +156,9 @@ $$\begin{aligned}
 
 假如$p = n$，$C x=d$表示一个点。
 
-% todo (2021-11-24 18:40): figure
+\begin{FigureCenter}{最小范数优化问题}
+    \input{tikz_images/minimal-norm.tex}
+\end{FigureCenter}
 
 
 
@@ -154,7 +171,8 @@ $$\begin{aligned}
 
 \subsection{最小范数优化问题的例子}
 
-矩阵 $ C \in \mathbb{R}^{2 \times 10} $, 向量 $ d \in \mathbb{R}^{2} $ :
+\begin{problem}
+    矩阵 $ C \in \mathbb{R}^{2 \times 10} $, 向量 $ d \in \mathbb{R}^{2} $ :
 
 $$Cx=d$$
 
@@ -165,6 +183,7 @@ $$\displaystyle \underbrace{\left[\begin{array}{ c c c c c }
     1\\
     0
     \end{array}\right]}_{d}$$
+\end{problem}
 
 这个方程只有一组含有两个非0元素的解。
 
@@ -191,11 +210,16 @@ $$
 $$
 \begin{array}{ll}
 \min _{x} & \|x-a\|_{2}^{2} \\
-\text { s. t. } & C x=d
+\text { s.t. } & C x=d
 \end{array}
 $$
 
 \end{problem}
+
+\begin{FigureCenter}{点到线的最短距离}
+    \input{tikz_images/minimal-distance-pt-to-line.tex}
+\end{FigureCenter}
+
 
 令 $ y=x-a $, 则点到线的最短距离问题， 可等价为最小范数问题:
 
@@ -210,13 +234,13 @@ $$
 
 则 $ x=y+a $ 是点到线最短距离问题的解。
 
-\section{最小范数优化问题}
+\section{最小范数优化问题推导}
 
 \begin{problem}
     $$
-\begin{array}{l}
-\min _{x} \frac{1}{2}\|x\|_{2}^{2} \\
-\text { s.t. } C x=d
+\begin{array}{ll}
+\min _{x}& \frac{1}{2}\|x\|_{2}^{2} \\
+\text { s.t. }& C x=d
 \end{array}
 $$
 \end{problem}
@@ -226,6 +250,10 @@ $$
 L(x, \lambda)=\frac{1}{2}\|x\|_{2}^{2}-\lambda^{T}(C x-d)
 $$
 
+\begin{remark}
+    $\lambda$是一个向量。
+\end{remark}
+
 对拉格朗日函数求导
 $$
 \nabla_{x} L(x, \lambda)=x-C^{T} \lambda=0 \Rightarrow x=C^{T} \lambda
@@ -233,7 +261,7 @@ $$
 
 由矩阵$C$行线性无关可得
 $$
-C x=C C^{T} \lambda=d, \lambda=\left(C C^{T}\right)^{-1} d
+C x=C C^{T} \lambda=d \Rightarrow \lambda=\left(C C^{T}\right)^{-1} d
 $$
 
 则有
@@ -243,9 +271,9 @@ $$
 
 以上得到的是$\hat{x}=C^{\dagger} d$是问题最优解的必要条件。
 
-\begin{proposition}
+\begin{theorem}
     $\hat{x}=C^{\dagger} d$是问题最优解。
-\end{proposition}
+\end{theorem}
 
 \begin{proof}
     1.首先证明解 $ \hat{x} $ 满足等式 $ \hat{x}=C^{T} \lambda=C^{T}\left(C C^{T}\right)^{-1} d=C^{\dagger} d $.
@@ -285,9 +313,27 @@ $$
 \hat{x} &=C^{T}\left(C C^{T}\right)^{-1} d \\
 &=Q R\left(R^{T} Q^{T} Q R\right)^{-1} d \\
 &=Q R\left(R^{T} R\right)^{-1} d \\
-&=Q R^{-T} d
+&=Q \left(R^{-1}\right)^T d
 \end{aligned}
 $$
+
+\begin{algorithm}[htbp]
+    \caption{QR分解求解最小范数优化问题}
+    \KwIn{QR分解得到的矩阵$Q$、$R$，向量$d$}
+    \KwOut{$\hat{x}$}
+    求解$R^T z=d$ \;
+    求解$\hat{x} = Qz$\;
+    
+\end{algorithm}
+
+\begin{proof}
+    $$\displaystyle \begin{aligned}
+    \hat{x} & =Q\underbrace{\left( R^{T}\right)^{-1} d}_{\textcolor[rgb]{0.72,0.33,0.31}{z}}\\
+    \textcolor[rgb]{0.72,0.33,0.31}{z} & =\left( R^{T}\right)^{-1} d\Rightarrow R^{T}\textcolor[rgb]{0.72,0.33,0.31}{z} =d\\
+    \hat{x} & =Q\textcolor[rgb]{0.72,0.33,0.31}{z}
+    \end{aligned}$$
+\end{proof}
+
 
 \subsection{QR分解求解最小范数优化问题的复杂度}
 
@@ -351,6 +397,31 @@ $。
 可得 $ \hat{x}=Q z=(1,1,0,0) $
 \end{example}
 
+\section{最小二乘法约束问题}
+
+\begin{problem}
+    $$\begin{aligned}
+        \min _{x} &\|A x-b\|_{2}^{2} \\
+        \text{s.t.} & Cx =d 
+    \end{aligned}$$
+
+    矩阵 $ \mathrm{A} \in \mathbb{R}^{m \times n}, \mathrm{C} \in \mathbb{R}^{p \times n} $, 向量 $ \mathrm{b} \in \mathbb{R}^{m}, d \in \mathbb{R}^{p} $
+\end{problem}
+
+
+% todo (2021-11-25 13:02): figure
+
+在大多数应用中 $ p<n, C x=d $ 是一个欠定方程。它的几何意义是在直线 $ C x=d $ 中，寻找 $ \|A x-b\|_{2}^{2} $ 最小的解。(此时$\|A x-b\|_{2}^{2}$表示一个椭圆)。
+
+特殊情况：
+
+\begin{itemize}
+    \item 当 $ \mathrm{p}=0 $ 时，则其转化为无约束的最小二乘法问题。
+    \item 当 $ \mathrm{A}=I, b=0 $ 时，则其为最小范数问题。
+\end{itemize}
+
+
+
 
 \section{优化问题：分段多项式拟合问题}
 
@@ -382,33 +453,44 @@ $。
 \end{problem}
 
 对于$
-\begin{array}{l}
+\left\{
+    \begin{array}{l}
 f\left(x_{i}\right) \approx y_{i}, x_{i} \leq a \\
 g\left(x_{i}\right) \approx y_{i}, x_{i}>a
 \end{array}
+\right.
 $，可以构造矩阵
 
-$$ A=\left[\begin{array}{cccccccc}1 & x_{1} & \cdots & x_{1}^{d-1} & 0 & 0 & \cdots & 0 \\ \vdots & \vdots & & \vdots & \vdots & \vdots & & \vdots \\ 1 & x_{M} & \cdots & x_{M}^{d-1} & 0 & 0 & \cdots & 0 \\ 0 & 0 & \cdots & 0 & 1 & x_{M+1} & \cdots & x_{M+1}^{d-1} \\ \vdots & \vdots & & \vdots & \vdots & \vdots & & \vdots \\ 0 & 0 & \cdots & 0 & 1 & x_{N} & \cdots & x_{N}^{d-1}\end{array}\right], \theta=\left[\begin{array}{c}\theta_{1} \\ \vdots \\ \theta_{d} \\ \theta_{d+1} \\ \vdots \\ \theta_{2 d}\end{array}\right], b=\left[\begin{array}{c}y_{1} \\ \vdots \\ y_{M} \\ y_{M+1} \\ \vdots \\ y_{N}\end{array}\right] $$
+\begin{notation}
+    $$ A=\left[\begin{array}{cccccccc}1 & x_{1} & \cdots & x_{1}^{d-1} & 0 & 0 & \cdots & 0 \\ \vdots & \vdots & & \vdots & \vdots & \vdots & & \vdots \\ 1 & x_{M} & \cdots & x_{M}^{d-1} & 0 & 0 & \cdots & 0 \\ 0 & 0 & \cdots & 0 & 1 & x_{M+1} & \cdots & x_{M+1}^{d-1} \\ \vdots & \vdots & & \vdots & \vdots & \vdots & & \vdots \\ 0 & 0 & \cdots & 0 & 1 & x_{N} & \cdots & x_{N}^{d-1}\end{array}\right], \theta=\left[\begin{array}{c}\theta_{1} \\ \vdots \\ \theta_{d} \\ \theta_{d+1} \\ \vdots \\ \theta_{2 d}\end{array}\right], b=\left[\begin{array}{c}y_{1} \\ \vdots \\ y_{M} \\ y_{M+1} \\ \vdots \\ y_{N}\end{array}\right] $$
+\end{notation}
 
-则$f(a)=g(a)$可以转化为
+则可以转化为
 
 $$ A \theta \approx b $$
 
 对于$f(a)=g(a), f^{\prime}(a)=g^{\prime}(a)$，可以构造矩阵
 
-$$ C=\left[\begin{array}{cccccccc}1 & a & \cdots & a^{d-1} & -1 & -a & \cdots & -a^{d-1} \\ 0 & 1 & \cdots & (d-1) a^{d-2} & 0 & -1 & \cdots & -(d-1) a^{d-2}\end{array}\right], d=\left[\begin{array}{l}0 \\ 0\end{array}\right] $$
+\begin{notation}
+    $$ C=\left[\begin{array}{cccccccc}1 & a & \cdots & a^{d-1} & -1 & -a & \cdots & -a^{d-1} \\ 0 & 1 & \cdots & (d-1) a^{d-2} & 0 & -1 & \cdots & -(d-1) a^{d-2}\end{array}\right], d=\left[\begin{array}{l}0 \\ 0\end{array}\right] $$
+\end{notation}
+
+
+所以
 
 $$ C \theta=d $$
 
-\begin{problem}
+\begin{problem}[分段多项式拟合问题]
+    假设样本点 $ \left(x_{1}, y_{1}\right), \ldots,\left(x_{N}, y_{N}\right) \in \mathbb{R}^{2} $ ，有 $ x_{1}, \ldots, x_{M} \leq a $, $ x_{M+1}, \ldots, x_{N}>a $。
+
      $$\begin{array}{ll}\min _{\theta} & \sum_{i=1}^{M}\left(f\left(x_{i}\right)-y_{i}\right)^{2}+\sum_{i=M+1}^{N}\left(g\left(x_{i}\right)-y_{i}\right)^{2} \\ \text { s.t. } & f(a)=g(a), f^{\prime}(a)=g^{\prime}(a)\end{array}$$
 \end{problem}
 
 
-\begin{problem}
+\begin{problem}[分段多项式拟合问题（矩阵形式）]
     $$\begin{aligned}
-        &\min _{\theta}\|A \theta-b\|_{2}^{2}\\
-       \text{s.t.} &C \theta=d
+        \min _{\theta}&\|A \theta-b\|_{2}^{2}\\
+       \text{s.t.} & C \theta=d
     \end{aligned}$$
 
 \end{problem}
@@ -416,7 +498,9 @@ $$ C \theta=d $$
 \section{先验假设}
 
 \begin{proposition}
-    堆叠矩阵列线性无关
+    \label{prop:assumption-1}
+
+    堆叠矩阵的列向量线性无关
 $$
 \left[\begin{array}{l}
 A \\
@@ -426,23 +510,30 @@ $$
 \end{proposition}
 
 \begin{proposition}
+    \label{prop:assumption-2}
     矩阵 $ C \in \mathbb{R}^{p \times n} $行线性无关
 
 \end{proposition}
 
 假设 1 是一个比 $ A $ 可右逆更弱的条件。 
 
-$ p \leq n \leq m+p $
+假设$ p \leq n \leq m+p $。
 
-\section{优化问题：最小二乘法约束KKT条件}
+\section{优化问题：最小二乘法的带约束KKT条件}
 
-$ \min _{x} \frac{1}{2}\|A x-b\|_{2}^{2} $
-s.t. $ \quad C x=d $
+\begin{problem}
+    $$\begin{aligned}
+        \min _{x} & \frac{1}{2}\|A x-b\|_{2}^{2}\\
+        s.t. & C x=d
+    \end{aligned}$$
+\end{problem}
+
 
 引入拉格朗日函数:
 $$
 L(x, z)=\frac{1}{2}\|A x-b\|_{2}^{2}-z^{T}(d-C x), z \in \mathbb{R}^{p}
 $$
+
 对拉格朗日函数求导:
 $$
 \begin{array}{l}
@@ -451,16 +542,18 @@ $$
 \end{array}
 $$
 
+可以转换成矩阵形式
+
 $$ \left[\begin{array}{cc}A^{T} A & C^{T} \\ \mathrm{C} & 0\end{array}\right]\left[\begin{array}{l}x \\ z\end{array}\right]=\left[\begin{array}{l}A^{T} b \\ d\end{array}\right] $$
 
 \section{KKT最优条件}
 
-\begin{theorem}[优化条件Karush-Kuhn-Tucker(KKT)等式]
+\begin{definition}[优化条件的Karush-Kuhn-Tucker(KKT)等式]
     令 $ \hat{x} $ 是约束优化问题的解，则有
 $$
 \left[\begin{array}{cc}
-A^{T} A & c^{T} \\
-& 0
+A^{T} A & C^{T} \\
+C& 0
 \end{array}\right]\left[\begin{array}{l}
 \hat{x} \\
 z
@@ -472,25 +565,29 @@ d
 z
 \end{array}\right] \in \mathbb{R}^{n+p}
 $$
-\end{theorem}
+\end{definition}
 
 
-特殊情况
-- 最小二乘法问题：当 $ p=0 $ 时，即为正规方程 $ A^{T} A \hat{x}=A^{T} b $
-- 最小范数问题: 当 $ A=I, b=0 $ 时，可以推导得到 $ C \hat{x}=b, \hat{x}+C^{T} z=0 $
+特殊情况：
+
+\begin{itemize}
+    \item 最小二乘法问题：当 $ p=0 $ 时，即为正规方程 $ A^{T} A \hat{x}=A^{T} b $
+    \item 最小范数问题: 当 $ A=I, b=0 $ 时，可以推导得到 $ C \hat{x}=b, \hat{x}+C^{T} z=0 $
+\end{itemize}
+
 
 \begin{proof}
-    假设 $ x $ 满足 $ C x=d,(\hat{x}, z) $ 满足КKT等式.
+    假设 $ x $ 满足 $ C x=d,(\hat{x}, z) $ 满足KKT等式的定义.
 
     $$\begin{aligned}
-        \| Ax-b\| _{2}^{2} & =\| A(x-\hat{x} )+A\hat{x} -b\| _{2}^{2}\\
-         & =\| A(x-\hat{x} )\| _{2}^{2} +\| A\hat{x} -b\| _{2}^{2} +2(x-\hat{x} )^{T} A^{T} (A\hat{x} -b)\\
-         & = \| A(x-\hat{x} )\| _{2}^{2} +\| A\hat{x} -b\| _{2}^{2} -2(\textcolor[rgb]{0.96,0.65,0.14}{x-\hat{x}} )^{T}\textcolor[rgb]{0.72,0.33,0.31}{C^{T} z\ }\textcolor[rgb]{0,0,0}{(}\textcolor[rgb]{0.96,0.65,0.14}{A^{T} A\hat{x} +C^{T} z=A^{T} b}\textcolor[rgb]{0,0,0}{)(}\textcolor[rgb]{0.72,0.33,0.31}{Cx=C\hat{x} =d}\textcolor[rgb]{0,0,0}{)}\\
-         & =\| A(x-\hat{x} )\| _{2}^{2} +\| A\hat{x} -b\| _{2}^{2}\\
-         & \geq \| A\hat{x} -b\| _{2}^{2}
-        \end{aligned}$$
+    \| Ax-b\| _{2}^{2} & =\| A(x-\hat{x} )+A\hat{x} -b\| _{2}^{2}\\
+        & =\| A(x-\hat{x} )\| _{2}^{2} +\| A\hat{x} -b\| _{2}^{2} +2(x-\hat{x} )^{T} A^{T} (A\hat{x} -b)\\
+        & = \| A(x-\hat{x} )\| _{2}^{2} +\| A\hat{x} -b\| _{2}^{2} -2(\textcolor[rgb]{0.96,0.65,0.14}{x-\hat{x}} )^{T}\textcolor[rgb]{0.72,0.33,0.31}{C^{T} z\ }\textcolor[rgb]{0,0,0}{(}\textcolor[rgb]{0.96,0.65,0.14}{A^{T} A\hat{x} +C^{T} z=A^{T} b}\textcolor[rgb]{0,0,0}{)(}\textcolor[rgb]{0.72,0.33,0.31}{Cx=C\hat{x} =d}\textcolor[rgb]{0,0,0}{)}\\
+        & =\| A(x-\hat{x} )\| _{2}^{2} +\| A\hat{x} -b\| _{2}^{2}\\
+        & \geq \| A\hat{x} -b\| _{2}^{2}
+    \end{aligned}$$
 
-        $ \hat{x} $ 是唯一性，因为假设矩阵A列线性无关， C行线性无关，即
+        $ \hat{x} $ 是唯一的，因为假设矩阵A列线性无关， C行线性无关，即
 $$
 \begin{aligned}
 A^{T} A(\hat{x}-x) &=0 \Rightarrow x=\hat{x} \\
@@ -508,48 +605,61 @@ A^{T} A & C^{T} \\
 \mathrm{C} & 0
 \end{array}\right]
 $$
-为非奇异矩阵
+为非奇异矩阵。  
 \end{theorem}
 
 \begin{proof}
     $$ \begin{aligned}\left[\begin{array}{cc}A^{T} A & C^{T} \\ \mathrm{C} & 0\end{array}\right]\left[\begin{array}{c}x \\ z\end{array}\right]=0 & \Rightarrow x^{T}\left(A^{T} A x+C^{T} z\right)=0, C x=0 \\ & \Rightarrow\|A x\|_{2}^{2}+(C x)^{T} z=\|A x\|_{2}^{2}=0, C x=0 \\ & \Rightarrow A x=0, C x=0 \\ & \Rightarrow x=0 \quad \text { A列线性无关 } \end{aligned} $$
 
-    由于 $ A^{T} \mathrm{~A} x+C^{T} \mathrm{z}=0 $, 则当 $ x=0 $ 时，有 $ \mathrm{z}=0 $ 。 C行线性无关
+    由于 $ A^{T} \mathrm{~A} x+C^{T} \mathrm{z}=0 $, 则当 $ x=0 $ 时，有 $ \mathrm{z}=0 $ 。 
+    
+    所以$C$行线性无关。
 \end{proof}
 
-如果矩阵A列线性无关和 $ C $ 行线性无关不同时成立，则矩阵
+\begin{theorem}
+    如果矩阵A列线性无关和 $ C $ 行线性无关不同时成立，则矩阵
 $$
 \left[\begin{array}{cc}
 A^{T} A & C^{T} \\
 \mathrm{C} & 0
 \end{array}\right]
 $$
-为奇异矩阵
-如果 $ \mathrm{A} $ 列线性相关，则存在 $ x \neq 0 $, 使得 $ A x=0 $, 则
-$$
-\left[\begin{array}{cc}
-A^{T} A & C^{T} \\
-\mathrm{C} & 0
-\end{array}\right]\left[\begin{array}{l}
-x \\
-0
-\end{array}\right]=0
-$$
-如果 $ C $ 行线性相关，则存在 $ z \neq 0 $, 使得 $ C^{T} Z=0 $, 则
-$$
-\left[\begin{array}{cc}
-A^{T} A & C^{T} \\
-\mathrm{C} & 0
-\end{array}\right]\left[\begin{array}{l}
-0 \\
-\mathrm{z}
-\end{array}\right]=0
-$$
-因此该矩阵为奇异矩阵
+为奇异矩阵。
+\end{theorem}
 
-\section{LU分解求解}
+\begin{proof}
+    如果 $ \mathrm{A} $ 列线性相关，则存在 $ x \neq 0 $, 使得 $ A x=0 $, 则
 
-$$
+    $$
+    \left[\begin{array}{cc}
+    A^{T} A & C^{T} \\
+    \mathrm{C} & 0
+    \end{array}\right]\left[\begin{array}{l}
+    x \\
+    0
+    \end{array}\right]=0
+    $$
+
+    如果 $ C $ 行线性相关，则存在 $ z \neq 0 $, 使得 $ C^{T} Z=0 $, 则
+
+    $$
+    \left[\begin{array}{cc}
+    A^{T} A & C^{T} \\
+    \mathrm{C} & 0
+    \end{array}\right]\left[\begin{array}{l}
+    0 \\
+    \mathrm{z}
+    \end{array}\right]=0
+    $$
+
+    因此该矩阵为奇异矩阵。
+\end{proof}
+
+
+\section{LU分解求解KKT最优条件}
+
+\begin{problem}
+    $$
 \left[\begin{array}{cc}
 A^{T} A & C^{T} \\
 C & 0
@@ -561,10 +671,11 @@ A^{T} b \\
 d
 \end{array}\right]
 $$
-算法:
-计算 $ H=A^{T} A\left(2 m n^{2}\right. $ flops $ ) $ 。
-计算 $ c=A^{T} b(2 \mathrm{mn} $ flops $ ) $ 。
-用LU分解法求解下列线性方程 $ \left((2 / 3)(p+n)^{3}\right. $ flops $ ) $ :
+
+\end{problem}
+
+\begin{theorem}
+    用LU分解法求解下列线性方程 $ \left((2 / 3)(p+n)^{3}\right. $ flops $ ) $ 
 $$
 \left[\begin{array}{cc}
 H & C^{T} \\
@@ -578,15 +689,42 @@ d
 \end{array}\right]
 $$
 
-复杂度为: $ 2 m n^{2}+(2 / 3)(p+n)^{3} $ flops 。
 
-\section{QR分解求解}
+\end{theorem}
+
+\begin{algorithm}[htbp]
+    \caption{LU分解求解KKT最优条件}
+    计算 $ H=A^{T} A $\;
+    计算 $ c=A^{T} b $ \;
+\end{algorithm}
+
+第一步的时间复杂度是$\left(2 m n^{2}\right. $ flops $ )$，第二步的时间复杂度是$(2 \mathrm{mn} $ flops $ )$，总时间复杂度为$ 2 m n^{2}+(2 / 3)(p+n)^{3} $ flops 。
+
+\section{QR分解求解KKT最优条件}
+
+\begin{problem}
+    $$
+\left[\begin{array}{cc}
+A^{T} A & C^{T} \\
+C & 0
+\end{array}\right]\left[\begin{array}{l}
+x \\
+z
+\end{array}\right]=\left[\begin{array}{c}
+A^{T} b \\
+d
+\end{array}\right]
+$$
+
+\end{problem}
+
 
 由于 $ \hat{x} $ 满足 $ C \hat{x}=d $ ，则有 $ C^{\mathrm{T}} C \hat{x}=C^{\mathrm{T}} d $ ，可得
 $$
 L(x, z)=\frac{1}{2}\|A x-b\|_{2}^{2}-z^{T}(d-C x)
 $$
-KKT条件:
+
+由KKT条件可得
 $$
 \begin{aligned}
 \nabla_{x} L(x, z) &=A^{T}(A \hat{x}-b)+C^{T} z+C^{T} C \hat{x}-C^{T} d=0 \\
@@ -595,7 +733,7 @@ $$
 \end{aligned}
 $$
 
-令 $ w=z-d $ ， KKT条件写成：
+令 $ w=z-d $ ， KKT条件写成
 $$
 \left[\begin{array}{cc}
 A^{T} A+C^{T} C & C^{T} \\
@@ -608,10 +746,14 @@ A^{T} b \\
 d
 \end{array}\right]
 $$
-假设 1 保证了 $ A^{T} A+C^{T} C $ 是非奇异的，即存在以下 $ Q R $ 因子分解：
-$ \left[\begin{array}{l}A \\ C\end{array}\right] $ 列向量无关，则 $ \left[\begin{array}{l}A \\ C\end{array}\right]=Q R=\left[\begin{array}{l}Q_{1} \\ Q_{2}\end{array}\right] R=\left[\begin{array}{l}Q_{1} R \\ Q_{2} R\end{array}\right] $
 
-代入QR分解，可得：
+假设 1(\ref{prop:assumption-1}) 保证了 $ A^{T} A+C^{T} C $ 是非奇异的，即存在以下 $ Q R $ 因子分解
+
+$ \left[\begin{array}{l}A \\ C\end{array}\right] $ 列向量无关，则 
+
+$$ \left[\begin{array}{l}A \\ C\end{array}\right]=Q R=\left[\begin{array}{l}Q_{1} \\ Q_{2}\end{array}\right] R=\left[\begin{array}{l}Q_{1} R \\ Q_{2} R\end{array}\right] $$
+
+代入QR分解，可得
 $$
 \left[\begin{array}{cc}
 R^{T} R & R^{T} Q_{2}^{T} \\
@@ -624,7 +766,8 @@ R^{T} Q_{1}^{T} b \\
 d
 \end{array}\right]
 $$
-将第一个方程两边乘 $ R^{-T} $ 和并令变量 $ y=R \hat{x} $ 相乘，可得:
+
+将第一个方程两边乘 $ R^{-T} $ 和并令变量 $ y=R \hat{x} $ 相乘，可得
 $$
 \left[\begin{array}{cc}
 I & Q_{2}^{T} \\
@@ -638,11 +781,11 @@ d
 \end{array}\right]
 $$
 
-矩阵 $ C=Q_{2} R \Rightarrow Q_{2}=C R^{-1}, Q_{2} $ 具有行线性无关:
+矩阵 $ C=Q_{2} R \Rightarrow Q_{2}=C R^{-1}, Q_{2} $ 具有行线性无关
 $$
 Q_{2}^{T} u=R^{-T} C^{T} u=0 \quad \Rightarrow \quad C^{T} u=0 \quad \Rightarrow \quad u=0
 $$
-因为 $ C $ 行线性无关的(假设2)。
+因为 $ C $ 行线性无关的(假设2(\ref{prop:assumption-2}))。
 
 利用 $ Q_{2}^{T} $ 的 $ Q R $ 分解来求解:
 $$
@@ -657,11 +800,13 @@ Q_{1}^{T} b \\
 d
 \end{array}\right]
 $$
-方程第1行可得 $ y=Q_{1}^{T} b-Q_{2}^{T} w $ ，并代入第二行:
+
+方程第1行可得 $ y=Q_{1}^{T} b-Q_{2}^{T} w $ ，并代入第二行
 $$
 Q_{2} y=d \Rightarrow Q_{2} Q_{2}^{T} w=Q_{2} Q_{1}^{T} b-d
 $$
-用 $ \mathrm{QR} $ 分解 $ Q_{2}^{T}=\tilde{Q} \tilde{R} $ 来解这个关于 $ w $ 的方程:
+
+用QR分解 $ Q_{2}^{T}=\tilde{Q} \tilde{R} $ 来解这个关于 $ w $ 的方程:
 $$
 \tilde{R}^{T} \tilde{R} w=\tilde{R}^{T} \tilde{Q}^{T} Q_{1}^{T} b-d
 $$
@@ -674,27 +819,38 @@ $$
 $$ \left[\begin{array}{cc}A^{T} A+C^{T} C & C^{T} \\ C & 0\end{array}\right]\left[\begin{array}{c}\hat{x} \\ w\end{array}\right]=\left[\begin{array}{c}A^{T} b \\ d\end{array}\right] \quad \tilde{R} w=\tilde{Q}^{T} Q_{1}^{T} b-\tilde{R}^{-T} d $$
 
 算法过程:
-1. 计算两个QR分解:
+
+\begin{algorithm}[htbp]
+    \caption{QR分解求解KKT最优条件}
+    计算两个QR分解
 $$
 \left[\begin{array}{l}
-{ }_{C}^{A} \\
+A\\
 C
 \end{array}\right]=\left[\begin{array}{l}
 Q_{1} \\
 Q_{2}
 \end{array}\right] R, Q_{2}^{T}=\tilde{Q} \tilde{R}
-$$
-2. 用前代法求解 $ \tilde{R}^{T} u=d $ ，计算 $ c=\tilde{Q}^{T} Q_{1}^{T} b-u $ 。
-3. 用回代法求解 $ \tilde{R} w=c $ ，计算 $ y=Q_{1}^{T} b-Q_{2}^{T} w $ 。
-4. 用回代法计算 $ R \hat{x}=y_{\circ} $
-复杂度: $ Q R $ 分解有 $ 2(p+m) n^{2}+2 n p^{2} $ 次flops。
+$$\;
+用前代法求解 $ \tilde{R}^{T} u=d $ ，计算 $ c=\tilde{Q}^{T} Q_{1}^{T} b-u $\;
+用回代法求解 $ \tilde{R} w=c $ ，计算 $ y=Q_{1}^{T} b-Q_{2}^{T} w $\;
+用回代法计算 $ R \hat{x}=y_{\circ} $\;
 
-\section{复杂度QR vs LU}
+\end{algorithm}
+
+总时间复杂度: QR分解有 $ 2(p+m) n^{2}+2 n p^{2} $ 次flops。
+
+
+\section{KKT最优条件求解复杂度：QR vs LU}
 
 假设 $ p<n $ :
-■ LU复杂度: $ 2 m n^{2}+(2 / 3)(p+n)^{3}<2 m n^{2}+(16 / 3) n^{3} $
-QR复杂度: $ 2(p+m) n^{2}+2 n p^{2}<2 m n^{2}+4 n^{3} $
-稳定性: $ \mathrm{QR} $ 分解避免直接计算 $ A^{T} \mathrm{~A}_{\circ} $
+
+\begin{itemize}
+    \item LU复杂度: $ 2 m n^{2}+(2 / 3)(p+n)^{3}<2 m n^{2}+(16 / 3) n^{3} $
+    \item QR复杂度: $ 2(p+m) n^{2}+2 n p^{2}<2 m n^{2}+4 n^{3} $
+\end{itemize}
+
+稳定性: QR分解避免直接计算 $ A^{T} \mathrm{~A}_{\circ} $。
 
 \section[Supplement Material: Karush-Kuhn-Tucker (KKT)条件]{Supplement Material: Karush-Kuhn-Tucker (KKT)条件\footnote{Cited from \url{https://zhuanlan.zhihu.com/p/38163970}.}}
 

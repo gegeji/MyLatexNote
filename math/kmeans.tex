@@ -11,15 +11,16 @@
 
 \begin{definition}[高阶无穷小记号 $o$]
     设 $ x, y $ 是同一变化过程中的无穷小, 即 $ x \rightarrow 0, y \rightarrow 0 $, 如果它们极限
+
 $$
-\lim \frac{y}{x}=0
+\lim_{x \rightarrow 0, y \rightarrow 0} \frac{y}{x}=0
 $$
 
 则称 $ y $ 是 $ x $ 的高阶无穷小, 记作 $ y=o(x) $.
 \end{definition}
 
 \begin{corollary}
-    $$ \lim \frac{y}{C x}=\frac{1}{C} \lim \frac{y}{x}=0 $$
+    $$ \lim_{x \rightarrow 0, y \rightarrow 0} \frac{y}{C x}=\frac{1}{C} \lim_{x \rightarrow 0, y \rightarrow 0} \frac{y}{x}=0 $$
 
     也即则称 $ y $ 是 $ C x $ 的高阶无穷小, 记作 $ y=o(C x) $ . 
 \end{corollary}
@@ -60,7 +61,6 @@ $$
     $$ f(\hat{x})=0 \geq f(x), \quad x \in \mathbf{R} $$
 
 
-    (最大值!)
 \end{example}
 
 \section{Convex Set}
@@ -99,7 +99,7 @@ $$
 
 \begin{example}
     \label{Example:NormIsConvex}
-    $ f(x)=\|x\| $, 其中 $ \| $ • $ \| $ 表示 $ \mathbb{R}^{n} $ 上的向量范数, $ x \in \mathbb{R}^{n} $.
+    $ f(x)=\|x\| $, 其中 $ \|  \cdot \| $ 表示 $ \mathbb{R}^{n} $ 上的向量范数, $ x \in \mathbb{R}^{n} $.
 \end{example}
 
 \begin{proof}
@@ -178,10 +178,11 @@ $$
 \begin{example}
     $$ f(z)=x^{T} z+z^{T} z=\sum_{i=1}^{n}\left\{x_{i} z_{i}+z_{i}^{2}\right\} $$
 
+    它的导数是
     $$ \nabla f(z)=\left[\begin{array}{c}\frac{\partial f(z)}{\partial z_{1}} \\ \vdots \\ \frac{\partial f(z)}{\partial z_{n}}\end{array}\right]=\left[\begin{array}{c}x_{1}+2 z_{1} \\ \vdots \\ x_{n}+2 z_{n}\end{array}\right]=x+2 z $$
 \end{example}
 
-% todo reference
+
 问题\ref{Problem:ClusteringCenter}中已知目标函数是凸函数. （见\ref{Example:SquareIsConvex}, \ref{Example:NormIsConvex}, \ref{Example:L2NormIsConvex}）
 
 则可以求解
@@ -257,9 +258,14 @@ $$ \sum_{i=1}^{n}\left(x_{i}-m\right)=\sum_{i=1}^{n} x_{i}-n m=\sum_{i=1}^{n} x_
 
 
 \begin{problem}
-    假设$ a, b \in \mathbb{R}^{n}, a \neq 0, t \in \mathbb{R} $, 当$t$ 多大时, $ta$到$b$之间的距离最小
+    假设$ a, b \in \mathbb{R}^{n}, a \neq 0, t \in \mathbb{R}$, 当$t$ 多大时, $ta$到$b$之间的距离最小
 
     $$ \hat{t}=\min _{t}\|t a-b\|_{2}^{2} $$
+\end{problem}
+
+    \begin{remark}
+        t是标量，ta是向量.
+    \end{remark}
 
     定义
     $$ f(t)=\|t a-b\|_{2}^{2}=\langle t a-b, t a-b\rangle=t^{2} a^{T} a-2 t a^{T} b+b^{T} b $$
@@ -269,7 +275,7 @@ $$ \sum_{i=1}^{n}\left(x_{i}-m\right)=\sum_{i=1}^{n} x_{i}-n m=\sum_{i=1}^{n} x_
     $$ \nabla f(t)=2 t a^{T} a-2 a^{T} b=0 $$
 
     $$ \hat{t}=\frac{a^{T} b}{a^{T} a}=\frac{a^{T} b}{\|a\|_{2}^{2}} $$
-\end{problem}
+
 
 
 
