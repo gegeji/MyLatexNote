@@ -22,10 +22,11 @@ $$ f(x)=3 x_{2}^{2}-4 x_{2}+2 $$
 即当 $ \hat{x}_{2}=\frac{2}{3} $ 时，目标函数值最小，并有 $ \hat{x}_{1}=1-\hat{x}_{2}=\frac{1}{3} $ 。
 
 \begin{FigureCenter}{The Geometry of the problem}
+    \label{fig:geometry-of-the-problem}
     \input{tikz_images/constrainted-least-square.tex}
 \end{FigureCenter}
 
-惩罚未能满足约束条件, 引入\term{拉格朗日函数 (Lagrange Function)}
+为了惩罚这个解未能满足约束条件, 引入\term{拉格朗日函数 (Lagrange Function)}
 $$
 L(x, \lambda)=f(x)-\lambda h(x)=2 x_{1}^{2}+x_{2}^{2}+\lambda\left(1-x_{1}-x_{2}\right)
 $$
@@ -34,14 +35,14 @@ $$
 
 $$ \left.\begin{array}{l}\frac{\partial L}{\partial x_{1}}=4 x_{1}-\lambda=0 \\ \frac{\partial L}{\partial x_{2}}=2 x_{2}-\lambda=0 \\ \frac{\partial L}{\partial \lambda}=1-x_{1}-x_{2}=0\end{array}\right \} \Rightarrow \hat{x}_{1}=\frac{1}{3}, \hat{x}_{2}=\frac{2}{3}, \hat{\lambda}=\frac{4}{3} $$
 
-\begin{definition}[Lagrange Functions]
+\begin{definition}[拉格朗日乘子法和Lagrange Functions]
     $$\begin{aligned}
         \min _{x} / \max_{x}& f(x) \\
 \text{ s.t. } & h_{i}(x)=0, i \in I \triangleq\{1, \cdots, p\} \\
 &g_{j}(x) \leq 0, j \in J \triangleq\{1, \cdots, q\}
     \end{aligned}$$
 
-$ \lambda_{i} \in \mathbb{R}, i \in \mathrm{I}, u_{j} \in \mathbb{R}^{+}, j \in J $称为拉格朗日乘子(Lagrange Multipliers) 。
+$ \lambda_{i} \in \mathbb{R}, i \in \mathrm{I}, u_{j} \in \mathbb{R}^{+}, j \in J $称为\term{拉格朗日乘子(Lagrange Multipliers)} 。
 
 引入拉格朗日函数 $$ L(x, \lambda, u)=f(x)-\sum_{i \in I} \lambda_{i} h_{i}(x)-\sum_{j \in J} u_{j} g_{j}(x)   $$
 
@@ -52,12 +53,19 @@ $ \lambda_{i} \in \mathbb{R}, i \in \mathrm{I}, u_{j} \in \mathbb{R}^{+}, j \in 
 
 $$ L(x, \lambda, u)=f(x) - \lambda^T h(x) - u^T g(x)$$
 
-对拉格朗日函数进行求导
+拉格朗日乘子法求得的解要使拉格朗日函数的梯度为0。
+
+\end{definition}
+
+\begin{theorem}[拉格朗日函数求导]
+    对拉格朗日函数进行求导，有
 
 $$ \nabla_{x} L(x, \lambda, u)=\nabla_{x} f(x)-\sum_{i \in I} \lambda_{i} \nabla_{x} h_{i}(x)-\sum_{j \in J} u_{j} \nabla_{x} g_{j}(x)=0 $$
 
+$$\nabla_{x} f(x)=\sum_{i \in I} \lambda_{i} \nabla_{x} h_{i}(x)+\sum_{j \in J} u_{j} \nabla_{x} g_{j}(x)$$
 
-\end{definition}
+    与图\ref{fig:geometry-of-the-problem}中的结论相符。
+\end{theorem}
 
 \begin{theorem}[Karush-Kuhn-Tucker Conditions] 
     对于优化问题
@@ -156,7 +164,7 @@ $$\begin{aligned}
 
 假如$p = n$，$C x=d$表示一个点。
 
-\begin{FigureCenter}{最小范数优化问题}
+\begin{FigureCenter}{最小范数优化问题($p < n$)}
     \input{tikz_images/minimal-norm.tex}
 \end{FigureCenter}
 
@@ -243,6 +251,8 @@ $$
 \text { s.t. }& C x=d
 \end{array}
 $$
+
+求其最优解。
 \end{problem}
 
 引入拉格朗日函数
@@ -269,7 +279,7 @@ $$
 \hat{x}=C^{T} \lambda=C^{T}\left(C C^{T}\right)^{-1} d=C^{\dagger} d
 $$
 
-以上得到的是$\hat{x}=C^{\dagger} d$是问题最优解的必要条件。
+以上得到的是$\hat{x}=C^{\dagger} d$是问题最优解的必要条件。还需要证明它是最优解。
 
 \begin{theorem}
     $\hat{x}=C^{\dagger} d$是问题最优解。
@@ -337,7 +347,7 @@ $$
 
 \subsection{QR分解求解最小范数优化问题的复杂度}
 
-总复杂度: $ \approx 2 n p^{2} $ flops
+总复杂度：$ \approx 2 n p^{2} $ flops
 
 \begin{itemize}
     \item 矩阵 $ C^{T}=Q R $ 分解， $ C^{T}=Q R\left(2 n p^{2}\right. $ flops $ ) $
@@ -399,13 +409,13 @@ $。
 
 \section{最小二乘法约束问题}
 
-\begin{problem}
+\begin{problem}[分段多项式拟合问题]
     $$\begin{aligned}
         \min _{x} &\|A x-b\|_{2}^{2} \\
         \text{s.t.} & Cx =d 
     \end{aligned}$$
 
-    矩阵 $ \mathrm{A} \in \mathbb{R}^{m \times n}, \mathrm{C} \in \mathbb{R}^{p \times n} $, 向量 $ \mathrm{b} \in \mathbb{R}^{m}, d \in \mathbb{R}^{p} $
+    矩阵 $ {A} \in \mathbb{R}^{m \times n}, {C} \in \mathbb{R}^{p \times n} $, 向量 $ {b} \in \mathbb{R}^{m}, d \in \mathbb{R}^{p} $
 \end{problem}
 
 
@@ -416,8 +426,8 @@ $。
 特殊情况：
 
 \begin{itemize}
-    \item 当 $ \mathrm{p}=0 $ 时，则其转化为无约束的最小二乘法问题。
-    \item 当 $ \mathrm{A}=I, b=0 $ 时，则其为最小范数问题。
+    \item 当 $ {p}=0 $ 时，则其转化为无约束的最小二乘法问题。
+    \item 当 $ {A}=I, b=0 $ 时，则其为最小范数问题。
 \end{itemize}
 
 
@@ -426,9 +436,9 @@ $。
 \section{优化问题：分段多项式拟合问题}
 
 \begin{problem}
-    假设样本点 $ \left(x_{1}, y_{1}\right), \ldots,\left(x_{N}, y_{N}\right) \in \mathbb{R}^{2} $ ，有 $ x_{1}, \ldots, x_{M} \leq a $, $ x_{M+1}, \ldots, x_{N}>a $。
+    假设样本点 $ \left(x_{1}, y_{1}\right), \ldots,\left(x_{N}, y_{N}\right) \in \mathbb{R}^{2} $ ，有 $$ x_{1}, \ldots, x_{M} \leq a , x_{M+1}, \ldots, x_{N}>a$$
 
-    设$ \mathrm{d} $ 阶多项式 
+    设$ {d} $ 阶多项式 
 
     $$
     \begin{aligned}
@@ -462,17 +472,47 @@ g\left(x_{i}\right) \approx y_{i}, x_{i}>a
 $，可以构造矩阵
 
 \begin{notation}
-    $$ A=\left[\begin{array}{cccccccc}1 & x_{1} & \cdots & x_{1}^{d-1} & 0 & 0 & \cdots & 0 \\ \vdots & \vdots & & \vdots & \vdots & \vdots & & \vdots \\ 1 & x_{M} & \cdots & x_{M}^{d-1} & 0 & 0 & \cdots & 0 \\ 0 & 0 & \cdots & 0 & 1 & x_{M+1} & \cdots & x_{M+1}^{d-1} \\ \vdots & \vdots & & \vdots & \vdots & \vdots & & \vdots \\ 0 & 0 & \cdots & 0 & 1 & x_{N} & \cdots & x_{N}^{d-1}\end{array}\right], \theta=\left[\begin{array}{c}\theta_{1} \\ \vdots \\ \theta_{d} \\ \theta_{d+1} \\ \vdots \\ \theta_{2 d}\end{array}\right], b=\left[\begin{array}{c}y_{1} \\ \vdots \\ y_{M} \\ y_{M+1} \\ \vdots \\ y_{N}\end{array}\right] $$
+    $$\displaystyle A=\left[\begin{array}{ c c c c c c c c }
+        \textcolor[rgb]{0.72,0.33,0.31}{\boldsymbol{1}} & \textcolor[rgb]{0.72,0.33,0.31}{\boldsymbol{x_{1}}} & \textcolor[rgb]{0.72,0.33,0.31}{\boldsymbol{\cdots }} & \textcolor[rgb]{0.72,0.33,0.31}{\boldsymbol{x_{1}^{d-1}}} & 0 & 0 & \cdots  & 0\\
+        \vdots  & \vdots  &  & \vdots  & \vdots  & \vdots  &  & \vdots \\
+        1 & x_{M} & \cdots  & x_{M}^{d-1} & 0 & 0 & \cdots  & 0\\
+        0 & 0 & \cdots  & 0 & 1 & x_{M+1} & \cdots  & x_{M+1}^{d-1}\\
+        \vdots  & \vdots  &  & \vdots  & \vdots  & \vdots  &  & \vdots \\
+        0 & 0 & \cdots  & 0 & 1 & x_{N} & \cdots  & x_{N}^{d-1}
+        \end{array}\right] ,\theta =\left[\begin{array}{ c }
+        \textcolor[rgb]{0.72,0.33,0.31}{\boldsymbol{\theta _{1}}}\\
+        \textcolor[rgb]{0.72,0.33,0.31}{\boldsymbol{\vdots }}\\
+        \textcolor[rgb]{0.72,0.33,0.31}{\boldsymbol{\theta _{d}}}\\
+        \theta _{d+1}\\
+        \vdots \\
+        \theta _{2d}
+        \end{array}\right] ,b=\left[\begin{array}{ c }
+        \textcolor[rgb]{0.72,0.33,0.31}{\boldsymbol{y_{1}}}\\
+        \vdots \\
+        y_{M}\\
+        y_{M+1}\\
+        \vdots \\
+        y_{N}
+        \end{array}\right]$$
 \end{notation}
 
 则可以转化为
 
 $$ A \theta \approx b $$
 
-对于$f(a)=g(a), f^{\prime}(a)=g^{\prime}(a)$，可以构造矩阵
+对于约束条件$f(a)=g(a), f^{\prime}(a)=g^{\prime}(a)$，可以构造矩阵
 
 \begin{notation}
-    $$ C=\left[\begin{array}{cccccccc}1 & a & \cdots & a^{d-1} & -1 & -a & \cdots & -a^{d-1} \\ 0 & 1 & \cdots & (d-1) a^{d-2} & 0 & -1 & \cdots & -(d-1) a^{d-2}\end{array}\right], d=\left[\begin{array}{l}0 \\ 0\end{array}\right] $$
+    $$ C=\left[\begin{array}{cccccccc}1 & a & \cdots & a^{d-1} & -1 & -a & \cdots & -a^{d-1} \\ 0 & 1 & \cdots & (d-1) a^{d-2} & 0 & -1 & \cdots & -(d-1) a^{d-2}\end{array}\right], 
+    \theta =\left[\begin{array}{ c }
+        \theta _{1}\\
+        \vdots \\
+        \theta _{d}\\
+        \theta _{d+1}\\
+        \vdots \\
+        \theta _{2d}
+        \end{array}\right], 
+    d=\left[\begin{array}{l}0 \\ 0\end{array}\right] $$
 \end{notation}
 
 
@@ -480,12 +520,15 @@ $$ A \theta \approx b $$
 
 $$ C \theta=d $$
 
+对于分段多项式拟合问题
+
 \begin{problem}[分段多项式拟合问题]
     假设样本点 $ \left(x_{1}, y_{1}\right), \ldots,\left(x_{N}, y_{N}\right) \in \mathbb{R}^{2} $ ，有 $ x_{1}, \ldots, x_{M} \leq a $, $ x_{M+1}, \ldots, x_{N}>a $。
 
      $$\begin{array}{ll}\min _{\theta} & \sum_{i=1}^{M}\left(f\left(x_{i}\right)-y_{i}\right)^{2}+\sum_{i=M+1}^{N}\left(g\left(x_{i}\right)-y_{i}\right)^{2} \\ \text { s.t. } & f(a)=g(a), f^{\prime}(a)=g^{\prime}(a)\end{array}$$
 \end{problem}
 
+最终可以转换成矩阵形式
 
 \begin{problem}[分段多项式拟合问题（矩阵形式）]
     $$\begin{aligned}
@@ -529,27 +572,55 @@ $$
 \end{problem}
 
 
-引入拉格朗日函数:
+引入拉格朗日函数
 $$
 L(x, z)=\frac{1}{2}\|A x-b\|_{2}^{2}-z^{T}(d-C x), z \in \mathbb{R}^{p}
 $$
 
-对拉格朗日函数求导:
-$$
-\begin{array}{l}
+对拉格朗日函数求导
+
+
+\begin{equation}
+    \centering
+    \label{eqn:kkt-deriavative}
+    \begin{array}{l}
 \nabla_{x} L(x, z)=A^{T}(A x-b)+C^{T} z=0 \\
 \nabla_{z} L(x, z)=C x-d=0
 \end{array}
-$$
+\end{equation}
+
+
+
+\begin{remark}
+    使用矩阵导数
+
+    $$ \begin{aligned} \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}\left(\mathbf{X}^{T} \mathbf{B X}\right) &=\mathbf{B X}+\mathbf{B}^{T} \mathbf{X} \\ \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}\left(\mathbf{B X X}^{T}\right) &=\mathbf{B X}+\mathbf{B}^{T} \mathbf{X} \\ \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}\left(\mathbf{X X}^{T} \mathbf{B}\right) &=\mathbf{B X}+\mathbf{B}^{T} \mathbf{X} \\ \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}\left(\mathbf{X B X}^{T}\right) &=\mathbf{X B}^{T}+\mathbf{X B} \\ \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}\left(\mathbf{B X}^{T} \mathbf{X}\right) &=\mathbf{X B}^{T}+\mathbf{X B} \\ \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}\left(\mathbf{X}^{T} \mathbf{X B}\right) &=\mathbf{X B}^{T}+\mathbf{X B} \end{aligned} $$
+
+    可以求得
+
+    $$\begin{aligned}
+        \frac{\partial \frac{1}{2} \| Ax-b\| _{2}^{2}}{\partial x} & =\frac{\partial \frac{1}{2}\left( x^{T} A^{T} Ax-2x^{T} A^{T} b+b^{T} b\right)}{\partial x}\\
+         & =\frac{\partial \frac{1}{2}\operatorname{tr}\left( x^{T} A^{T} Ax\right)}{\partial x} -\frac{\partial x^{T} A^{T} b}{\partial x}\\
+         & =\frac{1}{2} \cdotp 2A^{T} Ax-A^{T} b\\
+         & =A^{T}( Ax-b)
+        \end{aligned}$$
+\end{remark}
 
 可以转换成矩阵形式
 
-$$ \left[\begin{array}{cc}A^{T} A & C^{T} \\ \mathrm{C} & 0\end{array}\right]\left[\begin{array}{l}x \\ z\end{array}\right]=\left[\begin{array}{l}A^{T} b \\ d\end{array}\right] $$
+$$ \left[\begin{array}{cc}A^{T} A & C^{T} \\ {C} & 0\end{array}\right]\left[\begin{array}{l}x \\ z\end{array}\right]=\left[\begin{array}{l}A^{T} b \\ d\end{array}\right] $$
 
 \section{KKT最优条件}
 
-\begin{definition}[优化条件的Karush-Kuhn-Tucker(KKT)等式]
-    令 $ \hat{x} $ 是约束优化问题的解，则有
+\begin{problem}
+    $$\begin{aligned}
+        \min _{x} & \frac{1}{2}\|A x-b\|_{2}^{2}\\
+        s.t. & C x=d
+    \end{aligned}$$
+\end{problem}
+
+\begin{theorem}[优化条件的Karush-Kuhn-Tucker(KKT)等式]
+    令 $ \hat{x} $ 是上述约束优化问题的解，则有
 $$
 \left[\begin{array}{cc}
 A^{T} A & C^{T} \\
@@ -565,7 +636,9 @@ d
 z
 \end{array}\right] \in \mathbb{R}^{n+p}
 $$
-\end{definition}
+
+则它是最优解。
+\end{theorem}
 
 
 特殊情况：
@@ -577,78 +650,100 @@ $$
 
 
 \begin{proof}
-    假设 $ x $ 满足 $ C x=d,(\hat{x}, z) $ 满足KKT等式的定义.
+    假设 $ x $ 满足 $ C x=d,(\hat{x}, z) $ 满足KKT等式$ \left[\begin{array}{cc}A^{T} A & C^{T} \\ {C} & 0\end{array}\right]\left[\begin{array}{l}x \\ z\end{array}\right]=\left[\begin{array}{l}A^{T} b \\ d\end{array}\right] $的定义，即$x$是另一个解。
+
+    所以有
 
     $$\begin{aligned}
-    \| Ax-b\| _{2}^{2} & =\| A(x-\hat{x} )+A\hat{x} -b\| _{2}^{2}\\
-        & =\| A(x-\hat{x} )\| _{2}^{2} +\| A\hat{x} -b\| _{2}^{2} +2(x-\hat{x} )^{T} A^{T} (A\hat{x} -b)\\
-        & = \| A(x-\hat{x} )\| _{2}^{2} +\| A\hat{x} -b\| _{2}^{2} -2(\textcolor[rgb]{0.96,0.65,0.14}{x-\hat{x}} )^{T}\textcolor[rgb]{0.72,0.33,0.31}{C^{T} z\ }\textcolor[rgb]{0,0,0}{(}\textcolor[rgb]{0.96,0.65,0.14}{A^{T} A\hat{x} +C^{T} z=A^{T} b}\textcolor[rgb]{0,0,0}{)(}\textcolor[rgb]{0.72,0.33,0.31}{Cx=C\hat{x} =d}\textcolor[rgb]{0,0,0}{)}\\
-        & =\| A(x-\hat{x} )\| _{2}^{2} +\| A\hat{x} -b\| _{2}^{2}\\
-        & \geq \| A\hat{x} -b\| _{2}^{2}
-    \end{aligned}$$
+        \| Ax-b\| _{2}^{2} & =\| A(x-\hat{x} )+A\hat{x} -b\| _{2}^{2}\\
+         & =\| A(x-\hat{x} )\| _{2}^{2} +\| A\hat{x} -b\| _{2}^{2} +2(x-\hat{x} )^{T} A^{T} (A\hat{x} -b)\\
+         & =\| A(x-\hat{x} )\| _{2}^{2} +\| A\hat{x} -b\| _{2}^{2} -\underbrace{2(x-\hat{x} )^{T}}_{\textcolor[rgb]{0.96,0.65,0.14}{(Cx=C\hat{x} =d)}}\underbrace{C^{T} z}_{\textcolor[rgb]{0.72,0.33,0.31}{ \left( A^{T} A\hat{x} +C^{T} z=A^{T} b\right)}}\\
+         & =\| A(x-\hat{x} )\| _{2}^{2} +\| A\hat{x} -b\| _{2}^{2}\\
+         & \geq \| A\hat{x} -b\| _{2}^{2}
+        \end{aligned}$$
 
-        $ \hat{x} $ 是唯一的，因为假设矩阵A列线性无关， C行线性无关，即
-$$
-\begin{aligned}
-A^{T} A(\hat{x}-x) &=0 \Rightarrow x=\hat{x} \\
-C^{T}(\hat{z}-z) &=0 \Rightarrow \hat{z}=z \\
-A^{T} A \hat{x}+C^{T} z &=A^{T} b
-\end{aligned}
-$$
+    \begin{remark}
+        $x$ 和 $\hat{x}$ 都是KKT等式的解，所以 $Cx = C \hat{x} = d$.
+
+        由拉格朗日函数求导\ref{eqn:kkt-deriavative}，有
+        $$\ A^{T} A\hat{x} +C^{T} z=A^{T} b$$
+        
+    \end{remark}
+
+        所以$\hat{x}$是最优解。
 \end{proof}
 
+\begin{theorem}[KKT等式最优解的唯一性]
+    最优解$ \hat{x} $ 是唯一的。
+\end{theorem}
+
+\begin{proof}
+    假设矩阵$A$列线性无关， $C$行线性无关，即
+    $$
+    \begin{aligned}
+    A^{T} A(\hat{x}-x) &=0 \Rightarrow x=\hat{x} \quad (A^TA 可逆) \\
+    C^{T}(\hat{z}-z) &=0 \Rightarrow \hat{z}=z \\
+    \end{aligned}
+    $$
+
+    所以对于方程
+    $$A^{T} A \hat{x}+C^{T} z =A^{T} b$$
+
+    $\left[\begin{array}{l}x \\ z\end{array}\right]$也是唯一的。
+\end{proof}
+        
 \begin{theorem}
-    如果矩阵A列线性无关， C行线性无关，则矩阵
+    如果矩阵$A$列线性无关， $C$行线性无关，则矩阵
 $$
 \left[\begin{array}{cc}
 A^{T} A & C^{T} \\
-\mathrm{C} & 0
+{C} & 0
 \end{array}\right]
 $$
 为非奇异矩阵。  
 \end{theorem}
 
 \begin{proof}
-    $$ \begin{aligned}\left[\begin{array}{cc}A^{T} A & C^{T} \\ \mathrm{C} & 0\end{array}\right]\left[\begin{array}{c}x \\ z\end{array}\right]=0 & \Rightarrow x^{T}\left(A^{T} A x+C^{T} z\right)=0, C x=0 \\ & \Rightarrow\|A x\|_{2}^{2}+(C x)^{T} z=\|A x\|_{2}^{2}=0, C x=0 \\ & \Rightarrow A x=0, C x=0 \\ & \Rightarrow x=0 \quad \text { A列线性无关 } \end{aligned} $$
+    $$ \begin{aligned}\left[\begin{array}{cc}A^{T} A & C^{T} \\ {C} & 0\end{array}\right]\left[\begin{array}{c}x \\ z\end{array}\right]=0 & \Rightarrow x^{T}\left(A^{T} A x+C^{T} z\right)=0, C x=0 \\ & \Rightarrow\|A x\|_{2}^{2}+(C x)^{T} z=\|A x\|_{2}^{2}=0, C x=0 \\ & \Rightarrow A x=0, C x=0 \\ & \Rightarrow x=0 \quad (A\text {列线性无关}) \end{aligned} $$
 
-    由于 $ A^{T} \mathrm{~A} x+C^{T} \mathrm{z}=0 $, 则当 $ x=0 $ 时，有 $ \mathrm{z}=0 $ 。 
+    由于 $ A^{T} A x+C^{T} {z}=0 $, 则当 $ x=0 $ 时，有 $ {z}=0 $ 。 
     
     所以$C$行线性无关。
 \end{proof}
 
 \begin{theorem}
-    如果矩阵A列线性无关和 $ C $ 行线性无关不同时成立，则矩阵
+    如果矩阵$A$列线性无关和 $ C $ 行线性无关不同时成立，则矩阵
 $$
 \left[\begin{array}{cc}
 A^{T} A & C^{T} \\
-\mathrm{C} & 0
+{C} & 0
 \end{array}\right]
 $$
 为奇异矩阵。
 \end{theorem}
 
 \begin{proof}
-    如果 $ \mathrm{A} $ 列线性相关，则存在 $ x \neq 0 $, 使得 $ A x=0 $, 则
+    如果 $ {A} $ 列线性相关，则存在 $ x \neq 0 $, 使得 $ A x=0 $, 则
 
     $$
     \left[\begin{array}{cc}
     A^{T} A & C^{T} \\
-    \mathrm{C} & 0
+    {C} & 0
     \end{array}\right]\left[\begin{array}{l}
     x \\
     0
     \end{array}\right]=0
     $$
 
-    如果 $ C $ 行线性相关，则存在 $ z \neq 0 $, 使得 $ C^{T} Z=0 $, 则
+    如果 $ C $ 行线性相关，则存在 $ z \neq 0 $, 使得 $ C^{T} z=0 $, 则
 
     $$
     \left[\begin{array}{cc}
     A^{T} A & C^{T} \\
-    \mathrm{C} & 0
+    {C} & 0
     \end{array}\right]\left[\begin{array}{l}
     0 \\
-    \mathrm{z}
+    {z}
     \end{array}\right]=0
     $$
 
@@ -659,6 +754,11 @@ $$
 \section{LU分解求解KKT最优条件}
 
 \begin{problem}
+    $$\begin{aligned}
+        \min _{x} & \frac{1}{2}\|A x-b\|_{2}^{2}\\
+        s.t. & C x=d
+    \end{aligned}$$
+
     $$
 \left[\begin{array}{cc}
 A^{T} A & C^{T} \\
@@ -672,10 +772,33 @@ d
 \end{array}\right]
 $$
 
+求其最优解。
 \end{problem}
 
+
+
+\begin{algorithm}[htbp]
+    \caption{LU分解求解KKT最优条件}
+    计算 $ H=A^{T} A $\;
+    计算 $ c=A^{T} b $ \;
+    LU分解求解$$
+    \left[\begin{array}{cc}
+    H & C^{T} \\
+    C & 0
+    \end{array}\right]\left[\begin{array}{l}
+    x \\
+    z
+    \end{array}\right]=\left[\begin{array}{l}
+    c \\
+    d
+    \end{array}\right]
+    $$\;
+\end{algorithm}
+
+\subsection{LU分解求解KKT最优条件的时间复杂度}
+
 \begin{theorem}
-    用LU分解法求解下列线性方程 $ \left((2 / 3)(p+n)^{3}\right. $ flops $ ) $ 
+    用LU分解法求解下列线性方程 
 $$
 \left[\begin{array}{cc}
 H & C^{T} \\
@@ -689,20 +812,19 @@ d
 \end{array}\right]
 $$
 
-
+需要的时间复杂度是$ \frac{2}{3}(p+n)^{3} $ flops。
 \end{theorem}
 
-\begin{algorithm}[htbp]
-    \caption{LU分解求解KKT最优条件}
-    计算 $ H=A^{T} A $\;
-    计算 $ c=A^{T} b $ \;
-\end{algorithm}
-
-第一步的时间复杂度是$\left(2 m n^{2}\right. $ flops $ )$，第二步的时间复杂度是$(2 \mathrm{mn} $ flops $ )$，总时间复杂度为$ 2 m n^{2}+(2 / 3)(p+n)^{3} $ flops 。
+第一步的时间复杂度是$2 m n^{2}  \text{flops} $，第二步的时间复杂度是$2 {mn} $ flops，总时间复杂度为$ 2 m n^{2}+\frac{2}{3}(p+n)^{3} $ flops 。
 
 \section{QR分解求解KKT最优条件}
 
 \begin{problem}
+    $$\begin{aligned}
+        \min _{x} & \frac{1}{2}\|A x-b\|_{2}^{2}\\
+        s.t. & C x=d
+    \end{aligned}$$
+
     $$
 \left[\begin{array}{cc}
 A^{T} A & C^{T} \\
@@ -716,24 +838,26 @@ d
 \end{array}\right]
 $$
 
+求其最优解。
 \end{problem}
 
 
-由于 $ \hat{x} $ 满足 $ C \hat{x}=d $ ，则有 $ C^{\mathrm{T}} C \hat{x}=C^{\mathrm{T}} d $ ，可得
+由于 $ \hat{x} $ 满足 $ C \hat{x}=d $ ，则有 $$\displaystyle \textcolor[rgb]{0.72,0.33,0.31}{C^{T} C\hat{x}} =\textcolor[rgb]{0.96,0.65,0.14}{C^{T} d}$$ 
+
+列出拉格朗日函数
 $$
 L(x, z)=\frac{1}{2}\|A x-b\|_{2}^{2}-z^{T}(d-C x)
 $$
 
 由KKT条件可得
-$$
-\begin{aligned}
-\nabla_{x} L(x, z) &=A^{T}(A \hat{x}-b)+C^{T} z+C^{T} C \hat{x}-C^{T} d=0 \\
-& \Rightarrow\left(A^{T} A+C^{T} C\right) \hat{x}+C^{T}(z-d)=A^{T} b \\
-\nabla_{z} L(x, z) &=C \hat{x}-d=0
-\end{aligned}
+$$\begin{aligned}
+    \nabla _{x} L(x,z) & =A^{T} (A\hat{x} -b)+\textcolor[rgb]{0.96,0.65,0.14}{C^{T} z} +\textcolor[rgb]{0.72,0.33,0.31}{C^{T} C\hat{x}} -\textcolor[rgb]{0.96,0.65,0.14}{C^{T} d} =0\\
+     & \Rightarrow \left( A^{T} A+\textcolor[rgb]{0.72,0.33,0.31}{C^{T} C}\right)\hat{x} +\textcolor[rgb]{0.96,0.65,0.14}{C^{T} (z-d)} =A^{T} b\\
+    \nabla _{z} L(x,z) & =C\hat{x} -d=0
+    \end{aligned}
 $$
 
-令 $ w=z-d $ ， KKT条件写成
+令 $ w=z-d $ ， KKT条件写成矩阵形式
 $$
 \left[\begin{array}{cc}
 A^{T} A+C^{T} C & C^{T} \\
@@ -747,9 +871,7 @@ d
 \end{array}\right]
 $$
 
-假设 1(\ref{prop:assumption-1}) 保证了 $ A^{T} A+C^{T} C $ 是非奇异的，即存在以下 $ Q R $ 因子分解
-
-$ \left[\begin{array}{l}A \\ C\end{array}\right] $ 列向量无关，则 
+假设 1($ \left[\begin{array}{l}A \\ C\end{array}\right] $ 列向量无关，命题\ref{prop:assumption-1}) 保证了 $ A^{T} A+C^{T} C $ 是非奇异的，即存在以下 $ Q R $ 因子分解
 
 $$ \left[\begin{array}{l}A \\ C\end{array}\right]=Q R=\left[\begin{array}{l}Q_{1} \\ Q_{2}\end{array}\right] R=\left[\begin{array}{l}Q_{1} R \\ Q_{2} R\end{array}\right] $$
 
@@ -767,27 +889,59 @@ d
 \end{array}\right]
 $$
 
-将第一个方程两边乘 $ R^{-T} $ 和并令变量 $ y=R \hat{x} $ 相乘，可得
-$$
-\left[\begin{array}{cc}
-I & Q_{2}^{T} \\
-Q_{2} & 0
-\end{array}\right]\left[\begin{array}{l}
-y \\
-w
-\end{array}\right]=\left[\begin{array}{c}
-Q_{1}^{T} b \\
-d
-\end{array}\right]
-$$
+将第一个方程两边乘 $ R^{-T} $ 和并令变量 $ y=R \hat{x} $ ，可得
+$$\displaystyle \left[\begin{array}{ c c }
+    \left(\textcolor[rgb]{0.72,0.33,0.31}{\left( R^{T}\right)^{-1}} R^{T}\right) R & \left(\textcolor[rgb]{0.72,0.33,0.31}{\left( R^{T}\right)^{-1}} R^{T}\right) Q_{2}^{T}\\
+    Q_{2} R & 0
+    \end{array}\right]\left[\begin{array}{ c }
+    \hat{x}\\
+    w
+    \end{array}\right] =\left[\begin{array}{ c }
+    \left(\textcolor[rgb]{0.72,0.33,0.31}{\left( R^{T}\right)^{-1}} R^{T}\right) Q_{1}^{T} b\\
+    d
+    \end{array}\right]$$
 
-矩阵 $ C=Q_{2} R \Rightarrow Q_{2}=C R^{-1}, Q_{2} $ 具有行线性无关
+$$\displaystyle \left[\begin{array}{ c c }
+    \textcolor[rgb]{0.25,0.46,0.02}{R} & Q_{2}^{T}\\
+    Q_{2}\textcolor[rgb]{0.25,0.46,0.02}{R} & 0
+    \end{array}\right]\left[\begin{array}{ c }
+    \textcolor[rgb]{0.25,0.46,0.02}{\hat{x}}\\
+    w
+    \end{array}\right] =\left[\begin{array}{ c }
+    Q_{1}^{T} b\\
+    d
+    \end{array}\right]$$
+
+$$\displaystyle \left[\begin{array}{ c c }
+    I & Q_{2}^{T}\\
+    Q_{2} & 0
+    \end{array}\right]\left[\begin{array}{ c }
+    \textcolor[rgb]{0.25,0.46,0.02}{R\hat{x}}\\
+    w
+    \end{array}\right] =\left[\begin{array}{ c }
+    Q_{1}^{T} b\\
+    d
+    \end{array}\right]$$
+
+$$\displaystyle \left[\begin{array}{ c c }
+    I & Q_{2}^{T}\\
+    Q_{2} & 0
+    \end{array}\right]\left[\begin{array}{ c }
+    \textcolor[rgb]{0.25,0.46,0.02}{y}\\
+    w
+    \end{array}\right] =\left[\begin{array}{ c }
+    Q_{1}^{T} b\\
+    d
+    \end{array}\right]$$
+
+
+矩阵 $ C=Q_{2} R \Rightarrow Q_{2}=C R^{-1}, Q_{2} $ 行线性无关
 $$
-Q_{2}^{T} u=R^{-T} C^{T} u=0 \quad \Rightarrow \quad C^{T} u=0 \quad \Rightarrow \quad u=0
+Q_{2}^{T} u=R^{-T} C^{T} u=0  \Rightarrow  C^{T} u=0 \Rightarrow  u=0
 $$
 因为 $ C $ 行线性无关的(假设2(\ref{prop:assumption-2}))。
 
-利用 $ Q_{2}^{T} $ 的 $ Q R $ 分解来求解:
+利用 $ Q_{2}^{T} $ 的 $ Q R $ 分解来求解
 $$
 \left[\begin{array}{cc}
 I & Q_{2}^{T} \\
@@ -818,10 +972,11 @@ $$
 
 $$ \left[\begin{array}{cc}A^{T} A+C^{T} C & C^{T} \\ C & 0\end{array}\right]\left[\begin{array}{c}\hat{x} \\ w\end{array}\right]=\left[\begin{array}{c}A^{T} b \\ d\end{array}\right] \quad \tilde{R} w=\tilde{Q}^{T} Q_{1}^{T} b-\tilde{R}^{-T} d $$
 
-算法过程:
+算法过程见\ref{algo:qr-kkt}。
 
 \begin{algorithm}[htbp]
     \caption{QR分解求解KKT最优条件}
+    \label{algo:qr-kkt}
     计算两个QR分解
 $$
 \left[\begin{array}{l}
@@ -850,7 +1005,7 @@ $$\;
     \item QR复杂度: $ 2(p+m) n^{2}+2 n p^{2}<2 m n^{2}+4 n^{3} $
 \end{itemize}
 
-稳定性: QR分解避免直接计算 $ A^{T} \mathrm{~A}_{\circ} $。
+稳定性: QR分解避免直接计算 $ A^{T} {A}$。
 
 \section[Supplement Material: Karush-Kuhn-Tucker (KKT)条件]{Supplement Material: Karush-Kuhn-Tucker (KKT)条件\footnote{Cited from \url{https://zhuanlan.zhihu.com/p/38163970}.}}
 
@@ -1052,7 +1207,7 @@ $$
 &h_{k}(\mathbf{x})=0(k=1,2, \cdots, l)
 \end{aligned}
 $$
-$ \mathrm{KKT} $ 条件给出了判断 $ \mathrm{x}^{*} $ 是否为最优解的\textbf{必要条件}, 即：
+KKT 条件给出了判断 $ \mathrm{x}^{*} $ 是否为最优解的\textbf{必要条件}, 即：
 $$
 \left\{\begin{array}{l}
 \frac{\partial f}{\partial x_{i}}+\sum_{j=1}^{m} \mu_{j} \frac{\partial g_{j}}{\partial x_{i}}+\sum_{k=1}^{l} \lambda_{k} \frac{\partial h_{k}}{\partial x_{i}}=0,(i=1,2, \ldots, n) \\
@@ -1381,7 +1536,7 @@ $ x=\left(x_{1}, \ldots, x_{n}\right) $ 是\term{优化变量}, 函数 $ f_{0}: 
 \end{definition}
 
 \begin{corollary}
-    凸集可以表示成某些个凸集的交集。
+    凸集可以表示成某些凸集的交集。
 \end{corollary}
 
 所以凸优化问题一般表示为
@@ -1597,3 +1752,549 @@ $ x^{*} $ 原始最优， $ \left(\alpha^{*}, \beta^{*}\right) $ 对偶最优，
 $$对偶目标的最大值=主目标的最小值=原凸优化问题的最小值 \Leftrightarrow^{当且仅当}满足KKT条件$$
 
 因此，当对偶问题比原凸优化问题容易求解时，可以通过求解对偶问题来解原凸优化问题。
+
+
+\section[Supplementary Material: KKT Conditions, Linear Programming and Nonlinear Programming]{Supplementary Material: KKT Conditions, Linear Programming and Nonlinear Programming \footnote{Written by Christopher Griffine. (\href{http://www.personal.psu.edu/cxg286/LinearProgramming.html}{Linear Programming})}}
+
+
+
+\subsection{Karush-Kuhn-Tucker Theorem(s)}
+
+\begin{theorem} Let $z : \mathbb{R}^n \rightarrow \mathbb{R}$ be a differentiable objective function, $g_i:\mathbb{R}^n \rightarrow \mathbb{R}$ be differentiable constraint functions for $i = 1,\dots,m$ and $h_j:\mathbb{R}^n \rightarrow \mathbb{R}$ be differentiable constraint functions for $j=1,\dots,l$. If $\mathbf{x}^* \in \mathbb{R}^n$ is an optimal point satisfying an appropriate regularity condition for the following optimization problem:
+
+\begin{displaymath}
+P\left\{
+\begin{aligned}
+\max\;\;& z(x_1,\dots,x_n)\\
+s.t.\;\;& g_1(x_1,\dots,x_n) \leq 0\\
+& \hspace*{0.5in}\vdots\\
+& g_m(x_1,\dots,x_n) \leq 0\\
+& h_1(x_1,\dots,x_n) = 0\\
+&\hspace*{0.5in}\vdots\\
+&h_l(x_1,\dots,x_n) = 0
+\end{aligned}
+\right.
+\end{displaymath}
+
+then there exists $\lambda_1,\dots,\lambda_m \in \mathbb{R}$ and $\mu_1,\dots\mu_l \in \mathbb{R}$ so that:
+
+\begin{gather*}
+\text{Primal Feasibility}: \left\{
+\begin{aligned}
+g_i(\mathbf{x}^*) \leq 0 \quad \text{for $i = 1,\dots,m$}\\
+h_j(\mathbf{x}^*) = 0 \quad \text{for $j = 1,\dots,l$}
+\end{aligned}
+\right.\\
+\text{Dual Feasibility}:\left\{
+\begin{aligned}
+\nabla z(\mathbf{x}^*) - \sum_{i = 1}^m\lambda_i\nabla g_i(\mathbf{x}^*) - \sum_{j = 1}^{l}\mu_j\nabla h_j(\mathbf{x}^*) = \mathbf{0}\\
+\lambda_i \geq 0 \quad \text{for $i=1,\dots,m$}\\
+\mu_j \in \mathbb{R} \quad \text{for $j = 1,\dots,l$}
+\end{aligned}
+\right.\\
+\text{Complementary Slackness}:\left\{
+\begin{aligned}
+\lambda_ig_i(\mathbf{x}^*) = 0 \quad \text{for $i = 1,\dots,m$}
+\end{aligned}
+\right.
+\end{gather*}
+\label{thm:KKT7}
+\end{theorem}
+
+\begin{theorem} Let $z : \mathbb{R}^n \rightarrow \mathbb{R}$ be a differentiable concave  function, $g_i:\mathbb{R}^n \rightarrow \mathbb{R}$ be differentiable convex functions for $i = 1,\dots,m$ and $h_j:\mathbb{R}^n \rightarrow \mathbb{R}$ be affine functions for $j=1,\dots,l$. Suppose there are $\lambda_1,\dots,\lambda_m \in \mathbb{R}$ and $\mu_1,\dots\mu_l \in \mathbb{R}$ so that:
+
+\begin{gather*}
+\text{Primal Feasibility}: \left\{
+\begin{aligned}
+g_i(\mathbf{x}^*) \leq 0 \quad \text{for $i = 1,\dots,m$}\\
+h_j(\mathbf{x}^*) = 0 \quad \text{for $j = 1,\dots,l$}
+\end{aligned}
+\right.\\
+\text{Dual Feasibility}:\left\{
+\begin{aligned}
+\nabla z(\mathbf{x}^*) - \sum_{i = 1}^m\lambda_i\nabla g_i(\mathbf{x}^*) - \sum_{j = 1}^{l}\mu_j\nabla h_j(\mathbf{x}^*) = \mathbf{0}\\
+\lambda_i \geq 0 \quad \text{for $i=1,\dots,m$}\\
+\mu_j \in \mathbb{R} \quad \text{for $j = 1,\dots,l$}
+\end{aligned}
+\right.\\
+\text{Complementary Slackness}:\left\{
+\begin{aligned}
+\lambda_ig_i(\mathbf{x}^*) = 0 \quad \text{for $i = 1,\dots,m$}
+\end{aligned}
+\right.
+\end{gather*}
+
+then $\mathbf{x}^*$ is a global maximizer for 
+\begin{displaymath}
+P\left\{
+\begin{aligned}
+\max\;\;& z(x_1,\dots,x_n)\\
+s.t.\;\;& g_1(x_1,\dots,x_n) \leq 0\\
+& \hspace*{0.5in}\vdots\\
+& g_m(x_1,\dots,x_n) \leq 0\\
+& h_1(x_1,\dots,x_n) = 0\\
+&\hspace*{0.5in}\vdots\\
+&h_l(x_1,\dots,x_n) = 0
+\end{aligned}
+\right.
+\end{displaymath}
+\label{thm:KKT8}
+\end{theorem}
+
+The values $\lambda_1,\dots,\lambda_m$ and $\mu_1,\dots,\mu_l$ are sometimes called \textit{Lagrange multipliers} and sometimes called \textit{dual variables}. Primal Feasibility, Dual Feasibility and Complementary Slackness are called the \textit{Karush-Kuhn-Tucker} (KKT) conditions.
+
+\begin{remark} The regularity condition mentioned in Theorem \ref{thm:KKT7} is sometimes called a \term{constraint qualification}. A common one is that the gradients of the binding constraints are all linearly independent at $\mathbf{x}^*$. There are many variations of constraint qualifications. We will not deal with these in these notes. 
+    
+    Suffice it to say, all the problems we consider will automatically satisfy a constraint qualification, meaning the KKT theorem holds.
+\end{remark}
+
+\begin{remark} Theorem \ref{thm:KKT7} holds as a necessary condition even if $z(\mathbf{x})$ is not concave or the functions $g_i(\mathbf{x})$ ($i=1,\dots,m$) are not convex or the functions $h_j(\mathbf{x})$ ($j=1,\dots,l$) are not linear. In this case though, the fact that a triple: $(\mathbf{x},\boldsymbol{\lambda}, \boldsymbol{\mu}) \in \mathbb{R}^{n} \times \mathbb{R}^m \times \mathbb{R}^l$ does not ensure that this is an optimal solution for Problem $P$.
+\end{remark}
+
+Looking more closely at the dual feasibility conditions, we see something interesting. Suppose that there are \textit{no} equality constraints (i.e., not constraints of the form $h_j(\mathbf{x}) = 0$). Then the statements:
+
+\begin{displaymath}
+\begin{aligned}
+\nabla z(\mathbf{x}^*) - \sum_{i = 1}^m\lambda_i \nabla g_i(\mathbf{x}^*) - \sum_{j = 1}^{l}\mu_j \nabla h_j(\mathbf{x}^*) & = \mathbf{0}\\
+\lambda_i &\geq 0 \quad \text{for $i=1,\dots,m$}
+\end{aligned}
+\end{displaymath}
+
+imply that:
+
+\begin{displaymath}
+\begin{aligned}
+\nabla z(\mathbf{x}^*) &= \sum_{i = 1}^m\lambda_i \nabla g_i(\mathbf{x}^*)\\
+\lambda_i &\geq 0 \quad \text{for $i=1,\dots,m$}
+\end{aligned}
+\end{displaymath}
+
+Specifically, this says that the \textit{gradient of $z$ at $\mathbf{x}^*$ is a positive combination of the gradients of the constraints at $\mathbf{x}^*$.} But more importantly, since we also have \textit{complementary slackness}, we know that if $\mathbf{g}_i(\mathbf{x}^*) \neq 0$, then $\lambda_i = 0$ because $\lambda_i g_i(\mathbf{x}^*) = 0$ for $i = 1,\dots,m$. Thus, what dual feasibility is really saying is that \textit{gradient of $z$ at $\mathbf{x}^*$ is a positive combination of the  gradients of the \textbf{binding} constraints at $\mathbf{x}^*$.} Remember, a constraint is binding if $g_i(\mathbf{x}^*) = 0$, in which case $\lambda_i \geq 0$.
+
+
+\begin{remark} Continuing from the previous remark, in the general case when we have some equality constraints, then dual feasibility says:
+\begin{displaymath}
+\begin{aligned}
+\nabla z(\mathbf{x}^*) &= \sum_{i = 1}^m\lambda_i \nabla g_i(\mathbf{x}^*) + \sum_{j = 1}^{l}\mu_j \nabla h_j(\mathbf{x}^*)\\
+\lambda_i &\geq 0 \quad \text{for $i=1,\dots,m$}\\
+\mu_j &\in \mathbb{R}\quad \text{for $j=1,\dots,l$}
+\end{aligned}
+\end{displaymath}
+Since equality constraints are \textit{always binding} this says that the \textit{gradient of $z$ at $\mathbf{x}^*$ is a linear combination of the  gradients of the \textbf{binding} constraints at $\mathbf{x}^*$.} 
+\end{remark}
+
+\subsection{Linear Programming and KKT Conditions - An Example}
+Consider the following linear programming problem:
+\begin{equation}
+P \left \{
+\begin{aligned}
+\max \;\; & x_1 + x_2  \\ 
+s.t. & x_1 + 2x_2 \leq 4\\
+& 2x_1 + x_2 \leq 6\\
+& x_1, x_2 \geq 0
+\end{aligned} \right.
+\end{equation}
+Assuming I didn't know how to solve this problem using the Simplex method, I could look at Theorem \ref{thm:KKT8} and remark that the constraints and objective are all concave (and convex) since they are linear. Therefore, it suffices to find a KKT point and this point must be optimal.
+We can re-write Problem $P$ in the form of Theorem \ref{thm:KKT7} as:
+\begin{displaymath}
+P \left \{
+\begin{aligned}
+\max \;\; & z(x_1,x_2) \equiv x_1 + x_2  \\ 
+s.t. & g_1(x_1,x_2) \equiv x_1 + 2x_2 -4 \leq 0\\
+& g_2(x_1,x_2) \equiv 2x_1 + x_2 - 6\leq 0\\
+& g_3(x_1,x_2) \equiv -x_1 \leq 0\\
+& g_4(x_1,x_2) \equiv -x_2 \leq 0
+\end{aligned} \right.
+\end{displaymath}
+
+To write the KKT conditions, observe the following:
+\begin{displaymath}
+\nabla z = \begin{bmatrix}1\\1\end{bmatrix} \quad \quad \nabla g_1 = \begin{bmatrix}1\\2\end{bmatrix}
+\quad\quad \nabla g_2 = \begin{bmatrix}2\\1\end{bmatrix} \quad \quad 
+\nabla g_3 = \begin{bmatrix}-1\\0\end{bmatrix} \quad \quad \nabla g_4 = \begin{bmatrix}0\\-1\end{bmatrix}
+\end{displaymath}
+We can now write the KKT conditions for this problem as:
+\begin{gather*}
+\text{Primal Feasibility}: \left\{
+\begin{aligned}
+x_1 + 2x_2 &\leq 4\\
+2x_1 + x_2 &\leq 6\\
+x_1, x_2 &\geq 0
+\end{aligned}
+\right.\\
+\text{Dual Feasibility}:\left\{
+\begin{aligned}
+\begin{bmatrix}1\\1\end{bmatrix} - \lambda_1\begin{bmatrix}1\\2\end{bmatrix} - 
+\lambda_2\begin{bmatrix}2\\1\end{bmatrix} -\lambda_3\begin{bmatrix}-1\\0\end{bmatrix} - 
+\lambda_4\begin{bmatrix}0\\-1\end{bmatrix} &= \begin{bmatrix}0\\0\end{bmatrix}\\
+\lambda_1,\lambda_2,\lambda_3,\lambda_4 & \geq 0
+\end{aligned}
+\right.\\
+\text{Complementary Slackness}:\left\{
+\begin{aligned}
+\lambda_1(x_1 + 2x_2 -4) &= 0\\
+\lambda_2(2x_1 + x_2 - 6) &= 0\\
+\lambda_3(-x_1) &= 0\\
+\lambda_4(-x_2) &= 0
+\end{aligned}
+\right.
+\end{gather*}
+Consider Dual Feasibility for a moment. I can expand the matrices to obtain a system of equations:
+\begin{displaymath}
+\begin{aligned}
+1 - \lambda_1 - 2\lambda_2 + \lambda_3 & = 0\\
+1 - 2\lambda_1 - \lambda_2 + \lambda_4 & = 0\\
+\lambda_1,\lambda_2,\lambda_3,\lambda_4 & \geq 0
+\end{aligned}
+\end{displaymath}
+Or:
+\begin{displaymath}
+\begin{aligned}
+\lambda_1 + 2\lambda_2 - \lambda_3 &= 1\\
+2\lambda_1 + \lambda_2 - \lambda_4 &= 1\\
+\lambda_1,\lambda_2,\lambda_3,\lambda_4 & \geq 0
+\end{aligned}
+\end{displaymath}
+Since $\lambda_3, \lambda_4 \geq 0$, they act like \textit{surplus variables} and we can write the Dual Feasibility as:
+\begin{equation}
+\left\{
+\begin{aligned}
+\lambda_1 + 2\lambda_2 &\geq  1\\
+2\lambda_1 + \lambda_2 &\geq 1\\
+\lambda_1,\lambda_2& \geq 0
+\end{aligned}\right.
+\label{eqn:Lambda}
+\end{equation}
+\begin{remark} It would now suffice to find values for $x_1$, $x_2$, $\lambda_1$, $\lambda_2$, $\lambda_3$, and $\lambda_4$ the satisfy the KKT conditions and we could solve the linear programming problem $P$.
+\end{remark}
+
+We can show that the optimal point for this problem is $x = \tfrac{8}{3}$ and $y = \tfrac{2}{3}$ using a graphical method. Figure \ref{fig:KKTLP-1} shows the feasible region of the problem as well as the level curves of the objective function (curves for which $x_1 + x_2 = k$, where $k$ is a fixed constant). The value $k$ increases going left to right and bottom to top, so the optimal solution must occur at the intersection of the lines $x_1 + 2 x_2 = 4$ and $2x_1 + x_2 = 6$. You can compare the value of the objective at the proposed optimal point $x = \tfrac{8}{3}$ and $y = \tfrac{2}{3}$ to the value of the objective at the other extreme points. For example, at the extreme point $x = 3$, $y = 0$, we see the value of the objective is only $3$, as compared to $\tfrac{10}{3}$ at the point of optimality.
+
+
+\begin{FigureCenter}{The feasible region for the example linear programming problem illustrating level curves of the objective.}
+    \label{fig:KKTLP-1}
+    \includegraphics[width=0.4\textwidth]{imported_figures/KKTLP-1-eps-converted-to.pdf}
+\end{FigureCenter}
+
+\begin{FigureCenter}{The gradients of the objective function and the binding constraints at optimality and their geometric relation are illustrated}
+    \label{fig:KKTLP-2}
+    \includegraphics[width=0.4\textwidth]{imported_figures/KKTLP-2-eps-converted-to.pdf}
+\end{FigureCenter}
+
+
+We can now see that for the KKT conditions to hold, we must have $\lambda_3 = \lambda_4 = 0$ because $x_1 > 0$ and $x_2 > 0$ at optimality and complementary slackness requires that: $\lambda_3(-x_1) = 0$ and $\lambda_4(-x_2) = 0$ at optimality. This leaves $\lambda_1$ and $\lambda_2$. We know these must satisfy the equations in Expression \ref{eqn:Lambda}. Therefore, we see that when $\lambda_1 = \lambda_2 = \tfrac{1}{3}$, Expression 2 is satisfied. Thus: we have written:
+\begin{equation}
+\begin{bmatrix}1\\1\end{bmatrix} = \frac{1}{3}\begin{bmatrix}1\\2\end{bmatrix} - 
+\frac{1}{3}\begin{bmatrix}2\\1\end{bmatrix}
+\end{equation}
+That is, we have expressed the gradient of the objective function ($\nabla z$) as a positive combination of the gradients of the \textit{binding} constraints ($\nabla g_1$ and $\nabla g_2$). This is shown in Figure \ref{fig:KKTLP-2}, in which we see the gradient of the objective function (red) inside the (cone of) the gradients of the binding constraints (blue and green).
+
+\subsection{The Dual KKT Conditions}
+Recall that if we are given a linear programming problem of the form:
+\begin{equation}
+P\left\{
+\begin{aligned}
+\max\;\; & \mathbf{c}^T\mathbf{x}\\
+s.t.\;\; & \mathbf{A}\mathbf{x} \leq \mathbf{b}\\
+& \mathbf{x} \geq 0
+\end{aligned}\right.
+\end{equation}
+
+Then the dual problem for Problem $P$ is:
+\begin{equation}
+D\left\{
+\begin{aligned}
+\min\;\; & \mathbf{w}\mathbf{b}\\
+s.t.\;\; & \mathbf{w}\mathbf{A} \geq \mathbf{c}^T\\
+& \mathbf{w} \geq \mathbf{0}
+\end{aligned}\right.
+\end{equation}
+Here we assume that $\mathbf{w}$ is a \textit{row} vector (unlike our usual assumption that all vectors are column vectors). In our example problem, we have:
+\begin{displaymath}
+\mathbf{A} = \begin{bmatrix}1 & 2\\2 & 1\end{bmatrix} \quad \quad \mathbf{c} = \begin{bmatrix}1\\1\end{bmatrix} \quad \quad \mathbf{b} = \begin{bmatrix}4\\6\end{bmatrix}
+\end{displaymath}
+Let us write:
+\begin{displaymath}
+\mathbf{w} = \begin{bmatrix} \lambda_1 & \lambda_2 \end{bmatrix}
+\end{displaymath}
+Then we can write the dual problem as:
+\begin{displaymath}
+D\left\{
+\begin{aligned}
+\min \;\; & \begin{bmatrix} \lambda_1 & \lambda_2 \end{bmatrix} \begin{bmatrix}4\\6\end{bmatrix} \\
+& \begin{bmatrix} \lambda_1 & \lambda_2 \end{bmatrix} \begin{bmatrix}1 & 2\\2 & 1\end{bmatrix} \geq \begin{bmatrix}1 & 1\end{bmatrix}\\
+& \lambda_1, \lambda_2 \geq 0
+\end{aligned}
+\right.
+\end{displaymath}
+This can be rewritten more concretely as:
+\begin{displaymath}
+D\left\{
+\begin{aligned}
+\min \;\; & 4\lambda_1 + 6\lambda_2\\
+&\lambda_1 + 2\lambda_2 \geq 1\\
+&2\lambda_1 + \lambda_2 \geq 1\\
+& \lambda_1, \lambda_2 \geq 0
+\end{aligned}
+\right.
+\end{displaymath}
+Immediately we see a connection. The constraints of this problem look just like the simplified dual feasibility constraints. In fact, if we add surplus variables $\lambda_3, \lambda_4 \geq 0$, we see they match exactly and the problem in standard form is:
+\begin{displaymath}
+D\left\{
+\begin{aligned}
+\min \;\; & 4\lambda_1 + 6\lambda_2\\
+&\lambda_1 + 2\lambda_2 - \lambda_3 = 1\\
+&2\lambda_1 + \lambda_2 -\lambda_4 =1\\
+& \lambda_1, \lambda_2,\lambda_3, \lambda_4 \geq 0
+\end{aligned}
+\right.
+\end{displaymath}
+We can complete our exploration of the relationship between these two problems by constructing the KKT conditions for the dual problem. First, re-write the dual as:
+\begin{displaymath}
+\begin{aligned}
+\max\;\; & -4\lambda_1 - 6\lambda_2 \\
+s.t. & -\lambda_1 - 2\lambda_2 + 1\leq 0\\
+& -2\lambda_1 - \lambda_2 + 1\leq 0\\
+& -\lambda_1 \leq 0\\
+& -\lambda_2 \leq 0
+\end{aligned}
+\end{displaymath}
+As before, we can write down the KKT conditions:
+\begin{gather*}
+\text{Primal Feasibility}: \left\{
+\begin{aligned}
+\lambda_1 + 2\lambda_2 &\geq 1\\
+2\lambda_1 + \lambda_2 &\geq 1\\
+\lambda_1, \lambda_2 & \geq 1
+\end{aligned}
+\right.\\
+\text{Dual Feasibility}:\left\{
+\begin{aligned}
+\begin{bmatrix}-4\\-6\end{bmatrix} - x_1\begin{bmatrix}-1\\-2\end{bmatrix} - 
+x_2\begin{bmatrix}-2\\-1\end{bmatrix} -s_1\begin{bmatrix}-1\\0\end{bmatrix} - 
+s_2\begin{bmatrix}0\\-1\end{bmatrix} &= \begin{bmatrix}0\\0\end{bmatrix}\\
+x_1,x_2,s_1,s_2 & \geq 0
+\end{aligned}
+\right.\\
+\text{Complementary Slackness}:\left\{
+\begin{aligned}
+x_1(-\lambda_1 - 2\lambda_2 + 1) &= 0\\
+x_2(-2\lambda_1 - \lambda_2 + 1) &= 0\\
+s_1(-\lambda_1) &= 0\\
+s_2(-\lambda_2) &= 0
+\end{aligned}
+\right.
+\end{gather*}
+Again, we can re-write the dual feasibility conditions (for which we have intentionally chosen specific dual variable names) and see they become:
+\begin{displaymath}
+\begin{aligned}
+x_1 + 2x_2 + s_1 &= 4\\
+2x_1 + x_2 + s_2 & =6\\
+x_1,x_2, s_1, s_2 &\geq 0
+\end{aligned}
+\end{displaymath}
+Since $s_1, s_2 \geq 0$, they act like \textit{slack variables} and thus we have:
+\begin{displaymath}
+\begin{aligned}
+x_1 + 2x_2 &\leq  4\\
+2x_1 + x_2 &\leq 6\\
+x_1,x_2&\geq 0
+\end{aligned}
+\end{displaymath}
+and we've recovered the constraints from the original primal problem as the dual feasibility conditions of the KKT conditions for the dual optimization problem. We can go further. Note:
+\begin{align*}
+-s_1 &= x_1 + 2x_2 - 4= -g_1(x_1,x_2)\\
+-s_2 &= 2x_1 + x_2 -6 = -g_2(x_1,x_2)
+\end{align*}
+while from our earlier observations about the surplus variables $\lambda_3$ and $\lambda_4$ we know:
+\begin{align*}
+\lambda_3 &= -\lambda_1 - 2\lambda_2 + 1\\
+-\lambda_4 &= -2\lambda_1 - \lambda_2 + 1
+\end{align*}
+Thus, complementary slackness from the primal problem is:
+\begin{align*}
+\lambda_3(-x_1) &= 0 \iff \lambda_3(x_1) =0  \iff 
+	x_1(\lambda_1 + 2\lambda_2 - 1) = 0\\
+\lambda_4(-x_2) &= 0 \iff \lambda_4(x_2) =0 \iff x_2(-2\lambda_1 - \lambda_2 + 1) = 0
+\end{align*}
+Likewise:
+\begin{align*}
+\lambda_1(x_1 + 2x_2 - 4) &=0 \iff \lambda_1(-s_1) = 0 \iff s_1(-\lambda_1) = 0\\
+\lambda_2(2x_1 + x_2 - 6) &=0 \iff \lambda_2(-s_2) = 0 \iff s_2(-\lambda_2) = 0
+\end{align*}
+Thus, the complementary slackness conditions of the primal problem are identical to the complementary slackness conditions of the dual problem. This fact is true for linear programming problems in general.
+
+\begin{remark} For an arbitrary linear programming problem and its dual, the KKT conditions for the primal and dual problems are \textbf{equivalent}, but the dual feasibility conditions for the primal problem are identical to the primal feasibility conditions for the dual problem and vice-versa. \textit{Thus, two linear programming problems are dual to each other if and only if they share KKT conditions with the primal and dual feasibility conditions swapped.}
+\end{remark}
+
+\begin{remark} We will use these results on KKT conditions and linear programs to discuss the solution (i.e., Nash equilibria) of zero-sum games via linear programming. We will then generalize these results to derive a quadratic programming problem whose optimal solutions will yield Nash equilibria. 
+\end{remark}
+
+\subsection{An Example from Nonlinear Programming}
+Let's recall a simple optimization problem from differential calculus (Math 140): Goats are an environmentally friendly and inexpensive way to control a lawn when there are lots of rocks or lots of hills. (Seriously, both Google and some U.S. Navy bases use goats on rocky hills instead of paying lawn mowers!) 
+
+Suppose I wish to build a pen to keep some goats. I have 100 meters of fencing and I wish to build the pen in a rectangle with the largest possible area. How long should the sides of the rectangle be? In this case, making the pen \textit{better} means making it have the largest possible area.
+
+The problem is illustrated in Figure \ref{fig:GoatPen}.
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.6]{imported_figures/GoatPen.pdf}
+\caption{Goat pen with unknown side lengths. The objective is to identify the values of $x$ and $y$ that maximize the area of the pen (and thus the number of goats that can be kept).}
+\label{fig:GoatPen}
+\end{figure}
+Clearly, we know that:
+\begin{equation}
+2x + 2y = 100
+\label{eqn:GoatPerimeter}
+\end{equation}
+because $2x + 2y$ is the perimeter of the pen and I have 100 meters of fencing to build my pen. The area of the pen is $A(x,y) = xy$. We can use Equation \ref{eqn:GoatPerimeter} to solve for $x$ in terms of $y$. Thus we have:
+\begin{equation}
+y = 50 - x
+\end{equation}
+and $A(x) = x(50-x)$. To maximize $A(x)$, recall we take the first derivative of $A(x)$ with respect to $x$, set this derivative to zero and solve for $x$:
+\begin{equation}
+\frac{dA}{dx} = 50-2x = 0;
+\end{equation}
+Thus, $x = 25$ and $y = 50-x = 25$. We further recall from basic calculus how to confirm that this is a maximum; note:
+\begin{equation}
+\left.\frac{d^2A}{dx^2}\right|_{x = 25} = -2 < 0
+\end{equation}
+Which implies that $x = 25$ is a \textit{local maximum} for this function. Another way of seeing this is to note that $A(x) = 50x-x^2$ is an concave (a frowning parabola). As we could have guessed, a square will maximize the area available for holding goats. 
+
+We can re-write the problem to be in a more common form
+\begin{equation}
+\left\{
+\begin{aligned}
+\max \;\; & A(x,y) = x y \\
+s.t. \;\; & 2x + 2y = 100 \equiv 2x + 2y - 100 = 0\\
+& x \geq 0 \equiv -x \leq 0\\
+& y \geq 0 \equiv -y \leq 0 
+\end{aligned}\right.
+\label{eqn:GoatMax}
+\end{equation}
+Note we've added two inequality constraints $x \geq 0$ and $y \geq 0$ because it doesn't really make any sense to have negative lengths. In our problem, we now have: $g_1(x,y) = -x$ and $g_2(x,y) = -y$ and $h(x,y) = 2x+2y-100$ to be consistent with the notation in Theorem \ref{thm:KKT7}. It is worth noting, we could have used the constraint $2x + 2y - 100 \leq 0$ instead and obtained the same answer.
+
+For the point of optimality ($x=25$, $y=25$), let us now compute the KKT conditions. Note first:
+\begin{displaymath}
+\nabla A = \begin{bmatrix}y\\x\end{bmatrix} \quad \quad 
+\nabla h = \begin{bmatrix}2\\2\end{bmatrix} \quad \quad 
+\nabla g_1 = \begin{bmatrix}-1\\0\end{bmatrix} \quad \quad 
+\nabla g_2 = \begin{bmatrix}0\\-1\end{bmatrix} \quad \quad 
+\end{displaymath}
+Substituting $x^* = y^* = 25$, we can see that primal feasibility is obviously satisfied. Moreover:
+\begin{displaymath}
+\nabla A(x^*,y^*) = \begin{bmatrix}25\\25\end{bmatrix}
+\end{displaymath}
+We  consider only dual feasibility and complimentary slackness. 
+\begin{gather*}
+\text{Dual Feasibility}:\left\{
+\begin{aligned}
+\begin{bmatrix}25\\25\end{bmatrix} -\lambda_1\begin{bmatrix}-1\\0\end{bmatrix} - 
+\lambda_2\begin{bmatrix}0\\-1\end{bmatrix} - \mu\begin{bmatrix}2\\2\end{bmatrix} &= \begin{bmatrix}0\\0\end{bmatrix}\\
+\lambda_1,\lambda_2 & \geq 0\\
+\mu &\in \mathbb{R}
+\end{aligned}
+\right.\\
+\text{Complementary Slackness}:\left\{
+\begin{aligned}
+\lambda_1(-x^*) = \lambda_1\cdot(-25) &= 0\\
+\lambda_2(-y^*) = \lambda_2\cdot(-25) &= 0
+\end{aligned}
+\right.
+\end{gather*}
+Notice we substituted $x^*$ and $y^*$ into the complementary slackness equations. From complementary slackness, we see at once that $\lambda_1 = \lambda_2 = 0$. This means dual feasibility reduces to:
+\begin{displaymath}
+\begin{bmatrix}25\\25\end{bmatrix} - \mu\begin{bmatrix}2\\2\end{bmatrix} = \begin{bmatrix}0\\0\end{bmatrix}
+\end{displaymath}
+The solution: $\mu = 25/2$ satisfies this equality. Notice the gradient of the objective and the gradient of the (single) binding constraint are parallel. Notice also unlike a linear programming problem, the optimal solution to this problem \textit{does not} occur at the extreme point of the constraint set (which is really just the line segment $2x + 2y = 100$ with $x,y\geq 0$). This geometric interpretation is illustrated in Figure \ref{fig:KKTNLP}. The gradient of the objective is shown in red, the gradient of the binding constraint is shown in green. Note, the gradient of the binding constraint has been scaled for visual effect. As expected, the level curves shown are given by the (implicit) equation $xy = k$. As you go up and right, the value of $k$ increases.
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.75]{imported_figures/KKTNLP.eps}
+\caption{Visualization of the KKT conditions for a simple nonlinear programming problem. Notice the point of optimality is not at an extreme point. Moreover, the gradient of the binding constraint is parallel to the gradient of the objective, as expected. \textit{Note, the gradient of the binding constraint has been scaled larger for visual effect.}}
+\label{fig:KKTNLP}
+\end{figure}
+
+\section[Supplementary Material: KKT Conditions ]{Supplementary Material: KKT Conditions \footnote{These notes are taken from \href{https://www.stat.cmu.edu/~ryantibs/convexopt/}{Machine Learning 10-725 (Convex Optimization)}.}}
+
+
+\subsection{Dual Problem}
+
+Given the following convex minimization problem:
+
+\begin{problem}[convex minimization problem]
+    \label{pro:kkt-problem}
+    $$
+\begin{array}{ll}
+\min _{x} & f(x) \\
+\text { subject to } & h_{i}(x) \leq 0, \quad i=1, \ldots, m \\
+& \ell_{j}(x)=0, \quad j=1, \ldots, r
+\end{array}
+$$
+The Lagrangian is defined as $ L(x, u, v)=f(x)+\sum_{u=1}^{m} u_{i} h_{i}(x)+\sum_{j=1}^{r} v_{j} \ell_{j}(x) . $ The Lagrange dual function is defined as $ g(u, v)=\min _{x} L(x, u, v) $. The dual problem is
+$$
+\begin{array}{ll}
+\max _{u, v} & g(u, v) \\
+\text { subject to } & u \geq 0
+\end{array}
+$$
+\end{problem}
+
+
+The Lagrange dual function $ g(u, v) $ is always \term{concave} regardless of whether the primal problem is convex or not.
+
+\term{Weak duality}: $ f^{*} \geq g^{*} $ holds for all problems, where $ f^{*} $ and $ g^{*} $ are primal and dual optimal values, respectively.
+
+Slaters's condition, which says the primal has at least one strictly feasible point, is a sufficient condition for \term{strong duality} to hold. If $ \exists x $ such that $ h_{i}(x)<0, i=1, \ldots, m $ and $ \ell_{j}(x)=0, j=1, \ldots, r, f^{*}=g^{*} $. This condition can be further refined to $ h_{i}(x)<0 $ for all $ i $ such that $ h_{i} $ is nonaffine. As a result, Slater's condition is reduced to feasibility for LP's.
+
+\section{Karush-Kuhn-Tucker (KKT) Conditions}
+
+For the given problem \ref{pro:kkt-problem}, the KKT conditions are:
+
+\begin{enumerate}
+    \item $ 0 \in \partial_{x}\left(f(x)+\sum_{i=1}^{m} u_{i} h_{i}(x)+\sum_{j=1}^{r} v_{j} \ell_{j}(x)\right) $ (stationary)
+    \item $ u_{i} \cdot h_{i}(x)=0 $ for all $ i $ (complementary slackness)
+    \item $ h_{i}(x) \leq 0, \ell_{j}(x)=0 $ for all $ i, j $ (primal feasibility)
+    \item $ u_{i} \geq 0 $ for all $ i $ (dual feasibility)
+\end{enumerate}
+
+\begin{theorem}
+    \label{thm:kkt-sufficient}
+    For $ x^{*} $ and $ u^{*}, v^{*} $ to be primal and dual solutions, KKT conditions are sufficient.
+\end{theorem}
+
+\begin{proof}
+    Proof: 
+    
+    Sufficiency: if $ \exists x^{*} $ and $ u^{*}, v^{*} $ that satisfy the KKT conditions, $ g\left(u^{*}, v^{*}\right)=f\left(x^{*}\right)+\sum_{i=1}^{m} u_{i}^{*} h_{i}\left(x^{*}\right)+ $ $ \sum_{j=1}^{r} v_{j}^{*} \ell_{j}\left(x^{*}\right)=f\left(x^{*}\right) $ 
+    
+    The first equality holds from stationarity, since $ f(x)+\sum_{i=1}^{m} u_{i} h_{i}(x)+\sum_{j=1}^{r} v_{j} \ell_{j}(x) $ is convex, so any stationary point is a minimizer, and the second holds by complementary slackness. 
+    
+    By weak duality, $ x^{*} $ and $ u^{*}, v^{*} $ are optimal. It always implies that the duality gap is 0 .
+\end{proof}
+
+\begin{theorem}
+    For a problem with strong duality (e.g. assume Slater's condition: convex problem and there exists $ x $ strictly satisfying nonaffine inequality constraints),
+
+    $ x^{*} $ and $ u^{*}, v^{*} $ are primal and dual solutions $ \Longleftrightarrow x^{*} $ and $ u^{*}, v^{*} $ satisfy the KKT conditions
+\end{theorem}
+
+
+\begin{proof}
+
+    Sufficiency: Follows from Theorem \ref{thm:kkt-sufficient}.
+
+
+    Necessity: Let $ x^{*} $ and $ u^{*}, v^{*} $ be primal and dual solutions, and suppose we know strong duality holds.Then
+
+    $$
+    \begin{aligned}
+    f\left(x^{*}\right) &=g\left(u^{*}, v^{*}\right) \\
+    &=\min _{x}\left(f(x)+\sum_{i=1}^{m} u_{i}^{*} h_{i}(x)+\sum_{j=1}^{r} v_{j}^{*} \ell_{j}(x)\right) \\
+    & \leq f\left(x^{*}\right)+\sum_{i=1}^{m} u_{i}^{*} h_{i}\left(x^{*}\right)+\sum_{j=1}^{r} v_{j}^{*} \ell_{j}\left(x^{*}\right) \\
+    & \leq f\left(x^{*}\right)
+    \end{aligned}
+    $$
+
+The LSH equals RHS, so all inequalities in the equation must be equalities. Looking at the KKT conditions one by one, primal and dual feasibility holds, by virtue of optimality. Stationarity comes from the fact that $ x^{*} $ minimizes $ f(x)+\sum_{i=1}^{m} u_{i}^{*} h_{i}(x)+\sum_{j=1}^{r} v_{j}^{*} \ell_{j}(x) $. Since $ x^{*} $ is the minimizer, it must be a stationary point for this function. Complementary slackness comes from $ f\left(x^{*}\right)+\sum_{i=1}^{m} u_{i}^{*} h_{i}\left(x^{*}\right)+\sum_{j=1}^{r} v_{j}^{*} \ell_{j}\left(x^{*}\right)=f\left(x^{*}\right) $, since we must have $ \sum_{i=1}^{m} u_{i}^{*} h_{i}\left(x^{*}\right)=0 $ and they are each non-negative.
+
+\end{proof}

@@ -1,0 +1,249 @@
+\chapter{Cholesky Factorization}
+
+\section{Positive Definite Matrices}
+
+\begin{definition}[Positive semidefinite]
+    a symmetric matrix $ A \in \mathbf{R}^{n \times n} $ is positive semidefinite if $ x^{T} A x \geq 0 \quad $ for all $ x $
+
+\end{definition}
+
+\begin{definition}[positive definite]
+    a symmetric matrix $ A \in \mathbf{R}^{n \times n} $ is positive definite if $ x^{T} A x>0 \quad $ for all $ x \neq 0 $
+\end{definition}
+
+\section{Schur complement}
+
+\begin{definition}[Schur complement]
+    partition $ n \times n $ symmetric matrix $ A $ as
+$$
+A=\left[\begin{array}{cc}
+A_{11} & A_{2: n, 1}^{T} \\
+A_{2: n, 1} & A_{2: n, 2: n}
+\end{array}\right]
+$$
+
+the Schur complement of $ A_{11} $ is defined as the $ (n-1) \times(n-1) $ matrix
+$$
+S=A_{2: n, 2: n}-\frac{1}{A_{11}} A_{2: n, 1} A_{2: n, 1}^{T}
+$$
+\end{definition}
+
+\begin{theorem}
+    if $ A $ is positive definite, then $ S $ is positive definite
+\end{theorem}
+
+\begin{proof}
+    Take any $ x \neq 0 $ and define $ y=-\left(A_{2: n, 1}^{T} x\right) / A_{11} $; then
+$$
+x^{T} S x=\left[\begin{array}{l}
+y \\
+x
+\end{array}\right]^{T}\left[\begin{array}{cc}
+A_{11} & A_{2: n, 1}^{T} \\
+A_{2: n, 1} & A_{2: n, 2: n}
+\end{array}\right]\left[\begin{array}{l}
+y \\
+x
+\end{array}\right]>0
+$$
+because $ A $ is positive definite
+\end{proof}
+
+\begin{theorem}
+    Positive definite matrices are nonsingular. (见前)
+\end{theorem}
+
+\begin{theorem}
+    If $A$ is positive semidefinite, but not positive definite, then it is singular.
+\end{theorem}
+
+\begin{proof}
+    to see this, suppose $ A $ is positive semidefinite but not positive definite
+
+    there exists a nonzero $ x $ with $ x^{T} A x=0 $
+
+
+since $ A $ is positive semidefinite the following function is nonnegative:
+$$
+\begin{aligned}
+f(t) &=(x-t A x)^{T} A(x-t A x) \\
+&=x^{T} A x-2 t x^{T} A^{2} x+t^{2} x^{T} A^{3} x \\
+&=-2 t\|A x\|^{2}+t^{2} x^{T} A^{3} x
+\end{aligned}
+$$
+
+$ f(t) \geq 0 $ for all $ t $ is only possible if $ \|A x\|=0 $, i.e., $ A x=0 $
+
+hence there exists a nonzero $ x $ with $ A x=0 $, so $ A $ is singular
+\end{proof}
+
+\begin{corollary}
+    if $ A \in \mathbf{R}^{n \times n} $ is positive semidefinite, then
+$$
+B^{T} A B
+$$
+is positive semidefinite for any $ B \in \mathbf{R}^{n \times m} $
+\end{corollary}
+
+\begin{corollary}
+    if $ A \in \mathbf{R}^{n \times n} $ is positive definite, then
+$$
+B^{T} A B
+$$
+is positive definite for any $ B \in \mathbf{R}^{n \times m} $ with linearly independent columns
+\end{corollary}
+
+\section{Examples}
+
+\section{Graph Laplacian}
+
+\begin{definition}[Laplacian of the Graph]
+    the positive semidefinite matrix $ A=B B^{T} $ is called the Laplacian of the graph
+$$
+A_{i j}=\left\{\begin{array}{ll}
+\text { degree of node } i & \text { if } i=j \\
+-1 & \text { if } i \neq j \text { and there is an } \operatorname{arc} i \rightarrow j \text { or } j \rightarrow i \\
+0 & \text { otherwise }
+\end{array}\right.
+$$
+the degree of a node is the number of arcs incident to it
+\end{definition}
+
+\begin{theorem}
+    if $ y $ is vector of node potentials, then $ B^{T} y $ contains potential differences:
+$ \left(B^{T} y\right)_{j}=y_{k}-y_{l} \quad $ if arc $ j $ goes from node $ l $ to $ k $
+\end{theorem}
+
+\begin{theorem}[Dirichlet energy function]
+    $ y^{T} A y=y^{T} B B^{T} y $ is the sum of squared potential differences
+$$
+y^{T} A y=\left\|B^{T} y\right\|^{2}=\sum_{\operatorname{arcs} i \rightarrow j}\left(y_{j}-y_{i}\right)^{2}
+$$
+this is also known as the Dirichlet energy function
+\end{theorem}
+
+\section{Cholesky Factorization}
+
+\begin{theorem}
+    every positive definite matrix $ A \in \mathbf{R}^{n \times n} $ can be factored as
+$$
+A=R^{T} R
+$$
+where $ R $ is upper triangular with positive diagonal elements
+\end{theorem}
+
+- complexity of computing $ R $ is $ (1 / 3) n^{3} $ flops
+- $ R $ is called the Cholesky factor of $ A $
+- can be interpreted as "square root" of a positive definite matrix
+- gives a practical method for testing positive definiteness
+
+\begin{algorithm}
+    \caption{Cholesky factorization of order $ n-1 $}
+    \KwIn{$$
+    \begin{aligned}
+    \left[\begin{array}{cc}
+    A_{11} & A_{1,2: n} \\
+    A_{2: n, 1} & A_{2: n, 2: n}
+    \end{array}\right] &=\left[\begin{array}{cc}
+    R_{11} & 0 \\
+    R_{1,2: n}^{T} & R_{2: n, 2: n}^{T}
+    \end{array}\right]\left[\begin{array}{cc}
+    R_{11} & R_{1,2: n} \\
+    0 & R_{2: n, 2: n}
+    \end{array}\right] \\
+    &=\left[\begin{array}{cc}
+    R_{11}^{2} & \\
+    R_{11} R_{1,2: n}^{T} & R_{1,2: n}^{T} R_{1,2: n}+R_{2: n, 2: n}^{T} R_{2: n, 2: n}
+    \end{array}\right]
+    \end{aligned}
+    $$}
+    
+compute first row of $ R $ :
+$$
+R_{11}=\sqrt{A_{11}}, \quad R_{1,2: n}=\frac{1}{R_{11}} A_{1,2: n}
+$$\;
+compute 2,2 block $ R_{2: n, 2: n} $ from
+$$
+A_{2: n, 2: n}-R_{1,2: n}^{T} R_{1,2: n}=R_{2: n, 2: n}^{T} R_{2: n, 2: n}
+$$
+
+\end{algorithm}
+
+the algorithm works for positive definite $ A $ of size $ n \times n $
+- step 1: if $ A $ is positive definite then $ A_{11}>0 $
+- step 2: if $ A $ is positive definite, then
+$$
+A_{2: n, 2: n}-R_{1,2: n}^{T} R_{1,2: n}=A_{2: n, 2: n}-\frac{1}{A_{11}} A_{2: n, 1} A_{2: n, 1}^{T}
+$$
+is positive definite (see page 13.5)
+- hence the algorithm works for $ n=m $ if it works for $ n=m-1 $
+- it obviously works for $ n=1 $; therefore it works for all $ n $
+
+\section{Examples for Cholesky Factorization}
+
+\begin{example}
+    $$ \begin{aligned}\left[\begin{array}{rrr}25 & 15 & -5 \\ 15 & 18 & 0 \\ -5 & 0 & 11\end{array}\right]=&\left[\begin{array}{ccc}R_{11} & 0 & 0 \\ R_{12} & R_{22} & 0 \\ R_{13} & R_{23} & R_{33}\end{array}\right]\left[\begin{array}{ccc}R_{11} & R_{12} & R_{13} \\ 0 & R_{22} & R_{23} \\ 0 & 0 & R_{33}\end{array}\right] \\=&\left[\begin{array}{rrr}5 & 0 & 0 \\ 3 & 3 & 0 \\ -1 & 1 & 3\end{array}\right]\left[\begin{array}{rrr}5 & 3 & -1 \\ 0 & 3 & 1 \\ 0 & 0 & 3\end{array}\right] \end{aligned} $$
+
+    $$
+\left[\begin{array}{rrr}
+25 & 15 & -5 \\
+15 & 18 & 0 \\
+-5 & 0 & 11
+\end{array}\right]=\left[\begin{array}{ccc}
+R_{11} & 0 & 0 \\
+R_{12} & R_{22} & 0 \\
+R_{13} & R_{23} & R_{33}
+\end{array}\right]\left[\begin{array}{ccc}
+R_{11} & R_{12} & R_{13} \\
+0 & R_{22} & R_{23} \\
+0 & 0 & R_{33}
+\end{array}\right]
+$$
+- first row of $ R $
+$$
+\left[\begin{array}{rrr}
+25 & 15 & -5 \\
+15 & 18 & 0 \\
+-5 & 0 & 11
+\end{array}\right]=\left[\begin{array}{rcc}
+5 & 0 & 0 \\
+3 & R_{22} & 0 \\
+-1 & R_{23} & R_{33}
+\end{array}\right]\left[\begin{array}{ccc}
+5 & 3 & -1 \\
+0 & R_{22} & R_{23} \\
+0 & 0 & R_{33}
+\end{array}\right]
+$$
+- second row of $ R $
+$$
+\begin{array}{c}
+{\left[\begin{array}{rr}
+18 & 0 \\
+0 & 11
+\end{array}\right]-\left[\begin{array}{r}
+3 \\
+-1
+\end{array}\right]\left[\begin{array}{ll}
+3 & -1
+\end{array}\right]=\left[\begin{array}{cc}
+R_{22} & 0 \\
+R_{23} & R_{33}
+\end{array}\right]\left[\begin{array}{cc}
+R_{22} & R_{23} \\
+0 & R_{33}
+\end{array}\right]} \\
+{\left[\begin{array}{rr}
+9 & 3 \\
+3 & 10
+\end{array}\right]=\left[\begin{array}{cc}
+3 & 0 \\
+1 & R_{33}
+\end{array}\right]\left[\begin{array}{cc}
+3 & 1 \\
+0 & R_{33}
+\end{array}\right]}
+\end{array}
+$$
+- third column of $ R: 10-1=R_{33}^{2}, i . e ., R_{33}=3 $
+\end{example}

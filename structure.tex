@@ -42,7 +42,7 @@
 \definecolor{lightViolet}{RGB}{234, 229, 255}
 \definecolor{coral}{RGB}{184, 84, 80}
 \definecolor{grass}{RGB}{130,179,102}
-
+\definecolor{lightCoralRed}{RGB}{250, 223, 216}
 \usepackage{calc}
 
 %----------------------------------------------------------------------------------------
@@ -579,16 +579,29 @@ innerbottommargin=5pt]{cBox}
 %	REMARK ENVIRONMENT
 %----------------------------------------------------------------------------------------
 
-\newenvironment{remark}{\par\vspace{0.125pt}\small % Vertical white space above the remark and smaller font size
+% Theorem box
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+% backgroundcolor=black!5, % grey
+backgroundcolor=lightCoralRed,
+linecolor=coral,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+innerbottommargin=5pt]{rBox}
+
+\newenvironment{remark}{\begin{rBox}\par\vspace{0.125pt}\small % Vertical white space above the remark and smaller font size
 \begin{list}{}{
 \leftmargin=35pt % Indentation on the left
 \rightmargin=25pt}\item\ignorespaces % Indentation on the right
 
 % coral red circle, with ! insides it	
 \begin{tikzpicture}[overlay]
-\node[draw=coral!60,line width=1pt,circle,fill=coral!25,font=\sffamily\bfseries,inner sep=2pt,outer sep=0pt] at (-15pt,0pt){\textcolor{coral}{!}};\end{tikzpicture}
+\node[draw=coral!60,line width=1pt,circle,fill=coral!25,font=\sffamily\bfseries,inner sep=2pt,outer sep=0pt] at (-15pt,-5pt){\textcolor{coral}{!}};\end{tikzpicture}
 
-\advance\baselineskip -0.5pt}{\end{list}\vskip0.125pt} % Tighter line spacing and white space after remark
+\advance\baselineskip -0.5pt}{\end{list}\vskip0.125pt\end{rBox}} % Tighter line spacing and white space after remark
 
 
 

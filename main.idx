@@ -1,61 +1,71 @@
-\indexentry{从属范数|hyperpage}{53}
-\indexentry{算子范数|hyperpage}{53}
-\indexentry{over-determined|hyperpage}{60}
-\indexentry{under-determined|hyperpage}{60}
-\indexentry{square|hyperpage}{60}
-\indexentry{homogeneous|hyperpage}{60}
-\indexentry{正交投影|hyperpage}{73}
-\indexentry{投影|hyperpage}{74}
-\indexentry{下三角(Lower Triangular)矩阵|hyperpage}{75}
-\indexentry{上三角(Upper Triangular)矩阵|hyperpage}{75}
-\indexentry{reflection matrices|hyperpage}{97}
-\indexentry{plane rotation matrices|hyperpage}{97}
-\indexentry{permutation matrix|hyperpage}{102}
-\indexentry{拉格朗日函数 (Lagrange Function)|hyperpage}{127}
-\indexentry{Lagrange乘数|hyperpage}{139}
-\indexentry{定常方程式(stationary equation)|hyperpage}{139}
-\indexentry{约束条件|hyperpage}{139}
-\indexentry{原始可行性(primal feasibility)|hyperpage}{139}
-\indexentry{可行域(feasible region)|hyperpage}{139}
-\indexentry{无效的 (inactive)|hyperpage}{139}
-\indexentry{有效的 (active)|hyperpage}{139}
-\indexentry{对偶可行性(dual feasibility)。|hyperpage}{140}
-\indexentry{互补松弛性(complementary slackness)|hyperpage}{140}
-\indexentry{Karush-Kuhn-Tucker (KKT)条件|hyperpage}{140}
-\indexentry{Lagrange函数|hyperpage}{142}
-\indexentry{Lagrange乘子|hyperpage}{142}
-\indexentry{无约束优化问题|hyperpage}{142}
-\indexentry{优化变量|hyperpage}{142}
-\indexentry{松弛变量|hyperpage}{142}
-\indexentry{点|hyperpage}{147}
-\indexentry{线|hyperpage}{147}
-\indexentry{线段|hyperpage}{147}
-\indexentry{仿射集|hyperpage}{147}
-\indexentry{凸函数|hyperpage}{147}
-\indexentry{优化问题|hyperpage}{148}
-\indexentry{优化变量|hyperpage}{148}
-\indexentry{目标函数|hyperpage}{148}
-\indexentry{约束函数|hyperpage}{148}
-\indexentry{最优点|hyperpage}{148}
-\indexentry{解|hyperpage}{148}
-\indexentry{凸优化|hyperpage}{148}
-\indexentry{凸函数|hyperpage}{148}
-\indexentry{仿射函数|hyperpage}{148}
-\indexentry{$ 0- $sublevel集|hyperpage}{148}
-\indexentry{主变量(primal variable)|hyperpage}{149}
-\indexentry{主目标(primal objective)|hyperpage}{149}
-\indexentry{主问题(primal problem)|hyperpage}{149}
-\indexentry{主问题的解|hyperpage}{149}
-\indexentry{主目标的最优值|hyperpage}{149}
-\indexentry{主可行的(primal feasible)|hyperpage}{149}
-\indexentry{对偶目标(dual objective)|hyperpage}{150}
-\indexentry{对偶问题|hyperpage}{150}
-\indexentry{对偶问题的解|hyperpage}{150}
-\indexentry{对偶目标的最优值|hyperpage}{150}
-\indexentry{凸优化|hyperpage}{151}
-\indexentry{拉格朗日算子|hyperpage}{151}
-\indexentry{主问题|hyperpage}{151}
-\indexentry{对偶问题|hyperpage}{151}
-\indexentry{主问题|hyperpage}{151}
-\indexentry{对偶问题|hyperpage}{151}
-\indexentry{弱对偶性|hyperpage}{151}
+\indexentry{从属范数|hyperpage}{55}
+\indexentry{算子范数|hyperpage}{55}
+\indexentry{over-determined|hyperpage}{62}
+\indexentry{under-determined|hyperpage}{62}
+\indexentry{square|hyperpage}{62}
+\indexentry{homogeneous|hyperpage}{62}
+\indexentry{正交投影|hyperpage}{75}
+\indexentry{投影|hyperpage}{76}
+\indexentry{下三角(Lower Triangular)矩阵|hyperpage}{77}
+\indexentry{上三角(Upper Triangular)矩阵|hyperpage}{77}
+\indexentry{reflection matrices|hyperpage}{99}
+\indexentry{plane rotation matrices|hyperpage}{99}
+\indexentry{permutation matrix|hyperpage}{104}
+\indexentry{拉格朗日函数 (Lagrange Function)|hyperpage}{130}
+\indexentry{拉格朗日乘子(Lagrange Multipliers)|hyperpage}{131}
+\indexentry{Lagrange乘数|hyperpage}{144}
+\indexentry{定常方程式(stationary equation)|hyperpage}{144}
+\indexentry{约束条件|hyperpage}{144}
+\indexentry{原始可行性(primal feasibility)|hyperpage}{144}
+\indexentry{可行域(feasible region)|hyperpage}{144}
+\indexentry{无效的 (inactive)|hyperpage}{144}
+\indexentry{有效的 (active)|hyperpage}{144}
+\indexentry{对偶可行性(dual feasibility)。|hyperpage}{145}
+\indexentry{互补松弛性(complementary slackness)|hyperpage}{145}
+\indexentry{Karush-Kuhn-Tucker (KKT)条件|hyperpage}{145}
+\indexentry{Lagrange函数|hyperpage}{147}
+\indexentry{Lagrange乘子|hyperpage}{147}
+\indexentry{无约束优化问题|hyperpage}{147}
+\indexentry{优化变量|hyperpage}{147}
+\indexentry{松弛变量|hyperpage}{147}
+\indexentry{点|hyperpage}{152}
+\indexentry{线|hyperpage}{152}
+\indexentry{线段|hyperpage}{152}
+\indexentry{仿射集|hyperpage}{152}
+\indexentry{凸函数|hyperpage}{152}
+\indexentry{优化问题|hyperpage}{153}
+\indexentry{优化变量|hyperpage}{153}
+\indexentry{目标函数|hyperpage}{153}
+\indexentry{约束函数|hyperpage}{153}
+\indexentry{最优点|hyperpage}{153}
+\indexentry{解|hyperpage}{153}
+\indexentry{凸优化|hyperpage}{153}
+\indexentry{凸函数|hyperpage}{153}
+\indexentry{仿射函数|hyperpage}{153}
+\indexentry{$ 0- $sublevel集|hyperpage}{153}
+\indexentry{主变量(primal variable)|hyperpage}{154}
+\indexentry{主目标(primal objective)|hyperpage}{154}
+\indexentry{主问题(primal problem)|hyperpage}{154}
+\indexentry{主问题的解|hyperpage}{154}
+\indexentry{主目标的最优值|hyperpage}{154}
+\indexentry{主可行的(primal feasible)|hyperpage}{154}
+\indexentry{对偶目标(dual objective)|hyperpage}{155}
+\indexentry{对偶问题|hyperpage}{155}
+\indexentry{对偶问题的解|hyperpage}{155}
+\indexentry{对偶目标的最优值|hyperpage}{155}
+\indexentry{凸优化|hyperpage}{156}
+\indexentry{拉格朗日算子|hyperpage}{156}
+\indexentry{主问题|hyperpage}{156}
+\indexentry{对偶问题|hyperpage}{156}
+\indexentry{主问题|hyperpage}{156}
+\indexentry{对偶问题|hyperpage}{156}
+\indexentry{弱对偶性|hyperpage}{156}
+\indexentry{constraint qualification|hyperpage}{158}
+\indexentry{concave|hyperpage}{166}
+\indexentry{Weak duality|hyperpage}{166}
+\indexentry{strong duality|hyperpage}{166}
+\indexentry{directional derivative|hyperpage}{171}
+\indexentry{descent direction|hyperpage}{171}
+\indexentry{minimize|hyperpage}{179}
+\indexentry{step size|hyperpage}{181}
+\indexentry{line search|hyperpage}{181}

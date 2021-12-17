@@ -313,12 +313,13 @@ $$ \nabla f(x)=0, f(x)=\|A x-b\|_{2}^{2 \prime \prime} $$
 \section{QR分解求解最小二乘法}
 
 \begin{theorem}[QR分解求解最小二乘法]
-    若 $ \mathrm{A} \in \mathbb{R}^{m \times n} $ 的列向量线性无关，则存在 $ \mathrm{A}=\mathrm{QR} $ 分解， $ Q \in \mathbb{R}^{m \times n} $ ， $ R \in \mathbb{R}^{\mathrm{n} \times n} $ 
+    若 $ {A} \in \mathbb{R}^{m \times n} $ 的列向量线性无关，则存在 $ {A}={QR} $ 分解， $ Q \in \mathbb{R}^{m \times n} $ ， $ R \in \mathbb{R}^{{n} \times n} $ 
     
     最小二乘法问题的解
 $$
 \begin{aligned}
-\hat{x}=\left(A^{T} A\right)^{-1} A^{T} b &=\left((Q R)^{T}(Q R)\right)^{-1}(Q R)^{T} b \\
+\hat{x}&=\left(A^{T} A\right)^{-1} A^{T} b \\
+&=\left((Q R)^{T}(Q R)\right)^{-1}(Q R)^{T} b \\
 &=\left(R^{T} Q^{T} Q R\right)^{-1} R^{T} Q^{T} b \\
 &=\left(R^{T} R\right)^{-1} R^{T} Q^{T} b \\
 &=R^{-1} Q^{T} b
@@ -519,6 +520,17 @@ $$  x^{(k+1)}=x^{(k)}-\alpha_{k} \nabla f\left(x^{(k)}\right) , f\left(x^{(k+1)}
 $$ x^{(k+1)}=x^{(k)}-\alpha^{(k)} A^{T}\left(A x^{(k)}-b\right) $$
 \end{definition}
 
+
+\begin{algorithm}[htbp]
+    \caption{梯度下降法}
+    初始化 $ x^{(0)} $, $k=0$\;
+    \While(){Not Convergent}{
+        $p^{(k)}=A^{T}\left(A x^{(k)}-b\right)$\;
+        $x^{(k+1)}=x^{(k)}-\alpha^{(k)} p^{(k)}$\;
+        $k \leftarrow k + 1$
+    }
+\end{algorithm}
+
 \section{估计学习率（步长）$\alpha$}
 
 \begin{problem}
@@ -567,7 +579,7 @@ $$\begin{aligned}
 
 \begin{algorithm}[htbp]
     \caption{使用线性搜索估计步长的梯度下降法}
-    初始 $ x^{(0)} $, $k=0$\;
+    初始化 $ x^{(0)} $, $k=0$\;
     \While(){Not Convergent}{
         $p^{(k)}=A^{T}\left(A x^{(k)}-b\right)$\;
         $\alpha^{(k)}=\dfrac{\left\|p^{(k)}\right\|_{2}^{2}}{\left\|A p^{(k)}\right\|_{2}^{2}}$\;

@@ -25,11 +25,11 @@ $$
     也即则称 $ y $ 是 $ C x $ 的高阶无穷小, 记作 $ y=o(C x) $ . 
 \end{corollary}
 
-\begin{proposition}[优化求解的必要条件]
+\begin{theorem}[优化求解的必要条件]
     假设函数$f$在$\hat{x}$可微, 则有
 
     $$ \hat{x}=\arg \min _{x \in \mathbb{R}^{n}} f(x) \Rightarrow \nabla f(\hat{x})=0 $$
-\end{proposition}
+\end{theorem}
 
 \begin{proof}
     假设函数$f$在$\hat{x}$一阶泰勒展开, 有
@@ -83,7 +83,7 @@ $$
     称其为凸函数. 
 \end{definition}
 
-% todo 图片
+\subsection{Examples for Convex Functions}
 
 \begin{example}
     \label{Example:SquareIsConvex}
@@ -110,6 +110,8 @@ $$
 \begin{example}
     $$ f(x)=\|x\|_{2}^{2}, x \in \mathbb{R}^{n} $$
 \end{example}
+
+\subsection{凸函数的充要条件}
 
 \begin{theorem}[可微函数$f$是凸函数的充要条件]
     \label{Theorem:ConvexDiffential}
@@ -159,7 +161,7 @@ $$
 $$
 \begin{aligned}
 f(x) & \geq f(\hat{x})+\langle\nabla f(\hat{x}), x-\hat{x}\rangle \\
-& \geq f(\hat{x})+\langle 0, x-\hat{x}\rangle \geq f(\hat{x})
+& = f(\hat{x})+\langle 0, x-\hat{x}\rangle \geq f(\hat{x})
 \end{aligned}
 $$
 
