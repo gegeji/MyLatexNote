@@ -1,0 +1,91 @@
+\chapter{Complexity of iterative algorithms}
+
+\section{Iterative algorithms}
+
+The matrix algorithms we discussed so far are non-iterative. They require a finite number of floating-point operations, that can be counted and expressed as a polynomial function of the problem dimensions. In chapters 4 and 5 we discuss problems that are solved by iterative algorithms. By this is meant an algorithm that computes a sequence of values $ x^{(0)}, x^{(1)}, x^{(2)}, \ldots $, with
+$$
+x^{(k)} \rightarrow x^{*}
+$$
+as $ k \rightarrow \infty $, where the scalar or vector $ x^{*} $ is a solution of the problem. $ x^{(0)} $ is called the starting point of the algorithm, and $ x^{(k)} $ is called the $ k $ th iterate. Moving from $ x^{(k)} $ to $ x^{(k+1)} $ is called an iteration of the algorithm. The algorithm is terminated when $ \left\|x^{(k)}-x^{*}\right\| \leq \epsilon $, where $ \epsilon>0 $ is some specified tolerance, or when it is determined that the sequence is not converging (for example, when a limit on the number of iterations is exceeded).
+
+The total cost of an iterative algorithm is more difficult to estimate than the cost of a non-iterative algorithm, because the number of iterations depends on the problem parameters and on the starting point. The efficiency of an iterative algorithm is therefore usually not expressed by giving its flop count, but by giving upper bounds on the number of iterations to reach a given accuracy. Deriving such bounds is the purpose of convergence analysis.
+
+Iterative algorithms are often classified according to their rate of convergence. In the following paragraphs we give an overview of the most common definitions. For simplicity we will assume $ x^{*} $ is a scalar, and $ x^{(k)}(k=0,1,2, \ldots) $ is a sequence of numbers converging to $ x^{\star} $.
+
+Absolute and relative error The error after $ k $ iterations can be expressed as the absolute error, $ \left|x^{(k)}-x^{\star}\right| $, or as the relative error $ \left|x^{(k)}-x^{\star}\right| /\left|x^{\star}\right| $ (which is defined only if $ \left.x^{\star} \neq 0\right) $. The relative error can also be expressed as the number of correct digits, for which several slightly different definitions exist. The definition that we will adopt is the following: if the relative error $ \left|x^{(k)}-x^{\star}\right| /\left|x^{\star}\right| $ is less than one, then the number of correct digits in $ x^{(k)} $ is defined as
+$$
+\left\lfloor-\log _{10}\left(\frac{\left|x^{(k)}-x^{\star}\right|}{\left|x^{\star}\right|}\right)\right\rfloor
+$$
+(by $ \lfloor\alpha\rfloor $ we mean the largest integer less than or equal to $ \alpha $ ). In other words, we take the logarithm with base 10 of the relative error (which is a negative number if the relative error is less than one), change its sign, and round it down to the nearest integer. This means that $ r $ correct digits correspond to relative errors in the interval $ \left[10^{-r}, 10^{-r-1}\right) $.
+
+\section{ Linear and R-linear convergence}
+
+A sequence $ x^{(k)} $ with limit $ x^{\star} $ is linearly convergent if there exists a constant $ c \in $ $ (0,1) $ such that
+$$
+\left|x^{(k)}-x^{\star}\right| \leq c\left|x^{(k-1)}-x^{\star}\right|
+$$
+for $ k $ sufficiently large. For example, the sequence $ x^{(k)}=1+(1 / 2)^{k} $ converges linearly to $ x^{\star}=1 $, because
+$$
+\left|x^{(k+1)}-x^{\star}\right|=(1 / 2)^{k+1}=\frac{1}{2}\left|x^{(k)}-x^{\star}\right|
+$$
+so the definition is satisfied with $ c=1 / 2 $.
+
+If $ x^{\star} \neq 0 $, we can give an intuitive interpretation of linear convergence in terms of the number of correct digits in $ x^{(k)} $. Let
+$$
+r^{(k)}=-\log _{10} \frac{\left|x^{(k)}-x^{\star}\right|}{\left|x^{\star}\right|} .
+$$
+Except for rounding to an integer, $ r^{(k)} $ is the number of correct digits in $ x^{(k)} $. If we divide both sides of the inequality (3.1) by $ \left|x^{\star}\right| $ and take logarithms, we obtain
+$$
+r^{(k+1)} \geq r^{(k)}-\log _{10} c .
+$$
+Ignoring the effect of rounding, we can say we gain at least $ -\log _{10} c $ correct digits per iteration.
+
+We can verify this using the example $ x^{(k)}=1+1 / 2^{k} $. As we have seen, this sequence is linearly convergent with $ c=1 / 2 $, so we expect to gain roughly $ -\log _{10} 1 / 2=0.3 $ correct digits per iteration, or in other words, one correct digit per three or four iterations. This is confirmed by table $ 3.1 $, which shows the first ten values of $ x^{(k)} $.
+
+\subsection{R-linear convergence}
+
+R-linear convergence Linear convergence is also sometimes defined as follows. A sequence $ x^{(k)} $ with limit $ x^{\star} $ is $ R $-linearly convergent if there exists a positive $ M $ and $ c \in(0,1) $ such that
+$$
+\left|x^{(k)}-x^{\star}\right| \leq M c^{k}
+$$
+for sufficiently large $ k $. This means that for large $ k $ the error decreases at least as fast as the geometric series $ M c^{k} $. We refer to this as R-linear convergence to distinguish it from the first definition. Every linearly convergent sequence is also R-linearly convergent, but the converse is not true. For example, the error in an R-linearly convergent sequence does not necessarily decrease monotonically, while the inequality (3.1) implies that $ \left|x^{(k)}-x^{\star}\right|<\left|x^{(k-1)}-x^{\star}\right| $ for sufficiently large $ k $.
+
+\section{Quadratic convergence}
+
+A sequence $ x^{(k)} $ with limit $ x^{\star} $ is quadratically convergent if there exists a constant $ c>0 $ such that
+$$
+\left|x^{(k)}-x^{\star}\right| \leq c\left|x^{(k-1)}-x^{\star}\right|^{2}
+$$
+for $ k $ sufficiently large. The sequence $ x^{(k)}=1+(1 / 2)^{2^{k}} $ converges quadratically to $ x^{\star}=1 $, because
+$$
+\left|x^{(k+1)}-x^{\star}\right|=(1 / 2)^{2^{k+1}}=\left((1 / 2)^{2^{k}}\right)^{2}=\left|x^{(k)}-x^{\star}\right|^{2}
+$$
+so the definition is satisfied with $ c=1 $.
+If $ x^{\star} \neq 0 $, we can relate the definition to the number of correct digits in $ x^{(k)} $. If we define $ r^{(k)} $ as above, we can write the inequality (3.3) as
+$$
+r^{(k)} \geq 2 r^{(k-1)}-\log _{10}\left(\left|x^{\star} c\right|\right) .
+$$
+
+Since $ \left|x^{(k)}-x^{\star}\right| \rightarrow 0 $, we must have $ r^{(k)} \rightarrow+\infty $, so sooner or later the first term on the right-hand side will dominate the second term, which is constant. For sufficiently large $ k $, the number of correct digits roughly doubles in each iteration.
+Table $ 3.2 $ shows the first few values of the sequence $ x^{(k)}=1+(1 / 2)^{2^{k}} $ which converges quadratically with $ c=1 $, and $ x^{\star}=1 $. We start with one correct digit. It takes two iterations to get the second correct digit. The next iteration we gain one digit, then we gain two in one iteration, etc.
+
+\section{Superlinear convergence}
+
+A sequence $ x^{(k)} $ with limit $ x^{\star} $ is superlinearly convergent if there exists a sequence $ c_{k}>0 $ with $ c_{k} \rightarrow 0 $ such that
+$$
+\left|x^{(k)}-x^{\star}\right| \leq c_{k}\left|x^{(k-1)}-x^{\star}\right|
+$$
+for sufficiently large $ k $.
+
+The sequence $ x^{(k)}=1+(1 /(k+1))^{k} $ is superlinearly convergent because
+$$
+\left|x^{(k)}-x^{\star}\right|=\frac{1}{(k+1)^{k}}=\frac{k^{k-1}}{(k+1)^{k}} \frac{1}{k^{k-1}}=\frac{k^{k-1}}{(k+1)^{k}}\left|x^{(k-1)}-x^{\star}\right|,
+$$
+so the definition is satisfied with $ c_{k}=k^{k-1} /(k+1)^{k} $, which indeed goes to zero.
+If we define $ r^{(k)} $ as above, we can write the inequality (3.3) as
+$$
+r^{(k)} \geq r^{(k-1)}-\log _{10}\left(c_{k}\right),
+$$
+and since $ c_{k} \rightarrow 0,-\log _{10} c_{k} \rightarrow \infty $. For sufficiently large $ k $, the number of correct digits we gain per iteration $ \left(-\log _{10}\left(c_{k}\right)\right) $ increases with $ k $.
+
+% todo (2021-12-18 09:00): example

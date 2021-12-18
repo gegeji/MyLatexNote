@@ -579,7 +579,7 @@ innerbottommargin=5pt]{cBox}
 %	REMARK ENVIRONMENT
 %----------------------------------------------------------------------------------------
 
-% Theorem box
+% Remark box
 \newmdenv[skipabove=7pt,
 skipbelow=7pt,
 % backgroundcolor=black!5, % grey
@@ -592,7 +592,7 @@ leftmargin=0cm,
 rightmargin=0cm,
 innerbottommargin=5pt]{rBox}
 
-\newenvironment{remark}{\begin{rBox}\par\vspace{0.125pt}\small % Vertical white space above the remark and smaller font size
+\newenvironment{remark}{\par\vspace{0.125pt}\small % Vertical white space above the remark and smaller font size
 \begin{list}{}{
 \leftmargin=35pt % Indentation on the left
 \rightmargin=25pt}\item\ignorespaces % Indentation on the right
@@ -601,7 +601,7 @@ innerbottommargin=5pt]{rBox}
 \begin{tikzpicture}[overlay]
 \node[draw=coral!60,line width=1pt,circle,fill=coral!25,font=\sffamily\bfseries,inner sep=2pt,outer sep=0pt] at (-15pt,-5pt){\textcolor{coral}{!}};\end{tikzpicture}
 
-\advance\baselineskip -0.5pt}{\end{list}\vskip0.125pt\end{rBox}} % Tighter line spacing and white space after remark
+\advance\baselineskip -0.5pt\begin{rBox}}{\end{rBox}\end{list}\vskip0.125pt} % Tighter line spacing and white space after remark
 
 
 

@@ -1018,3 +1018,87 @@ $ \|A\|_{2}\left\|A^{-1}\right\|_{2} $ 大, $ \frac{\|\Delta x\|_{2}}{\|x\|_{2}}
 
 
 
+\section{Cancellation}
+
+Instability in an algorithm is often (but not always) caused by an effect called cancellation. Cancellation occurs when two numbers are subtracted that are almost equal, and one of the numbers or both are subject to error (for example, due to rounding error in previous calculations).
+Suppose
+$$
+\hat{x}=x+\Delta x, \quad \hat{y}=y+\Delta y
+$$
+are approximations of two numbers $ x, y $, with absolute errors $ |\Delta x| $ and $ |\Delta y| $, respectively. The relative error in the difference $ \hat{x}-\hat{y} $ is
+$$
+\frac{|(\hat{x}-\hat{y})-(x-y)|}{|x-y|}=\frac{|\Delta x-\Delta y|}{|x-y|} \leq \frac{|\Delta x|+|\Delta y|}{|x-y|} .
+$$
+
+(The upper bound is achieved when $ \Delta x $ and $ \Delta y $ have opposite signs.) We see that if $ x-y $ is small, then the relative error in $ \hat{x}-\hat{y} $ can be very large, and much larger than the relative errors in $ \hat{x} $ and $ \hat{y} $. The result is that the relative errors $ |\Delta x| /|x| $, $ |\Delta y| /|y| $ are magnified enormously.
+
+For example, suppose $ x=1, y=1+10^{-5} $, and $ x $ and $ y $ have been calculated with an accuracy of about 10 significant digits, i.e., $ |\Delta x| /|x| \approx 10^{-10} $ and $ |\Delta y| /|y| \approx $ $ 10^{-10} $. The error in the result is
+$$
+\frac{|(\hat{x}-\hat{y})-(x-y)|}{|x-y|} \leq \frac{|\Delta x|+|\Delta y|}{|x-y|} \approx \frac{2 \cdot 10^{-10}}{|x-y|}=2 \cdot 10^{-5} .
+$$
+The result has only about 5 correct digits.
+
+
+\begin{example}
+    Example The most straightforward method for computing the two roots of the quadratic equation
+$$
+a x^{2}+b x+c=0
+$$
+(with $ a \neq 0 $ ) is to evaluate the expressions
+$$
+x_{1}=\frac{-b+\sqrt{b^{2}-4 a c}}{2 a}, \quad x_{2}=\frac{-b-\sqrt{b^{2}-4 a c}}{2 a} .
+$$
+This method is unstable if $ b^{2} \gg|4 a c| $. If $ b>0 $, there is a danger of cancellation in the expression for $ x_{1} $; if $ b<0 $, cancellation may occur in the expression for $ x_{2} $.
+For example, suppose $ a=c=1, b=10^{5}+10^{-5} $. The exact roots are given by
+$$
+x_{1}=\frac{-b+\sqrt{b^{2}-4 a c}}{2 a}=-10^{-5}, \quad x_{2}=\frac{-b-\sqrt{b^{2}-4 a c}}{2 a}=-10^{5},
+$$
+We evaluate these expressions in MATLAB, rounding the square roots to 6 correct digits using the \begin{verbatim}
+    chop
+\end{verbatim} function:
+
+\begin{verbatim}
+    >> a = 1; b = 1e5 + 1e-5; c = 1;
+>> x1 = (-b + chop(sqrt(b^2 - 4*a*c), 6)) / (2*a)
+ans =
+-5.0000e-6
+>> x2 = (-b - chop(sqrt(b^2 - 4*a*c), 6)) / (2*a)
+ans =
+-1.0000e+05
+\end{verbatim}
+
+
+The relative error in $ x_{1} $ is $ 50 \% $, and is due to cancellation.
+We can formulate an algorithm that is more stable if $ b^{2} \gg|4 a c| $ as follows. First suppose $ b>0 $, so we have cancellation in the expression for $ x_{1} $. In this case we can calculate $ x_{2} $ accurately. The expression for $ x_{1} $ can be reformulated as
+$$
+\begin{aligned}
+x_{1} &=\frac{\left(-b+\sqrt{b^{2}-4 a c}\right)\left(-b-\sqrt{b^{2}-4 a c}\right)}{(2 a)\left(-b-\sqrt{b^{2}-4 a c}\right)} \\
+&=\frac{b^{2}-b^{2}+4 a c}{(2 a)\left(-b-\sqrt{b^{2}-4 a c}\right)} \\
+&=\frac{c}{a x_{2}}
+\end{aligned}
+$$
+
+Similarly, if $ b>0 $, we can use the expression $ x_{2}=c /\left(a x_{1}\right) $ to compute $ x_{2} $, given $ x_{1} $. The modified algorithm that avoids cancellation is therefore:
+- if $ b \leq 0 $, calculate
+$$
+x_{1}=\frac{-b+\sqrt{b^{2}-4 a c}}{2 a}, \quad x_{2}=\frac{c}{a x_{1}}
+$$
+- if $ b>0 $, calculate
+$$
+x_{2}=\frac{-b-\sqrt{b^{2}-4 a c}}{2 a}, \quad x_{1}=\frac{c}{a x_{2}}
+$$
+
+For the example, we get
+
+\begin{verbatim}
+    >> a = 1; b = 1e5 + 1e-5; c = 1;
+>> x2 = (-b - chop(sqrt(b^2 - 4*a*c), 6)) / (2*a)
+ans =
+-1.0000e+05
+>> x1 = c / (a*x2)
+ans =
+-1.0000e-05
+\end{verbatim}
+
+
+\end{example}
