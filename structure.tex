@@ -39,7 +39,7 @@
 \usepackage{xcolor} % Required for specifying colors by name
 % \definecolor{ocre}{RGB}{243,102,25} % Define the orange color used for highlighting throughout the book
 \definecolor{violet}{RGB}{76, 50, 168}
-\definecolor{lightViolet}{RGB}{234, 229, 255}
+\definecolor{lightViolet}{RGB}{242, 240, 255}
 \definecolor{coral}{RGB}{184, 84, 80}
 \definecolor{grass}{RGB}{130,179,102}
 \definecolor{lightCoralRed}{RGB}{250, 223, 216}
@@ -599,7 +599,8 @@ innerbottommargin=5pt]{rBox}
 
 % coral red circle, with ! insides it	
 \begin{tikzpicture}[overlay]
-\node[draw=coral!60,line width=1pt,circle,fill=coral!25,font=\sffamily\bfseries,inner sep=2pt,outer sep=0pt] at (-15pt,-5pt){\textcolor{coral}{!}};\end{tikzpicture}
+\node[draw=coral!60,line width=1pt,circle,fill=lightCoralRed,% fill=coral!25,
+font=\sffamily\bfseries,inner sep=2pt,outer sep=0pt] at (-15pt,-6pt){\textcolor{coral}{!}};\end{tikzpicture}
 
 \advance\baselineskip -0.5pt\begin{rBox}}{\end{rBox}\end{list}\vskip0.125pt} % Tighter line spacing and white space after remark
 
