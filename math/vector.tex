@@ -8,19 +8,19 @@
     \( \left[\begin{array}{c}-1.1 \\ 0.0 \\ 3.6 \\ -7.2\end{array}\right] \) 或者 \( \quad\left(\begin{array}{c}-1.1 \\ 0.0 \\ 3.6 \\ -7.2\end{array}\right) \) 或者 \( \quad(-1.1,0,3.6,-7.2) \)
 \end{definition}
 
-表中的数字是\textit{元素}(\textit{项、系数、分量}). 元素的数量是向量的\textit{大小}(\textit{维数, 长度}). 大小为n的向量称为\textit{$n$维向量}. 
+表中的数字是\textit{元素}(\textit{项、系数、分量}). 元素的数量是向量的\textit{大小}(\textit{维数, 长度}). 大小为$n$的向量称为\textit{$n$维向量}. 
 向量中的数字通常被称作\textit{标量}. 
 
-用符号来表示向量, 比如$\alpha$ , $b$, 一般小写字母表示. 其它表示形式 $\boldsymbol{g}, \vec{a}$
+用符号来表示向量, 比如$\alpha$ , $b$, 一般用小写字母表示向量. 其它表示形式如 $\boldsymbol{g}, \vec{a}$ 等。
 
 \begin{definition}[n维向量 \( a \) 的第 \( i \) 元素]
-    n维向量 \( a \) 的第i \( i \) 元素表示为 \( a_{i} \).
+    $n$维向量 \( a \) 的第\( i \) 元素表示为 \( a_{i} \).
 
-    有时i指的是向量列表中的第i个向量.
+    有时$i$指的是向量列表中的第$i$个向量.
 \end{definition}
 
 \begin{definition}[$a=b$]
-    对于所有$i$, 如果有$a_i = b_i$, 则称两个相同大小的向量$a$和$b$是相等的, 可写成$a = b$
+    对于所有$i$, 如果有$a_i = b_i$, 则称两个相同大小的向量$a$和$b$是相等的, 可写成$a = b$。
 \end{definition}
 
 \begin{definition}[stacked vector]
@@ -31,28 +31,83 @@
     $$ a=\left(b_{1}, b_{2}, \ldots, b_{m}, c_{1}, c_{2}, \ldots, c_{n}, d_{1}, d_{2}, \ldots, d_{p}\right) $$
 \end{definition}
 
+\begin{definition}[Subvectors]
+    Colon notation can be used to define subvectors (slices) of a vector.
+
+    subvectors. If $ a $ is a vector, then $ a_{r: s} $ is the vector of size $ s-r+1 $, with entries $ a_{r}, \ldots, a_{s} $ :
+    $$
+    a_{r: s}=\left(a_{r}, \ldots, a_{s}\right)
+    $$
+
+    The subscript $ r: s $ is called the index range. Thus, in our example above, we have
+
+    $$
+    b=a_{1: m}, \quad c=a_{(m+1):(m+n)}, \quad d=a_{(m+n+1):(m+n+p)} .
+    $$
+\end{definition}
+
+\begin{remark}
+    在本书中，下标从1开始。
+\end{remark}
+
 \begin{definition}[零向量]
-    所有项为0的n维向量表示为$0_n$或者$0$.
+    所有项为$0$的$n$维向量表示为$0_n$或者$0$.
 \end{definition}
 
 \begin{definition}[全一向量]
-      所有项为1的n维向量表示为$\boldsymbol{1}_n$或者$1$.
+      所有项为1的$n$维向量表示为$\boldsymbol{1}_n$或者$1$.
 \end{definition}
 
 \begin{definition}[单位向量]
-    当第i项为1, 其余项为0时表示为$e_i$
-
-    $$ {e}_{1}=\left[\begin{array}{l}1 \\ 0 \\ 0\end{array}\right], \quad e_{2}=\left[\begin{array}{l}0 \\ 1 \\ 0\end{array}\right], \quad e_{3}=\left[\begin{array}{l}0 \\ 0 \\ 1\end{array}\right] $$
+    当第$i$项为$1$, 其余项为$0$时表示为$e_i$
 \end{definition}
 
+\begin{example}
+    $$ {e}_{1}=\left[\begin{array}{l}1 \\ 0 \\ 0\end{array}\right], \quad e_{2}=\left[\begin{array}{l}0 \\ 1 \\ 0\end{array}\right], \quad e_{3}=\left[\begin{array}{l}0 \\ 0 \\ 1\end{array}\right] $$
+\end{example}
+
 \begin{definition}[稀疏向量]
-    如果一个向量的许多项都是0, 该向量为稀疏(Sparse)的. 稀疏向量能在计算机上高效地存储和操作. 
+    如果一个向量的许多项都是0, 该向量为稀疏(sparse)的. 稀疏向量能在计算机上高效地存储和操作. 
 
 $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros), 有时用 $\ell_0$表示 . 
 
 \end{definition}
 
-向量 \( x=\left(x_{1}, x_{2}\right) \) 可以在二维中表示一个位置或一个位移、 图像、 单词统计、颜色等. 
+向量 \( x=\left(x_{1}, x_{2}\right) \) 可以在二维中表示一个位置(location)或一个位移(displacement)、 图像(列向量)、 表示一句话中每个单词出现多少次、颜色等. 
+
+\begin{example}[Monochrome (black and white) image]
+    grayscale values of $ M \times N $ pixels stored as $ M N $-vector (e.g., row-wise)
+
+    Color image: $ 3 M N $-vectors with $ \mathrm{R}, \mathrm{G}, \mathrm{B} $ values of the $ M N $ pixels
+
+    Video: vector of size $ K M N $ represents $ K $ monochrome images of $ M \times N $ pixels
+\end{example}
+
+\begin{example}[时间序列]
+    每个元素是一个样本(sample).
+\end{example}
+
+\begin{example}[自然文本进行tokenization]
+    对于自然文本进行tokenization。
+
+    将`rained'约简为`rain'称为\term{stemming}。另外会将非常常用的词，如`a', `the'和极少出现的词去掉。这些词称为停用词。
+\end{example}
+
+\begin{example}[Feature vectors]
+    contain values of variables or attributes that describe members of a set.
+\end{example}
+
+\begin{remark}
+    Vector elements can represent very different quantities, in different units.
+\end{remark}
+
+\begin{remark}
+    It can contain categorical features (e.g., $0/1$ for male/female)
+\end{remark}
+
+\begin{remark}
+    Its ordering has no particular meaning.
+\end{remark}
 
 \section{Vector Space}
 
@@ -64,18 +119,22 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros), �
         \item 标量乘法: \( F \times V \rightarrow V \), 记作 \( \forall x \in V, \lambda \in P \), 则 \( \lambda x \in V \) (乘法封闭)
     \end{enumerate}
 
-上述两个运算满足下列八条规则 \( (\forall x, y, z \in V, \lambda, \mu \in P) \) 
+
+\end{definition}
+
+\begin{theorem}
+    上述两个运算满足下列八条规则 \( (\forall x, y, z \in V, \lambda, \mu \in P) \) 
 \begin{enumerate}
     \item \( x+y=y+x \) (交换律) 
     \item \( x+(y+z)=(x+y)+z \) (结合律)
-    \item \( V \) 存在一个零元素, 记作0, \( x+0=x \)
+    \item \( V \) 存在一个零元素, 记作$0$, \( x+0=x \)
     \item 存在 \( x \) 的负元素, 记作 \( -x \), 满足 \( x+(-x)=0 \)
     \item \( \forall x \in V \), 都有 \( 1 x=x, 1 \in P \)
     \item \( \lambda(\mu x)=(\lambda \mu) x \)
     \item \( (\lambda+\mu) x=\lambda x+\mu x \)
     \item \(  \lambda(x+y)=\lambda x+\lambda y \)
 \end{enumerate}
-\end{definition}
+\end{theorem}
 
 \begin{corollary}
     向量空间也称为线性空间.
@@ -108,19 +167,21 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros), �
 
 \begin{definition}[向量加法]
     $n$维向量$a$和$b$可以相加, 求和形式表示为$a + b$.
-
-    设向量 \( a, {b}, {C} \) 是向量空间 \( V \) 的元素, 即 \( a, {b}, {c} \in V_{\text {.  }} \)
-
-\begin{enumerate}
-    \item 交换律： \( a+b=b+a \)
-    \item 结合律： \( (a+b)+c=a+(b+c) \) (因此可写成 \( a+{b}+{c}) \)
-    \item \( a+0=0+a=a \)
-    \item \( a-a=0 \)
-\end{enumerate}
 \end{definition}
 
+\begin{theorem}
+    设向量 \( a, {b}, {c} \) 是向量空间 \( V \) 的元素, 即 \( a, {b}, {c} \in V_{\text {.  }} \)。向量加法满足以下性质：
+
+    \begin{enumerate}
+        \item 交换律： \( a+b=b+a \)
+        \item 结合律： \( (a+b)+c=a+(b+c) \) (因此可写成 \( a+{b}+{c}) \)
+        \item \( a+0=0+a=a \)
+        \item \( a-a=0 \)
+    \end{enumerate}
+\end{theorem}
+
 \begin{corollary}[向量位移相加]
-    如果二维向量$a$和$b$都表示位移, 则它们的位移之和为$a + b$
+    如果二维向量$a$和$b$都表示位移, 则它们的位移之和为$a + b$。
 \end{corollary}
 
 \begin{example}
@@ -154,14 +215,16 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros), �
 
 \begin{definition}[标量与向量的乘法]
     $$ \beta a=\left[\begin{array}{c}\beta a_{1} \\ \vdots \\ \beta a_{n}\end{array}\right] $$
-
-    标量 \( \beta, \gamma \) 与向量 \( a 、 b \)进行乘法, 有如下性质:
-\begin{enumerate}
-    \item 结合律： \( (\beta \gamma) a=\beta(\gamma a) \)
-    \item 左分配律： \( (\beta+\gamma) a=\beta a+\gamma a \)
-    \item 右分配律： \( \beta(a+b)=\beta a+\beta b \)
-\end{enumerate}
 \end{definition}
+
+\begin{theorem}
+    标量 \( \beta, \gamma \) 与向量 \( a 、 b \)进行乘法, 有如下性质:
+    \begin{enumerate}
+        \item 结合律： \( (\beta \gamma) a=\beta(\gamma a) \)
+        \item 左分配律： \( (\beta+\gamma) a=\beta a+\gamma a \)
+        \item 右分配律： \( \beta(a+b)=\beta a+\beta b \)
+    \end{enumerate}
+\end{theorem}
 
 \begin{definition}[线性组合]
     对于向量 \( a_{1}, \ldots, a_{m} \) 和标量 \( \beta_{1}, \ldots, \beta_{m} \),
@@ -169,10 +232,13 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros), �
     是向量的线性组合. \( \beta_{1}, \ldots, \beta_{m} \) 是该向量的\textit{系数}. 
 \end{definition}
 
-\begin{example}
-    对于任何向量 \( b \in \mathbb{R}^{n} \), 有如下等式
+
+
+    \begin{theorem}
+        对于任何向量 \( b \in \mathbb{R}^{n} \), 满足
     $$ b=b_{1} e_{1}+\cdots+b_{n} e_{n}, b=\left[\begin{array}{c}b_{1} \\ b_{2} \\ \vdots \\ b_{n}\end{array}\right] $$
-\end{example}
+    \end{theorem}
+    
 
 \section{内积}
 
@@ -180,38 +246,48 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros), �
     在数域 \( \mathbb{R} \) 上的向量空间 \( V \), 定义函数 \( \langle\cdot,\cdot\rangle:V \times V \rightarrow \mathbb{R} \), 满足：
 
     \begin{enumerate}
-        \item $ \langle{a}, {a}\rangle \geq 0, \forall {a} \in V $, 当且仅当 $a=0$ 时 $ \langle a, a\rangle=0 $
-        \item \( \langle\alpha {a}+\beta {b}, c\rangle=\alpha\langle{a}, c\rangle+\beta\langle{b}, c\rangle, \forall \alpha, \beta \in \mathbb{R} \), 且 \( {a}, {b}, c \in V \)
-        \item \( \langle{a}, {b}\rangle=\langle{b}, {a}\rangle, \forall {a}, {b} \in V \)
+        \item $ \langle{a}, {a}\rangle \geq 0, \forall {a} \in V $, 当且仅当 $a=0$ 时 $ \langle a, a\rangle=0 $.
+        \item \( \langle\alpha {a}+\beta {b}, c\rangle=\alpha\langle{a}, c\rangle+\beta\langle{b}, c\rangle, \forall \alpha, \beta \in \mathbb{R} \), 且 \( {a}, {b}, c \in V \).
+        \item \( \langle{a}, {b}\rangle=\langle{b}, {a}\rangle, \forall {a}, {b} \in V \).
     \end{enumerate}
 
-    函数 \( \langle\cdot,\cdot\rangle:V \times V \rightarrow \mathbb{R} \)成为内积. 
+    则称函数 \( \langle\cdot,\cdot\rangle:V \times V \rightarrow \mathbb{R} \)是内积. 
 \end{definition}
 
-\begin{example}
+\begin{example}[the inner product of two $ n $-vectors $ a, b $]
     在向量空间 \( \mathbb{R}^{n} \) 上,  计算两个向量对应项相乘之后求和函数
-    \[ \langle a, b\rangle=a_{1} b_{1}+a_{2} b_{2}+\cdots+a_{n} b_{n}=a^{T}_{b} \]
+    $$ \langle a, b\rangle=a_{1} b_{1}+a_{2} b_{2}+\cdots+a_{n} b_{n}=a^{T}{b} $$
 
 where \( a=\left[\begin{array}{c}a_{1} \\ a_{2} \\ \vdots \\ a_{n}\end{array}\right], b=\left[\begin{array}{c}b_{1} \\ b_{2} \\ \vdots \\ b_{n}\end{array}\right] \in \mathbb{R}^{n} \).
 \end{example}
 
 \begin{proof}
-    \( \langle a, a\rangle=a_{1} a_{1}+a_{2} a_{2}+\cdots+a_{n} a_{n}=\sum_{i=1}^{n} a_{i}^{2} \geq 0,\langle a, a\rangle=0 \), 则 \( a=0 \)
+对于性质1
+    $$\langle a, a\rangle=a^T a=a_{1} a_{1}+a_{2} a_{2}+\cdots+a_{n} a_{n}=\sum_{i=1}^{n} a_{i}^{2} \geq 0,$$
 
-    $$\begin{aligned} \langle\alpha a+\beta {b}, {c}\rangle &=\left(\alpha a_{1}+\beta b_{1}\right) c_{1}+\left(\alpha a_{2}+\beta b_{2}\right) c_{2}+\cdots+\left(\alpha a_{n}+\beta b_{n}\right) c_{n} 
+    $\langle a, a\rangle=0 则 a=0$.
+
+    对于性质2
+    $$\begin{aligned} \langle\alpha a+\beta {b}, {c}\rangle 
+    & = (\alpha a+\beta {b})^T c 
+    \\ &=\left(\alpha a_{1}+\beta b_{1}\right) c_{1}+\left(\alpha a_{2}+\beta b_{2}\right) c_{2}+\cdots+\left(\alpha a_{n}+\beta b_{n}\right) c_{n} 
     \\ &=\alpha \sum_{i=1}^{n} a_{i} c_{i}+\beta \sum_{i=1}^{n} b_{i} c_{i}
     \\ &=\alpha\langle a, c\rangle+\beta\langle b, c\rangle\end{aligned} $$
 
+    对于性质3
     $$ \langle a, b\rangle=a^{{T}} b=b^{{T}} a=\langle b, a\rangle $$
 \end{proof}
 
-内积的性质：交换律、结合律、分配律. 
+\begin{theorem}
+    内积的性质：交换律、结合律、分配律. 
 
-交换律： \( a^{T} b=b^{T} a \)
+交换律(commutative)： \( a^{T} b=b^{T} a \)
 
-结合律： \( (\gamma a)^{T} b=\gamma\left(a^{T} b\right) \)
+结合律(associative with scalar multiplication)： \( (\gamma a)^{T} b=\gamma\left(a^{T} b\right) \)
 
-分配律： \( (a+b)^{T} c=a^{T} c+b^{T} c \)
+分配律(distributive with vector addition)： \( (a+b)^{T} c=a^{T} c+b^{T} c \)
+\end{theorem}
+
 
 \subsection{常用的内积等式}
 \begin{corollary}[选出第$i$项]
@@ -227,11 +303,15 @@ where \( a=\left[\begin{array}{c}a_{1} \\ a_{2} \\ \vdots \\ a_{n}\end{array}\ri
 \end{corollary}
 
 \begin{corollary}[向量元素的平均值]
-    $$ (\mathbf{1} / n)^{T} a=\left(a_{1}+\cdots+a_{n}\right) / n $$
+    $$ (\frac{\mathbf{1}}{n})^{T} a= \frac{a_{1}+\cdots+a_{n}}{n}  $$
 \end{corollary}
 
 \begin{corollary}[Selective sum]
     Let $ b $ be a vector all of whose entries are either 0 or 1 . Then $$ b^{T} a $$ is the sum of the elements in $ a $ for which $ b_{i}=1 $.
+\end{corollary}
+
+\begin{corollary}[Differencing]
+    $$ \left(e_{i}-e_{j}\right)^{T} a=a_{i}-a_{j} $$
 \end{corollary}
 
 \begin{definition}[The sum of block vectors]
@@ -239,6 +319,9 @@ where \( a=\left[\begin{array}{c}a_{1} \\ a_{2} \\ \vdots \\ a_{n}\end{array}\ri
 
     $$ a^{T} b=\left[\begin{array}{c}a_{1} \\ \vdots \\ a_{k}\end{array}\right]^{T}\left[\begin{array}{c}b_{1} \\ \vdots \\ b_{k}\end{array}\right]=a_{1}^{T} b_{1}+\cdots+a_{k}^{T} b_{k} $$
 \end{definition}
+
+
+\section{Examples for Inner Product}
 
 内积用途很广.
 
@@ -254,9 +337,13 @@ Here we have $ a^{T} b=2 $, which is the number of objects in both $ A $ and $ B
     an object, and $w$ is a vector of the same size (often called a \textit{weight vector}), the
     inner product $w^T f$ is the sum of the feature values, scaled (or weighted) by
     the weights, and is sometimes called a \textit{score}.
+
+    Inner product $ w^{T} f=w_{1} f_{1}+w_{2} f_{2}+\cdots+w_{n} f_{n} $ is total score. 
+
+    Some linear combinations of the vectors $ a_{1}, \ldots, a_{m} $ have special names. For example, the linear combination with $ \beta_{1}=\cdots=\beta_{m}=1 $, given by $ a_{1}+\cdots+a_{m} $, is the $ s u m $ of the vectors, and the linear combination with $ \beta_{1}=\cdots=\beta_{m}=1 / m $, given by $ (1 / m)\left(a_{1}+\cdots+a_{m}\right) $, is the \term{average} of the vectors. When the coefficients sum to one, i.e., $ \beta_{1}+\cdots+\beta_{m}=1 $, the linear combination is called an \term{affine combination}. When the coefficients in an affine combination are nonnegative, it is called a \term{convex combination}, a \term{mixture}, or a \term{weighted average}. The coefficients in an affine or convex combination are sometimes given as \term{percentages}, which add up to $ 100 \% $.
 \end{example}
 
-\begin{example}
+\begin{example}[多项式]
     $$ p(x)=c_{1}+c_{2} x+\cdots+c_{n-1} x^{n-2}+c_{n} x^{n-1} $$
 
     Let $t$ be a number, $ z=\left(1, t, t^{2}, \ldots, t^{n-1}\right) $  be the $n$-vector of powers
@@ -282,8 +369,8 @@ $$
     令 $\lambda \in \mathbb{R}$, 则有 
     
     $$0 \leq\langle x+\lambda y, x+\lambda y\rangle=\langle x, x\rangle+\lambda\langle y, x\rangle+\lambda\langle x, y\rangle+\lambda^{2}\langle y, y\rangle=\langle x, x\rangle+2 \lambda\langle y, x\rangle+\lambda^{2}\langle y, y\rangle$$
-则 
 
+则 
 $$\lambda^{2}\langle y, y\rangle+2 \lambda\langle y, x\rangle+\langle x, x\rangle \geq 0, \forall \lambda \in \mathbb{R}$$
 
 所以
@@ -311,14 +398,14 @@ $$
 $$
 0 \leq\left(u_{1} x+v_{1}\right)^{2}+\cdots+\left(u_{n} x+v_{n}\right)^{2}=\left(\sum_{i} u_{i}^{2}\right) x^{2}+2\left(\sum_{i} u_{i} v_{i}\right) x+\sum_{i} v_{i}^{2}
 $$
-Since it is nonnegative, it has at most one real root for $x$, hence its discriminant is less than or equal to zero. That is,
+Since it is nonnegative, it has at most one real root for $x$. Hence its discriminant is less than or equal to zero. That is,
 $$
-\left(\sum_{i} u_{i} v_{i}\right)^{2}-\left(\sum_{i} u_{i}^{2}\right)\left(\sum_{i} v_{i}^{2}\right) \leq 0
+\Delta = \left(\sum_{i} u_{i} v_{i}\right)^{2}-\left(\sum_{i} u_{i}^{2}\right)\left(\sum_{i} v_{i}^{2}\right) \leq 0
 $$
 which yields the Cauchy-Schwarz inequality.
 \end{proof}
 
-\begin{corollary}[Cauchy-Schwarz不等式变体]
+\begin{corollary}[Cauchy-Schwarz不等式的等价形式]
     由Cauchy-Schwarz不等式
     $$
     |\langle x, y\rangle|^{2} \leq\langle x, x\rangle\langle y, y\rangle
@@ -331,20 +418,60 @@ which yields the Cauchy-Schwarz inequality.
     \end{aligned} $$
 \end{corollary}
 
+
 \section{浮点运算}
 
-计算机以浮点格式存储(实)数值. 
+计算机以浮点格式存储(实)数值. 存储$n$维的向量需要$8n$字节进行存储。
 
 基本的算术运算(加法, 乘法等)被称为浮点运算(flop). 
 
-算法或操作的时间复杂度：作为输入维数的函数所需要的浮点运算总数. 
+\begin{definition}[Floating point operation (flop)]
+    the unit of complexity when comparing vector and matrix algorithms.
 
-算法复杂度通常以非常粗略地近似估算. 
+    1 flop $ = $ one basic arithmetic operation $ (+,-, *, /, \sqrt{,} \ldots) $ in $ \mathbf{R} $ or $ \mathbf{C} $.
+\end{definition}
 
-（程序）执行时间的粗略估计：计算机速度/flops，目前的计算机大约是$1$Gflops/秒($10^9$flops/秒)。
+\begin{remark}
+    Comments: this is a very simplified model of complexity of algorithms
+
+    \begin{itemize}
+        \item we don't distinguish between the different types of arithmetic operations
+        \item we don't distinguish between real and complex arithmetic
+        \item we ignore integer operations (indexing, loop counters, ...)
+        \item we ignore cost of memory access
+    \end{itemize}
+\end{remark}
+
+算法或操作的时间复杂度：作为输入维数的函数所需要的浮点运算总数. 算法复杂度通常以非常粗略地近似估算. （程序）执行时间的粗略估计：计算机速度/flops，目前的计算机大约是$1$Gflops/秒($10^9$flops/秒)。
+
+\begin{definition}[Operation count (flop count)]
+    Total number of operations in an algorithm. In linear algebra, it is typically a polynomial of the dimensions in the problem
+
+\end{definition}
+\begin{theorem}[通过浮点运算次数大致预测程序的运行时间]
+    a crude predictor of run time of the algorithm.
+
+    $$\text{run time}  \approx \frac{\text { number of operations (flops) }}{\text { computer speed (flops per second) }} $$
+\end{theorem}
+
+\begin{definition}[Dominant term, Order]
+    Dominant term: the highest-order term in the flop count
+$$
+\frac{1}{3} n^{3}+100 n^{2}+10 n+5 \approx \frac{1}{3} n^{3}
+$$
+
+Order: the power in the dominant term
+$$
+\frac{1}{3} n^{3}+10 n^{2}+100=\text { order } n^{3}
+$$
+\end{definition}
+
+
+
+
 
 \begin{corollary}
-    假设有$n$维向量$x$和$y$：
+    假设有$n$维向量$x$和$y$
 
     \begin{itemize}
         \item $x+y$需要$n$次加法, 所以时间复杂度为 ($n$)flops. 
@@ -354,5 +481,153 @@ which yields the Cauchy-Schwarz inequality.
     \end{itemize}
 \end{corollary}
 
+
+\section{Complex numbers and Vectors}
+
+\begin{definition}[Complex Numbers]
+    $ x=\alpha+\mathrm{j} \beta $ with $ \alpha, \beta $ real scalars
+
+    $ \mathrm{j}=\sqrt{-1} $ (more common notation is $ i $ or $ j $ ), $ \alpha $ is the \term{real} part of $ x $, denoted $ \operatorname{Re} x $, $ \beta $ is the \term{imaginary} part, denoted $ \operatorname{Im} x $
+\end{definition}
+
+\begin{definition}[set of complex numbers]
+    set of complex numbers is denoted $ \mathbf{C} $
+\end{definition}
+
+\begin{definition}[Modulus]
+    modulus (absolute value, magnitude): $$ |x|=\sqrt{(\operatorname{Re} x)^{2}+(\operatorname{Im} x)^{2}} $$
+\end{definition}
+
+\begin{definition}[conjugate]
+    $$ \bar{x}=\operatorname{Re} x-\mathrm{j} \operatorname{Im} x $$
+\end{definition}
+
+\begin{theorem}
+    $$ \operatorname{Re} x=\frac{x+\bar{x}}{2} $$
+\end{theorem}
+
+\begin{theorem}
+    $$ \operatorname{Im} x=\frac{x-\bar{x}}{2 \mathrm{j}} $$
+\end{theorem}
+
+\begin{theorem}
+    $$ |x|^{2}=\bar{x} x $$
+\end{theorem}
+
+\subsection{Polar representation}
+
+\begin{theorem}
+    nonzero complex number $ x=\operatorname{Re} x+\mathrm{j} \operatorname{Im} x $ can be written as
+$$
+x=|x|(\cos \theta+\mathrm{j} \sin \theta)=|x| e^{\mathrm{j} \theta}
+$$
+
+$ \theta \in[0,2 \pi) $ is the \term{argument} (\term{phase angle}) of $ x $ (notation: $ \arg x $ ). $ e^{\mathrm{j} \theta} $ is complex exponential.
+\end{theorem}
+
+\begin{theorem}
+    $ e^{\mathrm{j} \theta}=\cos \theta+\mathrm{j} \sin \theta $
+\end{theorem}
+
+\begin{FigureCenter}{Complex Numbers}
+    
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Straight Lines [id:da4158839935279788] 
+\draw [line width=1.5]    (267,233) -- (478,233.3) ;
+\draw [shift={(482,233.3)}, rotate = 180.08] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (11.61,-5.58) -- (0,0) -- (11.61,5.58) -- cycle    ;
+%Straight Lines [id:da5390398615537384] 
+\draw [line width=1.5]    (284,252) -- (284,85.68) ;
+\draw [shift={(284,81.68)}, rotate = 90] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (11.61,-5.58) -- (0,0) -- (11.61,5.58) -- cycle    ;
+%Straight Lines [id:da928526944402611] 
+\draw [color={rgb, 255:red, 184; green, 84; blue, 80 }  ,draw opacity=1 ][fill={rgb, 255:red, 184; green, 84; blue, 80 }  ,fill opacity=1 ][line width=1.5]    (283.5,232.5) -- (412.87,129.33) ;
+\draw [shift={(416,126.84)}, rotate = 141.43] [fill={rgb, 255:red, 184; green, 84; blue, 80 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (11.61,-5.58) -- (0,0) -- (11.61,5.58) -- cycle    ;
+%Shape: Rectangle [id:dp5932303428508245] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}] (284,126.84) -- (416,126.84) -- (416,233.5) -- (284,233.5) -- cycle ;
+%Shape: Free Drawing [id:dp3532268261143874] 
+\draw  [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][line width=3] [line join = round][line cap = round] (361,231.7) .. controls (361,218.56) and (355.2,196.89) .. (347,188.7) ;
+%Shape: Free Drawing [id:dp6391532692612814] 
+\draw  [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][line width=3] [line join = round][line cap = round] (347,187.7) .. controls (350.61,187.7) and (353.29,189.7) .. (356,189.7) ;
+
+
+% Text Node
+\draw (238,113) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75] [align=left] {$\displaystyle \operatorname{Im} x$};
+% Text Node
+\draw (408,241) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75] [align=left] {$\displaystyle \operatorname{Re} x$};
+% Text Node
+\draw (231,59) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75] [align=left] {imagainary axis};
+% Text Node
+\draw (418,110.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$x$};
+% Text Node
+\draw (323,163.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$| x| $};
+% Text Node
+\draw (363,200) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75] [align=left] {$\displaystyle \operatorname{arg} x$};
+
+
+\end{tikzpicture}
+\end{FigureCenter}
+
+\subsection{Complex vector}
+
+\begin{definition}[vector with complex elements]
+    $ a=\alpha+\mathrm{j} \beta $ with $ \alpha, \beta $ real vectors
+\end{definition}
+
+\begin{definition}[real and imaginary part, conjugate of complex numbers]
+    real and imaginary part, conjugate are defined componentwise:
+
+$$
+\begin{aligned}
+\operatorname{Re} a &=\left(\operatorname{Re} a_{1}, \operatorname{Re} a_{2}, \ldots, \operatorname{Re} a_{n}\right) \\
+\operatorname{Im} a &=\left(\operatorname{Im} a_{1}, \operatorname{Im} a_{2}, \ldots, \operatorname{Im} a_{n}\right) \\
+\bar{a} &=\operatorname{Re} a-\mathrm{j} \operatorname{Im} a
+\end{aligned}
+$$
+\end{definition}
+
+\begin{definition}[ set of complex $n$-vectors]
+    $$ \mathbf{C}^{n} $$
+\end{definition}
+
+\begin{definition}
+    $$ a+b=\left[\begin{array}{c}a_{1}+b_{1} \\ a_{2}+b_{2} \\ \vdots \\ a_{n}+b_{n}\end{array}\right], \quad \gamma a=\left[\begin{array}{c}\gamma a_{1} \\ \gamma a_{2} \\ \vdots \\ \gamma a_{n}\end{array}\right], \quad a \circ b=\left[\begin{array}{c}a_{1} b_{1} \\ a_{2} b_{2} \\ \vdots \\ a_{n} b_{n}\end{array}\right] $$
+\end{definition}
+
+\begin{definition}[Complex inner product]
+    the inner product of complex $ n $-vectors $ a, b $ is defined as
+$$
+b^{H} a=\bar{b}_{1} a_{1}+\bar{b}_{2} a_{2}+\cdots+\bar{b}_{n} a_{n}
+$$
+\end{definition}
+
+other notation: $ \langle a, b\rangle,(a \mid b), \ldots $.
+
+for real vectors, reduces to real inner product $ b^{T} a $.
+
+for complex $ n $-vectors $ a, b, c $ and complex scalars $ \gamma $
+
+\begin{theorem}[$a^H a$的性质]
+    $a^H a$有如下性质：
+
+
+    $ a^{H} a \geq 0 $ : follows from
+$$
+\begin{aligned}
+a^{H} a &=\bar{a}_{1} a_{1}+\bar{a}_{2} a_{2}+\cdots+\bar{a}_{n} a_{n} \\
+&=\left|a_{1}\right|^{2}+\left|a_{2}\right|^{2}+\cdots+\left|a_{n}\right|^{2}
+\end{aligned}
+$$
+
+    $$ a^{H} a=0 \text{ only if } a=0 $$
+    $$ b^{H} a=\overline{a^{H} b} $$
+ $$ (\gamma b)^{H} a=\bar{\gamma}\left(b^{H} a\right) $$
+ $$ (b+c)^{H} a=b^{H} a+c^{H} a $$
+ $$ b^{H}(a+c)=b^{H} a+b^{H} c $$
+    $$ b^{H}(\gamma a)=\gamma\left(b^{H} a\right) $$
+\end{theorem}
 
 

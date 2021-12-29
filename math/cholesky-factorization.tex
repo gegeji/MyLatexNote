@@ -139,24 +139,7 @@ It can be interpreted as "square root" of a positive definite matrix and gives a
 
 \begin{algorithm}
     \caption{Cholesky factorization of order $ n-1 $}
-    \KwIn{$$
-    \begin{aligned}
-    \left[\begin{array}{cc}
-    A_{11} & A_{1,2: n} \\
-    A_{2: n, 1} & A_{2: n, 2: n}
-    \end{array}\right] &=\left[\begin{array}{cc}
-    R_{11} & 0 \\
-    R_{1,2: n}^{T} & R_{2: n, 2: n}^{T}
-    \end{array}\right]\left[\begin{array}{cc}
-    R_{11} & R_{1,2: n} \\
-    0 & R_{2: n, 2: n}
-    \end{array}\right] \\
-    &=\left[\begin{array}{cc}
-    R_{11}^{2} & \\
-    R_{11} R_{1,2: n}^{T} & R_{1,2: n}^{T} R_{1,2: n}+R_{2: n, 2: n}^{T} R_{2: n, 2: n}
-    \end{array}\right]
-    \end{aligned}
-    $$}
+    \KwIn{$$ \begin{aligned}\left[\begin{array}{cc}A_{11} & A_{1,2: n} \\ A_{2: n, 1} & A_{2: n, 2: n}\end{array}\right] &=\left[\begin{array}{cc}R_{11} & 0 \\ R_{1,2: n}^{T} & R_{2: n, 2: n}^{T}\end{array}\right]\left[\begin{array}{cc}R_{11} & R_{1,2: n} \\ 0 & R_{2: n, 2: n}\end{array}\right] \\ &=\left[\begin{array}{cc}R_{11}^{2} & R_{11} R_{1,2: n} \\ R_{11} R_{1,2: n}^{T} & R_{1,2: n}^{T} R_{1,2: n}+R_{2: n, 2: n}^{T} R_{2: n, 2: n}\end{array}\right] \end{aligned} $$}
     
 compute first row of $ R $ :
 $$
@@ -182,9 +165,9 @@ A_{2: n, 2: n}-R_{1,2: n}^{T} R_{1,2: n}=A_{2: n, 2: n}-\frac{1}{A_{11}} A_{2: n
 $$
 is positive definite.
 
-hence the algorithm works for $ n=m $ if it works for $ n=m-1 $.
+Hence the algorithm works for $ n=m $ if it works for $ n=m-1 $.
 
-it obviously works for $ n=1 $; therefore it works for all $ n $.
+It obviously works for $ n=1 $; therefore it works for all $ n $.
 \end{proof}
 
 
@@ -226,68 +209,85 @@ $$
 $$
 
 second row of $ R $
-$$
-\begin{array}{c}
-{\left[\begin{array}{rr}
-18 & 0 \\
-0 & 11
-\end{array}\right]-\left[\begin{array}{r}
-3 \\
--1
-\end{array}\right]\left[\begin{array}{ll}
-3 & -1
-\end{array}\right]=\left[\begin{array}{cc}
-R_{22} & 0 \\
-R_{23} & R_{33}
-\end{array}\right]\left[\begin{array}{cc}
-R_{22} & R_{23} \\
-0 & R_{33}
-\end{array}\right]} \\
-{\left[\begin{array}{rr}
-9 & 3 \\
-3 & 10
-\end{array}\right]=\left[\begin{array}{cc}
-3 & 0 \\
-1 & R_{33}
-\end{array}\right]\left[\begin{array}{cc}
-3 & 1 \\
-0 & R_{33}
-\end{array}\right]}
-\end{array}
-$$
+$$\displaystyle \begin{aligned}
+    \left[\begin{array}{ r r }
+    18 & 0\\
+    0 & 11
+    \end{array}\right] -\left[\begin{array}{ r }
+    3\\
+    -1
+    \end{array}\right]\left[\begin{array}{ l l }
+    3 & -1
+    \end{array}\right] & =\left[\begin{array}{ c c }
+    R_{22} & 0\\
+    R_{23} & R_{33}
+    \end{array}\right]\left[\begin{array}{ c c }
+    R_{22} & R_{23}\\
+    0 & R_{33}
+    \end{array}\right]\\
+    \left[\begin{array}{ r r }
+    9 & 3\\
+    3 & 10
+    \end{array}\right] & =\left[\begin{array}{ c c }
+    3 & 0\\
+    1 & R_{33}
+    \end{array}\right]\left[\begin{array}{ c c }
+    3 & 1\\
+    0 & R_{33}
+    \end{array}\right]
+    \end{aligned}$$
 
 third column of $ R: 10-1=R_{33}^{2}, i . e ., R_{33}=3 $
 \end{example}
 
 \section{Solving equations with positive definite $A$}
 
-solve $ A x=b $ with $ A $ a positive definite $ n \times n $ matrix
+\begin{problem}
+    solve $ A x=b $ with $ A $ a positive definite $ n \times n $ matrix
+\end{problem}
 
-Algorithm
-- factor $ A $ as $ A=R^{T} R $
-- solve $ R^{T} R x=b $
-- solve $ R^{T} y=b $ by forward substitution
-- solve $ R x=y $ by back substitution
+\begin{algorithm}[htbp]
+    \caption{Solving equations with positive definite $A$}
+    factor $ A $ as $ A=R^{T} R $\;
+    solve $ R^{T} R x=b $\;
+    solve $ R^{T} y=b $ by forward substitution\;
+    solve $ R x=y $ by back substitution\;
+\end{algorithm}
+
 
 Complexity: $ (1 / 3) n^{3}+2 n^{2} \approx(1 / 3) n^{3} $ flops
-- factorization: $ (1 / 3) n^{3} $
-- forward and backward substitution: $ 2 n^{2} $
+
+\begin{itemize}
+    \item factorization: $ (1 / 3) n^{3} $
+    \item forward and backward substitution: $ 2 n^{2} $
+\end{itemize}
+
 
 \section{Cholesky Factorization of Gram Matrix}
+Suppose $ B $ is an $ m \times n $ matrix with linearly independent colum, and the Gram matrix $ A=B^{T} B $ is positive definite.
 
-- suppose $ B $ is an $ m \times n $ matrix with linearly independent colum
-- the Gram matrix $ A=B^{T} B $ is positive definite (page 4.21)
-two methods for computing the Cholesky factor of $ A $, given $ B $
-1. compute $ A=B^{T} B $, then Cholesky factorization of $ A $
-$$
-A=R^{T} R
-$$
+There two methods for computing the Cholesky factor of $ A $, given $ B $
 
-2. compute QR factorization $ B=Q R $; since
-$$
-A=B^{T} B=R^{T} Q^{T} Q R=R^{T} R
-$$
-the matrix $ R $ is the Cholesky factor of $ A $
+\begin{algorithm}
+    \caption{computing the Cholesky factor of $ A $}
+    \KwOut{matrix $ R $ (the Cholesky factor of $ A $)}
+    compute $ A=B^{T} B $\;
+    compute Cholesky factorization of $ A $
+    $$
+    A=R^{T} R
+    $$\;
+    
+\end{algorithm}
+
+\begin{algorithm}
+    \caption{computing the Cholesky factor of $ A $}
+    \KwOut{matrix $ R $ (the Cholesky factor of $ A $)}
+
+compute QR factorization $ B=Q R $; since
+    $$
+    A=B^{T} B=R^{T} Q^{T} Q R=R^{T} R
+    $$\;
+\end{algorithm}
 
 \begin{example}
     $$
@@ -330,57 +330,78 @@ $$
 \subsection{Comparison of the two methods}
 
 Numerical stability: QR factorization method is more stable
-- see the example on page $ 8.16 $
-- QR method computes $ R $ without "squaring" $ B $ (i.e., forming $ B^{T} B $ )
-- this is important when the columns of $ B $ are "almost" linearly dependent
-Complexity
-- method 1: cost of symmetric product $ B^{T} B $ plus Cholesky factorization
+
+\begin{itemize}
+    \item QR method computes $ R $ without "squaring" $ B $ (i.e., forming $ B^{T} B $ )
+    \item this is important when the columns of $ B $ are "almost" linearly dependent
+\end{itemize}
+
+Complexity:
+\begin{itemize}
+    \item method 1: cost of symmetric product $ B^{T} B $ plus Cholesky factorization
 $$
 m n^{2}+(1 / 3) n^{3} \text { flops }
 $$
-- method 2: $ 2 m n^{2} $ flops for QR factorization
-- method 1 is faster but only by a factor of at most two (if $ m \gg n $ )
+    \item method 2: $ 2 m n^{2} $ flops for QR factorization
+    \item method 1 is faster but only by a factor of at most two (if $ m \gg n $ )
+\end{itemize}
+
 
 \section{Sparse positive definite matrices}
 
-Cholesky factorization of dense matrices
-- $ (1 / 3) n^{3} $ flops
-- on a standard computer: a few seconds or less, for $ n $ up to several 1000
-Cholesky factorization of sparse matrices
-- if $ A $ is very sparse, $ R $ is often (but not always) sparse
-- if $ R $ is sparse, the cost of the factorization is much less than (1/3) $ n^{3} $
-- exact cost depends on $ n $, number of nonzero elements, sparsity pattern
-- very large sets of equations can be solved by exploiting sparsity
+Cholesky factorization of dense matrices:
+\begin{itemize}
+    \item $ (1 / 3) n^{3} $ flops
+    \item on a standard computer: a few seconds or less, for $ n $ up to several 1000
+\end{itemize}
+
+Cholesky factorization of sparse matrices:
+\begin{itemize}
+    \item if $ A $ is very sparse, $ R $ is often (but not always) sparse
+    \item if $ R $ is sparse, the cost of the factorization is much less than (1/3) $ n^{3} $
+    \item exact cost depends on $ n $, number of nonzero elements, sparsity pattern
+    \item very large sets of equations can be solved by exploiting sparsity
+\end{itemize}
 
 \section{Sparse Cholesky factorization}
 
-if $ A $ is sparse and positive definite, it is usually factored as
+\begin{theorem}
+    if $ A $ is sparse and positive definite, it is usually factored as
 $$
 A=P R^{T} R P^{T}
 $$
+
 $ P $ a permutation matrix; $ R $ upper triangular with positive diagonal elements
+\end{theorem}
+
 Interpretation: we permute the rows and columns of $ A $ and factor
 $$
 P^{T} A P=R^{T} R
 $$
-- choice of permutation greatly affects the sparsity $ R $
-- there exist several heuristic methods for choosing a good permutation
+
+\begin{itemize}
+    \item choice of permutation greatly affects the sparsity $ R $
+    \item there exist several heuristic methods for choosing a good permutation
+\end{itemize}
+
 
 \section{Solving sparse positive definite equations}
 
 solve $ A x=b $ with $ A $ a sparse positive definite matrix
-Algorithm
-1. compute sparse Cholesky factorization $ A=P R^{T} R P^{T} $
-2. permute right-hand side: $ c:=P^{T} b $
-3. solve $ R^{T} y=c $ by forward substitution
-4. solve $ R z=y $ by back substitution
-5. permute solution: $ x:=P z $
+
+\begin{algorithm}
+    \caption{Solving sparse positive definite equations}
+    compute sparse Cholesky factorization $ A=P R^{T} R P^{T} $\;
+    permute right-hand side: $ c:=P^{T} b $\;
+    solve $ R^{T} y=c $ by forward substitution\;
+    solve $ R z=y $ by back substitution\;
+    permute solution: $ x:=P z $\;
+\end{algorithm}
 
 \section{Quadratic form}
 
-
-
-suppose $A$ is $n \times n$ and Hermitian $\left(A_{i j}=\bar{A}_{j i}\right)$
+\begin{theorem}
+    suppose $A$ is $n \times n$ and Hermitian $\left(A_{i j}=\bar{A}_{j i}\right)$
 $$
 \begin{aligned}
 x^{H} A x &=\sum_{i=1}^{n} \sum_{j=1}^{n} A_{i j} \bar{x}_{i} x_{j} \\
@@ -388,46 +409,67 @@ x^{H} A x &=\sum_{i=1}^{n} \sum_{j=1}^{n} A_{i j} \bar{x}_{i} x_{j} \\
 &=\sum_{i=1}^{n} A_{i i}\left|x_{i}\right|^{2}+2 \operatorname{Re} \sum_{i>j} A_{i j} \bar{x}_{i} x_{j}
 \end{aligned}
 $$
-note that $x^{H} A x$ is real for all $x \in \mathbf{C}^{n}$
+\end{theorem}
+
+\begin{remark}
+    note that $x^{H} A x$ is real for all $x \in \mathbf{C}^{n}$
+\end{remark}
+
 
 
 
 \section{Complex positive definite matrices}
 
-
-- a Hermitian $n \times n$ matrix $A$ is positive semidefinite if
+\begin{definition}
+    a Hermitian $n \times n$ matrix $A$ is positive semidefinite if
 $$
 x^{H} A x \geq 0 \quad \text { for all } x \in \mathbf{C}^{n}
 $$
-- a Hermitian $n \times n$ matrix $A$ is positive definite if
+\end{definition}
+
+\begin{definition} Hermitian $n \times n$ matrix $A$ is positive definite if
 $$
 x^{H} A x>0 \text { for all nonzero } x \in \mathbf{C}^{n}
 $$
-Cholesky factorization
-every positive definite matrix $A \in \mathbf{C}^{n \times n}$ can be factored as
+\end{definition}
+
+\begin{theorem}[Cholesky factorization of complex matrices]
+    every positive definite matrix $A \in \mathbf{C}^{n \times n}$ can be factored as
 $$
 A=R^{H} R
 $$
 where $R$ is upper triangular with positive real diagonal elements
+\end{theorem}
+
 
 \section{Regularized least squares model fitting}
 
-- we revisit the data fitting problem with linear-in-parameters model (page 9.9)
-$$
-\begin{aligned}
-\hat{f}(x) &=\theta_{1} f_{1}(x)+\theta_{2} f_{2}(x)+\cdots+\theta_{p} f_{p}(x) \\
-&=\theta^{T} F(x)
-\end{aligned}
-$$
-- $F(x)=\left(f_{1}(x), \ldots, f_{p}(x)\right)$ is a $p$-vector of basis functions $f_{1}(x), \ldots, f_{p}(x)$
-Regularized least squares model fitting (page 10.7)
-minimize $\sum_{k=1}^{N}\left(\theta^{T} F\left(x^{(k)}\right)-y^{(k)}\right)^{2}+\lambda \sum_{j=1}^{p} \theta_{j}^{2}$
-- $\left(x^{(1)}, y^{(1)}\right), \ldots,\left(x^{(N)}, y^{(N)}\right)$ are $N$ examples
-- to simplify notation, we add regularization for all coefficients $\theta_{1}, \ldots, \theta_{p}$
-- next discussion can be modified to handle $f_{1}(x)=1$, regularization $\sum_{j=2}^{p} \theta_{j}^{2}$
+We revisit the data fitting problem with linear-in-parameters model
 
-minimize $\quad\|A \theta-b\|^{2}+\lambda\|\theta\|^{2}$
-- A has size $N \times p$ (number of examples $\times$ number of basis functions)
+\begin{problem}[Data fitting problem (Regularized least squares model fitting)]
+    
+$$\text{ minimize } \sum_{k=1}^{N}\left(\theta^{T} F\left(x^{(k)}\right)-y^{(k)}\right)^{2}+\lambda \sum_{j=1}^{p} \theta_{j}^{2}$$
+
+ where  $$
+    \begin{aligned}
+    \hat{f}(x) &=\theta_{1} f_{1}(x)+\theta_{2} f_{2}(x)+\cdots+\theta_{p} f_{p}(x) \\
+    &=\theta^{T} F(x)
+    \end{aligned}
+    $$
+
+    $F(x)=\left(f_{1}(x), \ldots, f_{p}(x)\right)$ is a $p$-vector of basis functions, $f_{1}(x), \ldots, f_{p}(x)$, $\left(x^{(1)}, y^{(1)}\right)$, $\ldots$,$\left(x^{(N)}, y^{(N)}\right)$ are $N$ examples.
+\end{problem}
+
+To simplify notation, we add regularization for all coefficients $\theta_{1}, \ldots, \theta_{p}$
+
+Next discussion can be modified to handle $f_{1}(x)=1$, regularization $\sum_{j=2}^{p} \theta_{j}^{2}$.
+
+\begin{problem}
+    $$\text{minimize} \quad\|A \theta-b\|^{2}+\lambda\|\theta\|^{2}$$
+\end{problem}
+
+A has size $N \times p$ (number of examples $\times$ number of basis functions)
+
 $$
 A=\left[\begin{array}{c}
 F\left(x^{(1)}\right)^{T} \\
@@ -441,27 +483,45 @@ f_{1}\left(x^{(2)}\right) & f_{2}\left(x^{(2)}\right) & \cdots & f_{p}\left(x^{(
 f_{1}\left(x^{(N)}\right) & f_{2}\left(x^{(N)}\right) & \cdots & f_{p}\left(x^{(N)}\right)
 \end{array}\right]
 $$
-- $b$ is the $N$-vector $b=\left(y^{(1)}, \ldots, y^{(N)}\right)$
-- we discuss methods for problems with $N \ll p$ ( $A$ is very wide)
-- the equivalent "stacked" least squares problem (page 10.3) has size $(p+N) \times p$
-- QR factorization method may be too expensive when $N \ll p$
+,$b$ is the $N$-vector $b=\left(y^{(1)}, \ldots, y^{(N)}\right)$
 
-from the normal equations:
+We discuss methods for problems with $N \ll p$ ( $A$ is very wide).
+
+\begin{theorem}
+    The equivalent "stacked" least squares problem has size $(p+N) \times p$
+\end{theorem}
+
+\begin{remark}
+    QR factorization method may be too expensive when $N \ll p$.
+\end{remark}
+
+\begin{theorem}
+    from the normal equations:
 $$
 \hat{\theta}=\left(A^{T} A+\lambda I\right)^{-1} A^{T} b=A^{T}\left(A A^{T}+\lambda I\right)^{-1} b
 $$
-- second expression follows from the "push-through" identity
+
+second expression follows from the "push-through" identity
 $$
 \left(A^{T} A+\lambda I\right)^{-1} A^{T}=A^{T}\left(A A^{T}+\lambda I\right)^{-1}
 $$
-this is easily proved, by writing it as $A^{T}\left(A A^{T}+\lambda I\right)=\left(A^{T} A+\lambda I\right) A^{T}$
-- from the second expression for $\hat{\theta}$ and the definition of $A$,
-$$
-\hat{f}(x)=\hat{\theta}^{T} F(x)=w^{T} A F(x)=\sum_{i=1}^{N} w_{i} F\left(x^{(i)}\right)^{T} F(x)
-$$
-where $w=\left(A A^{T}+\lambda I\right)^{-1} b$
+\end{theorem}
+
+\begin{proof}
+    this is easily proved, by writing it as $A^{T}\left(A A^{T}+\lambda I\right)=\left(A^{T} A+\lambda I\right) A^{T}$.
+
+    from the second expression for $\hat{\theta}$ and the definition of $A$,
+
+    $$
+    \hat{f}(x)=\hat{\theta}^{T} F(x)=w^{T} A F(x)=\sum_{i=1}^{N} w_{i} F\left(x^{(i)}\right)^{T} F(x)
+    $$
+
+    where $w=\left(A A^{T}+\lambda I\right)^{-1} b$.
+\end{proof}
+
 
 \begin{algorithm}
+    \caption{Regularized least squares model fitting}
     1. compute the $N \times N$ matrix $Q=A A^{T}$, which has elements
 $$
 Q_{i j}=F\left(x^{(i)}\right)^{T} F\left(x^{(j)}\right), \quad i, j=1, \ldots, N
@@ -472,9 +532,6 @@ $$
 $$
 \end{algorithm}
 
-
-Remarks
-
 \begin{remark}
     $\hat{\theta}=A^{T} w$ is not needed; $w$ is sufficient to evaluate the function $\hat{f}(x)$ :
 $$
@@ -482,152 +539,227 @@ $$
 $$
 \end{remark}
 
-- complexity: (1/3) $N^{3}$ flops for factorization plus cost of computing $Q$
+complexity: (1/3) $N^{3}$ flops for factorization plus cost of computing $Q$.
 
 \subsection{Example: multivariate polynomials}
 
+\begin{definition}
+    $\hat{f}(x)$ is a polynomial of degree $d$ (or less) in $n$ variables $x=\left(x_{1}, \ldots, x_{n}\right)$
 
-$\hat{f}(x)$ is a polynomial of degree $d$ (or less) in $n$ variables $x=\left(x_{1}, \ldots, x_{n}\right)$
-- $\hat{f}(x)$ is a linear combination of all possible monomials
-$$
-x_{1}^{k_{1}} x_{2}^{k_{2}} \cdots x_{n}^{k_{n}}
-$$
-where $k_{1}, \ldots, k_{n}$ are nonnegative integers with $k_{1}+k_{2}+\cdots+k_{n} \leq d$
-- number of different monomials is
+    $\hat{f}(x)$ is a linear combination of all possible monomials
+    $$
+    x_{1}^{k_{1}} x_{2}^{k_{2}} \cdots x_{n}^{k_{n}}
+    $$
+    where $k_{1}, \ldots, k_{n}$ are nonnegative integers with $k_{1}+k_{2}+\cdots+k_{n} \leq d$
+\end{definition}
+
+\begin{theorem}
+    number of different monomials is
 $$
 \left(\begin{array}{c}
 n+d \\
 n
 \end{array}\right)=\frac{(n+d) !}{n ! d !}
 $$
+\end{theorem}
 
 \begin{example}
     for $n=2, d=3$ there are ten monomials
-$1, \quad x_{1}, \quad x_{2}, \quad x_{1}^{2}, \quad x_{1} x_{2}, \quad x_{2}^{2}, \quad x_{1}^{3}, \quad x_{1}^{2} x_{2}, \quad x_{1} x_{2}^{2}, \quad x_{2}^{3}$
+
+$$1,  x_{1},  x_{2},  x_{1}^{2},  x_{1} x_{2},  x_{2}^{2},  x_{1}^{3},  x_{1}^{2} x_{2},  x_{1} x_{2}^{2},  x_{2}^{3}$$
 \end{example}
 
 
 \section{Multinomial formula}
 
-$$
+\begin{theorem}
+    $$
 \left(x_{0}+x_{1}+\cdots+x_{n}\right)^{d}=\sum_{k_{0}+\cdots+k_{n}=d} \frac{(d+1) !}{k_{0} ! k_{1} ! \cdots k_{n} !} x_{0}^{k_{0}} x_{1}^{k_{1}} \cdots x_{n}^{k_{n}}
 $$
+
 sum is over all nonnegative integers $k_{0}, k_{1}, \ldots, k_{n}$ with sum $d$
-- setting $x_{0}=1$ gives
+\end{theorem}
+
+\begin{corollary}
+    setting $x_{0}=1$ gives
 $$
 \left(1+x_{1}+x_{2}+\cdots+x_{n}\right)^{d}=\sum_{k_{1}+\cdots+k_{n} \leq d} c_{k_{1} k_{2} \cdots k_{n}} x_{1}^{k_{1}} x_{2}^{k_{2}} \cdots x_{n}^{k_{n}}
 $$
-- the sum includes all monomials of degree $d$ or less with variables $x_{1}, \ldots, x_{n}$
-- coefficient $c_{k_{1} k_{2} \cdots k_{n}}$ is defined as
+\end{corollary}
+
+the sum includes all monomials of degree $d$ or less with variables $x_{1}, \ldots, x_{n}$
+
+
+\begin{definition}[coefficient $c_{k_{1} k_{2} \cdots k_{n}}$]
+    coefficient $c_{k_{1} k_{2} \cdots k_{n}}$ is defined as
 $$
 c_{k_{1} k_{2} \cdots k_{n}}=\frac{(d+1) !}{k_{0} ! k_{1} ! k_{2} ! \cdots k_{n} !} \quad \text { with } \quad k_{0}=d-k_{1}-\cdots-k_{n}
 $$
+\end{definition}
+
+
 
 \section{Vector of monomials}
 
-write polynomial of degree $ d $ or less, with variables $ x \in \mathbf{R}^{n} $, as
+\begin{definition}
+    write polynomial of degree $ d $ or less, with variables $ x \in \mathbf{R}^{n} $, as
 $$
 \hat{f}(x)=\theta^{T} F(x)
 $$
-- $ F(x) $ is vector of basis functions
+
+$ F(x) $ is vector of basis functions
 $$
 \sqrt{c_{k_{1}} \cdots k_{n}} x_{1}^{k_{1}} x_{2}^{k_{2}} \cdots x_{n}^{k_{n}} \quad \text { for all } k_{1}+k_{2}+\cdots+k_{n} \leq d
 $$
-- length of $ F(x) $ is $ p=(n+d) ! /(n ! d !) $
-- multinomial formula gives simple formula for inner products $ F(u)^{T} F(v) $ :
-$$
-\begin{aligned}
-F(u)^{T} F(v) &=\sum_{k_{1}+\cdots+k_{n} \leq d} c_{k_{1} k_{2} \cdots k_{n}}\left(u_{1}^{k_{1}} \cdots u_{n}^{k_{n}}\right)\left(v_{1}^{k_{1}} \cdots v_{n}^{k_{n}}\right) \\
-&=\left(1+u_{1} v_{1}+\cdots+u_{n} v_{n}\right)^{d}
-\end{aligned}
-$$
-- only $ 2 n+1 $ flops needed for inner product of length $ p=(n+d) ! /(n ! d !) $
+\end{definition}
 
-\subsection{Example}
+\begin{theorem}
+    length of $ F(x) $ is $ p=(n+d) ! /(n ! d !) $
+\end{theorem}
 
-vector of monomials of degree $ d=3 $ or less in $ n=2 $ variables
+\begin{theorem}
+    multinomial formula gives simple formula for inner products
+    $$
+    \begin{aligned}
+    F(u)^{T} F(v) &=\sum_{k_{1}+\cdots+k_{n} \leq d} c_{k_{1} k_{2} \cdots k_{n}}\left(u_{1}^{k_{1}} \cdots u_{n}^{k_{n}}\right)\left(v_{1}^{k_{1}} \cdots v_{n}^{k_{n}}\right) \\
+    &=\left(1+u_{1} v_{1}+\cdots+u_{n} v_{n}\right)^{d}
+    \end{aligned}
+    $$
+\end{theorem}
 
-$ F(u)^{T} F(v)=\left[\begin{array}{c}1 \\ \sqrt{3} u_{1} \\ \sqrt{3} u_{2} \\ \sqrt{3} u_{1}^{2} \\ \sqrt{6} u_{1} u_{2} \\ \sqrt{3} u_{2}^{2} \\ u_{1}^{3} \\ \sqrt{3} u_{1}^{2} u_{2} \\ \sqrt{3} u_{1} u_{2}^{2} \\ u_{2}^{3}\end{array}\right]^{T}\left[\begin{array}{c}1 \\ \sqrt{3} v_{1} \\ \sqrt{3} v_{2} \\ \sqrt{3} v_{1}^{2} \\ \sqrt{6} v_{1} v_{2} \\ \sqrt{3} v_{2}^{2} \\ v_{1}^{3} \\ \sqrt{3} v_{1}^{2} v_{2} \\ \sqrt{3} v_{1} v_{2}^{2} \\ v_{2}^{3}\end{array}\right] $
-$ =\left(1+u_{1} v_{1}+u_{2} v_{2}\right)^{3} $
+
+Only $ 2 n+1 $ flops needed for inner product of length $ p=(n+d) ! /(n ! d !) $.
+
+\begin{example}
+    vector of monomials of degree $ d=3 $ or less in $ n=2 $ variables
+
+$$ F(u)^{T} F(v)=\left[\begin{array}{c}1 \\ \sqrt{3} u_{1} \\ \sqrt{3} u_{2} \\ \sqrt{3} u_{1}^{2} \\ \sqrt{6} u_{1} u_{2} \\ \sqrt{3} u_{2}^{2} \\ u_{1}^{3} \\ \sqrt{3} u_{1}^{2} u_{2} \\ \sqrt{3} u_{1} u_{2}^{2} \\ u_{2}^{3}\end{array}\right]^{T}\left[\begin{array}{c}1 \\ \sqrt{3} v_{1} \\ \sqrt{3} v_{2} \\ \sqrt{3} v_{1}^{2} \\ \sqrt{6} v_{1} v_{2} \\ \sqrt{3} v_{2}^{2} \\ v_{1}^{3} \\ \sqrt{3} v_{1}^{2} v_{2} \\ \sqrt{3} v_{1} v_{2}^{2} \\ v_{2}^{3}\end{array}\right] 
+ =\left(1+u_{1} v_{1}+u_{2} v_{2}\right)^{3} $$
+\end{example}
+
+
 
 \section{Least squares fitting of multivariate polynomials}
 
-fit polynomial of $ n $ variables, degree $ \leq d $, to points $ \left(x^{(1)}, y^{(1)}\right), \ldots,\left(x^{(N)}, y^{(N)}\right) $ Algorithm (see page 13.32)
-1. compute the $ N \times N $ matrix $ Q $ with elements
+\begin{problem}
+    fit polynomial of $ n $ variables, degree $ \leq d $, to points $ \left(x^{(1)}, y^{(1)}\right), \ldots,\left(x^{(N)}, y^{(N)}\right) $ 
+\end{problem}
+
+\begin{algorithm}[htbp]
+    \caption{Least squares fitting of multivariate polynomials}
+    compute the $ N \times N $ matrix $ Q $ with elements
 $$
 Q_{i j}=K\left(x^{(i)}, x^{(j)}\right) \text { where } K(u, v)=\left(1+u^{T} v\right)^{d}
-$$
-2. use a Cholesky factorization to solve the equation $ (Q+\lambda I) w=b $
-- the fitted polynomial is
+$$\;
+use a Cholesky factorization to solve the equation $ (Q+\lambda I) w=b $
+\end{algorithm}
+
+the fitted polynomial is
 $$
 \hat{f}(x)=\sum_{i=1}^{N} w_{i} K\left(x^{(i)}, x\right)=\sum_{i=1}^{N} w_{i}\left(1+\left(x^{(i)}\right)^{T} x\right)^{d}
 $$
-- complexity: $ n N^{2} $ flops for computing $ Q $, plus $ (1 / 3) N^{3} $ for the factorization, i.e.,
+
+
+complexity: $ n N^{2} $ flops for computing $ Q $, plus $ (1 / 3) N^{3} $ for the factorization, i.e.,
 $$
 n N^{2}+(1 / 3) N^{3} \text { flops }
 $$
 
 \section{Kernel methods}
 
-Kernel function: a generalized inner product $ K(u, v) $
-- $ K(u, v) $ is inner product of vectors of basis functions $ F(u) $ and $ F(v) $
-- $ F(u) $ may be infinite-dimensional
-- kernel methods work with $ K(u, v) $ directly, do not require $ F(u) $
-Examples
-- the polynomial kernel function $ K(u, v)=\left(1+u^{T} v\right)^{d} $
-- the Gaussian radial basis function kernel
+\begin{definition}[Kernel function]
+    a generalized inner product $ K(u, v) $.
+\end{definition}
+
+$ K(u, v) $ is inner product of vectors of basis functions $ F(u) $ and $ F(v) $, $ F(u) $ may be infinite-dimensional.
+
+Kernel methods work with $ K(u, v) $ directly, do not require $ F(u) $.
+
+\begin{example}
+    the polynomial kernel function $ K(u, v)=\left(1+u^{T} v\right)^{d} $
+\end{example}
+
+\begin{example}
+    the Gaussian radial basis function kernel
 $$
 K(u, v)=\exp \left(-\frac{\|u-v\|^{2}}{2 \sigma^{2}}\right)
 $$
-- kernels exist for computing with graphs, texts, strings of symbols, ...
+\end{example}
 
-we apply the method of page $ 13.37 $ to least squares classification
-- training set is 10000 images from MNIST data set ( $ \approx 1000 $ examples per digit)
-- vector $ x $ is vector of pixel intensities (size $ n=28^{2}=784 $ )
-- we use the polynomial kernel with degree $ d=3 $ :
+\begin{example}
+    kernels exist for computing with graphs, texts, strings of symbols, ...
+\end{example}
+
+
+we apply the method  to least squares classification:
+
+\begin{itemize}
+    \item training set is 10000 images from MNIST data set ( $ \approx 1000 $ examples per digit)
+    \item vector $ x $ is vector of pixel intensities (size $ n=28^{2}=784 $ )
+    \item we use the polynomial kernel with degree $ d=3 $ :
 $$
 K(u, v)=\left(1+u^{T} v\right)^{3}
 $$
+
 hence $ F(z) $ has length $ p=(n+d) ! /(n ! d !)=80931145 $
-- we calculate ten Boolean classifiers
+
+    \item we calculate ten Boolean classifiers
 $$
 \hat{f}_{k}(x)=\operatorname{sign}\left(\tilde{f}_{k}(x)\right), \quad k=1, \ldots 10
 $$
 $ \hat{f}_{k}(x) $ distinguishes digit $ k-1 $ (outcome $ +1 $ ) form other digits (outcome -1)
-- the Boolean classifiers are combined in the multi-class classifier
+
+
+\end{itemize}
+
+
+the Boolean classifiers are combined in the multi-class classifier
 $$
 \hat{f}(x)=\underset{k=1, \ldots, 10}{\operatorname{argmax}} \tilde{f}_{k}(x)
 $$
 
-Algorithm: compute Boolean classifier for digit $ k-1 $ versus the rest
-1. compute $ N \times N $ matrix $ Q $ with elements
-$$
-Q_{i j}=\left(1+\left(x^{(i)}\right)^{T} x^{(j)}\right)^{d}, \quad i, j=1, \ldots, N
-$$
-2. define $ N $-vector $ b=\left(y^{(1)}, \ldots, y^{(N)}\right) $ with elements
-$$
-y^{(i)}=\left\{\begin{array}{ll}
-+1 & x^{(i)} \text { is an example of digit } k-1 \\
--1 & \text { otherwise }
-\end{array}\right.
-$$
 
-3. solve the equation $ (Q+\lambda I) w=b $
+\begin{algorithm}[htbp]
+    \caption{compute Boolean classifier for digit $ k-1 $ versus the rest}
+    compute $ N \times N $ matrix $ Q $ with elements
+    $$
+    Q_{i j}=\left(1+\left(x^{(i)}\right)^{T} x^{(j)}\right)^{d}, \quad i, j=1, \ldots, N
+    $$\;
+    define $ N $-vector $ b=\left(y^{(1)}, \ldots, y^{(N)}\right) $ with elements
+    $$
+    y^{(i)}=\left\{\begin{array}{ll}
+    +1 & x^{(i)} \text { is an example of digit } k-1 \\
+    -1 & \text { otherwise }
+    \end{array}\right.
+    $$\;
+    solve the equation $ (Q+\lambda I) w=b $
+
+\end{algorithm}
+
 the solution $ w $ gives the Boolean classifier for digit $ k-1 $ versus rest
 $$
 \tilde{f}_{k}(x)=\sum_{i=1}^{N} w_{i}\left(1+\left(x^{(i)}\right)^{T} x\right)^{d}
 $$
 
-\subsection{Complexity}
 
-- the matrix $ Q $ is the same for each of the ten Boolean classifiers
-- hence, only the right-hand side of the equation
+
+The matrix $ Q $ is the same for each of the ten Boolean classifiers
+
+Hence, only the right-hand side of the equation
 $$
 (Q+\lambda I) w=y^{\mathrm{d}}
 $$
-is different for each Boolean classifier
-Complexity
-- constructing $ Q $ requires $ N^{2} / 2 $ inner products of length $ n: n N^{2} $ flops
-- Cholesky factorization of $ Q+\lambda I:(1 / 3) N^{3} $ flops
-- solve the equation $ (Q+\lambda I) w=y^{\mathrm{d}} $ for the 10 right-hand sides: $ 20 N^{2} $ flops
-- total is $ (1 / 3) N^{3}+n N^{2} $
+is different for each Boolean classifier.
+
+\subsection{Complexity}
+
+Complexity:
+
+\begin{itemize}
+    \item constructing $ Q $ requires $ N^{2} / 2 $ inner products of length $ n: n N^{2} $ flops
+    \item Cholesky factorization of $ Q+\lambda I:(1 / 3) N^{3} $ flops
+    \item solve the equation $ (Q+\lambda I) w=y^{\mathrm{d}} $ for the 10 right-hand sides: $ 20 N^{2} $ flops
+\end{itemize}
+
+Total complexity is $ (1 / 3) N^{3}+n N^{2} $.
+

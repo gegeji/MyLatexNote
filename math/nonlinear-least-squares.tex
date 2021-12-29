@@ -603,9 +603,11 @@ $$
 \end{aligned}
 $$
 
-$ 2 D f\left(x^{(k)}\right)^{T}\left(f\left(x^{(k)}\right)+D f\left(x^{(k)}\right)\left(x^{(k+1)}-x^{(k)}\right)\right)=0 $ 目标函数梯度等于0
-$ \Rightarrow D f\left(x^{(k)}\right)^{T} f\left(x^{(k)}\right)=-D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right) \Delta x^{(k)} $
-$ \Rightarrow\left(\Delta x^{(k)}\right)^{T} D f\left(x^{(k)}\right)^{T} f\left(x^{(k)}\right)=-\left(\Delta x^{(k)}\right)^{T} D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right) \Delta x^{(k)}=-\left\|D f\left(x^{(k)}\right) \Delta x^{(k)}\right\|_{2}^{2} $
+$$\begin{aligned}
+    & 2Df\left( x^{(k)}\right)^{T}\left( f\left( x^{(k)}\right) +Df\left( x^{(k)}\right)\left( x^{(k+1)} -x^{(k)}\right)\right) =0\quad ( 目标梯度等于0)\\
+   \Rightarrow  & Df\left( x^{(k)}\right)^{T} f\left( x^{(k)}\right) =-Df\left( x^{(k)}\right)^{T} Df\left( x^{(k)}\right) \Delta x^{(k)}\\
+   \Rightarrow  & \left( \Delta x^{(k)}\right)^{T} Df\left( x^{(k)}\right)^{T} f\left( x^{(k)}\right) =-\left( \Delta x^{(k)}\right)^{T} Df\left( x^{(k)}\right)^{T} Df\left( x^{(k)}\right) \Delta x^{(k)} =-\left\Vert Df\left( x^{(k)}\right) \Delta x^{(k)}\right\Vert _{2}^{2}
+   \end{aligned}$$
 
 $$ \left\|\hat{f}\left(x^{(k+1)} ; x^{(k)}\right)\right\|_{2}^{2}=\left\|f\left(x^{(k)}\right)\right\|_{2}^{2}-\left\|D f\left(x^{(k)}\right) \Delta x^{(k)}\right\|_{2}^{2} $$
 
@@ -628,44 +630,106 @@ $$
 
 $$ x^{(k+1)}=x^{(k)}-\frac{f\left(x^{(k)}\right)}{f^{\prime}\left(x^{(k)}\right)}, f^{\prime}\left(x^{(k)}\right) \neq 0 $$
 
-然而， $ \hat{f}\left(x ; x^{(k)}\right) $ 只是 $ f(x) $ 的局部近似，仍然存在：
+\begin{FigureCenter}{$m=n=1$时的情形}
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Straight Lines [id:da987456347938684] 
+\draw    (77,220) -- (453,219.62) ;
+\draw [shift={(455,219.62)}, rotate = 179.94] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Shape: Free Drawing [id:dp3634235085264048] 
+\draw  [color={rgb, 255:red, 74; green, 74; blue, 74 }  ,draw opacity=1 ][line width=3] [line join = round][line cap = round] (99,275.62) .. controls (101.57,267.9) and (107.73,260.2) .. (112,252.62) .. controls (129.65,221.23) and (145.74,206.38) .. (175,183.62) .. controls (189.89,172.03) and (208.34,161.45) .. (228,165.62) .. controls (245.71,169.37) and (256.02,188.13) .. (271,195.62) .. controls (281.7,200.97) and (297.45,200.51) .. (309,197.62) .. controls (342.7,189.19) and (392.52,152.1) .. (416,128.62) ;
+%Straight Lines [id:da8212140101743735] 
+\draw [color={rgb, 255:red, 184; green, 84; blue, 80 }  ,draw opacity=1 ][line width=1.5]  [dash pattern={on 5.63pt off 4.5pt}]  (196,169.62) -- (195,219.62) ;
+%Straight Lines [id:da6887048674569021] 
+\draw [color={rgb, 255:red, 184; green, 84; blue, 80 }  ,draw opacity=1 ][line width=2.25]    (196,169.62) -- (321,91.62) ;
+%Straight Lines [id:da06334358045468957] 
+\draw [color={rgb, 255:red, 184; green, 84; blue, 80 }  ,draw opacity=1 ][line width=2.25]    (71,247.62) -- (196,169.62) ;
+%Straight Lines [id:da7554536985475104] 
+\draw [color={rgb, 255:red, 234; green, 149; blue, 8 }  ,draw opacity=1 ][fill={rgb, 255:red, 184; green, 84; blue, 80 }  ,fill opacity=1 ][line width=1.5]    (102,174.65) -- (110.06,208.73) ;
+\draw [shift={(110.98,212.62)}, rotate = 256.69] [fill={rgb, 255:red, 234; green, 149; blue, 8 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (11.61,-5.58) -- (0,0) -- (11.61,5.58) -- cycle    ;
+
+% Text Node
+\draw (180,222.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$x^{( k)}$};
+% Text Node
+\draw (71,157.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$x^{( k+1)}$};
+% Text Node
+\draw (417,104.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$f( x)$};
+% Text Node
+\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 152; green, 195; blue, 245 }  ,fill opacity=1 ]  (243,49) .. controls (243,46.24) and (245.24,44) .. (248,44) -- (541,44) .. controls (543.76,44) and (546,46.24) .. (546,49) -- (546,74) .. controls (546,76.76) and (543.76,79) .. (541,79) -- (248,79) .. controls (245.24,79) and (243,76.76) .. (243,74) -- cycle  ;
+\draw (246,48.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$\hat{f}\left( x;x^{(k)}\right) =f\left( x^{(k)}\right) +f^{\prime }\left( x^{(k)}\right)\left( x-x^{(k)}\right)$};
+
+
+\end{tikzpicture}
+\end{FigureCenter}
+
+\subsection{高斯-牛顿法的问题}
+
+然而， $ \hat{f}\left(x ; x^{(k)}\right) $ 只是 $ f(x) $ 的局部近似，仍然可能会有
+
+\begin{remark}
+    存在
 $$
 \left\|f\left(x^{(k+1)}\right)\right\|_{2}^{2}>\left\|f\left(x^{(k)}\right)\right\|_{2}^{2}
 $$
 
-Jacobian矩阵Df $ \left(x^{(k)}\right) $ 的可能 "列向量是线性相关"
-$ \left(D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right)\right) $ 奇异，不可逆
+的情况。
+\end{remark}
+
+
+Jacobian矩阵Df $ \left(x^{(k)}\right) $ 的可能 "列向量是线性相关。
+
+\begin{remark}
+    此时$ \left(D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right)\right) $ 奇异，不可逆。
+\end{remark}
+
+
 
 \section{Levenberg–Marquardt Algorithm}
 
 Levenberg-Marquardt(LM)算法解决高斯-牛顿法的两个难点：
 
 \begin{enumerate}
-    \item 
+    \item 当列 $ D f\left(x^{(k)}\right) $ 是线性相关时，如何更新 $ x^{(k)} $ ?
+    \item 当高斯-牛顿法的更新过程， $ \|f(x)\|_{2}^{2} $ 并没有减少。
 \end{enumerate}
-1. 当列 $ D f\left(x^{(k)}\right) $ 是线性相关时，如何更新 $ x^{(k)} $ ?
-2. 当高斯-牛顿法的更新过程， $ \|f(x)\|_{2}^{2} $ 并没有减少。
+
+\subsection{推导Levenberg–Marquardt算法}
 
 LM算法通过求解正则化最小二乘法更新 $ x^{(k+1)} $ :
-$$
-x^{(k+1)}=\arg \min _{x}\left\|\hat{f}\left(x ; x^{(k)}\right)\right\|_{2}^{2}+\lambda^{(k)}\left\|x-x^{(k)}\right\|_{2}^{2}
-$$
 
-要求 $ x $ 靠近 $ x^{(k)} $ ，即 $ \hat{f}\left(x ; x^{(k)}\right) \approx f(x) $.
-The second term forces $ x $ to be close to $ x^{(k)} $ where $ \hat{f}\left(x ; x^{(k)}\right) \approx f(x) $.
-当 $ \lambda^{(k)}>0 $ 时，总有唯一解 (无需对 $Df \left(x^{(k)}\right) $ 限制 $ ) $ 。
+\begin{problem}
+    $$
+    x^{(k+1)}=\arg \min _{x}\left\|\hat{f}\left(x ; x^{(k)}\right)\right\|_{2}^{2}+\lambda^{(k)}\left\|x-x^{(k)}\right\|_{2}^{2}
+    $$
 
-第 $ k $ 次迭代求解的最小二乘正则化问题:
+要求 $ x $ 靠近 $ x^{(k)} $ ，即 $ \hat{f}\left(x ; x^{(k)}\right) \approx f(x) $. (The second term forces $ x $ to be close to $ x^{(k)} $ where $ \hat{f}\left(x ; x^{(k)}\right) \approx f(x) $.)
+\end{problem}
+
+当 $ \lambda^{(k)}>0 $ 时，总有唯一解.
+
+\begin{remark}
+    Levenberg–Marquardt Algorithm无需再对 $Df \left(x^{(k)}\right) $ 限制。
+\end{remark}
+
+\begin{problem}
+    第 $ k $ 次迭代求解的最小二乘正则化问题:
 $$
 x^{(k+1)}=\arg \min _{x}\left\|f\left(x^{(k)}\right)+D f\left(x^{(k)}\right)\left(x-x^{(k)}\right)\right\|_{2}^{2}+\lambda^{(k)}\left\|x-x^{(k)}\right\|_{2}^{2}
 $$
+\end{problem}
+
+
 
 令目标函数导数等于 0 :
 $$
-\begin{array}{l}
-2 D f\left(x^{(k)}\right)^{T}\left(f\left(x^{(k)}\right)+D f\left(x^{(k)}\right)\left(x-x^{(k)}\right)\right)+2 \lambda^{(k)}\left(x-x^{(k)}\right)=0 \\
-\Rightarrow\left(D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right)+\lambda^{(k)} I\right)\left(x-x^{(k)}\right)=-D f\left(x^{(k)}\right)^{T} f\left(x^{(k)}\right)
-\end{array}
+\begin{aligned}
+    & 2Df\left( x^{(k)}\right)^{T}\left( f\left( x^{(k)}\right) +Df\left( x^{(k)}\right)\left( x-x^{(k)}\right)\right) +2\lambda ^{(k)}\left( x-x^{(k)}\right) =0\\
+   \Rightarrow  & \left( Df\left( x^{(k)}\right)^{T} Df\left( x^{(k)}\right) +\lambda ^{(k)} I\right)\left( x-x^{(k)}\right) =-Df\left( x^{(k)}\right)^{T} f\left( x^{(k)}\right)
+   \end{aligned}
 $$
 
 $ x^{(k+1)} $ 更新:
@@ -673,67 +737,103 @@ $$
 x^{(k+1)}=x^{(k)}-\left(D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right)+\lambda^{(k)} I\right)^{-1} D f\left(x^{(k)}\right)^{T} f\left(x^{(k)}\right)
 $$
 
-$$
-x^{(k+1)}=x^{(k)}-\left(D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right)+\lambda^{(k)} I\right)^{-1} D f\left(x^{(k)}\right)^{T} f\left(x^{(k)}\right)
-$$
-■ LM算法步骤 $ \Delta x^{(k)}=x^{(k+1)}-x^{(k)} $ 是:
+\begin{theorem}
+    LM算法步骤 $ \Delta x^{(k)}=x^{(k+1)}-x^{(k)} $ 是:
 
 $$ \begin{aligned} \Delta x^{(k)} &=-\left(D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right)+\lambda^{(k)} I\right)^{-1} D f\left(x^{(k)}\right)^{T} f\left(x^{(k)}\right) \\ &=-\frac{1}{2}\left(D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right)+\lambda^{(k)} I\right)^{-1} \nabla g\left(x^{(k)}\right) \end{aligned} $$
+\end{theorem}
 
-对于 $ \lambda^{(k)}=0 $ ，简化为高斯-牛顿法；对于较大的 $ \lambda^{(k)} $ ：
+\begin{theorem}
+    对于 $ \lambda^{(k)}=0 $ ，简化为高斯-牛顿法
+\end{theorem}
+
+\begin{theorem}
+    对于较大的 $ \lambda^{(k)} $ ：
 $$
 \Delta x^{(k)} \approx-\frac{1}{2 \lambda^{(k)}} \nabla g\left(x^{(k)}\right)
 $$
+\end{theorem}
+
+
 
 \subsection{正则化参数}
 
-几种调整 $ \lambda^{(k)} $ 的策略
-■ 在第k次迭代时，求解㸚:
-$$
-\hat{x}=\arg \min _{x}\left\|\hat{f}\left(x ; x^{(k)}\right)\right\|_{2}^{2}+\lambda^{(k)}\left\|x-x^{(k)}\right\|_{2}^{2}
-$$
-■ 如果 $ \|f(\hat{x})\|_{2}^{2}<\left\|f\left(x^{(k)}\right)\right\|_{2}^{2} $ ，令 $ x^{(k+1)}=\hat{x} $ ，并降低 $ \lambda $ 。
-■ 否则，无需更新 $ x\left(\right. $ 取 $ \left.x^{(k+1)}=x^{(k)}\right) $ ，而是增加 $ \lambda $ 。
+几种调整 $ \lambda^{(k)} $ 的策略.
 
-一些变化:
-■ 比较预期成本降低的情况和实际成本降低的情况。
-■ 具有“置信区间”的最小二乘法问题:
-$ \min _{x}\left\|\hat{f}\left(x ; x^{(k)}\right)\right\|_{2}^{2} $
-subject to $ \left\|x-x^{(k)}\right\|_{2}^{2} \leq \gamma $
-
-\begin{algorithm}
-    \caption{Levenberg–Marquardt Algorithm}
-    选择 $ x^{(1)} $ 和 $ \lambda^{(1)} $ 开始， 循环 $ k=1,2, \ldots $ :
+\begin{algorithm}[htbp]
+    \caption{在第$k$次迭代时，求解$\hat{x}$}
+    $$
+    \hat{x}=\arg \min _{x}\left\|\hat{f}\left(x ; x^{(k)}\right)\right\|_{2}^{2}+\lambda^{(k)}\left\|x-x^{(k)}\right\|_{2}^{2}
+    $$\;
     
-■ 1. 求 $ f\left(x^{(k)}\right) $ ，然后令 $ A=D f\left(x^{(k)}\right) $ 。
 
-■ 2. 计算最小二乘法正则化问题的解:
-$$
-\hat{x}=x^{(k)}-\left(A^{T} A+\lambda^{(k)} I\right)^{-1} A^{T} f\left(x^{(k)}\right)
-$$
+    \If(){$ \|f(\hat{x})\|_{2}^{2}<\left\|f\left(x^{(k)}\right)\right\|_{2}^{2} $}{
+        $ x^{(k+1)}=\hat{x} $\;
+        降低 $ \lambda $
+    }
+    \Else(){
+        无需更新 $ x \left(x^{(k+1)}=x^{(k)}\right) $\;
+        增加 $ \lambda $\;
 
-3. 定义 $ x^{(k+1)} $ 和 $ \lambda^{(k+1)} $ 如下:
-$$
-\left\{\begin{array}{c}
-
-x^{(k+1)}=\hat{x}, \quad \lambda^{(k+1)}=\beta_{1} \lambda^{(k)} \quad i f\|f(\hat{x})\|_{2}^{2}<\left\|f\left(x^{(k)}\right)\right\|_{2}^{2} \\
-x^{(k+1)}=x^{(k)}, \lambda^{(k+1)}=\beta_{2} \lambda^{(k)} \quad \text { others }
-\end{array}\right.
-$$
-
-
+    }
 \end{algorithm}
 
-其中 $ \beta_{1}, \beta_{2} $ 是常数， $ 0<\beta_{1}<1<\beta_{2} $ 。
-在步骤2中，可以使用 $ \mathrm{QR} $ 分解来计算 $ \hat{x} $ 。
-迭代会在当 $ \nabla g\left(x^{(k)}\right)=2 A^{T} f\left(x^{(k)}\right) $ 足够小时终止。
+它的一些变化:
 
+\begin{example}
+    比较预期损失降低的情况和实际损失降低的情况。(compare actual cost reduction with predicted cost reduction)
+\end{example}
+
+\begin{theorem}
+    在第$k$次迭代时，求解$\hat{x}$
+
+    $$
+    \hat{x}=\arg \min _{x}\left\|\hat{f}\left(x ; x^{(k)}\right)\right\|_{2}^{2}+\lambda^{(k)}\left\|x-x^{(k)}\right\|_{2}^{2}
+    $$
+
+    等价于
+
+    具有“置信区间”的最小二乘法问题:
+    $ \min _{x}\left\|\hat{f}\left(x ; x^{(k)}\right)\right\|_{2}^{2} $
+    subject to $ \left\|x-x^{(k)}\right\|_{2}^{2} \leq \gamma $
+\end{theorem}
+
+
+\begin{algorithm}[htbp]
+    \caption{Levenberg–Marquardt Algorithm}
+    选择 $ x^{(1)} $ 和 $ \lambda^{(1)} $\;
+    \While{$ k=1,2, \ldots $}{
+        求 $ f\left(x^{(k)}\right) $\;
+        $ A=D f\left(x^{(k)}\right) $\;
+        计算最小二乘法正则化问题的解:
+        $$
+        \hat{x}=x^{(k)}-\left(A^{T} A+\lambda^{(k)} I\right)^{-1} A^{T} f\left(x^{(k)}\right)
+        $$\;
+        计算 $ x^{(k+1)} $ 和 $ \lambda^{(k+1)} $ :
+        $$\displaystyle \left\{\begin{array}{ c c c }
+        x^{(k+1)} =\hat{x} , & \lambda ^{(k+1)} =\beta _{1} \lambda ^{(k)} & \left(\text{if} \ \| (\hat{x} )\| _{2}^{2} < \left\Vert f\left( x^{(k)}\right)\right\Vert _{2}^{2}\right)\\
+        x^{(k+1)} =x^{(k)} , & \lambda ^{(k+1)} =\beta _{2} \lambda ^{(k)} & \left(\text{others}\right)
+        \end{array}\right. $$\;
+
+    }
+\end{algorithm}
+
+\begin{itemize}
+    \item 其中 $ \beta_{1}, \beta_{2} $ 是常数， $ 0<\beta_{1}<1<\beta_{2} $ 。
+    \item 在步骤2中，可以使用 $ \mathrm{QR} $ 分解来计算 $ \hat{x} $ 。
+    \item 迭代会在当 $ \nabla g\left(x^{(k)}\right)=2 A^{T} f\left(x^{(k)}\right) $ 足够小时终止。
+\end{itemize}
 
 \section{Newton Method}
 
-Assume $ f: \mathbf{R}^{n} \rightarrow \mathbf{R}^{n} $ is differentiable.
+\begin{proposition}
+    Assume $ f: \mathbf{R}^{n} \rightarrow \mathbf{R}^{n} $ is differentiable.
+\end{proposition}
+
+
 
 \begin{algorithm}
+    \caption{Newton's Method}
      choose $ x^{(1)} $\;
      \While{$ k=1,2, \ldots $}{
          $$
@@ -748,7 +848,9 @@ $ D f\left(x^{(k)}\right) $ is the derivative matrix of $ f $ at $ x^{(k)} $.
 
 Each iteration requires one evaluation of $ f(x) $ and $ D f(x) $, each iteration requires factorization of the $ n \times n $ matrix $ D f(x) $.
 
-We assume $ D f(x) $ is nonsingular.
+\begin{proposition}
+    We assume $ D f(x) $ is nonsingular.
+\end{proposition}
 
 \subsection{Interpretation of Newton Method}
 
@@ -770,7 +872,41 @@ take the solution $ x $ of the linearized equation as the next iterate $ x^{(k+1
 
 \subsection{One Variable}
 
-% todo (2021-12-10 07:52): figure
+\begin{FigureCenter}{$m=n=1$时的情形}
+
+    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+    
+    \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+    %uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+    
+    %Straight Lines [id:da987456347938684] 
+    \draw    (77,220) -- (453,219.62) ;
+    \draw [shift={(455,219.62)}, rotate = 179.94] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+    %Shape: Free Drawing [id:dp3634235085264048] 
+    \draw  [color={rgb, 255:red, 74; green, 74; blue, 74 }  ,draw opacity=1 ][line width=3] [line join = round][line cap = round] (99,275.62) .. controls (101.57,267.9) and (107.73,260.2) .. (112,252.62) .. controls (129.65,221.23) and (145.74,206.38) .. (175,183.62) .. controls (189.89,172.03) and (208.34,161.45) .. (228,165.62) .. controls (245.71,169.37) and (256.02,188.13) .. (271,195.62) .. controls (281.7,200.97) and (297.45,200.51) .. (309,197.62) .. controls (342.7,189.19) and (392.52,152.1) .. (416,128.62) ;
+    %Straight Lines [id:da8212140101743735] 
+    \draw [color={rgb, 255:red, 184; green, 84; blue, 80 }  ,draw opacity=1 ][line width=1.5]  [dash pattern={on 5.63pt off 4.5pt}]  (196,169.62) -- (195,219.62) ;
+    %Straight Lines [id:da6887048674569021] 
+    \draw [color={rgb, 255:red, 184; green, 84; blue, 80 }  ,draw opacity=1 ][line width=2.25]    (196,169.62) -- (321,91.62) ;
+    %Straight Lines [id:da06334358045468957] 
+    \draw [color={rgb, 255:red, 184; green, 84; blue, 80 }  ,draw opacity=1 ][line width=2.25]    (71,247.62) -- (196,169.62) ;
+    %Straight Lines [id:da7554536985475104] 
+    \draw [color={rgb, 255:red, 234; green, 149; blue, 8 }  ,draw opacity=1 ][fill={rgb, 255:red, 184; green, 84; blue, 80 }  ,fill opacity=1 ][line width=1.5]    (102,174.65) -- (110.06,208.73) ;
+    \draw [shift={(110.98,212.62)}, rotate = 256.69] [fill={rgb, 255:red, 234; green, 149; blue, 8 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (11.61,-5.58) -- (0,0) -- (11.61,5.58) -- cycle    ;
+    
+    % Text Node
+    \draw (180,222.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$x^{( k)}$};
+    % Text Node
+    \draw (71,157.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$x^{( k+1)}$};
+    % Text Node
+    \draw (417,104.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$f( x)$};
+    % Text Node
+    \draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 152; green, 195; blue, 245 }  ,fill opacity=1 ]  (243,49) .. controls (243,46.24) and (245.24,44) .. (248,44) -- (541,44) .. controls (543.76,44) and (546,46.24) .. (546,49) -- (546,74) .. controls (546,76.76) and (543.76,79) .. (541,79) -- (248,79) .. controls (245.24,79) and (243,76.76) .. (243,74) -- cycle  ;
+    \draw (246,48.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$\hat{f}\left( x;x^{(k)}\right) =f\left( x^{(k)}\right) +f^{\prime }\left( x^{(k)}\right)\left( x-x^{(k)}\right)$};
+    
+    
+    \end{tikzpicture}
+    \end{FigureCenter}
 
 affine approximation of $ f $ around $ x^{(k)} $ is
 $$
@@ -843,7 +979,7 @@ Results:
     \item does not necessarily find the solution closest to the starting point
 \end{itemize}
 
-\subsection{Convergence of Newton’s method}
+\subsection{Convergence of Newton's method}
 
 Quadratic convergence explains fast convergence when started near solution.
 
@@ -855,7 +991,7 @@ $$
 for some $ c>0 $
 \end{theorem}
 
-\subsection{Newton’s method for minimizing a convex function}
+\subsection{Newton's method for minimizing a convex function}
 
 if $ \nabla^{2} g(x) $ is positive definite everywhere, we can minimize $ g(x) $ by solving
 $$
@@ -865,7 +1001,7 @@ $$
 
 Algorithm:
 \begin{algorithm}[htbp]
-    \caption{Newton’s method for minimizing a convex function}
+    \caption{Newton's method for minimizing a convex function}
     choose $ x^{(1)} $\;
     \While(){$ k=1,2, \ldots $}{
         $$

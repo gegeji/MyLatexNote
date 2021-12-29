@@ -6,14 +6,14 @@
     $f$是一个将n维向量映射成数的函数. 
 
     $$ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $$
+
+    线性函数 $ f $ 满足以下两个性质 $ \left(k \in \mathbb{R}, x, y \in \mathbb{R}^{n}\right) $ :
+
+    \begin{itemize}
+        \item 齐次性(homogeneity): $ f(k x)=k f(x) $
+        \item 叠加性(Additivity)： $ f(x+y)=f(x)+f(y) $
+    \end{itemize}
 \end{definition}
-
-线性函数 $ f $ 满足以下两个性质 $ \left(k \in \mathbb{R}, x, y \in \mathbb{R}^{n}\right) $ :
-
-\begin{itemize}
-    \item 齐次性(homogeneity): $ f(k x)=k f(x) $
-    \item 叠加性(Additivity)： $ f(x+y)=f(x)+f(y) $
-\end{itemize}
 
 \begin{example}
     求平均值: $ f(x)=\frac{1}{n} \sum_{i=1}^{n} x_{i} $ 为线性函数. 
@@ -25,30 +25,74 @@
 
 \begin{proof}
    令 $ x=(1,-1), y=(-1,1), \alpha=0.5, \beta=0.5 $, 
-   有 $$ f(\alpha x+\beta y)=0 \neq \alpha f(x)+\beta f(y)=1 $$.
+   有 $$ f(\alpha x+\beta y)=0 \neq \alpha f(x)+\beta f(y)=1 $$
 
+    但是
    $$ \begin{aligned} f(x+y) 
     &=\max \left\{x_{1}+y_{1}, x_{2}+y_{2}, \ldots, x_{n}+y_{n}\right\} 
     \\ & \leq \max \left\{x_{1}, x_{2}, \ldots, x_{n}\right\}+\max \left\{y_{1}, y_{2}, \ldots, y_{n}\right\} 
     \\ & \leq f(x)+f(y) \end{aligned} $$
+
+    不满足线性函数的定义
 \end{proof}
 
 \begin{theorem}
+        a function $ f: \mathbf{R}^{n} \rightarrow \mathbf{R} $ is linear if the superposition property (叠加原理)
+    $$
+    f(\alpha x+\beta y)=\alpha f(x)+\beta f(y)
+    $$
+    holds for all $ n $-vectors $ x, y $ and all scalars $ \alpha, \beta $.
+    
+\end{theorem}
+
+\begin{corollary}
     设 $ \alpha_{1, \ldots,} \alpha_{m} \in \mathbb{R}, u_{1}, \ldots, u_{m} \in \mathbb{R}^{n} $, 则线性函数 $ f $ 满足
 
     $$ \begin{aligned} f\left(\alpha_{1} u_{1}+\alpha_{2} u_{2}+\ldots+\alpha_{m} u_{m}\right) &=f\left(\alpha_{1} u_{1}\right)+f\left(\alpha_{2} u_{2}+\ldots+\alpha_{m} u_{m}\right) \\ &=\alpha_{1} f\left(u_{1}\right)+f\left(\alpha_{2} u_{2}+\ldots+\alpha_{m} u_{m}\right) \\ &=\alpha_{1} f\left(u_{1}\right)+\alpha_{2} f\left(u_{2}\right)+\ldots+\alpha_{m} f\left(u_{m}\right) \end{aligned} $$
-\end{theorem}
+\end{corollary}
 
 \begin{definition}[内积函数 (inner product function)]
-    对于n维向量 $ a $,满足以下形式的函数被称为内积函数
+    对于$n$维向量 $ a $,满足以下形式的函数$ f: \mathbf{R}^{n} \rightarrow \mathbf{R} $被称为内积函数
 
     $$ f(x)=a^{T} x=a_{1} x_{1}+a_{2} x_{2}+\ldots+a_{n} x_{n} $$
 \end{definition}
 
 上述 $ f(x) $ 可以看作是每项 $ x_{\mathrm{i}} $ 的加权之和. 
 
+\begin{example}
+    $ f(x)=\frac{1}{3}\left(x_{1}+x_{2}+x_{3}\right) $ is linear: $ f(x)=a^{T} x $ with $ a=\left(\frac{1}{3}, \frac{1}{3}, \frac{1}{3}\right) $
+\end{example}
+
+\begin{example}
+    $ f(x)=-x_{1} $ is linear: $ f(x)=a^{T} x $ with $ a=(-1,0,0) $
+\end{example}
+
+\begin{example}
+    $ f(x)=\max \left\{x_{1}, x_{2}, x_{3}\right\} $ is not linear: superposition does not hold for
+$$
+x=\left[\begin{array}{l}
+1 \\
+0 \\
+0
+\end{array}\right], \quad y=\left[\begin{array}{l}
+0 \\
+0 \\
+0
+\end{array}\right], \quad \alpha=-1, \quad \beta=1
+$$
+we have $ f(x)=1, f(y)=0 $,
+$$
+f(\alpha x+\beta y)=0 \neq \alpha f(x)+\beta f(y)=-1
+$$
+\end{example}
+
 \begin{corollary}
-    内积函数都是线性的.
+    所有的内积函数都是线性的.
+
+    $$
+a^{T}(\alpha x+\beta y)=\alpha\left(a^{T} x\right)+\beta\left(a^{T} y\right)
+$$
+holds for all scalars $ \alpha, \beta $ and all $ n $-vectors $ x, y $.
 \end{corollary}
 
 \begin{proof}
@@ -57,7 +101,7 @@
 
 
 \begin{corollary}
-    所有线性函数都是内积.
+    所有的线性函数都是内积函数.
 
     $$ \begin{aligned} f(x) &=f\left(x_{1} e_{1}+x_{2} e_{2}+\ldots+x_{n} e_{n}\right) \\ &=x_{1} f\left(e_{1}\right)+x_{2} f\left(e_{2}\right)+\ldots+x_{n} f\left(e_{n}\right) \end{aligned} $$
 \end{corollary}
@@ -69,7 +113,7 @@
 \end{proof}
 
 
-
+\section{Affine Function}
 
 
 \begin{definition}[仿射函数 (affine function)]
@@ -81,6 +125,47 @@
 
 $ f(\alpha x+\beta y)=\alpha f(x)+\beta f(y), \alpha+\beta=1, \alpha, \beta \in \mathbb{R}, x, y \in \mathbb{R}^{n} $
 \end{theorem}
+
+\begin{corollary}
+    If $ f $ is affine, then
+$$
+f\left(\alpha_{1} u_{1}+\alpha_{2} u_{2}+\cdots+\alpha_{m} u_{m}\right)=\alpha_{1} f\left(u_{1}\right)+\alpha_{2} f\left(u_{2}\right)+\cdots+\alpha_{m} f\left(u_{m}\right)
+$$
+for all $ n $-vectors $ u_{1}, \ldots, u_{m} $ and all scalars $ \alpha_{1}, \ldots, \alpha_{m} $ with
+$$
+\alpha_{1}+\alpha_{2}+\cdots+\alpha_{m}=1
+$$
+\end{corollary}
+
+\begin{definition}
+    for fixed $ a \in \mathbf{R}^{n}, b \in \mathbf{R} $, define a function $ f: \mathbf{R}^{n} \rightarrow \mathbf{R} $ by
+$$
+f(x)=a^{T} x+b=a_{1} x_{1}+a_{2} x_{2}+\cdots+a_{n} x_{n}+b
+$$
+
+i.e., an inner-product function plus a constant (offset)
+\end{definition}
+
+\begin{theorem}
+    any function of this type is affine
+    
+    if $ \alpha+\beta=1 $ then
+$$
+a^{T}(\alpha x+\beta y)+b=\alpha\left(a^{T} x+b\right)+\beta\left(a^{T} y+b\right)
+$$
+\end{theorem}
+
+\begin{theorem}
+    every affine function can be written as $ f(x)=a^{T} x+b $ with:
+$$
+\begin{array}{l}
+a=\left(f\left(e_{1}\right)-f(0), f\left(e_{2}\right)-f(0), \ldots, f\left(e_{n}\right)-f(0)\right) \\
+b=f(0)
+\end{array}
+$$
+
+\end{theorem}
+
 
 \section{泰勒展开}
 
@@ -96,6 +181,8 @@ $ f(\alpha x+\beta y)=\alpha f(x)+\beta f(y), \alpha+\beta=1, \alpha, \beta \in 
 
 \begin{definition}[Taylor's Approximation]
     假设 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ , 函数 $ f $ 在 $ z $ 点充分光滑, 即处处可导.
+
+    $f(x)$在$z$附近的泰勒展开是
 
     $$\begin{aligned} f(x)&=f(z)+\frac{\partial f}{\partial x_{1}}(z)\left(x_{1}-z_{1}\right)+\frac{\partial f}{\partial x_{2}}(z)\left(x_{2}-z_{2}\right)+\cdots+\frac{\partial f}{\partial x_{n}}(z)\left(x_{n}-z_{n}\right) 
     \\ & +\frac{1}{2 !} \sum_{j=1}^{n} \sum_{i=1}^{n} \frac{\partial f^{2}}{\partial x_{i} \partial x_{j}}(z)\left(x_{i}-z_{i}\right)\left(x_{\mathrm{j}}-z_{j}\right)+\cdots \end{aligned}$$
@@ -113,6 +200,8 @@ $ \hat{f}(x) $ 是关于 $ x $ 的一个仿射函数.
 
 \begin{corollary}[一阶泰勒公式的内积形式]
     $$ \hat{f}(x)=f(z)+\nabla f(z)^{T}(x-z) \quad (\nabla f(z)=\left[\begin{array}{c}\frac{\partial f}{\partial x_{1}}(z) \\ \vdots \\ \frac{\partial f}{\partial x_{n}}(z)\end{array}\right]) $$
+
+    the $ n $-vector $ \nabla f(z) $ is called the gradient of $ f $ at $ z $.
 \end{corollary} 
 
 一维时, $ \hat{f}(x)=f(z)+f^{\prime}(z)(x-z) $.
@@ -185,3 +274,4 @@ $ \hat{f}(x) $ 是关于 $ x $ 的一个仿射函数.
 
     $x$是\textit{特征向量(feature vector)}, 它的元素$x_i$称为\textit{回归元(regressors)}. n维向量 $ \beta $ 是\textit{权重向量(weight vector)}. 标量 $ v $ 是\textit{偏移量(offset)}. 标量 $ \hat{y} $ 是\textit{预测值(prediction)}. 表示某个实际结果或因变量, 用$y$表示. 
 \end{definition}
+

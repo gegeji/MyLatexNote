@@ -11,7 +11,21 @@ $$
 则称向量 $ a_{1}, \ldots a_{m} $ 是线性相关(linearly dependent). 
 \end{definition}
 
-线性相关等价于至少有一个向量 $ a_{i} $ 是其它向量的线性组合. 
+\begin{corollary}
+    线性相关等价于至少有一个向量 $ a_{i} $ 是其它向量的线性组合. 
+
+    equivalently, at least one vector $ a_{i} $ is a linear combination of the other vectors:
+$$
+a_{i}=-\frac{x_{1}}{x_{i}} a_{1}-\cdots-\frac{x_{i-1}}{x_{i}} a_{i-1}-\frac{x_{i+1}}{x_{i}} a_{i+1}-\cdots-\frac{x_{n}}{x_{i}} a_{n}
+$$
+if $ x_{i} \neq 0 $.
+\end{corollary}
+
+
+\begin{corollary}
+    the vector 0 can be written as a nontrivial linear combination of $ a_{1}, \ldots, a_{n} $.
+\end{corollary}
+
 
 \begin{corollary}
     向量集 $ \left\{a_{1}\right\} $ 是线性相关的, 当且仅当 $ a_{1}=0 $ . 
@@ -32,7 +46,7 @@ $$
 线性无关等价于不存在一个向量 $ a_{i} $ 是其它向量的线性组合. 
 
 \begin{corollary}
-    注：一个n维向量集最多有n个线性无关的向量, 也就是说如果 $ \mathrm{n} $ 维 向量集有 $ \mathrm{n}+1 $ 个向量, 那它们必线性相关
+    注：一个$n$维向量集最多有$n$个线性无关的向量, 也就是说如果 $ {n} $ 维向量集有 $ {n}+1 $ 个向量, 那它们必线性相关
 \end{corollary}
 
 \begin{example}
@@ -46,6 +60,19 @@ $$
 
     $$ \beta_{1}=\beta_{2}=\beta_{3}=0 $$
 \end{example}
+
+
+\begin{corollary}
+    $$
+A=\left[\begin{array}{llll}
+a_{1} & a_{2} & \cdots & a_{n}
+\end{array}\right]
+$$
+has linearly independent columns if
+$$
+A x=0 \quad \Longrightarrow \quad x=0
+$$
+\end{corollary}
 
 \begin{theorem}
     假设 $ x $ 是线性无关向量 $ a_{1}, \ldots, a_{k} $ 的线性组合：
@@ -111,9 +138,14 @@ $$
     标准正交的向量集是线性无关的. 
 \end{corollary}
 
-\begin{corollary}
-    根据线性无关的性质, 必有向量集向量个数 $ k \leq n $.
-\end{corollary}
+\begin{theorem}
+    if $ n $ vectors $ a_{1}, a_{2}, \ldots, a_{n} $ of length $ m $ are linearly independent, then
+$$
+n \leq m
+$$
+
+    (根据线性无关的性质, 必有向量集向量个数 $ k \leq n $.)
+\end{theorem}
 
 \begin{proof}
     The proof is by induction on the dimension $n$.
@@ -164,6 +196,14 @@ $$
 
     Since the vectors $ a_{i}=\left(b_{i}, \alpha_{i}\right) $ are linearly independent, the \cref{eqn:k-leq-n} only holds when all the coefficients $ \beta_{i} $ and $ \gamma $ are all zero. This in turns implies that the vectors $ c_{1}, \ldots, c_{k-1} $ are linearly independent. By the induction hypothesis $ k-1 \leq n-1 $ so we have established that $ k \leq n $
 \end{proof}
+
+\begin{corollary}
+    If an $ m \times n $ matrix has linearly independent columns then $ m \geq n $. 
+\end{corollary}
+
+\begin{corollary}
+    If an $ m \times n $ matrix has linearly independent rows then $ m \leq n $.
+\end{corollary}
 
 \begin{definition}[$n$维向量的一个标准正交基]
     当 $ k=n $ 时,  $ a_{1}, \ldots, a_{n} $ 是 $ n $ 维向量的一个标准正交基. 

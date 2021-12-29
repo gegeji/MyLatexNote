@@ -164,9 +164,13 @@ $A=LU$是不对称的。但是可以改写为对称形式。
 Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \ddots & \\ & & & d_{n}\end{array}\right]\left[\begin{array}{cccc}1 & u_{12} / d_{1} & u_{13} / d_{1} & \cdot \\ & 1 & u_{23} / d_{2} & \cdot \\ & & \ddots & \vdots \\ & & & 1\end{array}\right] $.
 
 \begin{example}
-    \begin{center}
-        $(A= LU) \left[\begin{array}{ll}1 & 0 \\ 3 & 1\end{array}\right]\left[\begin{array}{ll}2 & 8 \\ 0 & 5\end{array}\right] \quad $ splits further into $(A= LDU) \left[\begin{array}{ll}1 & 0 \\ 3 & 1\end{array}\right]\left[\begin{array}{ll}2 & \\ & 5\end{array}\right]\left[\begin{array}{ll}1 & 4 \\ 0 & 1\end{array}\right] $
-    \end{center}
+    
+    $$(A= LU) \left[\begin{array}{ll}1 & 0 \\ 3 & 1\end{array}\right]\left[\begin{array}{ll}2 & 8 \\ 0 & 5\end{array}\right] $$ 
+    
+    splits further into
+    
+    $$(A= LDU) \left[\begin{array}{ll}1 & 0 \\ 3 & 1\end{array}\right]\left[\begin{array}{ll}2 & \\ & 5\end{array}\right]\left[\begin{array}{ll}1 & 4 \\ 0 & 1\end{array}\right] $$.
+    
 \end{example}
 
 \begin{theorem}
@@ -356,15 +360,18 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
 
 
 
-\subsection{Complexity of LU Decomposition}
+\subsection{Solving $Ax = b$ Using LU Decomposition and its Complexity}
 
-求解 $ A x=b, A $ 为非奇异矩阵，LU算法为求解方程组 $ A x=b $ 的标准解法，复杂度: $ \frac{2}{3} n^{3}+2 n^{2} \approx \frac{2}{3} n^{3} $ flops
+求解 $ A x=b, A $ 为非奇异矩阵，LU算法为求解方程组 $ A x=b $ 的标准解法.
 
-\begin{enumerate}
-    \item 对矩阵 $ A $ 进行LU分解 $ \left(\frac{2}{3} n^{3}\right. $ flops $ ) $
-    \item 回代法: 求解 $ L y=b\left(n^{2}\right. $ flops $ ) $
-    \item 回代法: 求解 $ U x=y\left(n^{2}\right. $ flops $ ) $
-\end{enumerate}
+复杂度: $ \frac{2}{3} n^{3}+2 n^{2} \approx \frac{2}{3} n^{3} $ flops
+
+\begin{algorithm}
+    \caption{Solving $Ax = b$ Using LU Decomposition}
+    对矩阵 $ A $ 进行LU分解 $ \left(\frac{2}{3} n^{3}\right. $ flops $ ) $\;
+    回代法: 求解 $ L y=b\left(n^{2}\right. $ flops $ ) $\;
+    回代法: 求解 $ U x=y\left(n^{2}\right. $ flops $ ) $\;
+\end{algorithm}
 
 
 \subsection{Example of LU Decomposition}

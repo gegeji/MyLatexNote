@@ -267,7 +267,7 @@
 {0.25em}% Space after theorem head
 {\small\sffamily\color{violet}\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
 \thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries\color{black}---\nobreakspace#3.}% Optional theorem note
-\addcontentsline{lod}{section}{(#1)\quad\protect\numberline{#2}{#3}}} % add line to list of theorems; #1 is theorem name, #2 #3 is the name of theorem
+\addcontentsline{lod}{section}{\quad(#1)\quad\protect\numberline{#2}{#3}}} % add line to list of theorems; #1 is theorem name, #2 #3 is the name of theorem
 
 
 \newtheoremstyle{blacknumex}% Theorem style name
@@ -292,7 +292,7 @@
 {0.25em}% Space after theorem head
 {\small\sffamily\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
 \thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries---\nobreakspace#3.}% Optional theorem note
-\addcontentsline{lod}{section}{(#1)\quad\protect\numberline{#2}{#3}}} % add line to list of theorems
+\addcontentsline{lod}{section}{\quad(#1)\quad\protect\numberline{#2}{#3}}} % add line to list of theorems
 
 
 \newtheoremstyle{blacknumboxVocabulary} % Theorem style name
@@ -320,6 +320,18 @@
 {\small\sffamily\color{violet}\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
 \thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries\color{black}---\nobreakspace#3.}} % Optional theorem note
 
+\newtheoremstyle{coralnum}% Theorem style name
+{5pt}% Space above
+{5pt}% Space below
+{\normalfont}% Body font
+{}% Indent amount
+{\small\bf\sffamily\color{coral}}% Theorem head font
+{\;}% Punctuation after theorem head
+{0.25em}% Space after theorem head
+{\small\sffamily\color{coral}\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
+\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries\color{black}---\nobreakspace#3.}} % Optional theorem note
+
+
 \makeatother
 
 % Defines the theorem text style for each type of theorem to one of the three styles above
@@ -338,11 +350,13 @@
 \newtheorem{vocabulary}{Vocabulary}[chapter]
 
 \theoremstyle{blacknumbox}
-\newtheorem{definitionT}{Definition}[section]
 \newtheorem{corollaryT}[dummy]{Corollary}
 
 \theoremstyle{violetnum}
 \newtheorem{proposition}[dummy]{Proposition}
+
+\theoremstyle{coralnum}
+\newtheorem{definitionT}{Definition}[section]
 
 % define new environment: RefWord and DefWord for vocabulary.
 \usepackage{xparse}
@@ -412,6 +426,10 @@
 \newmdenv[skipabove=7pt,
 skipbelow=7pt,
 % backgroundcolor=black!5, % grey
+rightline=false,
+leftline=true,
+topline=false,
+bottomline=false,
 backgroundcolor=lightViolet,
 linecolor=violet,
 innerleftmargin=5pt,
@@ -419,6 +437,7 @@ innerrightmargin=5pt,
 innertopmargin=5pt,
 leftmargin=0cm,
 rightmargin=0cm,
+linewidth=4pt,
 innerbottommargin=5pt]{tBox}
 
 % Exercise box	  
@@ -445,7 +464,7 @@ rightline=false,
 leftline=true,
 topline=false,
 bottomline=false,
-linecolor=violet,
+linecolor=coral,
 innerleftmargin=5pt,
 innerrightmargin=5pt,
 innertopmargin=0pt,

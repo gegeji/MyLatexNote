@@ -4,7 +4,7 @@
 
 \begin{problem}
     \label{Problem:ClusteringCenter}
-    假设$N$个样本向量$ x_{1}, \ldots, x_{N} \in \mathbb{R}^{n} $, 需要找到中心向量$z$满足
+    假设$N$个样本向量$ x_{1}, \ldots, x_{N} \in \mathbb{R}^{n} $, 需要找到中心向量（centroid）$z$满足
 
     $$ \min _{z \in \mathbf{R}^{n}} \sum_{i=1}^{N}\left\|x_{i}-z\right\|_{2}^{2} $$
 \end{problem}
@@ -266,13 +266,13 @@ $$ \sum_{i=1}^{n}\left(x_{i}-m\right)=\sum_{i=1}^{n} x_{i}-n m=\sum_{i=1}^{n} x_
 \end{problem}
 
     \begin{remark}
-        t是标量，ta是向量.
+        $t$是标量，$ta$是向量.
     \end{remark}
 
     定义
     $$ f(t)=\|t a-b\|_{2}^{2}=\langle t a-b, t a-b\rangle=t^{2} a^{T} a-2 t a^{T} b+b^{T} b $$
 
-    可以验证$f(t)$满足凸函数的定义。
+    It is a quadratic function of $ t $ with positive leading coefficient $ a^{T} a $. 可以验证$f(t)$满足凸函数的定义。
 
     $$ \nabla f(t)=2 t a^{T} a-2 a^{T} b=0 $$
 

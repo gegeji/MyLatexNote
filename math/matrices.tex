@@ -11,7 +11,7 @@
 \end{definition}
 
 \begin{notation}
-    设 $ B_{i j} $ 表示矩阵 $ B $ 中第 $ i $ 行第 $ j $ 的元素
+    设 $ B_{i j} $ 表示矩阵 $ B $ 中第 $ i $ 行第 $ j $列 的元素
 
     实数域中大小为 $ m \times n $ 的矩阵集合写为 $ \mathbb{R}^{m \times n} $
 
@@ -42,7 +42,7 @@
 \end{definition}
 
 \begin{definition}[分块矩阵]
-    分块矩阵的每一个元都是一个矩阵.
+    分块矩阵的每一个元素都是一个矩阵.
 
     $$ A=\left[\begin{array}{ll}B & C \\ D & E\end{array}\right] $$
 
@@ -69,6 +69,8 @@
     设矩阵 $ A \in \mathbb{R}^{m \times n} $
 
     $$ \beta A=\left[\begin{array}{cccc}\beta A_{11} & \beta A_{12} & \cdots & \beta A_{1 n} \\ \vdots & \vdots & \ddots & \vdots \\ \beta A_{m 1} & \beta A_{m 2} & \cdots & \beta A_{m n}\end{array}\right], \beta \in \mathbb{R} $$
+
+    ($ A $ and $ \beta $ can be real or complex.)
 \end{definition}
 
 \begin{definition}[矩阵加法]
@@ -91,6 +93,7 @@
     \begin{itemize}
         \item $ \left(A^{T}\right)^{T}=A $
         \item 对称矩阵满足 $ A^{T}=A $
+        \item  $A$ may be complex, but transpose of a complex matrix is rarely needed
         \item $ (\beta A)^{T}=\beta A^{T},(A+B)^{T}=A^{T}+B^{T} $
     \end{itemize}
 \end{corollary}
@@ -131,7 +134,9 @@ $$
 
 \end{definition}
 
-注意: 矩阵A的列大小必须等于B的行大小.
+\begin{remark}
+    矩阵$A$的列大小必须等于$B$的行大小.
+\end{remark} 
 
 \begin{corollary}[矩阵乘法性质]
     有如下性质:
@@ -205,9 +210,13 @@ $$
     \end{subfigure}
 \end{figure}
 
+$ f: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m} $ in terms of its effect on $ x $. 
+
+signal processing/control interpretation: $ n $ inputs $ x_{i}, m $ outputs $ y_{i} $. $ f $ is linear if we can represent its action on $ x $ as a product $ f(x)=A x $
 
 \begin{definition}[矩阵-向量乘积函数 $f(x)=A x$]
     给定矩阵 $ A \in \mathbb{R}^{m \times n} $ , 定义函数 $ f: R^{n} \rightarrow R^{m}, f(x)=A x $, 其中 $ A=\left[f\left(e_{1}\right) \ldots f\left(e_{n}\right)\right] $.
+    
 \end{definition}
 
 \begin{proof}
@@ -349,6 +358,10 @@ $$
     $ A_{i j}=\bar{A}_{j i}, A^H = A $ (共轭复数).
 \end{definition}
 
+\begin{remark}
+    diagonal elements are real (since $ A_{i i}=\bar{A}_{i i} $ ).
+\end{remark}
+
 \begin{definition}[Diagonal Matrices]
     对角线上元素不全为0, 其余元素全为0.
 \end{definition}
@@ -364,6 +377,12 @@ $$
 \end{definition}
 
 通过Gram-Schmidt正交化算法可以化为上三角或者下三角矩阵。
+
+\begin{definition}[Sparse Matrices]
+    a matrix is sparse if most (almost all) of its elements are zero
+\end{definition}
+
+sparse matrix storage formats and algorithms exploit sparsity, efficiency depends on number of nonzeros and their positions. The positions of nonzeros are visualized in a `spy plot'.
 
 \subsection{$f(x)=A x$中的$A$}
 
@@ -387,7 +406,7 @@ $$
     $ f $ 将向量 $ x $ 中的元素替换成相应的绝对值, 非线性;
 \end{example}
 
-\begin{example}[反转矩阵]
+\begin{example}[反转矩阵(Reverser matrix)]
     $$ A=\left[\begin{array}{ccccc}0 & 0 & \cdots & 0 & 1 \\ 0 & 0 & \cdots & 1 & 0 \\ \vdots & \vdots & \therefore & \vdots & \vdots \\ 0 & 1 & \cdots & 0 & 0 \\ 1 & 0 & \cdots & 0 & 0\end{array}\right] $$
 \end{example}
 
@@ -395,7 +414,7 @@ $$
     $$ A x=\left[\begin{array}{c}x_{n} \\ x_{n-1} \\ \vdots \\ x_{2} \\ x_{1}\end{array}\right] $$
 \end{proof}
 
-\begin{example}[循环移位矩阵]
+\begin{example}[循环移位矩阵(Circular shift matrix)]
     $$ A=\left[\begin{array}{ccccc}0 & 0 & \cdots & 0 & 1 \\ 1 & 0 & \cdots & 0 & 0 \\ 0 & 1 & \cdots & 0 & 0 \\ \vdots & \vdots & \ddots & \vdots & \vdots \\ 0 & 0 & \cdots & 1 & 0\end{array}\right] $$
 \end{example}
 
@@ -427,7 +446,7 @@ $$
 \end{definition}
 
 \subsection{图论：节点弧关联矩阵}
-% todo: image
+
 
 \begin{definition}[关联矩阵]
    假设有向图$G$有$m$个顶点,  $ n $ 条弧, 则关联矩阵$A$大小为 $ m \times n $,其中 
@@ -435,8 +454,97 @@ $$
    $$ A_{i j}=\left\{\begin{array}{ll}1 & \text{如果点} i \text{是弧} j \text{的终点 } \\ -1 & \text {如果点}i \text{是弧}j \text{的起点} \\ 0 & \text { 其它 }\end{array}\right. $$
 \end{definition}
 
+\begin{example}[路径矩阵]
+\begin{FigureCenter}{paths in directed graph}
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Shape: Circle [id:dp5532284801725602] 
+\draw   (213.62,88.69) .. controls (213.62,75.61) and (224.22,65) .. (237.31,65) .. controls (250.39,65) and (261,75.61) .. (261,88.69) .. controls (261,101.78) and (250.39,112.38) .. (237.31,112.38) .. controls (224.22,112.38) and (213.62,101.78) .. (213.62,88.69) -- cycle ;
+%Shape: Circle [id:dp7238339296497196] 
+\draw   (428.62,87.69) .. controls (428.62,74.61) and (439.22,64) .. (452.31,64) .. controls (465.39,64) and (476,74.61) .. (476,87.69) .. controls (476,100.78) and (465.39,111.38) .. (452.31,111.38) .. controls (439.22,111.38) and (428.62,100.78) .. (428.62,87.69) -- cycle ;
+%Shape: Circle [id:dp9299746230640014] 
+\draw   (310.62,156.69) .. controls (310.62,143.61) and (321.22,133) .. (334.31,133) .. controls (347.39,133) and (358,143.61) .. (358,156.69) .. controls (358,169.78) and (347.39,180.38) .. (334.31,180.38) .. controls (321.22,180.38) and (310.62,169.78) .. (310.62,156.69) -- cycle ;
+%Shape: Circle [id:dp06003655838365507] 
+\draw   (215.62,227.69) .. controls (215.62,214.61) and (226.22,204) .. (239.31,204) .. controls (252.39,204) and (263,214.61) .. (263,227.69) .. controls (263,240.78) and (252.39,251.38) .. (239.31,251.38) .. controls (226.22,251.38) and (215.62,240.78) .. (215.62,227.69) -- cycle ;
+%Shape: Circle [id:dp9333980197615774] 
+\draw   (426.62,228.69) .. controls (426.62,215.61) and (437.22,205) .. (450.31,205) .. controls (463.39,205) and (474,215.61) .. (474,228.69) .. controls (474,241.78) and (463.39,252.38) .. (450.31,252.38) .. controls (437.22,252.38) and (426.62,241.78) .. (426.62,228.69) -- cycle ;
+%Straight Lines [id:da14351861661944953] 
+\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=2.25]    (239.29,199) -- (239.09,122.93) ;
+\draw [shift={(239.07,117.93)}, rotate = 89.84] [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
+\draw [shift={(239.31,204)}, rotate = 269.84] [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
+%Straight Lines [id:da17800771926651127] 
+\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=2.25]    (422.97,90.07) -- (273.07,89.93) ;
+\draw [shift={(268.07,89.93)}, rotate = 0.05] [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
+%Straight Lines [id:da8693343970271716] 
+\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=2.25]    (451.97,198.07) -- (452.07,121.93) ;
+\draw [shift={(452.07,116.93)}, rotate = 90.07] [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
+%Straight Lines [id:da6344324541430564] 
+\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=2.25]    (269.97,230.07) -- (414.97,232) ;
+\draw [shift={(419.97,232.07)}, rotate = 180.76] [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
+%Straight Lines [id:da07777304568721788] 
+\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=2.25]    (424.97,210.07) -- (364.28,174.59) ;
+\draw [shift={(359.97,172.07)}, rotate = 30.31] [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
+%Straight Lines [id:da043097960393339685] 
+\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=2.25]    (362.97,148.07) -- (423.71,110.69) ;
+\draw [shift={(427.97,108.07)}, rotate = 148.39] [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
+%Straight Lines [id:da4103672479327105] 
+\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=2.25]    (311.97,177.07) -- (266.29,203.56) ;
+\draw [shift={(261.97,206.07)}, rotate = 329.89] [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (14.29,-6.86) -- (0,0) -- (14.29,6.86) -- cycle    ;
+
+% Text Node
+\draw (232,79.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$2$};
+% Text Node
+\draw (448,78.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$3$};
+% Text Node
+\draw (329,147.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$5$};
+% Text Node
+\draw (234,218.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$1$};
+% Text Node
+\draw (445,219.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$4$};
+
+
+\end{tikzpicture}
+\end{FigureCenter}
+
+
+    matrix representation
+$$
+A=\left[\begin{array}{lllll}
+0 & 1 & 0 & 0 & 1 \\
+1 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 & 1 \\
+1 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0
+\end{array}\right]
+$$
+$ A_{i j}=1 $ indicates an edge $ j \rightarrow i $
+
+    give a graph interpretation of $ A^{2}=A A, A^{3}=A A A, \ldots $
+$$
+A^{2}=\left[\begin{array}{lllll}
+1 & 0 & 1 & 1 & 0 \\
+0 & 1 & 0 & 1 & 2 \\
+1 & 0 & 0 & 1 & 0 \\
+0 & 1 & 0 & 0 & 1 \\
+1 & 0 & 0 & 0 & 0
+\end{array}\right], \quad A^{3}=\left[\begin{array}{lllll}
+1 & 1 & 0 & 1 & 2 \\
+2 & 0 & 1 & 2 & 0 \\
+1 & 1 & 0 & 0 & 1 \\
+1 & 0 & 1 & 1 & 0 \\
+0 & 1 & 0 & 0 & 1
+\end{array}\right]
+$$
+\end{example}
+
+
+
+
 \subsection{Convolution}
-% todo: image
+
 
 \begin{definition}[一维卷积]
     向量 $ a \in \mathbb{R}^{n} $ 和向量 $ b \in \mathbb{R}^{m} $ 的\textit{卷积}是一个 $ (\mathrm{n}+\mathrm{m}-1) $ 维向量 $ c \in \mathbb{R}^{m+\mathrm{n}-1} $
@@ -601,6 +709,17 @@ a_{4}
 $$
 \end{example}
 
+\begin{example}[moving average of a time series]
+    $ n $-vector $ x $ represents a time series. The \term{3-period moving average of the time series} is the time series
+$$
+y_{k}=\frac{1}{3}\left(x_{k}+x_{k-1}+x_{k-2}\right), \quad k=1,2, \ldots, n+2
+$$
+
+(with $ x_{k} $ interpreted as zero for $ k<1 $ and $ k>n $ )
+
+This can be expressed as a convolution $ y=a * x $ with $ a=(1 / 3,1 / 3,1 / 3) $.
+\end{example}
+
 \subsection{多项式}
 
 \begin{definition}[多项式]
@@ -733,6 +852,11 @@ A_{i i}=e_{i}^{T} A e_{i} \geq 0
 $$
 \end{theorem}
 
+
+
+
+
+
 \section{Gram 矩阵}
 
 \begin{definition}[实矩阵$A$的Gram矩阵]
@@ -769,6 +893,55 @@ $$
 
     注意和线性无关 \ref{Def:LinearIndependence} 的定义进行参照.
 \end{proof}
+
+\section{Affine functions and matrix-vector product}
+
+
+回想仿射函数、泰勒展开的定义。
+
+for fixed $ A \in \mathbf{R}^{m \times n}, b \in \mathbf{R}^{m} $, define a function $ f: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m} $ by
+$$
+f(x)=A x+b
+$$
+i.e., a matrix-vector product plus a constant
+
+any function of this type is affine: if $ \alpha+\beta=1 $ then
+$$
+A(\alpha x+\beta y)+b=\alpha(A x+b)+\beta(A y+b)
+$$
+
+every affine function can be written as $ f(x)=A x+b $ with:
+$$
+A=\left[\begin{array}{llll}
+f\left(e_{1}\right)-f(0) & f\left(e_{2}\right)-f(0) & \cdots & f\left(e_{n}\right)-f(0)
+\end{array}\right]
+$$
+and $ b=f(0) $
+
+\begin{theorem}
+    first-order Taylor approximation of differentiable $ f: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m} $ around $ z $ :
+$$
+\widehat{f_{i}}(x)=f_{i}(z)+\frac{\partial f_{i}}{\partial x_{1}}(z)\left(x_{1}-z_{1}\right)+\cdots+\frac{\partial f_{i}}{\partial x_{n}}(z)\left(x_{n}-z_{n}\right), \quad i=1, \ldots, m
+$$
+
+in matrix-vector notation: $ \widehat{f}(x)=f(z)+D f(z)(x-z) $ where
+$$
+D f(z)=\left[\begin{array}{cccc}
+\frac{\partial f_{1}}{\partial x_{1}}(z) & \frac{\partial f_{1}}{\partial x_{2}}(z) & \cdots & \frac{\partial f_{1}}{\partial x_{n}}(z) \\
+\frac{\partial f_{2}}{\partial x_{1}}(z) & \frac{\partial f_{2}}{\partial x_{2}}(z) & \cdots & \frac{\partial f_{2}}{\partial x_{n}}(z) \\
+\vdots & \vdots & & \vdots \\
+\frac{\partial f_{m}}{\partial x_{1}}(z) & \frac{\partial f_{m}}{\partial x_{2}}(z) & \cdots & \frac{\partial f_{m}}{\partial x_{n}}(z)
+\end{array}\right]=\left[\begin{array}{c}
+\nabla f_{1}(z)^{T} \\
+\nabla f_{2}(z)^{T} \\
+\vdots \\
+\nabla f_{m}(z)^{T}
+\end{array}\right]
+$$
+
+$ D f(z) $ is called the derivative matrix or Jacobian matrix of $ f $ at $ z $, $ \widehat{f} $ is a local affine approximation of $ f $ around $ z $.
+\end{theorem}
+
 
 \chapter{Matrices Norms}
 
@@ -1102,3 +1275,5 @@ ans =
 
 
 \end{example}
+
+

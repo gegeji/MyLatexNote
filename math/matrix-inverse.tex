@@ -33,7 +33,10 @@
     $$ D=\frac{1}{2}\left[\begin{array}{cc}1 & -1 \\ -1 & 1 \\ 1 & 1\end{array}\right], E=\left[\begin{array}{ll}1 & 0 \\ 0 & 1 \\ 0 & 0\end{array}\right], G=\left[\begin{array}{cc}1 & -1 \\ 0 & 0 \\ 0 & 1\end{array}\right] $$
 \end{example}
 
+\begin{theorem}
 一个大小为 $ m \times n $ 的矩阵, 其左逆或右逆的维度为 $ n \times m $.
+\end{theorem}
+
 
 \begin{theorem}
     A的左逆为 $ X $ 当且仅当 $ X^{T} $ 是 $ A^{T} $ 的右逆.
@@ -284,7 +287,7 @@ $$
     假设$A$的左逆是 $ B $ ，则
     $$
     \begin{aligned}
-            & A x=0 
+            & A x=0 \\
      \Rightarrow &B A x=0 \\
     \Rightarrow & I x=0
     \end{aligned}
