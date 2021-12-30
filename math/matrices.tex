@@ -252,21 +252,35 @@ signal processing/control interpretation: $ n $ inputs $ x_{i}, m $ outputs $ y_
 
 \subsubsection{一般矩阵的乘法}
 
-$ C=A B $ with $ A $ of size $ m \times p $ and $ B $ of size $ p \times n $
+\begin{theorem}
+    Suppose $ C=A B $ with $ A $ of size $ m \times p $ and $ B $ of size $ p \times n $。
+
+    一般矩阵的矩阵乘法的算法复杂度是$O(mnp)$。
+\end{theorem}
+
+
 
 The product matrix $ C $ has size $ m \times n $, so there are $ m n $ elements to compute. 
 
-The $ i, j $ element of $ C $ is the inner product of row $ i $ of $ A $ with column $ j $ of $ B . $ This is an inner product of vectors of length $ p $ and requires $ 2 p-1 $ flops. Therefore the total is $ m n(2 p-1) $ flops, which we approximate as $ 2 m n p $ flops. $O(mnp)$
+The $ i, j $ element of $ C $ is the inner product of row $ i $ of $ A $ with column $ j $ of $ B . $ This is an inner product of vectors of length $ p $ and requires $ 2 p-1 $ flops. Therefore the total is $ m n(2 p-1) $ flops, which we approximate as $ 2 m n p $ flops. 
 
 \subsubsection{稀疏矩阵的乘法}
 
-Suppose that $ A $ is $ m \times p $ and sparse, and $ B $ is $ p \times n $, but not necessarily sparse. 
+\begin{theorem}
+    Suppose that $ A $ is $ m \times p $ and sparse, and $ B $ is $ p \times n $, but not necessarily sparse. 
+
+    稀疏矩阵乘法的算法复杂度不多于$ 2 \min \{\mathbf{n n z}(A) n, \mathbf{n n z}(B) m\} $ flops。
+\end{theorem}
+
+
 
 The inner product of the $ i $ th row $ a_{i}^{T} $ of $ A $ with the $ j $ th column of $ B $ requires no more than $ 2 \operatorname{nnz}\left(a_{i}^{T}\right) $ flops. 
 
-Summing over $ i=1, \ldots, m $ and $ j=1, \ldots, n $ we get $ 2 \mathbf{n n z}(A) n $ flops. 
+Summing over $ i=1, \ldots, m $ and $ j=1, \ldots, n $, we get $ 2 \mathbf{n n z}(A) n $ flops. 
 
 If $ B $ is sparse, the total number of flops is no more that $ 2 \mathbf{n n z}(B) m $ flops. 
+
+There is no simple formula for the complexity of multiplying two sparse matrices, but it is certainly no more than $ 2 \min \{\mathbf{n n z}(A) n, \mathbf{n n z}(B) m\} $ flops.
 
 \begin{remark}
     Note that these formulas agree with the one given above, $ 2 m n p $, when the sparse matrices have all entries nonzero.
@@ -274,9 +288,15 @@ If $ B $ is sparse, the total number of flops is no more that $ 2 \mathbf{n n z}
 
 \subsubsection{三重矩阵相乘}
 
-$$ D=A B C $$
+\begin{theorem}
+    $$ D=A B C $$
 
 with $ A $ of size $ m \times n, B $ of size $ n \times p $, and $ C $ of size $ p \times q $. 
+
+    根据计算顺序的不同，它的算法复杂度是$O( 2 m p(n+q) )$或者$O(2 n q(m+p) )$。
+\end{theorem}
+
+
 
 The matrix $ D $ can be computed in two ways, as $ (A B) C $ and as $ A(B C) $. 
 
@@ -311,12 +331,12 @@ $$
 
 乘积 $ y \in \mathbb{R}^{m} $ , 每个元素需要做向量内积, 需要 $ 2 n-1 $ flops;
 
-当n足够大时, 复杂度近似于2mn；
+当$n$足够大时, 复杂度近似于$2mn$；
 
 特殊情况:
 
 \begin{itemize}
-    \item $A$为对角矩阵： $ \mathrm{n} $ flops
+    \item $A$为对角矩阵： $ {n} $ flops
     \item $A$为下三角矩阵： $ n^{2} $ flops
     \item $A$为稀疏矩阵时：flops $ <<2 m n $
 \end{itemize}
@@ -1226,19 +1246,17 @@ For example, suppose $ a=c=1, b=10^{5}+10^{-5} $. The exact roots are given by
 $$
 x_{1}=\frac{-b+\sqrt{b^{2}-4 a c}}{2 a}=-10^{-5}, \quad x_{2}=\frac{-b-\sqrt{b^{2}-4 a c}}{2 a}=-10^{5},
 $$
-We evaluate these expressions in MATLAB, rounding the square roots to 6 correct digits using the \begin{verbatim}
-    chop
-\end{verbatim} function:
+We evaluate these expressions in MATLAB, rounding the square roots to 6 correct digits using the \verb|chop| function:
 
-\begin{verbatim}
-    >> a = 1; b = 1e5 + 1e-5; c = 1;
+\begin{lstlisting}[caption=example 1 for cancellation,language=matlab]
+>> a = 1; b = 1e5 + 1e-5; c = 1;
 >> x1 = (-b + chop(sqrt(b^2 - 4*a*c), 6)) / (2*a)
 ans =
 -5.0000e-6
 >> x2 = (-b - chop(sqrt(b^2 - 4*a*c), 6)) / (2*a)
 ans =
 -1.0000e+05
-\end{verbatim}
+\end{lstlisting}
 
 
 The relative error in $ x_{1} $ is $ 50 \% $, and is due to cancellation.
@@ -1252,26 +1270,30 @@ x_{1} &=\frac{\left(-b+\sqrt{b^{2}-4 a c}\right)\left(-b-\sqrt{b^{2}-4 a c}\righ
 $$
 
 Similarly, if $ b>0 $, we can use the expression $ x_{2}=c /\left(a x_{1}\right) $ to compute $ x_{2} $, given $ x_{1} $. The modified algorithm that avoids cancellation is therefore:
-- if $ b \leq 0 $, calculate
+
+\begin{itemize}
+    \item if $ b \leq 0 $, calculate
 $$
 x_{1}=\frac{-b+\sqrt{b^{2}-4 a c}}{2 a}, \quad x_{2}=\frac{c}{a x_{1}}
 $$
-- if $ b>0 $, calculate
+    \item if $ b>0 $, calculate
 $$
 x_{2}=\frac{-b-\sqrt{b^{2}-4 a c}}{2 a}, \quad x_{1}=\frac{c}{a x_{2}}
 $$
+\end{itemize}
+
 
 For the example, we get
 
-\begin{verbatim}
-    >> a = 1; b = 1e5 + 1e-5; c = 1;
+\begin{lstlisting}[caption=example 2 for cancellation,language=matlab]
+>> a = 1; b = 1e5 + 1e-5; c = 1;
 >> x2 = (-b - chop(sqrt(b^2 - 4*a*c), 6)) / (2*a)
 ans =
 -1.0000e+05
 >> x1 = c / (a*x2)
 ans =
 -1.0000e-05
-\end{verbatim}
+\end{lstlisting}
 
 
 \end{example}

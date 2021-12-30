@@ -1,664 +1,632 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\@mypartnumtocformat {I}{Vectors}}{13}{part.1}%
+\contentsline {part}{\@mypartnumtocformat {I}{Vectors}}{11}{part.1}%
 \ttl@starttoc {default@1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}对向量的介绍}{14}{chapter.1}%
+\contentsline {chapter}{\numberline {1}对向量的介绍}{12}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Vector}{14}{section.1.1}%
+\contentsline {section}{\numberline {1.1}Vector}{12}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Vector Space}{16}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Vector Space}{14}{section.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}向量运算}{16}{section.1.3}%
+\contentsline {section}{\numberline {1.3}向量运算}{14}{section.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}内积}{17}{section.1.4}%
+\contentsline {section}{\numberline {1.4}内积}{16}{section.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.1}常用的内积等式}{18}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.1}常用的内积等式}{16}{subsection.1.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Examples for Inner Product}{19}{section.1.5}%
+\contentsline {section}{\numberline {1.5}Examples for Inner Product}{17}{section.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}Cauchy-Schwartz Inequality}{20}{section.1.6}%
+\contentsline {section}{\numberline {1.6}Cauchy-Schwartz Inequality}{18}{section.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.7}浮点运算}{21}{section.1.7}%
+\contentsline {section}{\numberline {1.7}浮点运算}{19}{section.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.8}Complex numbers and Vectors}{22}{section.1.8}%
+\contentsline {section}{\numberline {1.8}Complex numbers and Vectors}{20}{section.1.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.8.1}Polar representation}{22}{subsection.1.8.1}%
+\contentsline {subsection}{\numberline {1.8.1}Polar representation}{20}{subsection.1.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.8.2}Complex vector}{22}{subsection.1.8.2}%
+\contentsline {subsection}{\numberline {1.8.2}Complex vector}{21}{subsection.1.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Linear Function}{25}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Linear Function}{23}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Linear Function}{25}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Linear Function}{23}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Affine Function}{27}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Affine Function}{25}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}泰勒展开}{27}{section.2.3}%
+\contentsline {section}{\numberline {2.3}泰勒展开}{26}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}高阶泰勒公式}{28}{section.2.4}%
+\contentsline {section}{\numberline {2.4}高阶泰勒公式}{27}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Regression Model}{30}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Regression Model}{28}{section.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Norm and Distance}{31}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Norm and Distance}{29}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Vector Norm}{31}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Vector Norm}{29}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}$ \ell _{1} $-范数}{31}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.1}$ \ell _{1} $-范数}{29}{subsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}$ \ell _{2} $-范数}{31}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.2}$ \ell _{2} $-范数}{29}{subsection.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Cauchy–Schwarz inequality}{32}{section*.4}%
+\contentsline {subsubsection}{Cauchy–Schwarz inequality}{30}{section*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}$ \ell _{\infty } $-范数}{33}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.3}$ \ell _{\infty } $-范数}{31}{subsection.3.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.4}$ \ell _{p} $-范数}{33}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.4}$ \ell _{p} $-范数}{31}{subsection.3.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Root Mean Square Value (RMS)}{34}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Root Mean Square Value (RMS)}{32}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Chebyshev's Inequality}{34}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Chebyshev's Inequality}{32}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Distance}{35}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Distance}{33}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Feature Distance and Nearest Neighbor}{35}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.1}Feature Distance and Nearest Neighbor}{33}{subsection.3.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Standard Derivation}{35}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Standard Derivation}{33}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Angle}{36}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Angle}{34}{section.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6.1}相关系数}{37}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.1}相关系数}{35}{subsection.3.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Regression Line}{37}{section.3.7}%
+\contentsline {section}{\numberline {3.7}Regression Line}{35}{section.3.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.8}Norm for Complex Numbers}{38}{section.3.8}%
+\contentsline {section}{\numberline {3.8}Norm for Complex Numbers}{36}{section.3.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}优化问题初步}{40}{chapter.4}%
+\contentsline {chapter}{\numberline {4}优化问题初步}{38}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}优化问题引入}{40}{section.4.1}%
+\contentsline {section}{\numberline {4.1}优化问题引入}{38}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Convex Set}{41}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Convex Set}{39}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Examples for Convex Functions}{41}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.1}Examples for Convex Functions}{39}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}凸函数的充要条件}{42}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.2}凸函数的充要条件}{40}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}向量偏导}{43}{section.4.3}%
+\contentsline {section}{\numberline {4.3}向量偏导}{41}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}标量优化问题：投影问题}{44}{section.4.4}%
+\contentsline {section}{\numberline {4.4}标量优化问题：投影问题}{42}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Clustering}{45}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Clustering}{43}{section.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Linear Independence}{47}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Linear Independence}{45}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}线性相关、线性无关}{47}{section.5.1}%
+\contentsline {section}{\numberline {5.1}线性相关、线性无关}{45}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Basis}{48}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Basis}{46}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}标准正交向量}{49}{section.5.3}%
+\contentsline {section}{\numberline {5.3}标准正交向量}{47}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Gram-Schmidt Algorithm}{51}{section.5.4}%
+\contentsline {section}{\numberline {5.4}Gram-Schmidt Algorithm}{49}{section.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}The Analysis of Gram-Schmidt Algorithm}{51}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.1}The Analysis of Gram-Schmidt Algorithm}{49}{subsection.5.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\@mypartnumtocformat {II}{Matrices}}{54}{part.2}%
+\contentsline {part}{\@mypartnumtocformat {II}{Matrices}}{52}{part.2}%
 \ttl@stoptoc {default@1}
 \ttl@starttoc {default@2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Matrices}{55}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Matrices}{53}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Matrices}{55}{section.6.1}%
+\contentsline {section}{\numberline {6.1}Matrices}{53}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}矩阵运算}{56}{section.6.2}%
+\contentsline {section}{\numberline {6.2}矩阵运算}{54}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}Matrix Power}{59}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.1}Matrix Power}{57}{subsection.6.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.2}矩阵乘法的算法复杂度}{59}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.2}矩阵乘法的算法复杂度}{57}{subsection.6.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{一般矩阵的乘法}{59}{section*.12}%
+\contentsline {subsubsection}{一般矩阵的乘法}{57}{section*.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{稀疏矩阵的乘法}{59}{section*.13}%
+\contentsline {subsubsection}{稀疏矩阵的乘法}{57}{section*.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{三重矩阵相乘}{60}{section*.14}%
+\contentsline {subsubsection}{三重矩阵相乘}{58}{section*.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.3}矩阵向量乘积复杂度}{60}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.3}矩阵向量乘积复杂度}{59}{subsection.6.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Special Matrices and Matrices in Different Applications}{60}{section.6.3}%
+\contentsline {section}{\numberline {6.3}Special Matrices and Matrices in Different Applications}{59}{section.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.1}$f(x)=A x$中的$A$}{61}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.1}$f(x)=A x$中的$A$}{60}{subsection.6.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.2}Selectors}{63}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.2}Selectors}{61}{subsection.6.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.3}图论：节点弧关联矩阵}{63}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.3}图论：节点弧关联矩阵}{61}{subsection.6.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.4}Convolution}{64}{subsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.3.4}Convolution}{62}{subsection.6.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.5}多项式}{65}{subsection.6.3.5}%
+\contentsline {subsection}{\numberline {6.3.5}多项式}{63}{subsection.6.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.6}Fourier Transform}{65}{subsection.6.3.6}%
+\contentsline {subsection}{\numberline {6.3.6}Fourier Transform}{63}{subsection.6.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.7}Semi-Definite Matrices}{66}{subsection.6.3.7}%
+\contentsline {subsection}{\numberline {6.3.7}Semi-Definite Matrices}{64}{subsection.6.3.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Gram 矩阵}{67}{section.6.4}%
+\contentsline {section}{\numberline {6.4}Gram 矩阵}{65}{section.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.5}Affine functions and matrix-vector product}{67}{section.6.5}%
+\contentsline {section}{\numberline {6.5}Affine functions and matrix-vector product}{66}{section.6.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Matrices Norms}{69}{chapter.7}%
+\contentsline {chapter}{\numberline {7}Matrices Norms}{67}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}矩阵范数}{69}{section.7.1}%
+\contentsline {section}{\numberline {7.1}矩阵范数}{67}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}适定问题}{73}{chapter.8}%
+\contentsline {chapter}{\numberline {8}适定问题}{71}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}The Definition of Well-posed Problem}{73}{section.8.1}%
+\contentsline {section}{\numberline {8.1}The Definition of Well-posed Problem}{71}{section.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}绝对误差的界限}{74}{section.8.2}%
+\contentsline {section}{\numberline {8.2}绝对误差的界限}{72}{section.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}相对误差的界限}{74}{section.8.3}%
+\contentsline {section}{\numberline {8.3}相对误差的界限}{72}{section.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}Cancellation}{74}{section.8.4}%
+\contentsline {section}{\numberline {8.4}Cancellation}{72}{section.8.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Inverse of Matrices}{77}{chapter.9}%
+\contentsline {chapter}{\numberline {9}Inverse of Matrices}{75}{chapter.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}Left Inverse, Right Inverse, Inverse}{77}{section.9.1}%
+\contentsline {section}{\numberline {9.1}Left Inverse, Right Inverse, Inverse}{75}{section.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.2}Linear Equation Systems}{78}{section.9.2}%
+\contentsline {section}{\numberline {9.2}Linear Equation Systems}{76}{section.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.1}线性方程组求解}{79}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.1}线性方程组求解}{76}{subsection.9.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.3}Fundamental Theorem of Linear Algebra}{79}{section.9.3}%
+\contentsline {section}{\numberline {9.3}Fundamental Theorem of Linear Algebra}{77}{section.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.4}Invertible Matrices}{80}{section.9.4}%
+\contentsline {section}{\numberline {9.4}Invertible Matrices}{78}{section.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.5}转置和共轭转置的逆}{82}{section.9.5}%
+\contentsline {section}{\numberline {9.5}转置和共轭转置的逆}{80}{section.9.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.6}Gram Matrix非奇异的性质}{82}{section.9.6}%
+\contentsline {section}{\numberline {9.6}Gram Matrix非奇异的性质}{80}{section.9.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.7}伪逆}{83}{section.9.7}%
+\contentsline {section}{\numberline {9.7}伪逆}{81}{section.9.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Orthogonal Matrices}{86}{chapter.10}%
+\contentsline {chapter}{\numberline {10}Orthogonal Matrices}{84}{chapter.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.1}预备知识}{86}{section.10.1}%
+\contentsline {section}{\numberline {10.1}预备知识}{84}{section.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1.1}标准正交向量}{86}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.1.1}标准正交向量}{84}{subsection.10.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1.2}Gram 矩阵与标准正交的关系}{86}{subsection.10.1.2}%
+\contentsline {subsection}{\numberline {10.1.2}Gram 矩阵与标准正交的关系}{84}{subsection.10.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1.3}矩阵-向量乘积与标准正交的关系}{86}{subsection.10.1.3}%
+\contentsline {subsection}{\numberline {10.1.3}矩阵-向量乘积与标准正交的关系}{84}{subsection.10.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1.4}左可逆性与正交的关系}{87}{subsection.10.1.4}%
+\contentsline {subsection}{\numberline {10.1.4}左可逆性与正交的关系}{85}{subsection.10.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.2}正交矩阵}{88}{section.10.2}%
+\contentsline {section}{\numberline {10.2}正交矩阵}{86}{section.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.3}Permutation Matrices}{88}{section.10.3}%
+\contentsline {section}{\numberline {10.3}Permutation Matrices}{86}{section.10.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.4}平面旋转}{89}{section.10.4}%
+\contentsline {section}{\numberline {10.4}平面旋转}{87}{section.10.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.5}Householder Matrix}{89}{section.10.5}%
+\contentsline {section}{\numberline {10.5}Householder Matrix}{87}{section.10.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.5.1}The Geometry of Householder Transformation}{90}{subsection.10.5.1}%
+\contentsline {subsection}{\numberline {10.5.1}The Geometry of Householder Transformation}{88}{subsection.10.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.6}正交矩阵乘积}{91}{section.10.6}%
+\contentsline {section}{\numberline {10.6}正交矩阵乘积}{89}{section.10.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.7}具有正交矩阵的线性方程}{91}{section.10.7}%
+\contentsline {section}{\numberline {10.7}具有正交矩阵的线性方程}{89}{section.10.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.7.1}The Complexity of the Multiplication $Ax$ of Orthogonal Matrix $A$}{91}{subsection.10.7.1}%
+\contentsline {subsection}{\numberline {10.7.1}The Complexity of the Multiplication $Ax$ of Orthogonal Matrix $A$}{89}{subsection.10.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.8}列标准正交的高矩阵}{91}{section.10.8}%
+\contentsline {section}{\numberline {10.8}列标准正交的高矩阵}{89}{section.10.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.9}值域范围、列空间}{92}{section.10.9}%
+\contentsline {section}{\numberline {10.9}值域范围、列空间}{90}{section.10.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.9.1}投影到列标准正交的矩阵$A$的列空间}{92}{subsection.10.9.1}%
+\contentsline {subsection}{\numberline {10.9.1}投影到列标准正交的矩阵$A$的列空间}{90}{subsection.10.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {11}QR分解与Householder变换}{94}{chapter.11}%
+\contentsline {chapter}{\numberline {11}QR分解与Householder变换}{92}{chapter.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.1}Triangular Matrices}{94}{section.11.1}%
+\contentsline {section}{\numberline {11.1}Triangular Matrices}{92}{section.11.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.1.1}高斯消元法}{94}{subsection.11.1.1}%
+\contentsline {subsection}{\numberline {11.1.1}高斯消元法}{92}{subsection.11.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.1.2}The Inverses of Triangular Matrices}{95}{subsection.11.1.2}%
+\contentsline {subsection}{\numberline {11.1.2}The Inverses of Triangular Matrices}{93}{subsection.11.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.2}QR Factorization}{96}{section.11.2}%
+\contentsline {section}{\numberline {11.2}QR Factorization}{94}{section.11.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.2.1}QR分解的存在唯一性}{97}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.1}QR分解的存在唯一性}{95}{subsection.11.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.2.2}复矩阵的QR分解}{99}{subsection.11.2.2}%
+\contentsline {subsection}{\numberline {11.2.2}复矩阵的QR分解}{97}{subsection.11.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.3}QR分解的应用}{99}{section.11.3}%
+\contentsline {section}{\numberline {11.3}QR分解的应用}{97}{section.11.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.3.1}QR分解和求解线性方程组$Ax = b$}{99}{subsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.3.1}QR分解和求解线性方程组$Ax = b$}{97}{subsection.11.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.3.2}QR分解和求解伪逆 $A^{\dagger }$、逆 $A^{-1}$}{100}{subsection.11.3.2}%
+\contentsline {subsection}{\numberline {11.3.2}QR分解和求解伪逆 $A^{\dagger }$、逆 $A^{-1}$}{98}{subsection.11.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.3.3}$A$的列空间和$Q$的列空间相同}{100}{subsection.11.3.3}%
+\contentsline {subsection}{\numberline {11.3.3}$A$的列空间和$Q$的列空间相同}{98}{subsection.11.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.3.4}往$A$列空间上的投影也是往$Q$列空间上的投影}{101}{subsection.11.3.4}%
+\contentsline {subsection}{\numberline {11.3.4}往$A$列空间上的投影也是往$Q$列空间上的投影}{99}{subsection.11.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.4}QR Algorithm Using Gram-Schmidt Algorithm}{101}{section.11.4}%
+\contentsline {section}{\numberline {11.4}QR Algorithm Using Gram-Schmidt Algorithm}{99}{section.11.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.4.1}Gram-Schmidt Algorithm}{104}{subsection.11.4.1}%
+\contentsline {subsection}{\numberline {11.4.1}Gram-Schmidt Algorithm}{102}{subsection.11.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.4.2}基于Gram-Schmidt方法进行QR分解的时间复杂度}{105}{subsection.11.4.2}%
+\contentsline {subsection}{\numberline {11.4.2}基于Gram-Schmidt方法进行QR分解的时间复杂度}{103}{subsection.11.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.5}The Numerical Instability of QR Decomposition based on Gram-Schmidt Algorithm}{105}{section.11.5}%
+\contentsline {section}{\numberline {11.5}The Numerical Instability of QR Decomposition based on Gram-Schmidt Algorithm}{103}{section.11.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.6}QR Decomposition Using Householder Transformation}{107}{section.11.6}%
+\contentsline {section}{\numberline {11.6}QR Decomposition Using Householder Transformation}{105}{section.11.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.6.1}Householder Matrix}{108}{subsection.11.6.1}%
+\contentsline {subsection}{\numberline {11.6.1}Householder Matrix}{106}{subsection.11.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{$Hx$的算法复杂度}{109}{section*.38}%
+\contentsline {subsubsection}{$Hx$的算法复杂度}{107}{section*.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.6.2}构造反射算子}{109}{subsection.11.6.2}%
+\contentsline {subsection}{\numberline {11.6.2}构造反射算子}{107}{subsection.11.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{构造的Householder矩阵几何意义}{110}{section*.39}%
+\contentsline {subsubsection}{构造的Householder矩阵几何意义}{108}{section*.39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.6.3}Householder三角化}{110}{subsection.11.6.3}%
+\contentsline {subsection}{\numberline {11.6.3}Householder三角化}{108}{subsection.11.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.6.4}Household-QR Algorithm}{113}{subsection.11.6.4}%
+\contentsline {subsection}{\numberline {11.6.4}Household-QR Algorithm}{111}{subsection.11.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.6.5}An Example for Householder Algorithm}{113}{subsection.11.6.5}%
+\contentsline {subsection}{\numberline {11.6.5}An Example for Householder Algorithm}{111}{subsection.11.6.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.6.6}Complexity of Householder Algorithm}{115}{subsection.11.6.6}%
+\contentsline {subsection}{\numberline {11.6.6}Complexity of Householder Algorithm}{113}{subsection.11.6.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.7}Householder变换进行QR分解的 $Q$ 因子}{115}{section.11.7}%
+\contentsline {section}{\numberline {11.7}Householder变换进行QR分解的 $Q$ 因子}{113}{section.11.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.7.1}Multiplication with $Q$ factor}{116}{subsection.11.7.1}%
+\contentsline {subsection}{\numberline {11.7.1}Multiplication with $Q$ factor}{114}{subsection.11.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.7.2}矩阵-向量积 $ H_{k} x $算法复杂度}{116}{subsection.11.7.2}%
+\contentsline {subsection}{\numberline {11.7.2}矩阵-向量积 $ H_{k} x $算法复杂度}{114}{subsection.11.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.8}Fast Orthogonalization (Givens and Householder)}{116}{section.11.8}%
+\contentsline {section}{\numberline {11.8}Fast Orthogonalization (Givens and Householder)}{114}{section.11.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.9}Recap： QR Decomposition}{118}{section.11.9}%
+\contentsline {section}{\numberline {11.9}Recap： QR Decomposition}{116}{section.11.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.9.1}分治策略}{118}{subsection.11.9.1}%
+\contentsline {subsection}{\numberline {11.9.1}分治策略}{116}{subsection.11.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.9.2}非奇异矩阵的QR分解}{118}{subsection.11.9.2}%
+\contentsline {subsection}{\numberline {11.9.2}非奇异矩阵的QR分解}{116}{subsection.11.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.9.3}使用QR分解求$A^{-1}$可以转换成$R^{-1} Q^{T}$}{118}{subsection.11.9.3}%
+\contentsline {subsection}{\numberline {11.9.3}使用QR分解求$A^{-1}$可以转换成$R^{-1} Q^{T}$}{116}{subsection.11.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.9.4}QR分解求解$A^{-1}$}{118}{subsection.11.9.4}%
+\contentsline {subsection}{\numberline {11.9.4}QR分解求解$A^{-1}$}{116}{subsection.11.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{The Complexity of $ Q R X=I $}{119}{section*.44}%
+\contentsline {subsubsection}{The Complexity of $ Q R X=I $}{117}{section*.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.9.5}QR分解求解线性方程组}{119}{subsection.11.9.5}%
+\contentsline {subsection}{\numberline {11.9.5}QR分解求解线性方程组}{117}{subsection.11.9.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{The Complexity of Solving Linear Equation Systems Using QR Decomposition}{119}{section*.46}%
+\contentsline {subsubsection}{The Complexity of Solving Linear Equation Systems Using QR Decomposition}{117}{section*.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {12}LU分解}{120}{chapter.12}%
+\contentsline {chapter}{\numberline {12}LU分解}{118}{chapter.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.1}Solving Linear Equation Systems}{120}{section.12.1}%
+\contentsline {section}{\numberline {12.1}Solving Linear Equation Systems}{118}{section.12.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.1.1}Linear Equation Systems}{120}{subsection.12.1.1}%
+\contentsline {subsection}{\numberline {12.1.1}Linear Equation Systems}{118}{subsection.12.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.1.2}Elimination}{120}{subsection.12.1.2}%
+\contentsline {subsection}{\numberline {12.1.2}Elimination}{118}{subsection.12.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Computing $A^{-1}$ by Gauss-Jordan Elimination}{121}{section*.47}%
+\contentsline {subsubsection}{Computing $A^{-1}$ by Gauss-Jordan Elimination}{119}{section*.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.2}LU分解}{122}{section.12.2}%
+\contentsline {section}{\numberline {12.2}LU分解}{120}{section.12.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.2.1}$A = LDU$}{123}{subsection.12.2.1}%
+\contentsline {subsection}{\numberline {12.2.1}$A = LDU$}{121}{subsection.12.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.2.2}$L$、$U$矩阵的性质}{123}{subsection.12.2.2}%
+\contentsline {subsection}{\numberline {12.2.2}$L$、$U$矩阵的性质}{121}{subsection.12.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.2.3}Solving $Ax = b$ Using LU Decomposition and its Complexity}{126}{subsection.12.2.3}%
+\contentsline {subsection}{\numberline {12.2.3}Solving $Ax = b$ Using LU Decomposition and its Complexity}{124}{subsection.12.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.2.4}Example of LU Decomposition}{126}{subsection.12.2.4}%
+\contentsline {subsection}{\numberline {12.2.4}Example of LU Decomposition}{124}{subsection.12.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.3}Problem of LU Decomposition}{127}{section.12.3}%
+\contentsline {section}{\numberline {12.3}Problem of LU Decomposition}{125}{section.12.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.4}$PA=LU$}{127}{section.12.4}%
+\contentsline {section}{\numberline {12.4}$PA=LU$}{125}{section.12.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{The Complexity of $PA = LU$}{128}{section*.49}%
+\contentsline {subsubsection}{The Complexity of $PA = LU$}{126}{section*.49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.5}舍入误差的影响}{128}{section.12.5}%
+\contentsline {section}{\numberline {12.5}舍入误差的影响}{126}{section.12.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.6}稀疏线性方程组}{129}{section.12.6}%
+\contentsline {section}{\numberline {12.6}稀疏线性方程组}{127}{section.12.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\@mypartnumtocformat {III}{Least Squares}}{130}{part.3}%
+\contentsline {part}{\@mypartnumtocformat {III}{Least Squares}}{128}{part.3}%
 \ttl@stoptoc {default@2}
 \ttl@starttoc {default@3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {13}Least Squares}{131}{chapter.13}%
+\contentsline {chapter}{\numberline {13}Least Squares}{129}{chapter.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.1}An Example: Measurement Problem}{131}{section.13.1}%
+\contentsline {section}{\numberline {13.1}An Example: Measurement Problem}{129}{section.13.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.2}求解最小二乘法}{133}{section.13.2}%
+\contentsline {section}{\numberline {13.2}求解最小二乘法}{131}{section.13.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.3}The Geometry of Least Squares: 投影与$A$列空间的关系}{135}{section.13.3}%
+\contentsline {section}{\numberline {13.3}The Geometry of Least Squares: 投影与$A$列空间的关系}{133}{section.13.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.4}正规方程}{136}{section.13.4}%
+\contentsline {section}{\numberline {13.4}正规方程}{134}{section.13.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.5}QR分解求解最小二乘法}{136}{section.13.5}%
+\contentsline {section}{\numberline {13.5}QR分解求解最小二乘法}{134}{section.13.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.5.1}The Complexity of Solving Least Square Problem via QR Decomposition}{137}{subsection.13.5.1}%
+\contentsline {subsection}{\numberline {13.5.1}The Complexity of Solving Least Square Problem via QR Decomposition}{135}{subsection.13.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.6}求解正规方程可能带来的严重误差}{137}{section.13.6}%
+\contentsline {section}{\numberline {13.6}求解正规方程可能带来的严重误差}{135}{section.13.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.7}梯度下降法}{138}{section.13.7}%
+\contentsline {section}{\numberline {13.7}梯度下降法}{136}{section.13.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.8}估计学习率（步长）$\alpha $}{139}{section.13.8}%
+\contentsline {section}{\numberline {13.8}估计学习率（步长）$\alpha $}{137}{section.13.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {14}Least squares data fitting}{142}{chapter.14}%
+\contentsline {chapter}{\numberline {14}Least squares data fitting}{140}{chapter.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14.1}Model fitting}{142}{section.14.1}%
+\contentsline {section}{\numberline {14.1}Model fitting}{140}{section.14.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.1.1}Prediction error}{142}{subsection.14.1.1}%
+\contentsline {subsection}{\numberline {14.1.1}Prediction error}{140}{subsection.14.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14.2}Regression}{143}{section.14.2}%
+\contentsline {section}{\numberline {14.2}Regression}{141}{section.14.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14.3}Least squares regression}{143}{section.14.3}%
+\contentsline {section}{\numberline {14.3}Least squares regression}{141}{section.14.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14.4}Linear-in-parameters model}{144}{section.14.4}%
+\contentsline {section}{\numberline {14.4}Linear-in-parameters model}{142}{section.14.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14.5}Least squares model fitting}{144}{section.14.5}%
+\contentsline {section}{\numberline {14.5}Least squares model fitting}{142}{section.14.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.5.1}Example: polynomial approximation}{144}{subsection.14.5.1}%
+\contentsline {subsection}{\numberline {14.5.1}Example: polynomial approximation}{142}{subsection.14.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14.6}Piecewise-affine function}{145}{section.14.6}%
+\contentsline {section}{\numberline {14.6}Piecewise-affine function}{143}{section.14.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.6.1}Piecewise-affine function fitting}{145}{subsection.14.6.1}%
+\contentsline {subsection}{\numberline {14.6.1}Piecewise-affine function fitting}{143}{subsection.14.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14.7}Time series trend}{145}{section.14.7}%
+\contentsline {section}{\numberline {14.7}Time series trend}{143}{section.14.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.7.1}Example: world petroleum consumption}{146}{subsection.14.7.1}%
+\contentsline {subsection}{\numberline {14.7.1}Example: world petroleum consumption}{144}{subsection.14.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.7.2}Trend plus seasonal component}{146}{subsection.14.7.2}%
+\contentsline {subsection}{\numberline {14.7.2}Trend plus seasonal component}{144}{subsection.14.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14.8}Auto-regressive (AR) time series model}{146}{section.14.8}%
+\contentsline {section}{\numberline {14.8}Auto-regressive (AR) time series model}{144}{section.14.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14.9}Generalization and validation}{147}{section.14.9}%
+\contentsline {section}{\numberline {14.9}Generalization and validation}{145}{section.14.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.9.1}Cross-validation}{147}{subsection.14.9.1}%
+\contentsline {subsection}{\numberline {14.9.1}Cross-validation}{145}{subsection.14.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14.10}Boolean (two-way) classification}{147}{section.14.10}%
+\contentsline {section}{\numberline {14.10}Boolean (two-way) classification}{145}{section.14.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.10.1}Example: handwritten digit classification}{147}{subsection.14.10.1}%
+\contentsline {subsection}{\numberline {14.10.1}Example: handwritten digit classification}{145}{subsection.14.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classifier with basic regression model}{148}{section*.56}%
+\contentsline {subsubsection}{Classifier with basic regression model}{146}{section*.56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classifier with additional nonlinear features}{148}{section*.57}%
+\contentsline {subsubsection}{Classifier with additional nonlinear features}{146}{section*.57}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14.11}Multi-class classification}{148}{section.14.11}%
+\contentsline {section}{\numberline {14.11}Multi-class classification}{146}{section.14.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.11.1}Least squares multi-class classifier}{148}{subsection.14.11.1}%
+\contentsline {subsection}{\numberline {14.11.1}Least squares multi-class classifier}{146}{subsection.14.11.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14.12}statistics interpretation for least squares}{148}{section.14.12}%
+\contentsline {section}{\numberline {14.12}statistics interpretation for least squares}{146}{section.14.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.12.1}Assumptions}{149}{subsection.14.12.1}%
+\contentsline {subsection}{\numberline {14.12.1}Assumptions}{147}{subsection.14.12.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.12.2}Least squares estimator}{149}{subsection.14.12.2}%
+\contentsline {subsection}{\numberline {14.12.2}Least squares estimator}{147}{subsection.14.12.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.12.3}Mean and covariance of least squares estimate}{150}{subsection.14.12.3}%
+\contentsline {subsection}{\numberline {14.12.3}Mean and covariance of least squares estimate}{148}{subsection.14.12.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.12.4}Estimate of $ \sigma ^{2} $}{150}{subsection.14.12.4}%
+\contentsline {subsection}{\numberline {14.12.4}Estimate of $ \sigma ^{2} $}{148}{subsection.14.12.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.12.5}Linear estimator}{151}{subsection.14.12.5}%
+\contentsline {subsection}{\numberline {14.12.5}Linear estimator}{149}{subsection.14.12.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.12.6}Unbiased linear estimator}{151}{subsection.14.12.6}%
+\contentsline {subsection}{\numberline {14.12.6}Unbiased linear estimator}{149}{subsection.14.12.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14.13}Best linear unbiased estimator}{152}{section.14.13}%
+\contentsline {section}{\numberline {14.13}Best linear unbiased estimator}{150}{section.14.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {15}Multi-objective Least Squares}{154}{chapter.15}%
+\contentsline {chapter}{\numberline {15}Multi-objective Least Squares}{152}{chapter.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {15.1}Definition of Multi-objective Least Squares}{154}{section.15.1}%
+\contentsline {section}{\numberline {15.1}Definition of Multi-objective Least Squares}{152}{section.15.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {15.2}求解多目标最小二乘问题}{155}{section.15.2}%
+\contentsline {section}{\numberline {15.2}求解多目标最小二乘问题}{153}{section.15.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {15.3}正则化数据拟合}{155}{section.15.3}%
+\contentsline {section}{\numberline {15.3}正则化数据拟合}{153}{section.15.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {15.4}图像逆问题}{156}{section.15.4}%
+\contentsline {section}{\numberline {15.4}图像逆问题}{154}{section.15.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {15.4.1}差分矩阵平滑最小二乘解}{156}{subsection.15.4.1}%
+\contentsline {subsection}{\numberline {15.4.1}差分矩阵平滑最小二乘解}{154}{subsection.15.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {15.5}信号去噪}{158}{section.15.5}%
+\contentsline {section}{\numberline {15.5}信号去噪}{156}{section.15.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {16}Constrained Least Squares}{159}{chapter.16}%
+\contentsline {chapter}{\numberline {16}Constrained Least Squares}{157}{chapter.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.1}Karush–Kuhn–Tucker Conditions}{159}{section.16.1}%
+\contentsline {section}{\numberline {16.1}Karush–Kuhn–Tucker Conditions}{157}{section.16.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.1.1}An Example for Karush-Kuhn-Tucker Conditions}{161}{subsection.16.1.1}%
+\contentsline {subsection}{\numberline {16.1.1}An Example for Karush-Kuhn-Tucker Conditions}{159}{subsection.16.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.2}优化问题：最小范数优化问题}{162}{section.16.2}%
+\contentsline {section}{\numberline {16.2}优化问题：最小范数优化问题}{160}{section.16.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.2.1}最小范数优化问题的例子}{162}{subsection.16.2.1}%
+\contentsline {subsection}{\numberline {16.2.1}最小范数优化问题的例子}{160}{subsection.16.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.3}优化问题：点到线的最短距离}{163}{section.16.3}%
+\contentsline {section}{\numberline {16.3}优化问题：点到线的最短距离}{161}{section.16.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.4}最小范数优化问题推导}{163}{section.16.4}%
+\contentsline {section}{\numberline {16.4}最小范数优化问题推导}{161}{section.16.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.5}QR分解求解最小范数优化问题}{164}{section.16.5}%
+\contentsline {section}{\numberline {16.5}QR分解求解最小范数优化问题}{162}{section.16.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.5.1}QR分解求解最小范数优化问题的复杂度}{165}{subsection.16.5.1}%
+\contentsline {subsection}{\numberline {16.5.1}QR分解求解最小范数优化问题的复杂度}{163}{subsection.16.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.5.2}QR分解求解最小范数优化问题的例子}{165}{subsection.16.5.2}%
+\contentsline {subsection}{\numberline {16.5.2}QR分解求解最小范数优化问题的例子}{163}{subsection.16.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.6}最小二乘法约束问题}{165}{section.16.6}%
+\contentsline {section}{\numberline {16.6}最小二乘法约束问题}{163}{section.16.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.7}优化问题：分段多项式拟合问题}{166}{section.16.7}%
+\contentsline {section}{\numberline {16.7}优化问题：分段多项式拟合问题}{164}{section.16.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.8}先验假设}{167}{section.16.8}%
+\contentsline {section}{\numberline {16.8}先验假设}{165}{section.16.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.9}优化问题：最小二乘法的带约束KKT条件}{167}{section.16.9}%
+\contentsline {section}{\numberline {16.9}优化问题：最小二乘法的带约束KKT条件}{165}{section.16.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.10}KKT最优条件}{168}{section.16.10}%
+\contentsline {section}{\numberline {16.10}KKT最优条件}{166}{section.16.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.11}LU分解求解KKT最优条件}{170}{section.16.11}%
+\contentsline {section}{\numberline {16.11}LU分解求解KKT最优条件}{168}{section.16.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.11.1}LU分解求解KKT最优条件的时间复杂度}{170}{subsection.16.11.1}%
+\contentsline {subsection}{\numberline {16.11.1}LU分解求解KKT最优条件的时间复杂度}{168}{subsection.16.11.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.12}QR分解求解KKT最优条件}{171}{section.16.12}%
+\contentsline {section}{\numberline {16.12}QR分解求解KKT最优条件}{169}{section.16.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.13}KKT最优条件求解复杂度：QR vs LU}{172}{section.16.13}%
+\contentsline {section}{\numberline {16.13}KKT最优条件求解复杂度：QR vs LU}{170}{section.16.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.14}Supplement Material: Karush-Kuhn-Tucker (KKT)条件}{173}{section.16.14}%
+\contentsline {section}{\numberline {16.14}Supplement Material: Karush-Kuhn-Tucker (KKT)条件}{171}{section.16.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.14.1}等式约束优化问题}{173}{subsection.16.14.1}%
+\contentsline {subsection}{\numberline {16.14.1}等式约束优化问题}{171}{subsection.16.14.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.14.2}不等式约束优化问题}{173}{subsection.16.14.2}%
+\contentsline {subsection}{\numberline {16.14.2}不等式约束优化问题}{171}{subsection.16.14.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.14.3}拉格朗日乘子法的例子}{175}{subsection.16.14.3}%
+\contentsline {subsection}{\numberline {16.14.3}拉格朗日乘子法的例子}{173}{subsection.16.14.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.15}Supplement Material: 浅谈最优化问题的KKT条件}{175}{section.16.15}%
+\contentsline {section}{\numberline {16.15}Supplement Material: 浅谈最优化问题的KKT条件}{173}{section.16.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.15.1}等式约束优化问题}{176}{subsection.16.15.1}%
+\contentsline {subsection}{\numberline {16.15.1}等式约束优化问题}{174}{subsection.16.15.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.15.2}不等式约束优化问题}{176}{subsection.16.15.2}%
+\contentsline {subsection}{\numberline {16.15.2}不等式约束优化问题}{174}{subsection.16.15.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.15.3}KKT乘子必须大于等于0}{178}{subsection.16.15.3}%
+\contentsline {subsection}{\numberline {16.15.3}KKT乘子必须大于等于0}{176}{subsection.16.15.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.15.4}总结：同时包含等式和不等式约束的一般优化问题}{180}{subsection.16.15.4}%
+\contentsline {subsection}{\numberline {16.15.4}总结：同时包含等式和不等式约束的一般优化问题}{178}{subsection.16.15.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.16}Supplement Material: 凸优化、拉格朗日乘子法和KKT条件}{181}{section.16.16}%
+\contentsline {section}{\numberline {16.16}Supplement Material: 凸优化、拉格朗日乘子法和KKT条件}{179}{section.16.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.16.1}凸集的概念}{181}{subsection.16.16.1}%
+\contentsline {subsection}{\numberline {16.16.1}凸集的概念}{179}{subsection.16.16.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.16.2}凸优化}{182}{subsection.16.16.2}%
+\contentsline {subsection}{\numberline {16.16.2}凸优化}{180}{subsection.16.16.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.16.3}拉格朗日对偶性}{183}{subsection.16.16.3}%
+\contentsline {subsection}{\numberline {16.16.3}拉格朗日对偶性}{181}{subsection.16.16.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{主问题}{183}{section*.70}%
+\contentsline {subsubsection}{主问题}{181}{section*.70}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{对偶问题}{184}{section*.71}%
+\contentsline {subsubsection}{对偶问题}{182}{section*.71}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.16.4}总结}{185}{subsection.16.16.4}%
+\contentsline {subsection}{\numberline {16.16.4}总结}{183}{subsection.16.16.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.17}Supplementary Material: KKT Conditions, Linear Programming and Nonlinear Programming}{185}{section.16.17}%
+\contentsline {section}{\numberline {16.17}Supplementary Material: KKT Conditions, Linear Programming and Nonlinear Programming}{184}{section.16.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.17.1}Karush-Kuhn-Tucker Theorem(s)}{185}{subsection.16.17.1}%
+\contentsline {subsection}{\numberline {16.17.1}Karush-Kuhn-Tucker Theorem(s)}{184}{subsection.16.17.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.17.2}Linear Programming and KKT Conditions - An Example}{188}{subsection.16.17.2}%
+\contentsline {subsection}{\numberline {16.17.2}Linear Programming and KKT Conditions - An Example}{186}{subsection.16.17.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.17.3}The Dual KKT Conditions}{191}{subsection.16.17.3}%
+\contentsline {subsection}{\numberline {16.17.3}The Dual KKT Conditions}{189}{subsection.16.17.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.17.4}An Example from Nonlinear Programming}{193}{subsection.16.17.4}%
+\contentsline {subsection}{\numberline {16.17.4}An Example from Nonlinear Programming}{191}{subsection.16.17.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.18}Supplementary Material: KKT Conditions }{196}{section.16.18}%
+\contentsline {section}{\numberline {16.18}Supplementary Material: KKT Conditions }{194}{section.16.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.18.1}Dual Problem}{196}{subsection.16.18.1}%
+\contentsline {subsection}{\numberline {16.18.1}Dual Problem}{194}{subsection.16.18.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16.19}Karush-Kuhn-Tucker (KKT) Conditions}{196}{section.16.19}%
+\contentsline {section}{\numberline {16.19}Karush-Kuhn-Tucker (KKT) Conditions}{194}{section.16.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {17}非线性最小二乘法}{198}{chapter.17}%
+\contentsline {chapter}{\numberline {17}非线性最小二乘法}{196}{chapter.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {17.1}非线性最小二乘法的定义}{198}{section.17.1}%
+\contentsline {section}{\numberline {17.1}非线性最小二乘法的定义}{196}{section.17.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.1.1}例子：距离测量定位}{198}{subsection.17.1.1}%
+\contentsline {subsection}{\numberline {17.1.1}例子：距离测量定位}{196}{subsection.17.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.1.2}例子：多个相机视图定位}{199}{subsection.17.1.2}%
+\contentsline {subsection}{\numberline {17.1.2}例子：多个相机视图定位}{197}{subsection.17.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.1.3}例子：模型拟合}{199}{subsection.17.1.3}%
+\contentsline {subsection}{\numberline {17.1.3}例子：模型拟合}{197}{subsection.17.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.1.4}例子：正交距离回归}{200}{subsection.17.1.4}%
+\contentsline {subsection}{\numberline {17.1.4}例子：正交距离回归}{198}{subsection.17.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.1.5}非线性最小二乘法}{200}{subsection.17.1.5}%
+\contentsline {subsection}{\numberline {17.1.5}非线性最小二乘法}{198}{subsection.17.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.1.6}二分类}{200}{subsection.17.1.6}%
+\contentsline {subsection}{\numberline {17.1.6}二分类}{198}{subsection.17.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {17.2}梯度}{200}{section.17.2}%
+\contentsline {section}{\numberline {17.2}梯度}{198}{section.17.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.2.1}Gradient and Directional Derivative}{200}{subsection.17.2.1}%
+\contentsline {subsection}{\numberline {17.2.1}Gradient and Directional Derivative}{198}{subsection.17.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.2.2}Jacobian Matrices}{201}{subsection.17.2.2}%
+\contentsline {subsection}{\numberline {17.2.2}Jacobian Matrices}{199}{subsection.17.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.2.3}Hessian}{201}{subsection.17.2.3}%
+\contentsline {subsection}{\numberline {17.2.3}Hessian}{200}{subsection.17.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.2.4}Optimality conditions for twice differentiable $ g $}{203}{subsection.17.2.4}%
+\contentsline {subsection}{\numberline {17.2.4}Optimality conditions for twice differentiable $ g $}{201}{subsection.17.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {17.3}求解非线性最小二乘法：目标梯度}{204}{section.17.3}%
+\contentsline {section}{\numberline {17.3}求解非线性最小二乘法：目标梯度}{202}{section.17.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {17.4}Gauss-Newton Algorithm}{205}{section.17.4}%
+\contentsline {section}{\numberline {17.4}Gauss-Newton Algorithm}{203}{section.17.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.4.1}高斯-牛顿法的问题}{207}{subsection.17.4.1}%
+\contentsline {subsection}{\numberline {17.4.1}高斯-牛顿法的问题}{205}{subsection.17.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {17.5}Levenberg–Marquardt Algorithm}{208}{section.17.5}%
+\contentsline {section}{\numberline {17.5}Levenberg–Marquardt Algorithm}{206}{section.17.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.5.1}推导Levenberg–Marquardt算法}{208}{subsection.17.5.1}%
+\contentsline {subsection}{\numberline {17.5.1}推导Levenberg–Marquardt算法}{206}{subsection.17.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.5.2}正则化参数}{209}{subsection.17.5.2}%
+\contentsline {subsection}{\numberline {17.5.2}正则化参数}{207}{subsection.17.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {17.6}Newton Method}{209}{section.17.6}%
+\contentsline {section}{\numberline {17.6}Newton Method}{207}{section.17.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.6.1}Interpretation of Newton Method}{211}{subsection.17.6.1}%
+\contentsline {subsection}{\numberline {17.6.1}Interpretation of Newton Method}{209}{subsection.17.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.6.2}One Variable}{211}{subsection.17.6.2}%
+\contentsline {subsection}{\numberline {17.6.2}One Variable}{209}{subsection.17.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.6.3}Relation to Gauss–Newton method}{211}{subsection.17.6.3}%
+\contentsline {subsection}{\numberline {17.6.3}Relation to Gauss–Newton method}{209}{subsection.17.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.6.4}Examples}{212}{subsection.17.6.4}%
+\contentsline {subsection}{\numberline {17.6.4}Examples}{210}{subsection.17.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.6.5}Convergence of Newton's method}{212}{subsection.17.6.5}%
+\contentsline {subsection}{\numberline {17.6.5}Convergence of Newton's method}{210}{subsection.17.6.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.6.6}Newton's method for minimizing a convex function}{213}{subsection.17.6.6}%
+\contentsline {subsection}{\numberline {17.6.6}Newton's method for minimizing a convex function}{211}{subsection.17.6.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Interpretations of Newton step}{213}{section*.84}%
+\contentsline {subsubsection}{Interpretations of Newton step}{211}{section*.84}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.6.7}Damped Newton method}{213}{subsection.17.6.7}%
+\contentsline {subsection}{\numberline {17.6.7}Damped Newton method}{211}{subsection.17.6.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Interpretation of line search}{213}{section*.86}%
+\contentsline {subsubsection}{Interpretation of line search}{211}{section*.86}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Newton method for nonconvex functions}{214}{section*.87}%
+\contentsline {subsubsection}{Newton method for nonconvex functions}{212}{section*.87}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {17.7}Newton method for nonlinear least squares}{214}{section.17.7}%
+\contentsline {section}{\numberline {17.7}Newton method for nonlinear least squares}{212}{section.17.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.7.1}Hessian of nonlinear least squares cost}{214}{subsection.17.7.1}%
+\contentsline {subsection}{\numberline {17.7.1}Hessian of nonlinear least squares cost}{212}{subsection.17.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.7.2}Comparison}{215}{subsection.17.7.2}%
+\contentsline {subsection}{\numberline {17.7.2}Comparison}{213}{subsection.17.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {17.8}Unconstrained minimization problem}{215}{section.17.8}%
+\contentsline {section}{\numberline {17.8}Unconstrained minimization problem}{213}{section.17.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {17.9}Local and global optimum}{215}{section.17.9}%
+\contentsline {section}{\numberline {17.9}Local and global optimum}{213}{section.17.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\@mypartnumtocformat {IV}{Extensive Reading}}{217}{part.4}%
+\contentsline {part}{\@mypartnumtocformat {IV}{Extensive Reading}}{215}{part.4}%
 \ttl@stoptoc {default@3}
 \ttl@starttoc {default@4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {18}Fourier Series, Fourier Transform}{218}{chapter.18}%
+\contentsline {chapter}{\numberline {18}Fourier Series, Fourier Transform}{216}{chapter.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {18.1}基本概念}{218}{section.18.1}%
+\contentsline {section}{\numberline {18.1}基本概念}{216}{section.18.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {18.2}Fourier Series}{220}{section.18.2}%
+\contentsline {section}{\numberline {18.2}Fourier Series}{218}{section.18.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {18.3}Fourier Transform}{224}{section.18.3}%
+\contentsline {section}{\numberline {18.3}Fourier Transform}{222}{section.18.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {18.4}Discrete Fourier Transform}{224}{section.18.4}%
+\contentsline {section}{\numberline {18.4}Discrete Fourier Transform}{222}{section.18.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {19}Factorization of Matrices}{226}{chapter.19}%
+\contentsline {chapter}{\numberline {19}Factorization of Matrices}{224}{chapter.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {19.1}主要的矩阵分解}{226}{section.19.1}%
+\contentsline {section}{\numberline {19.1}主要的矩阵分解}{224}{section.19.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {20}Cholesky Factorization}{227}{chapter.20}%
+\contentsline {chapter}{\numberline {20}Cholesky Factorization}{225}{chapter.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.1}Positive Definite Matrices}{227}{section.20.1}%
+\contentsline {section}{\numberline {20.1}Positive Definite Matrices}{225}{section.20.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.2}Schur complement}{227}{section.20.2}%
+\contentsline {section}{\numberline {20.2}Schur complement}{225}{section.20.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.3}Examples}{228}{section.20.3}%
+\contentsline {section}{\numberline {20.3}Examples}{226}{section.20.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {20.3.1}Graph Laplacian}{228}{subsection.20.3.1}%
+\contentsline {subsection}{\numberline {20.3.1}Graph Laplacian}{226}{subsection.20.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.4}Cholesky Factorization}{229}{section.20.4}%
+\contentsline {section}{\numberline {20.4}Cholesky Factorization}{227}{section.20.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.5}Examples for Cholesky Factorization}{230}{section.20.5}%
+\contentsline {section}{\numberline {20.5}Examples for Cholesky Factorization}{228}{section.20.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.6}Solving equations with positive definite $A$}{230}{section.20.6}%
+\contentsline {section}{\numberline {20.6}Solving equations with positive definite $A$}{228}{section.20.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.7}Cholesky Factorization of Gram Matrix}{230}{section.20.7}%
+\contentsline {section}{\numberline {20.7}Cholesky Factorization of Gram Matrix}{228}{section.20.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {20.7.1}Comparison of the two methods}{231}{subsection.20.7.1}%
+\contentsline {subsection}{\numberline {20.7.1}Comparison of the two methods}{229}{subsection.20.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.8}Sparse positive definite matrices}{231}{section.20.8}%
+\contentsline {section}{\numberline {20.8}Sparse positive definite matrices}{229}{section.20.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.9}Sparse Cholesky factorization}{232}{section.20.9}%
+\contentsline {section}{\numberline {20.9}Sparse Cholesky factorization}{230}{section.20.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.10}Solving sparse positive definite equations}{232}{section.20.10}%
+\contentsline {section}{\numberline {20.10}Solving sparse positive definite equations}{230}{section.20.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.11}Quadratic form}{232}{section.20.11}%
+\contentsline {section}{\numberline {20.11}Quadratic form}{230}{section.20.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.12}Complex positive definite matrices}{233}{section.20.12}%
+\contentsline {section}{\numberline {20.12}Complex positive definite matrices}{231}{section.20.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.13}Regularized least squares model fitting}{233}{section.20.13}%
+\contentsline {section}{\numberline {20.13}Regularized least squares model fitting}{231}{section.20.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {20.13.1}Example: multivariate polynomials}{234}{subsection.20.13.1}%
+\contentsline {subsection}{\numberline {20.13.1}Example: multivariate polynomials}{232}{subsection.20.13.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.14}Multinomial formula}{235}{section.20.14}%
+\contentsline {section}{\numberline {20.14}Multinomial formula}{233}{section.20.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.15}Vector of monomials}{235}{section.20.15}%
+\contentsline {section}{\numberline {20.15}Vector of monomials}{233}{section.20.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.16}Least squares fitting of multivariate polynomials}{236}{section.20.16}%
+\contentsline {section}{\numberline {20.16}Least squares fitting of multivariate polynomials}{234}{section.20.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.17}Kernel methods}{236}{section.20.17}%
+\contentsline {section}{\numberline {20.17}Kernel methods}{234}{section.20.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {20.17.1}Complexity}{238}{subsection.20.17.1}%
+\contentsline {subsection}{\numberline {20.17.1}Complexity}{236}{subsection.20.17.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {21}Nonlinear equations}{239}{chapter.21}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {21.1}Bisection method}{239}{section.21.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {21.2}Newton's method for one equation with one variable}{241}{section.21.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {21.3}Newton's method for sets of nonlinear equations}{242}{section.21.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {21.4}Secant method}{243}{section.21.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {21.5} Convergence analysis of Newton's method}{243}{section.21.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {22}Unconstrained minimization}{246}{chapter.22}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {22.1}Introduction}{246}{section.22.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {22.2}Gradient and Hessian}{247}{section.22.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {22.3}Newton's method for minimizing a convex function }{250}{section.22.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {23}Complexity of iterative algorithms}{252}{chapter.23}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {23.1}Iterative algorithms}{252}{section.23.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {23.2} Linear and R-linear convergence}{253}{section.23.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {23.2.1}R-linear convergence}{253}{subsection.23.2.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {23.3}Quadratic convergence}{254}{section.23.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {23.4}Superlinear convergence}{254}{section.23.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {24}List Of Definitions}{255}{chapter.24}%
+\contentsline {chapter}{\numberline {21}List Of Definitions}{237}{chapter.21}%
 \contentsfinish 

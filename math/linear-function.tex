@@ -3,9 +3,7 @@
 \section{Linear Function}
 
 \begin{definition}[Linear Function]
-    $f$是一个将n维向量映射成数的函数. 
-
-    $$ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $$
+    $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$是一个将$n$维向量映射成数的函数. 
 
     线性函数 $ f $ 满足以下两个性质 $ \left(k \in \mathbb{R}, x, y \in \mathbb{R}^{n}\right) $ :
 
@@ -37,13 +35,15 @@
 \end{proof}
 
 \begin{theorem}
-        a function $ f: \mathbf{R}^{n} \rightarrow \mathbf{R} $ is linear if the superposition property (叠加原理)
+        a function $ f: \mathbf{R}^{n} \rightarrow \mathbf{R} $ is linear if the \term{superposition property} (叠加原理)
     $$
     f(\alpha x+\beta y)=\alpha f(x)+\beta f(y)
     $$
     holds for all $ n $-vectors $ x, y $ and all scalars $ \alpha, \beta $.
     
 \end{theorem}
+
+In fact it says a lot. On the left-hand side, the term $ \alpha x+\beta y $ involves scalar-vector multiplication and vector addition. On the right-hand side, $ \alpha f(x)+\beta f(y) $ involves ordinary scalar multiplication and scalar addition.
 
 \begin{corollary}
     设 $ \alpha_{1, \ldots,} \alpha_{m} \in \mathbb{R}, u_{1}, \ldots, u_{m} \in \mathbb{R}^{n} $, 则线性函数 $ f $ 满足
@@ -68,7 +68,11 @@
 \end{example}
 
 \begin{example}
-    $ f(x)=\max \left\{x_{1}, x_{2}, x_{3}\right\} $ is not linear: superposition does not hold for
+    $ f(x)=\max \left\{x_{1}, x_{2}, x_{3}\right\} $ is not linear.
+\end{example}
+
+\begin{proof}
+    Superposition does not hold for
 $$
 x=\left[\begin{array}{l}
 1 \\
@@ -84,46 +88,58 @@ we have $ f(x)=1, f(y)=0 $,
 $$
 f(\alpha x+\beta y)=0 \neq \alpha f(x)+\beta f(y)=-1
 $$
-\end{example}
+\end{proof}
 
-\begin{corollary}
+\begin{theorem}
     所有的内积函数都是线性的.
 
     $$
 a^{T}(\alpha x+\beta y)=\alpha\left(a^{T} x\right)+\beta\left(a^{T} y\right)
 $$
 holds for all scalars $ \alpha, \beta $ and all $ n $-vectors $ x, y $.
-\end{corollary}
+\end{theorem}
 
 \begin{proof}
     $$ \begin{aligned} f(\alpha x+\beta y) &=a^{T}(\alpha x+\beta y) \\ &=a^{T}(\alpha x)+a^{T}(\beta y) \\ &=\alpha\left(a^{T} x\right)+\beta\left(a^{T} y\right) \\ &=\alpha f(x)+\beta f(y) \end{aligned} $$
 \end{proof}
 
 
-\begin{corollary}
+\begin{theorem}
     所有的线性函数都是内积函数.
 
     $$ \begin{aligned} f(x) &=f\left(x_{1} e_{1}+x_{2} e_{2}+\ldots+x_{n} e_{n}\right) \\ &=x_{1} f\left(e_{1}\right)+x_{2} f\left(e_{2}\right)+\ldots+x_{n} f\left(e_{n}\right) \end{aligned} $$
-\end{corollary}
+\end{theorem}
 
 \begin{proof}
     假设 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 是线性函数, 那么可用 $ f(x)=a^{T} x $ 来表示, $ a $ 为常量.
 
-    $$ \begin{aligned} f(x) &=f\left(x_{1} e_{1}+x_{2} e_{2}+\ldots+x_{n} e_{n}\right) \\ &=x_{1} f\left(e_{1}\right)+x_{2} f\left(e_{2}\right)+\ldots+x_{n} f\left(e_{n}\right) \end{aligned} $$
+    $$ \begin{aligned} f(x) &=f\left(x_{1} e_{1}+x_{2} e_{2}+\ldots+x_{n} e_{n}\right) \\ &=x_{1} f\left(e_{1}\right)+x_{2} f\left(e_{2}\right)+\ldots+x_{n} f\left(e_{n}\right) \\ & = a^Tx \quad (a = ( f\left(e_{1}\right), f\left(e_{2}\right), \ldots, f\left(e_{n}\right) )) \end{aligned} $$
 \end{proof}
 
+\begin{definition}[Inner product representation of $ f $]
+    Suppose $ f $ is a scalar-valued function of $ n $-vectors, and is linear  holds for all $ n $-vectors $ x, y $, and all scalars $ \alpha, \beta $. Then there is an $ n $-vector $ a $ such that $ f(x)=a^{T} x $ for all $ x $. We call $ a^{T} x $ the inner product representation of $ f $.
+\end{definition}
 
 \section{Affine Function}
 
 
 \begin{definition}[仿射函数 (affine function)]
-    其一般形式为 $ f(x)=a^{T} x+\mathrm{b} $, 其中 $ a \in \mathbb{R}^{n}, \quad b \in \mathbb{R} $ 为标量. 
+    其一般形式为 $ f(x)=a^{T} x+{b} $, 其中 $ a \in \mathbb{R}^{n}, b \in \mathbb{R} $ 为标量. 
+
+    
+        for fixed $ a \in \mathbf{R}^{n}, b \in \mathbf{R} $, define a function $ f: \mathbf{R}^{n} \rightarrow \mathbf{R} $ by
+    $$
+    f(x)=a^{T} x+b=a_{1} x_{1}+a_{2} x_{2}+\cdots+a_{n} x_{n}+b
+    $$
+    
+    i.e., an inner-product function plus a constant (offset)
+    
 \end{definition}
 
 \begin{theorem}
     函数 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 为仿射函数需要满足
 
-$ f(\alpha x+\beta y)=\alpha f(x)+\beta f(y), \alpha+\beta=1, \alpha, \beta \in \mathbb{R}, x, y \in \mathbb{R}^{n} $
+$$ f(\alpha x+\beta y)=\alpha f(x)+\beta f(y), \alpha+\beta=1, \alpha, \beta \in \mathbb{R}, x, y \in \mathbb{R}^{n} $$
 \end{theorem}
 
 \begin{corollary}
@@ -137,23 +153,25 @@ $$
 $$
 \end{corollary}
 
-\begin{definition}
-    for fixed $ a \in \mathbf{R}^{n}, b \in \mathbf{R} $, define a function $ f: \mathbf{R}^{n} \rightarrow \mathbf{R} $ by
-$$
-f(x)=a^{T} x+b=a_{1} x_{1}+a_{2} x_{2}+\cdots+a_{n} x_{n}+b
-$$
 
-i.e., an inner-product function plus a constant (offset)
-\end{definition}
 
-\begin{theorem}
-    any function of this type is affine
+\begin{theorem}[restricted superposition property]
+    Any function of this type is affine.
     
-    if $ \alpha+\beta=1 $ then
-$$
-a^{T}(\alpha x+\beta y)+b=\alpha\left(a^{T} x+b\right)+\beta\left(a^{T} y+b\right)
-$$
+    $$ f(\alpha x+\beta y)=\alpha f(x)+\beta f(y) $$
 \end{theorem}
+
+\begin{proof}
+    If $ \alpha+\beta=1 $ then
+    $$ \begin{aligned} f(\alpha x+\beta y) &=a^{T}(\alpha x+\beta y)+b \\ &=\alpha a^{T} x+\beta a^{T} y+(\alpha+\beta) b \\ &=\alpha\left(a^{T} x+b\right)+\beta\left(a^{T} y+b\right) \\ &=\alpha f(x)+\beta f(y) \end{aligned} $$
+
+    (In the second line we use $\alpha + \beta = 1$.)
+
+\end{proof}
+
+\begin{corollary}
+    This restricted superposition property for affine functions is useful in showing that a function $ f $ is not affine: We find vectors $ x, y $, and numbers $ \alpha $ and $ \beta $ with $ \alpha+\beta=1 $, and verify that $ f(\alpha x+\beta y) \neq \alpha f(x)+\beta f(y) . $ This shows that $ f $ cannot be affine.
+\end{corollary}
 
 \begin{theorem}
     every affine function can be written as $ f(x)=a^{T} x+b $ with:
@@ -201,7 +219,7 @@ $ \hat{f}(x) $ 是关于 $ x $ 的一个仿射函数.
 \begin{corollary}[一阶泰勒公式的内积形式]
     $$ \hat{f}(x)=f(z)+\nabla f(z)^{T}(x-z) \quad (\nabla f(z)=\left[\begin{array}{c}\frac{\partial f}{\partial x_{1}}(z) \\ \vdots \\ \frac{\partial f}{\partial x_{n}}(z)\end{array}\right]) $$
 
-    the $ n $-vector $ \nabla f(z) $ is called the gradient of $ f $ at $ z $.
+    the $ n $-vector $ \nabla f(z) $ is called the \term{gradient} of $ f $ at $ z $.
 \end{corollary} 
 
 一维时, $ \hat{f}(x)=f(z)+f^{\prime}(z)(x-z) $.
@@ -219,6 +237,34 @@ $ \hat{f}(x) $ 是关于 $ x $ 的一个仿射函数.
 
     泰勒公式利用多项式在一点附近逼近函数.
     
+
+
+\begin{corollary}[$n$阶泰勒多项式]
+    $$ \begin{aligned} P_{n}(x) &=f\left(x_{0}\right)+f^{\prime}\left(x_{0}\right)\left(x-x_{0}\right)+\frac{f^{\prime \prime}\left(x_{0}\right)}{2 !}\left(x-x_{0}\right)^{2} +\cdots+\frac{f^{(n)}\left(x_{0}\right)}{n !}\left(x-x_{0}\right)^{n} \end{aligned} $$
+    where $a_{n}=\frac{f^{(n)}\left(x_{0}\right)}{n !} $
+\end{corollary}
+
+\begin{corollary}[对于高阶余项的公式]
+    带拉格朗日余项的泰勒公式
+    $$ \begin{aligned} f(x) &=f\left(x_{0}\right)+f^{\prime}\left(x_{0}\right)\left(x-x_{0}\right)+\frac{f^{\prime \prime}\left(x_{0}\right)}{2 !}\left(x-x_{0}\right)^{2} \\ &+\cdots+\frac{f^{(n)}\left(x_{0}\right)}{n !}\left(x-x_{0}\right)^{n}+\frac{f^{(n+1)}(\xi)}{(n+1) !}\left(x-x_{0}\right)^{n+1} \end{aligned} $$
+
+    $ R_{n}(x)=\frac{f^{(n+1)}(\xi)}{(n+1) !}\left(x-x_{0}\right)^{n+1}\left(\xi\right. $ 在 $ x_{0} $ 与 $ x  $ 之间 $ ) $
+\end{corollary}
+
+\begin{corollary}[麦克劳林(Maclaurin)公式]在零点展开麦克劳林(Maclaurin)公式
+    $$ \begin{aligned} f(x)=& f(0)+f^{\prime}(0) x+\frac{f^{\prime \prime}(0)}{2 !} x^{2}+\cdots+\frac{f^{(n)}(0)}{n !} x^{n} +\frac{f^{(n+1)}(\theta x)}{(n+1) !} x^{n+1} &(0<\theta<1) \end{aligned} $$
+    
+\end{corollary}
+
+
+\section{Regression Model}
+\begin{definition}[Regression Model]
+    回归模型(regression model)为关于$x$的仿射函数
+    $$ \hat{y}=x^{T} \beta+v $$
+
+    $x$是\textit{特征向量(feature vector)}, 它的元素$x_i$称为\textit{回归元(regressors)}. $n$维向量 $ \beta $ 是\textit{权重向量(weight vector)}. 标量 $ v $ 是\textit{偏移量(offset)}. 标量 $ \hat{y} $ 是\textit{预测值(prediction)}. 表示某个实际结果或因变量, 用$y$表示. 
+\end{definition}
+
 \begin{example}
     $$ \sin x= x-\frac{x^{3}}{3 !}+\frac{x^{5}}{5 !}-\cdots+(-1)^{k-1} \frac{x^{2 k-1}}{(2 k-1) !}+\frac{\sin \left[\xi+(2 k+1) \frac{\pi}{2}\right]}{(2 k+1) !} x^{2 k+1} $$
 
@@ -248,30 +294,3 @@ $ \hat{f}(x) $ 是关于 $ x $ 的一个仿射函数.
 
     依此类推. $a_{n}=\frac{f^{(n)}\left(x_{0}\right)}{n !} $
 \end{proof}
-
-\begin{corollary}[n阶泰勒多项式]
-    $$ \begin{aligned} P_{n}(x) &=f\left(x_{0}\right)+f^{\prime}\left(x_{0}\right)\left(x-x_{0}\right)+\frac{f^{\prime \prime}\left(x_{0}\right)}{2 !}\left(x-x_{0}\right)^{2} \\ &+\cdots+\frac{f^{(n)}\left(x_{0}\right)}{n !}\left(x-x_{0}\right)^{n} \end{aligned} $$
-    where $a_{n}=\frac{f^{(n)}\left(x_{0}\right)}{n !} $
-\end{corollary}
-
-\begin{corollary}[对于高阶余项的公式]
-    带拉格朗日余项的泰勒公式
-    $$ \begin{aligned} f(x) &=f\left(x_{0}\right)+f^{\prime}\left(x_{0}\right)\left(x-x_{0}\right)+\frac{f^{\prime \prime}\left(x_{0}\right)}{2 !}\left(x-x_{0}\right)^{2} \\ &+\cdots+\frac{f^{(n)}\left(x_{0}\right)}{n !}\left(x-x_{0}\right)^{n}+\frac{f^{(n+1)}(\xi)}{(n+1) !}\left(x-x_{0}\right)^{n+1} \end{aligned} $$
-
-    $ R_{n}(x)=\frac{f^{(n+1)}(\xi)}{(n+1) !}\left(x-x_{0}\right)^{n+1}\left(\xi\right. $ 在 $ x_{0} $ 与 $ x  $ 之间 $ ) $
-\end{corollary}
-
-\begin{corollary}[麦克劳林(Maclaurin)公式]在零点展开麦克劳林(Maclaurin)公式
-    $$ \begin{aligned} f(x)=& f(0)+f^{\prime}(0) x+\frac{f^{\prime \prime}(0)}{2 !} x^{2}+\cdots+\frac{f^{(n)}(0)}{n !} x^{n} \\ &+\frac{f^{(n+1)}(\theta x)}{(n+1) !} x^{n+1} &(0<\theta<1) \end{aligned} $$
-    
-\end{corollary}
-
-
-\section{Regression Model}
-\begin{definition}[Regression Model]
-    回归模型(regression model)为关于$x$的仿射函数
-    $$ \hat{y}=x^{T} \beta+v $$
-
-    $x$是\textit{特征向量(feature vector)}, 它的元素$x_i$称为\textit{回归元(regressors)}. n维向量 $ \beta $ 是\textit{权重向量(weight vector)}. 标量 $ v $ 是\textit{偏移量(offset)}. 标量 $ \hat{y} $ 是\textit{预测值(prediction)}. 表示某个实际结果或因变量, 用$y$表示. 
-\end{definition}
-

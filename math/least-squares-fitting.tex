@@ -440,34 +440,41 @@ $$
     Illustrations of this example are needed to better understand this example.
 \end{remark}
 
-- MNIST data set used in homework
-- $ 28 \times 28 $ images of handwritten digits $ \left(n=28^{2}=784\right. $ pixels)
-- data set contains 60000 training examples; 10000 test examples
-- we only use the 493 pixels that are nonzero in at least 600 training examples
-- Boolean classifier distinguishes digit zero $ (y=1) $ from other digits $ (y=-1) $
+\begin{itemize}
+    \item $ 28 \times 28 $ images of handwritten digits $ \left(n=28^{2}=784\right) $ pixels
+    \item data set contains 60000 training examples; 10000 test examples
+    \item we only use the 493 pixels that are nonzero in at least 600 traiBoolean classifier distinguishes digit zero $ (y=1) $ from other digits $ (y=-1) $
+ning examples
+    \item 
+\end{itemize}
+
 
 \subsubsection{Classifier with basic regression model}
 
 $$
 \hat{f}(x)=\operatorname{sign}(\tilde{f}(x))=\operatorname{sign}\left(x^{T} \beta+v\right)
 $$
-- $ x $ is vector of 493 pixel intensities
-- figure shows distribution of $ \tilde{f}\left(x^{(i)}\right)=\left(x^{(i)}\right)^{T} \hat{\beta}+\hat{v} $ on training set
+
+$ x $ is vector of 493 pixel intensities
+
+figure shows distribution of $ \tilde{f}\left(x^{(i)}\right)=\left(x^{(i)}\right)^{T} \hat{\beta}+\hat{v} $ on training set.
 
 blue bars to the left of dashed line are false negatives (misclassified digits zero)
 
-• red bars to the right of dashed line are false positives (misclassified non-zeros)
+red bars to the right of dashed line are false positives (misclassified non-zeros)
 
 \subsubsection{Classifier with additional nonlinear features}
 
 $$
 \hat{f}(x)=\operatorname{sign}(\tilde{f}(x))=\operatorname{sign}\left(\sum_{i=1}^{p} \theta_{i} f_{i}(x)\right)
 $$
-- basis functions include constant, 493 elements of $ x $, plus 5000 functions
+
+basis functions include constant, 493 elements of $ x $, plus 5000 functions
 $$
 f_{i}(x)=\max \left\{0, r_{i}^{T} x+s_{i}\right\} \quad \text { with randomly generated } r_{i}, s_{i}
 $$
-- figure shows distribution of $ \tilde{f}\left(x^{(i)}\right) $ on training set
+
+figure shows distribution of $ \tilde{f}\left(x^{(i)}\right) $ on training set
 
 \section{Multi-class classification}
 

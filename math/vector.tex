@@ -34,17 +34,18 @@
 \begin{definition}[Subvectors]
     Colon notation can be used to define subvectors (slices) of a vector.
 
-    subvectors. If $ a $ is a vector, then $ a_{r: s} $ is the vector of size $ s-r+1 $, with entries $ a_{r}, \ldots, a_{s} $ :
+    If $ a $ is a vector, then $ a_{r: s} $ is the vector of size $ s-r+1 $, with entries $ a_{r}, \ldots, a_{s} $ :
     $$
     a_{r: s}=\left(a_{r}, \ldots, a_{s}\right)
     $$
 
-    The subscript $ r: s $ is called the index range. Thus, in our example above, we have
+    The subscript $ r:s $ is called the \term{index range}. 
+\end{definition}
 
+Thus, in our example above, we have
     $$
     b=a_{1: m}, \quad c=a_{(m+1):(m+n)}, \quad d=a_{(m+n+1):(m+n+p)} .
     $$
-\end{definition}
 
 \begin{remark}
     在本书中，下标从1开始。
@@ -239,6 +240,11 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros), �
     $$ b=b_{1} e_{1}+\cdots+b_{n} e_{n}, b=\left[\begin{array}{c}b_{1} \\ b_{2} \\ \vdots \\ b_{n}\end{array}\right] $$
     \end{theorem}
     
+    $ \beta_{1}=\cdots=\beta_{m}=1 $时，线性组合是$a_1, \cdots, a_m$的和。
+
+    $ \beta_{1}=\cdots=\beta_{m} = \frac{1}{m} $时，线性组合是$a_1, \cdots, a_m$的平均。
+
+    When the coefficients sum to one, i.e., $ \beta_{1}+\cdots+\beta_{m}=1 $, the linear combination is called an \term{affine combination}. When the coefficients in an affine combination are nonnegative, it is called a \term{convex combination}, a \term{mixture}, or a \term{weighted average}. The coefficients in an affine or convex combination are sometimes given as percentages, which add up to $ 100 \% $.
 
 \section{内积}
 
@@ -340,10 +346,11 @@ Here we have $ a^{T} b=2 $, which is the number of objects in both $ A $ and $ B
 
     Inner product $ w^{T} f=w_{1} f_{1}+w_{2} f_{2}+\cdots+w_{n} f_{n} $ is total score. 
 
-    Some linear combinations of the vectors $ a_{1}, \ldots, a_{m} $ have special names. For example, the linear combination with $ \beta_{1}=\cdots=\beta_{m}=1 $, given by $ a_{1}+\cdots+a_{m} $, is the $ s u m $ of the vectors, and the linear combination with $ \beta_{1}=\cdots=\beta_{m}=1 / m $, given by $ (1 / m)\left(a_{1}+\cdots+a_{m}\right) $, is the \term{average} of the vectors. When the coefficients sum to one, i.e., $ \beta_{1}+\cdots+\beta_{m}=1 $, the linear combination is called an \term{affine combination}. When the coefficients in an affine combination are nonnegative, it is called a \term{convex combination}, a \term{mixture}, or a \term{weighted average}. The coefficients in an affine or convex combination are sometimes given as \term{percentages}, which add up to $ 100 \% $.
 \end{example}
 
 \begin{example}[多项式]
+    Suppose the $ n $-vector $ c $ represents the coefficients of a polynomial $ p $ of degree $ n-1 $ or less:
+
     $$ p(x)=c_{1}+c_{2} x+\cdots+c_{n-1} x^{n-2}+c_{n} x^{n-1} $$
 
     Let $t$ be a number, $ z=\left(1, t, t^{2}, \ldots, t^{n-1}\right) $  be the $n$-vector of powers
@@ -367,7 +374,6 @@ $$
 
 \begin{proof}
     令 $\lambda \in \mathbb{R}$, 则有 
-    
     $$0 \leq\langle x+\lambda y, x+\lambda y\rangle=\langle x, x\rangle+\lambda\langle y, x\rangle+\lambda\langle x, y\rangle+\lambda^{2}\langle y, y\rangle=\langle x, x\rangle+2 \lambda\langle y, x\rangle+\lambda^{2}\langle y, y\rangle$$
 
 则 
@@ -432,7 +438,7 @@ which yields the Cauchy-Schwarz inequality.
 \end{definition}
 
 \begin{remark}
-    Comments: this is a very simplified model of complexity of algorithms
+    This is a very simplified model of complexity of algorithms.
 
     \begin{itemize}
         \item we don't distinguish between the different types of arithmetic operations
@@ -442,7 +448,7 @@ which yields the Cauchy-Schwarz inequality.
     \end{itemize}
 \end{remark}
 
-算法或操作的时间复杂度：作为输入维数的函数所需要的浮点运算总数. 算法复杂度通常以非常粗略地近似估算. （程序）执行时间的粗略估计：计算机速度/flops，目前的计算机大约是$1$Gflops/秒($10^9$flops/秒)。
+算法或操作的时间复杂度：作为输入维数的函数所需要的浮点运算总数。算法复杂度通常以非常粗略地近似估算。（程序）执行时间的粗略估计：计算机速度/flops，目前的计算机大约是$1$Gflops/秒($10^9$flops/秒)。
 
 \begin{definition}[Operation count (flop count)]
     Total number of operations in an algorithm. In linear algebra, it is typically a polynomial of the dimensions in the problem
@@ -454,20 +460,26 @@ which yields the Cauchy-Schwarz inequality.
     $$\text{run time}  \approx \frac{\text { number of operations (flops) }}{\text { computer speed (flops per second) }} $$
 \end{theorem}
 
-\begin{definition}[Dominant term, Order]
-    Dominant term: the highest-order term in the flop count
-$$
-\frac{1}{3} n^{3}+100 n^{2}+10 n+5 \approx \frac{1}{3} n^{3}
-$$
+\begin{definition}[Dominant term]
+    The highest-order term in the flop count.
 
-Order: the power in the dominant term
-$$
-\frac{1}{3} n^{3}+10 n^{2}+100=\text { order } n^{3}
-$$
 \end{definition}
 
+\begin{example}
+    $$
+\frac{1}{3} n^{3}+100 n^{2}+10 n+5 \approx \frac{1}{3} n^{3}
+$$
+\end{example}
 
+\begin{definition}[Order]
+    The power in the dominant term.
+\end{definition}
 
+\begin{example}
+    $$
+\frac{1}{3} n^{3}+10 n^{2}+100=\text { order } n^{3}
+$$
+\end{example}
 
 
 \begin{corollary}
@@ -490,7 +502,7 @@ $$
     $ \mathrm{j}=\sqrt{-1} $ (more common notation is $ i $ or $ j $ ), $ \alpha $ is the \term{real} part of $ x $, denoted $ \operatorname{Re} x $, $ \beta $ is the \term{imaginary} part, denoted $ \operatorname{Im} x $
 \end{definition}
 
-\begin{definition}[set of complex numbers]
+\begin{definition}[Set of complex numbers]
     set of complex numbers is denoted $ \mathbf{C} $
 \end{definition}
 
@@ -498,7 +510,7 @@ $$
     modulus (absolute value, magnitude): $$ |x|=\sqrt{(\operatorname{Re} x)^{2}+(\operatorname{Im} x)^{2}} $$
 \end{definition}
 
-\begin{definition}[conjugate]
+\begin{definition}[Conjugate]
     $$ \bar{x}=\operatorname{Re} x-\mathrm{j} \operatorname{Im} x $$
 \end{definition}
 
@@ -525,7 +537,7 @@ $$
 $ \theta \in[0,2 \pi) $ is the \term{argument} (\term{phase angle}) of $ x $ (notation: $ \arg x $ ). $ e^{\mathrm{j} \theta} $ is complex exponential.
 \end{theorem}
 
-\begin{theorem}
+\begin{theorem}[Euler's formula]
     $ e^{\mathrm{j} \theta}=\cos \theta+\mathrm{j} \sin \theta $
 \end{theorem}
 
@@ -610,10 +622,8 @@ for real vectors, reduces to real inner product $ b^{T} a $.
 
 for complex $ n $-vectors $ a, b, c $ and complex scalars $ \gamma $
 
-\begin{theorem}[$a^H a$的性质]
-    $a^H a$有如下性质：
-
-
+$a^H a$有如下性质：
+\begin{theorem}
     $ a^{H} a \geq 0 $ : follows from
 $$
 \begin{aligned}
@@ -622,12 +632,28 @@ a^{H} a &=\bar{a}_{1} a_{1}+\bar{a}_{2} a_{2}+\cdots+\bar{a}_{n} a_{n} \\
 \end{aligned}
 $$
 
-    $$ a^{H} a=0 \text{ only if } a=0 $$
-    $$ b^{H} a=\overline{a^{H} b} $$
- $$ (\gamma b)^{H} a=\bar{\gamma}\left(b^{H} a\right) $$
- $$ (b+c)^{H} a=b^{H} a+c^{H} a $$
- $$ b^{H}(a+c)=b^{H} a+b^{H} c $$
-    $$ b^{H}(\gamma a)=\gamma\left(b^{H} a\right) $$
 \end{theorem}
 
+\begin{theorem}
+    $$ a^{H} a=0 \text{ only if } a=0 $$
+\end{theorem}
 
+\begin{theorem}
+    $$ b^{H} a=\overline{a^{H} b} $$
+\end{theorem}
+
+\begin{theorem}
+    $$ (\gamma b)^{H} a=\bar{\gamma}\left(b^{H} a\right) $$
+\end{theorem}
+
+\begin{theorem}
+    $$ (b+c)^{H} a=b^{H} a+c^{H} a $$
+\end{theorem}
+
+\begin{theorem}
+    $$ b^{H}(a+c)=b^{H} a+b^{H} c $$
+\end{theorem}
+
+\begin{theorem}
+    $$ b^{H}(\gamma a)=\gamma\left(b^{H} a\right) $$
+\end{theorem}
