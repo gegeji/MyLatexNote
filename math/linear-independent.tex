@@ -3,18 +3,18 @@
 \section{线性相关、线性无关}
 
 \begin{definition}[线性相关(linearly dependent)]
-    定义：对于向量 $ a_{1}, \ldots a_{m} \in \mathbb{R}^{n} $, 如果存在不全为零的数 $ \beta_{1}, \ldots \beta_{m} \in \mathbb{R} $, 使得
+    对于向量 $ a_{1}, \ldots a_{m} \in \mathbb{R}^{n} $, 如果存在不全为零的数 $ \beta_{1}, \ldots \beta_{m} \in \mathbb{R} $, 使得
 $$
 \beta_{1} a_{1}+\cdots+\beta_{m} a_{m}=0
 $$
 
-则称向量 $ a_{1}, \ldots a_{m} $ 是线性相关(linearly dependent). 
+则称向量 $ a_{1}, \ldots a_{m} $ 是\term{线性相关(linearly dependent)}. 
 \end{definition}
 
 \begin{corollary}
     线性相关等价于至少有一个向量 $ a_{i} $ 是其它向量的线性组合. 
 
-    equivalently, at least one vector $ a_{i} $ is a linear combination of the other vectors:
+    Equivalently, at least one vector $ a_{i} $ is a linear combination of the other vectors:
 $$
 a_{i}=-\frac{x_{1}}{x_{i}} a_{1}-\cdots-\frac{x_{i-1}}{x_{i}} a_{i-1}-\frac{x_{i+1}}{x_{i}} a_{i+1}-\cdots-\frac{x_{n}}{x_{i}} a_{n}
 $$
@@ -23,7 +23,7 @@ if $ x_{i} \neq 0 $.
 
 
 \begin{corollary}
-    the vector 0 can be written as a nontrivial linear combination of $ a_{1}, \ldots, a_{n} $.
+    the vector $0$ can be written as a nontrivial linear combination of $ a_{1}, \ldots, a_{n} $.
 \end{corollary}
 
 
@@ -36,7 +36,7 @@ if $ x_{i} \neq 0 $.
 
 \begin{definition}[线性独立 (linearly independent)]
     \label{Def:LinearIndependence}
-    如果n维向量集 $ \left\{a_{1}, \ldots, a_{m}\right\} $ 不是线性相关的, 即线性独立 (linearly dependent), 也称线性无关,  即：
+    如果$n$维向量集 $ \left\{a_{1}, \ldots, a_{m}\right\} $ 不是线性相关的, 即\term{线性独立 (linearly dependent)}, 也称\term{线性无关},  即：
 $$
 \beta_{1} a_{1}+\cdots+\beta_{m} a_{m}=0
 $$
@@ -46,11 +46,15 @@ $$
 线性无关等价于不存在一个向量 $ a_{i} $ 是其它向量的线性组合. 
 
 \begin{corollary}
-    注：一个$n$维向量集最多有$n$个线性无关的向量, 也就是说如果 $ {n} $ 维向量集有 $ {n}+1 $ 个向量, 那它们必线性相关
+    一个$n$维向量集最多有$n$个线性无关的向量。
+\end{corollary}
+
+\begin{corollary}
+    如果 $ {n} $ 维向量集有 $ {n}+1 $ 个向量, 那它们必线性相关。
 \end{corollary}
 
 \begin{example}
-    n维单位向量 $ e_{1}, \ldots, e_{n} $ 是线性独立的. 
+    $n$维单位向量 $ e_{1}, \ldots, e_{n} $ 是线性独立的. 
 \end{example}
 
 \begin{example}
@@ -88,18 +92,19 @@ $$
 \end{theorem}
 
 \begin{proof}
-    系数是唯一的原因：
 $$
 \left(\beta_{1}-\gamma_{1}\right) a_{1}+\cdots\left(\beta_{k}-\gamma_{k}\right) a_{k}=x-x=0
 $$
 
 由于向量 $ a_{1}, \ldots, a_{k} $ 线性无关, 有 $ \beta_{1}-\gamma_{1}=\beta_{k}-\gamma_{k}=0 $ . 
+
+所以线性组合的系数是唯一的。
 \end{proof}
 
 \section{Basis}
 
 \begin{definition}[基 (Basis)]
-    $n$个线性独立的$n$维向量 $ a_{1}, \ldots, a_{n} $ 的集合
+    $n$个线性独立的$n$维向量 $ a_{1}, \ldots, a_{n} $ 的集合。
 \end{definition}
 
 \begin{definition}[向量 $ b $ 在基底 $ a_{1}, \ldots, a_{n} $ 下的分解]
@@ -124,12 +129,12 @@ $$
 
 \begin{definition}[Orthogonal Vectors]
     \label{Def:OrthogonalVectors}
-    在n维向量集 $ a_{1}, \ldots, a_{k} $ 中,  如果对于 $ i \neq j $, 都有 $ a_{i} \perp a_{j} $ ,  则称它们相互正交(orthogonal). 
+    在$n$维向量集 $ a_{1}, \ldots, a_{k} $ 中,  如果对于 $ i \neq j $, 都有 $ a_{i} \perp a_{j} $ ,  则称它们相互\term{正交(orthogonal)}. 
 \end{definition}
 
 \begin{definition}[Orthonormal Vectors]
     \label{Def:OrthonormalVectors}
-    如果n维向量集 $ a_{1}, \ldots, a_{k} $ 相互正交, 且每个向量的模长都为单位长度 1 ,  即对于 $ i=1, \ldots k $, 有 $ \left\|a_{i}\right\|_{2}^{2}=1 $, 则称它们是标准正交 (orthonormal)的. 
+    如果$n$维向量集 $ a_{1}, \ldots, a_{k} $ 相互正交, 且每个向量的模长都为单位长度 1 ,  即对于 $ i=1, \ldots k $, 有 $ \left\|a_{i}\right\|_{2}^{2}=1 $, 则称它们是\term{标准正交 (orthonormal)}的. 
 
     $$ a_{i}^{T} a_{j}=\left\{\begin{array}{ll}1 & i=j \\ 0 & i \neq j\end{array}\right. $$
 \end{definition}
@@ -139,7 +144,7 @@ $$
 \end{corollary}
 
 \begin{theorem}
-    if $ n $ vectors $ a_{1}, a_{2}, \ldots, a_{n} $ of length $ m $ are linearly independent, then
+    if $ n $ vectors $ a_{1}, a_{2}, \ldots, a_{k} $ of length $ n $ are linearly independent, then
 $$
 n \leq m
 $$
@@ -164,9 +169,13 @@ $$
     $$
     where $ b_{i} $ is an $ (n-1) $-vector and $ \alpha_{i} $ is a scalar.
 
-    First suppose that $ \alpha_{1}=\cdots=\alpha_{k}=0 $. Then the vectors $ b_{1}, \ldots, b_{k} $ are linearly independent: $ \sum_{i=1}^{k} \beta_{i} b_{i}=0 $ holds if and only if $ \sum_{i=1}^{k} \beta_{i} a_{i}=0 $, which is only possible for $ \beta_{1}=\cdots=\beta_{k}=0 $ because the vectors $ a_{i} $ are linearly independent. The vectors $ b_{1}, \ldots, b_{k} $ therefore form a linearly independent collection of $ (n-1) $ -vectors. By the induction hypothesis we have $ k \leq n-1 $, so certainly $ k \leq n $.
+    First suppose that $ \alpha_{1}=\cdots=\alpha_{k}=0 $. 
+    
+    Then the vectors $ b_{1}, \ldots, b_{k} $ are linearly independent: $ \sum_{i=1}^{k} \beta_{i} b_{i}=0 $ holds if and only if $ \sum_{i=1}^{k} \beta_{i} a_{i}=0 $, which is only possible for $ \beta_{1}=\cdots=\beta_{k}=0 $ because the vectors $ a_{i} $ are linearly independent. The vectors $ b_{1}, \ldots, b_{k} $ therefore form a linearly independent collection of $ (n-1) $ -vectors. By the induction hypothesis we have $ k \leq n-1 $, so certainly $ k \leq n $.
 
-    Next suppose that the scalars $ \alpha_{i} $ are not all zero. Assume $ \alpha_{j} \neq 0 . $ We define a collection of $ k-1 $ vectors $ c_{i} $ of length $ n-1 $ as follows:
+    Next suppose that the scalars $ \alpha_{i} $ are not all zero.
+    
+    Assume $ \alpha_{j} \neq 0 . $ We define a collection of $ k-1 $ vectors $ c_{i} $ of length $ n-1 $ as follows:
 
     $$c_{i}=\left\{\begin{matrix} 
         b_{i}-\frac{\alpha_{i}}{\alpha_{j}} b_{j}, \quad i=1, \ldots, j-1  \\  
@@ -194,7 +203,7 @@ $$
     \gamma=-\frac{1}{\alpha_{j}}\left(\sum_{i=1}^{j-1} \beta_{i} \alpha_{i}+\sum_{i=j+1}^{k} \beta_{i-1} \alpha_{i}\right)
     $$
 
-    Since the vectors $ a_{i}=\left(b_{i}, \alpha_{i}\right) $ are linearly independent, the \cref{eqn:k-leq-n} only holds when all the coefficients $ \beta_{i} $ and $ \gamma $ are all zero. This in turns implies that the vectors $ c_{1}, \ldots, c_{k-1} $ are linearly independent. By the induction hypothesis $ k-1 \leq n-1 $ so we have established that $ k \leq n $
+    Since the vectors $ a_{i}=\left(b_{i}, \alpha_{i}\right) $ are linearly independent, the \cref{eqn:k-leq-n} only holds when all the coefficients $ \beta_{i} $ and $ \gamma $ are all zero. This in turns implies that the vectors $ c_{1}, \ldots, c_{k-1} $ are linearly independent. By the induction hypothesis $ k-1 \leq n-1 $ so we have established that $ k \leq n $.
 \end{proof}
 
 \begin{corollary}
@@ -210,11 +219,11 @@ $$
 \end{definition}
 
 \begin{definition}[ $ x $ 在标准正交基下的标准正交分解]
-    如果 $ a_{1}, \ldots, a_{n} $ 是一个标准正交基, 对于任意维向量 $ x $;
+    如果 $ a_{1}, \ldots, a_{n} $ 是一个标准正交基, 对于任意维向量 $ x $
 $$
 x=\left(a_{1}^{T} x\right) a_{1}+\cdots+\left(a_{n}^{T} x\right) a_{n}
 $$
-则称其为 $ x $ 在标准正交基下的标准正交分解. 
+则称其为 \term{$ x $ 在标准正交基下的标准正交分解}. 
 \end{definition}
 
     这个分解可以用于计算不同标准正交基下的系数. 

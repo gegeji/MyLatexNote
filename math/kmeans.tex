@@ -9,8 +9,8 @@
     $$ \min _{z \in \mathbf{R}^{n}} \sum_{i=1}^{N}\left\|x_{i}-z\right\|_{2}^{2} $$
 \end{problem}
 
-\begin{definition}[高阶无穷小记号 $o$]
-    设 $ x, y $ 是同一变化过程中的无穷小, 即 $ x \rightarrow 0, y \rightarrow 0 $, 如果它们极限
+\begin{definition}[高阶无穷小(记号 $o$)]
+    设 $ x, y $ 是同一变化过程中的无穷小, 即 $ x \rightarrow 0, y \rightarrow 0 $, 如果
 
 $$
 \lim_{x \rightarrow 0, y \rightarrow 0} \frac{y}{x}=0
@@ -25,7 +25,7 @@ $$
     也即则称 $ y $ 是 $ C x $ 的高阶无穷小, 记作 $ y=o(C x) $ . 
 \end{corollary}
 
-\begin{theorem}[优化求解的必要条件]
+\begin{theorem}[凸优化求解的必要条件]
     假设函数$f$在$\hat{x}$可微, 则有
 
     $$ \hat{x}=\arg \min _{x \in \mathbb{R}^{n}} f(x) \Rightarrow \nabla f(\hat{x})=0 $$
@@ -36,28 +36,34 @@ $$
 
     $$ f(x)=f(\hat{x})+\langle\nabla f(\hat{x}), x-\hat{x}\rangle+o\left(\|x-\hat{x}\|_{2}\right) $$
 
-    假设$ \delta f(\hat{x}) \neq 0 $, 则令 $ \tilde{x}=\hat{x}-t \nabla f(\hat{x}), t>0 $,可得
+    假设$ \Delta f(\hat{x}) \neq 0 $, 则令 $ \tilde{x}=\hat{x}-t \nabla f(\hat{x}), t>0 $,可得
 
     $$ f(\tilde{x})=f(\hat{x})-t\|\nabla f(\hat{x})\|_{2}^{2}+o\left(t\|\nabla f(\hat{x})\|_{2}\right) $$
 
-    当 $ t \rightarrow 0 $ 则$ t\|\nabla f(\hat{x})\|_{2} \rightarrow 0 $,  高阶无穷小$ {o }^{\prime}\left(t\|\nabla f(\hat{x})\|_{2}\right) \rightarrow 0 $
+    当 $ t \rightarrow 0 $ 则$ t\|\nabla f(\hat{x})\|_{2} \rightarrow 0 $,  高阶无穷小$ {o }\left(t\|\nabla f(\hat{x})\|_{2}\right) \rightarrow 0 $.
 
-    当$t$足够小时, 存在$ t\|\nabla f(\hat{x})\|_{2} \geq o\left(t\|\nabla f(\hat{x})\|_{2}\right) $, 即
+    当$t$足够小时, 存在$$ t\|\nabla f(\hat{x})\|_{2} \geq o\left(t\|\nabla f(\hat{x})\|_{2}\right) $$
+    
+    即$ -t\|\nabla f(\hat{x})\|_{2}^{2}+o\left(t\|\nabla f(\hat{x})\|_{2}\right) \leq 0 $
 
-    $$ -t\|\nabla f(\hat{x})\|_{2}^{2}+o\left(t\|\nabla f(\hat{x})\|_{2}\right) \leq 0 $$
-
+    所以
     $$ f(\tilde{x})=f(\hat{x})-t\|\nabla f(\hat{x})\|_{2}^{2}+o\left(t\|\nabla f(\hat{x})\|_{2}\right) \leq f(\hat{x}) $$
-
+    
     与 $ \hat{x}=\arg \min _{\mathbf{R}^{n}} f(x) $ 矛盾. 
 
-    $ \nabla f(\widehat{x})=0 $, 是最优问题解的必要条件. 通常 $ \nabla f(\hat{x})=0 \not \Leftrightarrow \hat{x}=\arg \min _{\mathbf{R}^{n}} f(x) $. 
+    所以$ \nabla f(\widehat{x})=0 $是最优问题解的必要条件. 
 \end{proof}
 
+\begin{remark}
+    通常 $ \nabla f(\hat{x})=0 \not \Leftrightarrow \hat{x}=\arg \min _{\mathbf{R}^{n}} f(x) $. 
+\end{remark}
+
 \begin{example}
-    $$ f(x)=-x^{2}, \quad x \in \mathbb{R}, \hat{x}=\operatorname{argmin}_{\mathbb{R}} f(x) $$
+    $$ f(x)=-x^{2},  x \in \mathbb{R}, \hat{x}=\operatorname{argmin}_{\mathbb{R}} f(x) $$
 
-    $ \nabla f(\hat{x})=0 $, 则有 $ -2 \hat{x}=0 $, 即 $ \hat{x}=0 $
+    $ \nabla f(\hat{x})=0 $, 则有 $ -2 \hat{x}=0 $, 即 $ \hat{x}=0 $.
 
+    所以
     $$ f(\hat{x})=0 \geq f(x), \quad x \in \mathbf{R} $$
 
 
@@ -67,21 +73,66 @@ $$
 
 \begin{definition}[凸集]
     $ \forall x, y \in \Omega, \alpha \in \mathbb{R}, 0 \leq \alpha \leq 1 $有
-
     $$ \alpha x+(1-\alpha) y \in \Omega $$
 
-    则定义域$ \Omega \in \mathbb{R}^{n} $称为凸的(Convex)集合
-
-    （域内两点连线之间都属于这个域）
+    则定义域$ \Omega \in \mathbb{R}^{n} $称为凸的(Convex)集合.
 \end{definition}
+
+几何解释是集合域内两点连线之间都属于这个域。
 
 \begin{definition}[凸函数]
     设函数 $ f(x) $ 定义于称为\textit{凸的定义域} $ \Omega \in \mathbb{R}^{n} $满足
-
     $$ f(\alpha x+(1-\alpha) y) \leq \alpha f(x)+(1-\alpha) f(y), \forall x, y \in \Omega, \alpha \in \mathbf{R}, 0 \leq \alpha \leq 1 $$
 
     称其为凸函数. 
 \end{definition}
+
+\begin{FigureCenter}{Convex Functions}
+    
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Straight Lines [id:da5941203123742869] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (294.57,180.43) -- (294,219.86) ;
+%Straight Lines [id:da3363189709718615] 
+\draw [line width=1.5]    (122,221) -- (400,219.88) ;
+\draw [shift={(404,219.86)}, rotate = 179.77] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (11.61,-5.58) -- (0,0) -- (11.61,5.58) -- cycle    ;
+%Straight Lines [id:da40198988041711714] 
+\draw [line width=1.5]    (137,242) -- (137.98,13.86) ;
+\draw [shift={(138,9.86)}, rotate = 90.25] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (11.61,-5.58) -- (0,0) -- (11.61,5.58) -- cycle    ;
+%Straight Lines [id:da7442547746298689] 
+\draw [color={rgb, 255:red, 184; green, 84; blue, 80 }  ,draw opacity=1 ][fill={rgb, 255:red, 184; green, 84; blue, 80 }  ,fill opacity=1 ][line width=1.5]    (173.5,187.5) -- (380,76.86) ;
+%Shape: Free Drawing [id:dp3431849186843734] 
+\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=2.25] [line join = round][line cap = round] (171,119.86) .. controls (173.32,119.86) and (177.26,137.88) .. (179,140.86) .. controls (185.56,152.1) and (197.17,170.1) .. (209,176.86) .. controls (221.57,184.04) and (236.63,186.14) .. (251,187.86) .. controls (299.94,193.74) and (340.82,147.7) .. (354,104.86) .. controls (357.02,95.06) and (364,84.76) .. (364,74.86) ;
+%Shape: Circle [id:dp30513847533846006] 
+\draw  [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (289.14,124.43) .. controls (289.14,121.98) and (291.12,120) .. (293.57,120) .. controls (296.02,120) and (298,121.98) .. (298,124.43) .. controls (298,126.88) and (296.02,128.86) .. (293.57,128.86) .. controls (291.12,128.86) and (289.14,126.88) .. (289.14,124.43) -- cycle ;
+%Shape: Circle [id:dp29963982252040666] 
+\draw  [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (290.14,180.43) .. controls (290.14,177.98) and (292.12,176) .. (294.57,176) .. controls (297.02,176) and (299,177.98) .. (299,180.43) .. controls (299,182.88) and (297.02,184.86) .. (294.57,184.86) .. controls (292.12,184.86) and (290.14,182.88) .. (290.14,180.43) -- cycle ;
+%Straight Lines [id:da0584717345411474] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (202.57,172.43) -- (203,220.86) ;
+%Straight Lines [id:da5902664164674105] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (360.57,88.43) -- (359,219.86) ;
+%Straight Lines [id:da14324118358657834] 
+\draw [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][fill={rgb, 255:red, 184; green, 84; blue, 80 }  ,fill opacity=1 ][line width=1.5]    (294,252.86) -- (294.85,229.86) ;
+\draw [shift={(295,225.86)}, rotate = 92.12] [fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ][line width=0.08]  [draw opacity=0] (11.61,-5.58) -- (0,0) -- (11.61,5.58) -- cycle    ;
+
+% Text Node
+\draw (197,224.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$x$};
+% Text Node
+\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ]  (215,260) .. controls (215,257.24) and (217.24,255) .. (220,255) -- (359,255) .. controls (361.76,255) and (364,257.24) .. (364,260) -- (364,274) .. controls (364,276.76) and (361.76,279) .. (359,279) -- (220,279) .. controls (217.24,279) and (215,276.76) .. (215,274) -- cycle  ;
+\draw (218,259.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$u=\alpha x+( 1-\alpha ) y)$};
+% Text Node
+\draw (353,225.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$y$};
+% Text Node
+\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 240; green, 139; blue, 134 }  ,fill opacity=1 ]  (175,42) .. controls (175,39.24) and (177.24,37) .. (180,37) -- (377,37) .. controls (379.76,37) and (382,39.24) .. (382,42) -- (382,56) .. controls (382,58.76) and (379.76,61) .. (377,61) -- (180,61) .. controls (177.24,61) and (175,58.76) .. (175,56) -- cycle  ;
+\draw (178,41.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$\alpha f( x) +( 1-\alpha ) f( y) \geq f( u)$};
+
+
+\end{tikzpicture}
+\end{FigureCenter}
 
 \subsection{Examples for Convex Functions}
 
@@ -89,12 +140,13 @@ $$
     \label{Example:SquareIsConvex}
     $$ f(x)=x^{2}, x \in \mathbf{R} $$
 
-    $$ \begin{aligned} f(\alpha x+(1-\alpha) y) &=(\alpha x+(1-\alpha) y)^{2} 
-    \\ &=\alpha^{2} x^{2}+2 \alpha(1-\alpha) x y+(1-\alpha)^{2} y^{2} 
-    \\ &=\alpha x^{2}+(1-\alpha) y^{2}+\left(\alpha^{2}-\alpha\right) x^{2}+\left(\alpha^{2}-\alpha\right) y^{2}+2 \alpha(1-\alpha) x y 
-    \\ &=\alpha x^{2}+(1-\alpha) y^{2}-\alpha(1-\alpha)(x-y)^{2}
-    \\ &\leq \alpha x^{2}+(1-\alpha) y^{2}=\alpha f(x)+(1-\alpha) f(y)
-    \end{aligned} $$
+    $$\begin{aligned}
+        f(\alpha x+(1-\alpha )y) & =(\alpha x+(1-\alpha )y)^{2}\\
+         & =\textcolor[rgb]{0.96,0.65,0.14}{\alpha ^{2} x^{2}} +2\alpha (1-\alpha )xy+\textcolor[rgb]{0.25,0.46,0.02}{(1-\alpha )^{2} y^{2}}\\
+         & =\textcolor[rgb]{0.96,0.65,0.14}{\alpha x^{2}} +\textcolor[rgb]{0.25,0.46,0.02}{(1-\alpha )y^{2}} +\textcolor[rgb]{0.96,0.65,0.14}{\left( \alpha ^{2} -\alpha \right) x^{2}} +\textcolor[rgb]{0.25,0.46,0.02}{\left( \alpha ^{2} -\alpha \right) y^{2}} +2\alpha (1-\alpha )xy\\
+         & =\alpha x^{2} +(1-\alpha )y^{2} -\alpha (1-\alpha )(x-y)^{2}\\
+         & \leq \alpha x^{2} +(1-\alpha )y^{2} =\alpha f(x)+(1-\alpha )f(y)
+        \end{aligned}$$
 \end{example}
 
 \begin{example}
@@ -115,19 +167,27 @@ $$
 
 \begin{theorem}[可微函数$f$是凸函数的充要条件]
     \label{Theorem:ConvexDiffential}
+
+    可微函数$f$是凸函数等价于
     $$ f(y) \geq f(x)+\langle\nabla f(x), y-x\rangle, \quad \forall x, y $$
 \end{theorem}
 
 \begin{proof}
-    首先, 证明一维情况 $ f: \mathbb{R} \rightarrow \mathbb{R}, \alpha \in[0,1] $.
+    1. 首先, 证明一维情况 $ f: \mathbb{R} \rightarrow \mathbb{R}, \alpha \in[0,1] $.
 
-    $ \Rightarrow  $ 充分条件: $ f(\alpha x+(1-\alpha) y)=f(x+(1-\alpha)(y-x)) \leq \alpha f(x)+(1-\alpha) f(y) $,有
-
+    $ \Rightarrow  $ 充分条件: 
+    
+    由可微函数$f$是凸函数可知
+    $$ f(\alpha x+(1-\alpha) y)=f(x+(1-\alpha)(y-x)) \leq \alpha f(x)+(1-\alpha) f(y) $$
+    
+    因此有
     $$ f(y) \geq f(x)+\frac{f(x+(1-\alpha)(y-x))-f(x)}{(1-\alpha)(y-x)}(y-x) $$
 
     令 $ \alpha \rightarrow 1^- $, 则有 $ f(y) \geq f(x)+f^{\prime}(x)(y-x) $.
 
-    $ \Leftarrow  $ 必要条件：令 $ y \neq x, z=\alpha x+(1-\alpha) y$则有
+    $ \Leftarrow  $ 必要条件：
+    
+    令 $ y \neq x, z=\alpha x+(1-\alpha) y$则有
 
     $$  f(x) \geq f(z)+f^{\prime}(z)(x-z), f(y) \geq f(z)+f^{\prime}(z)(y-z)  $$
 
@@ -139,11 +199,20 @@ $$
     \end{aligned}
     $$
 
-    证明 $ n $ 维情况 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $.
+    满足凸函数定义，所以$f$是凸函数。
 
-    $ \Rightarrow $ 充分条件：令 $ g(t)=f(t x+(1-t) y), t \in \mathbb{R} $, 则 $ g^{\prime}(t)=\langle\nabla f(t x+(1-t) y), x-y\rangle $ 由于 $ f $ 是凸函数, 证明 $ g(t) $ 也是凸函数；并可得 $ g(0) \geq g(1)+g^{\prime}(1)(-1) $, 得证.
+    2. 证明 $ n $ 维情况 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $.
 
-    $ \Leftarrow $ 必要条件：与一维类似. (将$f^{\prime}$改为$\nabla f(z)^T$) 
+    $ \Rightarrow $ 充分条件：
+    
+    令 $$ g(t)=f(t x+(1-t) y), t \in \mathbb{R} $$
+
+    则$$ g^{\prime}(t)=\langle\nabla f(t x+(1-t) y), x-y\rangle $$
+
+    由于 $ f $ 是凸函数, 证明 $ g(t) $ 也是凸函数；并可得 $ g(0) \geq g(1)+g^{\prime}(1)(-1) $, 得证.
+
+    $ \Leftarrow $ 必要条件：
+    与一维类似. (将$f^{\prime}$改为$\nabla f(z)^T$) 
 \end{proof}
 
 \begin{theorem}
@@ -161,7 +230,8 @@ $$
 $$
 \begin{aligned}
 f(x) & \geq f(\hat{x})+\langle\nabla f(\hat{x}), x-\hat{x}\rangle \\
-& = f(\hat{x})+\langle 0, x-\hat{x}\rangle \geq f(\hat{x})
+& = f(\hat{x})+\langle 0, x-\hat{x}\rangle 
+\\ & \geq f(\hat{x})
 \end{aligned}
 $$
 
@@ -185,9 +255,7 @@ $$
 \end{example}
 
 
-问题\ref{Problem:ClusteringCenter}中已知目标函数是凸函数. （见\ref{Example:SquareIsConvex}, \ref{Example:NormIsConvex}, \ref{Example:L2NormIsConvex}）
-
-则可以求解
+问题\ref{Problem:ClusteringCenter}中已知目标函数是凸函数. （见\ref{Example:SquareIsConvex}, \ref{Example:NormIsConvex}, \ref{Example:L2NormIsConvex}），则可以求解问题\ref{Problem:ClusteringCenter}的最优解。
 
 \begin{proof}
     
@@ -200,7 +268,6 @@ $$ \nabla f(z)=\sum_{i=1}^{N}\left\{-2 x_{i}+2 z\right\}=0 $$ (求导 \ref{Defin
 
 $$ z=\frac{1}{N} \sum_{i=1}^{N} x_{i} $$
 \end{proof}
-% todo (2021-11-02 19:29): another solution
 
 另解：
 
@@ -219,7 +286,7 @@ $$ \sum_{i=1}^{n}\left(x_{i}-m\right)=\sum_{i=1}^{n} x_{i}-n m=\sum_{i=1}^{n} x_
 
 所以有 $$ J\left(x_{0}\right)=\sum_{i=1}^{n}\left\|x_{0}-m\right\|^{2}+\sum_{i=1}^{n}\left\|x_{i}-m\right\|^{2} $$
 
-即当$x_0$等于均值时，有最小均方.
+即当$x_0$等于均值时，目标函数有最小均方.
 \end{proof}
 
 \section{标量优化问题：投影问题}
@@ -336,7 +403,7 @@ $$ \sum_{i=1}^{n}\left(x_{i}-m\right)=\sum_{i=1}^{n} x_{i}-n m=\sum_{i=1}^{n} x_
 
 
 
-\section{Clustering}
+\section{$k$-Means Clustering}
 
 将物理或抽象对象的集合分成由类似特征组成的多个类的过程称为\textit{聚类(clustering)}.
 
@@ -354,7 +421,7 @@ $$ \sum_{i=1}^{n}\left(x_{i}-m\right)=\sum_{i=1}^{n} x_{i}-n m=\sum_{i=1}^{n} x_
     \end{itemize}
 \end{notation}
 
-聚类目标是找到向量 $ x_{i} $ 的“标签 $ c_{i} $ ”和“聚类中心 $ z_{j} $ ”
+聚类目标是找到向量 $ x_{i} $ 的“标签 $ c_{i} $”和“聚类中心 $ z_{j} $”。
 
 \begin{problem}
     $$ \min _{z_{j}} \sum_{i \in G_{j}}\left\|x_{i}-z_{j}\right\|_{2}^{2}, j=1, \cdots, k $$
@@ -364,11 +431,11 @@ $$ \sum_{i=1}^{n}\left(x_{i}-m\right)=\sum_{i=1}^{n} x_{i}-n m=\sum_{i=1}^{n} x_
     
 \end{problem}
 
-$k$-means算法是将 $ \mathrm{N} $ 向量 $ x_{i} \in \mathbb{R}^{n} $ 划分成$k$类的迭代聚类算法. 
+$k$-means算法是将 $ {N} $ 向量 $ x_{i} \in \mathbb{R}^{n} $ 划分成$k$类的迭代聚类算法. 
 
 \begin{algorithm}
     \caption{$k$-means Algorithm}
-    在 $ \mathrm{N} $ 个点中随机选取$k$个点, 分别作为聚类中心 $ z_{j} $\;
+    在 $ {N} $ 个点中随机选取$k$个点, 分别作为聚类中心 $ z_{j} $\;
     更新聚类标签 $ c_{i} $ : 计算每个点 $ x_{i} $ 到k个聚类中心 $ z_{j} $ 的距离, 并将其分配到最近的聚类中心 $ z_{j} $ 所在的聚类中 $ c_{i}=j $\;
     更新聚类中心 $ z_{j} $ ：重新计算每个聚类现在的质心, 并以其作作为新的聚类中心, 根据更新标签 $ c_{i} $, 更新属于第j类下标集合$ G_{j}=\left\{i: c_{i}=j\right\} $, 重新计算 $ c_{i} $ 类的聚类中心 $ z_{j} $\;
     重复步骤2、3, 直到所有聚类中心不再变化
@@ -389,7 +456,7 @@ $ \left|G_{j}\right| $ 表示集合 $ G_{j} $ 中元素的数目.
 
 在每一次迭代中目标函数$J$都会下降, 直到聚类中心 $ z_{1}, \cdots, z_{k} $ 和 划分聚类标签集合 $ G_{1}, \cdots, G_{k} $ 不再变化. 
 
-但是k-means算法依赖于初始随机生成的聚类中心, 只可得到目标函数$J$的局部局部最优. 
+但是$k$-means算法依赖于初始随机生成的聚类中心, 只可得到目标函数$J$的局部局部最优. 
 
-解决方案：使用不同的(随机的)初始聚类中心运行k-means算法若干次, 取目标函数$J$值最小的一次作为最终的聚类结果. 
+解决方案：使用不同的(随机的)初始聚类中心运行$k$-means算法若干次, 取目标函数$J$值最小的一次作为最终的聚类结果. 
 

@@ -3,12 +3,12 @@
 \section{Vector Norm}
 
 \begin{definition}[Vector Norm]
-    在向量空间中存在一个函数 $ \|\cdot\|: \mathbb{R}^{n} \rightarrow \mathbb{R} $, 且满足以下条件
+    在向量空间中存在一个函数 $ \|\cdot\|: \mathbb{R}^{n} \rightarrow \mathbb{R} $, 且满足以下条件：
 
 \begin{itemize}
     \item 齐次性： $ \|\alpha x\|=|\alpha|\|x\|, \quad \alpha \in \mathbb{R} $ 且 $ x \in \mathbb{R}^{n} $;
     \item 三角不等式: $ \|x+y\| \leq\|x\|+\|y\|, \quad x, y \in \mathbb{R}^{n} $;
-    \item 非负性: $ \|x\| \geq {0}, \boldsymbol{x} \in \mathbb{R}^{n} $ 且 $ \|\boldsymbol{x}\|=0 \Leftrightarrow \boldsymbol{x}=0 $;
+    \item 非负性: $ \|x\| \geq {0}, {x} \in \mathbb{R}^{n} $ 且 $ \|{x}\|=0 \Leftrightarrow {x}=0 $;
 \end{itemize}
 则称$\|\cdot\|$为向量范数. 
 \end{definition}
@@ -40,7 +40,8 @@
 \begin{proof}
     $$ \|\alpha x\|_{2}=(\langle\alpha x, \alpha x\rangle)^{\frac{1}{2}}=|\alpha|(\langle x, x\rangle)^{\frac{1}{2}}=|\alpha|\|x\|_{2} $$
     
-    $$\begin{aligned} \|x+y\|_{2}^{2}&=\langle x+y, x+y\rangle=\langle x, x\rangle+\langle x, y\rangle+\langle y, x\rangle+\langle y, y\rangle  \\
+    $$\begin{aligned} \|x+y\|_{2}^{2}&=\langle x+y, x+y\rangle 
+    \\ &=\langle x, x\rangle+\langle x, y\rangle+\langle y, x\rangle+\langle y, y\rangle  \\
     &=\|x\|_{2}^{2}+2\langle x, y\rangle+\|y\|_{2}^{2} \leq\|x\|_{2}^{2}+2\|x\|_{2}\|y\|_{2}+\|y\|_{2}^{2}\\
     &=\left(\|x\|_{2}+\|y\|_{2}\right)^{2} \end{aligned}$$
 
@@ -49,12 +50,18 @@
 
 $$ \begin{array}{rlr}\|a+b\|^{2} & =(a+b)^{T}(a+b) & \\ & =a^{T} a+b^{T} a+a^{T} b+b^{T} b & \\ & =\|a\|^{2}+2 a^{T} b+\|b\|^{2} & \\ & \leq\|a\|^{2}+2\|a\|\|b\|+\|b\|^{2} \quad & \text { (by Cauchy-Schwarz) } \\ & =(\|a\|+\|b\|)^{2} & \end{array} $$
 
-taking square-roots gives the triangle inequality
 
-triangle inequality is an equality if and only if $ a^{T} b=\|a\|\|b\| $ 
 
 Note from line 3 that $ \|a+b\|^{2}=\|a\|^{2}+\|b\|^{2} $ if $ a^{T} b=0 $.
 \end{proof}
+
+\begin{corollary}
+    Taking square-roots $ \|a+b\|^{2}=\|a\|^{2}+\|b\|^{2} $ gives the triangle inequality
+
+    $$\| a + b \|_2 \le \|a \|_2 + \|b \|_2 $$
+
+triangle inequality is an equality if and only if $ a^{T} b=\|a\|\|b\| $ .
+\end{corollary}
 
 \begin{corollary}[$ \ell_{2} $-Norm of block vector]
     If $ a, b $ are vectors,
@@ -69,11 +76,11 @@ $$
 \subsubsection{Cauchy–Schwarz inequality}
 
 \begin{theorem}
-    $ \left|a^{T} b\right| \leq\|a\|\|b\| \quad $ for all $ a, b \in \mathbf{R}^{n} $
+    $$ \left|a^{T} b\right| \leq\|a\|\|b\| \quad \term{ for all } a, b \in \mathbf{R}^{n} $$
 \end{theorem}
 
 \begin{corollary}
-    moreover, equality $ \left|a^{T} b\right|=\|a\|\|b\| $ holds if:
+    Moreover, equality $ \left|a^{T} b\right|=\|a\|\|b\| $ holds if:
 
 \begin{itemize}
     \item $ a=0 $ or $ b=0 $; in this case $ a^{T} b=0=\|a\|\|b\| $
@@ -111,7 +118,7 @@ $$
 
 
 
-\begin{corollary}[用$ \ell_{2} $范数表示的柯西—施瓦茨不等式]
+\begin{corollary}[用$ \ell_{2} $范数表示的Cauchy-Schwarz（柯西—施瓦茨）不等式]
     $$ |\langle x, y\rangle|^{2} \leq\langle x, x\rangle\langle y, y\rangle=\|x\|_{2}^{2}\|y\|_{2}^{2} $$
 \end{corollary}
 
@@ -141,7 +148,7 @@ $$
 
 证明可以使用以下两条不等式
 
-\begin{theorem}[Minkowshi Inequality]
+\begin{theorem}[Minkowski Inequality]
     $$ \left(\sum_{i=1}^{n}\left|x_{i}+y_{i}\right|^{p}\right)^{\frac{1}{p}} \leq\left(\sum_{i=1}^{n}\left|x_{i}\right|^{p}\right)^{\frac{1}{p}}+\left(\sum_{i=1}^{n}\left|y_{i}\right|^{p}\right)^{\frac{1}{p}}, p \geq 1, x, y \in \mathbb{R}^{n} $$
 \end{theorem}
 
@@ -154,7 +161,7 @@ $$
 \begin{definition}[向量 $ x $的均方值 (mean-square value)]
     向量 $ x \in \mathbb{R}^n $的均方值 (mean-square value)
 
-    $$ \frac{x_{1}^{2}+x_{2}^{2}+\cdots+x_{n}^{2}}{n}=\frac{\|x\|_{2}^{2}}{n} $$
+    $$\operatorname{ms}(x) = \frac{x_{1}^{2}+x_{2}^{2}+\cdots+x_{n}^{2}}{n}=\frac{\|x\|_{2}^{2}}{n} $$
 \end{definition}
 
 \begin{definition}[n维向量 $ x $ 的均方根(root-mean-square value, RMS)]
@@ -187,21 +194,22 @@ $$
 \begin{theorem}[Chebyshev's Inequality]
     假设$k$为向量 $ x $ 分量满足条件 $ \left|x_{i}\right| \geq a $ 的个数, 即 $ x_{i}^{2} \geq a^{2} $ 的个数. 
 
-    则满足 $ \left|x_{i}\right| \geq a $ 的 $ x_{i} $ 数量不会超过 $ \frac{\| x \|_{2}^{2}}{a^{2}} $。
+    则满足 $ \left|x_{i}\right| \geq a $ 的 $ x_{i} $ 数量$k$不会超过 $ \frac{\| x \|_{2}^{2}}{a^{2}} $。
 \end{theorem}
 
 \begin{proof}
     假设$k$为向量 $ x $ 分量满足条件 $ \left|x_{i}\right| \geq a $ 的个数, 即 $ x_{i}^{2} \geq a^{2} $ 的个数。
     
-    将 $ a^{2} $ 移项, 可得到 $ k \leq \frac{\|x\|_{2}^{2}}{a^{2}} $
+    因为有$k$个元素的平方$x_i^2$大于$a^{2}$，而$x_i^2$是非负的，所以有
+    $$ \|x\|_{2}^{2}=x_{1}^{2}+x_{2}^{2}+\cdots+x_{n}^{2} \geq k a^{2} $$
 
-    因此$$ \|x\|_{2}^{2}=x_{1}^{2}+x_{2}^{2}+\cdots+x_{n}^{2} \geq k a^{2} $$
+    将 $ a^{2} $ 移项, 可得到 $ k \leq \frac{\|x\|_{2}^{2}}{a^{2}} $
 \end{proof}
 
 \begin{corollary}[Chebyshev's Inequality Using RMS]
-    $$ \operatorname{rms}(x)=\sqrt{\frac{x_{1}^{2}+x_{2}^{2}+\cdots+x_{n}^{2}}{n}}=\frac{\|x\|_{2}}{\sqrt{n}} $$
+    因为$ \operatorname{rms}(x)=\sqrt{\frac{x_{1}^{2}+x_{2}^{2}+\cdots+x_{n}^{2}}{n}}=\frac{\|x\|_{2}}{\sqrt{n}} $
 
-    $ \left|x_{i}\right| \geq a $ 的项数占整体的比例不会超过 $ \left(\frac{\operatorname{rms}(x)}{a}\right)^{2} $, 即 $ \frac{k}{n} \leq\left(\frac{\operatorname{rms}(x)}{a}\right)^{2} $
+    $ \left|x_{i}\right| \geq a $ 的项数占整体的比例不会超过 $ \left(\frac{\operatorname{rms}(x)}{a}\right)^{2} $, 即 $$ \frac{k}{n} \leq\left(\frac{\operatorname{rms}(x)}{a}\right)^{2} $$
 \end{corollary}
 
 \section{Distance}
@@ -211,13 +219,19 @@ $$
     $$ \operatorname{dist}(a, b)=\|a-b\|_{2} $$
 \end{definition}
 
+当n=1,2,3时，距离等同于\term{普通距离(ordinary distance)}.
+
 \begin{theorem}
     $ \|a-b\| \geq 0 $ for all $ a, b $ and $ \|a-b\|=0 $ only if $ a=b $
 \end{theorem}
 
 \begin{definition}[RMS deviation]
-    $ \operatorname{rms}(a-b) $ 是a和b之间的均方根偏差.
+    $ \operatorname{rms}(a-b) $ 是$a$和$b$之间的均方根偏差.
 \end{definition}
+
+\begin{corollary}
+    RMS deviation between $ n $-vectors $ a $ and $ b $ is $ \operatorname{rms}(a-b)=\frac{\|a-b\|}{\sqrt{n}} $.
+\end{corollary}
 
 \begin{theorem}[Trianglar Inequality]
     $$ \|a-c\|_{2}=\|(a-b)+(b-c)\|_{2} \leq\|a-b\|_{2}+\|b-c\|_{2} \text{ for all } a, b, c $$
@@ -261,9 +275,7 @@ $$
     \end{tikzpicture}
 \end{FigureCenter}
 
-\begin{theorem}
-    RMS deviation between $ n $-vectors $ a $ and $ b $ is $ \operatorname{rms}(a-b)=\frac{\|a-b\|}{\sqrt{n}} $.
-\end{theorem}
+
 
 \subsection{Feature Distance and Nearest Neighbor}
 
@@ -278,7 +290,7 @@ $$
 
     $$ \left\|x-z_{j}\right\|_{2} \leq\left\|x-z_{i}\right\|_{2}, \quad i=1, \ldots, m $$
 
-    则称 $ z_{j} $ 是 $ x $ 的最近邻(nearest neighbor)
+    则称 $ z_{j} $ 是 $ x $ 的\term{最近邻(nearest neighbor)}.
 \end{definition}
 
 \section{Standard Derivation}
@@ -306,7 +318,7 @@ $$
 \end{definition}
 
 \begin{definition}[$x$的标准差]
-    $$ \operatorname{std}(x)=\operatorname{rms}(\tilde{x})=\frac{\left\|x-\left(1^{T} x / n\right) 1\right\|_{2}}{\sqrt{n}} $$
+    $$\sigma= \operatorname{std}(x)=\operatorname{rms}(\tilde{x})=\frac{\left\|x-\left( \frac{1^{T} x}{n} \right) 1\right\|_{2}}{\sqrt{n}} $$
 \end{definition}
 
 $\operatorname{std}(x)$表示数据元素的变化程度. 对于常数$\alpha$, 当且仅当$ x=\alpha \mathbf{1} $时, $ \operatorname{std}(x)=0 $.
@@ -323,13 +335,13 @@ $$
 \end{theorem}
 
 \begin{proof}
-    $\displaystyle \begin{aligned}
+    $$\displaystyle \begin{aligned}
         \operatorname{std} (x)^{2} & =\frac{\| \mathbf{avg} (x)\mathbf{1} \| ^{2}}{n}\\
          & =\frac{1}{n}\left( x-\frac{\mathbf{1}^{T} x}{n}\mathbf{1}\right)^{T}\left( x-\frac{\mathbf{1}^{T} x}{n}\mathbf{1}\right)\\
          & =\frac{1}{n}\left( x^{T} x-\frac{\left(\mathbf{1}^{T} x\right)^{2}}{n} -\frac{\left(\mathbf{1}^{T} x\right)^{2}}{n} +\left(\frac{\mathbf{1}^{T} x}{n}\right)^{2} n\right)\\
          & =\frac{1}{n}\left( x^{T} x-\frac{\left(\mathbf{1}^{T} x\right)^{2}}{n}\right)\\
          & =\operatorname{rms} (x)^{2} -\operatorname{avg} (x)^{2}
-        \end{aligned}$
+        \end{aligned}$$
 \end{proof}
 
 \section{Angle}
@@ -344,8 +356,7 @@ $$
 
 \begin{itemize}
     \item $\theta =\frac{\pi}{2}=90°$：a和b为正交, 写作$a \perp b (a ^T b  =0)$. 
-    \item $\theta =0$：a和b为同向(aligned or parallel
-    )的 $(a ^T  b=\| a \| \| b  \| )$. 
+    \item $\theta =0$：a和b为同向(aligned or parallel) $(a ^T  b=\| a \| \| b  \| )$. 
     \item $\theta =\pi =180°$： a和b为反向的(anti-aligned or opposed)$(a ^T   b  = - \| a \| \| b \| )$. 
     \item $\theta <\frac{\pi}{2}=90°$：a和b成锐角(acute angle)$(a ^T b >0)$. 
     \item $\theta >\frac{\pi}{2}=90°$：a和b成钝角(obtuse angle)$(a ^T b <0)$. 
@@ -406,15 +417,15 @@ $$
 
 \section{Regression Line}
 
-- scatter plot shows two $ n $-vectors $ a, b $ as $ n $ points $ \left(a_{k}, b_{k}\right) $
+scatter plot shows two $ n $-vectors $ a, b $ as $ n $ points $ \left(a_{k}, b_{k}\right) $
 
-- straight line shows affine function $ f(x)=c_{1}+c_{2} x $ with
+straight line shows affine function $ f(x)=c_{1}+c_{2} x $ with
 $$
 f\left(a_{k}\right) \approx b_{k}, \quad k=1, \ldots, n
 $$
 
 \begin{problem}
-    use coefficients $ c_{1}, c_{2} $ that minimize $ J=\frac{1}{n} \sum_{k=1}^{n}\left(f\left(a_{k}\right)-b_{k}\right)^{2} $
+    use coefficients $ c_{1}, c_{2} $ that minimize $$ J=\frac{1}{n} \sum_{k=1}^{n}\left(f\left(a_{k}\right)-b_{k}\right)^{2} $$
 
     $ J $ is a quadratic function of $ c_{1} $ and $ c_{2} $ :
 $$
@@ -444,7 +455,7 @@ c_{2}=\frac{(a-\operatorname{avg}(a) \mathbf{1})^{T}(b-\operatorname{a v g}(b) \
 $$
 \end{corollary}
 
-hence, 
+Hence, 
 
 \begin{corollary}
     expression for regression line can be written as
@@ -475,17 +486,17 @@ $$
 \end{definition}
 
 \begin{theorem}
-    [positive definite]
-$ \|a\| \geq 0 $ for all $ a, \quad\|a\|=0 \quad $ only if $ a=0 $
+    [Positive definiteness]
+$ \|a\| \geq 0 $ for all $ a, \quad\|a\|=0  $ only if $ a=0 $
 \end{theorem}
 
 \begin{theorem}
-    [homogeneous]
-$ \|\beta a\|=|\beta|\|a\| \quad $ for all vectors $ a $, complex scalars $ \beta $
+    [Homogeneous]
+$ \|\beta a\|=|\beta|\|a\| $ for all vectors $ a $, complex scalars $ \beta $
 \end{theorem}
 
 \begin{theorem}
-    [triangle inequality]
+    [Triangle inequality]
 $ \|a+b\| \leq\|a\|+\|b\| \quad $ for all vectors $ a, b $ of equal size
 \end{theorem}
 
