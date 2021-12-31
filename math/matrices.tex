@@ -93,15 +93,15 @@
     \begin{itemize}
         \item $ \left(A^{T}\right)^{T}=A $
         \item 对称矩阵满足 $ A^{T}=A $
-        \item  $A$ may be complex, but transpose of a complex matrix is rarely needed
+        \item  $A$ may be complex, but transpose of a complex matrix is rarely needed.
         \item $ (\beta A)^{T}=\beta A^{T},(A+B)^{T}=A^{T}+B^{T} $
     \end{itemize}
 \end{corollary}
 
 \begin{definition}[共轭转置]
-    矩阵$A$的共轭转置表示为 $ A^{\mathrm{H}} $
+    矩阵$A$的共轭转置表示为 $ A^{{H}} $
     
-    若 $ \mathrm{A} \in \mathbb{C}^{m \times n} $ , 则 $ A^{H} \in \mathbb{C}^{n \times m} $ , 其被 定义为: $ \left(A^{H}\right)_{i j}=\bar{A}_{j i}, i=1, \ldots, n ; j=1, \ldots, m $;
+    若 $ {A} \in \mathbb{C}^{m \times n} $ , 则 $ A^{H} \in \mathbb{C}^{n \times m} $ , 其被 定义为: $ \left(A^{H}\right)_{i j}=\bar{A}_{j i}, i=1, \ldots, n ; j=1, \ldots, m $;
 
     设矩阵 $ A \in \mathbb{C}^{m \times n} $ , 则其共轭转置为一个 $ n \times m $ 矩阵
 
@@ -129,7 +129,7 @@ $$
     设矩阵 $ A \in \mathbb{R}^{m \times p}, B \in \mathbb{R}^{p \times n} $,那么矩阵A与B的乘积, 记 作C $ =A B $ ,  矩阵 $ C \in \mathbb{R}^{m \times n} $ 的第 i行第 $ j $ 列元素 $ C_{i j} $
 
     $$
-\mathrm{C}_{i j}=\sum_{k=1}^{p} A_{i k} B_{k j}
+{C}_{i j}=\sum_{k=1}^{p} A_{i k} B_{k j}
 $$
 
 \end{definition}
@@ -141,16 +141,16 @@ $$
 \begin{corollary}[矩阵乘法性质]
     有如下性质:
     \begin{itemize}
-        \item 结合律: $ (A B) C=A(B C) $
-        \item 分配律： $ A(B+C)=A B+A C $
-        \item $$ (A B)^{T}=B^{T} A^{T}, \quad(A B)^{\mathrm{H}}=B^{H} A^{H} $$
-        \item 一般情况下 $ A B \neq B A $
-        \item 对于方阵A有, $ I A=A I=A $
+        \item 结合律: $ (A B) C=A(B C) $.
+        \item 分配律： $ A(B+C)=A B+A C $.
+        \item $ (A B)^{T}=B^{T} A^{T}, \quad(A B)^{{H}}=B^{H} A^{H} $.
+        \item 一般情况下 $ A B \neq B A $.
+        \item 对于方阵A有, $ I A=A I=A $.
     \end{itemize} 
 \end{corollary}
 
 \begin{definition}[分块矩阵乘法]
-    $$ \left[\begin{array}{ll}A & B \\ \mathrm{C} & D\end{array}\right]\left[\begin{array}{ll}W & Y \\ X & Z\end{array}\right]=\left[\begin{array}{ll}A W+B X & A Y+B Z \\ C W+D X & C Y+D Z\end{array}\right] $$
+    $$ \left[\begin{array}{ll}A & B \\ {C} & D\end{array}\right]\left[\begin{array}{ll}W & Y \\ X & Z\end{array}\right]=\left[\begin{array}{ll}A W+B X & A Y+B Z \\ C W+D X & C Y+D Z\end{array}\right] $$
 \end{definition}
 
 \begin{definition}[矩阵-向量乘积 $Ax$]
@@ -166,7 +166,7 @@ $$
 \end{definition}
 
 \begin{corollary}
-    $ \mathrm{A} x $ 是矩阵A列向量的线性组合.
+    $ {A} x $ 是矩阵A列向量的线性组合.
 
 $$
 A x=\left[\begin{array}{llll}
@@ -190,7 +190,7 @@ $$
         3x+2y=11 
       \end{matrix}\right. $$
 
-\end{example}
+
 
 
    
@@ -209,6 +209,7 @@ $$
     \includegraphics[width=\textwidth]{math-column-picture.png}
     \end{subfigure}
 \end{figure}
+\end{example}
 
 $ f: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m} $ in terms of its effect on $ x $. 
 
@@ -219,8 +220,12 @@ signal processing/control interpretation: $ n $ inputs $ x_{i}, m $ outputs $ y_
     
 \end{definition}
 
+\begin{theorem}
+    矩阵-向量乘积函数$f(x)=A x$为一个线性函数： $$ A(\alpha x+\beta y)=\alpha(A x)+\beta(A y) $$
+\end{theorem}
+
 \begin{proof}
-    该函数为一个线性函数： $$ A(\alpha x+\beta y)=\alpha(A x)+\beta(A y) $$ 
+    
     
     任意一个线性函数都可以写成矩阵-向量乘积函数的形式
 
@@ -230,15 +235,19 @@ signal processing/control interpretation: $ n $ inputs $ x_{i}, m $ outputs $ y_
 \end{proof}
 
 \subsection{Matrix Power}
-
+It makes sense to multiply a square matrix $ A $ by itself to form $ A A $. 
 \begin{definition}[Matrix Power]
-    It makes sense to multiply a square matrix $ A $ by itself to form $ A A $. We refer to this matrix as $ A^{2} $. Similarly, if $ k $ is a positive integer, then $ k $ copies of $ A $ multiplied together is denoted $ A^{k} $. If $ k $ and $ l $ are positive integers, and $ A $ is square, then $ A^{k} A^{l}=A^{k+l} $ and $ \left(A^{k}\right)^{l}=A^{k l} $. 
+    We refer to this matrix as $ A^{2} $. Similarly, if $ k $ is a positive integer, then $ k $ copies of $ A $ multiplied together is denoted $ A^{k} $. 
     
     $$ \left(A^{\ell+1}\right)_{i j}=\sum_{k=1}^{n} A_{i k}\left(A^{\ell}\right)_{k j} $$
 
     By convention we take $ A^{0}=I $, which makes the
     formulas above hold for all nonnegative integer values of $k$ and $l$.
 \end{definition}
+
+\begin{theorem}
+    If $ k $ and $ l $ are positive integers, and $ A $ is square, then $ A^{k} A^{l}=A^{k+l} $ and $ \left(A^{k}\right)^{l}=A^{k l} $.
+\end{theorem}
 
  \begin{example}[Paths in a directed graph]
         $$ A_{i j}=\left\{\begin{array}{ll}1 & \text { there is a edge from vertex } j \text { to vertex } i \\ 0 & \text { otherwise }\end{array}\right. $$
@@ -253,7 +262,7 @@ signal processing/control interpretation: $ n $ inputs $ x_{i}, m $ outputs $ y_
 \subsubsection{一般矩阵的乘法}
 
 \begin{theorem}
-    Suppose $ C=A B $ with $ A $ of size $ m \times p $ and $ B $ of size $ p \times n $。
+    Suppose $ C=A B $ with $ A $ of size $ m \times p $ and $ B $ of size $ p \times n $.
 
     一般矩阵的矩阵乘法的算法复杂度是$O(mnp)$。
 \end{theorem}
@@ -327,7 +336,7 @@ $$
 
 \subsection{矩阵向量乘积复杂度}
 
-矩阵 $ A \in \mathbb{R}^{m \times n} $ 和向量 $ x \in \mathbb{R}^{n} $ 的乘积 $ \mathrm{y}=\mathrm{A} x $, 需要 $ (2 \mathrm{n}-1) \mathrm{m} $ flops;
+矩阵 $ A \in \mathbb{R}^{m \times n} $ 和向量 $ x \in \mathbb{R}^{n} $ 的乘积 $ {y}={A} x $, 需要 $ (2 {n}-1) {m} $ flops;
 
 乘积 $ y \in \mathbb{R}^{m} $ , 每个元素需要做向量内积, 需要 $ 2 n-1 $ flops;
 
@@ -353,14 +362,14 @@ $$
 \begin{definition}[单位矩阵]
     为方形矩阵, 其中对角线元素为1, 其它元素为0.
 
-    记作$I$或者 $ \mathrm{I}_{n} $.
+    记作$I$或者 $ {I}_{n} $.
 \end{definition}
 
 \begin{corollary}
-  $ \mathrm{I}_{n} $ 的每一列是一个单位向量, 例如
+  $ {I}_{n} $ 的每一列是一个单位向量, 例如
 
 $$
-\mathrm{I}_{3}=\left[\begin{array}{lll}
+{I}_{3}=\left[\begin{array}{lll}
 1 & 0 & 0 \\
 0 & 1 & 0 \\
 0 & 0 & 1
@@ -445,7 +454,7 @@ sparse matrix storage formats and algorithms exploit sparsity, efficiency depend
 \begin{example}[旋转矩阵]
     $$ A=\left[\begin{array}{cc}\cos \theta & -\sin \theta \\ \sin \theta & \cos \theta\end{array}\right] $$
 
-    $ \mathrm{A} x $ 将向量 $ x $ 进行旋转, 角度为 $ \theta $.
+    $ {A} x $ 将向量 $ x $ 进行旋转, 角度为 $ \theta $.
 \end{example}
 
 \begin{example}[Reflection Matrices]
@@ -567,7 +576,7 @@ $$
 
 
 \begin{definition}[一维卷积]
-    向量 $ a \in \mathbb{R}^{n} $ 和向量 $ b \in \mathbb{R}^{m} $ 的\textit{卷积}是一个 $ (\mathrm{n}+\mathrm{m}-1) $ 维向量 $ c \in \mathbb{R}^{m+\mathrm{n}-1} $
+    向量 $ a \in \mathbb{R}^{n} $ 和向量 $ b \in \mathbb{R}^{m} $ 的\textit{卷积}是一个 $ ({n}+{m}-1) $ 维向量 $ c \in \mathbb{R}^{m+{n}-1} $
 
     $$ c_{k}=\sum_{i+j=k+1} a_{i} b_{j}, \quad k=1, \ldots n+m-1 $$
 
@@ -673,7 +682,7 @@ $$\begin{aligned}
     假设向量$a$和$b$分别是以下多项式的系数
     $$ p(x)=a_{1}+a_{2} x+\cdots+a_{n} x^{n-1}, q(x)=b_{1}+b_{2} x+\cdots+b_{m} x^{m-1} $$
 
-    则 $ \mathrm{c}=\mathrm{a}^{*} \mathrm{~b} $ 是多项式 $ p(x) q(x) $ 的系数.
+    则 $ {c}={a}{*} {~b} $ 是多项式 $ p(x) q(x) $ 的系数.
 
     $$ p(x) q(x)=c_{1}+c_{2} x+\cdots+c_{m+n-1} x^{m+n-2} $$
 \end{corollary}
@@ -751,7 +760,7 @@ $$
 \end{definition}
 
 \begin{definition}[Vandermonde Matrices]
-    $ \mathrm{p}(\mathrm{t}) $ 在m个点中 $ t_{1}, t_{2}, \ldots, t_{m} $ 的值为
+    $ {p}({t}) $ 在m个点中 $ t_{1}, t_{2}, \ldots, t_{m} $ 的值为
     $$
     \left[\begin{array}{c}
     p\left(t_{1}\right) \\
@@ -844,9 +853,9 @@ x^{T} A x<0 \quad \exists x=\left[\begin{array}{l}
 $$
 \end{example}
 
-\begin{corollary}
+\begin{theorem}
     正定矩阵 $ A $ 都是非奇异的.
-\end{corollary}
+\end{theorem}
 
 \begin{proof}
     $$ A x=0 \quad \Rightarrow \quad x^{T} A x=0 \quad \Rightarrow \quad x=0 $$
@@ -871,10 +880,6 @@ $$
 A_{i i}=e_{i}^{T} A e_{i} \geq 0
 $$
 \end{theorem}
-
-
-
-
 
 
 \section{Gram 矩阵}
@@ -919,32 +924,33 @@ $$
 
 回想仿射函数、泰勒展开的定义。
 
-for fixed $ A \in \mathbf{R}^{m \times n}, b \in \mathbf{R}^{m} $, define a function $ f: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m} $ by
+For fixed $ A \in \mathbf{R}^{m \times n}, b \in \mathbf{R}^{m} $, define a function $ f: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m} $ by
 $$
 f(x)=A x+b
 $$
-i.e., a matrix-vector product plus a constant
+i.e., a matrix-vector product plus a constant.
 
-any function of this type is affine: if $ \alpha+\beta=1 $ then
+Any function of this type is affine: if $ \alpha+\beta=1 $ then
 $$
 A(\alpha x+\beta y)+b=\alpha(A x+b)+\beta(A y+b)
 $$
 
-every affine function can be written as $ f(x)=A x+b $ with:
+Every affine function can be written as $ f(x)=A x+b $ with:
 $$
 A=\left[\begin{array}{llll}
 f\left(e_{1}\right)-f(0) & f\left(e_{2}\right)-f(0) & \cdots & f\left(e_{n}\right)-f(0)
 \end{array}\right]
 $$
-and $ b=f(0) $
+and $ b=f(0) $.
 
 \begin{theorem}
-    first-order Taylor approximation of differentiable $ f: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m} $ around $ z $ :
+    First-order Taylor approximation of differentiable $ f: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m} $ around $ z $
+
 $$
-\widehat{f_{i}}(x)=f_{i}(z)+\frac{\partial f_{i}}{\partial x_{1}}(z)\left(x_{1}-z_{1}\right)+\cdots+\frac{\partial f_{i}}{\partial x_{n}}(z)\left(x_{n}-z_{n}\right), \quad i=1, \ldots, m
+\hat{f_{i}}(x)=f_{i}(z)+\frac{\partial f_{i}}{\partial x_{1}}(z)\left(x_{1}-z_{1}\right)+\cdots+\frac{\partial f_{i}}{\partial x_{n}}(z)\left(x_{n}-z_{n}\right), \quad i=1, \ldots, m
 $$
 
-in matrix-vector notation: $ \widehat{f}(x)=f(z)+D f(z)(x-z) $ where
+in matrix-vector notation: $ \hat{f}(x)=f(z)+D f(z)(x-z) $ where
 $$
 D f(z)=\left[\begin{array}{cccc}
 \frac{\partial f_{1}}{\partial x_{1}}(z) & \frac{\partial f_{1}}{\partial x_{2}}(z) & \cdots & \frac{\partial f_{1}}{\partial x_{n}}(z) \\
@@ -959,7 +965,7 @@ D f(z)=\left[\begin{array}{cccc}
 \end{array}\right]
 $$
 
-$ D f(z) $ is called the derivative matrix or Jacobian matrix of $ f $ at $ z $, $ \widehat{f} $ is a local affine approximation of $ f $ around $ z $.
+$ D f(z) $ is called the \term{derivative matrix} or \term{Jacobian matrix} of $ f $ at $ z $, $ \hat{f} $ is a local affine approximation of $ f $ around $ z $.
 \end{theorem}
 
 
@@ -1064,21 +1070,21 @@ $ D f(z) $ is called the derivative matrix or Jacobian matrix of $ f $ at $ z $,
 \end{definition}
 
 \begin{proof}
-    For any $A$ Choose $x$ to be the eigenvector of $A^{\mathrm{T}} A$ with largest eigenvalue $\lambda_{\max } .$ The ratio in equation \ref{eqn:a-l2-norm} is $\boldsymbol{x}^{\mathrm{T}} A^{\mathrm{T}} A \boldsymbol{x}=\boldsymbol{x}^{\mathrm{T}}\left(\lambda_{\max }\right) \boldsymbol{x}$ divided by $\boldsymbol{x}^{\mathrm{T}} \boldsymbol{x}$. This is $\lambda_{\max }$.
+    For any $A$ Choose $x$ to be the eigenvector of $A^{{T}} A$ with largest eigenvalue $\lambda_{\max } .$ The ratio in equation \ref{eqn:a-l2-norm} is $\boldsymbol{x}^{{T}} A^{{T}} A \boldsymbol{x}=\boldsymbol{x}^{{T}}\left(\lambda_{\max }\right) \boldsymbol{x}$ divided by $\boldsymbol{x}^{{T}} \boldsymbol{x}$. This is $\lambda_{\max }$.
 
-No $\boldsymbol{x}$ can give a larger ratio. The symmetric matrix $A^{\mathrm{T}} A$ has eigenvalues $\lambda_{1}, \ldots, \lambda_{n}$ and orthonormal eigenvectors $q_{1}, \boldsymbol{q}_{2}, \ldots, \boldsymbol{q}_{n} .$ Every $\boldsymbol{x}$ is a combination of those vectors. Try this combination in the ratio and remember that $\boldsymbol{q}_{i}^{\mathrm{T}} \boldsymbol{q}_{j}=0$ :
+No $\boldsymbol{x}$ can give a larger ratio. The symmetric matrix $A^{{T}} A$ has eigenvalues $\lambda_{1}, \ldots, \lambda_{n}$ and orthonormal eigenvectors $q_{1}, \boldsymbol{q}_{2}, \ldots, \boldsymbol{q}_{n} .$ Every $\boldsymbol{x}$ is a combination of those vectors. Try this combination in the ratio and remember that $\boldsymbol{q}_{i}^{{T}} \boldsymbol{q}_{j}=0$ :
 $$
-\frac{\boldsymbol{x}^{\mathrm{T}} A^{\mathrm{T}} A \boldsymbol{x}}{\boldsymbol{x}^{\mathrm{T}} \boldsymbol{x}}=\frac{\left(c_{1} \boldsymbol{q}_{1}+\cdots+c_{n} \boldsymbol{q}_{n}\right)^{\mathrm{T}}\left(c_{1} \lambda_{1} \boldsymbol{q}_{1}+\cdots+c_{n} \lambda_{n} \boldsymbol{q}_{n}\right)}{\left(c_{1} \boldsymbol{q}_{1}+\cdots+c_{n} \boldsymbol{q}_{n}\right)^{\mathrm{T}}\left(c_{1} \boldsymbol{q}_{1}+\cdots+c_{n} \boldsymbol{q}_{n}\right)}=\frac{c_{1}^{2} \lambda_{1}+\cdots+c_{n}^{2} \lambda_{n}}{c_{1}^{2}+\cdots+c_{n}^{2}}
+\frac{\boldsymbol{x}^{{T}} A^{{T}} A \boldsymbol{x}}{\boldsymbol{x}^{{T}} \boldsymbol{x}}=\frac{\left(c_{1} \boldsymbol{q}_{1}+\cdots+c_{n} \boldsymbol{q}_{n}\right)^{{T}}\left(c_{1} \lambda_{1} \boldsymbol{q}_{1}+\cdots+c_{n} \lambda_{n} \boldsymbol{q}_{n}\right)}{\left(c_{1} \boldsymbol{q}_{1}+\cdots+c_{n} \boldsymbol{q}_{n}\right)^{{T}}\left(c_{1} \boldsymbol{q}_{1}+\cdots+c_{n} \boldsymbol{q}_{n}\right)}=\frac{c_{1}^{2} \lambda_{1}+\cdots+c_{n}^{2} \lambda_{n}}{c_{1}^{2}+\cdots+c_{n}^{2}}
 $$
 The maximum ratio $\lambda_{\max }$ is when all $c$ 's are zero, except the one that multiplies $\lambda_{\max }$.
 \end{proof}
 
 \begin{remark}
-    The ratio in equation \ref{eqn:a-l2-norm} is the Rayleigh quotient for the symmetric matrix $A^{\mathrm{T}} A$. Its maximum is the largest eigenvalue $\lambda_{\max }\left(A^{\mathrm{T}} A\right) .$ The minimum ratio is $\lambda_{\min }\left(A^{\mathrm{T}} A\right)$. If you substitute any vector $\boldsymbol{x}$ into the Rayleigh quotient $\boldsymbol{x}^{\mathrm{T}} A^{\mathrm{T}} A \boldsymbol{x} / \boldsymbol{x}^{\mathrm{T}} \boldsymbol{x}$, you are guaranteed to get a number between $\lambda_{\min }\left(A^{\mathrm{T}} A\right)$ and $\lambda_{\max }\left(A^{\mathrm{T}} A\right)$.
+    The ratio in equation \ref{eqn:a-l2-norm} is the Rayleigh quotient for the symmetric matrix $A^{{T}} A$. Its maximum is the largest eigenvalue $\lambda_{\max }\left(A^{{T}} A\right) .$ The minimum ratio is $\lambda_{\min }\left(A^{{T}} A\right)$. If you substitute any vector $\boldsymbol{x}$ into the Rayleigh quotient $\boldsymbol{x}^{{T}} A^{{T}} A \boldsymbol{x} / \boldsymbol{x}^{{T}} \boldsymbol{x}$, you are guaranteed to get a number between $\lambda_{\min }\left(A^{{T}} A\right)$ and $\lambda_{\max }\left(A^{{T}} A\right)$.
 \end{remark}
 
 \begin{remark}
-    The norm $\|A\|$ equals the largest singular value $\sigma_{\max }$ of $A$. The singular values $\sigma_{1}, \ldots, \sigma_{r}$ are the square roots of the positive eigenvalues of $A^{\mathrm{T}} A$. So certainly $\sigma_{\max }=\left(\lambda_{\max }\right)^{1 / 2}$. Since $U$ and $V$ are orthogonal in $A=U \Sigma V^{\mathrm{T}}$, the norm is $\|\boldsymbol{A}\|=$ $\sigma_{\max }$.
+    The norm $\|A\|$ equals the largest singular value $\sigma_{\max }$ of $A$. The singular values $\sigma_{1}, \ldots, \sigma_{r}$ are the square roots of the positive eigenvalues of $A^{{T}} A$. So certainly $\sigma_{\max }=\left(\lambda_{\max }\right)^{1 / 2}$. Since $U$ and $V$ are orthogonal in $A=U \Sigma V^{{T}}$, the norm is $\|\boldsymbol{A}\|=$ $\sigma_{\max }$.
 \end{remark}
 
 \begin{example}

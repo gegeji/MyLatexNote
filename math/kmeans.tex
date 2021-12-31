@@ -59,7 +59,7 @@ $$
 \end{remark}
 
 \begin{example}
-    $$ f(x)=-x^{2},  x \in \mathbb{R}, \hat{x}=\operatorname{argmin}_{\mathbb{R}} f(x) $$
+    $$ f(x)=-x^{2},  x \in \mathbb{R}, \hat{x}=\arg \min _{\mathbb{R}} f(x) $$
 
     $ \nabla f(\hat{x})=0 $, 则有 $ -2 \hat{x}=0 $, 即 $ \hat{x}=0 $.
 
@@ -426,7 +426,8 @@ $$ \sum_{i=1}^{n}\left(x_{i}-m\right)=\sum_{i=1}^{n} x_{i}-n m=\sum_{i=1}^{n} x_
 \begin{problem}
     $$ \min _{z_{j}} \sum_{i \in G_{j}}\left\|x_{i}-z_{j}\right\|_{2}^{2}, j=1, \cdots, k $$
 
-    $$ c_{i}=\underset{j=\{1, \cdots, k\}}{\operatorname{argmin}}\left\|x_{i}-z_{j}\right\|_{2}^{2}, i=1,2, \ldots, N $$
+    $$ c_{i}=
+    \arg \min_{j=\{1, \cdots, k\}} \left\|x_{i}-z_{j}\right\|_{2}^{2}, i=1,2, \ldots, N $$
 
     
 \end{problem}
@@ -444,7 +445,7 @@ $k$-means算法是将 $ {N} $ 向量 $ x_{i} \in \mathbb{R}^{n} $ 划分成$k$�
 \begin{proof}
     更新聚类标签 $ c_{i} $:
 
-    $$ \left\|x_{i}-z_{j}\right\|_{2}^{2}=\operatorname{argmin}\left\{\left\|x_{i}-z_{1}\right\|_{2}^{2},\left\|x_{i}-z_{2}\right\|_{2}^{2}, \cdots,\left\|x_{i}-z_{k}\right\|_{2}^{2}\right\} $$
+    $$ \left\|x_{i}-z_{j}\right\|_{2}^{2}=\arg \min \left\{\left\|x_{i}-z_{1}\right\|_{2}^{2},\left\|x_{i}-z_{2}\right\|_{2}^{2}, \cdots,\left\|x_{i}-z_{k}\right\|_{2}^{2}\right\} $$
 
     更新聚类中心 $ z_{j} $：
 

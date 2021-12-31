@@ -215,7 +215,7 @@ $$
 \end{corollary}
 
 \begin{definition}[$n$维向量的一个标准正交基]
-    当 $ k=n $ 时,  $ a_{1}, \ldots, a_{n} $ 是 $ n $ 维向量的一个标准正交基. 
+    当 $ k=n $ 时,  $ a_{1}, \ldots, a_{n} $ 是 $ n $ 维向量的一个\term{标准正交基}. 
 \end{definition}
 
 \begin{definition}[ $ x $ 在标准正交基下的标准正交分解]
@@ -243,11 +243,12 @@ $$
     \caption{Gram-Schmidt Algorithm}
     \KwIn{$ \mathrm{n} $ 维向量 $ a_{1}, \ldots, a_{k} $}
     \KwOut{若这些向量线性无关，返回标准正交基$ q_{1}, \ldots, q_{k} $；若线性相关时判断 $a_j$ 是 $ a_{1}, \ldots, a_{j-1} $ 的线性组合 }
-    $ q_{1}=a_{1} /\left\|a_{1}\right\|_{2} $\;
+    $ q_{1}= \dfrac{a_{1}}{\left\|a_{1}\right\|_{2}}   $\;
     \While(){$i=2,\cdots,k$}{
         正交化: $ \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $\;
         检验线性相关：如果 $ \widetilde{q}_{i}=0 $, 提前退出迭代\;
-        单位化: $ q_{i}=\widetilde{q}_{i} /\left\|\widetilde{q}_{i}\right\|_{2} $\;
+        单位化: $
+        q_{i}=\dfrac{\widetilde{q}_{i}}{\left\|\widetilde{q}_{i}\right\|_{2}}$\;
     }
 \end{algorithm}
 
@@ -257,12 +258,12 @@ $$
 
 \begin{theorem}
     \label{thm: qs-are-orthogonal}
-
+    Gram-Schmidt正交化算法得到的
     $q_{1}, \ldots, q_{i-1}, q_{i} $ 是标准正交的. 
 \end{theorem}
 
 \begin{proof}
-    假设第 $ i-1 $ 次迭代成立,  即: $ \quad q_{r} \perp q_{s}, \forall r, s<i $.
+    假设第 $ i-1 $ 次迭代成立,  即: $$ \quad q_{r} \perp q_{s}, \forall r, s<i $$
 
     正交化步骤保证有以下关系成立
     $$ \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
@@ -275,10 +276,11 @@ $$
 
      $\therefore \widetilde{q}_{i} \perp q_{1}, \ldots, \widetilde{q}_{i} \perp q_{i-1} $.
 
-    单位化步骤保证了 $ q_{i}=\widetilde{q}_{i} /\left\|\widetilde{q}_{i}\right\|_{2} $, 即 $ q_{1}, \ldots, q_{i} $ 是标准正交. 
+    单位化步骤保证了 $
+    q_{i}=\dfrac{\widetilde{q}_{i}}{\left\|\widetilde{q}_{i}\right\|_{2}}$, 即 $ q_{1}, \ldots, q_{i} $ 是标准正交. 
 \end{proof}
 
-\begin{algorithm}
+\begin{algorithm}[htbp]
     \caption{Gram-Schmidt Algorithm for Three Vectors}
     \KwIn{Three independent vectors $ \boldsymbol{a}, \boldsymbol{b}, \boldsymbol{c} $}
     \KwOut{Three orthonormal vectors $ \boldsymbol{q}_{1}=\boldsymbol{A} /\|\boldsymbol{A}\|, \boldsymbol{q}_{2}=\boldsymbol{B} /\|\boldsymbol{B}\|, \boldsymbol{q}_{3}=\boldsymbol{C} /\|\boldsymbol{C}\| $.}
@@ -290,7 +292,7 @@ $$
 
 \subsection{The Analysis of Gram-Schmidt Algorithm}
 
-假设Gram-Schmidt 正交法未在第$i$次迭代提前终止:
+假设Gram-Schmidt 正交法未在第$i$次迭代提前终止.
 
 \begin{corollary}
     $ a_{i} $ 是 $ q_{1}, \ldots, q_{i} $ 的一个线性组合.
@@ -299,11 +301,14 @@ $$
 \end{corollary}
 
 \begin{proof}
+    由
     $$ \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
 
+    所以
     $$a_{i}= \widetilde{q}_{i}+\left(q_{1}^{T} a_{i}\right) q_{1}+\cdots+\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
 
-    注意有性质: $ q_{i}=\widetilde{q}_{i} /\left\|\widetilde{q}_{i}\right\|_{2} $.
+    注意有性质: $
+    q_{i}=\dfrac{\widetilde{q}_{i}}{\left\|\widetilde{q}_{i}\right\|_{2}}$, 即 $ q_{1}, \ldots, q_{i} $.
 
     $$ a_{i}=\left\|\tilde{q}_{i}\right\|_{2} q_{i}+\left(q_{1}^{T} a_{i}\right) q_{1}+\cdots+\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
 \end{proof}
@@ -335,7 +340,7 @@ $$ q_{3}=
 \end{proof}
 
 
-假设Schmidt正交法在第$j$次迭代提前终止：
+假设Schmidt正交法在第$j$次迭代提前终止。
 
 \begin{corollary}
     $ a_{j} $ 是 $ q_{1}, \ldots, q_{j-1} $ 的一个线性组合.
@@ -345,10 +350,12 @@ $$ a_{j}=\left(q_{1}^{T} a_{j}\right) q_{1}+\cdots+\left(q_{j-1}^{T} a_{j}\right
 
 
 \begin{proof}
-    $$ \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
+    $$\begin{aligned}
+        \widetilde{q}_{i} &=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} \\
+        0 &=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1}
+    \end{aligned}$$
 
-    $$ 0=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
-
+    所以
     $$ a_{i}=\left\|\tilde{q}_{i}\right\|_{2} q_{i}+\left(q_{1}^{T} a_{i}\right) q_{1}+\cdots+\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
 \end{proof}
 
