@@ -1,890 +1,888 @@
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~1\hspace {0.5em}对向量的介绍}{12}{section.1.1}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~1\hspace {0.5em}对向量的介绍}{14}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.2.1}{}}{14}{dummy.1.2.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.2.1}{}}{16}{dummy.1.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {1.2.2}{}}{14}{dummy.1.2.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {1.2.2}{}}{16}{dummy.1.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {1.2.3}{}}{14}{dummy.1.2.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {1.2.3}{}}{16}{dummy.1.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.3.1}{}}{14}{dummy.1.3.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.3.1}{}}{16}{dummy.1.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {1.3.2}{向量位移相加}}{15}{dummy.1.3.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {1.3.2}{向量位移相加}}{17}{dummy.1.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.3.3}{}}{15}{dummy.1.3.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.3.3}{}}{17}{dummy.1.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.3.4}{}}{15}{dummy.1.3.4}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.3.4}{}}{17}{dummy.1.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.4.1}{}}{16}{dummy.1.4.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.4.1}{}}{18}{dummy.1.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {1.4.2}{选出第$i$项}}{16}{dummy.1.4.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {1.4.2}{选出第$i$项}}{18}{dummy.1.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {1.4.3}{向量每一项之和}}{17}{dummy.1.4.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {1.4.3}{向量每一项之和}}{19}{dummy.1.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {1.4.4}{向量每一项的平方和}}{17}{dummy.1.4.4}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {1.4.4}{向量每一项的平方和}}{19}{dummy.1.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {1.4.5}{向量元素的平均值}}{17}{dummy.1.4.5}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {1.4.5}{向量元素的平均值}}{19}{dummy.1.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {1.4.6}{Selective sum}}{17}{dummy.1.4.6}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {1.4.6}{Selective sum}}{19}{dummy.1.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {1.4.7}{Differencing}}{17}{dummy.1.4.7}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {1.4.7}{Differencing}}{19}{dummy.1.4.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.6.1}{Cauchy-Schwartz Inequality}}{18}{dummy.1.6.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.6.1}{Cauchy-Schwartz Inequality}}{20}{dummy.1.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.6.2}{Cauchy-Schwarz 不等式的矩阵元素形式}}{18}{dummy.1.6.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.6.2}{Cauchy-Schwarz 不等式的矩阵元素形式}}{20}{dummy.1.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {1.6.3}{Cauchy-Schwarz不等式的等价形式}}{19}{dummy.1.6.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {1.6.3}{Cauchy-Schwarz不等式的等价形式}}{21}{dummy.1.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.7.1}{通过浮点运算次数大致预测程序的运行时间}}{19}{dummy.1.7.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.7.1}{通过浮点运算次数大致预测程序的运行时间}}{21}{dummy.1.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {1.7.2}{}}{20}{dummy.1.7.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {1.7.2}{}}{22}{dummy.1.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.1}{}}{20}{dummy.1.8.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.1}{}}{22}{dummy.1.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.2}{}}{20}{dummy.1.8.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.2}{}}{22}{dummy.1.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.3}{}}{20}{dummy.1.8.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.3}{}}{22}{dummy.1.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.4}{}}{21}{dummy.1.8.4}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.4}{}}{23}{dummy.1.8.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.5}{Euler's formula}}{21}{dummy.1.8.5}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.5}{Euler's formula}}{23}{dummy.1.8.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.6}{}}{22}{dummy.1.8.6}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.6}{}}{24}{dummy.1.8.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.7}{}}{22}{dummy.1.8.7}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.7}{}}{24}{dummy.1.8.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.8}{}}{22}{dummy.1.8.8}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.8}{}}{24}{dummy.1.8.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.9}{}}{22}{dummy.1.8.9}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.9}{}}{24}{dummy.1.8.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.10}{}}{22}{dummy.1.8.10}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.10}{}}{24}{dummy.1.8.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.11}{}}{22}{dummy.1.8.11}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.11}{}}{24}{dummy.1.8.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.12}{}}{22}{dummy.1.8.12}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {1.8.12}{}}{24}{dummy.1.8.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~2\hspace {0.5em}Linear Function}{23}{section.2.1}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~2\hspace {0.5em}Linear Function}{25}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {2.1.1}{}}{23}{dummy.2.1.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {2.1.1}{}}{25}{dummy.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {2.1.2}{}}{24}{dummy.2.1.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {2.1.2}{}}{26}{dummy.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {2.1.3}{}}{24}{dummy.2.1.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {2.1.3}{}}{26}{dummy.2.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {2.1.4}{}}{24}{dummy.2.1.4}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {2.1.4}{}}{26}{dummy.2.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {2.2.1}{}}{25}{dummy.2.2.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {2.2.1}{}}{27}{dummy.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {2.2.2}{}}{25}{dummy.2.2.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {2.2.2}{}}{27}{dummy.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {2.2.3}{restricted superposition property}}{25}{dummy.2.2.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {2.2.3}{restricted superposition property}}{27}{dummy.2.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {2.2.4}{}}{26}{dummy.2.2.4}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {2.2.4}{}}{28}{dummy.2.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {2.2.5}{}}{26}{dummy.2.2.5}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {2.2.5}{}}{28}{dummy.2.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {2.3.1}{一阶泰勒公式的内积形式}}{27}{dummy.2.3.1}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {2.3.1}{一阶泰勒公式的内积形式}}{29}{dummy.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {2.4.1}{$n$阶泰勒多项式}}{27}{dummy.2.4.1}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {2.4.1}{$n$阶泰勒多项式}}{29}{dummy.2.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {2.4.2}{对于高阶余项的公式}}{27}{dummy.2.4.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {2.4.2}{对于高阶余项的公式}}{29}{dummy.2.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {2.4.3}{麦克劳林(Maclaurin)公式}}{27}{dummy.2.4.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {2.4.3}{麦克劳林(Maclaurin)公式}}{29}{dummy.2.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~3\hspace {0.5em}Norm and Distance}{29}{section.3.1}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~3\hspace {0.5em}Norm and Distance}{31}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {3.1.1}{}}{30}{dummy.3.1.1}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {3.1.1}{}}{32}{dummy.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {3.1.2}{$ \ell _{2} $-Norm of block vector}}{30}{dummy.3.1.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {3.1.2}{$ \ell _{2} $-Norm of block vector}}{32}{dummy.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.1.3}{}}{30}{dummy.3.1.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.1.3}{}}{32}{dummy.3.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {3.1.4}{}}{30}{dummy.3.1.4}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {3.1.4}{}}{32}{dummy.3.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {3.1.5}{用$ \ell _{2} $范数表示的Cauchy-Schwarz（柯西—施瓦茨）不等式}}{31}{dummy.3.1.5}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {3.1.5}{用$ \ell _{2} $范数表示的Cauchy-Schwarz（柯西—施瓦茨）不等式}}{33}{dummy.3.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.1.6}{Minkowski Inequality}}{31}{dummy.3.1.6}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.1.6}{Minkowski Inequality}}{33}{dummy.3.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.1.7}{Hölder Inequality}}{32}{dummy.3.1.7}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.1.7}{Hölder Inequality}}{34}{dummy.3.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.2.1}{}}{32}{dummy.3.2.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.2.1}{}}{34}{dummy.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.3.1}{Chebyshev's Inequality}}{32}{dummy.3.3.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.3.1}{Chebyshev's Inequality}}{34}{dummy.3.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.3.2}{Chebyshev's Inequality}}{32}{dummy.3.3.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.3.2}{Chebyshev's Inequality}}{34}{dummy.3.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {3.3.3}{Chebyshev's Inequality Using RMS}}{33}{dummy.3.3.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {3.3.3}{Chebyshev's Inequality Using RMS}}{35}{dummy.3.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.4.1}{}}{33}{dummy.3.4.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.4.1}{}}{35}{dummy.3.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {3.4.2}{}}{33}{dummy.3.4.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {3.4.2}{}}{35}{dummy.3.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.4.3}{Trianglar Inequality}}{33}{dummy.3.4.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.4.3}{Trianglar Inequality}}{35}{dummy.3.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {3.5.1}{}}{34}{dummy.3.5.1}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {3.5.1}{}}{36}{dummy.3.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.5.2}{}}{34}{dummy.3.5.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.5.2}{}}{36}{dummy.3.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.6.1}{}}{35}{dummy.3.6.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.6.1}{}}{37}{dummy.3.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.6.2}{}}{35}{dummy.3.6.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.6.2}{}}{37}{dummy.3.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {3.1}{}}{36}{problemT.3.1}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {3.1}{}}{38}{problemT.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.7.1}{}}{36}{dummy.3.7.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.7.1}{}}{38}{dummy.3.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {3.7.2}{}}{36}{dummy.3.7.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {3.7.2}{}}{38}{dummy.3.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {3.7.3}{}}{36}{dummy.3.7.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {3.7.3}{}}{38}{dummy.3.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {3.7.4}{}}{37}{dummy.3.7.4}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {3.7.4}{}}{39}{dummy.3.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {3.2}{}}{37}{problemT.3.2}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {3.2}{}}{39}{problemT.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {3.3}{}}{38}{problemT.3.3}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {3.3}{}}{40}{problemT.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.9.1}{Positive definiteness}}{38}{dummy.3.9.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.9.1}{Positive definiteness}}{40}{dummy.3.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.9.2}{Homogeneous}}{38}{dummy.3.9.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.9.2}{Homogeneous}}{40}{dummy.3.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.9.3}{Triangle inequality}}{38}{dummy.3.9.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.9.3}{Triangle inequality}}{40}{dummy.3.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.9.4}{Cauchy–Schwarz inequality for complex vectors}}{38}{dummy.3.9.4}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {3.9.4}{Cauchy–Schwarz inequality for complex vectors}}{40}{dummy.3.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {4.1}{}}{39}{problemT.4.1}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {4.1}{}}{41}{problemT.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~4\hspace {0.5em}优化问题初步}{39}{problemT.4.1}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~4\hspace {0.5em}优化问题初步}{41}{problemT.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {4.1.1}{}}{39}{dummy.4.1.1}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {4.1.1}{}}{41}{dummy.4.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {4.1.2}{凸优化求解的必要条件}}{39}{dummy.4.1.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {4.1.2}{凸优化求解的必要条件}}{41}{dummy.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {4.2.1}{可微函数$f$是凸函数的充要条件}}{41}{dummy.4.2.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {4.2.1}{可微函数$f$是凸函数的充要条件}}{43}{dummy.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {4.2.2}{}}{42}{dummy.4.2.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {4.2.2}{}}{44}{dummy.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {4.2}{}}{44}{problemT.4.2}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {4.2}{}}{46}{problemT.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {4.3}{}}{45}{problemT.4.3}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {4.3}{}}{47}{problemT.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~5\hspace {0.5em}Linear Independence}{47}{section.5.1}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~5\hspace {0.5em}Linear Independence}{49}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.1.1}{}}{47}{dummy.5.1.1}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.1.1}{}}{49}{dummy.5.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.1.2}{}}{47}{dummy.5.1.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.1.2}{}}{49}{dummy.5.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.1.3}{}}{47}{dummy.5.1.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.1.3}{}}{49}{dummy.5.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.1.4}{}}{47}{dummy.5.1.4}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.1.4}{}}{49}{dummy.5.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.1.5}{}}{48}{dummy.5.1.5}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.1.5}{}}{50}{dummy.5.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.1.6}{}}{48}{dummy.5.1.6}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.1.6}{}}{50}{dummy.5.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.1.7}{}}{48}{dummy.5.1.7}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.1.7}{}}{50}{dummy.5.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {5.1.8}{}}{48}{dummy.5.1.8}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {5.1.8}{}}{50}{dummy.5.1.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.3.1}{}}{49}{dummy.5.3.1}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.3.1}{}}{51}{dummy.5.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {5.3.2}{}}{49}{dummy.5.3.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {5.3.2}{}}{51}{dummy.5.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.3.3}{}}{50}{dummy.5.3.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.3.3}{}}{52}{dummy.5.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.3.4}{}}{50}{dummy.5.3.4}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.3.4}{}}{52}{dummy.5.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {5.4.1}{}}{51}{dummy.5.4.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {5.4.1}{}}{53}{dummy.5.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.4.2}{}}{51}{dummy.5.4.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.4.2}{}}{53}{dummy.5.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.4.3}{}}{52}{dummy.5.4.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.4.3}{}}{54}{dummy.5.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.4.4}{}}{52}{dummy.5.4.4}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.4.4}{}}{54}{dummy.5.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.4.5}{}}{53}{dummy.5.4.5}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.4.5}{}}{55}{dummy.5.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.4.6}{}}{53}{dummy.5.4.6}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.4.6}{}}{55}{dummy.5.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~6\hspace {0.5em}Matrices}{55}{section.6.1}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~6\hspace {0.5em}Matrices}{57}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {6.2.1}{转置的性质}}{56}{dummy.6.2.1}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {6.2.1}{转置的性质}}{58}{dummy.6.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {6.2.2}{共轭转置的性质}}{57}{dummy.6.2.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {6.2.2}{共轭转置的性质}}{59}{dummy.6.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {6.2.3}{矩阵乘法性质}}{57}{dummy.6.2.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {6.2.3}{矩阵乘法性质}}{59}{dummy.6.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {6.2.4}{}}{58}{dummy.6.2.4}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {6.2.4}{}}{60}{dummy.6.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {6.2.5}{}}{59}{dummy.6.2.5}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {6.2.5}{}}{61}{dummy.6.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {6.2.6}{}}{59}{dummy.6.2.6}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {6.2.6}{}}{61}{dummy.6.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {6.3.1}{}}{60}{dummy.6.3.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {6.3.1}{}}{62}{dummy.6.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {6.3.2}{}}{60}{dummy.6.3.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {6.3.2}{}}{62}{dummy.6.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {6.3.3}{}}{60}{dummy.6.3.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {6.3.3}{}}{62}{dummy.6.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {6.4.1}{}}{61}{dummy.6.4.1}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {6.4.1}{}}{63}{dummy.6.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {6.4.2}{}}{69}{dummy.6.4.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {6.4.2}{}}{71}{dummy.6.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {6.4.3}{卷积性质}}{69}{dummy.6.4.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {6.4.3}{卷积性质}}{71}{dummy.6.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {6.4.4}{}}{69}{dummy.6.4.4}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {6.4.4}{}}{71}{dummy.6.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {6.5.1}{}}{71}{dummy.6.5.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {6.5.1}{}}{73}{dummy.6.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {6.5.2}{正定矩阵对角元素性质}}{71}{dummy.6.5.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {6.5.2}{正定矩阵对角元素性质}}{73}{dummy.6.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {6.5.3}{半正定矩阵对角元素性质}}{72}{dummy.6.5.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {6.5.3}{半正定矩阵对角元素性质}}{74}{dummy.6.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {6.6.1}{}}{72}{dummy.6.6.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {6.6.1}{}}{74}{dummy.6.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {6.6.2}{}}{72}{dummy.6.6.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {6.6.2}{}}{74}{dummy.6.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {6.6.3}{}}{72}{dummy.6.6.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {6.6.3}{}}{74}{dummy.6.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {6.7.1}{}}{73}{dummy.6.7.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {6.7.1}{}}{75}{dummy.6.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~7\hspace {0.5em}Matrices Norms}{74}{section.7.1}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~7\hspace {0.5em}Matrices Norms}{76}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {7.1.1}{算子范数服从乘法范数相容性}}{75}{dummy.7.1.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {7.1.1}{算子范数服从乘法范数相容性}}{77}{dummy.7.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {7.1.2}{}}{77}{dummy.7.1.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {7.1.2}{}}{79}{dummy.7.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~8\hspace {0.5em}适定问题}{78}{section.8.1}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~8\hspace {0.5em}适定问题}{80}{section.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {8.2.1}{绝对误差的界限}}{79}{dummy.8.2.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {8.2.1}{绝对误差的界限}}{81}{dummy.8.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {8.3.1}{相对误差的界限}}{79}{dummy.8.3.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {8.3.1}{相对误差的界限}}{81}{dummy.8.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {8.3.2}{非奇异矩阵 $ A $ 的条件数(condition number)性质}}{80}{dummy.8.3.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {8.3.2}{非奇异矩阵 $ A $ 的条件数(condition number)性质}}{82}{dummy.8.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~9\hspace {0.5em}Inverse of Matrices}{82}{section.9.1}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~9\hspace {0.5em}Inverse of Matrices}{85}{section.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.1.1}{}}{83}{dummy.9.1.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.1.1}{}}{86}{dummy.9.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.1.2}{}}{83}{dummy.9.1.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.1.2}{}}{86}{dummy.9.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.1.3}{}}{83}{dummy.9.1.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.1.3}{}}{86}{dummy.9.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.1.4}{}}{83}{dummy.9.1.4}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.1.4}{}}{86}{dummy.9.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.2.1}{}}{84}{dummy.9.2.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.2.1}{}}{87}{dummy.9.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.2.2}{}}{84}{dummy.9.2.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.2.2}{}}{87}{dummy.9.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.2.3}{}}{84}{dummy.9.2.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.2.3}{}}{87}{dummy.9.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.4.1}{}}{85}{dummy.9.4.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.4.1}{}}{88}{dummy.9.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.4.2}{}}{85}{dummy.9.4.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.4.2}{}}{88}{dummy.9.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {9.4.3}{}}{85}{dummy.9.4.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {9.4.3}{}}{88}{dummy.9.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.4.4}{}}{86}{dummy.9.4.4}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.4.4}{}}{89}{dummy.9.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.4.5}{}}{86}{dummy.9.4.5}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.4.5}{}}{89}{dummy.9.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {9.4.6}{}}{86}{dummy.9.4.6}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {9.4.6}{}}{89}{dummy.9.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.4.7}{}}{86}{dummy.9.4.7}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.4.7}{}}{89}{dummy.9.4.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.5.1}{转置 $ A^{T} $ 和共轭转置 $ A^{ {H}} $ }}{87}{dummy.9.5.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.5.1}{转置 $ A^{T} $ 和共轭转置 $ A^{ {H}} $ }}{90}{dummy.9.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {9.5.2}{}}{87}{dummy.9.5.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {9.5.2}{}}{90}{dummy.9.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {9.6.1}{Gram Matrix 可逆等价于$A$列线性无关}}{87}{dummy.9.6.1}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {9.6.1}{Gram Matrix 可逆等价于$A$列线性无关}}{90}{dummy.9.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.7.1}{}}{88}{dummy.9.7.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.7.1}{}}{91}{dummy.9.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.7.2}{}}{88}{dummy.9.7.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.7.2}{}}{91}{dummy.9.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.7.3}{}}{88}{dummy.9.7.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.7.3}{}}{91}{dummy.9.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.7.4}{}}{88}{dummy.9.7.4}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.7.4}{}}{91}{dummy.9.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {9.7.5}{}}{88}{dummy.9.7.5}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {9.7.5}{}}{91}{dummy.9.7.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {9.7.6}{}}{88}{dummy.9.7.6}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {9.7.6}{}}{91}{dummy.9.7.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.7.7}{}}{89}{dummy.9.7.7}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {9.7.7}{}}{92}{dummy.9.7.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.1.1}{}}{91}{dummy.10.1.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.1.1}{}}{94}{dummy.10.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.1.2}{}}{92}{dummy.10.1.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.1.2}{}}{95}{dummy.10.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.1.3}{}}{92}{dummy.10.1.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.1.3}{}}{95}{dummy.10.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.1.4}{}}{92}{dummy.10.1.4}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.1.4}{}}{95}{dummy.10.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.1.5}{}}{92}{dummy.10.1.5}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.1.5}{}}{95}{dummy.10.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.1.6}{}}{92}{dummy.10.1.6}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.1.6}{}}{95}{dummy.10.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.1.7}{}}{93}{dummy.10.1.7}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.1.7}{}}{96}{dummy.10.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.1.8}{}}{93}{dummy.10.1.8}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.1.8}{}}{96}{dummy.10.1.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~10\hspace {0.5em}Orthogonal Matrices}{93}{section.10.2}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~10\hspace {0.5em}Orthogonal Matrices}{96}{section.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.2.1}{正交矩阵满足非奇异性}}{93}{dummy.10.2.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.2.1}{正交矩阵满足非奇异性}}{96}{dummy.10.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {10.2.2}{}}{93}{dummy.10.2.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {10.2.2}{}}{96}{dummy.10.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {10.2.3}{}}{93}{dummy.10.2.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {10.2.3}{}}{96}{dummy.10.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.3.1}{}}{93}{dummy.10.3.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.3.1}{}}{96}{dummy.10.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {10.3.2}{}}{93}{dummy.10.3.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {10.3.2}{}}{96}{dummy.10.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {10.3.3}{}}{94}{dummy.10.3.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {10.3.3}{}}{97}{dummy.10.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.5.1}{}}{95}{dummy.10.5.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.5.1}{}}{98}{dummy.10.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.5.2}{}}{95}{dummy.10.5.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.5.2}{}}{98}{dummy.10.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.5.3}{}}{95}{dummy.10.5.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.5.3}{}}{98}{dummy.10.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.5.4}{}}{96}{dummy.10.5.4}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.5.4}{}}{99}{dummy.10.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {10.5.5}{}}{96}{dummy.10.5.5}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {10.5.5}{}}{99}{dummy.10.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {10.6.1}{正交矩阵乘积的正交性}}{96}{dummy.10.6.1}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {10.6.1}{正交矩阵乘积的正交性}}{99}{dummy.10.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.8.1}{}}{97}{dummy.10.8.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.8.1}{}}{100}{dummy.10.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.8.2}{}}{97}{dummy.10.8.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.8.2}{}}{100}{dummy.10.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.8.3}{}}{97}{dummy.10.8.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.8.3}{}}{100}{dummy.10.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {10.1}{}}{97}{problemT.10.1}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {10.1}{}}{100}{problemT.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.9.1}{}}{98}{dummy.10.9.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {10.9.1}{}}{101}{dummy.10.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~11\hspace {0.5em}QR分解与Householder变换}{100}{section.11.1}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~11\hspace {0.5em}QR分解与Householder变换}{103}{section.11.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {11.1}{}}{100}{problemT.11.1}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {11.1}{}}{103}{problemT.11.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {11.2}{}}{101}{problemT.11.2}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {11.2}{}}{104}{problemT.11.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.1.1}{}}{101}{dummy.11.1.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.1.1}{}}{104}{dummy.11.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.1.2}{高斯消元法}}{101}{dummy.11.1.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.1.2}{高斯消元法}}{104}{dummy.11.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.1.3}{}}{101}{dummy.11.1.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.1.3}{}}{104}{dummy.11.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.2.1}{QR Factorization}}{102}{dummy.11.2.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.2.1}{QR Factorization}}{105}{dummy.11.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.2.2}{}}{102}{dummy.11.2.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.2.2}{}}{105}{dummy.11.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.2.3}{}}{102}{dummy.11.2.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.2.3}{}}{105}{dummy.11.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.2.4}{}}{102}{dummy.11.2.4}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.2.4}{}}{105}{dummy.11.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.2.5}{}}{102}{dummy.11.2.5}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.2.5}{}}{105}{dummy.11.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.2.6}{}}{102}{dummy.11.2.6}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.2.6}{}}{105}{dummy.11.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.2.7}{列满秩矩阵$A$的 QR 分解的存在唯一性}}{103}{dummy.11.2.7}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.2.7}{列满秩矩阵$A$的 QR 分解的存在唯一性}}{106}{dummy.11.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.2.8}{}}{104}{dummy.11.2.8}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.2.8}{}}{107}{dummy.11.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.3.1}{}}{105}{dummy.11.3.1}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.3.1}{}}{108}{dummy.11.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.3.2}{}}{105}{dummy.11.3.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.3.2}{}}{108}{dummy.11.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.3.3}{}}{105}{dummy.11.3.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.3.3}{}}{108}{dummy.11.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.3.4}{}}{105}{dummy.11.3.4}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.3.4}{}}{108}{dummy.11.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.3.5}{}}{106}{dummy.11.3.5}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.3.5}{}}{109}{dummy.11.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.3.6}{}}{106}{dummy.11.3.6}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.3.6}{}}{109}{dummy.11.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.3.7}{}}{106}{dummy.11.3.7}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.3.7}{}}{109}{dummy.11.3.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.4.1}{}}{108}{dummy.11.4.1}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.4.1}{}}{111}{dummy.11.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.4.2}{}}{108}{dummy.11.4.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.4.2}{}}{111}{dummy.11.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.4.3}{}}{108}{dummy.11.4.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.4.3}{}}{111}{dummy.11.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.4.4}{}}{108}{dummy.11.4.4}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.4.4}{}}{111}{dummy.11.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.6.1}{}}{113}{dummy.11.6.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.6.1}{}}{116}{dummy.11.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.6.2}{}}{113}{dummy.11.6.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.6.2}{}}{116}{dummy.11.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.6.3}{}}{113}{dummy.11.6.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.6.3}{}}{116}{dummy.11.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.6.4}{}}{114}{dummy.11.6.4}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.6.4}{}}{117}{dummy.11.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.6.5}{}}{115}{dummy.11.6.5}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.6.5}{}}{118}{dummy.11.6.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.6.6}{}}{115}{dummy.11.6.6}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.6.6}{}}{118}{dummy.11.6.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.6.7}{}}{118}{dummy.11.6.7}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.6.7}{}}{121}{dummy.11.6.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {11.3}{}}{119}{problemT.11.3}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {11.3}{}}{122}{problemT.11.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.7.1}{}}{121}{dummy.11.7.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.7.1}{}}{124}{dummy.11.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.8.1}{}}{122}{dummy.11.8.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.8.1}{}}{125}{dummy.11.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.8.2}{$H$的逆是它本身}}{123}{dummy.11.8.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.8.2}{$H$的逆是它本身}}{126}{dummy.11.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.9.1}{}}{123}{dummy.11.9.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.9.1}{}}{126}{dummy.11.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.9.2}{}}{123}{dummy.11.9.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.9.2}{}}{126}{dummy.11.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.9.3}{}}{124}{dummy.11.9.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {11.9.3}{}}{127}{dummy.11.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.9.4}{}}{124}{dummy.11.9.4}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.9.4}{}}{127}{dummy.11.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.9.5}{QR分解求解$A^{-1}$}}{124}{dummy.11.9.5}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~12\hspace {0.5em}LU分解}{128}{exampleT.12.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~12\hspace {0.5em}LU分解}{125}{exampleT.12.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {12.1.1}{}}{129}{dummy.12.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {12.1.1}{}}{126}{dummy.12.1.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {12.2.1}{}}{130}{dummy.12.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {12.2.1}{}}{127}{dummy.12.2.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {12.2.2}{}}{131}{dummy.12.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {12.2.2}{}}{128}{dummy.12.2.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {12.2.3}{}}{131}{dummy.12.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {12.2.3}{}}{128}{dummy.12.2.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {12.2.4}{}}{132}{dummy.12.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {12.2.4}{}}{129}{dummy.12.2.4}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {12.2.5}{}}{132}{dummy.12.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {12.2.5}{}}{129}{dummy.12.2.5}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {12.2.6}{}}{132}{dummy.12.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {12.2.6}{}}{129}{dummy.12.2.6}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {12.2.7}{}}{133}{dummy.12.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {12.2.7}{}}{130}{dummy.12.2.7}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {12.2.8}{}}{133}{dummy.12.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {12.2.8}{}}{130}{dummy.12.2.8}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {12.2.9}{}}{133}{dummy.12.2.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {12.2.9}{}}{130}{dummy.12.2.9}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {12.2.10}{}}{134}{dummy.12.2.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {12.2.10}{}}{131}{dummy.12.2.10}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {12.2.11}{}}{134}{dummy.12.2.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {12.2.11}{}}{131}{dummy.12.2.11}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {12.4.1}{}}{135}{dummy.12.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {12.4.1}{}}{132}{dummy.12.4.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {12.4.2}{}}{136}{dummy.12.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {12.4.2}{}}{133}{dummy.12.4.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {12.6.1}{}}{137}{dummy.12.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {12.6.1}{}}{134}{dummy.12.6.1}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {12.6.2}{}}{137}{dummy.12.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {12.6.2}{}}{134}{dummy.12.6.2}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {13.1}{}}{139}{problemT.13.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {13.1}{}}{136}{problemT.13.1}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {13.2}{最小二乘问题}}{140}{problemT.13.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {13.2}{最小二乘问题}}{137}{problemT.13.2}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {13.3}{求解最小二乘解}}{140}{problemT.13.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {13.3}{求解最小二乘解}}{137}{problemT.13.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {13.1.1}{}}{140}{dummy.13.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {13.1.1}{}}{137}{dummy.13.1.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {13.2.1}{}}{141}{dummy.13.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {13.2.1}{}}{138}{dummy.13.2.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {13.2.2}{正规方程与最小二乘解}}{141}{dummy.13.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {13.2.2}{正规方程与最小二乘解}}{138}{dummy.13.2.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {13.3.1}{投影与$A$列空间的关系}}{144}{dummy.13.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {13.3.1}{投影与$A$列空间的关系}}{141}{dummy.13.3.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {13.4.1}{最小二乘法问题的正规方程}}{144}{dummy.13.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {13.4.1}{最小二乘法问题的正规方程}}{141}{dummy.13.4.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {13.4.2}{}}{144}{dummy.13.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {13.4.2}{}}{141}{dummy.13.4.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {13.5.1}{QR分解求解最小二乘法}}{144}{dummy.13.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {13.5.1}{QR分解求解最小二乘法}}{141}{dummy.13.5.1}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {13.4}{}}{146}{problemT.13.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {13.4}{}}{143}{problemT.13.4}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {13.7.1}{}}{147}{dummy.13.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {13.7.1}{}}{144}{dummy.13.7.1}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~13\hspace {0.5em}Least Squares}{147}{dummy.13.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~13\hspace {0.5em}Least Squares}{144}{dummy.13.7.1}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {13.5}{}}{147}{problemT.13.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {13.5}{}}{144}{problemT.13.5}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {13.8.1}{线性搜索估计的最优步长}}{148}{dummy.13.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {13.8.1}{线性搜索估计的最优步长}}{145}{dummy.13.8.1}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.1}{}}{150}{problemT.14.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.1}{}}{147}{problemT.14.1}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~14\hspace {0.5em}Least squares data fitting}{150}{problemT.14.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~14\hspace {0.5em}Least squares data fitting}{147}{problemT.14.1}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.2}{}}{151}{problemT.14.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.2}{}}{148}{problemT.14.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.2.1}{}}{151}{dummy.14.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.2.1}{}}{148}{dummy.14.2.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.2.2}{}}{151}{dummy.14.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.2.2}{}}{148}{dummy.14.2.2}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.3}{}}{151}{problemT.14.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.3}{}}{148}{problemT.14.3}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.4}{}}{152}{problemT.14.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.4}{}}{149}{problemT.14.4}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {14.4.1}{}}{152}{dummy.14.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {14.4.1}{}}{149}{dummy.14.4.1}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.5}{}}{152}{problemT.14.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.5}{}}{149}{problemT.14.5}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.5.1}{}}{152}{dummy.14.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.5.1}{}}{149}{dummy.14.5.1}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.6}{least squares model fitting}}{152}{problemT.14.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.6}{least squares model fitting}}{149}{problemT.14.6}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.7}{}}{152}{problemT.14.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.7}{}}{149}{problemT.14.7}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.8}{}}{152}{problemT.14.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.8}{}}{149}{problemT.14.8}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.9}{least squares model fitting}}{152}{problemT.14.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.9}{least squares model fitting}}{149}{problemT.14.9}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.10}{least squares model fitting in matrix notation}}{153}{problemT.14.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.10}{least squares model fitting in matrix notation}}{150}{problemT.14.10}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.6.2}{}}{153}{dummy.14.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.6.2}{}}{150}{dummy.14.6.2}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.11}{}}{153}{problemT.14.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.11}{}}{150}{problemT.14.11}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.12}{}}{154}{problemT.14.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.12}{}}{151}{problemT.14.12}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.13}{}}{154}{problemT.14.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.13}{}}{151}{problemT.14.13}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.14}{}}{154}{problemT.14.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.14}{}}{151}{problemT.14.14}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.15}{Least square formulation for AR model}}{154}{problemT.14.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.15}{Least square formulation for AR model}}{151}{problemT.14.15}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.16}{}}{155}{problemT.14.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.16}{}}{152}{problemT.14.16}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.17}{}}{156}{problemT.14.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.17}{}}{153}{problemT.14.17}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.18}{}}{156}{problemT.14.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.18}{}}{153}{problemT.14.18}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.5}{}}{157}{dummy.14.12.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.5}{}}{154}{dummy.14.12.5}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.6}{}}{157}{dummy.14.12.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.6}{}}{154}{dummy.14.12.6}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.7}{}}{158}{dummy.14.12.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.7}{}}{155}{dummy.14.12.7}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.8}{}}{158}{dummy.14.12.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.8}{}}{155}{dummy.14.12.8}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.9}{}}{158}{dummy.14.12.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.9}{}}{155}{dummy.14.12.9}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.10}{}}{158}{dummy.14.12.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.10}{}}{155}{dummy.14.12.10}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {14.12.11}{}}{158}{dummy.14.12.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {14.12.11}{}}{155}{dummy.14.12.11}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.12}{}}{158}{dummy.14.12.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.12}{}}{155}{dummy.14.12.12}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.13}{}}{158}{dummy.14.12.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.13}{}}{155}{dummy.14.12.13}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.14}{}}{158}{dummy.14.12.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.14}{}}{155}{dummy.14.12.14}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.15}{}}{158}{dummy.14.12.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.15}{}}{155}{dummy.14.12.15}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.16}{}}{159}{dummy.14.12.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.16}{}}{156}{dummy.14.12.16}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.19}{}}{159}{problemT.14.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.19}{}}{156}{problemT.14.19}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.17}{}}{160}{dummy.14.12.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.17}{}}{157}{dummy.14.12.17}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {14.12.18}{}}{160}{dummy.14.12.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {14.12.18}{}}{157}{dummy.14.12.18}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.19}{}}{160}{dummy.14.12.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.19}{}}{157}{dummy.14.12.19}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.20}{}}{160}{dummy.14.12.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.12.20}{}}{157}{dummy.14.12.20}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {14.12.21}{}}{160}{dummy.14.12.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {14.12.21}{}}{157}{dummy.14.12.21}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.13.1}{}}{160}{dummy.14.13.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.13.1}{}}{157}{dummy.14.13.1}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {14.13.2}{}}{160}{dummy.14.13.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {14.13.2}{}}{157}{dummy.14.13.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {14.13.3}{}}{161}{dummy.14.13.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {14.13.3}{}}{158}{dummy.14.13.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.13.4}{Gauss-Markov theorem}}{161}{dummy.14.13.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {14.13.4}{Gauss-Markov theorem}}{158}{dummy.14.13.4}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.1}{}}{163}{problemT.15.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.1}{}}{159}{problemT.15.1}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.2}{加权最小二乘法问题}}{163}{problemT.15.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.2}{加权最小二乘法问题}}{159}{problemT.15.2}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.3}{加权最小二乘法问题紧密形式}}{163}{problemT.15.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.3}{加权最小二乘法问题紧密形式}}{159}{problemT.15.3}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.4}{加权最小二乘法问题矩阵形式}}{163}{problemT.15.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.4}{加权最小二乘法问题矩阵形式}}{159}{problemT.15.4}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.5}{双目标规划问题}}{164}{problemT.15.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.5}{双目标规划问题}}{160}{problemT.15.5}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.6}{}}{164}{problemT.15.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.6}{}}{160}{problemT.15.6}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {15.2.1}{}}{164}{dummy.15.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {15.2.1}{}}{160}{dummy.15.2.1}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.7}{}}{164}{problemT.15.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.7}{}}{160}{problemT.15.7}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.8}{}}{164}{problemT.15.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.8}{}}{160}{problemT.15.8}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.9}{}}{164}{problemT.15.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.9}{}}{160}{problemT.15.9}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.10}{}}{165}{problemT.15.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.10}{}}{161}{problemT.15.10}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.11}{}}{165}{problemT.15.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.11}{}}{161}{problemT.15.11}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.12}{最小二乘法进行估计}}{165}{problemT.15.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.12}{最小二乘法进行估计}}{161}{problemT.15.12}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~15\hspace {0.5em}Multi-objective Least Squares}{165}{problemT.15.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~15\hspace {0.5em}Multi-objective Least Squares}{161}{problemT.15.12}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {15.4.1}{岭回归问题的标准方程}}{165}{dummy.15.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {15.4.1}{岭回归问题的标准方程}}{161}{dummy.15.4.1}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.13}{}}{166}{problemT.15.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.13}{}}{162}{problemT.15.13}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.14}{信号去噪问题}}{167}{problemT.15.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.14}{信号去噪问题}}{163}{problemT.15.14}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.1}{}}{168}{problemT.16.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.1}{}}{164}{problemT.16.1}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~16\hspace {0.5em}Constrained Least Squares}{168}{figure.caption.67}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~16\hspace {0.5em}Constrained Least Squares}{164}{figure.caption.66}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.1.1}{拉格朗日函数求导}}{169}{dummy.16.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.1.1}{拉格朗日函数求导}}{165}{dummy.16.1.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.1.2}{Karush-Kuhn-Tucker Conditions}}{170}{dummy.16.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.1.2}{Karush-Kuhn-Tucker Conditions}}{166}{dummy.16.1.2}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.2}{}}{170}{problemT.16.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.2}{}}{166}{problemT.16.2}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.3}{}}{171}{problemT.16.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.3}{}}{167}{problemT.16.3}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.4}{}}{171}{problemT.16.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.4}{}}{167}{problemT.16.4}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.5}{}}{172}{problemT.16.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.5}{}}{168}{problemT.16.5}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.6}{}}{172}{problemT.16.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.6}{}}{168}{problemT.16.6}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.7}{}}{172}{problemT.16.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.7}{}}{168}{problemT.16.7}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.4.1}{}}{173}{dummy.16.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.4.1}{}}{169}{dummy.16.4.1}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.8}{分段多项式拟合问题}}{174}{problemT.16.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.8}{分段多项式拟合问题}}{170}{problemT.16.8}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.9}{}}{175}{problemT.16.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.9}{}}{171}{problemT.16.9}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.10}{分段多项式拟合问题}}{176}{problemT.16.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.10}{分段多项式拟合问题}}{172}{problemT.16.10}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.11}{分段多项式拟合问题（矩阵形式）}}{176}{problemT.16.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.11}{分段多项式拟合问题（矩阵形式）}}{172}{problemT.16.11}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.12}{}}{176}{problemT.16.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.12}{}}{172}{problemT.16.12}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.13}{}}{177}{problemT.16.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.13}{}}{173}{problemT.16.13}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.10.1}{优化条件的Karush-Kuhn-Tucker(KKT)等式}}{177}{dummy.16.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.10.1}{优化条件的Karush-Kuhn-Tucker(KKT)等式}}{173}{dummy.16.10.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.10.2}{KKT等式最优解的唯一性}}{178}{dummy.16.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.10.2}{KKT等式最优解的唯一性}}{174}{dummy.16.10.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.10.3}{}}{178}{dummy.16.10.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.10.3}{}}{174}{dummy.16.10.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.10.4}{}}{179}{dummy.16.10.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.10.4}{}}{175}{dummy.16.10.4}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.14}{}}{179}{problemT.16.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.14}{}}{175}{problemT.16.14}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.11.1}{}}{179}{dummy.16.11.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.11.1}{}}{175}{dummy.16.11.1}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.15}{}}{180}{problemT.16.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.15}{}}{176}{problemT.16.15}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.16}{等式约束优化问题}}{182}{problemT.16.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.16}{等式约束优化问题}}{178}{problemT.16.16}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.14.1}{}}{182}{dummy.16.14.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.14.1}{}}{178}{dummy.16.14.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.14.2}{拉格朗日乘子法最优解必要条件}}{182}{dummy.16.14.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.14.2}{拉格朗日乘子法最优解必要条件}}{178}{dummy.16.14.2}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.17}{不等式约束优化问题}}{182}{problemT.16.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.17}{不等式约束优化问题}}{178}{problemT.16.17}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.14.3}{}}{183}{dummy.16.14.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.14.3}{}}{179}{dummy.16.14.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {16.14.4}{}}{183}{dummy.16.14.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {16.14.4}{}}{179}{dummy.16.14.4}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.14.5}{Karush-Kuhn-Tucker (KKT)条件}}{183}{dummy.16.14.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.14.5}{Karush-Kuhn-Tucker (KKT)条件}}{179}{dummy.16.14.5}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.14.6}{标准约束优化的KKT条件}}{183}{dummy.16.14.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.14.6}{标准约束优化的KKT条件}}{179}{dummy.16.14.6}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.18}{}}{184}{problemT.16.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.18}{}}{180}{problemT.16.18}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.15.1}{KKT条件}}{184}{dummy.16.15.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.15.1}{KKT条件}}{180}{dummy.16.15.1}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.19}{等式约束优化问题}}{185}{problemT.16.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.19}{等式约束优化问题}}{181}{problemT.16.19}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.15.2}{一元一次优化式的KKT条件}}{186}{dummy.16.15.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.15.2}{一元一次优化式的KKT条件}}{182}{dummy.16.15.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {16.15.3}{}}{187}{dummy.16.15.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {16.15.3}{}}{183}{dummy.16.15.3}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.20}{}}{187}{problemT.16.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.20}{}}{183}{problemT.16.20}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.15.4}{}}{187}{dummy.16.15.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.15.4}{}}{183}{dummy.16.15.4}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {16.15.5}{梯度的性质}}{187}{dummy.16.15.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {16.15.5}{梯度的性质}}{183}{dummy.16.15.5}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {16.15.6}{}}{189}{dummy.16.15.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {16.15.6}{}}{185}{dummy.16.15.6}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.15.7}{同时包含等式和不等式约束的一般优化问题的KKT条件}}{189}{dummy.16.15.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.15.7}{同时包含等式和不等式约束的一般优化问题的KKT条件}}{185}{dummy.16.15.7}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.1}{}}{190}{dummy.16.16.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.1}{}}{186}{dummy.16.16.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.2}{}}{190}{dummy.16.16.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.2}{}}{186}{dummy.16.16.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.3}{}}{190}{dummy.16.16.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.3}{}}{186}{dummy.16.16.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.4}{$ \alpha - $sublevel 集}}{190}{dummy.16.16.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.4}{$ \alpha - $sublevel 集}}{186}{dummy.16.16.4}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {16.16.5}{}}{191}{dummy.16.16.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {16.16.5}{}}{187}{dummy.16.16.5}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.6}{}}{191}{dummy.16.16.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.6}{}}{187}{dummy.16.16.6}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.7}{}}{192}{dummy.16.16.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.7}{}}{188}{dummy.16.16.7}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.8}{}}{192}{dummy.16.16.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.8}{}}{188}{dummy.16.16.8}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.21}{}}{192}{problemT.16.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.21}{}}{188}{problemT.16.21}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.9}{}}{193}{dummy.16.16.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.9}{}}{189}{dummy.16.16.9}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.10}{弱对偶性}}{193}{dummy.16.16.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.10}{弱对偶性}}{189}{dummy.16.16.10}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.11}{强对偶性}}{193}{dummy.16.16.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.11}{强对偶性}}{189}{dummy.16.16.11}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.12}{Slater 条件}}{193}{dummy.16.16.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.12}{Slater 条件}}{189}{dummy.16.16.12}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.13}{互补松弛性 (complementary slackness, KKT complementarity)}}{194}{dummy.16.16.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.13}{互补松弛性 (complementary slackness, KKT complementarity)}}{190}{dummy.16.16.13}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.14}{}}{194}{dummy.16.16.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.14}{}}{190}{dummy.16.16.14}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.15}{}}{194}{dummy.16.16.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.16.15}{}}{190}{dummy.16.16.15}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.17.1}{}}{195}{dummy.16.17.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.17.1}{}}{191}{dummy.16.17.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.17.2}{}}{195}{dummy.16.17.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.17.2}{}}{191}{dummy.16.17.2}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.22}{convex minimization problem}}{205}{problemT.16.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.22}{convex minimization problem}}{201}{problemT.16.22}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.19.1}{}}{205}{dummy.16.19.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.19.1}{}}{201}{dummy.16.19.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.19.2}{}}{205}{dummy.16.19.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {16.19.2}{}}{201}{dummy.16.19.2}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.1}{}}{207}{problemT.17.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.1}{}}{203}{problemT.17.1}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.2}{}}{207}{problemT.17.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.2}{}}{203}{problemT.17.2}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.3}{}}{207}{problemT.17.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.3}{}}{203}{problemT.17.3}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.4}{}}{208}{problemT.17.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.4}{}}{204}{problemT.17.4}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.5}{}}{208}{problemT.17.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.5}{}}{204}{problemT.17.5}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.6}{}}{209}{problemT.17.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.6}{}}{205}{problemT.17.6}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.7}{二分类问题}}{209}{problemT.17.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.7}{二分类问题}}{205}{problemT.17.7}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~17\hspace {0.5em}非线性最小二乘法}{209}{subsection.17.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~17\hspace {0.5em}非线性最小二乘法}{205}{subsection.17.2.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.2.1}{Linear combination properties}}{211}{dummy.17.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.2.1}{Linear combination properties}}{207}{dummy.17.2.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.2.2}{Composition with affine mapping properties}}{211}{dummy.17.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.2.2}{Composition with affine mapping properties}}{207}{dummy.17.2.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.2.3}{Necessary condition for twice differentiable $ g $}}{212}{dummy.17.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.2.3}{Necessary condition for twice differentiable $ g $}}{208}{dummy.17.2.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.2.4}{Sufficient condition}}{212}{dummy.17.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.2.4}{Sufficient condition}}{208}{dummy.17.2.4}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.2.5}{Necessary and sufficient condition for convex functions}}{212}{dummy.17.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.2.5}{Necessary and sufficient condition for convex functions}}{208}{dummy.17.2.5}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.3.1}{非线性最小二乘问题的最优必要条件}}{214}{dummy.17.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.3.1}{非线性最小二乘问题的最优必要条件}}{210}{dummy.17.3.1}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {17.3.2}{正规方程的最优必要条件}}{214}{dummy.17.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {17.3.2}{正规方程的最优必要条件}}{210}{dummy.17.3.2}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.8}{}}{214}{problemT.17.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.8}{}}{210}{problemT.17.8}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.9}{}}{217}{problemT.17.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.9}{}}{213}{problemT.17.9}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.10}{}}{217}{problemT.17.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.10}{}}{213}{problemT.17.10}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.5.1}{}}{217}{dummy.17.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.5.1}{}}{213}{dummy.17.5.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.5.2}{}}{217}{dummy.17.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.5.2}{}}{213}{dummy.17.5.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.5.3}{}}{218}{dummy.17.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.5.3}{}}{214}{dummy.17.5.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.5.4}{}}{218}{dummy.17.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.5.4}{}}{214}{dummy.17.5.4}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.11}{nonlinear least squares problem}}{220}{problemT.17.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.11}{nonlinear least squares problem}}{216}{problemT.17.11}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.6.3}{Quadratic Convergence}}{221}{dummy.17.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.6.3}{Quadratic Convergence}}{217}{dummy.17.6.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.7.1}{}}{223}{dummy.17.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.7.1}{}}{219}{dummy.17.7.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.7.2}{}}{223}{dummy.17.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.7.2}{}}{219}{dummy.17.7.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.7.3}{}}{223}{dummy.17.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.7.3}{}}{219}{dummy.17.7.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.7.4}{}}{224}{dummy.17.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.7.4}{}}{220}{dummy.17.7.4}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.7.5}{}}{224}{dummy.17.7.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.7.5}{}}{220}{dummy.17.7.5}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {17.7.6}{}}{224}{dummy.17.7.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {17.7.6}{}}{220}{dummy.17.7.6}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.12}{}}{224}{problemT.17.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {17.12}{}}{220}{problemT.17.12}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~18\hspace {0.5em}Fourier Series, Fourier Transform}{227}{section.18.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~18\hspace {0.5em}Fourier Series, Fourier Transform}{223}{section.18.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {18.1.1}{Euler's Formular}}{227}{dummy.18.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {18.1.1}{Euler's Formular}}{223}{dummy.18.1.1}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.1.2}{}}{227}{dummy.18.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.1.2}{}}{223}{dummy.18.1.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {18.2.1}{收敛定理, 狄利克雷 (Dirichlet) 充分条件}}{230}{dummy.18.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {18.2.1}{收敛定理, 狄利克雷 (Dirichlet) 充分条件}}{226}{dummy.18.2.1}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.2.2}{}}{230}{dummy.18.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.2.2}{}}{226}{dummy.18.2.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {18.2.3}{}}{231}{dummy.18.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {18.2.3}{}}{227}{dummy.18.2.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.4.1}{}}{234}{dummy.18.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.4.1}{}}{230}{dummy.18.4.1}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.4.2}{}}{234}{dummy.18.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.4.2}{}}{230}{dummy.18.4.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.4.3}{}}{234}{dummy.18.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.4.3}{}}{230}{dummy.18.4.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.4.4}{}}{234}{dummy.18.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.4.4}{}}{230}{dummy.18.4.4}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~20\hspace {0.5em}Cholesky Factorization}{236}{section.20.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~20\hspace {0.5em}Cholesky Factorization}{232}{section.20.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.2.1}{}}{236}{dummy.20.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.2.1}{}}{232}{dummy.20.2.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.2.2}{}}{237}{dummy.20.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.2.2}{}}{233}{dummy.20.2.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.2.3}{}}{237}{dummy.20.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.2.3}{}}{233}{dummy.20.2.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {20.2.4}{}}{237}{dummy.20.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {20.2.4}{}}{233}{dummy.20.2.4}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {20.2.5}{}}{237}{dummy.20.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {20.2.5}{}}{233}{dummy.20.2.5}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.3.1}{}}{237}{dummy.20.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.3.1}{}}{233}{dummy.20.3.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.3.2}{Dirichlet energy function}}{237}{dummy.20.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.3.2}{Dirichlet energy function}}{233}{dummy.20.3.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.4.1}{}}{238}{dummy.20.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.4.1}{}}{234}{dummy.20.4.1}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {20.1}{}}{239}{problemT.20.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {20.1}{}}{235}{problemT.20.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.9.1}{}}{241}{dummy.20.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.9.1}{}}{237}{dummy.20.9.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.11.1}{}}{241}{dummy.20.11.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.11.1}{}}{237}{dummy.20.11.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.12.1}{Cholesky factorization of complex matrices}}{242}{dummy.20.12.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.12.1}{Cholesky factorization of complex matrices}}{238}{dummy.20.12.1}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {20.2}{Data fitting problem (Regularized least squares model fitting)}}{242}{problemT.20.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {20.2}{Data fitting problem (Regularized least squares model fitting)}}{238}{problemT.20.2}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {20.3}{}}{242}{problemT.20.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {20.3}{}}{238}{problemT.20.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.13.1}{}}{243}{dummy.20.13.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.13.1}{}}{239}{dummy.20.13.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.13.2}{}}{243}{dummy.20.13.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.13.2}{}}{239}{dummy.20.13.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.13.3}{}}{244}{dummy.20.13.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.13.3}{}}{240}{dummy.20.13.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.14.1}{}}{244}{dummy.20.14.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.14.1}{}}{240}{dummy.20.14.1}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {20.14.2}{}}{244}{dummy.20.14.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {20.14.2}{}}{240}{dummy.20.14.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.15.1}{}}{244}{dummy.20.15.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.15.1}{}}{240}{dummy.20.15.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.15.2}{}}{245}{dummy.20.15.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.15.2}{}}{241}{dummy.20.15.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {20.4}{}}{241}{problemT.20.4}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {20.4}{}}{245}{problemT.20.4}%

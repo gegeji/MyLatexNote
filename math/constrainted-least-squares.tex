@@ -825,6 +825,7 @@ $$
         s.t. & C x=d
     \end{aligned}$$
 
+    它的矩阵形式是
     $$
 \left[\begin{array}{cc}
 A^{T} A & C^{T} \\
@@ -976,6 +977,11 @@ $$ \left[\begin{array}{cc}A^{T} A+C^{T} C & C^{T} \\ C & 0\end{array}\right]\lef
 
 \begin{algorithm}[htbp]
     \caption{QR分解求解KKT最优条件}
+    \KwIn{$\begin{aligned}
+        \min _{x} & \frac{1}{2}\|A x-b\|_{2}^{2}\\
+        s.t. & C x=d
+    \end{aligned}$中的$A$, $C$, $d$}
+
     \label{algo:qr-kkt}
     计算两个QR分解
 $$
@@ -987,8 +993,10 @@ Q_{1} \\
 Q_{2}
 \end{array}\right] R, Q_{2}^{T}=\tilde{Q} \tilde{R}
 $$\;
-用前代法求解 $ \tilde{R}^{T} u=d $ ，计算 $ c=\tilde{Q}^{T} Q_{1}^{T} b-u $\;
-用回代法求解 $ \tilde{R} w=c $ ，计算 $ y=Q_{1}^{T} b-Q_{2}^{T} w $\;
+用前代法求解 $ \tilde{R}^{T} u=d $ \;
+计算 $ c=\tilde{Q}^{T} Q_{1}^{T} b-u $\;
+用回代法求解 $ \tilde{R} w=c $ \;
+计算 $ y=Q_{1}^{T} b-Q_{2}^{T} w $\;
 用回代法计算 $ R \hat{x}=y_{\circ} $\;
 
 \end{algorithm}
