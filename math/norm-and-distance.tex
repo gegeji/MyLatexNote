@@ -473,6 +473,69 @@ $$
 
 
 
+\section{Regression Model}
+
+
+\begin{definition}[Regression Model]
+    回归模型(regression model)为关于$x$的仿射函数
+    $$ \hat{y}=x^{T} \beta+v $$
+
+    $x$是\term{特征向量(feature vector)}, 它的元素$x_i$称为\term{回归元(regressors)}. $n$维向量 $ \beta $ 是\term{权重向量(weight vector)}. 标量 $ v $ 是\term{偏移量(offset)}. 标量 $ \hat{y} $ 是\term{预测值(prediction)}. 表示某个实际结果或因变量, 用$y$表示. 
+\end{definition}
+
+Recall the regression model
+
+\begin{problem}
+    $$
+    \hat{y}=x^{T} \beta+v,
+    $$
+    where the $ n $-vector $ x $ is a feature vector for some object, $ \beta $ is an $ n $-vector of weights, $ v $ is a constant (the offset), and $ \hat{y} $ is the (scalar) value of the regression model prediction.
+\end{problem}
+
+Now suppose we have a set of $ N $ objects (also called \term{samples} or \term{examples}), with feature vectors $ x^{(1)}, \ldots, x^{(N)} $. The regression model predictions associated with the examples are given by
+$$
+\hat{y}^{(i)}=\left(x^{(i)}\right)^{T} \beta+v, \quad i=1, \ldots, N
+$$
+
+These numbers usually correspond to predictions of the value of the outputs or responses. If in addition to the example feature vectors $ x^{(i)} $ we are also given the actual value of the associated response variables, $ y^{(1)}, \ldots, y^{(N)} $, then our \term{prediction errors} or \term{residuals} are
+$$
+r^{(i)}=y^{(i)}-\hat{y}^{(i)}, \quad i=1, \ldots, N
+$$
+
+We can express this using \textbf{compact matrix-vector notation}. 
+
+We form the $ n \times N $ feature matrix $ X $ with columns $ x^{(1)}, \ldots, x^{(N)} $. We let $ y^{\mathrm{d}} $ denote the $ N $-vector whose entries are the actual values of the response for the $ N $ examples. (The superscript `d' stands for `data'.) 
+
+We let $ \hat{y}^{\mathrm{d}} $ denote the $ N $-vector of regression model predictions for the $ N $ examples, and we let $ r^{\mathrm{d}} $ denote the $ N $-vector of residuals or prediction errors. We can then express the regression model predictions for this data set in matrix-vector form as
+$$
+\hat{y}^{\mathrm{d}}=X^{T} \beta+v \mathbf{1}
+$$
+
+The vector of $ N $ prediction errors for the examples is given by
+$$
+r^{\mathrm{d}}=y^{\mathrm{d}}-\hat{y}^{\mathrm{d}}=y^{\mathrm{d}}-X^{T} \beta-v \mathbf{1} .
+$$
+We can include the offset $ v $ in the regression model by including an additional feature equal to one as the first entry of each feature vector:
+
+\begin{problem}
+    $$
+\hat{y}^{\mathrm{d}}=\left[\begin{array}{c}
+\mathbf{1}^{T} \\
+X
+\end{array}\right]^{T}\left[\begin{array}{l}
+v \\
+\beta
+\end{array}\right]=\tilde{X}^{T} \tilde{\beta}
+$$
+
+where $ \tilde{X} $ is the new feature matrix, with a new first row of ones, and $ \tilde{\beta}=(v, \beta) $ is the vector of regression model parameters.
+\end{problem}
+
+ This is often written without the tildes, as $ \hat{y}^{\mathrm{d}}=X^{T} \beta $, by simply including the feature one as the first feature.
+
+The equation above shows that the $ N $-vector of predictions for the $ N $ examples is a linear function of the model parameters $ (v, \beta) $. The $ N $-vector of prediction errors is an affine function of the model parameters.
+
+
 \section{Norm for Complex Numbers}
 
 \begin{definition}

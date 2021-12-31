@@ -3,12 +3,12 @@
 \section{Left Inverse, Right Inverse, Inverse}
 
 \begin{definition}[$A$的左逆]
-    当一个矩阵X满足 $$ X A=I $$ 
+    当一个矩阵$X$满足 $$ X A=I $$ 
     
-    X被称为 $ A $ 的\textit{左逆}; 当左逆存在时，则称A是\textit{可左逆}的;
+    $X$被称为 $ A $ 的\term{左逆}; 当左逆存在时，则称$A$是\term{可左逆}的;
 \end{definition}
 
-    如果左逆矩阵存在, 则左逆矩阵有\textbf{无穷多}个.
+当左逆存在时，则$A$至少有一个左逆。如果左逆矩阵存在, 则左逆矩阵有\textbf{无穷多}个.
 
 \begin{example}
     $$ A=\left[\begin{array}{cc}-3 & -4 \\ 4 & 6 \\ 1 & 1\end{array}\right] $$
@@ -22,7 +22,7 @@
     当左逆存在时，则称A是可左逆的;
 \end{definition}
 
-    如果右逆矩阵存在, 则右逆矩阵有\textbf{无穷多}个.
+当右逆存在时，则$A$至少有一个右逆。如果右逆矩阵存在, 则右逆矩阵有\textbf{无穷多}个.
 
 
 \begin{example}
@@ -54,12 +54,12 @@ $$
 
 \begin{proof}
     $$
-X^{T} A^{T}=(A X)^{\mathrm{T}}=I
+X^{T} A^{T}=(A X)^{ {T}}=I
 $$
 \end{proof}
 
 \begin{theorem}
-    如果矩阵A存在左逆和右逆，则左逆和右逆一定相等
+    如果矩阵A存在左逆和右逆，则左逆和右逆一定相等。
 \end{theorem}
 
 \begin{proof}
@@ -73,7 +73,7 @@ $$
 \end{proof}
 
 \begin{definition}[逆 $A^{-1}$]
-    如果矩阵A存在左逆和右逆, 此时X称为矩阵的\textit{逆}，记作 $ A^{-1} $ 当矩阵的逆存在时，则称矩阵A\textit{可逆}.
+    如果矩阵A存在左逆和右逆, 此时X称为矩阵的\term{逆}，记作 $ A^{-1} $ 当矩阵的逆存在时，则称矩阵A\term{可逆}.
 \end{definition}
 
 \section{Linear Equation Systems}
@@ -83,7 +83,7 @@ $$
 
     $$ \left\{\begin{array}{c}A_{11} x_{1}+A_{12} x_{2}+\cdots+A_{1 n} x_{n}=b_{1} \\ A_{21} x_{1}+A_{22} x_{2}+\cdots+A_{2 n} x_{n}=b_{2} \\ \vdots \\ A_{m 1} x_{1}+A_{m 2} x_{2}+\cdots+A_{m n} x_{n}=b_{m}\end{array}\right. $$
 
-    写成矩阵形式为： $ \mathrm{A} x=\mathrm{b} $ . 其中$A$为系数矩阵, $ x $ 为$n$维列向量. 
+    写成矩阵形式为： $  {A} x= {b} $ . 其中$A_{m \times n}$为系数矩阵, $ x_{n \times 1} $ 为$n$维列向量，$b_{m \times 1}$是常数. 
 \end{definition}
 
 该方程组可能\textbf{无解}，\textbf{有唯一解}和\textbf{无穷解}.
@@ -99,11 +99,15 @@ $$
 A x=b \Rightarrow  x=X A x=X b
 $$
 
-    列满秩时(下面证明), 列向量线性无关, 所以其零空间中只有零解，方程 $ {Ax}={b} $ 可能有一个唯一解 ($b$在$A$的列空间中, 此特解就是全部解, 因为通常的特解可以通过零空间中的向量扩展出一组解集，而此时零空间只有$0$向量）, 也可能无解 ($b$不在$A$的列空间中）. 
+    列满秩时（下面证明）， 列向量线性无关， 所以其零空间中只有零解。
+    
+    方程 $ {Ax}={b} $ 可能有一个唯一解（$b$在$A$的列空间中, 此特解就是全部解, 因为通常的特解可以通过零空间中的向量扩展出一组解集，但此时零空间只有$0$向量）, 也可能无解（$b$不在$A$的列空间中）。
+
+    
 \end{proof}
 
 \begin{theorem}
-    如果矩阵$A$可右逆，假设 $ Y $ 是矩阵$A$的右逆，则\textbf{至少}一个解, 即 $ x=\mathrm{Y} b $ . 
+    如果矩阵$A$可右逆，假设 $ Y $ 是矩阵$A$的右逆，则\textbf{至少}存在一个解, 即 $ x= {Y} b $ . 
 \end{theorem}
 
 \begin{proof}
@@ -114,7 +118,9 @@ x=Y b  \Rightarrow  A x=A Y b=b
 $$
 
 
-右逆就是研究 $m \times n $ 矩阵$A$行满秩的情况, 此时 $ \mathrm{n}>\mathrm{m}=\operatorname{rank}(\mathrm{A}) $ . 对称的, 其左零空间中仅有零向量，即没有行向量的线性组合能够得到零向量. （$N(A ^T ) = \{0\}$）
+右逆就是研究 $m \times n $ 矩阵$A$行满秩的情况, 此时 $  {n}> {m}=\operatorname{rank}( {A}) $ . 对称的, 其左零空间中仅有零向量，即没有行向量的线性组合能够得到零向量. （$N(A ^T ) = \{0\}$）
+
+所以列空间的秩是$m$，维数是$n$，$n$维空间一定包含$m$维子空间，至少存在一个解。
 \end{proof}
 
 \begin{theorem}
@@ -122,7 +128,7 @@ $$
 $$
 A x=b  \Rightarrow  x=A^{-1} b
 $$
-唯一解. 
+是唯一解. 
 \end{theorem}
 
 \section{Fundamental Theorem of Linear Algebra}
@@ -273,9 +279,9 @@ $$
     \end{tikzpicture}
 
     \begin{itemize}
-        \item 性质 $ (\mathrm{a}) $ 对任意矩阵 $ A \in \mathbb{R}^{m \times n} $ 都成立 
+        \item 性质 $ ( {a}) $ 对任意矩阵 $ A \in \mathbb{R}^{m \times n} $ 都成立 
         \item 性质$(b)$对方阵矩阵 $ A \in \mathbb{R}^{n \times n} $ 都成立
-        \item 对于性质 $ (\mathrm{c}) $ 与 $ (\mathrm{d}) $, 可利用 $ A^{T} $ 证明
+        \item 对于性质 $ ( {c}) $ 与 $ ( {d}) $, 可利用 $ A^{T} $ 证明
     \end{itemize}
 \end{proof}
 
@@ -298,14 +304,14 @@ $$
     A x=x_{1} a_{1}+x_{2} a_{2}+\cdots+x_{n} a_{n}=0
     $$
 
-    则当该等式 $ A x=0 $ 成立时，其解 $ x=0 $, 则A的列向量线性无关.  
+    则当该等式 $ A x=0 $ 成立时，其解 $ x=0 $, 则$A$的列向量线性无关.  
     
     \begin{corollary}
         如果 $ A \in \mathbb{R}^{m \times n} $有左逆，则有 $ m \geq n = r $. 
 
     即$A$是高或方的矩阵, 如 $ A=\left[\begin{array}{ll}1 & 0 \\ 0 & 1 \\ 0 & 0\end{array}\right] $. 
     
-    此时$A$的行向量可能线性相关，而$A$的列向量线性无关. $N(A) = \{0\}$.
+    此时$A$的行向量可能线性相关，而$A$的列向量线性无关， $N(A) = \{0\}$.
     \end{corollary}
     
 
@@ -335,7 +341,7 @@ $$
 
 现在，由于 $A = CR$, $A$ 的每个行向量是 $R$ 的行向量的线性组合，这意味着 $A$ 的行向量空间被包含于 $R$ 的行向量空间之中. 因此 $A 的行秩 \leq R的行秩$. 但$R$仅有$r$行, 所以$R的行秩 \leq r = A的列秩$. 这就证明了$A的行秩 \leq A的列秩$.
 
-把上述证明过程中的“行”与“列”交换，利用对偶性质同样可证$A的列秩 \leq A的行秩$. 更简单的方法是考虑A的转置矩阵 $A^\mathrm{T}$，则$A的列秩 =  A^\mathrm{T}的行秩 \leq  A^\mathrm{T}的列秩 = A的行秩$. 这证明了$A$的列秩等于$A$的行秩. 证毕.
+把上述证明过程中的“行”与“列”交换，利用对偶性质同样可证$A的列秩 \leq A的行秩$. 更简单的方法是考虑A的转置矩阵 $A^ {T}$，则$A的列秩 =  A^ {T}的行秩 \leq  A^ {T}的列秩 = A的行秩$. 这证明了$A$的列秩等于$A$的行秩. 证毕.
 \end{proof}
 
 \begin{theorem}
@@ -343,29 +349,29 @@ $$
 \end{theorem}
 
 \begin{proof}
-    $$ \mathrm{X}^{T} A^{T}=(A X)^{T}=I $$
+    $$  {X}^{T} A^{T}=(A X)^{T}=I $$
     
-    则有 $ \mathrm{X}^{T} $ 是 $ A^{T} $ 的左逆, $ A^{T} $ 的列向量线性无关.  
+    则有$  {X}^{T} $ 是 $ A^{T} $ 的左逆, $ A^{T} $的列向量线性无关.  
 
-    即 $ A^{T} \in \mathbb{R}^{n \times m} $.
+    即$ A^{T} \in \mathbb{R}^{n \times m} $.
     
-    \begin{corollary}
-     如果 $ A \in \mathbb{R}^{m \times n} $有左逆，则有 $r= m \leq n  $. 
+    根据定理“矩阵的行秩等于列秩”，$ A^{T} $的列向量线性无关，则矩阵 $ A $ 有$m$个线性无关列向量（行向量），即通过 Gram-Schmidt 正交化可得$m$个正交基. 
 
-    即$A$是宽或方的矩阵. 
-
-    此时$A$的列向量可能线性相关，而$A$的行向量线性无关. 
-    
-    $N(A^T) = \{0\}, \operatorname{dim} N(A) = n-r, r=m$. ($Ax=b$有无穷解) 
-    \end{corollary}
-    
-    根据定理“矩阵的行秩等于列秩”，$ A^{T} $ 的列向量线性无关，则矩阵 $ A $ 有$m$个线性无关列向量（行向量），即通过 Gram-Schmidt 正交化可得$m$个正交基. 
-
-    $ \forall b \in \mathbb{R}^{m} $, 有 $ b \in\left\{y \mid y=A x, x \in \mathbb{R}^{n}\right\} (m \leq n ) $, 方程 $ A x=b $ 有解，其解为 $ x=X b $ . 
+    $ \forall b \in \mathbb{R}^{m} $, 有$ b \in\left\{y \mid y=A x, x \in \mathbb{R}^{n}\right\} (m \leq n ) $, 方程$ A x=b $有解，其解为$ x=X b $. 
 \end{proof}
 
+\begin{corollary}
+    如果$ A \in \mathbb{R}^{m \times n} $有右逆，则有 $r= m \leq n  $. 
+
+   即$A$是宽或方的矩阵. 
+
+   此时$A$的列向量可能线性相关，而$A$的行向量线性无关. 
+   
+   $N(A^T) = \{0\}, \operatorname{dim} N(A) = n-r, r=m$. ($Ax=b$有无穷解) 
+   \end{corollary}
+
 \begin{theorem}
-    $(b)$: 若方阵A列向量线性无关，则A可右逆. 
+    $(b)$: 若方阵$A$列向量线性无关，则$A$可右逆. 
 \end{theorem}
 
 \begin{proof}
@@ -373,7 +379,7 @@ $$
     
     $$ A=\left[a_{1}, a_{2}, \cdots, a_{n}\right] $$
 
-    则对于任意向量 $ \mathrm{b} \in \mathbb{R}^{n} $, 则向量组 $ \left[a_{1}, a_{2}, \ldots, a_{n}, \mathrm{~b}\right] $ 线性相关，存 在不全为0的系数，使得以下等式成立
+    则对于\textbf{任意}向量 $  {b} \in \mathbb{R}^{n} $, 则向量组 $ \left[a_{1}, a_{2}, \ldots, a_{n},  {~b}\right] $ 线性相关，存 在不全为0的系数，使得以下等式成立
     $$
     x_{1} a_{1}+x_{2} a_{2}+\cdots+x_{n} a_{n}+x_{n+1} b=0
     $$
@@ -383,6 +389,8 @@ $$
     b=-\frac{x_{1}}{x_{n+1}} a_{1}-\frac{x_{2}}{x_{n+1}} a_{2}-\cdots-\frac{x_{n}}{x_{n+1}} a_{n}
     $$
 
+    假设$b = e_1, e_2 , \cdots$.
+
     存在向量 $ c_{1}, \ldots, c_{n} \in \mathbb{R}^{n} $,使得 
     $$
     \begin{aligned}
@@ -391,16 +399,18 @@ $$
           \ldots \\
           A c_{n}&=e_{n}
     \end{aligned}
+    \quad (c_j即为上式的 \frac{-x_{1:n}}{x_{n+1}})
     $$
 
-    则矩阵 $ C=\left[c_{1} c_{2} \ldots c_{n}\right] $ 是矩阵 $ A $ 的右逆, $ A C=I $.
+
+    则矩阵 $ C=\left[c_{1}, c_{2}, \ldots,c_{n}\right] $ 是矩阵 $ A $ 的右逆, $ A C=I $.
 
 \end{proof}
 
 \section{转置和共轭转置的逆}
 
-\begin{theorem}[转置 $ A^{T} $ 和共轭转置 $ A^{\mathrm{H}} $ ]
-    如果矩阵$A$为非奇异矩阵，则其转置 $ A^{T} $ 和共轭转置 $ A^{\mathrm{H}} $ 都为非奇异矩阵，则有
+\begin{theorem}[转置 $ A^{T} $ 和共轭转置 $ A^{ {H}} $ ]
+    如果矩阵$A$为非奇异矩阵，则其转置 $ A^{T} $ 和共轭转置 $ A^{ {H}} $ 都为非奇异矩阵，则有
 $$
 \begin{array}{l}
 \left(A^{T}\right)^{-1}=\left(A^{-1}\right)^{T}, \quad\left(A^{H}\right)^{-1}=\left(A^{-1}\right)^{H} \\
@@ -413,7 +423,7 @@ $$
 \end{proof}
 
 \begin{corollary}
-    如果矩阵A和矩阵B都为非奇异矩阵，则乘积AB也为非 奇异矩阵
+    如果矩阵$A$和矩阵$B$都为非奇异矩阵，则乘积$AB$也为非 奇异矩阵
 $$
 \begin{array}{l}
 (A B)^{-1}=B^{-1} A^{-1} \\
@@ -432,55 +442,77 @@ $$
 Gram矩阵的定义见 \ref{Def:Gram}.
 
 \begin{corollary}[Gram Matrix 可逆等价于$A$列线性无关]
-    矩阵 $ A \in \mathbb{R}^{m \times n},  \mathrm{G}=A^{T} A $
+    矩阵 $ A \in \mathbb{R}^{m \times n},   {G}=A^{T} A $
 
-矩阵 $ A $ 列向量线性无关 $ \Leftrightarrow $ Gram矩阵G非奇异.
+矩阵 $ A $ 列向量线性无关 $ \Leftrightarrow $ Gram矩阵G非奇异（可逆）.
 \end{corollary}
 
 \begin{proof}
-    " $ \Rightarrow $ ": 
+    “$ \Rightarrow $”: 
     
-    假设矩阵 $ A $ 列向量线性无关, $ A^{T} A $ 奇异.  则存在 $ A^{T} A x=0, x \neq 0 $, 可得 $ x^{T} A^{T} A x=\|A x\|_{2}^{2}=0 $, 即 $ A x=0 $ 与列向量线性无矛盾.
+    假设矩阵 $ A $ 列向量线性无关, $ A^{T} A $ 奇异.  则存在 $ A^{T} A x=0, x \neq 0 $, 可得 $ x^{T} A^{T} A x=\|A x\|_{2}^{2}=0 $, 即 $ A x=0 , x \neq 0$，与列向量线性无关矛盾.
 
-    " $ \Leftarrow $ ":
+    所以$ A^{T} A $非奇异（可逆）。
+
+    “$ \Leftarrow $”:
     
-    假设 $ A^{T} A $ 非奇异, 矩阵 $ A $ 列向量线性相关.  则有 $ A x=0, x \neq 0 $, 可得 $ A^{T} A x=0 $, 即 $ A^{T} A $ 是奇异矩阵. 
+    假设 $ A^{T} A $ 非奇异，矩阵 $ A $列向量线性相关，则有 $ A x=0, x \neq 0 $, 可得 $ A^{T} A x=0 $, 即$ A^{T} A $是奇异矩阵，与假设$ A^{T} A $ 非奇异相矛盾。
+    
+    所以矩阵 $ A $ 列向量线性无关。
 \end{proof}
 
 \section{伪逆}
 
-\begin{definition}[Pseudo-inverse]
-    $$ A^{\dagger}=A^{T}\left(A A^{T}\right)^{-1} $$
+\begin{definition}[Pseudo-inverse of Matrix $A (m \geq n)$ ]
+    矩阵$A \in \mathbb{R}^{m \times n} $ ，当 $ m \geq n $ 时，列向量线性无关，即 $ A $ 的 Gram矩阵可逆。A的伪逆 $ A^{+} $定义:
+    $$
+    A^{+}=\left(A^{T} A\right)^{-1} A^{T}
+    $$
 
-    $$A^{\dagger} = V \Sigma^+ U^T = \left[v_{1} \cdots v_{r} \cdots v_{n}\right]\left[\begin{array}{lll}
-        \sigma_{1}^{-1} & & \\
-        & \ddots & \\
-        & & \sigma_{r}^{-1}
-        \end{array}\right]\left[u_{1} \cdots u_{r} \cdots u_{m}\right]^{\mathrm{T}}$$
+\end{definition}
+
+
+\begin{theorem}
+    矩阵$A \in \mathbb{R}^{m \times n} $ ，当 $ m \geq n $ 时，$ A^{+} $为矩阵 $ A $ 的左逆:
+$$
+A^{+} A=\left(A^{T} A\right)^{-1} A^{T} A=\left(A^{T} A\right)^{-1}\left(A^{T} A\right)=I
+$$
+
+\end{theorem}
+
+\begin{theorem}
+    当 $ A $ 为方阵，伪逆等于矩阵的逆:
+$$
+\left(A^{T} A\right)^{-1} A^{T}=A^{-1} A^{-T} A^{T}=A^{-1}
+$$
+\end{theorem}
+
+
+
+\begin{definition}[Pseudo-inverse of Matrix $A (m \leq n)$ ]
+    矩阵 $  {A} \in \mathbb{R}^{m \times n} $ ，当$m \leq  {n} $ 时，且行向量线性无关，则 $ A A^{T} $ 可逆。 $ A^{T} $ 列向量线性无关，即 $ \left(A^{T}\right)^{T} A^{T}= {A} A^{T} $ 非奇异；
+定义伪逆:
+$$
+A^{\dagger}=A^{T}\left(A A^{T}\right)^{-1}
+$$
 \end{definition}
 
 \begin{theorem}
-    伪逆 $ A^{\dagger} $ 为 $ A $ 的右逆
+    矩阵 $  {A} \in \mathbb{R}^{m \times n} $ ，当 $m \leq  {n} $ 时，伪逆 $ A^{\dagger} $ 为 $ A $ 的右逆
+$$
+A A^{\dagger}=A A^{T}\left(A A^{T}\right)^{-1}=\left(A A^{T}\right)^{-1}\left(A A^{T}\right)=I
+$$
 \end{theorem}
-
-\begin{proof}
-    $$ A A^{\dagger}=A A^{T}\left(A A^{T}\right)^{-1}=\left(A A^{T}\right)^{-1}\left(A A^{T}\right)=I $$
-\end{proof}
 
 \begin{theorem}
     当$A$为方阵时，右逆等于矩阵的逆
-\end{theorem}
-
-\begin{proof}
-    $$ A^{\dagger}=A^{T}\left(A A^{T}\right)^{-1}=A^{T} A^{-T} A^{-1}=A^{-1} $$
-\end{proof}
-
-\begin{theorem}
-    
+$$
+A^{\dagger}=A^{T}\left(A A^{T}\right)^{-1}=A^{T} A^{-T} A^{-1}=A^{-1}
+$$
 \end{theorem}
 
 \begin{corollary}
-    以下三个结论为等价的，对于实矩阵$A$
+    以下三个结论为等价的，对于实矩阵$A$：
 
     \begin{itemize}
         \item $A$是可左逆的
@@ -490,7 +522,7 @@ Gram矩阵的定义见 \ref{Def:Gram}.
 \end{corollary}
 
 \begin{corollary}
-    以下三个结论为等价的，对于实矩阵$A$
+    以下三个结论为等价的，对于实矩阵$A$：
 
     \begin{itemize}
         \item $A$是可右逆的 
@@ -505,9 +537,17 @@ By choosing good bases, $A$ multiplies $\boldsymbol{v}_{i}$ in the row space to 
 
 If $A \boldsymbol{v}=\sigma \boldsymbol{u}$ then $A^{-1} \boldsymbol{u}=\boldsymbol{v} / \sigma$. The singular values of $A^{-1}$ are $1 / \sigma$, just as the eigenvalues of $A^{-1}$ are $1 / \lambda$. The bases are reversed. The $u$ 's are in the row space of $A^{-1}$, the $v$ 's are in the column space.
 
-The pseudoinverse $A^{+}$is an $n$ by $m$ matrix. \textbf{If $A^{-1}$ exists, then $A^{+}$is the same as $A^{-1}$}. In that case $m=n=r$ and we are inverting $U \Sigma V^{\mathrm{T}}$ to get $V \Sigma^{-1} U^{\mathrm{T}}$. 
+\begin{definition}[伪逆$A^{\dagger}$]
+    $$A^{\dagger} = V \Sigma^+ U^T = \left[v_{1} \cdots v_{r} \cdots v_{n}\right]\left[\begin{array}{lll}
+        \sigma_{1}^{-1} & & \\
+        & \ddots & \\
+        & & \sigma_{r}^{-1}
+        \end{array}\right]\left[u_{1} \cdots u_{r} \cdots u_{m}\right]^{ {T}}$$
+\end{definition}
 
-The new symbol $A^{+}$is needed when $r<m$ or $r<n$. Then $A$ has no two-sided inverse, but it has a \textit{pseudo}inverse $A^{+}$with that same rank $r$ :
+The pseudoinverse $A^{+}$is an $n$ by $m$ matrix. \textbf{If $A^{-1}$ exists, then $A^{+}$is the same as $A^{-1}$}. In that case $m=n=r$ and we are inverting $U \Sigma V^{ {T}}$ to get $V \Sigma^{-1} U^{ {T}}$. 
+
+The new symbol $A^{+}$is needed when $r<m$ or $r<n$. Then $A$ has no two-sided inverse, but it has a \term{pseudo}inverse $A^{+}$with that same rank $r$ :
 
 $$
 A^{+} \boldsymbol{u}_{i}=\frac{1}{\sigma_{i}} \boldsymbol{v}_{i} \quad \text { for } i \leq r \quad \text { and } \quad A^{+} \boldsymbol{u}_{i}=\mathbf{0} \quad \text { for } i>r
@@ -519,6 +559,18 @@ The vectors $\boldsymbol{u}_{1}, \ldots, \boldsymbol{u}_{r}$ in the column space
 The other vectors $\boldsymbol{u}_{r+1}, \ldots, \boldsymbol{u}_{m}$ are in the left nullspace, and $A^{+}$sends them to zero. When we know what happens to all those basis vectors, we know $A^{+}$.
 
 Notice the pseudoinverse of the diagonal matrix $\Sigma .$ Each $\sigma$ in $\Sigma$ is replaced by $\sigma^{-1}$ in $\Sigma^{+} .$The product $\Sigma^{+} \Sigma$ is as near to the identity as we can get. It is a projection matrix, $\Sigma^{+} \Sigma$ is partly $I$ and otherwise zero. We can invert the $\sigma$ 's, but we can't do anything about the zero rows and columns. 
+
+
+\begin{theorem}
+    $$\displaystyle \begin{aligned}
+        A_{\text{left}}^{-1} A=I & \Rightarrow A^{T}\left( AA^{T}\right)^{-1} A=P & \left(\text{projection onto the column space of } A\right)\\
+        AA_{\text{right}}^{-1} =I & \Rightarrow A\left( A^{T} A\right)^{-1} A^{T} =P & \left(\text{projection onto the row space of } A\right)
+        \end{aligned}$$
+\end{theorem}
+
+\begin{remark}
+    矩阵的摩尔－彭若斯广义逆在实数域和复数域上都是唯一的，并且可以通过奇异值分解求得。
+\end{remark}
 
 \begin{FigureCenter}{$ A \boldsymbol{x}^{\dagger} $ in the column space goes back to $ A^{\dagger} A \boldsymbol{x}^{\dagger}=\boldsymbol{x}^{\dagger}$ in the row space}
     

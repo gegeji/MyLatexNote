@@ -3,7 +3,7 @@
 \section{Triangular Matrices}
 
 \begin{definition}[Lower Triangular Matrices]
-    矩阵 $ \mathrm{A} \in \mathbb{R}^{n \times n} $ 为\term{下三角(Lower Triangular)矩阵}, $ A_{i j}=0, j>i $ 。
+    矩阵 $  {A} \in \mathbb{R}^{n \times n} $ 为\term{下三角(Lower Triangular)矩阵}, $ A_{i j}=0, j>i $ 。
 
     $$ A=\left[\begin{array}{ccccc}A_{11} & 0 & \cdots & 0 & 0 \\ A_{21} & A_{22} & \cdots & 0 & 0 \\ \vdots & \vdots & \ddots & \vdots & \vdots \\ A_{n-1,1} & A_{n-1,2} & \cdots & A_{n-1, n-1} & 0 \\ A_{n 1} & A_{n 2} & \cdots & A_{n, n-1} & A_{n n}\end{array}\right] $$
 \end{definition}
@@ -26,7 +26,7 @@
 
 使用前向回代(Forward Substitution)算法求解。
 
-时间复杂度： $ 1+3+5+\ldots+(2 \mathrm{n}-1)=\mathrm{n}^{2} $ flops
+时间复杂度： $ 1+3+5+\ldots+(2  {n}-1)= {n}^{2} $ flops
 
 \begin{algorithm}[htbp]
     \caption{Forward Substitution}
@@ -41,7 +41,7 @@ $  x_{3} =\dfrac{b_{3}-A_{31} x_{1}-A_{32} x_{2}}{A_{33}} $ \;
 \end{algorithm}
 
 \begin{problem}
-    当A是具有非零对角元素的上三角矩阵, 解 $ \mathrm{A} x=\mathrm{b} $ 。
+    当$A$是具有非零对角元素的上三角矩阵, 解 $  {A} x= {b} $ 。
 \end{problem}
 
 使用后向回代(Back Substitution)算法来求解.
@@ -57,7 +57,7 @@ $  x_{3} =\dfrac{b_{3}-A_{31} x_{1}-A_{32} x_{2}}{A_{33}} $ \;
     $ x_{1}=\dfrac{b_{1}-A_{12} x_{2}-A_{13} x_{3}-\cdots-A_{1 n} x_{n}}{A_{11}}  $\;
 \end{algorithm}
 
-时间复杂度： $ 1+3+\ldots+2 \mathrm{n}-1=\mathrm{n}^{2} $ flops
+时间复杂度： $ 1+3+\ldots+2  {n}-1= {n}^{2} $ flops
 
 \subsection{The Inverses of Triangular Matrices}
 
@@ -78,7 +78,7 @@ $$
     下三角矩阵的逆是下三角矩阵，上三角矩阵的逆是上三角矩阵。
 \end{theorem}
 
-上/下三角矩阵 $ \mathrm{A} \in \mathbb{R}^{n \times n} $ 逆的复杂度
+计算上/下三角矩阵 $  {A} \in \mathbb{R}^{n \times n} $ 逆的复杂度
 
 $$ n^{2}+(n-1)^{2}+\cdots+1 \approx \frac{1}{3} n^{3}\text{ flops }$$ 
 
@@ -108,7 +108,7 @@ $$
 \end{corollary}
 
 \begin{corollary}
-    如果 $ A $ 是方阵 $ (\mathrm{m}=\mathrm{n}) $, 则 $ Q $ 是正交的 $ \left(Q^{T} Q=Q Q^{T}=I\right) $.
+    如果 $ A $ 是方阵 $ ( {m}= {n}) $, 则 $ Q $ 是正交的 $ \left(Q^{T} Q=Q Q^{T}=I\right) $.
 \end{corollary}
 
 \begin{corollary}
@@ -124,6 +124,22 @@ $$
 \end{corollary}
 
 QR分解可通过Gram-Schmidit正交化法（参见\ref{Chap:Gram-Schmidt Algorithm}）、Householder变换等进行。
+
+More generally, we can factor a complex $ m \times n $ matrix $ A $, with $ m \geq n $, as the product of an $ m \times m $ unitary matrix $ Q $ and an $ m \times n $ upper triangular matrix $ R $. As the bottom $ (m-n) $ rows of an $ m \times n $ upper triangular matrix consist entirely of zeroes, it is often useful to partition $ R $, or both $ R $ and $ Q $ :
+$$
+A=Q R=Q\left[\begin{array}{c}
+R_{1} \\
+0
+\end{array}\right]=\left[\begin{array}{ll}
+Q_{1} & Q_{2}
+\end{array}\right]\left[\begin{array}{c}
+R_{1} \\
+0
+\end{array}\right]=Q_{1} R_{1}
+$$
+where $ R_{1} $ is an $ n \times n $ upper triangular matrix, 0 is an $ (m-n) \times n $ zero matrix, $ Q_{1} $ is $ m \times n, Q_{2} $ is $ m \times(m-n) $, and $ Q_{1} $ and $ Q_{2} $ both have orthogonal columns.
+
+Golub \& Van Loan (1996, § 5.2) call $ Q_{1} R_{1} $ the thin $ Q R $ factorization of $ A $; Trefethen and Bau call this the reduced QR factorization. $ { }^{[1]} $ If $ A $ is of full rank $ n $ and we require that the diagonal elements of $ R_{1} $ are positive then $ R_{1} $ and $ Q_{1} $ are unique, but in general $ Q_{2} $ is not. $ R_{1} $ is then equal to the upper triangular factor of the Cholesky decomposition of $ A^{*} A$ ($=A^{\top} A $ if $ A $ is real).
 
 
 \begin{algorithm}[htbp]
@@ -184,146 +200,148 @@ $$
 可以证明，QR分解具有唯一性。
 
 
-% \begin{theorem}[满秩矩阵$A$的 QR 分解的存在唯一性]
 
-%     设 $A \in \mathbb{C}^{m \times n}(m \geq n)$. 则存在一个单位列正交矩阵 $Q \in \mathbb{C}^{m \times n}$ (即 $Q^{H} Q=$ $\left.I_{n \times n}\right)$ 和一个上三角矩阵 $R \in \mathbb{C}^{n \times n}$, 使得
+
+\begin{theorem}[列满秩矩阵$A$的 QR 分解的存在唯一性]
+
+    设 $A \in \mathbb{C}^{m \times n}(m \geq n)$. 则存在一个单位列正交矩阵 $Q \in \mathbb{C}^{m \times n}$ (即 $Q^{H} Q=$ $\left.I_{n \times n}\right)$ 和一个上三角矩阵 $R \in \mathbb{C}^{n \times n}$, 使得
+$$
+A=Q R
+$$
+若 $A$ 列满秩, 则存在一个具有正对角线元素的上三角矩阵 $R$ 使得上式成立, 且此时 $Q R$ 分解唯一, 即 $Q$ 和 $R$ 都唯一.
+\end{theorem}
+
+\begin{proof}
+    存在性: 
+    
+    由于 $A$ 列满秩, 由 Gram-Schmidt 正交化过程可知, 存在上三角矩阵 $R=\left[r_{i j}\right]_{n \times n}$ 满足 $r_{j j}>0$, 使得 $A=Q R$, 其中 $Q$ 单位列正交.
+
+    唯一性: 
+    
+    假设 $A$ 存在 QR 分解
+$$
+A=Q_{1} R_{1}=Q_{2} R_{2}
+$$
+
+其中 $Q_{1}, Q_{2} \in \mathbb{C}^{m \times n}$ 单位列正交, $R_{1}, R_{2} \in \mathbb{C}^{n \times n}$ 为具有正对角元素的上三角矩阵. 则有
+
+\begin{equation}
+    \label{eqn: q1-q2-r}
+    Q_{1}=Q_{2} R_{2} R_{1}^{-1}
+\end{equation}
+
+
+由于 $R_{1}, R_{2}$ 均为上三角矩阵, 所以 $R_{2} R_{1}^{-1}$ 也是上三角矩阵, 且其对角线元素为 $R_{2}(i, i) / R_{1}(i, i)$, $i=1,2, \ldots, n$. 由 \cref{eqn: q1-q2-r} 可得
+
+$$
+1=\left\|Q_{1}\right\|_{2}=\left\|Q_{2} R_{2} R_{1}^{-1}\right\|_{2}=\left\|R_{2} R_{1}^{-1}\right\|_{2}
+$$
+
+所以
+$$
+\frac{R_{2}(i, i)}{R_{1}(i, i)} \leq 1, \quad i=1,2, \ldots, n
+$$
+同理可证 $R_{1}(i, i) / R_{2}(i, i) \leq 1$. 所以
+$$
+R_{1}(i, i)=R_{2}(i, i), \quad i=1,2, \ldots, n
+$$
+又 $\left\|Q_{1}\right\|_{F}^{2}=\operatorname{tr}\left(Q_{1}^{T} Q_{1}\right)=n$, 所以由 \cref{eqn: q1-q2-r} 可知
+$$
+\left\|R_{2} R_{1}^{-1}\right\|_{F}^{2}=\left\|Q_{2} R_{2} R_{1}^{-1}\right\|_{F}^{2}=\left\|Q_{1}\right\|_{F}^{2}=n
+$$
+由于 $R_{2} R_{1}^{-1}$ 的对角线元素都是 1 , 所以 $R_{2} R_{1}^{-1}$ 只能是单位矩阵, 即 $R_{2}=R_{1}$. 因此 $Q_{2}=A R_{2}^{-1}=$ $A R_{1}^{-1}=Q_{1}$, 即 $A$ 的 $ {QR}$ 分解是唯一的.
+
+\end{proof}
+
+% \begin{theorem}[$m=n $矩阵$A$进行QR分解的唯一性]
+%     If $ \boldsymbol{A}=\boldsymbol{Q}_{1} \boldsymbol{R}_{1}=\boldsymbol{Q}_{2} \boldsymbol{R}_{2} $ are two QR decompositions of full rank, square $ A $, then
 % $$
-% A=Q R
+% \begin{array}{l}
+% \boldsymbol{Q}_{2}=\boldsymbol{Q}_{1} \boldsymbol{S} \\
+% \boldsymbol{R}_{2}=\boldsymbol{S} \boldsymbol{R}_{1}
+% \end{array}
 % $$
-% 若 $A$ 列满秩, 则存在一个具有正对角线元素的上三角矩阵 $R$ 使得上式成立, 且此时 $Q R$ 分解唯一, 即 $Q$ 和 $R$ 都唯一.
+% for some square diagonal $ \boldsymbol{S} $ with entries $ \pm 1 $. 
+
+% If we require the diagonal entries of $ \boldsymbol{R} $ to be positive, then the decomposition is unique.
+% \end{theorem}
+
+% \begin{theorem}[$m<n $矩阵$A$进行QR分解的唯一性]
+    
+%     If $$\boldsymbol{A}=\boldsymbol{Q}_{1}\left[\begin{array}{ll}\boldsymbol{R}_{1} & \boldsymbol{N}_{1}\end{array}\right]=\boldsymbol{Q}_{2}\left[\begin{array}{ll}\boldsymbol{R}_{2} & \boldsymbol{N}_{2}\end{array}\right]$$ are two QR decompositions of a full rank, $m \times n$ matrix $\boldsymbol{A}$ with $m<n$, then
+
+    
+% $$
+% \boldsymbol{Q}_{2}=\boldsymbol{Q}_{1} \boldsymbol{S}, \quad \boldsymbol{R}_{2}=\boldsymbol{S R}_{1}, \quad \text { and } \quad \boldsymbol{N}_{2}=\boldsymbol{S} \boldsymbol{N}_{1}
+% $$
+% for square diagonal $S$ with entries $\pm 1$. 
+
+% If we require the diagonal entries of $\boldsymbol{R}$ to be positive, then the decomposition is unique.
+
 % \end{theorem}
 
 % \begin{proof}
-%     存在性: 
+%     Let $\boldsymbol{Q}_{1}\left[\begin{array}{ll}\boldsymbol{R}_{1} & \boldsymbol{N}_{1}\end{array}\right]=\boldsymbol{Q}_{2}\left[\begin{array}{ll}\boldsymbol{R}_{2} & \boldsymbol{N}_{2}\end{array}\right]$ with $\boldsymbol{Q}_{i}$ being $m \times m$ and orthogonal, $\boldsymbol{R}_{i}$ being $m \times m$ and upper triangular, and $\boldsymbol{N}_{i}$ being an arbitrary $m \times(n-m)$ matrix. 
     
-%     由于 $A$ 列满秩, 由 Gram-Schmidt 正交化过程可知, 存在上三角矩阵 $R=\left[r_{i j}\right]_{n \times n}$ 满足 $r_{j j}>0$, 使得 $A=Q R$, 其中 $Q$ 单位列正交.
-
-%     唯一性: 
+%     Then multiplying through yields $\boldsymbol{Q}_{1} \boldsymbol{R}_{1}=\boldsymbol{Q}_{2} \boldsymbol{R}_{2}$, two $ {QR}$ decompositions of a full rank, $m \times m$ matrix. 
     
-%     假设 $A$ 存在 QR 分解
-% $$
-% A=Q_{1} R_{1}=Q_{2} R_{2}
-% $$
-
-% 其中 $Q_{1}, Q_{2} \in \mathbb{C}^{m \times n}$ 单位列正交, $R_{1}, R_{2} \in \mathbb{C}^{n \times n}$ 为具有正对角元素的上三角矩阵. 则有
-
-% \begin{equation}
-%     \label{eqn: q1-q2-r}
-%     Q_{1}=Q_{2} R_{2} R_{1}^{-1}
-% \end{equation}
-
-
-% 由于 $R_{1}, R_{2}$ 均为上三角矩阵, 所以 $R_{2} R_{1}^{-1}$ 也是上三角矩阵, 且其对角线元素为 $R_{2}(i, i) / R_{1}(i, i)$, $i=1,2, \ldots, n$. 由 \cref{eqn: q1-q2-r} 可得
-
-% $$
-% 1=\left\|Q_{1}\right\|_{2}=\left\|Q_{2} R_{2} R_{1}^{-1}\right\|_{2}=\left\|R_{2} R_{1}^{-1}\right\|_{2}
-% $$
-
-% 所以
-% $$
-% \frac{R_{2}(i, i)}{R_{1}(i, i)} \leq 1, \quad i=1,2, \ldots, n
-% $$
-% 同理可证 $R_{1}(i, i) / R_{2}(i, i) \leq 1$. 所以
-% $$
-% R_{1}(i, i)=R_{2}(i, i), \quad i=1,2, \ldots, n
-% $$
-% 又 $\left\|Q_{1}\right\|_{F}^{2}=\operatorname{tr}\left(Q_{1}^{T} Q_{1}\right)=n$, 所以由 \cref{eqn: q1-q2-r} 可知
-% $$
-% \left\|R_{2} R_{1}^{-1}\right\|_{F}^{2}=\left\|Q_{2} R_{2} R_{1}^{-1}\right\|_{F}^{2}=\left\|Q_{1}\right\|_{F}^{2}=n
-% $$
-% 由于 $R_{2} R_{1}^{-1}$ 的对角线元素都是 1 , 所以 $R_{2} R_{1}^{-1}$ 只能是单位矩阵, 即 $R_{2}=R_{1}$. 因此 $Q_{2}=A R_{2}^{-1}=$ $A R_{1}^{-1}=Q_{1}$, 即 $A$ 的 $\mathrm{QR}$ 分解是唯一的.
-
+%     Using the theorem above, we get that $\boldsymbol{Q}_{2}=\boldsymbol{Q}_{1} \boldsymbol{S}$ and $\boldsymbol{R}_{2}=\boldsymbol{S} \boldsymbol{R}_{1}$ for a diagonal matrix $\boldsymbol{S}$ with entries $\pm 1$. 
+    
+%     Looking at the right-most partition of the original product yields $\boldsymbol{Q}_{1} \boldsymbol{N}_{1}=\boldsymbol{Q}_{2} \boldsymbol{N}_{2}$. But we've shown $\boldsymbol{Q}_{2}=\boldsymbol{Q}_{1} \boldsymbol{S}$, so now we have $\boldsymbol{Q}_{1} \boldsymbol{N}_{1}=\boldsymbol{Q}_{1} \boldsymbol{S} \boldsymbol{N}_{2}$. 
+    
+%     Left-multiplying by $\boldsymbol{Q}_{1}^{T}$ and then by $\boldsymbol{S}$ then proves $\boldsymbol{N}_{2}=\boldsymbol{S} \boldsymbol{N}_{1}$, completing the theorem.
 % \end{proof}
 
-\begin{theorem}[$m=n $矩阵$A$进行QR分解的唯一性]
-    If $ \boldsymbol{A}=\boldsymbol{Q}_{1} \boldsymbol{R}_{1}=\boldsymbol{Q}_{2} \boldsymbol{R}_{2} $ are two QR decompositions of full rank, square $ A $, then
-$$
-\begin{array}{l}
-\boldsymbol{Q}_{2}=\boldsymbol{Q}_{1} \boldsymbol{S} \\
-\boldsymbol{R}_{2}=\boldsymbol{S} \boldsymbol{R}_{1}
-\end{array}
-$$
-for some square diagonal $ \boldsymbol{S} $ with entries $ \pm 1 $. 
+% \begin{theorem}[$m>n $矩阵$A$进行QR分解的唯一性]
 
-If we require the diagonal entries of $ \boldsymbol{R} $ to be positive, then the decomposition is unique.
-\end{theorem}
+%     If $\boldsymbol{A}=\left[\begin{array}{ll}\boldsymbol{Q}_{1} & \boldsymbol{U}_{1}\end{array}\right]\left[\begin{array}{c}\boldsymbol{R}_{1} \\ 0\end{array}\right]=\left[\begin{array}{ll}\boldsymbol{Q}_{2} & \boldsymbol{U}_{2}\end{array}\right]\left[\begin{array}{c}\boldsymbol{R}_{2} \\ 0\end{array}\right]$ are two QR decompositions of a full rank, $m \times n$ matrix ${\boldsymbol{A}}$ with $m>n$, then
 
-\begin{theorem}[$m<n $矩阵$A$进行QR分解的唯一性]
-    
-    If $$\boldsymbol{A}=\boldsymbol{Q}_{1}\left[\begin{array}{ll}\boldsymbol{R}_{1} & \boldsymbol{N}_{1}\end{array}\right]=\boldsymbol{Q}_{2}\left[\begin{array}{ll}\boldsymbol{R}_{2} & \boldsymbol{N}_{2}\end{array}\right]$$ are two QR decompositions of a full rank, $m \times n$ matrix $\boldsymbol{A}$ with $m<n$, then
+% $$
+% \boldsymbol{Q}_{2}=\boldsymbol{Q}_{1} \boldsymbol{S}, \quad \boldsymbol{R}_{2}=\boldsymbol{S} \boldsymbol{R}_{1}, \quad \text { and } \quad \boldsymbol{U}_{2}=\boldsymbol{U}_{1} \boldsymbol{T}
+% $$
+% for square diagonal $\boldsymbol{S}$ with entries $\pm 1$, and square orthogonal $\boldsymbol{T}$. 
 
-    
-$$
-\boldsymbol{Q}_{2}=\boldsymbol{Q}_{1} \boldsymbol{S}, \quad \boldsymbol{R}_{2}=\boldsymbol{S R}_{1}, \quad \text { and } \quad \boldsymbol{N}_{2}=\boldsymbol{S} \boldsymbol{N}_{1}
-$$
-for square diagonal $S$ with entries $\pm 1$. 
+% If we require the diagonal entries of $\boldsymbol{R}$ to be positive, then $\boldsymbol{Q}$ and $\boldsymbol{R}$ are unique.
+% \end{theorem}
 
-If we require the diagonal entries of $\boldsymbol{R}$ to be positive, then the decomposition is unique.
+% \begin{proof}
+%     Let $\boldsymbol{A}$ be full rank and $m \times n$ with $m>n$. Suppose it has decompositions
+% $$
+% \boldsymbol{A}=\tilde{\boldsymbol{Q}}_{1} \tilde{\boldsymbol{R}}_{1}=\tilde{\boldsymbol{Q}}_{2} \tilde{\boldsymbol{R}}_{2}
+% $$
+% for $m \times m$ orthogonal matrices $\tilde{\boldsymbol{Q}}_{i}, m \times n$ and upper-triangular matrices $\tilde{\boldsymbol{R}}_{i}$. (We know we can do this because the QR decomposition always exists).
 
-\end{theorem}
+% Since $m>n$, we can write $\tilde{\boldsymbol{Q}}_{i}=\left[\begin{array}{ll}\boldsymbol{Q}_{i} & \boldsymbol{U}_{i}\end{array}\right]$ and $\tilde{\boldsymbol{R}}_{i}=\left[\begin{array}{c}\boldsymbol{R}_{i} \\ 0\end{array}\right]$ where $\boldsymbol{Q}_{i}$ is $m \times n$ and $\boldsymbol{U}_{i}$ is $m \times(m-n)$. Then
+% $$
+% \boldsymbol{A}=\tilde{\boldsymbol{Q}}_{i} \tilde{\boldsymbol{R}}_{i}=\left[\begin{array}{ll}
+% \boldsymbol{Q}_{i} & \boldsymbol{U}_{i}
+% \end{array}\right]\left[\begin{array}{c}
+% \boldsymbol{R}_{i} \\
+% 0
+% \end{array}\right]=\boldsymbol{Q}_{i} \boldsymbol{R}_{i}
+% $$
 
-\begin{proof}
-    Let $\boldsymbol{Q}_{1}\left[\begin{array}{ll}\boldsymbol{R}_{1} & \boldsymbol{N}_{1}\end{array}\right]=\boldsymbol{Q}_{2}\left[\begin{array}{ll}\boldsymbol{R}_{2} & \boldsymbol{N}_{2}\end{array}\right]$ with $\boldsymbol{Q}_{i}$ being $m \times m$ and orthogonal, $\boldsymbol{R}_{i}$ being $m \times m$ and upper triangular, and $\boldsymbol{N}_{i}$ being an arbitrary $m \times(n-m)$ matrix. 
-    
-    Then multiplying through yields $\boldsymbol{Q}_{1} \boldsymbol{R}_{1}=\boldsymbol{Q}_{2} \boldsymbol{R}_{2}$, two $\mathrm{QR}$ decompositions of a full rank, $m \times m$ matrix. 
-    
-    Using the theorem above, we get that $\boldsymbol{Q}_{2}=\boldsymbol{Q}_{1} \boldsymbol{S}$ and $\boldsymbol{R}_{2}=\boldsymbol{S} \boldsymbol{R}_{1}$ for a diagonal matrix $\boldsymbol{S}$ with entries $\pm 1$. 
-    
-    Looking at the right-most partition of the original product yields $\boldsymbol{Q}_{1} \boldsymbol{N}_{1}=\boldsymbol{Q}_{2} \boldsymbol{N}_{2}$. But we've shown $\boldsymbol{Q}_{2}=\boldsymbol{Q}_{1} \boldsymbol{S}$, so now we have $\boldsymbol{Q}_{1} \boldsymbol{N}_{1}=\boldsymbol{Q}_{1} \boldsymbol{S} \boldsymbol{N}_{2}$. 
-    
-    Left-multiplying by $\boldsymbol{Q}_{1}^{T}$ and then by $\boldsymbol{S}$ then proves $\boldsymbol{N}_{2}=\boldsymbol{S} \boldsymbol{N}_{1}$, completing the theorem.
-\end{proof}
+% where $\boldsymbol{R}_{i}$ is square, upper-triangular, invertible (because $\boldsymbol{A}$ is full rank), and the columns of $\boldsymbol{Q}_{i}$ are orthonormal so $\boldsymbol{Q}_{i}$ satisfies $\boldsymbol{Q}_{i}^{T} \boldsymbol{Q}_{i}=\boldsymbol{I}$.
+% Then we have
+% $$
+% \boldsymbol{Q}_{1} \boldsymbol{R}_{1}=\boldsymbol{Q}_{2} \boldsymbol{R}_{2}
+% $$
+% and left-multiplying by $\boldsymbol{Q}_{2}^{T}$ and right-multiplying by $\boldsymbol{R}_{1}^{-1}$ yields
+% $$
+% \boldsymbol{Q}_{2}^{T} \boldsymbol{Q}_{1}=\boldsymbol{R}_{2} \boldsymbol{R}_{1}^{-1}
+% $$
+% Note that the right-hand side of Eqn (2) is upper-triangular (since $\boldsymbol{R}_{i}$ is). On the other hand, left-multiplying Eqn (1) by $\boldsymbol{Q}_{1}^{T}$ and right-multiplying by $\boldsymbol{R}_{2}^{-1}$ gives $Q_{1}^{T} Q_{2}=R_{1} R_{2}^{-1}$, and taking the transpose yields a lower-triangular expression for $\boldsymbol{Q}_{2}^{T} \boldsymbol{Q}_{1}$. Therefore $\boldsymbol{Q}_{1}^{T} \boldsymbol{Q}_{2}=\boldsymbol{R}_{1} \boldsymbol{R}_{2}^{-1}$ is both lower- and upper-triangular, and so it is diagonal. Call it $\boldsymbol{D}$. Then right-multiplying Eqn (1) by $\boldsymbol{R}_{2}^{-1}$ yields
+% $$
+% \boldsymbol{Q}_{2} \boldsymbol{R}_{2} \boldsymbol{R}_{2}^{-1}=\boldsymbol{Q}_{2}=\boldsymbol{Q}_{1} \boldsymbol{R}_{1} \boldsymbol{R}_{2}^{-1}=\boldsymbol{Q}_{1} \boldsymbol{D}
+% $$
+% and so $\boldsymbol{Q}_{2}=Q_{1} \boldsymbol{D}$. Multiplying this by its transpose and using orthogonality of $\boldsymbol{Q}_{i}$ we get $\boldsymbol{I}=\boldsymbol{Q}_{2}^{T} \boldsymbol{Q}_{2}=\left(\boldsymbol{Q}_{1} \boldsymbol{D}\right)^{T}\left(\boldsymbol{Q}_{1} \boldsymbol{D}\right)=\boldsymbol{D}^{T} \boldsymbol{Q}_{1}^{T} \boldsymbol{Q}_{1} \boldsymbol{D}=\boldsymbol{D}^{T} \boldsymbol{D}=\boldsymbol{D}^{2}$. This proves $\boldsymbol{D}^{2}=\boldsymbol{I}$, so $\boldsymbol{D}=\boldsymbol{S}$, a diagonal matrix with entries $\pm 1$. So $\boldsymbol{Q}_{2}=\boldsymbol{Q}_{1} \boldsymbol{S}$. Left multiplying Eqn (1) by $\boldsymbol{Q}_{2}^{T}=\boldsymbol{S Q}_{1}^{T}$ then yields
 
-\begin{theorem}[$m>n $矩阵$A$进行QR分解的唯一性]
+% $$
+% \boldsymbol{S} \boldsymbol{Q}   _{1}^{T} \boldsymbol{Q}_{1} \boldsymbol{R}_{1}=\boldsymbol{S R}_{1}=\boldsymbol{Q}_{2}^{T} \boldsymbol{Q}_{2} \boldsymbol{R}_{2}=\boldsymbol{R}_{2}
+% $$
+% proving that $\boldsymbol{R}_{2}=\boldsymbol{S R}_{1}$.
 
-    If $\boldsymbol{A}=\left[\begin{array}{ll}\boldsymbol{Q}_{1} & \boldsymbol{U}_{1}\end{array}\right]\left[\begin{array}{c}\boldsymbol{R}_{1} \\ 0\end{array}\right]=\left[\begin{array}{ll}\boldsymbol{Q}_{2} & \boldsymbol{U}_{2}\end{array}\right]\left[\begin{array}{c}\boldsymbol{R}_{2} \\ 0\end{array}\right]$ are two QR decompositions of a full rank, $m \times n$ matrix ${\boldsymbol{A}}$ with $m>n$, then
-
-$$
-\boldsymbol{Q}_{2}=\boldsymbol{Q}_{1} \boldsymbol{S}, \quad \boldsymbol{R}_{2}=\boldsymbol{S} \boldsymbol{R}_{1}, \quad \text { and } \quad \boldsymbol{U}_{2}=\boldsymbol{U}_{1} \boldsymbol{T}
-$$
-for square diagonal $\boldsymbol{S}$ with entries $\pm 1$, and square orthogonal $\boldsymbol{T}$. 
-
-If we require the diagonal entries of $\boldsymbol{R}$ to be positive, then $\boldsymbol{Q}$ and $\boldsymbol{R}$ are unique.
-\end{theorem}
-
-\begin{proof}
-    Let $\boldsymbol{A}$ be full rank and $m \times n$ with $m>n$. Suppose it has decompositions
-$$
-\boldsymbol{A}=\tilde{\boldsymbol{Q}}_{1} \tilde{\boldsymbol{R}}_{1}=\tilde{\boldsymbol{Q}}_{2} \tilde{\boldsymbol{R}}_{2}
-$$
-for $m \times m$ orthogonal matrices $\tilde{\boldsymbol{Q}}_{i}, m \times n$ and upper-triangular matrices $\tilde{\boldsymbol{R}}_{i}$. (We know we can do this because the QR decomposition always exists).
-
-Since $m>n$, we can write $\tilde{\boldsymbol{Q}}_{i}=\left[\begin{array}{ll}\boldsymbol{Q}_{i} & \boldsymbol{U}_{i}\end{array}\right]$ and $\tilde{\boldsymbol{R}}_{i}=\left[\begin{array}{c}\boldsymbol{R}_{i} \\ 0\end{array}\right]$ where $\boldsymbol{Q}_{i}$ is $m \times n$ and $\boldsymbol{U}_{i}$ is $m \times(m-n)$. Then
-$$
-\boldsymbol{A}=\tilde{\boldsymbol{Q}}_{i} \tilde{\boldsymbol{R}}_{i}=\left[\begin{array}{ll}
-\boldsymbol{Q}_{i} & \boldsymbol{U}_{i}
-\end{array}\right]\left[\begin{array}{c}
-\boldsymbol{R}_{i} \\
-0
-\end{array}\right]=\boldsymbol{Q}_{i} \boldsymbol{R}_{i}
-$$
-
-where $\boldsymbol{R}_{i}$ is square, upper-triangular, invertible (because $\boldsymbol{A}$ is full rank), and the columns of $\boldsymbol{Q}_{i}$ are orthonormal so $\boldsymbol{Q}_{i}$ satisfies $\boldsymbol{Q}_{i}^{T} \boldsymbol{Q}_{i}=\boldsymbol{I}$.
-Then we have
-$$
-\boldsymbol{Q}_{1} \boldsymbol{R}_{1}=\boldsymbol{Q}_{2} \boldsymbol{R}_{2}
-$$
-and left-multiplying by $\boldsymbol{Q}_{2}^{T}$ and right-multiplying by $\boldsymbol{R}_{1}^{-1}$ yields
-$$
-\boldsymbol{Q}_{2}^{T} \boldsymbol{Q}_{1}=\boldsymbol{R}_{2} \boldsymbol{R}_{1}^{-1}
-$$
-Note that the right-hand side of Eqn (2) is upper-triangular (since $\boldsymbol{R}_{i}$ is). On the other hand, left-multiplying Eqn (1) by $\boldsymbol{Q}_{1}^{T}$ and right-multiplying by $\boldsymbol{R}_{2}^{-1}$ gives $Q_{1}^{T} Q_{2}=R_{1} R_{2}^{-1}$, and taking the transpose yields a lower-triangular expression for $\boldsymbol{Q}_{2}^{T} \boldsymbol{Q}_{1}$. Therefore $\boldsymbol{Q}_{1}^{T} \boldsymbol{Q}_{2}=\boldsymbol{R}_{1} \boldsymbol{R}_{2}^{-1}$ is both lower- and upper-triangular, and so it is diagonal. Call it $\boldsymbol{D}$. Then right-multiplying Eqn (1) by $\boldsymbol{R}_{2}^{-1}$ yields
-$$
-\boldsymbol{Q}_{2} \boldsymbol{R}_{2} \boldsymbol{R}_{2}^{-1}=\boldsymbol{Q}_{2}=\boldsymbol{Q}_{1} \boldsymbol{R}_{1} \boldsymbol{R}_{2}^{-1}=\boldsymbol{Q}_{1} \boldsymbol{D}
-$$
-and so $\boldsymbol{Q}_{2}=Q_{1} \boldsymbol{D}$. Multiplying this by its transpose and using orthogonality of $\boldsymbol{Q}_{i}$ we get $\boldsymbol{I}=\boldsymbol{Q}_{2}^{T} \boldsymbol{Q}_{2}=\left(\boldsymbol{Q}_{1} \boldsymbol{D}\right)^{T}\left(\boldsymbol{Q}_{1} \boldsymbol{D}\right)=\boldsymbol{D}^{T} \boldsymbol{Q}_{1}^{T} \boldsymbol{Q}_{1} \boldsymbol{D}=\boldsymbol{D}^{T} \boldsymbol{D}=\boldsymbol{D}^{2}$. This proves $\boldsymbol{D}^{2}=\boldsymbol{I}$, so $\boldsymbol{D}=\boldsymbol{S}$, a diagonal matrix with entries $\pm 1$. So $\boldsymbol{Q}_{2}=\boldsymbol{Q}_{1} \boldsymbol{S}$. Left multiplying Eqn (1) by $\boldsymbol{Q}_{2}^{T}=\boldsymbol{S Q}_{1}^{T}$ then yields
-
-$$
-\boldsymbol{S} \boldsymbol{Q}   _{1}^{T} \boldsymbol{Q}_{1} \boldsymbol{R}_{1}=\boldsymbol{S R}_{1}=\boldsymbol{Q}_{2}^{T} \boldsymbol{Q}_{2} \boldsymbol{R}_{2}=\boldsymbol{R}_{2}
-$$
-proving that $\boldsymbol{R}_{2}=\boldsymbol{S R}_{1}$.
-
-\end{proof}
+% \end{proof}
 
 \subsection{复矩阵的QR分解}
 
@@ -466,7 +484,7 @@ $$
 
 \begin{theorem}
     $$
-R^{\mathrm{T}} R \widehat{\boldsymbol{x}}=R^{\mathrm{T}} Q^{\mathrm{T}} \boldsymbol{b} \text { or } R \widehat{\boldsymbol{x}}=Q^{\mathrm{T}} \boldsymbol{b} \text { or } \quad \widehat{\boldsymbol{x}}=R^{-1} Q^{\mathrm{T}} \boldsymbol{b}
+R^{ {T}} R \widehat{\boldsymbol{x}}=R^{ {T}} Q^{ {T}} \boldsymbol{b} \text { or } R \widehat{\boldsymbol{x}}=Q^{ {T}} \boldsymbol{b} \text { or } \quad \widehat{\boldsymbol{x}}=R^{-1} Q^{ {T}} \boldsymbol{b}
 $$
 
 可以用于求解最小二乘法，而不用直接求解$Ax=b$（当$A$不可逆时）
@@ -816,9 +834,9 @@ $$
 Gram-Schmidt方法第$k$次循环的复杂度：
 
 \begin{itemize}
-    \item $ a_{k} $ 有k-1个 $ q_{i}^{T} a_{k} $ 内积操作: $ (\mathrm{k}-1)(2 \mathrm{~m}-1) $ flops
-    \item 计算 $ \tilde{q}_{k}: 2(\mathrm{k}-1) \mathrm{m} $ flops. $$ \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
-    \item 计算 $ R_{k k} $ 和 $ q_{k}: 3 \mathrm{~m} $ flops。 $  R_{k k}=\left\|\tilde{q}_{k}\right\|_{2}, q_{k}=\tilde{q}_{k} / R_{k k} $
+    \item $ a_{k} $ 有k-1个 $ q_{i}^{T} a_{k} $ 内积操作: $ ( {k}-1)(2  {~m}-1) $ flops
+    \item 计算 $ \tilde{q}_{k}: 2( {k}-1)  {m} $ flops. $$ \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
+    \item 计算 $ R_{k k} $ 和 $ q_{k}: 3  {~m} $ flops。 $  R_{k k}=\left\|\tilde{q}_{k}\right\|_{2}, q_{k}=\tilde{q}_{k} / R_{k k} $
 \end{itemize}
 
 第$k$次循环的总和：$(4m-1)(k-1)+3m$ flops
@@ -860,9 +878,9 @@ end
         \KwIn{矩阵$A$}
         \KwOut{QR分解得到的矩阵$Q$、$R$}
         \For(){$k = 1$ to $n$}{
-            $R_{\mathrm{jk}} =q_j^T a_k ,j<k,j=1,\ldotp \ldotp \ldotp ,k-1$\;
+            $R_{ {jk}} =q_j^T a_k ,j<k,j=1,\ldotp \ldotp \ldotp ,k-1$\;
             $v={\tilde{q} }_k =a_k -Q_{:,1:k-1} R_{1:k-1,k}$\;
-            $R_{\mathrm{kk}} ={\left\|{\tilde{q} }_k \right\|}_2$\;
+            $R_{ {kk}} ={\left\|{\tilde{q} }_k \right\|}_2$\;
             $q_k =\left(\frac{1}{R_{kk} }\right){\tilde{q} }_k$\;
         }
     \end{algorithm}
@@ -872,7 +890,7 @@ end
     S_{i i}=10^{-10(i-1) /(n-1)}, \quad i=1, \cdots, n
     $$
 
-    把Gram-Schmidt算法应用到一个大小为 $ \mathrm{m}=\mathrm{n}=50 $ 的方形矩阵$A$上。
+    把Gram-Schmidt算法应用到一个大小为 $  {m}= {n}=50 $ 的方形矩阵$A$上。
 
     \begin{FigureCenter}{$\max _{1 \leq i<k}\left|q_{i}^{T} q_{k}\right|$ (Gram-Schmidt Algorithm)}
         \includegraphics{qr-matlab-error.eps}
@@ -909,7 +927,7 @@ end
                 $R_{ij} = q_i^T v$\;
                 $v = v - R_{ij} q_i$\;
             }
-            $R_{\mathrm{kk}} ={\left\|{\tilde{q} }_k \right\|}_2$\;
+            $R_{ {kk}} ={\left\|{\tilde{q} }_k \right\|}_2$\;
             $q_k =\left(\frac{1}{R_{kk} }\right){\tilde{q} }_k$\;
 
         }
@@ -960,15 +978,18 @@ $$
 \subsection{Householder Matrix}
 
 \begin{theorem}
-    $ H=I-2 v v^{T} $, 其中 $ \|v\|_{2}=1 $, $ H x $ 是 $ x $ 关于超平面 $ \left\{u \mid v^{T} u=0\right\} $ 反对称.
+    $ H=I-2 v v^{T} $, 其中 $ \|v\|_{2}=1 $, $ H x $ 是 $ x $ 关于超平面 $ \left\{u \mid v^{T} u=0\right\} $ 反对称. b 
+\end{theorem}
 
-    $ H $ 是对称的 
+\begin{theorem}
+    $ H $ 是对称的 。
     $$ H^{T}=H $$
-
-$ H $ \textbf{是正交的}
-$$ H^{T} H=I $$
 \end{theorem}
     
+\begin{theorem}
+    $ H $ \textbf{是正交的}。
+$$ H^{T} H=I $$
+\end{theorem}
 
 \begin{FigureCenter}{Reflection of $x$}
     \input{tikz_images/tikz-householder-matrix.tex}
@@ -1098,7 +1119,7 @@ $$
 第k个步骤之后，矩阵 $ H_{k} H_{k-1} \ldots H_{1} A $ 具有以下结构:
 
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-对于 $ i>j $ 和 $ j \leq k $, 第 $ \mathrm{i}, \mathrm{j} $ 个位置的元素为零。
+对于 $ i>j $ 和 $ j \leq k $, 第 $  {i},  {j} $ 个位置的元素为零。
 
 
 \begin{FigureCenter}{The structure of $ H_{k} H_{k-1} \ldots H_{1} A $}
@@ -1439,7 +1460,7 @@ $$
 
 \subsection{矩阵-向量积 $ H_{k} x $算法复杂度}
 
-$ H_{k} x $ 乘积的复杂度为： $ 4(\mathrm{~m}-\mathrm{k}+1) $ flops。
+$ H_{k} x $ 乘积的复杂度为： $ 4( {~m}- {k}+1) $ flops。
 
 $H_{1} H_{2}, \ldots H_{n} $或其转置的乘积的复杂度为： 
 
@@ -1462,7 +1483,7 @@ Now we look at better methods (Householder and Givens), which use a product of s
 
 Elimination gives $A=L U$, orthogonalization gives $A=Q R$. We don't want a triangular $L$, we want an orthogonal $Q . L$ is a product of $E^{\prime}$ s from elimination, with 1's on the diagonal and the multiplier $\ell_{i j}$ below. \textbf{$Q$ will be a product of orthogonal matrices.}
 
-There are two simple orthogonal matrices to take the place of the $E$'s. The \term{reflection matrices} $I-2 u \boldsymbol{u}^{\mathrm{T}}$ are named after \textit{Householder}. The \term{plane rotation matrices} are named after \textit{Givens}. The simple matrix that rotates the $x y$ plane by $\theta$ is $Q_{21}$:  
+There are two simple orthogonal matrices to take the place of the $E$'s. The \term{reflection matrices} $I-2 u \boldsymbol{u}^{ {T}}$ are named after \textit{Householder}. The \term{plane rotation matrices} are named after \textit{Givens}. The simple matrix that rotates the $x y$ plane by $\theta$ is $Q_{21}$:  
 
 \begin{definition}[Givens Rotation in the 1-2 plane]
     $$Q_{21}=\left[\begin{array}{crc}
@@ -1537,7 +1558,7 @@ $$Q_{32} Q_{31} Q_{21} A=\left[\begin{array}{rrr}
     $$  
     \end{theorem}
     
-    The inverse of each $Q_{i j}$ is $Q_{i j}^{\mathrm{T}}$ (rotation through $\left.-\theta\right)$. The inverse of $E_{i j}$ was not an orthogonal matrix! \textbf{$L U$ and $Q R$ are similar but $L$ and $Q$ are not the same.}
+    The inverse of each $Q_{i j}$ is $Q_{i j}^{ {T}}$ (rotation through $\left.-\theta\right)$. The inverse of $E_{i j}$ was not an orthogonal matrix! \textbf{$L U$ and $Q R$ are similar but $L$ and $Q$ are not the same.}
 \end{example}
 
 Householder reflections are faster than rotations because each one clears out a whole column below the diagonal. Watch how the first column $a_{1}$ of $A$ becomes column $r_{1}$ of $R$ :
@@ -1623,7 +1644,7 @@ $$
 \subsection{QR分解求解$A^{-1}$}
 
 
-计算非奇异矩阵 $ \mathrm{A} \in \mathbb{R}^{n \times n} $ 的逆 $ \mathrm{A}^{-1} $, $X=\left[x_{1}, x_{2}, \cdots, x_{n}\right], x_{i} \in \mathbb{R}^{n}, i=1, \cdots, n$，$I=\left[e_{1}, e_{2}, \cdots, e_{n}\right], e_{i} \in \mathbb{R}^{n}, i=1, \cdots, n$
+计算非奇异矩阵 $  {A} \in \mathbb{R}^{n \times n} $ 的逆 $  {A}^{-1} $, $X=\left[x_{1}, x_{2}, \cdots, x_{n}\right], x_{i} \in \mathbb{R}^{n}, i=1, \cdots, n$，$I=\left[e_{1}, e_{2}, \cdots, e_{n}\right], e_{i} \in \mathbb{R}^{n}, i=1, \cdots, n$
 ：
 
 \begin{theorem}[QR分解求解$A^{-1}$]

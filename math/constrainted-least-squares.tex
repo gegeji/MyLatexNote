@@ -1841,7 +1841,7 @@ s.t.\;\;& g_1(x_1,\dots,x_n) \leq 0\\
 \label{thm:KKT8}
 \end{theorem}
 
-The values $\lambda_1,\dots,\lambda_m$ and $\mu_1,\dots,\mu_l$ are sometimes called \textit{Lagrange multipliers} and sometimes called \textit{dual variables}. Primal Feasibility, Dual Feasibility and Complementary Slackness are called the \textit{Karush-Kuhn-Tucker} (KKT) conditions.
+The values $\lambda_1,\dots,\lambda_m$ and $\mu_1,\dots,\mu_l$ are sometimes called \term{Lagrange multipliers} and sometimes called \term{dual variables}. Primal Feasibility, Dual Feasibility and Complementary Slackness are called the \term{Karush-Kuhn-Tucker} (KKT) conditions.
 
 \begin{remark} The regularity condition mentioned in Theorem \ref{thm:KKT7} is sometimes called a \term{constraint qualification}. A common one is that the gradients of the binding constraints are all linearly independent at $\mathbf{x}^*$. There are many variations of constraint qualifications. We will not deal with these in these notes. 
     
@@ -1851,7 +1851,7 @@ The values $\lambda_1,\dots,\lambda_m$ and $\mu_1,\dots,\mu_l$ are sometimes cal
 \begin{remark} Theorem \ref{thm:KKT7} holds as a necessary condition even if $z(\mathbf{x})$ is not concave or the functions $g_i(\mathbf{x})$ ($i=1,\dots,m$) are not convex or the functions $h_j(\mathbf{x})$ ($j=1,\dots,l$) are not linear. In this case though, the fact that a triple: $(\mathbf{x},\boldsymbol{\lambda}, \boldsymbol{\mu}) \in \mathbb{R}^{n} \times \mathbb{R}^m \times \mathbb{R}^l$ does not ensure that this is an optimal solution for Problem $P$.
 \end{remark}
 
-Looking more closely at the dual feasibility conditions, we see something interesting. Suppose that there are \textit{no} equality constraints (i.e., not constraints of the form $h_j(\mathbf{x}) = 0$). Then the statements:
+Looking more closely at the dual feasibility conditions, we see something interesting. Suppose that there are \term{no} equality constraints (i.e., not constraints of the form $h_j(\mathbf{x}) = 0$). Then the statements:
 
 \begin{displaymath}
 \begin{aligned}
@@ -1869,7 +1869,7 @@ imply that:
 \end{aligned}
 \end{displaymath}
 
-Specifically, this says that the \textit{gradient of $z$ at $\mathbf{x}^*$ is a positive combination of the gradients of the constraints at $\mathbf{x}^*$.} But more importantly, since we also have \textit{complementary slackness}, we know that if $\mathbf{g}_i(\mathbf{x}^*) \neq 0$, then $\lambda_i = 0$ because $\lambda_i g_i(\mathbf{x}^*) = 0$ for $i = 1,\dots,m$. Thus, what dual feasibility is really saying is that \textit{gradient of $z$ at $\mathbf{x}^*$ is a positive combination of the  gradients of the \textbf{binding} constraints at $\mathbf{x}^*$.} Remember, a constraint is binding if $g_i(\mathbf{x}^*) = 0$, in which case $\lambda_i \geq 0$.
+Specifically, this says that the \term{gradient of $z$ at $\mathbf{x}^*$ is a positive combination of the gradients of the constraints at $\mathbf{x}^*$.} But more importantly, since we also have \term{complementary slackness}, we know that if $\mathbf{g}_i(\mathbf{x}^*) \neq 0$, then $\lambda_i = 0$ because $\lambda_i g_i(\mathbf{x}^*) = 0$ for $i = 1,\dots,m$. Thus, what dual feasibility is really saying is that \term{gradient of $z$ at $\mathbf{x}^*$ is a positive combination of the  gradients of the \textbf{binding} constraints at $\mathbf{x}^*$.} Remember, a constraint is binding if $g_i(\mathbf{x}^*) = 0$, in which case $\lambda_i \geq 0$.
 
 
 \begin{remark} Continuing from the previous remark, in the general case when we have some equality constraints, then dual feasibility says:
@@ -1880,7 +1880,7 @@ Specifically, this says that the \textit{gradient of $z$ at $\mathbf{x}^*$ is a 
 \mu_j &\in \mathbb{R}\quad \text{for $j=1,\dots,l$}
 \end{aligned}
 \end{displaymath}
-Since equality constraints are \textit{always binding} this says that the \textit{gradient of $z$ at $\mathbf{x}^*$ is a linear combination of the  gradients of the \textbf{binding} constraints at $\mathbf{x}^*$.} 
+Since equality constraints are \term{always binding} this says that the \term{gradient of $z$ at $\mathbf{x}^*$ is a linear combination of the  gradients of the \textbf{binding} constraints at $\mathbf{x}^*$.} 
 \end{remark}
 
 \subsection{Linear Programming and KKT Conditions - An Example}
@@ -1955,7 +1955,7 @@ Or:
 \lambda_1,\lambda_2,\lambda_3,\lambda_4 & \geq 0
 \end{aligned}
 \end{displaymath}
-Since $\lambda_3, \lambda_4 \geq 0$, they act like \textit{surplus variables} and we can write the Dual Feasibility as:
+Since $\lambda_3, \lambda_4 \geq 0$, they act like \term{surplus variables} and we can write the Dual Feasibility as:
 \begin{equation}
 \left\{
 \begin{aligned}
@@ -1987,7 +1987,7 @@ We can now see that for the KKT conditions to hold, we must have $\lambda_3 = \l
 \begin{bmatrix}1\\1\end{bmatrix} = \frac{1}{3}\begin{bmatrix}1\\2\end{bmatrix} - 
 \frac{1}{3}\begin{bmatrix}2\\1\end{bmatrix}
 \end{equation}
-That is, we have expressed the gradient of the objective function ($\nabla z$) as a positive combination of the gradients of the \textit{binding} constraints ($\nabla g_1$ and $\nabla g_2$). This is shown in Figure \ref{fig:KKTLP-2}, in which we see the gradient of the objective function (red) inside the (cone of) the gradients of the binding constraints (blue and green).
+That is, we have expressed the gradient of the objective function ($\nabla z$) as a positive combination of the gradients of the \term{binding} constraints ($\nabla g_1$ and $\nabla g_2$). This is shown in Figure \ref{fig:KKTLP-2}, in which we see the gradient of the objective function (red) inside the (cone of) the gradients of the binding constraints (blue and green).
 
 \subsection{The Dual KKT Conditions}
 Recall that if we are given a linear programming problem of the form:
@@ -2009,7 +2009,7 @@ s.t.\;\; & \mathbf{w}\mathbf{A} \geq \mathbf{c}^T\\
 & \mathbf{w} \geq \mathbf{0}
 \end{aligned}\right.
 \end{equation}
-Here we assume that $\mathbf{w}$ is a \textit{row} vector (unlike our usual assumption that all vectors are column vectors). In our example problem, we have:
+Here we assume that $\mathbf{w}$ is a \term{row} vector (unlike our usual assumption that all vectors are column vectors). In our example problem, we have:
 \begin{displaymath}
 \mathbf{A} = \begin{bmatrix}1 & 2\\2 & 1\end{bmatrix} \quad \quad \mathbf{c} = \begin{bmatrix}1\\1\end{bmatrix} \quad \quad \mathbf{b} = \begin{bmatrix}4\\6\end{bmatrix}
 \end{displaymath}
@@ -2093,7 +2093,7 @@ x_1 + 2x_2 + s_1 &= 4\\
 x_1,x_2, s_1, s_2 &\geq 0
 \end{aligned}
 \end{displaymath}
-Since $s_1, s_2 \geq 0$, they act like \textit{slack variables} and thus we have:
+Since $s_1, s_2 \geq 0$, they act like \term{slack variables} and thus we have:
 \begin{displaymath}
 \begin{aligned}
 x_1 + 2x_2 &\leq  4\\
@@ -2124,7 +2124,7 @@ Likewise:
 \end{align*}
 Thus, the complementary slackness conditions of the primal problem are identical to the complementary slackness conditions of the dual problem. This fact is true for linear programming problems in general.
 
-\begin{remark} For an arbitrary linear programming problem and its dual, the KKT conditions for the primal and dual problems are \textbf{equivalent}, but the dual feasibility conditions for the primal problem are identical to the primal feasibility conditions for the dual problem and vice-versa. \textit{Thus, two linear programming problems are dual to each other if and only if they share KKT conditions with the primal and dual feasibility conditions swapped.}
+\begin{remark} For an arbitrary linear programming problem and its dual, the KKT conditions for the primal and dual problems are \textbf{equivalent}, but the dual feasibility conditions for the primal problem are identical to the primal feasibility conditions for the dual problem and vice-versa. \term{Thus, two linear programming problems are dual to each other if and only if they share KKT conditions with the primal and dual feasibility conditions swapped.}
 \end{remark}
 
 \begin{remark} We will use these results on KKT conditions and linear programs to discuss the solution (i.e., Nash equilibria) of zero-sum games via linear programming. We will then generalize these results to derive a quadratic programming problem whose optimal solutions will yield Nash equilibria. 
@@ -2133,7 +2133,7 @@ Thus, the complementary slackness conditions of the primal problem are identical
 \subsection{An Example from Nonlinear Programming}
 Let's recall a simple optimization problem from differential calculus (Math 140): Goats are an environmentally friendly and inexpensive way to control a lawn when there are lots of rocks or lots of hills. (Seriously, both Google and some U.S. Navy bases use goats on rocky hills instead of paying lawn mowers!) 
 
-Suppose I wish to build a pen to keep some goats. I have 100 meters of fencing and I wish to build the pen in a rectangle with the largest possible area. How long should the sides of the rectangle be? In this case, making the pen \textit{better} means making it have the largest possible area.
+Suppose I wish to build a pen to keep some goats. I have 100 meters of fencing and I wish to build the pen in a rectangle with the largest possible area. How long should the sides of the rectangle be? In this case, making the pen \term{better} means making it have the largest possible area.
 
 The problem is illustrated in Figure \ref{fig:GoatPen}.
 \begin{figure}[htbp]
@@ -2159,7 +2159,7 @@ Thus, $x = 25$ and $y = 50-x = 25$. We further recall from basic calculus how to
 \begin{equation}
 \left.\frac{d^2A}{dx^2}\right|_{x = 25} = -2 < 0
 \end{equation}
-Which implies that $x = 25$ is a \textit{local maximum} for this function. Another way of seeing this is to note that $A(x) = 50x-x^2$ is an concave (a frowning parabola). As we could have guessed, a square will maximize the area available for holding goats. 
+Which implies that $x = 25$ is a \term{local maximum} for this function. Another way of seeing this is to note that $A(x) = 50x-x^2$ is an concave (a frowning parabola). As we could have guessed, a square will maximize the area available for holding goats. 
 
 We can re-write the problem to be in a more common form
 \begin{equation}
@@ -2206,11 +2206,11 @@ Notice we substituted $x^*$ and $y^*$ into the complementary slackness equations
 \begin{displaymath}
 \begin{bmatrix}25\\25\end{bmatrix} - \mu\begin{bmatrix}2\\2\end{bmatrix} = \begin{bmatrix}0\\0\end{bmatrix}
 \end{displaymath}
-The solution: $\mu = 25/2$ satisfies this equality. Notice the gradient of the objective and the gradient of the (single) binding constraint are parallel. Notice also unlike a linear programming problem, the optimal solution to this problem \textit{does not} occur at the extreme point of the constraint set (which is really just the line segment $2x + 2y = 100$ with $x,y\geq 0$). This geometric interpretation is illustrated in Figure \ref{fig:KKTNLP}. The gradient of the objective is shown in red, the gradient of the binding constraint is shown in green. Note, the gradient of the binding constraint has been scaled for visual effect. As expected, the level curves shown are given by the (implicit) equation $xy = k$. As you go up and right, the value of $k$ increases.
+The solution: $\mu = 25/2$ satisfies this equality. Notice the gradient of the objective and the gradient of the (single) binding constraint are parallel. Notice also unlike a linear programming problem, the optimal solution to this problem \term{does not} occur at the extreme point of the constraint set (which is really just the line segment $2x + 2y = 100$ with $x,y\geq 0$). This geometric interpretation is illustrated in Figure \ref{fig:KKTNLP}. The gradient of the objective is shown in red, the gradient of the binding constraint is shown in green. Note, the gradient of the binding constraint has been scaled for visual effect. As expected, the level curves shown are given by the (implicit) equation $xy = k$. As you go up and right, the value of $k$ increases.
 \begin{figure}[htbp]
 \centering
 \includegraphics[scale=0.75]{imported_figures/KKTNLP.eps}
-\caption{Visualization of the KKT conditions for a simple nonlinear programming problem. Notice the point of optimality is not at an extreme point. Moreover, the gradient of the binding constraint is parallel to the gradient of the objective, as expected. \textit{Note, the gradient of the binding constraint has been scaled larger for visual effect.}}
+\caption{Visualization of the KKT conditions for a simple nonlinear programming problem. Notice the point of optimality is not at an extreme point. Moreover, the gradient of the binding constraint is parallel to the gradient of the objective, as expected. \term{Note, the gradient of the binding constraint has been scaled larger for visual effect.}}
 \label{fig:KKTNLP}
 \end{figure}
 

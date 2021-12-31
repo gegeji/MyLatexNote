@@ -3,11 +3,11 @@
 \section{Matrices}
 
 \begin{definition}[矩阵]
-    \textit{矩阵}是一个由数字构成的矩阵数组. 
+    \term{矩阵}是一个由数字构成的矩阵数组. 
 
     $$ \left[\begin{array}{cccc}0 & 1 & -2.3 & 0.1 \\ 1.3 & 4 & -0.1 & 0 \\ 4.1 & -1 & 0 & 1.7\end{array}\right] \quad  \left(\begin{array}{cccc}0 & 1 & -2.3 & 0.1 \\ 1.3 & 4 & -0.1 & 0 \\ 4.1 & -1 & 0 & 1.7\end{array}\right)  $$
 
-    上述矩阵\textit{大小(size)}为 $3\times 4$, 矩阵的每一个\textit{元素(element)}又称为\textit{系数(coefficient)};
+    上述矩阵\term{大小(size)}为 $3\times 4$, 矩阵的每一个\term{元素(element)}又称为\term{系数(coefficient)};
 \end{definition}
 
 \begin{notation}
@@ -35,9 +35,9 @@
 \begin{definition}[高形, 宽形和方形矩阵]
     一个大小为$m\times n$的矩阵为：
     \begin{itemize}
-        \item \textit{高}的, 如果$m>n$
-        \item \textit{宽}的, 如果$m<n$
-        \item \textit{方}的, 如果$m=n$
+        \item \term{高}的, 如果$m>n$
+        \item \term{宽}的, 如果$m<n$
+        \item \term{方}的, 如果$m=n$
     \end{itemize}
 \end{definition}
 
@@ -46,7 +46,7 @@
 
     $$ A=\left[\begin{array}{ll}B & C \\ D & E\end{array}\right] $$
 
-    其中$B,C,D,E$都是矩阵(被称为\textit{矩阵$A$的子矩阵}).
+    其中$B,C,D,E$都是矩阵(被称为\term{矩阵$A$的子矩阵}).
 \end{definition}
 
 分块矩阵位于同一行的子矩阵行维度必须相等,位于同一列的子矩阵列维度必须相等.
@@ -257,6 +257,22 @@ It makes sense to multiply a square matrix $ A $ by itself to form $ A A $.
     $$ x_{t+\ell}=A^{\ell} x_{t} $$
 \end{example}
 
+\section{矩阵运算的算法复杂度}
+
+\subsection{矩阵加法、标量数乘、转置、$Ax$的算法复杂度}
+
+The addition of two $ m \times n $ matrices or a scalar multiplication of an $ m \times n $ matrix each take $ m n $ flops.
+
+When $ A $ is sparse, scalar multiplication requires $ \mathbf{n n z}(A) $ flops. 
+
+When at least one of $ A $ and $ B $ is sparse, computing $ A+B $ requires at $ \operatorname{most} \min \{\mathbf{n n z}(A), \mathbf{n n z}(B)\} $ flops. (For any entry $ i, j $ for which one of $ A_{i j} $ or $ B_{i j} $ is zero, no arithmetic operations are needed to find $ \left.(A+B)_{i j} \right) $.
+
+Matrix transposition, i.e., computing $ A^{T} $, requires zero flops, since we simply copy entries of $ A $ to those of $ A^{T} $. (Copying the entries does take time to carry out, but this is not reflected in the flop count.)
+
+A matrix-vector multiplication of an $ m \times n $ matrix $ A $ with an $ n $-vector $ x $ requires $ m(2 n-1) $ flops, which we simplify to $ 2 m n $ flops. This can be seen as follows. The result $ y=A x $ of the product is an $ m $-vector, so there are $ m $ numbers to compute. The $ i $ th element of $ y $ is the inner product of the $ i $ th row of $ A $ and the vector $ x $, which takes $ 2 n-1 $ flops.
+
+If $ A $ is sparse, computing $ A x $ requires $ \mathbf{n n z}(A) $ multiplies (of $ A_{i j} $ and $ x_{j} $, for each nonzero entry of $ A $ ) and a number of additions that is no more than $ \mathbf{n n z}(A) $. Thus, the complexity is between $ \mathbf{n n z}(A) $ and $ 2 \mathbf{n n z}(A) $ flops. As a special example, suppose $ A $ is $ n \times n $ and diagonal. Then $ A x $ can be computed with $ n $ multiplies $ \left(A_{i i}\right. $ times $ x_{i} $ ) and no additions, a total of $ n=\mathbf{n n z}(A) $ flops.
+
 \subsection{矩阵乘法的算法复杂度}
 
 \subsubsection{一般矩阵的乘法}
@@ -413,19 +429,129 @@ $$
 
 sparse matrix storage formats and algorithms exploit sparsity, efficiency depends on number of nonzeros and their positions. The positions of nonzeros are visualized in a `spy plot'.
 
-\subsection{$f(x)=A x$中的$A$}
+\subsection{$f(x)=A x$中的$A$ （几何变换）}
 
 引入上节$f(x)=A x$(矩阵-向量乘积函数)的概念,
 
-\begin{example}[Permutation Matrices]
-    $ f $ 颠倒向量 $ x $ 中的元素的顺序, 一个线性函数 $ f(x)=A x $
+\begin{definition}[Scaling]
+    Scaling is the mapping $ y=a x $, where $ a $ is a scalar. This can be expressed as $ y=A x $ with $ A=a I $. This mapping stretches a vector by the factor $ |a| $ (or shrinks it when $ |a|<1 $ ), and it flips the vector (reverses its direction) if $ a<0 $.
+\end{definition}
 
-    $$ A=\left[\begin{array}{lll}0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0\end{array}\right] $$是一个置换矩阵.
+\begin{definition}[Dilation]
+    Dilation is the mapping $ y=D x $, where $ D $ is a diagonal matrix, $ D= $ $ \operatorname{diag}\left(d_{1}, d_{2}\right) $. This mapping stretches the vector $ x $ by different factors along the two different axes. (Or shrinks, if $ \left|d_{i}\right|<1 $, and flips, if $ d_{i}<0 $.)
+\end{definition}
+
+
+
+
+
+
+
+\begin{definition}[旋转矩阵]
+    $$ A=\left[\begin{array}{cc}\cos \theta & -\sin \theta \\ \sin \theta & \cos \theta\end{array}\right] $$
+
+    $ {A} x $ 将向量 $ x $ 进行旋转, 角度为 $ \theta $.
+\end{definition}
+
+\begin{definition}[Reflection Matrices]
+    Suppose that $y$ is the vector obtained by reflecting $x$ through the line
+    that passes through the origin, inclined $\theta$ radians with respect to horizontal. Then
+
+    $$ y=\left[\begin{array}{rr}\cos (2 \theta) & \sin (2 \theta) \\ \sin (2 \theta) & -\cos (2 \theta)\end{array}\right] x $$
+\end{definition}
+
+
+\begin{definition}[Projection onto a line]
+    The projection of the point $ x $ onto a set is the point in the set that is closest to $ x $. Suppose $ y $ is the projection of $ x $ onto the line that passes through the origin, inclined $ \theta $ radians with respect to horizontal. Then we have
+$$
+y=\left[\begin{array}{cc}
+(1 / 2)(1+\cos (2 \theta)) & (1 / 2) \sin (2 \theta) \\
+(1 / 2) \sin (2 \theta) & (1 / 2)(1-\cos (2 \theta))
+\end{array}\right] x .
+$$
+\end{definition}
+
+% todo (2021-12-31 09:47): 149
+
+\subsection{Finding the Geometric Transformation Matrix}
+
+When a geometric transformation is represented by matrix-vector multiplication (as in the examples above), a simple method to find the matrix is to find its columns. \textbf{The $ i $ th column is the vector obtained by applying the transformation to $ e_{i} . $}
+
+\begin{example}
+    As a simple example consider clockwise rotation by $ 90^{\circ} $ in 2-D. Rotating the vector $ e_{1}=(1,0) $ by $ 90^{\circ} $ gives $ (0,-1) $; rotating $ e_{2}=(0,1) $ by $ 90^{\circ} $ gives $ (1,0) $. So rotation by $ 90^{\circ} $ is given by
+$$
+y=\left[\begin{array}{rr}
+0 & 1 \\
+-1 & 0
+\end{array}\right] x .
+$$
 \end{example}
 
-\begin{proof}
-    $$ A x=\left[\begin{array}{lll}0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0\end{array}\right]\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right]=\left[\begin{array}{l}x_{3} \\ x_{2} \\ x_{1}\end{array}\right] $$
-\end{proof}
+\begin{example}[Changeof Coordinates]
+    Change of coordinates. In many applications multiple coordinate systems are used to describe locations or positions in 2-D or 3-D. For example in aerospace engineering we can describe a position using earth-fixed coordinates or body-fixed coordinates, where the body refers to an aircraft. Earth-fixed coordinates are with respect to a specific origin, with the three axes pointing East, North, and straight up, respectively. The origin of the body-fixed coordinates is a specific location on the aircraft (typically the center of gravity), and the three axes point forward (along the aircraft body), left (with respect to the aircraft body), and up (with respect to the aircraft body). Suppose the 3 -vector $ x^{\text {body }} $ describes a location using the body coordinates, and $ x^{\text {earth }} $ describes the same location in earth-fixed coordinates. These are related by
+$$
+x^{\text {earth }}=p+Q x^{\text {body }},
+$$
+
+where $ p $ is the location of the airplane center (in earth-fixed coordinates) and $ Q $ is a $ 3 \times 3 $ matrix. The $ i $ th column of $ Q $ gives the earth-fixed coordinates for the $ i $ th
+axis of the airplane. For an airplane in level flight, heading due South, we have
+$$
+Q=\left[\begin{array}{rrr}
+0 & 1 & 0 \\
+-1 & 0 & 0 \\
+0 & 0 & 1
+\end{array}\right]
+$$
+\end{example}
+
+
+\subsection{$f(x)=A x$中的$A$（其他）}
+
+\begin{example}[Negation]
+    $ f $ changes the sign of $ x: f(x)=-x $.
+
+Negation can be expressed as $ f(x)=A x $ with $ A=-I $.
+\end{example}
+
+\begin{example}[Running Sum Matrix]
+    The $ n \times n $ matrix
+$$
+S=\left[\begin{array}{cccccc}
+1 & 0 & 0 & \ldots & 0 & 0 \\
+1 & 1 & 0 & \ldots & 0 & 0 \\
+& & \ddots & \ddots & & \\
+& & & \ddots & \ddots & \\
+1 & 1 & 1 & \ldots & 1 & 0 \\
+1 & 1 & 1 & \ldots & 1 & 1
+\end{array}\right]
+$$
+is called the running sum matrix. 
+
+The $ i $ th entry of the $ n $-vector $ S x $ is the sum of the first $ i $ entries of $ x $ :
+$$
+S x=\left[\begin{array}{c}
+x_{1} \\
+x_{1}+x_{2} \\
+x_{1}+x_{2}+x_{3} \\
+\vdots \\
+x_{1}+\cdots+x_{n}
+\end{array}\right]
+$$
+\end{example}
+
+\begin{example}[De-meaning, Centering Matrix]
+    $ f $ subtracts the mean from each entry of a vector $ x $ : $ f(x)= $ $ x-\operatorname{avg}(x) $ 1.
+
+The de-meaning function can be expressed as $ f(x)=A x $ with
+$$
+A=\left[\begin{array}{cccc}
+1-1 / n & -1 / n & \cdots & -1 / n \\
+-1 / n & 1-1 / n & \cdots & -1 / n \\
+\vdots & \vdots & \ddots & \vdots \\
+-1 / n & -1 / n & \cdots & 1-1 / n
+\end{array}\right] \text {. }
+$$
+\end{example}
 
 \begin{example}
     $ f $ 对向量 $ x $ 中的元素进行升序排序, 非线性;
@@ -435,46 +561,77 @@ sparse matrix storage formats and algorithms exploit sparsity, efficiency depend
     $ f $ 将向量 $ x $ 中的元素替换成相应的绝对值, 非线性;
 \end{example}
 
-\begin{example}[反转矩阵(Reverser matrix)]
+
+\subsection{Selectors}
+
+
+
+\begin{definition}[Selector matrices]
+    An $ m \times n $ selector matrix $ A $ is one in which each row is a unit vector (transposed)
+$$
+A=\left[\begin{array}{c}
+e_{k_{1}}^{T} \\
+\vdots \\
+e_{k_{m}}^{T}
+\end{array}\right]
+$$
+where $ k_{1}, \ldots, k_{m} $ are integers in the range $ 1, \ldots, n . $ 
+\end{definition}
+
+When it multiplies a vector, it simply copies the $ k_{i} $ th entry of $ x $ into the $ i $ th entry of $ y=A x $ :
+$$
+y=\left(x_{k_{1}}, x_{k_{2}}, \ldots, x_{k_{m}}\right) .
+$$
+
+In words, each entry of $ A x $ is a selection of an entry of $ x $.
+
+The identity matrix, and the reverser matrix are special cases of selector matrices.
+
+\begin{definition}[Permutation Matrices]
+    $ f $ 颠倒向量 $ x $ 中的元素的顺序, 一个线性函数 $ f(x)=A x $
+
+    $$ A=\left[\begin{array}{lll}0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0\end{array}\right] $$是一个置换矩阵.
+\end{definition}
+
+\begin{proof}
+    $$ A x=\left[\begin{array}{lll}0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0\end{array}\right]\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right]=\left[\begin{array}{l}x_{3} \\ x_{2} \\ x_{1}\end{array}\right] $$
+\end{proof}
+
+\begin{definition}[反转矩阵(Reverser matrix)]
     $$ A=\left[\begin{array}{ccccc}0 & 0 & \cdots & 0 & 1 \\ 0 & 0 & \cdots & 1 & 0 \\ \vdots & \vdots & \therefore & \vdots & \vdots \\ 0 & 1 & \cdots & 0 & 0 \\ 1 & 0 & \cdots & 0 & 0\end{array}\right] $$
-\end{example}
+\end{definition}
 
 \begin{proof}
     $$ A x=\left[\begin{array}{c}x_{n} \\ x_{n-1} \\ \vdots \\ x_{2} \\ x_{1}\end{array}\right] $$
 \end{proof}
 
-\begin{example}[循环移位矩阵(Circular shift matrix)]
+\begin{definition}[循环移位矩阵(Circular shift matrix)]
     $$ A=\left[\begin{array}{ccccc}0 & 0 & \cdots & 0 & 1 \\ 1 & 0 & \cdots & 0 & 0 \\ 0 & 1 & \cdots & 0 & 0 \\ \vdots & \vdots & \ddots & \vdots & \vdots \\ 0 & 0 & \cdots & 1 & 0\end{array}\right] $$
-\end{example}
+\end{definition}
 
 \begin{proof}
     $$ A x=\left[\begin{array}{c}x_{n} \\ x_{1} \\ x_{2} \\ \vdots \\ x_{n-1}\end{array}\right] $$
 \end{proof}
 
-\begin{example}[旋转矩阵]
-    $$ A=\left[\begin{array}{cc}\cos \theta & -\sin \theta \\ \sin \theta & \cos \theta\end{array}\right] $$
-
-    $ {A} x $ 将向量 $ x $ 进行旋转, 角度为 $ \theta $.
-\end{example}
-
-\begin{example}[Reflection Matrices]
-    Suppose that $y$ is the vector obtained by reflecting $x$ through the line
-    that passes through the origin, inclined $\theta$ radians with respect to horizontal. Then
-
-    $$ y=\left[\begin{array}{rr}\cos (2 \theta) & \sin (2 \theta) \\ \sin (2 \theta) & -\cos (2 \theta)\end{array}\right] x $$
-\end{example}
-
-\subsection{Selectors}
-
-\begin{definition}[Selector matrices]
-    
-\end{definition}
-
 \begin{definition}[Downsampling]
-    
+    Down-sampling. Another example is the $ (n / 2) \times n $ matrix (with $ n $ even)
+$$
+A=\left[\begin{array}{ccccccccccc}
+1 & 0 & 0 & 0 & 0 & 0 & \cdots & 0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 0 & 0 & \cdots & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 1 & 0 & \cdots & 0 & 0 & 0 & 0 \\
+\vdots & \vdots & \vdots & \vdots & \vdots & \vdots & & \vdots & \vdots & \vdots & \vdots \\
+0 & 0 & 0 & 0 & 0 & 0 & \cdots & 1 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & \cdots & 0 & 0 & 1 & 0
+\end{array}\right] \text {. }
+$$
 \end{definition}
 
-\subsection{图论：节点弧关联矩阵}
+\begin{example}
+    If $ y=A x $, we have $ y=\left(x_{1}, x_{3}, x_{5}, \ldots, x_{n-3}, x_{n-1}\right) $. When $ x $ is a time series, $ y $ is called the $ 2 \times $ down-sampled version of $ x $.
+\end{example}
+
+\subsection{图论中的矩阵}
 
 
 \begin{definition}[关联矩阵]
@@ -570,13 +727,62 @@ $$
 \end{example}
 
 
+\subsection{网络中的矩阵}
 
+In many applications a graph is used to represent a network, through which some commodity or quantity such as electricity, water, heat, or vehicular traffic flows. The edges of the graph represent the paths or links over which the quantity can move or flow, in either direction. If $ x $ is an $ m $-vector representing a flow in the network, we interpret $ x_{j} $ as the flow (rate) along the edge $ j $, with a positive value meaning the flow is in the direction of edge $ j $, and negative meaning the flow is in the opposite direction of edge $ j $. In a network, the direction of the edge or link does not specify the direction of flow; it only specifies which direction of flow we consider to be positive.
+
+\subsubsection{Flow conservation}
+
+When $ x $ represents a flow in a network, the matrix-vector product $ y=A x $ can be given a very simple interpretation. 
+
+The $ n $-vector $ y=A x $ can be interpreted as the vector of net flows, from the edges, into the nodes: $ y_{i} $ is equal to the total of the flows that come in to node $ i $, minus the total of the flows that go out from node $ i $. The quantity $ y_{i} $ is sometimes called the \term{flow surplus} at node $ i $.
+
+If $ A x=0 $, we say that \term{flow conservation} occurs, since at each node, the total inflow matches the total out-flow. In this case the flow vector $ x $ is called a \term{circulation}. This could be used as a model of traffic flow (in a closed system), with the nodes representing intersections and the edges representing road segments (one for each
+direction).
+
+\subsubsection{Sources and Sinks}
+
+In many applications it is useful to include additional flows called \term{source flows} or \term{exogenous flows}, that enter or leave the network at the nodes, but not along the edges. We denote these flows with an $ n $-vector $ s $. 
+
+We can think of $ s_{i} $ as a flow that enters the network at node $ i $ from outside, i.e., not from any edge. When $ s_{i}>0 $ the exogenous flow is called a \term{source}, since it is injecting the quantity into the network at the node. When $ s_{i}<0 $ the exogenous flow is called a \term{sink}, since it is removing the quantity from the network at the node.
+
+\subsubsection{Flow Conservation with Sources}
+
+The equation $Ax + s = 0$ means that the flow
+is conserved at each node, counting the source flow: The total of all incoming flow,
+from the incoming edges and exogenous source, minus the total outgoing flow from
+outgoing edges and exogenous sinks, is zero.
+
+\subsubsection{Node Potentials}
+
+A graph is also useful when we focus on the values of some quantity at each graph vertex or node. Let $ v $ be an $ n $-vector, often interpreted as a potential, with $ v_{i} $ the potential value at node $ i $. We can give a simple interpretation to the matrix-vector product $ u=A^{T} v $. The $ m $-vector $ u=A^{T} v $ gives the potential differences across the edges: $ u_{j}=v_{l}-v_{k} $, where edge $ j $ goes from node $ k $ to node $ l $.
+
+\subsubsection{Dirichlet Energy}
+
+When the $ m $-vector $ A^{T} v $ is small, it means that the potential differences across the edges are small. Another way to say this is that the potentials of connected vertices are near each other. A quantitative measure of this is the function of $ v $ given by
+$$
+\mathcal{D}(v)=\left\|A^{T} v\right\|^{2}
+$$
+This function arises in many applications, and is called the Dirichlet energy (or Laplacian quadratic form) associated with the graph. It can be expressed as
+$$
+\mathcal{D}(v)=\sum_{\text {edges }(k, l)}\left(v_{l}-v_{k}\right)^{2}
+$$
+
+which is the sum of the squares of the potential differences of v across all edges in
+the graph. The Dirichlet energy is small when the potential differences across the
+edges of the graph are small, i.e., nodes that are connected by edges have similar
+potential values.
+The Dirichlet energy is used as a measure the non-smoothness (roughness) of
+a set of node potentials on a graph. A set of node potentials with small Dirichlet
+energy can be thought of as smoothly varying across the graph. Conversely, a set
+of potentials with large Dirichlet energy can be thought of as non-smooth or rough.
+The Dirichlet energy will arise as a measure of roughness in several applications.
 
 \subsection{Convolution}
 
 
 \begin{definition}[一维卷积]
-    向量 $ a \in \mathbb{R}^{n} $ 和向量 $ b \in \mathbb{R}^{m} $ 的\textit{卷积}是一个 $ ({n}+{m}-1) $ 维向量 $ c \in \mathbb{R}^{m+{n}-1} $
+    向量 $ a \in \mathbb{R}^{n} $ 和向量 $ b \in \mathbb{R}^{m} $ 的\term{卷积}是一个 $ ({n}+{m}-1) $ 维向量 $ c \in \mathbb{R}^{m+{n}-1} $
 
     $$ c_{k}=\sum_{i+j=k+1} a_{i} b_{j}, \quad k=1, \ldots n+m-1 $$
 
@@ -738,6 +944,21 @@ a_{4}
 $$
 \end{example}
 
+Convolution has a natural extension to multiple dimensions.
+
+\begin{definition}[2-D convolution]
+     Suppose that $ A $ is an $ m \times n $ matrix and $ B $ is a $ p \times q $ matrix. Their convolution is the $ (m+p-1) \times(n+q-1) $ matrix
+$$
+C_{r s}=\sum_{i+k=r+1, j+l=s+1} A_{i j} B_{k l}, \quad r=1, \ldots, m+p-1, \quad s=1, \ldots, n+q-1,
+$$
+
+where the indices are restricted to their ranges (or alternatively, we assume that $ A_{i j} $ and $ B_{k l} $ are zero, when the indices are out of range). 
+\end{definition}
+
+This is not denoted $ C=A * B $, however, in standard mathematical notation. So we will use the notation $ C=A \star B $.
+
+The same properties that we observed for 1-D convolution hold for 2-D convolution: We have $ A \star B=B \star A,(A \star B) \star C=A \star(B \star C) $, and for fixed $ B, A \star B $ is a linear function of $ A $.
+
 \begin{example}[moving average of a time series]
     $ n $-vector $ x $ represents a time series. The \term{3-period moving average of the time series} is the time series
 $$
@@ -752,7 +973,7 @@ This can be expressed as a convolution $ y=a * x $ with $ a=(1 / 3,1 / 3,1 / 3) 
 \subsection{多项式}
 
 \begin{definition}[多项式]
-    \textit{多项式} $ p(t) $, \textit{度}为 $ n-1 $, \textit{系数}为 $ x_{1}, x_{2}, \ldots, x_{n} $
+    \term{多项式} $ p(t) $, \term{度}为 $ n-1 $, \term{系数}为 $ x_{1}, x_{2}, \ldots, x_{n} $
 
     $$
 p(t)=x_{1}+x_{2} t+x_{3} t^{2}+\cdots+x_{n} t^{n-1}
@@ -780,7 +1001,7 @@ $$
     \end{array}\right]=A x
     $$
 
-    矩阵$A$被称为\textit{Vandermonde矩阵}.
+    矩阵$A$被称为\term{Vandermonde矩阵}.
 \end{definition}
 
 \subsection{Fourier Transform}
@@ -801,10 +1022,10 @@ DFT矩阵W的第 $ k $ 行第 $ l $ 列的元素为 $ W_{k l}=\omega^{-(k-1)(l-1
     $$ x_{\ell}=\frac{1}{n} \sum_{k=1}^{n} y_{k} e^{i \frac{2 \pi}{n}(k-1)(\ell-1)}, \ell=1, \cdots, n $$
 \end{definition}
 
-\subsection{Semi-Definite Matrices}
+\section{Semi-Definite Matrices}
 
 \begin{definition}[半正定矩阵]
-    对称矩阵 $ A \in \mathbb{R}^{n \times n} $ 称为\textit{半正定矩阵}, 满足以下条件
+    对称矩阵 $ A \in \mathbb{R}^{n \times n} $ 称为\term{半正定矩阵}, 满足以下条件
 
 $$
 x^{T} A x \geq 0 \quad \forall x \in \mathbb{R}^{n}
@@ -812,14 +1033,14 @@ $$
 \end{definition}
 
 \begin{definition}[正定矩阵]
-    对称矩阵 $ A \in \mathbb{R}^{n \times n} $ 称为正定矩阵, 满足以下条件
+    对称矩阵 $ A \in \mathbb{R}^{n \times n} $ 称为\term{正定矩阵}, 满足以下条件
 $$
 x^{T} A x>0 \quad \forall x \neq 0
 $$
 \end{definition}
 
 \begin{definition}[二次型]
-    如果对称矩阵 $ A \in \mathbb{R}^{n \times n} $, 则 $ x^{T} A x $ 是二次型
+    如果$ A \in \mathbb{R}^{n \times n} $是对称矩阵, 则 $ x^{T} A x $ 是\term{二次型}函数。
 \end{definition}
 
 \begin{proof}
@@ -1036,7 +1257,7 @@ $ D f(z) $ is called the \term{derivative matrix} or \term{Jacobian matrix} of $
 \begin{definition}[向量范数和算子范数相容]
     $$ \frac{\|A x\|_{v}}{\|x\|_{v}} \leq\|A\|_{v} \Rightarrow\|A x\|_{v} \leq\|A\|_{v}\|x\|_{v} $$
 
-    称向量范数和算子范数\textit{相容}. 
+    称向量范数和算子范数\term{相容}. 
 \end{definition}
 
 \begin{theorem}[算子范数服从乘法范数相容性]
@@ -1048,7 +1269,7 @@ $ D f(z) $ is called the \term{derivative matrix} or \term{Jacobian matrix} of $
         & \leq\|A\|_{v} \max _{x \neq 0}\left\{\frac{\|B\|_{v}\|x\|_{v}}{\|x\|_{v}}\right\} \\
         & =\|A\|_{v}\|B\|_{v}
     \end{aligned}$$
-    算子范数服从\textit{乘法范数相容性}.
+    算子范数服从\term{乘法范数相容性}.
 \end{theorem}
 
 根据向量的常用范数可以导出矩阵 $ A \in \mathbb{R}^{m \times n} $ 的算子范数
@@ -1083,9 +1304,13 @@ The maximum ratio $\lambda_{\max }$ is when all $c$ 's are zero, except the one 
     The ratio in equation \ref{eqn:a-l2-norm} is the Rayleigh quotient for the symmetric matrix $A^{{T}} A$. Its maximum is the largest eigenvalue $\lambda_{\max }\left(A^{{T}} A\right) .$ The minimum ratio is $\lambda_{\min }\left(A^{{T}} A\right)$. If you substitute any vector $\boldsymbol{x}$ into the Rayleigh quotient $\boldsymbol{x}^{{T}} A^{{T}} A \boldsymbol{x} / \boldsymbol{x}^{{T}} \boldsymbol{x}$, you are guaranteed to get a number between $\lambda_{\min }\left(A^{{T}} A\right)$ and $\lambda_{\max }\left(A^{{T}} A\right)$.
 \end{remark}
 
-\begin{remark}
+\begin{corollary}
+    $$\|A\|_{2}= \sigma_{\max} $$
+\end{corollary}
+
+\begin{proof}
     The norm $\|A\|$ equals the largest singular value $\sigma_{\max }$ of $A$. The singular values $\sigma_{1}, \ldots, \sigma_{r}$ are the square roots of the positive eigenvalues of $A^{{T}} A$. So certainly $\sigma_{\max }=\left(\lambda_{\max }\right)^{1 / 2}$. Since $U$ and $V$ are orthogonal in $A=U \Sigma V^{{T}}$, the norm is $\|\boldsymbol{A}\|=$ $\sigma_{\max }$.
-\end{remark}
+\end{proof}
 
 \begin{example}
     求矩阵$A$的各种常用范数
@@ -1134,7 +1359,7 @@ In 1923, the French mathematician Hadamard introduced the notion of well-posed (
 
 One of these conditions is not satisfied, the problem is said to be ill-posed (病态) and demands a special consideration.
 
-\begin{example}
+\begin{definition}
     假设 $ A $ 是非奇异矩阵 $$ A x=b $$
 
     如果将 $ b $ 为 $ b+\Delta b $, 方程新的解 $ x+\Delta x $, 则有:
@@ -1147,18 +1372,22 @@ $$
 \Delta x=A^{-1} \Delta b
 $$
 
-如果小的变化 $ \Delta b $ 导致小变化 $ \Delta x $, 则称解是\textit{稳定}的. 如果小的变化 $ \Delta b $ 导致大变化 $ \Delta x $, 则称解\textit{不稳定}的. 
+如果小的变化 $ \Delta b $ 导致小变化 $ \Delta x $, 则称解是\term{稳定}的. 如果小的变化 $ \Delta b $ 导致大变化 $ \Delta x $, 则称解\term{不稳定}的. 
+\end{definition}
 
-设$$ A=\frac{1}{2}\left[\begin{array}{cc}1 & 1 \\ 1+10^{-10} & 1-10^{-10}\end{array}\right], \quad A^{-1}=\left[\begin{array}{cc}1-10^{10} & 10^{10} \\ 1+10^{10} & -10^{10}\end{array}\right] $$
+\begin{example}
+    设$$ A=\frac{1}{2}\left[\begin{array}{cc}1 & 1 \\ 1+10^{-10} & 1-10^{-10}\end{array}\right], \quad A^{-1}=\left[\begin{array}{cc}1-10^{10} & 10^{10} \\ 1+10^{10} & -10^{10}\end{array}\right] $$
 
 若$ b=(1,1) $, 方程 $ A x $ 的解 $ x=(1,1) $ . 
 如果将b改为 $ b+\Delta b $ , 那么 $ x $ 的变化量为
 
 $$ \Delta x=A^{-1} \Delta b=\left[\begin{array}{l}\Delta b_{1}-10^{10}\left(\Delta b_{1}-\Delta b_{2}\right) \\ \Delta b_{1}+10^{10}\left(\Delta b_{1}-\Delta b_{2}\right)\end{array}\right] $$
-
-很小变化 $ \Delta b $ 会导致非常大变化 $ \Delta x $！ 由矩阵$A$定义的问题, 称为\textit{适定问题}或\textit{病态问题}. 
-
 \end{example}
+
+
+很小变化 $ \Delta b $ 会导致非常大变化 $ \Delta x $！ 由矩阵$A$定义的问题, 称为\term{适定问题}或\term{病态问题}. 
+
+
 
 \section{绝对误差的界限}
 
@@ -1170,14 +1399,22 @@ $$ \Delta x=A^{-1} \Delta b=\left[\begin{array}{l}\Delta b_{1}-10^{10}\left(\Del
     $$ \Delta x=A^{-1} \Delta b $$
 \end{notation}
 
-$ \|\Delta x\| $ 的上界为：
-$$
-\|\Delta x\|_{2} \leq\left\|A^{-1}\right\|_{2}\|\Delta b\|_{2}
-$$
+\begin{theorem}[绝对误差的界限]
+    $ \|\Delta x\| $ 的上界为
+    $$
+    \|\Delta x\|_{2} \leq\left\|A^{-1}\right\|_{2}\|\Delta b\|_{2}
+    $$
+
+\end{theorem}
 
 矩阵范数 $ \left\|A^{-1}\right\|_{2} $ 小时, 当 $ \|\Delta b\|_{2} $ 变化很小, $ \|\Delta x\|_{2} $ 也很小; $ \left\|A^{-1}\right\|_{2} $ 大时,  $ \|\Delta x\|_{2} $ 可能很大,  即使 $ \|\Delta b\|_{2} $ 很小. 
 
 \section[相对误差的界限]{相对误差的界限\footnote{Reference: \href{https://blogs.mathworks.com/cleve/2017/07/17/what-is-the-condition-number-of-a-matrix/?from=cn}{MathWorks Blog}.}}
+
+\begin{theorem}[相对误差的界限]
+    相对误差的界限是
+    $$ \frac{\|\Delta x\|_{2}}{\|x\|_{2}} \leq\|A\|_{2}\left\|A^{-1}\right\|_{2} \frac{\|\Delta b\|_{2}}{\|b\|_{2}} $$
+\end{theorem}
 
 假设 $ b \neq 0 $; 因此 $ x \neq 0$
 

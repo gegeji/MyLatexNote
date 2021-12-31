@@ -11,7 +11,7 @@
 For the definition of Gram matrices, refer to \ref{Def:Gram}. 关于它与非奇异的性质，参见 \ref{Sect:GramNonSingular}.
 
 \begin{theorem}
-    如果A的Gram矩阵为单位矩阵，则 $ A \in \mathbb{R}^{m \times n} $ 具有标准正交列.
+    如果$A$的Gram矩阵为单位矩阵，则 $ A \in \mathbb{R}^{m \times n} $ 具有标准正交列.
 \end{theorem}
 
 \begin{proof}
@@ -240,7 +240,7 @@ $$
 
 \section{Householder Matrix}
 
-\begin{definition}[Householder matrix, reflator matrix]
+\begin{definition}[Householder Matrix, Reflator Matrix]
     $$
 A=I-2 a a^{T}
 $$
@@ -328,11 +328,20 @@ $$
 
 $ H=\left\{u \mid a^{T} u=0\right\} $ 是与 $ a $ 正交的向量的(超)平面。
 
-\begin{corollary}
+\begin{remark}
+    假设$ a, b \in \mathbb{R}^{n}, a \neq 0, t \in \mathbb{R}$, 当$t$ 多大时, $ta$到$b$之间的距离最小
+
+    $$ \hat{t}=\min _{t}\|t a-b\|_{2}^{2} $$
+
+    这个问题的最优解是$ \hat{t}=\frac{a^{T} b}{a^{T} a}=\frac{a^{T} b}{\|a\|_{2}^{2}} $。
+\end{remark}
+
+
+\begin{theorem}
     如果 $ \|a\|_{2}=1, \quad x $ 在 $ H $ 上的投影为
 
     $$ y=x-\left(a^{T} x\right) a=x-a\left(a^{T} x\right)=\left(I-a a^{T}\right) x $$
-\end{corollary}
+\end{theorem}
 
 \begin{proof}
 1. $ y \in H $.
@@ -388,7 +397,7 @@ $$
 
 
 \subsection{The Complexity of the Multiplication $Ax$ of Orthogonal Matrix $A$}
-可以在 $ 2 \mathrm{n}^{2} $ 个flop内计算矩阵向量乘法。 
+可以在 $ 2  {n}^{2} $ 个flop内计算矩阵向量乘法。 
 
 如果A有特殊性质，代价将会小于$n^2$。例如，
 
@@ -453,7 +462,7 @@ $$ \begin{aligned} f(x) &=\|A x-b\|_{2}^{2}
 
 $$ \nabla f(x)=2 x-2 A^{T} b=0 \Rightarrow x=A^{T} b $$
 
-$ A A^{T} b $ 称为向量 $ \mathrm{b} \in \mathbb{R}^{m} $ 在 $ \operatorname{range} (A)$上的\term{正交投影}。
+$ A A^{T} b $ 称为向量 $  {b} \in \mathbb{R}^{m} $ 在 $ \operatorname{range} (A)$上的\term{正交投影}。
 
 \begin{theorem}
     $$ A x=A A^{T} b \in \operatorname{range}(A) $$
