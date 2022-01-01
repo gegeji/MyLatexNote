@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  1 JAN 2022 15:15
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  1 JAN 2022 15:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -5215,128 +5215,128 @@ File: Pictures//qr-matlab-error.eps Graphic file (type eps)
 File: Pictures//modified-qr-matlab-error.eps Graphic file (type eps)
 <Pictures//modified-qr-matlab-error.eps>
  [119]
-Package mdframed Info: mdframed works in twoside mode on input line 972.
+Package mdframed Info: mdframed works in twoside mode on input line 977.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 972.
-Package mdframed Info: mdframed works in twoside mode on input line 989.
+(mdframed)              on input line 977.
+Package mdframed Info: mdframed works in twoside mode on input line 994.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 989.
-Package mdframed Info: mdframed works in twoside mode on input line 993.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 993.
+(mdframed)              on input line 994.
 Package mdframed Info: mdframed works in twoside mode on input line 998.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 998.
+Package mdframed Info: mdframed works in twoside mode on input line 1003.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1003.
  (./tikz_images/tikz-householder-matrix.tex)
-Package mdframed Info: mdframed works in twoside mode on input line 1030.
+Package mdframed Info: mdframed works in twoside mode on input line 1035.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1030.
+(mdframed)              on input line 1035.
  [120]
-Package mdframed Info: Not enough space on this page on input line 1035.
-Package mdframed Info: mdframed works in twoside mode on input line 1047.
+Package mdframed Info: Not enough space on this page on input line 1040.
+Package mdframed Info: mdframed works in twoside mode on input line 1052.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1047.
-Package mdframed Info: mdframed works in twoside mode on input line 1060.
+(mdframed)              on input line 1052.
+Package mdframed Info: mdframed works in twoside mode on input line 1065.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1060.
+(mdframed)              on input line 1065.
  [121]
-Package mdframed Info: mdframed works in twoside mode on input line 1073.
+Package mdframed Info: mdframed works in twoside mode on input line 1078.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1073.
+(mdframed)              on input line 1078.
 
-Overfull \hbox (36.02733pt too wide) in paragraph at lines 1074--1075
+Overfull \hbox (36.02733pt too wide) in paragraph at lines 1079--1080
 [][][]\TU/LinBiolinum(0)/b/n/10 Definition 11.6.2 []— Constructed Householder Matrix. [][][][]\TU/FZPingXYSJW.TTF(0)/m/n/10.95 将 $\OML/zncfmi/m/it/10.95 y$ \TU/FZPingXYSJW.TTF(0)/m/n/10.95 变 换 为 单 位 基 向 量 $\OML/zncfmi/m/it/10.95 e \U/ntxmia/m/it/10.95 = \LMS/ntxsy/m/n/10.95 »\OT1/TeXGyreScholaX-TLF/sb/n/10.95 1\OML/zncfmi/m/it/10.95 ; \OT1/TeXGyreScholaX-TLF/sb/n/10.95 0\OML/zncfmi/m/it/10.95 ; \OT1/TeXGyreScholaX-TLF/sb/n/10.95 0\OML/zncfmi/m/it/10.95 ; []  ; \OT1/TeXGyreScholaX-TLF/sb/n/10.95 0\LMS/ntxsy/m/n/10.95 ¼[]$
  []
 
-Package mdframed Info: Not enough space on this page on input line 1077.
-Package mdframed Info: mdframed works in twoside mode on input line 1083.
+Package mdframed Info: Not enough space on this page on input line 1082.
+Package mdframed Info: mdframed works in twoside mode on input line 1088.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1083.
+(mdframed)              on input line 1088.
 (./tikz_images/tikz-geometry-of-householder-Hx.tex) [122] [123]
-Package mdframed Info: mdframed works in twoside mode on input line 1280.
+Package mdframed Info: mdframed works in twoside mode on input line 1285.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1280.
+(mdframed)              on input line 1285.
  [124] [125]
 Underfull \vbox (badness 2635) has occurred while \output is active []
 
  [126]
-Package mdframed Info: mdframed works in twoside mode on input line 1425.
+Package mdframed Info: mdframed works in twoside mode on input line 1430.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1425.
+(mdframed)              on input line 1430.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1428.
+(hyperref)                removing `math shift' on input line 1433.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1428.
+(hyperref)                removing `math shift' on input line 1433.
 
-Package mdframed Info: mdframed works in twoside mode on input line 1432.
+Package mdframed Info: mdframed works in twoside mode on input line 1437.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1432.
-Package mdframed Info: mdframed works in twoside mode on input line 1442.
+(mdframed)              on input line 1437.
+Package mdframed Info: mdframed works in twoside mode on input line 1447.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1442.
-Package mdframed Info: Not enough space on this page on input line 1454.
+(mdframed)              on input line 1447.
+Package mdframed Info: Not enough space on this page on input line 1459.
 [127]
-Package mdframed Info: Not enough space on this page on input line 1454.
-Package mdframed Info: mdframed works in twoside mode on input line 1458.
+Package mdframed Info: Not enough space on this page on input line 1459.
+Package mdframed Info: mdframed works in twoside mode on input line 1463.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1458.
-Package mdframed Info: mdframed works in twoside mode on input line 1488.
+(mdframed)              on input line 1463.
+Package mdframed Info: mdframed works in twoside mode on input line 1493.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1488.
+(mdframed)              on input line 1493.
 
 
-LaTeX Warning: Citation 'Strang1993IntroductionTL' on page 128 undefined on input line 1488.
+LaTeX Warning: Citation 'Strang1993IntroductionTL' on page 128 undefined on input line 1493.
 
-Package mdframed Info: mdframed works in twoside mode on input line 1501.
+Package mdframed Info: mdframed works in twoside mode on input line 1506.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1501.
+(mdframed)              on input line 1506.
 [128]
-Package mdframed Info: mdframed works in twoside mode on input line 1568.
+Package mdframed Info: mdframed works in twoside mode on input line 1573.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1568.
-Package mdframed Info: mdframed works in twoside mode on input line 1597.
+(mdframed)              on input line 1573.
+Package mdframed Info: mdframed works in twoside mode on input line 1602.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1597.
+(mdframed)              on input line 1602.
  [129]
-Package mdframed Info: Not enough space on this page on input line 1601.
-Package mdframed Info: mdframed works in twoside mode on input line 1638.
+Package mdframed Info: Not enough space on this page on input line 1606.
+Package mdframed Info: mdframed works in twoside mode on input line 1643.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1638.
-Package mdframed Info: mdframed works in twoside mode on input line 1642.
+(mdframed)              on input line 1643.
+Package mdframed Info: mdframed works in twoside mode on input line 1647.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1642.
-Package mdframed Info: mdframed works in twoside mode on input line 1646.
+(mdframed)              on input line 1647.
+Package mdframed Info: mdframed works in twoside mode on input line 1651.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1646.
-Package mdframed Info: mdframed works in twoside mode on input line 1653.
+(mdframed)              on input line 1651.
+Package mdframed Info: mdframed works in twoside mode on input line 1658.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1653.
+(mdframed)              on input line 1658.
  [130]) (./math/lu-decomposition.tex [131]
 \bbl@ensure@english {Chapter} 12.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
@@ -6896,20 +6896,21 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: Not enough space on this page on input line 672.
 [249]
 Package mdframed Info: Not enough space on this page on input line 672.
- [250]) (./math/complexity.tex [251]
-\bbl@ensure@english {Chapter} 21.
+ [250])) (./paperNotes/paper-index.tex) (./cloud-computing/cloud-index.tex) (./demo.tex)
+
+LaTeX Warning: Empty bibliography on input line 147.
+
+(./math/complexity.tex [251]
+\bbl@ensure@english {Appendix} A.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
 [252
 
-])) (./paperNotes/paper-index.tex) (./cloud-computing/cloud-index.tex) (./demo.tex)
-
-LaTeX Warning: Empty bibliography on input line 147.
-
-[253]
+]) [253]
+\bbl@ensure@english {Appendix} B.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
- (./main.lof
+(./main.lof
 Overfull \hbox (81.59895pt too wide) in paragraph at lines 54--54
  []|\TU/LinBiolinum(0)/m/n/10 10.4| []Projection of $[]$ into the column space of $\OML/zncfmi/m/it/10 A$\TU/LinBiolinum(0)/m/n/10 , $\OML/zncfmi/m/it/10 A$ \TU/LinBiolinum(0)/m/n/10 is any matrice. Sourced from [[]][]|
  []
@@ -6930,14 +6931,211 @@ Requested font "[LinBiolinum_RI.otf]/OT:script=latn;language=dflt;+tnum;mapping=
 \openout7 = `main.lof'.
 
  [255]
-\bbl@ensure@english {Appendix} A.
+\bbl@ensure@english {Appendix} C.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
-(./main.lod [256
+(./main.loa
+Overfull \hbox (12.13258pt too wide) detected at line 10
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 47
+ []
 
-] [257]
+
+Overfull \hbox (11.74933pt too wide) detected at line 14
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 53
+ []
+
+
+Overfull \hbox (12.22018pt too wide) detected at line 16
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 54
+ []
+
+
+Overfull \hbox (17.04912pt too wide) detected at line 30
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 107
+ []
+
+
+Overfull \hbox (17.04912pt too wide) detected at line 32
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 107
+ []
+
+
+Overfull \hbox (17.32286pt too wide) detected at line 34
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 109
+ []
+
+
+Overfull \hbox (15.63657pt too wide) detected at line 36
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 111
+ []
+
+
+Overfull \hbox (15.63657pt too wide) detected at line 38
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 111
+ []
+
+
+Overfull \hbox (16.44687pt too wide) detected at line 40
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 112
+ []
+
+
+Overfull \hbox (16.30452pt too wide) detected at line 42
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 115
+ []
+
+
+Overfull \hbox (16.46877pt too wide) detected at line 44
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 118
+ []
+
+
+Overfull \hbox (16.49066pt too wide) detected at line 46
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 119
+ []
+
+
+Overfull \hbox (17.11482pt too wide) detected at line 48
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 125
+ []
+
+
+Overfull \hbox (16.29356pt too wide) detected at line 50
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 131
+ []
+
+
+Overfull \hbox (16.29356pt too wide) detected at line 52
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 131
+ []
+
+
+Overfull \hbox (17.12576pt too wide) detected at line 56
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 138
+ []
+
+
+Overfull \hbox (16.30452pt too wide) detected at line 60
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 151
+ []
+
+
+Overfull \hbox (16.96152pt too wide) detected at line 62
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 153
+ []
+
+
+Overfull \hbox (17.15862pt too wide) detected at line 66
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 159
+ []
+
+
+Overfull \hbox (17.32286pt too wide) detected at line 68
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 160
+ []
+
+
+Overfull \hbox (17.04912pt too wide) detected at line 74
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 178
+ []
+
+
+Overfull \hbox (17.12576pt too wide) detected at line 76
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 183
+ []
+
+
+Overfull \hbox (17.13672pt too wide) detected at line 78
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 185
+ []
+
+
+Overfull \hbox (18.06747pt too wide) detected at line 82
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 222
+ []
+
+[256
+
+]
 Missing character: There is no – (U+2013) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
- [258] [259] [260] [261] [262]
+
+Overfull \hbox (17.91417pt too wide) detected at line 84
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 223
+ []
+
+
+Overfull \hbox (17.91417pt too wide) detected at line 86
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 223
+ []
+
+
+Overfull \hbox (17.92513pt too wide) detected at line 88
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 225
+ []
+
+
+Overfull \hbox (18.11127pt too wide) detected at line 90
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 226
+ []
+
+
+Overfull \hbox (17.83752pt too wide) detected at line 92
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 227
+ []
+
+
+Overfull \hbox (18.38503pt too wide) detected at line 100
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 242
+ []
+
+
+Overfull \hbox (18.23172pt too wide) detected at line 102
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 243
+ []
+
+
+Overfull \hbox (18.70258pt too wide) detected at line 104
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 244
+ []
+
+
+Overfull \hbox (18.70258pt too wide) detected at line 106
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 244
+ []
+
+
+Overfull \hbox (18.24268pt too wide) detected at line 108
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 245
+ []
+
+
+Overfull \hbox (18.15508pt too wide) detected at line 110
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 247
+ []
+
+
+Overfull \hbox (18.42882pt too wide) detected at line 112
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 249
+ []
+
+
+Overfull \hbox (17.94702pt too wide) detected at line 114
+ []\T1/TeXGyreScholaX-OsF/m/n/10.95 250
+ []
+
+)
+\tf@loa=\write8
+\openout8 = `main.loa'.
+
+ [257]
+\bbl@ensure@english {Appendix} D.
+File: Pictures//chapter_head_3.png Graphic file (type bmp)
+<Pictures//chapter_head_3.png>
+(./main.lod [258
+
+] [259]
+Missing character: There is no – (U+2013) in font [FZPingXYSJW.TTF]/OT:script=hani;language=dflt;!
+ [260] [261] [262] [263] [264]
 Overfull \hbox (3.59126pt too wide) detected at line 580
 \TU/LinBiolinum(0)/b/n/10.95 14.12.10 
  []
@@ -6977,7 +7175,7 @@ Overfull \hbox (3.59126pt too wide) detected at line 596
 \TU/LinBiolinum(0)/b/n/10.95 14.12.17 
  []
 
-[263]
+[265]
 Overfull \hbox (3.59126pt too wide) detected at line 598
 \TU/LinBiolinum(0)/b/n/10.95 14.12.18 
  []
@@ -6997,7 +7195,7 @@ Overfull \hbox (3.59126pt too wide) detected at line 604
 \TU/LinBiolinum(0)/b/n/10.95 14.12.21 
  []
 
-[264]
+[266]
 Overfull \hbox (3.59126pt too wide) detected at line 752
 \TU/LinBiolinum(0)/b/n/10.95 16.16.10 
  []
@@ -7007,7 +7205,7 @@ Overfull \hbox (3.59126pt too wide) detected at line 754
 \TU/LinBiolinum(0)/b/n/10.95 16.16.11 
  []
 
-[265]
+[267]
 Overfull \hbox (3.59126pt too wide) detected at line 756
 \TU/LinBiolinum(0)/b/n/10.95 16.16.12 
  []
@@ -7027,16 +7225,16 @@ Overfull \hbox (3.59126pt too wide) detected at line 762
 \TU/LinBiolinum(0)/b/n/10.95 16.16.15 
  []
 
-[266])
-\tf@lod=\write8
-\openout8 = `main.lod'.
+[268])
+\tf@lod=\write9
+\openout9 = `main.lod'.
 
- [267] [268
+ [269] [270
 
 ]
 No file main.ind.
-\tf@ptc=\write9
-\openout9 = `main.ptc'.
+\tf@ptc=\write10
+\openout10 = `main.ptc'.
 
 (./main.aux)
 
@@ -7044,9 +7242,6 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -7058,12 +7253,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 54172 strings out of 476477
- 1109547 string characters out of 5812099
- 1997740 words of memory out of 5000000
- 73595 multiletter control sequences out of 15000+600000
+ 54184 strings out of 476477
+ 1109707 string characters out of 5812099
+ 1997954 words of memory out of 5000000
+ 73604 multiletter control sequences out of 15000+600000
  597817 words of font info for 389 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,23n,114p,1145b,6132s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,23n,114p,1145b,6430s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (268 pages).
+Output written on main.pdf (270 pages).

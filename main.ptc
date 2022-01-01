@@ -288,7 +288,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {11.6.3}Householder三角化}{122}{subsection.11.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.6.4}Household-QR Algorithm}{125}{subsection.11.6.4}%
+\contentsline {subsection}{\numberline {11.6.4}Householder-QR Algorithm}{125}{subsection.11.6.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {11.6.5}An Example for Householder Algorithm}{125}{subsection.11.6.5}%
 \defcounter {refsection}{0}\relax 
@@ -668,17 +668,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {20.17.1}Complexity}{251}{subsection.20.17.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {21}Complexity}{252}{chapter.21}%
+\contentsline {chapter}{\numberline {A}Complexity}{252}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {21.1}Vector Operations}{252}{section.21.1}%
+\contentsline {section}{\numberline {A.1}Vector Operations}{252}{section.A.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {21.2}Matrix Operations}{252}{section.21.2}%
+\contentsline {section}{\numberline {A.2}Matrix Operations}{252}{section.A.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {21.3}Factorization and Inverses}{253}{section.21.3}%
+\contentsline {section}{\numberline {A.3}Factorization and Inverses}{253}{section.A.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {21.4}Solving Least Squares Problems}{253}{section.21.4}%
+\contentsline {section}{\numberline {A.4}Solving Least Squares Problems}{253}{section.A.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {21.5}Big-Times-Small-Squared Mnemonic}{253}{section.21.5}%
+\contentsline {section}{\numberline {A.5}Big-Times-Small-Squared Mnemonic}{253}{section.A.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}List Of Definitions}{256}{appendix.A}%
+\contentsline {chapter}{\numberline {B}\bbl@ensure@english {List of Figures}}{254}{appendix.B}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {C}List of Algorithms}{256}{appendix.C}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {D}List Of Definitions}{258}{appendix.D}%
 \contentsfinish 

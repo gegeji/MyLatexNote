@@ -857,5 +857,35 @@ addtohook={%
 % warning: unicode-math may need to be load last
 % \usepackage{unicode-math}
 
+%----------------------------------------------------------------------------------------
+% renew list of contents
+\makeatletter
+%----------------------------------------------------------------------------------------
 
+% \renewcommand\listoftables{%
+%     \section{\listtablename}%
+%     \@mkboth{\MakeUppercase\listtablename}%
+%         {\MakeUppercase\listtablename}%
+%     \@starttoc{lot}%
+% }
+\renewcommand\listoftables{%
+    \chapter{\listtablename}%
+    \@mkboth{\listtablename}%
+        {\listtablename}%
+    \@starttoc{lot}%
+}
 
+\renewcommand\listofalgorithms{
+	\chapter{\listalgorithmcfname}%
+    \@mkboth{\listalgorithmcfname}%
+        {\listalgorithmcfname}%
+    \@starttoc{loa}%
+}
+
+\renewcommand\listoffigures{%
+    \chapter{\listfigurename}%
+    \@mkboth{\listfigurename}%
+        {\listfigurename}%
+    \@starttoc{lof}%
+}
+\makeatother

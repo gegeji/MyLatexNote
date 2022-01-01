@@ -688,7 +688,7 @@ $$
 $$
 \tilde{q}_{k}=a_{k}-R_{1 k} q_{1}-R_{2 k} q_{2}-\cdots-R_{k-1, k} q_{k-1} \neq 0
 $$
-都将是非零的。（由于$a_{1}, \ldots, a_{k}$ 是线性无关的，即$q_{1}, \ldots, q_{i-1}, q_{i} $ 是线性无关的，假设Gram-Schmidt算法过程中没有出现中途退出的状况）
+都将是非零的。（假设Gram-Schmidt算法过程中没有出现中途退出的状况，由于$a_{1}, \ldots, a_{k}$ 是线性无关的，即$q_{1}, \ldots, q_{i-1}, q_{i} $ 是线性无关的）
 
 因此
 $$
@@ -703,6 +703,8 @@ $$R_{1 k}=q_{1}^{T} a_{k},  R_{2 k}=q_{2}^{T} a_{k}, \ldots,  R_{k-1, k}=q_{k-1}
 \end{proof}
 
 \subsection{Gram-Schmidt Algorithm}
+
+由上面的推导可得Gram-Schmidt正交化算法的流程如下。
 
 \begin{algorithm}[htbp]
     \caption{QR Decomposition Using Gram-Schmidt Algorithm}
@@ -860,25 +862,25 @@ $$ \begin{aligned} \sum_{k=1}^{n}((4 m-1)(k-1)+3 m) &=(4 m-1) \frac{n(n-1)}{2}+3
 
 \section{The Numerical Instability of QR Decomposition based on Gram-Schmidt Algorithm}
 
-Gram-Schmidt算法复杂度为$2mn^2$ flops. 在实际情况中\textbf{不推荐使用(}容易被舍入误差影响).
+Gram-Schmidt算法复杂度为$2mn^2$ flops. 在实际情况中\textbf{不推荐使用}（容易被舍入误差影响）.
 
 修正Gram-Schmidt算法复杂度为$2mn^2$ flops，有更好的数值计算性能。修正之处在于求解投影时每次只减去一个投影。
 
 Householder算法复杂度为 $ 2 m n^{2}-(2 / 3) n^{3} $ flops .
-将$Q$表示为初等正交矩阵的乘积。是最广泛使用的算法(在\textsc{MATLAB}和\textsc{Julia}中的\verb|qr|函数使用该算法).
+将$Q$表示为初等正交矩阵的乘积。是最广泛使用的算法（在\textsc{MATLAB}和\textsc{Julia}中的\verb|qr|函数使用该算法）.
 
-本书中认为QR分解的复杂度为$Q(2mn^2)$.
+本书中认为QR分解的复杂度为$O(2mn^2)$.
 
 \begin{example}
-    \begin{lstlisting}[caption=Gram Schmidt,language=matlab]
+    \begin{lstlisting}[caption=Gram Schmidt算法,language=matlab]
 [m,n]=size(A);
 Q = zeros(m,n);
 R = zeros(n,n);
 for k = 1:n
-    R(1:k-1,k)=Q(:,1:k-1)'*A(:,k);
-    v= A(:,k)-Q(:,1:k-1)*R(1:k-1,k);
+    R(1:k-1,k) = Q(:,1:k-1)'*A(:,k);
+    v = A(:,k)-Q(:,1:k-1)*R(1:k-1,k);
     R(k,k) = norm(v);
-    Q(:,k)=v/R(k,k);
+    Q(:,k) = v/R(k,k);
 end
     \end{lstlisting}
 
@@ -912,9 +914,11 @@ end
     e_{k}=\max _{1 \leq i<k}\left|q_{i}^{T} q_{k}\right|, \quad k=2, \ldots, n
     $$
 
-    失去正交性是由于\textbf{浮点数存储的舍入误差}.
+    失去正交性是由于\textbf{浮点数存储的舍入误差}。
 
-    \begin{lstlisting}[caption=modified Gram-Schmidt,language=matlab]
+    修正的Gram-Schmidt则改为每次只减去一个投影，以减少舍入误差。
+
+    \begin{lstlisting}[caption=modified Gram-Schmidt算法,language=matlab]
 for j = 1:n
     v=A(:,j);
     for i=1:j-1
@@ -941,6 +945,7 @@ end
 
         }
     \end{algorithm}
+
 
     \begin{FigureCenter}{在同一组数据中使用修正Gram-Schmidt算法求得的误差，$e_{k}=\max _{1 \leq i<k}\left|q_{i}^{T} q_{k}\right|,  k=2, \ldots, n$}
         \includegraphics{modified-qr-matlab-error.eps}
@@ -987,16 +992,16 @@ $$
 \subsection{Householder Matrix}
 
 \begin{theorem}
-    $ H=I-2 v v^{T} $, 其中 $ \|v\|_{2}=1 $, $ H x $ 是 $ x $ 关于超平面 $ \left\{u \mid v^{T} u=0\right\} $ 反对称。 b 
+    $ H=I-2 v v^{T} $, 其中 $ \|v\|_{2}=1 $, $ H x $ 是 $ x $ 关于超平面 $ \left\{u \mid v^{T} u=0\right\} $ 反对称。
 \end{theorem}
 
 \begin{theorem}
-    $ H $ 是对称的 .
+    $ H $ 是对称的。
     $$ H^{T}=H $$
 \end{theorem}
     
 \begin{theorem}
-    $ H $ \textbf{是正交的}.
+    $ H $ \textbf{是标准正交的}.
 $$ H^{T} H=I $$
 \end{theorem}
 
@@ -1037,7 +1042,7 @@ $$
 
 \subsubsection{$Hx$的算法复杂度}
 
-    如果 $ v $ 和 $ x $ 的长度是 $ p $, 复杂度是 $ 4 p $ flops .
+    如果 $ v $ 和 $ x $ 的长度是 $ p $, 复杂度是 $ 4 p $ flops.
 
 
 \subsection{构造反射算子}
@@ -1255,7 +1260,7 @@ $$H_2A_1= A_{2}=\left[\begin{array}{cccccccc}X & X & X & X & X & X & X & X \\ 0 
         \end{tikzpicture}
 \end{FigureCenter}
 
-\subsection{Household-QR Algorithm}
+\subsection{Householder-QR Algorithm}
 
 \begin{algorithm}[htbp]
     \caption{QR Decomposition Using Householder Transformation}
