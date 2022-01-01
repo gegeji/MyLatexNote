@@ -1,0 +1,48 @@
+\chapter{Complexity}
+
+\section{Vector Operations}
+
+In the table below, $ x $ and $ y $ are $ n $-vectors and $ a $ is a scalar.
+
+$$ \begin{array}{ll}a x & n \\ x+y & n \\ x^{T} y & 2 n \\ \|x\| & 2 n \\ \|x-y\| & 3 n \\ \operatorname{rms}(x) & 2 n \\ \operatorname{std}(x) & 4 n \\ \angle(x, y) & 6 n\end{array} $$
+
+
+The convolution $ a * b $ of an $ n $-vector $ a $ and $ m $-vector $ b $ can be computed by a special algorithm that requires $ 5(m+n) \log _{2}(m+n) $ flops.
+
+\section{Matrix Operations}
+
+In the table below, $ A $ and $ B $ are $ m \times n $ matrices, $ C $ is an $ m \times p $ matrix, $ x $ is an $ n $-vector, and $ a $ is a scalar.
+
+$$ \begin{array}{ll}a A & m n \\ A+B & m n \\ A x & 2 m n \\ A C & 2 m n p \\ A^{T} A & m n^{2} \\ \|A\| & 2 m n\end{array} $$
+
+\section{Factorization and Inverses}
+
+In the table below, $ A $ is a tall or square $ m \times n $ matrix, $ R $ is an $ n \times n $ triangular matrix, and $ b $ is an $ n $-vector. We assume the factorization or inverses exist; in particular in any expression involving $ A^{-1}, A $ must be square.
+
+$$ \begin{array}{ll}\mathrm{QR} \text { factorization of } A & 2 m n^{2} \\ R^{-1} b & n^{2} \\ A^{-1} b & 2 n^{3} \\ A^{-1} & 3 n^{3} \\ A^{\dagger} & 3 m n^{2}\end{array} $$
+
+The pseudo-inverse $ A^{\dagger} $ of a wide $ m \times n $ matrix (with linearly independent rows) can be computed in $ 3 m^{2} n $ flops.
+
+\section{Solving Least Squares Problems}
+
+In the table below, $ A $ is an $ m \times n $ matrix, $ C $ is a wide $ p \times n $ matrix, and $ b $ is an $ m $-vector. We assume the associated independence conditions hold.
+
+$$ \begin{array}{lll}\operatorname{minimize} & \|A x-b\|^{2} & 2 m n^{2} \\ \operatorname { minimize } & \|A x-b\|^{2} \text { subject to } C x=d & 2(m+p) n^{2}+2 n p^{2} \\ \operatorname { minimize } &\|x\|^{2} \text { subject to } C x=d & 2 n p^{2}\end{array} $$
+
+\section{Big-Times-Small-Squared Mnemonic}
+
+Many of the complexities listed above that involve two dimensions can be remembered using a simple mnemonic: The cost is order
+$$
+\text { (big) } \times(\text { small })^{2} \text { flops, }
+$$
+where `big' and `small' refer to big and small problem dimensions. We list some examples below.
+
+\begin{itemize}
+    \item Computing the Gram matrix of a tall $ m \times n $ matrix requires $ m n^{2} $ flops. Here $ m $ is the big dimension and $ n $ is the small dimension.
+    \item In the QR factorization of an $ m \times n $ matrix, we have $ m \geq n $, so $ m $ is the big dimension and $ n $ is the small dimension. The complexity is $ 2 m n^{2} $ flops.
+    \item Computing the pseudo-inverse $ A^{\dagger} $ of an $ m \times n $ matrix $ A $ when $ A $ is tall (and has independent columns) costs $ 3 m n^{2} $ flops. When $ A $ is wide (and has independent rows), it is $ 3 n m^{2} $ flops.
+    \item For least squares, we have $ m \geq n $, so $ m $ is the big dimension and $ n $ is the small dimension. The cost of computing the least squares approximate solution is $ 2 m n^{2} $ flops.
+    \item For the least norm problem, we have $ p \leq n $, so $ n $ is the big dimension and $ p $ is the small dimension. The cost is $ 2 n p^{2} $ flops.
+    \item The constrained least squares problem involves two matrices $ A $ and $ C $, and three dimensions that satisfy $ m+p \geq n $. The numbers $ m+p $ and $ n $ are the big and small dimensions of the stacked matrix $ \left[\begin{array}{c}A \\ C\end{array}\right] $. The cost of solving the constrained least squares problem is $ 2(m+p) n^{2}+2 n p^{2} $ flops, which is between $ 2(m+p) n^{2} $ flops and $ 4(m+p) n^{2} $ flops, since $ n \leq m+p $.
+\end{itemize}
+

@@ -86,6 +86,10 @@ $$ n^{2}+(n-1)^{2}+\cdots+1 \approx \frac{1}{3} n^{3}\text{ flops }$$
 
 如果矩阵 $ A \in \mathbb{R}^{m \times n} $ 的列向量线性无关，则可以将其分解为
 
+\begin{remark}
+    下面各节均假定矩阵 $ A \in \mathbb{R}^{m \times n} $ 的列向量线性无关。
+\end{remark}
+
 \begin{theorem}[QR Factorization]
     
     $$\begin{aligned} A_{n  \times n}&=\left[\begin{array}{llll}a_{1} & a_{2} & \cdots & a_{n}\end{array}\right]\\
@@ -391,12 +395,12 @@ $$
 
 对于普通矩阵使用QR分解求解线性方程组，正交分解需要$2 n^3$ flops, 计算$Q^T b$需要$2n^2$ flops, 第三步回代求解$Rx = Q^Tb$需要$n^2$ flops.(总时间复杂度是$O(n^3)$). 
 
-对于稀疏矩阵求解线性方程组，时间复杂度接近$\operatorname{nnz}(A)$。内存使用和复杂度在很大程度上取决于系数矩阵的稀疏模式。内存使用量通常是$\operatorname{nnz}(A)+n$的适度倍数，$\operatorname{nnz}(A)+n$是指定问题数据$A$和$b$所需的标量数量，通常远小于$n^2+n$(如果A和b不是稀疏时存储它们所需的标量数)。求解稀疏线性方程的flop数通常也更接近$\operatorname{nnz}(A)$，而不是$n^3$（矩阵$A$不稀疏时的阶数）。
+对于稀疏矩阵求解线性方程组，时间复杂度接近$\operatorname{nnz}(A)$。内存使用和复杂度在很大程度上取决于系数矩阵的稀疏模式。内存使用量通常是$\operatorname{nnz}(A)+n$的适度倍数，$\operatorname{nnz}(A)+n$是特定问题的数据$A$和$b$所需的标量数量，通常远小于$n^2+n$(如果A和b不是稀疏时存储它们所需的标量数)。求解稀疏线性方程的flop数通常也更接近$\operatorname{nnz}(A)$，而不是$n^3$（矩阵$A$不稀疏时的阶数）。
 
 
 \subsection{QR分解和求解伪逆 $A^{\dagger}$、逆 $A^{-1}$}
 
-\begin{definition}[线性无关列向量的矩阵$A$的伪逆]
+\begin{definition}[列线性无关矩阵$A$的伪逆]
     $$A^{\dagger}=\left(A^{T} A\right)^{-1} A^{T}$$
 \end{definition}
 
@@ -481,16 +485,25 @@ $$
 \end{theorem}
 
 \begin{theorem}
-    $$
-R^{ {T}} R \widehat{\boldsymbol{x}}=R^{ {T}} Q^{ {T}} \boldsymbol{b} \text { or } R \widehat{\boldsymbol{x}}=Q^{ {T}} \boldsymbol{b} \text { or } \quad \widehat{\boldsymbol{x}}=R^{-1} Q^{ {T}} \boldsymbol{b}
-$$
+    $$R^{ {T}} R \widehat{\boldsymbol{x}}=R^{ {T}} Q^{ {T}} \boldsymbol{b}$$
 
-可以用于求解最小二乘法，而不用直接求解$Ax=b$（当$A$不可逆时）
+    $$R \widehat{\boldsymbol{x}}=Q^{ {T}} \boldsymbol{b}$$
+
+    $$\widehat{\boldsymbol{x}}=R^{-1} Q^{ {T}} \boldsymbol{b}$$
+
+
+可以用于求解最小二乘法，而不用直接求解$Ax=b$（当$A$不可逆时）。
 \end{theorem}
 
 \begin{remark}
     注意在 $A A^{\dagger}$ 中乘积的顺序与 $A^{\dagger} A=I$ 的差异。
 \end{remark}
+
+\begin{problem}[投影问题]
+    $$\min _{y}\|Q y-x\|_{2}^{2}$$
+\end{problem}
+
+可以使用拉格朗日乘子法进行求解。
 
 $$
 \begin{aligned}
@@ -852,7 +865,7 @@ Gram-Schmidt算法复杂度为$2mn^2$ flops. 在实际情况中\textbf{不推荐
 修正Gram-Schmidt算法复杂度为$2mn^2$ flops，有更好的数值计算性能。修正之处在于求解投影时每次只减去一个投影。
 
 Householder算法复杂度为 $ 2 m n^{2}-(2 / 3) n^{3} $ flops 。
-将$Q$表示为初等正交矩阵的乘积。是最广泛使用的算法(在\textsc{MATLAB}和\textsc{Julia}中的\textsc{qr}函数使用该算法)。
+将$Q$表示为初等正交矩阵的乘积。是最广泛使用的算法(在\textsc{MATLAB}和\textsc{Julia}中的\verb|qr|函数使用该算法)。
 
 本书中认为QR分解的复杂度为$Q(2mn^2)$.
 
@@ -1119,48 +1132,54 @@ $$
 
 
 \begin{FigureCenter}{The structure of $ H_{k} H_{k-1} \ldots H_{1} A $}
-    \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-        %uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
-        
-        %Shape: Rectangle [id:dp6272763265145869] 
-        \draw  [fill={rgb, 255:red, 189; green, 189; blue, 189 }  ,fill opacity=1 ] (313,30) -- (453.39,30) -- (453.39,248.71) -- (313,248.71) -- cycle ;
-        %Shape: Rectangle [id:dp1811444148627901] 
-        \draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (313,95.38) -- (383,95.38) -- (383,248.71) -- (313,248.71) -- cycle ;
-        
-        %Straight Lines [id:da17687674689557986] 
-        \draw    (466.39,38) -- (466.39,92.38) ;
-        \draw [shift={(466.39,95.38)}, rotate = 270] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-        \draw [shift={(466.39,35)}, rotate = 90] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-        %Straight Lines [id:da19218796013321793] 
-        \draw    (466.39,98.38) -- (466.39,244.38) ;
-        \draw [shift={(466.39,247.38)}, rotate = 270] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-        \draw [shift={(466.39,95.38)}, rotate = 90] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-        %Straight Lines [id:da4247865332087235] 
-        \draw    (318.39,257.97) -- (379.39,257.41) ;
-        \draw [shift={(382.39,257.38)}, rotate = 539.47] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-        \draw [shift={(315.39,258)}, rotate = 359.47] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-        %Straight Lines [id:da09293842736310576] 
-        \draw    (385.39,257.38) -- (451.39,257.38) ;
-        \draw [shift={(454.39,257.38)}, rotate = 180] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-        \draw [shift={(382.39,257.38)}, rotate = 0] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-        
-        % Text Node
-        \draw (470.39,55.4) node [anchor=north west][inner sep=0.75pt]    {$k$};
-        % Text Node
-        \draw (467.39,163.78) node [anchor=north west][inner sep=0.75pt]    {$m-k$};
-        % Text Node
-        \draw (341.39,263.4) node [anchor=north west][inner sep=0.75pt]    {$k$};
-        % Text Node
-        \draw (395.39,265.4) node [anchor=north west][inner sep=0.75pt]    {$n-k$};
-        % Text Node
-        \draw (160.39,128.4) node [anchor=north west][inner sep=0.75pt]    {$H_{n} H_{n-1} \cdots H_{1} A=$};
-        % Text Node
-        \draw (341.39,152.4) node [anchor=north west][inner sep=0.75pt]    {$\boldsymbol{0}$};
-        % Text Node
-        \draw (371.39,47) node [anchor=north west][inner sep=0.75pt]   [align=left] {Non-zeros};
-        
-        
-        \end{tikzpicture}        
+    
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Shape: Rectangle [id:dp6272763265145869] 
+\draw  [fill={rgb, 255:red, 189; green, 189; blue, 189 }  ,fill opacity=1 ] (313,30) -- (453.39,30) -- (453.39,248.71) -- (313,248.71) -- cycle ;
+%Shape: Rectangle [id:dp1811444148627901] 
+\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (313,95.38) -- (383,95.38) -- (383,248.71) -- (313,248.71) -- cycle ;
+%Shape: Right Triangle [id:dp6024983200469929] 
+\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=0 ][fill={rgb, 255:red, 245; green, 166; blue, 35 }  ,fill opacity=1 ] (313,29.38) -- (383,95.38) -- (313,95.38) -- cycle ;
+
+%Straight Lines [id:da17687674689557986] 
+\draw    (466.39,38) -- (466.39,92.38) ;
+\draw [shift={(466.39,95.38)}, rotate = 270] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+\draw [shift={(466.39,35)}, rotate = 90] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+%Straight Lines [id:da19218796013321793] 
+\draw    (466.39,98.38) -- (466.39,244.38) ;
+\draw [shift={(466.39,247.38)}, rotate = 270] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+\draw [shift={(466.39,95.38)}, rotate = 90] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+%Straight Lines [id:da4247865332087235] 
+\draw    (318.39,257.97) -- (379.39,257.41) ;
+\draw [shift={(382.39,257.38)}, rotate = 179.47] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+\draw [shift={(315.39,258)}, rotate = 359.47] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+%Straight Lines [id:da09293842736310576] 
+\draw    (385.39,257.38) -- (451.39,257.38) ;
+\draw [shift={(454.39,257.38)}, rotate = 180] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+\draw [shift={(382.39,257.38)}, rotate = 0] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+
+% Text Node
+\draw (470.39,55.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$k$};
+% Text Node
+\draw (467.39,163.78) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$m-k$};
+% Text Node
+\draw (341.39,263.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$k$};
+% Text Node
+\draw (395.39,265.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$n-k$};
+% Text Node
+\draw (160.39,128.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$H_{n} H_{n-1} \cdots H_{1} A=$};
+% Text Node
+\draw (341.39,152.4) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75]  {$\boldsymbol{0}$};
+% Text Node
+\draw (371.39,47) node [anchor=north west][inner sep=0.75pt]  [xscale=0.75,yscale=0.75] [align=left] {Non-zeros};
+
+
+\end{tikzpicture}     
 \end{FigureCenter}
 
 其过程如下：

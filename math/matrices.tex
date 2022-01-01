@@ -1189,6 +1189,213 @@ $$
 $ D f(z) $ is called the \term{derivative matrix} or \term{Jacobian matrix} of $ f $ at $ z $, $ \hat{f} $ is a local affine approximation of $ f $ around $ z $.
 \end{theorem}
 
+\section{Composition Of Linear Functions}
+
+\subsection{Matrix-Matrix Products And Composition}
+
+Suppose $ A $ is an $ m \times p $ matrix and $ B $ is $ p \times n $. We can associate with these matrices two linear functions $ f: \mathbf{R}^{p} \rightarrow \mathbf{R}^{m} $ and $ g: \mathbf{R}^{n} \rightarrow \mathbf{R}^{p} $, defined as $ f(x)=A x $ and $ g(x)=B x $. The composition of the two functions is the function $ h: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m} $ with
+$$
+h(x)=f(g(x))=A(B x)=(A B) x
+$$
+
+In words: To find $ h(x) $, we first apply the function $ g $, to obtain the partial result $ g(x) $ (which is a $ p $-vector); then we apply the function $ f $ to this result, to obtain $ h(x) $ (which is an $ m $-vector). In the formula $ h(x)=f(g(x)), f $ appears to the left of $ g $; but when we evaluate $ h(x) $, we apply $ g $ first. The composition $ h $ is evidently a linear function, that can be written as $ h(x)=C x $ with $ C=A B $.
+
+
+Using this interpretation of matrix multiplication as composition of linear functions, it is easy to understand why in general $ A B \neq B A $, even when the dimensions are compatible. Evaluating the function $ h(x)=A B x $ means we first evaluate $ y=B x $, and then $ z=A y $. Evaluating the function $ B A x $ means we first evaluate $ y=A x $, and then $ z=B y $. In general, the order matters. As an example, take the $ 2 \times 2 $ matrices
+
+\begin{example}
+    $$
+A=\left[\begin{array}{rr}
+-1 & 0 \\
+0 & 1
+\end{array}\right], \quad B=\left[\begin{array}{ll}
+0 & 1 \\
+1 & 0
+\end{array}\right]
+$$
+for which
+$$
+A B=\left[\begin{array}{rr}
+0 & -1 \\
+1 & 0
+\end{array}\right], \quad B A=\left[\begin{array}{rr}
+0 & 1 \\
+-1 & 0
+\end{array}\right]
+$$
+The mapping $ f(x)=A x=\left(-x_{1}, x_{2}\right) $ changes the sign of the first element of the vector $ x $. The mapping $ g(x)=B x=\left(x_{2}, x_{1}\right) $ reverses the order of two elements of $ x $. If we evaluate $ f(g(x))=A B x=\left(-x_{2}, x_{1}\right) $, we first reverse the order, and then change the sign of the first element. This result is obviously different from $ g(f(x))=B A x=\left(x_{2},-x_{1}\right) $, obtained by changing the sign of the first element, and then reversing the order of the elements.
+\end{example}
+
+
+
+\subsection{Second Difference Matrix}
+
+As a more interesting example of composition of linear functions, consider the $ (n-1) \times n $ difference matrix $ D_{n} $ defined in $ (6.5) $. (We use the subscript $ n $ here to denote size of $ D .) $ Let $ D_{n-1} $ denote the $ (n-2) \times(n-1) $ difference matrix. Their product $ D_{n-1} D_{n} $ is called the second difference matrix, and sometimes denoted $ \Delta $.
+
+We can interpret $ \Delta $ in terms of composition of linear functions. Multiplying an $ n $-vector $ x $ by $ D_{n} $ yields the $ (n-1) $-vector of consecutive differences of the entries:
+$$
+D_{n} x=\left(x_{2}-x_{1}, \ldots, x_{n}-x_{n-1}\right) .
+$$
+Multiplying this vector by $ D_{n-1} $ gives the $ (n-2) $-vector of consecutive differences of consecutive differences (or second differences) of $ x $ :
+$$
+D_{n-1} D_{n} x=\left(x_{1}-2 x_{2}+x_{3}, x_{2}-2 x_{3}+x_{4}, \ldots, x_{n-2}-2 x_{n-1}+x_{n}\right) .
+$$
+The $ (n-2) \times n $ product matrix $ \Delta=D_{n-1} D_{n} $ is the matrix associated with the second difference function.
+
+\begin{example}
+    For the case $ n=5, \Delta=D_{n-1} D_{n} $ has the form
+
+    $$
+\left[\begin{array}{rrrrr}
+1 & -2 & 1 & 0 & 0 \\
+0 & 1 & -2 & 1 & 0 \\
+0 & 0 & 1 & -2 & 1
+\end{array}\right]=\left[\begin{array}{rrrr}
+-1 & 1 & 0 & 0 \\
+0 & -1 & 1 & 0 \\
+0 & 0 & -1 & 1
+\end{array}\right]\left[\begin{array}{rrrrr}
+-1 & 1 & 0 & 0 & 0 \\
+0 & -1 & 1 & 0 & 0 \\
+0 & 0 & -1 & 1 & 0 \\
+0 & 0 & 0 & -1 & 1
+\end{array}\right]
+$$
+The left-hand matrix $ \Delta $ is associated with the second difference linear function that maps 5 -vectors into 3 -vectors. The middle matrix $ D_{4} $ is associated with the difference function that maps 4 -vectors into 3 -vectors. The right-hand matrix $ D_{5} $ is associated with the difference function that maps 5 -vectors into 4 -vectors.
+
+\end{example}
+
+\subsection{Composition Of Affine Functions}
+
+Composition of affine functions. The composition of affine functions is an affine function. Suppose $ f: \mathbf{R}^{p} \rightarrow \mathbf{R}^{m} $ is the affine function given by $ f(x)=A x+b $, and $ g: \mathbf{R}^{n} \rightarrow \mathbf{R}^{p} $ is the affine function given by $ g(x)=C x+d $. The composition $ h $ is given by
+$$
+h(x)=f(g(x))=A(C x+d)+b=(A C) x+(A d+b)=\tilde{A} x+\tilde{b}
+$$
+where $ \tilde{A}=A C, \tilde{b}=A d+b $.
+
+\subsection{Chain rule of differentiation}
+
+\begin{definition}[The Composition Of $ f $ And $ g $]
+    Let $ f: \mathbf{R}^{p} \rightarrow \mathbf{R}^{m} $ and $ g: \mathbf{R}^{n} \rightarrow \mathbf{R}^{p} $ be differentiable functions. The composition of $ f $ and $ g $ is defined as the function $ h: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m} $ with
+$$
+h(x)=f(g(x))=f\left(g_{1}(x), \ldots, g_{p}(x)\right)
+$$
+\end{definition}
+
+\begin{theorem}[Chain Rule]
+    The function $ h $ is differentiable and its partial derivatives follow from those of $ f $ and $ g $ via the chain rule:
+$$
+\frac{\partial h_{i}}{\partial x_{j}}(z)=\frac{\partial f_{i}}{\partial y_{1}}(g(z)) \frac{\partial g_{1}}{\partial x_{j}}(z)+\cdots+\frac{\partial f_{i}}{\partial y_{p}}(g(z)) \frac{\partial g_{p}}{\partial x_{j}}(z)
+$$
+for $ i=1, \ldots, m $ and $ j=1, \ldots, n $.
+\end{theorem}
+
+This relation can be expressed concisely as a matrix-matrix product.
+
+\begin{corollary}
+    The derivative matrix of $ h $ at $ z $ is the product
+$$
+D h(z)=D f(g(z)) D g(z)
+$$
+of the derivative matrix of $ f $ at $ g(z) $ and the derivative matrix of $ g $ at $ z $.
+\end{corollary}
+
+This compact matrix formula generalizes the chain rule for scalar-valued functions of a single variable, i.e., $ h^{\prime}(z)=f^{\prime}(g(z)) g^{\prime}(z) $.
+
+\begin{corollary}
+    The first order Taylor approximation of $ h $ at $ z $ can therefore be written as
+$$
+\begin{aligned}
+\hat{h}(x) &=h(z)+\operatorname{Dh}(z)(x-z) \\
+&=f(g(z))+D f(g(z)) D g(z)(x-z)
+\end{aligned}
+$$
+\end{corollary}
+
+
+
+The same result can be interpreted as a composition of two affine functions.
+
+
+\begin{theorem}
+    the first order Taylor approximation of $ f $ at $ g(z) $,
+    $$
+    \hat{f}(y)=f(g(z))+D f(g(z))(y-g(z))
+    $$
+    and the first order Taylor approximation of $ g $ at $ z $,
+    $$
+    \hat{g}(x)=g(z)+D g(z)(x-z) .
+    $$
+
+    The composition of these two affine functions is
+$$
+\begin{aligned}
+\hat{f}(\hat{g}(x)) &=\hat{f}(g(z)+D g(z)(x-z)) \\
+&=f(g(z))+D f(g(z))(g(z)+D g(z)(x-z)-g(z)) \\
+&=f(g(z))+D f(g(z)) D g(z)(x-z)
+\end{aligned}
+$$
+which is equal to $ \hat{h}(x) $.
+\end{theorem}
+
+
+When $ f $ is a scalar-valued function $ (m=1) $, the derivative matrices $ D h(z) $ and $ D f(g(z)) $ are the transposes of the gradients, and we write the chain rule as
+
+\begin{theorem}[Special Cases of Chain Rule]
+    $$
+\nabla h(z)=D g(z)^{T} \nabla f(g(z)) .
+$$
+\end{theorem}
+
+
+In particular, if $ g(x)=A x+b $ is affine, then the gradient of $ h(x)=f(g(x))= $ $ f(A x+b) $ is given by $ \nabla h(z)=A^{T} \nabla f(A x+b) $.
+
+\subsection{Linear Dynamical System With State Feedback}
+
+Linear dynamical system with state feedback. We consider a time-invariant linear dynamical system with $ n $-vector state $ x_{t} $ and $ m $-vector input $ u_{t} $, with dynamics
+$$
+x_{t+1}=A x_{t}+B u_{t}, \quad t=1,2, \ldots
+$$
+Here we think of the input $ u_{t} $ as something we can manipulate, e.g., the control surface deflections for an airplane or the amount of material we order or move in a supply chain. In state feedback control the state $ x_{t} $ is measured, and the input $ u_{t} $ is a linear function of the state, expressed as
+$$
+u_{t}=K x_{t}
+$$
+where $ K $ is the $ m \times n $ state-feedback gain matrix. The term feedback refers to the idea that the state is measured, and then (after multiplying by $ K $ ) fed back into the system, via the input. This leads to a loop, where the state affects the input, and the input affects the (next) state. State feedback is very widely used in many applications. 
+
+With state feedback, we have
+$$
+x_{t+1}=A x_{t}+B u_{t}=A x_{t}+B\left(K x_{t}\right)=(A+B K) x_{t}, \quad t=1,2, \ldots
+$$
+This recursion is called the closed-loop system. The matrix $ A+B K $ is called the closed-loop dynamics matrix. (In this context, the recursion $ x_{t+1}=A x_{t} $ is called the open-loop system. It gives the dynamics when $ u_{t}=0 $.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \chapter{Matrices Norms}
 
@@ -1540,5 +1747,4 @@ ans =
 
 
 \end{example}
-
 
