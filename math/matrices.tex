@@ -3,7 +3,7 @@
 \section{Matrices}
 
 \begin{definition}[矩阵]
-    \term{矩阵}是一个由数字构成的矩阵数组. 
+    \term{矩阵}是一个由数字构成的矩阵数组。 
 
     $$ \left[\begin{array}{cccc}0 & 1 & -2.3 & 0.1 \\ 1.3 & 4 & -0.1 & 0 \\ 4.1 & -1 & 0 & 1.7\end{array}\right] \quad  \left(\begin{array}{cccc}0 & 1 & -2.3 & 0.1 \\ 1.3 & 4 & -0.1 & 0 \\ 4.1 & -1 & 0 & 1.7\end{array}\right)  $$
 
@@ -19,17 +19,17 @@
 \end{notation}
 
 \begin{definition}[标量]
-    不区分一个$1\times 1$矩阵和一个标量. 
+    不区分一个$1\times 1$矩阵和一个标量。 
 \end{definition}
 
 \begin{definition}[向量]
-    不区分一个$n\times 1$矩阵和一个向量. 
+    不区分一个$n\times 1$矩阵和一个向量。 
 \end{definition}
 
 \begin{definition}[行向量, 列向量]
-    一个$1\times n$矩阵被称为一个行向量. 
+    一个$1\times n$矩阵被称为一个行向量。 
     
-    一个$n\times 1$矩阵杯称为一个列向量. 
+    一个$n\times 1$矩阵杯称为一个列向量。 
 \end{definition}
 
 \begin{definition}[高形, 宽形和方形矩阵]
@@ -42,14 +42,14 @@
 \end{definition}
 
 \begin{definition}[分块矩阵]
-    分块矩阵的每一个元素都是一个矩阵.
+    分块矩阵的每一个元素都是一个矩阵。
 
     $$ A=\left[\begin{array}{ll}B & C \\ D & E\end{array}\right] $$
 
     其中$B,C,D,E$都是矩阵(被称为\term{矩阵$A$的子矩阵}).
 \end{definition}
 
-分块矩阵位于同一行的子矩阵行维度必须相等,位于同一列的子矩阵列维度必须相等.
+分块矩阵位于同一行的子矩阵行维度必须相等,位于同一列的子矩阵列维度必须相等。
 
 \begin{definition}[矩阵的列向量表示]
     矩阵 $ A \in \mathbb{R}^{m \times n} $ , 可通过其列向量($m$-vector)进行表示,假设其列向量为 $ a_{1}, \ldots, a_{n} \in \mathbb{R}^{m} $, 则有
@@ -85,7 +85,7 @@
     若 $A\in \mathbb{R}^{m \times n} $, 则 $ A^{T} \in \mathbb{R}^{n \times m} $ , 其被定义为： $ \left(A^{T}\right)_{i j}=A_{j i}, i=1, \ldots, n ; j=1, \ldots, m $
 \end{definition}
 
-转置将原矩阵的行向量转化为列向量.
+转置将原矩阵的行向量转化为列向量。
 
 \begin{corollary}
     [转置的性质]
@@ -135,7 +135,7 @@ $$
 \end{definition}
 
 \begin{remark}
-    矩阵$A$的列大小必须等于$B$的行大小.
+    矩阵$A$的列大小必须等于$B$的行大小。
 \end{remark} 
 
 \begin{corollary}[矩阵乘法性质]
@@ -166,7 +166,7 @@ $$
 \end{definition}
 
 \begin{corollary}
-    $ {A} x $ 是矩阵A列向量的线性组合.
+    $ {A} x $ 是矩阵A列向量的线性组合。
 
 $$
 A x=\left[\begin{array}{llll}
@@ -280,7 +280,7 @@ If $ A $ is sparse, computing $ A x $ requires $ \mathbf{n n z}(A) $ multiplies 
 \begin{theorem}
     Suppose $ C=A B $ with $ A $ of size $ m \times p $ and $ B $ of size $ p \times n $.
 
-    一般矩阵的矩阵乘法的算法复杂度是$O(mnp)$。
+    一般矩阵的矩阵乘法的算法复杂度是$O(mnp)$.
 \end{theorem}
 
 
@@ -294,7 +294,7 @@ The $ i, j $ element of $ C $ is the inner product of row $ i $ of $ A $ with co
 \begin{theorem}
     Suppose that $ A $ is $ m \times p $ and sparse, and $ B $ is $ p \times n $, but not necessarily sparse. 
 
-    稀疏矩阵乘法的算法复杂度不多于$ 2 \min \{\mathbf{n n z}(A) n, \mathbf{n n z}(B) m\} $ flops。
+    稀疏矩阵乘法的算法复杂度不多于$ 2 \min \{\mathbf{n n z}(A) n, \mathbf{n n z}(B) m\} $ flops.
 \end{theorem}
 
 
@@ -318,7 +318,7 @@ There is no simple formula for the complexity of multiplying two sparse matrices
 
 with $ A $ of size $ m \times n, B $ of size $ n \times p $, and $ C $ of size $ p \times q $. 
 
-    根据计算顺序的不同，它的算法复杂度是$O( 2 m p(n+q) )$或者$O(2 n q(m+p) )$。
+    根据计算顺序的不同，它的算法复杂度是$O( 2 m p(n+q) )$或者$O(2 n q(m+p) )$.
 \end{theorem}
 
 
@@ -370,7 +370,7 @@ $$
 \section{Special Matrices and Matrices in Different Applications}
 
 \begin{definition}[Zero Matrix]
-    所有元素都为0的矩阵.
+    所有元素都为0的矩阵。
 
     记作$$0, 0_{m \times n} $$
 \end{definition}
@@ -590,7 +590,7 @@ The identity matrix, and the reverser matrix are special cases of selector matri
 \begin{definition}[Permutation Matrices]
     $ f $ 颠倒向量 $ x $ 中的元素的顺序, 一个线性函数 $ f(x)=A x $
 
-    $$ A=\left[\begin{array}{lll}0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0\end{array}\right] $$是一个置换矩阵.
+    $$ A=\left[\begin{array}{lll}0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0\end{array}\right] $$是一个置换矩阵。
 \end{definition}
 
 \begin{proof}
@@ -888,7 +888,7 @@ $$\begin{aligned}
     假设向量$a$和$b$分别是以下多项式的系数
     $$ p(x)=a_{1}+a_{2} x+\cdots+a_{n} x^{n-1}, q(x)=b_{1}+b_{2} x+\cdots+b_{m} x^{m-1} $$
 
-    则 $ {c}={a}{*} {~b} $ 是多项式 $ p(x) q(x) $ 的系数.
+    则 $ {c}={a}{*} {~b} $ 是多项式 $ p(x) q(x) $ 的系数。
 
     $$ p(x) q(x)=c_{1}+c_{2} x+\cdots+c_{m+n-1} x^{m+n-2} $$
 \end{corollary}
@@ -1075,20 +1075,20 @@ $$
 \end{example}
 
 \begin{theorem}
-    正定矩阵 $ A $ 都是非奇异的.
+    正定矩阵 $ A $ 都是非奇异的。
 \end{theorem}
 
 \begin{proof}
     $$ A x=0 \quad \Rightarrow \quad x^{T} A x=0 \quad \Rightarrow \quad x=0 $$
 
-    最后一步由正定性得到的.($
+    最后一步由正定性得到的。($
     x^{T} A x>0 \quad \forall x \neq 0
     $)
 
 \end{proof}
 
 \begin{theorem}[正定矩阵对角元素性质]
-    正定矩阵 $ A $ 有正的对角元素.
+    正定矩阵 $ A $ 有正的对角元素。
 
     $$
 A_{i i}=e_{i}^{T} A e_{i}>0
@@ -1096,7 +1096,7 @@ $$
 \end{theorem}
 
 \begin{theorem}[半正定矩阵对角元素性质]
-    每个半正定矩阵 $ A $ 都有非负的对角元素.
+    每个半正定矩阵 $ A $ 都有非负的对角元素。
 $$
 A_{i i}=e_{i}^{T} A e_{i} \geq 0
 $$
@@ -1116,7 +1116,7 @@ $$
 \end{definition}
 
 \begin{theorem}
-    每个Gram矩阵都是半正定的.
+    每个Gram矩阵都是半正定的。
 \end{theorem}
 
 \begin{proof}
@@ -1129,7 +1129,7 @@ $$
 \end{theorem}
 
 \begin{corollary}
-    如果Gram矩阵是正定的, 则$B$的列向量是线性无关的.
+    如果Gram矩阵是正定的, 则$B$的列向量是线性无关的。
 \end{corollary}
 
 \begin{proof}
@@ -1137,7 +1137,7 @@ $$
 
 所以 $\forall x \neq 0, Bx \neq 0  $.
 
-    注意和线性无关 \ref{Def:LinearIndependence} 的定义进行参照.
+    注意和线性无关 \ref{Def:LinearIndependence} 的定义进行参照。
 \end{proof}
 
 \section{Affine functions and matrix-vector product}
@@ -1412,7 +1412,7 @@ This recursion is called the closed-loop system. The matrix $ A+B K $ is called 
         \item 非负性: $ \|A\| \geq 0, A \in \mathbb{R}^{m \times n} $ 且 $ \|A\|=0 \Leftrightarrow A=0 $;
     \end{itemize}
 
-则称 $ \|\cdot\| $ 为矩阵范数. 
+则称 $ \|\cdot\| $ 为矩阵范数。 
 \end{definition}
 
 向量空间 $ \mathbb{R}^{m \times n} $ 矩阵范数:
@@ -1430,7 +1430,7 @@ This recursion is called the closed-loop system. The matrix $ A+B K $ is called 
 \end{proof}
 
 \begin{definition}[从属于给定向量范数 $ \|x\|_{v} $ 的矩阵范数]
-    设 $ x \in \mathbb{R}^{n}, A \in \mathbb{R}^{m \times n},\|\cdot\|_{v} $ 为一种向量范数. 则 $ \frac{\|A x\|_{v}}{\|x\|_{v}} $ 对所有 $ x \neq 0 $ 有最大值, 令
+    设 $ x \in \mathbb{R}^{n}, A \in \mathbb{R}^{m \times n},\|\cdot\|_{v} $ 为一种向量范数。 则 $ \frac{\|A x\|_{v}}{\|x\|_{v}} $ 对所有 $ x \neq 0 $ 有最大值, 令
 
     $$ \|A\|_{v}=\max _{x \neq 0}\left\{\frac{\|A x\|_{v}}{\|x\|_{v}}\right\}=\max _{x \neq 0}\left\{\left\|A \frac{x}{\|x\|_{v}}\right\|_{v}\right\}=\max _{\|y\|_{v}=1}\left\{\|A y\|_{v}\right\} $$
 
@@ -1440,7 +1440,7 @@ This recursion is called the closed-loop system. The matrix $ A+B K $ is called 
 \end{definition}
 
 \begin{proof}
-    可以验证 $ \|A\|_{v} $ 满足矩阵范数定义. 
+    可以验证 $ \|A\|_{v} $ 满足矩阵范数定义。 
 
     $$ \|A\|_{v} \geq 0 $$
 
@@ -1456,7 +1456,7 @@ This recursion is called the closed-loop system. The matrix $ A+B K $ is called 
 \end{proof}
 
 \begin{remark}
-    在本书中若未明确说明, $\|A \|$表示的是算子范数.
+    在本书中若未明确说明, $\|A \|$表示的是算子范数。
 \end{remark}
 
 由定义 $ \|A\|_{v}=\max _{x \neq 0}\left\{\frac{\|A x\|_{v}}{\|x\|_{v}}\right\} $ 可得
@@ -1549,7 +1549,7 @@ $$ \lambda_{1}=9.1428, \lambda_{2}=2.9211, \lambda_{3}=0.9361 $$
 \end{example}
 
 \begin{remark}
-    对于$\|A\|_{2}$需要计算$\lambda_{\max }\left(A^{T} A\right)$, 直接根据特征方程计算特征值的算法复杂度太高.
+    对于$\|A\|_{2}$需要计算$\lambda_{\max }\left(A^{T} A\right)$, 直接根据特征方程计算特征值的算法复杂度太高。
 \end{remark}
 
 \chapter{适定问题}
@@ -1579,7 +1579,7 @@ $$
 \Delta x=A^{-1} \Delta b
 $$
 
-如果小的变化 $ \Delta b $ 导致小变化 $ \Delta x $, 则称解是\term{稳定}的. 如果小的变化 $ \Delta b $ 导致大变化 $ \Delta x $, 则称解\term{不稳定}的. 
+如果小的变化 $ \Delta b $ 导致小变化 $ \Delta x $, 则称解是\term{稳定}的。 如果小的变化 $ \Delta b $ 导致大变化 $ \Delta x $, 则称解\term{不稳定}的。 
 \end{definition}
 
 \begin{example}
@@ -1614,7 +1614,7 @@ $$ \Delta x=A^{-1} \Delta b=\left[\begin{array}{l}\Delta b_{1}-10^{10}\left(\Del
 
 \end{theorem}
 
-矩阵范数 $ \left\|A^{-1}\right\|_{2} $ 小时, 当 $ \|\Delta b\|_{2} $ 变化很小, $ \|\Delta x\|_{2} $ 也很小; $ \left\|A^{-1}\right\|_{2} $ 大时,  $ \|\Delta x\|_{2} $ 可能很大,  即使 $ \|\Delta b\|_{2} $ 很小. 
+矩阵范数 $ \left\|A^{-1}\right\|_{2} $ 小时, 当 $ \|\Delta b\|_{2} $ 变化很小, $ \|\Delta x\|_{2} $ 也很小; $ \left\|A^{-1}\right\|_{2} $ 大时,  $ \|\Delta x\|_{2} $ 可能很大,  即使 $ \|\Delta b\|_{2} $ 很小。 
 
 \section[相对误差的界限]{相对误差的界限\footnote{Reference: \href{https://blogs.mathworks.com/cleve/2017/07/17/what-is-the-condition-number-of-a-matrix/?from=cn}{MathWorks Blog}.}}
 
@@ -1655,7 +1655,7 @@ $ \|A\|_{2}\left\|A^{-1}\right\|_{2} $ 大, $ \frac{\|\Delta x\|_{2}}{\|x\|_{2}}
     \begin{itemize}
         \item 对于所有 $ A $, 有 $ \kappa(A) \geq 1 $;
         \item 如果 $ \kappa(A) $ 比较小 (接近1),  $ x $ 的相对误差接近 $ b $ 的相对误差;
-        \item 如果 $ \kappa(A) $ 比较大（超过100）,  $ x $ 的相对误差比 $ b $ 的相对误差大得多. 
+        \item 如果 $ \kappa(A) $ 比较大（超过100）,  $ x $ 的相对误差比 $ b $ 的相对误差大得多。 
     \end{itemize}
 \end{corollary}
 

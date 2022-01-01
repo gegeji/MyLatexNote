@@ -123,7 +123,7 @@ $$
 \begin{theorem}[正规方程与最小二乘解]
     $$ A^{T} A x=A^{T} b $$
 
-    $A$的列向量\textbf{线性无关}时，则 $ \hat{x}=\left(A^{T} A\right)^{-1} A^{T} b $。 
+    $A$的列向量\textbf{线性无关}时，则 $ \hat{x}=\left(A^{T} A\right)^{-1} A^{T} b $. 
 \end{theorem}
 
 \begin{proof}
@@ -257,7 +257,7 @@ $$
 
 $$\nabla f(x)=2\left(A^{T} A x-A^{T} b\right)=0 \Rightarrow A^{T} A x=A^{T} b$$
 
-$A$的列向量无关时，则 $ \hat{x}=\left(A^{T} A\right)^{-1} A^{T} b $。
+$A$的列向量无关时，则 $ \hat{x}=\left(A^{T} A\right)^{-1} A^{T} b $.
 
 \end{proof}
 
@@ -276,9 +276,9 @@ $$
 \hat{x}=\underset{x}{\arg \underset{x}{\min}}\|A x-b\|_{2}^{2} ,\|A x-b\|_{2}^{2}=\left\|\sum_{j=1}^{n} a_{j} x_{j}-b\right\|_{2}^{2}
 $$
 
-向量 $ b $ 在 $ \operatorname{range}(A) $ 上的投影是 $ A\left(A^{T} A\right)^{-1} A^{T} b $。
+向量 $ b $ 在 $ \operatorname{range}(A) $ 上的投影是 $ A\left(A^{T} A\right)^{-1} A^{T} b $.
 
-残余向量 $ \hat{r}=A \hat{x}-b $ 满足 $ A^{T} \hat{r}=A^{T}(A \hat{x}-b)=0 $。残余向量 $ \hat{r} $ 正交于 $ A $ 的每一列,因此正交于$ \operatorname{range}(A) $。
+残余向量 $ \hat{r}=A \hat{x}-b $ 满足 $ A^{T} \hat{r}=A^{T}(A \hat{x}-b)=0 $.残余向量 $ \hat{r} $ 正交于 $ A $ 的每一列,因此正交于$ \operatorname{range}(A) $.
 
 
 
@@ -286,7 +286,7 @@ $$
 \begin{theorem}[投影与$A$列空间的关系]
     $ A \hat{x} \in \operatorname{range}(A) $是$A$的列空间中最接近$b$的向量。 
     
-    $ \hat{r}=A \hat{x} -b$正交于$A$的列空间（值域空间） $ \operatorname{range}(A) $。
+    $ \hat{r}=A \hat{x} -b$正交于$A$的列空间（值域空间） $ \operatorname{range}(A) $.
 \end{theorem}
 
 \section{正规方程}
@@ -409,7 +409,7 @@ A=\left[\begin{array}{cc}
 \end{array}\right]
 $$
 
-将中间结果四舍五入到小数点后8位.
+将中间结果四舍五入到小数点后8位。
 
 方法 1 ：通过Gram矩阵求解
 $$
@@ -461,7 +461,7 @@ $$\begin{aligned}
 $$
 f(x)=\|A x-b\|_{2}^{2}=\sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i j} x_{j}-b_{i}\right)^{2}
 $$
-为使目标函数最小, 可求最优解 $ \hat{x}: \quad \hat{x}=\arg \underset{x}{ \min } f(x) $。
+为使目标函数最小, 可求最优解 $ \hat{x}: \quad \hat{x}=\arg \underset{x}{ \min } f(x) $.
 
 \begin{problem}
     $ A \in \mathbb{R}^{\mathrm{m} \times n} $ 列向量线性相关或n非常大$
@@ -494,7 +494,7 @@ $$
 
 当 $ x^{(k+1)}-x^{(k)}=-\alpha_{k} \nabla f\left(x^{(k)}\right), \alpha_{k}>0 $ 时，等式成立。
 
-由于$-\left\|\nabla f\left(x^{(k)}\right)\right\|_{2}\left\|x^{(k+1)}-x^{(k)}\right\|_{2}$是非负的，此时$f\left(x^{(k+1)}\right)-f\left(x^{(k)}\right) \le 0$。
+由于$-\left\|\nabla f\left(x^{(k)}\right)\right\|_{2}\left\|x^{(k+1)}-x^{(k)}\right\|_{2}$是非负的，此时$f\left(x^{(k+1)}\right)-f\left(x^{(k)}\right) \le 0$.
 \end{corollary}
 
 迭代公式为 
@@ -509,9 +509,9 @@ $$
 
 令 $$ f(x)=\frac{1}{2}\|A x-b\|_{2}^{2} $$
 
-则 $ f $ 为凸函数, 并有 $ \nabla f(x)=A^{T}(A x-b) $。
+则 $ f $ 为凸函数, 并有 $ \nabla f(x)=A^{T}(A x-b) $.
 
-则 $ A^{T} A \in \mathbb{R}^{n \times n} $ 。如果列向量\textbf{线性相关}会导致其\textbf{不可逆}或$n$非常大。可以通过梯度下降法迭代
+则 $ A^{T} A \in \mathbb{R}^{n \times n} $ .如果列向量\textbf{线性相关}会导致其\textbf{不可逆}或$n$非常大。可以通过梯度下降法迭代
 
 $$  x^{(k+1)}=x^{(k)}-\alpha_{k} \nabla f\left(x^{(k)}\right) , f\left(x^{(k+1)}\right)<f\left(x^{(k)}\right) $$
 
@@ -542,7 +542,7 @@ $$ x^{(k+1)}=x^{(k)}-\alpha^{(k)} A^{T}\left(A x^{(k)}-b\right) $$
 
     $$ x^{(k+1)}=x^{(k)}-\alpha^{(k)} A^{T}\left(A x^{(k)}-b\right) $$
 
-    需要估计 $ \alpha^{(k)} $。
+    需要估计 $ \alpha^{(k)} $.
 \end{problem}
 
 为了估计 $ \alpha^{(k)} $, 通过线性搜索估计:

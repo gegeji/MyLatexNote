@@ -60,13 +60,13 @@ $$
 
 建立一个理想的相机模型，由参数 $ A \in \mathbb{R}^{2 \times 3}, b \in \mathbb{R}^{2}, c \in \mathbb{R}^{3}, d \in \mathbb{R} $ 来描述。相机及其位置和方向用 $ A ， b ， c ， d $ 来刻画。
 
-目标位置 $ x \in \mathbb{R}^{3} $ 在二维平面图像投影位置 $ x^{\prime} \in \mathbb{R}^{2} $ 。
+目标位置 $ x \in \mathbb{R}^{3} $ 在二维平面图像投影位置 $ x^{\prime} \in \mathbb{R}^{2} $ .
 
 $$
 x^{\prime}=\frac{1}{c^{T} x+d}(A x+b)
 $$
 
-如果物体在摄像机前面，则 $ c^{T} x+d>0 $ 。
+如果物体在摄像机前面，则 $ c^{T} x+d>0 $ .
 
 \begin{problem}
     位于 $ x_{e x} $ 位置的物体由 $ l $ 个相机观察(由 $ A_{i}, b_{i}, c_{i}, d_{i} $ 描述)，目标在相机图像平面上位置 $ y_{i} \in \mathbb{R}^{2} $
@@ -75,7 +75,7 @@ $$
     y_{i}=\frac{1}{c_{i}^{T} x_{e x}+d_{i}}\left(A_{i} x_{\alpha x}+b_{i}\right)+v_{i}
     $$
 
-    $ v_{i} $ 为测量误差或量化误差。目的是从 $ l $ 个观测点 $ y_{1}, \ldots, y_{l} $ 来估计三维位置 $ x_{e x} $ 。
+    $ v_{i} $ 为测量误差或量化误差。目的是从 $ l $ 个观测点 $ y_{1}, \ldots, y_{l} $ 来估计三维位置 $ x_{e x} $ .
 \end{problem}
 
 
@@ -96,7 +96,7 @@ $$
 \min _{\theta} \sum_{i=1}^{N}\left(\hat{f}\left(x^{(i)}, \theta\right)-y^{(i)}\right)^{2}
 $$
 
-$ \left(x^{(i)}, y^{(i)}\right), i=1, \cdots, N $ 表示样本。设函数 $ \hat{f}(x, \theta) $ 的参数 $ \theta = \left(\theta_{1}, \ldots, \theta_{p}\right) $。最小化的目标是估计函数参数 $ \theta $。
+$ \left(x^{(i)}, y^{(i)}\right), i=1, \cdots, N $ 表示样本。设函数 $ \hat{f}(x, \theta) $ 的参数 $ \theta = \left(\theta_{1}, \ldots, \theta_{p}\right) $.最小化的目标是估计函数参数 $ \theta $.
 \end{problem}
 
 假设函数 $ \hat{f}(x, \theta) $ 关于 $ \theta $ 的线性函数
@@ -133,7 +133,7 @@ $$
 \min _{\theta, u^{(i)}} \sum_{i=1}^{N}\left(\left(\hat{f}\left(u^{(i)}, \theta\right)-y^{(i)}\right)^{2}+\left\|u^{(i)}-x^{(i)}\right\|_{2}^{2}\right)
 $$
 
-这个模型需要优化参数 $ \theta $ 和 $ {N} $ 个点 $ u^{(i)} $。
+这个模型需要优化参数 $ \theta $ 和 $ {N} $ 个点 $ u^{(i)} $.
 \end{problem}
 
 第 $ i $ 项为数据点 $ \left(x^{(i)}, y^{(i)}\right) $ 到点 $ \left(u^{(i)}, \hat{f}\left(u^{(i)}, \theta\right)\right) $ 距离的平方。
@@ -142,7 +142,7 @@ $$
     \input{tikz_images/non_linear_least_square_example.tex}
 \end{FigureCenter}
 
-通过 $ u^{(i)} $ 与图中点 $ \left(x^{(i)}, y^{(i)}\right) $ 的平方距离来最小化 $ d_{i}^{2} $。最小化 $ \sum_{i} d_{i}^{2} $ ，即通过 $ u^{(1)}, \ldots, u^{(N)} $ 和 $ \theta $ 来最小化均方距离。
+通过 $ u^{(i)} $ 与图中点 $ \left(x^{(i)}, y^{(i)}\right) $ 的平方距离来最小化 $ d_{i}^{2} $.最小化 $ \sum_{i} d_{i}^{2} $ ，即通过 $ u^{(1)}, \ldots, u^{(N)} $ 和 $ \theta $ 来最小化均方距离。
 
 \subsection{二分类}
 
@@ -154,7 +154,7 @@ $$
 \min _{\theta} \sum_{i=1}^{N}\left(\phi\left(\theta_{1} f_{1}\left(x^{(i)}\right)+\cdots+\theta_{p} f_{p}\left(x^{(i)}\right)\right)-y^{(i)}\right)^{2}
 $$
 
-$ \left(x^{(i)}, y^{(i)}\right) $ 是数据点， $ y^{(i)} \in\{-1,1\} $ 。 $ \phi(u) $ 是sigmoid函数，它是 $\operatorname{sign} (u) $ 函数的一个可微的近似函数。
+$ \left(x^{(i)}, y^{(i)}\right) $ 是数据点， $ y^{(i)} \in\{-1,1\} $ . $ \phi(u) $ 是sigmoid函数，它是 $\operatorname{sign} (u) $ 函数的一个可微的近似函数。
 $$
 \phi(u)=\frac{e^{u}-e^{-u}}{e^{u}+e^{-u}}
 $$
@@ -535,7 +535,7 @@ $$
 \end{corollary}
 
 \begin{remark}
-    对于一般函数 $ f(x), \nabla g(x)=0 $ \textbf{不是最优解的充分条件}。
+    对于一般函数 $ f(x), \nabla g(x)=0 $ \textbf{不是最优解的充分条件}.
 \end{remark}
 
 
@@ -593,7 +593,7 @@ $$
 \end{aligned}
 $$
 
-(利用第14.10的 $ \nabla g(x) $ 表达式)。
+(利用第14.10的 $ \nabla g(x) $ 表达式).
 
 逼近函数 $ \hat{f}\left(x ; x^{(k)}\right) $ 的关于 $ x^{(k+1)} $ 的代价:
 $$
@@ -709,7 +709,7 @@ LM算法通过求解正则化最小二乘法更新 $ x^{(k+1)} $ :
 要求 $ x $ 靠近 $ x^{(k)} $ ，即 $ \hat{f}\left(x ; x^{(k)}\right) \approx f(x) $. (The second term forces $ x $ to be close to $ x^{(k)} $ where $ \hat{f}\left(x ; x^{(k)}\right) \approx f(x) $.)
 \end{problem}
 
-当 $ \lambda^{(k)}>0 $ 时，总有唯一解.
+当 $ \lambda^{(k)}>0 $ 时，总有唯一解。
 
 \begin{remark}
     Levenberg–Marquardt Algorithm无需再对 $Df \left(x^{(k)}\right) $ 限制。
@@ -758,7 +758,7 @@ $$
 
 \subsection{正则化参数}
 
-几种调整 $ \lambda^{(k)} $ 的策略.
+几种调整 $ \lambda^{(k)} $ 的策略。
 
 \begin{algorithm}[htbp]
     \caption{在第$k$次迭代时，求解$\hat{x}$}
@@ -819,8 +819,8 @@ $$
 \end{algorithm}
 
 \begin{itemize}
-    \item 其中 $ \beta_{1}, \beta_{2} $ 是常数， $ 0<\beta_{1}<1<\beta_{2} $ 。
-    \item 在步骤2中，可以使用 $ \mathrm{QR} $ 分解来计算 $ \hat{x} $ 。
+    \item 其中 $ \beta_{1}, \beta_{2} $ 是常数， $ 0<\beta_{1}<1<\beta_{2} $ .
+    \item 在步骤2中，可以使用 $ \mathrm{QR} $ 分解来计算 $ \hat{x} $ .
     \item 迭代会在当 $ \nabla g\left(x^{(k)}\right)=2 A^{T} f\left(x^{(k)}\right) $ 足够小时终止。
 \end{itemize}
 

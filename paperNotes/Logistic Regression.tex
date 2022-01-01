@@ -9,7 +9,7 @@ F(x)=P(X \leqslant x)=\frac{1}{1+\mathrm{e}^{-(x-\mu) / \gamma}} \\
 f(x)=F^{\prime}(x)=\frac{\mathrm{e}^{-(x-\mu) / \gamma}}{\gamma\left(1+\mathrm{e}^{-(x-\mu) / \gamma}\right)^{2}}
 \end{array}
 $$
-式中, $ \mu $ 为位置参数, $ \gamma>0 $ 为形状参数.
+式中, $ \mu $ 为位置参数, $ \gamma>0 $ 为形状参数。
 \end{definition}
 
 
@@ -18,7 +18,7 @@ $$
     $$ P(Y=1 \mid x)=\frac{\exp (w \cdot x+b)}{1+\exp (w \cdot x+b)} $$
 $$ P\left(Y=0\{x)=\frac{1}{1+\exp (w \cdot x+b)}\right. $$
 
-这里, $\quad x \in \mathbf{R}^{n}$ 是输入, $Y \in\{0,1\}$ 是输出, $w \in \mathbf{R}^{n}$ 和 $b \in \mathbf{R}$ 是参数, $w$ 称为权值向 量, $b$ 称为偏置, $w \cdot x$ 为 $w$ 和 $x$ 的内积.
+这里, $\quad x \in \mathbf{R}^{n}$ 是输入, $Y \in\{0,1\}$ 是输出, $w \in \mathbf{R}^{n}$ 和 $b \in \mathbf{R}$ 是参数, $w$ 称为权值向 量, $b$ 称为偏置, $w \cdot x$ 为 $w$ 和 $x$ 的内积。
 \end{definition}
 
 有时为了方便, 将权值向量和输入向量加以扩充, 仍记作 $ w, x $, 即 $ w=\left(w^{(1)}\right. $, $ \left.w^{(2)}, \cdots, w^{(n)}, b\right)^{\mathrm{T}}, x=\left(x^{(1)}, x^{(2)}, \cdots, x^{(n)}, 1\right)^{\mathrm{T}} $. 这时, 逻辑斯谛回归模型如下:
@@ -37,7 +37,7 @@ $$ \operatorname{logit}(p)=\log \frac{p}{1-p} $$
 
 $$ \log \frac{P(Y=1 \mid x)}{1-P(Y=1 \mid x)}=w \cdot x $$
 
-考虑对输入 $ x $ 进行分类的线性函数 $ w \cdot x $, 其值域为实数域.
+考虑对输入 $ x $ 进行分类的线性函数 $ w \cdot x $, 其值域为实数域。
 
 注意, 这里 $ x \in \mathbf{R}^{n+1}, w \in \mathbf{R}^{n+1} $. 通过逻辑斯谛回归模型定义式可以将线性函 数 $ w \cdot x $ 转换为概率:
 

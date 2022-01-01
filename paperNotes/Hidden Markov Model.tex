@@ -7,16 +7,16 @@
 成一个观测而产生观测随机序列的过程，隐藏的马尔可夫链随机生成的状态的序
 列，称为状态序列(\term{state sequence});每个状态生成一个观测，而由此产生的观测
 的随机序列，称为观测序列(\term{observation sequence}).序列的每一个位置又可以看
-作是一个时刻. 
+作是一个时刻。 
 
 \begin{definition}[隐马尔可夫模型]
-    设 $ Q $ 是所有可能的状态的集合, $ V $ 是所有可能的观测的集合.
+    设 $ Q $ 是所有可能的状态的集合, $ V $ 是所有可能的观测的集合。
 
 $$
 Q=\left\{q_{1}, q_{2}, \cdots, q_{N}\right\}, \quad V=\left\{v_{1}, v_{2}, \cdots, v_{M}\right\}
 $$
 
-$ I $ 是长度为 $ T $ 的状态序列, $ O $ 是对应的观测序列.
+$ I $ 是长度为 $ T $ 的状态序列, $ O $ 是对应的观测序列。
 $$
 I=\left(i_{1}, i_{2}, \cdots, i_{T}\right), \quad O=\left(o_{1}, o_{2}, \cdots, o_{T}\right)
 $$
@@ -29,7 +29,7 @@ $$
 $$
 a_{i j}=P\left(i_{t+1}=q_{j} \mid i_{t}=q_{i}\right), \quad i=1,2, \cdots, N ; j=1,2, \cdots, N
 $$
-是在时刻 $ t $ 处于状态 $ q_{i} $ 的条件下在时刻 $ t+1 $ 转移到状态 $ q_{j} $ 的概率.
+是在时刻 $ t $ 处于状态 $ q_{i} $ 的条件下在时刻 $ t+1 $ 转移到状态 $ q_{j} $ 的概率。
 
 $ B $ 是观测概率矩阵:
 $$
@@ -39,7 +39,7 @@ $$
 $$
 b_{j}(k)=P\left(o_{t}=v_{k} \mid i_{t}=q_{j}\right), \quad k=1,2, \cdots, M ; j=1,2, \cdots, N
 $$
-是在时刻 $ t $ 处于状态 $ q_{j} $ 的条件下生成观测 $ v_{k} $ 的概率.
+是在时刻 $ t $ 处于状态 $ q_{j} $ 的条件下生成观测 $ v_{k} $ 的概率。
 
 $ \pi $ 是初始状态概率向量:
 $$
@@ -49,25 +49,25 @@ $$
 $$
 \pi_{i}=P\left(i_{1}=q_{i}\right), \quad i=1,2, \cdots, N
 $$
-是时刻 $ t=1 $ 处于状态 $ q_{i} $ 的概率.
+是时刻 $ t=1 $ 处于状态 $ q_{i} $ 的概率。
 
 \end{definition}
 
-隐马尔可夫模型由初始状态概率向量 $ \pi $ 、状态转移概率矩阵 $ A $ 和观测概率矩 阵 $ B $ 决定. $ \pi $ 和 $ A $ 决定状态序列, $ B $ 决定观测序列. 因此, 隐马尔可夫模型 $ \lambda $ 可以用三元符号表示, 即
+隐马尔可夫模型由初始状态概率向量 $ \pi $ 、状态转移概率矩阵 $ A $ 和观测概率矩 阵 $ B $ 决定。 $ \pi $ 和 $ A $ 决定状态序列, $ B $ 决定观测序列。 因此, 隐马尔可夫模型 $ \lambda $ 可以用三元符号表示, 即
 
 $$
 \lambda=(A, B, \pi)
 $$
-$ A, B, \pi $ 称为隐马尔可夫模型的三要素.
+$ A, B, \pi $ 称为隐马尔可夫模型的三要素。
 
 从定义可知, 隐马尔可夫模型作了两个基本假设:
 
-（1）齐次马尔可夫性假设, 即假设隐藏的马尔可夫链在任意时刻 $ t $ 的状态只 依赖于其前一时刻的状态, 与其他时刻的状态及观测无关, 也与时刻 $ t $ 无关.
+（1）齐次马尔可夫性假设, 即假设隐藏的马尔可夫链在任意时刻 $ t $ 的状态只 依赖于其前一时刻的状态, 与其他时刻的状态及观测无关, 也与时刻 $ t $ 无关。
 $$
 P\left(i_{t} \mid i_{t-1}, o_{t-1}, \cdots, i_{1}, o_{1}\right)=P\left(i_{t} \mid i_{t-1}\right), \quad t=1,2, \cdots, T
 $$
 
-（2）观测独立性假设, 即假设任意时刻的观测只依赖于该时刻的马尔可夫链的状态, 与其他观测及状态无关.
+（2）观测独立性假设, 即假设任意时刻的观测只依赖于该时刻的马尔可夫链的状态, 与其他观测及状态无关。
 $$
 P\left(o_{t} \mid i_{T}, o_{T}, i_{T-1}, o_{T-1}, \cdots, i_{t+1}, o_{t+1}, i_{t}, i_{t-1}, o_{t-1}, \cdots, i_{1}, o_{1}\right)=P\left(o_{t} \mid i_{t}\right)
 $$
@@ -92,9 +92,9 @@ $$
 \section{隐马尔可夫模型的3个基本问题}
 
 \begin{enumerate}
-    \item 概率计算问题. 给定模型 $ \lambda=(A, B, \pi) $ 和观测序列 $ O=\left(o_{1}, o_{2}, \cdots, o_{T}\right) $, 计 算在模型 $ \lambda $ 下观测序列 $ O $ 出现的概率 $ P(O \mid \lambda) $.
-    \item 学习问题. 已知观测序列 $ O=\left(o_{1}, o_{2}, \cdots, o_{T}\right) $, 估计模型 $ \lambda=(A, B, \pi) $ 参数, 使得在该模型下观测序列概率 $ P(O \mid \lambda) $ 最大. 即用极大似然估计的方法估计参数.
-    \item 预测问题, 也称为解码 (decoding）问题. 已知模型 $ \lambda=(A, B, \pi) $ 和观测 序列 $ O=\left(o_{1}, o_{2}, \cdots, o_{T}\right) $, 求对给定观测序列条件概率 $ P(I \mid O) $ 最大的状态序列$ I=\left(i_{1}, i_{2}, \cdots, i_{T}\right) $. 即给定观测序列, 求最有可能的对应的状态序列.
+    \item 概率计算问题。 给定模型 $ \lambda=(A, B, \pi) $ 和观测序列 $ O=\left(o_{1}, o_{2}, \cdots, o_{T}\right) $, 计 算在模型 $ \lambda $ 下观测序列 $ O $ 出现的概率 $ P(O \mid \lambda) $.
+    \item 学习问题。 已知观测序列 $ O=\left(o_{1}, o_{2}, \cdots, o_{T}\right) $, 估计模型 $ \lambda=(A, B, \pi) $ 参数, 使得在该模型下观测序列概率 $ P(O \mid \lambda) $ 最大。 即用极大似然估计的方法估计参数。
+    \item 预测问题, 也称为解码 (decoding）问题。 已知模型 $ \lambda=(A, B, \pi) $ 和观测 序列 $ O=\left(o_{1}, o_{2}, \cdots, o_{T}\right) $, 求对给定观测序列条件概率 $ P(I \mid O) $ 最大的状态序列$ I=\left(i_{1}, i_{2}, \cdots, i_{T}\right) $. 即给定观测序列, 求最有可能的对应的状态序列。
 \end{enumerate}
 
 \section{概率计算算法}
@@ -128,7 +128,7 @@ $$
  $$
 
 \begin{remark}
-    计算量很大, 是 $ O\left(T N^{T}\right) $ 阶的, 这种算法不可行.
+    计算量很大, 是 $ O\left(T N^{T}\right) $ 阶的, 这种算法不可行。
 \end{remark}
 
 \subsection{前向算法}
@@ -156,7 +156,7 @@ $$\;
 $$ P(O \mid \lambda)=\sum_{i=1}^{N} \alpha_{T}(i) $$\;
 \end{algorithm}
 
-如图所示, 前向算法实际是基于“状态序列的路径结构”递推计算 $ P(O \mid \lambda) $ 的算法. 前向算法高效的关键是其局部计算前向概率, 然后利用路径结构将前向 概率 “递推” 到全局, 得到 $ P(O \mid \lambda) $. 具体地, 在时刻 $ t=1 $, 计算 $ \alpha_{1}(i) $ 的 $ N $ 个值$ (i=1,2, \cdots, N) $; 在各个时刻 $ t=1,2, \cdots, T-1 $, 计算 $ \alpha_{t+1}(i) $ 的 $ N $ 个值 $ (i=1,2, \cdots, N) $, 而且每个 $ \alpha_{t+1}(i) $ 的计算利用前一时刻 $ N $ 个 $ \alpha_{t}(j) $. 减少计算量的原因在于每一次计算直接引用前一个时刻的计算结果，避免重复计算，这样，利用前向概率计算$ P(O \mid \lambda) $ 的计算量是 $ O\left(N^{2} T\right) $ 阶的, 而不是直接计算的 $ O\left(T N^{T}\right) $ 阶.
+如图所示, 前向算法实际是基于“状态序列的路径结构”递推计算 $ P(O \mid \lambda) $ 的算法。 前向算法高效的关键是其局部计算前向概率, 然后利用路径结构将前向 概率 “递推” 到全局, 得到 $ P(O \mid \lambda) $. 具体地, 在时刻 $ t=1 $, 计算 $ \alpha_{1}(i) $ 的 $ N $ 个值$ (i=1,2, \cdots, N) $; 在各个时刻 $ t=1,2, \cdots, T-1 $, 计算 $ \alpha_{t+1}(i) $ 的 $ N $ 个值 $ (i=1,2, \cdots, N) $, 而且每个 $ \alpha_{t+1}(i) $ 的计算利用前一时刻 $ N $ 个 $ \alpha_{t}(j) $. 减少计算量的原因在于每一次计算直接引用前一个时刻的计算结果，避免重复计算，这样，利用前向概率计算$ P(O \mid \lambda) $ 的计算量是 $ O\left(N^{2} T\right) $ 阶的, 而不是直接计算的 $ O\left(T N^{T}\right) $ 阶。
 
 \subsection{后向算法}
 
@@ -183,7 +183,7 @@ $$
     $$ P(O \mid \lambda)=\sum_{i=1}^{N} \pi_{i} b_{i}\left(o_{1}\right) \beta_{1}(i) $$\;
 \end{algorithm}
 
-步骤 (1) 初始化后向概率, 对最终时刻的所有状态 $ q_{i} $ 规定 $ \beta_{T}(i)=1 $. 步骤 $ (2) $ 是后向概率的递推公式. 如图 $ 10.3 $ 所示, 为了计算在时刻 $ t $ 状态为 $ q_{i} $ 条件下时刻$ t+1 $ 之后的观测序列为 $ o_{t+1}, o_{t+2}, \cdots, o_{T} $ 的后向概率 $ \beta_{t}(i) $, 只需考虑在时刻 $ t+1 $ 所有可能的 $ N $ 个状态 $ q_{j} $ 的转移概率（即 $ a_{i j} $ 项), 以及在此状态下的观测 $ o_{t+1} $ 的观测概率 (即 $ b_{j}\left(o_{t+1}\right) $ 项 $ ) $, 然后考虑状态 $ q_{j} $ 之后的观测序列的后向概率(即 $ \beta_{t+1}(j) $ 项 $ ) $. 步骤（3) 求 $ P(O \mid \lambda) $ 的思路与步骤（2）一致, 只是初始概率 $ \pi_{i} $ 代替转移概率.
+步骤 (1) 初始化后向概率, 对最终时刻的所有状态 $ q_{i} $ 规定 $ \beta_{T}(i)=1 $. 步骤 $ (2) $ 是后向概率的递推公式。 如图 $ 10.3 $ 所示, 为了计算在时刻 $ t $ 状态为 $ q_{i} $ 条件下时刻$ t+1 $ 之后的观测序列为 $ o_{t+1}, o_{t+2}, \cdots, o_{T} $ 的后向概率 $ \beta_{t}(i) $, 只需考虑在时刻 $ t+1 $ 所有可能的 $ N $ 个状态 $ q_{j} $ 的转移概率（即 $ a_{i j} $ 项), 以及在此状态下的观测 $ o_{t+1} $ 的观测概率 (即 $ b_{j}\left(o_{t+1}\right) $ 项 $ ) $, 然后考虑状态 $ q_{j} $ 之后的观测序列的后向概率(即 $ \beta_{t+1}(j) $ 项 $ ) $. 步骤（3) 求 $ P(O \mid \lambda) $ 的思路与步骤（2）一致, 只是初始概率 $ \pi_{i} $ 代替转移概率。
 
 利用前向概率和后向概率的定义可以将观测序列概率 $ P(O \mid \lambda) $ 统一写成
 $$
@@ -194,7 +194,7 @@ $$
 
 \begin{theorem}
     \label{Thm:ComputeGamma}
-    给定模型 $ \lambda $ 和观测 $ O $, 在时刻 $ t $ 处于状态 $ q_{i} $ 的概率. 
+    给定模型 $ \lambda $ 和观测 $ O $, 在时刻 $ t $ 处于状态 $ q_{i} $ 的概率。 
     
     记$ \gamma_{t}(i)=P\left(i_{t}=q_{i} \mid O, \lambda\right) $
 
@@ -203,7 +203,7 @@ $$ \gamma_{t}(i)=\frac{\alpha_{1}(i) \beta_{t}(i)}{P(O \mid \lambda)}=\frac{\alp
 
 
 \begin{proof}
-    可以通过前向后向概率计算. 事实上,
+    可以通过前向后向概率计算。 事实上,
 $$
 \gamma_{t}(i)=P\left(i_{t}=q_{i} \mid O, \lambda\right)=\frac{P\left(i_{t}=q_{i}, O \mid \lambda\right)}{P(O \mid \lambda)}
 $$
@@ -219,7 +219,7 @@ $$ \gamma_{t}(i)=\frac{\alpha_{t}(i) \beta_{t}(i)}{P(O \mid \lambda)}=\frac{\alp
 
 \begin{theorem}
     \label{Thm:ComputeXi}
-    给定模型 $ \lambda $ 和观测 $ O $, 在时刻 $ t $ 处于状态 $ q_{i} $ 且在时刻 $ t+1 $ 处于状态 $ q_{j} $ 的概 率. 
+    给定模型 $ \lambda $ 和观测 $ O $, 在时刻 $ t $ 处于状态 $ q_{i} $ 且在时刻 $ t+1 $ 处于状态 $ q_{j} $ 的概 率。 
     
     记$ \xi_{t}(i, j)=P\left(i_{t}=q_{i}, i_{t+1}=q_{j} \mid O, \lambda\right) $
 
@@ -269,10 +269,10 @@ $$ \sum_{t=1}^{T-1} \xi_{t}(i, j) $$
 
 \subsection{监督学习方法}
 
-隐马尔可夫模型的学习，根据训练数据是包括观测序列和对应的状态序列还是只有观测序列，可以分别由监督学习与非监督学习实现. 
+隐马尔可夫模型的学习，根据训练数据是包括观测序列和对应的状态序列还是只有观测序列，可以分别由监督学习与非监督学习实现。 
 
 假设已给训练数据包含 $ S $ 个长度相同的观测序列和对应的状态序列 $$ \left\{\left(O_{1}, I_{1}\right),\left(O_{2}, I_{2}\right), \cdots,\left(O_{s}, I_{s}\right)\right\} $$
-那么可以利用\term{极大似然估计法}来估计隐马尔可夫模型的参数. 具体方法如下.
+那么可以利用\term{极大似然估计法}来估计隐马尔可夫模型的参数。 具体方法如下。
 
 \begin{algorithm}[htbp]
     \caption{极大似然估计法}
@@ -294,11 +294,11 @@ $$ \sum_{t=1}^{T-1} \xi_{t}(i, j) $$
 
 \subsection{Baum-Welch算法}
 
-假设给定训练数据只包含 $ S $ 个长度为 $ T $ 的观测序列 $ \left\{O_{1}, O_{2}, \cdots, O_{s}\right\} $ 而没有对 应的状态序列, 目标是学习隐马尔可夫模型 $ \lambda=(A, B, \pi) $ 的参数. 我们将观测序列数据看作观测数据 $ O $, 状态序列数据看作不可观测的隐数据 $ I $, 那么隐马尔可 夫模型事实上是一个含有隐变量的概率模型
+假设给定训练数据只包含 $ S $ 个长度为 $ T $ 的观测序列 $ \left\{O_{1}, O_{2}, \cdots, O_{s}\right\} $ 而没有对 应的状态序列, 目标是学习隐马尔可夫模型 $ \lambda=(A, B, \pi) $ 的参数。 我们将观测序列数据看作观测数据 $ O $, 状态序列数据看作不可观测的隐数据 $ I $, 那么隐马尔可 夫模型事实上是一个含有隐变量的概率模型
 $$
 P(O \mid \lambda)=\sum_{I} P(O \mid I, \lambda) P(I \mid \lambda)
 $$
-它的参数学习可以由EM算法实现. 
+它的参数学习可以由EM算法实现。 
 
 \begin{theorem}
     将式\ref{Eqn:ComputePI}、\ref{Eqn:ComputeA}、\ref{Eqn:ComputeB}中的各概率分别用 $ \gamma_{t}(i), \xi_{t}(i, j) $ 表示, 则可将相应 的公式写成:
@@ -322,7 +322,7 @@ $$
 Q(\lambda, \bar{\lambda})=\sum_{I} \log P(O, I \mid \lambda) P(O, I \mid \bar{\lambda})
 $$
 
-其中, $ \bar{\lambda} $ 是隐马尔可夫模型参数的当前估计值, $ \lambda $ 是要极大化的隐马尔可夫模型参数.
+其中, $ \bar{\lambda} $ 是隐马尔可夫模型参数的当前估计值, $ \lambda $ 是要极大化的隐马尔可夫模型参数。
 $$ P(O, I \mid \lambda)=\pi_{i_{1}} b_{i_{1}}\left(o_{1}\right) a_{i_1 i_{2}} b_{i_{2}}\left(o_{2}\right) \cdots a_{i_{T-1} i_{T}} b_{i_{r}}\left(o_{T}\right) $$
 
 于是函数 $ Q(\lambda, \bar{\lambda}) $ 可以写成:
@@ -336,10 +336,10 @@ Q(\lambda, \bar{\lambda})=& \sum_{I} \log \pi_{i_1} P(O, I \mid \bar{\lambda}) \
 \end{equation}
 
 
-式中求和都是对所有训练数据的序列总长度 $ T $ 进行的.
+式中求和都是对所有训练数据的序列总长度 $ T $ 进行的。
 
 
-3. EM 算法的 $ \mathrm{M} $ 步: 极大化 $ Q $ 函数 $ Q(\lambda, \bar{\lambda}) $ 求模型参数 $ A, B, \pi $ 由于要极大化的参数在式 中单独地出现在 3 个项中, 所以只需对各 项分别极大化.
+3. EM 算法的 $ \mathrm{M} $ 步: 极大化 $ Q $ 函数 $ Q(\lambda, \bar{\lambda}) $ 求模型参数 $ A, B, \pi $ 由于要极大化的参数在式 中单独地出现在 3 个项中, 所以只需对各 项分别极大化。
 
 (1) 式 \ref{Eqn:ComputeQ} 的第 1 项可以写成;
 $$
@@ -398,7 +398,7 @@ $$
 \sum_{I}\left(\sum_{t=1}^{T} \log b_{i_{t}}\left(o_{t}\right)\right) P(O, I \mid \bar{\lambda})=\sum_{j=1}^{N} \sum_{t=1}^{T} \log b_{j}\left(o_{t}\right) P\left(O, i_{t}=j \mid \bar{\lambda}\right)
 $$
 
-同样用拉格朗日乘子法, 约束条件是 $ \sum_{k=1}^{M} b_{j}(k)=1 $. 注意, 只有在 $ o_{t}=v_{k} $ 时 $ b_{j}\left(o_{t}\right) $ 对 $ b_{j}(k) $ 的偏导数才不为 0 , 以 $ I\left(o_{t}=v_{k}\right) $ 表示. 求得
+同样用拉格朗日乘子法, 约束条件是 $ \sum_{k=1}^{M} b_{j}(k)=1 $. 注意, 只有在 $ o_{t}=v_{k} $ 时 $ b_{j}\left(o_{t}\right) $ 对 $ b_{j}(k) $ 的偏导数才不为 0 , 以 $ I\left(o_{t}=v_{k}\right) $ 表示。 求得
 
 \begin{equation}
     \label{Eqn:ComputeB}
@@ -418,22 +418,22 @@ $$
     初始化：
 对 $ n=0 $, 选取 $ a_{i j}^{(0)}, b_{j}(k)^{(0)}, \pi_{i}^{(0)} $, 得到模型 $ \lambda^{(0)}=\left(A^{(0)}, B^{(0)}, \pi^{(0)}\right) $\;
 
-递推. 对 $ n=1,2, \cdots $,
+递推。 对 $ n=1,2, \cdots $,
 $$
 a_{i j}^{(n+1)}=\frac{\sum_{t=1}^{T-1} \xi_{t}(i, j)}{\sum_{t=1}^{T-1} \gamma_{t}(i)}
 $$
 $$ b_{j}(k)^{(n+1)}=\frac{\sum_{t=1, o_{i}=v_{k}}^{T} \gamma_{t}(j)}{\sum_{t=1}^{T} \gamma_{t}(j)} $$
 
 $$ \pi_{i}^{(n+1)}=\gamma_{1}(i) $$
-右端各值按观测 $ O=\left(o_{1}, o_{2}, \cdots, o_{T}\right) $ 和模型 $ \lambda^{(n)}=\left(A^{(n)}, B^{(n)}, \pi^{(n)}\right) $ 计算. 式中 $ \gamma_{t}(i) $, $ \xi_{t}(i, j) $ 由式 \ref{Thm:ComputeGamma} 和式 \ref{Thm:ComputeXi}  给出\;
-终止. 得到模型参数 $ \lambda^{(n+1)}=\left(A^{(n+1)}, B^{(n+1)}, \pi^{(n+1)}\right) $
+右端各值按观测 $ O=\left(o_{1}, o_{2}, \cdots, o_{T}\right) $ 和模型 $ \lambda^{(n)}=\left(A^{(n)}, B^{(n)}, \pi^{(n)}\right) $ 计算。 式中 $ \gamma_{t}(i) $, $ \xi_{t}(i, j) $ 由式 \ref{Thm:ComputeGamma} 和式 \ref{Thm:ComputeXi}  给出\;
+终止。 得到模型参数 $ \lambda^{(n+1)}=\left(A^{(n+1)}, B^{(n+1)}, \pi^{(n+1)}\right) $
 \end{algorithm}
 
 \section{预测算法}
 
 \subsection{近似算法}
 
-近似算法的想法是, 在每个时刻 $ t $ 选择在该时刻最有可能出现的状态 $ i_{t}^{*} $, 从 而得到一个状态序列 $ I^{*}=\left(i_{1}^{*}, i_{2}^{*}, \cdots, i_{T}^{*}\right) $, 将它作为预测的结果.
+近似算法的想法是, 在每个时刻 $ t $ 选择在该时刻最有可能出现的状态 $ i_{t}^{*} $, 从 而得到一个状态序列 $ I^{*}=\left(i_{1}^{*}, i_{2}^{*}, \cdots, i_{T}^{*}\right) $, 将它作为预测的结果。
 
 给定隐马尔可夫模型 $ \lambda $ 和观测序列 $ O $, 在时刻 $ t $ 处于状态 $ q_{i} $ 的概率 $ \gamma_{t}(i) $ 是
 $$
@@ -449,12 +449,12 @@ $$
 
 \begin{remark}
    近似算法的优点是计算简单，其缺点是不能保证预测的状态序列整体是最有
-可能的状态序列，因为预测的状态序列可能有实际不发生的部分.方法得到的状态序列中有可能存在转移概率为 0 的相邻状态, 即对某些 $ i, j $, $ a_{i j}=0 $ 时. 尽管如此, 近似算法仍然是有用的. 
+可能的状态序列，因为预测的状态序列可能有实际不发生的部分。方法得到的状态序列中有可能存在转移概率为 0 的相邻状态, 即对某些 $ i, j $, $ a_{i j}=0 $ 时。 尽管如此, 近似算法仍然是有用的。 
 \end{remark}
 
 \subsection{维特比算法}
 
-根据动态规划的性质. 
+根据动态规划的性质。 
 
 首先导入两个变量 $ \delta $ 和 $ \psi $. 
 
@@ -497,7 +497,7 @@ $$
 \psi_{1}(i)=0, & i=1,2, \cdots, N
 \end{array}
 $$\;
-递推. 对 $ t=2,3, \cdots, T $
+递推。 对 $ t=2,3, \cdots, T $
 $$
 \begin{array}{ll}
 \delta_{t}(i)=\max _{1 \leqslant j \leqslant N}\left[\delta_{t-1}(j) a_{j i}\right] b_{i}\left(o_{t}\right), & i=1,2, \cdots, N \\
@@ -511,7 +511,7 @@ P^{*}=\max _{1 \leqslant i \leqslant N} \delta_{T}(i) \\
 i_{T}^{*}=\arg \max _{1 \leqslant i \leqslant N}\left[\delta_{T}(i)\right]
 \end{array}
 $$\;
-最优路径回溯. 对 $ t=T-1, T-2, \cdots, 1 $
+最优路径回溯。 对 $ t=T-1, T-2, \cdots, 1 $
 $$
 i_{t}^{*}=\psi_{t+1}\left(i_{t+1}^{*}\right)
 $$

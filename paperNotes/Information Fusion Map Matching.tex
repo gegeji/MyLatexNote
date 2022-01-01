@@ -107,7 +107,7 @@ $$ V_{(T)}=\frac{\sum_{i=1}^{12} v_{i} \times\left(1-\frac{\left|T-t_{i}\right|}
 
 $$ N\left(x_{i}^{j}\right)=\frac{1}{\delta \sqrt{2 \pi}} e^{-\frac{\left(x_{i}^{j}-\mu\right)^{2}}{2 \delta^{2}}} $$
 
-where $ x_{i}^{j}=\operatorname{dist}\left(C_{i}^{j}, S_{i}\right) $ is the distance between $ C_{i}^{j} $ （候选点） and $ S_{i} $ （采样位置点）.
+where $ x_{i}^{j}=\operatorname{dist}\left(C_{i}^{j}, S_{i}\right) $ is the distance between $ C_{i}^{j} $ （候选点） and $ S_{i} $ （采样位置点）。
 
 \subsubsection{转移概率}
 
@@ -115,7 +115,7 @@ where $ x_{i}^{j}=\operatorname{dist}\left(C_{i}^{j}, S_{i}\right) $ is the dist
 
 $$ W\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right)=\frac{d_{(i-1) \rightarrow i}}{w_{(i-1, j) \rightarrow(i, k)}} $$
 
-where $ d_{(i-1) \rightarrow i}=\operatorname{dist}\left(S_{i}, S_{i-1}\right) $ is the Euclidean distance between $ S_{i} $ and $ S_{i-1} $ （采样点的欧几里得距离）, and $ w_{(i-1, j) \longrightarrow(i, k)} $ is the length of the shortest path from $ C_{i-1}^{j} $ to $ C_{i}^{k} $（候选点的最短路径距离）.
+where $ d_{(i-1) \rightarrow i}=\operatorname{dist}\left(S_{i}, S_{i-1}\right) $ is the Euclidean distance between $ S_{i} $ and $ S_{i-1} $ （采样点的欧几里得距离）, and $ w_{(i-1, j) \longrightarrow(i, k)} $ is the length of the shortest path from $ C_{i-1}^{j} $ to $ C_{i}^{k} $（候选点的最短路径距离）。
 
 \subsubsection{选择概率}
 
@@ -145,7 +145,7 @@ $$ T\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right)=\frac{\sum_{i=1}^{n}\left(r .
 
 \section{结果匹配}
 
-对于轨迹 $ S_{1} \longrightarrow S_{2} \longrightarrow \cdots \longrightarrow S_{n} $，构造一个新图 $ G_{c}\left(V_{c}, E_{c}\right) $。$V_c$是候选点， $E_c$是权值边。
+对于轨迹 $ S_{1} \longrightarrow S_{2} \longrightarrow \cdots \longrightarrow S_{n} $，构造一个新图 $ G_{c}\left(V_{c}, E_{c}\right) $.$V_c$是候选点， $E_c$是权值边。
 
 定义候选点$C_{i-1}^{j}$到$C_{i}^{k}$的权值是
 

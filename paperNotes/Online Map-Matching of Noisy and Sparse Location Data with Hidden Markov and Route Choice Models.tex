@@ -3,7 +3,7 @@
 Source: \cite{Jagadeesh2017} 
 
 \section{论文动机}
-    蜂窝网络/WiFi定位不精确性更高，现有算法对于这两种定位的处理不足够. 
+    蜂窝网络/WiFi定位不精确性更高，现有算法对于这两种定位的处理不足够。 
     
 利用司机的驾驶选择信息 (\term{route choice}).
 最简单办法：决定性的路径选择准则
@@ -76,7 +76,7 @@ P\left(o_{t} \mid s_{t, k}\right)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{g\left
 $$
 
 \begin{remark}
-    the location measurement error may not strictly conform to the above model, especially in dense urban networks. 但是它模型简单而且在前人工作中性能还不错. 
+    the location measurement error may not strictly conform to the above model, especially in dense urban networks. 但是它模型简单而且在前人工作中性能还不错。 
 \end{remark}
 
 \subsection{Transition Probability}
@@ -84,7 +84,7 @@ $$
 the path with the minimum \term{free-flow travel time}, found using
 the well-known Dijkstra's algorithm, as the optimal path.
 
-\cite{newson2009hidden}用的是大圆距离与路径距离之间的差值. (有问题 \ref{Comment:HMM-TransitionProbability})
+\cite{newson2009hidden}用的是大圆距离与路径距离之间的差值。 (有问题 \ref{Comment:HMM-TransitionProbability})
 
 对于空间，本文提出由两个时间状态之内大圆距离与路径距离之间的差值除以时间的比率
 
@@ -95,7 +95,7 @@ between two points on the road network is the length of the
 minimum-travel-time path between them found by Dijkstra
 algorithm
 
-对于时间，定义时间上的难以置信性. （\textbf{考虑到了时间上的转移概率}）该度量有助于为自由流旅行时间大于采样间隔的路径分配低的过渡概率. (修正模型)
+对于时间，定义时间上的难以置信性。 （\textbf{考虑到了时间上的转移概率}）该度量有助于为自由流旅行时间大于采样间隔的路径分配低的过渡概率。 (修正模型)
 
 $$
 z\left(s_{t-1, j}, s_{t, k}\right)=\frac{\max \left(\left(f\left(s_{t-1, j}, s_{t, k}\right)-\Delta T\right), 0\right)}{\Delta T}
@@ -112,7 +112,7 @@ $\lambda_{y}, \lambda_{z}$根据经验估计
 
 \section{Online Viterbi Inference}
 
-维特比算法通过递归算法可以找出HMM中最可能的序列. 
+维特比算法通过递归算法可以找出HMM中最可能的序列。 
 
 $$ \begin{aligned} V_{1, k} &=P\left(o_{1} \mid s_{1, k}\right) \\ V_{t, k} &=P\left(o_{t} \mid s_{t, k}\right) \max _{j}\left(V_{t-1, j} P\left(s_{t, k} \mid s_{t-1, j}\right)\right) \end{aligned} $$
 
@@ -121,7 +121,7 @@ $ V_{t, k} $ is the most likely state sequence ending at state $ s_{t, k} $ base
 $j$ maximizes
 $V_{t, k}$ is stored as the back pointer for state $s_{t, k}$. It points to the predecessor state $s_{t-1, j}$ of the state $s_{t, k}$ in the most likely sequence ending at the latter.
 
-离线模式:完整的最优路径可以通过回溯法获得.
+离线模式:完整的最优路径可以通过回溯法获得。
 
 Viterbi algorithm needs to be performed in
 an online manner such that portions of the most likely state
@@ -133,7 +133,7 @@ optimal state sequences can be generated using the concept
 of \term{transitive closure}, which defines the reachability relations
 in a directed graph [20].
 
-启发式策略: 由于当每个时间步的状态很大时计算最短路径的时间可能很大,因此只保留$k$ (=测量误差的方差)个最高可能性的状态.
+启发式策略: 由于当每个时间步的状态很大时计算最短路径的时间可能很大,因此只保留$k$ (=测量误差的方差)个最高可能性的状态。
 
 \section{短期路径选择模型}
 
@@ -141,17 +141,17 @@ in a directed graph [20].
 
 \label{Problem:PureHMM1}
 
-计算下一个状态的概率分布时失去了上下文信息.
+计算下一个状态的概率分布时失去了上下文信息。
 
-不满足马尔科夫性(即受到司机路径选择的影响),而司机路径选择没有过多地被HMM模型所考虑,有可能会产生在HMM模型中较为合理,但是实际并不合理的路径.
+不满足马尔科夫性(即受到司机路径选择的影响),而司机路径选择没有过多地被HMM模型所考虑,有可能会产生在HMM模型中较为合理,但是实际并不合理的路径。
 
-概率模型如CRF不受马尔可夫独立性假设的影响,但是高阶CRF的参数难以推导. 现有CRF方法只考虑一阶(相邻状态)的依赖性. 条件随机场?
+概率模型如CRF不受马尔可夫独立性假设的影响,但是高阶CRF的参数难以推导。 现有CRF方法只考虑一阶(相邻状态)的依赖性。 条件随机场?
 
-因此需要利用路径选择模型对HMM匹配的结果进行修正.
+因此需要利用路径选择模型对HMM匹配的结果进行修正。
 
 \section{多项Logit模型 (Multinomial Logit Model)}
 
-假设: 路径选择通过\term{utility}进行衡量, 司机会选择最高utility的路径, 假设所有司机都是相同的. (部分文献会考虑司机的特征, 本文不考虑) 参考logistic回归
+假设: 路径选择通过\term{utility}进行衡量, 司机会选择最高utility的路径, 假设所有司机都是相同的。 (部分文献会考虑司机的特征, 本文不考虑) 参考logistic回归
 
 Given a set of alternative paths, called the choice set, $ C $, the utility associated with alternative path $ p_{i} \in C $ is given by
 $$
@@ -172,24 +172,24 @@ $$ P\left(p_{i} \mid C\right)=\frac{e^{\boldsymbol{\beta}^{\prime} x_{i}}}{\sum_
 
 \section{生成可选路段}
 
-上述模型需要计算可选的路段,可能会非常庞大.
+上述模型需要计算可选的路段,可能会非常庞大。
 
 \subsection{2种基本方法}
 
 $k$最短路径
 
 \begin{remark}
-    这种方法可能会生成许多相似的路径.
+    这种方法可能会生成许多相似的路径。
 \end{remark}
 
 link-penalty approach: 对于重复的路段施加正则项
 
-\textbf{考虑整段行程中某几分钟之内的行程}. 经验数据: 短距离之内一般不超过5条备选路径. 
+\textbf{考虑整段行程中某几分钟之内的行程}. 经验数据: 短距离之内一般不超过5条备选路径。 
 
-HMM生成的路径与最短驾驶时间路径(2条不一样)会直接加入备选集中. 通过膨胀它们的旅行时间在最短旅行时间准则的情况下降低被其他后续路段接上的可能性.
+HMM生成的路径与最短驾驶时间路径(2条不一样)会直接加入备选集中。 通过膨胀它们的旅行时间在最短旅行时间准则的情况下降低被其他后续路段接上的可能性。
 
 \begin{remark}
-    直接对接近开始或者终点的路段施加惩罚可能会选择不合理的路径. ($\rightarrow$计算式考虑链路到起点/终点的距离)
+    直接对接近开始或者终点的路段施加惩罚可能会选择不合理的路径。 ($\rightarrow$计算式考虑链路到起点/终点的距离)
 \end{remark}
 
 惩罚式:
@@ -203,13 +203,13 @@ where $ \tau(e) $ is the original travel time of link $ e, \omega $ is the infla
 between two points along path $p_i$.
 \end{definition}
 
-另外3条可选路径: 限制与已有路径的重复率小于$\alpha$, 且不可以严重超速.
+另外3条可选路径: 限制与已有路径的重复率小于$\alpha$, 且不可以严重超速。
 
-训练: 需要估计$\beta$. 司机选择的真实路径作为第一条可选路径,其他通过上述准则生成. 通过极大似然估计法进行估计.
+训练: 需要估计$\beta$. 司机选择的真实路径作为第一条可选路径,其他通过上述准则生成。 通过极大似然估计法进行估计。
 
 \section{整体算法}
 
-HMM首先匹配一部分路段(在线维特比算法), 然后通过路径选择模型计算出候选集中几条候选路径选择的概率,再计算在这条路径上行驶得到这个GPS的概率(高斯分布),选择最可能的路径.
+HMM首先匹配一部分路段(在线维特比算法), 然后通过路径选择模型计算出候选集中几条候选路径选择的概率,再计算在这条路径上行驶得到这个GPS的概率(高斯分布),选择最可能的路径。
 
 \section{实验}
 

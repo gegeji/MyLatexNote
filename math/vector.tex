@@ -3,7 +3,7 @@
 \section{Vector}
 
 \begin{definition}[Vector]
-    一个有序的数字列表.
+    一个有序的数字列表。
 
     \( \left[\begin{array}{c}-1.1 \\ 0.0 \\ 3.6 \\ -7.2\end{array}\right] \) 或者 \( \quad\left(\begin{array}{c}-1.1 \\ 0.0 \\ 3.6 \\ -7.2\end{array}\right) \) 或者 \( \quad(-1.1,0,3.6,-7.2) \)
 \end{definition}
@@ -11,16 +11,16 @@
 表中的数字是\textit{元素}(\textit{项、系数、分量}). 元素的数量是向量的\textit{大小}(\textit{维数, 长度}). 大小为$n$的向量称为\textit{$n$维向量}. 
 向量中的数字通常被称作\textit{标量}. 
 
-用符号来表示向量, 比如$\alpha$ , $b$, 一般用小写字母表示向量. 其它表示形式如 $\boldsymbol{g}, \vec{a}$ 等。
+用符号来表示向量, 比如$\alpha$ , $b$, 一般用小写字母表示向量。 其它表示形式如 $\boldsymbol{g}, \vec{a}$ 等。
 
 \begin{definition}[n维向量 \( a \) 的第 \( i \) 元素]
     $n$维向量 \( a \) 的第\( i \) 元素表示为 \( a_{i} \).
 
-    有时$i$指的是向量列表中的第$i$个向量.
+    有时$i$指的是向量列表中的第$i$个向量。
 \end{definition}
 
 \begin{definition}[$a=b$]
-    对于所有$i$, 如果有$a_i = b_i$, 则称两个相同大小的向量$a$和$b$是相等的, 可写成$a = b$。
+    对于所有$i$, 如果有$a_i = b_i$, 则称两个相同大小的向量$a$和$b$是相等的, 可写成$a = b$.
 \end{definition}
 
 \begin{definition}[Stacked vector]
@@ -68,13 +68,13 @@ Thus, in our example above, we have
 \end{example}
 
 \begin{definition}[稀疏向量]
-    如果一个向量的许多项都是0, 该向量为稀疏(sparse)的. 稀疏向量能在计算机上高效地存储和操作. 
+    如果一个向量的许多项都是0, 该向量为稀疏(sparse)的。 稀疏向量能在计算机上高效地存储和操作。 
 
 $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros), 有时用 $\ell_0$表示 . 
 
 \end{definition}
 
-向量 \( x=\left(x_{1}, x_{2}\right) \) 可以在二维中表示一个位置(location)或一个位移(displacement)、 图像(列向量)、 表示一句话中每个单词出现多少次、颜色等. 
+向量 \( x=\left(x_{1}, x_{2}\right) \) 可以在二维中表示一个位置(location)或一个位移(displacement)、 图像(列向量)、 表示一句话中每个单词出现多少次、颜色等。 
 
 \begin{example}[Monochrome (black and white) image]
     grayscale values of $ M \times N $ pixels stored as $ M N $-vector (e.g., row-wise)
@@ -89,9 +89,9 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros), �
 \end{example}
 
 \begin{example}[自然文本进行tokenization]
-    对于自然文本进行tokenization。
+    对于自然文本进行tokenization.
 
-    将`rained'约简为`rain'称为\term{stemming}。另外会将非常常用的词，如`a', `the'和极少出现的词去掉。这些词称为停用词。
+    将`rained'约简为`rain'称为\term{stemming}.另外会将非常常用的词，如`a', `the'和极少出现的词去掉。这些词称为停用词。
 \end{example}
 
 \begin{example}[Feature vectors]
@@ -138,7 +138,7 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros), �
 \end{theorem}
 
 \begin{corollary}
-    向量空间也称为线性空间.
+    向量空间也称为线性空间。
 \end{corollary}
 
 \begin{corollary}
@@ -146,7 +146,7 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros), �
 \end{corollary}
 
 \begin{definition}[数域]
-    数的非空集合$P$,且其中任意两个数的和、差、积、商(除数不为零)仍属于该集合, 则称数集$P$为一个数域. 
+    数的非空集合$P$,且其中任意两个数的和、差、积、商(除数不为零)仍属于该集合, 则称数集$P$为一个数域。 
 \end{definition}
 
 \begin{example}
@@ -171,7 +171,7 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros), �
 \end{definition}
 
 \begin{theorem}
-    设向量 \( a, {b}, {c} \) 是向量空间 \( V \) 的元素, 即 \( a, {b}, {c} \in V_{\text {.  }} \)。向量加法满足以下性质：
+    设向量 \( a, {b}, {c} \) 是向量空间 \( V \) 的元素, 即 \( a, {b}, {c} \in V_{\text {.  }} \).向量加法满足以下性质：
 
     \begin{enumerate}
         \item 交换律： \( a+b=b+a \)
@@ -182,7 +182,7 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros), �
 \end{theorem}
 
 \begin{corollary}[向量位移相加]
-    如果二维向量$a$和$b$都表示位移, 则它们的位移之和为$a + b$。
+    如果二维向量$a$和$b$都表示位移, 则它们的位移之和为$a + b$.
 \end{corollary}
 
 \begin{example}
@@ -230,7 +230,7 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros), �
 \begin{definition}[线性组合]
     对于向量 \( a_{1}, \ldots, a_{m} \) 和标量 \( \beta_{1}, \ldots, \beta_{m} \),
     $$ \beta_{1} a_{1}+\cdots+\beta_{m} a_{m} $$
-    是向量的线性组合. \( \beta_{1}, \ldots, \beta_{m} \) 是该向量的\textit{系数}. 
+    是向量的线性组合。 \( \beta_{1}, \ldots, \beta_{m} \) 是该向量的\textit{系数}. 
 \end{definition}
 
 
@@ -257,7 +257,7 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros), �
         \item \( \langle{a}, {b}\rangle=\langle{b}, {a}\rangle, \forall {a}, {b} \in V \).
     \end{enumerate}
 
-    则称函数 \( \langle\cdot,\cdot\rangle:V \times V \rightarrow \mathbb{R} \)是内积. 
+    则称函数 \( \langle\cdot,\cdot\rangle:V \times V \rightarrow \mathbb{R} \)是内积。 
 \end{definition}
 
 \begin{example}[the inner product of two $ n $-vectors $ a, b $]
@@ -285,7 +285,7 @@ where \( a=\left[\begin{array}{c}a_{1} \\ a_{2} \\ \vdots \\ a_{n}\end{array}\ri
 \end{proof}
 
 \begin{theorem}
-    内积的性质：交换律、结合律、分配律. 
+    内积的性质：交换律、结合律、分配律。 
 
 交换律(commutative)： \( a^{T} b=b^{T} a \)
 
@@ -329,7 +329,7 @@ where \( a=\left[\begin{array}{c}a_{1} \\ a_{2} \\ \vdots \\ a_{n}\end{array}\ri
 
 \section{Examples for Inner Product}
 
-内积用途很广.
+内积用途很广。
 
 \begin{example}[计算同时出现的项目数]
    $$
@@ -369,7 +369,7 @@ Here we have $ a^{T} b=2 $, which is the number of objects in both $ A $ and $ B
 |\langle x, y\rangle|^{2} \leq\langle x, x\rangle\langle y, y\rangle
 $$
 
-    当$x=-\lambda y$时，有$|\langle x, y\rangle|^{2}=\langle x, x\rangle\langle y, y\rangle$。
+    当$x=-\lambda y$时，有$|\langle x, y\rangle|^{2}=\langle x, x\rangle\langle y, y\rangle$.
 \end{theorem}
 
 \begin{proof}
@@ -391,7 +391,7 @@ $$
 
 也即 $$\langle x+\lambda y, x+\lambda y\rangle=0$$
 
-因此 $x+\lambda y=0$, 即 $x=-\lambda y$。
+因此 $x+\lambda y=0$, 即 $x=-\lambda y$.
 \end{proof}
 
 \begin{theorem}[Cauchy-Schwarz 不等式的矩阵元素形式]
@@ -427,7 +427,7 @@ which yields the Cauchy-Schwarz inequality.
 
 \section{浮点运算}
 
-计算机以浮点格式存储(实)数值. 存储$n$维的向量需要$8n$字节进行存储。
+计算机以浮点格式存储(实)数值。 存储$n$维的向量需要$8n$字节进行存储。
 
 基本的算术运算(加法, 乘法等)被称为浮点运算(flop). 
 
@@ -448,7 +448,7 @@ which yields the Cauchy-Schwarz inequality.
     \end{itemize}
 \end{remark}
 
-算法或操作的时间复杂度：作为输入维数的函数所需要的浮点运算总数。算法复杂度通常以非常粗略地近似估算。（程序）执行时间的粗略估计：计算机速度/flops，目前的计算机大约是$1$Gflops/秒($10^9$flops/秒)。
+算法或操作的时间复杂度：作为输入维数的函数所需要的浮点运算总数。算法复杂度通常以非常粗略地近似估算。（程序）执行时间的粗略估计：计算机速度/flops，目前的计算机大约是$1$Gflops/秒($10^9$flops/秒).
 
 \begin{definition}[Operation count (flop count)]
     Total number of operations in an algorithm. In linear algebra, it is typically a polynomial of the dimensions in the problem
@@ -489,7 +489,7 @@ $$
         \item $x+y$需要$n$次加法, 所以时间复杂度为 ($n$)flops. 
         \item $x^T y$ 需要$n$次乘法和$n - 1$次加法, 所以时间复杂度为$(2n - 1)$flops. 
         \item 对于$x^T y$, 通常将其时间复杂度简化为$2n$, 甚至为$n$. 
-        \item 当$x$或$y$是稀疏的时候, 算法的实际运算时间会比理论时间更少. 
+        \item 当$x$或$y$是稀疏的时候, 算法的实际运算时间会比理论时间更少。 
     \end{itemize}
 \end{corollary}
 

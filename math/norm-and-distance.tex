@@ -10,7 +10,7 @@
     \item 三角不等式: $ \|x+y\| \leq\|x\|+\|y\|, \quad x, y \in \mathbb{R}^{n} $;
     \item 非负性: $ \|x\| \geq {0}, {x} \in \mathbb{R}^{n} $ 且 $ \|{x}\|=0 \Leftrightarrow {x}=0 $;
 \end{itemize}
-则称$\|\cdot\|$为向量范数. 
+则称$\|\cdot\|$为向量范数。 
 \end{definition}
 
 
@@ -143,7 +143,7 @@ $$
 \begin{definition}[$ \ell_{\mathrm{p}} $-范数]
     $$ \|x\|_{p}=\left(x_{1}^{\mathrm{p}}+x_{2}^{p}+\cdots+x_{n}^{p}\right)^{\frac{1}{p}}, \quad x \in \mathbb{R}^{n}, p \ge 1 $$
 
-    $ \ell_{1} $ 范数 $ \|x\|_{1}$,$ \ell_{2} $-范数 $ \|x\|_{2} $, $ \ell_{\infty} $-范数是 $ \ell_{p} $-范数的特例. 
+    $ \ell_{1} $ 范数 $ \|x\|_{1}$,$ \ell_{2} $-范数 $ \|x\|_{2} $, $ \ell_{\infty} $-范数是 $ \ell_{p} $-范数的特例。 
 \end{definition}
 
 证明可以使用以下两条不等式
@@ -168,7 +168,7 @@ $$
     $$ \operatorname{rms}(x)=\sqrt{\frac{x_{1}^{2}+x_{2}^{2}+\cdots+x_{n}^{2}}{n}}=\frac{\|x\|_{2}}{\sqrt{n}} $$
 \end{definition}
 
-$ \operatorname{rms}(x) $ 给出了 $ \left|x_{i}\right| $ 的 “典型" (typical)值. 例如, $ \mathrm{rms}(\mathbf{1})=1 $ (与$n$无关). 均方根(RMS)值对于比较不同长度的向量大小是比较有用的. 
+$ \operatorname{rms}(x) $ 给出了 $ \left|x_{i}\right| $ 的 “典型" (typical)值。 例如, $ \mathrm{rms}(\mathbf{1})=1 $ (与$n$无关). 均方根(RMS)值对于比较不同长度的向量大小是比较有用的。 
 
 \begin{theorem}
     $$ |\operatorname{avg}(x)| \leq \operatorname{r m s}(x) $$
@@ -192,9 +192,9 @@ $$
 
    
 \begin{theorem}[Chebyshev's Inequality]
-    假设$k$为向量 $ x $ 分量满足条件 $ \left|x_{i}\right| \geq a $ 的个数, 即 $ x_{i}^{2} \geq a^{2} $ 的个数. 
+    假设$k$为向量 $ x $ 分量满足条件 $ \left|x_{i}\right| \geq a $ 的个数, 即 $ x_{i}^{2} \geq a^{2} $ 的个数。 
 
-    则满足 $ \left|x_{i}\right| \geq a $ 的 $ x_{i} $ 数量$k$不会超过 $ \frac{\| x \|_{2}^{2}}{a^{2}} $。
+    则满足 $ \left|x_{i}\right| \geq a $ 的 $ x_{i} $ 数量$k$不会超过 $ \frac{\| x \|_{2}^{2}}{a^{2}} $.
 \end{theorem}
 
 \begin{proof}
@@ -226,7 +226,7 @@ $$
 \end{theorem}
 
 \begin{definition}[RMS deviation]
-    $ \operatorname{rms}(a-b) $ 是$a$和$b$之间的均方根偏差.
+    $ \operatorname{rms}(a-b) $ 是$a$和$b$之间的均方根偏差。
 \end{definition}
 
 \begin{corollary}
@@ -321,7 +321,7 @@ $$
     $$\sigma= \operatorname{std}(x)=\operatorname{rms}(\tilde{x})=\frac{\left\|x-\left( \frac{1^{T} x}{n} \right) 1\right\|_{2}}{\sqrt{n}} $$
 \end{definition}
 
-$\operatorname{std}(x)$表示数据元素的变化程度. 对于常数$\alpha$, 当且仅当$ x=\alpha \mathbf{1} $时, $ \operatorname{std}(x)=0 $.
+$\operatorname{std}(x)$表示数据元素的变化程度。 对于常数$\alpha$, 当且仅当$ x=\alpha \mathbf{1} $时, $ \operatorname{std}(x)=0 $.
 
 \begin{corollary}
     the de-meaned vector in standard units is
@@ -352,7 +352,7 @@ $$
     $ \angle(a, b) $ 的取值范围为 $ [0, \pi] $, 且满足$$ a^{T} b=\|a\|_{2}\|b\|_{2} \cos (\angle(a, b)) $$
 \end{definition}
 
-在二维和三维向量之中, 这里的角与普通角度(ordinary angle)是一致的. 
+在二维和三维向量之中, 这里的角与普通角度(ordinary angle)是一致的。 
 
 \begin{itemize}
     \item $\theta =\frac{\pi}{2}=90°$：a和b为正交, 写作$a \perp b (a ^T b  =0)$. 
@@ -398,14 +398,14 @@ $$
 \begin{example}
     高度相关的向量：
 \begin{itemize}
-    \item 邻近地区的降雨时间序列. 
-    \item 类型密切相关文档的单词计数向量. 
-    \item 同行业中类似公司的日收益. 
+    \item 邻近地区的降雨时间序列。 
+    \item 类型密切相关文档的单词计数向量。 
+    \item 同行业中类似公司的日收益。 
 \end{itemize}
 
 比较不相关的向量：
 \begin{itemize}
-    \item 无关的向量. 
+    \item 无关的向量。 
     \item 音频信号(比如, 在多轨录音中的不同轨). 
 \end{itemize}
 
@@ -480,7 +480,7 @@ $$
     回归模型(regression model)为关于$x$的仿射函数
     $$ \hat{y}=x^{T} \beta+v $$
 
-    $x$是\term{特征向量(feature vector)}, 它的元素$x_i$称为\term{回归元(regressors)}. $n$维向量 $ \beta $ 是\term{权重向量(weight vector)}. 标量 $ v $ 是\term{偏移量(offset)}. 标量 $ \hat{y} $ 是\term{预测值(prediction)}. 表示某个实际结果或因变量, 用$y$表示. 
+    $x$是\term{特征向量(feature vector)}, 它的元素$x_i$称为\term{回归元(regressors)}. $n$维向量 $ \beta $ 是\term{权重向量(weight vector)}. 标量 $ v $ 是\term{偏移量(offset)}. 标量 $ \hat{y} $ 是\term{预测值(prediction)}. 表示某个实际结果或因变量, 用$y$表示。 
 \end{definition}
 
 Recall the regression model

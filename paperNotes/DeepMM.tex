@@ -47,7 +47,7 @@ HMM算法的缺点:
 
 需要两个参数：采样率、空间误差
 
-空间误差假设服从$ f\left(x \mid \mu, \sigma^{2}\right)=\frac{1}{\sqrt{2 \pi \sigma^{2}}} e^{\frac{-(x-\mu)^{2}}{2 \sigma^{2}}} $。
+空间误差假设服从$ f\left(x \mid \mu, \sigma^{2}\right)=\frac{1}{\sqrt{2 \pi \sigma^{2}}} e^{\frac{-(x-\mu)^{2}}{2 \sigma^{2}}} $.
 
 扩充方法：重复多次下采样事实轨迹，添加随机高斯噪声
 
@@ -93,9 +93,9 @@ decoder输出：LSTM（从向量中转译回一个序列）
 
 \subsubsection{Location Embedding}
 
-HMM只对相邻状态之间的转移进行了建模，忽略了用户的偏好 \cite{Jagadeesh2017} 和道路信息 \cite{Hu2017a}。
+HMM只对相邻状态之间的转移进行了建模，忽略了用户的偏好 \cite{Jagadeesh2017} 和道路信息 \cite{Hu2017a}.
 
-借鉴NLP tokenization的方法，将地图划分为100*100的网格，每个网格编号一个ID。对于每个ID转换为one-hot向量，对于轨迹生成一串one-hot序列输入seq2seq的模型中
+借鉴NLP tokenization的方法，将地图划分为100*100的网格，每个网格编号一个ID.对于每个ID转换为one-hot向量，对于轨迹生成一串one-hot序列输入seq2seq的模型中
 
 \begin{remark}
     轨迹不定长？
@@ -109,7 +109,7 @@ RNN是一个处理序列数据的模型，但是它太简单。使用LSTM作为�
 
 \subsubsection{Attentional Decoder}
 
-输入decoder之前的FC是用于调整维度。解码器需要是单向的LSTM. decoder的中间输出会被FC和Softmax进行处理。decoder一次生成一个点直到stop mark。
+输入decoder之前的FC是用于调整维度。解码器需要是单向的LSTM. decoder的中间输出会被FC和Softmax进行处理。decoder一次生成一个点直到stop mark.
 
 seq2seq的输入输出不需要是同样长度（灵活—）
 
@@ -127,9 +127,9 @@ $$ c_{i}=\sum_{j=1} \alpha_{i, j} h_{j} $$
 
 \subsection{Trajectory Calibration and Topology Refinement}
 
-OSM中的默认路段\textbf{不是基于道路的交叉口}，这意味着用户可能\textbf{不会通过整个路段并在交叉口掉头}。（OSM数据的交叉点还是粒度太高，车辆可能从路中间转向）
+OSM中的默认路段\textbf{不是基于道路的交叉口}，这意味着用户可能\textbf{不会通过整个路段并在交叉口掉头}.（OSM数据的交叉点还是粒度太高，车辆可能从路中间转向）
 
-此外，虽然模型期望直接从真实数据中学习拓扑连续性，但在\textbf{训练过程中无法保证拓扑连续性}。因此需要轨迹标定和精化方案，以获得合理的结果和更好的匹配性能。
+此外，虽然模型期望直接从真实数据中学习拓扑连续性，但在\textbf{训练过程中无法保证拓扑连续性}.因此需要轨迹标定和精化方案，以获得合理的结果和更好的匹配性能。
 
 对匹配出的路段在中间进行剪枝
 

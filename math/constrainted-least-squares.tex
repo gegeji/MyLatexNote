@@ -19,7 +19,7 @@ $$ \nabla f(x)=\left[\begin{array}{l}4 x_{1} \\ 2 x_{2}\end{array}\right]=0 \Rig
 由约束条件可得 $ x_{1}=1-x_{2} $ ， 代入目标函数则有
 
 $$ f(x)=3 x_{2}^{2}-4 x_{2}+2 $$
-即当 $ \hat{x}_{2}=\frac{2}{3} $ 时，目标函数值最小，并有 $ \hat{x}_{1}=1-\hat{x}_{2}=\frac{1}{3} $ 。
+即当 $ \hat{x}_{2}=\frac{2}{3} $ 时，目标函数值最小，并有 $ \hat{x}_{1}=1-\hat{x}_{2}=\frac{1}{3} $ .
 
 \begin{FigureCenter}{The Geometry of the problem}
     \label{fig:geometry-of-the-problem}
@@ -42,7 +42,7 @@ $$ \left.\begin{array}{l}\frac{\partial L}{\partial x_{1}}=4 x_{1}-\lambda=0 \\ 
 &g_{j}(x) \leq 0, j \in J \triangleq\{1, \cdots, q\}
     \end{aligned}$$
 
-$ \lambda_{i} \in \mathbb{R}, i \in \mathrm{I}, u_{j} \in \mathbb{R}^{+}, j \in J $称为\term{拉格朗日乘子(Lagrange Multipliers)} 。
+$ \lambda_{i} \in \mathbb{R}, i \in \mathrm{I}, u_{j} \in \mathbb{R}^{+}, j \in J $称为\term{拉格朗日乘子(Lagrange Multipliers)} .
 
 引入拉格朗日函数 $$ L(x, \lambda, u)=f(x)-\sum_{i \in I} \lambda_{i} h_{i}(x)-\sum_{j \in J} u_{j} g_{j}(x)   $$
 
@@ -53,7 +53,7 @@ $ \lambda_{i} \in \mathbb{R}, i \in \mathrm{I}, u_{j} \in \mathbb{R}^{+}, j \in 
 
 $$ L(x, \lambda, u)=f(x) - \lambda^T h(x) - u^T g(x)$$
 
-拉格朗日乘子法求得的解要使拉格朗日函数的梯度为0。
+拉格朗日乘子法求得的解要使拉格朗日函数的梯度为0.
 
 \end{definition}
 
@@ -137,7 +137,7 @@ x_{1}&=2 x_{2}
 \end{aligned}
 $$
 
-由KKT条件得$ u_{j} g_{j}(x)=0, j \in J $。由于$ u_{2}=u_{3}=u_{4}=0, \quad u_{1} \neq 0 $，所以$g_1(x) = 0$。
+由KKT条件得$ u_{j} g_{j}(x)=0, j \in J $.由于$ u_{2}=u_{3}=u_{4}=0, \quad u_{1} \neq 0 $，所以$g_1(x) = 0$.
 
 
 将上式代入
@@ -160,7 +160,7 @@ $$\begin{aligned}
 \end{problem}
 
 
-在大多数应用中 $ p<n,  C x=d $ 是一个\textbf{欠定方程}。这时，$C x=d$表示为一条直线。它的几何意义是在直线 $ C x=d $ 中，寻找范数最小的解。
+在大多数应用中 $ p<n,  C x=d $ 是一个\textbf{欠定方程}.这时，$C x=d$表示为一条直线。它的几何意义是在直线 $ C x=d $ 中，寻找范数最小的解。
 
 假如$p = n$，$C x=d$表示一个点。
 
@@ -402,7 +402,7 @@ $$
 
 解得$
  z_{1}=0, z_{2}=\sqrt{2}
-$。
+$.
 
 可得 $ \hat{x}=Q z=(1,1,0,0) $
 \end{example}
@@ -421,7 +421,7 @@ $。
 
 % todo (2021-11-25 13:02): figure
 
-在大多数应用中 $ p<n, C x=d $ 是一个欠定方程。它的几何意义是在直线 $ C x=d $ 中，寻找 $ \|A x-b\|_{2}^{2} $ 最小的解。(此时$\|A x-b\|_{2}^{2}$表示一个椭圆)。
+在大多数应用中 $ p<n, C x=d $ 是一个欠定方程。它的几何意义是在直线 $ C x=d $ 中，寻找 $ \|A x-b\|_{2}^{2} $ 最小的解。(此时$\|A x-b\|_{2}^{2}$表示一个椭圆).
 
 特殊情况：
 
@@ -523,7 +523,7 @@ $$ C \theta=d $$
 对于分段多项式拟合问题
 
 \begin{problem}[分段多项式拟合问题]
-    假设样本点 $ \left(x_{1}, y_{1}\right), \ldots,\left(x_{N}, y_{N}\right) \in \mathbb{R}^{2} $ ，有 $ x_{1}, \ldots, x_{M} \leq a $, $ x_{M+1}, \ldots, x_{N}>a $。
+    假设样本点 $ \left(x_{1}, y_{1}\right), \ldots,\left(x_{N}, y_{N}\right) \in \mathbb{R}^{2} $ ，有 $ x_{1}, \ldots, x_{M} \leq a $, $ x_{M+1}, \ldots, x_{N}>a $.
 
      $$\begin{array}{ll}\min _{\theta} & \sum_{i=1}^{M}\left(f\left(x_{i}\right)-y_{i}\right)^{2}+\sum_{i=M+1}^{N}\left(g\left(x_{i}\right)-y_{i}\right)^{2} \\ \text { s.t. } & f(a)=g(a), f^{\prime}(a)=g^{\prime}(a)\end{array}$$
 \end{problem}
@@ -560,7 +560,7 @@ $$
 
 假设 1 是一个比 $ A $ 可右逆更弱的条件。 
 
-假设$ p \leq n \leq m+p $。
+假设$ p \leq n \leq m+p $.
 
 \section{优化问题：最小二乘法的带约束KKT条件}
 
@@ -706,7 +706,7 @@ $$
 \begin{proof}
     $$ \begin{aligned}\left[\begin{array}{cc}A^{T} A & C^{T} \\ {C} & 0\end{array}\right]\left[\begin{array}{c}x \\ z\end{array}\right]=0 & \Rightarrow x^{T}\left(A^{T} A x+C^{T} z\right)=0, C x=0 \\ & \Rightarrow\|A x\|_{2}^{2}+(C x)^{T} z=\|A x\|_{2}^{2}=0, C x=0 \\ & \Rightarrow A x=0, C x=0 \\ & \Rightarrow x=0 \quad (A\text {列线性无关}) \end{aligned} $$
 
-    由于 $ A^{T} A x+C^{T} {z}=0 $, 则当 $ x=0 $ 时，有 $ {z}=0 $ 。 
+    由于 $ A^{T} A x+C^{T} {z}=0 $, 则当 $ x=0 $ 时，有 $ {z}=0 $ . 
     
     所以$C$行线性无关。
 \end{proof}
@@ -812,10 +812,10 @@ d
 \end{array}\right]
 $$
 
-需要的时间复杂度是$ \frac{2}{3}(p+n)^{3} $ flops。
+需要的时间复杂度是$ \frac{2}{3}(p+n)^{3} $ flops.
 \end{theorem}
 
-第一步的时间复杂度是$2 m n^{2}  \text{flops} $，第二步的时间复杂度是$2 {mn} $ flops，总时间复杂度为$ 2 m n^{2}+\frac{2}{3}(p+n)^{3} $ flops 。
+第一步的时间复杂度是$2 m n^{2}  \text{flops} $，第二步的时间复杂度是$2 {mn} $ flops，总时间复杂度为$ 2 m n^{2}+\frac{2}{3}(p+n)^{3} $ flops .
 
 \section{QR分解求解KKT最优条件}
 
@@ -940,7 +940,7 @@ $$\displaystyle \left[\begin{array}{ c c }
 $$
 Q_{2}^{T} u=R^{-T} C^{T} u=0  \Rightarrow  C^{T} u=0 \Rightarrow  u=0
 $$
-因为 $ C $ 行线性无关的(假设2(\ref{prop:assumption-2}))。
+因为 $ C $ 行线性无关的(假设2(\ref{prop:assumption-2})).
 
 利用 $ Q_{2}^{T} $ 的 $ Q R $ 分解来求解
 $$
@@ -973,7 +973,7 @@ $$
 
 $$ \left[\begin{array}{cc}A^{T} A+C^{T} C & C^{T} \\ C & 0\end{array}\right]\left[\begin{array}{c}\hat{x} \\ w\end{array}\right]=\left[\begin{array}{c}A^{T} b \\ d\end{array}\right] \quad \tilde{R} w=\tilde{Q}^{T} Q_{1}^{T} b-\tilde{R}^{-T} d $$
 
-算法过程见\ref{algo:qr-kkt}。
+算法过程见\ref{algo:qr-kkt}.
 
 \begin{algorithm}[htbp]
     \caption{QR分解求解KKT最优条件}
@@ -1001,7 +1001,7 @@ $$\;
 
 \end{algorithm}
 
-总时间复杂度: QR分解有 $ 2(p+m) n^{2}+2 n p^{2} $ 次flops。
+总时间复杂度: QR分解有 $ 2(p+m) n^{2}+2 n p^{2} $ 次flops.
 
 
 \section{KKT最优条件求解复杂度：QR vs LU}
@@ -1013,7 +1013,7 @@ $$\;
     \item QR复杂度: $ 2(p+m) n^{2}+2 n p^{2}<2 m n^{2}+4 n^{3} $
 \end{itemize}
 
-稳定性: QR分解避免直接计算 $ A^{T} {A}$。
+稳定性: QR分解避免直接计算 $ A^{T} {A}$.
 
 \section[Supplement Material: Karush-Kuhn-Tucker (KKT)条件]{Supplement Material: Karush-Kuhn-Tucker (KKT)条件\footnote{Cited from \url{https://zhuanlan.zhihu.com/p/38163970}.}}
 
@@ -1038,7 +1038,7 @@ L(\mathbf{x}, \lambda)=f(\mathbf{x})+\lambda g(\mathbf{x})
 $$
 \end{definition}
 
-其中 $ \lambda $ 称为\term{Lagrange乘数}。 
+其中 $ \lambda $ 称为\term{Lagrange乘数}. 
 
 \begin{theorem}
     Lagrange乘数法将原本的约束优化问题转换成等价的无约束优化问题
@@ -1057,15 +1057,15 @@ $$
 \end{array}
 $$
 
-其中第一式为\term{定常方程式(stationary equation)}, 第二式为\term{约束条件}。
+其中第一式为\term{定常方程式(stationary equation)}, 第二式为\term{约束条件}.
 \end{theorem}
 
 
-解开上面 $ n+1 $ 个方程式可 得 $ L(\mathbf{x}, \lambda) $ 的驻点(stationary point) $ \mathbf{x}^{\star} $ 以及 $ \lambda $ 的值(正负数皆可能)。
+解开上面 $ n+1 $ 个方程式可 得 $ L(\mathbf{x}, \lambda) $ 的驻点(stationary point) $ \mathbf{x}^{\star} $ 以及 $ \lambda $ 的值(正负数皆可能).
 
 \subsection{不等式约束优化问题}
 
-接下来我们将约束等式 $ g(\mathbf{x})=0 $ 推广为不等式 $ g(\mathbf{x}) \leq 0 $ 。考虑这个问题
+接下来我们将约束等式 $ g(\mathbf{x})=0 $ 推广为不等式 $ g(\mathbf{x}) \leq 0 $ .考虑这个问题
 
 \begin{problem}[不等式约束优化问题]
 
@@ -1076,7 +1076,7 @@ $$
 \end{array}
 $$
 
-约束不等式 $ g(\mathbf{x}) \leq 0 $ 称为\term{原始可行性(primal feasibility)}, 据此我们定义\term{可行域(feasible region)} $ K=\{ \mathbf{x} \in \mathbb{R}^{n} \mid g(\mathbf{x}) \leq 0 \}$。
+约束不等式 $ g(\mathbf{x}) \leq 0 $ 称为\term{原始可行性(primal feasibility)}, 据此我们定义\term{可行域(feasible region)} $ K=\{ \mathbf{x} \in \mathbb{R}^{n} \mid g(\mathbf{x}) \leq 0 \}$.
 \end{problem}
 
 假设 $ \mathbf{x}^{\star} $ 为满足约束条件的最佳解, 分开两种情况讨论:
@@ -1089,26 +1089,26 @@ $$
 这两种情况的最佳解具有不同的必要条件。
 
 \begin{itemize}
-    \item 内部解：在约束条件无效的情形下， $ g(\mathbf{x}) $ 不起作用, 约束优化问题退化为无约束优化问题, 因此驻点 $ \mathbf{x}^{\star} $ 满足 $ \nabla f=\mathbf{0} $ 且 $ \lambda=0 $ 。
+    \item 内部解：在约束条件无效的情形下， $ g(\mathbf{x}) $ 不起作用, 约束优化问题退化为无约束优化问题, 因此驻点 $ \mathbf{x}^{\star} $ 满足 $ \nabla f=\mathbf{0} $ 且 $ \lambda=0 $ .
     \item 边界解：在约束条件有效的情形下, 约束不等式变成等式 $g(\mathbf{x})=0$, 这与前述Lagrange乘数法的情况相同。
 \end{itemize}
 
 对于边界解，我们可以证明
 
 \begin{theorem}
-    驻点 $\mathbf{x}^{\star}$ 发生于 $\nabla f \in \operatorname{span} \nabla g$。
+    驻点 $\mathbf{x}^{\star}$ 发生于 $\nabla f \in \operatorname{span} \nabla g$.
 \end{theorem}
 换句话说, 
 
 \begin{corollary}
-    存在 $\lambda$ 使得 $\nabla f=-\lambda \nabla g$。
+    存在 $\lambda$ 使得 $\nabla f=-\lambda \nabla g$.
 
     注意这里 $\lambda$ 的正负号是有其意义的。
 \end{corollary}
 
-因为我们希望最小化 $f$, 梯度 $\nabla f$ (函数 $f$ 在 点 $\mathbf{x}$ 的最陡上升方向)应该指向可行域 $K$ 的内部(因为最优解最小值是在边界取得的), 但 $\nabla g$ 指向 $K$ 的外部(即 $g(\mathbf{x})>0$ 的区域, 因为你的约束是小于等于0), 因此 $\lambda \geq 0$, 称为\term{对偶可行性(dual feasibility)。}
+因为我们希望最小化 $f$, 梯度 $\nabla f$ (函数 $f$ 在 点 $\mathbf{x}$ 的最陡上升方向)应该指向可行域 $K$ 的内部(因为最优解最小值是在边界取得的), 但 $\nabla g$ 指向 $K$ 的外部(即 $g(\mathbf{x})>0$ 的区域, 因为你的约束是小于等于0), 因此 $\lambda \geq 0$, 称为\term{对偶可行性(dual feasibility).}
 
-因此, 不论是内部解或边界解, $\lambda g(\mathbf{x})=0$ 恒成立, 称为\term{互补松弛性(complementary slackness)}。
+因此, 不论是内部解或边界解, $\lambda g(\mathbf{x})=0$ 恒成立, 称为\term{互补松弛性(complementary slackness)}.
 
 整合上述两种情况, 
 
@@ -1122,9 +1122,9 @@ g(\mathbf{x}) & \leq 0 \\
 \lambda g(\mathbf{x}) &=0
 \end{aligned}
 $$
-这些条件合称为\term{Karush-Kuhn-Tucker (KKT)条件}。
+这些条件合称为\term{Karush-Kuhn-Tucker (KKT)条件}.
 
-如果我们要最大化 $f(\mathbf{x})$ 且受限于 $g(\mathbf{x}) \leq 0$, 那么对偶可行性要改成 $\lambda \leq 0$ 。
+如果我们要最大化 $f(\mathbf{x})$ 且受限于 $g(\mathbf{x}) \leq 0$, 那么对偶可行性要改成 $\lambda \leq 0$ .
 \end{theorem}
 
 
@@ -1145,7 +1145,7 @@ $$
 $$
 L\left(\mathbf{x},\left\{\lambda_{j}\right\},\left\{\mu_{k}\right\}\right)=f(\mathbf{x})+\sum_{j=1}^{m} \lambda_{j} g_{j}(\mathbf{x})+\sum_{k=1}^{p} \mu_{k} h_{k}(\mathbf{x})
 $$
-其中 $ \lambda_{j} $ 是对应 $ g_{j}(\mathbf{x})=0 $ 的Lagrange乘数, $ \mu_{k} $ 是对应 $ h_{k}(\mathbf{x}) \leq 0 $ 的Lagrange乘数(或称KKT 乘数)。 
+其中 $ \lambda_{j} $ 是对应 $ g_{j}(\mathbf{x})=0 $ 的Lagrange乘数, $ \mu_{k} $ 是对应 $ h_{k}(\mathbf{x}) \leq 0 $ 的Lagrange乘数(或称KKT 乘数). 
 
 KKT条件包括
 $$
@@ -1190,17 +1190,17 @@ x_{2}-\alpha & \leq 0 \\
 \mu\left(x_{2}-\alpha\right) &=0
 \end{aligned}
 $$
-求偏导可得 $ \frac{\partial L}{\partial x_{1}}=2 x_{1}-\lambda=0 $ 且 $ \frac{\partial L}{\partial x_{2}}=2 x_{2}-\lambda+\mu=0 $, 分别解出 $ x_{1}=\frac{\lambda}{2} $ 且 $ x_{2}=\frac{\lambda}{2}-\frac{\mu}{2} $ 。代入约束等式 $ x_{1}+x_{2}=\lambda-\frac{\mu}{2}=1 $ 或 $ \lambda=\frac{\mu}{2}+1 $ 。合并上面结果,
+求偏导可得 $ \frac{\partial L}{\partial x_{1}}=2 x_{1}-\lambda=0 $ 且 $ \frac{\partial L}{\partial x_{2}}=2 x_{2}-\lambda+\mu=0 $, 分别解出 $ x_{1}=\frac{\lambda}{2} $ 且 $ x_{2}=\frac{\lambda}{2}-\frac{\mu}{2} $ .代入约束等式 $ x_{1}+x_{2}=\lambda-\frac{\mu}{2}=1 $ 或 $ \lambda=\frac{\mu}{2}+1 $ .合并上面结果,
 $$
 x_{1}=\frac{\mu}{4}+\frac{1}{2}, \quad x_{2}=-\frac{\mu}{4}+\frac{1}{2}
 $$
 
-最后再加入约束不等式 $ -\frac{\mu}{4}+\frac{1}{2} \leq \alpha $ 或 $ \mu \geq 2-4 \alpha $ 。分开三种情况讨论。
+最后再加入约束不等式 $ -\frac{\mu}{4}+\frac{1}{2} \leq \alpha $ 或 $ \mu \geq 2-4 \alpha $ .分开三种情况讨论。
 
 \begin{enumerate}
-    \item $ \alpha>\frac{1}{2} $ : 不难验证 $ \mu=0>2-4 \alpha $ 满足所有的KKT条件, 约束不等式是无效的, $ x_{1}^{\star}=x_{2}^{\star}=\frac{1}{2} $ 是内部解，目标函数的极小值是 $ \frac{1}{2}$。
-    \item $ \alpha=\frac{1}{2} $ : 如同 $ 1, \quad \mu=0=2-4 \alpha $ 满足所有的KKT条件, $ \quad x_{1}^{\star}=x_{2}^{\star}=\frac{1}{2} $ 是边界解, 因为 $ x_{2}^{\star}=\alpha $。
-    \item $ \alpha<\frac{1}{2} $ : 这时约束不等式是有效的, $ \mu=2-4 \alpha>0 $, 则 $ x_{1}^{\star}=1-\alpha $ 且 $ x_{2}^{\star}=\alpha $, 目标函数的极小值是 $ (1-\alpha)^{2}+\alpha^{2} $。
+    \item $ \alpha>\frac{1}{2} $ : 不难验证 $ \mu=0>2-4 \alpha $ 满足所有的KKT条件, 约束不等式是无效的, $ x_{1}^{\star}=x_{2}^{\star}=\frac{1}{2} $ 是内部解，目标函数的极小值是 $ \frac{1}{2}$.
+    \item $ \alpha=\frac{1}{2} $ : 如同 $ 1, \quad \mu=0=2-4 \alpha $ 满足所有的KKT条件, $ \quad x_{1}^{\star}=x_{2}^{\star}=\frac{1}{2} $ 是边界解, 因为 $ x_{2}^{\star}=\alpha $.
+    \item $ \alpha<\frac{1}{2} $ : 这时约束不等式是有效的, $ \mu=2-4 \alpha>0 $, 则 $ x_{1}^{\star}=1-\alpha $ 且 $ x_{2}^{\star}=\alpha $, 目标函数的极小值是 $ (1-\alpha)^{2}+\alpha^{2} $.
 \end{enumerate}
 
 \section[Supplement Material: 浅谈最优化问题的KKT条件]{Supplement Material: 浅谈最优化问题的KKT条件\footnote{Cited from \url{https://zhuanlan.zhihu.com/p/26514613}.}}
@@ -1246,19 +1246,19 @@ $$
 再联立方程组： 
 $$ \left\{\begin{array}{l}\frac{\partial L}{\partial x_{i}}=0(i=1,2, \cdots, n) \\ \frac{\partial L}{\partial \lambda_{k}}=0(k=1,2, \cdots, l)\end{array}\right. $$
 
-得到的解为可能极值点，由于我们用的是必要条件，具体是否为极值点需根据问题本身的具体情况检验. 这个方程组称为\textbf{等式约束的极值必要条件}.
+得到的解为可能极值点，由于我们用的是必要条件，具体是否为极值点需根据问题本身的具体情况检验。 这个方程组称为\textbf{等式约束的极值必要条件}.
 
 上式我们对 $ n $ 个 $ x_{i} $ 和 $ l $ 个 $ \lambda_{k} $ 分别求偏导, 回想一下在\term{无约束优化问题} 
 $$ f\left(x_{1}, x_{2}, \ldots, x_{n}\right)=0 $$ 
-中, 我们根据极值的必要条件, 分别令 $ \frac{\partial f}{\partial x_{i}}=0 $, 求出可能的极值点. 
+中, 我们根据极值的必要条件, 分别令 $ \frac{\partial f}{\partial x_{i}}=0 $, 求出可能的极值点。 
 
-因此可以联想到：等式约束下的 Lagrange乘数法引入了 $ l $ 个Lagrange乘子，或许我们可以\textbf{把 $ \lambda_{k} $ 也看作优化变量}（ $ x_{i} $ 就叫做\term{优化变量}）. 相当于将优化变量个数增加到 $ (n+l) $ 个, $ x_{i} $ 与 $ \lambda_{k} $ 一视同仁, 均为优化变量, 均对它们求偏导.
+因此可以联想到：等式约束下的 Lagrange乘数法引入了 $ l $ 个Lagrange乘子，或许我们可以\textbf{把 $ \lambda_{k} $ 也看作优化变量}（ $ x_{i} $ 就叫做\term{优化变量}）。 相当于将优化变量个数增加到 $ (n+l) $ 个, $ x_{i} $ 与 $ \lambda_{k} $ 一视同仁, 均为优化变量, 均对它们求偏导。
 
 \subsection{不等式约束优化问题}
 
-以上我们讨论了等式约束的情形，接下来我们来介绍不等式约束的优化问题.
+以上我们讨论了等式约束的情形，接下来我们来介绍不等式约束的优化问题。
 
-我们先给出其主要思想：\textbf{转化}的思想——\textbf{将不等式约束条件变成等式约束条件}.具体做法是\textbf{引入}\term{松弛变量}.松弛变量也是优化变量，也需要一视同仁求偏导.
+我们先给出其主要思想：\textbf{转化}的思想——\textbf{将不等式约束条件变成等式约束条件}.具体做法是\textbf{引入}\term{松弛变量}.松弛变量也是优化变量，也需要一视同仁求偏导。
 
 具体而言, 我们先看一个一元函数的例子：
 
@@ -1271,14 +1271,14 @@ $$ f\left(x_{1}, x_{2}, \ldots, x_{n}\right)=0 $$
 \end{example}
 
 \begin{remark}
-    优化问题中，我们必须求得一个确定的值，因此不妨令所有的不等式均取到等号，即 $ \leq $ 的情况.
+    优化问题中，我们必须求得一个确定的值，因此不妨令所有的不等式均取到等号，即 $ \leq $ 的情况。
 \end{remark}
 
 
 对于约束 $ g_{1} $ 和 $ g_{2} $, 我们分别引入两个松弛变量 $ a_{1}^{2} $ 和 $ b_{1}^{2} $, 得到 $ h_{1}\left(x, a_{1}\right)=g_{1}+a_{1}^{2}=0 $ 和 $ h_{2}\left(x, b_{1}\right)=g_{2}+b_{1}^{2}=0 $. 
 
 \begin{remark}
-    注意, 这里直接加上平方项 $ a_{1}^{2} 、 b_{1}^{2} $ 而非 $ a_{1} 、 b_{1} $, 是因为 $ g_{1} $ 和 $ g_{2} $ 这两个 不等式的左边必须加上一个正数才能使不等式变为等式. 若只加上 $ a_{1} $ 和 $ b_{1} $, 又会引入新的约束 $ a_{1} \geq 0 $ 和 $ b_{1} \geq 0 $, 这不符合我们的意愿.
+    注意, 这里直接加上平方项 $ a_{1}^{2} 、 b_{1}^{2} $ 而非 $ a_{1} 、 b_{1} $, 是因为 $ g_{1} $ 和 $ g_{2} $ 这两个 不等式的左边必须加上一个正数才能使不等式变为等式。 若只加上 $ a_{1} $ 和 $ b_{1} $, 又会引入新的约束 $ a_{1} \geq 0 $ 和 $ b_{1} \geq 0 $, 这不符合我们的意愿。
 \end{remark}
 
 
@@ -1311,7 +1311,7 @@ $$
     对于不等式约束前的乘子, 我们要求其大于等于 0. ($\mu_{1} \geq 0, \mu_{2} \geq 0$)
 \end{remark}
 
-得出方程组后, 便开始动手解它. 看到第3行的两式 $\mu_{1} a_{1}=0$ 和 $\mu_{1} a_{1}=0$ 比较简单, 我们就从它们入手吧.
+得出方程组后, 便开始动手解它。 看到第3行的两式 $\mu_{1} a_{1}=0$ 和 $\mu_{1} a_{1}=0$ 比较简单, 我们就从它们入手吧。
 
 对于 $\mu_{1} a_{1}=0$, 我们有两种情况:
 
@@ -1340,7 +1340,7 @@ $$
 
 \end{theorem}
 
- 这是一元一次的情形.类似地, 
+ 这是一元一次的情形。类似地, 
 
 \begin{corollary}
     对于多元多次不等式约束问题
@@ -1359,7 +1359,7 @@ $$
 \end{array}\right.
 $$
 
-上式便称为不等式约束优化问题的KKT（Karush-Kuhn-Tucker）条件. $ \mu_{j} $ 称为KKT乘子, 且约束 起作用时 $ \mu_{j} \geq 0, g_{j}(x)=0 $ ； 约束不起作用时 $ \mu_{j}=0, g_{j}(x)<0 $.
+上式便称为不等式约束优化问题的KKT（Karush-Kuhn-Tucker）条件。 $ \mu_{j} $ 称为KKT乘子, 且约束 起作用时 $ \mu_{j} \geq 0, g_{j}(x)=0 $ ； 约束不起作用时 $ \mu_{j}=0, g_{j}(x)<0 $.
 \end{corollary}
 
 \subsection{KKT乘子必须大于等于0}
@@ -1368,28 +1368,28 @@ $$
     还剩最后一个问题没有解决：为什么KKT乘子必须大于等于零？
 \end{problem}
 
-我将用几何性质来解释. 由于
+我将用几何性质来解释。 由于
 $$
 \frac{\partial f\left(x^{*}\right)}{\partial x_{i}}+\sum_{j=1}^{m} \mu_{j} \frac{\partial g_{j}\left(x^{*}\right)}{\partial x_{i}}=0(i=1,2, \ldots, n)
 $$
 
 用梯度表示 $$ \nabla f\left(\mathbf{x}^{*}\right)+\sum_{j \in J} \mu_{j} \nabla g_{j}\left(\mathbf{x}^{*}\right)=0$$
 
-$J$ 为起作用约束的集合.
+$J$ 为起作用约束的集合。
 
 移项可得 $$ -\nabla f\left(\mathbf{x}^{*}\right)=\sum_{j \in J} \mu_{j} \nabla g_{j}\left(\mathbf{x}^{*}\right) $$
 
-注意到梯度为向量. 
+注意到梯度为向量。 
 
 \begin{theorem}
     $$ -\nabla f\left(\mathbf{x}^{*}\right)=\sum_{j \in J} \mu_{j} \nabla g_{j}\left(\mathbf{x}^{*}\right) $$
 
-    在约束极小值点 $ \mathbf{x}^{*} $ 处，函数 $ f\left(\mathbf{x}^{*}\right) $ 的负梯度一定可以表示成：所有起作用约束在该点的梯度（等值线的法向量）的线性组合.
+    在约束极小值点 $ \mathbf{x}^{*} $ 处，函数 $ f\left(\mathbf{x}^{*}\right) $ 的负梯度一定可以表示成：所有起作用约束在该点的梯度（等值线的法向量）的线性组合。
 \end{theorem}
 
 
 \begin{corollary}[梯度的性质]
-    复习课本中梯度的性质：某点梯度的方向就是函数等值线 $ f(\mathbf{x})=C $ 。（在这点的法线方向, 等值线就是地理的等高线。）
+    复习课本中梯度的性质：某点梯度的方向就是函数等值线 $ f(\mathbf{x})=C $ .（在这点的法线方向, 等值线就是地理的等高线。）
 \end{corollary}
 
 为方便作图, 假设现在\textbf{只有两个约束条件起约束作用}, 我们作出图形如图\ref{fig:kkt-1}.
@@ -1402,35 +1402,35 @@ $J$ 为起作用约束的集合.
 
 注意我们上面推导过, 约束起作用时 $ g_{j}(\mathbf{x})=0 $, 所以此时约束在几何上应该是一簇\textbf{约束平面}.
 
-我们假设在 $ \mathbf{x}^{*} $ 取得极小值点, 若同时满足 $ g_{1}(\mathbf{x})=0 $ 和 $ g_{2}(\mathbf{x})=0 $, 则 $ \mathbf{x}^{k} $ 一定在这两个平面的交线上, 且 $ -\nabla f\left(\mathbf{x}^{*}\right)=\sum_{j \in J} \mu_{j} \nabla g_{j}\left(\mathbf{x}^{*}\right) $, 即 $ -\nabla f\left(\mathbf{x}^{k}\right) 、 \nabla g_{1}\left(\mathbf{x}^{k}\right) $ 和 $ \nabla g_{2}\left(\mathbf{x}^{k}\right) $ 共面.
+我们假设在 $ \mathbf{x}^{*} $ 取得极小值点, 若同时满足 $ g_{1}(\mathbf{x})=0 $ 和 $ g_{2}(\mathbf{x})=0 $, 则 $ \mathbf{x}^{k} $ 一定在这两个平面的交线上, 且 $ -\nabla f\left(\mathbf{x}^{*}\right)=\sum_{j \in J} \mu_{j} \nabla g_{j}\left(\mathbf{x}^{*}\right) $, 即 $ -\nabla f\left(\mathbf{x}^{k}\right) 、 \nabla g_{1}\left(\mathbf{x}^{k}\right) $ 和 $ \nabla g_{2}\left(\mathbf{x}^{k}\right) $ 共面。
 
 \begin{FigureCenter}{}
     \label{fig:kkt-2}
     \includegraphics[width=\textwidth]{KKT-geometry-2.jpg}
 \end{FigureCenter}
 
-图\ref{fig:kkt-2}是在点 $ \mathbf{x}^{k} $ 处沿 $ x_{1} O x_{2} $ 面的截面, 过点 $ \mathbf{x}^{k} $ 作目标函数的负梯度 $ -\nabla f\left(\mathbf{x}^{k}\right) $, 它垂直于目标函数 的等值线 $ f(\mathbf{x})=C $ ，且指向目标函数 $ f(\mathbf{x}) $ 的最速减小方向.
+图\ref{fig:kkt-2}是在点 $ \mathbf{x}^{k} $ 处沿 $ x_{1} O x_{2} $ 面的截面, 过点 $ \mathbf{x}^{k} $ 作目标函数的负梯度 $ -\nabla f\left(\mathbf{x}^{k}\right) $, 它垂直于目标函数 的等值线 $ f(\mathbf{x})=C $ ，且指向目标函数 $ f(\mathbf{x}) $ 的最速减小方向。
 
 \begin{corollary}
     一点的梯度与等值线相互垂直。
 \end{corollary}
 
-再作约束函数 $ g_{1}(\mathbf{x})=0 $ 和 $ g_{2}(\mathbf{x})=0 $ 的梯度 $ \nabla g_{1}\left(\mathbf{x}^{k}\right) $ 和 $ \nabla g_{2}\left(\mathbf{x}^{k}\right) $, 它们分别垂直 $ g_{1}(\mathbf{x})=0 $ 和 $ g_{2}(\mathbf{x})=0 $ 两曲面在 $ \mathbf{x}^{k} $ 的切平面, 并形成一个雉形夹角区域.此时, 可能有 $ \mathrm{a} 、 \mathrm{~b} $ 两种情形：
+再作约束函数 $ g_{1}(\mathbf{x})=0 $ 和 $ g_{2}(\mathbf{x})=0 $ 的梯度 $ \nabla g_{1}\left(\mathbf{x}^{k}\right) $ 和 $ \nabla g_{2}\left(\mathbf{x}^{k}\right) $, 它们分别垂直 $ g_{1}(\mathbf{x})=0 $ 和 $ g_{2}(\mathbf{x})=0 $ 两曲面在 $ \mathbf{x}^{k} $ 的切平面, 并形成一个雉形夹角区域。此时, 可能有 $ \mathrm{a} 、 \mathrm{~b} $ 两种情形：
 
 \begin{FigureCenter}{}
     \label{fig:kkt-3}
     \includegraphics[width=0.5\textwidth]{KKT-geometry-3.jpg}
 \end{FigureCenter}
 
-我们先来看情形 $\mathrm{b}$ ：若3个向量的位置关系如\ref{fig:kkt-3}所示, 即 $-\nabla f$ 落在 $\nabla g_{1}$ 和 $\nabla g_{2}$ 所形成的锥角区外的 一侧. 此时, 作等值面 $f(\mathbf{x})=C$ 在点 $\mathbf{x}^{k}$ 的切平面（它与 $-\nabla f\left(\mathbf{x}^{k}\right)$ 垂直）, 我们发现：沿着与负 梯度 $-\nabla f$ 成锐角的方向移动（如下图红色箭头方向）, 只要在红色区域取值, 目标函数 $f(\mathbf{x})$ 总 能减小.而红色区域是可行域 $(f(\mathbf{x})=C$, C取不同的常数能得到不同的等值线, 因此能取到红色 区域）, 因此既可减小目标函数值, 又不破坏约束条件. 这说明 $\mathbf{x}^{k}$ 仍可沿约束曲面移动而不破坏约 束条件, 且目标函数值还能够减小.所以 $\mathbf{x}^{k}$ 不是稳定的最优点, 即不是局部极值点.
+我们先来看情形 $\mathrm{b}$ ：若3个向量的位置关系如\ref{fig:kkt-3}所示, 即 $-\nabla f$ 落在 $\nabla g_{1}$ 和 $\nabla g_{2}$ 所形成的锥角区外的 一侧。 此时, 作等值面 $f(\mathbf{x})=C$ 在点 $\mathbf{x}^{k}$ 的切平面（它与 $-\nabla f\left(\mathbf{x}^{k}\right)$ 垂直）, 我们发现：沿着与负 梯度 $-\nabla f$ 成锐角的方向移动（如下图红色箭头方向）, 只要在红色区域取值, 目标函数 $f(\mathbf{x})$ 总 能减小。而红色区域是可行域 $(f(\mathbf{x})=C$, C取不同的常数能得到不同的等值线, 因此能取到红色 区域）, 因此既可减小目标函数值, 又不破坏约束条件。 这说明 $\mathbf{x}^{k}$ 仍可沿约束曲面移动而不破坏约 束条件, 且目标函数值还能够减小。所以 $\mathbf{x}^{k}$ 不是稳定的最优点, 即不是局部极值点。
 
-反过头来看情形a: $ -\nabla f $ 落在 $ \nabla g_{1} $ 和 $ \nabla g_{2} $ 形成的锥角内. 此时, 同样作 $ f(\mathbf{x})=C $ 在点 $ \mathbf{x}^{k} $ 与 $ -\nabla f $ 垂直的切平面. 当从 $ \mathbf{x}^{k} $ 出发沿着与负梯度 $ -\nabla f $ 成锐角的方向移动时, 虽然能使目标函数值减小, 但此时任何一点都不在可行区域内. 显然, 此时 $ \mathbf{x}^{k} $ 就是局部最优点 $ \mathbf{x}^{*} $, 再做任何移动都将破坏约 束条件, 故它是稳定点.
+反过头来看情形a: $ -\nabla f $ 落在 $ \nabla g_{1} $ 和 $ \nabla g_{2} $ 形成的锥角内。 此时, 同样作 $ f(\mathbf{x})=C $ 在点 $ \mathbf{x}^{k} $ 与 $ -\nabla f $ 垂直的切平面。 当从 $ \mathbf{x}^{k} $ 出发沿着与负梯度 $ -\nabla f $ 成锐角的方向移动时, 虽然能使目标函数值减小, 但此时任何一点都不在可行区域内。 显然, 此时 $ \mathbf{x}^{k} $ 就是局部最优点 $ \mathbf{x}^{*} $, 再做任何移动都将破坏约 束条件, 故它是稳定点。
 
-由于 $ -\nabla f\left(\mathbf{x}^{*}\right) $ 和 $ \nabla g_{1}\left(\mathbf{x}^{*}\right) 、 \nabla g_{2}\left(\mathbf{x}^{*}\right) $ 在一个平面内, 所以前者可看成是后两者的线性组合. 又由 上面的几何分析知, $ -\nabla f\left(\mathbf{x}^{*}\right) $ 在 $ \nabla g_{1}\left(\mathbf{x}^{*}\right) $ 和 $ \nabla g_{2}\left(\mathbf{x}^{*}\right) $ 的夹角之间, 所以线性组合的系数为正, 有
+由于 $ -\nabla f\left(\mathbf{x}^{*}\right) $ 和 $ \nabla g_{1}\left(\mathbf{x}^{*}\right) 、 \nabla g_{2}\left(\mathbf{x}^{*}\right) $ 在一个平面内, 所以前者可看成是后两者的线性组合。 又由 上面的几何分析知, $ -\nabla f\left(\mathbf{x}^{*}\right) $ 在 $ \nabla g_{1}\left(\mathbf{x}^{*}\right) $ 和 $ \nabla g_{2}\left(\mathbf{x}^{*}\right) $ 的夹角之间, 所以线性组合的系数为正, 有
 $$
 -\nabla f\left(\mathbf{x}^{*}\right)=\mu_{1} \nabla g_{1}\left(\mathbf{x}^{*}\right)+\mu_{2} \nabla g_{2}\left(\mathbf{x}^{*}\right), \text { 且 } \mu_{1}>0, \mu_{2}>0 \text {. }
 $$
-这就是 $ \mu_{j}>0 $ 的原因. 类似地, 当有多个不等式约束同时起作用时, 要求 $ -\nabla f\left(\mathbf{x}^{*}\right) $ 处于 $ \nabla g_{j}\left(\mathbf{x}^{*}\right) $ 形成的超角锥（高维图形, 我姑且称之为 “超” ）之内.
+这就是 $ \mu_{j}>0 $ 的原因。 类似地, 当有多个不等式约束同时起作用时, 要求 $ -\nabla f\left(\mathbf{x}^{*}\right) $ 处于 $ \nabla g_{j}\left(\mathbf{x}^{*}\right) $ 形成的超角锥（高维图形, 我姑且称之为 “超” ）之内。
 
 \subsection{总结：同时包含等式和不等式约束的一般优化问题}
 
@@ -1467,17 +1467,17 @@ $$
 \subsection{凸集的概念}
 
 \begin{definition}[点、（直）线、线段]
-    $ x_{1} \neq x_{2} $ 是 $ \mathbb{R}^{n} $ 中的两\term{点}, $ \theta \in \mathbb{R} $, 那么 $ y=x_{2}+\theta\left(x_{1}-x_{2}\right) $ 表示穿过两点的\term{线}。
+    $ x_{1} \neq x_{2} $ 是 $ \mathbb{R}^{n} $ 中的两\term{点}, $ \theta \in \mathbb{R} $, 那么 $ y=x_{2}+\theta\left(x_{1}-x_{2}\right) $ 表示穿过两点的\term{线}.
 
-    当 $ 0 \leqslant \theta \leqslant 1 $ 时, $ y $ 是 $ x_{1} $ 到 $ x_{2} $ 的\term{线段}，$ y $ 也可以表示成 $ y=\theta x_{1}+(1-\theta) x_{2} $。
+    当 $ 0 \leqslant \theta \leqslant 1 $ 时, $ y $ 是 $ x_{1} $ 到 $ x_{2} $ 的\term{线段}，$ y $ 也可以表示成 $ y=\theta x_{1}+(1-\theta) x_{2} $.
 \end{definition}
 
 \begin{definition}[仿射集]
-    一个集合 $ C \subseteq \mathbb{R}^{n} $ 是\term{仿射集}如果其中任意两个不同的点的连线仍包含于 $ C $ 。
+    一个集合 $ C \subseteq \mathbb{R}^{n} $ 是\term{仿射集}如果其中任意两个不同的点的连线仍包含于 $ C $ .
 \end{definition}
 
 \begin{definition}[凸集]
-    一个集合 $ C \subseteq \mathbb{R}^{n} $ 是凸集, 如果任意两点之间的线段仍包含于 $ C $ 。即 $ \forall x_{1}, x_{2} \in C $, 任意 $ 0 \leqslant \theta \leqslant 1 $, 有 $ \theta x_{1}+(1-\theta) x_{2} \in C $ 。
+    一个集合 $ C \subseteq \mathbb{R}^{n} $ 是凸集, 如果任意两点之间的线段仍包含于 $ C $ .即 $ \forall x_{1}, x_{2} \in C $, 任意 $ 0 \leqslant \theta \leqslant 1 $, 有 $ \theta x_{1}+(1-\theta) x_{2} \in C $ .
 \end{definition}
 
 \begin{theorem}
@@ -1527,7 +1527,7 @@ $$
 \end{array}
 $$
 
-$ x=\left(x_{1}, \ldots, x_{n}\right) $ 是\term{优化变量}, 函数 $ f_{0}: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 是\term{目标函数}, 函数 $ f_{i}: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 是\term{约束函数}。 $ b_{i} $ 是约束。使得 $ f_{0}(x) $ 在约束条件下最小的 $ x^{*} $ 叫做\term{最优点}, 或问题的\term{解}。
+$ x=\left(x_{1}, \ldots, x_{n}\right) $ 是\term{优化变量}, 函数 $ f_{0}: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 是\term{目标函数}, 函数 $ f_{i}: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 是\term{约束函数}. $ b_{i} $ 是约束。使得 $ f_{0}(x) $ 在约束条件下最小的 $ x^{*} $ 叫做\term{最优点}, 或问题的\term{解}.
 \end{definition}
 
 \begin{definition}[凸优化]
@@ -1560,7 +1560,7 @@ $ x=\left(x_{1}, \ldots, x_{n}\right) $ 是\term{优化变量}, 函数 $ f_{0}: 
     \end{array}
     $$
 
-    其中 $ g_{i} $ 是\term{凸函数}, $ h_{j} $ 是\term{仿射函数}。 
+    其中 $ g_{i} $ 是\term{凸函数}, $ h_{j} $ 是\term{仿射函数}. 
 \end{definition}
 
 $ g_{i}(x) \leqslant 0 $叫做 \term{$ 0- $sublevel集}, 是凸集。
@@ -1573,7 +1573,7 @@ $ g_{i}(x) \leqslant 0 $叫做 \term{$ 0- $sublevel集}, 是凸集。
     $$ h\left(\theta x_{1}+(1-\theta) x_{2}\right)=\theta h\left(x_{1}\right)+(1-\theta) h\left(x_{2}\right)=0 $$
 \end{proof}
 
-凸优化问题的特点是, \textbf{所有局部最优点都是全局最优点}。
+凸优化问题的特点是, \textbf{所有局部最优点都是全局最优点}.
 
 \begin{definition}[二次规划]
     如果一个凸优化问题的 $ g_{i} $ 都是仿射函数, 且 $ f $ 是凸二次函数, 那么它叫做二次规划:
@@ -1585,7 +1585,7 @@ $ g_{i}(x) \leqslant 0 $叫做 \term{$ 0- $sublevel集}, 是凸集。
     \end{array}
     $$
 
-    其中 $ P $ 是一个对称半正定矩阵(使得 $ \left.\frac{1}{2} x^{\top} P x \geqslant 0\right) $ 。
+    其中 $ P $ 是一个对称半正定矩阵(使得 $ \left.\frac{1}{2} x^{\top} P x \geqslant 0\right) $ .
 \end{definition}
 
 
@@ -1593,7 +1593,7 @@ $ g_{i}(x) \leqslant 0 $叫做 \term{$ 0- $sublevel集}, 是凸集。
 \subsection{拉格朗日对偶性}
 
 \begin{theorem}
-    对于没有限制的凸函数, 最优点 $ x^{*} $ 一定满足 $ \nabla_{x} f\left(x^{*}\right)=0 $。
+    对于没有限制的凸函数, 最优点 $ x^{*} $ 一定满足 $ \nabla_{x} f\left(x^{*}\right)=0 $.
 \end{theorem}
 
 然而对于有限制条件的凸优化问题却不是这样。拉格朗日对偶性可以将有限制的凸优化问题转化为没有限制的问题, 来求解凸优化问题。
@@ -1604,7 +1604,7 @@ $ g_{i}(x) \leqslant 0 $叫做 \term{$ 0- $sublevel集}, 是凸集。
     \mathcal{L}(x, \alpha, \beta)=f(x)+\sum_{i=1}^{m} \alpha_{i} g_{i}(x)+\sum_{i=1}^{p} \beta_{i} h_{i}(x)
     $$
 
-    $ x \in \mathbb{R}^{n} $ 叫做\term{主变量(primal variable)}。 $ \alpha \in \mathbb{R}^{m}, \beta \in \mathbb{R}^{p} $ 统称对偶变量或拉格朗日乘子。
+    $ x \in \mathbb{R}^{n} $ 叫做\term{主变量(primal variable)}. $ \alpha \in \mathbb{R}^{m}, \beta \in \mathbb{R}^{p} $ 统称对偶变量或拉格朗日乘子。
 \end{definition}
 
 \begin{theorem}
@@ -1625,11 +1625,11 @@ $ g_{i}(x) \leqslant 0 $叫做 \term{$ 0- $sublevel集}, 是凸集。
 \min _{x}\left[\max _{\alpha, \beta, \alpha_{i} \geqslant 0} \mathcal{L}(x, \alpha, \beta)\right]=\min _{x} \theta_{\mathcal{P}}(x)
 $$
 
-括号内的 $ \theta_{\mathcal{P}}: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 叫做\term{主目标(primal objective)}, 等号右边的没有限制的最小化问题叫做\term{主问题(primal problem)}。 用 $ x^{*} $ 表示\term{主问题的解},$ p^{*}=\theta_{\mathcal{P}}\left(x^{*}\right) $ 表示\term{主目标的最优值}。
+括号内的 $ \theta_{\mathcal{P}}: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 叫做\term{主目标(primal objective)}, 等号右边的没有限制的最小化问题叫做\term{主问题(primal problem)}. 用 $ x^{*} $ 表示\term{主问题的解},$ p^{*}=\theta_{\mathcal{P}}\left(x^{*}\right) $ 表示\term{主目标的最优值}.
 \end{problem}
 
 \begin{definition}[primal feasible]
-    $ x $ 是\term{主可行的(primal feasible)}如果 $ g_{i}(x) \leqslant 0, h_{j}(x)=0 $ 。
+    $ x $ 是\term{主可行的(primal feasible)}如果 $ g_{i}(x) \leqslant 0, h_{j}(x)=0 $ .
 \end{definition}
 
 
@@ -1645,14 +1645,14 @@ $$
 
 \begin{itemize}
     \item 如果任何一个 $ g_{i}(x)>0 $, 那么最大化 $ \theta_{\mathcal{P}}(x) $ 只需要将相应的 $ \alpha_{i} $ 设置为无限大。
-    \item 如果 $ g_{i}(x) \leqslant 0 $, 因为 $ \alpha_{i} \geqslant 0 $, 所以 $ \theta_{\mathcal{P}}(x) $ 最大时, 必然有 $ \alpha_{i}=0 $ 。
+    \item 如果 $ g_{i}(x) \leqslant 0 $, 因为 $ \alpha_{i} \geqslant 0 $, 所以 $ \theta_{\mathcal{P}}(x) $ 最大时, 必然有 $ \alpha_{i}=0 $ .
 \end{itemize}
 
 相似地：
 
 \begin{itemize}
     \item 如果 $ h_{i} \neq 0 $, 那么最大化 $ \theta_{\mathcal{P}}(x) $ 只需要将相应的 $ \beta_{i} $ 设置为 $ h_{i}(x) $ 的相同符号且绝对值无限大。
-    \item 如果 $ h_{i}(x)=0 $, 那么 $ \sum_{i=1}^{p} \beta_{i} h_{i}(x) $ 项的最大值为0 。
+    \item 如果 $ h_{i}(x)=0 $, 那么 $ \sum_{i=1}^{p} \beta_{i} h_{i}(x) $ 项的最大值为0 .
 \end{itemize}
 
 综上, 有
@@ -1672,7 +1672,7 @@ $$
 \max _{\alpha, \beta, \alpha \geqslant 0}\left[\min _{x} \mathcal{L}(x, \alpha, \beta)\right]=\max _{\alpha, \beta, \alpha \geqslant 0} \theta_{\mathcal{D}}(\alpha, \beta)
 $$
 
-$ \theta_{\mathcal{D}}(\alpha, \beta): \mathbb{R}^{m} \times \mathbb{R}^{p} \rightarrow \mathbb{R} $ 是\term{对偶目标(dual objective)}，等号右边的有限制的最大化问题叫做\term{对偶问题}。 用 $ \left(\alpha^{*}, \beta^{*}\right) $ 表示\term{对偶问题的解}， $ d^{*}=\theta_{\mathcal{D}}\left(\alpha^{*}, \beta^{*}\right) $ 表示\term{对偶目标的最优值}。
+$ \theta_{\mathcal{D}}(\alpha, \beta): \mathbb{R}^{m} \times \mathbb{R}^{p} \rightarrow \mathbb{R} $ 是\term{对偶目标(dual objective)}，等号右边的有限制的最大化问题叫做\term{对偶问题}. 用 $ \left(\alpha^{*}, \beta^{*}\right) $ 表示\term{对偶问题的解}， $ d^{*}=\theta_{\mathcal{D}}\left(\alpha^{*}, \beta^{*}\right) $ 表示\term{对偶目标的最优值}.
 \end{definition}
 
 \begin{definition}[对偶可行]
@@ -1693,7 +1693,7 @@ $ \theta_{\mathcal{D}}(\alpha, \beta): \mathbb{R}^{m} \times \mathbb{R}^{p} \rig
 \end{theorem}
 
 \begin{theorem}[强对偶性]
-    对任意主问题和对偶问题, 如果满足某个条件(constraint qualifications), 那 么 $ d^{*}=p^{*} $ 。最常用的constraint qualification是Slater's condition: 所有的不等式限制都严格满 足 (即 $ g_{i}(x)<0 $ ) 。
+    对任意主问题和对偶问题, 如果满足某个条件(constraint qualifications), 那 么 $ d^{*}=p^{*} $ .最常用的constraint qualification是Slater's condition: 所有的不等式限制都严格满 足 (即 $ g_{i}(x)<0 $ ) .
 \end{theorem}
 
 \begin{theorem}[Slater 条件]
@@ -1703,7 +1703,7 @@ $ \theta_{\mathcal{D}}(\alpha, \beta): \mathbb{R}^{m} \times \mathbb{R}^{p} \rig
     \min _{\mathbf{x}} f_{0}(\mathbf{x}), \quad \text { s.t. } f_{i}(\mathbf{x}) \leq 0, g_{i}(\mathbf{x}) \leq 0
     $$
 
-    如果存在点 $ \mathrm{x} \in $ relint $ \mathcal{D} $ （即 $ \mathcal{D} $ 的相对内点）, 则强对偶性成立.
+    如果存在点 $ \mathrm{x} \in $ relint $ \mathcal{D} $ （即 $ \mathcal{D} $ 的相对内点）, 则强对偶性成立。
 \end{theorem}
 
 实践中, 几乎所有的凸优化问题都满足某种constraint qualification, 所以 主问题和对偶问题有相同的最优值。
@@ -1725,7 +1725,7 @@ $ \theta_{\mathcal{D}}(\alpha, \beta): \mathbb{R}^{m} \times \mathbb{R}^{p} \rig
 
     因为第一个和最后一个表达式相等, 所以中间所有的小于等于号都是等号, 有 $$ \sum_{i=1}^{m} \alpha_{i}^{*} g_{i}\left(x^{*}\right)+\sum_{i=1}^{p} \beta_{i}^{*} h_{i}\left(x^{*}\right)=0 $$
 
-    因为 $ \alpha_{i}^{*} \geqslant 0 ， h_{i}\left(x^{*}\right)=0 $, 所以 $ \alpha_{i}^{*} $ 和 $ g_{i}\left(x^{*}\right) $ 至少有一个是 0 。
+    因为 $ \alpha_{i}^{*} \geqslant 0 ， h_{i}\left(x^{*}\right)=0 $, 所以 $ \alpha_{i}^{*} $ 和 $ g_{i}\left(x^{*}\right) $ 至少有一个是 0 .
 \end{proof}
 
 \begin{theorem}
@@ -1749,7 +1749,7 @@ $ x^{*} $ 原始最优， $ \left(\alpha^{*}, \beta^{*}\right) $ 对偶最优，
 \subsection{总结}
 
 
-给定一个\term{凸优化}问题, \term{拉格朗日算子}将凸优化问题的目标函数和限制考虑进一个函数中, 在拉格朗日算子基础上可以定义\term{主问题}和\term{对偶问题}。
+给定一个\term{凸优化}问题, \term{拉格朗日算子}将凸优化问题的目标函数和限制考虑进一个函数中, 在拉格朗日算子基础上可以定义\term{主问题}和\term{对偶问题}.
 
 \term{主问题}是先调整 $ (\alpha, \beta) $ 使拉格朗日算子最大(变为主目标), 再调整 $ x $ 使主目标最小。 $ x $ 主可行时, 主目标等于原凸优化问题的目标函数, 主目标的最小值等于原凸优化问题的最小值。
 

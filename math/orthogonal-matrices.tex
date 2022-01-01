@@ -4,14 +4,14 @@
 
 \subsection{标准正交向量}
 
-参见 \ref{Def:OrthonormalVectors}。
+参见 \ref{Def:OrthonormalVectors}.
 
 \subsection{Gram 矩阵与标准正交的关系}
 
 For the definition of Gram matrices, refer to \ref{Def:Gram}. 关于它与非奇异的性质，参见 \ref{Sect:GramNonSingular}.
 
 \begin{theorem}
-    如果$A$的Gram矩阵为单位矩阵，则 $ A \in \mathbb{R}^{m \times n} $ 具有标准正交列.
+    如果$A$的Gram矩阵为单位矩阵，则 $ A \in \mathbb{R}^{m \times n} $ 具有标准正交列。
 \end{theorem}
 
 \begin{proof}
@@ -26,7 +26,7 @@ For the definition of Gram matrices, refer to \ref{Def:Gram}. 关于它与非奇
 如果 $ A \in \mathbb{R}^{m \times n} $ 具有标准正交列，则线性函数 $ f(x)=A x $
 
 \begin{theorem}
-    保持原内积.
+    保持原内积。
     $$ \langle A x, A y\rangle=x^{T} y $$
 \end{theorem}
 
@@ -36,7 +36,7 @@ For the definition of Gram matrices, refer to \ref{Def:Gram}. 关于它与非奇
 
 
 \begin{theorem}
-    保持原范数.
+    保持原范数。
     $$
     \|A x\|_{2}=\|x\|_{2}
     $$
@@ -49,7 +49,7 @@ $$
 \end{proof}
 
 \begin{theorem}
-    保持原距离.
+    保持原距离。
 
     $$
     \|A x-A y\|_{2}=\|x-y\|_{2}
@@ -63,7 +63,7 @@ $$
 \end{proof}
 
 \begin{theorem}
-    保持原角度.
+    保持原角度。
 
     $$ \angle(A x, A y)=\angle(x, y) $$
 \end{theorem}
@@ -90,7 +90,7 @@ $$
 \end{proof}
 
 \begin{theorem}
-    $ A $ 有线性无关的列向量.
+    $ A $ 有线性无关的列向量。
 \end{theorem}
 
 \begin{proof}
@@ -104,7 +104,7 @@ $$
 \end{theorem}
 
 \begin{proof}
-    列向量 $ a_{1}, a_{2}, \ldots, a_{n} \in \mathbb{R}^{m} $, 由维度定理可得 $ n \leq m $。
+    列向量 $ a_{1}, a_{2}, \ldots, a_{n} \in \mathbb{R}^{m} $, 由维度定理可得 $ n \leq m $.
 \end{proof}
 
 \section{正交矩阵}
@@ -129,7 +129,7 @@ $$
 \end{corollary}
 
 \begin{remark}
-    如果 $ A \in \mathbb{R}^{m \times n} $ 有标准正交列以及 $ m>n $, 则 $ A A^{T} \neq I_{\text {。 }} $
+    如果 $ A \in \mathbb{R}^{m \times n} $ 有标准正交列以及 $ m>n $, 则 $ A A^{T} \neq I_{\text {. }} $
 \end{remark}
 
 \section{Permutation Matrices}
@@ -152,7 +152,7 @@ $$
 $A$在每一行和每一列中都有一个等于1的元素。
 
 \begin{theorem}
-    置换矩阵满足正交性，即所有置换矩阵都是正交的.
+    置换矩阵满足正交性，即所有置换矩阵都是正交的。
 \end{theorem}
 
 \begin{corollary}
@@ -170,7 +170,7 @@ $$
 \end{proof}
 
 \begin{corollary}
-    $ A^{T}=A^{-1} $是逆置换矩阵.
+    $ A^{T}=A^{-1} $是逆置换矩阵。
 \end{corollary}
 
 \begin{example}
@@ -245,11 +245,11 @@ $$
 A=I-2 a a^{T}
 $$
 
-其中，向量 $ a $ 满足 $ \|a\|_{2}=1 $ 。
+其中，向量 $ a $ 满足 $ \|a\|_{2}=1 $ .
 \end{definition}
 
 \begin{theorem}
-    反射矩阵(reflector matrix)是对称的.
+    反射矩阵(reflector matrix)是对称的。
 
     $$A^T=A$$
 \end{theorem}
@@ -333,7 +333,7 @@ $ H=\left\{u \mid a^{T} u=0\right\} $ 是与 $ a $ 正交的向量的(超)平面
 
     $$ \hat{t}=\min _{t}\|t a-b\|_{2}^{2} $$
 
-    这个问题的最优解是$ \hat{t}=\frac{a^{T} b}{a^{T} a}=\frac{a^{T} b}{\|a\|_{2}^{2}} $。
+    这个问题的最优解是$ \hat{t}=\frac{a^{T} b}{a^{T} a}=\frac{a^{T} b}{\|a\|_{2}^{2}} $.
 \end{remark}
 
 
@@ -399,12 +399,12 @@ $$
 \subsection{The Complexity of the Multiplication $Ax$ of Orthogonal Matrix $A$}
 可以在 $ 2  {n}^{2} $ 个flop内计算矩阵向量乘法。 
 
-如果A有特殊性质，代价将会小于$n^2$。例如，
+如果A有特殊性质，代价将会小于$n^2$.例如，
 
 \begin{itemize}
-    \item 置换矩阵：$0$ flop。
-    \item 反射算子(给定$a$) ：$4n$ flops。
-    \item 平面旋转：$O(1)$ flop。
+    \item 置换矩阵：$0$ flop.
+    \item 反射算子(给定$a$) ：$4n$ flops.
+    \item 平面旋转：$O(1)$ flop.
 \end{itemize}
 
 \section{列标准正交的高矩阵}
@@ -412,7 +412,7 @@ $$
 \begin{theorem}
     假设矩阵 $ A \in \mathbb{R}^{m \times n} $ 是高的 $ ({m}>{n}) $, 具有标准正交列,则有
 
-    $ A^{T} $ 具有标准正交行.
+    $ A^{T} $ 具有标准正交行。
 \end{theorem}
 
 \begin{theorem}
@@ -428,7 +428,7 @@ $$
 \section{值域范围、列空间}
 
 \begin{definition}[向量集合张成的空间]
-    一个向量集合张成的空间是其所有线性组合的集合.
+    一个向量集合张成的空间是其所有线性组合的集合。
 
     $$ \operatorname{span}\left(a_{1}, a_{2}, \cdots, a_{n}\right)=\left\{x_{1} a_{1}+x_{2} a_{2}+\cdots+x_{n} a_{n} \mid x \in \mathbb{R}^{n}\right\} $$
 \end{definition}
@@ -462,26 +462,26 @@ $$ \begin{aligned} f(x) &=\|A x-b\|_{2}^{2}
 
 $$ \nabla f(x)=2 x-2 A^{T} b=0 \Rightarrow x=A^{T} b $$
 
-$ A A^{T} b $ 称为向量 $  {b} \in \mathbb{R}^{m} $ 在 $ \operatorname{range} (A)$上的\term{正交投影}。
+$ A A^{T} b $ 称为向量 $  {b} \in \mathbb{R}^{m} $ 在 $ \operatorname{range} (A)$上的\term{正交投影}.
 
 \begin{theorem}
     $$ A x=A A^{T} b \in \operatorname{range}(A) $$
 
-    且是$b$在$C(A)$上的\term{投影}。
+    且是$b$在$C(A)$上的\term{投影}.
 \end{theorem}
 
 \begin{proof}
     1.
     $$ A x=A A^{T} b \in \operatorname{range}(A) $$
 
-    2. 可以证明$ \hat{x}=A^{T} b $ 满足 $ \|A \hat{x}-b\|<\|A x-b\| $, 对于所有 $ x \neq \hat{x} $。
+    2. 可以证明$ \hat{x}=A^{T} b $ 满足 $ \|A \hat{x}-b\|<\|A x-b\| $, 对于所有 $ x \neq \hat{x} $.
 
     b到range(A)内任意点 $ A x $ 的距离的平方和为:
 
     $$ \begin{aligned}\|A x-b\|_{2}^{2} &=\|A(x-\hat{x})+A \hat{x}-b\|_{2}^{2} \quad\left(\text {其中 } \hat{x}=A^{T} b\right) \\ &=\|A(x-\hat{x})\|_{2}^{2}+\|A \hat{x}-b\|_{2}^{2}+2(x-\hat{x})^{T} A^{T}(A \hat{x}-b) \\ &=\|A(x-\hat{x})\|_{2}^{2}+\|A \hat{x}-b\|_{2}^{2} \\ &=\|(x-\hat{x})\|_{2}^{2}+\|A \hat{x}-b\|_{2}^{2} \\ & \geq\|A \hat{x}-b\|_{2}^{2} \end{aligned} $$
 当且仅当 $ x=\hat{x} $, 等号成立。
 
-第3行成立是因为 $ A^{T}(A \hat{x}-b)=\hat{x}-A^{T} b=0 $ 。
+第3行成立是因为 $ A^{T}(A \hat{x}-b)=\hat{x}-A^{T} b=0 $ .
 \end{proof}
 
 \begin{FigureCenter}{Projection of $\boldsymbol{b}$ into the column space of ${A}$, $A$ is any matrice. Sourced from \cite{Strang1993IntroductionTL}}

@@ -12,7 +12,7 @@ $$
 \end{definition}
 
 \begin{corollary}
-    线性相关等价于至少有一个向量 $ a_{i} $ 是其它向量的线性组合. 
+    线性相关等价于至少有一个向量 $ a_{i} $ 是其它向量的线性组合。 
 
     Equivalently, at least one vector $ a_{i} $ is a linear combination of the other vectors:
 $$
@@ -40,10 +40,10 @@ if $ x_{i} \neq 0 $.
 $$
 \beta_{1} a_{1}+\cdots+\beta_{m} a_{m}=0
 $$
-当且仅当 $ \beta_{1}=\cdots=\beta_{m}=0 $ , 上述等式成立. 
+当且仅当 $ \beta_{1}=\cdots=\beta_{m}=0 $ , 上述等式成立。 
 \end{definition}
 
-线性无关等价于不存在一个向量 $ a_{i} $ 是其它向量的线性组合. 
+线性无关等价于不存在一个向量 $ a_{i} $ 是其它向量的线性组合。 
 
 \begin{corollary}
     一个$n$维向量集最多有$n$个线性无关的向量。
@@ -54,7 +54,7 @@ $$
 \end{corollary}
 
 \begin{example}
-    $n$维单位向量 $ e_{1}, \ldots, e_{n} $ 是线性独立的. 
+    $n$维单位向量 $ e_{1}, \ldots, e_{n} $ 是线性独立的。 
 \end{example}
 
 \begin{example}
@@ -116,7 +116,7 @@ $$
 \end{definition}
 
 \begin{proof}
-    同一向量的系数是唯一的. 
+    同一向量的系数是唯一的。 
 \end{proof}
 
 \begin{example}
@@ -134,13 +134,13 @@ $$
 
 \begin{definition}[Orthonormal Vectors]
     \label{Def:OrthonormalVectors}
-    如果$n$维向量集 $ a_{1}, \ldots, a_{k} $ 相互正交, 且每个向量的模长都为单位长度 1 ,  即对于 $ i=1, \ldots k $, 有 $ \left\|a_{i}\right\|_{2}^{2}=1 $, 则称它们是\term{标准正交 (orthonormal)}的. 
+    如果$n$维向量集 $ a_{1}, \ldots, a_{k} $ 相互正交, 且每个向量的模长都为单位长度 1 ,  即对于 $ i=1, \ldots k $, 有 $ \left\|a_{i}\right\|_{2}^{2}=1 $, 则称它们是\term{标准正交 (orthonormal)}的。 
 
     $$ a_{i}^{T} a_{j}=\left\{\begin{array}{ll}1 & i=j \\ 0 & i \neq j\end{array}\right. $$
 \end{definition}
 
 \begin{corollary}
-    标准正交的向量集是线性无关的. 
+    标准正交的向量集是线性无关的。 
 \end{corollary}
 
 \begin{theorem}
@@ -226,7 +226,7 @@ $$
 则称其为 \term{$ x $ 在标准正交基下的标准正交分解}. 
 \end{definition}
 
-    这个分解可以用于计算不同标准正交基下的系数. 
+    这个分解可以用于计算不同标准正交基下的系数。 
 
 \begin{proof}
     由于正交向量的性质
@@ -252,14 +252,14 @@ $$
     }
 \end{algorithm}
 
-如果步骤2中未提前结束迭代, 那么 $ a_{1}, \ldots, a_{k} $ 是线性独立的, 而且 $ q_{1}, \ldots, q_{k} $ 是标准正交基. 
+如果步骤2中未提前结束迭代, 那么 $ a_{1}, \ldots, a_{k} $ 是线性独立的, 而且 $ q_{1}, \ldots, q_{k} $ 是标准正交基。 
 
-如果在第$j$次迭代中提前结束, 说明 $ a_{j} $ 是 $ a_{1}, \ldots, a_{j-1} $ 的线性组合, 因此 $ a_{1}, \ldots, a_{k} $ 是线性相关的. 
+如果在第$j$次迭代中提前结束, 说明 $ a_{j} $ 是 $ a_{1}, \ldots, a_{j-1} $ 的线性组合, 因此 $ a_{1}, \ldots, a_{k} $ 是线性相关的。 
 
 \begin{theorem}
     \label{thm: qs-are-orthogonal}
     Gram-Schmidt正交化算法得到的
-    $q_{1}, \ldots, q_{i-1}, q_{i} $ 是标准正交的. 
+    $q_{1}, \ldots, q_{i-1}, q_{i} $ 是标准正交的。 
 \end{theorem}
 
 \begin{proof}
@@ -277,7 +277,7 @@ $$
      $\therefore \widetilde{q}_{i} \perp q_{1}, \ldots, \widetilde{q}_{i} \perp q_{i-1} $.
 
     单位化步骤保证了 $
-    q_{i}=\dfrac{\widetilde{q}_{i}}{\left\|\widetilde{q}_{i}\right\|_{2}}$, 即 $ q_{1}, \ldots, q_{i} $ 是标准正交. 
+    q_{i}=\dfrac{\widetilde{q}_{i}}{\left\|\widetilde{q}_{i}\right\|_{2}}$, 即 $ q_{1}, \ldots, q_{i} $ 是标准正交。 
 \end{proof}
 
 \begin{algorithm}[htbp]
@@ -292,10 +292,10 @@ $$
 
 \subsection{The Analysis of Gram-Schmidt Algorithm}
 
-假设Gram-Schmidt 正交法未在第$i$次迭代提前终止.
+假设Gram-Schmidt 正交法未在第$i$次迭代提前终止。
 
 \begin{corollary}
-    $ a_{i} $ 是 $ q_{1}, \ldots, q_{i} $ 的一个线性组合.
+    $ a_{i} $ 是 $ q_{1}, \ldots, q_{i} $ 的一个线性组合。
     
     $$ a_{i}=\left\|\tilde{q}_{i}\right\|_{2} q_{i}+\left(q_{1}^{T} a_{i}\right) q_{1}+\cdots+\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
 \end{corollary}
@@ -322,7 +322,7 @@ $$
 
 
 \begin{corollary}
-    $ q_{i} $ 是 $ a_{1}, \ldots, a_{i} $ 的一个线性组合.
+    $ q_{i} $ 是 $ a_{1}, \ldots, a_{i} $ 的一个线性组合。
 \end{corollary}
 
 \begin{proof}
@@ -336,14 +336,14 @@ $$
 $$ q_{3}=
 \frac{a_{3}-\left(q_{1}^{T} a_{3}\right) q_{1}-\left(q_{2}^{T} a_{3}\right) q_{2}}{\left\|\tilde{q}_{3}\right\|_2 }  $$
 
-通过对 $ i $ 的归纳证明,可得$ q_{i} $ 是 $ a_{1}, \ldots, a_{i} $ 的线性组合.
+通过对 $ i $ 的归纳证明,可得$ q_{i} $ 是 $ a_{1}, \ldots, a_{i} $ 的线性组合。
 \end{proof}
 
 
 假设Schmidt正交法在第$j$次迭代提前终止。
 
 \begin{corollary}
-    $ a_{j} $ 是 $ q_{1}, \ldots, q_{j-1} $ 的一个线性组合.
+    $ a_{j} $ 是 $ q_{1}, \ldots, q_{j-1} $ 的一个线性组合。
 
 $$ a_{j}=\left(q_{1}^{T} a_{j}\right) q_{1}+\cdots+\left(q_{j-1}^{T} a_{j}\right) q_{j-1} $$
 \end{corollary}
@@ -360,11 +360,11 @@ $$ a_{j}=\left(q_{1}^{T} a_{j}\right) q_{1}+\cdots+\left(q_{j-1}^{T} a_{j}\right
 \end{proof}
 
 \begin{corollary}
-    $ a_{j} $ 是 $ a_{1}, \ldots, a_{j-1} $ 的线性组合.
+    $ a_{j} $ 是 $ a_{1}, \ldots, a_{j-1} $ 的线性组合。
 \end{corollary}
 
 \begin{proof}
-    每一个 $ q_{1}, \ldots, q_{j-1} $ 都是 $ a_{1}, \ldots, a_{j-1} $ 的线性组合.
+    每一个 $ q_{1}, \ldots, q_{j-1} $ 都是 $ a_{1}, \ldots, a_{j-1} $ 的线性组合。
 
-    因此 $ a_{j} $ 是 $ a_{1}, \ldots, a_{j-1} $ 的线性组合.
+    因此 $ a_{j} $ 是 $ a_{1}, \ldots, a_{j-1} $ 的线性组合。
 \end{proof}

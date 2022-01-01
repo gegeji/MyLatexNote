@@ -8,7 +8,7 @@
     $X$被称为 $ A $ 的\term{左逆}; 当左逆存在时，则称$A$是\term{可左逆}的;
 \end{definition}
 
-当左逆存在时，则$A$至少有一个左逆。如果左逆矩阵存在, 则左逆矩阵有\textbf{无穷多}个.
+当左逆存在时，则$A$至少有一个左逆。如果左逆矩阵存在, 则左逆矩阵有\textbf{无穷多}个。
 
 \begin{example}
     $$ A=\left[\begin{array}{cc}-3 & -4 \\ 4 & 6 \\ 1 & 1\end{array}\right] $$
@@ -22,7 +22,7 @@
     当左逆存在时，则称A是可左逆的;
 \end{definition}
 
-当右逆存在时，则$A$至少有一个右逆。如果右逆矩阵存在, 则右逆矩阵有\textbf{无穷多}个.
+当右逆存在时，则$A$至少有一个右逆。如果右逆矩阵存在, 则右逆矩阵有\textbf{无穷多}个。
 
 
 \begin{example}
@@ -39,7 +39,7 @@
 
 
 \begin{theorem}
-    A的左逆为 $ X $ 当且仅当 $ X^{T} $ 是 $ A^{T} $ 的右逆.
+    A的左逆为 $ X $ 当且仅当 $ X^{T} $ 是 $ A^{T} $ 的右逆。
 \end{theorem}
 
 \begin{proof}
@@ -49,7 +49,7 @@ $$
 \end{proof}
 
 \begin{theorem}
-    A的右逆为 $ X $ 当且仅当 $ X^{T} $ 是 $ A^{T} $ 的左逆.
+    A的右逆为 $ X $ 当且仅当 $ X^{T} $ 是 $ A^{T} $ 的左逆。
 \end{theorem}
 
 \begin{proof}
@@ -83,7 +83,7 @@ $$
 
     $$ \left\{\begin{array}{c}A_{11} x_{1}+A_{12} x_{2}+\cdots+A_{1 n} x_{n}=b_{1} \\ A_{21} x_{1}+A_{22} x_{2}+\cdots+A_{2 n} x_{n}=b_{2} \\ \vdots \\ A_{m 1} x_{1}+A_{m 2} x_{2}+\cdots+A_{m n} x_{n}=b_{m}\end{array}\right. $$
 
-    写成矩阵形式为： $  {A} x= {b} $ . 其中$A_{m \times n}$为系数矩阵, $ x_{n \times 1} $ 为$n$维列向量，$b_{m \times 1}$是常数. 
+    写成矩阵形式为： $  {A} x= {b} $ . 其中$A_{m \times n}$为系数矩阵, $ x_{n \times 1} $ 为$n$维列向量，$b_{m \times 1}$是常数。 
 \end{definition}
 
 该方程组可能\textbf{无解}，\textbf{有唯一解}和\textbf{无穷解}.
@@ -118,7 +118,7 @@ x=Y b  \Rightarrow  A x=A Y b=b
 $$
 
 
-右逆就是研究 $m \times n $ 矩阵$A$行满秩的情况, 此时 $  {n}> {m}=\operatorname{rank}( {A}) $ . 对称的, 其左零空间中仅有零向量，即没有行向量的线性组合能够得到零向量. （$N(A ^T ) = \{0\}$）
+右逆就是研究 $m \times n $ 矩阵$A$行满秩的情况, 此时 $  {n}> {m}=\operatorname{rank}( {A}) $ . 对称的, 其左零空间中仅有零向量，即没有行向量的线性组合能够得到零向量。 （$N(A ^T ) = \{0\}$）
 
 所以列空间的秩是$m$，维数是$n$，$n$维空间一定包含$m$维子空间，至少存在一个解。
 \end{proof}
@@ -128,7 +128,7 @@ $$
 $$
 A x=b  \Rightarrow  x=A^{-1} b
 $$
-是唯一解. 
+是唯一解。 
 \end{theorem}
 
 \section{Fundamental Theorem of Linear Algebra}
@@ -237,7 +237,7 @@ $$
         \item $A$可逆
     \end{enumerate}
 
-    此时矩阵$A$为非奇异矩阵，由条件1与3，可得$A$为可逆矩阵. 
+    此时矩阵$A$为非奇异矩阵，由条件1与3，可得$A$为可逆矩阵。 
 \end{theorem}
 
 \begin{proof}
@@ -286,7 +286,7 @@ $$
 \end{proof}
 
 \begin{theorem}
-    $(a)$: $A$可左逆，则$A$列向量线性无关.
+    $(a)$: $A$可左逆，则$A$列向量线性无关。
 \end{theorem}
 
 \begin{proof}
@@ -304,7 +304,7 @@ $$
     A x=x_{1} a_{1}+x_{2} a_{2}+\cdots+x_{n} a_{n}=0
     $$
 
-    则当该等式 $ A x=0 $ 成立时，其解 $ x=0 $, 则$A$的列向量线性无关.  
+    则当该等式 $ A x=0 $ 成立时，其解 $ x=0 $, 则$A$的列向量线性无关。  
     
     \begin{corollary}
         如果 $ A \in \mathbb{R}^{m \times n} $有左逆，则有 $ m \geq n = r $. 
@@ -325,37 +325,37 @@ $$
 
     $$A x-A y=A(x-y)=0 \Rightarrow x=y$$
 
-    当 $ b \in \mathbb{R}^{m}, b \notin\left\{y \mid y=A x, x \in \mathbb{R}^{n}\right\} $ 时（即$b$不在$A$的列空间，$ m \geq n  $时），线性方程组无解.  $ A x=b $ 至多一个解，如有解则 $ x=X b $ . 
+    当 $ b \in \mathbb{R}^{m}, b \notin\left\{y \mid y=A x, x \in \mathbb{R}^{n}\right\} $ 时（即$b$不在$A$的列空间，$ m \geq n  $时），线性方程组无解。  $ A x=b $ 至多一个解，如有解则 $ x=X b $ . 
 \end{proof}
 
 \begin{theorem}
-    矩阵的行秩等于列秩.
+    矩阵的行秩等于列秩。
 \end{theorem}
 
 \begin{proof}
     令 $A$ 是一个 $m\times n$ 的矩阵，其列秩为 $r $. 因此矩阵 $A$ 的列空间的维度是 $r$ . 
     
-    令 $c_1,c_2,\ldots,c_r$ 是 $A$ 的列空间的一组基，构成 $m \times r$ 矩阵 $C$ 的列向量 $C = [c_1,c_2,\ldots,c_r]$，并使得 $A$ 的每个列向量是 $C$ 的 $r$ 个列向量的线性组合. 
+    令 $c_1,c_2,\ldots,c_r$ 是 $A$ 的列空间的一组基，构成 $m \times r$ 矩阵 $C$ 的列向量 $C = [c_1,c_2,\ldots,c_r]$，并使得 $A$ 的每个列向量是 $C$ 的 $r$ 个列向量的线性组合。 
     
-    由矩阵乘法的定义，存在一个 $r \times n$ 矩阵 $R$, 使得 $A = CR$. ($A$ 的 $(i,j)$ 元素是 $c_i$ 与 $R$ 的第 $j$ 个行向量的点积.)
+    由矩阵乘法的定义，存在一个 $r \times n$ 矩阵 $R$, 使得 $A = CR$. ($A$ 的 $(i,j)$ 元素是 $c_i$ 与 $R$ 的第 $j$ 个行向量的点积。)
 
-现在，由于 $A = CR$, $A$ 的每个行向量是 $R$ 的行向量的线性组合，这意味着 $A$ 的行向量空间被包含于 $R$ 的行向量空间之中. 因此 $A 的行秩 \leq R的行秩$. 但$R$仅有$r$行, 所以$R的行秩 \leq r = A的列秩$. 这就证明了$A的行秩 \leq A的列秩$.
+现在，由于 $A = CR$, $A$ 的每个行向量是 $R$ 的行向量的线性组合，这意味着 $A$ 的行向量空间被包含于 $R$ 的行向量空间之中。 因此 $A 的行秩 \leq R的行秩$. 但$R$仅有$r$行, 所以$R的行秩 \leq r = A的列秩$. 这就证明了$A的行秩 \leq A的列秩$.
 
-把上述证明过程中的“行”与“列”交换，利用对偶性质同样可证$A的列秩 \leq A的行秩$. 更简单的方法是考虑A的转置矩阵 $A^ {T}$，则$A的列秩 =  A^ {T}的行秩 \leq  A^ {T}的列秩 = A的行秩$. 这证明了$A$的列秩等于$A$的行秩. 证毕.
+把上述证明过程中的“行”与“列”交换，利用对偶性质同样可证$A的列秩 \leq A的行秩$. 更简单的方法是考虑A的转置矩阵 $A^ {T}$，则$A的列秩 =  A^ {T}的行秩 \leq  A^ {T}的列秩 = A的行秩$. 这证明了$A$的列秩等于$A$的行秩。 证毕。
 \end{proof}
 
 \begin{theorem}
-    $(c)$: 矩阵 $ A \in \mathbb{R}^{m \times n} $ 有右逆 $ X $, 则A行向量线性无关.
+    $(c)$: 矩阵 $ A \in \mathbb{R}^{m \times n} $ 有右逆 $ X $, 则A行向量线性无关。
 \end{theorem}
 
 \begin{proof}
     $$  {X}^{T} A^{T}=(A X)^{T}=I $$
     
-    则有$  {X}^{T} $ 是 $ A^{T} $ 的左逆, $ A^{T} $的列向量线性无关.  
+    则有$  {X}^{T} $ 是 $ A^{T} $ 的左逆, $ A^{T} $的列向量线性无关。  
 
     即$ A^{T} \in \mathbb{R}^{n \times m} $.
     
-    根据定理“矩阵的行秩等于列秩”，$ A^{T} $的列向量线性无关，则矩阵 $ A $ 有$m$个线性无关列向量（行向量），即通过 Gram-Schmidt 正交化可得$m$个正交基. 
+    根据定理“矩阵的行秩等于列秩”，$ A^{T} $的列向量线性无关，则矩阵 $ A $ 有$m$个线性无关列向量（行向量），即通过 Gram-Schmidt 正交化可得$m$个正交基。 
 
     $ \forall b \in \mathbb{R}^{m} $, 有$ b \in\left\{y \mid y=A x, x \in \mathbb{R}^{n}\right\} (m \leq n ) $, 方程$ A x=b $有解，其解为$ x=X b $. 
 \end{proof}
@@ -363,15 +363,15 @@ $$
 \begin{corollary}
     如果$ A \in \mathbb{R}^{m \times n} $有右逆，则有 $r= m \leq n  $. 
 
-   即$A$是宽或方的矩阵. 
+   即$A$是宽或方的矩阵。 
 
-   此时$A$的列向量可能线性相关，而$A$的行向量线性无关. 
+   此时$A$的列向量可能线性相关，而$A$的行向量线性无关。 
    
    $N(A^T) = \{0\}, \operatorname{dim} N(A) = n-r, r=m$. ($Ax=b$有无穷解) 
    \end{corollary}
 
 \begin{theorem}
-    $(b)$: 若方阵$A$列向量线性无关，则$A$可右逆. 
+    $(b)$: 若方阵$A$列向量线性无关，则$A$可右逆。 
 \end{theorem}
 
 \begin{proof}
@@ -444,13 +444,13 @@ Gram矩阵的定义见 \ref{Def:Gram}.
 \begin{corollary}[Gram Matrix 可逆等价于$A$列线性无关]
     矩阵 $ A \in \mathbb{R}^{m \times n},   {G}=A^{T} A $
 
-矩阵 $ A $ 列向量线性无关 $ \Leftrightarrow $ Gram矩阵G非奇异（可逆）.
+矩阵 $ A $ 列向量线性无关 $ \Leftrightarrow $ Gram矩阵G非奇异（可逆）。
 \end{corollary}
 
 \begin{proof}
     “$ \Rightarrow $”: 
     
-    假设矩阵 $ A $ 列向量线性无关, $ A^{T} A $ 奇异.  则存在 $ A^{T} A x=0, x \neq 0 $, 可得 $ x^{T} A^{T} A x=\|A x\|_{2}^{2}=0 $, 即 $ A x=0 , x \neq 0$，与列向量线性无关矛盾.
+    假设矩阵 $ A $ 列向量线性无关, $ A^{T} A $ 奇异。  则存在 $ A^{T} A x=0, x \neq 0 $, 可得 $ x^{T} A^{T} A x=\|A x\|_{2}^{2}=0 $, 即 $ A x=0 , x \neq 0$，与列向量线性无关矛盾。
 
     所以$ A^{T} A $非奇异（可逆）。
 

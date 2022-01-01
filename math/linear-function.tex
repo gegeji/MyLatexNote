@@ -3,7 +3,7 @@
 \section{Linear Function}
 
 \begin{definition}[Linear Function]
-    $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$是一个将$n$维向量映射成数的函数. 
+    $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$是一个将$n$维向量映射成数的函数。 
 
     线性函数 $ f $ 满足以下两个性质 $ \left(k \in \mathbb{R}, x, y \in \mathbb{R}^{n}\right) $ :
 
@@ -14,11 +14,11 @@
 \end{definition}
 
 \begin{example}
-    求平均值: $ f(x)=\frac{1}{n} \sum_{i=1}^{n} x_{i} $ 为线性函数. 
+    求平均值: $ f(x)=\frac{1}{n} \sum_{i=1}^{n} x_{i} $ 为线性函数。 
 \end{example}
 
 \begin{example}
-    求最大值： $ f(x)=\max \left\{x_{1}, x_{2}, \ldots, x_{n}\right\} $ 并不是线性函数. 
+    求最大值： $ f(x)=\max \left\{x_{1}, x_{2}, \ldots, x_{n}\right\} $ 并不是线性函数。 
 \end{example}
 
 \begin{proof}
@@ -57,7 +57,7 @@ In fact it says a lot. On the left-hand side, the term $ \alpha x+\beta y $ invo
     $$ f(x)=a^{T} x=a_{1} x_{1}+a_{2} x_{2}+\ldots+a_{n} x_{n} $$
 \end{definition}
 
-上述 $ f(x) $ 可以看作是每项 $ x_{\mathrm{i}} $ 的加权之和. 
+上述 $ f(x) $ 可以看作是每项 $ x_{\mathrm{i}} $ 的加权之和。 
 
 \begin{example}
     $ f(x)=\frac{1}{3}\left(x_{1}+x_{2}+x_{3}\right) $ is linear: $ f(x)=a^{T} x $ with $ a=\left(\frac{1}{3}, \frac{1}{3}, \frac{1}{3}\right) $
@@ -91,7 +91,7 @@ $$
 \end{proof}
 
 \begin{theorem}
-    所有的内积函数都是线性的.
+    所有的内积函数都是线性的。
 
     $$
 a^{T}(\alpha x+\beta y)=\alpha\left(a^{T} x\right)+\beta\left(a^{T} y\right)
@@ -105,13 +105,13 @@ holds for all scalars $ \alpha, \beta $ and all $ n $-vectors $ x, y $.
 
 
 \begin{theorem}
-    所有的线性函数都是内积函数.
+    所有的线性函数都是内积函数。
 
     $$ \begin{aligned} f(x) &=f\left(x_{1} e_{1}+x_{2} e_{2}+\ldots+x_{n} e_{n}\right) \\ &=x_{1} f\left(e_{1}\right)+x_{2} f\left(e_{2}\right)+\ldots+x_{n} f\left(e_{n}\right) \end{aligned} $$
 \end{theorem}
 
 \begin{proof}
-    假设 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 是线性函数, 那么可用 $ f(x)=a^{T} x $ 来表示, $ a $ 为常量.
+    假设 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 是线性函数, 那么可用 $ f(x)=a^{T} x $ 来表示, $ a $ 为常量。
 
     $$ \begin{aligned} f(x) &=f\left(x_{1} e_{1}+x_{2} e_{2}+\ldots+x_{n} e_{n}\right) \\ &=x_{1} f\left(e_{1}\right)+x_{2} f\left(e_{2}\right)+\ldots+x_{n} f\left(e_{n}\right) \\ & = a^Tx \quad (a = ( f\left(e_{1}\right), f\left(e_{2}\right), \ldots, f\left(e_{n}\right) )) \end{aligned} $$
 \end{proof}
@@ -124,7 +124,7 @@ holds for all scalars $ \alpha, \beta $ and all $ n $-vectors $ x, y $.
 
 
 \begin{definition}[仿射函数 (affine function)]
-    其一般形式为 $ f(x)=a^{T} x+{b} $, 其中 $ a \in \mathbb{R}^{n}, b \in \mathbb{R} $ 为标量. 
+    其一般形式为 $ f(x)=a^{T} x+{b} $, 其中 $ a \in \mathbb{R}^{n}, b \in \mathbb{R} $ 为标量。 
 
     
         for fixed $ a \in \mathbf{R}^{n}, b \in \mathbf{R} $, define a function $ f: \mathbf{R}^{n} \rightarrow \mathbf{R} $ by
@@ -198,7 +198,7 @@ $$
 \end{definition}
 
 \begin{definition}[Taylor's Approximation]
-    假设 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ , 函数 $ f $ 在 $ z $ 点充分光滑, 即处处可导.
+    假设 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ , 函数 $ f $ 在 $ z $ 点充分光滑, 即处处可导。
 
     $f(x)$在$z$附近的泰勒展开是
 
@@ -214,7 +214,7 @@ $$
 \end{definition}
 
 当$x$非常接近$z$时, $ \hat{f}(x) $ 也非常接近 $ f(z) $.  
-$ \hat{f}(x) $ 是关于 $ x $ 的一个仿射函数. 
+$ \hat{f}(x) $ 是关于 $ x $ 的一个仿射函数。 
 
 \begin{corollary}[一阶泰勒公式的内积形式]
     $$ \hat{f}(x)=f(z)+\nabla f(z)^{T}(x-z) \quad (\nabla f(z)=\left[\begin{array}{c}\frac{\partial f}{\partial x_{1}}(z) \\ \vdots \\ \frac{\partial f}{\partial x_{n}}(z)\end{array}\right]) $$
@@ -235,7 +235,7 @@ $ \hat{f}(x) $ 是关于 $ x $ 的一个仿射函数.
 
 \section{高阶泰勒公式}
 
-    泰勒公式利用多项式在一点附近逼近函数.
+    泰勒公式利用多项式在一点附近逼近函数。
     
 
 
@@ -286,5 +286,5 @@ $ \hat{f}(x) $ 是关于 $ x $ 的一个仿射函数.
 
     $$ P_{n}^{\prime}(x)=a_{1}+2 a_{2}\left(x-x_{0}\right)+\cdots+n a_{n}\left(x-x_{0}\right)^{n-1} \Rightarrow  a_{1}=f^{\prime}\left(x_{0}\right)  $$
 
-    依此类推. $a_{n}=\frac{f^{(n)}\left(x_{0}\right)}{n !} $
+    依此类推。 $a_{n}=\frac{f^{(n)}\left(x_{0}\right)}{n !} $
 \end{proof}
