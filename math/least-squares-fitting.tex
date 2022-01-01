@@ -1,9 +1,9 @@
 \chapter{Least squares data fitting}
 
-\section{Model fitting}
+\section{Model Fitting}
 
 \begin{problem}
-  suppose $ x $ and a scalar quantity $ y $ are related as
+  Suppose $ x $ and a scalar quantity $ y $ are related as
 
 $$
 y \approx f(x)
@@ -11,14 +11,14 @@ $$
 
 $ x $ is the \term{explanatory variable} or \term{independent variable}, $ y $ is the \term{outcome}, or \term{response variable}, or \term{dependent variable}.
 
-We don't know $ f $, but have some idea about its general form
+We don't know $ f $, but have some idea about its general form.
 
 \end{problem}
 
-\begin{definition}[Model fitting]
-    find an approximate model $ \hat{f} $ for $ f $, based on observations
+\begin{definition}[Model Fitting]
+    Find an approximate model $ \hat{f} $ for $ f $, based on observations
 
-    we use the notation $ \hat{y} $ for the model prediction of the outcome $ y $
+    We use the notation $ \hat{y} $ for the model prediction of the outcome $ y $
 
     $$
     \hat{y}=\hat{f}(x)
@@ -26,18 +26,18 @@ We don't know $ f $, but have some idea about its general form
 \end{definition}
 
 
-\subsection{Prediction error}
+\subsection{Prediction Error}
 
-we have data consisting of $ N $ examples (samples, measurements, observations)
+We have data consisting of $ N $ examples (samples, measurements, observations)
 
 $$
 x^{(1)}, \ldots, x^{(N)}, \quad y^{(1)}, \ldots, y^{(N)}
 $$
 
-model prediction for example $ i $ is $ \hat{y}^{(i)}=\hat{f}\left(x^{(i)}\right) $
+model prediction for example $ i $ is $ \hat{y}^{(i)}=\hat{f}\left(x^{(i)}\right) $.
 
-\begin{definition}[prediction error, residual]
-    the \term{prediction error} or \term{residual} for example $ i $ is
+\begin{definition}[Prediction Error, Residual]
+    The \term{prediction error} or \term{residual} for example $ i $ is
 $$
 r^{(i)}=y^{(i)}-\hat{y}^{(i)}=y^{(i)}-\hat{f}\left(x^{(i)}\right)
 $$
@@ -45,21 +45,21 @@ $$
 
 
 
-the model $ \hat{f} $ fits the data well if the $ N $ residuals $ r^{(i)} $ are small
+The model $ \hat{f} $ fits the data well if the $ N $ residuals $ r^{(i)} $ are small.
 
-prediction error can be quantified using the mean square error (MSE)
+Prediction error can be quantified using the mean square error (MSE).
 
-\begin{definition}[ mean square error (MSE)]
+\begin{definition}[Mean Square Error (MSE)]
     $$
 \frac{1}{N} \sum_{i=1}^{N}\left(r^{(i)}\right)^{2}
 $$
 \end{definition}
 
-the square root of the MSE is the \term{RMS error}.
+The square root of the MSE is the \term{RMS error}.
 
-\section{Regression}
+\section{Least Square Regression}
 
-we first consider the regression model
+We first consider the regression model
 
 \begin{problem}
     $$
@@ -90,10 +90,10 @@ $$
 \end{theorem}
 
 
-\section{Least squares regression}
+
 
 \begin{problem}
-    choose the model parameters $ v, \beta $ that minimize the MSE
+    Choose the model parameters $ v, \beta $ that minimize the MSE
     $$
     \frac{1}{N} \sum_{i=1}^{N}\left(v+\left(x^{(i)}\right)^{T} \beta-y^{(i)}\right)^{2}
     $$
@@ -101,7 +101,7 @@ $$
 \end{problem}
 
 
-this is a least squares problem: minimize $ \left\|A \theta-y^{\mathrm{d}}\right\|^{2} $ with
+This is a least squares problem: minimize $ \left\|A \theta-y^{\mathrm{d}}\right\|^{2} $ with
 $$
 A=\left[\begin{array}{cc}
 1 & \left(x^{(1)}\right)^{T} \\
@@ -125,50 +125,52 @@ $$
 
 
 
-\section{Linear-in-parameters model}
+\section{Linear-in-parameters Model}
 
 \begin{problem}
-    we choose the model $ \hat{f}(x) $ from a family of models
+    We choose the model $ \hat{f}(x) $ from a family of models
 $$
 \hat{f}(x)=\theta_{1} f_{1}(x)+\theta_{2} f_{2}(x)+\cdots+\theta_{p} f_{p}(x)
 $$
 
-the functions $ f_{i} $ are scalar valued basis functions (chosen by us), the basis functions often include a constant function (typically, $ f_{1}(x)=1 $ ). 
+The functions $ f_{i} $ are scalar valued basis functions (chosen by us), the basis functions often include a constant function (typically, $ f_{1}(x)=1 $ ). 
 
 The coefficients $ \theta_{1}, \ldots, \theta_{p} $ are the model parameters.
 \end{problem}
 
-the model $ \hat{f}(x) $ is linear in the parameters $ \theta_{i} $
+The model $ \hat{f}(x) $ is linear in the parameters $ \theta_{i} $.
 
 \begin{corollary}
-    if $ f_{1}(x)=1 $, this can be interpreted as a regression model
+    If $ f_{1}(x)=1 $, this can be interpreted as a regression model
 
 $$
 \hat{y}=\beta^{T} \tilde{x}+v
 $$
-\end{corollary}
-
 
 with parameters $ v=\theta_{1}, \beta=\theta_{2: p} $ and new features $ \tilde{x} $ generated from $ x $ :
 $$
 \tilde{x}_{1}=f_{2}(x), \quad \ldots, \quad \tilde{x}_{p}=f_{p}(x)
 $$
+\end{corollary}
 
-\section{Least squares model fitting}
+
+
+
+\section{Least Squares Model Fitting}
 
 \begin{problem}
-    fit linear-in-parameters model to data set $ \left(x^{(1)}, y^{(1)}\right), \ldots,\left(x^{(N)}, y^{(N)}\right) $
+    Fit linear-in-parameters model to data set $ \left(x^{(1)}, y^{(1)}\right), \ldots,\left(x^{(N)}, y^{(N)}\right) $.
 \end{problem}
 
 \begin{theorem}
-    residual for data sample $ i $ is
+    Residual for data sample $ i $ is
 $$
 r^{(i)}=y^{(i)}-\hat{f}\left(x^{(i)}\right)=y^{(i)}-\theta_{1} f_{1}\left(x^{(i)}\right)-\cdots-\theta_{p} f_{p}\left(x^{(i)}\right)
 $$
 \end{theorem}
 
-\begin{problem}[least squares model fitting]
-    least squares model fitting: choose parameters $ \theta $ by minimizing MSE
+\begin{problem}[Least Squares Model Fitting]
+    Choose parameters $ \theta $ by minimizing MSE
 
     $$
     \frac{1}{N}\left(\left(r^{(1)}\right)^{2}+\left(r^{(2)}\right)^{2}+\cdots+\left(r^{(N)}\right)^{2}\right)
@@ -202,7 +204,7 @@ $$
 
 
 
-\subsection{Example: polynomial approximation}
+\subsection{Example: Polynomial Approximation}
 
 \begin{problem}
     $$
@@ -210,7 +212,7 @@ $$
 $$
 \end{problem}
 
-This is a linear-in-parameters model with basis functions $ 1, x, \ldots, x^{p-1} $
+This is a linear-in-parameters model with basis functions $ 1, x, \ldots, x^{p-1} $.
 
 \begin{problem}[least squares model fitting]
     choose parameters $ \theta $ by minimizing MSE
@@ -237,48 +239,46 @@ $$
 \end{problem}
 
 
-\section{Piecewise-affine function}
+\section{Piecewise-affine Function}
 
-\begin{definition}[knot points]
-    $ a_{1}<a_{2}<\cdots<a_{k} $ on the real axis
+\begin{definition}[Knot Points]
+    $ a_{1}<a_{2}<\cdots<a_{k} $ on the real axis.
 \end{definition}
 
 \begin{proposition}
-    piecewise-affine function is continuous, and affine on each interval $ \left[a_{k}, a_{k+1}\right] $
+    Piecewise-affine function is continuous, and affine on each interval $ \left[a_{k}, a_{k+1}\right] $.
 \end{proposition}
 
 \begin{theorem}
-    piecewise-affine function with knot points $ a_{1}, \ldots, a_{k} $ can be written as
+    Piecewise-affine function with knot points $ a_{1}, \ldots, a_{k} $ can be written as
 
     $$
     \hat{f}(x)=\theta_{1}+\theta_{2} x+\theta_{3}\left(x-a_{1}\right)_{+}+\cdots+\theta_{2+k}\left(x-a_{k}\right)_{+}
     $$
 
-    where $ u_{+}=\max \{u, 0\} $
+    where $ u_{+}=\max \{u, 0\} $.
 \end{theorem}
 
 
 
-\subsection{Piecewise-affine function fitting}
+\subsection{Piecewise-Affine Function Fitting}
 
-piecewise-affine model is in linear in the parameters $ \theta $, with basis functions
+Piecewise-affine model is in linear in the parameters $ \theta $, with basis functions
 
 $$
 f_{1}(x)=1, \quad f_{2}(x)=x, \quad f_{3}(x)=\left(x-a_{1}\right)_{+}, \quad \ldots, \quad f_{k+2}(x)=\left(x-a_{k}\right)_{+}
 $$
 
 \begin{example}
-    fit piecewise-affine function with knots $ a_{1}=-1, a_{2}=1 $ to 100 points
-
-
+    Fit piecewise-affine function with knots $ a_{1}=-1, a_{2}=1 $ to 100 points.
 \end{example}
 
-\section{Time series trend}
+\section{Time Series Trend}
 
-\begin{definition}[trend line]
-    Suppose $ N $ data samples from time series: $ y^{(i)} $ is value at time $ i $, for $ i=1, \ldots, N $
+\begin{definition}[Trend Line]
+    Suppose $ N $ data samples from time series: $ y^{(i)} $ is value at time $ i $, for $ i=1, \ldots, N $.
 
-    straight-line fit $ \hat{y}^{(i)}=\theta_{1}+\theta_{2} i $ is the \term{trend line}
+    straight-line fit $ \hat{y}^{(i)}=\theta_{1}+\theta_{2} i $ is the \term{trend line}.
 \end{definition}
 
 \begin{definition}[de-trended time series]
@@ -286,55 +286,55 @@ $$
 \end{definition}
 
 \begin{problem}
-    least squares fitting of trend line: minimize $ \left\|A \theta-y^{\mathrm{d}}\right\|^{2} $ with
+    Least squares fitting of trend line: minimize $ \left\|A \theta-y^{\mathrm{d}}\right\|^{2} $ with
 
 $$ A=\left[\begin{array}{cc}1 & 1 \\ 1 & 2 \\ 1 & 3 \\ \vdots & \vdots \\ 1 & N\end{array}\right], \quad y^{\mathrm{d}}=\left[\begin{array}{c}y^{(1)} \\ y^{(2)} \\ y^{(3)} \\ \vdots \\ y^{(N)}\end{array}\right] $$
 \end{problem}
 
 
-\subsection{Example: world petroleum consumption}
+\subsection{Example: World Petroleum Consumption}
 
 
-time series of world petroleum consumption (million barrels/day) versus year
+Time series of world petroleum consumption (million barrels/day) versus year
 
-left figure shows data samples and trend line
+Left figure shows data samples and trend line
 
-right figure shows de-trended time series
+Right figure shows de-trended time series
 
 % todo (2021-12-18 22:10): figure
 
-\subsection{Trend plus seasonal component}
+\subsection{Trend Plus Seasonal Component}
 
 \begin{proposition}
-    model time series can be decomposed as a linear trend plus a periodic component with period $ P $
+    Model time series can be decomposed as a linear trend plus a periodic component with period $ P $
 
     $$
     \hat{y}^{\mathrm{d}}=\hat{y}^{\text {lin }}+\hat{y}^{\text {seas }}
     $$
 
-    with $ \hat{y}^{\operatorname{lin}}=\theta_{1}(1,2, \ldots, N) $ and
+    with $$ \hat{y}^{\operatorname{lin}}=\theta_{1}(1,2, \ldots, N) $$ and
 $$
 \hat{y}^{\text {seas }}=\left(\theta_{2}, \theta_{3}, \ldots, \theta_{P+1}, \theta_{2}, \theta_{3}, \ldots, \theta_{P+1}, \ldots, \theta_{2}, \theta_{3}, \ldots, \theta_{P+1}\right)
 $$
 \end{proposition}
 
-\begin{definition}[offset]
+\begin{definition}[Offset]
     the mean of $ \hat{y}^{\text {seas }} $ serves as a \term{constant offset}.
 \end{definition}
 
-\begin{definition}[de-trended, seasonally adjusted time series]
-    Residual $ y^{\mathrm{d}}-\hat{y}^{\mathrm{d}} $ is the de-trended, seasonally adjusted time series
+\begin{definition}[De-Trended, Seasonally Adjusted Time Series]
+    Residual $ y^{\mathrm{d}}-\hat{y}^{\mathrm{d}} $ is the de-trended, seasonally adjusted time series.
 \end{definition}
 
 \begin{problem}
-    least squares formulation: minimize $ \left\|A \theta-y^{\mathrm{d}}\right\|^{2} $ with
+    Least squares formulation: minimize $ \left\|A \theta-y^{\mathrm{d}}\right\|^{2} $ with
 
 $$ A_{1: N, 1}=\left[\begin{array}{c}1 \\ 2 \\ \vdots \\ N\end{array}\right], \quad A_{1: N, 2: P+1}=\left[\begin{array}{c}I_{P} \\ I_{P} \\ \vdots \\ I_{P}\end{array}\right], \quad y^{\mathrm{d}}=\left[\begin{array}{c}y^{(1)} \\ y^{(2)} \\ \vdots \\ y^{(N)}\end{array}\right] $$
 \end{problem}
 
 
 
-\section{Auto-regressive (AR) time series model}
+\section{Auto-Regressive (AR) Time Series Model}
 
 \begin{problem}
     $$
@@ -344,10 +344,9 @@ $$
 $ z_{1}, z_{2}, \ldots $ is a time series, $ \hat{z}_{t+1} $ is a prediction of $ z_{t+1} $, made at time $ t $. Prediction $ \hat{z}_{t+1} $ is a linear function of previous $ M $ values $ z_{t}, \ldots, z_{t-M+1} $. $ M $ is the memory of the model.
 \end{problem}
 
-\begin{problem}
-    Least squares fitting of AR model: 
+\begin{problem}[Least squares fitting of AR model]
     
-    given oberved data $ z_{1}, \ldots, z_{T} $, minimize
+    Given oberved data $ z_{1}, \ldots, z_{T} $, minimize
 $$
 \left(z_{M+1}-\hat{z}_{M+1}\right)^{2}+\left(z_{M+2}-\hat{z}_{M+2}\right)^{2}+\cdots+\left(z_{T}-\hat{z}_{T}\right)^{2}
 $$
@@ -355,7 +354,7 @@ $$
 
 
 \begin{problem}[Least square formulation for AR model]
-    this is a least squares problem: 
+    This is a least squares problem: 
     
     minimize $ \left\|A \beta-y^{\mathrm{d}}\right\|^{2} $ with
 $$
@@ -381,9 +380,9 @@ $$
 
 
 
-\section{Generalization and validation}
+\section{Generalization and Validation}
 
-\begin{definition}[Generalization ability]
+\begin{definition}[Generalization Ability]
     ability of model to predict outcomes for new, unseen data
 \end{definition}
 
@@ -391,7 +390,7 @@ $$
     To assess generalization ability, divide data in two sets: training set and test (or validation) set. Use training set to fit model and use test set to get an idea of generalization ability
 \end{definition}
 
-\begin{definition}[Over-fit model]
+\begin{definition}[Over-fit Model]
     model with low prediction error on training set, bad generalization ability. Prediction error on training set is much smaller than on test set.
 \end{definition}
 
@@ -410,7 +409,7 @@ It is an extension of out-of-sample validation.
 \end{algorithm}
 
 
-\section{Boolean (two-way) classification}
+\section{Boolean (two-way) Classification}
 
 \begin{problem}
     A data fitting problem where the outcome $ y $ can take two values $ +1,-1 $.
@@ -419,7 +418,7 @@ It is an extension of out-of-sample validation.
 
 \end{problem}
 
-Use least squares to fit model $ \tilde{f}(x) $ to training set $ \left(x^{(1)}, y^{(1)}\right), \ldots,\left(x^{(N)}, y^{(N)}\right) $
+Use least squares to fit model $ \tilde{f}(x) $ to training set $ \left(x^{(1)}, y^{(1)}\right), \ldots,\left(x^{(N)}, y^{(N)}\right) $.
 
 $ \tilde{f}(x) $ can be a regression model $ \tilde{f}(x)=x^{T} \beta+v $ or linear in parameters
 $$
@@ -434,7 +433,7 @@ $$
 \end{array}\right.
 $$
 
-\subsection{Example: handwritten digit classification}
+\subsection{Example: Handwritten Digit Classification}
 
 \begin{remark}
     Illustrations of this example are needed to better understand this example.
@@ -443,13 +442,13 @@ $$
 \begin{itemize}
     \item $ 28 \times 28 $ images of handwritten digits $ \left(n=28^{2}=784\right) $ pixels
     \item data set contains 60000 training examples; 10000 test examples
-    \item we only use the 493 pixels that are nonzero in at least 600 traiBoolean classifier distinguishes digit zero $ (y=1) $ from other digits $ (y=-1) $
-ning examples
-    \item 
+    \item Boolean classifier distinguishes digit zero $ (y=1) $ from other digits $ (y=-1) $
+
+    
 \end{itemize}
 
 
-\subsubsection{Classifier with basic regression model}
+\subsubsection{Classifier with Basic Regression Model}
 
 $$
 \hat{f}(x)=\operatorname{sign}(\tilde{f}(x))=\operatorname{sign}\left(x^{T} \beta+v\right)
@@ -463,7 +462,7 @@ blue bars to the left of dashed line are false negatives (misclassified digits z
 
 red bars to the right of dashed line are false positives (misclassified non-zeros)
 
-\subsubsection{Classifier with additional nonlinear features}
+\subsubsection{Classifier with Additional Nonlinear Features}
 
 $$
 \hat{f}(x)=\operatorname{sign}(\tilde{f}(x))=\operatorname{sign}\left(\sum_{i=1}^{p} \theta_{i} f_{i}(x)\right)
@@ -476,7 +475,7 @@ $$
 
 figure shows distribution of $ \tilde{f}\left(x^{(i)}\right) $ on training set
 
-\section{Multi-class classification}
+\section{Multi-class Classification}
 
 \begin{problem}
     a data fitting problem where the outcome $ y $ can takes values $ 1, \ldots, K $
@@ -486,10 +485,10 @@ figure shows distribution of $ \tilde{f}\left(x^{(i)}\right) $ on training set
     multi-class classifier $ \hat{y}=\hat{f}(x) $ maps $ x $ to an element of $ \{1,2, \ldots, K\} $
 \end{problem}
 
-\subsection{Least squares multi-class classifier}
+\subsection{Least Squares Multi-Class Classifier}
 
 \begin{algorithm}[htbp]
-    \caption{Least squares multi-class classifier}
+    \caption{Least Squares Multi-Class Classifier}
     \For(){$ k=1, \ldots, K $}{
         compute Boolean classifier to distinguish class $ k $ from not $ k $
 $$
@@ -500,15 +499,15 @@ $$
 
 Define multi-class classifier as
 
-\begin{definition}[multi-class classifier]
+\begin{definition}[Multi-Class Classifier]
     $$
-\hat{f}(x)=\underset{k=1, \ldots, K}{\operatorname{argmax}} \tilde{f}_{k}(x)
+\hat{f}(x)=\arg \underset{k=1, \ldots, K}{\max} \tilde{f}_{k}(x)
 $$
 \end{definition}
 
 
 
-\section{statistics interpretation for least squares}
+\section{Statistics Interpretation For Least Squares}
 
 \begin{problem}
     $$
@@ -533,48 +532,48 @@ We discuss methods for estimating parameters $ \beta $ from observations of $ y 
 \subsection{Assumptions}
 
 \begin{proposition}
-    $ X $ is tall $ (n>p) $ with linearly independent columns
+    $ X $ is tall $ (n>p) $ with linearly independent columns.
 \end{proposition}
 
 \begin{proposition}
-    random disturbances $ \epsilon_{i} $ have zero mean
+    Random disturbances $ \epsilon_{i} $ have zero mean.
 $$
 \mathbf{E} \epsilon_{i}=0 \quad \text { for } i=1, \ldots, n
 $$
 \end{proposition}
 
 \begin{proposition}
-    random disturbances have equal variances $ \sigma^{2} $
+    Random disturbances have equal variances $ \sigma^{2} $.
 $$
 \mathbf{E} \epsilon_{i}^{2}=\sigma^{2} \quad \text { for } i=1, \ldots, n
 $$
 \end{proposition}
 
 \begin{proposition}
-    random disturbances are uncorrelated (have zero covariances)
+    Random disturbances are uncorrelated (have zero covariances).
 $$
 \mathbf{E}\left(\epsilon_{i} \epsilon_{j}\right)=0 \quad \text { for } i, j=1, \ldots, n \text { and } i \neq j
 $$
 \end{proposition}
 
 \begin{theorem}
-    last three assumptions can be combined using matrix and vector notation:
+    Last three assumptions can be combined using matrix and vector notation
 $$
 \mathbf{E} \epsilon=0, \quad \mathbf{E} \epsilon \epsilon^{T}=\sigma^{2} I
 $$
 \end{theorem}
 
 
-\subsection{Least squares estimator}
+\subsection{Least Squares Estimator}
 
 \begin{theorem}
-    least squares estimate $ \hat{\beta} $ of parameters $ \beta $, given the observations $ y $, is
+    Least squares estimate $ \hat{\beta} $ of parameters $ \beta $, given the observations $ y $, is
 $$
 \hat{\beta}=X^{\dagger} y=\left(X^{T} X\right)^{-1} X^{T} y
 $$
 \end{theorem}
 
-\begin{FigureCenter}{Least squares estimator}
+\begin{FigureCenter}{Least Squares Estimator}
     
 
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
@@ -619,7 +618,7 @@ $ X \hat{\beta} $ is the orthogonal projection of $ y $ on $ \operatorname{range
 
 Residual $ e=y-X \hat{\beta} $ is an (observable) random variable.
 
-\subsection{Mean and covariance of least squares estimate}
+\subsection{Mean and Covariance of Least Squares Estimate}
 
 \begin{theorem}
     $$
@@ -628,11 +627,12 @@ $$
 \end{theorem}
 
 \begin{theorem}
-    least squares estimator is unbiased: $ \mathbf{E} \hat{\beta}=\beta $
+    Least squares estimator is unbiased.
+    $$ \mathbf{E} \hat{\beta}=\beta $$
 \end{theorem}
 
 \begin{theorem}
-    covariance matrix of least squares estimate is
+    Covariance matrix of least squares estimate is
 
 $$
 \begin{aligned}
@@ -651,7 +651,11 @@ $$
 \end{theorem}
 
 \begin{corollary}
-    for $ i=j $, this is the variance of $ \hat{\beta}_{i} $
+    For $ i=j $, $
+    \begin{aligned}
+    \mathbf{E}(\hat{\beta}-\beta)(\hat{\beta}-\beta)^{T} =\sigma^{2}\left(X^{T} X\right)^{-1}
+    \end{aligned}
+    $ is the variance of $ \hat{\beta}_{i} $.
 \end{corollary}
 
 
@@ -672,8 +676,8 @@ $$
     $ \mathbf{E}\|X(\hat{\beta}-\beta)\|^{2}=p \sigma^{2} $
 \end{theorem}
 
-\begin{definition}[estimate $ \hat{\sigma} $ of $ \sigma $]
-    define estimate $ \hat{\sigma} $ of $ \sigma $ as
+\begin{definition}[Estimate $ \hat{\sigma} $ of $ \sigma $]
+    Define estimate $ \hat{\sigma} $ of $ \sigma $ as
 $$
 \hat{\sigma}=\frac{\|e\|}{\sqrt{n-p}}
 $$
@@ -688,9 +692,9 @@ $$
 
 
 \begin{proof}
-    first expression is immediate: $ \mathbf{E}\|\epsilon\|^{2}=\sum_{i=1}^{n} \mathbf{E} \epsilon_{i}^{2}=n \sigma^{2} $
+    First expression is immediate: $ \mathbf{E}\|\epsilon\|^{2}=\sum_{i=1}^{n} \mathbf{E} \epsilon_{i}^{2}=n \sigma^{2} $
 
-    to show that $ \mathbf{E}\|X(\hat{\beta}-\beta)\|^{2}=p \sigma^{2} $, first note that
+    To show that $ \mathbf{E}\|X(\hat{\beta}-\beta)\|^{2}=p \sigma^{2} $, first note that
 $$
 \begin{aligned}
 X(\hat{\beta}-\beta) &=X X^{\dagger} y-X \beta \\
@@ -700,18 +704,20 @@ X(\hat{\beta}-\beta) &=X X^{\dagger} y-X \beta \\
 \end{aligned}
 $$
 
-on line 3 we used $ X^{\dagger} X=I $ (however, note that $ X X^{\dagger} \neq I $ if $ X $ is tall)
+On line 3 we used $ X^{\dagger} X=I $ (however, note that $ X X^{\dagger} \neq I $ if $ X $ is tall).
 
 \begin{theorem}
     squared norm of $ X(\beta-\hat{\beta}) $ is
 $$
 \|X(\hat{\beta}-\beta)\|^{2}=\epsilon^{T}\left(X X^{\dagger}\right)^{2} \epsilon=\epsilon^{T} X X^{\dagger} \epsilon
 $$
+
+(first step uses symmetry of $ X X^{\dagger} $; second step, $ X^{\dagger} X=I $)
 \end{theorem}
 
-first step uses symmetry of $ X X^{\dagger} $; second step, $ X^{\dagger} X=I $
 
-expected value of squared norm is
+
+Expected value of squared norm is
 $$
 \begin{aligned}
 \mathbf{E}\|X(\hat{\beta}-\beta)\|^{2}=\mathbf{E}\left(\epsilon^{T} X X^{\dagger} \epsilon\right) &=\sum_{i, j} \mathbf{E}\left(\epsilon_{i} \epsilon_{j}\right)\left(X X^{\dagger}\right)_{i j} \\
@@ -729,17 +735,17 @@ $$
 \end{proof}
 
 
-\subsection{Linear estimator}
+\subsection{Linear Estimator}
 
 \begin{problem}
-    linear regression model (page 9.34), with same assumptions as before (p. 9.35):
+    linear regression model, with same assumptions as before:
 $$
 y=X \beta+\epsilon
 $$
 \end{problem}
 
-\begin{definition}
-    a linear estimator of $ \beta $ maps observations $ y $ to the estimate
+\begin{definition}[Linear Estimator]
+    A linear estimator of $ \beta $ maps observations $ y $ to the estimate
 $$
 \hat{\beta}=B y
 $$
@@ -750,41 +756,41 @@ Estimator is defined by the $ p \times n $ matrix $ B $, least squares estimator
 
 
 
-\subsection{Unbiased linear estimator}
+\subsection{Unbiased Linear Estimator}
 
 \begin{theorem}
-    if $ B $ is a left inverse of $ X $, then estimator $ \hat{\beta}=B y $ can be written as:
+    If $ B $ is a left inverse of $ X $, then estimator $ \hat{\beta}=B y $ can be written as:
 $$
 \hat{\beta}=B y=B(X \beta+\epsilon)=\beta+B \epsilon
 $$
 \end{theorem}
 
 \begin{corollary}
-    this shows that the linear estimator is \term{unbiased} $ (\mathbf{E} \hat{\beta}=\beta) $ if $ B X=I $.
+    This shows that the linear estimator is \term{unbiased} $ (\mathbf{E} \hat{\beta}=\beta) $ if $ B X=I $.
 \end{corollary}
 
 \begin{theorem}
-    covariance matrix of unbiased linear estimator is
+    Covariance matrix of unbiased linear estimator is
 $$
 \mathbf{E}\left((\hat{\beta}-\beta)(\hat{\beta}-\beta)^{T}\right)=\mathbf{E}\left(B \epsilon \epsilon^{T} B^{T}\right)=\sigma^{2} B B^{T}
 $$
 \end{theorem}
 
 \begin{theorem}
-    if $ c $ is a (non-random) $ p $-vector, then estimate $ c^{T} \hat{\beta} $ of $ c^{T} \beta $ has variance
+    If $ c $ is a (non-random) $ p $-vector, then estimate $ c^{T} \hat{\beta} $ of $ c^{T} \beta $ has variance
 $ \mathbf{E}\left(c^{T} \hat{\beta}-c^{T} \beta\right)^{2}=\sigma^{2} c^{T} B B^{T} c $
 \end{theorem}
 
 \begin{corollary}
-    least squares estimator is an example with $ B=X^{\dagger} $ and $ B B^{T}=\left(X^{T} X\right)^{-1} $
+    Least squares estimator is an example with $ B=X^{\dagger} $ and $ B B^{T}=\left(X^{T} X\right)^{-1} $
 \end{corollary}
 
 
 
-\section{Best linear unbiased estimator}
+\section{Best Linear Unbiased Estimator}
 
 \begin{theorem}
-    if $ B $ is a left inverse of $ X $ then for all $ p $-vectors $ c $
+    If $ B $ is a left inverse of $ X $ then for all $ p $-vectors $ c $
 $$
 c^{T} B B^{T} c \geq c^{T}\left(X^{T} X\right)^{-1} c
 $$
@@ -792,7 +798,7 @@ $$
 
 
 \begin{proof}
-    use $ B X=I $ to write $ B B^{T} $ as
+    Use $ B X=I $ to write $ B B^{T} $ as
 $$
 \begin{aligned}
 B B^{T} &=\left(B-\left(X^{T} X\right)^{-1} X^{T}\right)\left(B^{T}-X\left(X^{T} X\right)^{-1}\right)+\left(X^{T} X\right)^{-1} \\
@@ -800,7 +806,7 @@ B B^{T} &=\left(B-\left(X^{T} X\right)^{-1} X^{T}\right)\left(B^{T}-X\left(X^{T}
 \end{aligned}
 $$
 
-hence,
+Hence,
 $$
 \begin{aligned}
 c^{T} B B^{T} C &=c^{T}\left(B-X^{\dagger}\right)\left(B-X^{\dagger}\right)^{T} c+c^{T}\left(X^{T} X\right)^{-1} c \\
@@ -808,25 +814,25 @@ c^{T} B B^{T} C &=c^{T}\left(B-X^{\dagger}\right)\left(B-X^{\dagger}\right)^{T} 
 & \geq c^{T}\left(X^{T} X\right)^{-1} c
 \end{aligned}
 $$
-with equality if $ B=X^{\dagger} $
+with equality if $ B=X^{\dagger} $.
 \end{proof}
 
 \begin{corollary}
-    left-hand side gives variance of $ c^{T} \hat{\beta} $ for linear unbiased estimator
+    Left-hand side gives variance of $ c^{T} \hat{\beta} $ for linear unbiased estimator
 $$
 \hat{\beta}=B y
 $$
 \end{corollary}
 
 \begin{corollary}
-    right-hand side gives variance of $ c^{T} \hat{\beta}_{\mathrm{ls}} $ for least squares estimator
+    Right-hand side gives variance of $ c^{T} \hat{\beta}_{\mathrm{ls}} $ for least squares estimator
 $$
 \hat{\beta}_{\mathrm{ls}}=X^{\dagger} y
 $$
 \end{corollary}
 
 \begin{theorem}[Gauss-Markov theorem]
-    Least squares estimator is the "best linear unbiased estimator" (BLUE).
+    Least squares estimator is the ``best linear unbiased estimator'' (BLUE).
 \end{theorem}
 
 This is known as the Gauss-Markov theorem.

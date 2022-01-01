@@ -320,6 +320,7 @@
 {\small\sffamily\color{violet}\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
 \thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries\color{black}---\nobreakspace#3.}} % Optional theorem note
 
+% Coral numbering (for definition)
 \newtheoremstyle{coralnum}% Theorem style name
 {5pt}% Space above
 {5pt}% Space below
@@ -329,7 +330,8 @@
 {\;}% Punctuation after theorem head
 {0.25em}% Space after theorem head
 {\small\sffamily\color{coral}\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
-\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries\color{black}---\nobreakspace#3.}} % Optional theorem note
+\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries\color{black}---\nobreakspace#3.}
+\addcontentsline{lod}{section}{\quad(#1)\quad\protect\numberline{#2}{#3}}} % Optional theorem note
 
 
 \makeatother

@@ -152,11 +152,11 @@
 \indexentry{Karush-Kuhn-Tucker|hyperpage}{200}
 \indexentry{constraint qualification|hyperpage}{200}
 \indexentry{no|hyperpage}{200}
-\indexentry{gradient of $z$ at $\mathbf  {x}^*$ is a positive combination of the gradients of the constraints at $\mathbf  {x}^*$.|hyperpage}{201}
+\indexentry{gradient of $z$ at ${x}^*$ is a positive combination of the gradients of the constraints at ${x}^*$.|hyperpage}{201}
 \indexentry{complementary slackness|hyperpage}{201}
-\indexentry{gradient of $z$ at $\mathbf  {x}^*$ is a positive combination of the gradients of the \textbf  {binding} constraints at $\mathbf  {x}^*$.|hyperpage}{201}
+\indexentry{gradient of $z$ at ${x}^*$ is a positive combination of the gradients of the \textbf  {binding} constraints at ${x}^*$.|hyperpage}{201}
 \indexentry{always binding|hyperpage}{201}
-\indexentry{gradient of $z$ at $\mathbf  {x}^*$ is a linear combination of the gradients of the \textbf  {binding} constraints at $\mathbf  {x}^*$.|hyperpage}{201}
+\indexentry{gradient of $z$ at ${x}^*$ is a linear combination of the gradients of the \textbf  {binding} constraints at ${x}^*$.|hyperpage}{201}
 \indexentry{surplus variables|hyperpage}{202}
 \indexentry{binding|hyperpage}{204}
 \indexentry{row|hyperpage}{204}

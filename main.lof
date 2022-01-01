@@ -3,7 +3,7 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces The translation from $q$ to $p$\relax }}{17}{figure.caption.2}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces The Translation from $q$ to $p$\relax }}{17}{figure.caption.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Complex Numbers\relax }}{23}{figure.caption.3}%
 \defcounter {refsection}{0}\relax 
@@ -17,9 +17,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Convex Functions\relax }}{43}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Projection onto a line\relax }}{46}{figure.caption.7}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Projection onto a Line\relax }}{46}{figure.caption.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Projection onto a line from the prospective of linear algebra\relax }}{47}{figure.caption.8}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Projection onto a Line from the Prospective of Linear Algebra\relax }}{47}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -27,9 +27,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Row Picture and Column Picture for \ref {exm: row-column-picture}\relax }}{60}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces paths in directed graph\relax }}{68}{figure.caption.16}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Paths in Directed Graph\relax }}{68}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces An example of convolution\relax }}{70}{figure.caption.22}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces An Example of Convolution\relax }}{70}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -41,11 +41,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {9.2}{\ignorespaces $ A \boldsymbol {x}^{\dagger } $ in the column space goes back to $ A^{\dagger } A \boldsymbol {x}^{\dagger }=\boldsymbol {x}^{\dagger }$ in the row space\relax }}{96}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.3}{\ignorespaces Projection from row space to column space\relax }}{96}{figure.caption.26}%
+\contentsline {figure}{\numberline {9.3}{\ignorespaces Projection from Row Space to Column Space\relax }}{96}{figure.caption.26}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10.1}{\ignorespaces An example of rotation\relax }}{100}{figure.caption.27}%
+\contentsline {figure}{\numberline {10.1}{\ignorespaces An Example of Rotation\relax }}{100}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {10.2}{\ignorespaces Elementary Reflection\relax }}{101}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
@@ -67,7 +67,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {11.6}{\ignorespaces 构造的Householder矩阵的几何意义\relax }}{123}{figure.caption.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.7}{\ignorespaces The structure of $ H_{k} H_{k-1} \ldots H_{1} A $\relax }}{123}{figure.caption.47}%
+\contentsline {figure}{\numberline {11.7}{\ignorespaces The Structure of $ H_{k} H_{k-1} \ldots H_{1} A $\relax }}{123}{figure.caption.47}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {11.8}{\ignorespaces 迭代计算过程中$A$的结构\relax }}{124}{figure.caption.48}%
 \defcounter {refsection}{0}\relax 
@@ -83,7 +83,7 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {14.1}{\ignorespaces Least squares estimator\relax }}{161}{figure.caption.66}%
+\contentsline {figure}{\numberline {14.1}{\ignorespaces Least Squares Estimator\relax }}{161}{figure.caption.66}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

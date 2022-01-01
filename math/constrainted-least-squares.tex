@@ -46,7 +46,7 @@ $ \lambda_{i} \in \mathbb{R}, i \in \mathrm{I}, u_{j} \in \mathbb{R}^{+}, j \in 
 
 引入拉格朗日函数 $$ L(x, \lambda, u)=f(x)-\sum_{i \in I} \lambda_{i} h_{i}(x)-\sum_{j \in J} u_{j} g_{j}(x)   $$
 
-设$\lambda=\left[\begin{array}{c}\lambda_{1} \\ \vdots \\ \lambda_{p}\end{array}\right], u=\left[\begin{array}{c}u_{1} \\ \vdots \\ u_{q}\end{array}\right]$,$h(x),g(x)$如果可以视为一个向量
+设$\lambda=\left[\begin{array}{c}\lambda_{1} \\ \vdots \\ \lambda_{p}\end{array}\right], u=\left[\begin{array}{c}u_{1} \\ \vdots \\ u_{q}\end{array}\right]$,$h(x),g(x)$假设可以视为一个向量
 
 则拉格朗日乘子式可写成
 
@@ -113,7 +113,7 @@ $$ \nabla_{x} L(x, u)=\nabla_{x} f(x)-u_{1} \nabla_{x} g_{1}(x)-u_{2} \nabla_{x}
 计算各个部分，可得
 $$ \nabla_{x} f(x)=\left[\begin{array}{c}20 \\ 10\end{array}\right], \nabla_{x} g_{1}(x)=\left[\begin{array}{c}2 x_{1} \\ 2 x_{2}\end{array}\right], \nabla_{x} g_{2}(x)=\left[\begin{array}{l}1 \\ 2\end{array}\right], \nabla_{x} g_{3}(x)=\left[\begin{array}{l}-1 \\ 0\end{array}\right], \nabla_{x} g_{4}(x)=\left[\begin{array}{l}0 \\ -1\end{array}\right]$$
 
-检测边界条件，可知
+检测边界条件，注意约束条件$u_{j} \geq 0$，可知
 $$ \nabla_{x} f(x)=u_{1} \nabla_{x} g_{1}(x), \nabla_{x} f(x) \neq u_{2} \nabla_{x} g_{2}(x), \nabla_{x} f(x) \neq u_{3} \nabla_{x} g_{3}(x), \nabla_{x} f(x) \neq u_{4} \nabla_{x} g_{4}(x) $$
 
 即$\nabla_{x} f(x)$只可能是$u_{1} \nabla_{x} g_{1}(x)$的线性组合。
@@ -242,7 +242,7 @@ $$
 
 则 $ x=y+a $ 是点到线最短距离问题的解。
 
-\section{最小范数优化问题推导}
+\section{最小范数优化问题求解推导}
 
 \begin{problem}
     $$
@@ -594,7 +594,7 @@ $$
 \begin{remark}
     使用矩阵导数
 
-    $$ \begin{aligned} \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}\left(\mathbf{X}^{T} \mathbf{B X}\right) &=\mathbf{B X}+\mathbf{B}^{T} \mathbf{X} \\ \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}\left(\mathbf{B X X}^{T}\right) &=\mathbf{B X}+\mathbf{B}^{T} \mathbf{X} \\ \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}\left(\mathbf{X X}^{T} \mathbf{B}\right) &=\mathbf{B X}+\mathbf{B}^{T} \mathbf{X} \\ \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}\left(\mathbf{X B X}^{T}\right) &=\mathbf{X B}^{T}+\mathbf{X B} \\ \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}\left(\mathbf{B X}^{T} \mathbf{X}\right) &=\mathbf{X B}^{T}+\mathbf{X B} \\ \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}\left(\mathbf{X}^{T} \mathbf{X B}\right) &=\mathbf{X B}^{T}+\mathbf{X B} \end{aligned} $$
+    $$ \begin{aligned} \frac{\partial}{\partial {X}} \operatorname{Tr}\left({X}^{T} {B X}\right) &={B X}+{B}^{T} {X} \\ \frac{\partial}{\partial {X}} \operatorname{Tr}\left({B X X}^{T}\right) &={B X}+{B}^{T} {X} \\ \frac{\partial}{\partial {X}} \operatorname{Tr}\left({X X}^{T} {B}\right) &={B X}+{B}^{T} {X} \\ \frac{\partial}{\partial {X}} \operatorname{Tr}\left({X B X}^{T}\right) &={X B}^{T}+{X B} \\ \frac{\partial}{\partial {X}} \operatorname{Tr}\left({B X}^{T} {X}\right) &={X B}^{T}+{X B} \\ \frac{\partial}{\partial {X}} \operatorname{Tr}\left({X}^{T} {X B}\right) &={X B}^{T}+{X B} \end{aligned} $$
 
     可以求得
 
@@ -872,7 +872,7 @@ d
 \end{array}\right]
 $$
 
-假设 1($ \left[\begin{array}{l}A \\ C\end{array}\right] $ 列向量无关，命题\ref{prop:assumption-1}) 保证了 $ A^{T} A+C^{T} C $ 是非奇异的，即存在以下 $ Q R $ 因子分解
+假设 1($ \left[\begin{array}{l}A \\ C\end{array}\right] $ 列向量无关，命题\ref{prop:assumption-1}保证了 $ A^{T} A+C^{T} C $ 是非奇异的，即存在以下 $ Q R $ 因子分解
 
 $$ \left[\begin{array}{l}A \\ C\end{array}\right]=Q R=\left[\begin{array}{l}Q_{1} \\ Q_{2}\end{array}\right] R=\left[\begin{array}{l}Q_{1} R \\ Q_{2} R\end{array}\right] $$
 
@@ -940,7 +940,7 @@ $$\displaystyle \left[\begin{array}{ c c }
 $$
 Q_{2}^{T} u=R^{-T} C^{T} u=0  \Rightarrow  C^{T} u=0 \Rightarrow  u=0
 $$
-因为 $ C $ 行线性无关的(假设2(\ref{prop:assumption-2})).
+因为 $ C $ 行线性无关的（假设2 (\ref{prop:assumption-2})）.
 
 利用 $ Q_{2}^{T} $ 的 $ Q R $ 分解来求解
 $$
@@ -1020,12 +1020,12 @@ $$\;
 \subsection{等式约束优化问题}
 
 \begin{problem}[等式约束优化问题]
-    给定一个目标函数 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $, 我们希望找到 $ \mathbf{x} \in \mathbb{R}^{n} $, 在满足约束条件 $ g(\mathbf{x})=0 $ 的前提下, 使得 $ f(\mathbf{x}) $ 有最小值
+    给定一个目标函数 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $, 我们希望找到 $ {x} \in \mathbb{R}^{n} $, 在满足约束条件 $ g({x})=0 $ 的前提下, 使得 $ f({x}) $ 有最小值
 
     $$
 \begin{array}{ll}
-\min & f(\mathbf{x}) \\
-\text { s.t. } & g(\mathbf{x})=0
+\min & f({x}) \\
+\text { s.t. } & g({x})=0
 \end{array}
 $$
 \end{problem}
@@ -1034,7 +1034,7 @@ $$
 
 \begin{definition}[Lagrangian函数]
     $$
-L(\mathbf{x}, \lambda)=f(\mathbf{x})+\lambda g(\mathbf{x})
+L({x}, \lambda)=f({x})+\lambda g({x})
 $$
 \end{definition}
 
@@ -1043,17 +1043,17 @@ $$
 \begin{theorem}
     Lagrange乘数法将原本的约束优化问题转换成等价的无约束优化问题
 $$
-\min _{\mathbf{x}, \lambda} L(\mathbf{x}, \lambda)
+\min _{{x}, \lambda} L({x}, \lambda)
 $$
 \end{theorem}
 
 \begin{theorem}[拉格朗日乘子法最优解必要条件]
-    计算 $ L $ 对 $ \mathbf{x} $ 与 $ \lambda $ 的偏导数并设为零，可得最优解的必要条件：
+    计算 $ L $ 对 $ {x} $ 与 $ \lambda $ 的偏导数并设为零，可得最优解的必要条件：
 $$
 \begin{array}{l}
-\nabla_{\mathbf{x}} L=\dfrac{\partial L}{\partial \mathbf{x}}=\nabla f+\lambda \nabla g=\mathbf{0} \\
+\nabla_{{x}} L=\dfrac{\partial L}{\partial {x}}=\nabla f+\lambda \nabla g={0} \\
 \\
-\nabla_{\lambda} L=\dfrac{\partial L}{\partial \lambda}=g(\mathbf{x})=0
+\nabla_{\lambda} L=\dfrac{\partial L}{\partial \lambda}=g({x})=0
 \end{array}
 $$
 
@@ -1061,42 +1061,42 @@ $$
 \end{theorem}
 
 
-解开上面 $ n+1 $ 个方程式可 得 $ L(\mathbf{x}, \lambda) $ 的驻点(stationary point) $ \mathbf{x}^{\star} $ 以及 $ \lambda $ 的值(正负数皆可能).
+解开上面 $ n+1 $ 个方程式可 得 $ L({x}, \lambda) $ 的驻点(stationary point) $ {x}^{\star} $ 以及 $ \lambda $ 的值(正负数皆可能).
 
 \subsection{不等式约束优化问题}
 
-接下来我们将约束等式 $ g(\mathbf{x})=0 $ 推广为不等式 $ g(\mathbf{x}) \leq 0 $ .考虑这个问题
+接下来我们将约束等式 $ g({x})=0 $ 推广为不等式 $ g({x}) \leq 0 $ .考虑这个问题
 
 \begin{problem}[不等式约束优化问题]
 
 $$
 \begin{array}{ll}
-\min & f(\mathbf{x}) \\
-\text { s.t. } & g(\mathbf{x}) \leq 0
+\min & f({x}) \\
+\text { s.t. } & g({x}) \leq 0
 \end{array}
 $$
 
-约束不等式 $ g(\mathbf{x}) \leq 0 $ 称为\term{原始可行性(primal feasibility)}, 据此我们定义\term{可行域(feasible region)} $ K=\{ \mathbf{x} \in \mathbb{R}^{n} \mid g(\mathbf{x}) \leq 0 \}$.
+约束不等式 $ g({x}) \leq 0 $ 称为\term{原始可行性(primal feasibility)}, 据此我们定义\term{可行域(feasible region)} $ K=\{ {x} \in \mathbb{R}^{n} \mid g({x}) \leq 0 \}$.
 \end{problem}
 
-假设 $ \mathbf{x}^{\star} $ 为满足约束条件的最佳解, 分开两种情况讨论:
+假设 $ {x}^{\star} $ 为满足约束条件的最佳解, 分开两种情况讨论:
 
 \begin{itemize}
-    \item $ g\left(\mathbf{x}^{*}\right)<0 $, 最佳解位于 $ K $ 的内部, 称为内部解(interior solution), 这时约束条件是\term{无效的 (inactive)};
-    \item $ g\left(\mathbf{x}^{*}\right)=0 $, 最佳解落在 $ K $ 的边界, 称为边界解(boundary solution), 此时约束条件是\term{有效的 (active)}.
+    \item $ g\left({x}^{*}\right)<0 $, 最佳解位于 $ K $ 的内部, 称为内部解(interior solution), 这时约束条件是\term{无效的 (inactive)};
+    \item $ g\left({x}^{*}\right)=0 $, 最佳解落在 $ K $ 的边界, 称为边界解(boundary solution), 此时约束条件是\term{有效的 (active)}.
 \end{itemize}
 
 这两种情况的最佳解具有不同的必要条件。
 
 \begin{itemize}
-    \item 内部解：在约束条件无效的情形下， $ g(\mathbf{x}) $ 不起作用, 约束优化问题退化为无约束优化问题, 因此驻点 $ \mathbf{x}^{\star} $ 满足 $ \nabla f=\mathbf{0} $ 且 $ \lambda=0 $ .
-    \item 边界解：在约束条件有效的情形下, 约束不等式变成等式 $g(\mathbf{x})=0$, 这与前述Lagrange乘数法的情况相同。
+    \item 内部解：在约束条件无效的情形下， $ g({x}) $ 不起作用, 约束优化问题退化为无约束优化问题, 因此驻点 $ {x}^{\star} $ 满足 $ \nabla f={0} $ 且 $ \lambda=0 $ .
+    \item 边界解：在约束条件有效的情形下, 约束不等式变成等式 $g({x})=0$, 这与前述Lagrange乘数法的情况相同。
 \end{itemize}
 
 对于边界解，我们可以证明
 
 \begin{theorem}
-    驻点 $\mathbf{x}^{\star}$ 发生于 $\nabla f \in \operatorname{span} \nabla g$.
+    驻点 ${x}^{\star}$ 发生于 $\nabla f \in \operatorname{span} \nabla g$.
 \end{theorem}
 换句话说, 
 
@@ -1106,25 +1106,25 @@ $$
     注意这里 $\lambda$ 的正负号是有其意义的。
 \end{corollary}
 
-因为我们希望最小化 $f$, 梯度 $\nabla f$ (函数 $f$ 在 点 $\mathbf{x}$ 的最陡上升方向)应该指向可行域 $K$ 的内部(因为最优解最小值是在边界取得的), 但 $\nabla g$ 指向 $K$ 的外部(即 $g(\mathbf{x})>0$ 的区域, 因为你的约束是小于等于0), 因此 $\lambda \geq 0$, 称为\term{对偶可行性(dual feasibility).}
+因为我们希望最小化 $f$, 梯度 $\nabla f$ (函数 $f$ 在 点 ${x}$ 的最陡上升方向)应该指向可行域 $K$ 的内部(因为最优解最小值是在边界取得的), 但 $\nabla g$ 指向 $K$ 的外部(即 $g({x})>0$ 的区域, 因为你的约束是小于等于0), 因此 $\lambda \geq 0$, 称为\term{对偶可行性(dual feasibility).}
 
-因此, 不论是内部解或边界解, $\lambda g(\mathbf{x})=0$ 恒成立, 称为\term{互补松弛性(complementary slackness)}.
+因此, 不论是内部解或边界解, $\lambda g({x})=0$ 恒成立, 称为\term{互补松弛性(complementary slackness)}.
 
 整合上述两种情况, 
 
 \begin{theorem}[Karush-Kuhn-Tucker (KKT)条件]
-    最佳解的必要条件包括：Lagrangian函数 $L(\mathbf{x}, \lambda)$ 的定常方程式、 原始可行性、对偶可行性，以及互补松弛性：
+    最佳解的必要条件包括：Lagrangian函数 $L({x}, \lambda)$ 的定常方程式、 原始可行性、对偶可行性，以及互补松弛性：
 $$
 \begin{aligned}
-\nabla_{\mathbf{x}} L &=\nabla f+\lambda \nabla g=\mathbf{0} \\
-g(\mathbf{x}) & \leq 0 \\
+\nabla_{{x}} L &=\nabla f+\lambda \nabla g={0} \\
+g({x}) & \leq 0 \\
 \lambda & \geq 0 \\
-\lambda g(\mathbf{x}) &=0
+\lambda g({x}) &=0
 \end{aligned}
 $$
 这些条件合称为\term{Karush-Kuhn-Tucker (KKT)条件}.
 
-如果我们要最大化 $f(\mathbf{x})$ 且受限于 $g(\mathbf{x}) \leq 0$, 那么对偶可行性要改成 $\lambda \leq 0$ .
+如果我们要最大化 $f({x})$ 且受限于 $g({x}) \leq 0$, 那么对偶可行性要改成 $\lambda \leq 0$ .
 \end{theorem}
 
 
@@ -1133,9 +1133,9 @@ $$
 \begin{definition}[标准约束优化问题(非线性规划)]
     $$
 \begin{array}{ll}
-\min & f(\mathbf{x}) \\
-\text { s.t. } & g_{j}(\mathbf{x})=0, \quad j=1, \ldots, m \\
-& h_{k}(\mathbf{x}) \leq 0, \quad k=1, \ldots, p
+\min & f({x}) \\
+\text { s.t. } & g_{j}({x})=0, \quad j=1, \ldots, m \\
+& h_{k}({x}) \leq 0, \quad k=1, \ldots, p
 \end{array}
 $$
 \end{definition}
@@ -1143,18 +1143,18 @@ $$
 \begin{theorem}[标准约束优化的KKT条件]
     定义Lagrangian 函数
 $$
-L\left(\mathbf{x},\left\{\lambda_{j}\right\},\left\{\mu_{k}\right\}\right)=f(\mathbf{x})+\sum_{j=1}^{m} \lambda_{j} g_{j}(\mathbf{x})+\sum_{k=1}^{p} \mu_{k} h_{k}(\mathbf{x})
+L\left({x},\left\{\lambda_{j}\right\},\left\{\mu_{k}\right\}\right)=f({x})+\sum_{j=1}^{m} \lambda_{j} g_{j}({x})+\sum_{k=1}^{p} \mu_{k} h_{k}({x})
 $$
-其中 $ \lambda_{j} $ 是对应 $ g_{j}(\mathbf{x})=0 $ 的Lagrange乘数, $ \mu_{k} $ 是对应 $ h_{k}(\mathbf{x}) \leq 0 $ 的Lagrange乘数(或称KKT 乘数). 
+其中 $ \lambda_{j} $ 是对应 $ g_{j}({x})=0 $ 的Lagrange乘数, $ \mu_{k} $ 是对应 $ h_{k}({x}) \leq 0 $ 的Lagrange乘数(或称KKT 乘数). 
 
 KKT条件包括
 $$
 \begin{aligned}
-\nabla_{\mathbf{x}} L &=\mathbf{0} \\
-g_{j}(\mathbf{x}) &=0, \quad j=1, \ldots, m \\
-h_{k}(\mathbf{x}) & \leq 0 \\
+\nabla_{{x}} L &={0} \\
+g_{j}({x}) &=0, \quad j=1, \ldots, m \\
+h_{k}({x}) & \leq 0 \\
 \mu_{k} & \geq 0 \\
-\mu_{k} h_{k}(\mathbf{x}) &=0, \quad k=1, \ldots, p
+\mu_{k} h_{k}({x}) &=0, \quad k=1, \ldots, p
 \end{aligned}
 $$
 
@@ -1210,17 +1210,17 @@ $$
     对于具有等式和不等式约束的一般优化问题
 $$
 \begin{aligned}
-&\min f(\mathbf{x}) \\
-\text { s.t. }& g_{j}(\mathbf{x}) \leq 0(j=1,2, \cdots, m) \\
-&h_{k}(\mathbf{x})=0(k=1,2, \cdots, l)
+&\min f({x}) \\
+\text { s.t. }& g_{j}({x}) \leq 0(j=1,2, \cdots, m) \\
+&h_{k}({x})=0(k=1,2, \cdots, l)
 \end{aligned}
 $$
 KKT 条件给出了判断 $ \mathrm{x}^{*} $ 是否为最优解的\textbf{必要条件}, 即：
 $$
 \left\{\begin{array}{l}
 \frac{\partial f}{\partial x_{i}}+\sum_{j=1}^{m} \mu_{j} \frac{\partial g_{j}}{\partial x_{i}}+\sum_{k=1}^{l} \lambda_{k} \frac{\partial h_{k}}{\partial x_{i}}=0,(i=1,2, \ldots, n) \\
-h_{k}(\mathbf{x})=0,(k=1,2, \cdots, l) \\
-\mu_{j} g_{j}(\mathbf{x})=0,(j=1,2, \cdots, m) \\
+h_{k}({x})=0,(k=1,2, \cdots, l) \\
+\mu_{j} g_{j}({x})=0,(j=1,2, \cdots, m) \\
 \mu_{j} \geq 0
 \end{array}\right.
 $$
@@ -1241,7 +1241,7 @@ $$
 \end{problem}
 
 
-我们令 $ L(\mathbf{x}, \lambda)=f(\mathbf{x})+\sum_{k=1}^{l} \lambda_{k} h_{k}(\mathbf{x}) $, 函数 $ L(x, y) $ 称为\term{Lagrange函数}, 参数 $ \lambda $ 称为\term{Lagrange乘子}.
+我们令 $ L({x}, \lambda)=f({x})+\sum_{k=1}^{l} \lambda_{k} h_{k}({x}) $, 函数 $ L(x, y) $ 称为\term{Lagrange函数}, 参数 $ \lambda $ 称为\term{Lagrange乘子}.
 
 再联立方程组： 
 $$ \left\{\begin{array}{l}\frac{\partial L}{\partial x_{i}}=0(i=1,2, \cdots, n) \\ \frac{\partial L}{\partial \lambda_{k}}=0(k=1,2, \cdots, l)\end{array}\right. $$
@@ -1346,8 +1346,8 @@ $$
     对于多元多次不等式约束问题
 $$
 \begin{array}{l}
-\min f(\mathbf{x}) \\
-\text { s.t. } g_{j}(\mathbf{x}) \leq 0(j=1,2, \cdots, m)
+\min f({x}) \\
+\text { s.t. } g_{j}({x}) \leq 0(j=1,2, \cdots, m)
 \end{array}
 $$
 有
@@ -1373,23 +1373,23 @@ $$
 \frac{\partial f\left(x^{*}\right)}{\partial x_{i}}+\sum_{j=1}^{m} \mu_{j} \frac{\partial g_{j}\left(x^{*}\right)}{\partial x_{i}}=0(i=1,2, \ldots, n)
 $$
 
-用梯度表示 $$ \nabla f\left(\mathbf{x}^{*}\right)+\sum_{j \in J} \mu_{j} \nabla g_{j}\left(\mathbf{x}^{*}\right)=0$$
+用梯度表示 $$ \nabla f\left({x}^{*}\right)+\sum_{j \in J} \mu_{j} \nabla g_{j}\left({x}^{*}\right)=0$$
 
 $J$ 为起作用约束的集合。
 
-移项可得 $$ -\nabla f\left(\mathbf{x}^{*}\right)=\sum_{j \in J} \mu_{j} \nabla g_{j}\left(\mathbf{x}^{*}\right) $$
+移项可得 $$ -\nabla f\left({x}^{*}\right)=\sum_{j \in J} \mu_{j} \nabla g_{j}\left({x}^{*}\right) $$
 
 注意到梯度为向量。 
 
 \begin{theorem}
-    $$ -\nabla f\left(\mathbf{x}^{*}\right)=\sum_{j \in J} \mu_{j} \nabla g_{j}\left(\mathbf{x}^{*}\right) $$
+    $$ -\nabla f\left({x}^{*}\right)=\sum_{j \in J} \mu_{j} \nabla g_{j}\left({x}^{*}\right) $$
 
-    在约束极小值点 $ \mathbf{x}^{*} $ 处，函数 $ f\left(\mathbf{x}^{*}\right) $ 的负梯度一定可以表示成：所有起作用约束在该点的梯度（等值线的法向量）的线性组合。
+    在约束极小值点 $ {x}^{*} $ 处，函数 $ f\left({x}^{*}\right) $ 的负梯度一定可以表示成：所有起作用约束在该点的梯度（等值线的法向量）的线性组合。
 \end{theorem}
 
 
 \begin{corollary}[梯度的性质]
-    复习课本中梯度的性质：某点梯度的方向就是函数等值线 $ f(\mathbf{x})=C $ .（在这点的法线方向, 等值线就是地理的等高线。）
+    复习课本中梯度的性质：某点梯度的方向就是函数等值线 $ f({x})=C $ .（在这点的法线方向, 等值线就是地理的等高线。）
 \end{corollary}
 
 为方便作图, 假设现在\textbf{只有两个约束条件起约束作用}, 我们作出图形如图\ref{fig:kkt-1}.
@@ -1400,54 +1400,54 @@ $J$ 为起作用约束的集合。
 \end{FigureCenter}
 
 
-注意我们上面推导过, 约束起作用时 $ g_{j}(\mathbf{x})=0 $, 所以此时约束在几何上应该是一簇\textbf{约束平面}.
+注意我们上面推导过, 约束起作用时 $ g_{j}({x})=0 $, 所以此时约束在几何上应该是一簇\textbf{约束平面}.
 
-我们假设在 $ \mathbf{x}^{*} $ 取得极小值点, 若同时满足 $ g_{1}(\mathbf{x})=0 $ 和 $ g_{2}(\mathbf{x})=0 $, 则 $ \mathbf{x}^{k} $ 一定在这两个平面的交线上, 且 $ -\nabla f\left(\mathbf{x}^{*}\right)=\sum_{j \in J} \mu_{j} \nabla g_{j}\left(\mathbf{x}^{*}\right) $, 即 $ -\nabla f\left(\mathbf{x}^{k}\right) 、 \nabla g_{1}\left(\mathbf{x}^{k}\right) $ 和 $ \nabla g_{2}\left(\mathbf{x}^{k}\right) $ 共面。
+我们假设在 $ {x}^{*} $ 取得极小值点, 若同时满足 $ g_{1}({x})=0 $ 和 $ g_{2}({x})=0 $, 则 $ {x}^{k} $ 一定在这两个平面的交线上, 且 $ -\nabla f\left({x}^{*}\right)=\sum_{j \in J} \mu_{j} \nabla g_{j}\left({x}^{*}\right) $, 即 $ -\nabla f\left({x}^{k}\right) 、 \nabla g_{1}\left({x}^{k}\right) $ 和 $ \nabla g_{2}\left({x}^{k}\right) $ 共面。
 
 \begin{FigureCenter}{}
     \label{fig:kkt-2}
     \includegraphics[width=\textwidth]{KKT-geometry-2.jpg}
 \end{FigureCenter}
 
-图\ref{fig:kkt-2}是在点 $ \mathbf{x}^{k} $ 处沿 $ x_{1} O x_{2} $ 面的截面, 过点 $ \mathbf{x}^{k} $ 作目标函数的负梯度 $ -\nabla f\left(\mathbf{x}^{k}\right) $, 它垂直于目标函数 的等值线 $ f(\mathbf{x})=C $ ，且指向目标函数 $ f(\mathbf{x}) $ 的最速减小方向。
+图\ref{fig:kkt-2}是在点 $ {x}^{k} $ 处沿 $ x_{1} O x_{2} $ 面的截面, 过点 $ {x}^{k} $ 作目标函数的负梯度 $ -\nabla f\left({x}^{k}\right) $, 它垂直于目标函数 的等值线 $ f({x})=C $ ，且指向目标函数 $ f({x}) $ 的最速减小方向。
 
 \begin{corollary}
     一点的梯度与等值线相互垂直。
 \end{corollary}
 
-再作约束函数 $ g_{1}(\mathbf{x})=0 $ 和 $ g_{2}(\mathbf{x})=0 $ 的梯度 $ \nabla g_{1}\left(\mathbf{x}^{k}\right) $ 和 $ \nabla g_{2}\left(\mathbf{x}^{k}\right) $, 它们分别垂直 $ g_{1}(\mathbf{x})=0 $ 和 $ g_{2}(\mathbf{x})=0 $ 两曲面在 $ \mathbf{x}^{k} $ 的切平面, 并形成一个雉形夹角区域。此时, 可能有 $ \mathrm{a} 、 \mathrm{~b} $ 两种情形：
+再作约束函数 $ g_{1}({x})=0 $ 和 $ g_{2}({x})=0 $ 的梯度 $ \nabla g_{1}\left({x}^{k}\right) $ 和 $ \nabla g_{2}\left({x}^{k}\right) $, 它们分别垂直 $ g_{1}({x})=0 $ 和 $ g_{2}({x})=0 $ 两曲面在 $ {x}^{k} $ 的切平面, 并形成一个雉形夹角区域。此时, 可能有 $ \mathrm{a} 、 \mathrm{~b} $ 两种情形：
 
 \begin{FigureCenter}{}
     \label{fig:kkt-3}
     \includegraphics[width=0.5\textwidth]{KKT-geometry-3.jpg}
 \end{FigureCenter}
 
-我们先来看情形 $\mathrm{b}$ ：若3个向量的位置关系如\ref{fig:kkt-3}所示, 即 $-\nabla f$ 落在 $\nabla g_{1}$ 和 $\nabla g_{2}$ 所形成的锥角区外的 一侧。 此时, 作等值面 $f(\mathbf{x})=C$ 在点 $\mathbf{x}^{k}$ 的切平面（它与 $-\nabla f\left(\mathbf{x}^{k}\right)$ 垂直）, 我们发现：沿着与负 梯度 $-\nabla f$ 成锐角的方向移动（如下图红色箭头方向）, 只要在红色区域取值, 目标函数 $f(\mathbf{x})$ 总 能减小。而红色区域是可行域 $(f(\mathbf{x})=C$, C取不同的常数能得到不同的等值线, 因此能取到红色 区域）, 因此既可减小目标函数值, 又不破坏约束条件。 这说明 $\mathbf{x}^{k}$ 仍可沿约束曲面移动而不破坏约 束条件, 且目标函数值还能够减小。所以 $\mathbf{x}^{k}$ 不是稳定的最优点, 即不是局部极值点。
+我们先来看情形 $\mathrm{b}$ ：若3个向量的位置关系如\ref{fig:kkt-3}所示, 即 $-\nabla f$ 落在 $\nabla g_{1}$ 和 $\nabla g_{2}$ 所形成的锥角区外的 一侧。 此时, 作等值面 $f({x})=C$ 在点 ${x}^{k}$ 的切平面（它与 $-\nabla f\left({x}^{k}\right)$ 垂直）, 我们发现：沿着与负 梯度 $-\nabla f$ 成锐角的方向移动（如下图红色箭头方向）, 只要在红色区域取值, 目标函数 $f({x})$ 总 能减小。而红色区域是可行域 $(f({x})=C$, C取不同的常数能得到不同的等值线, 因此能取到红色 区域）, 因此既可减小目标函数值, 又不破坏约束条件。 这说明 ${x}^{k}$ 仍可沿约束曲面移动而不破坏约 束条件, 且目标函数值还能够减小。所以 ${x}^{k}$ 不是稳定的最优点, 即不是局部极值点。
 
-反过头来看情形a: $ -\nabla f $ 落在 $ \nabla g_{1} $ 和 $ \nabla g_{2} $ 形成的锥角内。 此时, 同样作 $ f(\mathbf{x})=C $ 在点 $ \mathbf{x}^{k} $ 与 $ -\nabla f $ 垂直的切平面。 当从 $ \mathbf{x}^{k} $ 出发沿着与负梯度 $ -\nabla f $ 成锐角的方向移动时, 虽然能使目标函数值减小, 但此时任何一点都不在可行区域内。 显然, 此时 $ \mathbf{x}^{k} $ 就是局部最优点 $ \mathbf{x}^{*} $, 再做任何移动都将破坏约 束条件, 故它是稳定点。
+反过头来看情形a: $ -\nabla f $ 落在 $ \nabla g_{1} $ 和 $ \nabla g_{2} $ 形成的锥角内。 此时, 同样作 $ f({x})=C $ 在点 $ {x}^{k} $ 与 $ -\nabla f $ 垂直的切平面。 当从 $ {x}^{k} $ 出发沿着与负梯度 $ -\nabla f $ 成锐角的方向移动时, 虽然能使目标函数值减小, 但此时任何一点都不在可行区域内。 显然, 此时 $ {x}^{k} $ 就是局部最优点 $ {x}^{*} $, 再做任何移动都将破坏约 束条件, 故它是稳定点。
 
-由于 $ -\nabla f\left(\mathbf{x}^{*}\right) $ 和 $ \nabla g_{1}\left(\mathbf{x}^{*}\right) 、 \nabla g_{2}\left(\mathbf{x}^{*}\right) $ 在一个平面内, 所以前者可看成是后两者的线性组合。 又由 上面的几何分析知, $ -\nabla f\left(\mathbf{x}^{*}\right) $ 在 $ \nabla g_{1}\left(\mathbf{x}^{*}\right) $ 和 $ \nabla g_{2}\left(\mathbf{x}^{*}\right) $ 的夹角之间, 所以线性组合的系数为正, 有
+由于 $ -\nabla f\left({x}^{*}\right) $ 和 $ \nabla g_{1}\left({x}^{*}\right) 、 \nabla g_{2}\left({x}^{*}\right) $ 在一个平面内, 所以前者可看成是后两者的线性组合。 又由 上面的几何分析知, $ -\nabla f\left({x}^{*}\right) $ 在 $ \nabla g_{1}\left({x}^{*}\right) $ 和 $ \nabla g_{2}\left({x}^{*}\right) $ 的夹角之间, 所以线性组合的系数为正, 有
 $$
--\nabla f\left(\mathbf{x}^{*}\right)=\mu_{1} \nabla g_{1}\left(\mathbf{x}^{*}\right)+\mu_{2} \nabla g_{2}\left(\mathbf{x}^{*}\right), \text { 且 } \mu_{1}>0, \mu_{2}>0 \text {. }
+-\nabla f\left({x}^{*}\right)=\mu_{1} \nabla g_{1}\left({x}^{*}\right)+\mu_{2} \nabla g_{2}\left({x}^{*}\right), \text { 且 } \mu_{1}>0, \mu_{2}>0 \text {. }
 $$
-这就是 $ \mu_{j}>0 $ 的原因。 类似地, 当有多个不等式约束同时起作用时, 要求 $ -\nabla f\left(\mathbf{x}^{*}\right) $ 处于 $ \nabla g_{j}\left(\mathbf{x}^{*}\right) $ 形成的超角锥（高维图形, 我姑且称之为 “超” ）之内。
+这就是 $ \mu_{j}>0 $ 的原因。 类似地, 当有多个不等式约束同时起作用时, 要求 $ -\nabla f\left({x}^{*}\right) $ 处于 $ \nabla g_{j}\left({x}^{*}\right) $ 形成的超角锥（高维图形, 我姑且称之为 “超” ）之内。
 
 \subsection{总结：同时包含等式和不等式约束的一般优化问题}
 
 \begin{theorem}[同时包含等式和不等式约束的一般优化问题的KKT条件]
     $$
 \begin{array}{l}
-\min f(\mathbf{x}) \\
-\text { s.t. } g_{j}(\mathbf{x}) \leq 0(j=1,2, \cdots, m) \\
-h_{k}(\mathbf{x})=0(k=1,2, \cdots, l)
+\min f({x}) \\
+\text { s.t. } g_{j}({x}) \leq 0(j=1,2, \cdots, m) \\
+h_{k}({x})=0(k=1,2, \cdots, l)
 \end{array}
 $$
 KKT条件 $ \left(\mathrm{x}^{*}\right. $ 是最优解的必要条件 $ ) $ 为
 $$
 \left\{\begin{array}{l}
 \frac{\partial f}{\partial x_{i}}+\sum_{j=1}^{m} \mu_{j} \frac{\partial g_{j}}{\partial x_{i}}+\sum_{k=1}^{l} \lambda_{k} \frac{\partial h_{k}}{\partial x_{i}}=0,(i=1,2, \ldots, n) \\
-h_{k}(\mathbf{x})=0,(k=1,2, \cdots, l) \\
-\mu_{j} g_{j}(\mathbf{x})=0,(j=1,2, \cdots, m) \\
+h_{k}({x})=0,(k=1,2, \cdots, l) \\
+\mu_{j} g_{j}({x})=0,(j=1,2, \cdots, m) \\
 \mu_{j} \geq 0
 \end{array}\right.
 $$
@@ -1700,7 +1700,7 @@ $ \theta_{\mathcal{D}}(\alpha, \beta): \mathbb{R}^{m} \times \mathbb{R}^{p} \rig
     设定义在 $ \mathcal{D} $ 上的函数 $ f_{i}(\cdot), i=1,2, \cdots, n $ 为凸函数, $ g_{j}(\cdot), j=1,2, \cdots, m $ 为 仿射函数, 考虑凸优化问题
 
     $$
-    \min _{\mathbf{x}} f_{0}(\mathbf{x}), \quad \text { s.t. } f_{i}(\mathbf{x}) \leq 0, g_{i}(\mathbf{x}) \leq 0
+    \min _{{x}} f_{0}({x}), \quad \text { s.t. } f_{i}({x}) \leq 0, g_{i}({x}) \leq 0
     $$
 
     如果存在点 $ \mathrm{x} \in $ relint $ \mathcal{D} $ （即 $ \mathcal{D} $ 的相对内点）, 则强对偶性成立。
@@ -1768,7 +1768,7 @@ $$对偶目标的最大值=主目标的最小值=原凸优化问题的最小值 
 
 \subsection{Karush-Kuhn-Tucker Theorem(s)}
 
-\begin{theorem} Let $z : \mathbb{R}^n \rightarrow \mathbb{R}$ be a differentiable objective function, $g_i:\mathbb{R}^n \rightarrow \mathbb{R}$ be differentiable constraint functions for $i = 1,\dots,m$ and $h_j:\mathbb{R}^n \rightarrow \mathbb{R}$ be differentiable constraint functions for $j=1,\dots,l$. If $\mathbf{x}^* \in \mathbb{R}^n$ is an optimal point satisfying an appropriate regularity condition for the following optimization problem:
+\begin{theorem} Let $z : \mathbb{R}^n \rightarrow \mathbb{R}$ be a differentiable objective function, $g_i:\mathbb{R}^n \rightarrow \mathbb{R}$ be differentiable constraint functions for $i = 1,\dots,m$ and $h_j:\mathbb{R}^n \rightarrow \mathbb{R}$ be differentiable constraint functions for $j=1,\dots,l$. If ${x}^* \in \mathbb{R}^n$ is an optimal point satisfying an appropriate regularity condition for the following optimization problem:
 
 \begin{displaymath}
 P\left\{
@@ -1789,20 +1789,20 @@ then there exists $\lambda_1,\dots,\lambda_m \in \mathbb{R}$ and $\mu_1,\dots\mu
 \begin{gather*}
 \text{Primal Feasibility}: \left\{
 \begin{aligned}
-g_i(\mathbf{x}^*) \leq 0 \quad \text{for $i = 1,\dots,m$}\\
-h_j(\mathbf{x}^*) = 0 \quad \text{for $j = 1,\dots,l$}
+g_i({x}^*) \leq 0 \quad \text{for $i = 1,\dots,m$}\\
+h_j({x}^*) = 0 \quad \text{for $j = 1,\dots,l$}
 \end{aligned}
 \right.\\
 \text{Dual Feasibility}:\left\{
 \begin{aligned}
-\nabla z(\mathbf{x}^*) - \sum_{i = 1}^m\lambda_i\nabla g_i(\mathbf{x}^*) - \sum_{j = 1}^{l}\mu_j\nabla h_j(\mathbf{x}^*) = \mathbf{0}\\
+\nabla z({x}^*) - \sum_{i = 1}^m\lambda_i\nabla g_i({x}^*) - \sum_{j = 1}^{l}\mu_j\nabla h_j({x}^*) = {0}\\
 \lambda_i \geq 0 \quad \text{for $i=1,\dots,m$}\\
 \mu_j \in \mathbb{R} \quad \text{for $j = 1,\dots,l$}
 \end{aligned}
 \right.\\
 \text{Complementary Slackness}:\left\{
 \begin{aligned}
-\lambda_ig_i(\mathbf{x}^*) = 0 \quad \text{for $i = 1,\dots,m$}
+\lambda_ig_i({x}^*) = 0 \quad \text{for $i = 1,\dots,m$}
 \end{aligned}
 \right.
 \end{gather*}
@@ -1814,25 +1814,25 @@ h_j(\mathbf{x}^*) = 0 \quad \text{for $j = 1,\dots,l$}
 \begin{gather*}
 \text{Primal Feasibility}: \left\{
 \begin{aligned}
-g_i(\mathbf{x}^*) \leq 0 \quad \text{for $i = 1,\dots,m$}\\
-h_j(\mathbf{x}^*) = 0 \quad \text{for $j = 1,\dots,l$}
+g_i({x}^*) \leq 0 \quad \text{for $i = 1,\dots,m$}\\
+h_j({x}^*) = 0 \quad \text{for $j = 1,\dots,l$}
 \end{aligned}
 \right.\\
 \text{Dual Feasibility}:\left\{
 \begin{aligned}
-\nabla z(\mathbf{x}^*) - \sum_{i = 1}^m\lambda_i\nabla g_i(\mathbf{x}^*) - \sum_{j = 1}^{l}\mu_j\nabla h_j(\mathbf{x}^*) = \mathbf{0}\\
+\nabla z({x}^*) - \sum_{i = 1}^m\lambda_i\nabla g_i({x}^*) - \sum_{j = 1}^{l}\mu_j\nabla h_j({x}^*) = {0}\\
 \lambda_i \geq 0 \quad \text{for $i=1,\dots,m$}\\
 \mu_j \in \mathbb{R} \quad \text{for $j = 1,\dots,l$}
 \end{aligned}
 \right.\\
 \text{Complementary Slackness}:\left\{
 \begin{aligned}
-\lambda_ig_i(\mathbf{x}^*) = 0 \quad \text{for $i = 1,\dots,m$}
+\lambda_ig_i({x}^*) = 0 \quad \text{for $i = 1,\dots,m$}
 \end{aligned}
 \right.
 \end{gather*}
 
-then $\mathbf{x}^*$ is a global maximizer for 
+then ${x}^*$ is a global maximizer for 
 \begin{displaymath}
 P\left\{
 \begin{aligned}
@@ -1851,19 +1851,19 @@ s.t.\;\;& g_1(x_1,\dots,x_n) \leq 0\\
 
 The values $\lambda_1,\dots,\lambda_m$ and $\mu_1,\dots,\mu_l$ are sometimes called \term{Lagrange multipliers} and sometimes called \term{dual variables}. Primal Feasibility, Dual Feasibility and Complementary Slackness are called the \term{Karush-Kuhn-Tucker} (KKT) conditions.
 
-\begin{remark} The regularity condition mentioned in Theorem \ref{thm:KKT7} is sometimes called a \term{constraint qualification}. A common one is that the gradients of the binding constraints are all linearly independent at $\mathbf{x}^*$. There are many variations of constraint qualifications. We will not deal with these in these notes. 
+\begin{remark} The regularity condition mentioned in Theorem \ref{thm:KKT7} is sometimes called a \term{constraint qualification}. A common one is that the gradients of the binding constraints are all linearly independent at ${x}^*$. There are many variations of constraint qualifications. We will not deal with these in these notes. 
     
     Suffice it to say, all the problems we consider will automatically satisfy a constraint qualification, meaning the KKT theorem holds.
 \end{remark}
 
-\begin{remark} Theorem \ref{thm:KKT7} holds as a necessary condition even if $z(\mathbf{x})$ is not concave or the functions $g_i(\mathbf{x})$ ($i=1,\dots,m$) are not convex or the functions $h_j(\mathbf{x})$ ($j=1,\dots,l$) are not linear. In this case though, the fact that a triple: $(\mathbf{x},\boldsymbol{\lambda}, \boldsymbol{\mu}) \in \mathbb{R}^{n} \times \mathbb{R}^m \times \mathbb{R}^l$ does not ensure that this is an optimal solution for Problem $P$.
+\begin{remark} Theorem \ref{thm:KKT7} holds as a necessary condition even if $z({x})$ is not concave or the functions $g_i({x})$ ($i=1,\dots,m$) are not convex or the functions $h_j({x})$ ($j=1,\dots,l$) are not linear. In this case though, the fact that a triple: $({x},\boldsymbol{\lambda}, \boldsymbol{\mu}) \in \mathbb{R}^{n} \times \mathbb{R}^m \times \mathbb{R}^l$ does not ensure that this is an optimal solution for Problem $P$.
 \end{remark}
 
-Looking more closely at the dual feasibility conditions, we see something interesting. Suppose that there are \term{no} equality constraints (i.e., not constraints of the form $h_j(\mathbf{x}) = 0$). Then the statements:
+Looking more closely at the dual feasibility conditions, we see something interesting. Suppose that there are \term{no} equality constraints (i.e., not constraints of the form $h_j({x}) = 0$). Then the statements:
 
 \begin{displaymath}
 \begin{aligned}
-\nabla z(\mathbf{x}^*) - \sum_{i = 1}^m\lambda_i \nabla g_i(\mathbf{x}^*) - \sum_{j = 1}^{l}\mu_j \nabla h_j(\mathbf{x}^*) & = \mathbf{0}\\
+\nabla z({x}^*) - \sum_{i = 1}^m\lambda_i \nabla g_i({x}^*) - \sum_{j = 1}^{l}\mu_j \nabla h_j({x}^*) & = {0}\\
 \lambda_i &\geq 0 \quad \text{for $i=1,\dots,m$}
 \end{aligned}
 \end{displaymath}
@@ -1872,23 +1872,23 @@ imply that:
 
 \begin{displaymath}
 \begin{aligned}
-\nabla z(\mathbf{x}^*) &= \sum_{i = 1}^m\lambda_i \nabla g_i(\mathbf{x}^*)\\
+\nabla z({x}^*) &= \sum_{i = 1}^m\lambda_i \nabla g_i({x}^*)\\
 \lambda_i &\geq 0 \quad \text{for $i=1,\dots,m$}
 \end{aligned}
 \end{displaymath}
 
-Specifically, this says that the \term{gradient of $z$ at $\mathbf{x}^*$ is a positive combination of the gradients of the constraints at $\mathbf{x}^*$.} But more importantly, since we also have \term{complementary slackness}, we know that if $\mathbf{g}_i(\mathbf{x}^*) \neq 0$, then $\lambda_i = 0$ because $\lambda_i g_i(\mathbf{x}^*) = 0$ for $i = 1,\dots,m$. Thus, what dual feasibility is really saying is that \term{gradient of $z$ at $\mathbf{x}^*$ is a positive combination of the  gradients of the \textbf{binding} constraints at $\mathbf{x}^*$.} Remember, a constraint is binding if $g_i(\mathbf{x}^*) = 0$, in which case $\lambda_i \geq 0$.
+Specifically, this says that the \term{gradient of $z$ at ${x}^*$ is a positive combination of the gradients of the constraints at ${x}^*$.} But more importantly, since we also have \term{complementary slackness}, we know that if ${g}_i({x}^*) \neq 0$, then $\lambda_i = 0$ because $\lambda_i g_i({x}^*) = 0$ for $i = 1,\dots,m$. Thus, what dual feasibility is really saying is that \term{gradient of $z$ at ${x}^*$ is a positive combination of the  gradients of the \textbf{binding} constraints at ${x}^*$.} Remember, a constraint is binding if $g_i({x}^*) = 0$, in which case $\lambda_i \geq 0$.
 
 
 \begin{remark} Continuing from the previous remark, in the general case when we have some equality constraints, then dual feasibility says:
 \begin{displaymath}
 \begin{aligned}
-\nabla z(\mathbf{x}^*) &= \sum_{i = 1}^m\lambda_i \nabla g_i(\mathbf{x}^*) + \sum_{j = 1}^{l}\mu_j \nabla h_j(\mathbf{x}^*)\\
+\nabla z({x}^*) &= \sum_{i = 1}^m\lambda_i \nabla g_i({x}^*) + \sum_{j = 1}^{l}\mu_j \nabla h_j({x}^*)\\
 \lambda_i &\geq 0 \quad \text{for $i=1,\dots,m$}\\
 \mu_j &\in \mathbb{R}\quad \text{for $j=1,\dots,l$}
 \end{aligned}
 \end{displaymath}
-Since equality constraints are \term{always binding} this says that the \term{gradient of $z$ at $\mathbf{x}^*$ is a linear combination of the  gradients of the \textbf{binding} constraints at $\mathbf{x}^*$.} 
+Since equality constraints are \term{always binding} this says that the \term{gradient of $z$ at ${x}^*$ is a linear combination of the  gradients of the \textbf{binding} constraints at ${x}^*$.} 
 \end{remark}
 
 \subsection{Linear Programming and KKT Conditions - An Example}
@@ -2002,9 +2002,9 @@ Recall that if we are given a linear programming problem of the form:
 \begin{equation}
 P\left\{
 \begin{aligned}
-\max\;\; & \mathbf{c}^T\mathbf{x}\\
-s.t.\;\; & \mathbf{A}\mathbf{x} \leq \mathbf{b}\\
-& \mathbf{x} \geq 0
+\max\;\; & {c}^T{x}\\
+s.t.\;\; & {A}{x} \leq {b}\\
+& {x} \geq 0
 \end{aligned}\right.
 \end{equation}
 
@@ -2012,18 +2012,18 @@ Then the dual problem for Problem $P$ is:
 \begin{equation}
 D\left\{
 \begin{aligned}
-\min\;\; & \mathbf{w}\mathbf{b}\\
-s.t.\;\; & \mathbf{w}\mathbf{A} \geq \mathbf{c}^T\\
-& \mathbf{w} \geq \mathbf{0}
+\min\;\; & {w}{b}\\
+s.t.\;\; & {w}{A} \geq {c}^T\\
+& {w} \geq {0}
 \end{aligned}\right.
 \end{equation}
-Here we assume that $\mathbf{w}$ is a \term{row} vector (unlike our usual assumption that all vectors are column vectors). In our example problem, we have:
+Here we assume that ${w}$ is a \term{row} vector (unlike our usual assumption that all vectors are column vectors). In our example problem, we have:
 \begin{displaymath}
-\mathbf{A} = \begin{bmatrix}1 & 2\\2 & 1\end{bmatrix} \quad \quad \mathbf{c} = \begin{bmatrix}1\\1\end{bmatrix} \quad \quad \mathbf{b} = \begin{bmatrix}4\\6\end{bmatrix}
+{A} = \begin{bmatrix}1 & 2\\2 & 1\end{bmatrix} \quad \quad {c} = \begin{bmatrix}1\\1\end{bmatrix} \quad \quad {b} = \begin{bmatrix}4\\6\end{bmatrix}
 \end{displaymath}
 Let us write:
 \begin{displaymath}
-\mathbf{w} = \begin{bmatrix} \lambda_1 & \lambda_2 \end{bmatrix}
+{w} = \begin{bmatrix} \lambda_1 & \lambda_2 \end{bmatrix}
 \end{displaymath}
 Then we can write the dual problem as:
 \begin{displaymath}

@@ -50,7 +50,7 @@ x_{1} +x_{2} =68\neq 67
 
 由于测量存在误差，方程组之间相互矛盾，该超定方程组无解。
 
-
+\section{最小二乘问题}
 
 \begin{problem}[最小二乘问题]
     寻找该方程组的近似解，并尽可能逼近方程组的目标$b$, 即残差向量 $ r=A x-b $ 某种度量下尽可能小
@@ -59,16 +59,16 @@ x_{1} +x_{2} =68\neq 67
 \end{problem}
 
 
-使用$\ell_2$、$\ell_\infty$等也可以度量误差，但是函数在零点处不光滑，不能求导。
+使用$\ell_1$、$\ell_\infty$等也可以度量误差，但是函数在零点处不光滑，不能求导。
 
 \begin{problem}[求解最小二乘解]
-    给定 $ \mathrm{A} \in \mathbb{R}^{m \times n}, \mathrm{~b} \in \mathbb{R}^{m} $, 求解 $ x \in \mathbb{R}^{n} $ 让目标函数最小
+    给定 $ {A} \in \mathbb{R}^{m \times n}, {~b} \in \mathbb{R}^{m} $, 求解 $ x \in \mathbb{R}^{n} $ 让目标函数最小
 
 $$ \min _{x}\|A x-b\|_{2}^{2}=\min _{x} \sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i j} x_{j}-b_{i}\right)^{2} $$
 \end{problem}
 
 \begin{notation}[最小二乘法的解]
-    最小二乘法的解为 $ \hat{x} $
+    记最小二乘法的解为 $ \hat{x} $
 
     $$
     \hat{x}=\arg \underset{x}{\min}\|A x-b\|_{2}^{2}=\arg \underset{x}{\min} \sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i j} x_{j}-b_{i}\right)^{2}
@@ -76,7 +76,7 @@ $$ \min _{x}\|A x-b\|_{2}^{2}=\min _{x} \sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i 
 \end{notation}
 
 \begin{example}
-    $ f(x)=\|A x-b\|_{2}^{2} $, $ \mathrm{A}=\left[\begin{array}{cc}2 & 0 \\ -1 & 1 \\ 0 & 2\end{array}\right], b=\left[\begin{array}{c}1 \\ 0 \\ -1\end{array}\right] $
+    $$ f(x)=\|A x-b\|_{2}^{2}, {A}=\left[\begin{array}{cc}2 & 0 \\ -1 & 1 \\ 0 & 2\end{array}\right], b=\left[\begin{array}{c}1 \\ 0 \\ -1\end{array}\right] $$
 
     求解$$\hat{x} = \arg \underset{x}{\min} \|A x-b\|_{2}^{2}$$
 
@@ -150,6 +150,7 @@ $$
         \textcolor[rgb]{0,0,0}{b_{n}}
         \end{array}\right)$$
     
+    所以
     $$\begin{aligned} 
         f(x)&=\|A x-b\|_{2}^{2}
         &=\sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i j} x_{j}-b_{i}\right)^{2}
@@ -255,6 +256,7 @@ $$
 \end{aligned}
 $$
 
+令梯度等于0
 $$\nabla f(x)=2\left(A^{T} A x-A^{T} b\right)=0 \Rightarrow A^{T} A x=A^{T} b$$
 
 $A$的列向量无关时，则 $ \hat{x}=\left(A^{T} A\right)^{-1} A^{T} b $.
@@ -271,7 +273,7 @@ $A$的列向量无关时，则 $ \hat{x}=\left(A^{T} A\right)^{-1} A^{T} b $.
     \input{tikz_images/projection-onto-a-is-also-onto-q.tex}
 \end{FigureCenter}
 
-矩阵 $ \mathrm{A} \in \mathbb{R}^{m \times n} $ 的列 $ a_{1}, a_{2}, \ldots, a_{n} \in \mathbb{R}^{m} $ 的最小二乘法问题
+矩阵 $ {A} \in \mathbb{R}^{m \times n} $ 的列 $ a_{1}, a_{2}, \ldots, a_{n} \in \mathbb{R}^{m} $ 的最小二乘法问题
 $$
 \hat{x}=\underset{x}{\arg \underset{x}{\min}}\|A x-b\|_{2}^{2} ,\|A x-b\|_{2}^{2}=\left\|\sum_{j=1}^{n} a_{j} x_{j}-b\right\|_{2}^{2}
 $$
@@ -292,13 +294,12 @@ $$
 \section{正规方程}
 
 \begin{theorem}[最小二乘法问题的正规方程]
-    $$
+
+    $$ \nabla f(x)=0, f(x)=\|A x-b\|_{2}^{2} $$
+等价于
+$$
 A^{T} A x=A^{T} b
 $$
-
-等价于
-
-$$ \nabla f(x)=0, f(x)=\|A x-b\|_{2}^{2 \prime \prime} $$
 \end{theorem}
 
 系数矩阵 $ A^{T} A $ 是 $ A $ 的Gram矩阵，最小二乘法问题所有的解都满足正规方程。
@@ -379,7 +380,7 @@ $$
 
 \begin{itemize}
     \item 首先对A进行QR分解 $ A=Q R\left(2 m n^{2}\right. $ flops $ ) $
-    \item 计算矩阵向量乘积 $ d=Q^{T} b(2 \mathrm{mn} $ flops $ ) $
+    \item 计算矩阵向量乘积 $ d=Q^{T} b(2 {mn} $ flops $ ) $
     \item 通过回代求解 $ R x=d\left(n^{2}\right. $ flops $ ) $
     \item 复杂度: $ 2 m n^{2} $ flops
 \end{itemize}
@@ -457,14 +458,14 @@ $$\begin{aligned}
 
 \section{梯度下降法}
 
-给定 $ A \in \mathbb{R}^{m \times n}, \mathrm{~b} \in \mathbb{R}^{m}, x \in \mathbb{R}^{n} $ 目标函数:
+给定 $ A \in \mathbb{R}^{m \times n}, {~b} \in \mathbb{R}^{m}, x \in \mathbb{R}^{n} $ 目标函数:
 $$
 f(x)=\|A x-b\|_{2}^{2}=\sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i j} x_{j}-b_{i}\right)^{2}
 $$
 为使目标函数最小, 可求最优解 $ \hat{x}: \quad \hat{x}=\arg \underset{x}{ \min } f(x) $.
 
 \begin{problem}
-    $ A \in \mathbb{R}^{\mathrm{m} \times n} $ 列向量线性相关或n非常大$
+    $ A \in \mathbb{R}^{{m} \times n} $ 列向量线性相关或n非常大$
     A^{T} A \in \mathbb{R}^{n \times n}$不可逆，无法直接代入求得最小二乘解。
 \end{problem}
 

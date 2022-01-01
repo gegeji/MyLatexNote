@@ -68,7 +68,7 @@ $$
 \begin{problem}[双目标规划问题]
     $$ \min _{x}\left\|A_{1} x-b_{1}\right\|_{2}^{2}+\lambda\left\|A_{2} x-b_{2}\right\|_{2}^{2}, A_{1}, A_{2} \in \mathbb{R}^{10 \times 5} $$
 
-    $\lambda$的变化会影响解的状态。
+    $\lambda$的变化会影响解的结果。
 \end{problem}
 
 
@@ -99,7 +99,7 @@ $$\begin{aligned} \hat{x}&=\left(\tilde{A}^{T} \tilde{A}\right)^{-1} \tilde{A}^{
 
 
 
-可对 $ \tilde{A} $ 进行QR分解计算 $ \hat{x} $ .每一个矩阵$A_i$的行向量可以线性相关。
+可对 $ \tilde{A} $ 进行QR分解计算 $ \hat{x} $. 由于施加了正则化项约束，每一个矩阵$A_i$的行向量可以线性相关。
 
 
 
@@ -171,7 +171,7 @@ $$ A_{1}=\left[\begin{array}{cccc}1 & f_{2}\left(x^{(1)}\right) & \ldots & f_{p}
 
 \end{problem}
 
-使用最小二乘估计法进行估计
+使用最小二乘估计法进行估计：
 
 \begin{problem}[最小二乘法进行估计]
     $$
@@ -284,8 +284,8 @@ X=\left[\begin{array}{ll}
 $$
 \end{example}
 
-\begin{definition}
-    水平差分矩阵：大小为 $ (N-1) \times N $ 的块矩阵，每块大小 $ M \times M $ :
+\begin{definition}[水平差分矩阵]
+    大小为 $ (N-1) \times N $ 的块矩阵，每块大小 $ M \times M $ :
 $$
 D_{h}=\left[\begin{array}{ccccccc}
 -I_{M, M} & I_{M, M} & 0 & \cdots & 0 & 0 & 0 \\
