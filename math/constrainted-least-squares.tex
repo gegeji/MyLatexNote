@@ -1,6 +1,6 @@
 \chapter{Constrained Least Squares}
 
-\section{Karush–Kuhn–Tucker Conditions}
+\section{Karush-Kuhn-Tucker Conditions}
 
 \begin{problem}
     \begin{equation}
@@ -42,11 +42,11 @@ L(x, \lambda)=f(x)-\lambda h(x)=2 x_{1}^{2}+x_{2}^{2}+\lambda\left(1-x_{1}-x_{2}
 &g_{j}(x) \leq 0, j \in J \triangleq\{1, \cdots, q\}
     \end{aligned}\end{equation}
 
-$ \lambda_{i} \in \mathbb{R}, i \in \mathrm{I}, u_{j} \in \mathbb{R}^{+}, j \in J $称为\term{拉格朗日乘子(Lagrange Multipliers)} .
+$ \lambda_{i} \in \mathbb{R}, i \in {I}, u_{j} \in \mathbb{R}^{+}, j \in J $称为\term{拉格朗日乘子(Lagrange Multipliers)} .
 
 引入拉格朗日函数 \begin{equation} L(x, \lambda, u)=f(x)-\sum_{i \in I} \lambda_{i} h_{i}(x)-\sum_{j \in J} u_{j} g_{j}(x)   \end{equation}
 
-设$\lambda=\left[\begin{array}{c}\lambda_{1} \\ \vdots \\ \lambda_{p}\end{array}\right], u=\left[\begin{array}{c}u_{1} \\ \vdots \\ u_{q}\end{array}\right]$,$h(x),g(x)$假设可以视为一个向量
+设$\lambda=\left[\begin{array}{c}\lambda_{1} \\ \vdots \\ \lambda_{p}\end{array}\right], u=\left[\begin{array}{c}u_{1} \\ \vdots \\ u_{q}\end{array}\right]$,$h(x),g(x)$假设可以视为一个向量.
 
 则拉格朗日乘子式可写成
 
@@ -172,7 +172,7 @@ x_{1}&=2 x_{2}
 
 假设矩阵$C$行向量线性无关时，有：
 \begin{itemize}
-    \item 对任意一个 $ \mathrm{d}, C x=d $ 至少有一个解;
+    \item 对任意一个 $ {d}, C x=d $ 至少有一个解;
     \item 矩阵$C$为宽的或者方的 $ (p \leq n) $;
     \item 当 $ p<n $,有无穷多个解。
 \end{itemize}
@@ -351,7 +351,7 @@ C \hat{x}=C C^{T}\left(C C^{T}\right)^{-1} d=d
 
 \begin{itemize}
     \item 矩阵 $ C^{T}=Q R $ 分解， $ C^{T}=Q R\left(2 n p^{2}\right. $ flops $ ) $
-    \item 回代法求解 $ R^{T} z=d\left(p^{2}\right. $ flops $ ) $
+    \item 回代法求解 $ R^{T} z=d\left(p^{2} \text{ flops} \right) $
     \item 计算 $ \hat{x}=Q z(2 n p $ flops $ ) $
 \end{itemize}
 
@@ -386,7 +386,7 @@ C=\left[\begin{array}{cccc}
 0 & 1 / \sqrt{2}
 \end{array}\right]
 \end{equation}
-通过回代法求解 $ R^{T} Z=d $
+通过回代法求解 $ R^{T} z=d $
 \begin{equation}
 \left[\begin{array}{cc}
 2 & 0 \\
@@ -1214,7 +1214,7 @@ x_{1}=\frac{\mu}{4}+\frac{1}{2}, \quad x_{2}=-\frac{\mu}{4}+\frac{1}{2}
 &h_{k}({x})=0(k=1,2, \cdots, l)
 \end{aligned}
 \end{equation}
-KKT 条件给出了判断 $ \mathrm{x}^{*} $ 是否为最优解的\textbf{必要条件}, 即：
+KKT 条件给出了判断 $ {x}^{*} $ 是否为最优解的\textbf{必要条件}, 即：
 \begin{equation}
 \left\{\begin{array}{l}
 \frac{\partial f}{\partial x_{i}}+\sum_{j=1}^{m} \mu_{j} \frac{\partial g_{j}}{\partial x_{i}}+\sum_{k=1}^{l} \lambda_{k} \frac{\partial h_{k}}{\partial x_{i}}=0,(i=1,2, \ldots, n) \\
@@ -1263,7 +1263,7 @@ h_{k}({x})=0,(k=1,2, \cdots, l) \\
 
 \begin{example}
     \begin{equation}\begin{aligned}
-        &\min f(x)\\
+        \min& f(x)\\
     \text { s.t. }& g_{1}(x)=a-x \leq 0\\
     &g_{2}(x)=x-b \leq 0
     \end{aligned} \end{equation}
@@ -1414,14 +1414,14 @@ $J$ 为起作用约束的集合。
     一点的梯度与等值线相互垂直。
 \end{corollary}
 
-再作约束函数 $ g_{1}({x})=0 $ 和 $ g_{2}({x})=0 $ 的梯度 $ \nabla g_{1}\left({x}^{k}\right) $ 和 $ \nabla g_{2}\left({x}^{k}\right) $, 它们分别垂直 $ g_{1}({x})=0 $ 和 $ g_{2}({x})=0 $ 两曲面在 $ {x}^{k} $ 的切平面， 并形成一个雉形夹角区域。此时， 可能有 $ \mathrm{a} 、 \mathrm{~b} $ 两种情形：
+再作约束函数 $ g_{1}({x})=0 $ 和 $ g_{2}({x})=0 $ 的梯度 $ \nabla g_{1}\left({x}^{k}\right) $ 和 $ \nabla g_{2}\left({x}^{k}\right) $, 它们分别垂直 $ g_{1}({x})=0 $ 和 $ g_{2}({x})=0 $ 两曲面在 $ {x}^{k} $ 的切平面， 并形成一个雉形夹角区域。此时， 可能有 $ {a} 、 {~b} $ 两种情形：
 
 \begin{FigureCenter}{}
     \label{fig:kkt-3}
     \includegraphics[width=0.5\textwidth]{KKT-geometry-3.jpg}
 \end{FigureCenter}
 
-我们先来看情形 $\mathrm{b}$ ：若3个向量的位置关系如\ref{fig:kkt-3}所示， 即 $-\nabla f$ 落在 $\nabla g_{1}$ 和 $\nabla g_{2}$ 所形成的锥角区外的 一侧。 此时， 作等值面 $f({x})=C$ 在点 ${x}^{k}$ 的切平面（它与 $-\nabla f\left({x}^{k}\right)$ 垂直）， 我们发现：沿着与负 梯度 $-\nabla f$ 成锐角的方向移动（如下图红色箭头方向）， 只要在红色区域取值， 目标函数 $f({x})$ 总 能减小。而红色区域是可行域 $(f({x})=C$, C取不同的常数能得到不同的等值线， 因此能取到红色 区域）， 因此既可减小目标函数值， 又不破坏约束条件。 这说明 ${x}^{k}$ 仍可沿约束曲面移动而不破坏约 束条件， 且目标函数值还能够减小。所以 ${x}^{k}$ 不是稳定的最优点， 即不是局部极值点。
+我们先来看情形 ${b}$ ：若3个向量的位置关系如\ref{fig:kkt-3}所示， 即 $-\nabla f$ 落在 $\nabla g_{1}$ 和 $\nabla g_{2}$ 所形成的锥角区外的 一侧。 此时， 作等值面 $f({x})=C$ 在点 ${x}^{k}$ 的切平面（它与 $-\nabla f\left({x}^{k}\right)$ 垂直）， 我们发现：沿着与负 梯度 $-\nabla f$ 成锐角的方向移动（如下图红色箭头方向）， 只要在红色区域取值， 目标函数 $f({x})$ 总 能减小。而红色区域是可行域 $(f({x})=C$, C取不同的常数能得到不同的等值线， 因此能取到红色 区域）， 因此既可减小目标函数值， 又不破坏约束条件。 这说明 ${x}^{k}$ 仍可沿约束曲面移动而不破坏约 束条件， 且目标函数值还能够减小。所以 ${x}^{k}$ 不是稳定的最优点， 即不是局部极值点。
 
 反过头来看情形a: $ -\nabla f $ 落在 $ \nabla g_{1} $ 和 $ \nabla g_{2} $ 形成的锥角内。 此时， 同样作 $ f({x})=C $ 在点 $ {x}^{k} $ 与 $ -\nabla f $ 垂直的切平面。 当从 $ {x}^{k} $ 出发沿着与负梯度 $ -\nabla f $ 成锐角的方向移动时， 虽然能使目标函数值减小， 但此时任何一点都不在可行区域内。 显然， 此时 $ {x}^{k} $ 就是局部最优点 $ {x}^{*} $, 再做任何移动都将破坏约 束条件， 故它是稳定点。
 
@@ -1441,7 +1441,7 @@ $J$ 为起作用约束的集合。
 h_{k}({x})=0(k=1,2, \cdots, l)
 \end{array}
 \end{equation}
-KKT条件 $ \left(\mathrm{x}^{*}\right. $ 是最优解的必要条件 $ ) $ 为
+KKT条件 $ \left({x}^{*}\right. $ 是最优解的必要条件 $ ) $ 为
 \begin{equation}
 \left\{\begin{array}{l}
 \frac{\partial f}{\partial x_{i}}+\sum_{j=1}^{m} \mu_{j} \frac{\partial g_{j}}{\partial x_{i}}+\sum_{k=1}^{l} \lambda_{k} \frac{\partial h_{k}}{\partial x_{i}}=0,(i=1,2, \ldots, n) \\
@@ -1702,7 +1702,7 @@ $ \theta_{\mathcal{D}}(\alpha, \beta): \mathbb{R}^{m} \times \mathbb{R}^{p} \rig
     \min _{{x}} f_{0}({x}), \quad \text { s.t. } f_{i}({x}) \leq 0, g_{i}({x}) \leq 0
     \end{equation}
 
-    如果存在点 $ \mathrm{x} \in $ relint $ \mathcal{D} $ （即 $ \mathcal{D} $ 的相对内点）， 则强对偶性成立。
+    如果存在点 $ {x} \in $ relint $ \mathcal{D} $ （即 $ \mathcal{D} $ 的相对内点）， 则强对偶性成立。
 \end{theorem}
 
 实践中， 几乎所有的凸优化问题都满足某种constraint qualification, 所以 主问题和对偶问题有相同的最优值。
@@ -1728,7 +1728,7 @@ $ \theta_{\mathcal{D}}(\alpha, \beta): \mathbb{R}^{m} \times \mathbb{R}^{p} \rig
 \end{proof}
 
 \begin{theorem}
-    设 $ x^{*} \in \mathbb{R}^{n}, \alpha^{*} \in \mathbb{R}^{m}, \beta^{*} \in \mathbb{R}^{p} $, 下列条件为 $ \mathrm{KKT} $ 条件:
+    设 $ x^{*} \in \mathbb{R}^{n}, \alpha^{*} \in \mathbb{R}^{m}, \beta^{*} \in \mathbb{R}^{p} $, 下列条件为 $ {KKT} $ 条件:
 
     \begin{enumerate}
         \item (主可行) $ g_{i}\left(x^{*}\right) \leqslant 0, i=1, \ldots, m, h_{j}\left(x^{*}\right)=0, j=1, \ldots, p $
