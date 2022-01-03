@@ -5,7 +5,7 @@
 \begin{definition}[矩阵]
     \term{矩阵}是一个由数字构成的矩阵数组。 
 
-    $$ \left[\begin{array}{cccc}0 & 1 & -2.3 & 0.1 \\ 1.3 & 4 & -0.1 & 0 \\ 4.1 & -1 & 0 & 1.7\end{array}\right] \quad  \left(\begin{array}{cccc}0 & 1 & -2.3 & 0.1 \\ 1.3 & 4 & -0.1 & 0 \\ 4.1 & -1 & 0 & 1.7\end{array}\right)  $$
+    \begin{equation} \left[\begin{array}{cccc}0 & 1 & -2.3 & 0.1 \\ 1.3 & 4 & -0.1 & 0 \\ 4.1 & -1 & 0 & 1.7\end{array}\right] \quad  \left(\begin{array}{cccc}0 & 1 & -2.3 & 0.1 \\ 1.3 & 4 & -0.1 & 0 \\ 4.1 & -1 & 0 & 1.7\end{array}\right)  \end{equation}
 
     上述矩阵\term{大小(size)}为 $3\times 4$, 矩阵的每一个\term{元素(element)}又称为\term{系数(coefficient)};
 \end{definition}
@@ -26,41 +26,41 @@
     不区分一个$n\times 1$矩阵和一个向量。 
 \end{definition}
 
-\begin{definition}[行向量, 列向量]
+\begin{definition}[行向量， 列向量]
     一个$1\times n$矩阵被称为一个行向量。 
     
     一个$n\times 1$矩阵杯称为一个列向量。 
 \end{definition}
 
-\begin{definition}[高形, 宽形和方形矩阵]
+\begin{definition}[高形， 宽形和方形矩阵]
     一个大小为$m\times n$的矩阵为：
     \begin{itemize}
-        \item \term{高}的, 如果$m>n$
-        \item \term{宽}的, 如果$m<n$
-        \item \term{方}的, 如果$m=n$
+        \item \term{高}的， 如果$m>n$
+        \item \term{宽}的， 如果$m<n$
+        \item \term{方}的， 如果$m=n$
     \end{itemize}
 \end{definition}
 
 \begin{definition}[分块矩阵]
     分块矩阵的每一个元素都是一个矩阵。
 
-    $$ A=\left[\begin{array}{ll}B & C \\ D & E\end{array}\right] $$
+    \begin{equation} A=\left[\begin{array}{ll}B & C \\ D & E\end{array}\right] \end{equation}
 
     其中$B,C,D,E$都是矩阵(被称为\term{矩阵$A$的子矩阵}).
 \end{definition}
 
-分块矩阵位于同一行的子矩阵行维度必须相等,位于同一列的子矩阵列维度必须相等。
+分块矩阵位于同一行的子矩阵行维度必须相等，位于同一列的子矩阵列维度必须相等。
 
 \begin{definition}[矩阵的列向量表示]
-    矩阵 $ A \in \mathbb{R}^{m \times n} $ , 可通过其列向量($m$-vector)进行表示,假设其列向量为 $ a_{1}, \ldots, a_{n} \in \mathbb{R}^{m} $, 则有
+    矩阵 $ A \in \mathbb{R}^{m \times n} $ , 可通过其列向量($m$-vector)进行表示，假设其列向量为 $ a_{1}, \ldots, a_{n} \in \mathbb{R}^{m} $, 则有
 
-    $$ A=\left[\begin{array}{lll}a_{1} & \cdots & a_{n}\end{array}\right] $$
+    \begin{equation} A=\left[\begin{array}{lll}a_{1} & \cdots & a_{n}\end{array}\right] \end{equation}
 \end{definition}
 
 \begin{definition}[矩阵的行向量表示]
     矩阵 $ A \in \mathbb{R}^{m \times n} $通过其行向量 $ b_{1}, \ldots, b_{m} $ 进行表示
 
-    $$ A=\left[\begin{array}{c}b_{1} \\ \vdots \\ b_{m}\end{array}\right], b_{i}^{T} \in \mathbb{R}^{n}, i=1, \cdots, m $$
+    \begin{equation} A=\left[\begin{array}{c}b_{1} \\ \vdots \\ b_{m}\end{array}\right], b_{i}^{T} \in \mathbb{R}^{n}, i=1, \cdots, m \end{equation}
 \end{definition}
 
 \section{矩阵运算}
@@ -68,7 +68,7 @@
 \begin{definition}[矩阵数乘]
     设矩阵 $ A \in \mathbb{R}^{m \times n} $
 
-    $$ \beta A=\left[\begin{array}{cccc}\beta A_{11} & \beta A_{12} & \cdots & \beta A_{1 n} \\ \vdots & \vdots & \ddots & \vdots \\ \beta A_{m 1} & \beta A_{m 2} & \cdots & \beta A_{m n}\end{array}\right], \beta \in \mathbb{R} $$
+    \begin{equation} \beta A=\left[\begin{array}{cccc}\beta A_{11} & \beta A_{12} & \cdots & \beta A_{1 n} \\ \vdots & \vdots & \ddots & \vdots \\ \beta A_{m 1} & \beta A_{m 2} & \cdots & \beta A_{m n}\end{array}\right], \beta \in \mathbb{R} \end{equation}
 
     ($ A $ and $ \beta $ can be real or complex.)
 \end{definition}
@@ -76,7 +76,7 @@
 \begin{definition}[矩阵加法]
     矩阵 $ A, B \in \mathbb{R}^{m \times n} $ 的和为
 
-    $$ A+B=\left[\begin{array}{cccc}A_{11}+B_{11} & A_{12}+B_{12} & \cdots & A_{1 n}+B_{1 n} \\ \vdots & \vdots & \ddots & \vdots \\ A_{m 1}+B_{m 1} & A_{m 2}+B_{m 2} & \cdots & A_{m n}+B_{m n}\end{array}\right] $$
+    \begin{equation} A+B=\left[\begin{array}{cccc}A_{11}+B_{11} & A_{12}+B_{12} & \cdots & A_{1 n}+B_{1 n} \\ \vdots & \vdots & \ddots & \vdots \\ A_{m 1}+B_{m 1} & A_{m 2}+B_{m 2} & \cdots & A_{m n}+B_{m n}\end{array}\right] \end{equation}
 \end{definition}
 
 \begin{definition}[Transpose]
@@ -105,14 +105,14 @@
 
     设矩阵 $ A \in \mathbb{C}^{m \times n} $ , 则其共轭转置为一个 $ n \times m $ 矩阵
 
-$$
+\begin{equation}
 A^{H}=\left[\begin{array}{cccc}
 \bar{A}_{11} & \bar{A}_{21} & \cdots & \bar{A}_{m 1} \\
 \bar{A}_{21} & \bar{A}_{22} & \cdots & \bar{A}_{m 2} \\
 \vdots & \vdots & \ddots & \vdots \\
 \bar{A}_{1 n} & \bar{A}_{2 n} & \cdots & \bar{A}_{m n}
 \end{array}\right]
-$$
+\end{equation}
 \end{definition}
 
 \begin{corollary}[共轭转置的性质]
@@ -126,11 +126,11 @@ $$
 
 
 \begin{definition}[矩阵乘法]
-    设矩阵 $ A \in \mathbb{R}^{m \times p}, B \in \mathbb{R}^{p \times n} $,那么矩阵A与B的乘积, 记 作C $ =A B $ ,  矩阵 $ C \in \mathbb{R}^{m \times n} $ 的第 i行第 $ j $ 列元素 $ C_{i j} $
+    设矩阵 $ A \in \mathbb{R}^{m \times p}, B \in \mathbb{R}^{p \times n} $,那么矩阵A与B的乘积， 记 作C $ =A B $ ,  矩阵 $ C \in \mathbb{R}^{m \times n} $ 的第 i行第 $ j $ 列元素 $ C_{i j} $
 
-    $$
+    \begin{equation}
 {C}_{i j}=\sum_{k=1}^{p} A_{i k} B_{k j}
-$$
+\end{equation}
 
 \end{definition}
 
@@ -145,30 +145,30 @@ $$
         \item 分配律： $ A(B+C)=A B+A C $.
         \item $ (A B)^{T}=B^{T} A^{T}, \quad(A B)^{{H}}=B^{H} A^{H} $.
         \item 一般情况下 $ A B \neq B A $.
-        \item 对于方阵A有, $ I A=A I=A $.
+        \item 对于方阵A有， $ I A=A I=A $.
     \end{itemize} 
 \end{corollary}
 
 \begin{definition}[分块矩阵乘法]
-    $$ \left[\begin{array}{ll}A & B \\ {C} & D\end{array}\right]\left[\begin{array}{ll}W & Y \\ X & Z\end{array}\right]=\left[\begin{array}{ll}A W+B X & A Y+B Z \\ C W+D X & C Y+D Z\end{array}\right] $$
+    \begin{equation} \left[\begin{array}{ll}A & B \\ {C} & D\end{array}\right]\left[\begin{array}{ll}W & Y \\ X & Z\end{array}\right]=\left[\begin{array}{ll}A W+B X & A Y+B Z \\ C W+D X & C Y+D Z\end{array}\right] \end{equation}
 \end{definition}
 
 \begin{definition}[矩阵-向量乘积 $Ax$]
     矩阵 $ A \in \mathbb{R}^{m \times n} $ 和一个向量 $ x \in \mathbb{R}^{n} $ 的积为
-$$
+\begin{equation}
 A x=\left[\begin{array}{c}
 A_{11} x_{1}+A_{12} x_{2}+\cdots+A_{1 n} x_{n} \\
 A_{21} x_{1}+A_{22} x_{2}+\cdots+A_{2 n} x_{n} \\
 \vdots \\
 A_{m 1} x_{1}+A_{m 2} x_{2}+\cdots+A_{m n} x_{n}
 \end{array}\right]
-$$
+\end{equation}
 \end{definition}
 
 \begin{corollary}
     $ {A} x $ 是矩阵A列向量的线性组合。
 
-$$
+\begin{equation}
 A x=\left[\begin{array}{llll}
 a_{1} & a_{2} & \cdots & a_{n}
 \end{array}\right]\left[\begin{array}{c}
@@ -177,18 +177,18 @@ x_{2} \\
 \vdots \\
 x_{n}
 \end{array}\right]=x_{1} a_{1}+\cdots+x_{n} a_{n}
-$$
+\end{equation}
 \end{corollary}
 
 可以引出$A$的Row Picture和Column Picture的概念。
 
 \begin{example}
     \label{exm: row-column-picture}
-    $$\left\{\begin{matrix} 
+    \begin{equation}\left\{\begin{matrix} 
         
         x - 2y=1 \\  
         3x+2y=11 
-      \end{matrix}\right. $$
+      \end{matrix}\right. \end{equation}
 
 
 
@@ -221,7 +221,7 @@ signal processing/control interpretation: $ n $ inputs $ x_{i}, m $ outputs $ y_
 \end{definition}
 
 \begin{theorem}
-    矩阵-向量乘积函数$f(x)=A x$为一个线性函数： $$ A(\alpha x+\beta y)=\alpha(A x)+\beta(A y) $$
+    矩阵-向量乘积函数$f(x)=A x$为一个线性函数： \begin{equation} A(\alpha x+\beta y)=\alpha(A x)+\beta(A y) \end{equation}
 \end{theorem}
 
 \begin{proof}
@@ -229,7 +229,7 @@ signal processing/control interpretation: $ n $ inputs $ x_{i}, m $ outputs $ y_
     
     任意一个线性函数都可以写成矩阵-向量乘积函数的形式
 
-    $$ \begin{aligned} f(x) &=f\left(x_{1} e_{1}+x_{2} e_{2}+\cdots+x_{n} e_{n}\right) \\ &=x_{1} f\left(e_{1}\right)+x_{2} f\left(e_{2}\right)+\cdots+x_{n} f\left(e_{n}\right) \\ &=\left[\begin{array}{lll}f\left(e_{1}\right) & \cdots & f\left(e_{n}\right)\end{array}\right]\left[\begin{array}{c}x_{1} \\ \vdots \\ x_{n}\end{array}\right] \end{aligned} $$
+    \begin{equation} \begin{aligned} f(x) &=f\left(x_{1} e_{1}+x_{2} e_{2}+\cdots+x_{n} e_{n}\right) \\ &=x_{1} f\left(e_{1}\right)+x_{2} f\left(e_{2}\right)+\cdots+x_{n} f\left(e_{n}\right) \\ &=\left[\begin{array}{lll}f\left(e_{1}\right) & \cdots & f\left(e_{n}\right)\end{array}\right]\left[\begin{array}{c}x_{1} \\ \vdots \\ x_{n}\end{array}\right] \end{aligned} \end{equation}
 
     因此 $ f(x)=A x $, 其中 $ A=\left[f\left(e_{1}\right) \ldots f\left(e_{n}\right)\right] $
 \end{proof}
@@ -239,7 +239,7 @@ It makes sense to multiply a square matrix $ A $ by itself to form $ A A $.
 \begin{definition}[Matrix Power]
     We refer to this matrix as $ A^{2} $. Similarly, if $ k $ is a positive integer, then $ k $ copies of $ A $ multiplied together is denoted $ A^{k} $. 
     
-    $$ \left(A^{\ell+1}\right)_{i j}=\sum_{k=1}^{n} A_{i k}\left(A^{\ell}\right)_{k j} $$
+    \begin{equation} \left(A^{\ell+1}\right)_{i j}=\sum_{k=1}^{n} A_{i k}\left(A^{\ell}\right)_{k j} \end{equation}
 
     By convention we take $ A^{0}=I $, which makes the
     formulas above hold for all nonnegative integer values of $k$ and $l$.
@@ -250,11 +250,11 @@ It makes sense to multiply a square matrix $ A $ by itself to form $ A A $.
 \end{theorem}
 
  \begin{example}[Paths in a directed graph]
-        $$ A_{i j}=\left\{\begin{array}{ll}1 & \text { there is a edge from vertex } j \text { to vertex } i \\ 0 & \text { otherwise }\end{array}\right. $$
+        \begin{equation} A_{i j}=\left\{\begin{array}{ll}1 & \text { there is a edge from vertex } j \text { to vertex } i \\ 0 & \text { otherwise }\end{array}\right. \end{equation}
 \end{example}
 
 \begin{example}[Linear dynamical system]
-    $$ x_{t+\ell}=A^{\ell} x_{t} $$
+    \begin{equation} x_{t+\ell}=A^{\ell} x_{t} \end{equation}
 \end{example}
 
 \section{矩阵运算的算法复杂度}
@@ -314,7 +314,7 @@ There is no simple formula for the complexity of multiplying two sparse matrices
 \subsubsection{三重矩阵相乘}
 
 \begin{theorem}
-    $$ D=A B C $$
+    \begin{equation} D=A B C \end{equation}
 
 with $ A $ of size $ m \times n, B $ of size $ n \times p $, and $ C $ of size $ p \times q $. 
 
@@ -331,15 +331,15 @@ In the second method we compute the product $ B C $ (2npq flops) and then form $
 
 \begin{remark}
     You might guess that the total number of flops required is the same with the two methods, but it turns out it is not. The first method is less expensive when $ 2 m p(n+q)<2 n q(m+p) $, i.e., when
-$$
+\begin{equation}
 \frac{1}{n}+\frac{1}{q}<\frac{1}{m}+\frac{1}{p}
-$$
+\end{equation}
 \end{remark}
 
 \begin{example}
     As a more specific example, consider the product 
     
-    $$ a b^{T} c $$
+    \begin{equation} a b^{T} c \end{equation}
     
     where $ a, b, c $ are $ n $ vectors. 
     
@@ -354,9 +354,9 @@ $$
 
 矩阵 $ A \in \mathbb{R}^{m \times n} $ 和向量 $ x \in \mathbb{R}^{n} $ 的乘积 $ {y}={A} x $, 需要 $ (2 {n}-1) {m} $ flops;
 
-乘积 $ y \in \mathbb{R}^{m} $ , 每个元素需要做向量内积, 需要 $ 2 n-1 $ flops;
+乘积 $ y \in \mathbb{R}^{m} $ , 每个元素需要做向量内积， 需要 $ 2 n-1 $ flops;
 
-当$n$足够大时, 复杂度近似于$2mn$；
+当$n$足够大时， 复杂度近似于$2mn$；
 
 特殊情况:
 
@@ -372,19 +372,19 @@ $$
 \begin{definition}[Zero Matrix]
     所有元素都为0的矩阵。
 
-    记作$$0, 0_{m \times n} $$
+    记作\begin{equation}0, 0_{m \times n} \end{equation}
 \end{definition}
 
 \begin{definition}[单位矩阵]
-    为方形矩阵, 其中对角线元素为1, 其它元素为0.
+    为方形矩阵， 其中对角线元素为1, 其它元素为0.
 
     记作$I$或者 $ {I}_{n} $.
 \end{definition}
 
 \begin{corollary}
-  $ {I}_{n} $ 的每一列是一个单位向量, 例如
+  $ {I}_{n} $ 的每一列是一个单位向量， 例如
 
-$$
+\begin{equation}
 {I}_{3}=\left[\begin{array}{lll}
 1 & 0 & 0 \\
 0 & 1 & 0 \\
@@ -392,11 +392,11 @@ $$
 \end{array}\right]=\left[\begin{array}{lll}
 e_{1} & e_{2} & e_{3}
 \end{array}\right]
-$$
+\end{equation}
 \end{corollary}
 
 \begin{definition}[Symmetric Matrices]
-    $$ A_{i j}=A_{j i}, A^T =A $$
+    \begin{equation} A_{i j}=A_{j i}, A^T =A \end{equation}
 \end{definition}
 
 \begin{definition}[Hermitian Matrices]
@@ -431,7 +431,7 @@ sparse matrix storage formats and algorithms exploit sparsity, efficiency depend
 
 \subsection{$f(x)=A x$中的$A$ （几何变换）}
 
-引入上节$f(x)=A x$(矩阵-向量乘积函数)的概念,
+引入上节$f(x)=A x$(矩阵-向量乘积函数)的概念，
 
 \begin{definition}[Scaling]
     Scaling is the mapping $ y=a x $, where $ a $ is a scalar. This can be expressed as $ y=A x $ with $ A=a I $. This mapping stretches a vector by the factor $ |a| $ (or shrinks it when $ |a|<1 $ ), and it flips the vector (reverses its direction) if $ a<0 $.
@@ -448,27 +448,27 @@ sparse matrix storage formats and algorithms exploit sparsity, efficiency depend
 
 
 \begin{definition}[旋转矩阵]
-    $$ A=\left[\begin{array}{cc}\cos \theta & -\sin \theta \\ \sin \theta & \cos \theta\end{array}\right] $$
+    \begin{equation} A=\left[\begin{array}{cc}\cos \theta & -\sin \theta \\ \sin \theta & \cos \theta\end{array}\right] \end{equation}
 
-    $ {A} x $ 将向量 $ x $ 进行旋转, 角度为 $ \theta $.
+    $ {A} x $ 将向量 $ x $ 进行旋转， 角度为 $ \theta $.
 \end{definition}
 
 \begin{definition}[Reflection Matrices]
     Suppose that $y$ is the vector obtained by reflecting $x$ through the line
     that passes through the origin, inclined $\theta$ radians with respect to horizontal. Then
 
-    $$ y=\left[\begin{array}{rr}\cos (2 \theta) & \sin (2 \theta) \\ \sin (2 \theta) & -\cos (2 \theta)\end{array}\right] x $$
+    \begin{equation} y=\left[\begin{array}{rr}\cos (2 \theta) & \sin (2 \theta) \\ \sin (2 \theta) & -\cos (2 \theta)\end{array}\right] x \end{equation}
 \end{definition}
 
 
 \begin{definition}[Projection onto a Line]
     The projection of the point $ x $ onto a set is the point in the set that is closest to $ x $. Suppose $ y $ is the projection of $ x $ onto the line that passes through the origin, inclined $ \theta $ radians with respect to horizontal. Then we have
-$$
+\begin{equation}
 y=\left[\begin{array}{cc}
 (1 / 2)(1+\cos (2 \theta)) & (1 / 2) \sin (2 \theta) \\
 (1 / 2) \sin (2 \theta) & (1 / 2)(1-\cos (2 \theta))
 \end{array}\right] x .
-$$
+\end{equation}
 \end{definition}
 
 % todo (2021-12-31 09:47): 149
@@ -479,29 +479,29 @@ When a geometric transformation is represented by matrix-vector multiplication (
 
 \begin{example}
     As a simple example consider clockwise rotation by $ 90^{\circ} $ in 2-D. Rotating the vector $ e_{1}=(1,0) $ by $ 90^{\circ} $ gives $ (0,-1) $; rotating $ e_{2}=(0,1) $ by $ 90^{\circ} $ gives $ (1,0) $. So rotation by $ 90^{\circ} $ is given by
-$$
+\begin{equation}
 y=\left[\begin{array}{rr}
 0 & 1 \\
 -1 & 0
 \end{array}\right] x .
-$$
+\end{equation}
 \end{example}
 
 \begin{example}[Changeof Coordinates]
     Change of coordinates. In many applications multiple coordinate systems are used to describe locations or positions in 2-D or 3-D. For example in aerospace engineering we can describe a position using earth-fixed coordinates or body-fixed coordinates, where the body refers to an aircraft. Earth-fixed coordinates are with respect to a specific origin, with the three axes pointing East, North, and straight up, respectively. The origin of the body-fixed coordinates is a specific location on the aircraft (typically the center of gravity), and the three axes point forward (along the aircraft body), left (with respect to the aircraft body), and up (with respect to the aircraft body). Suppose the 3 -vector $ x^{\text {body }} $ describes a location using the body coordinates, and $ x^{\text {earth }} $ describes the same location in earth-fixed coordinates. These are related by
-$$
+\begin{equation}
 x^{\text {earth }}=p+Q x^{\text {body }},
-$$
+\end{equation}
 
 where $ p $ is the location of the airplane center (in earth-fixed coordinates) and $ Q $ is a $ 3 \times 3 $ matrix. The $ i $ th column of $ Q $ gives the earth-fixed coordinates for the $ i $ th
 axis of the airplane. For an airplane in level flight, heading due South, we have
-$$
+\begin{equation}
 Q=\left[\begin{array}{rrr}
 0 & 1 & 0 \\
 -1 & 0 & 0 \\
 0 & 0 & 1
 \end{array}\right]
-$$
+\end{equation}
 \end{example}
 
 
@@ -515,7 +515,7 @@ Negation can be expressed as $ f(x)=A x $ with $ A=-I $.
 
 \begin{example}[Running Sum Matrix]
     The $ n \times n $ matrix
-$$
+\begin{equation}
 S=\left[\begin{array}{cccccc}
 1 & 0 & 0 & \ldots & 0 & 0 \\
 1 & 1 & 0 & \ldots & 0 & 0 \\
@@ -524,11 +524,11 @@ S=\left[\begin{array}{cccccc}
 1 & 1 & 1 & \ldots & 1 & 0 \\
 1 & 1 & 1 & \ldots & 1 & 1
 \end{array}\right]
-$$
+\end{equation}
 is called the running sum matrix. 
 
 The $ i $ th entry of the $ n $-vector $ S x $ is the sum of the first $ i $ entries of $ x $ :
-$$
+\begin{equation}
 S x=\left[\begin{array}{c}
 x_{1} \\
 x_{1}+x_{2} \\
@@ -536,29 +536,29 @@ x_{1}+x_{2}+x_{3} \\
 \vdots \\
 x_{1}+\cdots+x_{n}
 \end{array}\right]
-$$
+\end{equation}
 \end{example}
 
 \begin{example}[De-meaning, Centering Matrix]
     $ f $ subtracts the mean from each entry of a vector $ x $ : $ f(x)= $ $ x-\operatorname{avg}(x) $ 1.
 
 The de-meaning function can be expressed as $ f(x)=A x $ with
-$$
+\begin{equation}
 A=\left[\begin{array}{cccc}
 1-1 / n & -1 / n & \cdots & -1 / n \\
 -1 / n & 1-1 / n & \cdots & -1 / n \\
 \vdots & \vdots & \ddots & \vdots \\
 -1 / n & -1 / n & \cdots & 1-1 / n
 \end{array}\right] \text {. }
-$$
+\end{equation}
 \end{example}
 
 \begin{example}
-    $ f $ 对向量 $ x $ 中的元素进行升序排序, 非线性;
+    $ f $ 对向量 $ x $ 中的元素进行升序排序， 非线性;
 \end{example}
 
 \begin{example}
-    $ f $ 将向量 $ x $ 中的元素替换成相应的绝对值, 非线性;
+    $ f $ 将向量 $ x $ 中的元素替换成相应的绝对值， 非线性;
 \end{example}
 
 
@@ -568,54 +568,54 @@ $$
 
 \begin{definition}[Selector matrices]
     An $ m \times n $ selector matrix $ A $ is one in which each row is a unit vector (transposed)
-$$
+\begin{equation}
 A=\left[\begin{array}{c}
 e_{k_{1}}^{T} \\
 \vdots \\
 e_{k_{m}}^{T}
 \end{array}\right]
-$$
+\end{equation}
 where $ k_{1}, \ldots, k_{m} $ are integers in the range $ 1, \ldots, n . $ 
 \end{definition}
 
 When it multiplies a vector, it simply copies the $ k_{i} $ th entry of $ x $ into the $ i $ th entry of $ y=A x $ :
-$$
+\begin{equation}
 y=\left(x_{k_{1}}, x_{k_{2}}, \ldots, x_{k_{m}}\right) .
-$$
+\end{equation}
 
 In words, each entry of $ A x $ is a selection of an entry of $ x $.
 
 The identity matrix, and the reverser matrix are special cases of selector matrices.
 
 \begin{definition}[Permutation Matrices]
-    $ f $ 颠倒向量 $ x $ 中的元素的顺序, 一个线性函数 $ f(x)=A x $
+    $ f $ 颠倒向量 $ x $ 中的元素的顺序， 一个线性函数 $ f(x)=A x $
 
-    $$ A=\left[\begin{array}{lll}0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0\end{array}\right] $$是一个置换矩阵。
+    \begin{equation} A=\left[\begin{array}{lll}0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0\end{array}\right] \end{equation}是一个置换矩阵。
 \end{definition}
 
 \begin{proof}
-    $$ A x=\left[\begin{array}{lll}0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0\end{array}\right]\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right]=\left[\begin{array}{l}x_{3} \\ x_{2} \\ x_{1}\end{array}\right] $$
+    \begin{equation} A x=\left[\begin{array}{lll}0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0\end{array}\right]\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right]=\left[\begin{array}{l}x_{3} \\ x_{2} \\ x_{1}\end{array}\right] \end{equation}
 \end{proof}
 
 \begin{definition}[反转矩阵(Reverser matrix)]
-    $$ A=\left[\begin{array}{ccccc}0 & 0 & \cdots & 0 & 1 \\ 0 & 0 & \cdots & 1 & 0 \\ \vdots & \vdots & \therefore & \vdots & \vdots \\ 0 & 1 & \cdots & 0 & 0 \\ 1 & 0 & \cdots & 0 & 0\end{array}\right] $$
+    \begin{equation} A=\left[\begin{array}{ccccc}0 & 0 & \cdots & 0 & 1 \\ 0 & 0 & \cdots & 1 & 0 \\ \vdots & \vdots & \therefore & \vdots & \vdots \\ 0 & 1 & \cdots & 0 & 0 \\ 1 & 0 & \cdots & 0 & 0\end{array}\right] \end{equation}
 \end{definition}
 
 \begin{proof}
-    $$ A x=\left[\begin{array}{c}x_{n} \\ x_{n-1} \\ \vdots \\ x_{2} \\ x_{1}\end{array}\right] $$
+    \begin{equation} A x=\left[\begin{array}{c}x_{n} \\ x_{n-1} \\ \vdots \\ x_{2} \\ x_{1}\end{array}\right] \end{equation}
 \end{proof}
 
 \begin{definition}[循环移位矩阵(Circular shift matrix)]
-    $$ A=\left[\begin{array}{ccccc}0 & 0 & \cdots & 0 & 1 \\ 1 & 0 & \cdots & 0 & 0 \\ 0 & 1 & \cdots & 0 & 0 \\ \vdots & \vdots & \ddots & \vdots & \vdots \\ 0 & 0 & \cdots & 1 & 0\end{array}\right] $$
+    \begin{equation} A=\left[\begin{array}{ccccc}0 & 0 & \cdots & 0 & 1 \\ 1 & 0 & \cdots & 0 & 0 \\ 0 & 1 & \cdots & 0 & 0 \\ \vdots & \vdots & \ddots & \vdots & \vdots \\ 0 & 0 & \cdots & 1 & 0\end{array}\right] \end{equation}
 \end{definition}
 
 \begin{proof}
-    $$ A x=\left[\begin{array}{c}x_{n} \\ x_{1} \\ x_{2} \\ \vdots \\ x_{n-1}\end{array}\right] $$
+    \begin{equation} A x=\left[\begin{array}{c}x_{n} \\ x_{1} \\ x_{2} \\ \vdots \\ x_{n-1}\end{array}\right] \end{equation}
 \end{proof}
 
 \begin{definition}[Downsampling]
     Down-sampling. Another example is the $ (n / 2) \times n $ matrix (with $ n $ even)
-$$
+\begin{equation}
 A=\left[\begin{array}{ccccccccccc}
 1 & 0 & 0 & 0 & 0 & 0 & \cdots & 0 & 0 & 0 & 0 \\
 0 & 0 & 1 & 0 & 0 & 0 & \cdots & 0 & 0 & 0 & 0 \\
@@ -624,7 +624,7 @@ A=\left[\begin{array}{ccccccccccc}
 0 & 0 & 0 & 0 & 0 & 0 & \cdots & 1 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0 & 0 & 0 & \cdots & 0 & 0 & 1 & 0
 \end{array}\right] \text {. }
-$$
+\end{equation}
 \end{definition}
 
 \begin{example}
@@ -635,9 +635,9 @@ $$
 
 
 \begin{definition}[关联矩阵]
-   假设有向图$G$有$m$个顶点,  $ n $ 条弧, 则关联矩阵$A$大小为 $ m \times n $,其中 
+   假设有向图$G$有$m$个顶点，  $ n $ 条弧， 则关联矩阵$A$大小为 $ m \times n $,其中 
 
-   $$ A_{i j}=\left\{\begin{array}{ll}1 & \text{如果点} i \text{是弧} j \text{的终点 } \\ -1 & \text {如果点}i \text{是弧}j \text{的起点} \\ 0 & \text { 其它 }\end{array}\right. $$
+   \begin{equation} A_{i j}=\left\{\begin{array}{ll}1 & \text{如果点} i \text{是弧} j \text{的终点 } \\ -1 & \text {如果点}i \text{是弧}j \text{的起点} \\ 0 & \text { 其它 }\end{array}\right. \end{equation}
 \end{definition}
 
 \begin{example}[路径矩阵]
@@ -697,7 +697,7 @@ $$
 
 
     matrix representation
-$$
+\begin{equation}
 A=\left[\begin{array}{lllll}
 0 & 1 & 0 & 0 & 1 \\
 1 & 0 & 1 & 0 & 0 \\
@@ -705,11 +705,11 @@ A=\left[\begin{array}{lllll}
 1 & 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 1 & 0
 \end{array}\right]
-$$
+\end{equation}
 $ A_{i j}=1 $ indicates an edge $ j \rightarrow i $
 
     give a graph interpretation of $ A^{2}=A A, A^{3}=A A A, \ldots $
-$$
+\begin{equation}
 A^{2}=\left[\begin{array}{lllll}
 1 & 0 & 1 & 1 & 0 \\
 0 & 1 & 0 & 1 & 2 \\
@@ -723,7 +723,7 @@ A^{2}=\left[\begin{array}{lllll}
 1 & 0 & 1 & 1 & 0 \\
 0 & 1 & 0 & 0 & 1
 \end{array}\right]
-$$
+\end{equation}
 \end{example}
 
 
@@ -760,13 +760,13 @@ A graph is also useful when we focus on the values of some quantity at each grap
 \subsubsection{Dirichlet Energy}
 
 When the $ m $-vector $ A^{T} v $ is small, it means that the potential differences across the edges are small. Another way to say this is that the potentials of connected vertices are near each other. A quantitative measure of this is the function of $ v $ given by
-$$
+\begin{equation}
 \mathcal{D}(v)=\left\|A^{T} v\right\|^{2}
-$$
+\end{equation}
 This function arises in many applications, and is called the Dirichlet energy (or Laplacian quadratic form) associated with the graph. It can be expressed as
-$$
+\begin{equation}
 \mathcal{D}(v)=\sum_{\text {edges }(k, l)}\left(v_{l}-v_{k}\right)^{2}
-$$
+\end{equation}
 
 which is the sum of the squares of the potential differences of v across all edges in
 the graph. The Dirichlet energy is small when the potential differences across the
@@ -784,7 +784,7 @@ The Dirichlet energy will arise as a measure of roughness in several application
 \begin{definition}[一维卷积]
     向量 $ a \in \mathbb{R}^{n} $ 和向量 $ b \in \mathbb{R}^{m} $ 的\term{卷积}是一个 $ ({n}+{m}-1) $ 维向量 $ c \in \mathbb{R}^{m+{n}-1} $
 
-    $$ c_{k}=\sum_{i+j=k+1} a_{i} b_{j}, \quad k=1, \ldots n+m-1 $$
+    \begin{equation} c_{k}=\sum_{i+j=k+1} a_{i} b_{j}, \quad k=1, \ldots n+m-1 \end{equation}
 
     记为 $ c=a * b$
 \end{definition}
@@ -872,25 +872,25 @@ The Dirichlet energy will arise as a measure of roughness in several application
 
     
     
-$$\begin{aligned}
+\begin{equation}\begin{aligned}
     c_{1}&=a_{1} b_{1}\\
     c_{2}&=a_{1} b_{2}+a_{2} b_{1}\\
     c_{3}&=a_{1} b_{3}+a_{2} b_{2}+a_{3} b_{1}\\
     c_{4}&=a_{2} b_{3}+a_{3} b_{2}+a_{4} b_{1}\\
     c_{5}&=a_{3} b_{3}+a_{4} b_{2}\\
     c_{6}&=a_{4} b_{3}\\
-\end{aligned} $$
+\end{aligned} \end{equation}
 
 
 \end{example}
 
 \begin{corollary}
     假设向量$a$和$b$分别是以下多项式的系数
-    $$ p(x)=a_{1}+a_{2} x+\cdots+a_{n} x^{n-1}, q(x)=b_{1}+b_{2} x+\cdots+b_{m} x^{m-1} $$
+    \begin{equation} p(x)=a_{1}+a_{2} x+\cdots+a_{n} x^{n-1}, q(x)=b_{1}+b_{2} x+\cdots+b_{m} x^{m-1} \end{equation}
 
     则 $ {c}={a}{*} {~b} $ 是多项式 $ p(x) q(x) $ 的系数。
 
-    $$ p(x) q(x)=c_{1}+c_{2} x+\cdots+c_{m+n-1} x^{m+n-2} $$
+    \begin{equation} p(x) q(x)=c_{1}+c_{2} x+\cdots+c_{m+n-1} x^{m+n-2} \end{equation}
 \end{corollary}
 
 \begin{corollary}[卷积性质]
@@ -909,7 +909,7 @@ $$\begin{aligned}
 \begin{example}[Toeplitz Matrix]
     4维向量a和3维向量 $ b $ ,  则 $ c=a * b $
 
-$$
+\begin{equation}
 \left[\begin{array}{l}
 c_{1} \\
 c_{2} \\
@@ -941,16 +941,16 @@ a_{2} \\
 a_{3} \\
 a_{4}
 \end{array}\right]
-$$
+\end{equation}
 \end{example}
 
 Convolution has a natural extension to multiple dimensions.
 
 \begin{definition}[2-D convolution]
      Suppose that $ A $ is an $ m \times n $ matrix and $ B $ is a $ p \times q $ matrix. Their convolution is the $ (m+p-1) \times(n+q-1) $ matrix
-$$
+\begin{equation}
 C_{r s}=\sum_{i+k=r+1, j+l=s+1} A_{i j} B_{k l}, \quad r=1, \ldots, m+p-1, \quad s=1, \ldots, n+q-1,
-$$
+\end{equation}
 
 where the indices are restricted to their ranges (or alternatively, we assume that $ A_{i j} $ and $ B_{k l} $ are zero, when the indices are out of range). 
 \end{definition}
@@ -961,9 +961,9 @@ The same properties that we observed for 1-D convolution hold for 2-D convolutio
 
 \begin{example}[moving average of a time series]
     $ n $-vector $ x $ represents a time series. The \term{3-period moving average of the time series} is the time series
-$$
+\begin{equation}
 y_{k}=\frac{1}{3}\left(x_{k}+x_{k-1}+x_{k-2}\right), \quad k=1,2, \ldots, n+2
-$$
+\end{equation}
 
 (with $ x_{k} $ interpreted as zero for $ k<1 $ and $ k>n $ )
 
@@ -975,14 +975,14 @@ This can be expressed as a convolution $ y=a * x $ with $ a=(1 / 3,1 / 3,1 / 3) 
 \begin{definition}[多项式]
     \term{多项式} $ p(t) $, \term{度}为 $ n-1 $, \term{系数}为 $ x_{1}, x_{2}, \ldots, x_{n} $
 
-    $$
+    \begin{equation}
 p(t)=x_{1}+x_{2} t+x_{3} t^{2}+\cdots+x_{n} t^{n-1}
-$$
+\end{equation}
 \end{definition}
 
 \begin{definition}[Vandermonde Matrices]
     $ {p}({t}) $ 在m个点中 $ t_{1}, t_{2}, \ldots, t_{m} $ 的值为
-    $$
+    \begin{equation}
     \left[\begin{array}{c}
     p\left(t_{1}\right) \\
     p\left(t_{2}\right) \\
@@ -999,7 +999,7 @@ $$
     \vdots \\
     x_{n}
     \end{array}\right]=A x
-    $$
+    \end{equation}
 
     矩阵$A$被称为\term{Vandermonde矩阵}.
 \end{definition}
@@ -1009,9 +1009,9 @@ $$
 \begin{definition}[Discrete Fourier Transform (DFT)]
     DFT将 $ n $ 维复向量 $ x $ 映射为 $ {n} $ 维复向量 $ y\left(\mathbb{C}^{n} \rightarrow \mathbb{C}^{n}\right) $
 
-    $$ y_{k}=\sum_{\ell=1}^{n} x_{\ell} e^{-i \frac{2 \pi}{n}(k-1)(\ell-1)}, k=1, \cdots, n $$
+    \begin{equation} y_{k}=\sum_{\ell=1}^{n} x_{\ell} e^{-i \frac{2 \pi}{n}(k-1)(\ell-1)}, k=1, \cdots, n \end{equation}
 
-    $$ \left[\begin{array}{c}y_{1} \\ y_{2} \\ y_{3} \\ \vdots \\ y_{n}\end{array}\right]=\left[\begin{array}{ccccc}1 & 1 & 1 & \cdots & 1 \\ 1 & \omega^{-1} & \omega^{-2} & \cdots & \omega^{-(n-1)} \\ 1 & \omega^{-2} & \omega^{-4} & \cdots & \omega^{-2(n-1)} \\ \vdots & \vdots & \vdots & \cdots & \vdots \\ 1 & \omega^{-(n-1)} & \omega^{-2(n-1)} & \cdots & \omega^{-(n-1)(n-1)}\end{array}\right]\left[\begin{array}{c}x_{1} \\ x_{2} \\ x_{3} \\ \vdots \\ x_{n}\end{array}\right] $$
+    \begin{equation} \left[\begin{array}{c}y_{1} \\ y_{2} \\ y_{3} \\ \vdots \\ y_{n}\end{array}\right]=\left[\begin{array}{ccccc}1 & 1 & 1 & \cdots & 1 \\ 1 & \omega^{-1} & \omega^{-2} & \cdots & \omega^{-(n-1)} \\ 1 & \omega^{-2} & \omega^{-4} & \cdots & \omega^{-2(n-1)} \\ \vdots & \vdots & \vdots & \cdots & \vdots \\ 1 & \omega^{-(n-1)} & \omega^{-2(n-1)} & \cdots & \omega^{-(n-1)(n-1)}\end{array}\right]\left[\begin{array}{c}x_{1} \\ x_{2} \\ x_{3} \\ \vdots \\ x_{n}\end{array}\right] \end{equation}
 
    其中 $ \omega=e^{2 \pi i / n} $.
 \end{definition}
@@ -1019,7 +1019,7 @@ $$
 DFT矩阵W的第 $ k $ 行第 $ l $ 列的元素为 $ W_{k l}=\omega^{-(k-1)(l-1)} $.
 
 \begin{definition}[Discrete Inverse Fourier Transform]
-    $$ x_{\ell}=\frac{1}{n} \sum_{k=1}^{n} y_{k} e^{i \frac{2 \pi}{n}(k-1)(\ell-1)}, \ell=1, \cdots, n $$
+    \begin{equation} x_{\ell}=\frac{1}{n} \sum_{k=1}^{n} y_{k} e^{i \frac{2 \pi}{n}(k-1)(\ell-1)}, \ell=1, \cdots, n \end{equation}
 \end{definition}
 
 \section{Semi-Definite Matrices}
@@ -1027,51 +1027,51 @@ DFT矩阵W的第 $ k $ 行第 $ l $ 列的元素为 $ W_{k l}=\omega^{-(k-1)(l-1
 \begin{definition}[半正定矩阵]
     对称矩阵 $ A \in \mathbb{R}^{n \times n} $ 称为\term{半正定矩阵}, 满足以下条件
 
-$$
+\begin{equation}
 x^{T} A x \geq 0 \quad \forall x \in \mathbb{R}^{n}
-$$
+\end{equation}
 \end{definition}
 
 \begin{definition}[正定矩阵]
     对称矩阵 $ A \in \mathbb{R}^{n \times n} $ 称为\term{正定矩阵}, 满足以下条件
-$$
+\begin{equation}
 x^{T} A x>0 \quad \forall x \neq 0
-$$
+\end{equation}
 \end{definition}
 
 \begin{definition}[二次型]
-    如果$ A \in \mathbb{R}^{n \times n} $是对称矩阵, 则 $ x^{T} A x $ 是\term{二次型}函数。
+    如果$ A \in \mathbb{R}^{n \times n} $是对称矩阵， 则 $ x^{T} A x $ 是\term{二次型}函数。
 \end{definition}
 
 \begin{proof}
-    $$ x^{T} A x=\sum_{i=1}^{n} \sum_{j=1}^{n} x_{i} A_{i j} x_{j}=\sum_{i=1}^{n} A_{i i} x_{i}^{2}+2 \sum_{i>j} A_{i j} x_{i} x_{j} $$
+    \begin{equation} x^{T} A x=\sum_{i=1}^{n} \sum_{j=1}^{n} x_{i} A_{i j} x_{j}=\sum_{i=1}^{n} A_{i i} x_{i}^{2}+2 \sum_{i>j} A_{i j} x_{i} x_{j} \end{equation}
 \end{proof}
 
 \begin{example}
-    $$ A=\left[\begin{array}{ll}9 & 6 \\ 6 & a\end{array}\right] $$
+    \begin{equation} A=\left[\begin{array}{ll}9 & 6 \\ 6 & a\end{array}\right] \end{equation}
 
-    $$ x^{T} A x=9 x_{1}^{2}+12 x_{1} x_{2}+a x_{2}^{2}=\left(3 x_{1}+2 x_{2}\right)^{2}+(a-4) x_{2}^{2} $$
+    \begin{equation} x^{T} A x=9 x_{1}^{2}+12 x_{1} x_{2}+a x_{2}^{2}=\left(3 x_{1}+2 x_{2}\right)^{2}+(a-4) x_{2}^{2} \end{equation}
 
     如果 $ a>4 $, 矩阵 $ A $ 为正定矩阵：
-$$
+\begin{equation}
 x^{T} A x>0 \quad \forall x \neq 0
-$$
+\end{equation}
 
-如果 $ a=4 $, 矩阵 $ A $ 为半正定矩阵, 但不是正定矩阵:
-$$
+如果 $ a=4 $, 矩阵 $ A $ 为半正定矩阵， 但不是正定矩阵:
+\begin{equation}
 x^{T} A x \geq 0 \quad \forall x, \quad x^{T} A x=0 \quad \exists x=\left[\begin{array}{l}
 2 \\
 -3
 \end{array}\right]
-$$
+\end{equation}
 
 如果 $ a<4 $, 矩阵 $ A $ 不是半正定矩阵:
-$$
+\begin{equation}
 x^{T} A x<0 \quad \exists x=\left[\begin{array}{l}
 2 \\
 -3
 \end{array}\right]
-$$
+\end{equation}
 \end{example}
 
 \begin{theorem}
@@ -1079,7 +1079,7 @@ $$
 \end{theorem}
 
 \begin{proof}
-    $$ A x=0 \quad \Rightarrow \quad x^{T} A x=0 \quad \Rightarrow \quad x=0 $$
+    \begin{equation} A x=0 \quad \Rightarrow \quad x^{T} A x=0 \quad \Rightarrow \quad x=0 \end{equation}
 
     最后一步由正定性得到的。($
     x^{T} A x>0 \quad \forall x \neq 0
@@ -1090,16 +1090,16 @@ $$
 \begin{theorem}[正定矩阵对角元素性质]
     正定矩阵 $ A $ 有正的对角元素。
 
-    $$
+    \begin{equation}
 A_{i i}=e_{i}^{T} A e_{i}>0
-$$
+\end{equation}
 \end{theorem}
 
 \begin{theorem}[半正定矩阵对角元素性质]
     每个半正定矩阵 $ A $ 都有非负的对角元素。
-$$
+\begin{equation}
 A_{i i}=e_{i}^{T} A e_{i} \geq 0
-$$
+\end{equation}
 \end{theorem}
 
 
@@ -1108,11 +1108,11 @@ $$
 \begin{definition}[实矩阵$A$的Gram矩阵]
     \label{Def:Gram}
 
-    $$ G=A^{T} A=\left[\begin{array}{c}a_{1}^{T} \\ a_{2}^{T} \\ \vdots \\ a_{n}^{T}\end{array}\right]\left[a_{1}, a_{2}, \cdots, a_{n}\right]=\left[\begin{array}{cccc}a_{1}^{T} a_{1} & a_{1}^{T} a_{2} & \cdots & a_{1}^{T} a_{n} \\ a_{2}^{T} a_{1} & a_{2}^{T} a_{2} & \cdots & a_{2}^{T} a_{n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n}^{T} a_{1} & a_{n}^{T} a_{2} & \cdots & a_{n}^{T} a_{n}\end{array}\right] $$
+    \begin{equation} G=A^{T} A=\left[\begin{array}{c}a_{1}^{T} \\ a_{2}^{T} \\ \vdots \\ a_{n}^{T}\end{array}\right]\left[a_{1}, a_{2}, \cdots, a_{n}\right]=\left[\begin{array}{cccc}a_{1}^{T} a_{1} & a_{1}^{T} a_{2} & \cdots & a_{1}^{T} a_{n} \\ a_{2}^{T} a_{1} & a_{2}^{T} a_{2} & \cdots & a_{2}^{T} a_{n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n}^{T} a_{1} & a_{n}^{T} a_{2} & \cdots & a_{n}^{T} a_{n}\end{array}\right] \end{equation}
 \end{definition}
 
 \begin{definition}[复矩阵的$A$的Gram 矩阵]
-    $$ G=A^{H} A=\left[\begin{array}{cccc}a_{1}^{H} a_{1} & a_{1}^{H} a_{2} & \cdots & a_{1}^{H} a_{n} \\ a_{2}^{H} a_{1} & a_{2}^{H} a_{2} & \cdots & a_{2}^{H} a_{n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n}^{H} a_{1} & a_{n}^{H} a_{2} & \cdots & a_{n}^{H} a_{n}\end{array}\right] $$
+    \begin{equation} G=A^{H} A=\left[\begin{array}{cccc}a_{1}^{H} a_{1} & a_{1}^{H} a_{2} & \cdots & a_{1}^{H} a_{n} \\ a_{2}^{H} a_{1} & a_{2}^{H} a_{2} & \cdots & a_{2}^{H} a_{n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n}^{H} a_{1} & a_{n}^{H} a_{2} & \cdots & a_{n}^{H} a_{n}\end{array}\right] \end{equation}
 \end{definition}
 
 \begin{theorem}
@@ -1120,20 +1120,20 @@ $$
 \end{theorem}
 
 \begin{proof}
-    $$ x^{T} A x=x^{T} B^{T} B x=\|B x\|_{2}^{2} \geq 0 , \forall x $$
+    \begin{equation} x^{T} A x=x^{T} B^{T} B x=\|B x\|_{2}^{2} \geq 0 , \forall x \end{equation}
 \end{proof}
 
 \begin{theorem}
-    如果Gram矩阵是正定的, 则要满足
-    $$ x^{T} A x=x^{T} B^{T} B x=\|B x\|_{2}^{2}>0 ( \forall x \neq 0) $$
+    如果Gram矩阵是正定的， 则要满足
+    \begin{equation} x^{T} A x=x^{T} B^{T} B x=\|B x\|_{2}^{2}>0 ( \forall x \neq 0) \end{equation}
 \end{theorem}
 
 \begin{corollary}
-    如果Gram矩阵是正定的, 则$B$的列向量是线性无关的。
+    如果Gram矩阵是正定的， 则$B$的列向量是线性无关的。
 \end{corollary}
 
 \begin{proof}
-    $$\|B x\|_{2}^{2}>0 ( \forall x \neq 0)$$
+    \begin{equation}\|B x\|_{2}^{2}>0 ( \forall x \neq 0)\end{equation}
 
 所以 $\forall x \neq 0, Bx \neq 0  $.
 
@@ -1146,33 +1146,33 @@ $$
 回想仿射函数、泰勒展开的定义。
 
 For fixed $ A \in \mathbf{R}^{m \times n}, b \in \mathbf{R}^{m} $, define a function $ f: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m} $ by
-$$
+\begin{equation}
 f(x)=A x+b
-$$
+\end{equation}
 i.e., a matrix-vector product plus a constant.
 
 Any function of this type is affine: if $ \alpha+\beta=1 $ then
-$$
+\begin{equation}
 A(\alpha x+\beta y)+b=\alpha(A x+b)+\beta(A y+b)
-$$
+\end{equation}
 
 Every affine function can be written as $ f(x)=A x+b $ with:
-$$
+\begin{equation}
 A=\left[\begin{array}{llll}
 f\left(e_{1}\right)-f(0) & f\left(e_{2}\right)-f(0) & \cdots & f\left(e_{n}\right)-f(0)
 \end{array}\right]
-$$
+\end{equation}
 and $ b=f(0) $.
 
 \begin{theorem}
     First-order Taylor approximation of differentiable $ f: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m} $ around $ z $
 
-$$
+\begin{equation}
 \hat{f_{i}}(x)=f_{i}(z)+\frac{\partial f_{i}}{\partial x_{1}}(z)\left(x_{1}-z_{1}\right)+\cdots+\frac{\partial f_{i}}{\partial x_{n}}(z)\left(x_{n}-z_{n}\right), \quad i=1, \ldots, m
-$$
+\end{equation}
 
 in matrix-vector notation: $ \hat{f}(x)=f(z)+D f(z)(x-z) $ where
-$$
+\begin{equation}
 D f(z)=\left[\begin{array}{cccc}
 \frac{\partial f_{1}}{\partial x_{1}}(z) & \frac{\partial f_{1}}{\partial x_{2}}(z) & \cdots & \frac{\partial f_{1}}{\partial x_{n}}(z) \\
 \frac{\partial f_{2}}{\partial x_{1}}(z) & \frac{\partial f_{2}}{\partial x_{2}}(z) & \cdots & \frac{\partial f_{2}}{\partial x_{n}}(z) \\
@@ -1184,7 +1184,7 @@ D f(z)=\left[\begin{array}{cccc}
 \vdots \\
 \nabla f_{m}(z)^{T}
 \end{array}\right]
-$$
+\end{equation}
 
 $ D f(z) $ is called the \term{derivative matrix} or \term{Jacobian matrix} of $ f $ at $ z $, $ \hat{f} $ is a local affine approximation of $ f $ around $ z $.
 \end{theorem}
@@ -1194,9 +1194,9 @@ $ D f(z) $ is called the \term{derivative matrix} or \term{Jacobian matrix} of $
 \subsection{Matrix-Matrix Products And Composition}
 
 Suppose $ A $ is an $ m \times p $ matrix and $ B $ is $ p \times n $. We can associate with these matrices two linear functions $ f: \mathbf{R}^{p} \rightarrow \mathbf{R}^{m} $ and $ g: \mathbf{R}^{n} \rightarrow \mathbf{R}^{p} $, defined as $ f(x)=A x $ and $ g(x)=B x $. The composition of the two functions is the function $ h: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m} $ with
-$$
+\begin{equation}
 h(x)=f(g(x))=A(B x)=(A B) x
-$$
+\end{equation}
 
 In words: To find $ h(x) $, we first apply the function $ g $, to obtain the partial result $ g(x) $ (which is a $ p $-vector); then we apply the function $ f $ to this result, to obtain $ h(x) $ (which is an $ m $-vector). In the formula $ h(x)=f(g(x)), f $ appears to the left of $ g $; but when we evaluate $ h(x) $, we apply $ g $ first. The composition $ h $ is evidently a linear function, that can be written as $ h(x)=C x $ with $ C=A B $.
 
@@ -1204,7 +1204,7 @@ In words: To find $ h(x) $, we first apply the function $ g $, to obtain the par
 Using this interpretation of matrix multiplication as composition of linear functions, it is easy to understand why in general $ A B \neq B A $, even when the dimensions are compatible. Evaluating the function $ h(x)=A B x $ means we first evaluate $ y=B x $, and then $ z=A y $. Evaluating the function $ B A x $ means we first evaluate $ y=A x $, and then $ z=B y $. In general, the order matters. As an example, take the $ 2 \times 2 $ matrices
 
 \begin{example}
-    $$
+    \begin{equation}
 A=\left[\begin{array}{rr}
 -1 & 0 \\
 0 & 1
@@ -1212,9 +1212,9 @@ A=\left[\begin{array}{rr}
 0 & 1 \\
 1 & 0
 \end{array}\right]
-$$
+\end{equation}
 for which
-$$
+\begin{equation}
 A B=\left[\begin{array}{rr}
 0 & -1 \\
 1 & 0
@@ -1222,7 +1222,7 @@ A B=\left[\begin{array}{rr}
 0 & 1 \\
 -1 & 0
 \end{array}\right]
-$$
+\end{equation}
 The mapping $ f(x)=A x=\left(-x_{1}, x_{2}\right) $ changes the sign of the first element of the vector $ x $. The mapping $ g(x)=B x=\left(x_{2}, x_{1}\right) $ reverses the order of two elements of $ x $. If we evaluate $ f(g(x))=A B x=\left(-x_{2}, x_{1}\right) $, we first reverse the order, and then change the sign of the first element. This result is obviously different from $ g(f(x))=B A x=\left(x_{2},-x_{1}\right) $, obtained by changing the sign of the first element, and then reversing the order of the elements.
 \end{example}
 
@@ -1233,19 +1233,19 @@ The mapping $ f(x)=A x=\left(-x_{1}, x_{2}\right) $ changes the sign of the firs
 As a more interesting example of composition of linear functions, consider the $ (n-1) \times n $ difference matrix $ D_{n} $ defined in $ (6.5) $. (We use the subscript $ n $ here to denote size of $ D .) $ Let $ D_{n-1} $ denote the $ (n-2) \times(n-1) $ difference matrix. Their product $ D_{n-1} D_{n} $ is called the second difference matrix, and sometimes denoted $ \Delta $.
 
 We can interpret $ \Delta $ in terms of composition of linear functions. Multiplying an $ n $-vector $ x $ by $ D_{n} $ yields the $ (n-1) $-vector of consecutive differences of the entries:
-$$
+\begin{equation}
 D_{n} x=\left(x_{2}-x_{1}, \ldots, x_{n}-x_{n-1}\right) .
-$$
+\end{equation}
 Multiplying this vector by $ D_{n-1} $ gives the $ (n-2) $-vector of consecutive differences of consecutive differences (or second differences) of $ x $ :
-$$
+\begin{equation}
 D_{n-1} D_{n} x=\left(x_{1}-2 x_{2}+x_{3}, x_{2}-2 x_{3}+x_{4}, \ldots, x_{n-2}-2 x_{n-1}+x_{n}\right) .
-$$
+\end{equation}
 The $ (n-2) \times n $ product matrix $ \Delta=D_{n-1} D_{n} $ is the matrix associated with the second difference function.
 
 \begin{example}
     For the case $ n=5, \Delta=D_{n-1} D_{n} $ has the form
 
-    $$
+    \begin{equation}
 \left[\begin{array}{rrrrr}
 1 & -2 & 1 & 0 & 0 \\
 0 & 1 & -2 & 1 & 0 \\
@@ -1260,7 +1260,7 @@ The $ (n-2) \times n $ product matrix $ \Delta=D_{n-1} D_{n} $ is the matrix ass
 0 & 0 & -1 & 1 & 0 \\
 0 & 0 & 0 & -1 & 1
 \end{array}\right]
-$$
+\end{equation}
 The left-hand matrix $ \Delta $ is associated with the second difference linear function that maps 5 -vectors into 3 -vectors. The middle matrix $ D_{4} $ is associated with the difference function that maps 4 -vectors into 3 -vectors. The right-hand matrix $ D_{5} $ is associated with the difference function that maps 5 -vectors into 4 -vectors.
 
 \end{example}
@@ -1268,25 +1268,25 @@ The left-hand matrix $ \Delta $ is associated with the second difference linear 
 \subsection{Composition Of Affine Functions}
 
 Composition of affine functions. The composition of affine functions is an affine function. Suppose $ f: \mathbf{R}^{p} \rightarrow \mathbf{R}^{m} $ is the affine function given by $ f(x)=A x+b $, and $ g: \mathbf{R}^{n} \rightarrow \mathbf{R}^{p} $ is the affine function given by $ g(x)=C x+d $. The composition $ h $ is given by
-$$
+\begin{equation}
 h(x)=f(g(x))=A(C x+d)+b=(A C) x+(A d+b)=\tilde{A} x+\tilde{b}
-$$
+\end{equation}
 where $ \tilde{A}=A C, \tilde{b}=A d+b $.
 
 \subsection{Chain Rule of Differentiation}
 
 \begin{definition}[The Composition Of $ f $ And $ g $]
     Let $ f: \mathbf{R}^{p} \rightarrow \mathbf{R}^{m} $ and $ g: \mathbf{R}^{n} \rightarrow \mathbf{R}^{p} $ be differentiable functions. The composition of $ f $ and $ g $ is defined as the function $ h: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m} $ with
-$$
+\begin{equation}
 h(x)=f(g(x))=f\left(g_{1}(x), \ldots, g_{p}(x)\right)
-$$
+\end{equation}
 \end{definition}
 
 \begin{theorem}[Chain Rule]
     The function $ h $ is differentiable and its partial derivatives follow from those of $ f $ and $ g $ via the chain rule:
-$$
+\begin{equation}
 \frac{\partial h_{i}}{\partial x_{j}}(z)=\frac{\partial f_{i}}{\partial y_{1}}(g(z)) \frac{\partial g_{1}}{\partial x_{j}}(z)+\cdots+\frac{\partial f_{i}}{\partial y_{p}}(g(z)) \frac{\partial g_{p}}{\partial x_{j}}(z)
-$$
+\end{equation}
 for $ i=1, \ldots, m $ and $ j=1, \ldots, n $.
 \end{theorem}
 
@@ -1294,9 +1294,9 @@ This relation can be expressed concisely as a matrix-matrix product.
 
 \begin{corollary}
     The derivative matrix of $ h $ at $ z $ is the product
-$$
+\begin{equation}
 D h(z)=D f(g(z)) D g(z)
-$$
+\end{equation}
 of the derivative matrix of $ f $ at $ g(z) $ and the derivative matrix of $ g $ at $ z $.
 \end{corollary}
 
@@ -1304,12 +1304,12 @@ This compact matrix formula generalizes the chain rule for scalar-valued functio
 
 \begin{corollary}
     The first order Taylor approximation of $ h $ at $ z $ can therefore be written as
-$$
+\begin{equation}
 \begin{aligned}
 \hat{h}(x) &=h(z)+\operatorname{Dh}(z)(x-z) \\
 &=f(g(z))+D f(g(z)) D g(z)(x-z)
 \end{aligned}
-$$
+\end{equation}
 \end{corollary}
 
 
@@ -1319,22 +1319,22 @@ The same result can be interpreted as a composition of two affine functions.
 
 \begin{theorem}
     the first order Taylor approximation of $ f $ at $ g(z) $,
-    $$
+    \begin{equation}
     \hat{f}(y)=f(g(z))+D f(g(z))(y-g(z))
-    $$
+    \end{equation}
     and the first order Taylor approximation of $ g $ at $ z $,
-    $$
+    \begin{equation}
     \hat{g}(x)=g(z)+D g(z)(x-z) .
-    $$
+    \end{equation}
 
     The composition of these two affine functions is
-$$
+\begin{equation}
 \begin{aligned}
 \hat{f}(\hat{g}(x)) &=\hat{f}(g(z)+D g(z)(x-z)) \\
 &=f(g(z))+D f(g(z))(g(z)+D g(z)(x-z)-g(z)) \\
 &=f(g(z))+D f(g(z)) D g(z)(x-z)
 \end{aligned}
-$$
+\end{equation}
 which is equal to $ \hat{h}(x) $.
 \end{theorem}
 
@@ -1342,9 +1342,9 @@ which is equal to $ \hat{h}(x) $.
 When $ f $ is a scalar-valued function $ (m=1) $, the derivative matrices $ D h(z) $ and $ D f(g(z)) $ are the transposes of the gradients, and we write the chain rule as
 
 \begin{theorem}[Special Cases of Chain Rule]
-    $$
+    \begin{equation}
 \nabla h(z)=D g(z)^{T} \nabla f(g(z)) .
-$$
+\end{equation}
 \end{theorem}
 
 
@@ -1353,19 +1353,19 @@ In particular, if $ g(x)=A x+b $ is affine, then the gradient of $ h(x)=f(g(x))=
 \subsection{Linear Dynamical System With State Feedback}
 
 Linear dynamical system with state feedback. We consider a time-invariant linear dynamical system with $ n $-vector state $ x_{t} $ and $ m $-vector input $ u_{t} $, with dynamics
-$$
+\begin{equation}
 x_{t+1}=A x_{t}+B u_{t}, \quad t=1,2, \ldots
-$$
+\end{equation}
 Here we think of the input $ u_{t} $ as something we can manipulate, e.g., the control surface deflections for an airplane or the amount of material we order or move in a supply chain. In state feedback control the state $ x_{t} $ is measured, and the input $ u_{t} $ is a linear function of the state, expressed as
-$$
+\begin{equation}
 u_{t}=K x_{t}
-$$
+\end{equation}
 where $ K $ is the $ m \times n $ state-feedback gain matrix. The term feedback refers to the idea that the state is measured, and then (after multiplying by $ K $ ) fed back into the system, via the input. This leads to a loop, where the state affects the input, and the input affects the (next) state. State feedback is very widely used in many applications. 
 
 With state feedback, we have
-$$
+\begin{equation}
 x_{t+1}=A x_{t}+B u_{t}=A x_{t}+B\left(K x_{t}\right)=(A+B K) x_{t}, \quad t=1,2, \ldots
-$$
+\end{equation}
 This recursion is called the closed-loop system. The matrix $ A+B K $ is called the closed-loop dynamics matrix. (In this context, the recursion $ x_{t+1}=A x_{t} $ is called the open-loop system. It gives the dynamics when $ u_{t}=0 $.)
 
 
@@ -1418,51 +1418,51 @@ This recursion is called the closed-loop system. The matrix $ A+B K $ is called 
 向量空间 $ \mathbb{R}^{m \times n} $ 矩阵范数:
 
 \begin{example}[F-范数(Frobenius norm)]
-    $$ \|A\|_{F}=\left(\sum_{i=1}^{n} \sum_{j=1}^{n} a_{i j}^{2}\right)^{\frac{1}{2}} $$
+    \begin{equation} \|A\|_{F}=\left(\sum_{i=1}^{n} \sum_{j=1}^{n} a_{i j}^{2}\right)^{\frac{1}{2}} \end{equation}
 \end{example}
 
 \begin{proof}
-    $$ \|A\|_{F} \geq 0 $$
+    \begin{equation} \|A\|_{F} \geq 0 \end{equation}
 
-    $$ \|\alpha A\|_{F}=|\alpha|\|A\|_{F}, \alpha \in \mathbb{R} $$
+    \begin{equation} \|\alpha A\|_{F}=|\alpha|\|A\|_{F}, \alpha \in \mathbb{R} \end{equation}
 
-    $$ \begin{aligned}\|A+B\|_{F}=&\left(\sum_{i=1}^{n} \sum_{j=1}^{n}\left(a_{i j}+b_{i j}\right)^{2}\right)^{\frac{1}{2}} \leq\left(\sum_{i=1}^{n} \sum_{j=1}^{n}\left(a_{i j}\right)^{2}\right)^{\frac{1}{2}}+\left(\sum_{i=1}^{n} \sum_{j=1}^{n}\left(b_{i j}\right)^{2}\right)^{\frac{1}{2}} \\ &=\|A\|_{F}+\|B\|_{F} \end{aligned} $$
+    \begin{equation} \begin{aligned}\|A+B\|_{F}=&\left(\sum_{i=1}^{n} \sum_{j=1}^{n}\left(a_{i j}+b_{i j}\right)^{2}\right)^{\frac{1}{2}} \leq\left(\sum_{i=1}^{n} \sum_{j=1}^{n}\left(a_{i j}\right)^{2}\right)^{\frac{1}{2}}+\left(\sum_{i=1}^{n} \sum_{j=1}^{n}\left(b_{i j}\right)^{2}\right)^{\frac{1}{2}} \\ &=\|A\|_{F}+\|B\|_{F} \end{aligned} \end{equation}
 \end{proof}
 
 \begin{definition}[从属于给定向量范数 $ \|x\|_{v} $ 的矩阵范数]
-    设 $ x \in \mathbb{R}^{n}, A \in \mathbb{R}^{m \times n},\|\cdot\|_{v} $ 为一种向量范数。 则 $ \frac{\|A x\|_{v}}{\|x\|_{v}} $ 对所有 $ x \neq 0 $ 有最大值, 令
+    设 $ x \in \mathbb{R}^{n}, A \in \mathbb{R}^{m \times n},\|\cdot\|_{v} $ 为一种向量范数。 则 $ \frac{\|A x\|_{v}}{\|x\|_{v}} $ 对所有 $ x \neq 0 $ 有最大值， 令
 
-    $$ \|A\|_{v}=\max _{x \neq 0}\left\{\frac{\|A x\|_{v}}{\|x\|_{v}}\right\}=\max _{x \neq 0}\left\{\left\|A \frac{x}{\|x\|_{v}}\right\|_{v}\right\}=\max _{\|y\|_{v}=1}\left\{\|A y\|_{v}\right\} $$
+    \begin{equation} \|A\|_{v}=\max _{x \neq 0}\left\{\frac{\|A x\|_{v}}{\|x\|_{v}}\right\}=\max _{x \neq 0}\left\{\left\|A \frac{x}{\|x\|_{v}}\right\|_{v}\right\}=\max _{\|y\|_{v}=1}\left\{\|A y\|_{v}\right\} \end{equation}
 
-    即$$ \|A\|_{v}=\max _{x \neq 0}\left\{\frac{\|A x\|_{v}}{\|x\|_{v}}\right\} $$
+    即\begin{equation} \|A\|_{v}=\max _{x \neq 0}\left\{\frac{\|A x\|_{v}}{\|x\|_{v}}\right\} \end{equation}
 
-    $ \|A\|_{v} $ 称为从属于给定向量范数 $ \|x\|_{v} $ 的矩阵范数, 简称为\term{从属范数}或\term{算子范数}.
+    $ \|A\|_{v} $ 称为从属于给定向量范数 $ \|x\|_{v} $ 的矩阵范数， 简称为\term{从属范数}或\term{算子范数}.
 \end{definition}
 
 \begin{proof}
     可以验证 $ \|A\|_{v} $ 满足矩阵范数定义。 
 
-    $$ \|A\|_{v} \geq 0 $$
+    \begin{equation} \|A\|_{v} \geq 0 \end{equation}
 
-    $$ \|\alpha A\|_{v}=|\alpha|\|A\|_{v}, \alpha \in \mathbb{R} $$
+    \begin{equation} \|\alpha A\|_{v}=|\alpha|\|A\|_{v}, \alpha \in \mathbb{R} \end{equation}
 
-    $$\begin{aligned}
+    \begin{equation}\begin{aligned}
         \|A+B\|_{v} &=\max _{\|y\|_{v}=1}\|(A+B) y\|_{v} \\
         &\leq \max _{\|y\|_{v}=1}\left\{\|A y\|_{v}+\|B y\|_{v}\right\} \\
         & \leq \max _{\|y\|_{v}=1}\|A y\|_{v}+\max _{\|y\|_{v}=1}\|B y\|_{v} \\
         & =\|A\|_{v}+\|B\|_{v}
-    \end{aligned}$$
+    \end{aligned}\end{equation}
 
 \end{proof}
 
 \begin{remark}
-    在本书中若未明确说明, $\|A \|$表示的是算子范数。
+    在本书中若未明确说明， $\|A \|$表示的是算子范数。
 \end{remark}
 
 由定义 $ \|A\|_{v}=\max _{x \neq 0}\left\{\frac{\|A x\|_{v}}{\|x\|_{v}}\right\} $ 可得
 
 \begin{definition}[向量范数和算子范数相容]
-    $$ \frac{\|A x\|_{v}}{\|x\|_{v}} \leq\|A\|_{v} \Rightarrow\|A x\|_{v} \leq\|A\|_{v}\|x\|_{v} $$
+    \begin{equation} \frac{\|A x\|_{v}}{\|x\|_{v}} \leq\|A\|_{v} \Rightarrow\|A x\|_{v} \leq\|A\|_{v}\|x\|_{v} \end{equation}
 
     称向量范数和算子范数\term{相容}. 
 \end{definition}
@@ -1470,23 +1470,23 @@ This recursion is called the closed-loop system. The matrix $ A+B K $ is called 
 \begin{theorem}[算子范数服从乘法范数相容性]
    对于 $ A \in \mathbb{R}^{m \times n}, B \in \mathbb{R}^{n \times p} $
 
-    $$\begin{aligned}
+    \begin{equation}\begin{aligned}
         \|A B\|_{v} &=\max _{x \neq 0}\left\{\frac{\|A B x\|_{v}}{\|x\|_{v}}\right\} \\
         & \leq \max _{x \neq 0}\left\{\frac{\|A\|_{v}\|B x\|_{v}}{\|x\|_{v}}\right\} \\
         & \leq\|A\|_{v} \max _{x \neq 0}\left\{\frac{\|B\|_{v}\|x\|_{v}}{\|x\|_{v}}\right\} \\
         & =\|A\|_{v}\|B\|_{v}
-    \end{aligned}$$
+    \end{aligned}\end{equation}
     算子范数服从\term{乘法范数相容性}.
 \end{theorem}
 
 根据向量的常用范数可以导出矩阵 $ A \in \mathbb{R}^{m \times n} $ 的算子范数
 
 \begin{definition}[$A$的列范数]
-    $$ \|A\|_{1}=\max _{x \neq 0}\left(\frac{\|A x\|_{1}}{\|x\|_{1}}\right)=\max _{1 \leq j \leq n} \sum_{i=1}^{m}\left|a_{i j}\right| $$
+    \begin{equation} \|A\|_{1}=\max _{x \neq 0}\left(\frac{\|A x\|_{1}}{\|x\|_{1}}\right)=\max _{1 \leq j \leq n} \sum_{i=1}^{m}\left|a_{i j}\right| \end{equation}
 \end{definition}
 
 \begin{definition}[$A$的行范数]
-    $$ \|A\|_{\infty}=\max _{x \neq 0}\left( \frac{\|A x\|_{\infty}}{\|x\|_{\infty}}    \right)=\max _{1 \leq i \leq m} \sum_{j=1}^{n}\left|a_{i j}\right| $$
+    \begin{equation} \|A\|_{\infty}=\max _{x \neq 0}\left( \frac{\|A x\|_{\infty}}{\|x\|_{\infty}}    \right)=\max _{1 \leq i \leq m} \sum_{j=1}^{n}\left|a_{i j}\right| \end{equation}
 \end{definition}
 
 \begin{definition}[$A$的2-范数]
@@ -1494,16 +1494,16 @@ This recursion is called the closed-loop system. The matrix $ A+B K $ is called 
         \label{eqn:a-l2-norm}
         \|A\|_{2}=\max _{x \neq 0}\left( \frac{\|A x\|_{2}}{\|x\|_{2}}  \right)=\sqrt{\lambda_{\max }\left(A^{T} A\right)}
     \end{equation}
-    $$  $$
+    \begin{equation}  \end{equation}
 \end{definition}
 
 \begin{proof}
     For any $A$ Choose $x$ to be the eigenvector of $A^{{T}} A$ with largest eigenvalue $\lambda_{\max } .$ The ratio in equation \ref{eqn:a-l2-norm} is $\boldsymbol{x}^{{T}} A^{{T}} A \boldsymbol{x}=\boldsymbol{x}^{{T}}\left(\lambda_{\max }\right) \boldsymbol{x}$ divided by $\boldsymbol{x}^{{T}} \boldsymbol{x}$. This is $\lambda_{\max }$.
 
 No $\boldsymbol{x}$ can give a larger ratio. The symmetric matrix $A^{{T}} A$ has eigenvalues $\lambda_{1}, \ldots, \lambda_{n}$ and orthonormal eigenvectors $q_{1}, \boldsymbol{q}_{2}, \ldots, \boldsymbol{q}_{n} .$ Every $\boldsymbol{x}$ is a combination of those vectors. Try this combination in the ratio and remember that $\boldsymbol{q}_{i}^{{T}} \boldsymbol{q}_{j}=0$ :
-$$
+\begin{equation}
 \frac{\boldsymbol{x}^{{T}} A^{{T}} A \boldsymbol{x}}{\boldsymbol{x}^{{T}} \boldsymbol{x}}=\frac{\left(c_{1} \boldsymbol{q}_{1}+\cdots+c_{n} \boldsymbol{q}_{n}\right)^{{T}}\left(c_{1} \lambda_{1} \boldsymbol{q}_{1}+\cdots+c_{n} \lambda_{n} \boldsymbol{q}_{n}\right)}{\left(c_{1} \boldsymbol{q}_{1}+\cdots+c_{n} \boldsymbol{q}_{n}\right)^{{T}}\left(c_{1} \boldsymbol{q}_{1}+\cdots+c_{n} \boldsymbol{q}_{n}\right)}=\frac{c_{1}^{2} \lambda_{1}+\cdots+c_{n}^{2} \lambda_{n}}{c_{1}^{2}+\cdots+c_{n}^{2}}
-$$
+\end{equation}
 The maximum ratio $\lambda_{\max }$ is when all $c$ 's are zero, except the one that multiplies $\lambda_{\max }$.
 \end{proof}
 
@@ -1512,7 +1512,7 @@ The maximum ratio $\lambda_{\max }$ is when all $c$ 's are zero, except the one 
 \end{remark}
 
 \begin{corollary}
-    $$\|A\|_{2}= \sigma_{\max} $$
+    \begin{equation}\|A\|_{2}= \sigma_{\max} \end{equation}
 \end{corollary}
 
 \begin{proof}
@@ -1521,30 +1521,30 @@ The maximum ratio $\lambda_{\max }$ is when all $c$ 's are zero, except the one 
 
 \begin{example}
     求矩阵$A$的各种常用范数
-$$
+\begin{equation}
 A=\left(\begin{array}{ccc}
 1 & 2 & 0 \\
 -1 & 2 & -1 \\
 0 & 1 & 1
 \end{array}\right)
-$$
+\end{equation}
 
-$$ \|A\|_{1}=\max _{1 \leq j \leq n} \sum_{i=1}^{n}\left|a_{i j}\right|=\max _{1 \leq j \leq n}\{2,5,2\}=5 $$
+\begin{equation} \|A\|_{1}=\max _{1 \leq j \leq n} \sum_{i=1}^{n}\left|a_{i j}\right|=\max _{1 \leq j \leq n}\{2,5,2\}=5 \end{equation}
 
-$$ \|A\|_{\infty}=\max _{1 \leq i \leq n} \sum_{j=1}^{n}\left|a_{i j}\right|=\max _{1 \leq i \leq n}\{3,4,2\}=4 $$
+\begin{equation} \|A\|_{\infty}=\max _{1 \leq i \leq n} \sum_{j=1}^{n}\left|a_{i j}\right|=\max _{1 \leq i \leq n}\{3,4,2\}=4 \end{equation}
 
 由于 $ \|A\|_{2}=\sqrt{\lambda_{\max }\left(A^{T} A\right)} $
 , 因此先求 $ A^{T} A $ 的特征值
 
-$$ A^{T} A=\left(\begin{array}{ccc}1 & -1 & 0 \\ 2 & 2 & 1 \\ 0 & -1 & 1\end{array}\right) \cdot\left(\begin{array}{ccc}1 & 2 & 0 \\ -1 & 2 & -1 \\ 0 & 1 & 1\end{array}\right)=\left(\begin{array}{ccc}2 & 0 & 1 \\ 0 & 9 & -1 \\ 1 & -1 & 2\end{array}\right) $$
+\begin{equation} A^{T} A=\left(\begin{array}{ccc}1 & -1 & 0 \\ 2 & 2 & 1 \\ 0 & -1 & 1\end{array}\right) \cdot\left(\begin{array}{ccc}1 & 2 & 0 \\ -1 & 2 & -1 \\ 0 & 1 & 1\end{array}\right)=\left(\begin{array}{ccc}2 & 0 & 1 \\ 0 & 9 & -1 \\ 1 & -1 & 2\end{array}\right) \end{equation}
 
 特征方程为
 
-$$ \operatorname{det}\left(\lambda I-A^{T} A\right)=\left|\begin{array}{ccc}\lambda-2 & 0 & -1 \\ 0 & \lambda-9 & 1 \\ -1 & 1 & \lambda-2\end{array}\right|=0 $$
+\begin{equation} \operatorname{det}\left(\lambda I-A^{T} A\right)=\left|\begin{array}{ccc}\lambda-2 & 0 & -1 \\ 0 & \lambda-9 & 1 \\ -1 & 1 & \lambda-2\end{array}\right|=0 \end{equation}
 
 可得 $ A^{T} A $ 的特征值
 
-$$ \lambda_{1}=9.1428, \lambda_{2}=2.9211, \lambda_{3}=0.9361 $$
+\begin{equation} \lambda_{1}=9.1428, \lambda_{2}=2.9211, \lambda_{3}=0.9361 \end{equation}
 
 \end{example}
 
@@ -1567,86 +1567,86 @@ In 1923, the French mathematician Hadamard introduced the notion of well-posed (
 One of these conditions is not satisfied, the problem is said to be ill-posed (病态) and demands a special consideration.
 
 \begin{definition}
-    假设 $ A $ 是非奇异矩阵 $$ A x=b $$
+    假设 $ A $ 是非奇异矩阵 \begin{equation} A x=b \end{equation}
 
     如果将 $ b $ 为 $ b+\Delta b $, 方程新的解 $ x+\Delta x $, 则有:
-$$
+\begin{equation}
 A(x+\Delta x)=b+\Delta b
-$$
+\end{equation}
 
 即
-$$
+\begin{equation}
 \Delta x=A^{-1} \Delta b
-$$
+\end{equation}
 
 如果小的变化 $ \Delta b $ 导致小变化 $ \Delta x $, 则称解是\term{稳定}的。 如果小的变化 $ \Delta b $ 导致大变化 $ \Delta x $, 则称解\term{不稳定}的。 
 \end{definition}
 
 \begin{example}
-    设$$ A=\frac{1}{2}\left[\begin{array}{cc}1 & 1 \\ 1+10^{-10} & 1-10^{-10}\end{array}\right], \quad A^{-1}=\left[\begin{array}{cc}1-10^{10} & 10^{10} \\ 1+10^{10} & -10^{10}\end{array}\right] $$
+    设\begin{equation} A=\frac{1}{2}\left[\begin{array}{cc}1 & 1 \\ 1+10^{-10} & 1-10^{-10}\end{array}\right], \quad A^{-1}=\left[\begin{array}{cc}1-10^{10} & 10^{10} \\ 1+10^{10} & -10^{10}\end{array}\right] \end{equation}
 
 若$ b=(1,1) $, 方程 $ A x $ 的解 $ x=(1,1) $ . 
 如果将b改为 $ b+\Delta b $ , 那么 $ x $ 的变化量为
 
-$$ \Delta x=A^{-1} \Delta b=\left[\begin{array}{l}\Delta b_{1}-10^{10}\left(\Delta b_{1}-\Delta b_{2}\right) \\ \Delta b_{1}+10^{10}\left(\Delta b_{1}-\Delta b_{2}\right)\end{array}\right] $$
+\begin{equation} \Delta x=A^{-1} \Delta b=\left[\begin{array}{l}\Delta b_{1}-10^{10}\left(\Delta b_{1}-\Delta b_{2}\right) \\ \Delta b_{1}+10^{10}\left(\Delta b_{1}-\Delta b_{2}\right)\end{array}\right] \end{equation}
 \end{example}
 
 
-很小变化 $ \Delta b $ 会导致非常大变化 $ \Delta x $！ 由矩阵$A$定义的问题, 称为\term{适定问题}或\term{病态问题}. 
+很小变化 $ \Delta b $ 会导致非常大变化 $ \Delta x $！ 由矩阵$A$定义的问题， 称为\term{适定问题}或\term{病态问题}. 
 
 
 
 \section{绝对误差的界限}
 
-假设 $ A $ 是非奇异的, 并给出定义:
+假设 $ A $ 是非奇异的， 并给出定义:
 
 \begin{notation}
-    $$ x=A^{-1} b$$ 
+    \begin{equation} x=A^{-1} b\end{equation} 
     
-    $$ \Delta x=A^{-1} \Delta b $$
+    \begin{equation} \Delta x=A^{-1} \Delta b \end{equation}
 \end{notation}
 
 \begin{theorem}[绝对误差的界限]
     $ \|\Delta x\| $ 的上界为
-    $$
+    \begin{equation}
     \|\Delta x\|_{2} \leq\left\|A^{-1}\right\|_{2}\|\Delta b\|_{2}
-    $$
+    \end{equation}
 
 \end{theorem}
 
-矩阵范数 $ \left\|A^{-1}\right\|_{2} $ 小时, 当 $ \|\Delta b\|_{2} $ 变化很小, $ \|\Delta x\|_{2} $ 也很小; $ \left\|A^{-1}\right\|_{2} $ 大时,  $ \|\Delta x\|_{2} $ 可能很大,  即使 $ \|\Delta b\|_{2} $ 很小。 
+矩阵范数 $ \left\|A^{-1}\right\|_{2} $ 小时， 当 $ \|\Delta b\|_{2} $ 变化很小， $ \|\Delta x\|_{2} $ 也很小; $ \left\|A^{-1}\right\|_{2} $ 大时，  $ \|\Delta x\|_{2} $ 可能很大，  即使 $ \|\Delta b\|_{2} $ 很小。 
 
 \section[相对误差的界限]{相对误差的界限\footnote{Reference: \href{https://blogs.mathworks.com/cleve/2017/07/17/what-is-the-condition-number-of-a-matrix/?from=cn}{MathWorks Blog}.}}
 
 \begin{theorem}[相对误差的界限]
     相对误差的界限是
-    $$ \frac{\|\Delta x\|_{2}}{\|x\|_{2}} \leq\|A\|_{2}\left\|A^{-1}\right\|_{2} \frac{\|\Delta b\|_{2}}{\|b\|_{2}} $$
+    \begin{equation} \frac{\|\Delta x\|_{2}}{\|x\|_{2}} \leq\|A\|_{2}\left\|A^{-1}\right\|_{2} \frac{\|\Delta b\|_{2}}{\|b\|_{2}} \end{equation}
 \end{theorem}
 
 假设 $ b \neq 0 $; 因此 $ x \neq 0$
 
 $\|\Delta x\|_{2} /\|x\|_{2} $ 的上界为:
 
-$$ 
+\begin{equation} 
 \begin{aligned}
     &\|\Delta x\|_{2}=\left\|A^{-1} \Delta b\right\|_{2} \leq\left\|A^{-1}\right\|_{2}\|\Delta b\|_{2}(向量范数和算子范数相容)\\
     \Rightarrow& \frac{\|\Delta x\|_{2}}{\|x\|_{2}} \leq \frac{\left\|A^{-1}\right\|_{2}\|\Delta b\|_{2}}{\|x\|_{2}}=\frac{\|A\|_{2}\left\|A^{-1}\right\|_{2}\|\Delta b\|_{2}}{\|x\|_{2}\|A\|_{2}} \leq \frac{\|A\|_{2}\left\|A^{-1}\right\|_{2}\|\Delta b\|_{2}}{\|b\|_{2}}
 \end{aligned}
-$$
+\end{equation}
 
 由 $ \|b\|_{2}=\|A x\|_{2} \leq\|A\|_{2}\|x\|_{2} $, 可得
 
-$$ \frac{\|\Delta x\|_{2}}{\|x\|_{2}} \leq\|A\|_{2}\left\|A^{-1}\right\|_{2} \frac{\|\Delta b\|_{2}}{\|b\|_{2}} $$
+\begin{equation} \frac{\|\Delta x\|_{2}}{\|x\|_{2}} \leq\|A\|_{2}\left\|A^{-1}\right\|_{2} \frac{\|\Delta b\|_{2}}{\|b\|_{2}} \end{equation}
 
 $ \|A\|_{2}\left\|A^{-1}\right\|_{2} $ 小，当 $ \frac{\|\Delta b\|_{2}}{\|b\|_{2}}  $ 相对变化很小时， $ \frac{\|\Delta x\|_{2}}{\|x\|_{2}}  $ 也 变化很小;
 
-$ \|A\|_{2}\left\|A^{-1}\right\|_{2} $ 大, $ \frac{\|\Delta x\|_{2}}{\|x\|_{2}}  $ 可远远大于 $ \frac{\|\Delta b\|_{2}}{\|b\|_{2}}  $.
+$ \|A\|_{2}\left\|A^{-1}\right\|_{2} $ 大， $ \frac{\|\Delta x\|_{2}}{\|x\|_{2}}  $ 可远远大于 $ \frac{\|\Delta b\|_{2}}{\|b\|_{2}}  $.
 
 
 \begin{definition}[非奇异矩阵 $ A $ 的条件数(condition number) ]        
     条件数定义
 
-    $$ \kappa(A)=\|A\|_{2}\left\|A^{-1}\right\|_{2} $$
+    \begin{equation} \kappa(A)=\|A\|_{2}\left\|A^{-1}\right\|_{2} \end{equation}
 \end{definition}
 
 \begin{corollary}[非奇异矩阵 $ A $ 的条件数(condition number)性质]
@@ -1655,7 +1655,7 @@ $ \|A\|_{2}\left\|A^{-1}\right\|_{2} $ 大, $ \frac{\|\Delta x\|_{2}}{\|x\|_{2}}
     \begin{itemize}
         \item 对于所有 $ A $, 有 $ \kappa(A) \geq 1 $;
         \item 如果 $ \kappa(A) $ 比较小 (接近1),  $ x $ 的相对误差接近 $ b $ 的相对误差;
-        \item 如果 $ \kappa(A) $ 比较大（超过100）,  $ x $ 的相对误差比 $ b $ 的相对误差大得多。 
+        \item 如果 $ \kappa(A) $ 比较大（超过100），  $ x $ 的相对误差比 $ b $ 的相对误差大得多。 
     \end{itemize}
 \end{corollary}
 
@@ -1665,37 +1665,37 @@ $ \|A\|_{2}\left\|A^{-1}\right\|_{2} $ 大, $ \frac{\|\Delta x\|_{2}}{\|x\|_{2}}
 
 Instability in an algorithm is often (but not always) caused by an effect called cancellation. Cancellation occurs when two numbers are subtracted that are almost equal, and one of the numbers or both are subject to error (for example, due to rounding error in previous calculations).
 Suppose
-$$
+\begin{equation}
 \hat{x}=x+\Delta x, \quad \hat{y}=y+\Delta y
-$$
+\end{equation}
 are approximations of two numbers $ x, y $, with absolute errors $ |\Delta x| $ and $ |\Delta y| $, respectively. The relative error in the difference $ \hat{x}-\hat{y} $ is
-$$
+\begin{equation}
 \frac{|(\hat{x}-\hat{y})-(x-y)|}{|x-y|}=\frac{|\Delta x-\Delta y|}{|x-y|} \leq \frac{|\Delta x|+|\Delta y|}{|x-y|} .
-$$
+\end{equation}
 
 (The upper bound is achieved when $ \Delta x $ and $ \Delta y $ have opposite signs.) We see that if $ x-y $ is small, then the relative error in $ \hat{x}-\hat{y} $ can be very large, and much larger than the relative errors in $ \hat{x} $ and $ \hat{y} $. The result is that the relative errors $ |\Delta x| /|x| $, $ |\Delta y| /|y| $ are magnified enormously.
 
 For example, suppose $ x=1, y=1+10^{-5} $, and $ x $ and $ y $ have been calculated with an accuracy of about 10 significant digits, i.e., $ |\Delta x| /|x| \approx 10^{-10} $ and $ |\Delta y| /|y| \approx $ $ 10^{-10} $. The error in the result is
-$$
+\begin{equation}
 \frac{|(\hat{x}-\hat{y})-(x-y)|}{|x-y|} \leq \frac{|\Delta x|+|\Delta y|}{|x-y|} \approx \frac{2 \cdot 10^{-10}}{|x-y|}=2 \cdot 10^{-5} .
-$$
+\end{equation}
 The result has only about 5 correct digits.
 
 
 \begin{example}
     Example The most straightforward method for computing the two roots of the quadratic equation
-$$
+\begin{equation}
 a x^{2}+b x+c=0
-$$
+\end{equation}
 (with $ a \neq 0 $ ) is to evaluate the expressions
-$$
+\begin{equation}
 x_{1}=\frac{-b+\sqrt{b^{2}-4 a c}}{2 a}, \quad x_{2}=\frac{-b-\sqrt{b^{2}-4 a c}}{2 a} .
-$$
+\end{equation}
 This method is unstable if $ b^{2} \gg|4 a c| $. If $ b>0 $, there is a danger of cancellation in the expression for $ x_{1} $; if $ b<0 $, cancellation may occur in the expression for $ x_{2} $.
 For example, suppose $ a=c=1, b=10^{5}+10^{-5} $. The exact roots are given by
-$$
+\begin{equation}
 x_{1}=\frac{-b+\sqrt{b^{2}-4 a c}}{2 a}=-10^{-5}, \quad x_{2}=\frac{-b-\sqrt{b^{2}-4 a c}}{2 a}=-10^{5},
-$$
+\end{equation}
 We evaluate these expressions in MATLAB, rounding the square roots to 6 correct digits using the \verb|chop| function:
 
 \begin{lstlisting}[caption=example 1 for cancellation,language=matlab]
@@ -1711,25 +1711,25 @@ ans =
 
 The relative error in $ x_{1} $ is $ 50 \% $, and is due to cancellation.
 We can formulate an algorithm that is more stable if $ b^{2} \gg|4 a c| $ as follows. First suppose $ b>0 $, so we have cancellation in the expression for $ x_{1} $. In this case we can calculate $ x_{2} $ accurately. The expression for $ x_{1} $ can be reformulated as
-$$
+\begin{equation}
 \begin{aligned}
 x_{1} &=\frac{\left(-b+\sqrt{b^{2}-4 a c}\right)\left(-b-\sqrt{b^{2}-4 a c}\right)}{(2 a)\left(-b-\sqrt{b^{2}-4 a c}\right)} \\
 &=\frac{b^{2}-b^{2}+4 a c}{(2 a)\left(-b-\sqrt{b^{2}-4 a c}\right)} \\
 &=\frac{c}{a x_{2}}
 \end{aligned}
-$$
+\end{equation}
 
 Similarly, if $ b>0 $, we can use the expression $ x_{2}=c /\left(a x_{1}\right) $ to compute $ x_{2} $, given $ x_{1} $. The modified algorithm that avoids cancellation is therefore:
 
 \begin{itemize}
     \item if $ b \leq 0 $, calculate
-$$
+\begin{equation}
 x_{1}=\frac{-b+\sqrt{b^{2}-4 a c}}{2 a}, \quad x_{2}=\frac{c}{a x_{1}}
-$$
+\end{equation}
     \item if $ b>0 $, calculate
-$$
+\begin{equation}
 x_{2}=\frac{-b-\sqrt{b^{2}-4 a c}}{2 a}, \quad x_{1}=\frac{c}{a x_{2}}
-$$
+\end{equation}
 \end{itemize}
 
 

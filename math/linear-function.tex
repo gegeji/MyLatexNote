@@ -23,22 +23,22 @@
 
 \begin{proof}
    令 $ x=(1,-1), y=(-1,1), \alpha=0.5, \beta=0.5 $, 
-   有 $$ f(\alpha x+\beta y)=0 \neq \alpha f(x)+\beta f(y)=1 $$
+   有 \begin{equation} f(\alpha x+\beta y)=0 \neq \alpha f(x)+\beta f(y)=1 \end{equation}
 
     但是
-   $$ \begin{aligned} f(x+y) 
+   \begin{equation} \begin{aligned} f(x+y) 
     &=\max \left\{x_{1}+y_{1}, x_{2}+y_{2}, \ldots, x_{n}+y_{n}\right\} 
     \\ & \leq \max \left\{x_{1}, x_{2}, \ldots, x_{n}\right\}+\max \left\{y_{1}, y_{2}, \ldots, y_{n}\right\} 
-    \\ & \leq f(x)+f(y) \end{aligned} $$
+    \\ & \leq f(x)+f(y) \end{aligned} \end{equation}
 
     不满足线性函数的定义
 \end{proof}
 
 \begin{theorem}
         a function $ f: \mathbf{R}^{n} \rightarrow \mathbf{R} $ is linear if the \term{superposition property} (叠加原理)
-    $$
+    \begin{equation}
     f(\alpha x+\beta y)=\alpha f(x)+\beta f(y)
-    $$
+    \end{equation}
     holds for all $ n $-vectors $ x, y $ and all scalars $ \alpha, \beta $.
     
 \end{theorem}
@@ -48,13 +48,13 @@ In fact it says a lot. On the left-hand side, the term $ \alpha x+\beta y $ invo
 \begin{corollary}
     设 $ \alpha_{1, \ldots,} \alpha_{m} \in \mathbb{R}, u_{1}, \ldots, u_{m} \in \mathbb{R}^{n} $, 则线性函数 $ f $ 满足
 
-    $$ \begin{aligned} f\left(\alpha_{1} u_{1}+\alpha_{2} u_{2}+\ldots+\alpha_{m} u_{m}\right) &=f\left(\alpha_{1} u_{1}\right)+f\left(\alpha_{2} u_{2}+\ldots+\alpha_{m} u_{m}\right) \\ &=\alpha_{1} f\left(u_{1}\right)+f\left(\alpha_{2} u_{2}+\ldots+\alpha_{m} u_{m}\right) \\ &=\alpha_{1} f\left(u_{1}\right)+\alpha_{2} f\left(u_{2}\right)+\ldots+\alpha_{m} f\left(u_{m}\right) \end{aligned} $$
+    \begin{equation} \begin{aligned} f\left(\alpha_{1} u_{1}+\alpha_{2} u_{2}+\ldots+\alpha_{m} u_{m}\right) &=f\left(\alpha_{1} u_{1}\right)+f\left(\alpha_{2} u_{2}+\ldots+\alpha_{m} u_{m}\right) \\ &=\alpha_{1} f\left(u_{1}\right)+f\left(\alpha_{2} u_{2}+\ldots+\alpha_{m} u_{m}\right) \\ &=\alpha_{1} f\left(u_{1}\right)+\alpha_{2} f\left(u_{2}\right)+\ldots+\alpha_{m} f\left(u_{m}\right) \end{aligned} \end{equation}
 \end{corollary}
 
 \begin{definition}[内积函数 (inner product function)]
     对于$n$维向量 $ a $,满足以下形式的函数$ f: \mathbf{R}^{n} \rightarrow \mathbf{R} $被称为内积函数
 
-    $$ f(x)=a^{T} x=a_{1} x_{1}+a_{2} x_{2}+\ldots+a_{n} x_{n} $$
+    \begin{equation} f(x)=a^{T} x=a_{1} x_{1}+a_{2} x_{2}+\ldots+a_{n} x_{n} \end{equation}
 \end{definition}
 
 上述 $ f(x) $ 可以看作是每项 $ x_{\mathrm{i}} $ 的加权之和。 
@@ -73,7 +73,7 @@ In fact it says a lot. On the left-hand side, the term $ \alpha x+\beta y $ invo
 
 \begin{proof}
     Superposition does not hold for
-$$
+\begin{equation}
 x=\left[\begin{array}{l}
 1 \\
 0 \\
@@ -83,37 +83,37 @@ x=\left[\begin{array}{l}
 0 \\
 0
 \end{array}\right], \quad \alpha=-1, \quad \beta=1
-$$
+\end{equation}
 we have $ f(x)=1, f(y)=0 $,
-$$
+\begin{equation}
 f(\alpha x+\beta y)=0 \neq \alpha f(x)+\beta f(y)=-1
-$$
+\end{equation}
 \end{proof}
 
 \begin{theorem}
     所有的内积函数都是线性的。
 
-    $$
+    \begin{equation}
 a^{T}(\alpha x+\beta y)=\alpha\left(a^{T} x\right)+\beta\left(a^{T} y\right)
-$$
+\end{equation}
 holds for all scalars $ \alpha, \beta $ and all $ n $-vectors $ x, y $.
 \end{theorem}
 
 \begin{proof}
-    $$ \begin{aligned} f(\alpha x+\beta y) &=a^{T}(\alpha x+\beta y) \\ &=a^{T}(\alpha x)+a^{T}(\beta y) \\ &=\alpha\left(a^{T} x\right)+\beta\left(a^{T} y\right) \\ &=\alpha f(x)+\beta f(y) \end{aligned} $$
+    \begin{equation} \begin{aligned} f(\alpha x+\beta y) &=a^{T}(\alpha x+\beta y) \\ &=a^{T}(\alpha x)+a^{T}(\beta y) \\ &=\alpha\left(a^{T} x\right)+\beta\left(a^{T} y\right) \\ &=\alpha f(x)+\beta f(y) \end{aligned} \end{equation}
 \end{proof}
 
 
 \begin{theorem}
     所有的线性函数都是内积函数。
 
-    $$ \begin{aligned} f(x) &=f\left(x_{1} e_{1}+x_{2} e_{2}+\ldots+x_{n} e_{n}\right) \\ &=x_{1} f\left(e_{1}\right)+x_{2} f\left(e_{2}\right)+\ldots+x_{n} f\left(e_{n}\right) \end{aligned} $$
+    \begin{equation} \begin{aligned} f(x) &=f\left(x_{1} e_{1}+x_{2} e_{2}+\ldots+x_{n} e_{n}\right) \\ &=x_{1} f\left(e_{1}\right)+x_{2} f\left(e_{2}\right)+\ldots+x_{n} f\left(e_{n}\right) \end{aligned} \end{equation}
 \end{theorem}
 
 \begin{proof}
-    假设 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 是线性函数, 那么可用 $ f(x)=a^{T} x $ 来表示, $ a $ 为常量。
+    假设 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 是线性函数， 那么可用 $ f(x)=a^{T} x $ 来表示， $ a $ 为常量。
 
-    $$ \begin{aligned} f(x) &=f\left(x_{1} e_{1}+x_{2} e_{2}+\ldots+x_{n} e_{n}\right) \\ &=x_{1} f\left(e_{1}\right)+x_{2} f\left(e_{2}\right)+\ldots+x_{n} f\left(e_{n}\right) \\ & = a^Tx \quad (a = ( f\left(e_{1}\right), f\left(e_{2}\right), \ldots, f\left(e_{n}\right) )) \end{aligned} $$
+    \begin{equation} \begin{aligned} f(x) &=f\left(x_{1} e_{1}+x_{2} e_{2}+\ldots+x_{n} e_{n}\right) \\ &=x_{1} f\left(e_{1}\right)+x_{2} f\left(e_{2}\right)+\ldots+x_{n} f\left(e_{n}\right) \\ & = a^Tx \quad (a = ( f\left(e_{1}\right), f\left(e_{2}\right), \ldots, f\left(e_{n}\right) )) \end{aligned} \end{equation}
 \end{proof}
 
 \begin{definition}[Inner product representation of $ f $]
@@ -128,9 +128,9 @@ holds for all scalars $ \alpha, \beta $ and all $ n $-vectors $ x, y $.
 
     
         for fixed $ a \in \mathbf{R}^{n}, b \in \mathbf{R} $, define a function $ f: \mathbf{R}^{n} \rightarrow \mathbf{R} $ by
-    $$
+    \begin{equation}
     f(x)=a^{T} x+b=a_{1} x_{1}+a_{2} x_{2}+\cdots+a_{n} x_{n}+b
-    $$
+    \end{equation}
     
     i.e., an inner-product function plus a constant (offset)
     
@@ -139,18 +139,18 @@ holds for all scalars $ \alpha, \beta $ and all $ n $-vectors $ x, y $.
 \begin{theorem}
     函数 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 为仿射函数需要满足
 
-$$ f(\alpha x+\beta y)=\alpha f(x)+\beta f(y), \alpha+\beta=1, \alpha, \beta \in \mathbb{R}, x, y \in \mathbb{R}^{n} $$
+\begin{equation} f(\alpha x+\beta y)=\alpha f(x)+\beta f(y), \alpha+\beta=1, \alpha, \beta \in \mathbb{R}, x, y \in \mathbb{R}^{n} \end{equation}
 \end{theorem}
 
 \begin{corollary}
     If $ f $ is affine, then
-$$
+\begin{equation}
 f\left(\alpha_{1} u_{1}+\alpha_{2} u_{2}+\cdots+\alpha_{m} u_{m}\right)=\alpha_{1} f\left(u_{1}\right)+\alpha_{2} f\left(u_{2}\right)+\cdots+\alpha_{m} f\left(u_{m}\right)
-$$
+\end{equation}
 for all $ n $-vectors $ u_{1}, \ldots, u_{m} $ and all scalars $ \alpha_{1}, \ldots, \alpha_{m} $ with
-$$
+\begin{equation}
 \alpha_{1}+\alpha_{2}+\cdots+\alpha_{m}=1
-$$
+\end{equation}
 \end{corollary}
 
 
@@ -158,12 +158,12 @@ $$
 \begin{theorem}[restricted superposition property]
     Any function of this type is affine.
     
-    $$ f(\alpha x+\beta y)=\alpha f(x)+\beta f(y) $$
+    \begin{equation} f(\alpha x+\beta y)=\alpha f(x)+\beta f(y) \end{equation}
 \end{theorem}
 
 \begin{proof}
     If $ \alpha+\beta=1 $ then
-    $$ \begin{aligned} f(\alpha x+\beta y) &=a^{T}(\alpha x+\beta y)+b \\ &=\alpha a^{T} x+\beta a^{T} y+(\alpha+\beta) b \\ &=\alpha\left(a^{T} x+b\right)+\beta\left(a^{T} y+b\right) \\ &=\alpha f(x)+\beta f(y) \end{aligned} $$
+    \begin{equation} \begin{aligned} f(\alpha x+\beta y) &=a^{T}(\alpha x+\beta y)+b \\ &=\alpha a^{T} x+\beta a^{T} y+(\alpha+\beta) b \\ &=\alpha\left(a^{T} x+b\right)+\beta\left(a^{T} y+b\right) \\ &=\alpha f(x)+\beta f(y) \end{aligned} \end{equation}
 
     (In the second line we use $\alpha + \beta = 1$.)
 
@@ -175,12 +175,12 @@ $$
 
 \begin{theorem}
     every affine function can be written as $ f(x)=a^{T} x+b $ with:
-$$
+\begin{equation}
 \begin{array}{l}
 a=\left(f\left(e_{1}\right)-f(0), f\left(e_{2}\right)-f(0), \ldots, f\left(e_{n}\right)-f(0)\right) \\
 b=f(0)
 \end{array}
-$$
+\end{equation}
 
 \end{theorem}
 
@@ -190,47 +190,47 @@ $$
 \begin{definition}[函数$f$第$i$个分量的一阶偏导数]
     假设 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ , 函数 $ f $ 在 $ z $ 点可微
 
-    $$ \begin{aligned} \frac{\partial f}{\partial z_{i}}(z) &=\lim _{t \rightarrow 0} \frac{f\left(z_{1}, \cdots, z_{i-1}, z_{i}+t, z_{i+1}, \cdots, z_{n}\right)-f(z)}{t} \\ &=\lim _{t \rightarrow 0} \frac{f\left(z+t e_{i}\right)-f(z)}{t} \end{aligned} $$
+    \begin{equation} \begin{aligned} \frac{\partial f}{\partial z_{i}}(z) &=\lim _{t \rightarrow 0} \frac{f\left(z_{1}, \cdots, z_{i-1}, z_{i}+t, z_{i+1}, \cdots, z_{n}\right)-f(z)}{t} \\ &=\lim _{t \rightarrow 0} \frac{f\left(z+t e_{i}\right)-f(z)}{t} \end{aligned} \end{equation}
 \end{definition}
 
 \begin{definition}[$f$在点$z$的梯度]
-    $$ \nabla f(z)=\left[\begin{array}{c}\frac{\partial f}{\partial z_{1}}(z) \\ \vdots \\ \frac{\partial f}{\partial z_{n}}(z)\end{array}\right] $$
+    \begin{equation} \nabla f(z)=\left[\begin{array}{c}\frac{\partial f}{\partial z_{1}}(z) \\ \vdots \\ \frac{\partial f}{\partial z_{n}}(z)\end{array}\right] \end{equation}
 \end{definition}
 
 \begin{definition}[Taylor's Approximation]
-    假设 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ , 函数 $ f $ 在 $ z $ 点充分光滑, 即处处可导。
+    假设 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ , 函数 $ f $ 在 $ z $ 点充分光滑， 即处处可导。
 
     $f(x)$在$z$附近的泰勒展开是
 
-    $$\begin{aligned} f(x)&=f(z)+\frac{\partial f}{\partial x_{1}}(z)\left(x_{1}-z_{1}\right)+\frac{\partial f}{\partial x_{2}}(z)\left(x_{2}-z_{2}\right)+\cdots+\frac{\partial f}{\partial x_{n}}(z)\left(x_{n}-z_{n}\right) 
-    \\ & +\frac{1}{2 !} \sum_{j=1}^{n} \sum_{i=1}^{n} \frac{\partial f^{2}}{\partial x_{i} \partial x_{j}}(z)\left(x_{i}-z_{i}\right)\left(x_{\mathrm{j}}-z_{j}\right)+\cdots \end{aligned}$$
+    \begin{equation}\begin{aligned} f(x)&=f(z)+\frac{\partial f}{\partial x_{1}}(z)\left(x_{1}-z_{1}\right)+\frac{\partial f}{\partial x_{2}}(z)\left(x_{2}-z_{2}\right)+\cdots+\frac{\partial f}{\partial x_{n}}(z)\left(x_{n}-z_{n}\right) 
+    \\ & +\frac{1}{2 !} \sum_{j=1}^{n} \sum_{i=1}^{n} \frac{\partial f^{2}}{\partial x_{i} \partial x_{j}}(z)\left(x_{i}-z_{i}\right)\left(x_{\mathrm{j}}-z_{j}\right)+\cdots \end{aligned}\end{equation}
 \end{definition}
 
 
 \begin{definition}[一阶泰勒公式]
     假设$ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $, 函数$f$在$z$点可导
 
-    $$ \hat{f}(x)=f(z)+\frac{\partial f}{\partial x_{1}}(z)\left(x_{1}-z_{1}\right)+\ldots+\frac{\partial f}{\partial x_{1}}(z)\left(x_{n}-z_{n}\right) $$
+    \begin{equation} \hat{f}(x)=f(z)+\frac{\partial f}{\partial x_{1}}(z)\left(x_{1}-z_{1}\right)+\ldots+\frac{\partial f}{\partial x_{1}}(z)\left(x_{n}-z_{n}\right) \end{equation}
 \end{definition}
 
-当$x$非常接近$z$时, $ \hat{f}(x) $ 也非常接近 $ f(z) $.  
+当$x$非常接近$z$时， $ \hat{f}(x) $ 也非常接近 $ f(z) $.  
 $ \hat{f}(x) $ 是关于 $ x $ 的一个仿射函数。 
 
 \begin{corollary}[一阶泰勒公式的内积形式]
-    $$ \hat{f}(x)=f(z)+\nabla f(z)^{T}(x-z) \quad (\nabla f(z)=\left[\begin{array}{c}\frac{\partial f}{\partial x_{1}}(z) \\ \vdots \\ \frac{\partial f}{\partial x_{n}}(z)\end{array}\right]) $$
+    \begin{equation} \hat{f}(x)=f(z)+\nabla f(z)^{T}(x-z) \quad (\nabla f(z)=\left[\begin{array}{c}\frac{\partial f}{\partial x_{1}}(z) \\ \vdots \\ \frac{\partial f}{\partial x_{n}}(z)\end{array}\right]) \end{equation}
 
     the $ n $-vector $ \nabla f(z) $ is called the \term{gradient} of $ f $ at $ z $.
 \end{corollary} 
 
-一维时, $ \hat{f}(x)=f(z)+f^{\prime}(z)(x-z) $.
+一维时， $ \hat{f}(x)=f(z)+f^{\prime}(z)(x-z) $.
 
 \begin{example}
-    $$ f(x)=x_{1}-3 x_{2}+e^{2 x_{1}+x_{2}-1} $$
+    \begin{equation} f(x)=x_{1}-3 x_{2}+e^{2 x_{1}+x_{2}-1} \end{equation}
 
-    $$ \nabla f(x)=\left[\begin{array}{l}\frac{\partial f}{\partial x_{1}}(x) \\ \frac{\partial f}{\partial x_{2}}(x)\end{array}\right]=\left[\begin{array}{l}1+2 e^{2 x_{1}+x_{2}-1} \\ -3+e^{2 x_{1}+x_{2}-1}\end{array}\right] $$
+    \begin{equation} \nabla f(x)=\left[\begin{array}{l}\frac{\partial f}{\partial x_{1}}(x) \\ \frac{\partial f}{\partial x_{2}}(x)\end{array}\right]=\left[\begin{array}{l}1+2 e^{2 x_{1}+x_{2}-1} \\ -3+e^{2 x_{1}+x_{2}-1}\end{array}\right] \end{equation}
 
     函数 $ f $ 在 0 点的一阶泰勒公式为：
-    $$ \hat{f}(x)=f(0)+\nabla f(0)^{T}(x-0)=e^{-1}+\left(1+2 e^{-1}\right) x_{1}+\left(-3+e^{-1}\right) x_{2} $$
+    \begin{equation} \hat{f}(x)=f(0)+\nabla f(0)^{T}(x-0)=e^{-1}+\left(1+2 e^{-1}\right) x_{1}+\left(-3+e^{-1}\right) x_{2} \end{equation}
 \end{example}
 
 \section{高阶泰勒公式}
@@ -240,19 +240,19 @@ $ \hat{f}(x) $ 是关于 $ x $ 的一个仿射函数。
 
 
 \begin{corollary}[$n$阶泰勒多项式]
-    $$ \begin{aligned} P_{n}(x) &=f\left(x_{0}\right)+f^{\prime}\left(x_{0}\right)\left(x-x_{0}\right)+\frac{f^{\prime \prime}\left(x_{0}\right)}{2 !}\left(x-x_{0}\right)^{2} +\cdots+\frac{f^{(n)}\left(x_{0}\right)}{n !}\left(x-x_{0}\right)^{n} \end{aligned} $$
+    \begin{equation} \begin{aligned} P_{n}(x) &=f\left(x_{0}\right)+f^{\prime}\left(x_{0}\right)\left(x-x_{0}\right)+\frac{f^{\prime \prime}\left(x_{0}\right)}{2 !}\left(x-x_{0}\right)^{2} +\cdots+\frac{f^{(n)}\left(x_{0}\right)}{n !}\left(x-x_{0}\right)^{n} \end{aligned} \end{equation}
     where $a_{n}=\frac{f^{(n)}\left(x_{0}\right)}{n !} $
 \end{corollary}
 
 \begin{corollary}[对于高阶余项的公式]
     带拉格朗日余项的泰勒公式
-    $$ \begin{aligned} f(x) &=f\left(x_{0}\right)+f^{\prime}\left(x_{0}\right)\left(x-x_{0}\right)+\frac{f^{\prime \prime}\left(x_{0}\right)}{2 !}\left(x-x_{0}\right)^{2} \\ &+\cdots+\frac{f^{(n)}\left(x_{0}\right)}{n !}\left(x-x_{0}\right)^{n}+\frac{f^{(n+1)}(\xi)}{(n+1) !}\left(x-x_{0}\right)^{n+1} \end{aligned} $$
+    \begin{equation} \begin{aligned} f(x) &=f\left(x_{0}\right)+f^{\prime}\left(x_{0}\right)\left(x-x_{0}\right)+\frac{f^{\prime \prime}\left(x_{0}\right)}{2 !}\left(x-x_{0}\right)^{2} \\ &+\cdots+\frac{f^{(n)}\left(x_{0}\right)}{n !}\left(x-x_{0}\right)^{n}+\frac{f^{(n+1)}(\xi)}{(n+1) !}\left(x-x_{0}\right)^{n+1} \end{aligned} \end{equation}
 
     $ R_{n}(x)=\frac{f^{(n+1)}(\xi)}{(n+1) !}\left(x-x_{0}\right)^{n+1}\left(\xi\right. $ 在 $ x_{0} $ 与 $ x  $ 之间 $ ) $
 \end{corollary}
 
 \begin{corollary}[麦克劳林(Maclaurin)公式]在零点展开麦克劳林(Maclaurin)公式
-    $$ \begin{aligned} f(x)=& f(0)+f^{\prime}(0) x+\frac{f^{\prime \prime}(0)}{2 !} x^{2}+\cdots+\frac{f^{(n)}(0)}{n !} x^{n} +\frac{f^{(n+1)}(\theta x)}{(n+1) !} x^{n+1} &(0<\theta<1) \end{aligned} $$
+    \begin{equation} \begin{aligned} f(x)=& f(0)+f^{\prime}(0) x+\frac{f^{\prime \prime}(0)}{2 !} x^{2}+\cdots+\frac{f^{(n)}(0)}{n !} x^{n} +\frac{f^{(n+1)}(\theta x)}{(n+1) !} x^{n+1} &(0<\theta<1) \end{aligned} \end{equation}
     
 \end{corollary}
 
@@ -260,7 +260,7 @@ $ \hat{f}(x) $ 是关于 $ x $ 的一个仿射函数。
 
 
 \begin{example}
-    $$ \sin x= x-\frac{x^{3}}{3 !}+\frac{x^{5}}{5 !}-\cdots+(-1)^{k-1} \frac{x^{2 k-1}}{(2 k-1) !}+\frac{\sin \left[\xi+(2 k+1) \frac{\pi}{2}\right]}{(2 k+1) !} x^{2 k+1} $$
+    \begin{equation} \sin x= x-\frac{x^{3}}{3 !}+\frac{x^{5}}{5 !}-\cdots+(-1)^{k-1} \frac{x^{2 k-1}}{(2 k-1) !}+\frac{\sin \left[\xi+(2 k+1) \frac{\pi}{2}\right]}{(2 k+1) !} x^{2 k+1} \end{equation}
 
     一次逼近: $  \sin x \approx x $
 
@@ -268,7 +268,7 @@ $ \hat{f}(x) $ 是关于 $ x $ 的一个仿射函数。
 \end{example}
 
 \begin{proof}
-    $$ f(x)=P_{n}(x)+R_{n}(x) $$
+    \begin{equation} f(x)=P_{n}(x)+R_{n}(x) \end{equation}
     
     $ P_{n}(x)=a_{0}+a_{1}\left(x-x_{0}\right)+a_{2}\left(x-x_{0}\right)^{2}+\cdots+a_{n}\left(x-x_{0}\right)^{n}  $
 
@@ -284,7 +284,7 @@ $ \hat{f}(x) $ 是关于 $ x $ 的一个仿射函数。
 
     要求 $ P_{n}\left(x_{0}\right)=f\left(x_{0}\right) \Rightarrow  a_{0}=f\left(x_{0}\right)  $
 
-    $$ P_{n}^{\prime}(x)=a_{1}+2 a_{2}\left(x-x_{0}\right)+\cdots+n a_{n}\left(x-x_{0}\right)^{n-1} \Rightarrow  a_{1}=f^{\prime}\left(x_{0}\right)  $$
+    \begin{equation} P_{n}^{\prime}(x)=a_{1}+2 a_{2}\left(x-x_{0}\right)+\cdots+n a_{n}\left(x-x_{0}\right)^{n-1} \Rightarrow  a_{1}=f^{\prime}\left(x_{0}\right)  \end{equation}
 
     依此类推。 $a_{n}=\frac{f^{(n)}\left(x_{0}\right)}{n !} $
 \end{proof}

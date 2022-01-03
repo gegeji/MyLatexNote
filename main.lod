@@ -3,7 +3,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {1.1.1}{Vector}}{14}{definitionT.1.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {1.1.2}{n维向量 \( a \) 的第 \( i \) 元素}}{14}{definitionT.1.1.2}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {1.1.2}{n维向量 $( a $) 的第 $( i $) 元素}}{14}{definitionT.1.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {1.1.3}{$a=b$}}{14}{definitionT.1.1.3}%
 \defcounter {refsection}{0}\relax 
@@ -261,7 +261,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {4.1}{}}{41}{problemT.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~4\hspace {0.5em}优化问题初步}{41}{problemT.4.1}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~4\hspace {0.5em}优化问题初步}{41}{equation.4.1.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {4.1.1}{高阶无穷小(记号 $o$)}}{41}{definitionT.4.1.1}%
 \defcounter {refsection}{0}\relax 
@@ -305,7 +305,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {5.1.8}{}}{50}{dummy.5.1.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {5.2.1}{基 (Basis)}}{50}{definitionT.5.2.1}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {5.2.1}{基 (Basis)}}{51}{definitionT.5.2.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {5.2.2}{向量 $ b $ 在基底 $ a_{1}, \ldots , a_{n} $ 下的分解}}{51}{definitionT.5.2.2}%
 \defcounter {refsection}{0}\relax 
@@ -327,7 +327,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {5.4.1}{}}{53}{dummy.5.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.4.2}{}}{53}{dummy.5.4.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.4.2}{}}{54}{dummy.5.4.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {5.4.3}{}}{54}{dummy.5.4.3}%
 \defcounter {refsection}{0}\relax 
@@ -345,9 +345,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {6.1.3}{向量}}{57}{definitionT.6.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {6.1.4}{行向量, 列向量}}{57}{definitionT.6.1.4}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {6.1.4}{行向量， 列向量}}{57}{definitionT.6.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {6.1.5}{高形, 宽形和方形矩阵}}{57}{definitionT.6.1.5}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {6.1.5}{高形， 宽形和方形矩阵}}{57}{definitionT.6.1.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {6.1.6}{分块矩阵}}{58}{definitionT.6.1.6}%
 \defcounter {refsection}{0}\relax 
@@ -511,7 +511,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {8.3.1}{相对误差的界限}}{84}{dummy.8.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {8.3.1}{非奇异矩阵 $ A $ 的条件数(condition number) }}{84}{definitionT.8.3.1}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {8.3.1}{非奇异矩阵 $ A $ 的条件数(condition number) }}{85}{definitionT.8.3.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {8.3.2}{非奇异矩阵 $ A $ 的条件数(condition number)性质}}{85}{dummy.8.3.2}%
 \defcounter {refsection}{0}\relax 
@@ -811,7 +811,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {13.8.1}{}}{151}{dummy.13.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~13\hspace {0.5em}Least Squares}{151}{dummy.13.8.1}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~13\hspace {0.5em}Least Squares}{151}{equation.13.8.43}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {13.8.1}{梯度下降法求解最小二乘法}}{151}{definitionT.13.8.1}%
 \defcounter {refsection}{0}\relax 
@@ -821,7 +821,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {14.1}{}}{154}{problemT.14.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~14\hspace {0.5em}Least squares data fitting}{154}{problemT.14.1}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~14\hspace {0.5em}Least squares data fitting}{154}{equation.14.1.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {14.1.1}{Model Fitting}}{154}{definitionT.14.1.1}%
 \defcounter {refsection}{0}\relax 
@@ -957,7 +957,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.8}{}}{168}{problemT.15.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.9}{}}{168}{problemT.15.9}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.9}{}}{169}{problemT.15.9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.10}{}}{169}{problemT.15.10}%
 \defcounter {refsection}{0}\relax 
@@ -965,19 +965,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.12}{最小二乘法进行估计}}{169}{problemT.15.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~15\hspace {0.5em}Multi-objective Least Squares}{169}{problemT.15.12}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~15\hspace {0.5em}Multi-objective Least Squares}{169}{equation.15.4.16}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {15.4.1}{Tikhonov 正则化}}{169}{definitionT.15.4.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {15.4.1}{岭回归问题的标准方程}}{169}{dummy.15.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {15.4.2}{图像转换为列向量存储}}{169}{definitionT.15.4.2}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {15.4.2}{图像转换为列向量存储}}{170}{definitionT.15.4.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {15.4.3}{垂直差分矩阵}}{170}{definitionT.15.4.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {15.4.4}{水平差分矩阵}}{170}{definitionT.15.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.13}{}}{170}{problemT.15.13}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.13}{}}{171}{problemT.15.13}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {15.14}{信号去噪问题}}{171}{problemT.15.14}%
 \defcounter {refsection}{0}\relax 
@@ -985,7 +985,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {16.1}{}}{172}{problemT.16.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~16\hspace {0.5em}Constrained Least Squares}{172}{figure.caption.67}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~16\hspace {0.5em}Constrained Least Squares}{172}{equation.16.1.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {16.1.1}{拉格朗日乘子法和Lagrange Functions}}{173}{definitionT.16.1.1}%
 \defcounter {refsection}{0}\relax 
@@ -1213,7 +1213,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.7.3}{}}{227}{dummy.17.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.7.4}{}}{228}{dummy.17.7.4}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.7.4}{}}{227}{dummy.17.7.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {17.7.5}{}}{228}{dummy.17.7.5}%
 \defcounter {refsection}{0}\relax 
@@ -1223,128 +1223,128 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {17.9.1}{globally optimal}}{228}{definitionT.17.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {17.9.2}{locally optimal}}{229}{definitionT.17.9.2}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {17.9.2}{locally optimal}}{228}{definitionT.17.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~18\hspace {0.5em}Fourier Series, Fourier Transform}{231}{section.18.1}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~18\hspace {0.5em}Fourier Series, Fourier Transform}{230}{section.18.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.1.1}{波}}{231}{definitionT.18.1.1}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.1.1}{波}}{230}{definitionT.18.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.1.2}{Complex Numbers}}{231}{definitionT.18.1.2}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.1.2}{Complex Numbers}}{230}{definitionT.18.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.1.3}{Complex Number in Polar Coordinates}}{231}{definitionT.18.1.3}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.1.3}{Complex Number in Polar Coordinates}}{230}{definitionT.18.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {18.1.1}{Euler's Formular}}{231}{dummy.18.1.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {18.1.1}{Euler's Formular}}{230}{dummy.18.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.1.2}{}}{231}{dummy.18.1.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.1.2}{}}{230}{dummy.18.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.1.4}{正弦函数}}{232}{definitionT.18.1.4}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.1.4}{正弦函数}}{231}{definitionT.18.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.1.5}{三角级数}}{232}{definitionT.18.1.5}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.1.5}{三角级数}}{231}{definitionT.18.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.1.6}{三角函数系（基波）}}{232}{definitionT.18.1.6}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.1.6}{三角函数系（基波）}}{231}{definitionT.18.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.1.7}{复数域的Gram矩阵}}{232}{definitionT.18.1.7}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.1.7}{复数域的Gram矩阵}}{231}{definitionT.18.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.1.8}{酉矩阵}}{233}{definitionT.18.1.8}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.1.8}{酉矩阵}}{232}{definitionT.18.1.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.1.9}{酉矩阵的逆}}{233}{definitionT.18.1.9}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.1.9}{酉矩阵的逆}}{232}{definitionT.18.1.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.2.1}{傅里叶级数}}{233}{definitionT.18.2.1}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.2.1}{傅里叶级数}}{232}{definitionT.18.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {18.2.1}{收敛定理, 狄利克雷 (Dirichlet) 充分条件}}{234}{dummy.18.2.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {18.2.1}{收敛定理， 狄利克雷 (Dirichlet) 充分条件}}{233}{dummy.18.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.2.2}{}}{234}{dummy.18.2.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.2.2}{}}{233}{dummy.18.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.2.2}{正弦级数}}{235}{definitionT.18.2.2}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.2.2}{正弦级数}}{234}{definitionT.18.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.2.3}{余弦级数}}{235}{definitionT.18.2.3}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.2.3}{余弦级数}}{234}{definitionT.18.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {18.2.3}{}}{235}{dummy.18.2.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {18.2.3}{}}{234}{dummy.18.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.2.4}{傅里叶级数的复数形式}}{236}{definitionT.18.2.4}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.2.4}{傅里叶级数的复数形式}}{235}{definitionT.18.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.3.1}{The Fourier transform of a continuous function $ f(t) $ of a continuous variable $ t $}}{237}{definitionT.18.3.1}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.3.1}{The Fourier transform of a continuous function $ f(t) $ of a continuous variable $ t $}}{236}{definitionT.18.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.3.2}{inverse Fourier transform}}{237}{definitionT.18.3.2}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.3.2}{inverse Fourier transform}}{236}{definitionT.18.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.4.1}{Discrete Fourier Transform}}{237}{definitionT.18.4.1}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.4.1}{Discrete Fourier Transform}}{236}{definitionT.18.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.4.2}{inverse discrete Fourier transform (IDFT)}}{237}{definitionT.18.4.2}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.4.2}{inverse discrete Fourier transform (IDFT)}}{236}{definitionT.18.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.4.3}{离散傅里叶变换矩阵$W$}}{238}{definitionT.18.4.3}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.4.3}{离散傅里叶变换矩阵$W$}}{237}{definitionT.18.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.4.1}{}}{238}{dummy.18.4.1}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.4.1}{}}{237}{dummy.18.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.4.2}{}}{238}{dummy.18.4.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.4.2}{}}{237}{dummy.18.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.4.3}{}}{238}{dummy.18.4.3}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.4.3}{}}{237}{dummy.18.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.4.4}{}}{238}{dummy.18.4.4}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {18.4.4}{}}{237}{dummy.18.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.4.4}{离散傅里叶反变换}}{238}{definitionT.18.4.4}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {18.4.4}{离散傅里叶反变换}}{237}{definitionT.18.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bbl@ensure@english {Chapter}~20\hspace {0.5em}Cholesky Factorization}{240}{section.20.1}%
+\contentsline {chapter}{\bbl@ensure@english {Chapter}~20\hspace {0.5em}Cholesky Factorization}{239}{section.20.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {20.1.1}{Positive semidefinite}}{240}{definitionT.20.1.1}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {20.1.1}{Positive semidefinite}}{239}{definitionT.20.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {20.1.2}{positive definite}}{240}{definitionT.20.1.2}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {20.1.2}{positive definite}}{239}{definitionT.20.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {20.2.1}{Schur complement}}{240}{definitionT.20.2.1}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {20.2.1}{Schur complement}}{239}{definitionT.20.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.2.1}{}}{240}{dummy.20.2.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.2.1}{}}{239}{dummy.20.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.2.2}{}}{241}{dummy.20.2.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.2.2}{}}{240}{dummy.20.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.2.3}{}}{241}{dummy.20.2.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.2.3}{}}{240}{dummy.20.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {20.2.4}{}}{241}{dummy.20.2.4}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {20.2.4}{}}{240}{dummy.20.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {20.2.5}{}}{241}{dummy.20.2.5}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {20.2.5}{}}{240}{dummy.20.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {20.3.1}{Laplacian of the Graph}}{241}{definitionT.20.3.1}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {20.3.1}{Laplacian of the Graph}}{240}{definitionT.20.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.3.1}{}}{241}{dummy.20.3.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.3.1}{}}{240}{dummy.20.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.3.2}{Dirichlet energy function}}{241}{dummy.20.3.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.3.2}{Dirichlet energy function}}{240}{dummy.20.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.4.1}{}}{242}{dummy.20.4.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.4.1}{}}{241}{dummy.20.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {20.1}{}}{243}{problemT.20.1}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {20.1}{}}{242}{problemT.20.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.9.1}{}}{245}{dummy.20.9.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.9.1}{}}{244}{dummy.20.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.11.1}{}}{245}{dummy.20.11.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.11.1}{}}{244}{dummy.20.11.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {20.12.1}{}}{246}{definitionT.20.12.1}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {20.12.1}{}}{245}{definitionT.20.12.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {20.12.2}{}}{246}{definitionT.20.12.2}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {20.12.2}{}}{245}{definitionT.20.12.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.12.1}{Cholesky factorization of complex matrices}}{246}{dummy.20.12.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.12.1}{Cholesky factorization of complex matrices}}{245}{dummy.20.12.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {20.2}{Data fitting problem (Regularized least squares model fitting)}}{246}{problemT.20.2}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {20.2}{Data fitting problem (Regularized least squares model fitting)}}{245}{problemT.20.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {20.3}{}}{246}{problemT.20.3}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {20.3}{}}{245}{problemT.20.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.13.1}{}}{247}{dummy.20.13.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.13.1}{}}{246}{dummy.20.13.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.13.2}{}}{247}{dummy.20.13.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.13.2}{}}{246}{dummy.20.13.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {20.13.1}{}}{247}{definitionT.20.13.1}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {20.13.1}{}}{246}{definitionT.20.13.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.13.3}{}}{248}{dummy.20.13.3}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.13.3}{}}{247}{dummy.20.13.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.14.1}{}}{248}{dummy.20.14.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.14.1}{}}{247}{dummy.20.14.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {20.14.2}{}}{248}{dummy.20.14.2}%
+\contentsline {section}{\hskip 1em\relax (Corollary)\hskip 1em\relax \numberline {20.14.2}{}}{247}{dummy.20.14.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {20.14.1}{coefficient $c_{k_{1} k_{2} \cdots k_{n}}$}}{248}{definitionT.20.14.1}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {20.14.1}{coefficient $c_{k_{1} k_{2} \cdots k_{n}}$}}{247}{definitionT.20.14.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {20.15.1}{}}{248}{definitionT.20.15.1}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {20.15.1}{}}{247}{definitionT.20.15.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.15.1}{}}{248}{dummy.20.15.1}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.15.1}{}}{247}{dummy.20.15.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.15.2}{}}{249}{dummy.20.15.2}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {20.15.2}{}}{248}{dummy.20.15.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {20.4}{}}{249}{problemT.20.4}%
+\contentsline {section}{\hskip 1em\relax (Problem)\hskip 1em\relax \numberline {20.4}{}}{248}{problemT.20.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {20.17.1}{Kernel function}}{250}{definitionT.20.17.1}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {20.17.1}{Kernel function}}{249}{definitionT.20.17.1}%

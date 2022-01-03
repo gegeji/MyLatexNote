@@ -5,48 +5,48 @@
 \begin{problem}
     $ f_{1}(x), \ldots, f_{m}(x) $ 是可微函数；
 
-    优化目标: $$ \min _{x} \sum_{i=1}^{m}\left(f_{i}(x)\right)^{2} $$
+    优化目标: \begin{equation} \min _{x} \sum_{i=1}^{m}\left(f_{i}(x)\right)^{2} \end{equation}
 
 \end{problem}
 
 \begin{problem}
     \label{pbl:non-linear-least-squares}
-    设函数 $ f(x): \mathbb{R}^{n} \rightarrow \mathbb{R}^{m} $ ，其第 $ i $ 个分量为函数 $ f_{i}(x)$
+    设函数 $ f(x): \mathbb{R}^{n} \rightarrow \mathbb{R}^{m} $ ,其第 $ i $ 个分量为函数 $ f_{i}(x)$
 
     则有
-    $$
+    \begin{equation}
     f(x)=\left[\begin{array}{c}
     f_{1}(x) \\
     f_{2}(x) \\
     \vdots \\
     f_{m}(x)
     \end{array}\right]
-    $$
+    \end{equation}
 
     优化目标
-    $$ \min _{x} \sum_{i=1}^{m}\left(f_{i}(x)\right)^{2}=\|f(x)\|_{2}^{2} $$
+    \begin{equation} \min _{x} \sum_{i=1}^{m}\left(f_{i}(x)\right)^{2}=\|f(x)\|_{2}^{2} \end{equation}
 \end{problem}
 
 
-如果 $ f(x)=A x-b $ ，问题简化为(线性)最小二乘问题。
+如果 $ f(x)=A x-b $ ,问题简化为(线性)最小二乘问题。
 
 \subsection{例子：距离测量定位}
 
 \begin{problem}
     向量 $ x_{e x} $ 表示二维或三维中的未知位置，通过测量到的已知点 $ a_{1}, \cdots, a_{m} $ 的距离来估计 $ x_{e x} $ 
 
-    $$
+    \begin{equation}
     \rho_{i}=\left\|x_{e x}-a_{i}\right\|_{2}+v_{i}, \quad i=1, \cdots, m
-    $$
+    \end{equation}
 
     其中 $ v_{i} $ 是测量误差。
 \end{problem}
 
 非线性最小二乘法估计：通过最小化估计 $ \hat{x} $的位置
 
-$$
+\begin{equation}
 \min _{x} \sum_{i=1}^{m}\left(\left\|x-a_{i}\right\|_{2}-\rho_{i}\right)^{2}=\|f(x)\|_{2}^{2}
-$$
+\end{equation}
 
 函数$ f_{i}(x)=\left\|x-a_{i}\right\|_{2}-\rho_{i} $ 是 $ f(x) $ 的 $ i $ 个分量。
 
@@ -62,55 +62,55 @@ $$
 
 目标位置 $ x \in \mathbb{R}^{3} $ 在二维平面图像投影位置 $ x^{\prime} \in \mathbb{R}^{2} $ .
 
-$$
+\begin{equation}
 x^{\prime}=\frac{1}{c^{T} x+d}(A x+b)
-$$
+\end{equation}
 
 如果物体在摄像机前面，则 $ c^{T} x+d>0 $ .
 
 \begin{problem}
-    位于 $ x_{e x} $ 位置的物体由 $ l $ 个相机观察(由 $ A_{i}, b_{i}, c_{i}, d_{i} $ 描述)，目标在相机图像平面上位置 $ y_{i} \in \mathbb{R}^{2} $
+    位于 $ x_{e x} $ 位置的物体由 $ l $ 个相机观察(由 $ A_{i}, b_{i}, c_{i}, d_{i} $ 描述),目标在相机图像平面上位置 $ y_{i} \in \mathbb{R}^{2} $
 
-    $$
+    \begin{equation}
     y_{i}=\frac{1}{c_{i}^{T} x_{e x}+d_{i}}\left(A_{i} x_{\alpha x}+b_{i}\right)+v_{i}
-    $$
+    \end{equation}
 
     $ v_{i} $ 为测量误差或量化误差。目的是从 $ l $ 个观测点 $ y_{1}, \ldots, y_{l} $ 来估计三维位置 $ x_{e x} $ .
 \end{problem}
 
 
 使用非线性最小二乘法估计
-$$
+\begin{equation}
 \min _{x} \sum_{i=1}^{l}\left\|\frac{1}{c_{i}^{T} x+d_{i}}\left(A_{i} x+b_{i}\right)-y_{i}\right\|_{2}^{2}
-$$
+\end{equation}
 
 这是关于 $ m=2 l $ 的非线性最小二乘法问题， $ \left(y_{i}\right)_{j} $ 是 $ y_{i} $ 的第 $ j $ 个 分量:
-$$
+\begin{equation}
 f_{i}(x)=\frac{\left(A_{i} x+b_{i}\right)_{1}}{c_{i}^{T} x+d_{i}}-\left(y_{i}\right)_{1}, \quad f_{l+i}(x)=\frac{\left(A_{i} x+b_{i}\right)_{2}}{c_{i}^{T} x+d_{i}}-\left(y_{i}\right)_{2}
-$$
+\end{equation}
 
 \subsection{例子：模型拟合}
 
 \begin{problem}
-$$
+\begin{equation}
 \min _{\theta} \sum_{i=1}^{N}\left(\hat{f}\left(x^{(i)}, \theta\right)-y^{(i)}\right)^{2}
-$$
+\end{equation}
 
 $ \left(x^{(i)}, y^{(i)}\right), i=1, \cdots, N $ 表示样本。设函数 $ \hat{f}(x, \theta) $ 的参数 $ \theta = \left(\theta_{1}, \ldots, \theta_{p}\right) $.最小化的目标是估计函数参数 $ \theta $.
 \end{problem}
 
 假设函数 $ \hat{f}(x, \theta) $ 关于 $ \theta $ 的线性函数
-$$
+\begin{equation}
 \hat{f}(x, \theta)=\theta_{1} f_{1}(x)+\cdots+\theta_{p} f_{p}(x)
-$$
+\end{equation}
 
 当然 $ \hat{f}(x, \theta) $ 也可以是关于 $ \theta $ 的非线性函数。
 
 \begin{example}
     有四个变量 $ \theta_{1}, \theta_{2}, \theta_{3}, \theta_{4} $ 的非线性最小二乘问题:
-$$
+\begin{equation}
 \min _{\theta} \sum_{i=1}^{N}\left(\theta_{1} e^{\theta_{2} x(i)} \cos \left(\theta_{3} x^{(i)}+\theta_{4}\right)-y^{(i)}\right)^{2}
-$$
+\end{equation}
 
 % todo (2021-12-09 19:15): figure
 \end{example}
@@ -120,18 +120,18 @@ $$
 正交距离回归目标: 最小化 $ \hat{f}(x, \theta) $ 图中数据点到曲线的均方距离。 
 
 例子: 三次多项式的正交距离回归:
-$$
+\begin{equation}
 \hat{f}(x, \theta)=\theta_{1}+\theta_{2} x+\theta_{3} x^{2}+\theta_{4} x^{3}
-$$
+\end{equation}
 
 % todo (2021-12-09 19:16): figure
 
 \subsection{非线性最小二乘法}
 
 \begin{problem}
-    $$
+    \begin{equation}
 \min _{\theta, u^{(i)}} \sum_{i=1}^{N}\left(\left(\hat{f}\left(u^{(i)}, \theta\right)-y^{(i)}\right)^{2}+\left\|u^{(i)}-x^{(i)}\right\|_{2}^{2}\right)
-$$
+\end{equation}
 
 这个模型需要优化参数 $ \theta $ 和 $ {N} $ 个点 $ u^{(i)} $.
 \end{problem}
@@ -142,7 +142,7 @@ $$
     \input{tikz_images/non_linear_least_square_example.tex}
 \end{FigureCenter}
 
-通过 $ u^{(i)} $ 与图中点 $ \left(x^{(i)}, y^{(i)}\right) $ 的平方距离来最小化 $ d_{i}^{2} $.最小化 $ \sum_{i} d_{i}^{2} $ ，即通过 $ u^{(1)}, \ldots, u^{(N)} $ 和 $ \theta $ 来最小化均方距离。
+通过 $ u^{(i)} $ 与图中点 $ \left(x^{(i)}, y^{(i)}\right) $ 的平方距离来最小化 $ d_{i}^{2} $.最小化 $ \sum_{i} d_{i}^{2} $ ,即通过 $ u^{(1)}, \ldots, u^{(N)} $ 和 $ \theta $ 来最小化均方距离。
 
 \subsection{二分类}
 
@@ -150,14 +150,14 @@ $$
 
 
 \begin{problem}[二分类问题]
-    $$
+    \begin{equation}
 \min _{\theta} \sum_{i=1}^{N}\left(\phi\left(\theta_{1} f_{1}\left(x^{(i)}\right)+\cdots+\theta_{p} f_{p}\left(x^{(i)}\right)\right)-y^{(i)}\right)^{2}
-$$
+\end{equation}
 
 $ \left(x^{(i)}, y^{(i)}\right) $ 是数据点， $ y^{(i)} \in\{-1,1\} $ . $ \phi(u) $ 是sigmoid函数，它是 $\operatorname{sign} (u) $ 函数的一个可微的近似函数。
-$$
+\begin{equation}
 \phi(u)=\frac{e^{u}-e^{-u}}{e^{u}+e^{-u}}
-$$
+\end{equation}
 \end{problem}
 
 
@@ -172,30 +172,30 @@ $$
 \begin{definition}[$\mathbb{R}^{n} \rightarrow \mathbb{R}$函数$g$的梯度]
     可微函数 $ g: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 在 $ z \in \mathbb{R}^{n} $ 的梯度(gradient)为
 
-$$
+\begin{equation}
 \nabla g(z)=\left[\begin{array}{c}
 \frac{\partial g}{\partial x_{1}}(z) \\
 \frac{\partial g}{\partial x_{2}}(z) \\
 \cdots \\
 \frac{\partial g}{\partial x_{n}}(z)
 \end{array}\right]
-$$
+\end{equation}
 \end{definition}
 
 \begin{definition}[$g$在$z$附近的仿射近似（一阶泰勒公式，线性化）]
-    $$ \begin{aligned} \hat{g}(x) &=g(z)+\frac{\partial g}{\partial x_{1}}(z)\left(x_{1}-z_{1}\right)+\cdots+\frac{\partial g}{\partial x_{n}}(z)\left(x_{n}-z_{n}\right) \\ &=g(z)+\nabla g(z)^{T}(x-z) \end{aligned} $$
+    \begin{equation} \begin{aligned} \hat{g}(x) &=g(z)+\frac{\partial g}{\partial x_{1}}(z)\left(x_{1}-z_{1}\right)+\cdots+\frac{\partial g}{\partial x_{n}}(z)\left(x_{n}-z_{n}\right) \\ &=g(z)+\nabla g(z)^{T}(x-z) \end{aligned} \end{equation}
 \end{definition}
 
 \begin{definition}[Directional Derivative]
     For given $ z $ and nonzero $ v $, define $ h(t)=g(z+t v) $
 
    The derivative of $ h $ at $ t=0 $
-$$
+\begin{equation}
 \begin{aligned}
 h^{\prime}(0) &=\frac{\partial g}{\partial x_{1}}(z) v_{1}+\frac{\partial g}{\partial x_{2}}(z) v_{2}+\cdots+\frac{\partial g}{\partial x_{n}}(z) v_{n} \\
 &=\nabla g(z)^{T} v
 \end{aligned}
-$$
+\end{equation}
 
 This is called the \term{directional derivative} of $ g $ (at $ z $, in the direction $ v $ ), $ v $ is a \term{descent direction} of $ g $ at $ z $ if $ \nabla g(z)^{T} v<0 $.
 \end{definition}
@@ -206,7 +206,7 @@ This is called the \term{directional derivative} of $ g $ (at $ z $, in the dire
 \begin{definition}[Jacobian Matrices]
     可微函数 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R}^{m} $ 在 $ z \in \mathbb{R}^{n} $ 的导数矩阵(Jacobian矩阵)
 
-$$
+\begin{equation}
 f(x)=\left[\begin{array}{c}
 f_{1}(x) \\
 f_{2}(x) \\
@@ -218,11 +218,11 @@ f_{m}(x)
 \vdots & \vdots & & \vdots \\
 \frac{\partial f_{m}}{\partial x_{1}}(z) & \frac{\partial f_{m}}{\partial x_{2}}(z) & \cdots & \frac{\partial f_{m}}{\partial x_{n}}(z)
 \end{array}\right]
-$$
+\end{equation}
 \end{definition}
 
 \begin{definition}[$ f $ 在 $ z $ 附近的仿射近似(线性化)]
-    $$\begin{aligned}
+    \begin{equation}\begin{aligned}
         \hat{f} (x) & =f(z)+Df(z)(x-z)\\
          & =\left[\begin{array}{ c }
         f_{1} (z)\\
@@ -240,7 +240,7 @@ $$
         \textcolor[rgb]{0.72,0.33,0.31}{\vdots }\\
         \textcolor[rgb]{0.72,0.33,0.31}{x_{n} -z_{n}}
         \end{array}\right]\right)_{m\times 1}
-        \end{aligned}$$
+        \end{aligned}\end{equation}
 
     用符号 $ \hat{f}(x ; z) $ 表示点 $ z $ 附近的线性化逼近。
 \end{definition}
@@ -249,77 +249,77 @@ $$
 
 \begin{definition}[Hessian Matrices]
     Hessian of $ g $ at $ z $ is a symmetric $ n \times n $ matrix $ \nabla^{2} g(z) $ with elements
-$$
+\begin{equation}
 \nabla^{2} g(z)_{i j}=\frac{\partial^{2} g}{\partial x_{i} \partial x_{j}}(z)
-$$
+\end{equation}
 
 This is also the derivative matrix $ D f(z) $ of $ f(x)=\nabla g(x) $ at $ z $.
 \end{definition}
 
 \begin{definition}[Quadratic (second order) approximation of $g$ around $z$]
-    $$ g_{\mathrm{q}}(x)=g(z)+\nabla g(z)^{T}(x-z)+\frac{1}{2}(x-z)^{T} \nabla^{2} g(z)(x-z) $$
+    \begin{equation} g_{\mathrm{q}}(x)=g(z)+\nabla g(z)^{T}(x-z)+\frac{1}{2}(x-z)^{T} \nabla^{2} g(z)(x-z) \end{equation}
 \end{definition}
 
 \begin{example}
     Affine function: $ g(x)=a^{T} x+b $
-$$
+\begin{equation}
 \nabla g(x)=a, \quad \nabla^{2} g(x)=0
-$$
+\end{equation}
 
 Quadratic function: $ g(x)=x^{T} P x+q^{T} x+r $ with $ P $ symmetric
-$$
+\begin{equation}
 \nabla g(x)=2 P x+q, \quad \nabla^{2} g(x)=2 P
-$$
+\end{equation}
 
 Least squares cost: $ g(x)=\|A x-b\|^{2}=x^{T} A^{T} A x-2 b^{T} A x+b^{T} b $
-$$
+\begin{equation}
 \nabla g(x)=2 A^{T} A x-2 A^{T} b, \quad \nabla^{2} g(x)=2 A^{T} A
-$$
+\end{equation}
 \end{example}
 
 \begin{theorem}[Linear combination properties]
     If $ g(x)=\alpha_{1} g_{1}(x)+\alpha_{2} g_{2}(x) $, then
-$$
+\begin{equation}
 \begin{aligned}
 \nabla g(x) &=\alpha_{1} \nabla g_{1}(x)+\alpha_{2} \nabla g_{2}(x) \\
 \nabla^{2} g(x) &=\alpha_{1} \nabla^{2} g_{1}(x)+\alpha_{2} \nabla^{2} g_{2}(x)
 \end{aligned}
-$$
+\end{equation}
 \end{theorem}
 
 \begin{theorem}[Composition with affine mapping properties]
     if $ g(x)=h(C x+d) $, then
-$$
+\begin{equation}
 \begin{aligned}
 \nabla g(x) &=C^{T} \nabla h(C x+d) \\
 \nabla^{2} g(x) &=C^{T} \nabla^{2} h(C x+d) C
 \end{aligned}
-$$
+\end{equation}
 \end{theorem}
 
 \begin{example}
-    $$ g\left(x_{1}, x_{2}\right)=e^{x_{1}+x_{2}-1}+e^{x_{1}-x_{2}-1}+e^{-x_{1}-1} $$
+    \begin{equation} g\left(x_{1}, x_{2}\right)=e^{x_{1}+x_{2}-1}+e^{x_{1}-x_{2}-1}+e^{-x_{1}-1} \end{equation}
 
     Gradient
-$$
+\begin{equation}
 \nabla g(x)=\left[\begin{array}{c}
 e^{x_{1}+x_{2}-1}+e^{x_{1}-x_{2}-1}-e^{-x_{1}-1} \\
 e^{x_{1}+x_{2}-1}-e^{x_{1}-x_{2}-1}
 \end{array}\right]
-$$
+\end{equation}
 
 Hessian
-$$
+\begin{equation}
 \nabla^{2} g(x)=\left[\begin{array}{cc}
 e^{x_{1}+x_{2}-1}+e^{x_{1}-x_{2}-1}+e^{-x_{1}-1} & e^{x_{1}+x_{2}-1}-e^{x_{1}-x_{2}-1} \\
 e^{x_{1}+x_{2}-1}-e^{x_{1}-x_{2}-1} & e^{x_{1}+x_{2}-1}+e^{x_{1}-x_{2}-1}
 \end{array}\right]
-$$
+\end{equation}
 
 Gradient and Hessian via composition property:
 
 express $ g $ as $ g(x)=h(C x+d) $ with $ h\left(y_{1}, y_{2}, y_{3}\right)=e^{y_{1}}+e^{y_{2}}+e^{y_{3}} $ and
-$$
+\begin{equation}
 C=\left[\begin{array}{rr}
 1 & 1 \\
 1 & -1 \\
@@ -329,10 +329,10 @@ C=\left[\begin{array}{rr}
 -1 \\
 -1
 \end{array}\right]
-$$
+\end{equation}
 
 Gradient: $ \nabla g(x)=C^{T} \nabla h(C x+d) $
-$$
+\begin{equation}
 \nabla g(x)=\left[\begin{array}{rrr}
 1 & 1 & -1 \\
 1 & -1 & 0
@@ -341,10 +341,10 @@ e^{x_{1}+x_{2}-1} \\
 e^{x_{1}-x_{2}-1} \\
 e^{-x_{1}-1}
 \end{array}\right]
-$$
+\end{equation}
 
 Hessian: $ \nabla^{2} g(x)=C^{T} \nabla h^{2}(C x+d) C $
-$$
+\begin{equation}
 \nabla^{2} g(x)=\left[\begin{array}{rrr}
 1 & 1 & -1 \\
 1 & -1 & 0
@@ -357,7 +357,7 @@ e^{x_{1}+x_{2}-1} & 0 & 0 \\
 1 & -1 \\
 -1 & 0
 \end{array}\right]
-$$
+\end{equation}
 \end{example}
 
 \subsection{Optimality conditions for twice differentiable $ g $}
@@ -386,72 +386,72 @@ then $ x^{\star} $ is locally optimal.
 
 \begin{example}
     $ g(x)=\log \left(e^{x}+e^{-x}\right) $
-$$
+\begin{equation}
 g^{\prime}(x)=\frac{e^{x}-e^{-x}}{e^{x}+e^{-x}}, \quad g^{\prime \prime}(x)=\frac{4}{\left(e^{x}+e^{-x}\right)^{2}}
-$$
+\end{equation}
 $ g^{\prime \prime}(x) \geq 0 $ everywhere; $ x^{\star}=0 $ is the unique optimal point
 \end{example}
 
 \begin{example}
     - $ g(x)=x^{4} $
-$$
+\begin{equation}
 g^{\prime}(x)=4 x^{3}, \quad g^{\prime \prime}(x)=12 x^{2}
-$$
+\end{equation}
 $ g^{\prime \prime}(x) \geq 0 $ everywhere; $ x^{\star}=0 $ is the unique optimal point
 \end{example}
 
 \begin{example}
     - $ g(x)=x^{3} $
-$$
+\begin{equation}
 g^{\prime}(x)=3 x^{2}, \quad g^{\prime \prime}(x)=6 x
-$$
+\end{equation}
 $ g^{\prime}(0)=0, g^{\prime \prime}(0)=0 $ but $ x=0 $ is not locally optimal
 \end{example}
 
 \begin{example}
     - $ g(x)=x^{T} P x+q^{T} x+r $ (P is symmetric positive definite)
-$$
+\begin{equation}
 \nabla g(x)=2 P x+q, \quad \nabla^{2} g(x)=2 P
-$$
+\end{equation}
 $ \nabla^{2} g(x) $ is positive definite everywhere, hence the unique optimal point is
-$$
+\begin{equation}
 x^{\star}=-(1 / 2) P^{-1} q
-$$
+\end{equation}
 \end{example}
 
 \begin{example}
     - $ g(x)=\|A x-b\|^{2} $ ( $ A $ is a matrix with linearly independent columns)
-$$
+\begin{equation}
 \nabla g(x)=2 A^{T} A x-2 A^{T} b, \quad \nabla^{2} g(x)=2 A^{T} A
-$$
+\end{equation}
 $ \nabla^{2} g(x) $ is positive definite everywhere, hence the unique optimal point is
-$$
+\begin{equation}
 x^{\star}=\left(A^{T} A\right)^{-1} A^{T} b
-$$
+\end{equation}
 \end{example}
 
 \begin{example}
-    $$ g\left(x_{1}, x_{2}\right)=e^{x_{1}+x_{2}-1}+e^{x_{1}-x_{2}-1}+e^{-x_{1}-1} $$
+    \begin{equation} g\left(x_{1}, x_{2}\right)=e^{x_{1}+x_{2}-1}+e^{x_{1}-x_{2}-1}+e^{-x_{1}-1} \end{equation}
 
     Gradient
-$$
+\begin{equation}
 \nabla g(x)=\left[\begin{array}{c}
 e^{x_{1}+x_{2}-1}+e^{x_{1}-x_{2}-1}-e^{-x_{1}-1} \\
 e^{x_{1}+x_{2}-1}-e^{x_{1}-x_{2}-1}
 \end{array}\right]
-$$
+\end{equation}
 
 Hessian
-$$
+\begin{equation}
 \nabla^{2} g(x)=\left[\begin{array}{cc}
 e^{x_{1}+x_{2}-1}+e^{x_{1}-x_{2}-1}+e^{-x_{1}-1} & e^{x_{1}+x_{2}-1}-e^{x_{1}-x_{2}-1} \\
 e^{x_{1}+x_{2}-1}-e^{x_{1}-x_{2}-1} & e^{x_{1}+x_{2}-1}+e^{x_{1}-x_{2}-1}
 \end{array}\right]
-$$
+\end{equation}
 
 
     We can express $ \nabla^{2} g(x) $ as
-$$
+\begin{equation}
 \nabla^{2} g(x)=\left[\begin{array}{rrr}
 1 & 1 & 1 \\
 1 & -1 & 0
@@ -464,15 +464,15 @@ e^{x_{1}+x_{2}-1} & 0 & 0 \\
 1 & -1 \\
 1 & 0
 \end{array}\right]
-$$
+\end{equation}
 this shows that $ \nabla^{2} g(x) $ is positive definite for all $ x $
 therefore $ x^{\star} $ is optimal if and only if
-$$
+\begin{equation}
 \nabla g\left(x^{\star}\right)=\left[\begin{array}{c}
 e^{x_{1}^{\star}+x_{2}^{\star}-1}+e^{x_{1}^{\star}-x_{2}^{\star}-1}-e^{-x_{1}^{\star}-1} \\
 e^{x_{1}^{\star}+x_{2}^{\star}-1}-e^{x_{1}^{\star}-x_{2}^{\star}-1}
 \end{array}\right]=0
-$$
+\end{equation}
 two nonlinear equations in two variables
 \end{example}
 
@@ -480,10 +480,10 @@ two nonlinear equations in two variables
 \section{求解非线性最小二乘法：目标梯度}
 
 对于优化问题\ref{pbl:non-linear-least-squares}
-$$ g(x)=\|f(x)\|_{2}^{2}=\sum_{i=1}^{m}\left(f_{i}(x)\right)^{2},f(x)=\left[\begin{array}{c}f_{1}(x) \\ f_{2}(x) \\ \vdots \\ f_{m}(x)\end{array}\right] $$
+\begin{equation} g(x)=\|f(x)\|_{2}^{2}=\sum_{i=1}^{m}\left(f_{i}(x)\right)^{2},f(x)=\left[\begin{array}{c}f_{1}(x) \\ f_{2}(x) \\ \vdots \\ f_{m}(x)\end{array}\right] \end{equation}
 
 $ g $ 对 $ x_{j} $ 的一阶导数为
-$$\begin{aligned}
+\begin{equation}\begin{aligned}
     \frac{\partial g}{\partial x_{j}} (z) & =2\sum _{i=1}^{m} f_{i} (z)\frac{\partial f_{i}}{\partial x_{j}} (z)\\
      & =2\left[\frac{\partial f_{\textcolor[rgb]{0.49,0.83,0.13}{1}}}{\partial x_{\textcolor[rgb]{0.29,0.56,0.89}{j}}} (z),\frac{\partial f_{\textcolor[rgb]{0.49,0.83,0.13}{2}}}{\partial x_{\textcolor[rgb]{0.29,0.56,0.89}{j}}} (z),\cdots ,\frac{\partial f_{\textcolor[rgb]{0.49,0.83,0.13}{m}}}{\partial x_{\textcolor[rgb]{0.29,0.56,0.89}{j}}} (z)\right]\left[\begin{array}{ c }
     f_{1} (z)\\
@@ -491,47 +491,47 @@ $$\begin{aligned}
     \vdots \\
     f_{m} (z)
     \end{array}\right]
-    \end{aligned}$$
+    \end{aligned}\end{equation}
 
 注意到
 
-$$\displaystyle (Df(z))^{T} =\left[\begin{array}{ c c c c }
+\begin{equation}\displaystyle (Df(z))^{T} =\left[\begin{array}{ c c c c }
     \frac{\partial f_{\textcolor[rgb]{0.49,0.83,0.13}{1}}}{\partial x_{\textcolor[rgb]{0.29,0.56,0.89}{1}}} (z) & \frac{\partial f_{\textcolor[rgb]{0.49,0.83,0.13}{2}}}{\partial x_{\textcolor[rgb]{0.29,0.56,0.89}{1}}} (z) & \cdots  & \frac{\partial f_{\textcolor[rgb]{0.49,0.83,0.13}{m}}}{\partial x_{\textcolor[rgb]{0.29,0.56,0.89}{1}}} (z)\\
     \frac{\partial f_{\textcolor[rgb]{0.49,0.83,0.13}{1}}}{\partial x_{\textcolor[rgb]{0.29,0.56,0.89}{2}}} (z) & \frac{\partial f_{\textcolor[rgb]{0.49,0.83,0.13}{2}}}{\partial x_{\textcolor[rgb]{0.29,0.56,0.89}{2}}} (z) & \cdots  & \frac{\partial f_{\textcolor[rgb]{0.49,0.83,0.13}{m}}}{\partial x_{\textcolor[rgb]{0.29,0.56,0.89}{2}}} (z)\\
     \vdots  & \vdots  &  & \vdots \\
     \frac{\partial f_{\textcolor[rgb]{0.49,0.83,0.13}{1}}}{\partial x_{\textcolor[rgb]{0.29,0.56,0.89}{n}}} (z) & \frac{\partial f_{\textcolor[rgb]{0.49,0.83,0.13}{2}}}{\partial x_{\textcolor[rgb]{0.29,0.56,0.89}{n}}} (z) & \cdots  & \frac{\partial f_{\textcolor[rgb]{0.49,0.83,0.13}{m}}}{\partial x_{\textcolor[rgb]{0.29,0.56,0.89}{n}}} (z)
-    \end{array}\right] =[ \nabla f_{1} (z),\nabla f_{2} (z),\cdots ,\nabla f_{m} (z)]$$
+    \end{array}\right] =[ \nabla f_{1} (z),\nabla f_{2} (z),\cdots ,\nabla f_{m} (z)]\end{equation}
 
     $ g $ 在 $ z $ 的梯度为
-    $$
+    \begin{equation}
     \nabla g(z)=\left[\begin{array}{c}
     \frac{\partial g}{\partial x_{1}}(z) \\
     \vdots \\
     \frac{\partial g}{\partial x_{n}}(z)
     \end{array}\right]=2 \sum_{i=1}^{m} f_{i}(z) \nabla f_{i}(z)=2(D f(z))^{T} f(z)
-    $$
+    \end{equation}
 
 \begin{theorem}[非线性最小二乘问题的最优必要条件]
-        $$
+        \begin{equation}
     \min _{x} g(x)=\sum_{i=1}^{m} f_{i}(x)^{2} \quad f(x)=\left[\begin{array}{c}
     f_{1}(x) \\
     f_{2}(x) \\
     \vdots \\
     f_{m}(x)
     \end{array}\right]
-    $$
+    \end{equation}
 
     如果要 $ x $ 使 $ g(x) $ 最小，则必须满足:
-    $$
+    \begin{equation}
     \nabla g(x)=2 D f(x)^{T} f(x)=0
-    $$
+    \end{equation}
 \end{theorem}
 
 \begin{corollary}[正规方程的最优必要条件]
-    推广到正规方程，如果 $ f(x)=A x-b $ ，那么 $ D f(x)=A $ 和
-$$
+    推广到正规方程，如果 $ f(x)=A x-b $ ,那么 $ D f(x)=A $ 和
+\begin{equation}
 \nabla g(x)=2 A^{T}(A x-b)
-$$
+\end{equation}
 \end{corollary}
 
 \begin{remark}
@@ -543,92 +543,92 @@ $$
 \section{Gauss-Newton Algorithm}
 
 \begin{problem}
-    $$
+    \begin{equation}
 \min _{x} g(x)=\|f(x)\|_{2}^{2}=\sum_{i=1}^{m} f_{i}(x)^{2}
-$$
+\end{equation}
 
 从某个初始值 $ x^{(1)} $ 开始，当迭代 $ x^{(2)}, x^{(3)}, \ldots $.
 \end{problem}
 
 函数 $ f $ 在 $ x^{(k)} $ 附近的泰勒展开式是
 
-$$
+\begin{equation}
 \hat{f}\left(x ; x^{(k)}\right)=f\left(x^{(k)}\right)+D f\left(x^{(k)}\right)\left(x-x^{(k)}\right)
-$$
+\end{equation}
 
 用仿射近似 $ \hat{f}\left(x, x^{(k)}\right) $ 代替最小二乘法问题中函数 $ f(x) $
 
-$$
+\begin{equation}
 x^{(k+1)}=\arg \min _{x}\left\|\hat{f}\left(x ; x^{(k)}\right)\right\|_{2}^{2}
-$$
+\end{equation}
 
 第k次迭代问题：
-$$
+\begin{equation}
 \begin{array}{c}
 x^{(k+1)}=\arg \min _{x}\left\|\hat{f}\left(x ; x^{(k)}\right)\right\|_{2}^{2} \\
 x^{(k+1)}=\arg \min _{x} h(x)=\left\|f\left(x^{(k)}\right)+D f\left(x^{(k)}\right)\left(x-x^{(k)}\right)\right\|_{2}^{2}
 \end{array}
-$$
+\end{equation}
 
 函数 $ h(x) $ 的梯度：
-$$
+\begin{equation}
 \nabla h(x)=2 D f\left(x^{(k)}\right)^{T}\left(f\left(x^{(k)}\right)+D f\left(x^{(k)}\right)\left(x-x^{(k)}\right)\right)=0
-$$
+\end{equation}
 
 则有
-$$ D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right) x^{(k)}-D f\left(x^{(k)}\right)^{T} f\left(x^{(k)}\right)=D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right) x $$
+\begin{equation} D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right) x^{(k)}-D f\left(x^{(k)}\right)^{T} f\left(x^{(k)}\right)=D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right) x \end{equation}
 
-$$ D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right) x^{(k)}-D f\left(x^{(k)}\right)^{T} f\left(x^{(k)}\right)=D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right) x $$
+\begin{equation} D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right) x^{(k)}-D f\left(x^{(k)}\right)^{T} f\left(x^{(k)}\right)=D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right) x \end{equation}
 
 如果 $ D f\left(x^{(k)}\right) $ 的列是线性无关的，则其解为:
-$$
+\begin{equation}
 x^{(k+1)}=x^{(k)}-\left(D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right)\right)^{-1} D f\left(x^{(k)}\right)^{T} f\left(x^{(k)}\right)
-$$
+\end{equation}
 
 高斯-牛顿法步骤 $ \Delta x^{(k)}=x^{(k+1)}-x^{(k)} $ :
-$$
+\begin{equation}
 \begin{aligned}
 \Delta x^{(k)} &=-\left(D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right)\right)^{-1} D f\left(x^{(k)}\right)^{T} f\left(x^{(k)}\right) \\
 &=-\frac{1}{2}\left(D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right)\right)^{-1} \nabla g\left(x^{(k)}\right)
 \end{aligned}
-$$
+\end{equation}
 
 (利用第14.10的 $ \nabla g(x) $ 表达式).
 
 逼近函数 $ \hat{f}\left(x ; x^{(k)}\right) $ 的关于 $ x^{(k+1)} $ 的代价:
-$$
+\begin{equation}
 \begin{aligned}
 \|\left.\hat{f}\left(x^{(k+1)} ; x^{(k)}\right)\right|_{2} ^{2} &=\| f\left(x^{(k)}\right)+D f\left(x^{(k)}\right) \Delta x^{(k)}||_{2}^{2} \\
 &=\left\|\left.f\left(x^{(k)}\right)\right|_{2} ^{2}+2 f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right) \Delta x^{(k)}+\right\| D f\left(x^{(k)}\right) \Delta x^{(k)} \|_{2}^{2}
 \end{aligned}
-$$
+\end{equation}
 
-$$\begin{aligned}
+\begin{equation}\begin{aligned}
     & 2Df\left( x^{(k)}\right)^{T}\left( f\left( x^{(k)}\right) +Df\left( x^{(k)}\right)\left( x^{(k+1)} -x^{(k)}\right)\right) =0\quad ( 目标梯度等于0)\\
    \Rightarrow  & Df\left( x^{(k)}\right)^{T} f\left( x^{(k)}\right) =-Df\left( x^{(k)}\right)^{T} Df\left( x^{(k)}\right) \Delta x^{(k)}\\
    \Rightarrow  & \left( \Delta x^{(k)}\right)^{T} Df\left( x^{(k)}\right)^{T} f\left( x^{(k)}\right) =-\left( \Delta x^{(k)}\right)^{T} Df\left( x^{(k)}\right)^{T} Df\left( x^{(k)}\right) \Delta x^{(k)} =-\left\Vert Df\left( x^{(k)}\right) \Delta x^{(k)}\right\Vert _{2}^{2}
-   \end{aligned}$$
+   \end{aligned}\end{equation}
 
-$$ \left\|\hat{f}\left(x^{(k+1)} ; x^{(k)}\right)\right\|_{2}^{2}=\left\|f\left(x^{(k)}\right)\right\|_{2}^{2}-\left\|D f\left(x^{(k)}\right) \Delta x^{(k)}\right\|_{2}^{2} $$
+\begin{equation} \left\|\hat{f}\left(x^{(k+1)} ; x^{(k)}\right)\right\|_{2}^{2}=\left\|f\left(x^{(k)}\right)\right\|_{2}^{2}-\left\|D f\left(x^{(k)}\right) \Delta x^{(k)}\right\|_{2}^{2} \end{equation}
 
 如果 $ D f\left(x^{(k)}\right) $ 的列向量线性无关，且 $ \Delta x^{(k)} \neq 0 $ :
 
-$$ \left\|D f\left(x^{(k)}\right) \Delta x^{(k)}\right\|_{2}^{2}>0 \Rightarrow\left\|\hat{f}\left(x^{(k+1)} ; x^{(k)}\right)\right\|_{2}^{2}<\left\|f\left(x^{(k)}\right)\right\|_{2}^{2} $$
+\begin{equation} \left\|D f\left(x^{(k)}\right) \Delta x^{(k)}\right\|_{2}^{2}>0 \Rightarrow\left\|\hat{f}\left(x^{(k+1)} ; x^{(k)}\right)\right\|_{2}^{2}<\left\|f\left(x^{(k)}\right)\right\|_{2}^{2} \end{equation}
 
 当 $ \mathrm{m}=\mathrm{n} $ 时， $ D f\left(x^{(k)}\right) $ 的列向量线性无关，高斯-牛顿法可简化为
 
-$$
+\begin{equation}
 \begin{aligned}
 x^{(k+1)} &=x^{(k)}-\left(D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right)\right)^{-1} D f\left(x^{(k)}\right)^{T} f\left(x^{(k)}\right) \\
 &=x^{(k)}-\left(D f\left(x^{(k)}\right)\right)^{-1}\left(D f\left(x^{(k)}\right)^{T}\right)^{-1} D f\left(x^{(k)}\right)^{T} f\left(x^{(k)}\right) \\
 &=x^{(k)}-\left(D f\left(x^{(k)}\right)\right)^{-1} f\left(x^{(k)}\right) .
 \end{aligned}
-$$
+\end{equation}
 
 
 如果 $ m=n=1 $ 时，迭代更新可进一步简化为
 
-$$ x^{(k+1)}=x^{(k)}-\frac{f\left(x^{(k)}\right)}{f^{\prime}\left(x^{(k)}\right)}, f^{\prime}\left(x^{(k)}\right) \neq 0 $$
+\begin{equation} x^{(k+1)}=x^{(k)}-\frac{f\left(x^{(k)}\right)}{f^{\prime}\left(x^{(k)}\right)}, f^{\prime}\left(x^{(k)}\right) \neq 0 \end{equation}
 
 \begin{FigureCenter}{$m=n=1$时的情形}
 
@@ -672,9 +672,9 @@ $$ x^{(k+1)}=x^{(k)}-\frac{f\left(x^{(k)}\right)}{f^{\prime}\left(x^{(k)}\right)
 
 \begin{remark}
     存在
-$$
+\begin{equation}
 \left\|f\left(x^{(k+1)}\right)\right\|_{2}^{2}>\left\|f\left(x^{(k)}\right)\right\|_{2}^{2}
-$$
+\end{equation}
 
 的情况。
 \end{remark}
@@ -702,11 +702,11 @@ Levenberg-Marquardt(LM)算法解决高斯-牛顿法的两个难点：
 LM算法通过求解正则化最小二乘法更新 $ x^{(k+1)} $ :
 
 \begin{problem}
-    $$
+    \begin{equation}
     x^{(k+1)}=\arg \min _{x}\left\|\hat{f}\left(x ; x^{(k)}\right)\right\|_{2}^{2}+\lambda^{(k)}\left\|x-x^{(k)}\right\|_{2}^{2}
-    $$
+    \end{equation}
 
-要求 $ x $ 靠近 $ x^{(k)} $ ，即 $ \hat{f}\left(x ; x^{(k)}\right) \approx f(x) $. (The second term forces $ x $ to be close to $ x^{(k)} $ where $ \hat{f}\left(x ; x^{(k)}\right) \approx f(x) $.)
+要求 $ x $ 靠近 $ x^{(k)} $ ,即 $ \hat{f}\left(x ; x^{(k)}\right) \approx f(x) $. (The second term forces $ x $ to be close to $ x^{(k)} $ where $ \hat{f}\left(x ; x^{(k)}\right) \approx f(x) $.)
 \end{problem}
 
 当 $ \lambda^{(k)}>0 $ 时，总有唯一解。
@@ -717,41 +717,41 @@ LM算法通过求解正则化最小二乘法更新 $ x^{(k+1)} $ :
 
 \begin{problem}
     第 $ k $ 次迭代求解的最小二乘正则化问题:
-$$
+\begin{equation}
 x^{(k+1)}=\arg \min _{x}\left\|f\left(x^{(k)}\right)+D f\left(x^{(k)}\right)\left(x-x^{(k)}\right)\right\|_{2}^{2}+\lambda^{(k)}\left\|x-x^{(k)}\right\|_{2}^{2}
-$$
+\end{equation}
 \end{problem}
 
 
 
 令目标函数导数等于 0 :
-$$
+\begin{equation}
 \begin{aligned}
     & 2Df\left( x^{(k)}\right)^{T}\left( f\left( x^{(k)}\right) +Df\left( x^{(k)}\right)\left( x-x^{(k)}\right)\right) +2\lambda ^{(k)}\left( x-x^{(k)}\right) =0\\
    \Rightarrow  & \left( Df\left( x^{(k)}\right)^{T} Df\left( x^{(k)}\right) +\lambda ^{(k)} I\right)\left( x-x^{(k)}\right) =-Df\left( x^{(k)}\right)^{T} f\left( x^{(k)}\right)
    \end{aligned}
-$$
+\end{equation}
 
 $ x^{(k+1)} $ 更新:
-$$
+\begin{equation}
 x^{(k+1)}=x^{(k)}-\left(D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right)+\lambda^{(k)} I\right)^{-1} D f\left(x^{(k)}\right)^{T} f\left(x^{(k)}\right)
-$$
+\end{equation}
 
 \begin{theorem}
     LM算法步骤 $ \Delta x^{(k)}=x^{(k+1)}-x^{(k)} $ 是:
 
-$$ \begin{aligned} \Delta x^{(k)} &=-\left(D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right)+\lambda^{(k)} I\right)^{-1} D f\left(x^{(k)}\right)^{T} f\left(x^{(k)}\right) \\ &=-\frac{1}{2}\left(D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right)+\lambda^{(k)} I\right)^{-1} \nabla g\left(x^{(k)}\right) \end{aligned} $$
+\begin{equation} \begin{aligned} \Delta x^{(k)} &=-\left(D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right)+\lambda^{(k)} I\right)^{-1} D f\left(x^{(k)}\right)^{T} f\left(x^{(k)}\right) \\ &=-\frac{1}{2}\left(D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right)+\lambda^{(k)} I\right)^{-1} \nabla g\left(x^{(k)}\right) \end{aligned} \end{equation}
 \end{theorem}
 
 \begin{theorem}
-    对于 $ \lambda^{(k)}=0 $ ，简化为高斯-牛顿法
+    对于 $ \lambda^{(k)}=0 $ ,简化为高斯-牛顿法
 \end{theorem}
 
 \begin{theorem}
     对于较大的 $ \lambda^{(k)} $ ：
-$$
+\begin{equation}
 \Delta x^{(k)} \approx-\frac{1}{2 \lambda^{(k)}} \nabla g\left(x^{(k)}\right)
-$$
+\end{equation}
 \end{theorem}
 
 
@@ -762,9 +762,9 @@ $$
 
 \begin{algorithm}[htbp]
     \caption{在第$k$次迭代时，求解$\hat{x}$}
-    $$
+    $
     \hat{x}=\arg \min _{x}\left\|\hat{f}\left(x ; x^{(k)}\right)\right\|_{2}^{2}+\lambda^{(k)}\left\|x-x^{(k)}\right\|_{2}^{2}
-    $$\;
+    $\;
     
 
     \If(){$ \|f(\hat{x})\|_{2}^{2}<\left\|f\left(x^{(k)}\right)\right\|_{2}^{2} $}{
@@ -787,9 +787,9 @@ $$
 \begin{theorem}
     在第$k$次迭代时，求解$\hat{x}$
 
-    $$
+    \begin{equation}
     \hat{x}=\arg \min _{x}\left\|\hat{f}\left(x ; x^{(k)}\right)\right\|_{2}^{2}+\lambda^{(k)}\left\|x-x^{(k)}\right\|_{2}^{2}
-    $$
+    \end{equation}
 
     等价于
 
@@ -806,14 +806,14 @@ $$
         求 $ f\left(x^{(k)}\right) $\;
         $ A=D f\left(x^{(k)}\right) $\;
         计算最小二乘法正则化问题的解:
-        $$
+        \begin{equation}
         \hat{x}=x^{(k)}-\left(A^{T} A+\lambda^{(k)} I\right)^{-1} A^{T} f\left(x^{(k)}\right)
-        $$\;
+        \end{equation}\;
         计算 $ x^{(k+1)} $ 和 $ \lambda^{(k+1)} $ :
-        $$\displaystyle \left\{\begin{array}{ c c c }
+        \begin{equation}\displaystyle \left\{\begin{array}{ c c c }
         x^{(k+1)} =\hat{x} , & \lambda ^{(k+1)} =\beta _{1} \lambda ^{(k)} & \left(\text{if} \ \| (\hat{x} )\| _{2}^{2} < \left\Vert f\left( x^{(k)}\right)\right\Vert _{2}^{2}\right)\\
         x^{(k+1)} =x^{(k)} , & \lambda ^{(k+1)} =\beta _{2} \lambda ^{(k)} & \left(\text{others}\right)
-        \end{array}\right. $$\;
+        \end{array}\right. \end{equation}\;
 
     }
 \end{algorithm}
@@ -836,9 +836,9 @@ $$
     \caption{Newton's Method}
      choose $ x^{(1)} $\;
      \While{$ k=1,2, \ldots $}{
-         $$
+         \begin{equation}
         x^{(k+1)}=x^{(k)}-D f\left(x^{(k)}\right)^{-1} f\left(x^{(k)}\right)
-        $$\;
+        \end{equation}\;
      }
 \end{algorithm}
 
@@ -854,19 +854,19 @@ Each iteration requires one evaluation of $ f(x) $ and $ D f(x) $, each iteratio
 
 \subsection{Interpretation of Newton Method}
 
-$$
+\begin{equation}
 x^{(k+1)}=x^{(k)}-D f\left(x^{(k)}\right)^{-1} f\left(x^{(k)}\right)
-$$
+\end{equation}
 
 linearize $ f $ (i.e., make affine approximation) around current iterate $ x^{(k)} $
-$$
+\begin{equation}
 \hat{f}\left(x ; x^{(k)}\right)=f\left(x^{(k)}\right)+D f\left(x^{(k)}\right)\left(x-x^{(k)}\right)
-$$
+\end{equation}
 
 solve the linearized equation $ \hat{f}\left(x ; x^{(k)}\right)=0 $; the solution is
-$$
+\begin{equation}
 x=x^{(k)}-D f\left(x^{(k)}\right)^{-1} f\left(x^{(k)}\right)
-$$
+\end{equation}
 
 take the solution $ x $ of the linearized equation as the next iterate $ x^{(k+1)} $
 
@@ -909,41 +909,41 @@ take the solution $ x $ of the linearized equation as the next iterate $ x^{(k+1
     \end{FigureCenter}
 
 affine approximation of $ f $ around $ x^{(k)} $ is
-$$
+\begin{equation}
 \hat{f}\left(x ; x^{(k)}\right)=f\left(x^{(k)}\right)+f^{\prime}\left(x^{(k)}\right)\left(x-x^{(k)}\right)
-$$
+\end{equation}
 
 solve the linearized equation $ \hat{f}\left(x ; x^{(k)}\right)=0 $ and take the solution as $ x^{(k+1)} $ :
-$$
+\begin{equation}
 x^{(k+1)}=x^{(k)}-\frac{f\left(x^{(k)}\right)}{f^{\prime}\left(x^{(k)}\right)}
-$$
+\end{equation}
 
 \subsection{Relation to Gauss–Newton method}
 
 recall Gauss-Newton method for nonlinear least squares problem
 
 \begin{problem}[nonlinear least squares problem]
-    $$\term{minimize} \quad\|f(x)\|^{2} $$
+    \begin{equation}\term{minimize} \quad\|f(x)\|^{2} \end{equation}
 \end{problem}
 
 where $ f $ is a differentiable function from $ \mathbf{R}^{n} $ to $ \mathbf{R}^{m} $.
 
 Gauss-Newton update
-$$
+\begin{equation}
 x^{(k+1)}=x^{(k)}-\left(D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right)\right)^{-1} D f\left(x^{(k)}\right)^{T} f\left(x^{(k)}\right)
-$$
+\end{equation}
 
 If $ m=n $, then $ D f(x) $ is square and this is the Newton update
-$$
+\begin{equation}
 x^{(k+1)}=x^{(k)}-D f\left(x^{(k)}\right)^{-1} f\left(x^{(k)}\right)
-$$
+\end{equation}
 
 \subsection{Examples}
 
 \begin{example}
     % todo (2021-12-10 07:54): figure
-    $$ f_{1}\left(x_{1}, x_{2}\right)=\log \left(x_{1}^{2}+2 x_{2}^{2}+1\right)-0.5=0 $$
-$$ f_{2}\left(x_{1}, x_{2}\right)=x_{2}-x_{1}^{2}+0.2=0 $$
+    \begin{equation} f_{1}\left(x_{1}, x_{2}\right)=\log \left(x_{1}^{2}+2 x_{2}^{2}+1\right)-0.5=0 \end{equation}
+\begin{equation} f_{2}\left(x_{1}, x_{2}\right)=x_{2}-x_{1}^{2}+0.2=0 \end{equation}
 
 two equations in two variables; two solutions $ (0.70,0.29),(-0.70,0.29) $.
 
@@ -952,12 +952,12 @@ Newton iteration
 \begin{algorithm}[htbp]
     \caption{Newton iteration}
     evaluate $ g=f(x) $ and
-$$
+\begin{equation}
 H=D f(x)=\left[\begin{array}{cc}
 2 x_{1} /\left(x_{1}^{2}+2 x_{2}^{2}+1\right) & 4 x_{2} /\left(x_{1}^{2}+2 x_{2}^{2}+1\right) \\
 -2 x_{1} & 1
 \end{array}\right]
-$$\;
+\end{equation}\;
 solve $ H v=-g $ (two linear equations in two variables)\;
 update $ x:=x+v $\;
 \end{algorithm}
@@ -985,18 +985,18 @@ Quadratic convergence explains fast convergence when started near solution.
 
 \begin{theorem}[Quadratic Convergence]
     if $ f\left(x^{\star}\right)=0 $ and $ D f\left(x^{\star}\right) $ is nonsingular, and $ x^{(1)} $ is sufficiently close to $ x^{\star} $, then
-$$
+\begin{equation}
 x^{(k)} \rightarrow x^{\star}, \quad\left\|x^{(k+1)}-x^{\star}\right\| \leq c\left\|x^{(k)}-x^{\star}\right\|^{2}
-$$
+\end{equation}
 for some $ c>0 $
 \end{theorem}
 
 \subsection{Newton's method for minimizing a convex function}
 
 if $ \nabla^{2} g(x) $ is positive definite everywhere, we can minimize $ g(x) $ by solving
-$$
+\begin{equation}
 \nabla g(x)=0
-$$
+\end{equation}
 
 
 Algorithm:
@@ -1004,9 +1004,9 @@ Algorithm:
     \caption{Newton's method for minimizing a convex function}
     choose $ x^{(1)} $\;
     \While(){$ k=1,2, \ldots $}{
-        $$
+        \begin{equation}
 x^{(k+1)}=x^{(k)}-\nabla^{2} g\left(x^{(k)}\right)^{-1} \nabla g\left(x^{(k)}\right)
-$$\;
+\end{equation}\;
     }
 \end{algorithm}
 
@@ -1018,17 +1018,17 @@ It converges if started sufficiently close to the solution. Newton step is compu
 
 
 \begin{definition}[affine approximation of $ f(x)=\nabla g(x) $ around $ x^{(k)} $]
-    $$
+    \begin{equation}
 \hat{f}\left(x ; x^{(k)}\right)=\nabla g\left(x^{(k)}\right)+\nabla^{2} g\left(x^{(k)}\right)\left(x-x^{(k)}\right)
-$$
+\end{equation}
 \end{definition} is
 
 Newton update $ x^{(k+1)} $ is solution of linear equation $ \hat{f}\left(x ; x^{(k)}\right)=0 $.
 
 \begin{definition}[quadratic approximation of $ g(x) $ around $ x^{(k)} $]
-    $$
+    \begin{equation}
 g_{\mathrm{q}}\left(x ; x^{(k)}\right)=g\left(x^{(k)}\right)+\nabla g\left(x^{(k)}\right)^{T}\left(x-x^{(k)}\right)+\frac{1}{2}\left(x-x^{(k)}\right)^{T} \nabla^{2} g\left(x^{(k)}\right)\left(x-x^{(k)}\right)
-$$
+\end{equation}
 \end{definition}
 
 Newton update $ x^{(k+1)} $ minimizes $ g_{\mathrm{q}}\left(x ; x^{(k)}\right)\left(\right. $ satisfies $ \left.\nabla g_{\mathrm{q}}\left(x ; x^{(k)}\right)=0\right) $
@@ -1043,9 +1043,9 @@ Newton update $ x^{(k+1)} $ minimizes $ g_{\mathrm{q}}\left(x ; x^{(k)}\right)\l
     \While(){$ k=1,2, \ldots $}{
         compute Newton step $ v=-\nabla^{2} g\left(x^{(k)}\right)^{-1} \nabla g\left(x^{(k)}\right) $\;
         (Line Search) find largest $ t $ in $ \left\{1,0.5,0.5^{2}, 0.5^{3}, \ldots\right\} $ that satisfies
-        $$
+        \begin{equation}
         g\left(x^{(k)}+t v\right)<g\left(x^{(k)}\right)
-        $$\;
+        \end{equation}\;
         $ x^{(k+1)}=x^{(k)}+t v $\;
     }
 \end{algorithm}
@@ -1055,9 +1055,9 @@ Positive scalar $ t $ is called the \term{step size}, step 2 in algorithm is cal
 \subsubsection{Interpretation of line search} 
 
 to determine a suitable step size, consider the function $ h: \mathbf{R} \rightarrow \mathbf{R} $
-$$
+\begin{equation}
 h(t)=g\left(x^{(k)}+t v\right)
-$$
+\end{equation}
 
 % todo (2021-12-10 08:49): figure
 
@@ -1066,16 +1066,16 @@ $ h^{\prime}(0)=\nabla g\left(x^{(k)}\right)^{T} v $ is the directional derivati
 line search terminates with positive $ t $ if $ h^{\prime}(0)<0 $ ( $ v $ is a descent direction)
 
 if $ \nabla^{2} g\left(x^{(k)}\right) $ is positive definite, the Newton step is a descent direction
-$$
+\begin{equation}
 h^{\prime}(0)=\nabla g\left(x^{(k)}\right)^{T} v=-v^{T} \nabla^{2} g\left(x^{(k)}\right) v<0
-$$
+\end{equation}
 
 \subsubsection{Newton method for nonconvex functions}
 
 if $ \nabla^{2} g\left(x^{(k)}\right) $ is not positive definite, it is possible that Newton step $ v $ satisfies
-$$
+\begin{equation}
 \nabla g\left(x^{(k)}\right)^{T} v=-\nabla g\left(x^{(k)}\right)^{T} \nabla^{2} g\left(x^{(k)}\right)^{-1} \nabla g\left(x^{(k)}\right)>0
-$$
+\end{equation}
 
 % todo (2021-12-10 08:50): figure
 
@@ -1086,48 +1086,48 @@ $$
 
 \subsection{Hessian of nonlinear least squares cost}
 
-$$
+\begin{equation}
 g(x)=\|f(x)\|^{2}=\sum_{i=1}^{m} f_{i}(x)^{2}
-$$
+\end{equation}
 
 \begin{theorem}
    gradient:
 
-$$
+\begin{equation}
 \nabla g(x)=2 \sum_{i=1}^{m} f_{i}(x) \nabla f_{i}(x)=2 D f(x)^{T} f(x)
-$$ 
+\end{equation} 
 \end{theorem}
 
 \begin{theorem}
     second derivatives:
-$$
+\begin{equation}
 \frac{\partial^{2} g}{\partial x_{j} \partial x_{k}}(x)=2 \sum_{i=1}^{m}\left(\frac{\partial f_{i}}{\partial x_{j}}(x) \frac{\partial f_{i}}{\partial x_{k}}(x)+f_{i}(x) \frac{\partial^{2} f_{i}}{\partial x_{j} \partial x_{k}}(x)\right)
-$$
+\end{equation}
 \end{theorem}
 
 \begin{theorem}
     Hessian
-$$
+\begin{equation}
 \nabla^{2} g(x)=2 D f(x)^{T} D f(x)+2 \sum_{i=1}^{m} f_{i}(x) \nabla^{2} f_{i}(x)
-$$
+\end{equation}
 \end{theorem}
 
 \begin{theorem}
     (Undamped) Newton step at $ x=x^{(k)} $ :
-$$
+\begin{equation}
 \begin{aligned}
 v_{\mathrm{nt}} &=-\nabla^{2} g(x)^{-1} \nabla g(x) \\
 &=-\left(D f(x)^{T} D f(x)+\sum_{i=1}^{m} f_{i}(x) \nabla^{2} f_{i}(x)\right)^{-1} D f(x)^{T} f(x)
 \end{aligned}
-$$
+\end{equation}
 
 \end{theorem}
 
 \begin{theorem}
     Gauss-Newton step at $ x=x^{(k)} $
-$$
+\begin{equation}
 v_{\mathrm{gn}}=-\left(D f(x)^{T} D f(x)\right)^{-1} D f(x)^{T} f(x)
-$$
+\end{equation}
 \end{theorem}
 
 \begin{corollary}
@@ -1154,13 +1154,13 @@ Gauss-Newton step:
 \begin{itemize}
     \item does not require second derivatives
     \item a descent direction (if columns of $ D f(x) $ are linearly independent):
-    $$
+    \begin{equation}
     \nabla g(x)^{T} v_{\mathrm{gn}}=-2 v_{\mathrm{gn}}^{T} D f(x)^{T} D f(x) v_{\mathrm{gn}}<0 \quad \text { if } v_{\mathrm{gn}} \neq 0
-    $$
+    \end{equation}
     \item local convergence to $ x^{\star} $ is similar to Newton method if
-$$
+\begin{equation}
 \sum_{i=1}^{m} f_{i}\left(x^{\star}\right) \nabla^{2} f_{i}\left(x^{\star}\right)
-$$
+\end{equation}
 is small (e.g., $ f\left(x^{\star}\right) $ is small, or $ f $ is nearly affine around $ x^{\star} $ )
 \end{itemize}
 
@@ -1181,9 +1181,9 @@ to solve a maximization problem (i.e., maximize $ g(x) $ ), minimize $ -g(x) $.
 
 \begin{definition}[globally optimal]
     $ x^{\star} $ is an optimal point (or a minimum) if
-$$
+\begin{equation}
 g\left(x^{\star}\right) \leq g(x) \quad \text { for all } x
-$$
+\end{equation}
 
 It is also called globally optimal.
 \end{definition}

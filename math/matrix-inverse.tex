@@ -3,38 +3,38 @@
 \section{Left Inverse, Right Inverse, Inverse}
 
 \begin{definition}[$A$的左逆]
-    当一个矩阵$X$满足 $$ X A=I $$ 
+    当一个矩阵$X$满足 \begin{equation} X A=I \end{equation} 
     
     $X$被称为 $ A $ 的\term{左逆}; 当左逆存在时，则称$A$是\term{可左逆}的;
 \end{definition}
 
-当左逆存在时，则$A$至少有一个左逆。如果左逆矩阵存在, 则左逆矩阵有\textbf{无穷多}个。
+当左逆存在时，则$A$至少有一个左逆。如果左逆矩阵存在， 则左逆矩阵有\textbf{无穷多}个。
 
 \begin{example}
-    $$ A=\left[\begin{array}{cc}-3 & -4 \\ 4 & 6 \\ 1 & 1\end{array}\right] $$
+    \begin{equation} A=\left[\begin{array}{cc}-3 & -4 \\ 4 & 6 \\ 1 & 1\end{array}\right] \end{equation}
 
     矩阵$A$是可左逆的，其左逆矩阵有两个
 
-    $$ B=\frac{1}{9}\left[\begin{array}{ccc}-11 & -10 & 16 \\ 7 & 8 & -11\end{array}\right] \quad C=\frac{1}{2}\left[\begin{array}{ccc}0 & -1 & 6 \\ 0 & 1 & -4\end{array}\right] $$
+    \begin{equation} B=\frac{1}{9}\left[\begin{array}{ccc}-11 & -10 & 16 \\ 7 & 8 & -11\end{array}\right] \quad C=\frac{1}{2}\left[\begin{array}{ccc}0 & -1 & 6 \\ 0 & 1 & -4\end{array}\right] \end{equation}
 \end{example}
 
 \begin{definition}[$A$的右逆]
     当左逆存在时，则称A是可左逆的;
 \end{definition}
 
-当右逆存在时，则$A$至少有一个右逆。如果右逆矩阵存在, 则右逆矩阵有\textbf{无穷多}个。
+当右逆存在时，则$A$至少有一个右逆。如果右逆矩阵存在， 则右逆矩阵有\textbf{无穷多}个。
 
 
 \begin{example}
-    $$ B=\left[\begin{array}{lll}1 & 0 & 1 \\ 0 & 1 & 1\end{array}\right] $$
+    \begin{equation} B=\left[\begin{array}{lll}1 & 0 & 1 \\ 0 & 1 & 1\end{array}\right] \end{equation}
 
     矩阵$B$可右逆，以下矩阵都是$B$的右逆
 
-    $$ D=\frac{1}{2}\left[\begin{array}{cc}1 & -1 \\ -1 & 1 \\ 1 & 1\end{array}\right], E=\left[\begin{array}{ll}1 & 0 \\ 0 & 1 \\ 0 & 0\end{array}\right], G=\left[\begin{array}{cc}1 & -1 \\ 0 & 0 \\ 0 & 1\end{array}\right] $$
+    \begin{equation} D=\frac{1}{2}\left[\begin{array}{cc}1 & -1 \\ -1 & 1 \\ 1 & 1\end{array}\right], E=\left[\begin{array}{ll}1 & 0 \\ 0 & 1 \\ 0 & 0\end{array}\right], G=\left[\begin{array}{cc}1 & -1 \\ 0 & 0 \\ 0 & 1\end{array}\right] \end{equation}
 \end{example}
 
 \begin{theorem}
-一个大小为 $ m \times n $ 的矩阵, 其左逆或右逆的维度为 $ n \times m $.
+一个大小为 $ m \times n $ 的矩阵， 其左逆或右逆的维度为 $ n \times m $.
 \end{theorem}
 
 
@@ -43,9 +43,9 @@
 \end{theorem}
 
 \begin{proof}
-    $$
+    \begin{equation}
 A^{T} X^{T}=(X A)^{T}=I
-$$
+\end{equation}
 \end{proof}
 
 \begin{theorem}
@@ -53,9 +53,9 @@ $$
 \end{theorem}
 
 \begin{proof}
-    $$
+    \begin{equation}
 X^{T} A^{T}=(A X)^{ {T}}=I
-$$
+\end{equation}
 \end{proof}
 
 \begin{theorem}
@@ -63,17 +63,17 @@ $$
 \end{theorem}
 
 \begin{proof}
-    $$
+    \begin{equation}
     \begin{aligned}
     &X A=I, A Y=I  \\
     \Rightarrow&  X=X I=X(A Y)=(X A) Y=Y \\
     \Rightarrow& X=Y
     \end{aligned}
-$$
+\end{equation}
 \end{proof}
 
 \begin{definition}[逆 $A^{-1}$]
-    如果矩阵A存在左逆和右逆, 此时X称为矩阵的\term{逆}，记作 $ A^{-1} $ 当矩阵的逆存在时，则称矩阵A\term{可逆}.
+    如果矩阵A存在左逆和右逆， 此时X称为矩阵的\term{逆},记作 $ A^{-1} $ 当矩阵的逆存在时，则称矩阵A\term{可逆}.
 \end{definition}
 
 \section{Linear Equation Systems}
@@ -81,53 +81,53 @@ $$
 \begin{definition}[Linear Equation Systems]
     有$n$个变量的$m$个方程为
 
-    $$ \left\{\begin{array}{c}A_{11} x_{1}+A_{12} x_{2}+\cdots+A_{1 n} x_{n}=b_{1} \\ A_{21} x_{1}+A_{22} x_{2}+\cdots+A_{2 n} x_{n}=b_{2} \\ \vdots \\ A_{m 1} x_{1}+A_{m 2} x_{2}+\cdots+A_{m n} x_{n}=b_{m}\end{array}\right. $$
+    \begin{equation} \left\{\begin{array}{c}A_{11} x_{1}+A_{12} x_{2}+\cdots+A_{1 n} x_{n}=b_{1} \\ A_{21} x_{1}+A_{22} x_{2}+\cdots+A_{2 n} x_{n}=b_{2} \\ \vdots \\ A_{m 1} x_{1}+A_{m 2} x_{2}+\cdots+A_{m n} x_{n}=b_{m}\end{array}\right. \end{equation}
 
-    写成矩阵形式为： $  {A} x= {b} $ . 其中$A_{m \times n}$为系数矩阵, $ x_{n \times 1} $ 为$n$维列向量，$b_{m \times 1}$是常数。 
+    写成矩阵形式为： $  {A} x= {b} $ . 其中$A_{m \times n}$为系数矩阵， $ x_{n \times 1} $ 为$n$维列向量，$b_{m \times 1}$是常数。 
 \end{definition}
 
-该方程组可能\textbf{无解}，\textbf{有唯一解}和\textbf{无穷解}.
+该方程组可能\textbf{无解},\textbf{有唯一解}和\textbf{无穷解}.
 
 \subsection{线性方程组求解}
 
 \begin{theorem}
-    如果矩阵$A$可左逆，假设 $ X $ 是矩阵$A$的左逆，则\textbf{至多}一个解, 如有解则 $ x=X b $ . 
+    如果矩阵$A$可左逆，假设 $ X $ 是矩阵$A$的左逆，则\textbf{至多}一个解， 如有解则 $ x=X b $ . 
 \end{theorem}
 
 \begin{proof}
-    $$
+    \begin{equation}
 A x=b \Rightarrow  x=X A x=X b
-$$
+\end{equation}
 
     列满秩时（下面证明）， 列向量线性无关， 所以其零空间中只有零解。
     
-    方程 $ {Ax}={b} $ 可能有一个唯一解（$b$在$A$的列空间中, 此特解就是全部解, 因为通常的特解可以通过零空间中的向量扩展出一组解集，但此时零空间只有$0$向量）, 也可能无解（$b$不在$A$的列空间中）。
+    方程 $ {Ax}={b} $ 可能有一个唯一解（$b$在$A$的列空间中， 此特解就是全部解， 因为通常的特解可以通过零空间中的向量扩展出一组解集，但此时零空间只有$0$向量）， 也可能无解（$b$不在$A$的列空间中）。
 
     
 \end{proof}
 
 \begin{theorem}
-    如果矩阵$A$可右逆，假设 $ Y $ 是矩阵$A$的右逆，则\textbf{至少}存在一个解, 即 $ x= {Y} b $ . 
+    如果矩阵$A$可右逆，假设 $ Y $ 是矩阵$A$的右逆，则\textbf{至少}存在一个解， 即 $ x= {Y} b $ . 
 \end{theorem}
 
 \begin{proof}
     设$x=Y b$ 
 
-    $$
+    \begin{equation}
 x=Y b  \Rightarrow  A x=A Y b=b
-$$
+\end{equation}
 
 
-右逆就是研究 $m \times n $ 矩阵$A$行满秩的情况, 此时 $  {n}> {m}=\operatorname{rank}( {A}) $ . 对称的, 其左零空间中仅有零向量，即没有行向量的线性组合能够得到零向量。 （$N(A ^T ) = \{0\}$）
+右逆就是研究 $m \times n $ 矩阵$A$行满秩的情况， 此时 $  {n}> {m}=\operatorname{rank}( {A}) $ . 对称的， 其左零空间中仅有零向量，即没有行向量的线性组合能够得到零向量。 （$N(A ^T ) = \{0\}$）
 
-所以列空间的秩是$m$，维数是$n$，$n$维空间一定包含$m$维子空间，至少存在一个解。
+所以列空间的秩是$m$,维数是$n$,$n$维空间一定包含$m$维子空间，至少存在一个解。
 \end{proof}
 
 \begin{theorem}
     如果矩阵$A$可逆的，假设 $ X $ 是矩阵$A$的逆，则
-$$
+\begin{equation}
 A x=b  \Rightarrow  x=A^{-1} b
-$$
+\end{equation}
 是唯一解。 
 \end{theorem}
 
@@ -227,7 +227,7 @@ $$
 \section{Invertible Matrices}
 
 \begin{theorem}
-    对于方阵 $ A \in \mathbb{R}^{n \times n} $ ，以下条件都是等价的:
+    对于方阵 $ A \in \mathbb{R}^{n \times n} $ ,以下条件都是等价的:
 
     \begin{enumerate}
         \item $ A $ 可左逆
@@ -237,7 +237,7 @@ $$
         \item $A$可逆
     \end{enumerate}
 
-    此时矩阵$A$为非奇异矩阵，由条件1与3，可得$A$为可逆矩阵。 
+    此时矩阵$A$为非奇异矩阵，由条件1与3,可得$A$为可逆矩阵。 
 \end{theorem}
 
 \begin{proof}
@@ -290,40 +290,40 @@ $$
 \end{theorem}
 
 \begin{proof}
-    假设$A$的左逆是 $ B $ ，则
-    $$
+    假设$A$的左逆是 $ B $ ,则
+    \begin{equation}
     \begin{aligned}
             & A x=0 \\
      \Rightarrow &B A x=0 \\
     \Rightarrow & I x=0
     \end{aligned}
-    $$
+    \end{equation}
 
     假设A的列向量 $ A=\left[a_{1}, a_{2}, \cdots, a_{n}\right] $
-    $$
+    \begin{equation}
     A x=x_{1} a_{1}+x_{2} a_{2}+\cdots+x_{n} a_{n}=0
-    $$
+    \end{equation}
 
     则当该等式 $ A x=0 $ 成立时，其解 $ x=0 $, 则$A$的列向量线性无关。  
     
     \begin{corollary}
         如果 $ A \in \mathbb{R}^{m \times n} $有左逆，则有 $ m \geq n = r $. 
 
-    即$A$是高或方的矩阵, 如 $ A=\left[\begin{array}{ll}1 & 0 \\ 0 & 1 \\ 0 & 0\end{array}\right] $. 
+    即$A$是高或方的矩阵， 如 $ A=\left[\begin{array}{ll}1 & 0 \\ 0 & 1 \\ 0 & 0\end{array}\right] $. 
     
     此时$A$的行向量可能线性相关，而$A$的列向量线性无关， $N(A) = \{0\}$.
     \end{corollary}
     
 
     假设 $ A $ 的列向量 $ A=\left[a_{1}, a_{2}, \cdots, a_{n}\right] $
-    $$
+    \begin{equation}
     \begin{aligned}
          A x&=x_{1} a_{1}+x_{2} a_{2}+\cdots+x_{n} a_{n}=b \\
     A y&=y_{1} a_{1}+y_{2} a_{2}+\cdots+y_{n} a_{n}=b \\
     \end{aligned}
-    $$
+    \end{equation}
 
-    $$A x-A y=A(x-y)=0 \Rightarrow x=y$$
+    \begin{equation}A x-A y=A(x-y)=0 \Rightarrow x=y\end{equation}
 
     当 $ b \in \mathbb{R}^{m}, b \notin\left\{y \mid y=A x, x \in \mathbb{R}^{n}\right\} $ 时（即$b$不在$A$的列空间，$ m \geq n  $时），线性方程组无解。  $ A x=b $ 至多一个解，如有解则 $ x=X b $ . 
 \end{proof}
@@ -335,13 +335,13 @@ $$
 \begin{proof}
     令 $A$ 是一个 $m\times n$ 的矩阵，其列秩为 $r $. 因此矩阵 $A$ 的列空间的维度是 $r$ . 
     
-    令 $c_1,c_2,\ldots,c_r$ 是 $A$ 的列空间的一组基，构成 $m \times r$ 矩阵 $C$ 的列向量 $C = [c_1,c_2,\ldots,c_r]$，并使得 $A$ 的每个列向量是 $C$ 的 $r$ 个列向量的线性组合。 
+    令 $c_1,c_2,\ldots,c_r$ 是 $A$ 的列空间的一组基，构成 $m \times r$ 矩阵 $C$ 的列向量 $C = [c_1,c_2,\ldots,c_r]$,并使得 $A$ 的每个列向量是 $C$ 的 $r$ 个列向量的线性组合。 
     
     由矩阵乘法的定义，存在一个 $r \times n$ 矩阵 $R$, 使得 $A = CR$. ($A$ 的 $(i,j)$ 元素是 $c_i$ 与 $R$ 的第 $j$ 个行向量的点积。)
 
-现在，由于 $A = CR$, $A$ 的每个行向量是 $R$ 的行向量的线性组合，这意味着 $A$ 的行向量空间被包含于 $R$ 的行向量空间之中。 因此 $A 的行秩 \leq R的行秩$. 但$R$仅有$r$行, 所以$R的行秩 \leq r = A的列秩$. 这就证明了$A的行秩 \leq A的列秩$.
+现在，由于 $A = CR$, $A$ 的每个行向量是 $R$ 的行向量的线性组合，这意味着 $A$ 的行向量空间被包含于 $R$ 的行向量空间之中。 因此 $A 的行秩 \leq R的行秩$. 但$R$仅有$r$行， 所以$R的行秩 \leq r = A的列秩$. 这就证明了$A的行秩 \leq A的列秩$.
 
-把上述证明过程中的“行”与“列”交换，利用对偶性质同样可证$A的列秩 \leq A的行秩$. 更简单的方法是考虑A的转置矩阵 $A^ {T}$，则$A的列秩 =  A^ {T}的行秩 \leq  A^ {T}的列秩 = A的行秩$. 这证明了$A$的列秩等于$A$的行秩。 证毕。
+把上述证明过程中的“行”与“列”交换，利用对偶性质同样可证$A的列秩 \leq A的行秩$. 更简单的方法是考虑A的转置矩阵 $A^ {T}$,则$A的列秩 =  A^ {T}的行秩 \leq  A^ {T}的列秩 = A的行秩$. 这证明了$A$的列秩等于$A$的行秩。 证毕。
 \end{proof}
 
 \begin{theorem}
@@ -349,9 +349,9 @@ $$
 \end{theorem}
 
 \begin{proof}
-    $$  {X}^{T} A^{T}=(A X)^{T}=I $$
+    \begin{equation}  {X}^{T} A^{T}=(A X)^{T}=I \end{equation}
     
-    则有$  {X}^{T} $ 是 $ A^{T} $ 的左逆, $ A^{T} $的列向量线性无关。  
+    则有$  {X}^{T} $ 是 $ A^{T} $ 的左逆， $ A^{T} $的列向量线性无关。  
 
     即$ A^{T} \in \mathbb{R}^{n \times m} $.
     
@@ -377,22 +377,22 @@ $$
 \begin{proof}
     假设 $ A \in \mathbb{R}^{n \times n} $ 为方阵且列向量线性无关 
     
-    $$ A=\left[a_{1}, a_{2}, \cdots, a_{n}\right] $$
+    \begin{equation} A=\left[a_{1}, a_{2}, \cdots, a_{n}\right] \end{equation}
 
     则对于\textbf{任意}向量 $  {b} \in \mathbb{R}^{n} $, 则向量组 $ \left[a_{1}, a_{2}, \ldots, a_{n},  {~b}\right] $ 线性相关，存 在不全为0的系数，使得以下等式成立
-    $$
+    \begin{equation}
     x_{1} a_{1}+x_{2} a_{2}+\cdots+x_{n} a_{n}+x_{n+1} b=0
-    $$
+    \end{equation}
 
     因为$A$列向量线性无关，则 $ x_{n+1} \neq 0 $（假设$ x_{n+1} = 0 $会推出违反线性无关假设的结论）， 即$b$是$A$列向量的线性组合;
-    $$
+    \begin{equation}
     b=-\frac{x_{1}}{x_{n+1}} a_{1}-\frac{x_{2}}{x_{n+1}} a_{2}-\cdots-\frac{x_{n}}{x_{n+1}} a_{n}
-    $$
+    \end{equation}
 
     假设$b = e_1, e_2 , \cdots$.
 
     存在向量 $ c_{1}, \ldots, c_{n} \in \mathbb{R}^{n} $,使得 
-    $$
+    \begin{equation}
     \begin{aligned}
         Ac _{1}&=e_{1}\\
          A c_{2}&=e_{2}\\
@@ -400,10 +400,10 @@ $$
           A c_{n}&=e_{n}
     \end{aligned}
     \quad (c_j即为上式的 \frac{-x_{1:n}}{x_{n+1}})
-    $$
+    \end{equation}
 
 
-    则矩阵 $ C=\left[c_{1}, c_{2}, \ldots,c_{n}\right] $ 是矩阵 $ A $ 的右逆, $ A C=I $.
+    则矩阵 $ C=\left[c_{1}, c_{2}, \ldots,c_{n}\right] $ 是矩阵 $ A $ 的右逆， $ A C=I $.
 
 \end{proof}
 
@@ -411,28 +411,28 @@ $$
 
 \begin{theorem}[转置 $ A^{T} $ 和共轭转置 $ A^{ {H}} $ ]
     如果矩阵$A$为非奇异矩阵，则其转置 $ A^{T} $ 和共轭转置 $ A^{ {H}} $ 都为非奇异矩阵，则有
-$$
+\begin{equation}
 \begin{array}{l}
 \left(A^{T}\right)^{-1}=\left(A^{-1}\right)^{T}, \quad\left(A^{H}\right)^{-1}=\left(A^{-1}\right)^{H} \\
 \end{array}
-$$
+\end{equation}
 \end{theorem}
 
 \begin{proof}
-    $$\left(A A^{-1}\right)^{T}=I \Rightarrow \underbrace{\left(A^{-1}\right)^{T}}_{\text{the inverse of }A^T}   A^{T}=I$$
+    \begin{equation}\left(A A^{-1}\right)^{T}=I \Rightarrow \underbrace{\left(A^{-1}\right)^{T}}_{\text{the inverse of }A^T}   A^{T}=I\end{equation}
 \end{proof}
 
 \begin{corollary}
     如果矩阵$A$和矩阵$B$都为非奇异矩阵，则乘积$AB$也为非 奇异矩阵
-$$
+\begin{equation}
 \begin{array}{l}
 (A B)^{-1}=B^{-1} A^{-1} \\
 \end{array}
-$$
+\end{equation}
 \end{corollary}
 
 \begin{proof}
-    $$(A B) \underbrace{B^{-1} A^{-1}} _{\text{the inverse of AB}}=I$$
+    \begin{equation}(A B) \underbrace{B^{-1} A^{-1}} _{\text{the inverse of AB}}=I\end{equation}
 \end{proof}
 
 \section{Gram Matrix非奇异的性质}
@@ -450,7 +450,7 @@ Gram矩阵的定义见 \ref{Def:Gram}.
 \begin{proof}
     “$ \Rightarrow $”: 
     
-    假设矩阵 $ A $ 列向量线性无关, $ A^{T} A $ 奇异。  则存在 $ A^{T} A x=0, x \neq 0 $, 可得 $ x^{T} A^{T} A x=\|A x\|_{2}^{2}=0 $, 即 $ A x=0 , x \neq 0$，与列向量线性无关矛盾。
+    假设矩阵 $ A $ 列向量线性无关， $ A^{T} A $ 奇异。  则存在 $ A^{T} A x=0, x \neq 0 $, 可得 $ x^{T} A^{T} A x=\|A x\|_{2}^{2}=0 $, 即 $ A x=0 , x \neq 0$,与列向量线性无关矛盾。
 
     所以$ A^{T} A $非奇异（可逆）。
 
@@ -464,51 +464,51 @@ Gram矩阵的定义见 \ref{Def:Gram}.
 \section{伪逆}
 
 \begin{definition}[Pseudo-inverse of Matrix $A (m \geq n)$ ]
-    矩阵$A \in \mathbb{R}^{m \times n} $ ，当 $ m \geq n $ 时，列向量线性无关，即 $ A $ 的 Gram矩阵可逆。A的伪逆 $ A^{+} $定义:
-    $$
+    矩阵$A \in \mathbb{R}^{m \times n} $ ,当 $ m \geq n $ 时，列向量线性无关，即 $ A $ 的 Gram矩阵可逆。A的伪逆 $ A^{+} $定义:
+    \begin{equation}
     A^{+}=\left(A^{T} A\right)^{-1} A^{T}
-    $$
+    \end{equation}
 
 \end{definition}
 
 
 \begin{theorem}
-    矩阵$A \in \mathbb{R}^{m \times n} $ ，当 $ m \geq n $ 时，$ A^{+} $为矩阵 $ A $ 的左逆:
-$$
+    矩阵$A \in \mathbb{R}^{m \times n} $ ,当 $ m \geq n $ 时，$ A^{+} $为矩阵 $ A $ 的左逆:
+\begin{equation}
 A^{+} A=\left(A^{T} A\right)^{-1} A^{T} A=\left(A^{T} A\right)^{-1}\left(A^{T} A\right)=I
-$$
+\end{equation}
 
 \end{theorem}
 
 \begin{theorem}
     当 $ A $ 为方阵，伪逆等于矩阵的逆:
-$$
+\begin{equation}
 \left(A^{T} A\right)^{-1} A^{T}=A^{-1} A^{-T} A^{T}=A^{-1}
-$$
+\end{equation}
 \end{theorem}
 
 
 
 \begin{definition}[Pseudo-inverse of Matrix $A (m \leq n)$ ]
-    矩阵 $  {A} \in \mathbb{R}^{m \times n} $ ，当$m \leq  {n} $ 时，且行向量线性无关，则 $ A A^{T} $ 可逆。 $ A^{T} $ 列向量线性无关，即 $ \left(A^{T}\right)^{T} A^{T}= {A} A^{T} $ 非奇异；
+    矩阵 $  {A} \in \mathbb{R}^{m \times n} $ ,当$m \leq  {n} $ 时，且行向量线性无关，则 $ A A^{T} $ 可逆。 $ A^{T} $ 列向量线性无关，即 $ \left(A^{T}\right)^{T} A^{T}= {A} A^{T} $ 非奇异；
 定义伪逆:
-$$
+\begin{equation}
 A^{\dagger}=A^{T}\left(A A^{T}\right)^{-1}
-$$
+\end{equation}
 \end{definition}
 
 \begin{theorem}
-    矩阵 $  {A} \in \mathbb{R}^{m \times n} $ ，当 $m \leq  {n} $ 时，伪逆 $ A^{\dagger} $ 为 $ A $ 的右逆
-$$
+    矩阵 $  {A} \in \mathbb{R}^{m \times n} $ ,当 $m \leq  {n} $ 时，伪逆 $ A^{\dagger} $ 为 $ A $ 的右逆
+\begin{equation}
 A A^{\dagger}=A A^{T}\left(A A^{T}\right)^{-1}=\left(A A^{T}\right)^{-1}\left(A A^{T}\right)=I
-$$
+\end{equation}
 \end{theorem}
 
 \begin{theorem}
     当$A$为方阵时，右逆等于矩阵的逆
-$$
+\begin{equation}
 A^{\dagger}=A^{T}\left(A A^{T}\right)^{-1}=A^{T} A^{-T} A^{-1}=A^{-1}
-$$
+\end{equation}
 \end{theorem}
 
 \begin{corollary}
@@ -538,20 +538,20 @@ By choosing good bases, $A$ multiplies $\boldsymbol{v}_{i}$ in the row space to 
 If $A \boldsymbol{v}=\sigma \boldsymbol{u}$ then $A^{-1} \boldsymbol{u}=\boldsymbol{v} / \sigma$. The singular values of $A^{-1}$ are $1 / \sigma$, just as the eigenvalues of $A^{-1}$ are $1 / \lambda$. The bases are reversed. The $u$ 's are in the row space of $A^{-1}$, the $v$ 's are in the column space.
 
 \begin{definition}[伪逆$A^{\dagger}$]
-    $$A^{\dagger} = V \Sigma^+ U^T = \left[v_{1} \cdots v_{r} \cdots v_{n}\right]\left[\begin{array}{lll}
+    \begin{equation}A^{\dagger} = V \Sigma^+ U^T = \left[v_{1} \cdots v_{r} \cdots v_{n}\right]\left[\begin{array}{lll}
         \sigma_{1}^{-1} & & \\
         & \ddots & \\
         & & \sigma_{r}^{-1}
-        \end{array}\right]\left[u_{1} \cdots u_{r} \cdots u_{m}\right]^{ {T}}$$
+        \end{array}\right]\left[u_{1} \cdots u_{r} \cdots u_{m}\right]^{ {T}}\end{equation}
 \end{definition}
 
 The pseudoinverse $A^{+}$is an $n$ by $m$ matrix. \textbf{If $A^{-1}$ exists, then $A^{+}$is the same as $A^{-1}$}. In that case $m=n=r$ and we are inverting $U \Sigma V^{ {T}}$ to get $V \Sigma^{-1} U^{ {T}}$. 
 
 The new symbol $A^{+}$is needed when $r<m$ or $r<n$. Then $A$ has no two-sided inverse, but it has a \term{pseudo}inverse $A^{+}$with that same rank $r$ :
 
-$$
+\begin{equation}
 A^{+} \boldsymbol{u}_{i}=\frac{1}{\sigma_{i}} \boldsymbol{v}_{i} \quad \text { for } i \leq r \quad \text { and } \quad A^{+} \boldsymbol{u}_{i}=\mathbf{0} \quad \text { for } i>r
-$$
+\end{equation}
 
 The vectors $\boldsymbol{u}_{1}, \ldots, \boldsymbol{u}_{r}$ in the column space of $A$ go back to $\boldsymbol{v}_{1}, \ldots, \boldsymbol{v}_{r}$ in the row space.
 
@@ -562,10 +562,10 @@ Notice the pseudoinverse of the diagonal matrix $\Sigma .$ Each $\sigma$ in $\Si
 
 
 \begin{theorem}
-    $$\displaystyle \begin{aligned}
+    \begin{equation}\displaystyle \begin{aligned}
         A_{\text{left}}^{-1} A=I & \Rightarrow A^{T}\left( AA^{T}\right)^{-1} A=P & \left(\text{projection onto the column space of } A\right)\\
         AA_{\text{right}}^{-1} =I & \Rightarrow A\left( A^{T} A\right)^{-1} A^{T} =P & \left(\text{projection onto the row space of } A\right)
-        \end{aligned}$$
+        \end{aligned}\end{equation}
 \end{theorem}
 
 \begin{remark}

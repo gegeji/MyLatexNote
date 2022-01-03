@@ -97,7 +97,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.4}Gram-Schmidt Algorithm}{53}{section.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}The Analysis of Gram-Schmidt Algorithm}{53}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.1}The Analysis of Gram-Schmidt Algorithm}{54}{subsection.5.4.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{\@mypartnumtocformat {II}{Matrices}}{56}{part.2}%
 \defcounter {refsection}{0}\relax 
@@ -567,7 +567,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {17.6}Newton Method}{222}{section.17.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.6.1}Interpretation of Newton Method}{224}{subsection.17.6.1}%
+\contentsline {subsection}{\numberline {17.6.1}Interpretation of Newton Method}{222}{subsection.17.6.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {17.6.2}One Variable}{224}{subsection.17.6.2}%
 \defcounter {refsection}{0}\relax 
@@ -577,7 +577,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {17.6.5}Convergence of Newton's method}{225}{subsection.17.6.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.6.6}Newton's method for minimizing a convex function}{226}{subsection.17.6.6}%
+\contentsline {subsection}{\numberline {17.6.6}Newton's method for minimizing a convex function}{225}{subsection.17.6.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Interpretations of Newton step}{226}{section*.91}%
 \defcounter {refsection}{0}\relax 
@@ -597,83 +597,83 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {17.9}Local and global optimum}{228}{section.17.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\@mypartnumtocformat {VI}{Extensive Reading}}{230}{part.6}%
+\contentsline {part}{\@mypartnumtocformat {VI}{Extensive Reading}}{229}{part.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {18}Fourier Series, Fourier Transform}{231}{chapter.18}%
+\contentsline {chapter}{\numberline {18}Fourier Series, Fourier Transform}{230}{chapter.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {18.1}基本概念}{231}{section.18.1}%
+\contentsline {section}{\numberline {18.1}基本概念}{230}{section.18.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {18.2}Fourier Series}{233}{section.18.2}%
+\contentsline {section}{\numberline {18.2}Fourier Series}{232}{section.18.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {18.3}Fourier Transform}{237}{section.18.3}%
+\contentsline {section}{\numberline {18.3}Fourier Transform}{236}{section.18.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {18.4}Discrete Fourier Transform}{237}{section.18.4}%
+\contentsline {section}{\numberline {18.4}Discrete Fourier Transform}{236}{section.18.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {19}Factorization of Matrices}{239}{chapter.19}%
+\contentsline {chapter}{\numberline {19}Factorization of Matrices}{238}{chapter.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {19.1}主要的矩阵分解}{239}{section.19.1}%
+\contentsline {section}{\numberline {19.1}主要的矩阵分解}{238}{section.19.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {20}Cholesky Factorization}{240}{chapter.20}%
+\contentsline {chapter}{\numberline {20}Cholesky Factorization}{239}{chapter.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.1}Positive Definite Matrices}{240}{section.20.1}%
+\contentsline {section}{\numberline {20.1}Positive Definite Matrices}{239}{section.20.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.2}Schur complement}{240}{section.20.2}%
+\contentsline {section}{\numberline {20.2}Schur complement}{239}{section.20.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.3}Examples}{241}{section.20.3}%
+\contentsline {section}{\numberline {20.3}Examples}{240}{section.20.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {20.3.1}Graph Laplacian}{241}{subsection.20.3.1}%
+\contentsline {subsection}{\numberline {20.3.1}Graph Laplacian}{240}{subsection.20.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.4}Cholesky Factorization}{242}{section.20.4}%
+\contentsline {section}{\numberline {20.4}Cholesky Factorization}{241}{section.20.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.5}Examples for Cholesky Factorization}{243}{section.20.5}%
+\contentsline {section}{\numberline {20.5}Examples for Cholesky Factorization}{242}{section.20.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.6}Solving equations with positive definite $A$}{243}{section.20.6}%
+\contentsline {section}{\numberline {20.6}Solving equations with positive definite $A$}{242}{section.20.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.7}Cholesky Factorization of Gram Matrix}{243}{section.20.7}%
+\contentsline {section}{\numberline {20.7}Cholesky Factorization of Gram Matrix}{242}{section.20.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {20.7.1}Comparison of the two methods}{244}{subsection.20.7.1}%
+\contentsline {subsection}{\numberline {20.7.1}Comparison of the two methods}{243}{subsection.20.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.8}Sparse positive definite matrices}{244}{section.20.8}%
+\contentsline {section}{\numberline {20.8}Sparse positive definite matrices}{243}{section.20.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.9}Sparse Cholesky factorization}{245}{section.20.9}%
+\contentsline {section}{\numberline {20.9}Sparse Cholesky factorization}{244}{section.20.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.10}Solving sparse positive definite equations}{245}{section.20.10}%
+\contentsline {section}{\numberline {20.10}Solving sparse positive definite equations}{244}{section.20.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.11}Quadratic form}{245}{section.20.11}%
+\contentsline {section}{\numberline {20.11}Quadratic form}{244}{section.20.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.12}Complex positive definite matrices}{246}{section.20.12}%
+\contentsline {section}{\numberline {20.12}Complex positive definite matrices}{245}{section.20.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.13}Regularized least squares model fitting}{246}{section.20.13}%
+\contentsline {section}{\numberline {20.13}Regularized least squares model fitting}{245}{section.20.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {20.13.1}Example: multivariate polynomials}{247}{subsection.20.13.1}%
+\contentsline {subsection}{\numberline {20.13.1}Example: multivariate polynomials}{246}{subsection.20.13.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.14}Multinomial formula}{248}{section.20.14}%
+\contentsline {section}{\numberline {20.14}Multinomial formula}{247}{section.20.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.15}Vector of monomials}{248}{section.20.15}%
+\contentsline {section}{\numberline {20.15}Vector of monomials}{247}{section.20.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.16}Least squares fitting of multivariate polynomials}{249}{section.20.16}%
+\contentsline {section}{\numberline {20.16}Least squares fitting of multivariate polynomials}{248}{section.20.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20.17}Kernel methods}{249}{section.20.17}%
+\contentsline {section}{\numberline {20.17}Kernel methods}{248}{section.20.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {20.17.1}Complexity}{251}{subsection.20.17.1}%
+\contentsline {subsection}{\numberline {20.17.1}Complexity}{250}{subsection.20.17.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\@mypartnumtocformat {VII}{Appendix}}{252}{part.7}%
+\contentsline {part}{\@mypartnumtocformat {VII}{Appendix}}{251}{part.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Complexity}{253}{appendix.A}%
+\contentsline {chapter}{\numberline {A}Complexity}{252}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Vector Operations}{253}{section.A.1}%
+\contentsline {section}{\numberline {A.1}Vector Operations}{252}{section.A.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Matrix Operations}{253}{section.A.2}%
+\contentsline {section}{\numberline {A.2}Matrix Operations}{252}{section.A.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Factorization and Inverses}{254}{section.A.3}%
+\contentsline {section}{\numberline {A.3}Factorization and Inverses}{253}{section.A.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Solving Least Squares Problems}{254}{section.A.4}%
+\contentsline {section}{\numberline {A.4}Solving Least Squares Problems}{253}{section.A.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Big-Times-Small-Squared Mnemonic}{254}{section.A.5}%
+\contentsline {section}{\numberline {A.5}Big-Times-Small-Squared Mnemonic}{253}{section.A.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}\bbl@ensure@english {List of Figures}}{255}{appendix.B}%
+\contentsline {chapter}{\numberline {B}\bbl@ensure@english {List of Figures}}{254}{appendix.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}List of Algorithms}{257}{appendix.C}%
+\contentsline {chapter}{\numberline {C}List of Algorithms}{256}{appendix.C}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {D}List Of Definitions}{259}{appendix.D}%
+\contentsline {chapter}{\numberline {D}List Of Definitions}{258}{appendix.D}%
 \contentsfinish 

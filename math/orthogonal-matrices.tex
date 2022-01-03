@@ -15,10 +15,10 @@ For the definition of Gram matrices, refer to \ref{Def:Gram}. 关于它与非奇
 \end{theorem}
 
 \begin{proof}
-    $$ \begin{aligned} A^{T} A&=\left[\begin{array}{llll}a_{1} & a_{2} & \cdots & a_{n}\end{array}\right]^{T}\left[\begin{array}{llll}a_{1} & a_{2} & \cdots & a_{n}\end{array}\right] 
+    \begin{equation} \begin{aligned} A^{T} A&=\left[\begin{array}{llll}a_{1} & a_{2} & \cdots & a_{n}\end{array}\right]^{T}\left[\begin{array}{llll}a_{1} & a_{2} & \cdots & a_{n}\end{array}\right] 
     \\ &=\left[\begin{array}{cccc}a_{1}^{T} a_{1} & a_{1}^{T} a_{2} & \cdots & a_{1}{ }^{T} a_{n} \\ a_{2}^{T} a_{1} & a_{2}{ }^{T} a_{2} & \cdots & a_{2}^{T} a_{n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n}^{T} a_{1} & a_{n}^{T} a_{2} & \cdots & a_{n}^{T} a_{n}\end{array}\right] 
     \\  &=\left[\begin{array}{cccc}1 & 0 & \cdots & 0 \\ 0 & 1 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & 1\end{array}\right] 
-    \\ & =I  \end{aligned} $$
+    \\ & =I  \end{aligned} \end{equation}
 \end{proof}
 
 \subsection{矩阵-向量乘积与标准正交的关系}
@@ -27,49 +27,49 @@ For the definition of Gram matrices, refer to \ref{Def:Gram}. 关于它与非奇
 
 \begin{theorem}
     保持原内积。
-    $$ \langle A x, A y\rangle=x^{T} y $$
+    \begin{equation} \langle A x, A y\rangle=x^{T} y \end{equation}
 \end{theorem}
 
 \begin{proof}
-    $$ \langle A x, A y\rangle=(A x)^{T}(A y)=x^{T} A^{T} A y=x^{T} y $$
+    \begin{equation} \langle A x, A y\rangle=(A x)^{T}(A y)=x^{T} A^{T} A y=x^{T} y \end{equation}
 \end{proof}
 
 
 \begin{theorem}
     保持原范数。
-    $$
+    \begin{equation}
     \|A x\|_{2}=\|x\|_{2}
-    $$
+    \end{equation}
 \end{theorem}
 
 \begin{proof}
-   $$
+   \begin{equation}
 \|A x\|_{2}=\left((A x)^{T}(A x)\right)^{1 / 2}=\left(x^{T} x\right)^{1 / 2}=\|x\|_{2}
-$$
+\end{equation}
 \end{proof}
 
 \begin{theorem}
     保持原距离。
 
-    $$
+    \begin{equation}
     \|A x-A y\|_{2}=\|x-y\|_{2}
-    $$
+    \end{equation}
 \end{theorem}
 
 \begin{proof}
-   $$
+   \begin{equation}
 \|A x-A y\|_{2}=\left((A x-A y)^{T}(A x-A y)\right)^{1 / 2}=\left((x-y)^{T}(x-y)\right)^{1 / 2}=\|x-y\|_{2}
-$$
+\end{equation}
 \end{proof}
 
 \begin{theorem}
     保持原角度。
 
-    $$ \angle(A x, A y)=\angle(x, y) $$
+    \begin{equation} \angle(A x, A y)=\angle(x, y) \end{equation}
 \end{theorem}
 
 \begin{proof}
-    $$ \angle(A x, A y)=\arccos \left(\frac{(A x)^{T}(A y)}{\|A x\|_{2}\|A y\|_{2}}\right)=\arccos \left(\frac{x^{T} y}{\|x\|_{2}\|y\|_{2}}\right)=\angle(x, y) $$
+    \begin{equation} \angle(A x, A y)=\arccos \left(\frac{(A x)^{T}(A y)}{\|A x\|_{2}\|A y\|_{2}}\right)=\arccos \left(\frac{x^{T} y}{\|x\|_{2}\|y\|_{2}}\right)=\angle(x, y) \end{equation}
 \end{proof}
 
 \subsection{左可逆性与正交的关系}
@@ -84,9 +84,9 @@ $$
 \begin{proof}
     根据定义：
 
-$$
+\begin{equation}
 A^{T} A=I
-$$
+\end{equation}
 \end{proof}
 
 \begin{theorem}
@@ -94,9 +94,9 @@ $$
 \end{theorem}
 
 \begin{proof}
-    $$
+    \begin{equation}
 A x=0 \quad \Rightarrow \quad A^{T} A x=x=0
-$$
+\end{equation}
 \end{proof}
 
 \begin{theorem}
@@ -117,7 +117,7 @@ $$
     
     即如果矩阵 $ A $ 是正交的，则$ A $ 是可逆的，左逆等于右逆，且它的逆为 $ A^{T} $.
 
-    $$ \left.\begin{array}{l}A^{T} A=I \\ A \text { 是方的 }\end{array}\right\} \quad \Rightarrow \quad A A^{T}=I $$
+    \begin{equation} \left.\begin{array}{l}A^{T} A=I \\ A \text { 是方的 }\end{array}\right\} \quad \Rightarrow \quad A A^{T}=I \end{equation}
 \end{theorem}
 
 \begin{corollary}
@@ -138,15 +138,15 @@ $$
     $ \pi=\left(\pi_{1}, \pi_{2}, \ldots, \pi_{n}\right) $ 为 $ (1,2, \ldots, n) $ 的一个重新排序的排列。
 
     将 $ \pi $ 与一个置换矩阵 $ A \in \mathbb{R}^{n \times n} $ 联系起来:
-$$
+\begin{equation}
 A_{i \pi_{i}}=1, \quad A_{i j}=0 \text { 如果 } j \neq \pi_{i}
-$$
+\end{equation}
 \end{notation}
 
 \begin{definition}[置换]
     $ A x $ 是 $ x $ 的一个置换:
     
-    $$ A x=\left(x_{\pi_{1}}, x_{\pi_{2}}, \ldots, x_{\pi_{n}}\right) $$
+    \begin{equation} A x=\left(x_{\pi_{1}}, x_{\pi_{2}}, \ldots, x_{\pi_{n}}\right) \end{equation}
 \end{definition}
 
 $A$在每一行和每一列中都有一个等于1的元素。
@@ -156,17 +156,17 @@ $A$在每一行和每一列中都有一个等于1的元素。
 \end{theorem}
 
 \begin{corollary}
-    $$ A^{T} A=I $$
+    \begin{equation} A^{T} A=I \end{equation}
 \end{corollary}
 
 \begin{proof}
     因为A的每一行有一个元素等于1
-$$
+\begin{equation}
 \left(A^{T} A\right)_{i j}=\sum_{k=1}^{n} A_{k i} A_{k j}=\left\{\begin{array}{ll}
 1 & i=j \\
 0 & \text { 其它 }
 \end{array}\right.
-$$
+\end{equation}
 \end{proof}
 
 \begin{corollary}
@@ -175,19 +175,19 @@ $$
 
 \begin{example}
     若 $ \{1,2,3,4\} $ 的置换为:
-$$
+\begin{equation}
 \left(\pi_{1}, \pi_{2}, \pi_{3}, \pi_{4}\right)=(2,4,1,3)
-$$
+\end{equation}
 
 相应的置换矩阵及其逆矩阵为
 
-$$ A=\left[\begin{array}{llll}0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0\end{array}\right] , A^{-1}=A^{T}=\left[\begin{array}{llll}0 & 0 & 1 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 1 & 0 & 0\end{array}\right] $$
+\begin{equation} A=\left[\begin{array}{llll}0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0\end{array}\right] , A^{-1}=A^{T}=\left[\begin{array}{llll}0 & 0 & 1 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 1 & 0 & 0\end{array}\right] \end{equation}
 
 $ A^{T} $ 是与置换相关的置换矩阵
 
-$$
+\begin{equation}
 \left(\tilde{\pi}_{1}, \tilde{\pi}_{2}, \tilde{\pi}_{3}, \tilde{\pi}_{4}\right)=(3,1,4,2)
-$$
+\end{equation}
 \end{example}
 
 \section{平面旋转}
@@ -224,16 +224,16 @@ $$
 \begin{example}[Rotation Matrices in  $\mathbb{R}^{2}$]
     在一个2维平面的旋转可以用矩阵表示为
 
-$$
+\begin{equation}
 A=\left[\begin{array}{cc}
 \cos \theta & -\sin \theta \\
 \sin \theta & \cos \theta
 \end{array}\right]
-$$
+\end{equation}
 \end{example}
 
 \begin{example}[Rotation Matrices in  $\mathbb{R}^{3}$]
-    $$ A=\left[\begin{array}{ccc}\cos \theta & 0 & -\sin \theta \\ 0 & 1 & 0 \\ \sin \theta & 0 & \cos \theta\end{array}\right] $$
+    \begin{equation} A=\left[\begin{array}{ccc}\cos \theta & 0 & -\sin \theta \\ 0 & 1 & 0 \\ \sin \theta & 0 & \cos \theta\end{array}\right] \end{equation}
 
     描述了在 $ \mathbb{R}^{3} $ 中 $ \left(x_{1}, x_{3}\right) $ 平面的旋转。
 \end{example}
@@ -241,9 +241,9 @@ $$
 \section{Householder Matrix}
 
 \begin{definition}[Householder Matrix, Reflator Matrix]
-    $$
+    \begin{equation}
 A=I-2 a a^{T}
-$$
+\end{equation}
 
 其中，向量 $ a $ 满足 $ \|a\|_{2}=1 $ .
 \end{definition}
@@ -251,7 +251,7 @@ $$
 \begin{theorem}
     反射矩阵(reflector matrix)是对称的。
 
-    $$A^T=A$$
+    \begin{equation}A^T=A\end{equation}
 \end{theorem}
 
 \begin{theorem}
@@ -260,13 +260,13 @@ $$
 \end{theorem}
 
 \begin{proof}
-    $$ A^{T} A=\left(I-2 a a^{T}\right)\left(I-2 a a^{T}\right)=I-4 a a^{T}+4 a a^{T} a a^{T}=I $$
+    \begin{equation} A^{T} A=\left(I-2 a a^{T}\right)\left(I-2 a a^{T}\right)=I-4 a a^{T}+4 a a^{T} a a^{T}=I \end{equation}
 \end{proof}
 
 \begin{theorem}
-    反射矩阵是对合矩阵(Involutory matrix)，即它的逆是它本身。
+    反射矩阵是对合矩阵(Involutory matrix),即它的逆是它本身。
 
-    $$H =  H^{-1}$$
+    \begin{equation}H =  H^{-1}\end{equation}
 \end{theorem}
 
 \subsection{The Geometry of Householder Transformation}
@@ -329,9 +329,9 @@ $$
 $ H=\left\{u \mid a^{T} u=0\right\} $ 是与 $ a $ 正交的向量的(超)平面。
 
 \begin{remark}
-    假设$ a, b \in \mathbb{R}^{n}, a \neq 0, t \in \mathbb{R}$, 当$t$ 多大时, $ta$到$b$之间的距离最小
+    假设$ a, b \in \mathbb{R}^{n}, a \neq 0, t \in \mathbb{R}$, 当$t$ 多大时， $ta$到$b$之间的距离最小
 
-    $$ \hat{t}=\min _{t}\|t a-b\|_{2}^{2} $$
+    \begin{equation} \hat{t}=\min _{t}\|t a-b\|_{2}^{2} \end{equation}
 
     这个问题的最优解是$ \hat{t}=\frac{a^{T} b}{a^{T} a}=\frac{a^{T} b}{\|a\|_{2}^{2}} $.
 \end{remark}
@@ -340,45 +340,45 @@ $ H=\left\{u \mid a^{T} u=0\right\} $ 是与 $ a $ 正交的向量的(超)平面
 \begin{theorem}
     如果 $ \|a\|_{2}=1, \quad x $ 在 $ H $ 上的投影为
 
-    $$ y=x-\left(a^{T} x\right) a=x-a\left(a^{T} x\right)=\left(I-a a^{T}\right) x $$
+    \begin{equation} y=x-\left(a^{T} x\right) a=x-a\left(a^{T} x\right)=\left(I-a a^{T}\right) x \end{equation}
 \end{theorem}
 
 \begin{proof}
 1. $ y \in H $.
-$$
+\begin{equation}
 a^{T} y=a^{T}\left(x-a\left(a^{T} x\right)\right)=a^{T} x-\left(a^{T} a\right)\left(a^{T} x\right)=a^{T} x-a^{T} x=0
-$$
+\end{equation}
 
 2. 考虑任意 $ z \in H(z \neq y) $, 证明 $ \|x-z\|>\|x-y\| $
 
-$$ \begin{aligned}\|x-z\|_{2}^{2} &=\|x-y+y-z\|_{2}^{2} 
+\begin{equation} \begin{aligned}\|x-z\|_{2}^{2} &=\|x-y+y-z\|_{2}^{2} 
     \\ &=\|x-y\|_{2}^{2}+2(x-y)^{T}(y-z)+\|y-z\|_{2}^{2} 
     \\ &=\|x-y\|_{2}^{2}+2\left(a^{T} x\right) a^{T}(y-z)+\|y-z\|_{2}^{2}
     \\ &=\|x-y\|_{2}^{2}+\|y-z\|_{2}^{2} \quad (因为  a^{T} y=a^{T} z = 0)
     \\ &\ge \|x-y\|_{2}^{2}
-\end{aligned} $$
+\end{aligned} \end{equation}
 
 \end{proof}
 
 \begin{corollary}
     $ x $ 通过超平面的反射由反射算子的乘积给出
 
-    $$ z=y+(y-x)=\left(I-2 a a^{T}\right) x $$
+    \begin{equation} z=y+(y-x)=\left(I-2 a a^{T}\right) x \end{equation}
 \end{corollary}
 
 \section{正交矩阵乘积}
 
 若 $ A_{1}, \ldots, A_{k} \in \mathbb{R}^{n \times n} $ 是正交矩阵，那么它们的乘积为：
 
-$$ A=A_{1} A_{2} \cdots A_{k} $$
+\begin{equation} A=A_{1} A_{2} \cdots A_{k} \end{equation}
 
 \begin{corollary}[正交矩阵乘积的正交性]
 
-$$\begin{aligned}
+\begin{equation}\begin{aligned}
     A^{T} A&=\left(A_{1} A_{2} \cdots A_{k}\right)^{T}\left(A_{1} A_{2} \cdots A_{k}\right)\\
     &=A_{k}^{T} \cdots A_{2}^{T} A_{1}^{T} A_{1} A_{2} \cdots A_{k}\\
     &=I
-\end{aligned}$$
+\end{aligned}\end{equation}
 
 \end{corollary}
 
@@ -386,14 +386,14 @@ $$\begin{aligned}
 \section{具有正交矩阵的线性方程}
 
 系数正交矩阵 $ A \in \mathbb{R}^{n \times n} $ 的线性方程；
-$$
+\begin{equation}
 A x=b
-$$
+\end{equation}
 
 解为:
-$$
+\begin{equation}
 x=A^{-1} b=A^{T} b
-$$
+\end{equation}
 
 
 \subsection{The Complexity of the Multiplication $Ax$ of Orthogonal Matrix $A$}
@@ -410,7 +410,7 @@ $$
 \section{列标准正交的高矩阵}
 
 \begin{theorem}
-    假设矩阵 $ A \in \mathbb{R}^{m \times n} $ 是高的 $ ({m}>{n}) $, 具有标准正交列,则有
+    假设矩阵 $ A \in \mathbb{R}^{m \times n} $ 是高的 $ ({m}>{n}) $, 具有标准正交列，则有
 
     $ A^{T} $ 具有标准正交行。
 \end{theorem}
@@ -418,7 +418,7 @@ $$
 \begin{theorem}
     $ A^{T} $ 是 $ A $ 的一个左逆。
 
-    $$A^T A =I$$
+    \begin{equation}A^T A =I\end{equation}
 \end{theorem}
 
 \begin{theorem}
@@ -430,11 +430,11 @@ $$
 \begin{definition}[向量集合张成的空间]
     一个向量集合张成的空间是其所有线性组合的集合。
 
-    $$ \operatorname{span}\left(a_{1}, a_{2}, \cdots, a_{n}\right)=\left\{x_{1} a_{1}+x_{2} a_{2}+\cdots+x_{n} a_{n} \mid x \in \mathbb{R}^{n}\right\} $$
+    \begin{equation} \operatorname{span}\left(a_{1}, a_{2}, \cdots, a_{n}\right)=\left\{x_{1} a_{1}+x_{2} a_{2}+\cdots+x_{n} a_{n} \mid x \in \mathbb{R}^{n}\right\} \end{equation}
 \end{definition}
 
 \begin{definition}[$A$的范围（列空间）]
-    $$ \operatorname{range}(A)=\left\{A x \mid x \in \mathbb{R}^{n}\right\} $$
+    \begin{equation} \operatorname{range}(A)=\left\{A x \mid x \in \mathbb{R}^{n}\right\} \end{equation}
 \end{definition}
 
 \subsection{投影到列标准正交的矩阵$A$的列空间}
@@ -453,32 +453,32 @@ $$
 
 即向量 $ A x $ 与$b$有最短距离
 
-$$
+\begin{equation}
 \min _{x}\|A x-b\|_{2}^{2}
-$$
+\end{equation}
 
-$$ \begin{aligned} f(x) &=\|A x-b\|_{2}^{2}
-    \\ & =(A x-b)^{T}(A x-b)=x^{T} A^{T} A x-2 x^{T} A^{T} b+b^{T} b \\ &=x^{T} x-2 x^{T} A^{T} b+b^{T} b\left(\because A^{T} A=I\right) \end{aligned} $$
+\begin{equation} \begin{aligned} f(x) &=\|A x-b\|_{2}^{2}
+    \\ & =(A x-b)^{T}(A x-b)=x^{T} A^{T} A x-2 x^{T} A^{T} b+b^{T} b \\ &=x^{T} x-2 x^{T} A^{T} b+b^{T} b\left(\because A^{T} A=I\right) \end{aligned} \end{equation}
 
-$$ \nabla f(x)=2 x-2 A^{T} b=0 \Rightarrow x=A^{T} b $$
+\begin{equation} \nabla f(x)=2 x-2 A^{T} b=0 \Rightarrow x=A^{T} b \end{equation}
 
 $ A A^{T} b $ 称为向量 $  {b} \in \mathbb{R}^{m} $ 在 $ \operatorname{range} (A)$上的\term{正交投影}.
 
 \begin{theorem}
-    $$ A x=A A^{T} b \in \operatorname{range}(A) $$
+    \begin{equation} A x=A A^{T} b \in \operatorname{range}(A) \end{equation}
 
     且是$b$在$C(A)$上的\term{投影}.
 \end{theorem}
 
 \begin{proof}
     1.
-    $$ A x=A A^{T} b \in \operatorname{range}(A) $$
+    \begin{equation} A x=A A^{T} b \in \operatorname{range}(A) \end{equation}
 
     2. 可以证明$ \hat{x}=A^{T} b $ 满足 $ \|A \hat{x}-b\|<\|A x-b\| $, 对于所有 $ x \neq \hat{x} $.
 
     b到range(A)内任意点 $ A x $ 的距离的平方和为:
 
-    $$ \begin{aligned}\|A x-b\|_{2}^{2} &=\|A(x-\hat{x})+A \hat{x}-b\|_{2}^{2} \quad\left(\text {其中 } \hat{x}=A^{T} b\right) \\ &=\|A(x-\hat{x})\|_{2}^{2}+\|A \hat{x}-b\|_{2}^{2}+2(x-\hat{x})^{T} A^{T}(A \hat{x}-b) \\ &=\|A(x-\hat{x})\|_{2}^{2}+\|A \hat{x}-b\|_{2}^{2} \\ &=\|(x-\hat{x})\|_{2}^{2}+\|A \hat{x}-b\|_{2}^{2} \\ & \geq\|A \hat{x}-b\|_{2}^{2} \end{aligned} $$
+    \begin{equation} \begin{aligned}\|A x-b\|_{2}^{2} &=\|A(x-\hat{x})+A \hat{x}-b\|_{2}^{2} \quad\left(\text {其中 } \hat{x}=A^{T} b\right) \\ &=\|A(x-\hat{x})\|_{2}^{2}+\|A \hat{x}-b\|_{2}^{2}+2(x-\hat{x})^{T} A^{T}(A \hat{x}-b) \\ &=\|A(x-\hat{x})\|_{2}^{2}+\|A \hat{x}-b\|_{2}^{2} \\ &=\|(x-\hat{x})\|_{2}^{2}+\|A \hat{x}-b\|_{2}^{2} \\ & \geq\|A \hat{x}-b\|_{2}^{2} \end{aligned} \end{equation}
 当且仅当 $ x=\hat{x} $, 等号成立。
 
 第3行成立是因为 $ A^{T}(A \hat{x}-b)=\hat{x}-A^{T} b=0 $ .

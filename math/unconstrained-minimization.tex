@@ -3,9 +3,9 @@
 \section{Introduction}
 
 Let $ g: \mathbf{R}^{n} \rightarrow \mathbf{R} $ be a scalar-valued function of $ n $ variables $ x=\left(x_{1}, x_{2}, \ldots, x_{n}\right) . $ We say $ x^{\star}=\left(x_{1}^{\star}, x_{2}^{\star}, \ldots, x_{n}^{\star}\right) $ minimizes $ g $ if $ g\left(x^{\star}\right) \leq g(x) $ for all $ n $-vectors $ x $. We use the notation
-$$
+\begin{equation}
 \text { minimize } g(x)
-$$
+\end{equation}
 to denote the problem of finding an $ x^{\star} $ that minimizes $ g $. This is called an $ u n $ constrained minimization problem, with variables $ x_{1}, \ldots, x_{n} $, and with objective function or cost function $ g $.
 
 If $ x^{\star} $ minimizes $ g $, then we say $ x^{\star} $ is a solution of the minimization problem, or a minimum of $ g . $ A minimum is also sometimes referred to as a global minimum. A vector $ x^{\star} $ is a local minimum if there exists an $ R>0 $ such that $ g\left(x^{\star}\right) \leq g(x) $ for all $ x $ with $ \left\|x-x^{\star}\right\| \leq R $. In other words, there is a neighborhood around $ x^{\star} $ in which $ g(x) \geq g\left(x^{\star}\right) $. In this chapter, minimum means global minimum. The word 'global' in 'global minimum' is redundant, but is sometimes added for emphasis.
@@ -38,66 +38,66 @@ or $ \min _{x} g(x) $. If $ x^{\star} $ is a minimum of $ g $, then $ g\left(x^{
 
 \begin{definition}
     Gradient The gradient of a function $ g(x) $ of $ n $ variables, at $ \hat{x} $, is the vector of first partial derivatives evaluated at $ \hat{x} $, and is denoted $ \nabla g(\hat{x}) $ :
-$$
+\begin{equation}
 \nabla g(\hat{x})=\left(\frac{\partial g}{\partial x_{1}}(\hat{x}), \frac{\partial g}{\partial x_{2}}(\hat{x}), \ldots, \frac{\partial g}{\partial x_{n}}(\hat{x})\right)
-$$
+\end{equation}
 The gradient is used in the first-order (or affine) approximation of $ g $ around $ \hat{x} $,
-$$
+\begin{equation}
 \begin{aligned}
 \hat{g}(x) &=g(\hat{x})+\sum_{i=1}^{n} \frac{\partial g}{\partial x_{i}}(\hat{x})\left(x_{i}-\hat{x}_{i}\right) \\
 &=g(\hat{x})+\nabla g(\hat{x})^{T}(x-\hat{x})
 \end{aligned}
-$$
+\end{equation}
 If $ n=1 $, the gradient is simply the first derivative $ g^{\prime}(\hat{x}) $, and the first-order approximation reduces to
-$$
+\begin{equation}
 \hat{g}(x)=g(\hat{x})+g^{\prime}(\hat{x})(x-\hat{x}) .
-$$
+\end{equation}
 \end{definition}
 
 \begin{definition}
     Hessian The Hessian of a function $ g(x) $ of $ n $ variables, at $ \hat{x} $, is the matrix of second partial derivatives evaluated at $ \hat{x} $, and is denoted as $ \nabla^{2} g(\hat{x}): $
-$$
+\begin{equation}
 \nabla^{2} g(\hat{x})=\left[\begin{array}{cccc}
 \frac{\partial^{2} g}{\partial x_{1}^{2}}(\hat{x}) & \frac{\partial^{2} g}{\partial x_{1} \partial x_{2}}(\hat{x}) & \cdots & \frac{\partial^{2} g}{\partial x_{1} \partial x_{n}}(\hat{x}) \\
 \frac{\partial^{2} g}{\partial x_{2} \partial x_{1}}(\hat{x}) & \frac{\partial^{2} g}{\partial x_{2}^{2}}(\hat{x}) & \cdots & \frac{\partial^{2} g}{\partial x_{2} \partial x_{n}}(\hat{x}) \\
 \vdots & \vdots & \ddots & \vdots \\
 \frac{\partial^{2} g}{\partial x_{n} \partial x_{1}}(\hat{x}) & \frac{\partial^{2} g}{\partial x_{n} \partial x_{2}}(\hat{x}) & \cdots & \frac{\partial^{2} g}{\partial x_{n}^{2}}(\hat{x})
 \end{array}\right] .
-$$
+\end{equation}
 This is a symmetric matrix, because
-$$
+\begin{equation}
 \frac{\partial^{2} g}{\partial x_{i} \partial x_{j}}(\hat{x})=\frac{\partial^{2} g}{\partial x_{j} \partial x_{i}}(\hat{x})
-$$
+\end{equation}
 \end{definition}
 
 The Hessian is related to the second-order (or quadratic) approximation of $ g $ around $ \hat{x} $, which is defined as
-$$
+\begin{equation}
 \begin{aligned}
 g_{\mathrm{q}}(x) &=g(\hat{x})+\sum_{i=1}^{n} \frac{\partial g}{\partial x_{i}}(\hat{x})\left(x_{i}-\hat{x}_{i}\right)+\frac{1}{2} \sum_{i=1}^{n} \sum_{j=1}^{n} \frac{\partial^{2} g}{\partial x_{i} \partial x_{j}}(\hat{x})\left(x_{i}-\hat{x}_{i}\right)\left(x_{j}-\hat{x}_{j}\right) \\
 &=g(\hat{x})+\nabla g(\hat{x})^{T}(x-\hat{x})+\frac{1}{2}(x-\hat{x})^{T} \nabla^{2} g(\hat{x})(x-\hat{x})
 \end{aligned}
-$$
+\end{equation}
 If $ n=1 $, the Hessian is the second derivative $ g^{\prime \prime}(\hat{x}) $, and the second-order approximation reduces to
-$$
+\begin{equation}
 g_{\mathrm{q}}(x)=g(\hat{x})+g^{\prime}(\hat{x})(x-\hat{x})+\frac{1}{2} g^{\prime \prime}(\hat{x})(x-\hat{x})^{2} .
-$$
+\end{equation}
 
 \begin{example}
     As an example, the Hessian of the function
-$$
+\begin{equation}
 g\left(x_{1}, x_{2}\right)=e^{x_{1}+x_{2}-1}+e^{x_{1}-x_{2}-1}+e^{-x_{1}-1}
-$$
+\end{equation}
 is
-$$
+\begin{equation}
 \nabla^{2} g(x)=\left[\begin{array}{cc}
 e^{x_{1}+x_{2}-1}+e^{x_{1}-x_{2}-1}+e^{-x_{1}-1} & e^{x_{1}+x_{2}-1}-e^{x_{1}-x_{2}-1} \\
 e^{x_{1}+x_{2}-1}-e^{x_{1}-x_{2}-1} & e^{x_{1}+x_{2}-1}+e^{x_{1}-x_{2}-1}
 \end{array}\right]
-$$
+\end{equation}
 so the second-order approximation around $ \hat{x}=0 $ is
-$$
+\begin{equation}
 g_{\mathrm{q}}(x)=\frac{1}{e}\left(3+x_{1}+(3 / 2) x_{1}^{2}+x_{2}^{2}\right) .
-$$
+\end{equation}
 \end{example}
 
 Properties 
@@ -105,52 +105,52 @@ Properties
 
 We list here a few properties that often simplify the task of calculating gradients and Hessians. These facts are straightforward (although sometimes tedious) to verify, directly from the definition of gradient and Hessian.
 1. Linear and affine functions. The gradient and Hessian of $ g(x)=a^{T} x+b $ are
-$$
+\begin{equation}
 \nabla g(x)=a, \quad \nabla^{2} g(x)=0 .
-$$
+\end{equation}
 
 2. Quadratic functions. The gradient and Hessian of $ g(x)=x^{T} P x+q^{T} x+r $, where $ P $ is a symmetric matrix, are
-$$
+\begin{equation}
 \nabla g(x)=2 P x+q, \quad \nabla^{2} g(x)=2 P .
-$$
+\end{equation}
 3. Sum of two functions. If $ g(x)=g_{1}(x)+g_{2}(x) $, then
-$$
+\begin{equation}
 \nabla g(x)=\nabla g_{1}(x)+\nabla g_{2}(x), \quad \nabla^{2} g(x)=\nabla^{2} g_{1}(x)+\nabla^{2} g_{2}(x) .
-$$
+\end{equation}
 4. Scalar multiplication. If $ g(x)=\alpha f(x) $ where $ \alpha $ is a scalar, then
-$$
+\begin{equation}
 \nabla g(x)=\alpha \nabla f(x), \quad \nabla^{2} g(x)=\alpha \nabla^{2} f(x)
-$$
+\end{equation}
 5. Composition with affine function. If $ g(x)=f(C x+d) $ where $ C $ is an $ m \times n $ matrix, $ d $ is an $ m $-vector, and $ f(y) $ is a function of $ m $ variables, then
-$$
+\begin{equation}
 \nabla g(x)=C^{T} \nabla f(C x+d), \quad \nabla^{2} g(x)=C^{T} \nabla^{2} f(C x+d) C .
-$$
+\end{equation}
 Note that $ f(C x+d) $ denotes the function $ f(y) $, evaluated at $ y=C x+d $. Similarly, $ \nabla f(C x+d) $ is the gradient $ \nabla f(y) $, evaluated at $ y=C x+d $, and $ \nabla^{2} f(C x+d) $ is the Hessian $ \nabla^{2} f(y) $, evaluated at $ y=C x+d $.
 
 \begin{example}
     Examples As a first example, consider the least-squares function
-$$
+\begin{equation}
 g(x)=\|A x-b\|^{2} .
-$$
+\end{equation}
 We can find the gradient and Hessian by expanding $ g $ in terms of its variables $ x_{i} $, and then taking the partial derivatives. An easier derivation is from the properties listed above. We can express $ g $ as
-$$
+\begin{equation}
 \begin{aligned}
 g(x) &=(A x-b)^{T}(A x-b) \\
 &=x^{T} A^{T} A x-b^{T} A x-x^{T} A^{T} b+b^{T} b \\
 &=x^{T} A^{T} A x-2 b^{T} A x+b^{T} b .
 \end{aligned}
-$$
+\end{equation}
 
 This shows that $ g $ is a quadratic function: $ g(x)=x^{T} P x+q^{T} x+r $ with $ P=A^{T} A $, $ q=-2 A^{T} b, r=b^{T} b . $ From property 2,
-$$
+\begin{equation}
 \nabla g(x)=2 A^{T} A x-2 A^{T} b, \quad \nabla^{2} g(x)=2 A^{T} A .
-$$
+\end{equation}
 An alternative derivation is based on property 5 . We can express $ g $ as $ g(x)= $ $ f(C x+d) $ where $ C=A, d=-b $, and
-$$
+\begin{equation}
 f(y)=\|y\|^{2}=\sum_{i=1}^{m} y_{i}^{2}
-$$
+\end{equation}
 The gradient and Hessian of $ f $ are
-$$
+\begin{equation}
 \nabla f(y)=\left[\begin{array}{c}
 2 y_{1} \\
 2 y_{2} \\
@@ -162,25 +162,25 @@ $$
 0 & 0 & \ddots & 0 \\
 0 & 0 & \cdots & 2
 \end{array}\right]=2 I
-$$
+\end{equation}
 
 Applying property 5 , we find that
-$$
+\begin{equation}
 \begin{aligned}
 \nabla g(x) &=A^{T} \nabla f(A x-b) \\
 &=2 A^{T}(A x-b) \\
 \nabla^{2} g(x) &=A^{T} \nabla^{2} f(A x-b) A \\
 &=2 A^{T} A
 \end{aligned}
-$$
+\end{equation}
 the same expressions as we derived before.
 We can use the same method to find the gradient and Hessian of the function in (5.1),
-$$
+\begin{equation}
 g\left(x_{1}, x_{2}\right)=e^{x_{1}+x_{2}-1}+e^{x_{1}-x_{2}-1}+e^{-x_{1}-1} .
-$$
+\end{equation}
 
 We can express $ g $ as $ g(x)=f(C x+d) $, where $ f(y)=e^{y_{1}}+e^{y_{2}}+e^{y_{3}} $, and
-$$
+\begin{equation}
 C=\left[\begin{array}{rr}
 1 & 1 \\
 1 & -1 \\
@@ -190,9 +190,9 @@ C=\left[\begin{array}{rr}
 -1 \\
 -1
 \end{array}\right]
-$$
+\end{equation}
 The gradient and Hessian of $ f $ are
-$$
+\begin{equation}
 \nabla f(y)=\left[\begin{array}{c}
 e^{y_{1}} \\
 e^{y_{2}} \\
@@ -202,9 +202,9 @@ e^{y_{1}} & 0 & 0 \\
 0 & e^{y_{2}} & 0 \\
 0 & 0 & e^{y_{3}}
 \end{array}\right]
-$$
+\end{equation}
 so it follows from property 5 that
-$$
+\begin{equation}
 \nabla g(x)=C^{T} \nabla f(C x+d)=\left[\begin{array}{rrr}
 1 & 1 & -1 \\
 1 & -1 & 0
@@ -213,10 +213,10 @@ e^{x_{1}+x_{2}-1} \\
 e^{x_{1}-x_{2}-1} \\
 e^{-x_{1}-1}
 \end{array}\right]
-$$
+\end{equation}
 
 and
-$$
+\begin{equation}
 \begin{array}{l}
 \nabla^{2} g(x)=C^{T} \nabla^{2} f(C x+d) C \\
 \quad=\left[\begin{array}{rrr}
@@ -232,7 +232,7 @@ e^{x_{1}+x_{2}-1} & 0 & \\
 -1 & 0
 \end{array}\right]
 \end{array}
-$$
+\end{equation}
 \end{example}
 
 Local optimality It is much harder to characterize optimality if $ g $ is not convex (i.e., if there are points where the Hessian is not positive semidefinite). It is not sufficient to set the gradient equal to zero, because such a point might correspond to a local minimum, a local maximum, or a saddle point (see for example, the second function in figure 5.1). However, we can state some simple conditions for local optimality.
@@ -252,9 +252,9 @@ We first consider the important case when the objective function $ g $ is convex
 For simplicity we assume that $ \nabla^{2} g(x) $ is positive definite everywhere, which is a little stronger than requiring $ \nabla^{2} g(x) $ to be positive semidefinite.
 
 Newton's method for solving nonlinear equations, applied to $ \nabla g(x)=0 $, is based on the iteration
-$$
+\begin{equation}
 x^{(k+1)}=x^{(k)}-\nabla^{2} g\left(x^{(k)}\right)^{-1} \nabla g\left(x^{(k)}\right), \quad k=0,1,2, \ldots
-$$
+\end{equation}
 
 \begin{algorithm}
     Algorithm 5.1. NEWTON'S METHOD FOR UNCONSTRAINED MINIMIZATION.
@@ -268,20 +268,20 @@ until a limit on the number of iterations is exceeded
 \end{algorithm}
 
 Since $ \nabla^{2} g(x) $ is positive definite, we can use the Cholesky factorization in step 3 . The vector $ v $ computed in the $ k $ th iteration is called the Newton step at $ x^{(k)} $ :
-$$
+\begin{equation}
 v^{(k)}=-\nabla^{2} g\left(x^{(k)}\right)^{-1} \nabla g\left(x^{(k)}\right) .
-$$
+\end{equation}
 The Newton step can be interpreted in several ways.
 Interpretation as solution of linearized optimality condition In chapter 4 we have seen that the iterates in Newton's method for solving nonlinear equations can be interpreted as solutions of linearized problems.
 If we linearize the optimality condition $ \nabla g(x)=0 $ near $ \hat{x}=x^{(k)} $ we obtain
-$$
+\begin{equation}
 \nabla g(x) \approx \nabla g(\hat{x})+\nabla^{2} g(\hat{x})(x-\hat{x})=0 .
-$$
+\end{equation}
 
 This is a linear equation in $ x $, with solution
-$$
+\begin{equation}
 x=\hat{x}-\nabla^{2} g(\hat{x})^{-1} \nabla g(\hat{x})=x^{(k)}+v^{(k)} .
-$$
+\end{equation}
 So the Newton step $ v^{(k)} $ is what must be added to $ x^{(k)} $ so that the linearized optimality condition holds.
 
 When $ n=1 $ this interpretation is particularly simple. The solution of the linearized optimality condition is the zero-crossing of the derivative $ g^{\prime}(x) $, which is monotonically increasing since $ g^{\prime \prime}(x)>0 $. Given our current approximation $ x^{(k)} $ of the solution, we form a first-order Taylor approximation of $ g^{\prime}(x) $ at $ x^{(k)} . $ The zerocrossing of this approximation is then $ x^{(k)}+v^{(k)} $. This interpretation is illustrated in figure $ 5.3 $.

@@ -6,48 +6,48 @@
     \label{Problem:ClusteringCenter}
     假设$N$个样本向量$ x_{1}, \ldots, x_{N} \in \mathbb{R}^{n} $, 需要找到中心向量（centroid）$z$满足
 
-    $$ \min _{z \in \mathbf{R}^{n}} \sum_{i=1}^{N}\left\|x_{i}-z\right\|_{2}^{2} $$
+    \begin{equation} \min _{z \in \mathbf{R}^{n}} \sum_{i=1}^{N}\left\|x_{i}-z\right\|_{2}^{2} \end{equation}
 \end{problem}
 
 \begin{definition}[高阶无穷小(记号 $o$)]
-    设 $ x, y $ 是同一变化过程中的无穷小, 即 $ x \rightarrow 0, y \rightarrow 0 $, 如果
+    设 $ x, y $ 是同一变化过程中的无穷小， 即 $ x \rightarrow 0, y \rightarrow 0 $, 如果
 
-$$
+\begin{equation}
 \lim_{x \rightarrow 0, y \rightarrow 0} \frac{y}{x}=0
-$$
+\end{equation}
 
-则称 $ y $ 是 $ x $ 的高阶无穷小, 记作 $ y=o(x) $.
+则称 $ y $ 是 $ x $ 的高阶无穷小， 记作 $ y=o(x) $.
 \end{definition}
 
 \begin{corollary}
-    $$ \lim_{x \rightarrow 0, y \rightarrow 0} \frac{y}{C x}=\frac{1}{C} \lim_{x \rightarrow 0, y \rightarrow 0} \frac{y}{x}=0 $$
+    \begin{equation} \lim_{x \rightarrow 0, y \rightarrow 0} \frac{y}{C x}=\frac{1}{C} \lim_{x \rightarrow 0, y \rightarrow 0} \frac{y}{x}=0 \end{equation}
 
-    也即则称 $ y $ 是 $ C x $ 的高阶无穷小, 记作 $ y=o(C x) $ . 
+    也即则称 $ y $ 是 $ C x $ 的高阶无穷小， 记作 $ y=o(C x) $ . 
 \end{corollary}
 
 \begin{theorem}[凸优化求解的必要条件]
-    假设函数$f$在$\hat{x}$可微, 则有
+    假设函数$f$在$\hat{x}$可微， 则有
 
-    $$ \hat{x}=\arg \min _{x \in \mathbb{R}^{n}} f(x) \Rightarrow \nabla f(\hat{x})=0 $$
+    \begin{equation} \hat{x}=\arg \min _{x \in \mathbb{R}^{n}} f(x) \Rightarrow \nabla f(\hat{x})=0 \end{equation}
 \end{theorem}
 
 \begin{proof}
-    假设函数$f$在$\hat{x}$一阶泰勒展开, 有
+    假设函数$f$在$\hat{x}$一阶泰勒展开， 有
 
-    $$ f(x)=f(\hat{x})+\langle\nabla f(\hat{x}), x-\hat{x}\rangle+o\left(\|x-\hat{x}\|_{2}\right) $$
+    \begin{equation} f(x)=f(\hat{x})+\langle\nabla f(\hat{x}), x-\hat{x}\rangle+o\left(\|x-\hat{x}\|_{2}\right) \end{equation}
 
     假设$ \Delta f(\hat{x}) \neq 0 $, 则令 $ \tilde{x}=\hat{x}-t \nabla f(\hat{x}), t>0 $,可得
 
-    $$ f(\tilde{x})=f(\hat{x})-t\|\nabla f(\hat{x})\|_{2}^{2}+o\left(t\|\nabla f(\hat{x})\|_{2}\right) $$
+    \begin{equation} f(\tilde{x})=f(\hat{x})-t\|\nabla f(\hat{x})\|_{2}^{2}+o\left(t\|\nabla f(\hat{x})\|_{2}\right) \end{equation}
 
     当 $ t \rightarrow 0 $ 则$ t\|\nabla f(\hat{x})\|_{2} \rightarrow 0 $,  高阶无穷小$ {o }\left(t\|\nabla f(\hat{x})\|_{2}\right) \rightarrow 0 $.
 
-    当$t$足够小时, 存在$$ t\|\nabla f(\hat{x})\|_{2} \geq o\left(t\|\nabla f(\hat{x})\|_{2}\right) $$
+    当$t$足够小时， 存在\begin{equation} t\|\nabla f(\hat{x})\|_{2} \geq o\left(t\|\nabla f(\hat{x})\|_{2}\right) \end{equation}
     
     即$ -t\|\nabla f(\hat{x})\|_{2}^{2}+o\left(t\|\nabla f(\hat{x})\|_{2}\right) \leq 0 $
 
     所以
-    $$ f(\tilde{x})=f(\hat{x})-t\|\nabla f(\hat{x})\|_{2}^{2}+o\left(t\|\nabla f(\hat{x})\|_{2}\right) \leq f(\hat{x}) $$
+    \begin{equation} f(\tilde{x})=f(\hat{x})-t\|\nabla f(\hat{x})\|_{2}^{2}+o\left(t\|\nabla f(\hat{x})\|_{2}\right) \leq f(\hat{x}) \end{equation}
     
     与 $ \hat{x}=\arg \min _{\mathbf{R}^{n}} f(x) $ 矛盾。 
 
@@ -59,12 +59,12 @@ $$
 \end{remark}
 
 \begin{example}
-    $$ f(x)=-x^{2},  x \in \mathbb{R}, \hat{x}=\arg \min _{\mathbb{R}} f(x) $$
+    \begin{equation} f(x)=-x^{2},  x \in \mathbb{R}, \hat{x}=\arg \min _{\mathbb{R}} f(x) \end{equation}
 
     $ \nabla f(\hat{x})=0 $, 则有 $ -2 \hat{x}=0 $, 即 $ \hat{x}=0 $.
 
     所以
-    $$ f(\hat{x})=0 \geq f(x), \quad x \in \mathbf{R} $$
+    \begin{equation} f(\hat{x})=0 \geq f(x), \quad x \in \mathbf{R} \end{equation}
 
 
 \end{example}
@@ -73,7 +73,7 @@ $$
 
 \begin{definition}[凸集]
     $ \forall x, y \in \Omega, \alpha \in \mathbb{R}, 0 \leq \alpha \leq 1 $有
-    $$ \alpha x+(1-\alpha) y \in \Omega $$
+    \begin{equation} \alpha x+(1-\alpha) y \in \Omega \end{equation}
 
     则定义域$ \Omega \in \mathbb{R}^{n} $称为凸的(Convex)集合。
 \end{definition}
@@ -82,7 +82,7 @@ $$
 
 \begin{definition}[凸函数]
     设函数 $ f(x) $ 定义于称为\term{凸的定义域} $ \Omega \in \mathbb{R}^{n} $满足
-    $$ f(\alpha x+(1-\alpha) y) \leq \alpha f(x)+(1-\alpha) f(y), \forall x, y \in \Omega, \alpha \in \mathbf{R}, 0 \leq \alpha \leq 1 $$
+    \begin{equation} f(\alpha x+(1-\alpha) y) \leq \alpha f(x)+(1-\alpha) f(y), \forall x, y \in \Omega, \alpha \in \mathbf{R}, 0 \leq \alpha \leq 1 \end{equation}
 
     称其为凸函数。 
 \end{definition}
@@ -138,29 +138,29 @@ $$
 
 \begin{example}
     \label{Example:SquareIsConvex}
-    $$ f(x)=x^{2}, x \in \mathbf{R} $$
+    \begin{equation} f(x)=x^{2}, x \in \mathbf{R} \end{equation}
 
-    $$\begin{aligned}
+    \begin{equation}\begin{aligned}
         f(\alpha x+(1-\alpha )y) & =(\alpha x+(1-\alpha )y)^{2}\\
          & =\textcolor[rgb]{0.96,0.65,0.14}{\alpha ^{2} x^{2}} +2\alpha (1-\alpha )xy+\textcolor[rgb]{0.25,0.46,0.02}{(1-\alpha )^{2} y^{2}}\\
          & =\textcolor[rgb]{0.96,0.65,0.14}{\alpha x^{2}} +\textcolor[rgb]{0.25,0.46,0.02}{(1-\alpha )y^{2}} +\textcolor[rgb]{0.96,0.65,0.14}{\left( \alpha ^{2} -\alpha \right) x^{2}} +\textcolor[rgb]{0.25,0.46,0.02}{\left( \alpha ^{2} -\alpha \right) y^{2}} +2\alpha (1-\alpha )xy\\
          & =\alpha x^{2} +(1-\alpha )y^{2} -\alpha (1-\alpha )(x-y)^{2}\\
          & \leq \alpha x^{2} +(1-\alpha )y^{2} =\alpha f(x)+(1-\alpha )f(y)
-        \end{aligned}$$
+        \end{aligned}\end{equation}
 \end{example}
 
 \begin{example}
     \label{Example:NormIsConvex}
-    $ f(x)=\|x\| $, 其中 $ \|  \cdot \| $ 表示 $ \mathbb{R}^{n} $ 上的向量范数, $ x \in \mathbb{R}^{n} $.
+    $ f(x)=\|x\| $, 其中 $ \|  \cdot \| $ 表示 $ \mathbb{R}^{n} $ 上的向量范数， $ x \in \mathbb{R}^{n} $.
 \end{example}
 
 \begin{proof}
     \label{Example:L2NormIsConvex}
-    $$ \|\alpha x+(1-\alpha) y\| \leq\|\alpha x\|+\|(1-\alpha) y\|=|\alpha|\|x\|+|1-\alpha|\|y\| $$
+    \begin{equation} \|\alpha x+(1-\alpha) y\| \leq\|\alpha x\|+\|(1-\alpha) y\|=|\alpha|\|x\|+|1-\alpha|\|y\| \end{equation}
 \end{proof}
 
 \begin{example}
-    $$ f(x)=\|x\|_{2}^{2}, x \in \mathbb{R}^{n} $$
+    \begin{equation} f(x)=\|x\|_{2}^{2}, x \in \mathbb{R}^{n} \end{equation}
 \end{example}
 
 \subsection{凸函数的充要条件}
@@ -169,19 +169,19 @@ $$
     \label{Theorem:ConvexDiffential}
 
     可微函数$f$是凸函数等价于
-    $$ f(y) \geq f(x)+\langle\nabla f(x), y-x\rangle, \quad \forall x, y $$
+    \begin{equation} f(y) \geq f(x)+\langle\nabla f(x), y-x\rangle, \quad \forall x, y \end{equation}
 \end{theorem}
 
 \begin{proof}
-    1. 首先, 证明一维情况 $ f: \mathbb{R} \rightarrow \mathbb{R}, \alpha \in[0,1] $.
+    1. 首先， 证明一维情况 $ f: \mathbb{R} \rightarrow \mathbb{R}, \alpha \in[0,1] $.
 
     $ \Rightarrow  $ 充分条件: 
     
     由可微函数$f$是凸函数可知
-    $$ f(\alpha x+(1-\alpha) y)=f(x+(1-\alpha)(y-x)) \leq \alpha f(x)+(1-\alpha) f(y) $$
+    \begin{equation} f(\alpha x+(1-\alpha) y)=f(x+(1-\alpha)(y-x)) \leq \alpha f(x)+(1-\alpha) f(y) \end{equation}
     
     因此有
-    $$ f(y) \geq f(x)+\frac{f(x+(1-\alpha)(y-x))-f(x)}{(1-\alpha)(y-x)}(y-x) $$
+    \begin{equation} f(y) \geq f(x)+\frac{f(x+(1-\alpha)(y-x))-f(x)}{(1-\alpha)(y-x)}(y-x) \end{equation}
 
     令 $ \alpha \rightarrow 1^- $, 则有 $ f(y) \geq f(x)+f^{\prime}(x)(y-x) $.
 
@@ -189,15 +189,15 @@ $$
     
     令 $ y \neq x, z=\alpha x+(1-\alpha) y$则有
 
-    $$  f(x) \geq f(z)+f^{\prime}(z)(x-z), f(y) \geq f(z)+f^{\prime}(z)(y-z)  $$
+    \begin{equation}  f(x) \geq f(z)+f^{\prime}(z)(x-z), f(y) \geq f(z)+f^{\prime}(z)(y-z)  \end{equation}
 
     可得 
-    $$\begin{aligned}
+    \begin{equation}\begin{aligned}
         \alpha f(x)+(1-\alpha) f(y) &\geq f(z)+\alpha f^{\prime}(z)(x-z)+(1-\alpha) f^{\prime}(z)(y-z) \\
         &=f(z)+f^{\prime}(z)(\alpha x+(1-\alpha) y-z) \\
         &=f(z)
     \end{aligned}
-    $$
+    \end{equation}
 
     满足凸函数定义，所以$f$是凸函数。
 
@@ -205,20 +205,20 @@ $$
 
     $ \Rightarrow $ 充分条件：
     
-    令 $$ g(t)=f(t x+(1-t) y), t \in \mathbb{R} $$
+    令 \begin{equation} g(t)=f(t x+(1-t) y), t \in \mathbb{R} \end{equation}
 
-    则$$ g^{\prime}(t)=\langle\nabla f(t x+(1-t) y), x-y\rangle $$
+    则\begin{equation} g^{\prime}(t)=\langle\nabla f(t x+(1-t) y), x-y\rangle \end{equation}
 
-    由于 $ f $ 是凸函数, 证明 $ g(t) $ 也是凸函数；并可得 $ g(0) \geq g(1)+g^{\prime}(1)(-1) $, 得证。
+    由于 $ f $ 是凸函数， 证明 $ g(t) $ 也是凸函数；并可得 $ g(0) \geq g(1)+g^{\prime}(1)(-1) $, 得证。
 
     $ \Leftarrow $ 必要条件：
     与一维类似。 (将$f^{\prime}$改为$\nabla f(z)^T$) 
 \end{proof}
 
 \begin{theorem}
-    如果可微函数$f$是凸函数, 则有
+    如果可微函数$f$是凸函数， 则有
 
-    $$ \hat{x}=\arg \min _{x \in \mathbb{R}^{n}} f(x) \Leftrightarrow \nabla f(\hat{x})=0 $$
+    \begin{equation} \hat{x}=\arg \min _{x \in \mathbb{R}^{n}} f(x) \Leftrightarrow \nabla f(\hat{x})=0 \end{equation}
 \end{theorem}
 
 \begin{proof}
@@ -226,14 +226,14 @@ $$
 
     只需证 $ \nabla f(\hat{x})=0 \Rightarrow \hat{x}=\arg \min _{x \in \mathbb{R}^{n}} f(x) $.
 
-    由于函数 $ f $ 是可微凸的, 则有 $ \forall x \in \mathbb{R}^{n} $,
-$$
+    由于函数 $ f $ 是可微凸的， 则有 $ \forall x \in \mathbb{R}^{n} $,
+\begin{equation}
 \begin{aligned}
 f(x) & \geq f(\hat{x})+\langle\nabla f(\hat{x}), x-\hat{x}\rangle \\
 & = f(\hat{x})+\langle 0, x-\hat{x}\rangle 
 \\ & \geq f(\hat{x})
 \end{aligned}
-$$
+\end{equation}
 
 可得 $ f(x) \geq f(\hat{x}), \hat{x}=\arg \min _{x \in \mathbb{R}^{n}} f(x) $.
 \end{proof}
@@ -242,16 +242,16 @@ $$
 
 \begin{definition}[向量对向量的导数]
     \label{Definition:VectorVectorDerivative}
-    $$ x=\left[\begin{array}{c}x_{1} \\ \vdots \\ x_{n}\end{array}\right], z=\left[\begin{array}{c}z_{1} \\ \vdots \\ z_{n}\end{array}\right] $$
+    \begin{equation} x=\left[\begin{array}{c}x_{1} \\ \vdots \\ x_{n}\end{array}\right], z=\left[\begin{array}{c}z_{1} \\ \vdots \\ z_{n}\end{array}\right] \end{equation}
 
-    $$ \nabla f(z)=\left[\begin{array}{c}\frac{\partial f(z)}{\partial z_{1}} \\ \vdots \\ \frac{\partial f(z)}{\partial z_{n}}\end{array}\right] $$
+    \begin{equation} \nabla f(z)=\left[\begin{array}{c}\frac{\partial f(z)}{\partial z_{1}} \\ \vdots \\ \frac{\partial f(z)}{\partial z_{n}}\end{array}\right] \end{equation}
 \end{definition}
 
 \begin{example}
-    $$ f(z)=x^{T} z+z^{T} z=\sum_{i=1}^{n}\left\{x_{i} z_{i}+z_{i}^{2}\right\} $$
+    \begin{equation} f(z)=x^{T} z+z^{T} z=\sum_{i=1}^{n}\left\{x_{i} z_{i}+z_{i}^{2}\right\} \end{equation}
 
     它的导数是
-    $$ \nabla f(z)=\left[\begin{array}{c}\frac{\partial f(z)}{\partial z_{1}} \\ \vdots \\ \frac{\partial f(z)}{\partial z_{n}}\end{array}\right]=\left[\begin{array}{c}x_{1}+2 z_{1} \\ \vdots \\ x_{n}+2 z_{n}\end{array}\right]=x+2 z $$
+    \begin{equation} \nabla f(z)=\left[\begin{array}{c}\frac{\partial f(z)}{\partial z_{1}} \\ \vdots \\ \frac{\partial f(z)}{\partial z_{n}}\end{array}\right]=\left[\begin{array}{c}x_{1}+2 z_{1} \\ \vdots \\ x_{n}+2 z_{n}\end{array}\right]=x+2 z \end{equation}
 \end{example}
 
 
@@ -260,13 +260,13 @@ $$
 \begin{proof}
     
 
-$$ f(z)=\sum_{i=1}^{N}\left\|x_{i}-z\right\|_{2}^{2}=\sum_{i=1}^{N}\left\langle x_{i}-z, x_{i}-z\right\rangle=\sum_{i=1}^{N}\left\{x_{i}^{T} x_{i}-2 x_{i}^{T} z+z_{i}^{T} z\right\} $$
+\begin{equation} f(z)=\sum_{i=1}^{N}\left\|x_{i}-z\right\|_{2}^{2}=\sum_{i=1}^{N}\left\langle x_{i}-z, x_{i}-z\right\rangle=\sum_{i=1}^{N}\left\{x_{i}^{T} x_{i}-2 x_{i}^{T} z+z_{i}^{T} z\right\} \end{equation}
 
 利用等价条件\ref{Theorem:ConvexDiffential}
 
-$$ \nabla f(z)=\sum_{i=1}^{N}\left\{-2 x_{i}+2 z\right\}=0 $$ (求导 \ref{Definition:VectorVectorDerivative})
+\begin{equation} \nabla f(z)=\sum_{i=1}^{N}\left\{-2 x_{i}+2 z\right\}=0 \end{equation} (求导 \ref{Definition:VectorVectorDerivative})
 
-$$ z=\frac{1}{N} \sum_{i=1}^{N} x_{i} $$
+\begin{equation} z=\frac{1}{N} \sum_{i=1}^{N} x_{i} \end{equation}
 \end{proof}
 
 另解：
@@ -274,17 +274,17 @@ $$ z=\frac{1}{N} \sum_{i=1}^{N} x_{i} $$
 \begin{proof}
     $ J\left(x_{0}\right)=\sum_{i=1}^{n}\left\|x_{0}-x_{i}\right\|^{2} ， $ 其中 $ m=\frac{1}{n} \sum_{i=1}^{n} x_{i} $
 
-    $$\begin{aligned}
+    \begin{equation}\begin{aligned}
         J\left(x_{0}\right)&=\sum_{i=1}^{n}\left\|\left(x_{0}-m\right)-\left(x_{i}-m\right)\right\|^{2} \\
         &=\sum_{i=1}^{n}\left\|x_{0}-m\right\|^{2}-2 \sum_{i=1}^{n}\left(x_{0}-m\right)^{T}\left(x_{i}-m\right)+\sum_{i=1}^{n}\left\|x_{i}-m\right\|^{2} \\
         &= \sum_{i=1}^{n}\left\|x_{0}-m\right\|^{2}-2\left(x_{0}-m\right)^{T} \sum_{i=1}^{n}\left(x_{i}-m\right)+\sum_{i=1}^{n}\left\|x_{i}-m\right\|^{2}
-    \end{aligned}$$
+    \end{aligned}\end{equation}
 
 
 因为
-$$ \sum_{i=1}^{n}\left(x_{i}-m\right)=\sum_{i=1}^{n} x_{i}-n m=\sum_{i=1}^{n} x_{i}-n \cdot \frac{1}{n} \sum_{i=1}^{n} x_{i}=0 $$
+\begin{equation} \sum_{i=1}^{n}\left(x_{i}-m\right)=\sum_{i=1}^{n} x_{i}-n m=\sum_{i=1}^{n} x_{i}-n \cdot \frac{1}{n} \sum_{i=1}^{n} x_{i}=0 \end{equation}
 
-所以有 $$ J\left(x_{0}\right)=\sum_{i=1}^{n}\left\|x_{0}-m\right\|^{2}+\sum_{i=1}^{n}\left\|x_{i}-m\right\|^{2} $$
+所以有 \begin{equation} J\left(x_{0}\right)=\sum_{i=1}^{n}\left\|x_{0}-m\right\|^{2}+\sum_{i=1}^{n}\left\|x_{i}-m\right\|^{2} \end{equation}
 
 即当$x_0$等于均值时，目标函数有最小均方。
 \end{proof}
@@ -327,9 +327,9 @@ $$ \sum_{i=1}^{n}\left(x_{i}-m\right)=\sum_{i=1}^{n} x_{i}-n m=\sum_{i=1}^{n} x_
 
 
 \begin{problem}
-    假设$ a, b \in \mathbb{R}^{n}, a \neq 0, t \in \mathbb{R}$, 当$t$ 多大时, $ta$到$b$之间的距离最小
+    假设$ a, b \in \mathbb{R}^{n}, a \neq 0, t \in \mathbb{R}$, 当$t$ 多大时， $ta$到$b$之间的距离最小
 
-    $$ \hat{t}=\min _{t}\|t a-b\|_{2}^{2} $$
+    \begin{equation} \hat{t}=\min _{t}\|t a-b\|_{2}^{2} \end{equation}
 \end{problem}
 
     \begin{remark}
@@ -337,13 +337,13 @@ $$ \sum_{i=1}^{n}\left(x_{i}-m\right)=\sum_{i=1}^{n} x_{i}-n m=\sum_{i=1}^{n} x_
     \end{remark}
 
     定义
-    $$ f(t)=\|t a-b\|_{2}^{2}=\langle t a-b, t a-b\rangle=t^{2} a^{T} a-2 t a^{T} b+b^{T} b $$
+    \begin{equation} f(t)=\|t a-b\|_{2}^{2}=\langle t a-b, t a-b\rangle=t^{2} a^{T} a-2 t a^{T} b+b^{T} b \end{equation}
 
     It is a quadratic function of $ t $ with positive leading coefficient $ a^{T} a $. 可以验证$f(t)$满足凸函数的定义。
 
-    $$ \nabla f(t)=2 t a^{T} a-2 a^{T} b=0 $$
+    \begin{equation} \nabla f(t)=2 t a^{T} a-2 a^{T} b=0 \end{equation}
 
-    $$ \hat{t}=\frac{a^{T} b}{a^{T} a}=\frac{a^{T} b}{\|a\|_{2}^{2}} $$
+    \begin{equation} \hat{t}=\frac{a^{T} b}{a^{T} a}=\frac{a^{T} b}{\|a\|_{2}^{2}} \end{equation}
 
 
 
@@ -409,13 +409,13 @@ $$ \sum_{i=1}^{n}\left(x_{i}-m\right)=\sum_{i=1}^{n} x_{i}-n m=\sum_{i=1}^{n} x_
 
 
 
-目标：分成$k$个集合, 尽量使得同一个集合中的向量彼此接近。 
+目标：分成$k$个集合， 尽量使得同一个集合中的向量彼此接近。 
 
 \begin{notation}
     给定N个n维向量 $ x_{1}, \ldots, x_{N} \in \mathbb{R}^{n} $
 
     \begin{itemize}
-        \item 标签 $ c_{i} \in\{1,2, \cdots, k\} $ 表示向量 $ x_{i} $ 所属类别, 例如 $ c_{i}=2 $ 表示 $ x_{i} $ 属于第2类。 
+        \item 标签 $ c_{i} \in\{1,2, \cdots, k\} $ 表示向量 $ x_{i} $ 所属类别， 例如 $ c_{i}=2 $ 表示 $ x_{i} $ 属于第2类。 
         \item 对于 $ j=1, \ldots, k, \quad G_{j}=\left\{i: c_{i}=j\right\} $ 表示属于第j类的向量 $ x_{i} $ 的下标集合。 
         \item 向量 $ z_{j}, j=1, \ldots, k $, 表示同属于 $ j $ 类的向量 $ x_{i}, i \in G_{j} $ 的聚类中心。 
     \end{itemize}
@@ -424,10 +424,10 @@ $$ \sum_{i=1}^{n}\left(x_{i}-m\right)=\sum_{i=1}^{n} x_{i}-n m=\sum_{i=1}^{n} x_
 聚类目标是找到向量 $ x_{i} $ 的“标签 $ c_{i} $”和“聚类中心 $ z_{j} $”。
 
 \begin{problem}
-    $$ \min _{z_{j}} \sum_{i \in G_{j}}\left\|x_{i}-z_{j}\right\|_{2}^{2}, j=1, \cdots, k $$
+    \begin{equation} \min _{z_{j}} \sum_{i \in G_{j}}\left\|x_{i}-z_{j}\right\|_{2}^{2}, j=1, \cdots, k \end{equation}
 
-    $$ c_{i}=
-    \arg \min_{j=\{1, \cdots, k\}} \left\|x_{i}-z_{j}\right\|_{2}^{2}, i=1,2, \ldots, N $$
+    \begin{equation} c_{i}=
+    \arg \min_{j=\{1, \cdots, k\}} \left\|x_{i}-z_{j}\right\|_{2}^{2}, i=1,2, \ldots, N \end{equation}
 
     
 \end{problem}
@@ -436,28 +436,28 @@ $k$-means算法是将 $ {N} $ 向量 $ x_{i} \in \mathbb{R}^{n} $ 划分成$k$�
 
 \begin{algorithm}
     \caption{$k$-means Algorithm}
-    在 $ {N} $ 个点中随机选取$k$个点, 分别作为聚类中心 $ z_{j} $\;
-    更新聚类标签 $ c_{i} $ : 计算每个点 $ x_{i} $ 到k个聚类中心 $ z_{j} $ 的距离, 并将其分配到最近的聚类中心 $ z_{j} $ 所在的聚类中 $ c_{i}=j $\;
-    更新聚类中心 $ z_{j} $ ：重新计算每个聚类现在的质心, 并以其作作为新的聚类中心, 根据更新标签 $ c_{i} $, 更新属于第j类下标集合$ G_{j}=\left\{i: c_{i}=j\right\} $, 重新计算 $ c_{i} $ 类的聚类中心 $ z_{j} $\;
+    在 $ {N} $ 个点中随机选取$k$个点， 分别作为聚类中心 $ z_{j} $\;
+    更新聚类标签 $ c_{i} $ : 计算每个点 $ x_{i} $ 到k个聚类中心 $ z_{j} $ 的距离， 并将其分配到最近的聚类中心 $ z_{j} $ 所在的聚类中 $ c_{i}=j $\;
+    更新聚类中心 $ z_{j} $ ：重新计算每个聚类现在的质心， 并以其作作为新的聚类中心， 根据更新标签 $ c_{i} $, 更新属于第j类下标集合$ G_{j}=\left\{i: c_{i}=j\right\} $, 重新计算 $ c_{i} $ 类的聚类中心 $ z_{j} $\;
     重复步骤2、3, 直到所有聚类中心不再变化
 \end{algorithm}
 
 \begin{proof}
     更新聚类标签 $ c_{i} $:
 
-    $$ \left\|x_{i}-z_{j}\right\|_{2}^{2}=\arg \min \left\{\left\|x_{i}-z_{1}\right\|_{2}^{2},\left\|x_{i}-z_{2}\right\|_{2}^{2}, \cdots,\left\|x_{i}-z_{k}\right\|_{2}^{2}\right\} $$
+    \begin{equation} \left\|x_{i}-z_{j}\right\|_{2}^{2}=\arg \min \left\{\left\|x_{i}-z_{1}\right\|_{2}^{2},\left\|x_{i}-z_{2}\right\|_{2}^{2}, \cdots,\left\|x_{i}-z_{k}\right\|_{2}^{2}\right\} \end{equation}
 
     更新聚类中心 $ z_{j} $：
 
-    $$ \nabla f_{j}\left(z_{j}\right)=\sum_{i \in G_{j}} 2\left(x_{i}-z_{j}\right)=0 $$
-$$ z_{j}=\frac{1}{\left|G_{j}\right|} \sum_{i \in G_{j}} x_{i} $$
+    \begin{equation} \nabla f_{j}\left(z_{j}\right)=\sum_{i \in G_{j}} 2\left(x_{i}-z_{j}\right)=0 \end{equation}
+\begin{equation} z_{j}=\frac{1}{\left|G_{j}\right|} \sum_{i \in G_{j}} x_{i} \end{equation}
 
 $ \left|G_{j}\right| $ 表示集合 $ G_{j} $ 中元素的数目。 
 \end{proof}
 
-在每一次迭代中目标函数$J$都会下降, 直到聚类中心 $ z_{1}, \cdots, z_{k} $ 和 划分聚类标签集合 $ G_{1}, \cdots, G_{k} $ 不再变化。 
+在每一次迭代中目标函数$J$都会下降， 直到聚类中心 $ z_{1}, \cdots, z_{k} $ 和 划分聚类标签集合 $ G_{1}, \cdots, G_{k} $ 不再变化。 
 
-但是$k$-means算法依赖于初始随机生成的聚类中心, 只可得到目标函数$J$的局部局部最优。 
+但是$k$-means算法依赖于初始随机生成的聚类中心， 只可得到目标函数$J$的局部局部最优。 
 
-解决方案：使用不同的(随机的)初始聚类中心运行$k$-means算法若干次, 取目标函数$J$值最小的一次作为最终的聚类结果。 
+解决方案：使用不同的(随机的)初始聚类中心运行$k$-means算法若干次， 取目标函数$J$值最小的一次作为最终的聚类结果。 
 

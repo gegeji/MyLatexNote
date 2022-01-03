@@ -66,7 +66,7 @@ Source: \cite{Hu2017a}
 \end{definition}
 
 \begin{definition}[Road Segment Projection]
-    $$ C_{i}=\arg \min _{\forall C_{i} \in r_{i}} \operatorname{dist}\left(r_{i}, S\right) $$
+    \begin{equation} C_{i}=\arg \min _{\forall C_{i} \in r_{i}} \operatorname{dist}\left(r_{i}, S\right) \end{equation}
 \end{definition}
 
 \begin{definition}[Candidate Points]
@@ -77,7 +77,7 @@ Source: \cite{Hu2017a}
 
 \subsection{准备候选路段}
 
-在给定半径$R$，投影得到candidate road segments (CRS) and candidate points (CP) for each $S_i$
+在给定半径$R$,投影得到candidate road segments (CRS) and candidate points (CP) for each $S_i$
 
 \begin{remark}
     如何投影？如果投影端点在$R$以外？
@@ -87,7 +87,7 @@ Source: \cite{Hu2017a}
 
 按照日为周期求加权平均
 
-$$ V_{(T)}=\frac{\sum_{i=1}^{12} v_{i} \times\left(1-\frac{\left|T-t_{i}\right|}{24}\right)}{12} $$
+\begin{equation} V_{(T)}=\frac{\sum_{i=1}^{12} v_{i} \times\left(1-\frac{\left|T-t_{i}\right|}{24}\right)}{12} \end{equation}
 
 \subsection{Surrounding Speed Estimation}
 
@@ -105,7 +105,7 @@ $$ V_{(T)}=\frac{\sum_{i=1}^{12} v_{i} \times\left(1-\frac{\left|T-t_{i}\right|}
 
 定义\term{观察概率}
 
-$$ N\left(x_{i}^{j}\right)=\frac{1}{\delta \sqrt{2 \pi}} e^{-\frac{\left(x_{i}^{j}-\mu\right)^{2}}{2 \delta^{2}}} $$
+\begin{equation} N\left(x_{i}^{j}\right)=\frac{1}{\delta \sqrt{2 \pi}} e^{-\frac{\left(x_{i}^{j}-\mu\right)^{2}}{2 \delta^{2}}} \end{equation}
 
 where $ x_{i}^{j}=\operatorname{dist}\left(C_{i}^{j}, S_{i}\right) $ is the distance between $ C_{i}^{j} $ （候选点） and $ S_{i} $ （采样位置点）。
 
@@ -113,21 +113,21 @@ where $ x_{i}^{j}=\operatorname{dist}\left(C_{i}^{j}, S_{i}\right) $ is the dist
 
 假设以最短路径运行。
 
-$$ W\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right)=\frac{d_{(i-1) \rightarrow i}}{w_{(i-1, j) \rightarrow(i, k)}} $$
+\begin{equation} W\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right)=\frac{d_{(i-1) \rightarrow i}}{w_{(i-1, j) \rightarrow(i, k)}} \end{equation}
 
-where $ d_{(i-1) \rightarrow i}=\operatorname{dist}\left(S_{i}, S_{i-1}\right) $ is the Euclidean distance between $ S_{i} $ and $ S_{i-1} $ （采样点的欧几里得距离）, and $ w_{(i-1, j) \longrightarrow(i, k)} $ is the length of the shortest path from $ C_{i-1}^{j} $ to $ C_{i}^{k} $（候选点的最短路径距离）。
+where $ d_{(i-1) \rightarrow i}=\operatorname{dist}\left(S_{i}, S_{i-1}\right) $ is the Euclidean distance between $ S_{i} $ and $ S_{i-1} $ （采样点的欧几里得距离）， and $ w_{(i-1, j) \longrightarrow(i, k)} $ is the length of the shortest path from $ C_{i-1}^{j} $ to $ C_{i}^{k} $（候选点的最短路径距离）。
 
 \subsubsection{选择概率}
 
 考虑轨迹方向和候选路段方向的相似性
 
-$$ D\left(C_{i}^{j}\right)=1-\frac{\arccos \frac{\overrightarrow{D_{c}} \cdot \overrightarrow{D_{s}}}{\left|\vec{D}_{c}\right|\left|\overrightarrow{{D}_{s}}\right|}}{2 \pi} $$
+\begin{equation} D\left(C_{i}^{j}\right)=1-\frac{\arccos \frac{\overrightarrow{D_{c}} \cdot \overrightarrow{D_{s}}}{\left|\vec{D}_{c}\right|\left|\overrightarrow{{D}_{s}}\right|}}{2 \pi} \end{equation}
 
 where $ \overrightarrow{D_{S}} $ is the moving object's direction vector, and $ \overrightarrow{D_{C}} $ is the candidate road segment's direction vector.
 
 可能性结果函数：
 
-$$ S\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right)=N\left(x_{i}^{j}\right) \cdot W\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right) \cdot D\left(C_{i}^{j}\right) $$
+\begin{equation} S\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right)=N\left(x_{i}^{j}\right) \cdot W\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right) \cdot D\left(C_{i}^{j}\right) \end{equation}
 
 \section{时间分析}
 
@@ -135,26 +135,26 @@ $$ S\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right)=N\left(x_{i}^{j}\right) \cdot
 
 考虑建立一个参考速度
 
-$$ V_{r e f}=\alpha \cdot V_{(T)}+\beta \cdot V_{(v)} $$
+\begin{equation} V_{r e f}=\alpha \cdot V_{(T)}+\beta \cdot V_{(v)} \end{equation}
 
 $ \alpha $ and $ \beta $ are two parameters which are the weighting factors. $ V_{(T)} $ is the history speed, $ V_{(v)} $ is the surrounding speed, and $ V_{\text {ref }} $ is the result. $\alpha + \beta = 1$.
 
 时间上的候选路段可能性(余弦相似性)
 
-$$ T\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right)=\frac{\sum_{i=1}^{n}\left(r . v_{r e f}^{i} \times \bar{v}_{(i-1, j) \rightarrow(i, k)}\right)}{\sqrt{\sum_{i=1}^{n}\left(r \cdot v_{r e f}^{i}\right)^{2}} \times \sqrt{\sum_{i=1}^{n}\left(\bar{v}_{(i-1, j) \rightarrow(i, k)}\right)^{2}}} $$
+\begin{equation} T\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right)=\frac{\sum_{i=1}^{n}\left(r . v_{r e f}^{i} \times \bar{v}_{(i-1, j) \rightarrow(i, k)}\right)}{\sqrt{\sum_{i=1}^{n}\left(r \cdot v_{r e f}^{i}\right)^{2}} \times \sqrt{\sum_{i=1}^{n}\left(\bar{v}_{(i-1, j) \rightarrow(i, k)}\right)^{2}}} \end{equation}
 
 \section{结果匹配}
 
-对于轨迹 $ S_{1} \longrightarrow S_{2} \longrightarrow \cdots \longrightarrow S_{n} $，构造一个新图 $ G_{c}\left(V_{c}, E_{c}\right) $.$V_c$是候选点， $E_c$是权值边。
+对于轨迹 $ S_{1} \longrightarrow S_{2} \longrightarrow \cdots \longrightarrow S_{n} $,构造一个新图 $ G_{c}\left(V_{c}, E_{c}\right) $.$V_c$是候选点， $E_c$是权值边。
 
 定义候选点$C_{i-1}^{j}$到$C_{i}^{k}$的权值是
 
-$$ I F\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right)=S\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right) \times T\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right) $$
+\begin{equation} I F\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right)=S\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right) \times T\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right) \end{equation}
 
 轨迹$T_c$的分数是
 
-$$ I F\left(T_{c}\right)=\sum_{i=2}^{m} I F\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right) $$
+\begin{equation} I F\left(T_{c}\right)=\sum_{i=2}^{m} I F\left(C_{i-1}^{j} \rightarrow C_{i}^{k}\right) \end{equation}
 
 最终匹配的路段是
 
-$$RO = \arg \max IF(T_c)$$
+\begin{equation}RO = \arg \max IF(T_c)\end{equation}

@@ -27,7 +27,7 @@ fitting path, their solution produces \textbf{a set of potential paths
 along with a likelihood} that the location measurements are
 recorded from each path.
 
-\cite{newson2009hidden} 用到了HMM，此外\term{Conditional Random Fields (CRF)}也用于地图匹配
+\cite{newson2009hidden} 用到了HMM,此外\term{Conditional Random Fields (CRF)}也用于地图匹配
 
 \section{本文贡献}
 
@@ -71,9 +71,9 @@ HMM性质：
 (同\cite{newson2009hidden})
 
 For a given state $ s_{t, k} $ and a location observation $ o_{t} $, the emission probability is given as
-$$
+\begin{equation}
 P\left(o_{t} \mid s_{t, k}\right)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{g\left(o t, s_{t, k}\right)^{2}}{2 \sigma^{2}}}
-$$
+\end{equation}
 
 \begin{remark}
     the location measurement error may not strictly conform to the above model, especially in dense urban networks. 但是它模型简单而且在前人工作中性能还不错。 
@@ -88,7 +88,7 @@ the well-known Dijkstra's algorithm, as the optimal path.
 
 对于空间，本文提出由两个时间状态之内大圆距离与路径距离之间的差值除以时间的比率
 
-$$ y\left(s_{t-1, j}, s_{t, k}\right)=\frac{d\left(s_{t-1, j}, s_{t, k}\right)-g\left(s_{t-1, j}, s_{t, k}\right)}{\Delta T} $$
+\begin{equation} y\left(s_{t-1, j}, s_{t, k}\right)=\frac{d\left(s_{t-1, j}, s_{t, k}\right)-g\left(s_{t-1, j}, s_{t, k}\right)}{\Delta T} \end{equation}
 
 the driving distance
 between two points on the road network is the length of the
@@ -97,16 +97,16 @@ algorithm
 
 对于时间，定义时间上的难以置信性。 （\textbf{考虑到了时间上的转移概率}）该度量有助于为自由流旅行时间大于采样间隔的路径分配低的过渡概率。 (修正模型)
 
-$$
+\begin{equation}
 z\left(s_{t-1, j}, s_{t, k}\right)=\frac{\max \left(\left(f\left(s_{t-1, j}, s_{t, k}\right)-\Delta T\right), 0\right)}{\Delta T}
-$$
+\end{equation}
 
 where $ f\left(s_{t-1, j}, s_{t, k}\right) $ is the \term{free-flow travel time}, in seconds, of the optimal path between states $ s_{t-1, j} $ and $ s_{t, k} $.
 
 define the transition probability of moving from state $ s_{t-1, j} $ to state $ s_{t, k} $ as
-$$
+\begin{equation}
 P\left(s_{t, k} \mid s_{t-1, j}\right)=\lambda_{y} e^{-\lambda_{y} y\left(s_{t-1, j}, s_{t, k}\right)} \lambda_{z} e^{-\lambda_{z} z\left(s_{t-1, j}, s_{t, k}\right)}
-$$
+\end{equation}
 
 $\lambda_{y}, \lambda_{z}$根据经验估计
 
@@ -114,7 +114,7 @@ $\lambda_{y}, \lambda_{z}$根据经验估计
 
 维特比算法通过递归算法可以找出HMM中最可能的序列。 
 
-$$ \begin{aligned} V_{1, k} &=P\left(o_{1} \mid s_{1, k}\right) \\ V_{t, k} &=P\left(o_{t} \mid s_{t, k}\right) \max _{j}\left(V_{t-1, j} P\left(s_{t, k} \mid s_{t-1, j}\right)\right) \end{aligned} $$
+\begin{equation} \begin{aligned} V_{1, k} &=P\left(o_{1} \mid s_{1, k}\right) \\ V_{t, k} &=P\left(o_{t} \mid s_{t, k}\right) \max _{j}\left(V_{t-1, j} P\left(s_{t, k} \mid s_{t-1, j}\right)\right) \end{aligned} \end{equation}
 
 $ V_{t, k} $ is the most likely state sequence ending at state $ s_{t, k} $ based on the observations $ o_{1}, \ldots, o_{t} . $
 
@@ -133,7 +133,7 @@ optimal state sequences can be generated using the concept
 of \term{transitive closure}, which defines the reachability relations
 in a directed graph [20].
 
-启发式策略: 由于当每个时间步的状态很大时计算最短路径的时间可能很大,因此只保留$k$ (=测量误差的方差)个最高可能性的状态。
+启发式策略: 由于当每个时间步的状态很大时计算最短路径的时间可能很大，因此只保留$k$ (=测量误差的方差)个最高可能性的状态。
 
 \section{短期路径选择模型}
 
@@ -143,36 +143,36 @@ in a directed graph [20].
 
 计算下一个状态的概率分布时失去了上下文信息。
 
-不满足马尔科夫性(即受到司机路径选择的影响),而司机路径选择没有过多地被HMM模型所考虑,有可能会产生在HMM模型中较为合理,但是实际并不合理的路径。
+不满足马尔科夫性(即受到司机路径选择的影响),而司机路径选择没有过多地被HMM模型所考虑，有可能会产生在HMM模型中较为合理，但是实际并不合理的路径。
 
-概率模型如CRF不受马尔可夫独立性假设的影响,但是高阶CRF的参数难以推导。 现有CRF方法只考虑一阶(相邻状态)的依赖性。 条件随机场?
+概率模型如CRF不受马尔可夫独立性假设的影响，但是高阶CRF的参数难以推导。 现有CRF方法只考虑一阶(相邻状态)的依赖性。 条件随机场?
 
 因此需要利用路径选择模型对HMM匹配的结果进行修正。
 
 \section{多项Logit模型 (Multinomial Logit Model)}
 
-假设: 路径选择通过\term{utility}进行衡量, 司机会选择最高utility的路径, 假设所有司机都是相同的。 (部分文献会考虑司机的特征, 本文不考虑) 参考logistic回归
+假设: 路径选择通过\term{utility}进行衡量， 司机会选择最高utility的路径， 假设所有司机都是相同的。 (部分文献会考虑司机的特征， 本文不考虑) 参考logistic回归
 
 Given a set of alternative paths, called the choice set, $ C $, the utility associated with alternative path $ p_{i} \in C $ is given by
-$$
+\begin{equation}
 U_{i}=V_{i}+\varepsilon_{i}
-$$
+\end{equation}
 
 where $ V_{i} $ is a deterministic term and $ \varepsilon_{i} $ is a random term for capturing the uncertainty involved. The deterministic term $ V_{i} $ is modelled as a linear-in-parameters function of the attributes of alternative path $ p_{i} $. 
 
-$$ V_{i}=\beta_{F T T} F T T_{i}+\beta_{N T S} N T S_{i}+\beta_{A R C} A R C_{i}+\beta_{N C C} N C C_{i} $$
+\begin{equation} V_{i}=\beta_{F T T} F T T_{i}+\beta_{N T S} N T S_{i}+\beta_{A R C} A R C_{i}+\beta_{N C C} N C C_{i} \end{equation}
 
 可以化简为:$ V_{i}=\boldsymbol{\beta}^{\prime} \boldsymbol{x}_{i} $
 
-$FTT$: Free-flow travel time (in seconds); $N T S$: Number of traffic signals; $ARC$: Average road class (road classes are numbered from 1, starting with the highest); $NCC$: Number of class changes. In a multinomial logit model, the random term $ \varepsilon_{i} $ is assumed to be independent and identically \term{Gumbel distributed}. (随机因子已被标准化的, 同时假设随机因子/未观察的因素对于所有已观察因素的影响是相等的)
+$FTT$: Free-flow travel time (in seconds); $N T S$: Number of traffic signals; $ARC$: Average road class (road classes are numbered from 1, starting with the highest); $NCC$: Number of class changes. In a multinomial logit model, the random term $ \varepsilon_{i} $ is assumed to be independent and identically \term{Gumbel distributed}. (随机因子已被标准化的， 同时假设随机因子/未观察的因素对于所有已观察因素的影响是相等的)
 
 司机选择某条路径的概率是
 
-$$ P\left(p_{i} \mid C\right)=\frac{e^{\boldsymbol{\beta}^{\prime} x_{i}}}{\sum_{p_{j} \in C} e^{\beta^{\prime} x_{j}}} $$
+\begin{equation} P\left(p_{i} \mid C\right)=\frac{e^{\boldsymbol{\beta}^{\prime} x_{i}}}{\sum_{p_{j} \in C} e^{\beta^{\prime} x_{j}}} \end{equation}
 
 \section{生成可选路段}
 
-上述模型需要计算可选的路段,可能会非常庞大。
+上述模型需要计算可选的路段，可能会非常庞大。
 
 \subsection{2种基本方法}
 
@@ -197,7 +197,7 @@ HMM生成的路径与最短驾驶时间路径(2条不一样)会直接加入备�
 \begin{definition}[inflated travel time]
     The inflated travel time of link $ e $, with start node $ u $ and end node $ v $, lying along path $ p_{i} $ between start point $ q $ and end point $ r $ is given by
 
-$$ \tau^{\prime}(e)=\tau(e)+\tau(e) \omega \frac{\min \left(d_{i}(q, u), d_{i}(v, r)\right)}{d_{i}(q, r)} $$
+\begin{equation} \tau^{\prime}(e)=\tau(e)+\tau(e) \omega \frac{\min \left(d_{i}(q, u), d_{i}(v, r)\right)}{d_{i}(q, r)} \end{equation}
 
 where $ \tau(e) $ is the original travel time of link $ e, \omega $ is the inflation factor and the function $ d_{i} $ gives the driving distance
 between two points along path $p_i$.
@@ -205,18 +205,18 @@ between two points along path $p_i$.
 
 另外3条可选路径: 限制与已有路径的重复率小于$\alpha$, 且不可以严重超速。
 
-训练: 需要估计$\beta$. 司机选择的真实路径作为第一条可选路径,其他通过上述准则生成。 通过极大似然估计法进行估计。
+训练: 需要估计$\beta$. 司机选择的真实路径作为第一条可选路径，其他通过上述准则生成。 通过极大似然估计法进行估计。
 
 \section{整体算法}
 
-HMM首先匹配一部分路段(在线维特比算法), 然后通过路径选择模型计算出候选集中几条候选路径选择的概率,再计算在这条路径上行驶得到这个GPS的概率(高斯分布),选择最可能的路径。
+HMM首先匹配一部分路段(在线维特比算法), 然后通过路径选择模型计算出候选集中几条候选路径选择的概率，再计算在这条路径上行驶得到这个GPS的概率(高斯分布),选择最可能的路径。
 
 \section{实验}
 
 评价指标:
 
-$$ F_{\text {score }}=2 \times \frac{\text { precision } \times \text { recall }}{\text { precision }+\text { recall }} $$
+\begin{equation} F_{\text {score }}=2 \times \frac{\text { precision } \times \text { recall }}{\text { precision }+\text { recall }} \end{equation}
 
-$$precision  =\frac{L_{\text {correct }}}{L_{\text {matched }}} $$
+\begin{equation}precision  =\frac{L_{\text {correct }}}{L_{\text {matched }}} \end{equation}
 
-$$recall = \frac{L_{correct}}{L_{truth}}$$
+\begin{equation}recall = \frac{L_{correct}}{L_{truth}}\end{equation}

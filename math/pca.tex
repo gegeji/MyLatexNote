@@ -22,27 +22,27 @@ $ =-\sum_{i=1}^{n} e^{T}\left(x_{i}-m\right)\left(x_{i}-m\right)^{T} e+\sum_{i=1
 $ =-e^{T}\left[\sum_{i=1}^{n}\left(x_{i}-m\right)\left(x_{i}-m\right)^{T}\right] e+\sum_{i=1}^{n}\left\|x_{i}-m\right\|^{2} $
 $ =-e^{T} S e+\sum_{i=1}^{n}\left\|x_{i}-m\right\|^{2} \quad (\text{const.}) $
 
-S为散布矩阵, 是样本协方差的n-1倍
-$$
+S为散布矩阵， 是样本协方差的n-1倍
+\begin{equation}
 \begin{array}{l}
 \text { 令 }\|e\|=1 \\
 y=e^{T} S e-\lambda\left(e^{T} e-1\right)
 \end{array}
-$$
+\end{equation}
 
-求导得 $ S e=\lambda e $，$e$是$S$特征向量时最大, $S$为散布矩阵，是样本协方差的$n-1$倍
+求导得 $ S e=\lambda e $,$e$是$S$特征向量时最大， $S$为散布矩阵，是样本协方差的$n-1$倍
 
-$$ e^{T} S e=\lambda e^{T} e=\lambda $$
+\begin{equation} e^{T} S e=\lambda e^{T} e=\lambda \end{equation}
 
 特征值越大对应特征向量对重建效果最好
 
 \section{多维}
 
 (投影到多条直线 $ e_{\mathrm{t}} $ )
-$$
+\begin{equation}
 x=m+\sum_{k=1}^{t} a_{k} e_{k}, t \leq d
-$$
+\end{equation}
 
-$$ E_{t}\left(e_{1}, e_{2}, \ldots, e_{t}\right)=\sum_{i=1}^{n}\left\|\left(m+\sum_{k=1}^{t} a_{i k} e_{k}\right)-x_{i}\right\|^{2} $$
+\begin{equation} E_{t}\left(e_{1}, e_{2}, \ldots, e_{t}\right)=\sum_{i=1}^{n}\left\|\left(m+\sum_{k=1}^{t} a_{i k} e_{k}\right)-x_{i}\right\|^{2} \end{equation}
 
 $ e_{k}(k=1,2, \ldots, t) $ 分别对应S的前 $ t $ 个特征值（从大到小）对应的特征向量

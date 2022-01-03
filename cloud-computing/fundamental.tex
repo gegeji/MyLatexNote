@@ -9,7 +9,7 @@
 
 \end{definition}
 
-并行计算把计算任务分派给系统内的多个运算单元。 \term{HPC} server， 使用一个强大的机器或者infiniband 万兆网络连接，分派给系统中的多个运算单元；共享memory（可以直接访问所有内存）
+并行计算把计算任务分派给系统内的多个运算单元。 \term{HPC} server, 使用一个强大的机器或者infiniband 万兆网络连接，分派给系统中的多个运算单元；共享memory（可以直接访问所有内存）
 
 \begin{definition}[InfiniBand]
     InfiniBand 是指具有非常高的RAS(可靠性、可用性、维护性)的基础设施/高性能计算机的服务器/集群用高速I/O总线架构及互联。 作为系统间互联结构，除了RAS功能以外，与其他机构相比，具有低延迟这一点也是其特征。 
@@ -19,7 +19,7 @@
     把一个需要巨大的计算能力才能解决的问题分成多个小部分，把这些小部分分配给多个计算进行处理，最后综合这些计算结果得到最终结果。 
 \end{definition}
 
-分布式计算在cluster上运行，使用百兆网络等; 将计算任务分派给多个机器，再merge；分布式memory，需要进行消息传送
+分布式计算在cluster上运行，使用百兆网络等; 将计算任务分派给多个机器，再merge；分布式memory,需要进行消息传送
 
 快速的分布式:MapReduce, Hadoop, spark
 
@@ -30,7 +30,7 @@
 \begin{example}[教育网格]
     学校信息中心计算队列：将空闲的服务器通过教育网共享
 
-    特点: 网格服务器一般不断电：软件configuration，路径，环境变量重启之后需要重新设置麻烦；逻辑上分布在不同机器上的程序是连续的，初期教育网格没有进行虚拟化
+    特点: 网格服务器一般不断电：软件configuration,路径，环境变量重启之后需要重新设置麻烦；逻辑上分布在不同机器上的程序是连续的，初期教育网格没有进行虚拟化
     缺点: 需要提供自己的计算资源，限制成员
 \end{example}
 
@@ -38,7 +38,7 @@
     一种基于互联网的计算方式。 通过网络，提供按需、且易扩展的弹性计算以及应用服务。 
 \end{definition}
 
-云计算有anyone, anytime, anywhere的特点; 共享软硬件, 有些平台提供shared licenses的软件; 按需易拓展 autoscaling; 
+云计算有anyone, anytime, anywhere的特点; 共享软硬件， 有些平台提供shared licenses的软件; 按需易拓展 autoscaling; 
 
 \begin{figure}[htbp]
     \centering
@@ -50,14 +50,14 @@
 \begin{itemize}
     \item 5G
     \item 移动互联网
-    \item 物联网: 传感器数据量$\rightarrow$, 网络传输带宽有限, 传感器电量小(power consumption 控制, \term{边缘计算} $\rightarrow$ 减少传输带宽，通过数据预处理$\rightarrow$ 减少耗电量)
-    \item AR \term{增强现实}: HoloLens, 虚拟地图导航, 终端设备的定位（室内，三维建模，构建场景地图）
+    \item 物联网: 传感器数据量$\rightarrow$, 网络传输带宽有限， 传感器电量小(power consumption 控制， \term{边缘计算} $\rightarrow$ 减少传输带宽，通过数据预处理$\rightarrow$ 减少耗电量)
+    \item AR \term{增强现实}: HoloLens, 虚拟地图导航， 终端设备的定位（室内，三维建模，构建场景地图）
 \end{itemize}
 
 \subsection{国外云计算厂商}
 
 \textbf{亚马逊}的云计算称为Amazon Web Services（AWS）(\textbf{便宜，提供infrastructure}).率先在全球提供了弹性计算云EC2（Elastic Computing Cloud）和简单存储服务S3（Simple Storage Service），为企业提供计算和存储服务。 收费的服务项目包括存储空间、带宽、CPU资源以及月租费。 AWS服务的种类非常齐全。 
-机器，计费使用时长（以小时, 分钟再到按照秒计算）等数据模型变化,技术不断进步。
+机器，计费使用时长（以小时， 分钟再到按照秒计算）等数据模型变化，技术不断进步。
 
 \begin{definition}[Amazon Elastic Compute Cloud]
     Amazon Elastic Compute Cloud（Amazon EC2 云服务器）是一种 Web 云服务，能在云中提供安全且可调整大小的计算能力。 该服务旨在让开发人员能够更轻松地进行 Web 规模的云计算。 Amazon EC2 云服务器的 Web 云服务接口非常简单，您可以最小的阻力轻松获取容量，随之配置容量。 使用该服务，您将能完全控制您的计算资源，并能在亚马逊成熟且行之有效的计算环境中运行。 
@@ -72,7 +72,7 @@
 \end{definition}
 
 \begin{definition}[AWS Lambda]
-    AWS Lambda 是一种无服务器的计算服务，让您无需预置或管理服务器、创建可感知工作负载的集群扩展逻辑、维护事件集成或管理运行时，即可运行代码。 借助 Lambda，您几乎可以为任何类型的应用程序或后端服务运行代码，而且完全无需管理。 只需将您的代码以 ZIP 文件或容器映像的形式上传，Lambda 便会自动、精确地分配计算执行能力，并根据传入的请求或事件运行您的代码，以适应任何规模的流量。 您可以将您的代码设置为自动从 200 多个 AWS 服务和 SaaS 应用程序触发，或者直接从任何 Web 或移动应用程序调用。 您可以使用自己喜欢的语言（Node.js、Python、Go、Java 等）编写 Lambda 函数，并使用无服务器和容器工具（例如 AWS SAM 或 Docker CLI）来构建、测试和部署您的函数。 
+    AWS Lambda 是一种无服务器的计算服务，让您无需预置或管理服务器、创建可感知工作负载的集群扩展逻辑、维护事件集成或管理运行时，即可运行代码。 借助 Lambda,您几乎可以为任何类型的应用程序或后端服务运行代码，而且完全无需管理。 只需将您的代码以 ZIP 文件或容器映像的形式上传，Lambda 便会自动、精确地分配计算执行能力，并根据传入的请求或事件运行您的代码，以适应任何规模的流量。 您可以将您的代码设置为自动从 200 多个 AWS 服务和 SaaS 应用程序触发，或者直接从任何 Web 或移动应用程序调用。 您可以使用自己喜欢的语言（Node.js、Python、Go、Java 等）编写 Lambda 函数，并使用无服务器和容器工具（例如 AWS SAM 或 Docker CLI）来构建、测试和部署您的函数。 
 \end{definition}
 
 \begin{definition}[(腾讯云)云函数]
@@ -93,7 +93,7 @@
 \end{itemize}
 \end{definition}
 
-\textbf{谷歌}是最大的云计算技术的使用者 (\textbf{platform，自带系统}). 谷歌已经允许第三方在谷歌的云计算中通过\term{Google App Engine}运行大型并行应用程序。 发表学术论文的形式公开其云计算三大法宝：\term{Google File System} (GFS)、\term{MapReduce}和\term{BigTable}. 基于TensorFlow推出了DataFlow.
+\textbf{谷歌}是最大的云计算技术的使用者 (\textbf{platform,自带系统}). 谷歌已经允许第三方在谷歌的云计算中通过\term{Google App Engine}运行大型并行应用程序。 发表学术论文的形式公开其云计算三大法宝：\term{Google File System} (GFS)、\term{MapReduce}和\term{BigTable}. 基于TensorFlow推出了DataFlow.
 
 
 \textbf{微软}推出了Microsoft Azure(\textbf{licensed 软件，程序托管}). 微软将为Windows Azure用户推出许多新的功能，不但能更简单地将现有的应用程序转移到云中，而且可以加强云托管应用程序的可用服务，充分体现 出微软的“云”+“端”战略。 在中国，微软2014年3月27日宣布由世纪互联负责运营的Microsoft Azure公 有云服务正式商用，这是国内首个正式商用的国际公有云服务平台。 
@@ -136,12 +136,12 @@
     \item 企业为了测试新开发的应用软件，需要购买一大批电脑，而当测试完毕之后，大部分设备处于闲置
     \item 为了应付市场的快速变化，急需一批计算资源，但是审批资金、购买设备、安装平台可能需要花费2周左右的时间，会耽误市场机会
     \item 高价购买了某家公司的软件之后，使用一段时间之后，发现不能完全满足需求，但是又无法退货
-    \item Amazon，黑五高峰时段需要增加服务器，但是平时浪费
+    \item Amazon,黑五高峰时段需要增加服务器，但是平时浪费
 \end{itemize}
 
 云计算提出前的互联网遇到的难题:
 \begin{itemize}
-    \item \textbf{互联网上的数据量高速增长}(\term{Big Data})，导致了互联网数据处理能力的不足；
+    \item \textbf{互联网上的数据量高速增长}(\term{Big Data}),导致了互联网数据处理能力的不足；
     \item 互联网上存在着大量处于闲置状态的计算设备和存储资源；
     \item 服务器更新换代速度加快，企业升级费用昂贵。 
 \end{itemize}
@@ -152,9 +152,9 @@
     海量数据或巨量数据，其规模巨大到无法通过目前主流的计算机系统在合理时间内获取、存储、管理。
 \end{definition}
 
-例子:DreamWorks 雪花❄️动画（图形学）电影动画渲染, 渲染时间久, 由高性能完成精细的场景渲染
+例子:DreamWorks 雪花❄️动画（图形学）电影动画渲染， 渲染时间久， 由高性能完成精细的场景渲染
 
-搜索引擎：输入keyword，爬虫机器人（cache），分布式索引查询$\rightarrow$ 汇总$\rightarrow$ 分布式排序
+搜索引擎：输入keyword,爬虫机器人（cache），分布式索引查询$\rightarrow$ 汇总$\rightarrow$ 分布式排序
 
 \subsection{大数据的特征}
 
@@ -169,7 +169,7 @@
 
    \item 复杂度（Complexity）:对数据的处理和分析的难度大。 
 
-   $$G=f(x), f:\text{云计算}, x:\text{大数据}$$
+   \begin{equation}G=f(x), f:\text{云计算}, x:\text{大数据}\end{equation}
 \end{itemize}
 
 
@@ -186,12 +186,12 @@
 
 \begin{itemize}
     \item 基本能力(所有的计算能力、存储能力、和各种各样功能的应用)都可通过网络获得
-    \item 云应对用户硬件友好, 不需要不停地更换昂贵的高性能电脑
+    \item 云应对用户硬件友好， 不需要不停地更换昂贵的高性能电脑
     \item 不需要用户安装复杂软件
     \item 数据保证安全（备份）
 \end{itemize}
 
-\term{三备份}，仍旧可能会丢失。
+\term{三备份},仍旧可能会丢失。
 
 特点:
 \begin{itemize}
@@ -200,7 +200,7 @@
     \item 弹性
     \item 按需自助服务
     \item 资源池
-    \item 技术$\rightarrow$ 产品$\rightarrow$ 落地应用, 对于用户来说最少的管理，最少地与供应商互动
+    \item 技术$\rightarrow$ 产品$\rightarrow$ 落地应用， 对于用户来说最少的管理，最少地与供应商互动
 \end{itemize}
 
 \subsection{云计算的服务模式（部署模式）}
@@ -208,7 +208,7 @@
 \begin{definition}[IaaS（Infrastructure as a Service）]
     将\textbf{硬件设备等基础资源}封装成服务供用户使用
 
-    如：Amazon EC2/S3. kvm，ceph（文件管理，OpenStack（私有云）等
+    如：Amazon EC2/S3. kvm,ceph（文件管理，OpenStack（私有云）等
 \end{definition}
 
 \begin{definition}[PaaS（Platform as a Service）]
@@ -220,7 +220,7 @@
 \begin{definition}[SaaS（Software as a Service）]
     直接提供软件，针对性更强，它将某些特定应用软件功能封装成服务
     
-    如：Salesforce online CRM，Verizon， cloudblue ，cloud scripting
+    如：Salesforce online CRM,Verizon, cloudblue ,cloud scripting
 
 \end{definition}
 
@@ -247,8 +247,8 @@
 
 \subsection{对于商业模式的影响}
 
-中型公司自建数据中心，管理费用太高, 上云可以成本降低，数据丢失风险下降
-类比量贩式KTV,超市, 量多单价下降。 
+中型公司自建数据中心，管理费用太高， 上云可以成本降低，数据丢失风险下降
+类比量贩式KTV,超市， 量多单价下降。 
 
 云使得使用计算服务价格下降，资源利用率上升，节约成本 (\textbf{云计算将计算变成了大众用得上和用得起的“水和电”})
 
@@ -266,9 +266,9 @@
 \begin{definition}[同态加密 (Homomorphic Encryption)]
     直接将原文加密，然后在密文上进行各种运算，最终得到结果的密文，形式化的表示为：
 
-    $$ x_{1}, x_{2}, \ldots, x_{n} \rightarrow\left[x_{1}\right],\left[x_{2}\right], \ldots,\left[x_{n}\right] $$
+    \begin{equation} x_{1}, x_{2}, \ldots, x_{n} \rightarrow\left[x_{1}\right],\left[x_{2}\right], \ldots,\left[x_{n}\right] \end{equation}
 
-    $$ f\left(\left[x_{1}\right],\left[x_{2}\right], \ldots,\left[x_{n}\right]\right) \rightarrow\left[f\left(x_{1}, x_{2}, \ldots, x_{n}\right)\right] $$
+    \begin{equation} f\left(\left[x_{1}\right],\left[x_{2}\right], \ldots,\left[x_{n}\right]\right) \rightarrow\left[f\left(x_{1}, x_{2}, \ldots, x_{n}\right)\right] \end{equation}
     
     直接在密文上操作和在明文上操作然后加密，效果是一样
 

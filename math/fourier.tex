@@ -7,7 +7,7 @@
 \end{definition}
 
 \begin{definition}[Complex Numbers]
-    $$ C=R+j I $$
+    \begin{equation} C=R+j I \end{equation}
 
     where $ R $ and $ I $ are real numbers and $ j=\sqrt{-1} $. Here, $ R $ denotes the real part of the complex number and $ I $ its imaginary part. 
     
@@ -15,7 +15,7 @@
 \end{definition}
 
 \begin{definition}[Complex Number in Polar Coordinates]
-    $$ C=|C|(\cos \theta+j \sin \theta) = |C| e^{j \theta} $$
+    \begin{equation} C=|C|(\cos \theta+j \sin \theta) = |C| e^{j \theta} \end{equation}
     
     where $ |C|=\sqrt{R^{2}+I^{2}} $ is the length of the vector extending from the origin of the complex plane to point $ (R, I) $, and $ \theta $ is the angle between the vector and the real axis.
 \end{definition}
@@ -23,7 +23,7 @@
 上式使用了欧拉公式
 
 \begin{theorem}[Euler's Formular]
-    $$ e^{j \theta}=\cos \theta+j \sin \theta $$
+    \begin{equation} e^{j \theta}=\cos \theta+j \sin \theta \end{equation}
 \end{theorem}
 
 \begin{corollary}
@@ -31,40 +31,40 @@
 \end{corollary}
 
 \begin{definition}[正弦函数]
-    $$ y=A \sin (\omega t+\varphi) $$
+    \begin{equation} y=A \sin (\omega t+\varphi) \end{equation}
 
-    就是一个以 $ \frac{2 \pi}{\omega} $ 为周期的正弦函数, 其中 $ y $ 表示动点的位置, $ t $ 表示时间, $ A $ 为振 幅, $ \omega $ 为角频率, $ \varphi $ 为初相。
+    就是一个以 $ \frac{2 \pi}{\omega} $ 为周期的正弦函数， 其中 $ y $ 表示动点的位置， $ t $ 表示时间， $ A $ 为振 幅， $ \omega $ 为角频率， $ \varphi $ 为初相。
 \end{definition}
 
-如何深人研究非正弦周期函数呢? 将周期函数展开成由简单的周期函数例如三角函数组成的级数。 具体地说, 将周期为 $ T\left(=\frac{2 \pi}{\omega}\right) $ 的周期函数用一系列以 $ T $ 为周 期的正弦函数 $ A_{n} \sin \left(n \omega t+\varphi_{n}\right) $ 组成的级数来表示, 记为
+如何深人研究非正弦周期函数呢? 将周期函数展开成由简单的周期函数例如三角函数组成的级数。 具体地说， 将周期为 $ T\left(=\frac{2 \pi}{\omega}\right) $ 的周期函数用一系列以 $ T $ 为周 期的正弦函数 $ A_{n} \sin \left(n \omega t+\varphi_{n}\right) $ 组成的级数来表示， 记为
 
-$$ f(t)=A_{0}+\sum_{n=1}^{\infty} A_{n} \sin \left(n \omega t+\varphi_{n}\right) $$
+\begin{equation} f(t)=A_{0}+\sum_{n=1}^{\infty} A_{n} \sin \left(n \omega t+\varphi_{n}\right) \end{equation}
 
 其中 $ A_{0}, A_{n}, \varphi_{n}(n=1,2,3, \cdots) $ 都是常数。
 
-将周期函数按上述方式展开, 它的物理意义是很明确的,这就是把一个比较复杂的周期运动看成是许多不同频率的简谐振动的叠加。 在电工学上,这种展开称为\term{谐波分析},其中常数项 $ A_{0} $ 称为 $ f(t) $ 的\term{直流分量}, $ A_{1} \sin \left(\omega t+\varphi_{1}\right) $ 称为\term{一次谐波}(又叫做\term{基波}) $ , A_{2} \sin \left(2 \omega t+\varphi_{2}\right), A_{3} \sin \left(3 \omega t+\varphi_{3}\right), \cdots $ 依次称为\term{二次谐波}, \term{三次谐波},等等。
+将周期函数按上述方式展开， 它的物理意义是很明确的，这就是把一个比较复杂的周期运动看成是许多不同频率的简谐振动的叠加。 在电工学上，这种展开称为\term{谐波分析},其中常数项 $ A_{0} $ 称为 $ f(t) $ 的\term{直流分量}, $ A_{1} \sin \left(\omega t+\varphi_{1}\right) $ 称为\term{一次谐波}(又叫做\term{基波}) $ , A_{2} \sin \left(2 \omega t+\varphi_{2}\right), A_{3} \sin \left(3 \omega t+\varphi_{3}\right), \cdots $ 依次称为\term{二次谐波}, \term{三次谐波},等等。
 
 \begin{definition}[三角级数]
-    令 $ \frac{a_{0}}{2}=A_{0}, a_{n}=A_{n} \sin \varphi_{n}, b_{n}=A_{n} \cos \varphi_{n}, \omega=\frac{\pi}{l}( $ 即 $ T=2 l $ )，则$ f(t)=A_{0}+\sum_{n=1}^{\infty} A_{n} \sin \left(n \omega t+\varphi_{n}\right) $可以改写为
+    令 $ \frac{a_{0}}{2}=A_{0}, a_{n}=A_{n} \sin \varphi_{n}, b_{n}=A_{n} \cos \varphi_{n}, \omega=\frac{\pi}{l}( $ 即 $ T=2 l $ ),则$ f(t)=A_{0}+\sum_{n=1}^{\infty} A_{n} \sin \left(n \omega t+\varphi_{n}\right) $可以改写为
 
-    $$ \frac{a_{0}}{2}+\sum_{n=1}^{\infty}\left(a_{n} \cos \frac{n \pi t}{l}+b_{n} \sin \frac{n \pi t}{l}\right) $$
+    \begin{equation} \frac{a_{0}}{2}+\sum_{n=1}^{\infty}\left(a_{n} \cos \frac{n \pi t}{l}+b_{n} \sin \frac{n \pi t}{l}\right) \end{equation}
 
     其中 $ a_{0}, a_{n}, b_{n}(n=1,2,3, \cdots) $ 都是常数。 
 \end{definition}
 
 \begin{definition}[三角函数系（基波）]
-    $$ 1, \cos x, \sin x, \cos 2 x, \sin 2 x, \cdots, \cos n x, \sin n x, \cdots $$
+    \begin{equation} 1, \cos x, \sin x, \cos 2 x, \sin 2 x, \cdots, \cos n x, \sin n x, \cdots \end{equation}
 
-    在区间 $ [-\pi, \pi] $ 上正交, 就是指在三角函数系 $ (7-4) $ 中任何不同的两个函数的 乘积在区间 $ [-\pi, \boldsymbol{\pi}] $ 上的积分等于零, 即
+    在区间 $ [-\pi, \pi] $ 上正交， 就是指在三角函数系 $ (7-4) $ 中任何不同的两个函数的 乘积在区间 $ [-\pi, \boldsymbol{\pi}] $ 上的积分等于零， 即
 
-    $$ \begin{array}{ll}\int_{-\pi}^{\pi} \cos n x \mathrm{~d} x=0 & (n=1,2,3, \cdots), \\ \int_{-\pi}^{\pi} \sin n x \mathrm{~d} x=0 & (n=1,2,3, \cdots),\\ \cdots
-    \end{array} $$
+    \begin{equation} \begin{array}{ll}\int_{-\pi}^{\pi} \cos n x \mathrm{~d} x=0 & (n=1,2,3, \cdots), \\ \int_{-\pi}^{\pi} \sin n x \mathrm{~d} x=0 & (n=1,2,3, \cdots),\\ \cdots
+    \end{array} \end{equation}
 \end{definition}
 
 \begin{definition}[复数域的Gram矩阵]
     如果 $ A \in \mathbb{C}^{m \times n} $ 的Gram矩阵为单位矩阵，则 $ A $ 具有正交列：
 
-$$
+\begin{equation}
 \begin{aligned}
 A^{H} A&=\left[\begin{array}{lllll}
 a_{1} & a_{2} & \cdots & a_{n}
@@ -85,7 +85,7 @@ a_{n}^{H} a_{1} & a_{n}^{H} a_{2} & \cdots & a_{n}^{H} a_{n}
 \end{array}\right]
 \\ &=I
 \end{aligned}
-$$
+\end{equation}
 \end{definition}
 
 Gram矩阵列有单位范数： $ \left\|a_{i}\right\|_{2}^{2}=a_{i}^{H} a_{i}=1 $ .
@@ -97,68 +97,68 @@ Gram矩阵列是相互正交的：对于 $ i \neq j, a_{i}^{H} a_{j}=0 $ .
 \end{definition}
 
 \begin{definition}[酉矩阵的逆]
-    $$ \left.\begin{array}{c}A^{H} A=I \\ A \text { 是方的 }\end{array}\right\} \quad \Rightarrow \quad A A^{H}=I $$
+    \begin{equation} \left.\begin{array}{c}A^{H} A=I \\ A \text { 是方的 }\end{array}\right\} \quad \Rightarrow \quad A A^{H}=I \end{equation}
 \end{definition}
 
-酉矩阵是具有逆 $ A^{H} $ 的非奇异矩阵。 如果 $ A $ 是酉矩阵, 那么 $ A^{H} $ 也是酉矩阵。
+酉矩阵是具有逆 $ A^{H} $ 的非奇异矩阵。 如果 $ A $ 是酉矩阵， 那么 $ A^{H} $ 也是酉矩阵。
 
 \section{Fourier Series}
 
 \begin{definition}[傅里叶级数]
-    $$
+    \begin{equation}
 f(x)=\frac{a_{0}}{2}+\sum_{k=1}^{\infty}\left(a_{k} \cos k x+b_{k} \sin k x\right) .
-$$
+\end{equation}
 
-where $$ \left\{\begin{array}{l}a_{n}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos n x \mathrm{~d} x \quad(n=0,1,2,3, \cdots), \\ b_{n}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin n x \mathrm{~d} x \quad(n=1,2,3, \cdots) .\end{array}\right. $$
+where \begin{equation} \left\{\begin{array}{l}a_{n}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos n x \mathrm{~d} x \quad(n=0,1,2,3, \cdots), \\ b_{n}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin n x \mathrm{~d} x \quad(n=1,2,3, \cdots) .\end{array}\right. \end{equation}
 \end{definition}
 
 \begin{proof}
-    设 $ f(x) $ 是周期为 $ 2 \pi $ 的周期函数,且能展开成三角级数
-$$
+    设 $ f(x) $ 是周期为 $ 2 \pi $ 的周期函数，且能展开成三角级数
+\begin{equation}
 f(x)=\frac{a_{0}}{2}+\sum_{k=1}^{\infty}\left(a_{k} \cos k x+b_{k} \sin k x\right) .
-$$
+\end{equation}
 
-先求 $ a_{0} $. 上式一 从 $ -\pi $ 到 $ \pi $ 积分, 由于假设式右端级数可逐项积分，因此有
+先求 $ a_{0} $. 上式一 从 $ -\pi $ 到 $ \pi $ 积分， 由于假设式右端级数可逐项积分，因此有
 
-$$ \int_{-\pi}^{\pi} f(x) \mathrm{d} x=\int_{-\pi}^{\pi} \frac{a_{0}}{2} \mathrm{~d} x+\sum_{k=1}^{\infty}\left[a_{k} \int_{-\pi}^{\pi} \cos k x \mathrm{~d} x+b_{k} \int_{-\pi}^{\pi} \sin k x \mathrm{~d} x\right] $$
+\begin{equation} \int_{-\pi}^{\pi} f(x) \mathrm{d} x=\int_{-\pi}^{\pi} \frac{a_{0}}{2} \mathrm{~d} x+\sum_{k=1}^{\infty}\left[a_{k} \int_{-\pi}^{\pi} \cos k x \mathrm{~d} x+b_{k} \int_{-\pi}^{\pi} \sin k x \mathrm{~d} x\right] \end{equation}
 
 根据三角函数系的正交性，等式右端除第一项外，其余各项均为零，所以
 
-$$ \int_{-\pi}^{\pi} f(x) \mathrm{d} x=\frac{a_{0}}{2} \cdot 2 \pi $$
+\begin{equation} \int_{-\pi}^{\pi} f(x) \mathrm{d} x=\frac{a_{0}}{2} \cdot 2 \pi \end{equation}
 
 于是得
 
-$$ a_{0}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \mathrm{d} x $$
+\begin{equation} a_{0}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \mathrm{d} x \end{equation}
 
-其次求 $ a_{n} . $ 用 $ \cos n x $ 乘式两端, 再从 $ -\pi $ 到 $ \pi $ 积分, 得到
+其次求 $ a_{n} . $ 用 $ \cos n x $ 乘式两端， 再从 $ -\pi $ 到 $ \pi $ 积分， 得到
 
-$$ \begin{aligned}  &\int_{-\pi}^{\pi} f(x) \cos n x \mathrm{~d} x\\ =&\frac{a_{0}}{2} \int_{-\pi}^{\pi} \cos n x \mathrm{~d} x+\sum_{k=1}^{\infty}\left[a_{k} \int_{-\pi}^{\pi} \cos k x \cos n x \mathrm{~d} x+b_{k} \int_{-\pi}^{\pi} \sin k x \cos n x \mathrm{~d} x\right] \end{aligned} $$
+\begin{equation} \begin{aligned}  &\int_{-\pi}^{\pi} f(x) \cos n x \mathrm{~d} x\\ =&\frac{a_{0}}{2} \int_{-\pi}^{\pi} \cos n x \mathrm{~d} x+\sum_{k=1}^{\infty}\left[a_{k} \int_{-\pi}^{\pi} \cos k x \cos n x \mathrm{~d} x+b_{k} \int_{-\pi}^{\pi} \sin k x \cos n x \mathrm{~d} x\right] \end{aligned} \end{equation}
 
-根据三角函数系的正交性, 等式右端除 $ k=n $ 的一项外, 其余各项均为0. 所以
+根据三角函数系的正交性， 等式右端除 $ k=n $ 的一项外， 其余各项均为0. 所以
 
-$$ \int_{-\pi}^{\pi} f(x) \cos n x \mathrm{~d} x=a_{n} \int_{-\pi}^{\pi} \cos ^{2} n x \mathrm{~d} x=a_{n} \pi $$
+\begin{equation} \int_{-\pi}^{\pi} f(x) \cos n x \mathrm{~d} x=a_{n} \int_{-\pi}^{\pi} \cos ^{2} n x \mathrm{~d} x=a_{n} \pi \end{equation}
 
-于是得$$ a_{n}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos n x \mathrm{~d} x \quad(n=1,2,3, \cdots) $$
+于是得\begin{equation} a_{n}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos n x \mathrm{~d} x \quad(n=1,2,3, \cdots) \end{equation}
 
-类似地,用 $ \sin n x $ 乘 $ (7-5) $ 式的两端,再从 $ -\pi $ 到 $ \pi $ 积分, 可得
-$$
+类似地，用 $ \sin n x $ 乘 $ (7-5) $ 式的两端，再从 $ -\pi $ 到 $ \pi $ 积分， 可得
+\begin{equation}
 b_{n}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin n x \mathrm{~d} x \quad(n=1,2,3, \cdots)
-$$
+\end{equation}
 \end{proof}
 
-\begin{theorem}[收敛定理, 狄利克雷 (Dirichlet) 充分条件]
-    设 $ f(x) $ 是周期为 $ 2 \pi $ 的周 期函数,如果它满足:
+\begin{theorem}[收敛定理， 狄利克雷 (Dirichlet) 充分条件]
+    设 $ f(x) $ 是周期为 $ 2 \pi $ 的周 期函数，如果它满足:
 
     \begin{enumerate}
-        \item 在一个周期内连续或只有有限个第一类间断点,
+        \item 在一个周期内连续或只有有限个第一类间断点，
         \item 在一个周期内至多只有有限个极值点
     \end{enumerate}
 
-    那么 $ f(x) $ 的傅里叶级数收敛, 并且
+    那么 $ f(x) $ 的傅里叶级数收敛， 并且
 
     \begin{itemize}
-    \item 当 $ x $ 是 $ f(x) $ 的连续点时, 级数收敛于 $ f(x) $;
-    \item 当 $ x $ 是 $ f(x) $ 的间断点时, 级数收敛于 $ \frac{1}{2}\left[f\left(x^{-}\right)+f\left(x^{+}\right)\right] $.
+    \item 当 $ x $ 是 $ f(x) $ 的连续点时， 级数收敛于 $ f(x) $;
+    \item 当 $ x $ 是 $ f(x) $ 的间断点时， 级数收敛于 $ \frac{1}{2}\left[f\left(x^{-}\right)+f\left(x^{+}\right)\right] $.
     \end{itemize}
 \end{theorem}
 
@@ -173,173 +173,173 @@ C=\left\{x \mid f(x)=\frac{1}{2}\left[f\left(x^{-}\right)+f\left(x^{+}\right)\ri
 $
 
 在 $ C $ 上就成立 $ f(x) $ 的傅里叶级数展开式
-$$
+\begin{equation}
 f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty}\left(a_{n} \cos n x+b_{n} \sin n x\right), x \in C
-$$
+\end{equation}
 \end{corollary}
 
 \begin{definition}[正弦级数]
-    当 $ f(x) $ 为奇函数时, $ f(x) \cos n x $ 是奇函数, $ f(x) \sin n x $ 是偶函数, 故
-$$
+    当 $ f(x) $ 为奇函数时， $ f(x) \cos n x $ 是奇函数， $ f(x) \sin n x $ 是偶函数， 故
+\begin{equation}
 \left.\begin{array}{l}
 a_{n}=0 \quad(n=0,1,2, \cdots), \\
 b_{n}=\frac{2}{\pi} \int_{0}^{\pi} f(x) \sin n x \mathrm{~d} x \quad(n=1,2,3, \cdots) .
 \end{array}\right\}
-$$
+\end{equation}
 
 即知奇函数的傅里叶级数是只含有正弦项的正弦级数。
-$$ \sum_{n=1}^{\infty} b_{n} \sin n x $$
+\begin{equation} \sum_{n=1}^{\infty} b_{n} \sin n x \end{equation}
 \end{definition}
 
 \begin{definition}[余弦级数]
-    当 $ f(x) $ 为偶函数时, $ f(x) \cos n x $ 是偶函数, $ f(x) \sin n x $ 是奇函数, 故
-$$
+    当 $ f(x) $ 为偶函数时， $ f(x) \cos n x $ 是偶函数， $ f(x) \sin n x $ 是奇函数， 故
+\begin{equation}
 \left.\begin{array}{l}
 a_{n}=\frac{2}{\pi} \int_{0}^{\pi} f(x) \cos n x \mathrm{~d} x \quad(n=0,1,2, \cdots) \\
 b_{n}=0 \quad(n=1,2,3, \cdots)
 \end{array}\right\}
-$$
+\end{equation}
 即知偶函数的傅里叶级数是只含常数项和余弦项的余弦级数
-$$
+\begin{equation}
 \frac{a_{0}}{2}+\sum_{n=1}^{\infty} a_{n} \cos n x
-$$
+\end{equation}
 \end{definition}
 
-在实际应用( 如研究某种波动问题,热的传导、扩散问题)中,有时还需要把 定义在区间 $ [0, \pi] $ 上的函数 $ f(x) $ 展开成正弦级数或余弦级数。
+在实际应用( 如研究某种波动问题，热的传导、扩散问题)中，有时还需要把 定义在区间 $ [0, \pi] $ 上的函数 $ f(x) $ 展开成正弦级数或余弦级数。
 
-根据前面讨论的结果,这类展开问题可以按如下的方法解决 : 设函数 $ f(x) $ 定义在区间 $ [0, \pi] $ 上并且满足收玫定理的条件,我们在开区间 $ (-\pi, 0) $ 内补充 函数 $ f(x) $ 的定义, 得到定义在 $ (-\pi, \pi] $ 上的函数 $ F(x) $, 使它在 $ (-\pi, \pi) $ 上成为 奇函数 $ \mathbb{I}( $ 偶函数). 按这种方式拓广函数定义域的过程称为奇延拓(偶延拓). 然后将奇延拓(偶延拓)后的函数展开成傅里叶级数, 这个级数必定是正弦级数 (余弦级数). 再限制 $ x $ 在 $ (0, \pi] $ 上, 此时 $ F(x) \equiv f(x) $, 这样便得到 $ f(x) $ 的正弦级 数(余弦级数) 展开式。
+根据前面讨论的结果，这类展开问题可以按如下的方法解决 : 设函数 $ f(x) $ 定义在区间 $ [0, \pi] $ 上并且满足收玫定理的条件，我们在开区间 $ (-\pi, 0) $ 内补充 函数 $ f(x) $ 的定义， 得到定义在 $ (-\pi, \pi] $ 上的函数 $ F(x) $, 使它在 $ (-\pi, \pi) $ 上成为 奇函数 $ \mathbb{I}( $ 偶函数). 按这种方式拓广函数定义域的过程称为奇延拓(偶延拓). 然后将奇延拓(偶延拓)后的函数展开成傅里叶级数， 这个级数必定是正弦级数 (余弦级数). 再限制 $ x $ 在 $ (0, \pi] $ 上， 此时 $ F(x) \equiv f(x) $, 这样便得到 $ f(x) $ 的正弦级 数(余弦级数) 展开式。
 
 
 \begin{theorem}
-    设周期为 $ 2 l $ 的周期函数 $ f(x) $ 满足收敛定理的条件,则它的傅里叶级 数展开式为
-$$
+    设周期为 $ 2 l $ 的周期函数 $ f(x) $ 满足收敛定理的条件，则它的傅里叶级 数展开式为
+\begin{equation}
 f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty}\left(a_{n} \cos \frac{n \pi x}{l}+b_{n} \sin \frac{n \pi x}{l}\right)(x \in C), \quad(8-1)
-$$
+\end{equation}
 
 其中
-$$
+\begin{equation}
 \left.\begin{array}{l}
 a_{n}=\frac{1}{l} \int_{-l}^{l} f(x) \cos \frac{n \pi x}{l} \mathrm{~d} x \quad(n=0,1,2, \cdots) \\
 b_{n}=\frac{1}{l} \int_{-l}^{l} f(x) \sin \frac{n \pi x}{l} \mathrm{~d} x \quad(n=1,2,3, \cdots), \\
 C=\left\{x \mid f(x)=\frac{1}{2}\left[f\left(x^{-}\right)+f\left(x^{+}\right)\right]\right\}
 \end{array}\right\}
-$$
+\end{equation}
 
 
 
-当 $ f(x) $ 为奇函数时,
-$$
+当 $ f(x) $ 为奇函数时，
+\begin{equation}
 f(x)=\sum_{n=1}^{\infty} b_{n} \sin \frac{n \pi x}{l} \quad(x \in C)
-$$
+\end{equation}
 其中
-$$
+\begin{equation}
 b_{n}=\frac{2}{l} \int_{0}^{l} f(x) \sin \frac{n \pi x}{l} \mathrm{~d} x \quad(n=1,2,3, \cdots)
-$$
+\end{equation}
 
-当 $ f(x) $ 为偶函数时,
-$$
+当 $ f(x) $ 为偶函数时，
+\begin{equation}
 f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty} a_{n} \cos \frac{n \pi x}{l}(x \in C)
-$$
+\end{equation}
 其中
-$$
+\begin{equation}
 a_{n}=\frac{2}{l} \int_{0}^{l} f(x) \cos \frac{n \pi x}{l} \mathrm{~d} x \quad(n=0,1,2, \cdots)
-$$
+\end{equation}
 \end{theorem}
 
 \begin{definition}[傅里叶级数的复数形式]
-    $$ \sum_{n=-\infty}^{\infty} c_{n} \mathrm{e}^{\frac{n \pi x}{l}}j $$
+    \begin{equation} \sum_{n=-\infty}^{\infty} c_{n} \mathrm{e}^{\frac{n \pi x}{l}}j \end{equation}
 
     where $c_{n}=\frac{1}{2 l} \int_{-l}^{l} f(x) \mathrm{e}^{-\frac{n \pi x}{l} j} \mathrm{d} x \quad(n=0, \pm 1, \pm 2, \cdots) $.
 \end{definition}
 
 \begin{proof}
     设周期为 $ 2 l $ 的周期函数 $ f(x) $ 的傅里叶级数为
-$$
+\begin{equation}
 \frac{a_{0}}{2}+\sum_{n=1}^{\infty}\left(a_{n} \cos \frac{n \pi x}{l}+b_{n} \sin \frac{n \pi x}{l}\right)
-$$
+\end{equation}
 
 其中系数 $ a_{n} $ 与 $ b_{n} $ 为
-$$
+\begin{equation}
 \left.\begin{array}{ll}
 a_{n}=\frac{1}{l} \int_{-l}^{l} f(x) \cos \frac{n \pi x}{l} \mathrm{~d} x & (n=0,1,2, \cdots), \\
 b_{n}=\frac{1}{l} \int_{-l}^{l} f(x) \sin \frac{n \pi x}{l} \mathrm{~d} x & (n=1,2,3, \cdots) .
 \end{array}\right\}
-$$
+\end{equation}
 
 利用欧拉公式
-$$ \cos t=\frac{\mathrm{e}^{\mathrm{ti}}+\mathrm{e}^{-t i}}{2}, \sin t=\frac{\mathrm{e}^{t \mathrm{i}}-\mathrm{e}^{-t \mathrm{i}}}{2 \mathrm{i}} $$
+\begin{equation} \cos t=\frac{\mathrm{e}^{\mathrm{ti}}+\mathrm{e}^{-t i}}{2}, \sin t=\frac{\mathrm{e}^{t \mathrm{i}}-\mathrm{e}^{-t \mathrm{i}}}{2 \mathrm{i}} \end{equation}
 
 记
-$$
+\begin{equation}
 \frac{a_{0}}{2}=c_{0}, \quad \frac{a_{n}-b_{n} \mathrm{i}}{2}=c_{n}, \quad \frac{a_{n}+b_{n} \mathrm{i}}{2}=c_{-n} \quad(n=1,2,3, \cdots)
-$$
+\end{equation}
 
 则表示为
 
-$$ c_{0}+\sum_{n=1}^{\infty}\left(c_{n} \mathrm{e}^{\frac{n \pi x}{l} i}+c_{-n} \mathrm{e}^{-\frac{n \pi x}{l} i}\right) =\left(c_{n} \mathrm{e}^{\frac{n \pi x}{l}}i\right)_{n=0}+\sum_{n=1}^{\infty}\left(c_{n} \mathrm{e}^{\frac{n \pi x}{l}i}+c_{-n} \mathrm{e}^{-\frac{n \pi x}{l}i}\right) $$
+\begin{equation} c_{0}+\sum_{n=1}^{\infty}\left(c_{n} \mathrm{e}^{\frac{n \pi x}{l} i}+c_{-n} \mathrm{e}^{-\frac{n \pi x}{l} i}\right) =\left(c_{n} \mathrm{e}^{\frac{n \pi x}{l}}i\right)_{n=0}+\sum_{n=1}^{\infty}\left(c_{n} \mathrm{e}^{\frac{n \pi x}{l}i}+c_{-n} \mathrm{e}^{-\frac{n \pi x}{l}i}\right) \end{equation}
 
-$$ c_{0}=\frac{a_{0}}{2}=\frac{1}{2 l} \int_{-l}^{l} f(x) \mathrm{d} x $$
+\begin{equation} c_{0}=\frac{a_{0}}{2}=\frac{1}{2 l} \int_{-l}^{l} f(x) \mathrm{d} x \end{equation}
 
-$$
+\begin{equation}
 \begin{aligned}
    c_{n} &=\frac{a_{n}-b_{n} i}{2}  \\
    &=\frac{1}{2}\left[\frac{1}{l} \int_{-l}^{l} f(x) \cos \frac{n \pi x}{l} \mathrm{~d} x-\frac{\mathrm{i}}{l} \int_{-l}^{l} f(x) \sin \frac{n \pi x}{l} \mathrm{~d} x\right] \\
    &=\frac{1}{2 l} \int_{-l}^{l} f(x)\left(\cos \frac{n \pi x}{l}-\mathrm{i} \sin \frac{n \pi x}{l}\right) \mathrm{d} x\\
    &=\frac{1}{2 l} \int_{-l}^{l} f(x) \mathrm{e}^{-\frac{n \pi}{l}} \mathrm{~d} x \quad(n=1,2,3, \cdots) ;
 \end{aligned}
-$$
+\end{equation}
 
-$$ c_{-n}=\frac{a_{n}+b_{n} \mathrm{i}}{2}=\frac{1}{2 l} \int_{-l}^{l} f(x) \mathrm{e}^{\frac{n \pi x}{l} i} \mathrm{~d} x \quad(n=1,2,3, \cdots) $$
+\begin{equation} c_{-n}=\frac{a_{n}+b_{n} \mathrm{i}}{2}=\frac{1}{2 l} \int_{-l}^{l} f(x) \mathrm{e}^{\frac{n \pi x}{l} i} \mathrm{~d} x \quad(n=1,2,3, \cdots) \end{equation}
 
 将已得的结果合并写为
-$$
+\begin{equation}
 c_{n}=\frac{1}{2 l} \int_{-l}^{l} f(x) \mathrm{e}^{-\frac{n \pi x}{l}} \mathrm{~d} x \quad(n=0, \pm 1, \pm 2, \cdots)
-$$
+\end{equation}
 
 \end{proof}
 
 \section{Fourier Transform}
 
 \begin{definition}[The Fourier transform of a continuous function $ f(t) $ of a continuous variable $ t $]
-    $$F(\mu) = \Im\{f(t)\}=\int_{-\infty}^{\infty} f(t) e^{-j 2 \pi \mu t} d t $$
+    \begin{equation}F(\mu) = \Im\{f(t)\}=\int_{-\infty}^{\infty} f(t) e^{-j 2 \pi \mu t} d t \end{equation}
 
     Using Euler's formula, we can write as
-$$
+\begin{equation}
 F(\mu)=\int_{-\infty}^{\infty} f(t)[\cos (2 \pi \mu t)-j \sin (2 \pi \mu t)] d t
-$$
+\end{equation}
 \end{definition}
 
 傅里叶变换将一个复杂的波变换成不同的正弦波（基波），时频图（时域、频域、某一刻相位）。对于任意一个时域的曲线，均可以分解成为不同的基波的
 
-$$时域f(t) \Leftrightarrow F(u,v) 频域$$
+\begin{equation}时域f(t) \Leftrightarrow F(u,v) 频域\end{equation}
 
 \begin{definition}[inverse Fourier transform]
-    $$ f(t)=\int_{-\infty}^{\infty} F(\mu) e^{j 2 \pi \mu t} d \mu $$
+    \begin{equation} f(t)=\int_{-\infty}^{\infty} F(\mu) e^{j 2 \pi \mu t} d \mu \end{equation}
 \end{definition}
 
 
 \section{Discrete Fourier Transform}
 
 \begin{definition}[Discrete Fourier Transform]
-    $$ F_{m}=\sum_{n=0}^{M-1} f_{n} e^{-j 2 \pi m n / M} \quad m=0,1,2, \ldots, M-1 $$
+    \begin{equation} F_{m}=\sum_{n=0}^{M-1} f_{n} e^{-j 2 \pi m n / M} \quad m=0,1,2, \ldots, M-1 \end{equation}
 \end{definition}
 
 \begin{definition}[inverse discrete Fourier 
     transform (IDFT)]
-    $$ f_{n}=\frac{1}{M} \sum_{m=0}^{M-1} F_{m} e^{j 2 \pi m n / M} \quad n=0,1,2, \ldots, M-1 $$
+    \begin{equation} f_{n}=\frac{1}{M} \sum_{m=0}^{M-1} F_{m} e^{j 2 \pi m n / M} \quad n=0,1,2, \ldots, M-1 \end{equation}
 \end{definition}
 
 \begin{definition}[离散傅里叶变换矩阵$W$]
-    $$ W=\left[\begin{array}{ccccc}1 & 1 & 1 & \cdots & 1 \\ 1 & \omega^{-1} & \omega^{-2} & \cdots & \omega^{-(n-1)} \\ 1 & \omega^{-2} & \omega^{-4} & \cdots & \omega^{-2(n-1)} \\ \vdots & \vdots & \vdots & & \vdots \\ 1 & \omega^{-(n-1)} & \omega^{-2(n-1)} & \cdots & \omega^{-(n-1)(n-1)}\end{array}\right] $$
+    \begin{equation} W=\left[\begin{array}{ccccc}1 & 1 & 1 & \cdots & 1 \\ 1 & \omega^{-1} & \omega^{-2} & \cdots & \omega^{-(n-1)} \\ 1 & \omega^{-2} & \omega^{-4} & \cdots & \omega^{-2(n-1)} \\ \vdots & \vdots & \vdots & & \vdots \\ 1 & \omega^{-(n-1)} & \omega^{-2(n-1)} & \cdots & \omega^{-(n-1)(n-1)}\end{array}\right] \end{equation}
 
     where $ \omega=e^{2 \pi j / n}, \quad j=\sqrt{-1} $
 \end{definition}
 
 \begin{corollary}
     矩阵 $ (1 / \sqrt{n}) W $ 是酉矩阵:
-$$
+\begin{equation}
 \frac{1}{n} W^{H} W=\frac{1}{n} W W^{H}=I
-$$
+\end{equation}
 \end{corollary}
 
 \begin{corollary}
@@ -349,13 +349,13 @@ $$
 \begin{corollary}
     W的共轭转置为
 
-    $$ W^{H}=\left[\begin{array}{ccccc}1 & 1 & 1 & \cdots & 1 \\ 1 & \omega^{1} & \omega^{2} & \cdots & \omega^{n-1} \\ 1 & \omega^{2} & \omega^{4} & \cdots & \omega^{2(n-1)} \\ \vdots & \vdots & \vdots & & \vdots \\ 1 & \omega^{n-1} & \omega^{2(n-1)} & \cdots & \omega^{(n-1)(n-1)}\end{array}\right] $$
+    \begin{equation} W^{H}=\left[\begin{array}{ccccc}1 & 1 & 1 & \cdots & 1 \\ 1 & \omega^{1} & \omega^{2} & \cdots & \omega^{n-1} \\ 1 & \omega^{2} & \omega^{4} & \cdots & \omega^{2(n-1)} \\ \vdots & \vdots & \vdots & & \vdots \\ 1 & \omega^{n-1} & \omega^{2(n-1)} & \cdots & \omega^{(n-1)(n-1)}\end{array}\right] \end{equation}
 \end{corollary}
 
 \begin{corollary}
     Gram矩阵的第 $ i, j $ 个元素为
 
-    $$ \left(W^{H} W\right)_{i j}=1+\omega^{i-j}+\omega^{2(i-j)}+\cdots+\omega^{(n-1)(i-j)} $$
+    \begin{equation} \left(W^{H} W\right)_{i j}=1+\omega^{i-j}+\omega^{2(i-j)}+\cdots+\omega^{(n-1)(i-j)} \end{equation}
     
 $ \left(W^{H} W\right)_{i i}=n, \left(W^{H} W\right)_{i j}=\frac{\omega^{n(i-j)}-1}{\omega^{i-j}-1}=0 $ 如果 $ i \neq j $
 
@@ -365,5 +365,5 @@ $ \left(W^{H} W\right)_{i i}=n, \left(W^{H} W\right)_{i j}=\frac{\omega^{n(i-j)}
 \begin{definition}[离散傅里叶反变换]
     $n$维向量$x$的离散傅里叶反变换是 
 
-    $$ W^{-1} x=(1 / n) W^{H} x $$
+    \begin{equation} W^{-1} x=(1 / n) W^{H} x \end{equation}
 \end{definition}

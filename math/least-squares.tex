@@ -11,7 +11,7 @@
 \end{FigureCenter}
 
 由 $ x_{1}, x_{2} $ 和 $ x_{3} $ 的关系可得方程组:
-$$
+\begin{equation}
 \left\{\begin{array}{r}
 x_{1}+x_{2}+x_{3}=89 \\
 x_{1}+x_{2}=67 \\
@@ -31,11 +31,11 @@ x_{3}=20
 35 \\
 20
 \end{array}\right]\right.
-$$
+\end{equation}
 
 取后三个式子求解方程组，回代前两个式子
 
-$$\displaystyle  \begin{array}{{>{\displaystyle}l}}
+\begin{equation}\displaystyle  \begin{array}{{>{\displaystyle}l}}
 \left\{\begin{array}{ r }
 x_{2} +x_{3} =53\\
 x_{1} =35\\
@@ -45,7 +45,7 @@ x_{3} =20
 x_{1} +x_{2} +x_{3} =88\neq 89\\
 x_{1} +x_{2} =68\neq 67
 \end{array}\right. 
-\end{array}$$
+\end{array}\end{equation}
      
 
 由于测量存在误差，方程组之间相互矛盾，该超定方程组无解。
@@ -55,7 +55,7 @@ x_{1} +x_{2} =68\neq 67
 \begin{problem}[最小二乘问题]
     寻找该方程组的近似解，并尽可能逼近方程组的目标$b$, 即残差向量 $ r=A x-b $ 某种度量下尽可能小
 
-    $$ \min _{x}\|A x-b\|_{2}^{2}=\|r\|_{2}^{2} \quad (\ell_2范数度量残差) $$
+    \begin{equation} \min _{x}\|A x-b\|_{2}^{2}=\|r\|_{2}^{2} \quad (\ell_2范数度量残差) \end{equation}
 \end{problem}
 
 
@@ -64,36 +64,36 @@ x_{1} +x_{2} =68\neq 67
 \begin{problem}[求解最小二乘解]
     给定 $ {A} \in \mathbb{R}^{m \times n}, {~b} \in \mathbb{R}^{m} $, 求解 $ x \in \mathbb{R}^{n} $ 让目标函数最小
 
-$$ \min _{x}\|A x-b\|_{2}^{2}=\min _{x} \sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i j} x_{j}-b_{i}\right)^{2} $$
+\begin{equation} \min _{x}\|A x-b\|_{2}^{2}=\min _{x} \sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i j} x_{j}-b_{i}\right)^{2} \end{equation}
 \end{problem}
 
 \begin{notation}[最小二乘法的解]
     记最小二乘法的解为 $ \hat{x} $
 
-    $$
+    \begin{equation}
     \hat{x}=\arg \underset{x}{\min}\|A x-b\|_{2}^{2}=\arg \underset{x}{\min} \sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i j} x_{j}-b_{i}\right)^{2}
-    $$
+    \end{equation}
 \end{notation}
 
 \begin{example}
-    $$ f(x)=\|A x-b\|_{2}^{2}, {A}=\left[\begin{array}{cc}2 & 0 \\ -1 & 1 \\ 0 & 2\end{array}\right], b=\left[\begin{array}{c}1 \\ 0 \\ -1\end{array}\right] $$
+    \begin{equation} f(x)=\|A x-b\|_{2}^{2}, {A}=\left[\begin{array}{cc}2 & 0 \\ -1 & 1 \\ 0 & 2\end{array}\right], b=\left[\begin{array}{c}1 \\ 0 \\ -1\end{array}\right] \end{equation}
 
-    求解$$\hat{x} = \arg \underset{x}{\min} \|A x-b\|_{2}^{2}$$
+    求解\begin{equation}\hat{x} = \arg \underset{x}{\min} \|A x-b\|_{2}^{2}\end{equation}
 
     解：
-    $$ f(x)=\|A x-b\|_{2}^{2}=\left(2 x_{1}-1\right)^{2}+\left(-x_{1}+x_{2}\right)^{2}+\left(2 x_{2}+1\right)^{2} $$
+    \begin{equation} f(x)=\|A x-b\|_{2}^{2}=\left(2 x_{1}-1\right)^{2}+\left(-x_{1}+x_{2}\right)^{2}+\left(2 x_{2}+1\right)^{2} \end{equation}
 
-    $$ \frac{\partial f}{\partial x_{1}}=10 x_{1}-2 x_{2}-4 , \frac{\partial f}{\partial x_{2}}=-2 x_{1}+10 x_{2}+4 $$
+    \begin{equation} \frac{\partial f}{\partial x_{1}}=10 x_{1}-2 x_{2}-4 , \frac{\partial f}{\partial x_{2}}=-2 x_{1}+10 x_{2}+4 \end{equation}
 
-    $$ \nabla f(x)=\left[\begin{array}{l}\dfrac{\partial f}{\partial x_{1}} \\ \dfrac{\partial f}{\partial x_{2}}\end{array}\right]=0 \Rightarrow \hat{x}=\left(\frac{1}{3},-\frac{1}{3}\right)^{T} $$
+    \begin{equation} \nabla f(x)=\left[\begin{array}{l}\dfrac{\partial f}{\partial x_{1}} \\ \dfrac{\partial f}{\partial x_{2}}\end{array}\right]=0 \Rightarrow \hat{x}=\left(\frac{1}{3},-\frac{1}{3}\right)^{T} \end{equation}
 \end{example}
 
 
 \begin{theorem}
-    设最小二乘法的解为 $ \hat{x} $ ，满足:
-    $$
+    设最小二乘法的解为 $ \hat{x} $ ,满足:
+    \begin{equation}
     \|A \hat{x}-b\|_{2}^{2} \leq\|A x-b\|_{2}^{2}, \forall x \in \mathbf{R}^{n}
-    $$
+    \end{equation}
 
     当残差 $ \hat{r}=A \hat{x}-b=0 $ 时，则 $ \hat{x} $ 是线性方程组 $ A x=b $ 的解; 否则其为误差最小平方和意义下方程组的近似解。
 \end{theorem}
@@ -103,34 +103,34 @@ $$ \min _{x}\|A x-b\|_{2}^{2}=\min _{x} \sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i 
 \section{求解最小二乘法}
 
 给定 $ A \in \mathbb{R}^{m \times n}, b \in \mathbb{R}^{m}, x \in \mathbb{R}^{n} $ 目标函数：
-$$
+\begin{equation}
 f(x)=\|A x-b\|_{2}^{2}=\sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i j} x_{j}-b_{i}\right)^{2}
-$$
+\end{equation}
 
 为使目标函数最小，求最优解 $ \hat{x}：\hat{x}=\arg \underset{x}{\min} f(x) $
 
 \begin{theorem}
-    可微函数 $ f(x) $ 的最优解 $ \hat{x} $ 满足条件：梯度 $ \nabla f(\hat{x})=\mathbf{0} $ ， 即：
-$$
+    可微函数 $ f(x) $ 的最优解 $ \hat{x} $ 满足条件：梯度 $ \nabla f(\hat{x})=\mathbf{0} $ , 即：
+\begin{equation}
 \nabla f(\hat{x})=\left[\begin{array}{c}
 \dfrac{\partial f}{\partial x_{1}}(\hat{x}) \\
 \vdots \\
 \dfrac{\partial f}{\partial x_{n}}(\hat{x})
 \end{array}\right]=2 A^{T}(A \hat{x}-b)=0
-$$
+\end{equation}
 \end{theorem}
 
 \begin{theorem}[正规方程与最小二乘解]
-    $$ A^{T} A x=A^{T} b $$
+    \begin{equation} A^{T} A x=A^{T} b \end{equation}
 
     $A$的列向量\textbf{线性无关}时，则 $ \hat{x}=\left(A^{T} A\right)^{-1} A^{T} b $. 
 \end{theorem}
 
 \begin{proof}
-    设函数 $ g_{i}(x)=\sum_{j=1}^{n} A_{i j} x_{j}-b_{i} $ ，则有
+    设函数 $ g_{i}(x)=\sum_{j=1}^{n} A_{i j} x_{j}-b_{i} $ ,则有
 
     
-        $$g_{i}( x) =\sum\limits _{j=1}^{n} A_{ij} x_{j} -b_{i} \Rightarrow \left(\begin{array}{ c c c c c }
+        \begin{equation}g_{i}( x) =\sum\limits _{j=1}^{n} A_{ij} x_{j} -b_{i} \Rightarrow \left(\begin{array}{ c c c c c }
         A_{1,1} & \cdots  & A_{1,k} & \cdots  & A_{1,n}\\
         \vdots  &  & \vdots  &  & \vdots \\
         \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{A}\textcolor[rgb]{0.72,0.33,0.31}{_{j,1}}} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\cdots }} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{A}\textcolor[rgb]{0.72,0.33,0.31}{_{j,k}}} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\cdots }} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{A}\textcolor[rgb]{0.72,0.33,0.31}{_{j,n}}}\\
@@ -148,35 +148,35 @@ $$
         \textcolor[rgb]{0.72,0.33,0.31}{b\boldsymbol{_{j}}}\\
         \textcolor[rgb]{0,0,0}{\vdots }\\
         \textcolor[rgb]{0,0,0}{b_{n}}
-        \end{array}\right)$$
+        \end{array}\right)\end{equation}
     
     所以
-    $$\begin{aligned} 
+    \begin{equation}\begin{aligned} 
         f(x)&=\|A x-b\|_{2}^{2}
         &=\sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i j} x_{j}-b_{i}\right)^{2}
         &=\sum_{i=1}^{m}\left(g_{i}(x)\right)^{2} 
-    \end{aligned}$$
+    \end{aligned}\end{equation}
 
     函数 $ f(x) $ 对变量 $ x_{k} $ 偏导为
     
-    $$ \frac{\partial f(x)}{\partial x_{k}}=\sum_{i=1}^{m}\left(\left(2 g_{i}(x)\right)\left(\frac{\partial g_{i}(x)}{\partial x_{k}}\right)\right) $$
+    \begin{equation} \frac{\partial f(x)}{\partial x_{k}}=\sum_{i=1}^{m}\left(\left(2 g_{i}(x)\right)\left(\frac{\partial g_{i}(x)}{\partial x_{k}}\right)\right) \end{equation}
 
 
     又因为
-    $$ \frac{\partial g_{i}(x)}{\partial x_{k}}=A_{i k} $$
+    \begin{equation} \frac{\partial g_{i}(x)}{\partial x_{k}}=A_{i k} \end{equation}
 
 
     所以
-    $$ \begin{aligned} 
+    \begin{equation} \begin{aligned} 
         \frac{\partial f}{\partial x_{k}}(x) 
         &=\sum_{i=1}^{m} 2\left(g_{i}(x)\right)\left(A_{i k}\right) \\
         &=2 \sum_{i=1}^{m}\left(\left(\sum_{j=1}^{n} A_{i j} x_{j}-b_{i}\right)\left(A_{i k}\right)\right) 
-        \\ &=2 \sum_{i=1}^{m}\left(\left(\sum_{j=1}^{n} A_{i j} x_{j}\right)\left(A_{i k}\right)\right)-2 \sum_{i=1}^{m}\left(\left(b_{i}\right)\left(A_{i k}\right)\right) \end{aligned} $$
+        \\ &=2 \sum_{i=1}^{m}\left(\left(\sum_{j=1}^{n} A_{i j} x_{j}\right)\left(A_{i k}\right)\right)-2 \sum_{i=1}^{m}\left(\left(b_{i}\right)\left(A_{i k}\right)\right) \end{aligned} \end{equation}
 
     注意有
         
 
-    $$\sum\limits _{j=1}^{n} A_{ij} x_{j} =\left(\begin{array}{ c c c c c }
+    \begin{equation}\sum\limits _{j=1}^{n} A_{ij} x_{j} =\left(\begin{array}{ c c c c c }
     A_{1,1} & \cdots  & A_{1,k} & \cdots  & A_{1,n}\\
     \vdots  &  & \vdots  &  & \vdots \\
     \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{A}\textcolor[rgb]{0.72,0.33,0.31}{_{j,1}}} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\cdots }} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{A}\textcolor[rgb]{0.72,0.33,0.31}{_{j,k}}} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\cdots }} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{A}\textcolor[rgb]{0.72,0.33,0.31}{_{j,n}}}\\
@@ -194,9 +194,9 @@ $$
     \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{Result}\textcolor[rgb]{0.72,0.33,0.31}{_{k}}}\\
     \vdots \\
     Result_{m}
-    \end{array}\right) =Ax$$
+    \end{array}\right) =Ax\end{equation}
 
-    $$\displaystyle \sum _{i=1}^{m}\left(\underbrace{\left(\sum _{j=1}^{n} A_{ij} x_{j}\right)}_{Result}( A_{ik})\right) =\begin{array}{ c }
+    \begin{equation}\displaystyle \sum _{i=1}^{m}\left(\underbrace{\left(\sum _{j=1}^{n} A_{ij} x_{j}\right)}_{Result}( A_{ik})\right) =\begin{array}{ c }
     A_{1,\textcolor[rgb]{0.29,0.56,0.89}{\boldsymbol{k}}} \times Result_{1}\\
     +\\
     \vdots \\
@@ -212,11 +212,11 @@ $$
     A_{i,\textcolor[rgb]{0.29,0.56,0.89}{\boldsymbol{k}}}\\
     \vdots \\
     A_{m,\textcolor[rgb]{0.29,0.56,0.89}{\boldsymbol{k}}}
-    \end{array}\right)^{T} Ax=a_{\textcolor[rgb]{0.29,0.56,0.89}{\boldsymbol{k}}}^{T} Ax$$
+    \end{array}\right)^{T} Ax=a_{\textcolor[rgb]{0.29,0.56,0.89}{\boldsymbol{k}}}^{T} Ax\end{equation}
         
     类似地，有 
     
-    $$\displaystyle \sum _{i=1}^{m}(( b_{i})( A_{ik})) =\begin{array}{ c }
+    \begin{equation}\displaystyle \sum _{i=1}^{m}(( b_{i})( A_{ik})) =\begin{array}{ c }
     A_{1,\textcolor[rgb]{0.29,0.56,0.89}{\boldsymbol{k}}} \times b_{1}\\
     +\\
     \vdots \\
@@ -226,19 +226,19 @@ $$
     \vdots \\
     +\\
     A\textcolor[rgb]{0.29,0.56,0.89}{\boldsymbol{_{\textcolor[rgb]{0,0,0}{m,} k}}} \times b_{m}
-    \end{array} =a_{\textcolor[rgb]{0.29,0.56,0.89}{\boldsymbol{k}}}^{T} b$$
+    \end{array} =a_{\textcolor[rgb]{0.29,0.56,0.89}{\boldsymbol{k}}}^{T} b\end{equation}
         
     所以
-    $$
+    \begin{equation}
     \begin{aligned}
         \frac{\partial f}{\partial x_{k}}(x)
         &=2 a_{k}^{T} A x-2 a_{k}^{T} b\\
         &=2 a_{k}^{T}(A x-b)
     \end{aligned}
-    $$
+    \end{equation}
 
     所以函数 $ f(x) $ 的梯度
-$$
+\begin{equation}
 \begin{aligned}
     \nabla f(x)&=\left[\begin{array}{c}
     \dfrac{\partial f}{\partial x_{1}}(x) \\
@@ -254,10 +254,10 @@ $$
     &= 2\left[a_{1}, a_{2}, \cdots, a_{n}\right]^{T}(A x-b) \\
     &=2 A^{T}(A x-b) 
 \end{aligned}
-$$
+\end{equation}
 
 令梯度等于0
-$$\nabla f(x)=2\left(A^{T} A x-A^{T} b\right)=0 \Rightarrow A^{T} A x=A^{T} b$$
+\begin{equation}\nabla f(x)=2\left(A^{T} A x-A^{T} b\right)=0 \Rightarrow A^{T} A x=A^{T} b\end{equation}
 
 $A$的列向量无关时，则 $ \hat{x}=\left(A^{T} A\right)^{-1} A^{T} b $.
 
@@ -274,13 +274,13 @@ $A$的列向量无关时，则 $ \hat{x}=\left(A^{T} A\right)^{-1} A^{T} b $.
 \end{FigureCenter}
 
 矩阵 $ {A} \in \mathbb{R}^{m \times n} $ 的列 $ a_{1}, a_{2}, \ldots, a_{n} \in \mathbb{R}^{m} $ 的最小二乘法问题
-$$
+\begin{equation}
 \hat{x}=\underset{x}{\arg \underset{x}{\min}}\|A x-b\|_{2}^{2} ,\|A x-b\|_{2}^{2}=\left\|\sum_{j=1}^{n} a_{j} x_{j}-b\right\|_{2}^{2}
-$$
+\end{equation}
 
 向量 $ b $ 在 $ \operatorname{range}(A) $ 上的投影是 $ A\left(A^{T} A\right)^{-1} A^{T} b $.
 
-残余向量 $ \hat{r}=A \hat{x}-b $ 满足 $ A^{T} \hat{r}=A^{T}(A \hat{x}-b)=0 $.残余向量 $ \hat{r} $ 正交于 $ A $ 的每一列,因此正交于$ \operatorname{range}(A) $.
+残余向量 $ \hat{r}=A \hat{x}-b $ 满足 $ A^{T} \hat{r}=A^{T}(A \hat{x}-b)=0 $.残余向量 $ \hat{r} $ 正交于 $ A $ 的每一列，因此正交于$ \operatorname{range}(A) $.
 
 
 
@@ -295,11 +295,11 @@ $$
 
 \begin{theorem}[最小二乘法问题的正规方程]
 
-    $$ \nabla f(x)=0, f(x)=\|A x-b\|_{2}^{2} $$
+    \begin{equation} \nabla f(x)=0, f(x)=\|A x-b\|_{2}^{2} \end{equation}
 等价于
-$$
+\begin{equation}
 A^{T} A x=A^{T} b
-$$
+\end{equation}
 \end{theorem}
 
 系数矩阵 $ A^{T} A $ 是 $ A $ 的Gram矩阵，最小二乘法问题所有的解都满足正规方程。
@@ -314,10 +314,10 @@ $$
 \section{QR分解求解最小二乘法}
 
 \begin{theorem}[QR分解求解最小二乘法]
-    若 $ {A} \in \mathbb{R}^{m \times n} $ 的列向量线性无关，则存在 $ {A}={QR} $ 分解， $ Q \in \mathbb{R}^{m \times n} $ ， $ R \in \mathbb{R}^{{n} \times n} $ 
+    若 $ {A} \in \mathbb{R}^{m \times n} $ 的列向量线性无关，则存在 $ {A}={QR} $ 分解， $ Q \in \mathbb{R}^{m \times n} $ , $ R \in \mathbb{R}^{{n} \times n} $ 
     
     最小二乘法问题的解
-$$
+\begin{equation}
 \begin{aligned}
 \hat{x}&=\left(A^{T} A\right)^{-1} A^{T} b \\
 &=\left((Q R)^{T}(Q R)\right)^{-1}(Q R)^{T} b \\
@@ -325,12 +325,12 @@ $$
 &=\left(R^{T} R\right)^{-1} R^{T} Q^{T} b \\
 &=R^{-1} Q^{T} b
 \end{aligned}
-$$
+\end{equation}
 \end{theorem}
 
 
 \begin{example}
-    $$
+    \begin{equation}
 A=\left[\begin{array}{cc}
 3 & -6 \\
 4 & -8 \\
@@ -340,9 +340,9 @@ A=\left[\begin{array}{cc}
 7 \\
 0
 \end{array}\right]
-$$
+\end{equation}
 首先对$A$进行QR分解
-$$
+\begin{equation}
 Q=\left[\begin{array}{cc}
 3 / 5 & 0 \\
 4 / 5 & 0 \\
@@ -351,12 +351,12 @@ Q=\left[\begin{array}{cc}
 5 & -10 \\
 0 & 1
 \end{array}\right]
-$$
+\end{equation}
 
 计算 $ d=Q^{T} b=(5,2) $
 
 求解 $ R x=d $
-$$
+\begin{equation}
 \left[\begin{array}{cc}
 5 & -10 \\
 0 & 1
@@ -367,7 +367,7 @@ x_{2}
 5 \\
 2
 \end{array}\right]
-$$
+\end{equation}
 
 解得 $ x_{1}=5, x_{2}=2 $
 
@@ -390,15 +390,15 @@ $$
 \section{求解正规方程可能带来的严重误差}
 
 直接求解正规方程组求解：
-$$
+\begin{equation}
 A^{T} A x=A^{T} b
-$$
+\end{equation}
 
 可能会造成严重的舍入误差。
 
 \begin{example}
     一个列向量“几乎”线性相关的矩阵
-$$
+\begin{equation}
 A=\left[\begin{array}{cc}
 1 & -1 \\
 0 & 10^{-5} \\
@@ -408,12 +408,12 @@ A=\left[\begin{array}{cc}
 10^{-5} \\
 1
 \end{array}\right]
-$$
+\end{equation}
 
 将中间结果四舍五入到小数点后8位。
 
 方法 1 ：通过Gram矩阵求解
-$$
+\begin{equation}
 A^{T} A=\left[\begin{array}{cc}
 1 & -1 \\
 -1 & 1+10^{-10}
@@ -427,12 +427,12 @@ A^{T} A=\left[\begin{array}{cc}
 10^{-10} \\
 10^{-10}
 \end{array}\right]
-$$
+\end{equation}
 经过四舍五入之后，Gram矩阵为奇异矩阵。
 
 
 方法 2 : 通过对 $A$进行QR分解
-$$
+\begin{equation}
 Q=\left[\begin{array}{ll}
 1 & 0 \\
 0 & 1 \\
@@ -441,14 +441,14 @@ Q=\left[\begin{array}{ll}
 1 & -1 \\
 0 & 10^{-5}
 \end{array}\right]
-$$
+\end{equation}
 
-$$\begin{aligned}
+\begin{equation}\begin{aligned}
     &\hat{x}=\left(A^{T} A\right)^{-1} A^{T} b=R^{-1} Q^{T} b \\
     \Rightarrow& R x=Q^{T} b\\
     \Rightarrow& \left[\begin{array}{cc}1 & -1 \\ 0 & 10^{-5}\end{array}\right]\left[\begin{array}{l}x_{1} \\ x_{2}\end{array}\right]=\left[\begin{array}{l}0 \\ 10^{-5}\end{array}\right] \\
     \Rightarrow& x=\left[\begin{array}{l}1 \\ 1\end{array}\right]
-\end{aligned}$$
+\end{aligned}\end{equation}
 
 \end{example}
 
@@ -459,29 +459,29 @@ $$\begin{aligned}
 \section{梯度下降法}
 
 给定 $ A \in \mathbb{R}^{m \times n}, {~b} \in \mathbb{R}^{m}, x \in \mathbb{R}^{n} $ 目标函数:
-$$
+\begin{equation}
 f(x)=\|A x-b\|_{2}^{2}=\sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i j} x_{j}-b_{i}\right)^{2}
-$$
-为使目标函数最小, 可求最优解 $ \hat{x}: \quad \hat{x}=\arg \underset{x}{ \min } f(x) $.
+\end{equation}
+为使目标函数最小， 可求最优解 $ \hat{x}: \quad \hat{x}=\arg \underset{x}{ \min } f(x) $.
 
 \begin{problem}
     $ A \in \mathbb{R}^{{m} \times n} $ 列向量线性相关或n非常大$
     A^{T} A \in \mathbb{R}^{n \times n}$不可逆，无法直接代入求得最小二乘解。
 \end{problem}
 
-通过迭代求解目标的最优解过程: $$ x^{(1)}, x^{(2)}, \cdots, x^{(k)} \rightarrow \hat{x} $$ 
+通过迭代求解目标的最优解过程: \begin{equation} x^{(1)}, x^{(2)}, \cdots, x^{(k)} \rightarrow \hat{x} \end{equation} 
 
-设 $ x^{(k)} $ 是第$k$步迭代，期望更新 $ x^{(k+1)} $ ，满足 $ f\left(x^{(k+1)}\right)<f\left(x^{(k)}\right) $.
+设 $ x^{(k)} $ 是第$k$步迭代，期望更新 $ x^{(k+1)} $ ,满足 $ f\left(x^{(k+1)}\right)<f\left(x^{(k)}\right) $.
 
 设函数 $ f(x) $ 可微，根据泰勒公式，在 $ x^{(k)} $ 的一阶公式为
-$$
+\begin{equation}
 f\left(x^{(k+1)}\right)=f\left(x^{(k)}\right)+\left\langle\nabla f\left(x^{(k)}\right), x^{(k+1)}-x^{(k)}\right\rangle+o\left(\left\|x^{(k+1)}-x^{(k)}\right\|\right)
-$$
+\end{equation}
 
-如果 $ \left\|x^{(k+1)}-x^{(k)}\right\|_{2} $ 足够小, 则有
-$$
+如果 $ \left\|x^{(k+1)}-x^{(k)}\right\|_{2} $ 足够小， 则有
+\begin{equation}
 f\left(x^{(k+1)}\right)-f\left(x^{(k)}\right) \approx\left\langle\nabla f\left(x^{(k)}\right), x^{(k+1)}-x^{(k)}\right\rangle
-$$
+\end{equation}
 
 \begin{corollary}
     根据Cauchy-Schwarz不等式 \ref{thm:cauchy-schwartz=inequality}
@@ -489,9 +489,9 @@ $$
     $ \left|\left\langle\nabla f\left(x^{(k)}\right), x^{(k+1)}-x^{(k)}\right\rangle\right| \leq\left\|\nabla f\left(x^{(k)}\right)\right\|_{2}\left\|x^{(k+1)}-x^{(k)}\right\|_{2} $
 
     所以有
-    $$
+    \begin{equation}
 \left\langle\nabla f\left(x^{(k)}\right), x^{(k+1)}-x^{(k)}\right\rangle \geq -\left\|\nabla f\left(x^{(k)}\right)\right\|_{2}\left\|x^{(k+1)}-x^{(k)}\right\|_{2}
-$$
+\end{equation}
 
 当 $ x^{(k+1)}-x^{(k)}=-\alpha_{k} \nabla f\left(x^{(k)}\right), \alpha_{k}>0 $ 时，等式成立。
 
@@ -500,25 +500,25 @@ $$
 
 迭代公式为 
 
-$$  x^{(k+1)}=x^{(k)}-\alpha_{k} \nabla f\left(x^{(k)}\right) , f\left(x^{(k+1)}\right)<f\left(x^{(k)}\right) $$
+\begin{equation}  x^{(k+1)}=x^{(k)}-\alpha_{k} \nabla f\left(x^{(k)}\right) , f\left(x^{(k+1)}\right)<f\left(x^{(k)}\right) \end{equation}
 
 
 \begin{definition}[梯度下降法求解最小二乘法]
-    $$
+    \begin{equation}
 \min _{x \in \mathbb{R}^{n}} \frac{1}{2}\|A x-b\|_{2}^{2}, \quad A \in \mathbb{R}^{m \times n}, b \in \mathbb{R}^{m}
-$$
+\end{equation}
 
-令 $$ f(x)=\frac{1}{2}\|A x-b\|_{2}^{2} $$
+令 \begin{equation} f(x)=\frac{1}{2}\|A x-b\|_{2}^{2} \end{equation}
 
-则 $ f $ 为凸函数, 并有 $ \nabla f(x)=A^{T}(A x-b) $.
+则 $ f $ 为凸函数， 并有 $ \nabla f(x)=A^{T}(A x-b) $.
 
 则 $ A^{T} A \in \mathbb{R}^{n \times n} $ .如果列向量\textbf{线性相关}会导致其\textbf{不可逆}或$n$非常大。可以通过梯度下降法迭代
 
-$$  x^{(k+1)}=x^{(k)}-\alpha_{k} \nabla f\left(x^{(k)}\right) , f\left(x^{(k+1)}\right)<f\left(x^{(k)}\right) $$
+\begin{equation}  x^{(k+1)}=x^{(k)}-\alpha_{k} \nabla f\left(x^{(k)}\right) , f\left(x^{(k+1)}\right)<f\left(x^{(k)}\right) \end{equation}
 
 求解
 
-$$ x^{(k+1)}=x^{(k)}-\alpha^{(k)} A^{T}\left(A x^{(k)}-b\right) $$
+\begin{equation} x^{(k+1)}=x^{(k)}-\alpha^{(k)} A^{T}\left(A x^{(k)}-b\right) \end{equation}
 \end{definition}
 
 
@@ -535,37 +535,37 @@ $$ x^{(k+1)}=x^{(k)}-\alpha^{(k)} A^{T}\left(A x^{(k)}-b\right) $$
 \section{估计学习率（步长）$\alpha$}
 
 \begin{problem}
-    $$
+    \begin{equation}
     \min _{x \in \mathbb{R}^{n}} \frac{1}{2}\|A x-b\|_{2}^{2}, \quad A \in \mathbb{R}^{m \times n}, b \in \mathbb{R}^{m}
-    $$
+    \end{equation}
     
     令 $ f(x)=\frac{1}{2}\|A x-b\|_{2}^{2} $
 
-    $$ x^{(k+1)}=x^{(k)}-\alpha^{(k)} A^{T}\left(A x^{(k)}-b\right) $$
+    \begin{equation} x^{(k+1)}=x^{(k)}-\alpha^{(k)} A^{T}\left(A x^{(k)}-b\right) \end{equation}
 
     需要估计 $ \alpha^{(k)} $.
 \end{problem}
 
 为了估计 $ \alpha^{(k)} $, 通过线性搜索估计:
-$$
+\begin{equation}
 \alpha^{(k)}=\arg \min _{\alpha \in \Re} f\left(x^{(k)}-\alpha A^{T}\left(A x^{(k)}-b\right)\right)
-$$
+\end{equation}
 
 即 $ \alpha^{(k)} $ 是最优步长。在上面的优化式中$x^{(k)}$、$A$、$b$均视为定值。
 
 \begin{theorem}[线性搜索估计的最优步长]
-    $$\alpha^{(k)}=\frac{\left\|A^{T}\left(A x^{(k)}-b\right)\right\|_{2}^{2}}{\left\|A A^{T}\left(A x^{(k)}-b\right)\right\|_{2}^{2}}$$
+    \begin{equation}\alpha^{(k)}=\frac{\left\|A^{T}\left(A x^{(k)}-b\right)\right\|_{2}^{2}}{\left\|A A^{T}\left(A x^{(k)}-b\right)\right\|_{2}^{2}}\end{equation}
 \end{theorem}
 
 \begin{proof}
-    令 $ g(\alpha)=f\left(x^{(k)}-\alpha A^{T}\left(A x^{(k)}-b\right)\right) $ 是关于 $ \alpha $ 的 凸函数, 则有
+    令 $ g(\alpha)=f\left(x^{(k)}-\alpha A^{T}\left(A x^{(k)}-b\right)\right) $ 是关于 $ \alpha $ 的 凸函数， 则有
 
-$$
+\begin{equation}
 \min _{\alpha} g(\alpha) \Rightarrow g^{\prime}(\alpha)=0 \Rightarrow \alpha^{(k)}=\frac{\left\|A^{T}\left(A x^{(k)}-b\right)\right\|_{2}^{2}}{\left\|A A^{T}\left(A x^{(k)}-b\right)\right\|_{2}^{2}}
-$$
+\end{equation}
 
 
-$$\begin{aligned}
+\begin{equation}\begin{aligned}
     & f(x)=\frac{1}{2}\|A x-b\|_{2}^{2}, g\left(\alpha^{(k)}\right)=f\left({\color{violet} x^{(k)}-\alpha^{(k)} A^{T}\left(A x^{(k)}-b\right)} \right) \\
     \Rightarrow & g\left(\alpha^{(k)}\right)=\frac{1}{2}\left\|A\left({\color{violet} x^{(k)}-\alpha^{(k)} A^{T}\left(A x^{(k)}-b\right)} \right)-b\right\|_{2}^{2} \\
     &=\frac{1}{2}\left\|\left({\color{coral} A x^{(k)}-b} \right)-\left({\color{grass} \alpha^{(k)} A^{T}\left(A x^{(k)}-b\right)} \right)\right\|_{2}^{2} \\
@@ -573,7 +573,7 @@ $$\begin{aligned}
     &-\left({\color{coral} A x^{(k)}-b} \right)^{T}\left({\color{grass} \alpha^{(k)} A^{T}\left(A x^{(k)}-b\right)} \right) \\
     \Rightarrow & g^{\prime}\left(\alpha^{(k)}\right)=\alpha^{(k)}\left(A^{T}\left(A x^{(k)}-b\right)\right)^{T}\left(A^{T}\left(A x^{(k)}-b\right)\right)-\left(A x^{(k)}-b\right)^{T}\left(A^{T}\left(A x^{(k)}-b\right)\right)=0 \\
     \Rightarrow &\alpha^{(k)}=\frac{\left\|A^{T}\left(A x^{(k)}-b\right)\right\|_{2}^{2}}{\left\|A A^{T}\left(A x^{(k)}-b\right)\right\|_{2}^{2}}
-    \end{aligned}$$
+    \end{aligned}\end{equation}
 
 \end{proof}
 

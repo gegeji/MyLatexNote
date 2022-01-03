@@ -31,7 +31,7 @@ HMM算法的缺点:
 
 \section{模型设计}
 
-主要框架：通过嵌入方法将位置、路段嵌入高维潜空间(high dimensional latent space)，后续在这个空间进行处理；然后通过seq2seq+注意力机制模型从历史数据学习轨迹到路段的映射函数；使用数据增强技术提升效果
+主要框架：通过嵌入方法将位置、路段嵌入高维潜空间(high dimensional latent space),后续在这个空间进行处理；然后通过seq2seq+注意力机制模型从历史数据学习轨迹到路段的映射函数；使用数据增强技术提升效果
 
 \begin{definition}[基于GPS的轨迹]
    $ l = (lon, lat), P_T^l = [l_1, l_2, \cdots]$
@@ -71,7 +71,7 @@ HMM算法的缺点:
 
 根据路径长度$d$随机选择$N_W$个停留点、定位点、路径点（waypoint）$W$
 
-$$ N_{W}=d / \alpha * p $$
+\begin{equation} N_{W}=d / \alpha * p \end{equation}
 
 对于这些点加入与长度成正比的噪声。
 
@@ -113,21 +113,21 @@ RNN是一个处理序列数据的模型，但是它太简单。使用LSTM作为�
 
 seq2seq的输入输出不需要是同样长度（灵活—）
 
-由于轨迹很长，而seq2seq每次只传送一个向量到decoder，可能损失长程信息。因此引入注意力机制高效地重新访问中间隐状态。
+由于轨迹很长，而seq2seq每次只传送一个向量到decoder,可能损失长程信息。因此引入注意力机制高效地重新访问中间隐状态。
 
 decoder的隐状态$s_i$和每一个encoder的隐状态$h_i$的相关性：
 
-$$ \alpha_{i, j}=\frac{\exp \left(e_{i, j}\right)}{\sum_{k=1} \exp \left(e_{i, k}\right)} $$
+\begin{equation} \alpha_{i, j}=\frac{\exp \left(e_{i, j}\right)}{\sum_{k=1} \exp \left(e_{i, k}\right)} \end{equation}
 
 where $ e_{i, j}=s_{i} * h_{j} $
 
 encoder的隐状态$h$ 经过加权形成一个上下文向量$c_i$
 
-$$ c_{i}=\sum_{j=1} \alpha_{i, j} h_{j} $$
+\begin{equation} c_{i}=\sum_{j=1} \alpha_{i, j} h_{j} \end{equation}
 
 \subsection{Trajectory Calibration and Topology Refinement}
 
-OSM中的默认路段\textbf{不是基于道路的交叉口}，这意味着用户可能\textbf{不会通过整个路段并在交叉口掉头}.（OSM数据的交叉点还是粒度太高，车辆可能从路中间转向）
+OSM中的默认路段\textbf{不是基于道路的交叉口},这意味着用户可能\textbf{不会通过整个路段并在交叉口掉头}.（OSM数据的交叉点还是粒度太高，车辆可能从路中间转向）
 
 此外，虽然模型期望直接从真实数据中学习拓扑连续性，但在\textbf{训练过程中无法保证拓扑连续性}.因此需要轨迹标定和精化方案，以获得合理的结果和更好的匹配性能。
 
@@ -156,11 +156,11 @@ routing queries with fast hash table search.
 测量指标：
 
 
- $$\text{accuracy} =\frac{\operatorname{len}\left(P^{s m} \cap P^{s g}\right)}{\max \left\{\operatorname{len}\left(P^{s m}\right), \operatorname{len}\left(P^{s g}\right)\right\}} $$
+ \begin{equation}\text{accuracy} =\frac{\operatorname{len}\left(P^{s m} \cap P^{s g}\right)}{\max \left\{\operatorname{len}\left(P^{s m}\right), \operatorname{len}\left(P^{s g}\right)\right\}} \end{equation}
 
  \textbf{Spatial skewing} indicates
 the average distance of the matched locations to the ground
 truth locations.
-  $$\text{spatial skewing} =\frac{\sum_{i} \min _{j} \operatorname{dist}\left(P_{i}^{l g} P_{j}^{l m}\right)}{\operatorname{len}\left(P^{l g}\right)} $$
+  \begin{equation}\text{spatial skewing} =\frac{\sum_{i} \min _{j} \operatorname{dist}\left(P_{i}^{l g} P_{j}^{l m}\right)}{\operatorname{len}\left(P^{l g}\right)} \end{equation}
 
 基于扩充数据训练的深度学习模型比传统方法具有更好的学习人类运动模式的能力，并且在匹配过程中通过注意力机制更好地考虑了全局信息。

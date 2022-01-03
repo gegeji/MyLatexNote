@@ -1,20 +1,20 @@
 \chapter{Nonlinear equations}
 
 In this chapter we discuss methods for finding a solution of $ n $ nonlinear equations in $ n $ variables
-$$
+\begin{equation}
 \begin{aligned}
 f_{1}\left(x_{1}, x_{2}, \ldots, x_{n}\right) &=0 \\
 f_{2}\left(x_{1}, x_{2}, \ldots, x_{n}\right) &=0 \\
 & \vdots \\
 f_{n}\left(x_{1}, x_{2}, \ldots, x_{n}\right) &=0
 \end{aligned}
-$$
+\end{equation}
 To simplify notation, we will often express this as
-$$
+\begin{equation}
 f(x)=0
-$$
+\end{equation}
 where
-$$
+\begin{equation}
 f(x)=\left[\begin{array}{c}
 f_{1}\left(x_{1}, x_{2}, \ldots, x_{n}\right) \\
 f_{2}\left(x_{1}, x_{2}, \ldots, x_{n}\right) \\
@@ -26,7 +26,7 @@ x_{2} \\
 \vdots \\
 x_{n}
 \end{array}\right]
-$$
+\end{equation}
 We assume that $ f $ is at least continuous (i.e., $ \lim _{y \rightarrow x} f(y)=f(x) $ for all $ \left.x\right) $, and for some algorithms, stronger assumptions will be needed (for example, differentiability).
 
 \section{Bisection method}
@@ -46,34 +46,34 @@ until $ u-l \leq \epsilon $
 \end{algorithm}
 
 The convergence of the bisection method is easy to analyze. If we denote by $ \left[l^{(0)}, u^{(0)}\right] $ the initial interval, and by $ \left[l^{(k)}, u^{(k)}\right] $ the interval after iteration $ k $, then
-$$
+\begin{equation}
 u^{(k)}-l^{(k)}=\frac{u^{(0)}-l^{(0)}}{2^{k}},
-$$
+\end{equation}
 because the length of the interval is divided by two at each iteration. This means that the exit condition $ u^{(k)}-l^{(k)} \leq \epsilon $ will be satisfied if
-$$
+\begin{equation}
 \log _{2}\left(\frac{u^{(0)}-l^{(0)}}{2^{k}}\right)=\log _{2}\left(u^{(0)}-l^{(0)}\right)-k \leq \log _{2} \epsilon,
-$$
+\end{equation}
 i.e., as soon as $ k \geq \log _{2}\left(\left(u^{(0)}-l^{(0)}\right) / \epsilon\right) $. The algorithm therefore terminates after
-$$
+\begin{equation}
 \left[\log _{2}\left(\frac{u^{(0)}-l^{(0)}}{\epsilon}\right)\right]
-$$
+\end{equation}
 iterations. (By $ \lceil\alpha\rceil $ we mean the smallest integer greater than or equal to $ \alpha . $ )
 Since the final interval contains at least one solution $ x^{\star} $, we are guaranteed that its midpoint
-$$
+\begin{equation}
 x^{(k)}=\frac{1}{2}\left(l^{(k)}+u^{(k)}\right)
-$$
+\end{equation}
 is no more than a distance $ u^{(k)}-l^{(k)} $ from $ x^{\star} $. Thus we have
-$$
+\begin{equation}
 \left|x^{(k)}-x^{\star}\right| \leq \epsilon,
-$$
+\end{equation}
 when the algorithm terminates.
 
 The advantages of the bisection method are its simplicity and the fact that it does not require derivatives. It also does not require a starting point close to $ x^{\star} $. The disadvantages are that it is not very fast, and that it does not extend to $ n>1 $. Selecting an initial interval that satisfies $ f(l) f(u)<0 $ may also be difficult.
 
 Convergence rate The bisection method is $ R $-linearly convergent (as defined in section 3.2). After $ k $ iterations, the midpoint $ x^{(k)}=\left(u^{(k)}+l^{(k)}\right) / 2 $ satisfies
-$$
+\begin{equation}
 \left|x^{(k)}-x^{\star}\right| \leq u^{(k)}-l^{(k)} \leq(1 / 2)^{k}\left(u^{(0)}-l^{(0)}\right),
-$$
+\end{equation}
 (see equation (4.1)). Therefore the definition (3.2) is satisfied with $ c=1 / 2 $ and $ M=u^{(0)}-l^{(0)} $.
 
 \section{Newton's method for one equation with one variable}
@@ -88,45 +88,45 @@ until maximum number of iterations is exceeded.
 
 For simplicity we assume that $ f^{\prime}(x) \neq 0 $ in step 3 . (In a practical implementation we would have to make sure that the code handles the case $ f^{\prime}(x)=0 $ gracefully.)
 The algorithm starts at some initial value $ x^{(0)} $, and then computes iterates $ x^{(k)} $ by repeating
-$$
+\begin{equation}
 x^{(k+1)}=x^{(k)}-\frac{f\left(x^{(k)}\right)}{f^{\prime}\left(x^{(k)}\right)}, \quad k=0,1,2, \ldots
-$$
+\end{equation}
 This update has a simple interpretation. After evaluating the function value $ f\left(x^{(k)}\right) $ and the derivative $ f^{\prime}\left(x^{(k)}\right) $, we construct the first-order Taylor approximation to $ f $ around $ x^{(k)} $ :
-$$
+\begin{equation}
 \hat{f}(y)=f\left(x^{(k)}\right)+f^{\prime}\left(x^{(k)}\right)\left(y-x^{(k)}\right)
-$$
+\end{equation}
 We then solve $ \hat{f}(y)=0 $, i.e.,
 
-$$
+\begin{equation}
 f\left(x^{(k)}\right)+f^{\prime}\left(x^{(k)}\right)\left(y-x^{(k)}\right)=0
-$$
+\end{equation}
 for the variable $ y $. This is called the linearized equation. If $ f^{\prime}\left(x^{(k)}\right) \neq 0 $, the solution exists and is given by
-$$
+\begin{equation}
 y=x^{(k)}-\frac{f\left(x^{(k)}\right)}{f^{\prime}\left(x^{(k)}\right)} .
-$$
+\end{equation}
 We then take $ y $ as the next value $ x^{(k+1)} $. This is illustrated in figure $ 4.1 $.
 
 \begin{example}
     Examples We first consider the nonlinear equation
-$$
+\begin{equation}
 f(x)=e^{x}-e^{-x}-1=0 .
-$$
+\end{equation}
 The derivative is $ f^{\prime}(x)=e^{x}+e^{-x} $, so the Newton iteration is
-$$
+\begin{equation}
 x^{(k+1)}=x^{(k)}-\frac{e^{x^{(k)}}-e^{-x^{(k)}}-1}{e^{x^{(k)}}+e^{-x^{(k)}}}, \quad k=0,1, \ldots
-$$
+\end{equation}
 If we start at $ x=4 $, the algorithm converges very quickly to $ x^{\star}=0.4812 $ (see figure 4.2).
 \end{example}
 
 \begin{example}
     As a second example, we consider the equation
-$$
+\begin{equation}
 f(x)=\frac{e^{x}-e^{-x}}{e^{x}+e^{-x}}=0
-$$
+\end{equation}
 The derivative is $ f^{\prime}(x)=4 /\left(e^{x}+e^{-x}\right)^{2} $, so the Newton iteration is
-$$
+\begin{equation}
 x^{(k+1)}=x^{(k)}-\frac{1}{4}\left(e^{2 x^{(k)}}-e^{-2 x^{(k)}}\right), \quad k=0,1, \ldots
-$$
+\end{equation}
 Figure $ 4.3 $ shows the iteration, starting at two starting points, $ x^{(0)}=0.85 $, and $ x^{(0)}=1.15 $. The method converges rapidly from $ x^{(0)}=0.85 $, but does not converge from $ x^{(0)}=1.15 $.
 
 The two examples are typical for the convergence behavior of Newton's method: it works very well if started near a solution; it may not work when started far from a solution.
@@ -137,18 +137,18 @@ The two examples are typical for the convergence behavior of Newton's method: it
 We now extend Newton's method to a nonlinear equation $ f(x)=0 $ where $ f: \mathbf{R}^{n} \rightarrow $ $ \mathbf{R}^{n} $ (a function that maps an $ n $-vector $ x $ to an $ n $-vector $ f(x) $ ).
 
 We start with an initial point $ x^{(0)} $. At iteration $ k $ we evaluate $ f\left(x^{(k)}\right) $, the derivative matrix $ D f\left(x^{(k)}\right) $, and form the first-order approximation of $ f $ at $ x^{(k)} $ :
-$$
+\begin{equation}
 \hat{f}(y)=f\left(x^{(k)}\right)+D f\left(x^{(k)}\right)\left(y-x^{(k)}\right)
-$$
+\end{equation}
 
 We set $ \hat{f}(y)=0 $ and solve for $ y $, which gives
-$$
+\begin{equation}
 y=x^{(k)}-D f\left(x^{(k)}\right)^{-1} f\left(x^{(k)}\right)
-$$
+\end{equation}
 (assuming $ D f\left(x^{(k)}\right) $ is nonsingular). This value is taken as the next iterate $ x^{(k+1)} $. In summary,
-$$
+\begin{equation}
 x^{(k+1)}=x^{(k)}-D f\left(x^{(k)}\right)^{-1} f\left(x^{(k)}\right), \quad k=0,1,2, \ldots
-$$
+\end{equation}
 
 \begin{algorithm}
     Algorithm 4.3. NEWTON'S METHOD FOR SETS OF NONLINEAR EQUATIONS.
@@ -163,16 +163,16 @@ until maximum number of iterations is exceeded.
 
 \begin{example}
     Example As an example, we take a problem with two variables
-$$
+\begin{equation}
 f_{1}\left(x_{1}, x_{2}\right)=\log \left(x_{1}^{2}+2 x_{2}^{2}+1\right)-0.5, \quad f_{2}\left(x_{1}, x_{2}\right)=-x_{1}^{2}+x_{2}+0.2 .
-$$
+\end{equation}
 There are two solutions, $ (0.70,0.29) $ and $ (-0.70,0.29) $. The derivative matrix is
-$$
+\begin{equation}
 D f(x)=\left[\begin{array}{cc}
 2 x_{1} /\left(x_{1}^{2}+2 x_{2}^{2}+1\right) & 4 x_{2} /\left(x_{1}^{2}+2 x_{2}^{2}+1\right) \\
 -2 x_{1} & 1
 \end{array}\right]
-$$
+\end{equation}
 Figure $ 4.4 $ shows what happens if we use three different starting points.
 The example confirms the behavior we observed for problems with one variable. Newton's method does not always work, but if started near a solution, it takes only a few iterations. The main advantage of the method is its very fast local convergence. The disadvantages are that it requires a good starting point, and that it requires the $ n^{2} $ partial derivatives of $ f $.
 
@@ -187,13 +187,13 @@ Although the idea of the secant method extends to problems with several variable
 we will describe it only for $n = 1$.
 
 The secant method can be interpreted as a variation of Newton's method in which we replace the first-order approximation
-$$
+\begin{equation}
 \hat{f}(y)=f\left(x^{(k)}\right)+f^{\prime}\left(x^{(k)}\right)\left(y-x^{(k)}\right)
-$$
+\end{equation}
 with the function
-$$
+\begin{equation}
 \hat{f}(y)=f\left(x^{(k)}\right)+\frac{f\left(x^{(k)}\right)-f\left(x^{(k-1)}\right)}{x^{(k)}-x^{(k-1)}}\left(y-x^{(k)}\right) .
-$$
+\end{equation}
 This is the affine function that agrees with $ f(y) $ at $ y=x^{(k)} $ and $ y=x^{(k-1)} $. We then set $ \hat{f}(y) $ equal to zero, solve for $ y $, and take the solution as $ x^{(k+1)} $ (figure 4.5).
 
 \begin{algorithm}
@@ -216,83 +216,83 @@ Suppose $ I=\left[x^{\star}-\delta, x^{\star}+\delta\right] $ is an interval aro
 1. There exists a constant $ m>0 $ such that $ \left|f^{\prime}(x)\right| \geq m $ for all $ x \in I $.
 2. There exists a constant $ L>0 $ such that $ \left|f^{\prime}(x)-f^{\prime}(y) \leq L\right| x-y \mid $ for all $ x, y \in I $.
 We will show that if $ \left|x^{(k)}-x^{\star}\right| \leq \delta $, then
-$$
+\begin{equation}
 \left|x^{(k+1)}-x^{\star}\right| \leq \frac{L}{2 m}\left|x^{(k)}-x^{\star}\right|^{2} .
-$$
+\end{equation}
 In other words, the inequality (3.3) is satisfied with $ c=L /(2 m) $, so if $ x^{(k)} $ converges to $ x^{\star} $, it converges quadratically.
 
 The inequality (4.3) is proved as follows. For simplicity we will denote $ x^{(k)} $ as $ x $ and $ x^{(k+1)} $ as $ x^{+} $, i.e.,
-$$
+\begin{equation}
 x^{+}=x-\frac{f(x)}{f^{\prime}(x)}
-$$
+\end{equation}
 We have
-$$
+\begin{equation}
 \begin{aligned}
 \left|x^{+}-x^{\star}\right| &=\left|x-\frac{f(x)}{f^{\prime}(x)}-x^{\star}\right| \\
 &=\frac{\left|-f(x)-f^{\prime}(x)\left(x^{\star}-x\right)\right|}{\left|f^{\prime}(x)\right|} \\
 &=\frac{\left|f\left(x^{\star}\right)-f(x)-f^{\prime}(x)\left(x^{\star}-x\right)\right|}{\left|f^{\prime}(x)\right|}
 \end{aligned}
-$$
+\end{equation}
 (Recall that $ f\left(x^{\star}\right)=0 $.) We have $ \left|f^{\prime}(x)\right| \geq m $ by the first property, and hence
-$$
+\begin{equation}
 \left|x^{+}-x^{\star}\right| \leq \frac{\left|f\left(x^{\star}\right)-f(x)-f^{\prime}(x)\left(x^{\star}-x\right)\right|}{m} .
-$$
+\end{equation}
 
 We can use the second property to bound the numerator:
-$$
+\begin{equation}
 \begin{aligned}
 \left|f\left(x^{\star}\right)-f(x)-f^{\prime}(x)\left(x^{\star}-x\right)\right| &=\left|\int_{x}^{x^{\star}}\left(f^{\prime}(u)-f^{\prime}(x)\right) d u\right| \\
 & \leq \int_{x}^{x^{\star}}\left|f^{\prime}(u)-f^{\prime}(x)\right| d u \\
 & \leq L \int_{x}^{x^{\star}}|u-x| d u \\
 &=\frac{L}{2}\left|x^{\star}-x\right|^{2}
 \end{aligned}
-$$
+\end{equation}
 
 Putting $ (4.4) $ and $ (4.5) $ together, we obtain $ \left|x^{+}-x\right| \leq L\left|x^{\star}-x\right|^{2} /(2 m) $, which proves (4.3).
 
 The inequality (4.3) by itself does not guarantee that $ \left|x^{(k)}-x^{\star}\right| \rightarrow 0 $. However, if we assume that $ \left|x^{(0)}-x^{\star}\right| \leq \delta $ and that $ \delta \leq m / L $, then convergence readily follows. Since $ \left|x^{(0)}-x^{\star}\right| \leq \delta $, we can apply the inequality $ (4.3) $ to the first iteration, which yields
-$$
+\begin{equation}
 \left|x^{(1)}-x^{\star}\right| \leq \frac{L}{2 m}\left|x^{(0)}-x^{\star}\right|^{2} \leq \frac{L}{2 m} \delta^{2} \leq \frac{\delta}{2} .
-$$
+\end{equation}
 Therefore $ \left|x^{(1)}-x^{\star}\right| \leq \delta $, so we can apply the inequality to $ k=1 $, and obtain a bound on the error in $ x^{(2)} $,
-$$
+\begin{equation}
 \left|x^{(2)}-x^{\star}\right| \leq \frac{L}{2 m}\left|x^{(1)}-x^{\star}\right|^{2} \leq \frac{L}{2 m} \frac{\delta^{2}}{4} \leq \frac{\delta}{8},
-$$
+\end{equation}
 and therefore also
-$$
+\begin{equation}
 \left|x^{(3)}-x^{\star}\right| \leq \frac{L}{2 m}\left|x^{(2)}-x^{\star}\right|^{2} \leq \frac{L}{2 m} \frac{\delta^{2}}{8^{2}} \leq \frac{\delta}{128}
-$$
+\end{equation}
 
 et cetera. Continuing in this fashion, we have
-$$
+\begin{equation}
 \left|x^{(k+1)}-x^{\star}\right| \leq \frac{L}{2 m}\left|x^{(k)}-x^{\star}\right|^{2} \leq 2\left(\frac{1}{4}\right)^{2^{k}} \delta
-$$
+\end{equation}
 which shows that the error converges to zero very rapidly.
 A final note on the practical importance of this (and most other) convergence results. If $ f^{\prime}\left(x^{\star}\right) \neq 0 $ and $ f^{\prime}(x) $ is a. continuous function, then it is reasonable to assume that the assumptions we made are satisfied for some $ \delta, m $, and $ L $. In practice, of course, we almost never know $ \delta, m, L $, so the convergence result does not provide any practical guidelines that might help us, for example, when selecting a starting point.
 
 The result does provide some interesting qualitative or conceptual information. It establishes convergence of Newton's method, provided we start sufficiently close to a solution. It also explains the very fast local convergence observed in practice. As an interesting detail that we have not observed so far, the proof suggests that quadratic convergence only occurs if $ f^{\prime}\left(x^{\star}\right) \neq 0 $. A simple example will confirm this.
 Suppose we apply Newton's method to the nonlinear equation
-$$
+\begin{equation}
 f(x)=x^{2}-a=0
-$$
+\end{equation}
 where $ a $ is a nonnegative number. Newton's method uses the iteration
-$$
+\begin{equation}
 \begin{aligned}
 x^{(k+1)} &=x^{(k)}-\frac{\left(x^{(k)}\right)^{2}-a}{2 x^{(k)}} \\
 &=\frac{1}{2}\left(x^{(k)}+\frac{a}{x^{(k)}}\right), \quad k=0,1,2, \ldots
 \end{aligned}
-$$
+\end{equation}
 Figures $ 4.7 $ and $ 4.8 $ show the result for $ a=5 $ and $ a=0 $ respectively, with starting point $ x^{(0)}=5 $. Newton's method converges in both cases, but much more slowly when $ a=0 $ (and hence $ \left.f^{\prime}\left(x^{\star}\right)=0\right) $.
 
 Sets of equations The quadratic convergence result for Newton's method generalizes to functions of several variables. The precise statement is as follows. Suppose there is a neighborhood
-$$
+\begin{equation}
 I=\left\{x \mid\left\|x-x^{\star}\right\| \leq \delta\right\}
-$$
+\end{equation}
 around a solution $ x^{\star} $ on which $ f $ satisfies the following two properties.
 1. There exists a constant $ m>0 $ such that $ \left\|D f(x)^{-1}\right\|_{2} \leq 1 / m $ for all $ x \in I $.
 2. There exists a constant $ L>0 $ such that $ \|D f(x)-D f(y)\|_{2} \leq L\|x-y\| $ for all $ x, y \in I $.
 (Note that the norms $ \left\|D f(x)^{-1}\right\|_{2} $ and $ \|D f(x)-D f(y)\|_{2} $ are matrix norms, defined in $ \S 6.2 $, and $ \|x-y\| $ is a vector norm.) If $ \left\|x^{(k)}-x^{\star}\right\| \leq \delta $, then
-$$
+\begin{equation}
 \left\|x^{(k+1)}-x^{\star}\right\| \leq \frac{L}{2 m}\left\|x^{(k)}-x^{\star}\right\|^{2} .
-$$
+\end{equation}
 Secant method Under similar assumptions as Newton's method (including, in particular, $ f^{\prime}\left(x^{\star}\right) \neq 0 $ and a starting point sufficiently close to $ \left.x^{\star}\right) $, the secant method converges superlinearly. We omit the precise statement and the proof.

@@ -4,9 +4,9 @@
 
 \begin{definition}[线性相关(linearly dependent)]
     对于向量 $ a_{1}, \ldots a_{m} \in \mathbb{R}^{n} $, 如果存在不全为零的数 $ \beta_{1}, \ldots \beta_{m} \in \mathbb{R} $, 使得
-$$
+\begin{equation}
 \beta_{1} a_{1}+\cdots+\beta_{m} a_{m}=0
-$$
+\end{equation}
 
 则称向量 $ a_{1}, \ldots a_{m} $ 是\term{线性相关(linearly dependent)}. 
 \end{definition}
@@ -15,9 +15,9 @@ $$
     线性相关等价于至少有一个向量 $ a_{i} $ 是其它向量的线性组合。 
 
     Equivalently, at least one vector $ a_{i} $ is a linear combination of the other vectors:
-$$
+\begin{equation}
 a_{i}=-\frac{x_{1}}{x_{i}} a_{1}-\cdots-\frac{x_{i-1}}{x_{i}} a_{i-1}-\frac{x_{i+1}}{x_{i}} a_{i+1}-\cdots-\frac{x_{n}}{x_{i}} a_{n}
-$$
+\end{equation}
 if $ x_{i} \neq 0 $.
 \end{corollary}
 
@@ -28,18 +28,18 @@ if $ x_{i} \neq 0 $.
 
 
 \begin{corollary}
-    向量集 $ \left\{a_{1}\right\} $ 是线性相关的, 当且仅当 $ a_{1}=0 $ . 
+    向量集 $ \left\{a_{1}\right\} $ 是线性相关的， 当且仅当 $ a_{1}=0 $ . 
 \end{corollary}
 \begin{corollary}
-    向量集 $ \left\{a_{1}, a_{2}\right\} $ 是线性相关的,  当且仅当其中一个 $ a_{1}=\beta a_{2}, \beta \neq 0 $ . 
+    向量集 $ \left\{a_{1}, a_{2}\right\} $ 是线性相关的，  当且仅当其中一个 $ a_{1}=\beta a_{2}, \beta \neq 0 $ . 
 \end{corollary}
 
 \begin{definition}[线性独立 (linearly independent)]
     \label{Def:LinearIndependence}
-    如果$n$维向量集 $ \left\{a_{1}, \ldots, a_{m}\right\} $ 不是线性相关的, 即\term{线性独立 (linearly dependent)}, 也称\term{线性无关},  即：
-$$
+    如果$n$维向量集 $ \left\{a_{1}, \ldots, a_{m}\right\} $ 不是线性相关的， 即\term{线性独立 (linearly dependent)}, 也称\term{线性无关},  即：
+\begin{equation}
 \beta_{1} a_{1}+\cdots+\beta_{m} a_{m}=0
-$$
+\end{equation}
 当且仅当 $ \beta_{1}=\cdots=\beta_{m}=0 $ , 上述等式成立。 
 \end{definition}
 
@@ -50,7 +50,7 @@ $$
 \end{corollary}
 
 \begin{corollary}
-    如果 $ {n} $ 维向量集有 $ {n}+1 $ 个向量, 那它们必线性相关。
+    如果 $ {n} $ 维向量集有 $ {n}+1 $ 个向量， 那它们必线性相关。
 \end{corollary}
 
 \begin{example}
@@ -58,45 +58,45 @@ $$
 \end{example}
 
 \begin{example}
-    $$ a_{1}=\left[\begin{array}{c}1 \\ -2 \\ 0\end{array}\right], \quad a_{2}=\left[\begin{array}{c}-1 \\ 0 \\ 1\end{array}\right], \quad a_{3}=\left[\begin{array}{l}0 \\ 1 \\ 1\end{array}\right] $$
+    \begin{equation} a_{1}=\left[\begin{array}{c}1 \\ -2 \\ 0\end{array}\right], \quad a_{2}=\left[\begin{array}{c}-1 \\ 0 \\ 1\end{array}\right], \quad a_{3}=\left[\begin{array}{l}0 \\ 1 \\ 1\end{array}\right] \end{equation}
 
-    $$ \beta_{1} a_{1}+\beta_{2} a_{2}+\beta_{3} a_{3}=\left[\begin{array}{c}\beta_{1}-\beta_{2} \\ -2 \beta_{1}+\beta_{3} \\ \beta_{2}+\beta_{3}\end{array}\right]=0 $$
+    \begin{equation} \beta_{1} a_{1}+\beta_{2} a_{2}+\beta_{3} a_{3}=\left[\begin{array}{c}\beta_{1}-\beta_{2} \\ -2 \beta_{1}+\beta_{3} \\ \beta_{2}+\beta_{3}\end{array}\right]=0 \end{equation}
 
-    $$ \beta_{1}=\beta_{2}=\beta_{3}=0 $$
+    \begin{equation} \beta_{1}=\beta_{2}=\beta_{3}=0 \end{equation}
 \end{example}
 
 
 \begin{corollary}
-    $$
+    \begin{equation}
 A=\left[\begin{array}{llll}
 a_{1} & a_{2} & \cdots & a_{n}
 \end{array}\right]
-$$
+\end{equation}
 has linearly independent columns if
-$$
+\begin{equation}
 A x=0 \quad \Longrightarrow \quad x=0
-$$
+\end{equation}
 \end{corollary}
 
 \begin{theorem}
     假设 $ x $ 是线性无关向量 $ a_{1}, \ldots, a_{k} $ 的线性组合：
-$$
+\begin{equation}
 x=\beta_{1} a_{1}+\cdots \beta_{k} a_{k}
-$$
-则其系数 $ \beta_{1}, \ldots \beta_{k} $ 是唯一的, 即如果有：
+\end{equation}
+则其系数 $ \beta_{1}, \ldots \beta_{k} $ 是唯一的， 即如果有：
 
-$$
+\begin{equation}
 x=\gamma_{1} a_{1}+\cdots \gamma_{k} a_{k}
-$$
+\end{equation}
 则对于 $ i=1, \ldots k $, 有 $ \beta_{i}=\gamma_{i} $ . 
 \end{theorem}
 
 \begin{proof}
-$$
+\begin{equation}
 \left(\beta_{1}-\gamma_{1}\right) a_{1}+\cdots\left(\beta_{k}-\gamma_{k}\right) a_{k}=x-x=0
-$$
+\end{equation}
 
-由于向量 $ a_{1}, \ldots, a_{k} $ 线性无关, 有 $ \beta_{1}-\gamma_{1}=\beta_{k}-\gamma_{k}=0 $ . 
+由于向量 $ a_{1}, \ldots, a_{k} $ 线性无关， 有 $ \beta_{1}-\gamma_{1}=\beta_{k}-\gamma_{k}=0 $ . 
 
 所以线性组合的系数是唯一的。
 \end{proof}
@@ -110,9 +110,9 @@ $$
 \begin{definition}[向量 $ b $ 在基底 $ a_{1}, \ldots, a_{n} $ 下的分解]
     任何一个$n$维向量 $ b $ 都可以用它们的线性组合来表示
 
-$$
+\begin{equation}
 b=\beta_{1} a_{1}+\cdots+\beta_{n} a_{n}
-$$
+\end{equation}
 \end{definition}
 
 \begin{proof}
@@ -120,23 +120,23 @@ $$
 \end{proof}
 
 \begin{example}
-    $ e_{1}, \ldots, e_{n} $ 是一组基, 那么 $ b $ 在此基底下的分解为
+    $ e_{1}, \ldots, e_{n} $ 是一组基， 那么 $ b $ 在此基底下的分解为
 
-    $$ b=b_{1} e_{1}+\cdots+b_{n} e_{n} ,b=\left[\begin{array}{c}b_{1} \\ \vdots \\ b_{n}\end{array}\right] \in \mathbb{R}^{n} $$
+    \begin{equation} b=b_{1} e_{1}+\cdots+b_{n} e_{n} ,b=\left[\begin{array}{c}b_{1} \\ \vdots \\ b_{n}\end{array}\right] \in \mathbb{R}^{n} \end{equation}
 \end{example}
 
 \section{标准正交向量}
 
 \begin{definition}[Orthogonal Vectors]
     \label{Def:OrthogonalVectors}
-    在$n$维向量集 $ a_{1}, \ldots, a_{k} $ 中,  如果对于 $ i \neq j $, 都有 $ a_{i} \perp a_{j} $ ,  则称它们相互\term{正交(orthogonal)}. 
+    在$n$维向量集 $ a_{1}, \ldots, a_{k} $ 中，  如果对于 $ i \neq j $, 都有 $ a_{i} \perp a_{j} $ ,  则称它们相互\term{正交(orthogonal)}. 
 \end{definition}
 
 \begin{definition}[Orthonormal Vectors]
     \label{Def:OrthonormalVectors}
-    如果$n$维向量集 $ a_{1}, \ldots, a_{k} $ 相互正交, 且每个向量的模长都为单位长度 1 ,  即对于 $ i=1, \ldots k $, 有 $ \left\|a_{i}\right\|_{2}^{2}=1 $, 则称它们是\term{标准正交 (orthonormal)}的。 
+    如果$n$维向量集 $ a_{1}, \ldots, a_{k} $ 相互正交， 且每个向量的模长都为单位长度 1 ,  即对于 $ i=1, \ldots k $, 有 $ \left\|a_{i}\right\|_{2}^{2}=1 $, 则称它们是\term{标准正交 (orthonormal)}的。 
 
-    $$ a_{i}^{T} a_{j}=\left\{\begin{array}{ll}1 & i=j \\ 0 & i \neq j\end{array}\right. $$
+    \begin{equation} a_{i}^{T} a_{j}=\left\{\begin{array}{ll}1 & i=j \\ 0 & i \neq j\end{array}\right. \end{equation}
 \end{definition}
 
 \begin{corollary}
@@ -145,11 +145,11 @@ $$
 
 \begin{theorem}
     if $ n $ vectors $ a_{1}, a_{2}, \ldots, a_{k} $ of length $ n $ are linearly independent, then
-$$
+\begin{equation}
 n \leq m
-$$
+\end{equation}
 
-    (根据线性无关的性质, 必有向量集向量个数 $ k \leq n $.)
+    (根据线性无关的性质， 必有向量集向量个数 $ k \leq n $.)
 \end{theorem}
 
 \begin{proof}
@@ -161,12 +161,12 @@ $$
     
     Let $ a_{1}, \ldots, a_{k} $ be a linearly independent list of $ n $-vectors. We need to show that $ k \leq n $. We partition the vectors as
 
-    $$
+    \begin{equation}
     a_{i}=\left[\begin{array}{r}
     b_{i} \\
     \alpha_{i}
     \end{array}\right], \quad i=1, \ldots, k
-    $$
+    \end{equation}
     where $ b_{i} $ is an $ (n-1) $-vector and $ \alpha_{i} $ is a scalar.
 
     First suppose that $ \alpha_{1}=\cdots=\alpha_{k}=0 $. 
@@ -177,10 +177,10 @@ $$
     
     Assume $ \alpha_{j} \neq 0 . $ We define a collection of $ k-1 $ vectors $ c_{i} $ of length $ n-1 $ as follows:
 
-    $$c_{i}=\left\{\begin{matrix} 
+    \begin{equation}c_{i}=\left\{\begin{matrix} 
         b_{i}-\frac{\alpha_{i}}{\alpha_{j}} b_{j}, \quad i=1, \ldots, j-1  \\  
        b_{i+1}-\frac{\alpha_{i+1}}{\alpha_{j}} b_{j}, \quad i=j, \ldots, k-1  
-     \end{matrix}\right. $$
+     \end{matrix}\right. \end{equation}
 
      These $ k-1 $ vectors are linearly independent: If $ \sum_{i=1}^{k-1} \beta_{i} c_{i}=0 $ then
 
@@ -199,9 +199,9 @@ $$
     \end{equation}
 
     with
-    $$
+    \begin{equation}
     \gamma=-\frac{1}{\alpha_{j}}\left(\sum_{i=1}^{j-1} \beta_{i} \alpha_{i}+\sum_{i=j+1}^{k} \beta_{i-1} \alpha_{i}\right)
-    $$
+    \end{equation}
 
     Since the vectors $ a_{i}=\left(b_{i}, \alpha_{i}\right) $ are linearly independent, the \cref{eqn:k-leq-n} only holds when all the coefficients $ \beta_{i} $ and $ \gamma $ are all zero. This in turns implies that the vectors $ c_{1}, \ldots, c_{k-1} $ are linearly independent. By the induction hypothesis $ k-1 \leq n-1 $ so we have established that $ k \leq n $.
 \end{proof}
@@ -215,14 +215,14 @@ $$
 \end{corollary}
 
 \begin{definition}[$n$维向量的一个标准正交基]
-    当 $ k=n $ 时,  $ a_{1}, \ldots, a_{n} $ 是 $ n $ 维向量的一个\term{标准正交基}. 
+    当 $ k=n $ 时，  $ a_{1}, \ldots, a_{n} $ 是 $ n $ 维向量的一个\term{标准正交基}. 
 \end{definition}
 
 \begin{definition}[ $ x $ 在标准正交基下的标准正交分解]
-    如果 $ a_{1}, \ldots, a_{n} $ 是一个标准正交基, 对于任意维向量 $ x $
-$$
+    如果 $ a_{1}, \ldots, a_{n} $ 是一个标准正交基， 对于任意维向量 $ x $
+\begin{equation}
 x=\left(a_{1}^{T} x\right) a_{1}+\cdots+\left(a_{n}^{T} x\right) a_{n}
-$$
+\end{equation}
 则称其为 \term{$ x $ 在标准正交基下的标准正交分解}. 
 \end{definition}
 
@@ -230,11 +230,11 @@ $$
 
 \begin{proof}
     由于正交向量的性质
-    $$ a_{i}^{T} a_{j}=\left\{\begin{array}{ll}1 & i=j \\ 0 & i \neq j\end{array}\right. $$
+    \begin{equation} a_{i}^{T} a_{j}=\left\{\begin{array}{ll}1 & i=j \\ 0 & i \neq j\end{array}\right. \end{equation}
 
     所以
 
-    $$ a_{i}^{T} x=\left(a_{1}^{T} x\right) a_{i}^{T} a_{1}+\cdots+\left(a_{i}^{T} x\right) a_{i}^{T} a_{i}+\cdots+\left(a_{n}^{T} x\right) a_{i}^{T} a_{n}=a_{i}^{T} x $$
+    \begin{equation} a_{i}^{T} x=\left(a_{1}^{T} x\right) a_{i}^{T} a_{1}+\cdots+\left(a_{i}^{T} x\right) a_{i}^{T} a_{i}+\cdots+\left(a_{n}^{T} x\right) a_{i}^{T} a_{n}=a_{i}^{T} x \end{equation}
 \end{proof}
 
 \section{Gram-Schmidt Algorithm}
@@ -252,9 +252,9 @@ $$
     }
 \end{algorithm}
 
-如果步骤2中未提前结束迭代, 那么 $ a_{1}, \ldots, a_{k} $ 是线性独立的, 而且 $ q_{1}, \ldots, q_{k} $ 是标准正交基。 
+如果步骤2中未提前结束迭代， 那么 $ a_{1}, \ldots, a_{k} $ 是线性独立的， 而且 $ q_{1}, \ldots, q_{k} $ 是标准正交基。 
 
-如果在第$j$次迭代中提前结束, 说明 $ a_{j} $ 是 $ a_{1}, \ldots, a_{j-1} $ 的线性组合, 因此 $ a_{1}, \ldots, a_{k} $ 是线性相关的。 
+如果在第$j$次迭代中提前结束， 说明 $ a_{j} $ 是 $ a_{1}, \ldots, a_{j-1} $ 的线性组合， 因此 $ a_{1}, \ldots, a_{k} $ 是线性相关的。 
 
 \begin{theorem}
     \label{thm: qs-are-orthogonal}
@@ -263,14 +263,14 @@ $$
 \end{theorem}
 
 \begin{proof}
-    假设第 $ i-1 $ 次迭代成立,  即: $$ \quad q_{r} \perp q_{s}, \forall r, s<i $$
+    假设第 $ i-1 $ 次迭代成立，  即: \begin{equation} \quad q_{r} \perp q_{s}, \forall r, s<i \end{equation}
 
     正交化步骤保证有以下关系成立
-    $$ \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
+    \begin{equation} \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} \end{equation}
 
     等式两边同时乘以 $ q_{j}^{T}, j=1, \ldots, i-1 $
-    $$ \begin{aligned} q_{j}^{T} \tilde{q}_{i} &=q_{j}^{T} a_{i}-\left(q_{1}^{T} a_{i}\right)\left(q_{j}^{T} q_{1}\right)-\cdots-\left(q_{i-1}^{T} a_{i}\right)\left(q_{j}^{T} q_{i-1}\right) \\ &=q_{j}^{T} a_{i}-q_{j}^{T} a_{i}
-        \\ &=0  \end{aligned} $$
+    \begin{equation} \begin{aligned} q_{j}^{T} \tilde{q}_{i} &=q_{j}^{T} a_{i}-\left(q_{1}^{T} a_{i}\right)\left(q_{j}^{T} q_{1}\right)-\cdots-\left(q_{i-1}^{T} a_{i}\right)\left(q_{j}^{T} q_{i-1}\right) \\ &=q_{j}^{T} a_{i}-q_{j}^{T} a_{i}
+        \\ &=0  \end{aligned} \end{equation}
 
     $ \because q_{j}^{T} q_{r}=0, j \neq r, q_{j}^{T} q_{j}=1 $
 
@@ -285,8 +285,8 @@ $$
     \KwIn{Three independent vectors $ \boldsymbol{a}, \boldsymbol{b}, \boldsymbol{c} $}
     \KwOut{Three orthonormal vectors $ \boldsymbol{q}_{1}=\boldsymbol{A} /\|\boldsymbol{A}\|, \boldsymbol{q}_{2}=\boldsymbol{B} /\|\boldsymbol{B}\|, \boldsymbol{q}_{3}=\boldsymbol{C} /\|\boldsymbol{C}\| $.}
     Choose $ \boldsymbol{A}=\boldsymbol{a} $\;
-    $$ \boldsymbol{B}=\boldsymbol{b}-\frac{\boldsymbol{A}^{\mathrm{T}} \boldsymbol{b}}{\boldsymbol{A}^{\mathrm{T}} \boldsymbol{A}} \boldsymbol{A} $$\;
-    $$ \boldsymbol{C}=\boldsymbol{c}-\frac{\boldsymbol{A}^{\mathrm{T}} \boldsymbol{c}}{\boldsymbol{A}^{\mathrm{T}} \boldsymbol{A}} \boldsymbol{A}-\frac{\boldsymbol{B}^{\mathrm{T}} \boldsymbol{c}}{\boldsymbol{B}^{\mathrm{T}} \boldsymbol{B}} \boldsymbol{B}   $$\;
+    $ \boldsymbol{B}=\boldsymbol{b}-\frac{\boldsymbol{A}^{\mathrm{T}} \boldsymbol{b}}{\boldsymbol{A}^{\mathrm{T}} \boldsymbol{A}} \boldsymbol{A} $\;
+    $ \boldsymbol{C}=\boldsymbol{c}-\frac{\boldsymbol{A}^{\mathrm{T}} \boldsymbol{c}}{\boldsymbol{A}^{\mathrm{T}} \boldsymbol{A}} \boldsymbol{A}-\frac{\boldsymbol{B}^{\mathrm{T}} \boldsymbol{c}}{\boldsymbol{B}^{\mathrm{T}} \boldsymbol{B}} \boldsymbol{B}   $\;
     单位化\;
 \end{algorithm}
 
@@ -297,27 +297,27 @@ $$
 \begin{corollary}
     $ a_{i} $ 是 $ q_{1}, \ldots, q_{i} $ 的一个线性组合。
     
-    $$ a_{i}=\left\|\tilde{q}_{i}\right\|_{2} q_{i}+\left(q_{1}^{T} a_{i}\right) q_{1}+\cdots+\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
+    \begin{equation} a_{i}=\left\|\tilde{q}_{i}\right\|_{2} q_{i}+\left(q_{1}^{T} a_{i}\right) q_{1}+\cdots+\left(q_{i-1}^{T} a_{i}\right) q_{i-1} \end{equation}
 \end{corollary}
 
 \begin{proof}
     由
-    $$ \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
+    \begin{equation} \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} \end{equation}
 
     所以
-    $$a_{i}= \widetilde{q}_{i}+\left(q_{1}^{T} a_{i}\right) q_{1}+\cdots+\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
+    \begin{equation}a_{i}= \widetilde{q}_{i}+\left(q_{1}^{T} a_{i}\right) q_{1}+\cdots+\left(q_{i-1}^{T} a_{i}\right) q_{i-1} \end{equation}
 
     注意有性质: $
     q_{i}=\dfrac{\widetilde{q}_{i}}{\left\|\widetilde{q}_{i}\right\|_{2}}$, 即 $ q_{1}, \ldots, q_{i} $.
 
-    $$ a_{i}=\left\|\tilde{q}_{i}\right\|_{2} q_{i}+\left(q_{1}^{T} a_{i}\right) q_{1}+\cdots+\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
+    \begin{equation} a_{i}=\left\|\tilde{q}_{i}\right\|_{2} q_{i}+\left(q_{1}^{T} a_{i}\right) q_{1}+\cdots+\left(q_{i-1}^{T} a_{i}\right) q_{i-1} \end{equation}
 \end{proof}
 
 
 则有 
 
 \begin{corollary}
-    $$q_{i} = \frac{a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1}}{\left\|\tilde{q}_{i}\right\|_{2}}$$
+    \begin{equation}q_{i} = \frac{a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1}}{\left\|\tilde{q}_{i}\right\|_{2}}\end{equation}
 \end{corollary}
 
 
@@ -326,17 +326,17 @@ $$
 \end{corollary}
 
 \begin{proof}
-    归纳假设, 每个 $ q_{i-1} $ 都是 $ a_{1}, \ldots, a_{i-1} $ 的线性组合：
+    归纳假设， 每个 $ q_{i-1} $ 都是 $ a_{1}, \ldots, a_{i-1} $ 的线性组合：
 
-    $$ \begin{aligned}q_{2}&= \frac{a_{2}-\left(q_{1}^{T} a_{2}\right) q_{1}}{\left\|\tilde{q}_{2}\right\|_{2}}
+    \begin{equation} \begin{aligned}q_{2}&= \frac{a_{2}-\left(q_{1}^{T} a_{2}\right) q_{1}}{\left\|\tilde{q}_{2}\right\|_{2}}
         \\ &=
         \frac{a_{2}-\left(q_{1}^{T} a_{2}\right) \frac{ a_{1} }{\left\|a_{1}\right\|_{2}} }{\left\|\tilde{q}_{2}\right\|_{2}}
-    \end{aligned} $$
+    \end{aligned} \end{equation}
 
-$$ q_{3}=
-\frac{a_{3}-\left(q_{1}^{T} a_{3}\right) q_{1}-\left(q_{2}^{T} a_{3}\right) q_{2}}{\left\|\tilde{q}_{3}\right\|_2 }  $$
+\begin{equation} q_{3}=
+\frac{a_{3}-\left(q_{1}^{T} a_{3}\right) q_{1}-\left(q_{2}^{T} a_{3}\right) q_{2}}{\left\|\tilde{q}_{3}\right\|_2 }  \end{equation}
 
-通过对 $ i $ 的归纳证明,可得$ q_{i} $ 是 $ a_{1}, \ldots, a_{i} $ 的线性组合。
+通过对 $ i $ 的归纳证明，可得$ q_{i} $ 是 $ a_{1}, \ldots, a_{i} $ 的线性组合。
 \end{proof}
 
 
@@ -345,18 +345,18 @@ $$ q_{3}=
 \begin{corollary}
     $ a_{j} $ 是 $ q_{1}, \ldots, q_{j-1} $ 的一个线性组合。
 
-$$ a_{j}=\left(q_{1}^{T} a_{j}\right) q_{1}+\cdots+\left(q_{j-1}^{T} a_{j}\right) q_{j-1} $$
+\begin{equation} a_{j}=\left(q_{1}^{T} a_{j}\right) q_{1}+\cdots+\left(q_{j-1}^{T} a_{j}\right) q_{j-1} \end{equation}
 \end{corollary}
 
 
 \begin{proof}
-    $$\begin{aligned}
+    \begin{equation}\begin{aligned}
         \widetilde{q}_{i} &=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} \\
         0 &=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1}
-    \end{aligned}$$
+    \end{aligned}\end{equation}
 
     所以
-    $$ a_{i}=\left\|\tilde{q}_{i}\right\|_{2} q_{i}+\left(q_{1}^{T} a_{i}\right) q_{1}+\cdots+\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
+    \begin{equation} a_{i}=\left\|\tilde{q}_{i}\right\|_{2} q_{i}+\left(q_{1}^{T} a_{i}\right) q_{1}+\cdots+\left(q_{i-1}^{T} a_{i}\right) q_{i-1} \end{equation}
 \end{proof}
 
 \begin{corollary}

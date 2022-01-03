@@ -33,85 +33,83 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {algocf}{\numberline {6}{\ignorespaces QR Decomposition Using Gram-Schmidt Algorithm\relax }}{109}{algocf.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {7}{\ignorespaces }}{111}{algocf.7}%
+\contentsline {algocf}{\numberline {7}{\ignorespaces Solving linear equations via QR factorization\relax }}{111}{algocf.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {8}{\ignorespaces Solving linear equations via QR factorization\relax }}{111}{algocf.8}%
+\contentsline {algocf}{\numberline {8}{\ignorespaces Computing the inverse via QR factorization\relax }}{112}{algocf.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {9}{\ignorespaces Computing the inverse via QR factorization\relax }}{112}{algocf.9}%
+\contentsline {algocf}{\numberline {9}{\ignorespaces QR Decomposition Using Gram-Schmidt Algorithm\relax }}{115}{algocf.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {10}{\ignorespaces QR Decomposition Using Gram-Schmidt Algorithm\relax }}{115}{algocf.10}%
+\contentsline {algocf}{\numberline {10}{\ignorespaces Gram-Schmidt的MATLAB算法\relax }}{118}{algocf.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {11}{\ignorespaces Gram-Schmidt的MATLAB算法\relax }}{118}{algocf.11}%
+\contentsline {algocf}{\numberline {11}{\ignorespaces Modified Gram-Schmidt Algorithm\relax }}{119}{algocf.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {12}{\ignorespaces Modified Gram-Schmidt Algorithm\relax }}{119}{algocf.12}%
+\contentsline {algocf}{\numberline {12}{\ignorespaces QR Decomposition Using Householder Transformation\relax }}{125}{algocf.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {13}{\ignorespaces QR Decomposition Using Householder Transformation\relax }}{125}{algocf.13}%
+\contentsline {algocf}{\numberline {13}{\ignorespaces QR分解求解$A^{-1}$\relax }}{131}{algocf.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {14}{\ignorespaces QR分解求解$A^{-1}$\relax }}{131}{algocf.14}%
-\defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {15}{\ignorespaces QR分解求解线性方程组\relax }}{131}{algocf.15}%
+\contentsline {algocf}{\numberline {14}{\ignorespaces QR分解求解线性方程组\relax }}{131}{algocf.14}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {16}{\ignorespaces Solving $Ax = b$ Using LU Decomposition\relax }}{138}{algocf.16}%
+\contentsline {algocf}{\numberline {15}{\ignorespaces Solving $Ax = b$ Using LU Decomposition\relax }}{138}{algocf.15}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {17}{\ignorespaces 梯度下降法\relax }}{151}{algocf.17}%
+\contentsline {algocf}{\numberline {16}{\ignorespaces 梯度下降法\relax }}{151}{algocf.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {18}{\ignorespaces 使用线性搜索估计步长的梯度下降法\relax }}{153}{algocf.18}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {19}{\ignorespaces Cross-validation\relax }}{159}{algocf.19}%
-\defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {20}{\ignorespaces Least Squares Multi-Class Classifier\relax }}{160}{algocf.20}%
+\contentsline {algocf}{\numberline {17}{\ignorespaces 使用线性搜索估计步长的梯度下降法\relax }}{153}{algocf.17}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {algocf}{\numberline {18}{\ignorespaces Cross-validation\relax }}{159}{algocf.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {21}{\ignorespaces QR分解求解最小范数优化问题\relax }}{178}{algocf.21}%
-\defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {22}{\ignorespaces LU分解求解KKT最优条件\relax }}{183}{algocf.22}%
-\defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {23}{\ignorespaces QR分解求解KKT最优条件\relax }}{185}{algocf.23}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {24}{\ignorespaces 在第$k$次迭代时，求解$\hat {x}$\relax }}{222}{algocf.24}%
-\defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {25}{\ignorespaces Levenberg–Marquardt Algorithm\relax }}{223}{algocf.25}%
-\defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {26}{\ignorespaces Newton's Method\relax }}{223}{algocf.26}%
-\defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {27}{\ignorespaces Newton iteration\relax }}{225}{algocf.27}%
-\defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {28}{\ignorespaces Newton's method for minimizing a convex function\relax }}{226}{algocf.28}%
-\defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {29}{\ignorespaces Damped Newton method\relax }}{227}{algocf.29}%
+\contentsline {algocf}{\numberline {19}{\ignorespaces Least Squares Multi-Class Classifier\relax }}{160}{algocf.19}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
+\contentsline {algocf}{\numberline {20}{\ignorespaces QR分解求解最小范数优化问题\relax }}{178}{algocf.20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {algocf}{\numberline {21}{\ignorespaces LU分解求解KKT最优条件\relax }}{183}{algocf.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {algocf}{\numberline {22}{\ignorespaces QR分解求解KKT最优条件\relax }}{185}{algocf.22}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {30}{\ignorespaces Cholesky factorization of order $ n-1 $\relax }}{242}{algocf.30}%
+\contentsline {algocf}{\numberline {23}{\ignorespaces 在第$k$次迭代时，求解$\hat {x}$\relax }}{222}{algocf.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {31}{\ignorespaces Solving equations with positive definite $A$\relax }}{243}{algocf.31}%
+\contentsline {algocf}{\numberline {24}{\ignorespaces Levenberg–Marquardt Algorithm\relax }}{223}{algocf.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {32}{\ignorespaces computing the Cholesky factor of $ A $\relax }}{244}{algocf.32}%
+\contentsline {algocf}{\numberline {25}{\ignorespaces Newton's Method\relax }}{223}{algocf.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {33}{\ignorespaces computing the Cholesky factor of $ A $\relax }}{244}{algocf.33}%
+\contentsline {algocf}{\numberline {26}{\ignorespaces Newton iteration\relax }}{225}{algocf.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {34}{\ignorespaces Solving sparse positive definite equations\relax }}{245}{algocf.34}%
+\contentsline {algocf}{\numberline {27}{\ignorespaces Newton's method for minimizing a convex function\relax }}{226}{algocf.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {35}{\ignorespaces Regularized least squares model fitting\relax }}{247}{algocf.35}%
+\contentsline {algocf}{\numberline {28}{\ignorespaces Damped Newton method\relax }}{226}{algocf.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {36}{\ignorespaces Least squares fitting of multivariate polynomials\relax }}{249}{algocf.36}%
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {algocf}{\numberline {37}{\ignorespaces compute Boolean classifier for digit $ k-1 $ versus the rest\relax }}{250}{algocf.37}%
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {algocf}{\numberline {29}{\ignorespaces Cholesky factorization of order $ n-1 $\relax }}{241}{algocf.29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {algocf}{\numberline {30}{\ignorespaces Solving equations with positive definite $A$\relax }}{242}{algocf.30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {algocf}{\numberline {31}{\ignorespaces computing the Cholesky factor of $ A $\relax }}{243}{algocf.31}%
+\defcounter {refsection}{0}\relax 
+\contentsline {algocf}{\numberline {32}{\ignorespaces computing the Cholesky factor of $ A $\relax }}{243}{algocf.32}%
+\defcounter {refsection}{0}\relax 
+\contentsline {algocf}{\numberline {33}{\ignorespaces Solving sparse positive definite equations\relax }}{244}{algocf.33}%
+\defcounter {refsection}{0}\relax 
+\contentsline {algocf}{\numberline {34}{\ignorespaces Regularized least squares model fitting\relax }}{246}{algocf.34}%
+\defcounter {refsection}{0}\relax 
+\contentsline {algocf}{\numberline {35}{\ignorespaces Least squares fitting of multivariate polynomials\relax }}{248}{algocf.35}%
+\defcounter {refsection}{0}\relax 
+\contentsline {algocf}{\numberline {36}{\ignorespaces compute Boolean classifier for digit $ k-1 $ versus the rest\relax }}{249}{algocf.36}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

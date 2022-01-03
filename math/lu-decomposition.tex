@@ -4,14 +4,14 @@
 
 \subsection{Linear Equation Systems}
 \begin{example}
-    $$A \boldsymbol{x}=\boldsymbol{b} \Leftrightarrow \displaystyle \begin{matrix}
+    \begin{equation}A \boldsymbol{x}=\boldsymbol{b} \Leftrightarrow \displaystyle \begin{matrix}
               & x+ & 2 & y+ & 3 & z= & 6 \\
             2 & x+ & 5 & y+ & 2 & z= & 4 \\
             6 & x- & 3 & y+ &   & z= & 2
-        \end{matrix} $$
+        \end{matrix} \end{equation}
 \end{example}
 
-见Row Picture，Column Picture的概念。
+见Row Picture,Column Picture的概念。
 
 \subsection{Elimination}
 
@@ -52,7 +52,7 @@
 \begin{theorem}
     消元法的本质是
 
-    $$Ax= b \Rightarrow EAx = Eb$$
+    \begin{equation}Ax= b \Rightarrow EAx = Eb\end{equation}
 \end{theorem}
 
 \begin{definition}[Permutation matrices $P$]
@@ -60,9 +60,9 @@
 \end{definition}
 
 \begin{definition}[Augmented matrix]
-    $$\displaystyle \left[\begin{matrix}
+    \begin{equation}\displaystyle \left[\begin{matrix}
                 A & b
-            \end{matrix}\right]$$
+            \end{matrix}\right]\end{equation}
 \end{definition}
 
 \subsubsection{Computing $A^{-1}$ by Gauss-Jordan Elimination}
@@ -77,10 +77,10 @@
 
 
 \begin{example}
-    $$ \begin{aligned}\left[\begin{array}{llll}K & e_{1} & e_{2} & e_{3}\end{array}\right] & =\left[\begin{array}{rrrrrr}\mathbf{2} & -\mathbf{1} & \mathbf{0} & 1 & 0 & 0 \\ -\mathbf{1} & \mathbf{2} & -\mathbf{1} & 0 & 1 & 0 \\ \mathbf{0} & -\mathbf{1} & \mathbf{2} & 0 & 0 & 1\end{array}\right] \quad \text { Start Gauss-Jordan on } K                                                  \\ & \rightarrow\left[\begin{array}{rrrrrr}2 & -1 & 0 & 1 & 0 & 0 \\ \mathbf{0} & \frac{3}{2} & -\mathbf{1} & \frac{1}{2} & \mathbf{1} & \mathbf{0} \\ 0 & -1 & 2 & 0 & 0 & 1\end{array}\right] \quad\left(\frac{\mathbf{1}}{\mathbf{2}} \text { row } 1+\text { row 2 }\right) \\ & \rightarrow\left[\begin{array}{rrrrrr}2 & -1 & 0 & 1 & 0 & 0 \\ 0 & \frac{3}{2} & -1 & \frac{1}{2} & 1 & 0 \\ \mathbf{0} & \mathbf{0} & \frac{4}{3} & \frac{1}{3} & \frac{2}{3} & \mathbf{1}\end{array}\right] \quad \left(\frac{\mathbf{2}}{3} \text { row 2 + row 3}\right)\\
+    \begin{equation} \begin{aligned}\left[\begin{array}{llll}K & e_{1} & e_{2} & e_{3}\end{array}\right] & =\left[\begin{array}{rrrrrr}\mathbf{2} & -\mathbf{1} & \mathbf{0} & 1 & 0 & 0 \\ -\mathbf{1} & \mathbf{2} & -\mathbf{1} & 0 & 1 & 0 \\ \mathbf{0} & -\mathbf{1} & \mathbf{2} & 0 & 0 & 1\end{array}\right] \quad \text { Start Gauss-Jordan on } K                                                  \\ & \rightarrow\left[\begin{array}{rrrrrr}2 & -1 & 0 & 1 & 0 & 0 \\ \mathbf{0} & \frac{3}{2} & -\mathbf{1} & \frac{1}{2} & \mathbf{1} & \mathbf{0} \\ 0 & -1 & 2 & 0 & 0 & 1\end{array}\right] \quad\left(\frac{\mathbf{1}}{\mathbf{2}} \text { row } 1+\text { row 2 }\right) \\ & \rightarrow\left[\begin{array}{rrrrrr}2 & -1 & 0 & 1 & 0 & 0 \\ 0 & \frac{3}{2} & -1 & \frac{1}{2} & 1 & 0 \\ \mathbf{0} & \mathbf{0} & \frac{4}{3} & \frac{1}{3} & \frac{2}{3} & \mathbf{1}\end{array}\right] \quad \left(\frac{\mathbf{2}}{3} \text { row 2 + row 3}\right)\\
                \left(\begin{array}{c}\text { Zero above } \\ \text { third pivot }\end{array}\right) & \rightarrow\left[\begin{array}{rrrrrr}2 & -1 & 0 & 1 & 0 & 0 \\ 0 & \frac{3}{2} & 0 & \frac{3}{4} & \frac{3}{2} & \frac{3}{4} \\ 0 & 0 & \frac{4}{3} & \frac{1}{3} & \frac{2}{3} & 1\end{array}\right] \quad\left(\frac{3}{4} \text{ row } \mathbf{3}+ \text{ row } \mathbf{2}\right) \\
                \left(\begin{array}{l}\text { Zero above } \\ \text { second pivot }\end{array}\right) & \rightarrow\left[\begin{array}{cccccc}2 & 0 & 0 & \frac{3}{2} & 1 & \frac{1}{2} \\ 0 & \frac{3}{2} & 0 & \frac{3}{4} & \frac{3}{2} & \frac{3}{4} \\ 0 & 0 & \frac{4}{3} & \frac{1}{3} & \frac{2}{3} & 1\end{array}\right] \quad\left(\frac{2}{3} \text{ row } 2+ \text{ row }1 \right)
-        \end{aligned} $$
+        \end{aligned} \end{equation}
 
 
     它变成Reduced echelon form $R$.
@@ -130,12 +130,12 @@ $ \left(E_{32} E_{31} E_{21}\right) A=U \quad $ becomes $ \quad A=\left(E_{21}^{
     Are they rows of $ U ? $ Yes, the pivot rows never change again.
 
     When computing the third row of $ U $, we subtract multiples of earlier rows of $ U $ (not rows of $ A ! $ ):
-    $$ \text{Row 3 of }  U=(\text{Row 3 of }  A)-\ell_{31}(
-        \text{Row 1 of } U)-\ell_{32}(\text{Row 2 of }  of  U) $$
+    \begin{equation} \text{Row 3 of }  U=(\text{Row 3 of }  A)-\ell_{31}(
+        \text{Row 1 of } U)-\ell_{32}(\text{Row 2 of }  of  U) \end{equation}
 
     Rewrite this equation to see that the row $ \left[\begin{array}{lll}\ell_{31} & \ell_{32} & 1\end{array}\right] $ is multiplying the matrix $ U $ :
 
-    $$ (\text{Row 3 of } A)=\ell_{31}(\text{Row 1 of }  U)+\ell_{32}(\text{Row 2 of } U)+1(\text{Row 3 of }  U) $$
+    \begin{equation} (\text{Row 3 of } A)=\ell_{31}(\text{Row 1 of }  U)+\ell_{32}(\text{Row 2 of } U)+1(\text{Row 3 of }  U) \end{equation}
 
     This is exactly row 3 of $ A=L U . $
 
@@ -144,18 +144,18 @@ $ \left(E_{32} E_{31} E_{21}\right) A=U \quad $ becomes $ \quad A=\left(E_{21}^{
 \end{example}
 
 \begin{definition}[$A$的LU分解]
-    $$ A=\left(\begin{array}{ccccc}a_{11} & \cdots & a_{1 k} & \cdots & a_{1 n} \\ \vdots & \ddots & \vdots & & \vdots \\ a_{k 1} & \cdots & a_{k k} & \cdots & a_{k n} \\ \vdots & & \vdots & \ddots & \vdots \\ a_{n 1} & \cdots & a_{n k} & \cdots & a_{n n}\end{array}\right) =LU $$
+    \begin{equation} A=\left(\begin{array}{ccccc}a_{11} & \cdots & a_{1 k} & \cdots & a_{1 n} \\ \vdots & \ddots & \vdots & & \vdots \\ a_{k 1} & \cdots & a_{k k} & \cdots & a_{k n} \\ \vdots & & \vdots & \ddots & \vdots \\ a_{n 1} & \cdots & a_{n k} & \cdots & a_{n n}\end{array}\right) =LU \end{equation}
 
     where $ L=\left(\begin{array}{cccc}1 & 0 & \cdots & 0 \\ l_{21} & 1 & \ddots & 0 \\ \vdots & \vdots & \ddots & 0 \\ l_{n 1} & l_{n 2} & \cdots & 1\end{array}\right) , U=\left(\begin{array}{cccc}u_{11} & u_{12} & \cdots & u_{1 n} \\ 0 & u_{22} & \cdots & u_{2 n} \\ \vdots & 0 & \ddots & \vdots \\ 0 & 0 & 0 & u_{n n}\end{array}\right) $
 \end{definition}
 
 所以
-$$
+\begin{equation}
     \begin{aligned}
         A & =\left(\begin{array}{ccccc}a_{11} & \cdots & a_{1 r} & \cdots & a_{1 n} \\ \vdots & \ddots & \vdots & & \vdots \\ a_{r 1} & \cdots & a_{r r} & \cdots & a_{r n} \\ \vdots & & \vdots & \ddots & \vdots \\ a_{n 1} & \cdots & a_{n r} & \cdots & a_{n n}\end{array}\right)                                               \\
           & =\left(\begin{array}{ccccc}1 & 0 & 0 & \cdots & 0 \\ \vdots & \ddots & 0 & \ddots & 0 \\ l_{r 1} & \cdots & 1 & \ddots & \vdots \\ \vdots & & \vdots & \ddots & 0 \\ l_{n 1} & \cdots & l_{n r} & \cdots & 1\end{array}\right) \cdot \left(\begin{array}{cccc}u_{11} & u_{12} & \cdots & u_{1 n} \\ 0 & u_{22} & \cdots & u_{2 n} \\ \vdots & 0 & \ddots & \vdots \\ 0 & 0 & 0 & u_{n n}\end{array}\right)
     \end{aligned}
-$$
+\end{equation}
 
 \subsection{$A = LDU$}
 
@@ -165,46 +165,46 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
 
 \begin{example}
     
-    $$(A= LU) \left[\begin{array}{ll}1 & 0 \\ 3 & 1\end{array}\right]\left[\begin{array}{ll}2 & 8 \\ 0 & 5\end{array}\right] $$ 
+    \begin{equation}(A= LU) \left[\begin{array}{ll}1 & 0 \\ 3 & 1\end{array}\right]\left[\begin{array}{ll}2 & 8 \\ 0 & 5\end{array}\right] \end{equation} 
     
     splits further into
     
-    $$(A= LDU) \left[\begin{array}{ll}1 & 0 \\ 3 & 1\end{array}\right]\left[\begin{array}{ll}2 & \\ & 5\end{array}\right]\left[\begin{array}{ll}1 & 4 \\ 0 & 1\end{array}\right] $$.
+    \begin{equation}(A= LDU) \left[\begin{array}{ll}1 & 0 \\ 3 & 1\end{array}\right]\left[\begin{array}{ll}2 & \\ & 5\end{array}\right]\left[\begin{array}{ll}1 & 4 \\ 0 & 1\end{array}\right] \end{equation}.
     
 \end{example}
 
 \begin{theorem}
     当$A$是对称矩阵的时候，且消元的时候不需要行交换：
 
-    $$S = LDL^T$$
+    \begin{equation}S = LDL^T\end{equation}
 \end{theorem}
 
 
 \begin{example}
-    $$ \left[\begin{array}{ll}1 & 2 \\ 2 & 7\end{array}\right]=\left[\begin{array}{ll}\mathbf{1} & 0 \\ \mathbf{2} & \mathbf{1}\end{array}\right] \quad\left[\begin{array}{ll}1 & 0 \\ 0 & 3\end{array}\right] \quad\left[\begin{array}{ll}\mathbf{1} & \mathbf{2} \\ 0 & \mathbf{1}\end{array}\right] $$
+    \begin{equation} \left[\begin{array}{ll}1 & 2 \\ 2 & 7\end{array}\right]=\left[\begin{array}{ll}\mathbf{1} & 0 \\ \mathbf{2} & \mathbf{1}\end{array}\right] \quad\left[\begin{array}{ll}1 & 0 \\ 0 & 3\end{array}\right] \quad\left[\begin{array}{ll}\mathbf{1} & \mathbf{2} \\ 0 & \mathbf{1}\end{array}\right] \end{equation}
 \end{example}
 
 
 \subsection{$L$、$U$矩阵的性质}
 
-根据矩阵的乘法原理, 有
+根据矩阵的乘法原理， 有
 
 \begin{theorem}
     $ A $ 的第一行元素 $ a_{1 j} $ 为
-    $$
+    \begin{equation}
         a_{1 j}=u_{1 j}, j=1, \cdots, n
-    $$
+    \end{equation}
 \end{theorem}
 
 \begin{corollary}
     $ U $ 的第一行元素 $ u_{1 j} $ 为
-    $$
+    \begin{equation}
         u_{1 j}=a_{1 j}, j=1, \cdots, n
-    $$
+    \end{equation}
 \end{corollary}
 
 \begin{proof}
-    $$\displaystyle \begin{aligned}A & =\left(\begin{array}{ c c c c c }
+    \begin{equation}\displaystyle \begin{aligned}A & =\left(\begin{array}{ c c c c c }
                 \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{11}}} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\cdots }} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{1r}}} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\cdots }} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{1n}}} \\
                 \vdots                                               & \ddots                                                & \vdots                                               &                                                       & \vdots                                               \\
                 a_{r1}                                               & \cdots                                                & a_{rr}                                               & \cdots                                                & a_{rn}                                               \\
@@ -223,17 +223,17 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
                 0                                                    & 0                                                     & u_{rr}                                               & \cdots                                                & u_{rn}                                               \\
                 \vdots                                               & \ddots                                                & 0                                                    & \ddots                                                & \vdots                                               \\
                 0                                                    & \cdots                                                & 0                                                    & 0                                                     & u_{nn}
-            \end{array}\right)\end{aligned}$$
+            \end{array}\right)\end{aligned}\end{equation}
 \end{proof}
 
 \begin{corollary}
     $ L $ 的第一列元素 $ l_{i1} $ 为
 
-    $$ l_{i 1}=\frac{a_{i 1}}{u_{11}} , i=2,3, \cdots, n $$
+    \begin{equation} l_{i 1}=\frac{a_{i 1}}{u_{11}} , i=2,3, \cdots, n \end{equation}
 \end{corollary}
 
 \begin{proof}
-    $$\displaystyle \begin{aligned} A & =\left(\begin{array}{ c c c c c }
+    \begin{equation}\displaystyle \begin{aligned} A & =\left(\begin{array}{ c c c c c }
                 \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{11}}}  & \cdots & a_{1r} & \cdots & a_{1n} \\
                 \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\vdots }} & \ddots & \vdots &        & \vdots \\
                 \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{r1}}}  & \cdots & a_{rr} & \cdots & a_{rn} \\
@@ -253,17 +253,17 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
                 \vdots                                               & \ddots & 0      & \ddots & \vdots \\
                 0                                                    & \cdots & 0      & 0      & u_{nn}
             \end{array}\right)
-        \end{aligned}$$
+        \end{aligned}\end{equation}
 \end{proof}
 
 \begin{theorem}
     $ A $ 的第 $ r $ 行主对角线以右元素元素 $ a_{1 j}(j=1, \cdots, n) $ 为
 
-    $$a_{r j}=\sum_{k=1}^{r} l_{r k} u_{k j}, r=1,2, \cdots, n,j=r, \cdots, n $$
+    \begin{equation}a_{r j}=\sum_{k=1}^{r} l_{r k} u_{k j}, r=1,2, \cdots, n,j=r, \cdots, n \end{equation}
 \end{theorem}
 
 \begin{proof}
-    $$\displaystyle
+    \begin{equation}\displaystyle
         \begin{aligned}
             A & =\left(\begin{array}{ c c c c c }
                 a_{11} & \cdots & a_{1r}                                               & \cdots                                                & a_{1n}                                               \\
@@ -286,39 +286,39 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
                 0      & \cdots & 0                                                    & 0                                                     & u_{nn}
             \end{array}\right)
         \end{aligned}
-    $$
+    \end{equation}
 \end{proof}
 
 \begin{corollary}
     $U$第 $ r $ 行主对角线以右元素 $ u_{r j} $
 
-    $$ u_{r j}=a_{r j}-\sum_{k=1}^{r-1} l_{r k} u_{k j}, j = r, \cdots, n $$
+    \begin{equation} u_{r j}=a_{r j}-\sum_{k=1}^{r-1} l_{r k} u_{k j}, j = r, \cdots, n \end{equation}
 \end{corollary}
 
 \begin{proof}
-    $$\begin{aligned}
+    \begin{equation}\begin{aligned}
                         & a_{r j}=\sum_{k=1}^{r} l_{r k} u_{k j}, r=1,2, \cdots, n,j=r, \cdots, n                     \\
             \Rightarrow & a_{r j}=\sum_{k=1}^{r - 1} l_{r k} u_{k j} + l_{rr} u_{rj}, r=1,2, \cdots, n,j=r, \cdots, n \\
             \Rightarrow & u_{r j}=a_{r j}-\sum_{k=1}^{r-1} l_{r k} u_{k j}, j = r, \cdots, n
-        \end{aligned}$$
+        \end{aligned}\end{equation}
 \end{proof}
 
 
 \begin{corollary}
     $U$的对角线元素$u_{r r}$
 
-    $$ u_{r r}=a_{r r}-\sum_{k=1}^{r-1} l_{r k} u_{k r} $$
+    \begin{equation} u_{r r}=a_{r r}-\sum_{k=1}^{r-1} l_{r k} u_{k r} \end{equation}
 \end{corollary}
 
 
 \begin{theorem}
     $ A $ 的第 $ r $ 列元素主对角线以下元素 $ a_{i r}(i=r+1, \cdots, n) $ 为
 
-    $$a_{i r}=\sum_{k=1}^{r} l_{i k} u_{k r}, i=r+1, \cdots, n, r=1,2, \cdots, n-1 $$
+    \begin{equation}a_{i r}=\sum_{k=1}^{r} l_{i k} u_{k r}, i=r+1, \cdots, n, r=1,2, \cdots, n-1 \end{equation}
 \end{theorem}
 
 \begin{proof}
-    $$\displaystyle
+    \begin{equation}\displaystyle
         \begin{aligned}
             A & =\left(\begin{array}{ c c c c c }
                 a_{11} & \cdots & a_{1r}                                                & \cdots & a_{1n} \\
@@ -340,19 +340,19 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
                 \vdots & \ddots & 0                                                    & \ddots & \vdots \\
                 0      & \cdots & 0                                                    & 0      & u_{nn}
             \end{array}\right)\end{aligned}
-    $$
+    \end{equation}
 \end{proof}
 
 \begin{corollary}
-    显然, $ r=1 $ 时
+    显然， $ r=1 $ 时
 
-    $$ a_{i 1}=l_{i 1} u_{11} , i=2,3, \cdots, n $$
+    \begin{equation} a_{i 1}=l_{i 1} u_{11} , i=2,3, \cdots, n \end{equation}
 \end{corollary}
 
 \begin{corollary}
     $L$第 $ r $ 列主对角线以下元素 $ l_{i r} $
 
-    $$ l_{i r}=\frac{a_{i r}-\sum_{k=1}^{r-1} l_{i k} u_{k r}}{u_{r r}}, i = r + 1, \cdots, n $$
+    \begin{equation} l_{i r}=\frac{a_{i r}-\sum_{k=1}^{r-1} l_{i k} u_{k r}}{u_{r r}}, i = r + 1, \cdots, n \end{equation}
 \end{corollary}
 
 
@@ -378,30 +378,30 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
 
 \begin{example}
     对矩阵 $ A $ 进行 $ L U $ 分解
-    $$
+    \begin{equation}
         A=\left[\begin{array}{lll}
                 8 & 2 & 9 \\
                 4 & 9 & 4 \\
                 6 & 7 & 9
             \end{array}\right]
-    $$
+    \end{equation}
 
 
-    $$ A=\left[\begin{array}{lll}8 & 2 & 9 \\ 4 & 9 & 4 \\ 6 & 7 & 9\end{array}\right]=\left[\begin{array}{ccc}1 & 0 & 0 \\ l_{21} & 1 & 0 \\ l_{31} & l_{32} & 1\end{array}\right]\left[\begin{array}{ccc}u_{11} & u_{12} & u_{13} \\ 0 & u_{22} & u_{23} \\ 0 & 0 & u_{33}\end{array}\right] $$
+    \begin{equation} A=\left[\begin{array}{lll}8 & 2 & 9 \\ 4 & 9 & 4 \\ 6 & 7 & 9\end{array}\right]=\left[\begin{array}{ccc}1 & 0 & 0 \\ l_{21} & 1 & 0 \\ l_{31} & l_{32} & 1\end{array}\right]\left[\begin{array}{ccc}u_{11} & u_{12} & u_{13} \\ 0 & u_{22} & u_{23} \\ 0 & 0 & u_{33}\end{array}\right] \end{equation}
 
     计算$U$的第一行和 $ L $ 的第一列
 
-    $$ \left(u_{11}, u_{12}, u_{13}\right)=(8,2,9) , \left(l_{21}, l_{31}\right)=\left(\frac{1}{2}, \frac{3}{4}\right) $$
+    \begin{equation} \left(u_{11}, u_{12}, u_{13}\right)=(8,2,9) , \left(l_{21}, l_{31}\right)=\left(\frac{1}{2}, \frac{3}{4}\right) \end{equation}
 
     然后计算$U$的第二行和$L$的第二列
 
-    $$ u_{22}=a_{22}-l_{21} u_{12}=8 ,
-        u_{23}=a_{23}-l_{21} u_{13}=-\frac{1}{2} , l_{32}=\frac{a_{32}-l_{31} u_{12}}{u_{22}}=\frac{11}{16} $$
+    \begin{equation} u_{22}=a_{22}-l_{21} u_{12}=8 ,
+        u_{23}=a_{23}-l_{21} u_{13}=-\frac{1}{2} , l_{32}=\frac{a_{32}-l_{31} u_{12}}{u_{22}}=\frac{11}{16} \end{equation}
 
 
     最后计算$U$的第三行
 
-    $$ u_{33}=a_{33}-l_{31}  u_{13}-l_{32} u_{23}=-\frac{83}{32} $$
+    \begin{equation} u_{33}=a_{33}-l_{31}  u_{13}-l_{32} u_{23}=-\frac{83}{32} \end{equation}
 
 \end{example}
 
@@ -409,10 +409,10 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
 
 
 \begin{example}
-    $$ A=\left[\begin{array}{ccc}1 & 0 & 0 \\ 0 & 0 & 2 \\ 0 & 1 & -1\end{array}\right]=\left[\begin{array}{ccc}1 & 0 & 0 \\ l_{21} & 1 & 0 \\ l_{31} & L_{32} & 1\end{array}\right]\left[\begin{array}{ccc}u_{11} & u_{12} & u_{13} \\ 0 & u_{22} & u_{23} \\ 0 & 0 & u_{33}\end{array}\right] $$
+    \begin{equation} A=\left[\begin{array}{ccc}1 & 0 & 0 \\ 0 & 0 & 2 \\ 0 & 1 & -1\end{array}\right]=\left[\begin{array}{ccc}1 & 0 & 0 \\ l_{21} & 1 & 0 \\ l_{31} & L_{32} & 1\end{array}\right]\left[\begin{array}{ccc}u_{11} & u_{12} & u_{13} \\ 0 & u_{22} & u_{23} \\ 0 & 0 & u_{33}\end{array}\right] \end{equation}
 
     计算$U$的第一行和$L$的第一列
-    $$
+    \begin{equation}
         \left[\begin{array}{ccc}
                 1 & 0 & 0  \\
                 0 & 0 & 2  \\
@@ -426,22 +426,22 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
                 0 & u_{22} & u_{23} \\
                 0 & 0      & u_{33}
             \end{array}\right]
-    $$
+    \end{equation}
 
     然后计算U的第二行和L的第二列
-    $$
+    \begin{equation}
         \begin{array}{l}
             u_{22}=a_{22}-l_{21} u_{12}=0 \\
             u_{23}=a_{23}-l_{21} u_{13}=2
         \end{array} \quad l_{32}=\frac{a_{32}-l_{31} u_{12}}{u_{22}}=\frac{1}{\boldsymbol{0}}
-    $$
+    \end{equation}
     即该矩阵无法 $ \mathrm{LU} $ 分解！
 \end{example}
 
 \section{\texorpdfstring{$PA=LU$}{PA=LU}}
 
 \begin{theorem}
-    非奇异矩阵 $ \mathrm{A} \in \mathbb{R}^{n \times n} $ ，则可分解为 $ A=P^{T} L U $
+    非奇异矩阵 $ \mathrm{A} \in \mathbb{R}^{n \times n} $ ,则可分解为 $ A=P^{T} L U $
 
     $ P $ 是一个置换矩阵， $ L $ 为下三角矩阵并且对角线元素全为 $ 1 ， U $ 为 上三角矩阵
 \end{theorem}
@@ -455,14 +455,14 @@ $PA=LU$分解方法不唯一，随着 $ P $ 的选择不同， $L$、$U$也不�
     $ A=\left[\begin{array}{lll}0 & 5 & 5 \\ 2 & 9 & 0 \\ 6 & 8 & 8\end{array}\right], P_{1}=\left[\begin{array}{lll}0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0\end{array}\right], P_{2}=\left[\begin{array}{lll}0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1\end{array}\right] $
 
     易知
-    $$P_{1}^{T}=P_{1}^{-1}=P_{1}, P_{2}^{T}=P_{2}^{-1}=P_{2}$$
+    \begin{equation}P_{1}^{T}=P_{1}^{-1}=P_{1}, P_{2}^{T}=P_{2}^{-1}=P_{2}\end{equation}
 
     计算可得
-    $$ P_{1} A=\left[\begin{array}{lll}6 & 8 & 8 \\ 2 & 9 & 0 \\ 0 & 5 & 5\end{array}\right], P_{2} A=\left[\begin{array}{lll}2 & 9 & 0 \\ 0 & 5 & 5 \\ 6 & 8 & 8\end{array}\right] $$
+    \begin{equation} P_{1} A=\left[\begin{array}{lll}6 & 8 & 8 \\ 2 & 9 & 0 \\ 0 & 5 & 5\end{array}\right], P_{2} A=\left[\begin{array}{lll}2 & 9 & 0 \\ 0 & 5 & 5 \\ 6 & 8 & 8\end{array}\right] \end{equation}
 
     LU分解不唯一:
 
-    $$
+    \begin{equation}
         P_{1} A=\left[\begin{array}{lll}
                 6 & 8 & 8 \\
                 2 & 9 & 0 \\
@@ -476,10 +476,10 @@ $PA=LU$分解方法不唯一，随着 $ P $ 的选择不同， $L$、$U$也不�
                 0 & \frac{19}{3} & \frac{-8}{3}   \\
                 0 & 0            & \frac{135}{19}
             \end{array}\right]=L_{1} U_{1} \Rightarrow A=P_{1} L_{1} U_{1}
-    $$
+    \end{equation}
 
 
-    $$ P_{2} A=\left[\begin{array}{lll}2 & 9 & 0 \\ 0 & 5 & 5 \\ 6 & 8 & 8\end{array}\right]=\left[\begin{array}{ccc}1 & 0 & 0 \\ 0 & 1 & 0 \\ 3 & \frac{-19}{5} & 1\end{array}\right]\left[\begin{array}{ccc}2 & 9 & 2 \\ 0 & 5 & 5 \\ 0 & 0 & 27\end{array}\right]=L_{2} U_{2} \Rightarrow A=P_{2} L_{2} U_{2} $$
+    \begin{equation} P_{2} A=\left[\begin{array}{lll}2 & 9 & 0 \\ 0 & 5 & 5 \\ 6 & 8 & 8\end{array}\right]=\left[\begin{array}{ccc}1 & 0 & 0 \\ 0 & 1 & 0 \\ 3 & \frac{-19}{5} & 1\end{array}\right]\left[\begin{array}{ccc}2 & 9 & 2 \\ 0 & 5 & 5 \\ 0 & 0 & 27\end{array}\right]=L_{2} U_{2} \Rightarrow A=P_{2} L_{2} U_{2} \end{equation}
 
 \end{example}
 
@@ -497,12 +497,12 @@ $PA=LU$分解方法不唯一，随着 $ P $ 的选择不同， $L$、$U$也不�
 \section{舍入误差的影响}
 
 \begin{example}
-    $$ \left[\begin{array}{cc}10^{-5} & 1 \\ 1 & 1\end{array}\right]\left[\begin{array}{l}x_{1} \\ x_{2}\end{array}\right]=\left[\begin{array}{l}1 \\ 0\end{array}\right] $$
+    \begin{equation} \left[\begin{array}{cc}10^{-5} & 1 \\ 1 & 1\end{array}\right]\left[\begin{array}{l}x_{1} \\ x_{2}\end{array}\right]=\left[\begin{array}{l}1 \\ 0\end{array}\right] \end{equation}
 
-    解得： $$ x_{1}=-\frac{1}{1-10^{-5}}, x_{2}=\frac{1}{1-10^{-5}} $$
+    解得： \begin{equation} x_{1}=-\frac{1}{1-10^{-5}}, x_{2}=\frac{1}{1-10^{-5}} \end{equation}
 
     使用LU分解求解上述上述方程，并且使用以下两个置换矩阵:
-    $$
+    \begin{equation}
         P_{1}=\left[\begin{array}{ll}
                 1 & 0 \\
                 0 & 1
@@ -510,13 +510,13 @@ $PA=LU$分解方法不唯一，随着 $ P $ 的选择不同， $L$、$U$也不�
                 0 & 1 \\
                 1 & 0
             \end{array}\right]
-    $$
+    \end{equation}
 
     计算过程中，中间结果四舍五入到小数点后四位。
 
     选择1: $  P_{1}=I $.
 
-    $$
+    \begin{equation}
         \left[\begin{array}{cc}
                 10^{-5} & 1 \\
                 1       & 1
@@ -527,10 +527,10 @@ $PA=LU$分解方法不唯一，随着 $ P $ 的选择不同， $L$、$U$也不�
                 10^{-5} & 1        \\
                 0       & 1-10^{5}
             \end{array}\right]
-    $$
+    \end{equation}
 
     $L$和$U$四舍五入到小数点后四位
-    $$
+    \begin{equation}
         L=\left[\begin{array}{cc}
                 1      & 0 \\
                 10^{5} & 1
@@ -538,10 +538,10 @@ $PA=LU$分解方法不唯一，随着 $ P $ 的选择不同， $L$、$U$也不�
                 10^{-5} & 1       \\
                 0       & -10^{5}
             \end{array}\right]
-    $$
+    \end{equation}
 
     向前回代
-    $$
+    \begin{equation}
         \left[\begin{array}{cc}
                 1      & 0 \\
                 10^{5} & 1
@@ -552,10 +552,10 @@ $PA=LU$分解方法不唯一，随着 $ P $ 的选择不同， $L$、$U$也不�
                 1 \\
                 0
             \end{array}\right] \Rightarrow z_{1}=1, z_{2}=-10^{5}
-    $$
+    \end{equation}
 
     向后回代
-    $$
+    \begin{equation}
         \left[\begin{array}{cc}
                 10^{-5} & 1       \\
                 0       & -10^{5}
@@ -566,7 +566,7 @@ $PA=LU$分解方法不唯一，随着 $ P $ 的选择不同， $L$、$U$也不�
                 1 \\
                 -10^{-5}
             \end{array}\right] \Rightarrow x_{1}=0, x_{2}=1
-    $$
+    \end{equation}
 
     \begin{remark}
         $ x_{1} $ 的误差为 $ 100 \% $.
@@ -576,10 +576,10 @@ $PA=LU$分解方法不唯一，随着 $ P $ 的选择不同， $L$、$U$也不�
 
     选择2：行进行交换。
 
-    $$ \left[\begin{array}{cc}1 & 1 \\ 10^{-5} & 1\end{array}\right]=\left[\begin{array}{cc}1 & 0 \\ 10^{-5} & 1\end{array}\right]\left[\begin{array}{cc}1 & 1 \\ 0 & 1-10^{-5}\end{array}\right] $$
+    \begin{equation} \left[\begin{array}{cc}1 & 1 \\ 10^{-5} & 1\end{array}\right]=\left[\begin{array}{cc}1 & 0 \\ 10^{-5} & 1\end{array}\right]\left[\begin{array}{cc}1 & 1 \\ 0 & 1-10^{-5}\end{array}\right] \end{equation}
 
     $L$和$U$四舍五入到小数点后四位
-    $$
+    \begin{equation}
         L=\left[\begin{array}{cc}
                 1       & 0 \\
                 10^{-5} & 1
@@ -587,10 +587,10 @@ $PA=LU$分解方法不唯一，随着 $ P $ 的选择不同， $L$、$U$也不�
                 1 & 1 \\
                 0 & 1
             \end{array}\right]
-    $$
+    \end{equation}
 
     向前回代
-    $$
+    \begin{equation}
         \left[\begin{array}{cc}
                 1       & 0 \\
                 10^{-5} & 1
@@ -601,10 +601,10 @@ $PA=LU$分解方法不唯一，随着 $ P $ 的选择不同， $L$、$U$也不�
                 0 \\
                 1
             \end{array}\right] \Rightarrow z_{1}=0, z_{2}=1
-    $$
+    \end{equation}
 
     向后回代
-    $$
+    \begin{equation}
         \left[\begin{array}{ll}
                 1 & 1 \\
                 0 & 1
@@ -615,7 +615,7 @@ $PA=LU$分解方法不唯一，随着 $ P $ 的选择不同， $L$、$U$也不�
                 0 \\
                 1
             \end{array}\right] \Rightarrow x_{1}=-1, x_{2}=1
-    $$
+    \end{equation}
 
     \begin{remark}
         $ x_{1}, x_{2} $ 的误差约为 $ 10^{-5} $.
@@ -624,12 +624,12 @@ $PA=LU$分解方法不唯一，随着 $ P $ 的选择不同， $L$、$U$也不�
 \end{example}
 
 
-不同置换矩阵 $ P $ ，算法可能导致产生不同的误差的结果; 由于数值存储存在误差:
+不同置换矩阵 $ P $ ,算法可能导致产生不同的误差的结果; 由于数值存储存在误差:
 第一种 $ P_{1} $ 行交换，算法不稳定;
-第二种 $ P_{2} $ 行交换, 算法是稳定得到 “准确” 近似解;
+第二种 $ P_{2} $ 行交换， 算法是稳定得到 “准确” 近似解;
 
-在数值分析中，一些比较简单的规则去挑选置换矩阵 $ P  $， 使 得算法结果比较稳定。
-$$
+在数值分析中，一些比较简单的规则去挑选置换矩阵 $ P  $, 使 得算法结果比较稳定。
+\begin{equation}
     \left[\begin{array}{cc}
             10^{-5} & 1 \\
             1       & 1
@@ -649,7 +649,7 @@ $$
             0 \\
             1
         \end{array}\right]
-$$
+\end{equation}
 
 
 
@@ -658,10 +658,10 @@ $$
 \section{稀疏线性方程组}
 
 \begin{theorem}
-    如果矩阵 $ \mathrm{A} $ 是系稀疏矩阵, 则它一般可以被分解为
-    $$
+    如果矩阵 $ \mathrm{A} $ 是系稀疏矩阵， 则它一般可以被分解为
+    \begin{equation}
         A=P_{1} L U P_{2}
-    $$
+    \end{equation}
 
     矩阵 $ P_{1}, P_{2} $ 都为置换矩阵
 \end{theorem}
