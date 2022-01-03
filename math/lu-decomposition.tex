@@ -75,6 +75,16 @@
             \end{matrix}\right]$
 \end{center}
 
+\begin{remark}
+    The inverse exists if and only if elimination produces $n$ pivots. Row exchanges are allowed. Elimination solves $Ax = b$ without explicitly using the matrix $A^{-1}$.
+\end{remark}
+
+\begin{remark}
+    (Important) Suppose there is a nonzero vector $ x $ such that $ A x=0 . $ Then $ A $ cannot have an inverse. No matrix can bring $ \mathbf{0} $ back to $ \boldsymbol{x} $.
+
+If $ A $ is invertible, then $ A x=0 $ can only have the \textbf{zero solution} $ x=A^{-1} 0=0 $.
+\end{remark}
+
 
 \begin{example}
     \begin{equation} \begin{aligned}\left[\begin{array}{llll}K & e_{1} & e_{2} & e_{3}\end{array}\right] & =\left[\begin{array}{rrrrrr}\mathbf{2} & -\mathbf{1} & \mathbf{0} & 1 & 0 & 0 \\ -\mathbf{1} & \mathbf{2} & -\mathbf{1} & 0 & 1 & 0 \\ \mathbf{0} & -\mathbf{1} & \mathbf{2} & 0 & 0 & 1\end{array}\right] \quad \text { Start Gauss-Jordan on } K                                                  \\ & \rightarrow\left[\begin{array}{rrrrrr}2 & -1 & 0 & 1 & 0 & 0 \\ \mathbf{0} & \frac{3}{2} & -\mathbf{1} & \frac{1}{2} & \mathbf{1} & \mathbf{0} \\ 0 & -1 & 2 & 0 & 0 & 1\end{array}\right] \quad\left(\frac{\mathbf{1}}{\mathbf{2}} \text { row } 1+\text { row 2 }\right) \\ & \rightarrow\left[\begin{array}{rrrrrr}2 & -1 & 0 & 1 & 0 & 0 \\ 0 & \frac{3}{2} & -1 & \frac{1}{2} & 1 & 0 \\ \mathbf{0} & \mathbf{0} & \frac{4}{3} & \frac{1}{3} & \frac{2}{3} & \mathbf{1}\end{array}\right] \quad \left(\frac{\mathbf{2}}{3} \text { row 2 + row 3}\right)\\
@@ -669,7 +679,7 @@ $PA=LU$分解方法不唯一，随着 $ P $ 的选择不同， $L$、$U$也不�
 \begin{corollary}
     对矩阵 $ \mathrm{A} $ 进行行变换和列变换得到: $ \tilde{A}=P_{1}^{T} A P_{2}^{T} $
 
-    然后进行分解: $ \widetilde{\mathrm{A}}=L U $
+    然后进行分解: $ \tilde{\mathrm{A}}=L U $
 \end{corollary}
 
 

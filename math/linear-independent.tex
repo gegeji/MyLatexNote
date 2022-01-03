@@ -245,10 +245,10 @@ x=\left(a_{1}^{T} x\right) a_{1}+\cdots+\left(a_{n}^{T} x\right) a_{n}
     \KwOut{若这些向量线性无关，返回标准正交基$ q_{1}, \ldots, q_{k} $；若线性相关时判断 $a_j$ 是 $ a_{1}, \ldots, a_{j-1} $ 的线性组合 }
     $ q_{1}= \dfrac{a_{1}}{\left\|a_{1}\right\|_{2}}   $\;
     \While(){$i=2,\cdots,k$}{
-        正交化: $ \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $\;
-        检验线性相关：如果 $ \widetilde{q}_{i}=0 $, 提前退出迭代\;
+        正交化: $ \tilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $\;
+        检验线性相关：如果 $ \tilde{q}_{i}=0 $, 提前退出迭代\;
         单位化: $
-        q_{i}=\dfrac{\widetilde{q}_{i}}{\left\|\widetilde{q}_{i}\right\|_{2}}$\;
+        q_{i}=\dfrac{\tilde{q}_{i}}{\left\|\tilde{q}_{i}\right\|_{2}}$\;
     }
 \end{algorithm}
 
@@ -266,7 +266,7 @@ x=\left(a_{1}^{T} x\right) a_{1}+\cdots+\left(a_{n}^{T} x\right) a_{n}
     假设第 $ i-1 $ 次迭代成立，  即: \begin{equation} \quad q_{r} \perp q_{s}, \forall r, s<i \end{equation}
 
     正交化步骤保证有以下关系成立
-    \begin{equation} \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} \end{equation}
+    \begin{equation} \tilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} \end{equation}
 
     等式两边同时乘以 $ q_{j}^{T}, j=1, \ldots, i-1 $
     \begin{equation} \begin{aligned} q_{j}^{T} \tilde{q}_{i} &=q_{j}^{T} a_{i}-\left(q_{1}^{T} a_{i}\right)\left(q_{j}^{T} q_{1}\right)-\cdots-\left(q_{i-1}^{T} a_{i}\right)\left(q_{j}^{T} q_{i-1}\right) \\ &=q_{j}^{T} a_{i}-q_{j}^{T} a_{i}
@@ -274,10 +274,10 @@ x=\left(a_{1}^{T} x\right) a_{1}+\cdots+\left(a_{n}^{T} x\right) a_{n}
 
     $ \because q_{j}^{T} q_{r}=0, j \neq r, q_{j}^{T} q_{j}=1 $
 
-     $\therefore \widetilde{q}_{i} \perp q_{1}, \ldots, \widetilde{q}_{i} \perp q_{i-1} $.
+     $\therefore \tilde{q}_{i} \perp q_{1}, \ldots, \tilde{q}_{i} \perp q_{i-1} $.
 
     单位化步骤保证了 $
-    q_{i}=\dfrac{\widetilde{q}_{i}}{\left\|\widetilde{q}_{i}\right\|_{2}}$, 即 $ q_{1}, \ldots, q_{i} $ 是标准正交。 
+    q_{i}=\dfrac{\tilde{q}_{i}}{\left\|\tilde{q}_{i}\right\|_{2}}$, 即 $ q_{1}, \ldots, q_{i} $ 是标准正交。 
 \end{proof}
 
 \begin{algorithm}[htbp]
@@ -302,13 +302,13 @@ x=\left(a_{1}^{T} x\right) a_{1}+\cdots+\left(a_{n}^{T} x\right) a_{n}
 
 \begin{proof}
     由
-    \begin{equation} \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} \end{equation}
+    \begin{equation} \tilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} \end{equation}
 
     所以
-    \begin{equation}a_{i}= \widetilde{q}_{i}+\left(q_{1}^{T} a_{i}\right) q_{1}+\cdots+\left(q_{i-1}^{T} a_{i}\right) q_{i-1} \end{equation}
+    \begin{equation}a_{i}= \tilde{q}_{i}+\left(q_{1}^{T} a_{i}\right) q_{1}+\cdots+\left(q_{i-1}^{T} a_{i}\right) q_{i-1} \end{equation}
 
     注意有性质: $
-    q_{i}=\dfrac{\widetilde{q}_{i}}{\left\|\widetilde{q}_{i}\right\|_{2}}$, 即 $ q_{1}, \ldots, q_{i} $.
+    q_{i}=\dfrac{\tilde{q}_{i}}{\left\|\tilde{q}_{i}\right\|_{2}}$, 即 $ q_{1}, \ldots, q_{i} $.
 
     \begin{equation} a_{i}=\left\|\tilde{q}_{i}\right\|_{2} q_{i}+\left(q_{1}^{T} a_{i}\right) q_{1}+\cdots+\left(q_{i-1}^{T} a_{i}\right) q_{i-1} \end{equation}
 \end{proof}
@@ -351,7 +351,7 @@ x=\left(a_{1}^{T} x\right) a_{1}+\cdots+\left(a_{n}^{T} x\right) a_{n}
 
 \begin{proof}
     \begin{equation}\begin{aligned}
-        \widetilde{q}_{i} &=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} \\
+        \tilde{q}_{i} &=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} \\
         0 &=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1}
     \end{aligned}\end{equation}
 

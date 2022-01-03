@@ -666,11 +666,11 @@ $A = Q R$矩阵中的$R$矩阵为
 
 \begin{remark}
     Gram-Schmidt正交化的两条基本公式
-    \begin{equation} \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} \end{equation}
+    \begin{equation} \tilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} \end{equation}
 
     \begin{equation} \begin{aligned}
         a_{i}&=\left(q_{1}^{T} a_{i}\right) q_{1}+\cdots+\left(q_{i-1}^{T} a_{i}\right) q_{i-1} +\underbrace{
-\left\|\tilde{q}_{i}\right\|_{2} q_{i}}_{\widetilde{q}_{i}}
+\left\|\tilde{q}_{i}\right\|_{2} q_{i}}_{\tilde{q}_{i}}
         \\ &=R_{1 i} q_{1}+\cdots+R_{i i} q_{i}
     \end{aligned}
       \end{equation}
@@ -800,7 +800,7 @@ Q和R的第三列:
 计算得到 $R_{13}=q_{1}^{T} a_{3}=2$ 以及 $R_{23}=q_{2}^{T} a_{3}=8$ .
 
 正交化计算:
-$\tilde{q}_{3}=a_{3}-R_{13} q_{1}-R_{23} q_{2}=\left[\begin{array}{l}1 \\ 3 \\ 5 \\ 7\end{array}\right]-2\left[\begin{array}{r}-1 / 2 \\ 1 / 2 \\ -1 / 2 \\ 1 / 2\end{array}\right]-8\left[\begin{array}{l}1 / 2 \\ 1 / 2 \\ 1 / 2 \\ 1 / 2\end{array}\right]=\left[\begin{array}{r}-2 \\ -2 \\ 2 \\ 2\end{array}\right]$
+$$\tilde{q}_{3}=a_{3}-R_{13} q_{1}-R_{23} q_{2}=\left[\begin{array}{l}1 \\ 3 \\ 5 \\ 7\end{array}\right]-2\left[\begin{array}{r}-1 / 2 \\ 1 / 2 \\ -1 / 2 \\ 1 / 2\end{array}\right]-8\left[\begin{array}{l}1 / 2 \\ 1 / 2 \\ 1 / 2 \\ 1 / 2\end{array}\right]=\left[\begin{array}{r}-2 \\ -2 \\ 2 \\ 2\end{array}\right]$$
 
 将其单位化得到：
 \begin{equation}
@@ -848,7 +848,7 @@ Gram-Schmidt方法第$k$次循环的复杂度：
 
 \begin{itemize}
     \item $ a_{k} $ 有$k-1$个 $ q_{i}^{T} a_{k} $ 内积操作: $ ( {k}-1)(2  {~m}-1) $ flops
-    \item 计算 $ \tilde{q}_{k}: 2( {k}-1)  {m} $ flops. \begin{equation} \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} \end{equation}
+    \item 计算 $ \tilde{q}_{k}: 2( {k}-1)  {m} $ flops. \begin{equation} \tilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} \end{equation}
     \item 计算 $ R_{k k} $ 和 $ q_{k}: 3  {m} $ flops. $  R_{k k}=\left\|\tilde{q}_{k}\right\|_{2}, q_{k}=\tilde{q}_{k} / R_{k k} $
 \end{itemize}
 
@@ -907,7 +907,7 @@ end
 
     把Gram-Schmidt算法应用到一个大小为 $  {m}= {n}=50 $ 的方形矩阵$A$上。
 
-    \begin{FigureCenter}{$\max _{1 \leq i<k}\left|q_{i}^{T} q_{k}\right|$ (Gram-Schmidt Algorithm)}
+    \begin{FigureCenter}{通过Gram-Schmidt正交化算法计算得到的正交性偏差$\max _{1 \leq i<k}\left|q_{i}^{T} q_{k}\right|$}
         \includegraphics{qr-matlab-error.eps}
     \end{FigureCenter}
 
@@ -922,7 +922,7 @@ end
 
     修正的Gram-Schmidt则改为每次只减去一个投影，以减少舍入误差。
 
-    \begin{lstlisting}[caption=modified Gram-Schmidt算法，language=matlab]
+    \begin{lstlisting}[caption=modified Gram-Schmidt算法,language=matlab]
 for j = 1:n
     v=A(:,j);
     for i=1:j-1
@@ -939,13 +939,13 @@ end
         \KwOut{QR分解得到的矩阵$Q$、$R$}
         \caption{Modified Gram-Schmidt Algorithm}
         \For(){$j=1$ to $n$}{
-            $v={\tilde{q} }_k =a_k$\;
+            $v={\tilde{q} }_j =a_j$\;
             \For(){$i=1$ to $j-1$}{
                 $R_{ij} = q_i^T v$\;
                 $v = v - R_{ij} q_i$\;
             }
-            $R_{ {kk}} ={\left\|{\tilde{q} }_k \right\|}_2$\;
-            $q_k =\left(\frac{1}{R_{kk} }\right){\tilde{q} }_k$\;
+            $R_{ jj} ={\left\|{\tilde{q} }_j \right\|}_2$\;
+            $q_j =\left(\frac{1}{R_{jj} }\right){\tilde{q} }_j$\;
 
         }
     \end{algorithm}
@@ -955,7 +955,7 @@ end
         \includegraphics{modified-qr-matlab-error.eps}
     \end{FigureCenter}
 
-    修正Gram-Schmidt算法的误差更小。
+    从图中可以看出，修正Gram-Schmidt算法的误差更小。
 \end{example}
 
 \section{QR Decomposition Using Householder Transformation}
@@ -1009,9 +1009,16 @@ Q & \tilde{Q}
 \begin{equation} H^{T} H=I \end{equation}
 \end{theorem}
 
+\subsection{反射算子的几何图示}
 \begin{FigureCenter}{Reflection of $x$}
     \input{tikz_images/tikz-householder-matrix.tex}
 \end{FigureCenter}
+
+可以证明
+
+\begin{theorem}
+    $Hx$是$x$的关于超平面$ \left\{u \mid v^{T} u=0\right\} $镜面对称。
+\end{theorem}
 
 
 
@@ -1036,12 +1043,12 @@ Q & \tilde{Q}
     \end{aligned}\end{equation}
 \end{proof}
 
-\begin{theorem}
+\begin{corollary}
     矩阵向量积 $ H x $ 能化简为
 \begin{equation}
 H x=x-2\left(v^{T} x\right) v
 \end{equation}
-\end{theorem}
+\end{corollary}
 
 
 \subsubsection{$Hx$的算法复杂度}
@@ -1501,11 +1508,11 @@ There are three ways to reach the important factorization $A=Q R$.
 
 \textbf{Gram-Schmidt} works to find the orthonormal vectors in $Q .$ Then $R$ is upper triangular because of the order of Gram-Schmidt steps. 
 
-Now we look at better methods (Householder and Givens), which use a product of specially simple $Q$ 's that we know are orthogonal.
+Now we look at better methods (Householder and Givens), which use a product of specially simple $Q$'s that we know are orthogonal.
 
-Elimination gives $A=L U$, orthogonalization gives $A=Q R$. We don't want a triangular $L$, we want an orthogonal $Q . L$ is a product of $E^{\prime}$ s from elimination, with 1's on the diagonal and the multiplier $\ell_{i j}$ below. \textbf{$Q$ will be a product of orthogonal matrices.}
+Elimination gives $A=L U$, orthogonalization gives $A=Q R$. We don't want a triangular $L$, we want an orthogonal $Q$. $L$ is a product of $E$'s from elimination, with 1's on the diagonal and the multiplier $\ell_{i j}$ below. \textbf{$Q$ will be a product of orthogonal matrices.}
 
-There are two simple orthogonal matrices to take the place of the $E$'s. The \term{reflection matrices} $I-2 u \boldsymbol{u}^{ {T}}$ are named after \textit{Householder}. The \term{plane rotation matrices} are named after \textit{Givens}. The simple matrix that rotates the $x y$ plane by $\theta$ is $Q_{21}$:  
+There are two simple orthogonal matrices to take the place of the $E$'s. The \term{reflection matrices} $I-2 \boldsymbol{u} \boldsymbol{u}^{ {T}}$ are named after \textit{Householder}. The \term{plane rotation matrices} are named after \textit{Givens}. The simple matrix that rotates the $x y$ plane by $\theta$ is $Q_{21}$:  
 
 \begin{definition}[Givens Rotation in the 1-2 plane]
     \begin{equation}Q_{21}=\left[\begin{array}{crc}
@@ -1669,15 +1676,6 @@ A=A_{1} A_{2} \cdots A_{k}
 计算非奇异矩阵 $  {A} \in \mathbb{R}^{n \times n} $ 的逆 $  {A}^{-1} $, $X=\left[x_{1}, x_{2}, \cdots, x_{n}\right], x_{i} \in \mathbb{R}^{n}, i=1, \cdots, n$,$I=\left[e_{1}, e_{2}, \cdots, e_{n}\right], e_{i} \in \mathbb{R}^{n}, i=1, \cdots, n$
 ：
 
-\begin{algorithm}[htbp]
-    \caption{QR分解求解$A^{-1}$}
-    $R x_{1}= Q^{T} e_{1}$\;
-    $R x_{2}=Q^{T} e_{2}$\;
-    $\cdots$\;
-    $R x_{n}=Q^{T} e_{n}$\;
-\end{algorithm}
-
-
 
 \begin{equation}\begin{aligned}
     &AX = I \\
@@ -1686,7 +1684,13 @@ A=A_{1} A_{2} \cdots A_{k}
     \Rightarrow&  R x_{1}= Q^{T} e_{1}, R x_{2}=Q^{T} e_{2}, \cdots, R x_{n}=Q^{T} e_{n}
 \end{aligned}\end{equation}
 
-
+\begin{algorithm}[htbp]
+    \caption{QR分解求解$A^{-1}$}
+    $R x_{1}= Q^{T} e_{1}$\;
+    $R x_{2}=Q^{T} e_{2}$\;
+    $\cdots$\;
+    $R x_{n}=Q^{T} e_{n}$\;
+\end{algorithm}
 
 \subsubsection{The Complexity of $ Q R X=I $}
 
