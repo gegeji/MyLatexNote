@@ -84,11 +84,11 @@ $$ n^{2}+(n-1)^{2}+\cdots+1 \approx \frac{1}{3} n^{3}\text{ flops }$$
 
 \section{QR Factorization}
 
-如果矩阵 $ A \in \mathbb{R}^{m \times n} $ 的列向量线性无关，则可以将其分解为
-
 \begin{remark}
     下面各节均假定矩阵 $ A \in \mathbb{R}^{m \times n} $ 的列向量线性无关。
 \end{remark}
+
+如果矩阵 $ A \in \mathbb{R}^{m \times n} $ 的列向量线性无关，则可以将其分解为
 
 \begin{theorem}[QR Factorization]
     
@@ -161,7 +161,7 @@ Golub \& Van Loan (1996) call $ Q_{1} R_{1} $ the \term{thin $ Q R $ factorizati
 
     $$ A=\left[\begin{array}{ccc}1 & 1 & 0 \\ 1 & -1 & 1 \\ 0 & 0 & 2\end{array}\right] $$
 
-    令 $ a_{1}=(1,1,0)^{T}, a_{2}=(1,-1,0)^{T}, a_{3}=(0,1,2)^{T} $, 由Schmidt方法正交单 位化后, 得到 $ q_{1}=\left(\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}, 0\right)^{T}, q_{2}=\left(\frac{1}{\sqrt{2}},-\frac{1}{\sqrt{2}}, 0\right)^{T}, q_{3}=(0,0,1)^{T} $ .
+    令 $ a_{1}=(1,1,0)^{T}, a_{2}=(1,-1,0)^{T}, a_{3}=(0,1,2)^{T} $, 由Gram-Schmidt方法正交单位化后, 得到 $ q_{1}=\left(\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}, 0\right)^{T}, q_{2}=\left(\frac{1}{\sqrt{2}},-\frac{1}{\sqrt{2}}, 0\right)^{T}, q_{3}=(0,0,1)^{T} $ .
 
     所以 $ a_{1}=\sqrt{2} q_{1}, \quad a_{2}=\sqrt{2} q_{2}, \quad a_{3}=\frac{1}{\sqrt{2}} q_{1}-\frac{1}{\sqrt{2}} q_{2}+2 q_{3} $ .
 
@@ -387,15 +387,16 @@ $$
 \begin{algorithm}[htbp]
     \caption[]{Solving Linear Equations via QR Decomposition}
     \KwIn{$n \times n$ invertible matrix $A$}
+    \KwOut{Solution $x$}
     \caption{Solving linear equations via QR factorization}
     QR factorization. Compute the QR factorization $ A=Q R $\;
     Compute $ Q^{T} b $\;
     Back substitution. Solve the triangular equation $ R x=Q^{T} b $ using back substitution\;
 \end{algorithm}
 
-对于普通矩阵使用QR分解求解线性方程组，正交分解需要$2 n^3$ flops, 计算$Q^T b$需要$2n^2$ flops, 第三步回代求解$Rx = Q^Tb$需要$n^2$ flops.(总时间复杂度是$O(n^3)$). 
+对于普通矩阵使用QR分解求解线性方程组，正交分解需要$2 n^3$ flops, 计算$Q^T b$需要$2n^2$ flops, 第三步回代求解$Rx = Q^Tb$需要$n^2$ flops.（总时间复杂度是$O(n^3)$）. 
 
-对于稀疏矩阵求解线性方程组，时间复杂度接近$\operatorname{nnz}(A)$.内存使用和复杂度在很大程度上取决于系数矩阵的稀疏模式。内存使用量通常是$\operatorname{nnz}(A)+n$的适度倍数，$\operatorname{nnz}(A)+n$是特定问题的数据$A$和$b$所需的标量数量，通常远小于$n^2+n$(如果A和b不是稀疏时存储它们所需的标量数).求解稀疏线性方程的flop数通常也更接近$\operatorname{nnz}(A)$，而不是$n^3$（矩阵$A$不稀疏时的阶数）。
+对于稀疏矩阵求解线性方程组，时间复杂度接近$\operatorname{nnz}(A)$.内存使用和复杂度在很大程度上取决于系数矩阵的稀疏模式。内存使用量通常是$\operatorname{nnz}(A)+n$的适度倍数，$\operatorname{nnz}(A)+n$是特定问题的数据$A$和$b$所需的标量数量，通常远小于$n^2+n$（如果A和b不是稀疏时存储它们所需的标量数）.求解稀疏线性方程的flop数通常也更接近$\operatorname{nnz}(A)$，而不是$n^3$（矩阵$A$不稀疏时的阶数）。
 
 
 \subsection{QR分解和求解伪逆 $A^{\dagger}$、逆 $A^{-1}$}
@@ -410,7 +411,7 @@ $$
 A^{\dagger}&=\left((Q R)^{T}(Q R)\right)^{-1}(Q R)^{T} \\
 &=\left(R^{T} Q^{T} Q R\right)^{-1} R^{T} Q^{T} \\
 &=\left(R^{T} R\right)^{-1} R^{T} Q^{T} \quad\left(Q^{T} Q=I\right) \\
-&=R^{-1} R^{-T} R^{T} Q^{T} \quad(R{\text {是非奇异的 })} \\
+&=R^{-1} R^{-T} R^{T} Q^{T} \quad(R{\text {是非奇异的 }}) \\
  &={R^{-1} Q^{T}}
 \end{aligned}
 $$
@@ -439,12 +440,14 @@ $$
 \begin{algorithm}[htbp]
     \caption{Computing the inverse via QR factorization}
     \KwIn{$n \times n$ invertible matrix $A$}
+    \KwOut{Inverse $A^{-1}$}
 
     QR factorization. Compute the QR factorization $ A=Q R $\;
 
     \For(){$ i=1, \ldots, n $}{
-        Solve the triangular equation $ R b_{i}=\tilde{q}_{i} $ using back substitution.
+        Solve the triangular equation $ R A^{-1}_{i}=\tilde{q}_{i} $ using back substitution.
     }
+    
 \end{algorithm}
 
 对于通过QR分解求$A^{-1}$，QR分解需要$2n^3$ flops， $n$次回代需要$n^3$ flops，时间复杂度是$O(3n^3)$.
@@ -490,10 +493,9 @@ $$
     $$R \widehat{\boldsymbol{x}}=Q^{ {T}} \boldsymbol{b}$$
 
     $$\widehat{\boldsymbol{x}}=R^{-1} Q^{ {T}} \boldsymbol{b}$$
-
-
-可以用于求解最小二乘法，而不用直接求解$Ax=b$（当$A$不可逆时）。
 \end{theorem}
+
+利用这个性质可以用于求解最小二乘法，当$A$不可逆时不用直接求解$Ax=b$。
 
 \begin{remark}
     注意在 $A A^{\dagger}$ 中乘积的顺序与 $A^{\dagger} A=I$ 的差异。
@@ -630,9 +632,7 @@ The pseudoinverse $ A^{\dagger} $ is the $ n $ by $ m $ matrix that makes $ A A^
 \section{QR Algorithm Using Gram-Schmidt Algorithm}
 Gram-Schmidt QR算法将逐列计算$Q$和$R$.
 
-
-
-$k$步后我们得到了QR的部分分解：
+假设$k$步后我们得到了QR的部分分解：
 $$
 A=\left[\begin{array}{llll}
 a_{1} & a_{2} & \cdots & a_{k}
@@ -647,7 +647,7 @@ R_{11} & R_{12} & \cdots & R_{1 k} \\
 $$
 
 \begin{corollary}
-    QR的部分分解列向量 $q_{1}, \ldots, q_{k}$ 是标准正交的。
+    QR部分分解得到的列向量 $q_{1}, \ldots, q_{k}$ 是标准正交的。
 \end{corollary}
 
 \begin{corollary}
@@ -684,11 +684,13 @@ $$
 a_{k}=R_{1 k} q_{1}+R_{2 k} q_{2}+\cdots+R_{k-1, k} q_{k-1}+R_{k k} q_{k}
 $$
 
-无论如何选择 $R_{1 k}, \ldots, R_{k-1, k}$, 向量
+假设Gram-Schmidt算法过程中没有出现中途退出的状况，所以无论如何选择 $R_{1 k}, \ldots, R_{k-1, k}$, 向量
 $$
 \tilde{q}_{k}=a_{k}-R_{1 k} q_{1}-R_{2 k} q_{2}-\cdots-R_{k-1, k} q_{k-1} \neq 0
 $$
-都将是非零的。（假设Gram-Schmidt算法过程中没有出现中途退出的状况，由于$a_{1}, \ldots, a_{k}$ 是线性无关的，即$q_{1}, \ldots, q_{i-1}, q_{i} $ 是线性无关的）
+都将是非零的。
+
+由于$a_{1}, \ldots, a_{k}$ 是线性无关的，即$q_{1}, \ldots, q_{i-1}, q_{i} $ 是线性无关的。它们张成的空间相同。
 
 因此
 $$
@@ -713,7 +715,7 @@ $$R_{1 k}=q_{1}^{T} a_{k},  R_{2 k}=q_{2}^{T} a_{k}, \ldots,  R_{k-1, k}=q_{k-1}
 \KwOut{分解得到的$Q$、$R$矩阵}
 
     $R_{11}=\left\|a_{1}\right\|_{2}$ \;
-     $q_{1}=\frac{1}{R_{11}} a_{1}$ \;
+     $q_{1}=\dfrac{1}{R_{11}} a_{1}$ \;
 \For(){$k=2$ to $n$}{
     \For(){$l=1$ to $k-1$}{
 $R_{l, k} =q_{l}^{T} a_{k}$ \;}
@@ -845,9 +847,9 @@ $$
 Gram-Schmidt方法第$k$次循环的复杂度：
 
 \begin{itemize}
-    \item $ a_{k} $ 有k-1个 $ q_{i}^{T} a_{k} $ 内积操作: $ ( {k}-1)(2  {~m}-1) $ flops
+    \item $ a_{k} $ 有$k-1$个 $ q_{i}^{T} a_{k} $ 内积操作: $ ( {k}-1)(2  {~m}-1) $ flops
     \item 计算 $ \tilde{q}_{k}: 2( {k}-1)  {m} $ flops. $$ \widetilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} $$
-    \item 计算 $ R_{k k} $ 和 $ q_{k}: 3  {~m} $ flops. $  R_{k k}=\left\|\tilde{q}_{k}\right\|_{2}, q_{k}=\tilde{q}_{k} / R_{k k} $
+    \item 计算 $ R_{k k} $ 和 $ q_{k}: 3  {m} $ flops. $  R_{k k}=\left\|\tilde{q}_{k}\right\|_{2}, q_{k}=\tilde{q}_{k} / R_{k k} $
 \end{itemize}
 
 第$k$次循环的总和：$(4m-1)(k-1)+3m$ flops
@@ -870,6 +872,8 @@ Householder算法复杂度为 $ 2 m n^{2}-(2 / 3) n^{3} $ flops .
 将$Q$表示为初等正交矩阵的乘积。是最广泛使用的算法（在\textsc{MATLAB}和\textsc{Julia}中的\verb|qr|函数使用该算法）.
 
 本书中认为QR分解的复杂度为$O(2mn^2)$.
+
+以下的例子展示了舍入误差的影响。
 
 \begin{example}
     \begin{lstlisting}[caption=Gram Schmidt算法,language=matlab]
@@ -1121,7 +1125,7 @@ $$
 
 \subsection{Householder三角化}
 
-计算反射算子 $ H_{1}, \ldots, H_{n} $ 将A简化为上三角矩阵形式:
+计算反射算子 $ H_{1}, \ldots, H_{n} $ 将$A$简化为上三角矩阵形式:
 $$
 H_{n} H_{n-1} \cdots H_{1} A=\left[\begin{array}{l}
 R \\
@@ -1130,7 +1134,7 @@ R \\
 $$
 
 
-第k个步骤之后，矩阵 $ H_{k} H_{k-1} \ldots H_{1} A $ 具有以下结构:
+第$k$个步骤之后，矩阵 $ H_{k} H_{k-1} \ldots H_{1} A $ 具有以下结构:
 
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 对于 $ i>j $ 和 $ j \leq k $, 第 $  {i},  {j} $ 个位置的元素为零。
@@ -1196,11 +1200,11 @@ $$ A=\left[\begin{array}{llllllll}X & X & X & X & X & X & X & X \\ X & X & X & X
 
 $$H_1A = A_{1}=\left[\begin{array}{llllllll}X & X & X & X & X & X & X & X \\ 0 & X & X & X & X & X & X & X \\ 0 & X & X & X & X & X & X & X \\ 0 & X & X & X & X & X & X & X \\ 0 & X & X & X & X & X & X & X \\ 0 & X & X & X & X & X & X & X \\ 0 & X & X & X & X & X & X & X \\ 0 & X & X & X & X & X & X & X\end{array}\right] $$
 
-第二次处理对于$H_1A_{2:m, 1:n}$（$A_{1_{2:m, 1:n} }  $）进行处理。
+第二次处理对于$H_1A_{2:m, 1:n}$（$A_{1_{1:m, 1:n} }  $）进行处理。
 
 $$H_2A_1= A_{2}=\left[\begin{array}{cccccccc}X & X & X & X & X & X & X & X \\ 0 & X & X & X & X & X & X & X \\ 0 & 0 & X & X & X & X & X & X \\ 0 & 0 & X & X & X & X & X & X \\ 0 & 0 & X & X & X & X & X & X \\ 0 & 0 & X & X & X & X & X & X \\ 0 & 0 & X & X & X & X & X & X \\ 0 & 0 & X & X & X & X & X & X\end{array}\right] $$
 
-
+以此类推，直至矩阵$A$变成上三角矩阵。
 
 
 \begin{FigureCenter}{迭代计算过程中$A$的结构}
