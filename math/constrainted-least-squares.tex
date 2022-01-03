@@ -1769,7 +1769,7 @@ $ x^{*} $ 原始最优， $ \left(\alpha^{*}, \beta^{*}\right) $ 对偶最优，
 
 \begin{theorem} Let $z : \mathbb{R}^n \rightarrow \mathbb{R}$ be a differentiable objective function, $g_i:\mathbb{R}^n \rightarrow \mathbb{R}$ be differentiable constraint functions for $i = 1,\dots,m$ and $h_j:\mathbb{R}^n \rightarrow \mathbb{R}$ be differentiable constraint functions for $j=1,\dots,l$. If ${x}^* \in \mathbb{R}^n$ is an optimal point satisfying an appropriate regularity condition for the following optimization problem:
 
-\begin{displaymath}
+\begin{equation}
 P\left\{
 \begin{aligned}
 \max\;\;& z(x_1,\dots,x_n)\\
@@ -1781,7 +1781,7 @@ s.t.\;\;& g_1(x_1,\dots,x_n) \leq 0\\
 &h_l(x_1,\dots,x_n) = 0
 \end{aligned}
 \right.
-\end{displaymath}
+\end{equation}
 
 then there exists $\lambda_1,\dots,\lambda_m \in \mathbb{R}$ and $\mu_1,\dots\mu_l \in \mathbb{R}$ so that:
 
@@ -1832,7 +1832,7 @@ h_j({x}^*) = 0 \quad \text{for $j = 1,\dots,l$}
 \end{gather*}
 
 then ${x}^*$ is a global maximizer for 
-\begin{displaymath}
+\begin{equation}
 P\left\{
 \begin{aligned}
 \max\;\;& z(x_1,\dots,x_n)\\
@@ -1844,7 +1844,7 @@ s.t.\;\;& g_1(x_1,\dots,x_n) \leq 0\\
 &h_l(x_1,\dots,x_n) = 0
 \end{aligned}
 \right.
-\end{displaymath}
+\end{equation}
 \label{thm:KKT8}
 \end{theorem}
 
@@ -1860,33 +1860,33 @@ The values $\lambda_1,\dots,\lambda_m$ and $\mu_1,\dots,\mu_l$ are sometimes cal
 
 Looking more closely at the dual feasibility conditions, we see something interesting. Suppose that there are \term{no} equality constraints (i.e., not constraints of the form $h_j({x}) = 0$). Then the statements:
 
-\begin{displaymath}
+\begin{equation}
 \begin{aligned}
 \nabla z({x}^*) - \sum_{i = 1}^m\lambda_i \nabla g_i({x}^*) - \sum_{j = 1}^{l}\mu_j \nabla h_j({x}^*) & = {0}\\
 \lambda_i &\geq 0 \quad \text{for $i=1,\dots,m$}
 \end{aligned}
-\end{displaymath}
+\end{equation}
 
 imply that:
 
-\begin{displaymath}
+\begin{equation}
 \begin{aligned}
 \nabla z({x}^*) &= \sum_{i = 1}^m\lambda_i \nabla g_i({x}^*)\\
 \lambda_i &\geq 0 \quad \text{for $i=1,\dots,m$}
 \end{aligned}
-\end{displaymath}
+\end{equation}
 
 Specifically, this says that the \term{gradient of $z$ at ${x}^*$ is a positive combination of the gradients of the constraints at ${x}^*$.} But more importantly, since we also have \term{complementary slackness}, we know that if ${g}_i({x}^*) \neq 0$, then $\lambda_i = 0$ because $\lambda_i g_i({x}^*) = 0$ for $i = 1,\dots,m$. Thus, what dual feasibility is really saying is that \term{gradient of $z$ at ${x}^*$ is a positive combination of the  gradients of the \textbf{binding} constraints at ${x}^*$.} Remember, a constraint is binding if $g_i({x}^*) = 0$, in which case $\lambda_i \geq 0$.
 
 
 \begin{remark} Continuing from the previous remark, in the general case when we have some equality constraints, then dual feasibility says:
-\begin{displaymath}
+\begin{equation}
 \begin{aligned}
 \nabla z({x}^*) &= \sum_{i = 1}^m\lambda_i \nabla g_i({x}^*) + \sum_{j = 1}^{l}\mu_j \nabla h_j({x}^*)\\
 \lambda_i &\geq 0 \quad \text{for $i=1,\dots,m$}\\
 \mu_j &\in \mathbb{R}\quad \text{for $j=1,\dots,l$}
 \end{aligned}
-\end{displaymath}
+\end{equation}
 Since equality constraints are \term{always binding} this says that the \term{gradient of $z$ at ${x}^*$ is a linear combination of the  gradients of the \textbf{binding} constraints at ${x}^*$.} 
 \end{remark}
 
@@ -1903,7 +1903,7 @@ s.t. & x_1 + 2x_2 \leq 4\\
 \end{equation}
 Assuming I didn't know how to solve this problem using the Simplex method, I could look at Theorem \ref{thm:KKT8} and remark that the constraints and objective are all concave (and convex) since they are linear. Therefore, it suffices to find a KKT point and this point must be optimal.
 We can re-write Problem $P$ in the form of Theorem \ref{thm:KKT7} as:
-\begin{displaymath}
+\begin{equation}
 P \left \{
 \begin{aligned}
 \max \;\; & z(x_1,x_2) \equiv x_1 + x_2  \\ 
@@ -1912,14 +1912,14 @@ s.t. & g_1(x_1,x_2) \equiv x_1 + 2x_2 -4 \leq 0\\
 & g_3(x_1,x_2) \equiv -x_1 \leq 0\\
 & g_4(x_1,x_2) \equiv -x_2 \leq 0
 \end{aligned} \right.
-\end{displaymath}
+\end{equation}
 
 To write the KKT conditions, observe the following:
-\begin{displaymath}
+\begin{equation}
 \nabla z = \begin{bmatrix}1\\1\end{bmatrix} \quad \quad \nabla g_1 = \begin{bmatrix}1\\2\end{bmatrix}
 \quad\quad \nabla g_2 = \begin{bmatrix}2\\1\end{bmatrix} \quad \quad 
 \nabla g_3 = \begin{bmatrix}-1\\0\end{bmatrix} \quad \quad \nabla g_4 = \begin{bmatrix}0\\-1\end{bmatrix}
-\end{displaymath}
+\end{equation}
 We can now write the KKT conditions for this problem as:
 \begin{gather*}
 \text{Primal Feasibility}: \left\{
@@ -1947,21 +1947,21 @@ x_1, x_2 &\geq 0
 \right.
 \end{gather*}
 Consider Dual Feasibility for a moment. I can expand the matrices to obtain a system of equations:
-\begin{displaymath}
+\begin{equation}
 \begin{aligned}
 1 - \lambda_1 - 2\lambda_2 + \lambda_3 & = 0\\
 1 - 2\lambda_1 - \lambda_2 + \lambda_4 & = 0\\
 \lambda_1,\lambda_2,\lambda_3,\lambda_4 & \geq 0
 \end{aligned}
-\end{displaymath}
+\end{equation}
 Or:
-\begin{displaymath}
+\begin{equation}
 \begin{aligned}
 \lambda_1 + 2\lambda_2 - \lambda_3 &= 1\\
 2\lambda_1 + \lambda_2 - \lambda_4 &= 1\\
 \lambda_1,\lambda_2,\lambda_3,\lambda_4 & \geq 0
 \end{aligned}
-\end{displaymath}
+\end{equation}
 Since $\lambda_3, \lambda_4 \geq 0$, they act like \term{surplus variables} and we can write the Dual Feasibility as:
 \begin{equation}
 \left\{
@@ -2017,15 +2017,15 @@ s.t.\;\; & {w}{A} \geq {c}^T\\
 \end{aligned}\right.
 \end{equation}
 Here we assume that ${w}$ is a \term{row} vector (unlike our usual assumption that all vectors are column vectors). In our example problem, we have:
-\begin{displaymath}
+\begin{equation}
 {A} = \begin{bmatrix}1 & 2\\2 & 1\end{bmatrix} \quad \quad {c} = \begin{bmatrix}1\\1\end{bmatrix} \quad \quad {b} = \begin{bmatrix}4\\6\end{bmatrix}
-\end{displaymath}
+\end{equation}
 Let us write:
-\begin{displaymath}
+\begin{equation}
 {w} = \begin{bmatrix} \lambda_1 & \lambda_2 \end{bmatrix}
-\end{displaymath}
+\end{equation}
 Then we can write the dual problem as:
-\begin{displaymath}
+\begin{equation}
 D\left\{
 \begin{aligned}
 \min \;\; & \begin{bmatrix} \lambda_1 & \lambda_2 \end{bmatrix} \begin{bmatrix}4\\6\end{bmatrix} \\
@@ -2033,9 +2033,9 @@ D\left\{
 & \lambda_1, \lambda_2 \geq 0
 \end{aligned}
 \right.
-\end{displaymath}
+\end{equation}
 This can be rewritten more concretely as:
-\begin{displaymath}
+\begin{equation}
 D\left\{
 \begin{aligned}
 \min \;\; & 4\lambda_1 + 6\lambda_2\\
@@ -2044,9 +2044,9 @@ D\left\{
 & \lambda_1, \lambda_2 \geq 0
 \end{aligned}
 \right.
-\end{displaymath}
+\end{equation}
 Immediately we see a connection. The constraints of this problem look just like the simplified dual feasibility constraints. In fact, if we add surplus variables $\lambda_3, \lambda_4 \geq 0$, we see they match exactly and the problem in standard form is:
-\begin{displaymath}
+\begin{equation}
 D\left\{
 \begin{aligned}
 \min \;\; & 4\lambda_1 + 6\lambda_2\\
@@ -2055,9 +2055,9 @@ D\left\{
 & \lambda_1, \lambda_2,\lambda_3, \lambda_4 \geq 0
 \end{aligned}
 \right.
-\end{displaymath}
+\end{equation}
 We can complete our exploration of the relationship between these two problems by constructing the KKT conditions for the dual problem. First, re-write the dual as:
-\begin{displaymath}
+\begin{equation}
 \begin{aligned}
 \max\;\; & -4\lambda_1 - 6\lambda_2 \\
 s.t. & -\lambda_1 - 2\lambda_2 + 1\leq 0\\
@@ -2065,7 +2065,7 @@ s.t. & -\lambda_1 - 2\lambda_2 + 1\leq 0\\
 & -\lambda_1 \leq 0\\
 & -\lambda_2 \leq 0
 \end{aligned}
-\end{displaymath}
+\end{equation}
 As before, we can write down the KKT conditions:
 \begin{gather*}
 \text{Primal Feasibility}: \left\{
@@ -2093,21 +2093,21 @@ s_2(-\lambda_2) &= 0
 \right.
 \end{gather*}
 Again, we can re-write the dual feasibility conditions (for which we have intentionally chosen specific dual variable names) and see they become:
-\begin{displaymath}
+\begin{equation}
 \begin{aligned}
 x_1 + 2x_2 + s_1 &= 4\\
 2x_1 + x_2 + s_2 & =6\\
 x_1,x_2, s_1, s_2 &\geq 0
 \end{aligned}
-\end{displaymath}
+\end{equation}
 Since $s_1, s_2 \geq 0$, they act like \term{slack variables} and thus we have:
-\begin{displaymath}
+\begin{equation}
 \begin{aligned}
 x_1 + 2x_2 &\leq  4\\
 2x_1 + x_2 &\leq 6\\
 x_1,x_2&\geq 0
 \end{aligned}
-\end{displaymath}
+\end{equation}
 and we've recovered the constraints from the original primal problem as the dual feasibility conditions of the KKT conditions for the dual optimization problem. We can go further. Note:
 \begin{align*}
 -s_1 &= x_1 + 2x_2 - 4= -g_1(x_1,x_2)\\
@@ -2182,16 +2182,16 @@ s.t. \;\; & 2x + 2y = 100 \equiv 2x + 2y - 100 = 0\\
 Note we've added two inequality constraints $x \geq 0$ and $y \geq 0$ because it doesn't really make any sense to have negative lengths. In our problem, we now have: $g_1(x,y) = -x$ and $g_2(x,y) = -y$ and $h(x,y) = 2x+2y-100$ to be consistent with the notation in Theorem \ref{thm:KKT7}. It is worth noting, we could have used the constraint $2x + 2y - 100 \leq 0$ instead and obtained the same answer.
 
 For the point of optimality ($x=25$, $y=25$), let us now compute the KKT conditions. Note first:
-\begin{displaymath}
+\begin{equation}
 \nabla A = \begin{bmatrix}y\\x\end{bmatrix} \quad \quad 
 \nabla h = \begin{bmatrix}2\\2\end{bmatrix} \quad \quad 
 \nabla g_1 = \begin{bmatrix}-1\\0\end{bmatrix} \quad \quad 
 \nabla g_2 = \begin{bmatrix}0\\-1\end{bmatrix} \quad \quad 
-\end{displaymath}
+\end{equation}
 Substituting $x^* = y^* = 25$, we can see that primal feasibility is obviously satisfied. Moreover:
-\begin{displaymath}
+\begin{equation}
 \nabla A(x^*,y^*) = \begin{bmatrix}25\\25\end{bmatrix}
-\end{displaymath}
+\end{equation}
 We  consider only dual feasibility and complimentary slackness. 
 \begin{gather*}
 \text{Dual Feasibility}:\left\{
@@ -2210,9 +2210,9 @@ We  consider only dual feasibility and complimentary slackness.
 \right.
 \end{gather*}
 Notice we substituted $x^*$ and $y^*$ into the complementary slackness equations. From complementary slackness, we see at once that $\lambda_1 = \lambda_2 = 0$. This means dual feasibility reduces to:
-\begin{displaymath}
+\begin{equation}
 \begin{bmatrix}25\\25\end{bmatrix} - \mu\begin{bmatrix}2\\2\end{bmatrix} = \begin{bmatrix}0\\0\end{bmatrix}
-\end{displaymath}
+\end{equation}
 The solution: $\mu = 25/2$ satisfies this equality. Notice the gradient of the objective and the gradient of the (single) binding constraint are parallel. Notice also unlike a linear programming problem, the optimal solution to this problem \term{does not} occur at the extreme point of the constraint set (which is really just the line segment $2x + 2y = 100$ with $x,y\geq 0$). This geometric interpretation is illustrated in Figure \ref{fig:KKTNLP}. The gradient of the objective is shown in red, the gradient of the binding constraint is shown in green. Note, the gradient of the binding constraint has been scaled for visual effect. As expected, the level curves shown are given by the (implicit) equation $xy = k$. As you go up and right, the value of $k$ increases.
 \begin{figure}[htbp]
 \centering
