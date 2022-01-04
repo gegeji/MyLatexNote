@@ -57,7 +57,7 @@
 
     在区间 $ [-\pi, \pi] $ 上正交， 就是指在三角函数系 $ (7-4) $ 中任何不同的两个函数的 乘积在区间 $ [-\pi, \boldsymbol{\pi}] $ 上的积分等于零， 即
 
-    \begin{equation} \begin{array}{ll}\int_{-\pi}^{\pi} \cos n x \mathrm{~d} x=0 & (n=1,2,3, \cdots), \\ \int_{-\pi}^{\pi} \sin n x \mathrm{~d} x=0 & (n=1,2,3, \cdots),\\ \cdots
+    \begin{equation} \begin{array}{ll}\int_{-\pi}^{\pi} \cos n x {~d} x=0 & (n=1,2,3, \cdots), \\ \int_{-\pi}^{\pi} \sin n x {~d} x=0 & (n=1,2,3, \cdots),\\ \cdots
     \end{array} \end{equation}
 \end{definition}
 
@@ -109,7 +109,7 @@ Gram矩阵列是相互正交的：对于 $ i \neq j, a_{i}^{H} a_{j}=0 $ .
 f(x)=\frac{a_{0}}{2}+\sum_{k=1}^{\infty}\left(a_{k} \cos k x+b_{k} \sin k x\right) .
 \end{equation}
 
-where \begin{equation} \left\{\begin{array}{l}a_{n}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos n x \mathrm{~d} x \quad(n=0,1,2,3, \cdots), \\ b_{n}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin n x \mathrm{~d} x \quad(n=1,2,3, \cdots) .\end{array}\right. \end{equation}
+where \begin{equation} \left\{\begin{array}{l}a_{n}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos n x {~d} x \quad(n=0,1,2,3, \cdots), \\ b_{n}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin n x {~d} x \quad(n=1,2,3, \cdots) .\end{array}\right. \end{equation}
 \end{definition}
 
 \begin{proof}
@@ -120,29 +120,29 @@ f(x)=\frac{a_{0}}{2}+\sum_{k=1}^{\infty}\left(a_{k} \cos k x+b_{k} \sin k x\righ
 
 先求 $ a_{0} $. 上式一 从 $ -\pi $ 到 $ \pi $ 积分， 由于假设式右端级数可逐项积分，因此有
 
-\begin{equation} \int_{-\pi}^{\pi} f(x) \mathrm{d} x=\int_{-\pi}^{\pi} \frac{a_{0}}{2} \mathrm{~d} x+\sum_{k=1}^{\infty}\left[a_{k} \int_{-\pi}^{\pi} \cos k x \mathrm{~d} x+b_{k} \int_{-\pi}^{\pi} \sin k x \mathrm{~d} x\right] \end{equation}
+\begin{equation} \int_{-\pi}^{\pi} f(x) {d} x=\int_{-\pi}^{\pi} \frac{a_{0}}{2} {~d} x+\sum_{k=1}^{\infty}\left[a_{k} \int_{-\pi}^{\pi} \cos k x {~d} x+b_{k} \int_{-\pi}^{\pi} \sin k x {~d} x\right] \end{equation}
 
 根据三角函数系的正交性，等式右端除第一项外，其余各项均为零，所以
 
-\begin{equation} \int_{-\pi}^{\pi} f(x) \mathrm{d} x=\frac{a_{0}}{2} \cdot 2 \pi \end{equation}
+\begin{equation} \int_{-\pi}^{\pi} f(x) {d} x=\frac{a_{0}}{2} \cdot 2 \pi \end{equation}
 
 于是得
 
-\begin{equation} a_{0}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \mathrm{d} x \end{equation}
+\begin{equation} a_{0}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) {d} x \end{equation}
 
 其次求 $ a_{n} . $ 用 $ \cos n x $ 乘式两端， 再从 $ -\pi $ 到 $ \pi $ 积分， 得到
 
-\begin{equation} \begin{aligned}  &\int_{-\pi}^{\pi} f(x) \cos n x \mathrm{~d} x\\ =&\frac{a_{0}}{2} \int_{-\pi}^{\pi} \cos n x \mathrm{~d} x+\sum_{k=1}^{\infty}\left[a_{k} \int_{-\pi}^{\pi} \cos k x \cos n x \mathrm{~d} x+b_{k} \int_{-\pi}^{\pi} \sin k x \cos n x \mathrm{~d} x\right] \end{aligned} \end{equation}
+\begin{equation} \begin{aligned}  &\int_{-\pi}^{\pi} f(x) \cos n x {~d} x\\ =&\frac{a_{0}}{2} \int_{-\pi}^{\pi} \cos n x {~d} x+\sum_{k=1}^{\infty}\left[a_{k} \int_{-\pi}^{\pi} \cos k x \cos n x {~d} x+b_{k} \int_{-\pi}^{\pi} \sin k x \cos n x {~d} x\right] \end{aligned} \end{equation}
 
 根据三角函数系的正交性， 等式右端除 $ k=n $ 的一项外， 其余各项均为0. 所以
 
-\begin{equation} \int_{-\pi}^{\pi} f(x) \cos n x \mathrm{~d} x=a_{n} \int_{-\pi}^{\pi} \cos ^{2} n x \mathrm{~d} x=a_{n} \pi \end{equation}
+\begin{equation} \int_{-\pi}^{\pi} f(x) \cos n x {~d} x=a_{n} \int_{-\pi}^{\pi} \cos ^{2} n x {~d} x=a_{n} \pi \end{equation}
 
-于是得\begin{equation} a_{n}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos n x \mathrm{~d} x \quad(n=1,2,3, \cdots) \end{equation}
+于是得\begin{equation} a_{n}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos n x {~d} x \quad(n=1,2,3, \cdots) \end{equation}
 
 类似地，用 $ \sin n x $ 乘 $ (7-5) $ 式的两端，再从 $ -\pi $ 到 $ \pi $ 积分， 可得
 \begin{equation}
-b_{n}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin n x \mathrm{~d} x \quad(n=1,2,3, \cdots)
+b_{n}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin n x {~d} x \quad(n=1,2,3, \cdots)
 \end{equation}
 \end{proof}
 
@@ -183,7 +183,7 @@ f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty}\left(a_{n} \cos n x+b_{n} \sin n x\righ
 \begin{equation}
 \left.\begin{array}{l}
 a_{n}=0 \quad(n=0,1,2, \cdots), \\
-b_{n}=\frac{2}{\pi} \int_{0}^{\pi} f(x) \sin n x \mathrm{~d} x \quad(n=1,2,3, \cdots) .
+b_{n}=\frac{2}{\pi} \int_{0}^{\pi} f(x) \sin n x {~d} x \quad(n=1,2,3, \cdots) .
 \end{array}\right\}
 \end{equation}
 
@@ -195,7 +195,7 @@ b_{n}=\frac{2}{\pi} \int_{0}^{\pi} f(x) \sin n x \mathrm{~d} x \quad(n=1,2,3, \c
     当 $ f(x) $ 为偶函数时， $ f(x) \cos n x $ 是偶函数， $ f(x) \sin n x $ 是奇函数， 故
 \begin{equation}
 \left.\begin{array}{l}
-a_{n}=\frac{2}{\pi} \int_{0}^{\pi} f(x) \cos n x \mathrm{~d} x \quad(n=0,1,2, \cdots) \\
+a_{n}=\frac{2}{\pi} \int_{0}^{\pi} f(x) \cos n x {~d} x \quad(n=0,1,2, \cdots) \\
 b_{n}=0 \quad(n=1,2,3, \cdots)
 \end{array}\right\}
 \end{equation}
@@ -219,8 +219,8 @@ f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty}\left(a_{n} \cos \frac{n \pi x}{l}+b_{n}
 其中
 \begin{equation}
 \left.\begin{array}{l}
-a_{n}=\frac{1}{l} \int_{-l}^{l} f(x) \cos \frac{n \pi x}{l} \mathrm{~d} x \quad(n=0,1,2, \cdots) \\
-b_{n}=\frac{1}{l} \int_{-l}^{l} f(x) \sin \frac{n \pi x}{l} \mathrm{~d} x \quad(n=1,2,3, \cdots), \\
+a_{n}=\frac{1}{l} \int_{-l}^{l} f(x) \cos \frac{n \pi x}{l} {~d} x \quad(n=0,1,2, \cdots) \\
+b_{n}=\frac{1}{l} \int_{-l}^{l} f(x) \sin \frac{n \pi x}{l} {~d} x \quad(n=1,2,3, \cdots), \\
 C=\left\{x \mid f(x)=\frac{1}{2}\left[f\left(x^{-}\right)+f\left(x^{+}\right)\right]\right\}
 \end{array}\right\}
 \end{equation}
@@ -233,7 +233,7 @@ f(x)=\sum_{n=1}^{\infty} b_{n} \sin \frac{n \pi x}{l} \quad(x \in C)
 \end{equation}
 其中
 \begin{equation}
-b_{n}=\frac{2}{l} \int_{0}^{l} f(x) \sin \frac{n \pi x}{l} \mathrm{~d} x \quad(n=1,2,3, \cdots)
+b_{n}=\frac{2}{l} \int_{0}^{l} f(x) \sin \frac{n \pi x}{l} {~d} x \quad(n=1,2,3, \cdots)
 \end{equation}
 
 当 $ f(x) $ 为偶函数时，
@@ -242,14 +242,14 @@ f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty} a_{n} \cos \frac{n \pi x}{l}(x \in C)
 \end{equation}
 其中
 \begin{equation}
-a_{n}=\frac{2}{l} \int_{0}^{l} f(x) \cos \frac{n \pi x}{l} \mathrm{~d} x \quad(n=0,1,2, \cdots)
+a_{n}=\frac{2}{l} \int_{0}^{l} f(x) \cos \frac{n \pi x}{l} {~d} x \quad(n=0,1,2, \cdots)
 \end{equation}
 \end{theorem}
 
 \begin{definition}[傅里叶级数的复数形式]
-    \begin{equation} \sum_{n=-\infty}^{\infty} c_{n} \mathrm{e}^{\frac{n \pi x}{l}}j \end{equation}
+    \begin{equation} \sum_{n=-\infty}^{\infty} c_{n} {e}^{\frac{n \pi x}{l}}j \end{equation}
 
-    where $c_{n}=\frac{1}{2 l} \int_{-l}^{l} f(x) \mathrm{e}^{-\frac{n \pi x}{l} j} \mathrm{d} x \quad(n=0, \pm 1, \pm 2, \cdots) $.
+    where $c_{n}=\frac{1}{2 l} \int_{-l}^{l} f(x) {e}^{-\frac{n \pi x}{l} j} {d} x \quad(n=0, \pm 1, \pm 2, \cdots) $.
 \end{definition}
 
 \begin{proof}
@@ -261,39 +261,39 @@ a_{n}=\frac{2}{l} \int_{0}^{l} f(x) \cos \frac{n \pi x}{l} \mathrm{~d} x \quad(n
 其中系数 $ a_{n} $ 与 $ b_{n} $ 为
 \begin{equation}
 \left.\begin{array}{ll}
-a_{n}=\frac{1}{l} \int_{-l}^{l} f(x) \cos \frac{n \pi x}{l} \mathrm{~d} x & (n=0,1,2, \cdots), \\
-b_{n}=\frac{1}{l} \int_{-l}^{l} f(x) \sin \frac{n \pi x}{l} \mathrm{~d} x & (n=1,2,3, \cdots) .
+a_{n}=\frac{1}{l} \int_{-l}^{l} f(x) \cos \frac{n \pi x}{l} {~d} x & (n=0,1,2, \cdots), \\
+b_{n}=\frac{1}{l} \int_{-l}^{l} f(x) \sin \frac{n \pi x}{l} {~d} x & (n=1,2,3, \cdots) .
 \end{array}\right\}
 \end{equation}
 
 利用欧拉公式
-\begin{equation} \cos t=\frac{\mathrm{e}^{\mathrm{ti}}+\mathrm{e}^{-t i}}{2}, \sin t=\frac{\mathrm{e}^{t \mathrm{i}}-\mathrm{e}^{-t \mathrm{i}}}{2 \mathrm{i}} \end{equation}
+\begin{equation} \cos t=\frac{{e}^{{ti}}+{e}^{-t i}}{2}, \sin t=\frac{{e}^{t {i}}-{e}^{-t {i}}}{2 {i}} \end{equation}
 
 记
 \begin{equation}
-\frac{a_{0}}{2}=c_{0}, \quad \frac{a_{n}-b_{n} \mathrm{i}}{2}=c_{n}, \quad \frac{a_{n}+b_{n} \mathrm{i}}{2}=c_{-n} \quad(n=1,2,3, \cdots)
+\frac{a_{0}}{2}=c_{0}, \quad \frac{a_{n}-b_{n} {i}}{2}=c_{n}, \quad \frac{a_{n}+b_{n} {i}}{2}=c_{-n} \quad(n=1,2,3, \cdots)
 \end{equation}
 
 则表示为
 
-\begin{equation} c_{0}+\sum_{n=1}^{\infty}\left(c_{n} \mathrm{e}^{\frac{n \pi x}{l} i}+c_{-n} \mathrm{e}^{-\frac{n \pi x}{l} i}\right) =\left(c_{n} \mathrm{e}^{\frac{n \pi x}{l}}i\right)_{n=0}+\sum_{n=1}^{\infty}\left(c_{n} \mathrm{e}^{\frac{n \pi x}{l}i}+c_{-n} \mathrm{e}^{-\frac{n \pi x}{l}i}\right) \end{equation}
+\begin{equation} c_{0}+\sum_{n=1}^{\infty}\left(c_{n} {e}^{\frac{n \pi x}{l} i}+c_{-n} {e}^{-\frac{n \pi x}{l} i}\right) =\left(c_{n} {e}^{\frac{n \pi x}{l}}i\right)_{n=0}+\sum_{n=1}^{\infty}\left(c_{n} {e}^{\frac{n \pi x}{l}i}+c_{-n} {e}^{-\frac{n \pi x}{l}i}\right) \end{equation}
 
-\begin{equation} c_{0}=\frac{a_{0}}{2}=\frac{1}{2 l} \int_{-l}^{l} f(x) \mathrm{d} x \end{equation}
+\begin{equation} c_{0}=\frac{a_{0}}{2}=\frac{1}{2 l} \int_{-l}^{l} f(x) {d} x \end{equation}
 
 \begin{equation}
 \begin{aligned}
    c_{n} &=\frac{a_{n}-b_{n} i}{2}  \\
-   &=\frac{1}{2}\left[\frac{1}{l} \int_{-l}^{l} f(x) \cos \frac{n \pi x}{l} \mathrm{~d} x-\frac{\mathrm{i}}{l} \int_{-l}^{l} f(x) \sin \frac{n \pi x}{l} \mathrm{~d} x\right] \\
-   &=\frac{1}{2 l} \int_{-l}^{l} f(x)\left(\cos \frac{n \pi x}{l}-\mathrm{i} \sin \frac{n \pi x}{l}\right) \mathrm{d} x\\
-   &=\frac{1}{2 l} \int_{-l}^{l} f(x) \mathrm{e}^{-\frac{n \pi}{l}} \mathrm{~d} x \quad(n=1,2,3, \cdots) ;
+   &=\frac{1}{2}\left[\frac{1}{l} \int_{-l}^{l} f(x) \cos \frac{n \pi x}{l} {~d} x-\frac{{i}}{l} \int_{-l}^{l} f(x) \sin \frac{n \pi x}{l} {~d} x\right] \\
+   &=\frac{1}{2 l} \int_{-l}^{l} f(x)\left(\cos \frac{n \pi x}{l}-{i} \sin \frac{n \pi x}{l}\right) {d} x\\
+   &=\frac{1}{2 l} \int_{-l}^{l} f(x) {e}^{-\frac{n \pi}{l}} {~d} x \quad(n=1,2,3, \cdots) ;
 \end{aligned}
 \end{equation}
 
-\begin{equation} c_{-n}=\frac{a_{n}+b_{n} \mathrm{i}}{2}=\frac{1}{2 l} \int_{-l}^{l} f(x) \mathrm{e}^{\frac{n \pi x}{l} i} \mathrm{~d} x \quad(n=1,2,3, \cdots) \end{equation}
+\begin{equation} c_{-n}=\frac{a_{n}+b_{n} {i}}{2}=\frac{1}{2 l} \int_{-l}^{l} f(x) {e}^{\frac{n \pi x}{l} i} {~d} x \quad(n=1,2,3, \cdots) \end{equation}
 
 将已得的结果合并写为
 \begin{equation}
-c_{n}=\frac{1}{2 l} \int_{-l}^{l} f(x) \mathrm{e}^{-\frac{n \pi x}{l}} \mathrm{~d} x \quad(n=0, \pm 1, \pm 2, \cdots)
+c_{n}=\frac{1}{2 l} \int_{-l}^{l} f(x) {e}^{-\frac{n \pi x}{l}} {~d} x \quad(n=0, \pm 1, \pm 2, \cdots)
 \end{equation}
 
 \end{proof}

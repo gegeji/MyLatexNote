@@ -1,6 +1,6 @@
-\begin{equation}\begin{aligned} \mathrm{z}_{i} &=\sigma\left(\mathbf{W}_{\mathrm{z}} \cdot\left[\mathrm{s}_{i-1}, \mathrm{~g}_{i}\right]+\mathbf{b}_{\mathrm{z}}\right) \\ \mathbf{r}_{i} &=\sigma\left(\mathbf{W}_{\mathbf{r}} \cdot\left[\mathbf{s}_{i-1}, \mathbf{g}_{i}\right]+\mathrm{b}_{\mathbf{r}}\right) \\ \tilde{\mathbf{s}}_{i} &=\tanh \left(\mathbf{W}_{\mathbf{s}} \cdot\left[\mathbf{r}_{i} * \mathbf{s}_{i-1}, \mathbf{g}_{i}\right]+\mathbf{b}_{\mathrm{s}}\right) \\ s_{i} &=\left(1-\mathrm{z}_{i}\right) * \mathrm{~s}_{i-1}+\mathrm{z}_{i} * \tilde{\mathrm{s}}_{i} \end{aligned}\end{equation}
+\begin{equation}\begin{aligned} {z}_{i} &=\sigma\left(\mathbf{W}_{{z}} \cdot\left[{s}_{i-1}, {~g}_{i}\right]+\mathbf{b}_{{z}}\right) \\ \mathbf{r}_{i} &=\sigma\left(\mathbf{W}_{\mathbf{r}} \cdot\left[\mathbf{s}_{i-1}, \mathbf{g}_{i}\right]+{b}_{\mathbf{r}}\right) \\ \tilde{\mathbf{s}}_{i} &=\tanh \left(\mathbf{W}_{\mathbf{s}} \cdot\left[\mathbf{r}_{i} * \mathbf{s}_{i-1}, \mathbf{g}_{i}\right]+\mathbf{b}_{{s}}\right) \\ s_{i} &=\left(1-{z}_{i}\right) * {~s}_{i-1}+{z}_{i} * \tilde{{s}}_{i} \end{aligned}\end{equation}
 
-\begin{equation} \mathrm{s}_{i}=\operatorname{GRU}\left(\mathrm{s}_{i-1}, \mathrm{~g}_{i-1}\right) \end{equation}
+\begin{equation} {s}_{i}=\operatorname{GRU}\left({s}_{i-1}, {~g}_{i-1}\right) \end{equation}
 
 \begin{equation} \mathbf{h}_{j}=G R U\left(\mathbf{h}_{j-1}, e_{j-1}, r_{j-1}\right) \end{equation}
 
@@ -19,7 +19,7 @@ P\left(\hat{e}_{j} \mid \mathbf{h}_{j}\right)=\frac{\exp \left(\mathbf{h}_{j}^{\
 \begin{equation} \mathbf{h}_{j}=G R U\left(\mathbf{h}_{j-1}, e_{j-1}, r_{j-1}, \mathbf{a}_{j}\right) \end{equation}
 
 \begin{equation}
-\mathbf{a}_{j}=\sum_{i=1}^{n} \alpha_{j, i} \mathrm{~s}_{i}
+\mathbf{a}_{j}=\sum_{i=1}^{n} \alpha_{j, i} {~s}_{i}
 \end{equation}
 
 \begin{equation}
@@ -35,14 +35,14 @@ u_{j, i}=\mathbf{v}^{\top} \cdot \tanh \left(\mathbf{W}_{\mathbf{h}} \mathbf{h}_
 \begin{equation}
 \begin{gathered}
 \mathcal{L}_{1}(\theta)=-\sum_{(\tau, \tilde{\tau}) \in \mathcal{D}_{\text {sub }}} \sum_{j=1}^{|\tilde{\tau}|} \sum_{\ell=1}^{L} 1\left\{a_{j} \cdot e=e_{\ell}\right\} \log \left(P_{\theta}\left(\hat{a}_{j} . e=e_{\ell} \mid \mathbf{d}_{1: j-1}\right)\right) \\
-\text { s.t. } \mathbf{d}_{j-1}=\left(\tau, \tilde{\tau}_{1: j-1}, \mathrm{f}_{\mathrm{s} j-1}, \mathrm{f}_{\mathrm{e}}\right)
+\text { s.t. } \mathbf{d}_{j-1}=\left(\tau, \tilde{\tau}_{1: j-1}, {f}_{{s} j-1}, {f}_{{e}}\right)
 \end{gathered}
 \end{equation}
 
 \begin{equation}
 \begin{aligned}
 \mathcal{L}_{2}(\theta)=-\sum_{\left(\tau^{\prime}, \tilde{\tau}\right) \in \mathcal{D}_{\text {sub }}} \sum_{j=1}^{|\tilde{\tau}|}\left(a_{j} \cdot r-R_{\theta}\left(\mathbf{d}_{j-1}\right)\right)^{2} \\
-\text { s.t. } \mathbf{d}_{j-1}=\left(\tau^{\prime}, \tilde{\tau}_{1: j-1}, \mathbf{f}_{\mathrm{s} j-1}, \mathbf{f}_{\mathrm{e}}\right),
+\text { s.t. } \mathbf{d}_{j-1}=\left(\tau^{\prime}, \tilde{\tau}_{1: j-1}, \mathbf{f}_{{s} j-1}, \mathbf{f}_{{e}}\right),
 \end{aligned}
 \end{equation}
 

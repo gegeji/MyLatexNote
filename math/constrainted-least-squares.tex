@@ -46,7 +46,7 @@ $ \lambda_{i} \in \mathbb{R}, i \in {I}, u_{j} \in \mathbb{R}^{+}, j \in J $称�
 
 引入拉格朗日函数 \begin{equation} L(x, \lambda, u)=f(x)-\sum_{i \in I} \lambda_{i} h_{i}(x)-\sum_{j \in J} u_{j} g_{j}(x)   \end{equation}
 
-设$\lambda=\left[\begin{array}{c}\lambda_{1} \\ \vdots \\ \lambda_{p}\end{array}\right], u=\left[\begin{array}{c}u_{1} \\ \vdots \\ u_{q}\end{array}\right]$,$h(x),g(x)$假设可以视为一个向量.
+设$\lambda=\left[\begin{array}{c}\lambda_{1} \\ \vdots \\ \lambda_{p}\end{array}\right], u=\left[\begin{array}{c}u_{1} \\ \vdots \\ u_{q}\end{array}\right]$,$h(x),g(x)$假设可以视为一个向量。
 
 则拉格朗日乘子式可写成
 
@@ -156,7 +156,7 @@ x_{1}&=2 x_{2}
    \text{s.t.} &C x=d 
 \end{aligned}\end{equation}
 
-矩阵C $ \in \mathbb{R}^{p \times n} $, 向量 $ d \in \mathbb{R}^{p} $.
+矩阵 $C \in \mathbb{R}^{p \times n} $, 向量 $ d \in \mathbb{R}^{p} $.
 \end{problem}
 
 
@@ -350,9 +350,9 @@ C \hat{x}=C C^{T}\left(C C^{T}\right)^{-1} d=d
 总复杂度：$ \approx 2 n p^{2} $ flops
 
 \begin{itemize}
-    \item 矩阵 $ C^{T}=Q R $ 分解， $ C^{T}=Q R\left(2 n p^{2}\right. $ flops $ ) $
+    \item 矩阵 $ C^{T}=Q R $ 分解， $ C^{T}=Q R\left(2 n p^{2}  \text{ flops}\right) $
     \item 回代法求解 $ R^{T} z=d\left(p^{2} \text{ flops} \right) $
-    \item 计算 $ \hat{x}=Q z(2 n p $ flops $ ) $
+    \item 计算 $ \hat{x}=Q z(2 n p \text{ flops} ) $
 \end{itemize}
 
 
@@ -778,6 +778,17 @@ d
 
 \begin{algorithm}[htbp]
     \caption{LU分解求解KKT最优条件}
+    \KwIn{矩阵$\left[\begin{array}{cc}
+        A^{T} A & C^{T} \\
+        C & 0
+        \end{array}\right]$、向量$\left[\begin{array}{l}
+            x \\
+            z
+            \end{array}\right]$}
+    \KwOut{向量$\left[\begin{array}{l}
+        x \\
+        z
+        \end{array}\right]$}
     计算 $ H=A^{T} A $\;
     计算 $ c=A^{T} b $ \;
     LU分解求解\begin{equation}
@@ -871,7 +882,7 @@ d
 \end{array}\right]
 \end{equation}
 
-假设 1($ \left[\begin{array}{l}A \\ C\end{array}\right] $ 列向量无关，命题\ref{prop:assumption-1}保证了 $ A^{T} A+C^{T} C $ 是非奇异的，即存在以下 $ Q R $ 因子分解
+假设 1（$ \left[\begin{array}{l}A \\ C\end{array}\right] $ 列向量无关），命题\ref{prop:assumption-1}保证了 $ A^{T} A+C^{T} C $ 是非奇异的，即存在以下 $ Q R $ 因子分解
 
 \begin{equation} \left[\begin{array}{l}A \\ C\end{array}\right]=Q R=\left[\begin{array}{l}Q_{1} \\ Q_{2}\end{array}\right] R=\left[\begin{array}{l}Q_{1} R \\ Q_{2} R\end{array}\right] \end{equation}
 
@@ -980,7 +991,7 @@ Q_{2} y=d \Rightarrow Q_{2} Q_{2}^{T} w=Q_{2} Q_{1}^{T} b-d
         \min _{x} & \frac{1}{2}\|A x-b\|_{2}^{2}\\
         s.t. & C x=d
     \end{aligned}$中的$A$, $C$, $d$}
-
+    \KwOut{最优解$\hat{x}$}
     \label{algo:qr-kkt}
     计算两个QR分解
 \begin{equation}
@@ -1421,7 +1432,7 @@ $J$ 为起作用约束的集合。
     \includegraphics[width=0.5\textwidth]{KKT-geometry-3.jpg}
 \end{FigureCenter}
 
-我们先来看情形 ${b}$ ：若3个向量的位置关系如\ref{fig:kkt-3}所示， 即 $-\nabla f$ 落在 $\nabla g_{1}$ 和 $\nabla g_{2}$ 所形成的锥角区外的 一侧。 此时， 作等值面 $f({x})=C$ 在点 ${x}^{k}$ 的切平面（它与 $-\nabla f\left({x}^{k}\right)$ 垂直）， 我们发现：沿着与负 梯度 $-\nabla f$ 成锐角的方向移动（如下图红色箭头方向）， 只要在红色区域取值， 目标函数 $f({x})$ 总 能减小。而红色区域是可行域 $(f({x})=C$, C取不同的常数能得到不同的等值线， 因此能取到红色 区域）， 因此既可减小目标函数值， 又不破坏约束条件。 这说明 ${x}^{k}$ 仍可沿约束曲面移动而不破坏约 束条件， 且目标函数值还能够减小。所以 ${x}^{k}$ 不是稳定的最优点， 即不是局部极值点。
+我们先来看情形 ${b}$ ：若3个向量的位置关系如\ref{fig:kkt-3}所示， 即 $-\nabla f$ 落在 $\nabla g_{1}$ 和 $\nabla g_{2}$ 所形成的锥角区外的 一侧。 此时， 作等值面 $f({x})=C$ 在点 ${x}^{k}$ 的切平面（它与 $-\nabla f\left({x}^{k}\right)$ 垂直）， 我们发现：沿着与负 梯度 $-\nabla f$ 成锐角的方向移动（如下图红色箭头方向）， 只要在红色区域取值， 目标函数 $f({x})$ 总 能减小。而红色区域是可行域 $(f({x})=C$, $C$取不同的常数能得到不同的等值线， 因此能取到红色 区域）， 因此既可减小目标函数值， 又不破坏约束条件。 这说明 ${x}^{k}$ 仍可沿约束曲面移动而不破坏约 束条件， 且目标函数值还能够减小。所以 ${x}^{k}$ 不是稳定的最优点， 即不是局部极值点。
 
 反过头来看情形a: $ -\nabla f $ 落在 $ \nabla g_{1} $ 和 $ \nabla g_{2} $ 形成的锥角内。 此时， 同样作 $ f({x})=C $ 在点 $ {x}^{k} $ 与 $ -\nabla f $ 垂直的切平面。 当从 $ {x}^{k} $ 出发沿着与负梯度 $ -\nabla f $ 成锐角的方向移动时， 虽然能使目标函数值减小， 但此时任何一点都不在可行区域内。 显然， 此时 $ {x}^{k} $ 就是局部最优点 $ {x}^{*} $, 再做任何移动都将破坏约 束条件， 故它是稳定点。
 
@@ -1731,10 +1742,10 @@ $ \theta_{\mathcal{D}}(\alpha, \beta): \mathbb{R}^{m} \times \mathbb{R}^{p} \rig
     设 $ x^{*} \in \mathbb{R}^{n}, \alpha^{*} \in \mathbb{R}^{m}, \beta^{*} \in \mathbb{R}^{p} $, 下列条件为 $ {KKT} $ 条件:
 
     \begin{enumerate}
-        \item (主可行) $ g_{i}\left(x^{*}\right) \leqslant 0, i=1, \ldots, m, h_{j}\left(x^{*}\right)=0, j=1, \ldots, p $
-        \item (对偶可行) $ \alpha_{i}^{*} \geqslant 0, i=1, \ldots, m $
-        \item (互补松弛性) $ \alpha_{i}^{*} g\left(x_{i}^{*}\right)=0, i=1, \ldots, m $
-        \item (Lagrangian Stationary) $ \nabla_{x} \mathcal{L}\left(x^{*}, \alpha^{*}, \beta^{*}\right)=0 $
+        \item (主可行) $$ g_{i}\left(x^{*}\right) \leqslant 0, i=1, \ldots, m, h_{j}\left(x^{*}\right)=0, j=1, \ldots, p $$
+        \item (对偶可行) $$ \alpha_{i}^{*} \geqslant 0, i=1, \ldots, m $$
+        \item (互补松弛性) $$ \alpha_{i}^{*} g\left(x_{i}^{*}\right)=0, i=1, \ldots, m $$
+        \item (Lagrangian Stationary) $$ \nabla_{x} \mathcal{L}\left(x^{*}, \alpha^{*}, \beta^{*}\right)=0 $$
     \end{enumerate}
 
 \end{theorem}

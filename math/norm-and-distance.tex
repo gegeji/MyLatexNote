@@ -140,8 +140,8 @@ b
 
 \subsection{$ \ell_{p} $-范数}
 
-\begin{definition}[$ \ell_{\mathrm{p}} $-范数]
-    \begin{equation} \|x\|_{p}=\left(x_{1}^{\mathrm{p}}+x_{2}^{p}+\cdots+x_{n}^{p}\right)^{\frac{1}{p}}, \quad x \in \mathbb{R}^{n}, p \ge 1 \end{equation}
+\begin{definition}[$ \ell_{{p}} $-范数]
+    \begin{equation} \|x\|_{p}=\left(x_{1}^{{p}}+x_{2}^{p}+\cdots+x_{n}^{p}\right)^{\frac{1}{p}}, \quad x \in \mathbb{R}^{n}, p \ge 1 \end{equation}
 
     $ \ell_{1} $ 范数 $ \|x\|_{1}$,$ \ell_{2} $-范数 $ \|x\|_{2} $, $ \ell_{\infty} $-范数是 $ \ell_{p} $-范数的特例。 
 \end{definition}
@@ -164,11 +164,11 @@ b
     \begin{equation}\operatorname{ms}(x) = \frac{x_{1}^{2}+x_{2}^{2}+\cdots+x_{n}^{2}}{n}=\frac{\|x\|_{2}^{2}}{n} \end{equation}
 \end{definition}
 
-\begin{definition}[n维向量 $ x $ 的均方根(root-mean-square value, RMS)]
+\begin{definition}[$n$维向量 $ x $ 的均方根(root-mean-square value, RMS)]
     \begin{equation} \operatorname{rms}(x)=\sqrt{\frac{x_{1}^{2}+x_{2}^{2}+\cdots+x_{n}^{2}}{n}}=\frac{\|x\|_{2}}{\sqrt{n}} \end{equation}
 \end{definition}
 
-$ \operatorname{rms}(x) $ 给出了 $ \left|x_{i}\right| $ 的 “典型" (typical)值。 例如， $ \mathrm{rms}(\mathbf{1})=1 $ (与$n$无关). 均方根(RMS)值对于比较不同长度的向量大小是比较有用的。 
+$ \operatorname{rms}(x) $ 给出了 $ \left|x_{i}\right| $ 的 “典型" (typical)值。 例如， $ {rms}(\mathbf{1})=1 $ (与$n$无关). 均方根(RMS)值对于比较不同长度的向量大小是比较有用的。 
 
 \begin{theorem}
     \begin{equation} |\operatorname{avg}(x)| \leq \operatorname{r m s}(x) \end{equation}
@@ -219,7 +219,7 @@ $ \operatorname{rms}(x) $ 给出了 $ \left|x_{i}\right| $ 的 “典型" (typic
     \begin{equation} \operatorname{dist}(a, b)=\|a-b\|_{2} \end{equation}
 \end{definition}
 
-当n=1,2,3时，距离等同于\term{普通距离(ordinary distance)}.
+当$n=1,2,3$时，距离等同于\term{普通距离(ordinary distance)}.
 
 \begin{theorem}
     $ \|a-b\| \geq 0 $ for all $ a, b $ and $ \|a-b\|=0 $ only if $ a=b $
@@ -280,7 +280,7 @@ $ \operatorname{rms}(x) $ 给出了 $ \left|x_{i}\right| $ 的 “典型" (typic
 \subsection{Feature Distance and Nearest Neighbor}
 
 \begin{definition}[Feature Distance]
-    如果 $ x $ 和y分别为两个实体的特征向量， 那么它们的特征距离(feature distance)为 $ \|x-y\|_{2} $
+    如果 $ x $ 和$y$分别为两个实体的特征向量， 那么它们的特征距离(feature distance)为 $ \|x-y\|_{2} $
 \end{definition}
 
 
@@ -355,11 +355,11 @@ $\operatorname{std}(x)$表示数据元素的变化程度。 对于常数$\alpha$
 在二维和三维向量之中， 这里的角与普通角度(ordinary angle)是一致的。 
 
 \begin{itemize}
-    \item $\theta =\frac{\pi}{2}=90°$：a和b为正交， 写作$a \perp b (a ^T b  =0)$. 
-    \item $\theta =0$：a和b为同向(aligned or parallel) $(a ^T  b=\| a \| \| b  \| )$. 
-    \item $\theta =\pi =180°$： a和b为反向的(anti-aligned or opposed)$(a ^T   b  = - \| a \| \| b \| )$. 
-    \item $\theta <\frac{\pi}{2}=90°$：a和b成锐角(acute angle)$(a ^T b >0)$. 
-    \item $\theta >\frac{\pi}{2}=90°$：a和b成钝角(obtuse angle)$(a ^T b <0)$. 
+    \item $\theta =\frac{\pi}{2}=90°$：$a$和$b$为正交， 写作$a \perp b (a ^T b  =0)$. 
+    \item $\theta =0$：$a$和$b$为同向(aligned or parallel) $(a ^T  b=\| a \| \| b  \| )$. 
+    \item $\theta =\pi =180°$： $a$和$b$为反向的(anti-aligned or opposed)$(a ^T   b  = - \| a \| \| b \| )$. 
+    \item $\theta <\frac{\pi}{2}=90°$：$a$和$b$成锐角(acute angle)$(a ^T b >0)$. 
+    \item $\theta >\frac{\pi}{2}=90°$：$a$和$b$成钝角(obtuse angle)$(a ^T b <0)$. 
 \end{itemize}
 
 \begin{theorem}
@@ -370,7 +370,7 @@ $\operatorname{std}(x)$表示数据元素的变化程度。 对于常数$\alpha$
 \end{theorem}
 
 \begin{definition}[球面的距离]
-    \begin{equation}  \mathrm{R} \angle(a, b) \end{equation}
+    \begin{equation}  {R} \angle(a, b) \end{equation}
 \end{definition}
 
 \subsection{相关系数}
@@ -504,22 +504,22 @@ r^{(i)}=y^{(i)}-\hat{y}^{(i)}, \quad i=1, \ldots, N
 
 We can express this using \textbf{compact matrix-vector notation}. 
 
-We form the $ n \times N $ feature matrix $ X $ with columns $ x^{(1)}, \ldots, x^{(N)} $. We let $ y^{\mathrm{d}} $ denote the $ N $-vector whose entries are the actual values of the response for the $ N $ examples. (The superscript `d' stands for `data'.) 
+We form the $ n \times N $ feature matrix $ X $ with columns $ x^{(1)}, \ldots, x^{(N)} $. We let $ y^{{d}} $ denote the $ N $-vector whose entries are the actual values of the response for the $ N $ examples. (The superscript `d' stands for `data'.) 
 
-We let $ \hat{y}^{\mathrm{d}} $ denote the $ N $-vector of regression model predictions for the $ N $ examples, and we let $ r^{\mathrm{d}} $ denote the $ N $-vector of residuals or prediction errors. We can then express the regression model predictions for this data set in matrix-vector form as
+We let $ \hat{y}^{{d}} $ denote the $ N $-vector of regression model predictions for the $ N $ examples, and we let $ r^{{d}} $ denote the $ N $-vector of residuals or prediction errors. We can then express the regression model predictions for this data set in matrix-vector form as
 \begin{equation}
-\hat{y}^{\mathrm{d}}=X^{T} \beta+v \mathbf{1}
+\hat{y}^{{d}}=X^{T} \beta+v \mathbf{1}
 \end{equation}
 
 The vector of $ N $ prediction errors for the examples is given by
 \begin{equation}
-r^{\mathrm{d}}=y^{\mathrm{d}}-\hat{y}^{\mathrm{d}}=y^{\mathrm{d}}-X^{T} \beta-v \mathbf{1} .
+r^{{d}}=y^{{d}}-\hat{y}^{{d}}=y^{{d}}-X^{T} \beta-v \mathbf{1} .
 \end{equation}
 We can include the offset $ v $ in the regression model by including an additional feature equal to one as the first entry of each feature vector:
 
 \begin{problem}
     \begin{equation}
-\hat{y}^{\mathrm{d}}=\left[\begin{array}{c}
+\hat{y}^{{d}}=\left[\begin{array}{c}
 \mathbf{1}^{T} \\
 X
 \end{array}\right]^{T}\left[\begin{array}{l}
@@ -531,7 +531,7 @@ v \\
 where $ \tilde{X} $ is the new feature matrix, with a new first row of ones, and $ \tilde{\beta}=(v, \beta) $ is the vector of regression model parameters.
 \end{problem}
 
- This is often written without the tildes, as $ \hat{y}^{\mathrm{d}}=X^{T} \beta $, by simply including the feature one as the first feature.
+ This is often written without the tildes, as $ \hat{y}^{{d}}=X^{T} \beta $, by simply including the feature one as the first feature.
 
 The equation above shows that the $ N $-vector of predictions for the $ N $ examples is a linear function of the model parameters $ (v, \beta) $. The $ N $-vector of prediction errors is an affine function of the model parameters.
 

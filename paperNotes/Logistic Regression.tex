@@ -5,8 +5,8 @@
 
     \begin{equation}
 \begin{array}{l}
-F(x)=P(X \leqslant x)=\frac{1}{1+\mathrm{e}^{-(x-\mu) / \gamma}} \\
-f(x)=F^{\prime}(x)=\frac{\mathrm{e}^{-(x-\mu) / \gamma}}{\gamma\left(1+\mathrm{e}^{-(x-\mu) / \gamma}\right)^{2}}
+F(x)=P(X \leqslant x)=\frac{1}{1+{e}^{-(x-\mu) / \gamma}} \\
+f(x)=F^{\prime}(x)=\frac{{e}^{-(x-\mu) / \gamma}}{\gamma\left(1+{e}^{-(x-\mu) / \gamma}\right)^{2}}
 \end{array}
 \end{equation}
 式中， $ \mu $ 为位置参数， $ \gamma>0 $ 为形状参数。
@@ -21,7 +21,7 @@ f(x)=F^{\prime}(x)=\frac{\mathrm{e}^{-(x-\mu) / \gamma}}{\gamma\left(1+\mathrm{e
 这里， $\quad x \in \mathbf{R}^{n}$ 是输入， $Y \in\{0,1\}$ 是输出， $w \in \mathbf{R}^{n}$ 和 $b \in \mathbf{R}$ 是参数， $w$ 称为权值向 量， $b$ 称为偏置， $w \cdot x$ 为 $w$ 和 $x$ 的内积。
 \end{definition}
 
-有时为了方便， 将权值向量和输入向量加以扩充， 仍记作 $ w, x $, 即 $ w=\left(w^{(1)}\right. $, $ \left.w^{(2)}, \cdots, w^{(n)}, b\right)^{\mathrm{T}}, x=\left(x^{(1)}, x^{(2)}, \cdots, x^{(n)}, 1\right)^{\mathrm{T}} $. 这时， 逻辑斯谛回归模型如下:
+有时为了方便， 将权值向量和输入向量加以扩充， 仍记作 $ w, x $, 即 $ w=\left(w^{(1)}\right. $, $ \left.w^{(2)}, \cdots, w^{(n)}, b\right)^{{T}}, x=\left(x^{(1)}, x^{(2)}, \cdots, x^{(n)}, 1\right)^{{T}} $. 这时， 逻辑斯谛回归模型如下:
 
 \begin{equation} P(Y=1 \mid x)=\frac{\exp (w \cdot x)}{1+\exp (w \cdot x)} \end{equation}
 

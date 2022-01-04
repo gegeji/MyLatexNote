@@ -257,7 +257,7 @@ This is also the derivative matrix $ D f(z) $ of $ f(x)=\nabla g(x) $ at $ z $.
 \end{definition}
 
 \begin{definition}[Quadratic (second order) approximation of $g$ around $z$]
-    \begin{equation} g_{\mathrm{q}}(x)=g(z)+\nabla g(z)^{T}(x-z)+\frac{1}{2}(x-z)^{T} \nabla^{2} g(z)(x-z) \end{equation}
+    \begin{equation} g_{{q}}(x)=g(z)+\nabla g(z)^{T}(x-z)+\frac{1}{2}(x-z)^{T} \nabla^{2} g(z)(x-z) \end{equation}
 \end{definition}
 
 \begin{example}
@@ -562,7 +562,7 @@ $ g $ 对 $ x_{j} $ 的一阶导数为
 x^{(k+1)}=\arg \min _{x}\left\|\hat{f}\left(x ; x^{(k)}\right)\right\|_{2}^{2}
 \end{equation}
 
-第k次迭代问题：
+第$k$次迭代问题：
 \begin{equation}
 \begin{array}{c}
 x^{(k+1)}=\arg \min _{x}\left\|\hat{f}\left(x ; x^{(k)}\right)\right\|_{2}^{2} \\
@@ -615,7 +615,7 @@ x^{(k+1)}=x^{(k)}-\left(D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right)\righ
 
 \begin{equation} \left\|D f\left(x^{(k)}\right) \Delta x^{(k)}\right\|_{2}^{2}>0 \Rightarrow\left\|\hat{f}\left(x^{(k+1)} ; x^{(k)}\right)\right\|_{2}^{2}<\left\|f\left(x^{(k)}\right)\right\|_{2}^{2} \end{equation}
 
-当 $ \mathrm{m}=\mathrm{n} $ 时， $ D f\left(x^{(k)}\right) $ 的列向量线性无关，高斯-牛顿法可简化为
+当 $ {m}={n} $ 时， $ D f\left(x^{(k)}\right) $ 的列向量线性无关，高斯-牛顿法可简化为
 
 \begin{equation}
 \begin{aligned}
@@ -820,7 +820,7 @@ x^{(k+1)}=x^{(k)}-\left(D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right)+\lam
 
 \begin{itemize}
     \item 其中 $ \beta_{1}, \beta_{2} $ 是常数， $ 0<\beta_{1}<1<\beta_{2} $ .
-    \item 在步骤2中，可以使用 $ \mathrm{QR} $ 分解来计算 $ \hat{x} $ .
+    \item 在步骤2中，可以使用 $ {QR} $ 分解来计算 $ \hat{x} $ .
     \item 迭代会在当 $ \nabla g\left(x^{(k)}\right)=2 A^{T} f\left(x^{(k)}\right) $ 足够小时终止。
 \end{itemize}
 
@@ -1027,11 +1027,11 @@ Newton update $ x^{(k+1)} $ is solution of linear equation $ \hat{f}\left(x ; x^
 
 \begin{definition}[quadratic approximation of $ g(x) $ around $ x^{(k)} $]
     \begin{equation}
-g_{\mathrm{q}}\left(x ; x^{(k)}\right)=g\left(x^{(k)}\right)+\nabla g\left(x^{(k)}\right)^{T}\left(x-x^{(k)}\right)+\frac{1}{2}\left(x-x^{(k)}\right)^{T} \nabla^{2} g\left(x^{(k)}\right)\left(x-x^{(k)}\right)
+g_{{q}}\left(x ; x^{(k)}\right)=g\left(x^{(k)}\right)+\nabla g\left(x^{(k)}\right)^{T}\left(x-x^{(k)}\right)+\frac{1}{2}\left(x-x^{(k)}\right)^{T} \nabla^{2} g\left(x^{(k)}\right)\left(x-x^{(k)}\right)
 \end{equation}
 \end{definition}
 
-Newton update $ x^{(k+1)} $ minimizes $ g_{\mathrm{q}}\left(x ; x^{(k)}\right)\left(\right. $ satisfies $ \left.\nabla g_{\mathrm{q}}\left(x ; x^{(k)}\right)=0\right) $
+Newton update $ x^{(k+1)} $ minimizes $ g_{{q}}\left(x ; x^{(k)}\right)\left(\right. $ satisfies $ \left.\nabla g_{{q}}\left(x ; x^{(k)}\right)=0\right) $
 
 % todo (2021-12-10 08:48): figure
 
@@ -1116,7 +1116,7 @@ g(x)=\|f(x)\|^{2}=\sum_{i=1}^{m} f_{i}(x)^{2}
     (Undamped) Newton step at $ x=x^{(k)} $ :
 \begin{equation}
 \begin{aligned}
-v_{\mathrm{nt}} &=-\nabla^{2} g(x)^{-1} \nabla g(x) \\
+v_{{nt}} &=-\nabla^{2} g(x)^{-1} \nabla g(x) \\
 &=-\left(D f(x)^{T} D f(x)+\sum_{i=1}^{m} f_{i}(x) \nabla^{2} f_{i}(x)\right)^{-1} D f(x)^{T} f(x)
 \end{aligned}
 \end{equation}
@@ -1126,14 +1126,14 @@ v_{\mathrm{nt}} &=-\nabla^{2} g(x)^{-1} \nabla g(x) \\
 \begin{theorem}
     Gauss-Newton step at $ x=x^{(k)} $
 \begin{equation}
-v_{\mathrm{gn}}=-\left(D f(x)^{T} D f(x)\right)^{-1} D f(x)^{T} f(x)
+v_{{gn}}=-\left(D f(x)^{T} D f(x)\right)^{-1} D f(x)^{T} f(x)
 \end{equation}
 \end{theorem}
 
 \begin{corollary}
-    can be written as $ v_{\mathrm{gn}}=-H_{\mathrm{gn}}^{-1} \nabla g(x) $ where $ H_{\mathrm{gn}}=2 D f(x)^{T} D f(x) $
+    can be written as $ v_{{gn}}=-H_{{gn}}^{-1} \nabla g(x) $ where $ H_{{gn}}=2 D f(x)^{T} D f(x) $
 
-    $ H_{\mathrm{gn}} $ is the Hessian without the term $ \sum_{i} f_{i}(x) \nabla^{2} f_{i}(x) $.
+    $ H_{{gn}} $ is the Hessian without the term $ \sum_{i} f_{i}(x) \nabla^{2} f_{i}(x) $.
 \end{corollary}
 
 
@@ -1155,7 +1155,7 @@ Gauss-Newton step:
     \item does not require second derivatives
     \item a descent direction (if columns of $ D f(x) $ are linearly independent):
     \begin{equation}
-    \nabla g(x)^{T} v_{\mathrm{gn}}=-2 v_{\mathrm{gn}}^{T} D f(x)^{T} D f(x) v_{\mathrm{gn}}<0 \quad \text { if } v_{\mathrm{gn}} \neq 0
+    \nabla g(x)^{T} v_{{gn}}=-2 v_{{gn}}^{T} D f(x)^{T} D f(x) v_{{gn}}<0 \quad \text { if } v_{{gn}} \neq 0
     \end{equation}
     \item local convergence to $ x^{\star} $ is similar to Newton method if
 \begin{equation}

@@ -145,7 +145,7 @@ A^{H}=\left[\begin{array}{cccc}
         \item 分配律： $ A(B+C)=A B+A C $.
         \item $ (A B)^{T}=B^{T} A^{T}, \quad(A B)^{{H}}=B^{H} A^{H} $.
         \item 一般情况下 $ A B \neq B A $.
-        \item 对于方阵A有， $ I A=A I=A $.
+        \item 对于方阵$A$有， $ I A=A I=A $.
     \end{itemize} 
 \end{corollary}
 
@@ -166,7 +166,7 @@ A_{m 1} x_{1}+A_{m 2} x_{2}+\cdots+A_{m n} x_{n}
 \end{definition}
 
 \begin{corollary}
-    $ {A} x $ 是矩阵A列向量的线性组合。
+    $ {A} x $ 是矩阵$A$列向量的线性组合。
 
 \begin{equation}
 A x=\left[\begin{array}{llll}
@@ -907,7 +907,7 @@ The Dirichlet energy will arise as a measure of roughness in several application
 \end{corollary}
 
 \begin{example}[Toeplitz Matrix]
-    4维向量a和3维向量 $ b $ ,  则 $ c=a * b $
+    4维向量$a$和3维向量 $ b $ ,  则 $ c=a * b $
 
 \begin{equation}
 \left[\begin{array}{l}
@@ -981,7 +981,7 @@ p(t)=x_{1}+x_{2} t+x_{3} t^{2}+\cdots+x_{n} t^{n-1}
 \end{definition}
 
 \begin{definition}[Vandermonde Matrices]
-    $ {p}({t}) $ 在m个点中 $ t_{1}, t_{2}, \ldots, t_{m} $ 的值为
+    $ {p}({t}) $ 在$m$个点中 $ t_{1}, t_{2}, \ldots, t_{m} $ 的值为
     \begin{equation}
     \left[\begin{array}{c}
     p\left(t_{1}\right) \\
@@ -1016,7 +1016,7 @@ p(t)=x_{1}+x_{2} t+x_{3} t^{2}+\cdots+x_{n} t^{n-1}
    其中 $ \omega=e^{2 \pi i / n} $.
 \end{definition}
 
-DFT矩阵W的第 $ k $ 行第 $ l $ 列的元素为 $ W_{k l}=\omega^{-(k-1)(l-1)} $.
+DFT矩阵$W$的第 $ k $ 行第 $ l $ 列的元素为 $ W_{k l}=\omega^{-(k-1)(l-1)} $.
 
 \begin{definition}[Discrete Inverse Fourier Transform]
     \begin{equation} x_{\ell}=\frac{1}{n} \sum_{k=1}^{n} y_{k} e^{i \frac{2 \pi}{n}(k-1)(\ell-1)}, \ell=1, \cdots, n \end{equation}
@@ -1586,7 +1586,7 @@ A(x+\Delta x)=b+\Delta b
     设\begin{equation} A=\frac{1}{2}\left[\begin{array}{cc}1 & 1 \\ 1+10^{-10} & 1-10^{-10}\end{array}\right], \quad A^{-1}=\left[\begin{array}{cc}1-10^{10} & 10^{10} \\ 1+10^{10} & -10^{10}\end{array}\right] \end{equation}
 
 若$ b=(1,1) $, 方程 $ A x $ 的解 $ x=(1,1) $ . 
-如果将b改为 $ b+\Delta b $ , 那么 $ x $ 的变化量为
+如果将$b$改为 $ b+\Delta b $ , 那么 $ x $ 的变化量为
 
 \begin{equation} \Delta x=A^{-1} \Delta b=\left[\begin{array}{l}\Delta b_{1}-10^{10}\left(\Delta b_{1}-\Delta b_{2}\right) \\ \Delta b_{1}+10^{10}\left(\Delta b_{1}-\Delta b_{2}\right)\end{array}\right] \end{equation}
 \end{example}

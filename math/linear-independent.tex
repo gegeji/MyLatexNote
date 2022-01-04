@@ -241,7 +241,7 @@ x=\left(a_{1}^{T} x\right) a_{1}+\cdots+\left(a_{n}^{T} x\right) a_{n}
 \label{Chap:Gram-Schmidt Algorithm}
 \begin{algorithm}[htbp]
     \caption{Gram-Schmidt Algorithm}
-    \KwIn{$ \mathrm{n} $ 维向量 $ a_{1}, \ldots, a_{k} $}
+    \KwIn{$ {n} $ 维向量 $ a_{1}, \ldots, a_{k} $}
     \KwOut{若这些向量线性无关，返回标准正交基$ q_{1}, \ldots, q_{k} $；若线性相关时判断 $a_j$ 是 $ a_{1}, \ldots, a_{j-1} $ 的线性组合 }
     $ q_{1}= \dfrac{a_{1}}{\left\|a_{1}\right\|_{2}}   $\;
     \While(){$i=2,\cdots,k$}{
@@ -285,8 +285,8 @@ x=\left(a_{1}^{T} x\right) a_{1}+\cdots+\left(a_{n}^{T} x\right) a_{n}
     \KwIn{Three independent vectors $ \boldsymbol{a}, \boldsymbol{b}, \boldsymbol{c} $}
     \KwOut{Three orthonormal vectors $ \boldsymbol{q}_{1}=\boldsymbol{A} /\|\boldsymbol{A}\|, \boldsymbol{q}_{2}=\boldsymbol{B} /\|\boldsymbol{B}\|, \boldsymbol{q}_{3}=\boldsymbol{C} /\|\boldsymbol{C}\| $.}
     Choose $ \boldsymbol{A}=\boldsymbol{a} $\;
-    $ \boldsymbol{B}=\boldsymbol{b}-\frac{\boldsymbol{A}^{\mathrm{T}} \boldsymbol{b}}{\boldsymbol{A}^{\mathrm{T}} \boldsymbol{A}} \boldsymbol{A} $\;
-    $ \boldsymbol{C}=\boldsymbol{c}-\frac{\boldsymbol{A}^{\mathrm{T}} \boldsymbol{c}}{\boldsymbol{A}^{\mathrm{T}} \boldsymbol{A}} \boldsymbol{A}-\frac{\boldsymbol{B}^{\mathrm{T}} \boldsymbol{c}}{\boldsymbol{B}^{\mathrm{T}} \boldsymbol{B}} \boldsymbol{B}   $\;
+    $ \boldsymbol{B}=\boldsymbol{b}-\frac{\boldsymbol{A}^{{T}} \boldsymbol{b}}{\boldsymbol{A}^{{T}} \boldsymbol{A}} \boldsymbol{A} $\;
+    $ \boldsymbol{C}=\boldsymbol{c}-\frac{\boldsymbol{A}^{{T}} \boldsymbol{c}}{\boldsymbol{A}^{{T}} \boldsymbol{A}} \boldsymbol{A}-\frac{\boldsymbol{B}^{{T}} \boldsymbol{c}}{\boldsymbol{B}^{{T}} \boldsymbol{B}} \boldsymbol{B}   $\;
     单位化\;
 \end{algorithm}
 

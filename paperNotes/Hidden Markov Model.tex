@@ -317,7 +317,7 @@ P(O \mid \lambda)=\sum_{I} P(O \mid I, \lambda) P(I \mid \lambda)
     1.确定完全数据的对数似然函数：所有观测数据写成 $ O=\left(o_{1}, o_{2}, \cdots, o_{T}\right) $, 所有隐数据写成 $ I=\left(i, i_{2}, \cdots, i_{T}\right) $, 完全 数据是 $ (O, I)=\left(o_{1}, o_{2}, \cdots, o_{T}, i_{1}, i_{2}, \cdots, i_{r}\right) . $ 完全数据的对数似然函数是 $ \log P(O, I \mid \lambda) $
 
 
-EM 算法的 $ \mathrm{E} $ 步: 求 $ Q $ 函数 $ Q(\lambda, \bar{\lambda}) $
+EM 算法的 $ {E} $ 步: 求 $ Q $ 函数 $ Q(\lambda, \bar{\lambda}) $
 \begin{equation}
 Q(\lambda, \bar{\lambda})=\sum_{I} \log P(O, I \mid \lambda) P(O, I \mid \bar{\lambda})
 \end{equation}
@@ -339,7 +339,7 @@ Q(\lambda, \bar{\lambda})=& \sum_{I} \log \pi_{i_1} P(O, I \mid \bar{\lambda}) \
 式中求和都是对所有训练数据的序列总长度 $ T $ 进行的。
 
 
-3. EM 算法的 $ \mathrm{M} $ 步: 极大化 $ Q $ 函数 $ Q(\lambda, \bar{\lambda}) $ 求模型参数 $ A, B, \pi $ 由于要极大化的参数在式 中单独地出现在 3 个项中， 所以只需对各 项分别极大化。
+3. EM 算法的 $ {M} $ 步: 极大化 $ Q $ 函数 $ Q(\lambda, \bar{\lambda}) $ 求模型参数 $ A, B, \pi $ 由于要极大化的参数在式 中单独地出现在 3 个项中， 所以只需对各 项分别极大化。
 
 (1) 式 \ref{Eqn:ComputeQ} 的第 1 项可以写成;
 \begin{equation}

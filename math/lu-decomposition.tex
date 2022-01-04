@@ -20,19 +20,19 @@
 \begin{example}[Elimination]
     Before
 
-        $$ \left\{\begin{matrix}
+        \begin{equation} \left\{\begin{matrix}
         x & - & 2y & = & 1\\
         3x & + & 2y & = & 11
-        \end{matrix}\right. $$
+        \end{matrix}\right. \end{equation}
         
         
    
     After
     
-    $$ \left\{\begin{matrix}
+    \begin{equation} \left\{\begin{matrix}
         x & - & 2y & = & 1\\
          &  & 8y & = & 8
-        \end{matrix}\right. $$
+        \end{matrix}\right. \end{equation}
     
 
 \end{example}
@@ -98,7 +98,7 @@ If $ A $ is invertible, then $ A x=0 $ can only have the \textbf{zero solution} 
     然后将它变成Reduced echelon form $R$.
 
    
-    $$ \begin{matrix}
+    \begin{equation} \begin{matrix}
                 (\text{divided by }2)                      \\
                 \left(\text{divided by }\dfrac{3}{2}\right) \\
                 \left(\text{divided by }\dfrac{4}{3}\right)
@@ -110,7 +110,7 @@ If $ A $ is invertible, then $ A x=0 $ can only have the \textbf{zero solution} 
                     I & x_{1} & x_{2} & x_{3}
                 \end{matrix}\right] =\ \left[\begin{matrix}
                     I & K^{-1}
-                \end{matrix}\right]$$
+                \end{matrix}\right]\end{equation}
     
 
 
@@ -118,7 +118,7 @@ If $ A $ is invertible, then $ A x=0 $ can only have the \textbf{zero solution} 
         \item $ K $ is symmetric across its main diagonal. Then $ K^{-1} $ is also symmetric.
         \item $ K $ is tridiagonal (only three nonzero diagonals). But $ K^{-1} $ is a dense matrix with no zeros. That is another reason we don't often compute inverse matrices. The inverse of a band matrix is generally a dense matrix.
         \item The product of pivots is $ 2\left(\frac{3}{2}\right)\left(\frac{4}{3}\right)=4 $. This number 4 is the determinant of $ K $. $ K^{-1} $ involves division by the determinant of $ K $.
-        $$ K^{-1}=\frac{1}{4}\left[\begin{array}{lll}3 & 2 & 1 \\ 2 & 4 & 2 \\ 1 & 2 & 3\end{array}\right] $$
+        \begin{equation} K^{-1}=\frac{1}{4}\left[\begin{array}{lll}3 & 2 & 1 \\ 2 & 4 & 2 \\ 1 & 2 & 3\end{array}\right] \end{equation}
     \end{enumerate}
 
 
@@ -202,7 +202,7 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
 回顾矩阵乘法的定义
 
 \begin{definition}[矩阵乘法]
-    设矩阵 $ A \in \mathbb{R}^{m \times p}, B \in \mathbb{R}^{p \times n} $,那么矩阵$A$与$B$的乘积， 记 作C $ =A B $ ,  则矩阵 $ C \in \mathbb{R}^{m \times n} $ 的第 i行第 $ j $ 列元素 $ C_{i j} $
+    设矩阵 $ A \in \mathbb{R}^{m \times p}, B \in \mathbb{R}^{p \times n} $,那么矩阵$A$与$B$的乘积， 记 作C $ =A B $ ,  则矩阵 $ C \in \mathbb{R}^{m \times n} $ 的第 $i$行第 $ j $ 列元素 $ C_{i j} $
 
 
     \begin{equation}
@@ -288,27 +288,27 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
 \begin{proof}
     \begin{equation}
         \begin{aligned}
-            A & =\left(\begin{array}{ c c c c c }
-                a_{11} & \cdots & a_{1r}                                               & \cdots                                                & a_{1n}                                               \\
-                \vdots & \ddots & \vdots                                               &                                                       & \vdots                                               \\
-                a_{r1} & \cdots & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{rr}}} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\cdots }} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{rn}}} \\
-                \vdots &        & \vdots                                               & \ddots                                                & \vdots                                               \\
-                a_{n1} & \cdots & a_{nr}                                               & \cdots                                                & a_{nn}
-            \end{array}\right)                                               \\
-              & =\left(\begin{array}{ c c c c c }
-                1      & 0      & 0                                               & \cdots & 0 \\
-                \vdots & \ddots & 0                                               & \ddots & 0 \\
-                l_{r1} & \cdots & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{1}} & \cdots & 0 \\
-                \vdots & \cdots & \vdots                                          & \ddots & 0 \\
-                l_{n1} & \cdots & l_{nr}                                          & \cdots & 1
-            \end{array}\right) \cdot \left(\begin{array}{ c c c c c }
-                u_{11} & \cdots & u_{1r}                                               & \cdots                                                & u_{1n}                                               \\
-                0      & \ddots & \vdots                                               & \ddots                                                & \vdots                                               \\
-                0      & 0      & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{u_{rr}}} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\cdots }} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{u_{rn}}} \\
-                \vdots & \ddots & 0                                                    & \ddots                                                & \vdots                                               \\
-                0      & \cdots & 0                                                    & 0                                                     & u_{nn}
+            A & =\left(\begin{array}{ c c c c c c c }
+            a_{11} & \cdots  & a_{1r} & \cdots  & a_{1j} & \cdots  & a_{1n}\\
+            \vdots  & \ddots  & \vdots  &  & \vdots  &  & \vdots \\
+            a_{r1} & \cdots  & a_{rr} & \cdots  & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a}\textcolor[rgb]{0.72,0.33,0.31}{_{rj}}} & \cdots  & a_{rn}\\
+            \vdots  &  & \vdots  & \ddots  & \vdots  & \ddots  & \vdots \\
+            a_{n1} & \cdots  & a_{nr} & \cdots  &  & \cdots  & a_{nn}
+            \end{array}\right)\\
+             & =\left(\begin{array}{ c c c c c c }
+            1 & 0 & 0 & 0 & \cdots  & 0\\
+            \vdots  & \ddots  & 0 & 0 & \ddots  & \vdots \\
+            \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{l}\textcolor[rgb]{0.72,0.33,0.31}{_{r1}}} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\cdots }} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{1}} & 0 & \cdots  & 0\\
+            \vdots  & \ddots  & \vdots  & 1 & \ddots  & \vdots \\
+            l_{n1} & \cdots  & l_{nr} & l_{n,r+1} & \cdots  & 1
+            \end{array}\right) \cdot \left(\begin{array}{ c c c c c c c }
+            u_{11} & \cdots  & u_{1r} & \cdots  & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{u}\textcolor[rgb]{0.72,0.33,0.31}{_{1j}}} & \cdots  & u_{1n}\\
+            0 & \ddots  & \vdots  & \ddots  & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\vdots }} & \cdots  & \vdots \\
+            0 & 0 & u_{rr} & \cdots  & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{u}\textcolor[rgb]{0.72,0.33,0.31}{_{rj}}} & \cdots  & u_{rn}\\
+            \vdots  & \ddots  & 0 & \ddots  & u_{r+1,j} & \cdots  & \vdots \\
+            0 & \cdots  & 0 & 0 & 0 & \ddots  & u_{nn}
             \end{array}\right)
-        \end{aligned}
+            \end{aligned}
     \end{equation}
 \end{proof}
 
@@ -343,26 +343,27 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
 \begin{proof}
     \begin{equation}
         \begin{aligned}
-            A & =\left(\begin{array}{ c c c c c }
-                a_{11} & \cdots & a_{1r}                                                & \cdots & a_{1n} \\
-                \vdots & \ddots & \vdots                                                &        & \vdots \\
-                a_{r1} & \cdots & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{rr}}}  & \cdots & a_{rn} \\
-                \vdots &        & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\vdots }} & \ddots & \vdots \\
-                a_{n1} & \cdots & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{nr}}}  & \cdots & a_{nn}
-            \end{array}\right)                                               \\
-              & =\left(\begin{array}{ c c c c c }
-                1      & 0      & 0                                                     & \cdots & 0 \\
-                \vdots & \ddots & 0                                                     & \ddots & 0 \\
-                l_{r1} & \cdots & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{1}}       & \cdots & 0 \\
-                \vdots & \cdots & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\vdots }} & \ddots & 0 \\
-                l_{n1} & \cdots & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{l_{nr}}}  & \cdots & 1
-            \end{array}\right) \cdot \left(\begin{array}{ c c c c c }
-                u_{11} & \cdots & u_{1r}                                               & \cdots & u_{1n} \\
-                0      & \ddots & \vdots                                               & \ddots & \vdots \\
-                0      & 0      & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{u_{rr}}} & \cdots & u_{rn} \\
-                \vdots & \ddots & 0                                                    & \ddots & \vdots \\
-                0      & \cdots & 0                                                    & 0      & u_{nn}
-            \end{array}\right)\end{aligned}
+            A & =\left(\begin{array}{ c c c c c c c }
+            a_{11} & \cdots  & a_{1j} & \cdots  & a_{1r} & \cdots  & a_{1n}\\
+            \vdots  & \ddots  & \vdots  &  & \vdots  &  & \vdots \\
+            a_{r1} & \cdots  & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{rj}}} & \cdots  & a_{rr} & \cdots  & a_{rn}\\
+            \vdots  &  & \vdots  &  & \vdots  & \ddots  & \vdots \\
+            a_{n1} & \cdots  & a_{nj} & \cdots  & a_{nr} & \cdots  & a_{nn}
+            \end{array}\right)\\
+             & =\left(\begin{array}{ c c c c c c }
+            1 & 0 & 0 & 0 & \cdots  & 0\\
+            \vdots  & \ddots  & 0 & 0 & \ddots  & \vdots \\
+            \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{l}\textcolor[rgb]{0.72,0.33,0.31}{_{r1}}} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\cdots }} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{1}} & 0 & \cdots  & 0\\
+            \vdots  & \ddots  & \vdots  & 1 & \ddots  & \vdots \\
+            l_{n1} & \cdots  & l_{nr} & l_{n,r+1} & \cdots  & 1
+            \end{array}\right) \cdot \left(\begin{array}{ c c c c c c c }
+            u_{11} & \cdots  & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{u_{1j}}} & \cdots  & u_{1r} & \cdots  & u_{1n}\\
+            0 & \ddots  & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\vdots }} & \ddots  & \vdots  & \cdots  & \vdots \\
+            0 & 0 & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{u_{jj}}} & \cdots  & u_{rr} & \cdots  & u_{rn}\\
+            \vdots  & \ddots  & 0 & \ddots  & 0 & \cdots  & \vdots \\
+            0 & \cdots  & 0 & 0 & 0 & \ddots  & u_{nn}
+            \end{array}\right)
+            \end{aligned}
     \end{equation}
 \end{proof}
 
@@ -391,9 +392,9 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
 
 \begin{algorithm}[htbp]
     \caption{Solving $Ax = b$ Using LU Decomposition}
-    对矩阵 $ A $ 进行LU分解 $ \left(\frac{2}{3} n^{3}\right. $ flops $ ) $\;
-    回代法: 求解 $ L y=b\left(n^{2}\right. $ flops $ ) $\;
-    回代法: 求解 $ U x=y\left(n^{2}\right. $ flops $ ) $\;
+    对矩阵 $ A $ 进行LU分解 $ \left(\frac{2}{3} n^{3} \text{flops} \right) $\;
+    回代法: 求解 $ L y=b\left(n^{2}\text{flops} \right) $\;
+    回代法: 求解 $ U x=y\left(n^{2}\text{flops} \right) $\;
 \end{algorithm}
 
 
@@ -451,22 +452,38 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
             \end{array}\right]
     \end{equation}
 
-    然后计算U的第二行和L的第二列
+    然后计算$U$的第二行和$L$的第二列
     \begin{equation}
         \begin{array}{l}
             u_{22}=a_{22}-l_{21} u_{12}=0 \\
             u_{23}=a_{23}-l_{21} u_{13}=2
         \end{array} \quad l_{32}=\frac{a_{32}-l_{31} u_{12}}{u_{22}}=\frac{1}{\boldsymbol{0}}
     \end{equation}
-    即该矩阵无法 $ \mathrm{LU} $ 分解！
+    即该矩阵无法 $ {LU} $ 分解！
+
+    通过$PA=LU$分解，可以得到LU分解
+
+    $$P=\left[\begin{matrix}
+        1 & 0 & 0\\
+        0 & 1 & 0\\
+        0 & 0 & 1
+        \end{matrix}\right] ,L=\left[\begin{matrix}
+        1 & 0 & 0\\
+        0 & 1 & -1\\
+        0 & 0 & 2
+        \end{matrix}\right] ,U=\left[\begin{matrix}
+        1 & 0 & 0\\
+        0 & 0 & 1\\
+        0 & 1 & 0
+        \end{matrix}\right]$$
 \end{example}
 
 \section{\texorpdfstring{$PA=LU$}{PA=LU}}
 
 \begin{theorem}
-    非奇异矩阵 $ \mathrm{A} \in \mathbb{R}^{n \times n} $ ,则可分解为 $ A=P^{T} L U $
+    非奇异矩阵 $ {A} \in \mathbb{R}^{n \times n} $ ,则可分解为 $ A=P^{T} L U $
 
-    $ P $ 是一个置换矩阵， $ L $ 为下三角矩阵并且对角线元素全为 $ 1 ， U $ 为 上三角矩阵
+    $ P $ 是一个置换矩阵， $ L $ 为下三角矩阵并且对角线元素全为 $ 1 ， U $ 为 上三角矩阵。
 \end{theorem}
 
 
@@ -508,7 +525,7 @@ $PA=LU$分解方法不唯一，随着 $ P $ 的选择不同， $L$、$U$也不�
 
 
 \begin{theorem}
-    这个方法等价于对$A$进行行初等变换然后对 $ P A $ 进行分解 $ P A=L U $
+    这个方法等价于对$A$进行行初等变换然后对 $ P A $ 进行分解 $ P A=L U $。
 \end{theorem}
 
 \subsubsection{The Complexity of $PA = LU$}
@@ -681,18 +698,18 @@ $PA=LU$分解方法不唯一，随着 $ P $ 的选择不同， $L$、$U$也不�
 \section{稀疏线性方程组}
 
 \begin{theorem}
-    如果矩阵 $ \mathrm{A} $ 是稀疏矩阵， 则它一般可以被分解为
+    如果矩阵 $ {A} $ 是稀疏矩阵， 则它一般可以被分解为
     \begin{equation}
         A=P_{1} L U P_{2}
     \end{equation}
 
-    矩阵 $ P_{1}, P_{2} $ 都为置换矩阵
+    矩阵 $ P_{1}, P_{2} $ 都为置换矩阵。
 \end{theorem}
 
 \begin{corollary}
-    对矩阵 $ \mathrm{A} $ 进行行变换和列变换得到: $ \tilde{A}=P_{1}^{T} A P_{2}^{T} $
+    对矩阵 $ {A} $ 进行行变换和列变换得到: $ \tilde{A}=P_{1}^{T} A P_{2}^{T} $
 
-    然后进行分解: $ \tilde{\mathrm{A}}=L U $
+    然后进行分解: $ \tilde{{A}}=L U $.
 \end{corollary}
 
 

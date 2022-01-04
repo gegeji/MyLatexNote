@@ -305,7 +305,7 @@ A^{T} A x=A^{T} b
 系数矩阵 $ A^{T} A $ 是 $ A $ 的Gram矩阵，最小二乘法问题所有的解都满足正规方程。
 
 \begin{theorem}
-    如果A的列线性无关，则
+    如果$A$的列线性无关，则
 
     $ A^{T} A $ 为非奇异矩阵，正规方程此时有唯一解。
 \end{theorem}
@@ -379,7 +379,7 @@ x_{2}
 算法复杂度：
 
 \begin{itemize}
-    \item 首先对A进行QR分解 $ A=Q R\left(2 m n^{2}\right. $ flops $ ) $
+    \item 首先对$A$进行QR分解 $ A=Q R\left(2 m n^{2}\right. $ flops $ ) $
     \item 计算矩阵向量乘积 $ d=Q^{T} b(2 {mn} $ flops $ ) $
     \item 通过回代求解 $ R x=d\left(n^{2}\right. $ flops $ ) $
     \item 复杂度: $ 2 m n^{2} $ flops

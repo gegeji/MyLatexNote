@@ -747,7 +747,7 @@ The matrix $ Q $ is the same for each of the ten Boolean classifiers
 
 Hence, only the right-hand side of the equation
 \begin{equation}
-(Q+\lambda I) w=y^{\mathrm{d}}
+(Q+\lambda I) w=y^{{d}}
 \end{equation}
 is different for each Boolean classifier.
 
@@ -758,7 +758,7 @@ Complexity:
 \begin{itemize}
     \item constructing $ Q $ requires $ N^{2} / 2 $ inner products of length $ n: n N^{2} $ flops
     \item Cholesky factorization of $ Q+\lambda I:(1 / 3) N^{3} $ flops
-    \item solve the equation $ (Q+\lambda I) w=y^{\mathrm{d}} $ for the 10 right-hand sides: $ 20 N^{2} $ flops
+    \item solve the equation $ (Q+\lambda I) w=y^{{d}} $ for the 10 right-hand sides: $ 20 N^{2} $ flops
 \end{itemize}
 
 Total complexity is $ (1 / 3) N^{3}+n N^{2} $.

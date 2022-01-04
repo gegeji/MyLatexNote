@@ -160,7 +160,7 @@ $A$在每一行和每一列中都有一个等于1的元素。
 \end{corollary}
 
 \begin{proof}
-    因为A的每一行有一个元素等于1
+    因为$A$的每一行有一个元素等于1
 \begin{equation}
 \left(A^{T} A\right)_{i j}=\sum_{k=1}^{n} A_{k i} A_{k j}=\left\{\begin{array}{ll}
 1 & i=j \\
@@ -399,7 +399,7 @@ x=A^{-1} b=A^{T} b
 \subsection{The Complexity of the Multiplication $Ax$ of Orthogonal Matrix $A$}
 可以在 $ 2  {n}^{2} $ 个flop内计算矩阵向量乘法。 
 
-如果A有特殊性质，代价将会小于$n^2$.例如，
+如果$A$有特殊性质，代价将会小于$n^2$.例如，
 
 \begin{itemize}
     \item 置换矩阵：$0$ flop.
@@ -476,7 +476,7 @@ $ A A^{T} b $ 称为向量 $  {b} \in \mathbb{R}^{m} $ 在 $ \operatorname{range
 
     2. 可以证明$ \hat{x}=A^{T} b $ 满足 $ \|A \hat{x}-b\|<\|A x-b\| $, 对于所有 $ x \neq \hat{x} $.
 
-    b到range(A)内任意点 $ A x $ 的距离的平方和为:
+    $b$到$\operatorname{range}(A)$内任意点 $ A x $ 的距离的平方和为:
 
     \begin{equation} \begin{aligned}\|A x-b\|_{2}^{2} &=\|A(x-\hat{x})+A \hat{x}-b\|_{2}^{2} \quad\left(\text {其中 } \hat{x}=A^{T} b\right) \\ &=\|A(x-\hat{x})\|_{2}^{2}+\|A \hat{x}-b\|_{2}^{2}+2(x-\hat{x})^{T} A^{T}(A \hat{x}-b) \\ &=\|A(x-\hat{x})\|_{2}^{2}+\|A \hat{x}-b\|_{2}^{2} \\ &=\|(x-\hat{x})\|_{2}^{2}+\|A \hat{x}-b\|_{2}^{2} \\ & \geq\|A \hat{x}-b\|_{2}^{2} \end{aligned} \end{equation}
 当且仅当 $ x=\hat{x} $, 等号成立。

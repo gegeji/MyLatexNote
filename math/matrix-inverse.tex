@@ -19,7 +19,7 @@
 \end{example}
 
 \begin{definition}[$A$的右逆]
-    当左逆存在时，则称A是可左逆的;
+    当左逆存在时，则称$A$是可左逆的;
 \end{definition}
 
 当右逆存在时，则$A$至少有一个右逆。如果右逆矩阵存在， 则右逆矩阵有\textbf{无穷多}个。
@@ -39,7 +39,7 @@
 
 
 \begin{theorem}
-    A的左逆为 $ X $ 当且仅当 $ X^{T} $ 是 $ A^{T} $ 的右逆。
+    $A$的左逆为 $ X $ 当且仅当 $ X^{T} $ 是 $ A^{T} $ 的右逆。
 \end{theorem}
 
 \begin{proof}
@@ -49,7 +49,7 @@ A^{T} X^{T}=(X A)^{T}=I
 \end{proof}
 
 \begin{theorem}
-    A的右逆为 $ X $ 当且仅当 $ X^{T} $ 是 $ A^{T} $ 的左逆。
+    $A$的右逆为 $ X $ 当且仅当 $ X^{T} $ 是 $ A^{T} $ 的左逆。
 \end{theorem}
 
 \begin{proof}
@@ -59,7 +59,7 @@ X^{T} A^{T}=(A X)^{ {T}}=I
 \end{proof}
 
 \begin{theorem}
-    如果矩阵A存在左逆和右逆，则左逆和右逆一定相等。
+    如果矩阵$A$存在左逆和右逆，则左逆和右逆一定相等。
 \end{theorem}
 
 \begin{proof}
@@ -73,7 +73,7 @@ X^{T} A^{T}=(A X)^{ {T}}=I
 \end{proof}
 
 \begin{definition}[逆 $A^{-1}$]
-    如果矩阵A存在左逆和右逆， 此时X称为矩阵的\term{逆},记作 $ A^{-1} $ 当矩阵的逆存在时，则称矩阵A\term{可逆}.
+    如果矩阵$A$存在左逆和右逆， 此时$X$称为矩阵的\term{逆},记作 $ A^{-1} $。当矩阵的逆存在时，则称矩阵$A$\term{可逆}.
 \end{definition}
 
 \section{Linear Equation Systems}
@@ -299,7 +299,7 @@ A x=b  \Rightarrow  x=A^{-1} b
     \end{aligned}
     \end{equation}
 
-    假设A的列向量 $ A=\left[a_{1}, a_{2}, \cdots, a_{n}\right] $
+    假设$A$的列向量 $ A=\left[a_{1}, a_{2}, \cdots, a_{n}\right] $
     \begin{equation}
     A x=x_{1} a_{1}+x_{2} a_{2}+\cdots+x_{n} a_{n}=0
     \end{equation}
@@ -341,11 +341,11 @@ A x=b  \Rightarrow  x=A^{-1} b
 
 现在，由于 $A = CR$, $A$ 的每个行向量是 $R$ 的行向量的线性组合，这意味着 $A$ 的行向量空间被包含于 $R$ 的行向量空间之中。 因此 $A 的行秩 \leq R的行秩$. 但$R$仅有$r$行， 所以$R的行秩 \leq r = A的列秩$. 这就证明了$A的行秩 \leq A的列秩$.
 
-把上述证明过程中的“行”与“列”交换，利用对偶性质同样可证$A的列秩 \leq A的行秩$. 更简单的方法是考虑A的转置矩阵 $A^ {T}$,则$A的列秩 =  A^ {T}的行秩 \leq  A^ {T}的列秩 = A的行秩$. 这证明了$A$的列秩等于$A$的行秩。 证毕。
+把上述证明过程中的“行”与“列”交换，利用对偶性质同样可证$A的列秩 \leq A的行秩$. 更简单的方法是考虑$A$的转置矩阵 $A^ {T}$,则$A的列秩 =  A^ {T}的行秩 \leq  A^ {T}的列秩 = A的行秩$. 这证明了$A$的列秩等于$A$的行秩。 证毕。
 \end{proof}
 
 \begin{theorem}
-    $(c)$: 矩阵 $ A \in \mathbb{R}^{m \times n} $ 有右逆 $ X $, 则A行向量线性无关。
+    $(c)$: 矩阵 $ A \in \mathbb{R}^{m \times n} $ 有右逆 $ X $, 则$A$行向量线性无关。
 \end{theorem}
 
 \begin{proof}
@@ -444,7 +444,7 @@ Gram矩阵的定义见 \ref{Def:Gram}.
 \begin{corollary}[Gram Matrix 可逆等价于$A$列线性无关]
     矩阵 $ A \in \mathbb{R}^{m \times n},   {G}=A^{T} A $
 
-矩阵 $ A $ 列向量线性无关 $ \Leftrightarrow $ Gram矩阵G非奇异（可逆）。
+矩阵 $ A $ 列向量线性无关 $ \Leftrightarrow $ Gram矩阵$G$非奇异（可逆）。
 \end{corollary}
 
 \begin{proof}
@@ -464,7 +464,7 @@ Gram矩阵的定义见 \ref{Def:Gram}.
 \section{伪逆}
 
 \begin{definition}[Pseudo-inverse of Matrix $A (m \geq n)$ ]
-    矩阵$A \in \mathbb{R}^{m \times n} $ ,当 $ m \geq n $ 时，列向量线性无关，即 $ A $ 的 Gram矩阵可逆。A的伪逆 $ A^{+} $定义:
+    矩阵$A \in \mathbb{R}^{m \times n} $ ,当 $ m \geq n $ 时，列向量线性无关，即 $ A $ 的 Gram矩阵可逆。$A$的伪逆 $ A^{+} $定义:
     \begin{equation}
     A^{+}=\left(A^{T} A\right)^{-1} A^{T}
     \end{equation}
