@@ -2,17 +2,17 @@
 
 \section{Trace}
 
-$$ \operatorname{Tr}(\mathbf{A})=\sum_{i} A_{i i} $$
+\begin{equation} \operatorname{Tr}(\mathbf{A})=\sum_{i} A_{i i} \end{equation}
 
-$$ \operatorname{Tr}(\mathbf{A})=\operatorname{Tr}\left(\mathbf{A}^{T}\right) $$
+\begin{equation} \operatorname{Tr}(\mathbf{A})=\operatorname{Tr}\left(\mathbf{A}^{T}\right) \end{equation}
 
-$$ \operatorname{Tr}(\mathbf{A B})=\operatorname{Tr}(\mathbf{B A}) $$
+\begin{equation} \operatorname{Tr}(\mathbf{A B})=\operatorname{Tr}(\mathbf{B A}) \end{equation}
 
-$$ \operatorname{Tr}(\mathbf{A}+\mathbf{B})=\operatorname{Tr}(\mathbf{A})+\operatorname{Tr}(\mathbf{B}) $$
+\begin{equation} \operatorname{Tr}(\mathbf{A}+\mathbf{B})=\operatorname{Tr}(\mathbf{A})+\operatorname{Tr}(\mathbf{B}) \end{equation}
 
-$$ \operatorname{Tr}(\mathbf{A B C})=\operatorname{Tr}(\mathbf{B C A})=\operatorname{Tr}(\mathbf{C A B}) $$
+\begin{equation} \operatorname{Tr}(\mathbf{A B C})=\operatorname{Tr}(\mathbf{B C A})=\operatorname{Tr}(\mathbf{C A B}) \end{equation}
 
-$$ \mathbf{a}^{T} \mathbf{a}=\operatorname{Tr}\left(\mathbf{a a}^{T}\right) $$
+\begin{equation} \mathbf{a}^{T} \mathbf{a}=\operatorname{Tr}\left(\mathbf{a a}^{T}\right) \end{equation}
 
 \section{Derivatives}
 
@@ -22,20 +22,20 @@ Note that it is always assumed that $ \mathbf{X} $ has \textbf{no special struct
 
 \begin{theorem}
     The basic assumptions can be written in a formula as
-$$
+\begin{equation}
 \frac{\partial X_{k l}}{\partial X_{i j}}=\delta_{i k} \delta_{l j}
-$$
+\end{equation}
 \end{theorem}
 
 
 that is for e.g. vector forms,
-$$
+\begin{equation}
 \left[\frac{\partial \mathbf{x}}{\partial y}\right]_{i}=\frac{\partial x_{i}}{\partial y} \quad\left[\frac{\partial x}{\partial \mathbf{y}}\right]_{i}=\frac{\partial x}{\partial y_{i}} \quad\left[\frac{\partial \mathbf{x}}{\partial \mathbf{y}}\right]_{i j}=\frac{\partial x_{i}}{\partial y_{j}}
-$$
+\end{equation}
 
 \begin{theorem}
     The following rules are general and very useful when deriving the differential of an expression: 
-$$
+\begin{equation}
 \begin{aligned}
 \partial \mathbf{A} &=0 \quad(A\text{ is a constant}) \\
 \partial(\alpha \mathbf{X}) &=\alpha \partial \mathbf{X} \\
@@ -51,7 +51,7 @@ $$
 \partial \mathbf{X}^{T} &=(\partial \mathbf{X})^{T} \\
 \partial \mathbf{X}^{H} &=(\partial \mathbf{X})^{H}
 \end{aligned}
-$$
+\end{equation}
 
 \end{theorem}
 
@@ -60,16 +60,16 @@ $$
 
 
 
-$$ \begin{aligned} \frac{\partial \mathbf{x}^{T} \mathbf{a}}{\partial \mathbf{x}} &=\frac{\partial \mathbf{a}^{T} \mathbf{x}}{\partial \mathbf{x}}=\mathbf{a} \\ \frac{\partial \mathbf{a}^{T} \mathbf{X} \mathbf{b}}{\partial \mathbf{X}} &=\mathbf{a b}^{T} \\ \frac{\partial \mathbf{a}^{T} \mathbf{X}^{T} \mathbf{b}}{\partial \mathbf{X}} &=\mathbf{b a}^{T} \\ \frac{\partial \mathbf{a}^{T} \mathbf{X} \mathbf{a}}{\partial \mathbf{X}} &=\frac{\partial \mathbf{a}^{T} \mathbf{X}^{T} \mathbf{a}}{\partial \mathbf{X}}=\mathbf{a a}^{T} \\ \frac{\partial \mathbf{X}}{\partial X_{i j}} &=\mathbf{J}^{i j} \\ \frac{\partial(\mathbf{X} \mathbf{A})_{i j}}{\partial X_{m n}} &=\delta_{i m}(\mathbf{A})_{n j}=\left(\mathbf{J}^{m n} \mathbf{A}\right)_{i j} \\ \frac{\partial\left(\mathbf{X}^{T} \mathbf{A}\right)_{i j}}{\partial X_{m n}} &=\delta_{i n}(\mathbf{A})_{m j}=\left(\mathbf{J}^{n m} \mathbf{A}\right)_{i j} \end{aligned} $$
+\begin{equation} \begin{aligned} \frac{\partial \mathbf{x}^{T} \mathbf{a}}{\partial \mathbf{x}} &=\frac{\partial \mathbf{a}^{T} \mathbf{x}}{\partial \mathbf{x}}=\mathbf{a} \\ \frac{\partial \mathbf{a}^{T} \mathbf{X} \mathbf{b}}{\partial \mathbf{X}} &=\mathbf{a b}^{T} \\ \frac{\partial \mathbf{a}^{T} \mathbf{X}^{T} \mathbf{b}}{\partial \mathbf{X}} &=\mathbf{b a}^{T} \\ \frac{\partial \mathbf{a}^{T} \mathbf{X} \mathbf{a}}{\partial \mathbf{X}} &=\frac{\partial \mathbf{a}^{T} \mathbf{X}^{T} \mathbf{a}}{\partial \mathbf{X}}=\mathbf{a a}^{T} \\ \frac{\partial \mathbf{X}}{\partial X_{i j}} &=\mathbf{J}^{i j} \\ \frac{\partial(\mathbf{X} \mathbf{A})_{i j}}{\partial X_{m n}} &=\delta_{i m}(\mathbf{A})_{n j}=\left(\mathbf{J}^{m n} \mathbf{A}\right)_{i j} \\ \frac{\partial\left(\mathbf{X}^{T} \mathbf{A}\right)_{i j}}{\partial X_{m n}} &=\delta_{i n}(\mathbf{A})_{m j}=\left(\mathbf{J}^{n m} \mathbf{A}\right)_{i j} \end{aligned} \end{equation}
 
 \section{Derivatives of Traces}
 
-$$ \begin{aligned} \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}(\mathbf{X}) &=\mathbf{I} \\ \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}(\mathbf{X} \mathbf{A}) &=\mathbf{A}^{T} \\ \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}(\mathbf{A X B}) &=\mathbf{A}^{T} \mathbf{B}^{T} \\ \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}\left(\mathbf{A X}^{T} \mathbf{B}\right) &=\mathbf{B} \mathbf{A} \\ \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}\left(\mathbf{X}^{T} \mathbf{A}\right) &=\mathbf{A} \\ \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}\left(\mathbf{A X}^{T}\right) &=\mathbf{A} \\ \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}(\mathbf{A} \otimes \mathbf{X}) &=\operatorname{Tr}(\mathbf{A}) \mathbf{I} \end{aligned} $$
+\begin{equation} \begin{aligned} \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}(\mathbf{X}) &=\mathbf{I} \\ \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}(\mathbf{X} \mathbf{A}) &=\mathbf{A}^{T} \\ \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}(\mathbf{A X B}) &=\mathbf{A}^{T} \mathbf{B}^{T} \\ \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}\left(\mathbf{A X}^{T} \mathbf{B}\right) &=\mathbf{B} \mathbf{A} \\ \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}\left(\mathbf{X}^{T} \mathbf{A}\right) &=\mathbf{A} \\ \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}\left(\mathbf{A X}^{T}\right) &=\mathbf{A} \\ \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}(\mathbf{A} \otimes \mathbf{X}) &=\operatorname{Tr}(\mathbf{A}) \mathbf{I} \end{aligned} \end{equation}
 
 \subsection{Second Order}
 
 
-$$
+\begin{equation}
 \begin{aligned}
 \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}\left(\mathbf{X}^{2}\right) &=2 \mathbf{X}^{T} \\
 \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}\left(\mathbf{X}^{2} \mathbf{B}\right) &=(\mathbf{X B}+\mathbf{B X})^{T} \\
@@ -84,7 +84,7 @@ $$
 \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}\left[(\mathbf{A X B}+\mathbf{C})(\mathbf{A X B}+\mathbf{C})^{T}\right] &=2 \mathbf{A}^{T}(\mathbf{A X B}+\mathbf{C}) \mathbf{B}^{T} \\
 \frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}(\mathbf{X} \otimes \mathbf{X}) &=\frac{\partial}{\partial \mathbf{X}} \operatorname{Tr}(\mathbf{X}) \operatorname{Tr}(\mathbf{X})=2 \operatorname{Tr}(\mathbf{X}) \mathbf{I}(1120)
 \end{aligned}
-$$
+\end{equation}
 
 \section{The Chain Rule}
 
@@ -92,19 +92,19 @@ Sometimes the objective is to find the derivative of a matrix which is a functio
 
 \begin{theorem}
     Let $ \mathbf{U}=f(\mathbf{X}) $, the goal is to find the derivative of the function $ \mathrm{g}(\mathbf{U}) $ with respect to $ \mathbf{X} $ :
-$$
+\begin{equation}
 \frac{\partial g(\mathbf{U})}{\partial \mathbf{X}}=\frac{\partial g(f(\mathbf{X}))}{\partial \mathbf{X}}
-$$
+\end{equation}
 Then the Chain Rule can then be written the following way:
-$$
+\begin{equation}
 \frac{\partial g(\mathbf{U})}{\partial \mathbf{X}}=\frac{\partial g(\mathbf{U})}{\partial x_{i j}}=\sum_{k=1}^{M} \sum_{l=1}^{N} \frac{\partial g(\mathbf{U})}{\partial u_{k l}} \frac{\partial u_{k l}}{\partial x_{i j}}
-$$
+\end{equation}
 \end{theorem}
 
 \begin{corollary}
     Using matrix notation, this can be written as:
-$$
+\begin{equation}
 \frac{\partial g(\mathbf{U})}{\partial X_{i j}}=\operatorname{Tr}\left[\left(\frac{\partial g(\mathbf{U})}{\partial \mathbf{U}}\right)^{T} \frac{\partial \mathbf{U}}{\partial X_{i j}}\right]
-$$
+\end{equation}
 \end{corollary}
 
