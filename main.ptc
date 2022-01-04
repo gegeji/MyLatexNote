@@ -340,13 +340,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {12.2.4}Example of LU Decomposition}{139}{subsection.12.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.3}Problem of LU Decomposition}{139}{section.12.3}%
+\contentsline {section}{\numberline {12.3}Problem of LU Decomposition}{140}{section.12.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {12.4}$PA=LU$}{140}{section.12.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{The Complexity of $PA = LU$}{140}{section*.56}%
+\contentsline {subsubsection}{The Complexity of $PA = LU$}{141}{section*.56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.5}舍入误差的影响}{140}{section.12.5}%
+\contentsline {section}{\numberline {12.5}舍入误差的影响}{141}{section.12.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {12.6}稀疏线性方程组}{142}{section.12.6}%
 \defcounter {refsection}{0}\relax 
@@ -670,25 +670,57 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {20.17.1}Complexity}{251}{subsection.20.17.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\@mypartnumtocformat {VII}{Appendix}}{252}{part.7}%
+\contentsline {chapter}{\numberline {21}Nonlinear equations}{252}{chapter.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {21.1}Bisection method}{252}{section.21.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {21.2}Newton's method for one equation with one variable}{254}{section.21.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {21.3}Newton's method for sets of nonlinear equations}{255}{section.21.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {21.4}Secant method}{256}{section.21.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {21.5} Convergence analysis of Newton's method}{256}{section.21.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {22}Unconstrained minimization}{259}{chapter.22}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {22.1}Introduction}{259}{section.22.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {22.2}Gradient and Hessian}{260}{section.22.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {22.3}Newton's method for minimizing a convex function }{263}{section.22.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {23}Complexity of iterative algorithms}{265}{chapter.23}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {23.1}Iterative algorithms}{265}{section.23.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {23.2} Linear and R-linear convergence}{266}{section.23.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {23.2.1}R-linear convergence}{266}{subsection.23.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {23.3}Quadratic convergence}{267}{section.23.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {23.4}Superlinear convergence}{267}{section.23.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\@mypartnumtocformat {VII}{Appendix}}{268}{part.7}%
 \ttl@stoptoc {default@6}
 \ttl@starttoc {default@7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Complexity}{253}{appendix.A}%
+\contentsline {chapter}{\numberline {A}Complexity}{269}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Vector Operations}{253}{section.A.1}%
+\contentsline {section}{\numberline {A.1}Vector Operations}{269}{section.A.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Matrix Operations}{253}{section.A.2}%
+\contentsline {section}{\numberline {A.2}Matrix Operations}{269}{section.A.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Factorization and Inverses}{254}{section.A.3}%
+\contentsline {section}{\numberline {A.3}Factorization and Inverses}{270}{section.A.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Solving Least Squares Problems}{254}{section.A.4}%
+\contentsline {section}{\numberline {A.4}Solving Least Squares Problems}{270}{section.A.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Big-Times-Small-Squared Mnemonic}{254}{section.A.5}%
+\contentsline {section}{\numberline {A.5}Big-Times-Small-Squared Mnemonic}{270}{section.A.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}\bbl@ensure@english {List of Figures}}{255}{appendix.B}%
+\contentsline {chapter}{\numberline {B}\bbl@ensure@english {List of Figures}}{271}{appendix.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}List of Algorithms}{257}{appendix.C}%
+\contentsline {chapter}{\numberline {C}List of Algorithms}{273}{appendix.C}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {D}List Of Definitions}{259}{appendix.D}%
+\contentsline {chapter}{\numberline {D}List Of Definitions, Theorems and Corollaries}{275}{appendix.D}%
 \contentsfinish 

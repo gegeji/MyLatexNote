@@ -4,11 +4,13 @@
 
 \subsection{Linear Equation Systems}
 \begin{example}
-    \begin{equation}A \boldsymbol{x}=\boldsymbol{b} \Leftrightarrow \displaystyle \begin{matrix}
-              & x+ & 2 & y+ & 3 & z= & 6 \\
-            2 & x+ & 5 & y+ & 2 & z= & 4 \\
-            6 & x- & 3 & y+ &   & z= & 2
-        \end{matrix} \end{equation}
+    \begin{equation}
+         A\boldsymbol{x} =\boldsymbol{b} \Leftrightarrow { \left\{\begin{matrix}
+        x & + & 2y & + & 3z & = & 6\\
+        2x & + & 5y & + & 2z & = & 4\\
+        6x & - & 3y & + & z & = & 2
+        \end{matrix}\right. }
+         \end{equation}
 \end{example}
 
 见Row Picture,Column Picture的概念。
@@ -18,20 +20,20 @@
 \begin{example}[Elimination]
     Before
 
-    \begin{center}
-        $\displaystyle \begin{matrix}
-                  & x- & 2 & y & = & 1  \\
-                3 & x+ & 2 & y & = & 11
-            \end{matrix}$
-    \end{center}
-
+        $$ \left\{\begin{matrix}
+        x & - & 2y & = & 1\\
+        3x & + & 2y & = & 11
+        \end{matrix}\right. $$
+        
+        
+   
     After
-    \begin{center}
-        $\displaystyle \begin{matrix}
-                 & x- & 2 & y & = & 1 \\
-                 &    & 8 & y & = & 8
-            \end{matrix}$
-    \end{center}
+    
+    $$ \left\{\begin{matrix}
+        x & - & 2y & = & 1\\
+         &  & 8y & = & 8
+        \end{matrix}\right. $$
+    
 
 \end{example}
 
@@ -60,7 +62,7 @@
 \end{definition}
 
 \begin{definition}[Augmented matrix]
-    \begin{equation}\displaystyle \left[\begin{matrix}
+    \begin{equation} \left[\begin{matrix}
                 A & b
             \end{matrix}\right]\end{equation}
 \end{definition}
@@ -68,9 +70,9 @@
 \subsubsection{Computing $A^{-1}$ by Gauss-Jordan Elimination}
 
 \begin{center}
-    Multiply $\displaystyle \left[\begin{matrix}
+    Multiply $ \left[\begin{matrix}
                 A & I
-            \end{matrix}\right]$ by $\displaystyle A^{-1}$ to get $\displaystyle \left[\begin{matrix}
+            \end{matrix}\right]$ by $ A^{-1}$ to get $ \left[\begin{matrix}
                 I & A^{-1}
             \end{matrix}\right]$
 \end{center}
@@ -93,34 +95,34 @@ If $ A $ is invertible, then $ A x=0 $ can only have the \textbf{zero solution} 
         \end{aligned} \end{equation}
 
 
-    它变成Reduced echelon form $R$.
+    然后将它变成Reduced echelon form $R$.
 
-    \begin{center}
-        $\displaystyle \begin{matrix}
-                ( divided\ by\ 2)                      \\
-                \left( divided\ by\ \frac{3}{2}\right) \\
-                \left( divided\ by\ \frac{4}{3}\right)
+   
+    $$ \begin{matrix}
+                (\text{divided by }2)                      \\
+                \left(\text{divided by }\dfrac{3}{2}\right) \\
+                \left(\text{divided by }\dfrac{4}{3}\right)
             \end{matrix}\left[\begin{matrix}
-                    1 & 0 & 0 & \frac{3}{4} & \frac{1}{2} & \frac{1}{4} \\
-                    0 & 1 & 0 & \frac{1}{2} & 1           & \frac{1}{2} \\
-                    0 & 0 & 1 & \frac{1}{4} & \frac{1}{2} & \frac{3}{4}
+                    1 & 0 & 0 & \dfrac{3}{4} & \dfrac{1}{2} & \dfrac{1}{4} \\
+                    0 & 1 & 0 & \dfrac{1}{2} & 1           & \dfrac{1}{2} \\
+                    0 & 0 & 1 & \dfrac{1}{4} & \dfrac{1}{2} & \dfrac{3}{4}
                 \end{matrix}\right] =\left[\begin{matrix}
                     I & x_{1} & x_{2} & x_{3}
                 \end{matrix}\right] =\ \left[\begin{matrix}
                     I & K^{-1}
-                \end{matrix}\right]$
-    \end{center}
+                \end{matrix}\right]$$
+    
 
 
     \begin{enumerate}
         \item $ K $ is symmetric across its main diagonal. Then $ K^{-1} $ is also symmetric.
         \item $ K $ is tridiagonal (only three nonzero diagonals). But $ K^{-1} $ is a dense matrix with no zeros. That is another reason we don't often compute inverse matrices. The inverse of a band matrix is generally a dense matrix.
-        \item The product of pivots is $ 2\left(\frac{3}{2}\right)\left(\frac{4}{3}\right)=4 $. This number 4 is the determinant of $ K $.
+        \item The product of pivots is $ 2\left(\frac{3}{2}\right)\left(\frac{4}{3}\right)=4 $. This number 4 is the determinant of $ K $. $ K^{-1} $ involves division by the determinant of $ K $.
+        $$ K^{-1}=\frac{1}{4}\left[\begin{array}{lll}3 & 2 & 1 \\ 2 & 4 & 2 \\ 1 & 2 & 3\end{array}\right] $$
     \end{enumerate}
 
-    $ K^{-1} $ involves division by the determinant of $ K \quad K^{-1}=\frac{1}{4}\left[\begin{array}{lll}3 & 2 & 1 \\ 2 & 4 & 2 \\ 1 & 2 & 3\end{array}\right] $.
 
-    This is why an invertible matrix cannot have a zero determinant: we need to divide.
+    This is why an \textbf{invertible matrix} cannot have a \textbf{zero determinant}: we need to \textbf{divide}.
 
 \end{example}
 
@@ -197,7 +199,18 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
 
 \subsection{$L$、$U$矩阵的性质}
 
-根据矩阵的乘法原理， 有
+回顾矩阵乘法的定义
+
+\begin{definition}[矩阵乘法]
+    设矩阵 $ A \in \mathbb{R}^{m \times p}, B \in \mathbb{R}^{p \times n} $,那么矩阵$A$与$B$的乘积， 记 作C $ =A B $ ,  则矩阵 $ C \in \mathbb{R}^{m \times n} $ 的第 i行第 $ j $ 列元素 $ C_{i j} $
+
+
+    \begin{equation}
+{C}_{i j}=\sum_{k=1}^{p} A_{i k} B_{k j}
+\end{equation}
+\end{definition}
+
+对于$L$、$U$有
 
 \begin{theorem}
     $ A $ 的第一行元素 $ a_{1 j} $ 为
@@ -214,7 +227,7 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
 \end{corollary}
 
 \begin{proof}
-    \begin{equation}\displaystyle \begin{aligned}A & =\left(\begin{array}{ c c c c c }
+    \begin{equation} \begin{aligned}A & =\left(\begin{array}{ c c c c c }
                 \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{11}}} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\cdots }} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{1r}}} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\cdots }} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{1n}}} \\
                 \vdots                                               & \ddots                                                & \vdots                                               &                                                       & \vdots                                               \\
                 a_{r1}                                               & \cdots                                                & a_{rr}                                               & \cdots                                                & a_{rn}                                               \\
@@ -243,7 +256,7 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
 \end{corollary}
 
 \begin{proof}
-    \begin{equation}\displaystyle \begin{aligned} A & =\left(\begin{array}{ c c c c c }
+    \begin{equation} \begin{aligned} A & =\left(\begin{array}{ c c c c c }
                 \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{11}}}  & \cdots & a_{1r} & \cdots & a_{1n} \\
                 \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\vdots }} & \ddots & \vdots &        & \vdots \\
                 \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{a_{r1}}}  & \cdots & a_{rr} & \cdots & a_{rn} \\
@@ -267,13 +280,13 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
 \end{proof}
 
 \begin{theorem}
-    $ A $ 的第 $ r $ 行主对角线以右元素元素 $ a_{1 j}(j=1, \cdots, n) $ 为
+    $ A $ 的第 $ r $ 行主对角线以右元素 $ a_{r j}(j=1, \cdots, n, j \ge r) $ 为
 
     \begin{equation}a_{r j}=\sum_{k=1}^{r} l_{r k} u_{k j}, r=1,2, \cdots, n,j=r, \cdots, n \end{equation}
 \end{theorem}
 
 \begin{proof}
-    \begin{equation}\displaystyle
+    \begin{equation}
         \begin{aligned}
             A & =\left(\begin{array}{ c c c c c }
                 a_{11} & \cdots & a_{1r}                                               & \cdots                                                & a_{1n}                                               \\
@@ -328,7 +341,7 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
 \end{theorem}
 
 \begin{proof}
-    \begin{equation}\displaystyle
+    \begin{equation}
         \begin{aligned}
             A & =\left(\begin{array}{ c c c c c }
                 a_{11} & \cdots & a_{1r}                                                & \cdots & a_{1n} \\
@@ -376,7 +389,7 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
 
 复杂度: $ \frac{2}{3} n^{3}+2 n^{2} \approx \frac{2}{3} n^{3} $ flops
 
-\begin{algorithm}
+\begin{algorithm}[htbp]
     \caption{Solving $Ax = b$ Using LU Decomposition}
     对矩阵 $ A $ 进行LU分解 $ \left(\frac{2}{3} n^{3}\right. $ flops $ ) $\;
     回代法: 求解 $ L y=b\left(n^{2}\right. $ flops $ ) $\;
@@ -668,7 +681,7 @@ $PA=LU$分解方法不唯一，随着 $ P $ 的选择不同， $L$、$U$也不�
 \section{稀疏线性方程组}
 
 \begin{theorem}
-    如果矩阵 $ \mathrm{A} $ 是系稀疏矩阵， 则它一般可以被分解为
+    如果矩阵 $ \mathrm{A} $ 是稀疏矩阵， 则它一般可以被分解为
     \begin{equation}
         A=P_{1} L U P_{2}
     \end{equation}
