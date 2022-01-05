@@ -62,7 +62,7 @@ x_{1} +x_{2} =68\neq 67
 使用$\ell_1$、$\ell_\infty$等也可以度量误差，但是函数在零点处不光滑，不能求导。
 
 \begin{problem}[求解最小二乘解]
-    给定 $ {A} \in \mathbb{R}^{m \times n}, {~b} \in \mathbb{R}^{m} $, 求解 $ x \in \mathbb{R}^{n} $ 让目标函数最小
+    给定 $ {A} \in \mathbb{R}^{m \times n}, {b} \in \mathbb{R}^{m} $, 求解 $ x \in \mathbb{R}^{n} $ 让目标函数最小
 
 \begin{equation} \min _{x}\|A x-b\|_{2}^{2}=\min _{x} \sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i j} x_{j}-b_{i}\right)^{2} \end{equation}
 \end{problem}
@@ -458,7 +458,7 @@ Q=\left[\begin{array}{ll}
 
 \section{梯度下降法}
 
-给定 $ A \in \mathbb{R}^{m \times n}, {~b} \in \mathbb{R}^{m}, x \in \mathbb{R}^{n} $ 目标函数:
+给定 $ A \in \mathbb{R}^{m \times n}, {b} \in \mathbb{R}^{m}, x \in \mathbb{R}^{n} $ 目标函数:
 \begin{equation}
 f(x)=\|A x-b\|_{2}^{2}=\sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i j} x_{j}-b_{i}\right)^{2}
 \end{equation}

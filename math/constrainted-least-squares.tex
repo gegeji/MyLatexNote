@@ -26,6 +26,12 @@
     \input{tikz_images/constrainted-least-square.tex}
 \end{FigureCenter}
 
+注意到
+
+$$ \nabla f(\hat{x})=\left[\begin{array}{l}4 \hat{x}_{1} \\ 2 \hat{x}_{2}\end{array}\right]=\left[\begin{array}{l}\frac{4}{3} \\ \frac{4}{3}\end{array}\right] $$
+
+$$ \nabla h(\hat{x})=\left[\begin{array}{l}1 \\ 1\end{array}\right] $$
+
 为了惩罚这个解未能满足约束条件， 引入\term{拉格朗日函数 (Lagrange Function)}
 \begin{equation}
 L(x, \lambda)=f(x)-\lambda h(x)=2 x_{1}^{2}+x_{2}^{2}+\lambda\left(1-x_{1}-x_{2}\right)
@@ -78,6 +84,7 @@ $ \lambda_{i} \in \mathbb{R}, i \in {I}, u_{j} \in \mathbb{R}^{+}, j \in J $称�
     
     KKT条件包括：
 \begin{itemize}
+    \item $\nabla_{x} L(x, \lambda, u)=\nabla_{x} f(x)-\sum_{i \in I} \lambda_{i} \nabla_{x} h_{i}(x)-\sum_{j \in J} u_{j} \nabla_{x} g_{j}(x)=0$
     \item $ h_{i}(x)=0, i \in I $
     \item $ \lambda_{i} h_{i}(x)=0, i \in I $
     \item $ g_{j}(x) \leq 0, j \in J $
@@ -1425,7 +1432,7 @@ $J$ 为起作用约束的集合。
     一点的梯度与等值线相互垂直。
 \end{corollary}
 
-再作约束函数 $ g_{1}({x})=0 $ 和 $ g_{2}({x})=0 $ 的梯度 $ \nabla g_{1}\left({x}^{k}\right) $ 和 $ \nabla g_{2}\left({x}^{k}\right) $, 它们分别垂直 $ g_{1}({x})=0 $ 和 $ g_{2}({x})=0 $ 两曲面在 $ {x}^{k} $ 的切平面， 并形成一个雉形夹角区域。此时， 可能有 $ {a} 、 {~b} $ 两种情形：
+再作约束函数 $ g_{1}({x})=0 $ 和 $ g_{2}({x})=0 $ 的梯度 $ \nabla g_{1}\left({x}^{k}\right) $ 和 $ \nabla g_{2}\left({x}^{k}\right) $, 它们分别垂直 $ g_{1}({x})=0 $ 和 $ g_{2}({x})=0 $ 两曲面在 $ {x}^{k} $ 的切平面， 并形成一个雉形夹角区域。此时， 可能有 $ {a} 、 {b} $ 两种情形：
 
 \begin{FigureCenter}{}
     \label{fig:kkt-3}
@@ -1819,7 +1826,7 @@ h_j({x}^*) = 0 \quad \text{for $j = 1,\dots,l$}
 \label{thm:KKT7}
 \end{theorem}
 
-\begin{theorem} Let $z : \mathbb{R}^n \rightarrow \mathbb{R}$ be a differentiable concave  function, $g_i:\mathbb{R}^n \rightarrow \mathbb{R}$ be differentiable convex functions for $i = 1,\dots,m$ and $h_j:\mathbb{R}^n \rightarrow \mathbb{R}$ be affine functions for $j=1,\dots,l$. Suppose there are $\lambda_1,\dots,\lambda_m \in \mathbb{R}$ and $\mu_1,\dots\mu_l \in \mathbb{R}$ so that:
+\begin{theorem} Let $z : \mathbb{R}^n \rightarrow \mathbb{R}$ be a differentiable concave (凹) function, $g_i:\mathbb{R}^n \rightarrow \mathbb{R}$ be differentiable convex functions for $i = 1,\dots,m$ and $h_j:\mathbb{R}^n \rightarrow \mathbb{R}$ be affine functions for $j=1,\dots,l$. Suppose there are $\lambda_1,\dots,\lambda_m \in \mathbb{R}$ and $\mu_1,\dots\mu_l \in \mathbb{R}$ so that:
 
 \begin{gather*}
 \text{Primal Feasibility}: \left\{
@@ -2078,31 +2085,34 @@ s.t. & -\lambda_1 - 2\lambda_2 + 1\leq 0\\
 \end{aligned}
 \end{equation}
 As before, we can write down the KKT conditions:
-\begin{gather*}
-\text{Primal Feasibility}: \left\{
+
+$$\text{Primal Feasibility}: \left\{
 \begin{aligned}
 \lambda_1 + 2\lambda_2 &\geq 1\\
 2\lambda_1 + \lambda_2 &\geq 1\\
 \lambda_1, \lambda_2 & \geq 1
 \end{aligned}
-\right.\\
-\text{Dual Feasibility}:\left\{
+\right.$$
+
+
+$$\text{Dual Feasibility}:\left\{
 \begin{aligned}
 \begin{bmatrix}-4\\-6\end{bmatrix} - x_1\begin{bmatrix}-1\\-2\end{bmatrix} - 
 x_2\begin{bmatrix}-2\\-1\end{bmatrix} -s_1\begin{bmatrix}-1\\0\end{bmatrix} - 
 s_2\begin{bmatrix}0\\-1\end{bmatrix} &= \begin{bmatrix}0\\0\end{bmatrix}\\
 x_1,x_2,s_1,s_2 & \geq 0
 \end{aligned}
-\right.\\
-\text{Complementary Slackness}:\left\{
-\begin{aligned}
-x_1(-\lambda_1 - 2\lambda_2 + 1) &= 0\\
-x_2(-2\lambda_1 - \lambda_2 + 1) &= 0\\
-s_1(-\lambda_1) &= 0\\
-s_2(-\lambda_2) &= 0
-\end{aligned}
-\right.
-\end{gather*}
+\right.$$
+
+$$\text{Complementary Slackness}:\left\{
+    \begin{aligned}
+    x_1(-\lambda_1 - 2\lambda_2 + 1) &= 0\\
+    x_2(-2\lambda_1 - \lambda_2 + 1) &= 0\\
+    s_1(-\lambda_1) &= 0\\
+    s_2(-\lambda_2) &= 0
+    \end{aligned}
+    \right.$$
+
 Again, we can re-write the dual feasibility conditions (for which we have intentionally chosen specific dual variable names) and see they become:
 \begin{equation}
 \begin{aligned}
@@ -2120,26 +2130,35 @@ x_1,x_2&\geq 0
 \end{aligned}
 \end{equation}
 and we've recovered the constraints from the original primal problem as the dual feasibility conditions of the KKT conditions for the dual optimization problem. We can go further. Note:
-\begin{align*}
--s_1 &= x_1 + 2x_2 - 4= -g_1(x_1,x_2)\\
+\begin{equation}
+    \begin{aligned}
+        -s_1 &= x_1 + 2x_2 - 4= -g_1(x_1,x_2)\\
 -s_2 &= 2x_1 + x_2 -6 = -g_2(x_1,x_2)
-\end{align*}
+    \end{aligned}
+\end{equation}
+
 while from our earlier observations about the surplus variables $\lambda_3$ and $\lambda_4$ we know:
-\begin{align*}
-\lambda_3 &= -\lambda_1 - 2\lambda_2 + 1\\
--\lambda_4 &= -2\lambda_1 - \lambda_2 + 1
-\end{align*}
+\begin{equation}
+    \begin{aligned}
+        \lambda_3 &= -\lambda_1 - 2\lambda_2 + 1\\
+    -\lambda_4 &= -2\lambda_1 - \lambda_2 + 1
+    \end{aligned}
+\end{equation}
 Thus, complementary slackness from the primal problem is:
-\begin{align*}
-\lambda_3(-x_1) &= 0 \iff \lambda_3(x_1) =0  \iff 
+\begin{equation}
+\begin{aligned}
+    \lambda_3(-x_1) &= 0 \iff \lambda_3(x_1) =0  \iff 
 	x_1(\lambda_1 + 2\lambda_2 - 1) = 0\\
 \lambda_4(-x_2) &= 0 \iff \lambda_4(x_2) =0 \iff x_2(-2\lambda_1 - \lambda_2 + 1) = 0
-\end{align*}
+\end{aligned}
+\end{equation}
 Likewise:
-\begin{align*}
-\lambda_1(x_1 + 2x_2 - 4) &=0 \iff \lambda_1(-s_1) = 0 \iff s_1(-\lambda_1) = 0\\
+\begin{equation}
+    \begin{aligned}
+        \lambda_1(x_1 + 2x_2 - 4) &=0 \iff \lambda_1(-s_1) = 0 \iff s_1(-\lambda_1) = 0\\
 \lambda_2(2x_1 + x_2 - 6) &=0 \iff \lambda_2(-s_2) = 0 \iff s_2(-\lambda_2) = 0
-\end{align*}
+    \end{aligned}
+\end{equation}
 Thus, the complementary slackness conditions of the primal problem are identical to the complementary slackness conditions of the dual problem. This fact is true for linear programming problems in general.
 
 \begin{remark} For an arbitrary linear programming problem and its dual, the KKT conditions for the primal and dual problems are \textbf{equivalent}, but the dual feasibility conditions for the primal problem are identical to the primal feasibility conditions for the dual problem and vice-versa. \term{Thus, two linear programming problems are dual to each other if and only if they share KKT conditions with the primal and dual feasibility conditions swapped.}
@@ -2232,7 +2251,7 @@ The solution: $\mu = 25/2$ satisfies this equality. Notice the gradient of the o
 \label{fig:KKTNLP}
 \end{figure}
 
-\section[Supplementary Material: KKT Conditions ]{Supplementary Material: KKT Conditions \footnote{These notes are taken from \href{https://www.stat.cmu.edu/~ryantibs/convexopt/}{Machine Learning 10-725 (Convex Optimization)}.}}
+\section[Supplementary Material: KKT Conditions]{Supplementary Material: KKT Conditions \footnote{These notes are taken from \href{https://www.stat.cmu.edu/~ryantibs/convexopt/}{Machine Learning 10-725 (Convex Optimization)}.}}
 
 
 \subsection{Dual Problem}
@@ -2281,8 +2300,6 @@ For the given problem \ref{pro:kkt-problem}, the KKT conditions are:
 \end{theorem}
 
 \begin{proof}
-    Proof: 
-    
     Sufficiency: if $ \exists x^{*} $ and $ u^{*}, v^{*} $ that satisfy the KKT conditions, $ g\left(u^{*}, v^{*}\right)=f\left(x^{*}\right)+\sum_{i=1}^{m} u_{i}^{*} h_{i}\left(x^{*}\right)+ $ $ \sum_{j=1}^{r} v_{j}^{*} \ell_{j}\left(x^{*}\right)=f\left(x^{*}\right) $ 
     
     The first equality holds from stationarity, since $ f(x)+\sum_{i=1}^{m} u_{i} h_{i}(x)+\sum_{j=1}^{r} v_{j} \ell_{j}(x) $ is convex, so any stationary point is a minimizer, and the second holds by complementary slackness. 

@@ -847,7 +847,7 @@ R_{11} & R_{12} & R_{13} \\
 Gram-Schmidt方法第$k$次循环的复杂度：
 
 \begin{itemize}
-    \item $ a_{k} $ 有$k-1$个 $ q_{i}^{T} a_{k} $ 内积操作: $ ( {k}-1)(2  {~m}-1) $ flops
+    \item $ a_{k} $ 有$k-1$个 $ q_{i}^{T} a_{k} $ 内积操作: $ ( {k}-1)(2  {m}-1) $ flops
     \item 计算 $ \tilde{q}_{k}: 2( {k}-1)  {m} $ flops. \begin{equation} \tilde{q}_{i}=a_{i}-\left(q_{1}^{T} a_{i}\right) q_{1}-\cdots-\left(q_{i-1}^{T} a_{i}\right) q_{i-1} \end{equation}
     \item 计算 $ R_{k k} $ 和 $ q_{k}: 3  {m} $ flops. $  R_{k k}=\left\|\tilde{q}_{k}\right\|_{2}, q_{k}=\tilde{q}_{k} / R_{k k} $
 \end{itemize}
@@ -1489,7 +1489,7 @@ x_{k: m}-2\left(v_{k}^{T} x_{k: m}\right) v_{k}
 
 \subsection{矩阵-向量积 $ H_{k} x $算法复杂度}
 
-$ H_{k} x $ 乘积的复杂度为： $ 4( {~m}- {k}+1) $ flops.
+$ H_{k} x $ 乘积的复杂度为： $ 4( {m}- {k}+1) $ flops.
 
 $H_{1} H_{2}, \ldots H_{n} $或其转置的乘积的复杂度为： 
 
