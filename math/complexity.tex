@@ -46,3 +46,31 @@ where `big' and `small' refer to big and small problem dimensions. We list some 
     \item The constrained least squares problem involves two matrices $ A $ and $ C $, and three dimensions that satisfy $ m+p \geq n $. The numbers $ m+p $ and $ n $ are the big and small dimensions of the stacked matrix $ \left[\begin{array}{c}A \\ C\end{array}\right] $. The cost of solving the constrained least squares problem is $ 2(m+p) n^{2}+2 n p^{2} $ flops, which is between $ 2(m+p) n^{2} $ flops and $ 4(m+p) n^{2} $ flops, since $ n \leq m+p $.
 \end{itemize}
 
+\section{本书中其他列出时间复杂度的章节、定理}
+
+\begin{center}
+    \begin{table}[htbp]
+    \begin{tabular}{|l|l|l|}
+    \hline
+    \textbf{算法} & \textbf{页码} & \textbf{章节（定理、推论）编号} \\ \hline
+        向量运算        &   \pageref{complexity:vector-operation} &  \cref{complexity:vector-operation}      \\ \hline
+        矩阵运算        &     \pageref{complexity:matrix-operations} &  \cref{complexity:matrix-operations}     \\ \hline
+        前向回代        &   \pageref{complexity:Backward-Substitution} &   \cref{complexity:Backward-Substitution}       \\ \hline
+        后向回代        &   \pageref{complexity:forward-substitution} & \cref{complexity:forward-substitution}         \\ \hline
+        用Gram-Schmidt求解QR分解        &    \pageref{complexity:gram-schmidt-qr}  &  \cref{complexity:gram-schmidt-qr}     \\ \hline
+        Householder变换求解$Hx$    &    \pageref{complexity:Hx} &  \cref{complexity:Hx}      \\ \hline
+        Householder算法中求解$H_k x$        &    \pageref{complexity:Hkx} &   \cref{complexity:Hkx}     \\ \hline
+        Householder算法    &    \pageref{complexity:householder}  &   \cref{complexity:householder}     \\ \hline
+        求解上、下三角矩阵的逆        &    \pageref{complexity:inverse-of-triangular}&  \cref{complexity:inverse-of-triangular}       \\ \hline
+        QR分解求解最小二乘法        &    \pageref{complexity:least-square-using-qr} &  \cref{complexity:least-square-using-qr}      \\ \hline
+        求解$PA=LU$        &    \pageref{complexity:PA-eqs-LU} &  \cref{complexity:PA-eqs-LU}     \\ \hline
+        用QR分解求解$Ax=b$        &    \pageref{complexity:qr-solves-Ax-eqs-b} &    \cref{complexity:qr-solves-Ax-eqs-b}    \\ \hline
+        用QR分解求解$A^{-1}$         &    \pageref{complexity:qr-solves-inverse-of-A} & \cref{complexity:qr-solves-inverse-of-A}      \\ \hline
+        用QR分解求解最小范数优化问题        &    \pageref{complexity:qr-solves-min-norm} & \cref{complexity:qr-solves-min-norm}      \\ \hline
+        计算列正交矩阵$A$的矩阵向量乘法$Ax$        &    \pageref{complexity:Qx}     &  \cref{complexity:Qx}  \\ \hline
+        QR分解求解线性方程组        &    \pageref{complexity:linear-equation-qr} &  \cref{complexity:linear-equation-qr}      \\ \hline
+            用LU分解求解KKT    &      \pageref{complexity:kkt-lu}  & \cref{complexity:kkt-lu}    \\ \hline
+        KKT        &    \pageref{complexity:kkt} &   \cref{complexity:kkt}     \\ \hline
+    \end{tabular}
+    \end{table}
+\end{center}

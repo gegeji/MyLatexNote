@@ -310,6 +310,8 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
             \end{array}\right)
             \end{aligned}
     \end{equation}
+
+    由于$l_{rj}, j > r$都是0，所以求和只需加和到第$r$项。
 \end{proof}
 
 \begin{corollary}
@@ -365,6 +367,8 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
             \end{array}\right)
             \end{aligned}
     \end{equation}
+
+    由于$u_{rj}, r > j$都是0，所以求和只需加和到第$r$项。
 \end{proof}
 
 \begin{corollary}
@@ -385,6 +389,7 @@ Split $ U $ into $ \left[\begin{array}{cccc}d_{1} & & & \\ & d_{2} & & \\ & & \d
 
 
 \subsection{Solving $Ax = b$ Using LU Decomposition and its Complexity}
+\label{Ax-eqs-b-LU}
 
 求解 $ A x=b, A $ 为非奇异矩阵，LU算法为求解方程组 $ A x=b $ 的标准解法。
 
@@ -491,8 +496,8 @@ $PA=LU$分解方法不唯一，随着 $ P $ 的选择不同， $L$、$U$也不�
 
 \begin{example}[$PA=LU$]
 
-
-    $ A=\left[\begin{array}{lll}0 & 5 & 5 \\ 2 & 9 & 0 \\ 6 & 8 & 8\end{array}\right], P_{1}=\left[\begin{array}{lll}0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0\end{array}\right], P_{2}=\left[\begin{array}{lll}0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1\end{array}\right] $
+    假设
+    $$ A=\left[\begin{array}{lll}0 & 5 & 5 \\ 2 & 9 & 0 \\ 6 & 8 & 8\end{array}\right], P_{1}=\left[\begin{array}{lll}0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0\end{array}\right], P_{2}=\left[\begin{array}{lll}0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1\end{array}\right] $$
 
     易知
     \begin{equation}P_{1}^{T}=P_{1}^{-1}=P_{1}, P_{2}^{T}=P_{2}^{-1}=P_{2}\end{equation}
@@ -529,6 +534,8 @@ $PA=LU$分解方法不唯一，随着 $ P $ 的选择不同， $L$、$U$也不�
 \end{theorem}
 
 \subsubsection{The Complexity of $PA = LU$}
+
+\label{complexity:PA-eqs-LU}
 
 复杂度: $ \frac{2}{3} n^{3} $ flops
 

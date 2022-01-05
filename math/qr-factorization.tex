@@ -26,7 +26,10 @@
 
 使用\term{前向回代(Forward Substitution)}算法求解。
 
-时间复杂度： $ 1+3+5+\ldots+(2  {n}-1)= {n}^{2} $ flops
+\begin{theorem}[前向回代时间复杂度]
+    \label{complexity:forward-substitution}
+    $ 1+3+5+\ldots+(2  {n}-1)= {n}^{2} $ flops
+\end{theorem}
 
 \begin{algorithm}[htbp]
     \caption{Forward Substitution}
@@ -57,7 +60,12 @@ $  x_{3} =\dfrac{b_{3}-A_{31} x_{1}-A_{32} x_{2}}{A_{33}} $ \;
     $ x_{1}=\dfrac{b_{1}-A_{12} x_{2}-A_{13} x_{3}-\cdots-A_{1 n} x_{n}}{A_{11}}  $\;
 \end{algorithm}
 
-时间复杂度： $ 1+3+\ldots+2  {n}-1= {n}^{2} $ flops
+\begin{theorem}[后向回代时间复杂度]
+    $ 1+3+\ldots+2  {n}-1= {n}^{2} $ flops
+\label{complexity:Backward-Substitution}
+\end{theorem}
+
+
 
 \subsection{The Inverses of Triangular Matrices}
 
@@ -78,15 +86,17 @@ A x=0 \quad \Rightarrow \quad x=0
     下三角矩阵的逆是下三角矩阵，上三角矩阵的逆是上三角矩阵。
 \end{theorem}
 
-计算上/下三角矩阵 $  {A} \in \mathbb{R}^{n \times n} $ 逆的复杂度
+\begin{theorem}[计算上/下三角矩阵 $  {A} \in \mathbb{R}^{n \times n} $ 逆的复杂度]
+    \label{complexity:inverse-of-triangular}
 
 \begin{equation} n^{2}+(n-1)^{2}+\cdots+1 \approx \frac{1}{3} n^{3}\text{ flops }\end{equation} 
+\end{theorem}
+
+
 
 \section{QR Factorization}
 
-\begin{remark}
-    下面各节均假定矩阵 $ A \in \mathbb{R}^{m \times n} $ 的列向量线性无关。
-\end{remark}
+
 
 如果矩阵 $ A \in \mathbb{R}^{m \times n} $ 的列向量线性无关，则可以将其分解为
 
@@ -105,7 +115,9 @@ A x=0 \quad \Rightarrow \quad x=0
 对角元素 $ R_{i i} $ 是非零的。若 $ R_{i i}<0 $, 改变 $ R_{i i}, \cdots, R_{i n} $ 和向量 $ q_{i} $ 的符号。大多数定义要求 $ R_{i i}>0 $,使得$Q$和$R$是唯一的。
 \end{theorem}
 
-
+\begin{remark}
+    下面各节均假定矩阵 $ A \in \mathbb{R}^{m \times n} $ 的列向量线性无关。
+\end{remark}
 
 \begin{corollary}
     $ Q \in \mathbb{R}^{m \times n} $ 具有标准正交列 $ \left(Q^{T} Q=I\right) $.
@@ -373,6 +385,7 @@ $R \in \boldsymbol{C}^{n \times n}$ 具有实非零对角元素的上三角矩�
 \end{itemize}
 
 \subsection{QR分解和求解线性方程组$Ax = b$}
+\label{complexity:qr-solves-Ax-eqs-b}
 
 QR分解的思想可以用于加快求逆矩阵速度。
 
@@ -400,6 +413,7 @@ QRx = b &\Rightarrow x = R^{-1} \left(Q^Tb\right)
 
 
 \subsection{QR分解和求解伪逆 $A^{\dagger}$、逆 $A^{-1}$}
+\label{complexity:qr-solves-inverse-of-A}
 
 \begin{definition}[列线性无关矩阵$A$的伪逆]
     \begin{equation}A^{\dagger}=\left(A^{T} A\right)^{-1} A^{T}\end{equation}
@@ -843,6 +857,7 @@ R_{11} & R_{12} & R_{13} \\
 \end{example}
 
 \subsection{基于Gram-Schmidt方法进行QR分解的时间复杂度}
+\label{complexity:gram-schmidt-qr}
 
 Gram-Schmidt方法第$k$次循环的复杂度：
 
@@ -960,9 +975,9 @@ end
 
 \section{QR Decomposition Using Householder Transformation}
 
-Householder算法是QR分解常用的算法(MATLAB和Julia中的qr函数).与Gram-Schmidt相比，对舍入误差更有鲁棒性。
+Householder算法是QR分解常用的算法（\textsc{MATLAB}和\textsc{Julia}中的\verb|qr|函数）.与Gram-Schmidt相比，对舍入误差更有鲁棒性。
 
-Householder算法计算一个 “完整的” QR分解：
+Householder算法计算一个“完整的”QR分解：
 \begin{equation} A_{m \times n}=\left[\begin{array}{ll}Q_{m \times n} & \tilde{Q}_{m \times (m-n)}\end{array}\right]\left[\begin{array}{l}R_{n  \times  n} \\ 0_{(m-n) \times n}\end{array}\right], \quad\left[\begin{array}{ll}Q & \tilde{Q}\end{array}\right]  是列正交的矩阵\end{equation}
 
 \begin{proof}
@@ -1052,6 +1067,7 @@ H x=x-2\left(v^{T} x\right) v
 
 
 \subsubsection{$Hx$的算法复杂度}
+    \label{complexity:Hx}
 
     如果 $ v $ 和 $ x $ 的长度是 $ p $, 复杂度是 $ 4 p $ flops.
 
@@ -1315,6 +1331,30 @@ R \\
 
 返回向量 $ v_{1}, \ldots, v_{n} $, 其中 $ v_{k} $ 的长度为 $ m-k+1 $ .
 
+\subsection{Complexity of Householder Algorithm}
+\label{complexity:householder}
+
+\begin{equation} H_{k}=\left[\begin{array}{cc}I & 0 \\ 0 & I-2 v_{k} v_{k}^{T}\end{array}\right]=I-2\left[\begin{array}{c}0 \\ v_{k}\end{array}\right]\left[\begin{array}{l}0 \\ v_{k}\end{array}\right]^{T} \end{equation}
+
+第$k$次循环时，$v_k \in \mathbf{R}^{m - k + 1}$。
+
+Householder方法第$k$次循环的复杂度：
+
+\begin{itemize}
+    \item 构造$v$需要$4p = 4(m - k + 1)$ flops.
+    \item $ v_{k}^{T} A_{k: m, k: n} $ 的乘积： $ (2({m}-{k}+1)-1)({n}-{k}+1) $ flops
+    \item $ v_{k} $ 的外积： $ (m-k+1)(n-k+1) $ flops
+    \item $ A_{k: m, k: n} $ 的减法： $ ({m}-{k}+1)({n}-{k}+1) $ flops
+\end{itemize}
+
+除去构造$v$所需要的flops总和是$ 4({m}-{k}+1)({n}-{k}+1) $ flops，加上构造$v$需要的flops，所以第$k$次循环的总和： $ 4({m}-{k}+1)({n}-{k}+2) $ flops
+
+\begin{theorem}
+    计算 $ R $ 和 $ v_{1}, \ldots, v_{n} $ 的总复杂度
+
+\begin{equation} \begin{aligned} \sum_{k=1}^{n} 4(m-k+1)(n-k+\boldsymbol{2}) & \approx \int_{0}^{n} 4(m-t)(n-t+1) d t \\ & \approx 2 m n^{2}-\frac{2}{3} n^{3} \text { flops } \end{aligned} \end{equation}
+\end{theorem}
+
 
 
 \subsection{An Example for Householder Algorithm}
@@ -1419,27 +1459,7 @@ I & 0 \\
     \begin{equation} \begin{aligned} H_{3} H_{2} H_{1} A &=\left[\begin{array}{cc}I_{2} & 0 \\ 0 & I_{2}-2 v_{3} v_{3}^{T}\end{array}\right]\left[\begin{array}{cc}I_{1} & 0 \\ 0 & I_{3}-2 v_{2} v_{2}^{T}\end{array}\right]\left(I_{4}-2 v_{1} v_{1}^{T}\right) A \\ &=\left[\begin{array}{cc}I_{2} & 0 \\ 0 & I_{2}-2 v_{3} v_{3}^{T}\end{array}\right]\left[\begin{array}{cc}I_{1} & 0 \\ 0 & I_{3}-2 v_{2} v_{2}^{T}\end{array}\right]\left[\begin{array}{ccc}2 & 4 & 2 \\ 0 & 4 / 3 & 8 / 3 \\ 0 & 2 / 3 & 16 / 3 \\ 0 & 4 / 3 & 20 / 3\end{array}\right] \\ &=\left[\begin{array}{cc}I_{2} & 0 \\ 0 & I_{2}-2 v_{3} v_{3}^{T}\end{array}\right]\left[\begin{array}{rrr}2 & 4 & 2 \\ 0 & -2 & -8 \\ 0 & 0 & 16 / 5 \\ 0 & 0 & 12 / 5\end{array}\right] \\ &=\left[\begin{array}{rrr}2 & 4 & 2 \\ 0 & -2 & -8 \\ 0 & 0 & -4 \\ 0 & 0 & 0\end{array}\right] \end{aligned} \end{equation}
 \end{problem}
 
-\subsection{Complexity of Householder Algorithm}
 
-\begin{equation} H_{k}=\left[\begin{array}{cc}I & 0 \\ 0 & I-2 v_{k} v_{k}^{T}\end{array}\right]=I-2\left[\begin{array}{c}0 \\ v_{k}\end{array}\right]\left[\begin{array}{l}0 \\ v_{k}\end{array}\right]^{T} \end{equation}
-
-Householder方法第$k$次循环的复杂度:
-
-\begin{itemize}
-    \item $ v_{k}^{T} A_{k: m, k: n} $ 的乘积： $ (2({m}-{k}+1)-1)({n}-{k}+1) $ flops
-    \item $ v_{k} $ 的外积： $ (m-k+1)(n-k+1) $ flops
-    \item $ A_{k: m, k: n} $ 的减法： $ ({m}-{k}+1)({n}-{k}+1) $ flops
-\end{itemize}
-
-第$k$次循环的总和： $ 4({m}-{k}+1)({n}-{k}+1) $ flops
-
-计算 $ R $ 和 $ v_{1}, \ldots, v_{n} $ 的总复杂度
-
-\begin{equation} \begin{aligned} \sum_{k=1}^{n} 4(m-k+1)(n-k+\boldsymbol{2}) & \approx \int_{0}^{n} 4(m-t)(n-t+1) d t \\ & \approx 2 m n^{2}-\frac{2}{3} n^{3} \text { flops } \end{aligned} \end{equation}
-
-\begin{remark}
-    $\sum_{k=1}^{n} 4(m-k+1)(n-k+\boldsymbol{2})$ 是因为
-\end{remark}
 
 \section{Householder变换进行QR分解的 $Q$ 因子}
 
@@ -1488,6 +1508,7 @@ x_{k: m}-2\left(v_{k}^{T} x_{k: m}\right) v_{k}
 \end{definition}
 
 \subsection{矩阵-向量积 $ H_{k} x $算法复杂度}
+\label{complexity:Hkx}
 
 $ H_{k} x $ 乘积的复杂度为： $ 4( {m}- {k}+1) $ flops.
 
@@ -1693,6 +1714,7 @@ A=A_{1} A_{2} \cdots A_{k}
 \end{algorithm}
 
 \subsubsection{The Complexity of $ Q R X=I $}
+\label{complexity:QRX-eqs-I}
 
 复杂度: $ 2 n^{3}+n^{3} \approx 3 n^{3} $ flops
 
@@ -1715,6 +1737,7 @@ A=A_{1} A_{2} \cdots A_{k}
 
 
 \subsubsection{The Complexity of Solving Linear Equation Systems Using QR Decomposition}
+\label{complexity:linear-equation-qr}
 
 复杂度: $ 2 n^{3}+3 n^{2} \approx 2 n^{3} $ flops 
 

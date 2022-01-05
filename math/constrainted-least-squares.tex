@@ -259,7 +259,7 @@ x=\left[\begin{array}{c}
 \end{array}
 \end{equation}
 
-求其最优解。
+假设$C_{p \times n}, p \le n$，$C$的行向量线性无关。求这个优化问题的最优解。
 \end{problem}
 
 引入拉格朗日函数
@@ -288,8 +288,16 @@ C x=C C^{T} \lambda=d \Rightarrow \lambda=\left(C C^{T}\right)^{-1} d
 
 以上得到的是$\hat{x}=C^{\dagger} d$是问题最优解的必要条件。还需要证明它是最优解。
 
+\begin{remark}行线性无关矩阵$A$伪逆的定义：
+    矩阵 $  {A} \in \mathbb{R}^{m \times n} $ ,当$m \leq  {n} $ 时，且行向量线性无关，则 $ A A^{T} $ 可逆。 $ A^{T} $ 列向量线性无关，即 $ \left(A^{T}\right)^{T} A^{T}= {A} A^{T} $ 非奇异；
+    定义伪逆:
+    \begin{equation}
+    A^{\dagger}=A^{T}\left(A A^{T}\right)^{-1}
+    \end{equation}
+\end{remark}
+
 \begin{theorem}
-    $\hat{x}=C^{\dagger} d$是问题最优解。
+    $\hat{x}=C^{\dagger} d=C^{T}\left(C C^{T}\right)^{-1} d$是问题最优解。
 \end{theorem}
 
 \begin{proof}
@@ -299,7 +307,20 @@ C x=C C^{T} \lambda=d \Rightarrow \lambda=\left(C C^{T}\right)^{-1} d
 C \hat{x}=C C^{T}\left(C C^{T}\right)^{-1} d=d
 \end{equation}
 
-2. 在 $ C x=d, x \neq \hat{x} $ 的情况下
+2. 对于方程$Cx=d$，假设$x , \hat{x}$是满足这个方程的两个解
+
+\begin{equation}
+    \begin{aligned}
+    \|x\|_{2}^{2} &=\|\hat{x}+x-\hat{x}\|_{2}^{2} \\
+    &=\|\hat{x}\|_{2}^{2}+2 \hat{x}^{T}(x-\hat{x})+\|x-\hat{x}\|_{2}^{2} \\
+    &=\|\hat{x}\|_{2}^{2}+\|x-\hat{x}\|_{2}^{2} \\
+    & \ge \|\hat{x}\|_{2}^{2}
+    \end{aligned}
+    \end{equation}
+
+    即$\|x\|_{2}^{2} \ge \|\hat{x}\|_{2}^{2}$。
+
+在 $  x = \hat{x} $ 的情况下
 
 \begin{equation}
 \begin{aligned}
@@ -310,21 +331,12 @@ C \hat{x}=C C^{T}\left(C C^{T}\right)^{-1} d=d
 \end{aligned}
 \end{equation}
 
-3.在 $ C x=d, x \neq \hat{x} $ 的情况下，证明 $ \|x\|_{2}^{2}>\|\hat{x}\|_{2}^{2} $.
-
-\begin{equation}
-\begin{aligned}
-\|x\|_{2}^{2} &=\|\hat{x}+x-\hat{x}\|_{2}^{2} \\
-&=\|\hat{x}\|_{2}^{2}+2 \hat{x}^{T}(x-\hat{x})+\|x-\hat{x}\|_{2}^{2} \\
-&=\|\hat{x}\|_{2}^{2}+\|x-\hat{x}\|_{2}^{2} \\
-&>\|\hat{x}\|_{2}^{2}
-\end{aligned}
-\end{equation}
+此时等号成立。
 \end{proof}
 
 \section{QR分解求解最小范数优化问题}
-
-对矩阵 $ C^{T} \in \mathbb{R}^{n \times p} $ 进行 $ Q R $ 分解， $ C^{T}=Q R $
+假设$C_{p \times n}, p \le n$，$C$的行向量线性无关。
+对矩阵 $ C^{T} \in \mathbb{R}^{n \times p} $ 进行 $ Q R $ 分解， 设$ C^{T}=Q R $
 \begin{equation}
 \begin{aligned}
 \hat{x} &=C^{T}\left(C C^{T}\right)^{-1} d \\
@@ -353,6 +365,7 @@ C \hat{x}=C C^{T}\left(C C^{T}\right)^{-1} d=d
 
 
 \subsection{QR分解求解最小范数优化问题的复杂度}
+\label{complexity:qr-solves-min-norm}
 
 总复杂度：$ \approx 2 n p^{2} $ flops
 
@@ -428,7 +441,7 @@ $.
 
 % todo (2021-11-25 13:02): figure
 
-在大多数应用中 $ p<n, C x=d $ 是一个欠定方程。它的几何意义是在直线 $ C x=d $ 中，寻找 $ \|A x-b\|_{2}^{2} $ 最小的解。(此时$\|A x-b\|_{2}^{2}$表示一个椭圆).
+在大多数应用中 $ p<n, C x=d $ 是一个欠定方程。它的几何意义是在直线 $ C x=d $ 中，寻找 $ \|A x-b\|_{2}^{2} $ 最小的解。（此时$\|A x-b\|_{2}^{2}$表示一个椭圆）.
 
 特殊情况：
 
@@ -568,6 +581,12 @@ C
 假设 1 是一个比 $ A $ 可右逆更弱的条件。 
 
 假设$ p \leq n \leq m+p $.
+
+\begin{remark}
+    The columns of $A$ is linearly independent $\Rightarrow$ $A$ has right inverse.
+
+    The rows of $A$ is linearly independent $\Rightarrow$ $A$ has left inverse.
+\end{remark}
 
 \section{优化问题：最小二乘法的带约束KKT条件}
 
@@ -813,6 +832,7 @@ d
 \end{algorithm}
 
 \subsection{LU分解求解KKT最优条件的时间复杂度}
+\label{complexity:kkt-lu}
 
 \begin{theorem}
     用LU分解法求解下列线性方程 
@@ -859,6 +879,7 @@ d
 求其最优解。
 \end{problem}
 
+设最优解是$\hat{x}$。
 
 由于 $ \hat{x} $ 满足 $ C \hat{x}=d $ ,则有 \begin{equation}\displaystyle \textcolor[rgb]{0.72,0.33,0.31}{C^{T} C\hat{x}} =\textcolor[rgb]{0.96,0.65,0.14}{C^{T} d}\end{equation} 
 
@@ -870,7 +891,7 @@ L(x, z)=\frac{1}{2}\|A x-b\|_{2}^{2}-z^{T}(d-C x)
 由KKT条件可得
 \begin{equation}\begin{aligned}
     \nabla _{x} L(x,z) & =A^{T} (A\hat{x} -b)+\textcolor[rgb]{0.96,0.65,0.14}{C^{T} z} +\textcolor[rgb]{0.72,0.33,0.31}{C^{T} C\hat{x}} -\textcolor[rgb]{0.96,0.65,0.14}{C^{T} d} =0\\
-     & \Rightarrow \left( A^{T} A+\textcolor[rgb]{0.72,0.33,0.31}{C^{T} C}\right)\hat{x} +\textcolor[rgb]{0.96,0.65,0.14}{C^{T} (z-d)} =A^{T} b\\
+      \Rightarrow& \left( A^{T} A+\textcolor[rgb]{0.72,0.33,0.31}{C^{T} C}\right)\hat{x} +\textcolor[rgb]{0.96,0.65,0.14}{C^{T} (z-d)} =A^{T} b\\
     \nabla _{z} L(x,z) & =C\hat{x} -d=0
     \end{aligned}
 \end{equation}
@@ -907,7 +928,7 @@ d
 \end{array}\right]
 \end{equation}
 
-将第一个方程两边乘 $ R^{-T} $ 和并令变量 $ y=R \hat{x} $ ,可得
+将第一个方程两边乘 $ R^{-T} $ ，并令变量 $ y=R \hat{x} $ ,可得
 \begin{equation}\displaystyle \left[\begin{array}{ c c }
     \left(\textcolor[rgb]{0.72,0.33,0.31}{\left( R^{T}\right)^{-1}} R^{T}\right) R & \left(\textcolor[rgb]{0.72,0.33,0.31}{\left( R^{T}\right)^{-1}} R^{T}\right) Q_{2}^{T}\\
     Q_{2} R & 0
@@ -1010,11 +1031,16 @@ Q_{1} \\
 Q_{2}
 \end{array}\right] R, Q_{2}^{T}=\tilde{Q} \tilde{R}
 \end{equation}\;
-用前代法求解 $ \tilde{R}^{T} u=d $ \;
+用前代法求解 $ \tilde{R}^{T} u=d $
+$$u= (\tilde{R}^{T})^{-1} d$$
+\;
 计算 $ c=\tilde{Q}^{T} Q_{1}^{T} b-u $\;
-用回代法求解 $ \tilde{R} w=c $ \;
+用回代法求解 $ \tilde{R} w=c $ 
+$$\tilde{R} w = \tilde{Q}^{T} Q_{1}^{T} b- (\tilde{R}^{T})^{-1} d$$\;
 计算 $ y=Q_{1}^{T} b-Q_{2}^{T} w $\;
-用回代法计算 $ R \hat{x}=y_{\circ} $\;
+用回代法计算 $ R \hat{x}=y $
+$$R \hat{x}=Q_{1}^{T} b-Q_{2}^{T} w$$
+\;
 
 \end{algorithm}
 
@@ -1022,6 +1048,7 @@ Q_{2}
 
 
 \section{KKT最优条件求解复杂度：QR vs LU}
+\label{complexity:kkt}
 
 假设 $ p<n $ :
 
@@ -1031,6 +1058,18 @@ Q_{2}
 \end{itemize}
 
 稳定性: QR分解避免直接计算 $ A^{T} {A}$.
+
+In the unconstrained case (when $ p=0 $), step 1 reduces to computing the $ \mathrm{QR} $ factorization of $ A $, steps 2 and 3 are not needed, and step 4 reduces to solving $ R \hat{x}=Q_{1}^{T} b $. This is the same as algorithm \ref{algo:qr-kkt} for solving (unconstrained) least squares problems.
+
+We now give a complexity analysis. Step 1 involves the QR factorizations of an $ (m+p) \times n $ and an $ n \times p $ matrix, which costs $ 2(m+p) n^{2}+2 n p^{2} $ flops. Step 2 requires $ p^{2} $ flops. In step 3 , we first evaluate $ Q_{1}^{T} b(2 m n $ flops), multiply the result by $ \tilde{Q}^{T} $ (2 $ 2 p $ flops), and then solve for $ w $ using forward substitution ( $ p^{2} $ flops). Step 4 requires $ 2 m n+2 p n $ flops to form the right-hand side, and $ n^{2} $ flops to compute $ \hat{x} $ via back substitution. The costs of steps 2,3 , and 4 are quadratic in the dimensions, and so are negligible compared to the cost of step 1, so our final complexity is
+$$
+2(m+p) n^{2}+2 n p^{2}
+$$
+flops. The assumption \ref{prop:assumption-1} and \ref{prop:assumption-2} implies the inequalities
+$$
+p \leq n \leq m+p
+$$
+and therefore $ (m+p) n^{2} \geq n p^{2} $. So the flop count above is no more than $ 4(m+p) n^{2} $ flops. In particular, its order is $ (m+p) n^{2} $.
 
 \section[Supplement Material: Karush-Kuhn-Tucker (KKT)条件]{Supplement Material: Karush-Kuhn-Tucker (KKT)条件\footnote{Cited from \url{https://zhuanlan.zhihu.com/p/38163970}.}}
 

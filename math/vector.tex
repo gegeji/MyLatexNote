@@ -483,10 +483,11 @@ which yields the Cauchy-Schwarz inequality.
 
 
 \begin{corollary}
+    \label{complexity:vector-operation}
     假设有$n$维向量$x$和$y$
 
     \begin{itemize}
-        \item $x+y$需要$n$次加法， 所以时间复杂度为 ($n$)flops. 
+        \item $x+y$需要$n$次加法， 所以时间复杂度为 $n$flops. 
         \item $x^T y$ 需要$n$次乘法和$n - 1$次加法， 所以时间复杂度为$(2n - 1)$flops. 
         \item 对于$x^T y$, 通常将其时间复杂度简化为$2n$, 甚至为$n$. 
         \item 当$x$或$y$是稀疏的时候， 算法的实际运算时间会比理论时间更少。 
