@@ -669,7 +669,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.1.5}{}}{108}{dummy.11.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.1.6}{计算上/下三角矩阵 $ {A} \in \vvmathbb {R}^{n \times n} $ 逆的复杂度}}{109}{dummy.11.1.6}%
+\contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.1.6}{计算上/下三角矩阵 $ {A} \in \mathfrak {R}^{n \times n} $ 逆的复杂度}}{109}{dummy.11.1.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Theorem)\hskip 1em\relax \numberline {11.2.1}{QR Factorization}}{109}{dummy.11.2.1}%
 \defcounter {refsection}{0}\relax 
@@ -1173,7 +1173,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\bbl@ensure@english {Chapter}~17\hspace {0.5em}非线性最小二乘法}{218}{subsection.17.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {17.2.1}{$\vvmathbb {R}^{n} \rightarrow \vvmathbb {R}$函数$g$的梯度}}{219}{definitionT.17.2.1}%
+\contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {17.2.1}{$\mathfrak {R}^{n} \rightarrow \mathfrak {R}$函数$g$的梯度}}{219}{definitionT.17.2.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\hskip 1em\relax (Definition)\hskip 1em\relax \numberline {17.2.2}{$g$在$z$附近的仿射近似（一阶泰勒公式，线性化）}}{219}{definitionT.17.2.2}%
 \defcounter {refsection}{0}\relax 

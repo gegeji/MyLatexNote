@@ -1,4 +1,4 @@
-\begin{equation}\begin{aligned} {z}_{i} &=\sigma\left(\mathbf{W}_{{z}} \cdot\left[{s}_{i-1}, {~g}_{i}\right]+\mathbf{b}_{{z}}\right) \\ \mathbf{r}_{i} &=\sigma\left(\mathbf{W}_{\mathbf{r}} \cdot\left[\mathbf{s}_{i-1}, \mathbf{g}_{i}\right]+{b}_{\mathbf{r}}\right) \\ \tilde{\mathbf{s}}_{i} &=\tanh \left(\mathbf{W}_{\mathbf{s}} \cdot\left[\mathbf{r}_{i} * \mathbf{s}_{i-1}, \mathbf{g}_{i}\right]+\mathbf{b}_{{s}}\right) \\ s_{i} &=\left(1-{z}_{i}\right) * {~s}_{i-1}+{z}_{i} * \tilde{{s}}_{i} \end{aligned}\end{equation}
+\begin{equation}\begin{aligned} {z}_{i} &=\sigma\left(\mathbf{W}_{{z}} \cdot\left[{s}_{i-1}, {~g}_{i}\right]+\mathbf{b}_{{z}}\right) \\ \mathfrak{R}_{i} &=\sigma\left(\mathbf{W}_{\mathfrak{R}} \cdot\left[\mathbf{s}_{i-1}, \mathbf{g}_{i}\right]+{b}_{\mathfrak{R}}\right) \\ \tilde{\mathbf{s}}_{i} &=\tanh \left(\mathbf{W}_{\mathbf{s}} \cdot\left[\mathfrak{R}_{i} * \mathbf{s}_{i-1}, \mathbf{g}_{i}\right]+\mathbf{b}_{{s}}\right) \\ s_{i} &=\left(1-{z}_{i}\right) * {~s}_{i-1}+{z}_{i} * \tilde{{s}}_{i} \end{aligned}\end{equation}
 
 \begin{equation} {s}_{i}=\operatorname{GRU}\left({s}_{i-1}, {~g}_{i-1}\right) \end{equation}
 

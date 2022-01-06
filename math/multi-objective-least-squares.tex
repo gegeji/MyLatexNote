@@ -9,9 +9,9 @@
 J_{1}(x)=\left\|A_{1} x-b_{1}\right\|_{2}^{2}, \cdots, J_{k}(x)=\left\|A_{k} x-b_{k}\right\|_{2}^{2}
 \end{equation}
 
-矩阵 $ A_{i} \in \mathbb{R}^{m_{i} \times n} $, 向量 $ b_{i} \in \mathbb{R}^{m_{i}} $;
+矩阵 $ A_{i} \in \mathfrak{R}^{m_{i} \times n} $, 向量 $ b_{i} \in \mathfrak{R}^{m_{i}} $;
 
-寻找一个向量 $ x \in \mathbb{R}^{n} $ 使得这 $ k $ 个目标 $ _{i}(x), i=1, \cdots, k $最小。
+寻找一个向量 $ x \in \mathfrak{R}^{n} $ 使得这 $ k $ 个目标 $ _{i}(x), i=1, \cdots, k $最小。
 \end{problem}
 
 可以将上述多目标规划问题转换为加权最小二乘法问题。
@@ -66,7 +66,7 @@ J(x)=\left\|\left[\begin{array}{c}
 因此将多目标问题转化为单目标问题，使用最小二乘法进行求解。
 
 \begin{problem}[双目标规划问题]
-    \begin{equation} \min _{x}\left\|A_{1} x-b_{1}\right\|_{2}^{2}+\lambda\left\|A_{2} x-b_{2}\right\|_{2}^{2}, A_{1}, A_{2} \in \mathbb{R}^{10 \times 5} \end{equation}
+    \begin{equation} \min _{x}\left\|A_{1} x-b_{1}\right\|_{2}^{2}+\lambda\left\|A_{2} x-b_{2}\right\|_{2}^{2}, A_{1}, A_{2} \in \mathfrak{R}^{10 \times 5} \end{equation}
 
     $\lambda$的变化会影响解的结果。
 \end{problem}
@@ -163,10 +163,10 @@ y_{d \times 1} \\
 \begin{problem}
     \begin{equation} y=A x_{e x}+v \end{equation}
 
-向量 $ x_{e x} \in \mathbb{R}^{n} $ 表示未知原始信息(需要估计),
-向量 $ v \in \mathbb{R}^{m} $ 表示未知的误差或者噪声，
-向量 $ y \in \mathbb{R}^{m} $ 为观测的已知数据，
-矩阵 $ A \in \mathbb{R}^{m \times n} $ 将测量值 $ y $ 和原始信息 $ x_{e x} $ 之间的关系。
+向量 $ x_{e x} \in \mathfrak{R}^{n} $ 表示未知原始信息(需要估计),
+向量 $ v \in \mathfrak{R}^{m} $ 表示未知的误差或者噪声，
+向量 $ y \in \mathfrak{R}^{m} $ 为观测的已知数据，
+矩阵 $ A \in \mathfrak{R}^{m \times n} $ 将测量值 $ y $ 和原始信息 $ x_{e x} $ 之间的关系。
 
 
 \end{problem}
@@ -204,7 +204,7 @@ y_{d \times 1} \\
 \subsection{差分矩阵平滑最小二乘解}
 
 \begin{definition}[图像转换为列向量存储]
-    二维图像 $ X \in \mathbb{R}^{M \times N} $ , 可按列存储成向量 $ x \in \mathbb{R}^{M N} $ :
+    二维图像 $ X \in \mathfrak{R}^{M \times N} $ , 可按列存储成向量 $ x \in \mathfrak{R}^{M N} $ :
     \begin{equation}
     x=\left[\begin{array}{c}
     X_{1: M, 1} \\
@@ -324,11 +324,11 @@ $ \lambda\left\|D_{v} x\right\|_{2}^{2}+\lambda\left\|D_{h} x\right\|_{2}^{2} $ 
 \section{信号去噪}
 
 \begin{problem}[信号去噪问题]
-    观察信号向量 $ y \in \mathbb{R}^{n} $ ,
+    观察信号向量 $ y \in \mathfrak{R}^{n} $ ,
 \begin{equation}
 y=x_{e x}+v
 \end{equation}
-$ x_{e x} \in \mathbb{R}^{n} $ 是未知信号， $ v \in \mathbb{R}^{n} $ 是噪声。
+$ x_{e x} \in \mathfrak{R}^{n} $ 是未知信号， $ v \in \mathfrak{R}^{n} $ 是噪声。
 
 
 
@@ -344,7 +344,7 @@ $ x_{e x} \in \mathbb{R}^{n} $ 是未知信号， $ v \in \mathbb{R}^{n} $ 是�
 
 
 \begin{definition}[差分矩阵]
-    令矩阵 $ D \in \mathbb{R}^{(n-1) \times n} $ 为差分矩阵：
+    令矩阵 $ D \in \mathfrak{R}^{(n-1) \times n} $ 为差分矩阵：
 \begin{equation} D=\left[\begin{array}{ccccccc}-1 & 1 & 0 & \cdots & 0 & 0 & 0 \\ 0 & -1 & 1 & \cdots & 0 & 0 & 0 \\ \vdots & \vdots & \vdots & \ldots & \vdots & \vdots & \vdots \\ 0 & 0 & 0 & \cdots & -1 & 1 & 0 \\ 0 & 0 & 0 & \cdots & 0 & -1 & 1\end{array}\right] \end{equation}
 
 \end{definition}

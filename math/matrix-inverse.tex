@@ -227,7 +227,7 @@ A x=b  \Rightarrow  x=A^{-1} b
 \section{Invertible Matrices}
 
 \begin{theorem}
-    对于方阵 $ A \in \mathbb{R}^{n \times n} $ ,以下条件都是等价的:
+    对于方阵 $ A \in \mathfrak{R}^{n \times n} $ ,以下条件都是等价的:
 
     \begin{enumerate}
         \item $ A $ 可左逆
@@ -279,8 +279,8 @@ A x=b  \Rightarrow  x=A^{-1} b
     \end{tikzpicture}
 
     \begin{itemize}
-        \item 性质 $ ( {a}) $ 对任意矩阵 $ A \in \mathbb{R}^{m \times n} $ 都成立 
-        \item 性质$(b)$对方阵矩阵 $ A \in \mathbb{R}^{n \times n} $ 都成立
+        \item 性质 $ ( {a}) $ 对任意矩阵 $ A \in \mathfrak{R}^{m \times n} $ 都成立 
+        \item 性质$(b)$对方阵矩阵 $ A \in \mathfrak{R}^{n \times n} $ 都成立
         \item 对于性质 $ ( {c}) $ 与 $ ( {d}) $, 可利用 $ A^{T} $ 证明
     \end{itemize}
 \end{proof}
@@ -307,7 +307,7 @@ A x=b  \Rightarrow  x=A^{-1} b
     则当该等式 $ A x=0 $ 成立时，其解 $ x=0 $, 则$A$的列向量线性无关。  
     
     \begin{corollary}
-        如果 $ A \in \mathbb{R}^{m \times n} $有左逆，则有 $ m \geq n = r $. 
+        如果 $ A \in \mathfrak{R}^{m \times n} $有左逆，则有 $ m \geq n = r $. 
 
     即$A$是高或方的矩阵， 如 $ A=\left[\begin{array}{ll}1 & 0 \\ 0 & 1 \\ 0 & 0\end{array}\right] $. 
     
@@ -325,7 +325,7 @@ A x=b  \Rightarrow  x=A^{-1} b
 
     \begin{equation}A x-A y=A(x-y)=0 \Rightarrow x=y\end{equation}
 
-    当 $ b \in \mathbb{R}^{m}, b \notin\left\{y \mid y=A x, x \in \mathbb{R}^{n}\right\} $ 时（即$b$不在$A$的列空间，$ m \geq n  $时），线性方程组无解。  $ A x=b $ 至多一个解，如有解则 $ x=X b $ . 
+    当 $ b \in \mathfrak{R}^{m}, b \notin\left\{y \mid y=A x, x \in \mathfrak{R}^{n}\right\} $ 时（即$b$不在$A$的列空间，$ m \geq n  $时），线性方程组无解。  $ A x=b $ 至多一个解，如有解则 $ x=X b $ . 
 \end{proof}
 
 \begin{theorem}
@@ -345,7 +345,7 @@ A x=b  \Rightarrow  x=A^{-1} b
 \end{proof}
 
 \begin{theorem}
-    $(c)$: 矩阵 $ A \in \mathbb{R}^{m \times n} $ 有右逆 $ X $, 则$A$行向量线性无关。
+    $(c)$: 矩阵 $ A \in \mathfrak{R}^{m \times n} $ 有右逆 $ X $, 则$A$行向量线性无关。
 \end{theorem}
 
 \begin{proof}
@@ -353,15 +353,15 @@ A x=b  \Rightarrow  x=A^{-1} b
     
     则有$  {X}^{T} $ 是 $ A^{T} $ 的左逆， $ A^{T} $的列向量线性无关。  
 
-    即$ A^{T} \in \mathbb{R}^{n \times m} $.
+    即$ A^{T} \in \mathfrak{R}^{n \times m} $.
     
     根据定理“矩阵的行秩等于列秩”，$ A^{T} $的列向量线性无关，则矩阵 $ A $ 有$m$个线性无关列向量（行向量），即通过 Gram-Schmidt 正交化可得$m$个正交基。 
 
-    $ \forall b \in \mathbb{R}^{m} $, 有$ b \in\left\{y \mid y=A x, x \in \mathbb{R}^{n}\right\} (m \leq n ) $, 方程$ A x=b $有解，其解为$ x=X b $. 
+    $ \forall b \in \mathfrak{R}^{m} $, 有$ b \in\left\{y \mid y=A x, x \in \mathfrak{R}^{n}\right\} (m \leq n ) $, 方程$ A x=b $有解，其解为$ x=X b $. 
 \end{proof}
 
 \begin{corollary}
-    如果$ A \in \mathbb{R}^{m \times n} $有右逆，则有 $r= m \leq n  $. 
+    如果$ A \in \mathfrak{R}^{m \times n} $有右逆，则有 $r= m \leq n  $. 
 
    即$A$是宽或方的矩阵。 
 
@@ -375,11 +375,11 @@ A x=b  \Rightarrow  x=A^{-1} b
 \end{theorem}
 
 \begin{proof}
-    假设 $ A \in \mathbb{R}^{n \times n} $ 为方阵且列向量线性无关 
+    假设 $ A \in \mathfrak{R}^{n \times n} $ 为方阵且列向量线性无关 
     
     \begin{equation} A=\left[a_{1}, a_{2}, \cdots, a_{n}\right] \end{equation}
 
-    则对于\textbf{任意}向量 $  {b} \in \mathbb{R}^{n} $, 则向量组 $ \left[a_{1}, a_{2}, \ldots, a_{n},  {b}\right] $ 线性相关，存 在不全为0的系数，使得以下等式成立
+    则对于\textbf{任意}向量 $  {b} \in \mathfrak{R}^{n} $, 则向量组 $ \left[a_{1}, a_{2}, \ldots, a_{n},  {b}\right] $ 线性相关，存 在不全为0的系数，使得以下等式成立
     \begin{equation}
     x_{1} a_{1}+x_{2} a_{2}+\cdots+x_{n} a_{n}+x_{n+1} b=0
     \end{equation}
@@ -391,7 +391,7 @@ A x=b  \Rightarrow  x=A^{-1} b
 
     假设$b = e_1, e_2 , \cdots$.
 
-    存在向量 $ c_{1}, \ldots, c_{n} \in \mathbb{R}^{n} $,使得 
+    存在向量 $ c_{1}, \ldots, c_{n} \in \mathfrak{R}^{n} $,使得 
     \begin{equation}
     \begin{aligned}
         Ac _{1}&=e_{1}\\
@@ -442,7 +442,7 @@ A x=b  \Rightarrow  x=A^{-1} b
 Gram矩阵的定义见 \ref{Def:Gram}.
 
 \begin{corollary}[Gram Matrix 可逆等价于$A$列线性无关]
-    矩阵 $ A \in \mathbb{R}^{m \times n},   {G}=A^{T} A $
+    矩阵 $ A \in \mathfrak{R}^{m \times n},   {G}=A^{T} A $
 
 矩阵 $ A $ 列向量线性无关 $ \Leftrightarrow $ Gram矩阵$G$非奇异（可逆）。
 \end{corollary}
@@ -464,7 +464,7 @@ Gram矩阵的定义见 \ref{Def:Gram}.
 \section{伪逆}
 
 \begin{definition}[Pseudo-inverse of Matrix $A (m \geq n)$ ]
-    矩阵$A \in \mathbb{R}^{m \times n} $ ,当 $ m \geq n $ 时，列向量线性无关，即 $ A $ 的 Gram矩阵可逆。$A$的伪逆 $ A^{+} $定义:
+    矩阵$A \in \mathfrak{R}^{m \times n} $ ,当 $ m \geq n $ 时，列向量线性无关，即 $ A $ 的 Gram矩阵可逆。$A$的伪逆 $ A^{+} $定义:
     \begin{equation}
     A^{+}=\left(A^{T} A\right)^{-1} A^{T}
     \end{equation}
@@ -473,7 +473,7 @@ Gram矩阵的定义见 \ref{Def:Gram}.
 
 
 \begin{theorem}
-    矩阵$A \in \mathbb{R}^{m \times n} $ ,当 $ m \geq n $ 时，$ A^{+} $为矩阵 $ A $ 的左逆:
+    矩阵$A \in \mathfrak{R}^{m \times n} $ ,当 $ m \geq n $ 时，$ A^{+} $为矩阵 $ A $ 的左逆:
 \begin{equation}
 A^{+} A=\left(A^{T} A\right)^{-1} A^{T} A=\left(A^{T} A\right)^{-1}\left(A^{T} A\right)=I
 \end{equation}
@@ -490,7 +490,7 @@ A^{+} A=\left(A^{T} A\right)^{-1} A^{T} A=\left(A^{T} A\right)^{-1}\left(A^{T} A
 
 
 \begin{definition}[Pseudo-inverse of Matrix $A (m \leq n)$ ]
-    矩阵 $  {A} \in \mathbb{R}^{m \times n} $ ,当$m \leq  {n} $ 时，且行向量线性无关，则 $ A A^{T} $ 可逆。 $ A^{T} $ 列向量线性无关，即 $ \left(A^{T}\right)^{T} A^{T}= {A} A^{T} $ 非奇异；
+    矩阵 $  {A} \in \mathfrak{R}^{m \times n} $ ,当$m \leq  {n} $ 时，且行向量线性无关，则 $ A A^{T} $ 可逆。 $ A^{T} $ 列向量线性无关，即 $ \left(A^{T}\right)^{T} A^{T}= {A} A^{T} $ 非奇异；
 定义伪逆:
 \begin{equation}
 A^{\dagger}=A^{T}\left(A A^{T}\right)^{-1}
@@ -498,7 +498,7 @@ A^{\dagger}=A^{T}\left(A A^{T}\right)^{-1}
 \end{definition}
 
 \begin{theorem}
-    矩阵 $  {A} \in \mathbb{R}^{m \times n} $ ,当 $m \leq  {n} $ 时，伪逆 $ A^{\dagger} $ 为 $ A $ 的右逆
+    矩阵 $  {A} \in \mathfrak{R}^{m \times n} $ ,当 $m \leq  {n} $ 时，伪逆 $ A^{\dagger} $ 为 $ A $ 的右逆
 \begin{equation}
 A A^{\dagger}=A A^{T}\left(A A^{T}\right)^{-1}=\left(A A^{T}\right)^{-1}\left(A A^{T}\right)=I
 \end{equation}

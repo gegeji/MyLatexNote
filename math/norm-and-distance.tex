@@ -3,12 +3,12 @@
 \section{Vector Norm}
 
 \begin{definition}[Vector Norm]
-    在向量空间中存在一个函数 $ \|\cdot\|: \mathbb{R}^{n} \rightarrow \mathbb{R} $, 且满足以下条件：
+    在向量空间中存在一个函数 $ \|\cdot\|: \mathfrak{R}^{n} \rightarrow \mathfrak{R} $, 且满足以下条件：
 
 \begin{itemize}
-    \item 齐次性： $ \|\alpha x\|=|\alpha|\|x\|, \quad \alpha \in \mathbb{R} $ 且 $ x \in \mathbb{R}^{n} $;
-    \item 三角不等式: $ \|x+y\| \leq\|x\|+\|y\|, \quad x, y \in \mathbb{R}^{n} $;
-    \item 非负性: $ \|x\| \geq {0}, {x} \in \mathbb{R}^{n} $ 且 $ \|{x}\|=0 \Leftrightarrow {x}=0 $;
+    \item 齐次性： $ \|\alpha x\|=|\alpha|\|x\|, \quad \alpha \in \mathfrak{R} $ 且 $ x \in \mathfrak{R}^{n} $;
+    \item 三角不等式: $ \|x+y\| \leq\|x\|+\|y\|, \quad x, y \in \mathfrak{R}^{n} $;
+    \item 非负性: $ \|x\| \geq {0}, {x} \in \mathfrak{R}^{n} $ 且 $ \|{x}\|=0 \Leftrightarrow {x}=0 $;
 \end{itemize}
 则称$\|\cdot\|$为向量范数。 
 \end{definition}
@@ -22,7 +22,7 @@
 \subsection{$ \ell_{1} $-范数}
 
 \begin{example}[$ \ell_{1} $-范数（曼哈顿范数，  Manhattan norm）]
-    \begin{equation} \|x\|_{1}=\left|x_{1}\right|+\left|x_{2}\right|+\ldots+\left|x_{n}\right| \quad x, y \in \mathbb{R}^{n}, \alpha \in \mathbb{R} \end{equation}
+    \begin{equation} \|x\|_{1}=\left|x_{1}\right|+\left|x_{2}\right|+\ldots+\left|x_{n}\right| \quad x, y \in \mathfrak{R}^{n}, \alpha \in \mathfrak{R} \end{equation}
 \end{example}
 
 \begin{proof}
@@ -76,7 +76,7 @@ b
 \subsubsection{Cauchy-Schwarz inequality}
 
 \begin{theorem}
-    \begin{equation} \left|a^{T} b\right| \leq\|a\|\|b\| \quad \term{ for all } a, b \in \mathbf{R}^{n} \end{equation}
+    \begin{equation} \left|a^{T} b\right| \leq\|a\|\|b\| \quad \term{ for all } a, b \in \mathfrak{R}^{n} \end{equation}
 \end{theorem}
 
 \begin{corollary}
@@ -127,7 +127,7 @@ b
 \subsection{$ \ell_{\infty} $-范数}
 
 \begin{definition}[$ \ell_{\infty} $-范数]
-    \begin{equation} \|x\|_{\infty}=\max _{1 \leq i \leq n}\left|x_{i}\right|, x \in \mathbb{R}^{n} \end{equation}
+    \begin{equation} \|x\|_{\infty}=\max _{1 \leq i \leq n}\left|x_{i}\right|, x \in \mathfrak{R}^{n} \end{equation}
 \end{definition}
 
 \begin{proof}
@@ -141,7 +141,7 @@ b
 \subsection{$ \ell_{p} $-范数}
 
 \begin{definition}[$ \ell_{{p}} $-范数]
-    \begin{equation} \|x\|_{p}=\left(x_{1}^{{p}}+x_{2}^{p}+\cdots+x_{n}^{p}\right)^{\frac{1}{p}}, \quad x \in \mathbb{R}^{n}, p \ge 1 \end{equation}
+    \begin{equation} \|x\|_{p}=\left(x_{1}^{{p}}+x_{2}^{p}+\cdots+x_{n}^{p}\right)^{\frac{1}{p}}, \quad x \in \mathfrak{R}^{n}, p \ge 1 \end{equation}
 
     $ \ell_{1} $ 范数 $ \|x\|_{1}$,$ \ell_{2} $-范数 $ \|x\|_{2} $, $ \ell_{\infty} $-范数是 $ \ell_{p} $-范数的特例。 
 \end{definition}
@@ -149,7 +149,7 @@ b
 证明可以使用以下两条不等式
 
 \begin{theorem}[Minkowski Inequality]
-    \begin{equation} \left(\sum_{i=1}^{n}\left|x_{i}+y_{i}\right|^{p}\right)^{\frac{1}{p}} \leq\left(\sum_{i=1}^{n}\left|x_{i}\right|^{p}\right)^{\frac{1}{p}}+\left(\sum_{i=1}^{n}\left|y_{i}\right|^{p}\right)^{\frac{1}{p}}, p \geq 1, x, y \in \mathbb{R}^{n} \end{equation}
+    \begin{equation} \left(\sum_{i=1}^{n}\left|x_{i}+y_{i}\right|^{p}\right)^{\frac{1}{p}} \leq\left(\sum_{i=1}^{n}\left|x_{i}\right|^{p}\right)^{\frac{1}{p}}+\left(\sum_{i=1}^{n}\left|y_{i}\right|^{p}\right)^{\frac{1}{p}}, p \geq 1, x, y \in \mathfrak{R}^{n} \end{equation}
 \end{theorem}
 
 \begin{theorem}[Hölder Inequality]
@@ -159,7 +159,7 @@ b
 \section{Root Mean Square Value (RMS)}
 
 \begin{definition}[向量 $ x $的均方值 (mean-square value)]
-    向量 $ x \in \mathbb{R}^n $的均方值 (mean-square value)
+    向量 $ x \in \mathfrak{R}^n $的均方值 (mean-square value)
 
     \begin{equation}\operatorname{ms}(x) = \frac{x_{1}^{2}+x_{2}^{2}+\cdots+x_{n}^{2}}{n}=\frac{\|x\|_{2}^{2}}{n} \end{equation}
 \end{definition}

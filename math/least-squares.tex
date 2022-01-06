@@ -62,7 +62,7 @@ x_{1} +x_{2} =68\neq 67
 使用$\ell_1$、$\ell_\infty$等也可以度量误差，但是函数在零点处不光滑，不能求导。
 
 \begin{problem}[求解最小二乘解]
-    给定 $ {A} \in \mathbb{R}^{m \times n}, {b} \in \mathbb{R}^{m} $, 求解 $ x \in \mathbb{R}^{n} $ 让目标函数最小
+    给定 $ {A} \in \mathfrak{R}^{m \times n}, {b} \in \mathfrak{R}^{m} $, 求解 $ x \in \mathfrak{R}^{n} $ 让目标函数最小
 
 \begin{equation} \min _{x}\|A x-b\|_{2}^{2}=\min _{x} \sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i j} x_{j}-b_{i}\right)^{2} \end{equation}
 \end{problem}
@@ -92,7 +92,7 @@ x_{1} +x_{2} =68\neq 67
 \begin{theorem}
     设最小二乘法的解为 $ \hat{x} $ ,满足:
     \begin{equation}
-    \|A \hat{x}-b\|_{2}^{2} \leq\|A x-b\|_{2}^{2}, \forall x \in \mathbf{R}^{n}
+    \|A \hat{x}-b\|_{2}^{2} \leq\|A x-b\|_{2}^{2}, \forall x \in \mathfrak{R}^{n}
     \end{equation}
 
     当残差 $ \hat{r}=A \hat{x}-b=0 $ 时，则 $ \hat{x} $ 是线性方程组 $ A x=b $ 的解; 否则其为误差最小平方和意义下方程组的近似解。
@@ -102,7 +102,7 @@ x_{1} +x_{2} =68\neq 67
 
 \section{求解最小二乘法}
 
-给定 $ A \in \mathbb{R}^{m \times n}, b \in \mathbb{R}^{m}, x \in \mathbb{R}^{n} $ 目标函数：
+给定 $ A \in \mathfrak{R}^{m \times n}, b \in \mathfrak{R}^{m}, x \in \mathfrak{R}^{n} $ 目标函数：
 \begin{equation}
 f(x)=\|A x-b\|_{2}^{2}=\sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i j} x_{j}-b_{i}\right)^{2}
 \end{equation}
@@ -280,7 +280,7 @@ $A$的列向量无关时，则 $ \hat{x}=\left(A^{T} A\right)^{-1} A^{T} b $.
     \input{tikz_images/projection-onto-a-is-also-onto-q.tex}
 \end{FigureCenter}
 
-矩阵 $ {A} \in \mathbb{R}^{m \times n} $ 的列 $ a_{1}, a_{2}, \ldots, a_{n} \in \mathbb{R}^{m} $ 的最小二乘法问题
+矩阵 $ {A} \in \mathfrak{R}^{m \times n} $ 的列 $ a_{1}, a_{2}, \ldots, a_{n} \in \mathfrak{R}^{m} $ 的最小二乘法问题
 \begin{equation}
 \hat{x}=\arg \underset{x}{\min}\|A x-b\|_{2}^{2} ,\|A x-b\|_{2}^{2}=\left\|\sum_{j=1}^{n} a_{j} x_{j}-b\right\|_{2}^{2}
 \end{equation}
@@ -321,7 +321,7 @@ A^{T} A x=A^{T} b
 \section{QR分解求解最小二乘法}
 
 \begin{theorem}[QR分解求解最小二乘法]
-    若 $ {A} \in \mathbb{R}^{m \times n} $ 的列向量线性无关，则存在 $ {A}={QR} $ 分解， $ Q \in \mathbb{R}^{m \times n} $ , $ R \in \mathbb{R}^{{n} \times n} $ 
+    若 $ {A} \in \mathfrak{R}^{m \times n} $ 的列向量线性无关，则存在 $ {A}={QR} $ 分解， $ Q \in \mathfrak{R}^{m \times n} $ , $ R \in \mathfrak{R}^{{n} \times n} $ 
     
     最小二乘法问题的解
 \begin{equation}
@@ -466,15 +466,15 @@ Q=\left[\begin{array}{ll}
 
 \section{梯度下降法}
 
-给定 $ A \in \mathbb{R}^{m \times n}, {b} \in \mathbb{R}^{m}, x \in \mathbb{R}^{n} $ 目标函数:
+给定 $ A \in \mathfrak{R}^{m \times n}, {b} \in \mathfrak{R}^{m}, x \in \mathfrak{R}^{n} $ 目标函数:
 \begin{equation}
 f(x)=\|A x-b\|_{2}^{2}=\sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i j} x_{j}-b_{i}\right)^{2}
 \end{equation}
 为使目标函数最小， 可求最优解 $ \hat{x}: \quad \hat{x}=\arg \underset{x}{ \min } f(x) $.
 
 \begin{problem}
-    $ A \in \mathbb{R}^{{m} \times n} $ 列向量线性相关或$n$非常大，$
-    A^{T} A \in \mathbb{R}^{n \times n}$不可逆，无法直接代入求得最小二乘解。
+    $ A \in \mathfrak{R}^{{m} \times n} $ 列向量线性相关或$n$非常大，$
+    A^{T} A \in \mathfrak{R}^{n \times n}$不可逆，无法直接代入求得最小二乘解。
 \end{problem}
 
 通过迭代求解目标的最优解过程: \begin{equation} x^{(1)}, x^{(2)}, \cdots, x^{(k)} \rightarrow \hat{x} \end{equation} 
@@ -513,14 +513,14 @@ f\left(x^{(k+1)}\right)-f\left(x^{(k)}\right) \approx\left\langle\nabla f\left(x
 
 \begin{definition}[梯度下降法求解最小二乘法]
     \begin{equation}
-\min _{x \in \mathbb{R}^{n}} \frac{1}{2}\|A x-b\|_{2}^{2}, \quad A \in \mathbb{R}^{m \times n}, b \in \mathbb{R}^{m}
+\min _{x \in \mathfrak{R}^{n}} \frac{1}{2}\|A x-b\|_{2}^{2}, \quad A \in \mathfrak{R}^{m \times n}, b \in \mathfrak{R}^{m}
 \end{equation}
 
 令 \begin{equation} f(x)=\frac{1}{2}\|A x-b\|_{2}^{2} \end{equation}
 
 则 $ f $ 为凸函数， 并有 $ \nabla f(x)=A^{T}(A x-b) $.
 
-则 $ A^{T} A \in \mathbb{R}^{n \times n} $ .如果列向量\textbf{线性相关}会导致其\textbf{不可逆}或$n$非常大。可以通过梯度下降法迭代
+则 $ A^{T} A \in \mathfrak{R}^{n \times n} $ .如果列向量\textbf{线性相关}会导致其\textbf{不可逆}或$n$非常大。可以通过梯度下降法迭代
 
 \begin{equation}  x^{(k+1)}=x^{(k)}-\alpha_{k} \nabla f\left(x^{(k)}\right) , f\left(x^{(k+1)}\right)<f\left(x^{(k)}\right) \end{equation}
 
@@ -544,7 +544,7 @@ f\left(x^{(k+1)}\right)-f\left(x^{(k)}\right) \approx\left\langle\nabla f\left(x
 
 \begin{problem}
     \begin{equation}
-    \min _{x \in \mathbb{R}^{n}} \frac{1}{2}\|A x-b\|_{2}^{2}, \quad A \in \mathbb{R}^{m \times n}, b \in \mathbb{R}^{m}
+    \min _{x \in \mathfrak{R}^{n}} \frac{1}{2}\|A x-b\|_{2}^{2}, \quad A \in \mathfrak{R}^{m \times n}, b \in \mathfrak{R}^{m}
     \end{equation}
     
     令 $ f(x)=\frac{1}{2}\|A x-b\|_{2}^{2} $

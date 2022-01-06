@@ -142,7 +142,7 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros), �
 \end{corollary}
 
 \begin{corollary}
-    如果 $  x, y \in \mathbb{R}^{2}  $, 则 $  x+y \in \mathbb{R}^{2}, \lambda x \in \mathbb{R}^{2}(\lambda \in \mathbb{R})  $.
+    如果 $  x, y \in \mathfrak{R}^{2}  $, 则 $  x+y \in \mathfrak{R}^{2}, \lambda x \in \mathfrak{R}^{2}(\lambda \in \mathfrak{R})  $.
 \end{corollary}
 
 \begin{definition}[数域]
@@ -154,10 +154,10 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros), �
 \end{example}
 
 \begin{example}
-    实数 $ \mathbb{R} $
+    实数 $ \mathfrak{R} $
 
-    $ x, y \in \mathbb{R}, x=1, y=2 $
-    $ x+y \in \mathbb{R}  ,x \times y \in \mathbb{R} $
+    $ x, y \in \mathfrak{R}, x=1, y=2 $
+    $ x+y \in \mathfrak{R}  ,x \times y \in \mathfrak{R} $
 \end{example}
 
 \begin{example}
@@ -236,7 +236,7 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros), �
 
 
     \begin{theorem}
-        对于任何向量 $  b \in \mathbb{R}^{n}  $, 满足
+        对于任何向量 $  b \in \mathfrak{R}^{n}  $, 满足
     \begin{equation} b=b_{1} e_{1}+\cdots+b_{n} e_{n}, b=\left[\begin{array}{c}b_{1} \\ b_{2} \\ \vdots \\ b_{n}\end{array}\right] \end{equation}
     \end{theorem}
     
@@ -249,22 +249,22 @@ $\operatorname{nnz}(x)$是指向量$x$中非零的项数(number of non-zeros), �
 \section{内积}
 
 \begin{definition}[内积]
-    在数域 $  \mathbb{R}  $ 上的向量空间 $  V  $, 定义函数 $  \langle\cdot,\cdot\rangle:V \times V \rightarrow \mathbb{R}  $, 满足：
+    在数域 $  \mathfrak{R}  $ 上的向量空间 $  V  $, 定义函数 $  \langle\cdot,\cdot\rangle:V \times V \rightarrow \mathfrak{R}  $, 满足：
 
     \begin{enumerate}
         \item $ \langle{a}, {a}\rangle \geq 0, \forall {a} \in V $, 当且仅当 $a=0$ 时 $ \langle a, a\rangle=0 $.
-        \item $  \langle\alpha {a}+\beta {b}, c\rangle=\alpha\langle{a}, c\rangle+\beta\langle{b}, c\rangle, \forall \alpha, \beta \in \mathbb{R}  $, 且 $  {a}, {b}, c \in V  $.
+        \item $  \langle\alpha {a}+\beta {b}, c\rangle=\alpha\langle{a}, c\rangle+\beta\langle{b}, c\rangle, \forall \alpha, \beta \in \mathfrak{R}  $, 且 $  {a}, {b}, c \in V  $.
         \item $  \langle{a}, {b}\rangle=\langle{b}, {a}\rangle, \forall {a}, {b} \in V  $.
     \end{enumerate}
 
-    则称函数 $  \langle\cdot,\cdot\rangle:V \times V \rightarrow \mathbb{R}  $是内积。 
+    则称函数 $  \langle\cdot,\cdot\rangle:V \times V \rightarrow \mathfrak{R}  $是内积。 
 \end{definition}
 
 \begin{example}[the inner product of two $ n $-vectors $ a, b $]
-    在向量空间 $  \mathbb{R}^{n}  $ 上，  计算两个向量对应项相乘之后求和函数
+    在向量空间 $  \mathfrak{R}^{n}  $ 上，  计算两个向量对应项相乘之后求和函数
     \begin{equation} \langle a, b\rangle=a_{1} b_{1}+a_{2} b_{2}+\cdots+a_{n} b_{n}=a^{T}{b} \end{equation}
 
-where $  a=\left[\begin{array}{c}a_{1} \\ a_{2} \\ \vdots \\ a_{n}\end{array}\right], b=\left[\begin{array}{c}b_{1} \\ b_{2} \\ \vdots \\ b_{n}\end{array}\right] \in \mathbb{R}^{n}  $.
+where $  a=\left[\begin{array}{c}a_{1} \\ a_{2} \\ \vdots \\ a_{n}\end{array}\right], b=\left[\begin{array}{c}b_{1} \\ b_{2} \\ \vdots \\ b_{n}\end{array}\right] \in \mathfrak{R}^{n}  $.
 \end{example}
 
 \begin{proof}
@@ -373,11 +373,11 @@ Here we have $ a^{T} b=2 $, which is the number of objects in both $ A $ and $ B
 \end{theorem}
 
 \begin{proof}
-    令 $\lambda \in \mathbb{R}$, 则有 
+    令 $\lambda \in \mathfrak{R}$, 则有 
     \begin{equation}0 \leq\langle x+\lambda y, x+\lambda y\rangle=\langle x, x\rangle+\lambda\langle y, x\rangle+\lambda\langle x, y\rangle+\lambda^{2}\langle y, y\rangle=\langle x, x\rangle+2 \lambda\langle y, x\rangle+\lambda^{2}\langle y, y\rangle\end{equation}
 
 则 
-\begin{equation}\lambda^{2}\langle y, y\rangle+2 \lambda\langle y, x\rangle+\langle x, x\rangle \geq 0, \forall \lambda \in \mathbb{R}\end{equation}
+\begin{equation}\lambda^{2}\langle y, y\rangle+2 \lambda\langle y, x\rangle+\langle x, x\rangle \geq 0, \forall \lambda \in \mathfrak{R}\end{equation}
 
 所以
 \begin{equation}
@@ -434,7 +434,7 @@ which yields the Cauchy-Schwarz inequality.
 \begin{definition}[Floating point operation (flop)]
     the unit of complexity when comparing vector and matrix algorithms.
 
-    1 flop $ = $ one basic arithmetic operation $ (+,-, *, /, \sqrt{,} \ldots) $ in $ \mathbf{R} $ or $ \mathbf{C} $.
+    1 flop $ = $ one basic arithmetic operation $ (+,-, *, /, \sqrt{,} \ldots) $ in $ \mathfrak{R} $ or $ \mathbf{C} $.
 \end{definition}
 
 \begin{remark}

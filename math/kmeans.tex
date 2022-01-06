@@ -4,9 +4,9 @@
 
 \begin{problem}
     \label{Problem:ClusteringCenter}
-    假设$N$个样本向量$ x_{1}, \ldots, x_{N} \in \mathbb{R}^{n} $, 需要找到中心向量（centroid）$z$满足
+    假设$N$个样本向量$ x_{1}, \ldots, x_{N} \in \mathfrak{R}^{n} $, 需要找到中心向量（centroid）$z$满足
 
-    \begin{equation} \min _{z \in \mathbf{R}^{n}} \sum_{i=1}^{N}\left\|x_{i}-z\right\|_{2}^{2} \end{equation}
+    \begin{equation} \min _{z \in \mathfrak{R}^{n}} \sum_{i=1}^{N}\left\|x_{i}-z\right\|_{2}^{2} \end{equation}
 \end{problem}
 
 \begin{definition}[高阶无穷小(记号 $o$)]
@@ -28,7 +28,7 @@
 \begin{theorem}[凸优化求解的必要条件]
     假设函数$f$在$\hat{x}$可微， 则有
 
-    \begin{equation} \hat{x}=\arg \min _{x \in \mathbb{R}^{n}} f(x) \Rightarrow \nabla f(\hat{x})=0 \end{equation}
+    \begin{equation} \hat{x}=\arg \min _{x \in \mathfrak{R}^{n}} f(x) \Rightarrow \nabla f(\hat{x})=0 \end{equation}
 \end{theorem}
 
 \begin{proof}
@@ -49,22 +49,22 @@
     所以
     \begin{equation} f(\tilde{x})=f(\hat{x})-t\|\nabla f(\hat{x})\|_{2}^{2}+o\left(t\|\nabla f(\hat{x})\|_{2}\right) \leq f(\hat{x}) \end{equation}
     
-    与 $ \hat{x}=\arg \min _{\mathbf{R}^{n}} f(x) $ 矛盾。 
+    与 $ \hat{x}=\arg \min _{\mathfrak{R}^{n}} f(x) $ 矛盾。 
 
     所以$ \nabla f(\widehat{x})=0 $是最优问题解的必要条件。 
 \end{proof}
 
 \begin{remark}
-    通常 $ \nabla f(\hat{x})=0 \not \Leftrightarrow \hat{x}=\arg \min _{\mathbf{R}^{n}} f(x) $. 
+    通常 $ \nabla f(\hat{x})=0 \not \Leftrightarrow \hat{x}=\arg \min _{\mathfrak{R}^{n}} f(x) $. 
 \end{remark}
 
 \begin{example}
-    \begin{equation} f(x)=-x^{2},  x \in \mathbb{R}, \hat{x}=\arg \min _{\mathbb{R}} f(x) \end{equation}
+    \begin{equation} f(x)=-x^{2},  x \in \mathfrak{R}, \hat{x}=\arg \min _{\mathfrak{R}} f(x) \end{equation}
 
     $ \nabla f(\hat{x})=0 $, 则有 $ -2 \hat{x}=0 $, 即 $ \hat{x}=0 $.
 
     所以
-    \begin{equation} f(\hat{x})=0 \geq f(x), \quad x \in \mathbf{R} \end{equation}
+    \begin{equation} f(\hat{x})=0 \geq f(x), \quad x \in \mathfrak{R} \end{equation}
 
 
 \end{example}
@@ -72,17 +72,17 @@
 \section{Convex Set}
 
 \begin{definition}[凸集]
-    $ \forall x, y \in \Omega, \alpha \in \mathbb{R}, 0 \leq \alpha \leq 1 $有
+    $ \forall x, y \in \Omega, \alpha \in \mathfrak{R}, 0 \leq \alpha \leq 1 $有
     \begin{equation} \alpha x+(1-\alpha) y \in \Omega \end{equation}
 
-    则定义域$ \Omega \in \mathbb{R}^{n} $称为凸的(Convex)集合。
+    则定义域$ \Omega \in \mathfrak{R}^{n} $称为凸的(Convex)集合。
 \end{definition}
 
 几何解释是集合域内两点连线之间都属于这个域。
 
 \begin{definition}[凸函数]
-    设函数 $ f(x) $ 定义于称为\term{凸的定义域} $ \Omega \in \mathbb{R}^{n} $满足
-    \begin{equation} f(\alpha x+(1-\alpha) y) \leq \alpha f(x)+(1-\alpha) f(y), \forall x, y \in \Omega, \alpha \in \mathbf{R}, 0 \leq \alpha \leq 1 \end{equation}
+    设函数 $ f(x) $ 定义于称为\term{凸的定义域} $ \Omega \in \mathfrak{R}^{n} $满足
+    \begin{equation} f(\alpha x+(1-\alpha) y) \leq \alpha f(x)+(1-\alpha) f(y), \forall x, y \in \Omega, \alpha \in \mathfrak{R}, 0 \leq \alpha \leq 1 \end{equation}
 
     称其为凸函数。 
 \end{definition}
@@ -138,7 +138,7 @@
 
 \begin{example}
     \label{Example:SquareIsConvex}
-    \begin{equation} f(x)=x^{2}, x \in \mathbf{R} \end{equation}
+    \begin{equation} f(x)=x^{2}, x \in \mathfrak{R} \end{equation}
 
     \begin{equation}\begin{aligned}
         f(\alpha x+(1-\alpha )y) & =(\alpha x+(1-\alpha )y)^{2}\\
@@ -151,7 +151,7 @@
 
 \begin{example}
     \label{Example:NormIsConvex}
-    $ f(x)=\|x\| $, 其中 $ \|  \cdot \| $ 表示 $ \mathbb{R}^{n} $ 上的向量范数， $ x \in \mathbb{R}^{n} $.
+    $ f(x)=\|x\| $, 其中 $ \|  \cdot \| $ 表示 $ \mathfrak{R}^{n} $ 上的向量范数， $ x \in \mathfrak{R}^{n} $.
 \end{example}
 
 \begin{proof}
@@ -160,7 +160,7 @@
 \end{proof}
 
 \begin{example}
-    \begin{equation} f(x)=\|x\|_{2}^{2}, x \in \mathbb{R}^{n} \end{equation}
+    \begin{equation} f(x)=\|x\|_{2}^{2}, x \in \mathfrak{R}^{n} \end{equation}
 \end{example}
 
 \subsection{凸函数的充要条件}
@@ -173,7 +173,7 @@
 \end{theorem}
 
 \begin{proof}
-    1. 首先， 证明一维情况 $ f: \mathbb{R} \rightarrow \mathbb{R}, \alpha \in[0,1] $.
+    1. 首先， 证明一维情况 $ f: \mathfrak{R} \rightarrow \mathfrak{R}, \alpha \in[0,1] $.
 
     $ \Rightarrow  $ 充分条件: 
     
@@ -201,11 +201,11 @@
 
     满足凸函数定义，所以$f$是凸函数。
 
-    2. 证明 $ n $ 维情况 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $.
+    2. 证明 $ n $ 维情况 $ f: \mathfrak{R}^{n} \rightarrow \mathfrak{R} $.
 
     $ \Rightarrow $ 充分条件：
     
-    令 \begin{equation} g(t)=f(t x+(1-t) y), t \in \mathbb{R} \end{equation}
+    令 \begin{equation} g(t)=f(t x+(1-t) y), t \in \mathfrak{R} \end{equation}
 
     则\begin{equation} g^{\prime}(t)=\langle\nabla f(t x+(1-t) y), x-y\rangle \end{equation}
 
@@ -218,15 +218,15 @@
 \begin{theorem}
     如果可微函数$f$是凸函数， 则有
 
-    \begin{equation} \hat{x}=\arg \min _{x \in \mathbb{R}^{n}} f(x) \Leftrightarrow \nabla f(\hat{x})=0 \end{equation}
+    \begin{equation} \hat{x}=\arg \min _{x \in \mathfrak{R}^{n}} f(x) \Leftrightarrow \nabla f(\hat{x})=0 \end{equation}
 \end{theorem}
 
 \begin{proof}
-    已证 $ \hat{x}=\arg \min _{x \in \mathbb{R}^{n}} f(x) \Rightarrow $ 可得 $ \nabla f(\hat{x})=0 $
+    已证 $ \hat{x}=\arg \min _{x \in \mathfrak{R}^{n}} f(x) \Rightarrow $ 可得 $ \nabla f(\hat{x})=0 $
 
-    只需证 $ \nabla f(\hat{x})=0 \Rightarrow \hat{x}=\arg \min _{x \in \mathbb{R}^{n}} f(x) $.
+    只需证 $ \nabla f(\hat{x})=0 \Rightarrow \hat{x}=\arg \min _{x \in \mathfrak{R}^{n}} f(x) $.
 
-    由于函数 $ f $ 是可微凸的， 则有 $ \forall x \in \mathbb{R}^{n} $,
+    由于函数 $ f $ 是可微凸的， 则有 $ \forall x \in \mathfrak{R}^{n} $,
 \begin{equation}
 \begin{aligned}
 f(x) & \geq f(\hat{x})+\langle\nabla f(\hat{x}), x-\hat{x}\rangle \\
@@ -235,7 +235,7 @@ f(x) & \geq f(\hat{x})+\langle\nabla f(\hat{x}), x-\hat{x}\rangle \\
 \end{aligned}
 \end{equation}
 
-可得 $ f(x) \geq f(\hat{x}), \hat{x}=\arg \min _{x \in \mathbb{R}^{n}} f(x) $.
+可得 $ f(x) \geq f(\hat{x}), \hat{x}=\arg \min _{x \in \mathfrak{R}^{n}} f(x) $.
 \end{proof}
 
 \section{向量偏导}
@@ -327,7 +327,7 @@ f(x) & \geq f(\hat{x})+\langle\nabla f(\hat{x}), x-\hat{x}\rangle \\
 
 
 \begin{problem}
-    假设$ a, b \in \mathbb{R}^{n}, a \neq 0, t \in \mathbb{R}$, 当$t$ 多大时， $ta$到$b$之间的距离最小
+    假设$ a, b \in \mathfrak{R}^{n}, a \neq 0, t \in \mathfrak{R}$, 当$t$ 多大时， $ta$到$b$之间的距离最小
 
     \begin{equation} \hat{t}=\min _{t}\|t a-b\|_{2}^{2} \end{equation}
 \end{problem}
@@ -412,7 +412,7 @@ f(x) & \geq f(\hat{x})+\langle\nabla f(\hat{x}), x-\hat{x}\rangle \\
 目标：分成$k$个集合， 尽量使得同一个集合中的向量彼此接近。 
 
 \begin{notation}
-    给定$N$个$n$维向量 $ x_{1}, \ldots, x_{N} \in \mathbb{R}^{n} $
+    给定$N$个$n$维向量 $ x_{1}, \ldots, x_{N} \in \mathfrak{R}^{n} $
 
     \begin{itemize}
         \item 标签 $ c_{i} \in\{1,2, \cdots, k\} $ 表示向量 $ x_{i} $ 所属类别， 例如 $ c_{i}=2 $ 表示 $ x_{i} $ 属于第2类。 
@@ -432,7 +432,7 @@ f(x) & \geq f(\hat{x})+\langle\nabla f(\hat{x}), x-\hat{x}\rangle \\
     \begin{equation} \begin{aligned} f_{j}\left(z_{j}\right)=& \sum_{i \in G_{j}}\left\|x_{i}-z_{j}\right\|_{2}^{2}, J\left(G_{1}, \cdots, G_{k}, z_{1}, \cdots, z_{k}\right)=\sum_{j=1}^{k} f_{j}\left(z_{j}\right) \\ & \min _{G_{1}, \cdots, G_{k}} \min _{z_{1}, \cdots, z_{k}} J\left(G_{1}, \cdots, G_{k}, z_{1}, \cdots, z_{k}\right) \end{aligned} \end{equation}
 \end{problem}
 
-$k$-means算法是将 $ {N} $ 向量 $ x_{i} \in \mathbb{R}^{n} $ 划分成$k$类的迭代聚类算法。 
+$k$-means算法是将 $ {N} $ 向量 $ x_{i} \in \mathfrak{R}^{n} $ 划分成$k$类的迭代聚类算法。 
 
 \begin{algorithm}
     \caption{$k$-means Algorithm}

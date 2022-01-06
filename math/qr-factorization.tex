@@ -3,7 +3,7 @@
 \section{Triangular Matrices}
 
 \begin{definition}[Lower Triangular Matrices]
-    矩阵 $  {A} \in \mathbb{R}^{n \times n} $ 为\term{下三角(Lower Triangular)矩阵}, $ A_{i j}=0, j>i $ .
+    矩阵 $  {A} \in \mathfrak{R}^{n \times n} $ 为\term{下三角(Lower Triangular)矩阵}, $ A_{i j}=0, j>i $ .
 
     \begin{equation} A=\left[\begin{array}{ccccc}A_{11} & 0 & \cdots & 0 & 0 \\ A_{21} & A_{22} & \cdots & 0 & 0 \\ \vdots & \vdots & \ddots & \vdots & \vdots \\ A_{n-1,1} & A_{n-1,2} & \cdots & A_{n-1, n-1} & 0 \\ A_{n 1} & A_{n 2} & \cdots & A_{n, n-1} & A_{n n}\end{array}\right] \end{equation}
 \end{definition}
@@ -33,8 +33,8 @@
 
 \begin{algorithm}[htbp]
     \caption{Forward Substitution}
-    \KwIn{$A \in \mathbf{R}^{n \times n} (A是下三角矩阵), b \in \mathbf{R}^{n \times 1}$}
-    \KwOut{$x \in \mathbf{R}^{n \times 1}$}
+    \KwIn{$A \in \mathfrak{R}^{n \times n} (A是下三角矩阵), b \in \mathfrak{R}^{n \times 1}$}
+    \KwOut{$x \in \mathfrak{R}^{n \times 1}$}
     $ x_{1}= \dfrac{b_{1} }{A_{11} }  $\;
 $ x_{2}=\dfrac{b_{2}-A_{21} x_{1}}{A_{22}}$\;
 $  x_{3} =\dfrac{b_{3}-A_{31} x_{1}-A_{32} x_{2}}{A_{33}} $ \;
@@ -51,8 +51,8 @@ $  x_{3} =\dfrac{b_{3}-A_{31} x_{1}-A_{32} x_{2}}{A_{33}} $ \;
 
 \begin{algorithm}[htbp]
     \caption{Backward Substitution}
-    \KwIn{$A \in \mathbf{R}^{n \times n} (A是上三角矩阵), b \in \mathbf{R}^{n \times 1}$}
-    \KwOut{$x \in \mathbf{R}^{n \times 1}$}
+    \KwIn{$A \in \mathfrak{R}^{n \times n} (A是上三角矩阵), b \in \mathfrak{R}^{n \times 1}$}
+    \KwOut{$x \in \mathfrak{R}^{n \times 1}$}
     $ x_{n}= \dfrac{b_{n}}{A_{n n}} $\;
     $ x_{n-1}= \dfrac{b_{n-1}-A_{n-1, n} x_{n}}{A_{n-1, n-1}} $ \;
     $ x_{n-2}= \dfrac{b_{n-2}-A_{n-2, n-1} x_{n-1}-A_{n-2, n} x_{n}}{ A_{n-2, n-2}} $\;
@@ -86,7 +86,7 @@ A x=0 \quad \Rightarrow \quad x=0
     下三角矩阵的逆是下三角矩阵，上三角矩阵的逆是上三角矩阵。
 \end{theorem}
 
-\begin{theorem}[计算上/下三角矩阵 $  {A} \in \mathbb{R}^{n \times n} $ 逆的复杂度]
+\begin{theorem}[计算上/下三角矩阵 $  {A} \in \mathfrak{R}^{n \times n} $ 逆的复杂度]
     \label{complexity:inverse-of-triangular}
 
 \begin{equation} n^{2}+(n-1)^{2}+\cdots+1 \approx \frac{1}{3} n^{3}\text{ flops }\end{equation} 
@@ -98,7 +98,7 @@ A x=0 \quad \Rightarrow \quad x=0
 
 
 
-如果矩阵 $ A \in \mathbb{R}^{m \times n} $ 的列向量线性无关，则可以将其分解为
+如果矩阵 $ A \in \mathfrak{R}^{m \times n} $ 的列向量线性无关，则可以将其分解为
 
 \begin{theorem}[QR Factorization]
     
@@ -107,7 +107,7 @@ A x=0 \quad \Rightarrow \quad x=0
         &=Q_{n  \times n}R_{n  \times  n}
         \end{aligned}\end{equation}
 
-向量 $ q_{1}, \ldots, q_{n} \in \mathbb{R}^{m} $ 是标准正交向量：
+向量 $ q_{1}, \ldots, q_{n} \in \mathfrak{R}^{m} $ 是标准正交向量：
 \begin{equation}
 \left\|q_{i}\right\|_{2}=1, \quad q_{i}^{T} q_{j}=0, \text { if } \quad i \neq j
 \end{equation}
@@ -116,11 +116,11 @@ A x=0 \quad \Rightarrow \quad x=0
 \end{theorem}
 
 \begin{remark}
-    下面各节均假定矩阵 $ A \in \mathbb{R}^{m \times n} $ 的列向量线性无关。
+    下面各节均假定矩阵 $ A \in \mathfrak{R}^{m \times n} $ 的列向量线性无关。
 \end{remark}
 
 \begin{corollary}
-    $ Q \in \mathbb{R}^{m \times n} $ 具有标准正交列 $ \left(Q^{T} Q=I\right) $.
+    $ Q \in \mathfrak{R}^{m \times n} $ 具有标准正交列 $ \left(Q^{T} Q=I\right) $.
 \end{corollary}
 
 \begin{corollary}
@@ -128,7 +128,7 @@ A x=0 \quad \Rightarrow \quad x=0
 \end{corollary}
 
 \begin{corollary}
-    $ R \in \mathbb{R}^{n \times n} $ 的上三角矩阵。
+    $ R \in \mathfrak{R}^{n \times n} $ 的上三角矩阵。
 \end{corollary}
 
 \begin{corollary}
@@ -468,9 +468,9 @@ A^{-1}=(Q R)^{-1}=R^{-1} Q^{T}
 
 \subsection{$A$的列空间和$Q$的列空间相同}
 
-矩阵 $A \in \mathbb{R}^{m \times n}$ 的值域范围定义为:
+矩阵 $A \in \mathfrak{R}^{m \times n}$ 的值域范围定义为:
 \begin{equation}
-\operatorname{range}(A)=\left\{A x \mid x \in \mathbf{R}^{n}\right\}
+\operatorname{range}(A)=\left\{A x \mid x \in \mathfrak{R}^{n}\right\}
 \end{equation}
 
 \begin{theorem}
@@ -483,9 +483,9 @@ A^{-1}=(Q R)^{-1}=R^{-1} Q^{T}
 \begin{proof}
     \begin{equation}
 \begin{aligned}
-y \in \operatorname{range}(A) & \Leftrightarrow  y=A x, x \in \mathbb{R}^{n} \\
+y \in \operatorname{range}(A) & \Leftrightarrow  y=A x, x \in \mathfrak{R}^{n} \\
 & \Leftrightarrow  y=Q R x, z=R x \\
-& \Leftrightarrow  y=Q z, z \in \mathbb{R}^{n} \\
+& \Leftrightarrow  y=Q z, z \in \mathfrak{R}^{n} \\
 & \Leftrightarrow  y \in \operatorname{range}(Q)
 \end{aligned}
 \end{equation}
@@ -725,7 +725,7 @@ $\tilde{q}_{k}$ 和 $q_{k}$ 正交于 $q_{1}, \ldots, q_{k-1}$, 则 $R_{1 k}, \l
 \begin{algorithm}[htbp]
     \caption{QR Decomposition Using Gram-Schmidt Algorithm}
 
-\KwIn{矩阵$A \in \mathbb{R}^{m \times n}$ ,列向量 $a_{1}, \ldots, a_{n}$ 线性无关}
+\KwIn{矩阵$A \in \mathfrak{R}^{m \times n}$ ,列向量 $a_{1}, \ldots, a_{n}$ 线性无关}
 \KwOut{分解得到的$Q$、$R$矩阵}
 
     $R_{11}=\left\|a_{1}\right\|_{2}$ \;
@@ -869,7 +869,7 @@ Gram-Schmidt方法第$k$次循环的复杂度：
 
 第$k$次循环的总和：$(4m-1)(k-1)+3m$ flops
 
-$ A \in \mathbb{R}^{m \times n} $ 分解的复杂度:
+$ A \in \mathfrak{R}^{m \times n} $ 分解的复杂度:
 
 \begin{equation} \begin{aligned} \sum_{k=1}^{n}((4 m-1)(k-1)+3 m) &=(4 m-1) \frac{n(n-1)}{2}+3 m n \\ & \approx 2 m n^{2} \text { flops } \end{aligned} \end{equation}
 
@@ -993,7 +993,7 @@ Householder算法计算一个“完整的”QR分解：
 where $ R $ is an $ n \times n $ upper triangular matrix, $0$ is an $ (m-n) \times n $ zero matrix, $ Q  $ is $ m \times n,\tilde{Q} $ is $ m \times(m-n) $, and $ Q $ and $ \tilde{Q} $ both have orthogonal columns. 
 
 \begin{remark}
-    $A \in \mathbf{R}^{m \times n}, m \ge n$,当$m < n$时列线性相关，无法进行QR分解。
+    $A \in \mathfrak{R}^{m \times n}, m \ge n$,当$m < n$时列线性相关，无法进行QR分解。
 \end{remark}
 
 
@@ -1004,7 +1004,7 @@ where $ R $ is an $ n \times n $ upper triangular matrix, $0$ is an $ (m-n) \tim
 Q & \tilde{Q}
 \end{array}\right]=H_{1} H_{2} \cdots H_{n}
 \end{equation}
-每个 $ H_{i} \in \mathbb{R}^{m \times m} $ 是对称正交的Householder矩阵。
+每个 $ H_{i} \in \mathfrak{R}^{m \times m} $ 是对称正交的Householder矩阵。
 
 
 
@@ -1292,7 +1292,7 @@ R \\
 \begin{algorithm}[htbp]
     \caption{QR Decomposition Using Householder Transformation}
     \KwIn{Matrix $A$}
-    \KwOut{$v_1, \cdots, v_n, v_k \in \mathbb{R}^{m-k+1} $ ($Q$), $A=
+    \KwOut{$v_1, \cdots, v_n, v_k \in \mathfrak{R}^{m-k+1} $ ($Q$), $A=
     \left[\begin{array}{c}
     R \\
     0
@@ -1300,11 +1300,11 @@ R \\
     }
 
     \For(){$k$ in $1:n$}{
-        令 $ y=A_{k: m, k} \in \mathbb{R}^{m-k+1} $, 计算向量 $ v_{k} $
+        令 $ y=A_{k: m, k} \in \mathfrak{R}^{m-k+1} $, 计算向量 $ v_{k} $
     \begin{equation} w=y+\operatorname{sign}\left(y_{1}\right)\|y\| e_{1}\end{equation}
     \begin{equation} v_{k}=\frac{1}{\|w\|} w \end{equation}\;
 
-    将 $ A_{k: m, k: n} \in \mathbb{R}^{(m-k+1) \times(n-k+1)} $ 与反射矩阵 $ I-2 v_{k} v_{k}^{T} $ 相乘
+    将 $ A_{k: m, k: n} \in \mathfrak{R}^{(m-k+1) \times(n-k+1)} $ 与反射矩阵 $ I-2 v_{k} v_{k}^{T} $ 相乘
     \begin{equation} A_{k: m, k: n}:=A_{k: m, k: n}-2 v_{k}\left(v_{k}^{T} A_{k: m, k: n}\right) \end{equation}\;
     }
 \end{algorithm}
@@ -1314,14 +1314,14 @@ R \\
 
     \begin{equation} \left(I-2 v_{k} v_{k}^{T}\right) A_{k: m, k: n}=A_{k: m, k: n}-2 v_{k}\left(v_{k}^{T} A_{k: m, k: n}\right) \end{equation}
 
-    等价于用 $ H_{k} \in \mathbb{R}^{m \times m} $ 乘以 $ A \in \mathbb{R}^{m \times n}  $
+    等价于用 $ H_{k} \in \mathfrak{R}^{m \times m} $ 乘以 $ A \in \mathfrak{R}^{m \times n}  $
 
     \begin{equation} H_{k}=\left[\begin{array}{cc}I & 0 \\ 0 & I-2 v_{k} v_{k}^{T}\end{array}\right]=I-2\left[\begin{array}{c}0 \\ v_{k}\end{array}\right]\left[\begin{array}{l}0 \\ v_{k}\end{array}\right]^{T} \end{equation}
 \end{theorem}
 
    
 
-算法的最终结果将下列矩阵来代替 $ A\in \mathbb{R}^{m \times n}  $
+算法的最终结果将下列矩阵来代替 $ A\in \mathfrak{R}^{m \times n}  $
 \begin{equation}
 \left[\begin{array}{c}
 R \\
@@ -1336,7 +1336,7 @@ R \\
 
 \begin{equation} H_{k}=\left[\begin{array}{cc}I & 0 \\ 0 & I-2 v_{k} v_{k}^{T}\end{array}\right]=I-2\left[\begin{array}{c}0 \\ v_{k}\end{array}\right]\left[\begin{array}{l}0 \\ v_{k}\end{array}\right]^{T} \end{equation}
 
-第$k$次循环时，$v_k \in \mathbf{R}^{m - k + 1}$.
+第$k$次循环时，$v_k \in \mathfrak{R}^{m - k + 1}$.
 
 Householder方法第$k$次循环的复杂度：
 
@@ -1644,7 +1644,7 @@ The length was not changed, and $u_{1}$ is in the direction of $a_{1}-r_{1}$. We
 
 \subsection{分治策略}
 
-求解线性方程组 $ A x=b $, 矩阵 $ A \in \mathbb{R}^{n \times n} $ 分解成“结构简单” 的矩阵相乘:
+求解线性方程组 $ A x=b $, 矩阵 $ A \in \mathfrak{R}^{n \times n} $ 分解成“结构简单” 的矩阵相乘:
 \begin{equation}
 A=A_{1} A_{2} \cdots A_{k}
 \end{equation}
@@ -1673,15 +1673,15 @@ A=A_{1} A_{2} \cdots A_{k}
 \subsection{非奇异矩阵的QR分解}
 
 \begin{theorem}
-    任意非奇异矩阵 $ A \in \mathbb{R}^{n \times n} $, 都可以进行QR分解。
+    任意非奇异矩阵 $ A \in \mathfrak{R}^{n \times n} $, 都可以进行QR分解。
 \end{theorem}
 
 \begin{corollary}
-    $ Q \in \mathbb{R}^{n \times n} $ 是一个正交矩阵
+    $ Q \in \mathfrak{R}^{n \times n} $ 是一个正交矩阵
 \end{corollary}
 
 \begin{corollary}
-    $ R \in \mathbb{R}^{n \times n} $ 是一个上三角矩阵并且对角元素都为正数
+    $ R \in \mathfrak{R}^{n \times n} $ 是一个上三角矩阵并且对角元素都为正数
 \end{corollary}
 
 
@@ -1694,7 +1694,7 @@ A=A_{1} A_{2} \cdots A_{k}
 \subsection{QR分解求解$A^{-1}$}
 
 
-计算非奇异矩阵 $  {A} \in \mathbb{R}^{n \times n} $ 的逆 $  {A}^{-1} $, $X=\left[x_{1}, x_{2}, \cdots, x_{n}\right], x_{i} \in \mathbb{R}^{n}, i=1, \cdots, n$,$I=\left[e_{1}, e_{2}, \cdots, e_{n}\right], e_{i} \in \mathbb{R}^{n}, i=1, \cdots, n$
+计算非奇异矩阵 $  {A} \in \mathfrak{R}^{n \times n} $ 的逆 $  {A}^{-1} $, $X=\left[x_{1}, x_{2}, \cdots, x_{n}\right], x_{i} \in \mathfrak{R}^{n}, i=1, \cdots, n$,$I=\left[e_{1}, e_{2}, \cdots, e_{n}\right], e_{i} \in \mathfrak{R}^{n}, i=1, \cdots, n$
 ：
 
 
@@ -1726,7 +1726,7 @@ A=A_{1} A_{2} \cdots A_{k}
 
 \subsection{QR分解求解线性方程组}
 
-使用 $ Q R $ 分解求解线性方程组 $ A x=b $, 矩阵 $ A \in \mathbb{R}^{n \times n} $ 为非奇异矩阵
+使用 $ Q R $ 分解求解线性方程组 $ A x=b $, 矩阵 $ A \in \mathfrak{R}^{n \times n} $ 为非奇异矩阵
 
 \begin{algorithm}[htbp]
     \caption{QR分解求解线性方程组}

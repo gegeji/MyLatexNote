@@ -3,12 +3,12 @@
 \section{Positive Definite Matrices}
 
 \begin{definition}[Positive semidefinite]
-    a symmetric matrix $ A \in \mathbf{R}^{n \times n} $ is positive semidefinite if $ x^{T} A x \geq 0 \quad $ for all $ x $
+    a symmetric matrix $ A \in \mathfrak{R}^{n \times n} $ is positive semidefinite if $ x^{T} A x \geq 0 \quad $ for all $ x $
 
 \end{definition}
 
 \begin{definition}[positive definite]
-    a symmetric matrix $ A \in \mathbf{R}^{n \times n} $ is positive definite if $ x^{T} A x>0 \quad $ for all $ x \neq 0 $
+    a symmetric matrix $ A \in \mathfrak{R}^{n \times n} $ is positive definite if $ x^{T} A x>0 \quad $ for all $ x \neq 0 $
 \end{definition}
 
 \section{Schur complement}
@@ -78,19 +78,19 @@ hence there exists a nonzero $ x $ with $ A x=0 $, so $ A $ is singular
 \end{proof}
 
 \begin{corollary}
-    if $ A \in \mathbf{R}^{n \times n} $ is positive semidefinite, then
+    if $ A \in \mathfrak{R}^{n \times n} $ is positive semidefinite, then
 \begin{equation}
 B^{T} A B
 \end{equation}
-is positive semidefinite for any $ B \in \mathbf{R}^{n \times m} $
+is positive semidefinite for any $ B \in \mathfrak{R}^{n \times m} $
 \end{corollary}
 
 \begin{corollary}
-    if $ A \in \mathbf{R}^{n \times n} $ is positive definite, then
+    if $ A \in \mathfrak{R}^{n \times n} $ is positive definite, then
 \begin{equation}
 B^{T} A B
 \end{equation}
-is positive definite for any $ B \in \mathbf{R}^{n \times m} $ with linearly independent columns
+is positive definite for any $ B \in \mathfrak{R}^{n \times m} $ with linearly independent columns
 \end{corollary}
 
 \section{Examples}
@@ -126,7 +126,7 @@ This is also known as the Dirichlet energy function.
 \section{Cholesky Factorization}
 
 \begin{theorem}
-    every positive definite matrix $ A \in \mathbf{R}^{n \times n} $ can be factored as
+    every positive definite matrix $ A \in \mathfrak{R}^{n \times n} $ can be factored as
 \begin{equation}
 A=R^{T} R
 \end{equation}
@@ -602,7 +602,7 @@ c_{k_{1} k_{2} \cdots k_{n}}=\frac{(d+1) !}{k_{0} ! k_{1} ! k_{2} ! \cdots k_{n}
 \section{Vector of monomials}
 
 \begin{definition}
-    write polynomial of degree $ d $ or less, with variables $ x \in \mathbf{R}^{n} $, as
+    write polynomial of degree $ d $ or less, with variables $ x \in \mathfrak{R}^{n} $, as
 \begin{equation}
 \hat{f}(x)=\theta^{T} F(x)
 \end{equation}

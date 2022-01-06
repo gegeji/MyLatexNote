@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  6 JAN 2022 15:42
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.18)  6 JAN 2022 15:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -4393,10 +4393,12 @@ Package mdframed Info: mdframed works in twoside mode on input line 1346.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1346.
-Package mdframed Info: You first box width is to small
- mdframed fixed it
-(mdframed)              on input line 1350.
- [78] [79]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [78]
+Package mdframed Info: Not enough space on this page on input line 1350.
+ [79]
 \bbl@ensure@english {Chapter} 7.
 File: Pictures//chapter_head_3.png Graphic file (type bmp)
 <Pictures//chapter_head_3.png>
@@ -5867,8 +5869,8 @@ Overfull \hbox (1.29369pt too wide) detected at line 535
  []
 
 [183]
-Overfull \hbox (19.74004pt too wide) in paragraph at lines 546--547
-[][][]\TU/LinBiolinum(0)/b/n/10 Problem 16.10 []— \TU/FZPingXYSJW.TTF(0)/b/n/10 分 段 多 项 式 拟 合 问 题\TU/LinBiolinum(0)/b/n/10 .[] [][][][]\TU/FZPingXYSJW.TTF(0)/m/n/10.95 假 设 样 本 点 $[] \OML/zncfmi/m/it/10.95 ; [] ; [] \LMS/ntxsy/m/n/10.95 2 \U/ntxmia/m/it/10.95 Ò[]$ \T1/TeXGyreScholaX-OsF/m/n/10.95 , \TU/FZPingXYSJW.TTF(0)/m/n/10.95 有 $\OML/zncfmi/m/it/10.95 x[]; [] ; x[] \LMS/ntxsy/m/n/10.95 ^^T
+Overfull \hbox (19.9637pt too wide) in paragraph at lines 546--547
+[][][]\TU/LinBiolinum(0)/b/n/10 Problem 16.10 []— \TU/FZPingXYSJW.TTF(0)/b/n/10 分 段 多 项 式 拟 合 问 题\TU/LinBiolinum(0)/b/n/10 .[] [][][][]\TU/FZPingXYSJW.TTF(0)/m/n/10.95 假 设 样 本 点 $[] \OML/zncfmi/m/it/10.95 ; [] ; [] \LMS/ntxsy/m/n/10.95 2 \U/ntxmia/m/it/10.95 R[]$ \T1/TeXGyreScholaX-OsF/m/n/10.95 , \TU/FZPingXYSJW.TTF(0)/m/n/10.95 有 $\OML/zncfmi/m/it/10.95 x[]; [] ; x[] \LMS/ntxsy/m/n/10.95 ^^T
  []
 
 Package mdframed Info: mdframed works in twoside mode on input line 586.
@@ -6592,8 +6594,8 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 1133.
 
-Overfull \hbox (14.38678pt too wide) in paragraph at lines 1175--1176
-[]$\OML/zncfmi/m/it/10.95 g$ \T1/TeXGyreScholaX-OsF/m/n/10.95 is a func-tion from $\OT1/TeXGyreScholaX-TLF/sb/n/10.95 R[]$ \T1/TeXGyreScholaX-OsF/m/n/10.95 to $\OT1/TeXGyreScholaX-TLF/sb/n/10.95 R$ \T1/TeXGyreScholaX-OsF/m/n/10.95 (the cost func-tion or ob-jec-tive func-tion), $\OML/zncfmi/m/it/10.95 x \U/ntxmia/m/it/10.95 = []$
+Overfull \hbox (16.60846pt too wide) in paragraph at lines 1175--1176
+[]$\OML/zncfmi/m/it/10.95 g$ \T1/TeXGyreScholaX-OsF/m/n/10.95 is a func-tion from $\U/ntxmia/m/it/10.95 R[]$ \T1/TeXGyreScholaX-OsF/m/n/10.95 to $\U/ntxmia/m/it/10.95 R$ \T1/TeXGyreScholaX-OsF/m/n/10.95 (the cost func-tion or ob-jec-tive func-tion), $\OML/zncfmi/m/it/10.95 x \U/ntxmia/m/it/10.95 = []$
  []
 
 Package mdframed Info: mdframed works in twoside mode on input line 1182.

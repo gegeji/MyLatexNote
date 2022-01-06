@@ -3,9 +3,9 @@
 \section{Linear Function}
 
 \begin{definition}[Linear Function]
-    $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$是一个将$n$维向量映射成数的函数。 
+    $f: \mathfrak{R}^{n} \rightarrow \mathfrak{R}$是一个将$n$维向量映射成数的函数。 
 
-    线性函数 $ f $ 满足以下两个性质 $ \left(k \in \mathbb{R}, x, y \in \mathbb{R}^{n}\right) $ :
+    线性函数 $ f $ 满足以下两个性质 $ \left(k \in \mathfrak{R}, x, y \in \mathfrak{R}^{n}\right) $ :
 
     \begin{itemize}
         \item 齐次性(homogeneity): $ f(k x)=k f(x) $
@@ -35,7 +35,7 @@
 \end{proof}
 
 \begin{theorem}
-        a function $ f: \mathbf{R}^{n} \rightarrow \mathbf{R} $ is linear if the \term{superposition property} (叠加原理)
+        a function $ f: \mathfrak{R}^{n} \rightarrow \mathfrak{R} $ is linear if the \term{superposition property} (叠加原理)
     \begin{equation}
     f(\alpha x+\beta y)=\alpha f(x)+\beta f(y)
     \end{equation}
@@ -46,13 +46,13 @@
 In fact it says a lot. On the left-hand side, the term $ \alpha x+\beta y $ involves scalar-vector multiplication and vector addition. On the right-hand side, $ \alpha f(x)+\beta f(y) $ involves ordinary scalar multiplication and scalar addition.
 
 \begin{corollary}
-    设 $ \alpha_{1, \ldots,} \alpha_{m} \in \mathbb{R}, u_{1}, \ldots, u_{m} \in \mathbb{R}^{n} $, 则线性函数 $ f $ 满足
+    设 $ \alpha_{1, \ldots,} \alpha_{m} \in \mathfrak{R}, u_{1}, \ldots, u_{m} \in \mathfrak{R}^{n} $, 则线性函数 $ f $ 满足
 
     \begin{equation} \begin{aligned} f\left(\alpha_{1} u_{1}+\alpha_{2} u_{2}+\ldots+\alpha_{m} u_{m}\right) &=f\left(\alpha_{1} u_{1}\right)+f\left(\alpha_{2} u_{2}+\ldots+\alpha_{m} u_{m}\right) \\ &=\alpha_{1} f\left(u_{1}\right)+f\left(\alpha_{2} u_{2}+\ldots+\alpha_{m} u_{m}\right) \\ &=\alpha_{1} f\left(u_{1}\right)+\alpha_{2} f\left(u_{2}\right)+\ldots+\alpha_{m} f\left(u_{m}\right) \end{aligned} \end{equation}
 \end{corollary}
 
 \begin{definition}[内积函数 (inner product function)]
-    对于$n$维向量 $ a $,满足以下形式的函数$ f: \mathbf{R}^{n} \rightarrow \mathbf{R} $被称为内积函数
+    对于$n$维向量 $ a $,满足以下形式的函数$ f: \mathfrak{R}^{n} \rightarrow \mathfrak{R} $被称为内积函数
 
     \begin{equation} f(x)=a^{T} x=a_{1} x_{1}+a_{2} x_{2}+\ldots+a_{n} x_{n} \end{equation}
 \end{definition}
@@ -111,7 +111,7 @@ holds for all scalars $ \alpha, \beta $ and all $ n $-vectors $ x, y $.
 \end{theorem}
 
 \begin{proof}
-    假设 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 是线性函数， 那么可用 $ f(x)=a^{T} x $ 来表示， $ a $ 为常量。
+    假设 $ f: \mathfrak{R}^{n} \rightarrow \mathfrak{R} $ 是线性函数， 那么可用 $ f(x)=a^{T} x $ 来表示， $ a $ 为常量。
 
     \begin{equation} \begin{aligned} f(x) &=f\left(x_{1} e_{1}+x_{2} e_{2}+\ldots+x_{n} e_{n}\right) \\ &=x_{1} f\left(e_{1}\right)+x_{2} f\left(e_{2}\right)+\ldots+x_{n} f\left(e_{n}\right) \\ & = a^Tx \quad (a = ( f\left(e_{1}\right), f\left(e_{2}\right), \ldots, f\left(e_{n}\right) )) \end{aligned} \end{equation}
 \end{proof}
@@ -124,10 +124,10 @@ holds for all scalars $ \alpha, \beta $ and all $ n $-vectors $ x, y $.
 
 
 \begin{definition}[仿射函数 (affine function)]
-    其一般形式为 $ f(x)=a^{T} x+{b} $, 其中 $ a \in \mathbb{R}^{n}, b \in \mathbb{R} $ 为标量。 
+    其一般形式为 $ f(x)=a^{T} x+{b} $, 其中 $ a \in \mathfrak{R}^{n}, b \in \mathfrak{R} $ 为标量。 
 
     
-        for fixed $ a \in \mathbf{R}^{n}, b \in \mathbf{R} $, define a function $ f: \mathbf{R}^{n} \rightarrow \mathbf{R} $ by
+        for fixed $ a \in \mathfrak{R}^{n}, b \in \mathfrak{R} $, define a function $ f: \mathfrak{R}^{n} \rightarrow \mathfrak{R} $ by
     \begin{equation}
     f(x)=a^{T} x+b=a_{1} x_{1}+a_{2} x_{2}+\cdots+a_{n} x_{n}+b
     \end{equation}
@@ -137,9 +137,9 @@ holds for all scalars $ \alpha, \beta $ and all $ n $-vectors $ x, y $.
 \end{definition}
 
 \begin{theorem}
-    函数 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 为仿射函数需要满足
+    函数 $ f: \mathfrak{R}^{n} \rightarrow \mathfrak{R} $ 为仿射函数需要满足
 
-\begin{equation} f(\alpha x+\beta y)=\alpha f(x)+\beta f(y), \alpha+\beta=1, \alpha, \beta \in \mathbb{R}, x, y \in \mathbb{R}^{n} \end{equation}
+\begin{equation} f(\alpha x+\beta y)=\alpha f(x)+\beta f(y), \alpha+\beta=1, \alpha, \beta \in \mathfrak{R}, x, y \in \mathfrak{R}^{n} \end{equation}
 \end{theorem}
 
 \begin{corollary}
@@ -188,7 +188,7 @@ b=f(0)
 \section{泰勒展开}
 
 \begin{definition}[函数$f$第$i$个分量的一阶偏导数]
-    假设 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ , 函数 $ f $ 在 $ z $ 点可微
+    假设 $ f: \mathfrak{R}^{n} \rightarrow \mathfrak{R} $ , 函数 $ f $ 在 $ z $ 点可微
 
     \begin{equation} \begin{aligned} \frac{\partial f}{\partial z_{i}}(z) &=\lim _{t \rightarrow 0} \frac{f\left(z_{1}, \cdots, z_{i-1}, z_{i}+t, z_{i+1}, \cdots, z_{n}\right)-f(z)}{t} \\ &=\lim _{t \rightarrow 0} \frac{f\left(z+t e_{i}\right)-f(z)}{t} \end{aligned} \end{equation}
 \end{definition}
@@ -198,7 +198,7 @@ b=f(0)
 \end{definition}
 
 \begin{definition}[Taylor's Approximation]
-    假设 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ , 函数 $ f $ 在 $ z $ 点充分光滑， 即处处可导。
+    假设 $ f: \mathfrak{R}^{n} \rightarrow \mathfrak{R} $ , 函数 $ f $ 在 $ z $ 点充分光滑， 即处处可导。
 
     $f(x)$在$z$附近的泰勒展开是
 
@@ -208,7 +208,7 @@ b=f(0)
 
 
 \begin{definition}[一阶泰勒公式]
-    假设$ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $, 函数$f$在$z$点可导
+    假设$ f: \mathfrak{R}^{n} \rightarrow \mathfrak{R} $, 函数$f$在$z$点可导
 
     \begin{equation} \hat{f}(x)=f(z)+\frac{\partial f}{\partial x_{1}}(z)\left(x_{1}-z_{1}\right)+\ldots+\frac{\partial f}{\partial x_{1}}(z)\left(x_{n}-z_{n}\right) \end{equation}
 \end{definition}

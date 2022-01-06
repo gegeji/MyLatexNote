@@ -11,7 +11,7 @@
 
 \begin{problem}
     \label{pbl:non-linear-least-squares}
-    设函数 $ f(x): \mathbb{R}^{n} \rightarrow \mathbb{R}^{m} $ ,其第 $ i $ 个分量为函数 $ f_{i}(x)$
+    设函数 $ f(x): \mathfrak{R}^{n} \rightarrow \mathfrak{R}^{m} $ ,其第 $ i $ 个分量为函数 $ f_{i}(x)$
 
     则有
     \begin{equation}
@@ -58,9 +58,9 @@
     这个例子与遥感卫星成像等有关。
 \end{remark}
 
-建立一个理想的相机模型，由参数 $ A \in \mathbb{R}^{2 \times 3}, b \in \mathbb{R}^{2}, c \in \mathbb{R}^{3}, d \in \mathbb{R} $ 来描述。相机及其位置和方向用 $ A ， b ， c ， d $ 来刻画。
+建立一个理想的相机模型，由参数 $ A \in \mathfrak{R}^{2 \times 3}, b \in \mathfrak{R}^{2}, c \in \mathfrak{R}^{3}, d \in \mathfrak{R} $ 来描述。相机及其位置和方向用 $ A ， b ， c ， d $ 来刻画。
 
-目标位置 $ x \in \mathbb{R}^{3} $ 在二维平面图像投影位置 $ x^{\prime} \in \mathbb{R}^{2} $ .
+目标位置 $ x \in \mathfrak{R}^{3} $ 在二维平面图像投影位置 $ x^{\prime} \in \mathfrak{R}^{2} $ .
 
 \begin{equation}
 x^{\prime}=\frac{1}{c^{T} x+d}(A x+b)
@@ -69,7 +69,7 @@ x^{\prime}=\frac{1}{c^{T} x+d}(A x+b)
 如果物体在摄像机前面，则 $ c^{T} x+d>0 $ .
 
 \begin{problem}
-    位于 $ x_{e x} $ 位置的物体由 $ l $ 个相机观察(由 $ A_{i}, b_{i}, c_{i}, d_{i} $ 描述),目标在相机图像平面上位置 $ y_{i} \in \mathbb{R}^{2} $
+    位于 $ x_{e x} $ 位置的物体由 $ l $ 个相机观察(由 $ A_{i}, b_{i}, c_{i}, d_{i} $ 描述),目标在相机图像平面上位置 $ y_{i} \in \mathfrak{R}^{2} $
 
     \begin{equation}
     y_{i}=\frac{1}{c_{i}^{T} x_{e x}+d_{i}}\left(A_{i} x_{\alpha x}+b_{i}\right)+v_{i}
@@ -169,8 +169,8 @@ $ \left(x^{(i)}, y^{(i)}\right) $ 是数据点， $ y^{(i)} \in\{-1,1\} $ . $ \p
 
 \subsection{Gradient and Directional Derivative}
 
-\begin{definition}[$\mathbb{R}^{n} \rightarrow \mathbb{R}$函数$g$的梯度]
-    可微函数 $ g: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 在 $ z \in \mathbb{R}^{n} $ 的梯度(gradient)为
+\begin{definition}[$\mathfrak{R}^{n} \rightarrow \mathfrak{R}$函数$g$的梯度]
+    可微函数 $ g: \mathfrak{R}^{n} \rightarrow \mathfrak{R} $ 在 $ z \in \mathfrak{R}^{n} $ 的梯度(gradient)为
 
 \begin{equation}
 \nabla g(z)=\left[\begin{array}{c}
@@ -204,7 +204,7 @@ This is called the \term{directional derivative} of $ g $ (at $ z $, in the dire
 
 
 \begin{definition}[Jacobian Matrices]
-    可微函数 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R}^{m} $ 在 $ z \in \mathbb{R}^{n} $ 的导数矩阵(Jacobian矩阵)
+    可微函数 $ f: \mathfrak{R}^{n} \rightarrow \mathfrak{R}^{m} $ 在 $ z \in \mathfrak{R}^{n} $ 的导数矩阵(Jacobian矩阵)
 
 \begin{equation}
 f(x)=\left[\begin{array}{c}
@@ -827,7 +827,7 @@ x^{(k+1)}=x^{(k)}-\left(D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right)+\lam
 \section{Newton Method}
 
 \begin{proposition}
-    Assume $ f: \mathbf{R}^{n} \rightarrow \mathbf{R}^{n} $ is differentiable.
+    Assume $ f: \mathfrak{R}^{n} \rightarrow \mathfrak{R}^{n} $ is differentiable.
 \end{proposition}
 
 
@@ -926,7 +926,7 @@ recall Gauss-Newton method for nonlinear least squares problem
     \begin{equation}\term{minimize} \quad\|f(x)\|^{2} \end{equation}
 \end{problem}
 
-where $ f $ is a differentiable function from $ \mathbf{R}^{n} $ to $ \mathbf{R}^{m} $.
+where $ f $ is a differentiable function from $ \mathfrak{R}^{n} $ to $ \mathfrak{R}^{m} $.
 
 Gauss-Newton update
 \begin{equation}
@@ -1054,7 +1054,7 @@ Positive scalar $ t $ is called the \term{step size}, step 2 in algorithm is cal
 
 \subsubsection{Interpretation of line search} 
 
-to determine a suitable step size, consider the function $ h: \mathbf{R} \rightarrow \mathbf{R} $
+to determine a suitable step size, consider the function $ h: \mathfrak{R} \rightarrow \mathfrak{R} $
 \begin{equation}
 h(t)=g\left(x^{(k)}+t v\right)
 \end{equation}
@@ -1172,7 +1172,7 @@ is small (e.g., $ f\left(x^{\star}\right) $ is small, or $ f $ is nearly affine 
 
     $\text{minimize} \quad g\left(x_{1}, x_{2}, \ldots, x_{n}\right) $
 
-    $ g $ is a function from $ \mathbf{R}^{n} $ to $ \mathbf{R} $ (the cost function or objective function), $ x=\left(x_{1}, x_{2}, \ldots, x_{n}\right) $ is $ n $-vector of optimization variables.
+    $ g $ is a function from $ \mathfrak{R}^{n} $ to $ \mathfrak{R} $ (the cost function or objective function), $ x=\left(x_{1}, x_{2}, \ldots, x_{n}\right) $ is $ n $-vector of optimization variables.
 \end{problem}
 
 to solve a maximization problem (i.e., maximize $ g(x) $ ), minimize $ -g(x) $.

@@ -48,7 +48,7 @@ L(x, \lambda)=f(x)-\lambda h(x)=2 x_{1}^{2}+x_{2}^{2}+\lambda\left(1-x_{1}-x_{2}
 &g_{j}(x) \leq 0, j \in J \triangleq\{1, \cdots, q\}
     \end{aligned}\end{equation}
 
-$ \lambda_{i} \in \mathbb{R}, i \in {I}, u_{j} \in \mathbb{R}^{+}, j \in J $称为\term{拉格朗日乘子(Lagrange Multipliers)} .
+$ \lambda_{i} \in \mathfrak{R}, i \in {I}, u_{j} \in \mathfrak{R}^{+}, j \in J $称为\term{拉格朗日乘子(Lagrange Multipliers)} .
 
 引入拉格朗日函数 \begin{equation} L(x, \lambda, u)=f(x)-\sum_{i \in I} \lambda_{i} h_{i}(x)-\sum_{j \in J} u_{j} g_{j}(x)   \end{equation}
 
@@ -163,7 +163,7 @@ x_{1}&=2 x_{2}
    \text{s.t.} &C x=d 
 \end{aligned}\end{equation}
 
-矩阵 $C \in \mathbb{R}^{p \times n} $, 向量 $ d \in \mathbb{R}^{p} $.
+矩阵 $C \in \mathfrak{R}^{p \times n} $, 向量 $ d \in \mathfrak{R}^{p} $.
 \end{problem}
 
 
@@ -187,7 +187,7 @@ x_{1}&=2 x_{2}
 \subsection{最小范数优化问题的例子}
 
 \begin{problem}
-    矩阵 $ C \in \mathbb{R}^{2 \times 10} $, 向量 $ d \in \mathbb{R}^{2} $ :
+    矩阵 $ C \in \mathfrak{R}^{2 \times 10} $, 向量 $ d \in \mathfrak{R}^{2} $ :
 
 \begin{equation}Cx=d\end{equation}
 
@@ -289,7 +289,7 @@ C x=C C^{T} \lambda=d \Rightarrow \lambda=\left(C C^{T}\right)^{-1} d
 以上得到的是$\hat{x}=C^{\dagger} d$是问题最优解的必要条件。还需要证明它是最优解。
 
 \begin{remark}行线性无关矩阵$A$伪逆的定义：
-    矩阵 $  {A} \in \mathbb{R}^{m \times n} $ ,当$m \leq  {n} $ 时，且行向量线性无关，则 $ A A^{T} $ 可逆。 $ A^{T} $ 列向量线性无关，即 $ \left(A^{T}\right)^{T} A^{T}= {A} A^{T} $ 非奇异；
+    矩阵 $  {A} \in \mathfrak{R}^{m \times n} $ ,当$m \leq  {n} $ 时，且行向量线性无关，则 $ A A^{T} $ 可逆。 $ A^{T} $ 列向量线性无关，即 $ \left(A^{T}\right)^{T} A^{T}= {A} A^{T} $ 非奇异；
     定义伪逆:
     \begin{equation}
     A^{\dagger}=A^{T}\left(A A^{T}\right)^{-1}
@@ -336,7 +336,7 @@ C \hat{x}=C C^{T}\left(C C^{T}\right)^{-1} d=d
 
 \section{QR分解求解最小范数优化问题}
 假设$C_{p \times n}, p \le n$,$C$的行向量线性无关。
-对矩阵 $ C^{T} \in \mathbb{R}^{n \times p} $ 进行 $ Q R $ 分解， 设$ C^{T}=Q R $
+对矩阵 $ C^{T} \in \mathfrak{R}^{n \times p} $ 进行 $ Q R $ 分解， 设$ C^{T}=Q R $
 \begin{equation}
 \begin{aligned}
 \hat{x} &=C^{T}\left(C C^{T}\right)^{-1} d \\
@@ -435,7 +435,7 @@ $.
         \text{s.t.} & Cx =d 
     \end{aligned}\end{equation}
 
-    矩阵 $ {A} \in \mathbb{R}^{m \times n}, {C} \in \mathbb{R}^{p \times n} $, 向量 $ {b} \in \mathbb{R}^{m}, d \in \mathbb{R}^{p} $
+    矩阵 $ {A} \in \mathfrak{R}^{m \times n}, {C} \in \mathfrak{R}^{p \times n} $, 向量 $ {b} \in \mathfrak{R}^{m}, d \in \mathfrak{R}^{p} $
 \end{problem}
 
 
@@ -456,7 +456,7 @@ $.
 \section{优化问题：分段多项式拟合问题}
 
 \begin{problem}
-    假设样本点 $ \left(x_{1}, y_{1}\right), \ldots,\left(x_{N}, y_{N}\right) \in \mathbb{R}^{2} $ ,有 \begin{equation} x_{1}, \ldots, x_{M} \leq a , x_{M+1}, \ldots, x_{N}>a\end{equation}
+    假设样本点 $ \left(x_{1}, y_{1}\right), \ldots,\left(x_{N}, y_{N}\right) \in \mathfrak{R}^{2} $ ,有 \begin{equation} x_{1}, \ldots, x_{M} \leq a , x_{M+1}, \ldots, x_{N}>a\end{equation}
 
     设$ {d} $ 阶多项式 
 
@@ -543,7 +543,7 @@ $,可以构造矩阵
 对于分段多项式拟合问题
 
 \begin{problem}[分段多项式拟合问题]
-    假设样本点 $ \left(x_{1}, y_{1}\right), \ldots,\left(x_{N}, y_{N}\right) \in \mathbb{R}^{2} $ ,有 $ x_{1}, \ldots, x_{M} \leq a $, $ x_{M+1}, \ldots, x_{N}>a $.
+    假设样本点 $ \left(x_{1}, y_{1}\right), \ldots,\left(x_{N}, y_{N}\right) \in \mathfrak{R}^{2} $ ,有 $ x_{1}, \ldots, x_{M} \leq a $, $ x_{M+1}, \ldots, x_{N}>a $.
 
      \begin{equation}\begin{array}{ll}\min _{\theta} & \sum_{i=1}^{M}\left(f\left(x_{i}\right)-y_{i}\right)^{2}+\sum_{i=M+1}^{N}\left(g\left(x_{i}\right)-y_{i}\right)^{2} \\ \text { s.t. } & f(a)=g(a), f^{\prime}(a)=g^{\prime}(a)\end{array}\end{equation}
 \end{problem}
@@ -568,13 +568,13 @@ $,可以构造矩阵
 \left[\begin{array}{l}
 A \\
 C
-\end{array}\right] \in \mathbb{R}^{(m+p) \times n}
+\end{array}\right] \in \mathfrak{R}^{(m+p) \times n}
 \end{equation}
 \end{proposition}
 
 \begin{proposition}
     \label{prop:assumption-2}
-    矩阵 $ C \in \mathbb{R}^{p \times n} $行线性无关
+    矩阵 $ C \in \mathfrak{R}^{p \times n} $行线性无关
 
 \end{proposition}
 
@@ -600,7 +600,7 @@ C
 
 引入拉格朗日函数
 \begin{equation}
-L(x, z)=\frac{1}{2}\|A x-b\|_{2}^{2}-z^{T}(d-C x), z \in \mathbb{R}^{p}
+L(x, z)=\frac{1}{2}\|A x-b\|_{2}^{2}-z^{T}(d-C x), z \in \mathfrak{R}^{p}
 \end{equation}
 
 对拉格朗日函数求导
@@ -659,7 +659,7 @@ d
 \end{array}\right],\left[\begin{array}{l}
 \hat{x} \\
 z
-\end{array}\right] \in \mathbb{R}^{n+p}
+\end{array}\right] \in \mathfrak{R}^{n+p}
 \end{equation}
 
 则它是最优解。
@@ -1076,7 +1076,7 @@ and therefore $ (m+p) n^{2} \geq n p^{2} $. So the flop count above is no more t
 \subsection{等式约束优化问题}
 
 \begin{problem}[等式约束优化问题]
-    给定一个目标函数 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $, 我们希望找到 $ {x} \in \mathbb{R}^{n} $, 在满足约束条件 $ g({x})=0 $ 的前提下， 使得 $ f({x}) $ 有最小值
+    给定一个目标函数 $ f: \mathfrak{R}^{n} \rightarrow \mathfrak{R} $, 我们希望找到 $ {x} \in \mathfrak{R}^{n} $, 在满足约束条件 $ g({x})=0 $ 的前提下， 使得 $ f({x}) $ 有最小值
 
     \begin{equation}
 \begin{array}{ll}
@@ -1132,7 +1132,7 @@ L({x}, \lambda)=f({x})+\lambda g({x})
 \end{array}
 \end{equation}
 
-约束不等式 $ g({x}) \leq 0 $ 称为\term{原始可行性(primal feasibility)}, 据此我们定义\term{可行域(feasible region)} $ K=\{ {x} \in \mathbb{R}^{n} \mid g({x}) \leq 0 \}$.
+约束不等式 $ g({x}) \leq 0 $ 称为\term{原始可行性(primal feasibility)}, 据此我们定义\term{可行域(feasible region)} $ K=\{ {x} \in \mathfrak{R}^{n} \mid g({x}) \leq 0 \}$.
 \end{problem}
 
 假设 $ {x}^{\star} $ 为满足约束条件的最佳解， 分开两种情况讨论:
@@ -1228,7 +1228,7 @@ h_{k}({x}) & \leq 0 \\
 & x_{2} \leq \alpha
 \end{array}
 \end{equation}
-其中 $ \left(x_{1}, x_{2}\right) \in \mathbb{R}^{2}, \alpha $ 为实数。
+其中 $ \left(x_{1}, x_{2}\right) \in \mathfrak{R}^{2}, \alpha $ 为实数。
 \end{problem}
 
 写出Lagrangigan函数
@@ -1523,17 +1523,17 @@ h_{k}({x})=0,(k=1,2, \cdots, l) \\
 \subsection{凸集的概念}
 
 \begin{definition}[点、（直）线、线段]
-    $ x_{1} \neq x_{2} $ 是 $ \mathbb{R}^{n} $ 中的两\term{点}, $ \theta \in \mathbb{R} $, 那么 $ y=x_{2}+\theta\left(x_{1}-x_{2}\right) $ 表示穿过两点的\term{线}.
+    $ x_{1} \neq x_{2} $ 是 $ \mathfrak{R}^{n} $ 中的两\term{点}, $ \theta \in \mathfrak{R} $, 那么 $ y=x_{2}+\theta\left(x_{1}-x_{2}\right) $ 表示穿过两点的\term{线}.
 
     当 $ 0 \leqslant \theta \leqslant 1 $ 时， $ y $ 是 $ x_{1} $ 到 $ x_{2} $ 的\term{线段},$ y $ 也可以表示成 $ y=\theta x_{1}+(1-\theta) x_{2} $.
 \end{definition}
 
 \begin{definition}[仿射集]
-    一个集合 $ C \subseteq \mathbb{R}^{n} $ 是\term{仿射集}如果其中任意两个不同的点的连线仍包含于 $ C $ .
+    一个集合 $ C \subseteq \mathfrak{R}^{n} $ 是\term{仿射集}如果其中任意两个不同的点的连线仍包含于 $ C $ .
 \end{definition}
 
 \begin{definition}[凸集]
-    一个集合 $ C \subseteq \mathbb{R}^{n} $ 是凸集， 如果任意两点之间的线段仍包含于 $ C $ .即 $ \forall x_{1}, x_{2} \in C $, 任意 $ 0 \leqslant \theta \leqslant 1 $, 有 $ \theta x_{1}+(1-\theta) x_{2} \in C $ .
+    一个集合 $ C \subseteq \mathfrak{R}^{n} $ 是凸集， 如果任意两点之间的线段仍包含于 $ C $ .即 $ \forall x_{1}, x_{2} \in C $, 任意 $ 0 \leqslant \theta \leqslant 1 $, 有 $ \theta x_{1}+(1-\theta) x_{2} \in C $ .
 \end{definition}
 
 \begin{theorem}
@@ -1541,7 +1541,7 @@ h_{k}({x})=0,(k=1,2, \cdots, l) \\
 \end{theorem}
 
 \begin{definition}[凸函数]
-    一个函数 $ f: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 是\term{凸函数}如果定义域是凸集而且对任意定义域的 $ x, y, 0 \leqslant \theta \leqslant 1 $ 有
+    一个函数 $ f: \mathfrak{R}^{n} \rightarrow \mathfrak{R} $ 是\term{凸函数}如果定义域是凸集而且对任意定义域的 $ x, y, 0 \leqslant \theta \leqslant 1 $ 有
 \begin{equation}
 f(\theta x+(1-\theta) y) \leqslant \theta f(x)+(1-\theta) f(y)
 \end{equation}
@@ -1583,7 +1583,7 @@ f(\theta x+(1-\theta) y) \leqslant \theta f(x)+(1-\theta) f(y)
 \end{array}
 \end{equation}
 
-$ x=\left(x_{1}, \ldots, x_{n}\right) $ 是\term{优化变量}, 函数 $ f_{0}: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 是\term{目标函数}, 函数 $ f_{i}: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 是\term{约束函数}. $ b_{i} $ 是约束。使得 $ f_{0}(x) $ 在约束条件下最小的 $ x^{*} $ 叫做\term{最优点}, 或问题的\term{解}.
+$ x=\left(x_{1}, \ldots, x_{n}\right) $ 是\term{优化变量}, 函数 $ f_{0}: \mathfrak{R}^{n} \rightarrow \mathfrak{R} $ 是\term{目标函数}, 函数 $ f_{i}: \mathfrak{R}^{n} \rightarrow \mathfrak{R} $ 是\term{约束函数}. $ b_{i} $ 是约束。使得 $ f_{0}(x) $ 在约束条件下最小的 $ x^{*} $ 叫做\term{最优点}, 或问题的\term{解}.
 \end{definition}
 
 \begin{definition}[凸优化]
@@ -1655,12 +1655,12 @@ $ g_{i}(x) \leqslant 0 $叫做 \term{$ 0- $sublevel集}, 是凸集。
 然而对于有限制条件的凸优化问题却不是这样。拉格朗日对偶性可以将有限制的凸优化问题转化为没有限制的问题， 来求解凸优化问题。
 
 \begin{definition}[拉格朗日函数]
-    给定一个凸优化问题， 拉格朗日算子是一个函数 $ \mathcal{L}: \mathbb{R}^{n} \times \mathbb{R}^{m} \times \mathbb{R}^{p} \rightarrow \mathbb{R} $, 定义为:
+    给定一个凸优化问题， 拉格朗日算子是一个函数 $ \mathcal{L}: \mathfrak{R}^{n} \times \mathfrak{R}^{m} \times \mathfrak{R}^{p} \rightarrow \mathfrak{R} $, 定义为:
     \begin{equation}
     \mathcal{L}(x, \alpha, \beta)=f(x)+\sum_{i=1}^{m} \alpha_{i} g_{i}(x)+\sum_{i=1}^{p} \beta_{i} h_{i}(x)
     \end{equation}
 
-    $ x \in \mathbb{R}^{n} $ 叫做\term{主变量(primal variable)}. $ \alpha \in \mathbb{R}^{m}, \beta \in \mathbb{R}^{p} $ 统称对偶变量或拉格朗日乘子。
+    $ x \in \mathfrak{R}^{n} $ 叫做\term{主变量(primal variable)}. $ \alpha \in \mathfrak{R}^{m}, \beta \in \mathfrak{R}^{p} $ 统称对偶变量或拉格朗日乘子。
 \end{definition}
 
 \begin{theorem}
@@ -1681,7 +1681,7 @@ $ g_{i}(x) \leqslant 0 $叫做 \term{$ 0- $sublevel集}, 是凸集。
 \min _{x}\left[\max _{\alpha, \beta, \alpha_{i} \geqslant 0} \mathcal{L}(x, \alpha, \beta)\right]=\min _{x} \theta_{\mathcal{P}}(x)
 \end{equation}
 
-括号内的 $ \theta_{\mathcal{P}}: \mathbb{R}^{n} \rightarrow \mathbb{R} $ 叫做\term{主目标(primal objective)}, 等号右边的没有限制的最小化问题叫做\term{主问题(primal problem)}. 用 $ x^{*} $ 表示\term{主问题的解},$ p^{*}=\theta_{\mathcal{P}}\left(x^{*}\right) $ 表示\term{主目标的最优值}.
+括号内的 $ \theta_{\mathcal{P}}: \mathfrak{R}^{n} \rightarrow \mathfrak{R} $ 叫做\term{主目标(primal objective)}, 等号右边的没有限制的最小化问题叫做\term{主问题(primal problem)}. 用 $ x^{*} $ 表示\term{主问题的解},$ p^{*}=\theta_{\mathcal{P}}\left(x^{*}\right) $ 表示\term{主目标的最优值}.
 \end{problem}
 
 \begin{definition}[primal feasible]
@@ -1728,7 +1728,7 @@ f(x)+\infty & x \text { 不是主可行的 }
 \max _{\alpha, \beta, \alpha \geqslant 0}\left[\min _{x} \mathcal{L}(x, \alpha, \beta)\right]=\max _{\alpha, \beta, \alpha \geqslant 0} \theta_{\mathcal{D}}(\alpha, \beta)
 \end{equation}
 
-$ \theta_{\mathcal{D}}(\alpha, \beta): \mathbb{R}^{m} \times \mathbb{R}^{p} \rightarrow \mathbb{R} $ 是\term{对偶目标(dual objective)},等号右边的有限制的最大化问题叫做\term{对偶问题}. 用 $ \left(\alpha^{*}, \beta^{*}\right) $ 表示\term{对偶问题的解}, $ d^{*}=\theta_{\mathcal{D}}\left(\alpha^{*}, \beta^{*}\right) $ 表示\term{对偶目标的最优值}.
+$ \theta_{\mathcal{D}}(\alpha, \beta): \mathfrak{R}^{m} \times \mathfrak{R}^{p} \rightarrow \mathfrak{R} $ 是\term{对偶目标(dual objective)},等号右边的有限制的最大化问题叫做\term{对偶问题}. 用 $ \left(\alpha^{*}, \beta^{*}\right) $ 表示\term{对偶问题的解}, $ d^{*}=\theta_{\mathcal{D}}\left(\alpha^{*}, \beta^{*}\right) $ 表示\term{对偶目标的最优值}.
 \end{definition}
 
 \begin{definition}[对偶可行]
@@ -1785,7 +1785,7 @@ $ \theta_{\mathcal{D}}(\alpha, \beta): \mathbb{R}^{m} \times \mathbb{R}^{p} \rig
 \end{proof}
 
 \begin{theorem}
-    设 $ x^{*} \in \mathbb{R}^{n}, \alpha^{*} \in \mathbb{R}^{m}, \beta^{*} \in \mathbb{R}^{p} $, 下列条件为 $ {KKT} $ 条件:
+    设 $ x^{*} \in \mathfrak{R}^{n}, \alpha^{*} \in \mathfrak{R}^{m}, \beta^{*} \in \mathfrak{R}^{p} $, 下列条件为 $ {KKT} $ 条件:
 
     \begin{enumerate}
         \item (主可行) \begin{equation} g_{i}\left(x^{*}\right) \leqslant 0, i=1, \ldots, m, h_{j}\left(x^{*}\right)=0, j=1, \ldots, p \end{equation}
@@ -1824,7 +1824,7 @@ $ x^{*} $ 原始最优， $ \left(\alpha^{*}, \beta^{*}\right) $ 对偶最优，
 
 \subsection{Karush-Kuhn-Tucker Theorem(s)}
 
-\begin{theorem} Let $z : \mathbb{R}^n \rightarrow \mathbb{R}$ be a differentiable objective function, $g_i:\mathbb{R}^n \rightarrow \mathbb{R}$ be differentiable constraint functions for $i = 1,\dots,m$ and $h_j:\mathbb{R}^n \rightarrow \mathbb{R}$ be differentiable constraint functions for $j=1,\dots,l$. If ${x}^* \in \mathbb{R}^n$ is an optimal point satisfying an appropriate regularity condition for the following optimization problem:
+\begin{theorem} Let $z : \mathfrak{R}^n \rightarrow \mathfrak{R}$ be a differentiable objective function, $g_i:\mathfrak{R}^n \rightarrow \mathfrak{R}$ be differentiable constraint functions for $i = 1,\dots,m$ and $h_j:\mathfrak{R}^n \rightarrow \mathfrak{R}$ be differentiable constraint functions for $j=1,\dots,l$. If ${x}^* \in \mathfrak{R}^n$ is an optimal point satisfying an appropriate regularity condition for the following optimization problem:
 
 \begin{equation}
 P\left\{
@@ -1840,7 +1840,7 @@ s.t.\;\;& g_1(x_1,\dots,x_n) \leq 0\\
 \right.
 \end{equation}
 
-then there exists $\lambda_1,\dots,\lambda_m \in \mathbb{R}$ and $\mu_1,\dots\mu_l \in \mathbb{R}$ so that:
+then there exists $\lambda_1,\dots,\lambda_m \in \mathfrak{R}$ and $\mu_1,\dots\mu_l \in \mathfrak{R}$ so that:
 
 \begin{gather*}
 \text{Primal Feasibility}: \left\{
@@ -1853,7 +1853,7 @@ h_j({x}^*) = 0 \quad \text{for $j = 1,\dots,l$}
 \begin{aligned}
 \nabla z({x}^*) - \sum_{i = 1}^m\lambda_i\nabla g_i({x}^*) - \sum_{j = 1}^{l}\mu_j\nabla h_j({x}^*) = {0}\\
 \lambda_i \geq 0 \quad \text{for $i=1,\dots,m$}\\
-\mu_j \in \mathbb{R} \quad \text{for $j = 1,\dots,l$}
+\mu_j \in \mathfrak{R} \quad \text{for $j = 1,\dots,l$}
 \end{aligned}
 \right.\\
 \text{Complementary Slackness}:\left\{
@@ -1865,7 +1865,7 @@ h_j({x}^*) = 0 \quad \text{for $j = 1,\dots,l$}
 \label{thm:KKT7}
 \end{theorem}
 
-\begin{theorem} Let $z : \mathbb{R}^n \rightarrow \mathbb{R}$ be a differentiable concave (凹) function, $g_i:\mathbb{R}^n \rightarrow \mathbb{R}$ be differentiable convex functions for $i = 1,\dots,m$ and $h_j:\mathbb{R}^n \rightarrow \mathbb{R}$ be affine functions for $j=1,\dots,l$. Suppose there are $\lambda_1,\dots,\lambda_m \in \mathbb{R}$ and $\mu_1,\dots\mu_l \in \mathbb{R}$ so that:
+\begin{theorem} Let $z : \mathfrak{R}^n \rightarrow \mathfrak{R}$ be a differentiable concave (凹) function, $g_i:\mathfrak{R}^n \rightarrow \mathfrak{R}$ be differentiable convex functions for $i = 1,\dots,m$ and $h_j:\mathfrak{R}^n \rightarrow \mathfrak{R}$ be affine functions for $j=1,\dots,l$. Suppose there are $\lambda_1,\dots,\lambda_m \in \mathfrak{R}$ and $\mu_1,\dots\mu_l \in \mathfrak{R}$ so that:
 
 \begin{gather*}
 \text{Primal Feasibility}: \left\{
@@ -1878,7 +1878,7 @@ h_j({x}^*) = 0 \quad \text{for $j = 1,\dots,l$}
 \begin{aligned}
 \nabla z({x}^*) - \sum_{i = 1}^m\lambda_i\nabla g_i({x}^*) - \sum_{j = 1}^{l}\mu_j\nabla h_j({x}^*) = {0}\\
 \lambda_i \geq 0 \quad \text{for $i=1,\dots,m$}\\
-\mu_j \in \mathbb{R} \quad \text{for $j = 1,\dots,l$}
+\mu_j \in \mathfrak{R} \quad \text{for $j = 1,\dots,l$}
 \end{aligned}
 \right.\\
 \text{Complementary Slackness}:\left\{
@@ -1912,7 +1912,7 @@ The values $\lambda_1,\dots,\lambda_m$ and $\mu_1,\dots,\mu_l$ are sometimes cal
     Suffice it to say, all the problems we consider will automatically satisfy a constraint qualification, meaning the KKT theorem holds.
 \end{remark}
 
-\begin{remark} Theorem \ref{thm:KKT7} holds as a necessary condition even if $z({x})$ is not concave or the functions $g_i({x})$ ($i=1,\dots,m$) are not convex or the functions $h_j({x})$ ($j=1,\dots,l$) are not linear. In this case though, the fact that a triple: $({x},\boldsymbol{\lambda}, \boldsymbol{\mu}) \in \mathbb{R}^{n} \times \mathbb{R}^m \times \mathbb{R}^l$ does not ensure that this is an optimal solution for Problem $P$.
+\begin{remark} Theorem \ref{thm:KKT7} holds as a necessary condition even if $z({x})$ is not concave or the functions $g_i({x})$ ($i=1,\dots,m$) are not convex or the functions $h_j({x})$ ($j=1,\dots,l$) are not linear. In this case though, the fact that a triple: $({x},\boldsymbol{\lambda}, \boldsymbol{\mu}) \in \mathfrak{R}^{n} \times \mathfrak{R}^m \times \mathfrak{R}^l$ does not ensure that this is an optimal solution for Problem $P$.
 \end{remark}
 
 Looking more closely at the dual feasibility conditions, we see something interesting. Suppose that there are \term{no} equality constraints (i.e., not constraints of the form $h_j({x}) = 0$). Then the statements:
@@ -1941,7 +1941,7 @@ Specifically, this says that the \term{gradient of $z$ at ${x}^*$ is a positive 
 \begin{aligned}
 \nabla z({x}^*) &= \sum_{i = 1}^m\lambda_i \nabla g_i({x}^*) + \sum_{j = 1}^{l}\mu_j \nabla h_j({x}^*)\\
 \lambda_i &\geq 0 \quad \text{for $i=1,\dots,m$}\\
-\mu_j &\in \mathbb{R}\quad \text{for $j=1,\dots,l$}
+\mu_j &\in \mathfrak{R}\quad \text{for $j=1,\dots,l$}
 \end{aligned}
 \end{equation}
 Since equality constraints are \term{always binding} this says that the \term{gradient of $z$ at ${x}^*$ is a linear combination of the  gradients of the \textbf{binding} constraints at ${x}^*$.} 
@@ -2268,7 +2268,7 @@ We  consider only dual feasibility and complimentary slackness.
 \begin{bmatrix}25\\25\end{bmatrix} -\lambda_1\begin{bmatrix}-1\\0\end{bmatrix} - 
 \lambda_2\begin{bmatrix}0\\-1\end{bmatrix} - \mu\begin{bmatrix}2\\2\end{bmatrix} &= \begin{bmatrix}0\\0\end{bmatrix}\\
 \lambda_1,\lambda_2 & \geq 0\\
-\mu &\in \mathbb{R}
+\mu &\in \mathfrak{R}
 \end{aligned}
 \right.\\
 \text{Complementary Slackness}:\left\{

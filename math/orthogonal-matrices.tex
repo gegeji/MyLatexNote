@@ -11,7 +11,7 @@
 For the definition of Gram matrices, refer to \ref{Def:Gram}. 关于它与非奇异的性质，参见 \ref{Sect:GramNonSingular}.
 
 \begin{theorem}
-    如果$A$的Gram矩阵为单位矩阵，则 $ A \in \mathbb{R}^{m \times n} $ 具有标准正交列。
+    如果$A$的Gram矩阵为单位矩阵，则 $ A \in \mathfrak{R}^{m \times n} $ 具有标准正交列。
 \end{theorem}
 
 \begin{proof}
@@ -23,7 +23,7 @@ For the definition of Gram matrices, refer to \ref{Def:Gram}. 关于它与非奇
 
 \subsection{矩阵-向量乘积与标准正交的关系}
 
-如果 $ A \in \mathbb{R}^{m \times n} $ 具有标准正交列，则线性函数 $ f(x)=A x $
+如果 $ A \in \mathfrak{R}^{m \times n} $ 具有标准正交列，则线性函数 $ f(x)=A x $
 
 \begin{theorem}
     保持原内积。
@@ -75,7 +75,7 @@ For the definition of Gram matrices, refer to \ref{Def:Gram}. 关于它与非奇
 \subsection{左可逆性与正交的关系}
 
 
-如果矩阵 $ A \in \mathbb{R}^{m \times n} $ 有标准正交列，则：
+如果矩阵 $ A \in \mathfrak{R}^{m \times n} $ 有标准正交列，则：
 
 \begin{theorem}
     $ A $ 是左可逆的，其左逆为 $ A^{T} $.
@@ -104,7 +104,7 @@ A x=0 \quad \Rightarrow \quad A^{T} A x=x=0
 \end{theorem}
 
 \begin{proof}
-    列向量 $ a_{1}, a_{2}, \ldots, a_{n} \in \mathbb{R}^{m} $, 由维度定理可得 $ n \leq m $.
+    列向量 $ a_{1}, a_{2}, \ldots, a_{n} \in \mathfrak{R}^{m} $, 由维度定理可得 $ n \leq m $.
 \end{proof}
 
 \section{正交矩阵}
@@ -129,7 +129,7 @@ A x=0 \quad \Rightarrow \quad A^{T} A x=x=0
 \end{corollary}
 
 \begin{remark}
-    如果 $ A \in \mathbb{R}^{m \times n} $ 有标准正交列以及 $ m>n $, 则 $ A A^{T} \neq I_{\text {. }} $
+    如果 $ A \in \mathfrak{R}^{m \times n} $ 有标准正交列以及 $ m>n $, 则 $ A A^{T} \neq I_{\text {. }} $
 \end{remark}
 
 \section{Permutation Matrices}
@@ -137,7 +137,7 @@ A x=0 \quad \Rightarrow \quad A^{T} A x=x=0
 \begin{notation}
     $ \pi=\left(\pi_{1}, \pi_{2}, \ldots, \pi_{n}\right) $ 为 $ (1,2, \ldots, n) $ 的一个重新排序的排列。
 
-    将 $ \pi $ 与一个置换矩阵 $ A \in \mathbb{R}^{n \times n} $ 联系起来:
+    将 $ \pi $ 与一个置换矩阵 $ A \in \mathfrak{R}^{n \times n} $ 联系起来:
 \begin{equation}
 A_{i \pi_{i}}=1, \quad A_{i j}=0 \text { 如果 } j \neq \pi_{i}
 \end{equation}
@@ -221,7 +221,7 @@ $ A^{T} $ 是与置换相关的置换矩阵
 
 
 
-\begin{example}[Rotation Matrices in  $\mathbb{R}^{2}$]
+\begin{example}[Rotation Matrices in  $\mathfrak{R}^{2}$]
     在一个2维平面的旋转可以用矩阵表示为
 
 \begin{equation}
@@ -232,10 +232,10 @@ A=\left[\begin{array}{cc}
 \end{equation}
 \end{example}
 
-\begin{example}[Rotation Matrices in  $\mathbb{R}^{3}$]
+\begin{example}[Rotation Matrices in  $\mathfrak{R}^{3}$]
     \begin{equation} A=\left[\begin{array}{ccc}\cos \theta & 0 & -\sin \theta \\ 0 & 1 & 0 \\ \sin \theta & 0 & \cos \theta\end{array}\right] \end{equation}
 
-    描述了在 $ \mathbb{R}^{3} $ 中 $ \left(x_{1}, x_{3}\right) $ 平面的旋转。
+    描述了在 $ \mathfrak{R}^{3} $ 中 $ \left(x_{1}, x_{3}\right) $ 平面的旋转。
 \end{example}
 
 \section{Householder Matrix}
@@ -329,7 +329,7 @@ A=I-2 a a^{T}
 $ H=\left\{u \mid a^{T} u=0\right\} $ 是与 $ a $ 正交的向量的(超)平面。
 
 \begin{remark}
-    假设$ a, b \in \mathbb{R}^{n}, a \neq 0, t \in \mathbb{R}$, 当$t$ 多大时， $ta$到$b$之间的距离最小
+    假设$ a, b \in \mathfrak{R}^{n}, a \neq 0, t \in \mathfrak{R}$, 当$t$ 多大时， $ta$到$b$之间的距离最小
 
     \begin{equation} \hat{t}=\min _{t}\|t a-b\|_{2}^{2} \end{equation}
 
@@ -368,7 +368,7 @@ a^{T} y=a^{T}\left(x-a\left(a^{T} x\right)\right)=a^{T} x-\left(a^{T} a\right)\l
 
 \section{正交矩阵乘积}
 
-若 $ A_{1}, \ldots, A_{k} \in \mathbb{R}^{n \times n} $ 是正交矩阵，那么它们的乘积为：
+若 $ A_{1}, \ldots, A_{k} \in \mathfrak{R}^{n \times n} $ 是正交矩阵，那么它们的乘积为：
 
 \begin{equation} A=A_{1} A_{2} \cdots A_{k} \end{equation}
 
@@ -385,7 +385,7 @@ a^{T} y=a^{T}\left(x-a\left(a^{T} x\right)\right)=a^{T} x-\left(a^{T} a\right)\l
 
 \section{具有正交矩阵的线性方程}
 
-系数正交矩阵 $ A \in \mathbb{R}^{n \times n} $ 的线性方程；
+系数正交矩阵 $ A \in \mathfrak{R}^{n \times n} $ 的线性方程；
 \begin{equation}
 A x=b
 \end{equation}
@@ -411,7 +411,7 @@ x=A^{-1} b=A^{T} b
 \section{列标准正交的高矩阵}
 
 \begin{theorem}
-    假设矩阵 $ A \in \mathbb{R}^{m \times n} $ 是高的 $ ({m}>{n}) $, 具有标准正交列，则有
+    假设矩阵 $ A \in \mathfrak{R}^{m \times n} $ 是高的 $ ({m}>{n}) $, 具有标准正交列，则有
 
     $ A^{T} $ 具有标准正交行。
 \end{theorem}
@@ -431,11 +431,11 @@ x=A^{-1} b=A^{T} b
 \begin{definition}[向量集合张成的空间]
     一个向量集合张成的空间是其所有线性组合的集合。
 
-    \begin{equation} \operatorname{span}\left(a_{1}, a_{2}, \cdots, a_{n}\right)=\left\{x_{1} a_{1}+x_{2} a_{2}+\cdots+x_{n} a_{n} \mid x \in \mathbb{R}^{n}\right\} \end{equation}
+    \begin{equation} \operatorname{span}\left(a_{1}, a_{2}, \cdots, a_{n}\right)=\left\{x_{1} a_{1}+x_{2} a_{2}+\cdots+x_{n} a_{n} \mid x \in \mathfrak{R}^{n}\right\} \end{equation}
 \end{definition}
 
 \begin{definition}[$A$的范围（列空间）]
-    \begin{equation} \operatorname{range}(A)=\left\{A x \mid x \in \mathbb{R}^{n}\right\} \end{equation}
+    \begin{equation} \operatorname{range}(A)=\left\{A x \mid x \in \mathfrak{R}^{n}\right\} \end{equation}
 \end{definition}
 
 \subsection{投影到列标准正交的矩阵$A$的列空间}
@@ -449,7 +449,7 @@ x=A^{-1} b=A^{T} b
 
 
 \begin{problem}
-    假设矩阵 $ A \in \mathbb{R}^{m \times n} $ \textbf{具有标准正交列},求投影$b$在$C(A)$上的投影。
+    假设矩阵 $ A \in \mathfrak{R}^{m \times n} $ \textbf{具有标准正交列},求投影$b$在$C(A)$上的投影。
 \end{problem}
 
 即向量 $ A x $ 与$b$有最短距离
@@ -463,7 +463,7 @@ x=A^{-1} b=A^{T} b
 
 \begin{equation} \nabla f(x)=2 x-2 A^{T} b=0 \Rightarrow x=A^{T} b \end{equation}
 
-$ A A^{T} b $ 称为向量 $  {b} \in \mathbb{R}^{m} $ 在 $ \operatorname{range} (A)$上的\term{正交投影}.
+$ A A^{T} b $ 称为向量 $  {b} \in \mathfrak{R}^{m} $ 在 $ \operatorname{range} (A)$上的\term{正交投影}.
 
 \begin{theorem}
     \begin{equation} A x=A A^{T} b \in \operatorname{range}(A) \end{equation}

@@ -18,7 +18,7 @@ f(x)=F^{\prime}(x)=\frac{{e}^{-(x-\mu) / \gamma}}{\gamma\left(1+{e}^{-(x-\mu) / 
     \begin{equation} P(Y=1 \mid x)=\frac{\exp (w \cdot x+b)}{1+\exp (w \cdot x+b)} \end{equation}
 \begin{equation} P\left(Y=0\{x)=\frac{1}{1+\exp (w \cdot x+b)}\right. \end{equation}
 
-这里， $\quad x \in \mathbf{R}^{n}$ 是输入， $Y \in\{0,1\}$ 是输出， $w \in \mathbf{R}^{n}$ 和 $b \in \mathbf{R}$ 是参数， $w$ 称为权值向 量， $b$ 称为偏置， $w \cdot x$ 为 $w$ 和 $x$ 的内积。
+这里， $\quad x \in \mathfrak{R}^{n}$ 是输入， $Y \in\{0,1\}$ 是输出， $w \in \mathfrak{R}^{n}$ 和 $b \in \mathfrak{R}$ 是参数， $w$ 称为权值向 量， $b$ 称为偏置， $w \cdot x$ 为 $w$ 和 $x$ 的内积。
 \end{definition}
 
 有时为了方便， 将权值向量和输入向量加以扩充， 仍记作 $ w, x $, 即 $ w=\left(w^{(1)}\right. $, $ \left.w^{(2)}, \cdots, w^{(n)}, b\right)^{{T}}, x=\left(x^{(1)}, x^{(2)}, \cdots, x^{(n)}, 1\right)^{{T}} $. 这时， 逻辑斯谛回归模型如下:
@@ -39,6 +39,6 @@ f(x)=F^{\prime}(x)=\frac{{e}^{-(x-\mu) / \gamma}}{\gamma\left(1+{e}^{-(x-\mu) / 
 
 考虑对输入 $ x $ 进行分类的线性函数 $ w \cdot x $, 其值域为实数域。
 
-注意， 这里 $ x \in \mathbf{R}^{n+1}, w \in \mathbf{R}^{n+1} $. 通过逻辑斯谛回归模型定义式可以将线性函 数 $ w \cdot x $ 转换为概率:
+注意， 这里 $ x \in \mathfrak{R}^{n+1}, w \in \mathfrak{R}^{n+1} $. 通过逻辑斯谛回归模型定义式可以将线性函 数 $ w \cdot x $ 转换为概率:
 
 \begin{equation}\log \frac{P(Y=1 \mid x)}{1-P(Y=1 \mid x)}= P(Y=1 \mid x)=\frac{\exp (w \cdot x)}{1+\exp (w \cdot x)} \end{equation}

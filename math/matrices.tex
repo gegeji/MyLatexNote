@@ -13,7 +13,7 @@
 \begin{notation}
     设 $ B_{i j} $ 表示矩阵 $ B $ 中第 $ i $ 行第 $ j $列 的元素
 
-    实数域中大小为 $ m \times n $ 的矩阵集合写为 $ \mathbb{R}^{m \times n} $
+    实数域中大小为 $ m \times n $ 的矩阵集合写为 $ \mathfrak{R}^{m \times n} $
 
     复数域中大小为 $ m \times n $ 的矩阵集合写为 $ \mathbb{C}^{m \times n} $
 \end{notation}
@@ -52,29 +52,29 @@
 分块矩阵位于同一行的子矩阵行维度必须相等，位于同一列的子矩阵列维度必须相等。
 
 \begin{definition}[矩阵的列向量表示]
-    矩阵 $ A \in \mathbb{R}^{m \times n} $ , 可通过其列向量($m$-vector)进行表示，假设其列向量为 $ a_{1}, \ldots, a_{n} \in \mathbb{R}^{m} $, 则有
+    矩阵 $ A \in \mathfrak{R}^{m \times n} $ , 可通过其列向量($m$-vector)进行表示，假设其列向量为 $ a_{1}, \ldots, a_{n} \in \mathfrak{R}^{m} $, 则有
 
     \begin{equation} A=\left[\begin{array}{lll}a_{1} & \cdots & a_{n}\end{array}\right] \end{equation}
 \end{definition}
 
 \begin{definition}[矩阵的行向量表示]
-    矩阵 $ A \in \mathbb{R}^{m \times n} $通过其行向量 $ b_{1}, \ldots, b_{m} $ 进行表示
+    矩阵 $ A \in \mathfrak{R}^{m \times n} $通过其行向量 $ b_{1}, \ldots, b_{m} $ 进行表示
 
-    \begin{equation} A=\left[\begin{array}{c}b_{1} \\ \vdots \\ b_{m}\end{array}\right], b_{i}^{T} \in \mathbb{R}^{n}, i=1, \cdots, m \end{equation}
+    \begin{equation} A=\left[\begin{array}{c}b_{1} \\ \vdots \\ b_{m}\end{array}\right], b_{i}^{T} \in \mathfrak{R}^{n}, i=1, \cdots, m \end{equation}
 \end{definition}
 
 \section{矩阵运算}
 
 \begin{definition}[矩阵数乘]
-    设矩阵 $ A \in \mathbb{R}^{m \times n} $
+    设矩阵 $ A \in \mathfrak{R}^{m \times n} $
 
-    \begin{equation} \beta A=\left[\begin{array}{cccc}\beta A_{11} & \beta A_{12} & \cdots & \beta A_{1 n} \\ \vdots & \vdots & \ddots & \vdots \\ \beta A_{m 1} & \beta A_{m 2} & \cdots & \beta A_{m n}\end{array}\right], \beta \in \mathbb{R} \end{equation}
+    \begin{equation} \beta A=\left[\begin{array}{cccc}\beta A_{11} & \beta A_{12} & \cdots & \beta A_{1 n} \\ \vdots & \vdots & \ddots & \vdots \\ \beta A_{m 1} & \beta A_{m 2} & \cdots & \beta A_{m n}\end{array}\right], \beta \in \mathfrak{R} \end{equation}
 
     ($ A $ and $ \beta $ can be real or complex.)
 \end{definition}
 
 \begin{definition}[矩阵加法]
-    矩阵 $ A, B \in \mathbb{R}^{m \times n} $ 的和为
+    矩阵 $ A, B \in \mathfrak{R}^{m \times n} $ 的和为
 
     \begin{equation} A+B=\left[\begin{array}{cccc}A_{11}+B_{11} & A_{12}+B_{12} & \cdots & A_{1 n}+B_{1 n} \\ \vdots & \vdots & \ddots & \vdots \\ A_{m 1}+B_{m 1} & A_{m 2}+B_{m 2} & \cdots & A_{m n}+B_{m n}\end{array}\right] \end{equation}
 \end{definition}
@@ -82,7 +82,7 @@
 \begin{definition}[Transpose]
     矩阵A的转置表示为 $ A^{T} $
     
-    若 $A\in \mathbb{R}^{m \times n} $, 则 $ A^{T} \in \mathbb{R}^{n \times m} $ , 其被定义为： $ \left(A^{T}\right)_{i j}=A_{j i}, i=1, \ldots, n ; j=1, \ldots, m $
+    若 $A\in \mathfrak{R}^{m \times n} $, 则 $ A^{T} \in \mathfrak{R}^{n \times m} $ , 其被定义为： $ \left(A^{T}\right)_{i j}=A_{j i}, i=1, \ldots, n ; j=1, \ldots, m $
 \end{definition}
 
 转置将原矩阵的行向量转化为列向量。
@@ -126,7 +126,7 @@ A^{H}=\left[\begin{array}{cccc}
 
 
 \begin{definition}[矩阵乘法]
-    设矩阵 $ A \in \mathbb{R}^{m \times p}, B \in \mathbb{R}^{p \times n} $,那么矩阵$A$与$B$的乘积， 记 作C $ =A B $ ,  矩阵 $ C \in \mathbb{R}^{m \times n} $ 的第 i行第 $ j $ 列元素 $ C_{i j} $
+    设矩阵 $ A \in \mathfrak{R}^{m \times p}, B \in \mathfrak{R}^{p \times n} $,那么矩阵$A$与$B$的乘积， 记 作C $ =A B $ ,  矩阵 $ C \in \mathfrak{R}^{m \times n} $ 的第 i行第 $ j $ 列元素 $ C_{i j} $
 
     \begin{equation}
 {C}_{i j}=\sum_{k=1}^{p} A_{i k} B_{k j}
@@ -154,7 +154,7 @@ A^{H}=\left[\begin{array}{cccc}
 \end{definition}
 
 \begin{definition}[矩阵-向量乘积 $Ax$]
-    矩阵 $ A \in \mathbb{R}^{m \times n} $ 和一个向量 $ x \in \mathbb{R}^{n} $ 的积为
+    矩阵 $ A \in \mathfrak{R}^{m \times n} $ 和一个向量 $ x \in \mathfrak{R}^{n} $ 的积为
 \begin{equation}
 A x=\left[\begin{array}{c}
 A_{11} x_{1}+A_{12} x_{2}+\cdots+A_{1 n} x_{n} \\
@@ -211,12 +211,12 @@ x_{n}
 \end{figure}
 \end{example}
 
-$ f: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m} $ in terms of its effect on $ x $. 
+$ f: \mathfrak{R}^{n} \rightarrow \mathfrak{R}^{m} $ in terms of its effect on $ x $. 
 
 signal processing/control interpretation: $ n $ inputs $ x_{i}, m $ outputs $ y_{i} $. $ f $ is linear if we can represent its action on $ x $ as a product $ f(x)=A x $
 
 \begin{definition}[矩阵-向量乘积函数 $f(x)=A x$]
-    给定矩阵 $ A \in \mathbb{R}^{m \times n} $ , 定义函数 $ f: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m}, f(x)=A x $, 其中 $ A=\left[f\left(e_{1}\right) \ldots f\left(e_{n}\right)\right] $.
+    给定矩阵 $ A \in \mathfrak{R}^{m \times n} $ , 定义函数 $ f: \mathfrak{R}^{n} \rightarrow \mathfrak{R}^{m}, f(x)=A x $, 其中 $ A=\left[f\left(e_{1}\right) \ldots f\left(e_{n}\right)\right] $.
     
 \end{definition}
 
@@ -354,9 +354,9 @@ In the second method we compute the product $ B C $ (2npq flops) and then form $
 
 \subsection{矩阵向量乘积复杂度}
 
-矩阵 $ A \in \mathbb{R}^{m \times n} $ 和向量 $ x \in \mathbb{R}^{n} $ 的乘积 $ {y}={A} x $, 需要 $ (2 {n}-1) {m} $ flops;
+矩阵 $ A \in \mathfrak{R}^{m \times n} $ 和向量 $ x \in \mathfrak{R}^{n} $ 的乘积 $ {y}={A} x $, 需要 $ (2 {n}-1) {m} $ flops;
 
-乘积 $ y \in \mathbb{R}^{m} $ , 每个元素需要做向量内积， 需要 $ 2 n-1 $ flops;
+乘积 $ y \in \mathfrak{R}^{m} $ , 每个元素需要做向量内积， 需要 $ 2 n-1 $ flops;
 
 当$n$足够大时， 复杂度近似于$2mn$；
 
@@ -784,7 +784,7 @@ The Dirichlet energy will arise as a measure of roughness in several application
 
 
 \begin{definition}[一维卷积]
-    向量 $ a \in \mathbb{R}^{n} $ 和向量 $ b \in \mathbb{R}^{m} $ 的\term{卷积}是一个 $ ({n}+{m}-1) $ 维向量 $ c \in \mathbb{R}^{m+{n}-1} $
+    向量 $ a \in \mathfrak{R}^{n} $ 和向量 $ b \in \mathfrak{R}^{m} $ 的\term{卷积}是一个 $ ({n}+{m}-1) $ 维向量 $ c \in \mathfrak{R}^{m+{n}-1} $
 
     \begin{equation} c_{k}=\sum_{i+j=k+1} a_{i} b_{j}, \quad k=1, \ldots n+m-1 \end{equation}
 
@@ -1027,22 +1027,22 @@ DFT矩阵$W$的第 $ k $ 行第 $ l $ 列的元素为 $ W_{k l}=\omega^{-(k-1)(l
 \section{Semi-Definite Matrices}
 
 \begin{definition}[半正定矩阵]
-    对称矩阵 $ A \in \mathbb{R}^{n \times n} $ 称为\term{半正定矩阵}, 满足以下条件
+    对称矩阵 $ A \in \mathfrak{R}^{n \times n} $ 称为\term{半正定矩阵}, 满足以下条件
 
 \begin{equation}
-x^{T} A x \geq 0 \quad \forall x \in \mathbb{R}^{n}
+x^{T} A x \geq 0 \quad \forall x \in \mathfrak{R}^{n}
 \end{equation}
 \end{definition}
 
 \begin{definition}[正定矩阵]
-    对称矩阵 $ A \in \mathbb{R}^{n \times n} $ 称为\term{正定矩阵}, 满足以下条件
+    对称矩阵 $ A \in \mathfrak{R}^{n \times n} $ 称为\term{正定矩阵}, 满足以下条件
 \begin{equation}
 x^{T} A x>0 \quad \forall x \neq 0
 \end{equation}
 \end{definition}
 
 \begin{definition}[二次型]
-    如果$ A \in \mathbb{R}^{n \times n} $是对称矩阵， 则 $ x^{T} A x $ 是\term{二次型}函数。
+    如果$ A \in \mathfrak{R}^{n \times n} $是对称矩阵， 则 $ x^{T} A x $ 是\term{二次型}函数。
 \end{definition}
 
 \begin{proof}
@@ -1147,7 +1147,7 @@ A_{i i}=e_{i}^{T} A e_{i} \geq 0
 
 回想仿射函数、泰勒展开的定义。
 
-For fixed $ A \in \mathbf{R}^{m \times n}, b \in \mathbf{R}^{m} $, define a function $ f: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m} $ by
+For fixed $ A \in \mathfrak{R}^{m \times n}, b \in \mathfrak{R}^{m} $, define a function $ f: \mathfrak{R}^{n} \rightarrow \mathfrak{R}^{m} $ by
 \begin{equation}
 f(x)=A x+b
 \end{equation}
@@ -1167,7 +1167,7 @@ f\left(e_{1}\right)-f(0) & f\left(e_{2}\right)-f(0) & \cdots & f\left(e_{n}\righ
 and $ b=f(0) $.
 
 \begin{theorem}
-    First-order Taylor approximation of differentiable $ f: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m} $ around $ z $
+    First-order Taylor approximation of differentiable $ f: \mathfrak{R}^{n} \rightarrow \mathfrak{R}^{m} $ around $ z $
 
 \begin{equation}
 \hat{f_{i}}(x)=f_{i}(z)+\frac{\partial f_{i}}{\partial x_{1}}(z)\left(x_{1}-z_{1}\right)+\cdots+\frac{\partial f_{i}}{\partial x_{n}}(z)\left(x_{n}-z_{n}\right), \quad i=1, \ldots, m
@@ -1195,7 +1195,7 @@ $ D f(z) $ is called the \term{derivative matrix} or \term{Jacobian matrix} of $
 
 \subsection{Matrix-Matrix Products And Composition}
 
-Suppose $ A $ is an $ m \times p $ matrix and $ B $ is $ p \times n $. We can associate with these matrices two linear functions $ f: \mathbf{R}^{p} \rightarrow \mathbf{R}^{m} $ and $ g: \mathbf{R}^{n} \rightarrow \mathbf{R}^{p} $, defined as $ f(x)=A x $ and $ g(x)=B x $. The composition of the two functions is the function $ h: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m} $ with
+Suppose $ A $ is an $ m \times p $ matrix and $ B $ is $ p \times n $. We can associate with these matrices two linear functions $ f: \mathfrak{R}^{p} \rightarrow \mathfrak{R}^{m} $ and $ g: \mathfrak{R}^{n} \rightarrow \mathfrak{R}^{p} $, defined as $ f(x)=A x $ and $ g(x)=B x $. The composition of the two functions is the function $ h: \mathfrak{R}^{n} \rightarrow \mathfrak{R}^{m} $ with
 \begin{equation}
 h(x)=f(g(x))=A(B x)=(A B) x
 \end{equation}
@@ -1269,7 +1269,7 @@ The left-hand matrix $ \Delta $ is associated with the second difference linear 
 
 \subsection{Composition Of Affine Functions}
 
-Composition of affine functions. The composition of affine functions is an affine function. Suppose $ f: \mathbf{R}^{p} \rightarrow \mathbf{R}^{m} $ is the affine function given by $ f(x)=A x+b $, and $ g: \mathbf{R}^{n} \rightarrow \mathbf{R}^{p} $ is the affine function given by $ g(x)=C x+d $. The composition $ h $ is given by
+Composition of affine functions. The composition of affine functions is an affine function. Suppose $ f: \mathfrak{R}^{p} \rightarrow \mathfrak{R}^{m} $ is the affine function given by $ f(x)=A x+b $, and $ g: \mathfrak{R}^{n} \rightarrow \mathfrak{R}^{p} $ is the affine function given by $ g(x)=C x+d $. The composition $ h $ is given by
 \begin{equation}
 h(x)=f(g(x))=A(C x+d)+b=(A C) x+(A d+b)=\tilde{A} x+\tilde{b}
 \end{equation}
@@ -1278,7 +1278,7 @@ where $ \tilde{A}=A C, \tilde{b}=A d+b $.
 \subsection{Chain Rule of Differentiation}
 
 \begin{definition}[The Composition Of $ f $ And $ g $]
-    Let $ f: \mathbf{R}^{p} \rightarrow \mathbf{R}^{m} $ and $ g: \mathbf{R}^{n} \rightarrow \mathbf{R}^{p} $ be differentiable functions. The composition of $ f $ and $ g $ is defined as the function $ h: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m} $ with
+    Let $ f: \mathfrak{R}^{p} \rightarrow \mathfrak{R}^{m} $ and $ g: \mathfrak{R}^{n} \rightarrow \mathfrak{R}^{p} $ be differentiable functions. The composition of $ f $ and $ g $ is defined as the function $ h: \mathfrak{R}^{n} \rightarrow \mathfrak{R}^{m} $ with
 \begin{equation}
 h(x)=f(g(x))=f\left(g_{1}(x), \ldots, g_{p}(x)\right)
 \end{equation}
@@ -1404,20 +1404,20 @@ This recursion is called the closed-loop system. The matrix $ A+B K $ is called 
 \section{矩阵范数}
 
 \begin{definition}[Matrix Norm]
-    向量空间中存在一个函数 $ \|\cdot\|: \mathbb{R}^{m \times n} \rightarrow \mathbb{R} $
+    向量空间中存在一个函数 $ \|\cdot\|: \mathfrak{R}^{m \times n} \rightarrow \mathfrak{R} $
 
     且满足以下条件：
 
     \begin{itemize}
-        \item 齐次性: $ \|\alpha A\|=|\alpha|\|A\|, \alpha \in \mathbb{R} $ 且 $ A \in \mathbb{R}^{m \times n} $;
-        \item 三角不等式: $ \|A+B\| \leq\|A\|+\|B\|, A, B \in \mathbb{R}^{m \times n} $;
-        \item 非负性: $ \|A\| \geq 0, A \in \mathbb{R}^{m \times n} $ 且 $ \|A\|=0 \Leftrightarrow A=0 $;
+        \item 齐次性: $ \|\alpha A\|=|\alpha|\|A\|, \alpha \in \mathfrak{R} $ 且 $ A \in \mathfrak{R}^{m \times n} $;
+        \item 三角不等式: $ \|A+B\| \leq\|A\|+\|B\|, A, B \in \mathfrak{R}^{m \times n} $;
+        \item 非负性: $ \|A\| \geq 0, A \in \mathfrak{R}^{m \times n} $ 且 $ \|A\|=0 \Leftrightarrow A=0 $;
     \end{itemize}
 
 则称 $ \|\cdot\| $ 为矩阵范数。 
 \end{definition}
 
-向量空间 $ \mathbb{R}^{m \times n} $ 矩阵范数:
+向量空间 $ \mathfrak{R}^{m \times n} $ 矩阵范数:
 
 \begin{example}[F-范数(Frobenius norm)]
     \begin{equation} \|A\|_{F}=\left(\sum_{i=1}^{n} \sum_{j=1}^{n} a_{i j}^{2}\right)^{\frac{1}{2}} \end{equation}
@@ -1426,13 +1426,13 @@ This recursion is called the closed-loop system. The matrix $ A+B K $ is called 
 \begin{proof}
     \begin{equation} \|A\|_{F} \geq 0 \end{equation}
 
-    \begin{equation} \|\alpha A\|_{F}=|\alpha|\|A\|_{F}, \alpha \in \mathbb{R} \end{equation}
+    \begin{equation} \|\alpha A\|_{F}=|\alpha|\|A\|_{F}, \alpha \in \mathfrak{R} \end{equation}
 
     \begin{equation} \begin{aligned}\|A+B\|_{F}=&\left(\sum_{i=1}^{n} \sum_{j=1}^{n}\left(a_{i j}+b_{i j}\right)^{2}\right)^{\frac{1}{2}} \leq\left(\sum_{i=1}^{n} \sum_{j=1}^{n}\left(a_{i j}\right)^{2}\right)^{\frac{1}{2}}+\left(\sum_{i=1}^{n} \sum_{j=1}^{n}\left(b_{i j}\right)^{2}\right)^{\frac{1}{2}} \\ &=\|A\|_{F}+\|B\|_{F} \end{aligned} \end{equation}
 \end{proof}
 
 \begin{definition}[从属于给定向量范数 $ \|x\|_{v} $ 的矩阵范数]
-    设 $ x \in \mathbb{R}^{n}, A \in \mathbb{R}^{m \times n},\|\cdot\|_{v} $ 为一种向量范数。 则 $ \frac{\|A x\|_{v}}{\|x\|_{v}} $ 对所有 $ x \neq 0 $ 有最大值， 令
+    设 $ x \in \mathfrak{R}^{n}, A \in \mathfrak{R}^{m \times n},\|\cdot\|_{v} $ 为一种向量范数。 则 $ \frac{\|A x\|_{v}}{\|x\|_{v}} $ 对所有 $ x \neq 0 $ 有最大值， 令
 
     \begin{equation} \|A\|_{v}=\max _{x \neq 0}\left\{\frac{\|A x\|_{v}}{\|x\|_{v}}\right\}=\max _{x \neq 0}\left\{\left\|A \frac{x}{\|x\|_{v}}\right\|_{v}\right\}=\max _{\|y\|_{v}=1}\left\{\|A y\|_{v}\right\} \end{equation}
 
@@ -1446,7 +1446,7 @@ This recursion is called the closed-loop system. The matrix $ A+B K $ is called 
 
     \begin{equation} \|A\|_{v} \geq 0 \end{equation}
 
-    \begin{equation} \|\alpha A\|_{v}=|\alpha|\|A\|_{v}, \alpha \in \mathbb{R} \end{equation}
+    \begin{equation} \|\alpha A\|_{v}=|\alpha|\|A\|_{v}, \alpha \in \mathfrak{R} \end{equation}
 
     \begin{equation}\begin{aligned}
         \|A+B\|_{v} &=\max _{\|y\|_{v}=1}\|(A+B) y\|_{v} \\
@@ -1470,7 +1470,7 @@ This recursion is called the closed-loop system. The matrix $ A+B K $ is called 
 \end{definition}
 
 \begin{theorem}[算子范数服从乘法范数相容性]
-   对于 $ A \in \mathbb{R}^{m \times n}, B \in \mathbb{R}^{n \times p} $
+   对于 $ A \in \mathfrak{R}^{m \times n}, B \in \mathfrak{R}^{n \times p} $
 
     \begin{equation}\begin{aligned}
         \|A B\|_{v} &=\max _{x \neq 0}\left\{\frac{\|A B x\|_{v}}{\|x\|_{v}}\right\} \\
@@ -1481,7 +1481,7 @@ This recursion is called the closed-loop system. The matrix $ A+B K $ is called 
     算子范数服从\term{乘法范数相容性}.
 \end{theorem}
 
-根据向量的常用范数可以导出矩阵 $ A \in \mathbb{R}^{m \times n} $ 的算子范数
+根据向量的常用范数可以导出矩阵 $ A \in \mathfrak{R}^{m \times n} $ 的算子范数
 
 \begin{definition}[$A$的列范数]
     \begin{equation} \|A\|_{1}=\max _{x \neq 0}\left(\frac{\|A x\|_{1}}{\|x\|_{1}}\right)=\max _{1 \leq j \leq n} \sum_{i=1}^{m}\left|a_{i j}\right| \end{equation}
