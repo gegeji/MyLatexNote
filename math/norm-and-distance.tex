@@ -73,7 +73,7 @@ b
 \end{equation}
 \end{corollary}
 
-\subsubsection{Cauchy–Schwarz inequality}
+\subsubsection{Cauchy-Schwarz inequality}
 
 \begin{theorem}
     \begin{equation} \left|a^{T} b\right| \leq\|a\|\|b\| \quad \term{ for all } a, b \in \mathbf{R}^{n} \end{equation}
@@ -344,6 +344,51 @@ $\operatorname{std}(x)$表示数据元素的变化程度。 对于常数$\alpha$
         \end{aligned}\end{equation}
 \end{proof}
 
+Standard deviation of sum. We can derive a formula for the standard deviation of a sum from (3.6):
+\begin{equation}
+\operatorname{std}(a+b)=\sqrt{\operatorname{std}(a)^{2}+2 \rho \operatorname{std}(a) \operatorname{std}(b)+\operatorname{std}(b)^{2}} .
+\end{equation}
+
+\begin{proof}
+    To derive this from $ (3.6) $ we let $ \tilde{a} $ and $ \tilde{b} $ denote the de-meaned versions of $ a $ and $ b $. Then $ \tilde{a}+\tilde{b} $ is the de-meaned version of $ a+b $, and $ \operatorname{std}(a+b)^{2}=\|\tilde{a}+\tilde{b}\|^{2} / n $. Now using (3.6) and $ \rho=\cos \angle(\tilde{a}, \tilde{b}) $, we get
+\begin{equation}
+\begin{aligned}
+n \operatorname{std}(a+b)^{2} &=\|\tilde{a}+\tilde{b}\|^{2} \\
+&=\|\tilde{a}\|^{2}+2 \rho\|\tilde{a}\|\|\tilde{b}\|+\|\tilde{b}\|^{2} \\
+&=n \operatorname{std}(a)^{2}+2 \rho n \operatorname{std}(a) \operatorname{std}(b)+n \operatorname{std}(b)^{2} 
+\end{aligned}
+\end{equation} 
+
+Dividing by $ n $ and taking the square root yields the formula above.
+\end{proof}
+
+\begin{theorem}
+    If $ \rho=1 $, the standard deviation of the sum of vectors is the sum of their standard deviations, i.e.,
+\begin{equation}
+\operatorname{std}(a+b)=\operatorname{std}(a)+\operatorname{std}(b)
+\end{equation}
+\end{theorem}
+
+
+As $ \rho $ decreases, the standard deviation of the sum decreases. 
+
+\begin{theorem}
+   When $ \rho=0 $, i.e., $ a $ and $ b $ are uncorrelated, the standard deviation of the sum $ a+b $ is
+\begin{equation}
+\operatorname{std}(a+b)=\sqrt{\operatorname{std}(a)^{2}+\operatorname{std}(b)^{2}}
+\end{equation}
+which is smaller than std $ (a)+\operatorname{std}(b) $ (unless one of them is zero). 
+\end{theorem}
+
+\begin{theorem}
+    When $ \rho=-1 $, the standard deviation of the sum is as small as it can be,
+\begin{equation}
+\operatorname{std}(a+b)=|\operatorname{std}(a)-\operatorname{std}(b)| .
+\end{equation}
+\end{theorem}
+
+
+
 \section{Angle}
 
 \begin{definition}[两个非零向量 $ a $ 和$b$之间的角(angle)]
@@ -563,7 +608,7 @@ $ \|\beta a\|=|\beta|\|a\| $ for all vectors $ a $, complex scalars $ \beta $
 $ \|a+b\| \leq\|a\|+\|b\| \quad $ for all vectors $ a, b $ of equal size
 \end{theorem}
 
-\begin{theorem}[Cauchy–Schwarz inequality for complex vectors]
+\begin{theorem}[Cauchy-Schwarz inequality for complex vectors]
     $ \left|a^{H} b\right| \leq\|a\|\|b\| \quad $ for all $ a, b \in \mathbf{C}^{n} $
 
     moreover, equality $ \left|a^{H} b\right|=\|a\|\|b\| $ holds if:

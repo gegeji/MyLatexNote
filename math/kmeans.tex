@@ -429,7 +429,7 @@ f(x) & \geq f(\hat{x})+\langle\nabla f(\hat{x}), x-\hat{x}\rangle \\
     \begin{equation} c_{i}=
     \arg \min_{j=\{1, \cdots, k\}} \left\|x_{i}-z_{j}\right\|_{2}^{2}, i=1,2, \ldots, N \end{equation}
 
-    
+    \begin{equation} \begin{aligned} f_{j}\left(z_{j}\right)=& \sum_{i \in G_{j}}\left\|x_{i}-z_{j}\right\|_{2}^{2}, J\left(G_{1}, \cdots, G_{k}, z_{1}, \cdots, z_{k}\right)=\sum_{j=1}^{k} f_{j}\left(z_{j}\right) \\ & \min _{G_{1}, \cdots, G_{k}} \min _{z_{1}, \cdots, z_{k}} J\left(G_{1}, \cdots, G_{k}, z_{1}, \cdots, z_{k}\right) \end{aligned} \end{equation}
 \end{problem}
 
 $k$-means算法是将 $ {N} $ 向量 $ x_{i} \in \mathbb{R}^{n} $ 划分成$k$类的迭代聚类算法。 

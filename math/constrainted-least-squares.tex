@@ -28,9 +28,9 @@
 
 注意到
 
-$$ \nabla f(\hat{x})=\left[\begin{array}{l}4 \hat{x}_{1} \\ 2 \hat{x}_{2}\end{array}\right]=\left[\begin{array}{l}\frac{4}{3} \\ \frac{4}{3}\end{array}\right] $$
+\begin{equation} \nabla f(\hat{x})=\left[\begin{array}{l}4 \hat{x}_{1} \\ 2 \hat{x}_{2}\end{array}\right]=\left[\begin{array}{l}\frac{4}{3} \\ \frac{4}{3}\end{array}\right] \end{equation}
 
-$$ \nabla h(\hat{x})=\left[\begin{array}{l}1 \\ 1\end{array}\right] $$
+\begin{equation} \nabla h(\hat{x})=\left[\begin{array}{l}1 \\ 1\end{array}\right] \end{equation}
 
 为了惩罚这个解未能满足约束条件， 引入\term{拉格朗日函数 (Lagrange Function)}
 \begin{equation}
@@ -259,7 +259,7 @@ x=\left[\begin{array}{c}
 \end{array}
 \end{equation}
 
-假设$C_{p \times n}, p \le n$，$C$的行向量线性无关。求这个优化问题的最优解。
+假设$C_{p \times n}, p \le n$,$C$的行向量线性无关。求这个优化问题的最优解。
 \end{problem}
 
 引入拉格朗日函数
@@ -307,7 +307,7 @@ C x=C C^{T} \lambda=d \Rightarrow \lambda=\left(C C^{T}\right)^{-1} d
 C \hat{x}=C C^{T}\left(C C^{T}\right)^{-1} d=d
 \end{equation}
 
-2. 对于方程$Cx=d$，假设$x , \hat{x}$是满足这个方程的两个解
+2. 对于方程$Cx=d$,假设$x , \hat{x}$是满足这个方程的两个解
 
 \begin{equation}
     \begin{aligned}
@@ -318,7 +318,7 @@ C \hat{x}=C C^{T}\left(C C^{T}\right)^{-1} d=d
     \end{aligned}
     \end{equation}
 
-    即$\|x\|_{2}^{2} \ge \|\hat{x}\|_{2}^{2}$。
+    即$\|x\|_{2}^{2} \ge \|\hat{x}\|_{2}^{2}$.
 
 在 $  x = \hat{x} $ 的情况下
 
@@ -335,7 +335,7 @@ C \hat{x}=C C^{T}\left(C C^{T}\right)^{-1} d=d
 \end{proof}
 
 \section{QR分解求解最小范数优化问题}
-假设$C_{p \times n}, p \le n$，$C$的行向量线性无关。
+假设$C_{p \times n}, p \le n$,$C$的行向量线性无关。
 对矩阵 $ C^{T} \in \mathbb{R}^{n \times p} $ 进行 $ Q R $ 分解， 设$ C^{T}=Q R $
 \begin{equation}
 \begin{aligned}
@@ -441,7 +441,7 @@ $.
 
 % todo (2021-11-25 13:02): figure
 
-在大多数应用中 $ p<n, C x=d $ 是一个欠定方程。它的几何意义是在直线 $ C x=d $ 中，寻找 $ \|A x-b\|_{2}^{2} $ 最小的解。（此时$\|A x-b\|_{2}^{2}$表示一个椭圆）.
+在大多数应用中 $ p<n, C x=d $ 是一个欠定方程。它的几何意义是在直线 $ C x=d $ 中，寻找 $ \|A x-b\|_{2}^{2} $ 最小的解。（此时$\|A x-b\|_{2}^{2}$表示一个椭圆）。
 
 特殊情况：
 
@@ -879,7 +879,7 @@ d
 求其最优解。
 \end{problem}
 
-设最优解是$\hat{x}$。
+设最优解是$\hat{x}$.
 
 由于 $ \hat{x} $ 满足 $ C \hat{x}=d $ ,则有 \begin{equation}\displaystyle \textcolor[rgb]{0.72,0.33,0.31}{C^{T} C\hat{x}} =\textcolor[rgb]{0.96,0.65,0.14}{C^{T} d}\end{equation} 
 
@@ -928,7 +928,7 @@ d
 \end{array}\right]
 \end{equation}
 
-将第一个方程两边乘 $ R^{-T} $ ，并令变量 $ y=R \hat{x} $ ,可得
+将第一个方程两边乘 $ R^{-T} $ ,并令变量 $ y=R \hat{x} $ ,可得
 \begin{equation}\displaystyle \left[\begin{array}{ c c }
     \left(\textcolor[rgb]{0.72,0.33,0.31}{\left( R^{T}\right)^{-1}} R^{T}\right) R & \left(\textcolor[rgb]{0.72,0.33,0.31}{\left( R^{T}\right)^{-1}} R^{T}\right) Q_{2}^{T}\\
     Q_{2} R & 0
@@ -1032,14 +1032,14 @@ Q_{2}
 \end{array}\right] R, Q_{2}^{T}=\tilde{Q} \tilde{R}
 \end{equation}\;
 用前代法求解 $ \tilde{R}^{T} u=d $
-$$u= (\tilde{R}^{T})^{-1} d$$
+\begin{equation}u= (\tilde{R}^{T})^{-1} d\end{equation}
 \;
 计算 $ c=\tilde{Q}^{T} Q_{1}^{T} b-u $\;
 用回代法求解 $ \tilde{R} w=c $ 
-$$\tilde{R} w = \tilde{Q}^{T} Q_{1}^{T} b- (\tilde{R}^{T})^{-1} d$$\;
+\begin{equation}\tilde{R} w = \tilde{Q}^{T} Q_{1}^{T} b- (\tilde{R}^{T})^{-1} d\end{equation}\;
 计算 $ y=Q_{1}^{T} b-Q_{2}^{T} w $\;
 用回代法计算 $ R \hat{x}=y $
-$$R \hat{x}=Q_{1}^{T} b-Q_{2}^{T} w$$
+\begin{equation}R \hat{x}=Q_{1}^{T} b-Q_{2}^{T} w\end{equation}
 \;
 
 \end{algorithm}
@@ -1062,13 +1062,13 @@ $$R \hat{x}=Q_{1}^{T} b-Q_{2}^{T} w$$
 In the unconstrained case (when $ p=0 $), step 1 reduces to computing the $ \mathrm{QR} $ factorization of $ A $, steps 2 and 3 are not needed, and step 4 reduces to solving $ R \hat{x}=Q_{1}^{T} b $. This is the same as algorithm \ref{algo:qr-kkt} for solving (unconstrained) least squares problems.
 
 We now give a complexity analysis. Step 1 involves the QR factorizations of an $ (m+p) \times n $ and an $ n \times p $ matrix, which costs $ 2(m+p) n^{2}+2 n p^{2} $ flops. Step 2 requires $ p^{2} $ flops. In step 3 , we first evaluate $ Q_{1}^{T} b(2 m n $ flops), multiply the result by $ \tilde{Q}^{T} $ (2 $ 2 p $ flops), and then solve for $ w $ using forward substitution ( $ p^{2} $ flops). Step 4 requires $ 2 m n+2 p n $ flops to form the right-hand side, and $ n^{2} $ flops to compute $ \hat{x} $ via back substitution. The costs of steps 2,3 , and 4 are quadratic in the dimensions, and so are negligible compared to the cost of step 1, so our final complexity is
-$$
+\begin{equation}
 2(m+p) n^{2}+2 n p^{2}
-$$
+\end{equation}
 flops. The assumption \ref{prop:assumption-1} and \ref{prop:assumption-2} implies the inequalities
-$$
+\begin{equation}
 p \leq n \leq m+p
-$$
+\end{equation}
 and therefore $ (m+p) n^{2} \geq n p^{2} $. So the flop count above is no more than $ 4(m+p) n^{2} $ flops. In particular, its order is $ (m+p) n^{2} $.
 
 \section[Supplement Material: Karush-Kuhn-Tucker (KKT)条件]{Supplement Material: Karush-Kuhn-Tucker (KKT)条件\footnote{Cited from \url{https://zhuanlan.zhihu.com/p/38163970}.}}
@@ -2125,32 +2125,32 @@ s.t. & -\lambda_1 - 2\lambda_2 + 1\leq 0\\
 \end{equation}
 As before, we can write down the KKT conditions:
 
-$$\text{Primal Feasibility}: \left\{
+\begin{equation}\text{Primal Feasibility}: \left\{
 \begin{aligned}
 \lambda_1 + 2\lambda_2 &\geq 1\\
 2\lambda_1 + \lambda_2 &\geq 1\\
 \lambda_1, \lambda_2 & \geq 1
 \end{aligned}
-\right.$$
+\right.\end{equation}
 
 
-$$\text{Dual Feasibility}:\left\{
+\begin{equation}\text{Dual Feasibility}:\left\{
 \begin{aligned}
 \begin{bmatrix}-4\\-6\end{bmatrix} - x_1\begin{bmatrix}-1\\-2\end{bmatrix} - 
 x_2\begin{bmatrix}-2\\-1\end{bmatrix} -s_1\begin{bmatrix}-1\\0\end{bmatrix} - 
 s_2\begin{bmatrix}0\\-1\end{bmatrix} &= \begin{bmatrix}0\\0\end{bmatrix}\\
 x_1,x_2,s_1,s_2 & \geq 0
 \end{aligned}
-\right.$$
+\right.\end{equation}
 
-$$\text{Complementary Slackness}:\left\{
+\begin{equation}\text{Complementary Slackness}:\left\{
     \begin{aligned}
     x_1(-\lambda_1 - 2\lambda_2 + 1) &= 0\\
     x_2(-2\lambda_1 - \lambda_2 + 1) &= 0\\
     s_1(-\lambda_1) &= 0\\
     s_2(-\lambda_2) &= 0
     \end{aligned}
-    \right.$$
+    \right.\end{equation}
 
 Again, we can re-write the dual feasibility conditions (for which we have intentionally chosen specific dual variable names) and see they become:
 \begin{equation}

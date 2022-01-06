@@ -975,7 +975,7 @@ end
 
 \section{QR Decomposition Using Householder Transformation}
 
-Householder算法是QR分解常用的算法（\textsc{MATLAB}和\textsc{Julia}中的\verb|qr|函数）.与Gram-Schmidt相比，对舍入误差更有鲁棒性。
+Householder算法是QR分解常用的算法（\textsc{MATLAB}和\textsc{Julia}中的\verb|qr|函数）。与Gram-Schmidt相比，对舍入误差更有鲁棒性。
 
 Householder算法计算一个“完整的”QR分解：
 \begin{equation} A_{m \times n}=\left[\begin{array}{ll}Q_{m \times n} & \tilde{Q}_{m \times (m-n)}\end{array}\right]\left[\begin{array}{l}R_{n  \times  n} \\ 0_{(m-n) \times n}\end{array}\right], \quad\left[\begin{array}{ll}Q & \tilde{Q}\end{array}\right]  是列正交的矩阵\end{equation}
@@ -1336,7 +1336,7 @@ R \\
 
 \begin{equation} H_{k}=\left[\begin{array}{cc}I & 0 \\ 0 & I-2 v_{k} v_{k}^{T}\end{array}\right]=I-2\left[\begin{array}{c}0 \\ v_{k}\end{array}\right]\left[\begin{array}{l}0 \\ v_{k}\end{array}\right]^{T} \end{equation}
 
-第$k$次循环时，$v_k \in \mathbf{R}^{m - k + 1}$。
+第$k$次循环时，$v_k \in \mathbf{R}^{m - k + 1}$.
 
 Householder方法第$k$次循环的复杂度：
 
@@ -1347,7 +1347,7 @@ Householder方法第$k$次循环的复杂度：
     \item $ A_{k: m, k: n} $ 的减法： $ ({m}-{k}+1)({n}-{k}+1) $ flops
 \end{itemize}
 
-除去构造$v$所需要的flops总和是$ 4({m}-{k}+1)({n}-{k}+1) $ flops，加上构造$v$需要的flops，所以第$k$次循环的总和： $ 4({m}-{k}+1)({n}-{k}+2) $ flops
+除去构造$v$所需要的flops总和是$ 4({m}-{k}+1)({n}-{k}+1) $ flops,加上构造$v$需要的flops,所以第$k$次循环的总和： $ 4({m}-{k}+1)({n}-{k}+2) $ flops
 
 \begin{theorem}
     计算 $ R $ 和 $ v_{1}, \ldots, v_{n} $ 的总复杂度

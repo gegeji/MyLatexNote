@@ -688,7 +688,7 @@ Jacobian矩阵Df $ \left(x^{(k)}\right) $ 的可能 "列向量是线性相关。
 
 
 
-\section{Levenberg–Marquardt Algorithm}
+\section{Levenberg-Marquardt Algorithm}
 
 Levenberg-Marquardt(LM)算法解决高斯-牛顿法的两个难点：
 
@@ -697,7 +697,7 @@ Levenberg-Marquardt(LM)算法解决高斯-牛顿法的两个难点：
     \item 当高斯-牛顿法的更新过程， $ \|f(x)\|_{2}^{2} $ 并没有减少。
 \end{enumerate}
 
-\subsection{推导Levenberg–Marquardt算法}
+\subsection{推导Levenberg-Marquardt算法}
 
 LM算法通过求解正则化最小二乘法更新 $ x^{(k+1)} $ :
 
@@ -712,7 +712,7 @@ LM算法通过求解正则化最小二乘法更新 $ x^{(k+1)} $ :
 当 $ \lambda^{(k)}>0 $ 时，总有唯一解。
 
 \begin{remark}
-    Levenberg–Marquardt Algorithm无需再对 $Df \left(x^{(k)}\right) $ 限制。
+    Levenberg-Marquardt Algorithm无需再对 $Df \left(x^{(k)}\right) $ 限制。
 \end{remark}
 
 \begin{problem}
@@ -800,7 +800,7 @@ x^{(k+1)}=x^{(k)}-\left(D f\left(x^{(k)}\right)^{T} D f\left(x^{(k)}\right)+\lam
 
 
 \begin{algorithm}[htbp]
-    \caption{Levenberg–Marquardt Algorithm}
+    \caption{Levenberg-Marquardt Algorithm}
     选择 $ x^{(1)} $ 和 $ \lambda^{(1)} $\;
     \While{$ k=1,2, \ldots $}{
         求 $ f\left(x^{(k)}\right) $\;
@@ -918,7 +918,7 @@ solve the linearized equation $ \hat{f}\left(x ; x^{(k)}\right)=0 $ and take the
 x^{(k+1)}=x^{(k)}-\frac{f\left(x^{(k)}\right)}{f^{\prime}\left(x^{(k)}\right)}
 \end{equation}
 
-\subsection{Relation to Gauss–Newton method}
+\subsection{Relation to Gauss-Newton method}
 
 recall Gauss-Newton method for nonlinear least squares problem
 

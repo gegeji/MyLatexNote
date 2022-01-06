@@ -15,111 +15,109 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Convex Functions\relax }}{43}{figure.caption.6}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Convex Functions\relax }}{44}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Projection onto a Line\relax }}{46}{figure.caption.7}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Projection onto a Line\relax }}{47}{figure.caption.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Projection onto a Line from the Prospective of Linear Algebra\relax }}{47}{figure.caption.8}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Row Picture and Column Picture for \ref {exm: row-column-picture}\relax }}{60}{figure.caption.12}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Paths in Directed Graph\relax }}{68}{figure.caption.16}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces An Example of Convolution\relax }}{70}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Projection onto a Line from the Prospective of Linear Algebra\relax }}{48}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Row Picture and Column Picture for \ref {exm: row-column-picture}\relax }}{61}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Four Subspace of Matrix $A$\relax }}{90}{figure.caption.23}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Paths in Directed Graph\relax }}{69}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.2}{\ignorespaces $ A \boldsymbol {x}^{\dagger } $ in the column space goes back to $ A^{\dagger } A \boldsymbol {x}^{\dagger }=\boldsymbol {x}^{\dagger }$ in the row space\relax }}{96}{figure.caption.25}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.3}{\ignorespaces Projection from Row Space to Column Space\relax }}{96}{figure.caption.26}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10.1}{\ignorespaces An Example of Rotation\relax }}{100}{figure.caption.27}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10.2}{\ignorespaces Elementary Reflection\relax }}{101}{figure.caption.28}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10.3}{\ignorespaces Projection onto the column space of $A$, $A$ has orthonormal columns\relax }}{103}{figure.caption.29}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10.4}{\ignorespaces Projection of $\boldsymbol {b}$ into the column space of ${A}$, $A$ is any matrice. Sourced from \cite {Strang1993IntroductionTL}\relax }}{105}{figure.caption.30}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.1}{\ignorespaces Projecting onto the column space of $A$ is also projecting onto the column space of $Q$\relax }}{113}{figure.caption.36}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.2}{\ignorespaces $ A \boldsymbol {x}^{\dagger } $ in the column space goes back to $ A^{\dagger } A \boldsymbol {x}^{\dagger }=\boldsymbol {x}^{\dagger }$ in the row space\relax }}{114}{figure.caption.37}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.3}{\ignorespaces 通过Gram-Schmidt正交化算法计算得到的正交性偏差$\qopname \relax m{max}_{1 \leq i<k}\left |q_{i}^{T} q_{k}\right |$\relax }}{118}{figure.caption.40}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.4}{\ignorespaces 在同一组数据中使用修正Gram-Schmidt算法求得的误差，$e_{k}=\qopname \relax m{max}_{1 \leq i<k}\left |q_{i}^{T} q_{k}\right |, k=2, \ldots , n$\relax }}{119}{figure.caption.42}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.5}{\ignorespaces Reflection of $x$\relax }}{121}{figure.caption.43}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.6}{\ignorespaces 构造的Householder矩阵的几何意义\relax }}{123}{figure.caption.46}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.7}{\ignorespaces The Structure of $ H_{k} H_{k-1} \ldots H_{1} A $\relax }}{123}{figure.caption.47}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.8}{\ignorespaces 迭代计算过程中$A$的结构\relax }}{124}{figure.caption.48}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces An Example of Convolution\relax }}{71}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {13.1}{\ignorespaces Measurement Problem\relax }}{145}{figure.caption.57}%
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {13.2}{\ignorespaces Projection of $\boldsymbol {b}$ into the column space of ${A}$, $A$ is any matrice. Sourced from \cite {Strang1993IntroductionTL}\relax }}{149}{figure.caption.58}%
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Four Subspace of Matrix $A$\relax }}{91}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {13.3}{\ignorespaces Projecting onto the column space of $A$ is also projecting onto the column space of $Q$\relax }}{150}{figure.caption.59}%
+\contentsline {figure}{\numberline {9.2}{\ignorespaces $ A \boldsymbol {x}^{\dagger } $ in the column space goes back to $ A^{\dagger } A \boldsymbol {x}^{\dagger }=\boldsymbol {x}^{\dagger }$ in the row space\relax }}{97}{figure.caption.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.3}{\ignorespaces Projection from Row Space to Column Space\relax }}{97}{figure.caption.26}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {14.1}{\ignorespaces Least Squares Estimator\relax }}{163}{figure.caption.66}%
+\contentsline {figure}{\numberline {10.1}{\ignorespaces An Example of Rotation\relax }}{101}{figure.caption.27}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {10.2}{\ignorespaces Elementary Reflection\relax }}{102}{figure.caption.28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {10.3}{\ignorespaces Projection onto the column space of $A$, $A$ has orthonormal columns\relax }}{104}{figure.caption.29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {10.4}{\ignorespaces Projection of $\boldsymbol {b}$ into the column space of ${A}$, $A$ is any matrice. Sourced from \cite {Strang1993IntroductionTL}\relax }}{106}{figure.caption.30}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Projecting onto the column space of $A$ is also projecting onto the column space of $Q$\relax }}{114}{figure.caption.36}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {11.2}{\ignorespaces $ A \boldsymbol {x}^{\dagger } $ in the column space goes back to $ A^{\dagger } A \boldsymbol {x}^{\dagger }=\boldsymbol {x}^{\dagger }$ in the row space\relax }}{115}{figure.caption.37}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {11.3}{\ignorespaces 通过Gram-Schmidt正交化算法计算得到的正交性偏差$\qopname \relax m{max}_{1 \leq i<k}\left |q_{i}^{T} q_{k}\right |$\relax }}{119}{figure.caption.40}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {11.4}{\ignorespaces 在同一组数据中使用修正Gram-Schmidt算法求得的误差，$e_{k}=\qopname \relax m{max}_{1 \leq i<k}\left |q_{i}^{T} q_{k}\right |, k=2, \ldots , n$\relax }}{120}{figure.caption.42}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {11.5}{\ignorespaces Reflection of $x$\relax }}{122}{figure.caption.43}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {11.6}{\ignorespaces 构造的Householder矩阵的几何意义\relax }}{124}{figure.caption.46}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {11.7}{\ignorespaces The Structure of $ H_{k} H_{k-1} \ldots H_{1} A $\relax }}{124}{figure.caption.47}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {11.8}{\ignorespaces 迭代计算过程中$A$的结构\relax }}{125}{figure.caption.48}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16.1}{\ignorespaces The Geometry of the problem\relax }}{175}{figure.caption.67}%
+\contentsline {figure}{\numberline {13.1}{\ignorespaces Measurement Problem\relax }}{146}{figure.caption.57}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16.2}{\ignorespaces An Example for Karush-Kuhn-Tucker Conditions\relax }}{176}{figure.caption.68}%
+\contentsline {figure}{\numberline {13.2}{\ignorespaces Projection of $\boldsymbol {b}$ into the column space of ${A}$, $A$ is any matrice. Sourced from \cite {Strang1993IntroductionTL}\relax }}{150}{figure.caption.58}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16.3}{\ignorespaces 最小范数优化问题($p < n$)\relax }}{177}{figure.caption.69}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16.4}{\ignorespaces 点到线的最短距离\relax }}{178}{figure.caption.70}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16.5}{\ignorespaces \relax }}{195}{figure.caption.74}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16.6}{\ignorespaces \relax }}{195}{figure.caption.75}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16.7}{\ignorespaces \relax }}{196}{figure.caption.76}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16.8}{\ignorespaces The feasible region for the example linear programming problem illustrating level curves of the objective.\relax }}{206}{figure.caption.79}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16.9}{\ignorespaces The gradients of the objective function and the binding constraints at optimality and their geometric relation are illustrated\relax }}{206}{figure.caption.80}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16.10}{\ignorespaces Goat pen with unknown side lengths. The objective is to identify the values of $x$ and $y$ that maximize the area of the pen (and thus the number of goats that can be kept).\relax }}{210}{figure.caption.81}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16.11}{\ignorespaces Visualization of the KKT conditions for a simple nonlinear programming problem. Notice the point of optimality is not at an extreme point. Moreover, the gradient of the binding constraint is parallel to the gradient of the objective, as expected. \textit {Note, the gradient of the binding constraint has been scaled larger for visual effect.}\relax }}{211}{figure.caption.82}%
+\contentsline {figure}{\numberline {13.3}{\ignorespaces Projecting onto the column space of $A$ is also projecting onto the column space of $Q$\relax }}{151}{figure.caption.59}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {17.1}{\ignorespaces 优化模型的几何意义\relax }}{216}{figure.caption.83}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {17.2}{\ignorespaces $m=n=1$时的情形\relax }}{223}{figure.caption.84}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {17.3}{\ignorespaces $m=n=1$时的情形\relax }}{227}{figure.caption.88}%
+\contentsline {figure}{\numberline {14.1}{\ignorespaces Least Squares Estimator\relax }}{164}{figure.caption.66}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {16.1}{\ignorespaces The Geometry of the problem\relax }}{176}{figure.caption.67}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {16.2}{\ignorespaces An Example for Karush-Kuhn-Tucker Conditions\relax }}{177}{figure.caption.68}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {16.3}{\ignorespaces 最小范数优化问题($p < n$)\relax }}{178}{figure.caption.69}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {16.4}{\ignorespaces 点到线的最短距离\relax }}{179}{figure.caption.70}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {16.5}{\ignorespaces \relax }}{196}{figure.caption.74}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {16.6}{\ignorespaces \relax }}{196}{figure.caption.75}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {16.7}{\ignorespaces \relax }}{197}{figure.caption.76}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {16.8}{\ignorespaces The feasible region for the example linear programming problem illustrating level curves of the objective.\relax }}{207}{figure.caption.79}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {16.9}{\ignorespaces The gradients of the objective function and the binding constraints at optimality and their geometric relation are illustrated\relax }}{207}{figure.caption.80}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {16.10}{\ignorespaces Goat pen with unknown side lengths. The objective is to identify the values of $x$ and $y$ that maximize the area of the pen (and thus the number of goats that can be kept).\relax }}{211}{figure.caption.81}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {16.11}{\ignorespaces Visualization of the KKT conditions for a simple nonlinear programming problem. Notice the point of optimality is not at an extreme point. Moreover, the gradient of the binding constraint is parallel to the gradient of the objective, as expected. \textit {Note, the gradient of the binding constraint has been scaled larger for visual effect.}\relax }}{212}{figure.caption.82}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {17.1}{\ignorespaces 优化模型的几何意义\relax }}{217}{figure.caption.83}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {17.2}{\ignorespaces $m=n=1$时的情形\relax }}{224}{figure.caption.84}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {17.3}{\ignorespaces $m=n=1$时的情形\relax }}{228}{figure.caption.88}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

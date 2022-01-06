@@ -18,165 +18,165 @@
 \indexentry{权重向量(weight vector)|hyperpage}{39}
 \indexentry{偏移量(offset)|hyperpage}{39}
 \indexentry{预测值(prediction)|hyperpage}{39}
-\indexentry{samples|hyperpage}{39}
-\indexentry{examples|hyperpage}{39}
-\indexentry{prediction errors|hyperpage}{39}
-\indexentry{residuals|hyperpage}{39}
-\indexentry{凸的定义域|hyperpage}{42}
-\indexentry{聚类(clustering)|hyperpage}{46}
-\indexentry{线性相关(linearly dependent)|hyperpage}{49}
-\indexentry{线性独立 (linearly dependent)|hyperpage}{50}
-\indexentry{线性无关|hyperpage}{50}
-\indexentry{正交(orthogonal)|hyperpage}{51}
-\indexentry{标准正交 (orthonormal)|hyperpage}{51}
-\indexentry{标准正交基|hyperpage}{52}
-\indexentry{$ x $ 在标准正交基下的标准正交分解|hyperpage}{52}
-\indexentry{矩阵|hyperpage}{57}
-\indexentry{大小(size)|hyperpage}{57}
-\indexentry{元素(element)|hyperpage}{57}
-\indexentry{系数(coefficient)|hyperpage}{57}
-\indexentry{高|hyperpage}{57}
-\indexentry{宽|hyperpage}{57}
-\indexentry{方|hyperpage}{57}
-\indexentry{矩阵$A$的子矩阵|hyperpage}{58}
-\indexentry{flow surplus|hyperpage}{69}
-\indexentry{flow conservation|hyperpage}{69}
-\indexentry{circulation|hyperpage}{69}
-\indexentry{source flows|hyperpage}{69}
-\indexentry{exogenous flows|hyperpage}{69}
-\indexentry{source|hyperpage}{69}
-\indexentry{sink|hyperpage}{69}
-\indexentry{卷积|hyperpage}{70}
-\indexentry{3-period moving average of the time series|hyperpage}{72}
-\indexentry{多项式|hyperpage}{72}
-\indexentry{度|hyperpage}{72}
-\indexentry{系数|hyperpage}{72}
-\indexentry{Vandermonde矩阵|hyperpage}{72}
-\indexentry{半正定矩阵|hyperpage}{73}
-\indexentry{正定矩阵|hyperpage}{73}
-\indexentry{二次型|hyperpage}{73}
-\indexentry{derivative matrix|hyperpage}{75}
-\indexentry{Jacobian matrix|hyperpage}{75}
-\indexentry{从属范数|hyperpage}{80}
-\indexentry{算子范数|hyperpage}{80}
-\indexentry{相容|hyperpage}{80}
-\indexentry{乘法范数相容性|hyperpage}{81}
-\indexentry{稳定|hyperpage}{83}
-\indexentry{不稳定|hyperpage}{83}
-\indexentry{适定问题|hyperpage}{84}
-\indexentry{病态问题|hyperpage}{84}
-\indexentry{左逆|hyperpage}{88}
-\indexentry{可左逆|hyperpage}{88}
-\indexentry{逆|hyperpage}{89}
-\indexentry{可逆|hyperpage}{89}
-\indexentry{over-determined|hyperpage}{90}
-\indexentry{under-determined|hyperpage}{90}
-\indexentry{square|hyperpage}{90}
-\indexentry{homogeneous|hyperpage}{90}
-\indexentry{pseudo|hyperpage}{95}
-\indexentry{正交投影|hyperpage}{104}
-\indexentry{投影|hyperpage}{104}
-\indexentry{下三角(Lower Triangular)矩阵|hyperpage}{106}
-\indexentry{上三角(Upper Triangular)矩阵|hyperpage}{106}
-\indexentry{前向回代(Forward Substitution)|hyperpage}{106}
-\indexentry{后向回代(Back Substitution)|hyperpage}{107}
-\indexentry{thin $ Q R $ factorization of $ A $|hyperpage}{109}
-\indexentry{reduced QR factorization|hyperpage}{109}
-\indexentry{reflection matrices|hyperpage}{128}
-\indexentry{plane rotation matrices|hyperpage}{128}
-\indexentry{permutation matrix|hyperpage}{133}
-\indexentry{explanatory variable|hyperpage}{156}
-\indexentry{independent variable|hyperpage}{156}
-\indexentry{outcome|hyperpage}{156}
-\indexentry{response variable|hyperpage}{156}
-\indexentry{dependent variable|hyperpage}{156}
-\indexentry{prediction error|hyperpage}{156}
-\indexentry{residual|hyperpage}{156}
-\indexentry{RMS error|hyperpage}{157}
-\indexentry{regressors|hyperpage}{157}
-\indexentry{trend line|hyperpage}{159}
-\indexentry{constant offset|hyperpage}{160}
-\indexentry{Boolean classifier|hyperpage}{161}
-\indexentry{unbiased|hyperpage}{166}
-\indexentry{拉格朗日函数 (Lagrange Function)|hyperpage}{174}
-\indexentry{拉格朗日乘子(Lagrange Multipliers)|hyperpage}{175}
-\indexentry{Lagrange乘数|hyperpage}{189}
-\indexentry{定常方程式(stationary equation)|hyperpage}{189}
-\indexentry{约束条件|hyperpage}{189}
-\indexentry{原始可行性(primal feasibility)|hyperpage}{189}
-\indexentry{可行域(feasible region)|hyperpage}{189}
-\indexentry{无效的 (inactive)|hyperpage}{189}
-\indexentry{有效的 (active)|hyperpage}{189}
-\indexentry{对偶可行性(dual feasibility).|hyperpage}{190}
-\indexentry{互补松弛性(complementary slackness)|hyperpage}{190}
-\indexentry{Karush-Kuhn-Tucker (KKT)条件|hyperpage}{190}
-\indexentry{Lagrange函数|hyperpage}{192}
-\indexentry{Lagrange乘子|hyperpage}{192}
-\indexentry{无约束优化问题|hyperpage}{192}
-\indexentry{优化变量|hyperpage}{192}
-\indexentry{松弛变量|hyperpage}{192}
-\indexentry{点|hyperpage}{197}
-\indexentry{线|hyperpage}{197}
-\indexentry{线段|hyperpage}{197}
-\indexentry{仿射集|hyperpage}{197}
-\indexentry{凸函数|hyperpage}{197}
-\indexentry{优化问题|hyperpage}{198}
-\indexentry{优化变量|hyperpage}{198}
-\indexentry{目标函数|hyperpage}{198}
-\indexentry{约束函数|hyperpage}{198}
-\indexentry{最优点|hyperpage}{198}
-\indexentry{解|hyperpage}{198}
-\indexentry{凸优化|hyperpage}{198}
+\indexentry{samples|hyperpage}{40}
+\indexentry{examples|hyperpage}{40}
+\indexentry{prediction errors|hyperpage}{40}
+\indexentry{residuals|hyperpage}{40}
+\indexentry{凸的定义域|hyperpage}{43}
+\indexentry{聚类(clustering)|hyperpage}{47}
+\indexentry{线性相关(linearly dependent)|hyperpage}{50}
+\indexentry{线性独立 (linearly dependent)|hyperpage}{51}
+\indexentry{线性无关|hyperpage}{51}
+\indexentry{正交(orthogonal)|hyperpage}{52}
+\indexentry{标准正交 (orthonormal)|hyperpage}{52}
+\indexentry{标准正交基|hyperpage}{53}
+\indexentry{$ x $ 在标准正交基下的标准正交分解|hyperpage}{53}
+\indexentry{矩阵|hyperpage}{58}
+\indexentry{大小(size)|hyperpage}{58}
+\indexentry{元素(element)|hyperpage}{58}
+\indexentry{系数(coefficient)|hyperpage}{58}
+\indexentry{高|hyperpage}{58}
+\indexentry{宽|hyperpage}{58}
+\indexentry{方|hyperpage}{58}
+\indexentry{矩阵$A$的子矩阵|hyperpage}{59}
+\indexentry{flow surplus|hyperpage}{70}
+\indexentry{flow conservation|hyperpage}{70}
+\indexentry{circulation|hyperpage}{70}
+\indexentry{source flows|hyperpage}{70}
+\indexentry{exogenous flows|hyperpage}{70}
+\indexentry{source|hyperpage}{70}
+\indexentry{sink|hyperpage}{70}
+\indexentry{卷积|hyperpage}{71}
+\indexentry{3-period moving average of the time series|hyperpage}{73}
+\indexentry{多项式|hyperpage}{73}
+\indexentry{度|hyperpage}{73}
+\indexentry{系数|hyperpage}{73}
+\indexentry{Vandermonde矩阵|hyperpage}{73}
+\indexentry{半正定矩阵|hyperpage}{74}
+\indexentry{正定矩阵|hyperpage}{74}
+\indexentry{二次型|hyperpage}{74}
+\indexentry{derivative matrix|hyperpage}{76}
+\indexentry{Jacobian matrix|hyperpage}{76}
+\indexentry{从属范数|hyperpage}{81}
+\indexentry{算子范数|hyperpage}{81}
+\indexentry{相容|hyperpage}{81}
+\indexentry{乘法范数相容性|hyperpage}{82}
+\indexentry{稳定|hyperpage}{84}
+\indexentry{不稳定|hyperpage}{84}
+\indexentry{适定问题|hyperpage}{85}
+\indexentry{病态问题|hyperpage}{85}
+\indexentry{左逆|hyperpage}{89}
+\indexentry{可左逆|hyperpage}{89}
+\indexentry{逆|hyperpage}{90}
+\indexentry{可逆|hyperpage}{90}
+\indexentry{over-determined|hyperpage}{91}
+\indexentry{under-determined|hyperpage}{91}
+\indexentry{square|hyperpage}{91}
+\indexentry{homogeneous|hyperpage}{91}
+\indexentry{pseudo|hyperpage}{96}
+\indexentry{正交投影|hyperpage}{105}
+\indexentry{投影|hyperpage}{105}
+\indexentry{下三角(Lower Triangular)矩阵|hyperpage}{107}
+\indexentry{上三角(Upper Triangular)矩阵|hyperpage}{107}
+\indexentry{前向回代(Forward Substitution)|hyperpage}{107}
+\indexentry{后向回代(Back Substitution)|hyperpage}{108}
+\indexentry{thin $ Q R $ factorization of $ A $|hyperpage}{110}
+\indexentry{reduced QR factorization|hyperpage}{110}
+\indexentry{reflection matrices|hyperpage}{129}
+\indexentry{plane rotation matrices|hyperpage}{129}
+\indexentry{permutation matrix|hyperpage}{134}
+\indexentry{explanatory variable|hyperpage}{157}
+\indexentry{independent variable|hyperpage}{157}
+\indexentry{outcome|hyperpage}{157}
+\indexentry{response variable|hyperpage}{157}
+\indexentry{dependent variable|hyperpage}{157}
+\indexentry{prediction error|hyperpage}{157}
+\indexentry{residual|hyperpage}{157}
+\indexentry{RMS error|hyperpage}{158}
+\indexentry{regressors|hyperpage}{158}
+\indexentry{trend line|hyperpage}{160}
+\indexentry{constant offset|hyperpage}{161}
+\indexentry{Boolean classifier|hyperpage}{162}
+\indexentry{unbiased|hyperpage}{167}
+\indexentry{拉格朗日函数 (Lagrange Function)|hyperpage}{175}
+\indexentry{拉格朗日乘子(Lagrange Multipliers)|hyperpage}{176}
+\indexentry{Lagrange乘数|hyperpage}{190}
+\indexentry{定常方程式(stationary equation)|hyperpage}{190}
+\indexentry{约束条件|hyperpage}{190}
+\indexentry{原始可行性(primal feasibility)|hyperpage}{190}
+\indexentry{可行域(feasible region)|hyperpage}{190}
+\indexentry{无效的 (inactive)|hyperpage}{190}
+\indexentry{有效的 (active)|hyperpage}{190}
+\indexentry{对偶可行性(dual feasibility).|hyperpage}{191}
+\indexentry{互补松弛性(complementary slackness)|hyperpage}{191}
+\indexentry{Karush-Kuhn-Tucker (KKT)条件|hyperpage}{191}
+\indexentry{Lagrange函数|hyperpage}{193}
+\indexentry{Lagrange乘子|hyperpage}{193}
+\indexentry{无约束优化问题|hyperpage}{193}
+\indexentry{优化变量|hyperpage}{193}
+\indexentry{松弛变量|hyperpage}{193}
+\indexentry{点|hyperpage}{198}
+\indexentry{线|hyperpage}{198}
+\indexentry{线段|hyperpage}{198}
+\indexentry{仿射集|hyperpage}{198}
 \indexentry{凸函数|hyperpage}{198}
-\indexentry{仿射函数|hyperpage}{198}
-\indexentry{$ 0- $sublevel集|hyperpage}{198}
-\indexentry{主变量(primal variable)|hyperpage}{199}
-\indexentry{主目标(primal objective)|hyperpage}{199}
-\indexentry{主问题(primal problem)|hyperpage}{199}
-\indexentry{主问题的解|hyperpage}{199}
-\indexentry{主目标的最优值|hyperpage}{199}
-\indexentry{主可行的(primal feasible)|hyperpage}{199}
-\indexentry{对偶目标(dual objective)|hyperpage}{200}
-\indexentry{对偶问题|hyperpage}{200}
-\indexentry{对偶问题的解|hyperpage}{200}
-\indexentry{对偶目标的最优值|hyperpage}{200}
-\indexentry{凸优化|hyperpage}{201}
-\indexentry{拉格朗日算子|hyperpage}{201}
-\indexentry{主问题|hyperpage}{201}
+\indexentry{优化问题|hyperpage}{199}
+\indexentry{优化变量|hyperpage}{199}
+\indexentry{目标函数|hyperpage}{199}
+\indexentry{约束函数|hyperpage}{199}
+\indexentry{最优点|hyperpage}{199}
+\indexentry{解|hyperpage}{199}
+\indexentry{凸优化|hyperpage}{199}
+\indexentry{凸函数|hyperpage}{199}
+\indexentry{仿射函数|hyperpage}{199}
+\indexentry{$ 0- $sublevel集|hyperpage}{199}
+\indexentry{主变量(primal variable)|hyperpage}{200}
+\indexentry{主目标(primal objective)|hyperpage}{200}
+\indexentry{主问题(primal problem)|hyperpage}{200}
+\indexentry{主问题的解|hyperpage}{200}
+\indexentry{主目标的最优值|hyperpage}{200}
+\indexentry{主可行的(primal feasible)|hyperpage}{200}
+\indexentry{对偶目标(dual objective)|hyperpage}{201}
 \indexentry{对偶问题|hyperpage}{201}
-\indexentry{主问题|hyperpage}{201}
-\indexentry{对偶问题|hyperpage}{201}
-\indexentry{弱对偶性|hyperpage}{201}
-\indexentry{Lagrange multipliers|hyperpage}{203}
-\indexentry{dual variables|hyperpage}{203}
-\indexentry{Karush-Kuhn-Tucker|hyperpage}{203}
-\indexentry{constraint qualification|hyperpage}{203}
-\indexentry{no|hyperpage}{203}
-\indexentry{gradient of $z$ at ${x}^*$ is a positive combination of the gradients of the constraints at ${x}^*$.|hyperpage}{204}
-\indexentry{complementary slackness|hyperpage}{204}
-\indexentry{gradient of $z$ at ${x}^*$ is a positive combination of the gradients of the \textbf  {binding} constraints at ${x}^*$.|hyperpage}{204}
-\indexentry{always binding|hyperpage}{204}
-\indexentry{gradient of $z$ at ${x}^*$ is a linear combination of the gradients of the \textbf  {binding} constraints at ${x}^*$.|hyperpage}{204}
-\indexentry{surplus variables|hyperpage}{205}
-\indexentry{binding|hyperpage}{207}
-\indexentry{row|hyperpage}{207}
-\indexentry{slack variables|hyperpage}{208}
-\indexentry{Thus, two linear programming problems are dual to each other if and only if they share KKT conditions with the primal and dual feasibility conditions swapped.|hyperpage}{209}
-\indexentry{better|hyperpage}{209}
-\indexentry{local maximum|hyperpage}{210}
-\indexentry{does not|hyperpage}{211}
-\indexentry{Note, the gradient of the binding constraint has been scaled larger for visual effect.|hyperpage}{211}
-\indexentry{concave|hyperpage}{212}
-\indexentry{Weak duality|hyperpage}{212}
-\indexentry{strong duality|hyperpage}{212}
-\indexentry{directional derivative|hyperpage}{217}
-\indexentry{descent direction|hyperpage}{217}
-\indexentry{minimize|hyperpage}{227}
-\indexentry{step size|hyperpage}{229}
-\indexentry{line search|hyperpage}{229}
-\indexentry{谐波分析|hyperpage}{234}
-\indexentry{直流分量|hyperpage}{234}
-\indexentry{一次谐波|hyperpage}{234}
-\indexentry{基波|hyperpage}{234}
-\indexentry{二次谐波|hyperpage}{234}
-\indexentry{三次谐波|hyperpage}{234}
+\indexentry{对偶问题的解|hyperpage}{201}
+\indexentry{对偶目标的最优值|hyperpage}{201}
+\indexentry{凸优化|hyperpage}{202}
+\indexentry{拉格朗日算子|hyperpage}{202}
+\indexentry{主问题|hyperpage}{202}
+\indexentry{对偶问题|hyperpage}{202}
+\indexentry{主问题|hyperpage}{202}
+\indexentry{对偶问题|hyperpage}{202}
+\indexentry{弱对偶性|hyperpage}{202}
+\indexentry{Lagrange multipliers|hyperpage}{204}
+\indexentry{dual variables|hyperpage}{204}
+\indexentry{Karush-Kuhn-Tucker|hyperpage}{204}
+\indexentry{constraint qualification|hyperpage}{204}
+\indexentry{no|hyperpage}{204}
+\indexentry{gradient of $z$ at ${x}^*$ is a positive combination of the gradients of the constraints at ${x}^*$.|hyperpage}{205}
+\indexentry{complementary slackness|hyperpage}{205}
+\indexentry{gradient of $z$ at ${x}^*$ is a positive combination of the gradients of the \textbf  {binding} constraints at ${x}^*$.|hyperpage}{205}
+\indexentry{always binding|hyperpage}{205}
+\indexentry{gradient of $z$ at ${x}^*$ is a linear combination of the gradients of the \textbf  {binding} constraints at ${x}^*$.|hyperpage}{205}
+\indexentry{surplus variables|hyperpage}{206}
+\indexentry{binding|hyperpage}{208}
+\indexentry{row|hyperpage}{208}
+\indexentry{slack variables|hyperpage}{209}
+\indexentry{Thus, two linear programming problems are dual to each other if and only if they share KKT conditions with the primal and dual feasibility conditions swapped.|hyperpage}{210}
+\indexentry{better|hyperpage}{210}
+\indexentry{local maximum|hyperpage}{211}
+\indexentry{does not|hyperpage}{212}
+\indexentry{Note, the gradient of the binding constraint has been scaled larger for visual effect.|hyperpage}{212}
+\indexentry{concave|hyperpage}{213}
+\indexentry{Weak duality|hyperpage}{213}
+\indexentry{strong duality|hyperpage}{213}
+\indexentry{directional derivative|hyperpage}{218}
+\indexentry{descent direction|hyperpage}{218}
+\indexentry{minimize|hyperpage}{228}
+\indexentry{step size|hyperpage}{230}
+\indexentry{line search|hyperpage}{230}
+\indexentry{谐波分析|hyperpage}{235}
+\indexentry{直流分量|hyperpage}{235}
+\indexentry{一次谐波|hyperpage}{235}
+\indexentry{基波|hyperpage}{235}
+\indexentry{二次谐波|hyperpage}{235}
+\indexentry{三次谐波|hyperpage}{235}
