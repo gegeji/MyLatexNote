@@ -120,6 +120,8 @@ f(x)=\|A x-b\|_{2}^{2}=\sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i j} x_{j}-b_{i}\ri
 \end{equation}
 \end{theorem}
 
+利用上面这个定理，可以推导出正规方程和最小二乘解。
+
 \begin{theorem}[正规方程与最小二乘解]
     \begin{equation} A^{T} A x=A^{T} b \end{equation}
 
@@ -176,25 +178,30 @@ f(x)=\|A x-b\|_{2}^{2}=\sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i j} x_{j}-b_{i}\ri
     注意有
         
 
-    \begin{equation}\sum\limits _{j=1}^{n} A_{ij} x_{j} =\left(\begin{array}{ c c c c c }
+    \begin{equation}\sum\limits _{j=1}^{n} A_{ij} x_{j} \Rightarrow 
+    \left(\begin{array}{ c c c c c }
     A_{1,1} & \cdots  & A_{1,k} & \cdots  & A_{1,n}\\
     \vdots  &  & \vdots  &  & \vdots \\
-    \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{A}\textcolor[rgb]{0.72,0.33,0.31}{_{j,1}}} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\cdots }} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{A}\textcolor[rgb]{0.72,0.33,0.31}{_{j,k}}} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\cdots }} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{A}\textcolor[rgb]{0.72,0.33,0.31}{_{j,n}}}\\
+    \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{A}\textcolor[rgb]{0.72,0.33,0.31}{_{i,1}}} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\cdots }} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{A}\textcolor[rgb]{0.72,0.33,0.31}{_{i,k}}} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\cdots }} & \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{A}\textcolor[rgb]{0.72,0.33,0.31}{_{i,n}}}\\
     \vdots  &  & \vdots  &  & \vdots \\
     A_{m,1} & \cdots  & A_{m,k} & \cdots  & A_{m,n}
     \end{array}\right)\left(\begin{array}{ c }
     \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{x}\textcolor[rgb]{0.72,0.33,0.31}{_{1}}}\\
     \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\vdots }}\\
-    \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{x}\textcolor[rgb]{0.72,0.33,0.31}{_{j}}}\\
+    \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{x}\textcolor[rgb]{0.72,0.33,0.31}{_{i}}}\\
     \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{\vdots }}\\
     \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{x}\textcolor[rgb]{0.72,0.33,0.31}{_{n}}}
     \end{array}\right) =\left(\begin{array}{ c }
     Result_{1}\\
     \vdots \\
-    \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{Result}\textcolor[rgb]{0.72,0.33,0.31}{_{k}}}\\
+    \boldsymbol{\textcolor[rgb]{0.72,0.33,0.31}{Result}\textcolor[rgb]{0.72,0.33,0.31}{_{i}}}\\
     \vdots \\
     Result_{m}
     \end{array}\right) =Ax\end{equation}
+
+    \begin{remark}
+        在此处$i$是自由变量。
+    \end{remark}
 
     \begin{equation}\displaystyle \sum _{i=1}^{m}\left(\underbrace{\left(\sum _{j=1}^{n} A_{ij} x_{j}\right)}_{Result}( A_{ik})\right) =\begin{array}{ c }
     A_{1,\textcolor[rgb]{0.29,0.56,0.89}{\boldsymbol{k}}} \times Result_{1}\\
@@ -275,7 +282,7 @@ $A$的列向量无关时，则 $ \hat{x}=\left(A^{T} A\right)^{-1} A^{T} b $.
 
 矩阵 $ {A} \in \mathbb{R}^{m \times n} $ 的列 $ a_{1}, a_{2}, \ldots, a_{n} \in \mathbb{R}^{m} $ 的最小二乘法问题
 \begin{equation}
-\hat{x}=\underset{x}{\arg \underset{x}{\min}}\|A x-b\|_{2}^{2} ,\|A x-b\|_{2}^{2}=\left\|\sum_{j=1}^{n} a_{j} x_{j}-b\right\|_{2}^{2}
+\hat{x}=\arg \underset{x}{\min}\|A x-b\|_{2}^{2} ,\|A x-b\|_{2}^{2}=\left\|\sum_{j=1}^{n} a_{j} x_{j}-b\right\|_{2}^{2}
 \end{equation}
 
 向量 $ b $ 在 $ \operatorname{range}(A) $ 上的投影是 $ A\left(A^{T} A\right)^{-1} A^{T} b $.
@@ -466,7 +473,7 @@ f(x)=\|A x-b\|_{2}^{2}=\sum_{i=1}^{m}\left(\sum_{j=1}^{n} A_{i j} x_{j}-b_{i}\ri
 为使目标函数最小， 可求最优解 $ \hat{x}: \quad \hat{x}=\arg \underset{x}{ \min } f(x) $.
 
 \begin{problem}
-    $ A \in \mathbb{R}^{{m} \times n} $ 列向量线性相关或$n$非常大$
+    $ A \in \mathbb{R}^{{m} \times n} $ 列向量线性相关或$n$非常大，$
     A^{T} A \in \mathbb{R}^{n \times n}$不可逆，无法直接代入求得最小二乘解。
 \end{problem}
 

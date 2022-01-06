@@ -85,98 +85,98 @@
 \indexentry{reflection matrices|hyperpage}{129}
 \indexentry{plane rotation matrices|hyperpage}{129}
 \indexentry{permutation matrix|hyperpage}{134}
-\indexentry{explanatory variable|hyperpage}{157}
-\indexentry{independent variable|hyperpage}{157}
-\indexentry{outcome|hyperpage}{157}
-\indexentry{response variable|hyperpage}{157}
-\indexentry{dependent variable|hyperpage}{157}
-\indexentry{prediction error|hyperpage}{157}
-\indexentry{residual|hyperpage}{157}
-\indexentry{RMS error|hyperpage}{158}
-\indexentry{regressors|hyperpage}{158}
-\indexentry{trend line|hyperpage}{160}
-\indexentry{constant offset|hyperpage}{161}
-\indexentry{Boolean classifier|hyperpage}{162}
-\indexentry{unbiased|hyperpage}{167}
-\indexentry{拉格朗日函数 (Lagrange Function)|hyperpage}{175}
-\indexentry{拉格朗日乘子(Lagrange Multipliers)|hyperpage}{176}
-\indexentry{Lagrange乘数|hyperpage}{190}
-\indexentry{定常方程式(stationary equation)|hyperpage}{190}
-\indexentry{约束条件|hyperpage}{190}
-\indexentry{原始可行性(primal feasibility)|hyperpage}{190}
-\indexentry{可行域(feasible region)|hyperpage}{190}
-\indexentry{无效的 (inactive)|hyperpage}{190}
-\indexentry{有效的 (active)|hyperpage}{190}
-\indexentry{对偶可行性(dual feasibility).|hyperpage}{191}
-\indexentry{互补松弛性(complementary slackness)|hyperpage}{191}
-\indexentry{Karush-Kuhn-Tucker (KKT)条件|hyperpage}{191}
-\indexentry{Lagrange函数|hyperpage}{193}
-\indexentry{Lagrange乘子|hyperpage}{193}
-\indexentry{无约束优化问题|hyperpage}{193}
-\indexentry{优化变量|hyperpage}{193}
-\indexentry{松弛变量|hyperpage}{193}
-\indexentry{点|hyperpage}{198}
-\indexentry{线|hyperpage}{198}
-\indexentry{线段|hyperpage}{198}
-\indexentry{仿射集|hyperpage}{198}
-\indexentry{凸函数|hyperpage}{198}
-\indexentry{优化问题|hyperpage}{199}
-\indexentry{优化变量|hyperpage}{199}
-\indexentry{目标函数|hyperpage}{199}
-\indexentry{约束函数|hyperpage}{199}
-\indexentry{最优点|hyperpage}{199}
-\indexentry{解|hyperpage}{199}
-\indexentry{凸优化|hyperpage}{199}
+\indexentry{explanatory variable|hyperpage}{158}
+\indexentry{independent variable|hyperpage}{158}
+\indexentry{outcome|hyperpage}{158}
+\indexentry{response variable|hyperpage}{158}
+\indexentry{dependent variable|hyperpage}{158}
+\indexentry{prediction error|hyperpage}{158}
+\indexentry{residual|hyperpage}{158}
+\indexentry{RMS error|hyperpage}{159}
+\indexentry{regressors|hyperpage}{159}
+\indexentry{trend line|hyperpage}{161}
+\indexentry{constant offset|hyperpage}{162}
+\indexentry{Boolean classifier|hyperpage}{163}
+\indexentry{unbiased|hyperpage}{168}
+\indexentry{拉格朗日函数 (Lagrange Function)|hyperpage}{176}
+\indexentry{拉格朗日乘子(Lagrange Multipliers)|hyperpage}{177}
+\indexentry{Lagrange乘数|hyperpage}{191}
+\indexentry{定常方程式(stationary equation)|hyperpage}{191}
+\indexentry{约束条件|hyperpage}{191}
+\indexentry{原始可行性(primal feasibility)|hyperpage}{191}
+\indexentry{可行域(feasible region)|hyperpage}{191}
+\indexentry{无效的 (inactive)|hyperpage}{191}
+\indexentry{有效的 (active)|hyperpage}{191}
+\indexentry{对偶可行性(dual feasibility).|hyperpage}{192}
+\indexentry{互补松弛性(complementary slackness)|hyperpage}{192}
+\indexentry{Karush-Kuhn-Tucker (KKT)条件|hyperpage}{192}
+\indexentry{Lagrange函数|hyperpage}{194}
+\indexentry{Lagrange乘子|hyperpage}{194}
+\indexentry{无约束优化问题|hyperpage}{194}
+\indexentry{优化变量|hyperpage}{194}
+\indexentry{松弛变量|hyperpage}{194}
+\indexentry{点|hyperpage}{199}
+\indexentry{线|hyperpage}{199}
+\indexentry{线段|hyperpage}{199}
+\indexentry{仿射集|hyperpage}{199}
 \indexentry{凸函数|hyperpage}{199}
-\indexentry{仿射函数|hyperpage}{199}
-\indexentry{$ 0- $sublevel集|hyperpage}{199}
-\indexentry{主变量(primal variable)|hyperpage}{200}
-\indexentry{主目标(primal objective)|hyperpage}{200}
-\indexentry{主问题(primal problem)|hyperpage}{200}
-\indexentry{主问题的解|hyperpage}{200}
-\indexentry{主目标的最优值|hyperpage}{200}
-\indexentry{主可行的(primal feasible)|hyperpage}{200}
-\indexentry{对偶目标(dual objective)|hyperpage}{201}
-\indexentry{对偶问题|hyperpage}{201}
-\indexentry{对偶问题的解|hyperpage}{201}
-\indexentry{对偶目标的最优值|hyperpage}{201}
-\indexentry{凸优化|hyperpage}{202}
-\indexentry{拉格朗日算子|hyperpage}{202}
-\indexentry{主问题|hyperpage}{202}
+\indexentry{优化问题|hyperpage}{200}
+\indexentry{优化变量|hyperpage}{200}
+\indexentry{目标函数|hyperpage}{200}
+\indexentry{约束函数|hyperpage}{200}
+\indexentry{最优点|hyperpage}{200}
+\indexentry{解|hyperpage}{200}
+\indexentry{凸优化|hyperpage}{200}
+\indexentry{凸函数|hyperpage}{200}
+\indexentry{仿射函数|hyperpage}{200}
+\indexentry{$ 0- $sublevel集|hyperpage}{200}
+\indexentry{主变量(primal variable)|hyperpage}{201}
+\indexentry{主目标(primal objective)|hyperpage}{201}
+\indexentry{主问题(primal problem)|hyperpage}{201}
+\indexentry{主问题的解|hyperpage}{201}
+\indexentry{主目标的最优值|hyperpage}{201}
+\indexentry{主可行的(primal feasible)|hyperpage}{201}
+\indexentry{对偶目标(dual objective)|hyperpage}{202}
 \indexentry{对偶问题|hyperpage}{202}
-\indexentry{主问题|hyperpage}{202}
-\indexentry{对偶问题|hyperpage}{202}
-\indexentry{弱对偶性|hyperpage}{202}
-\indexentry{Lagrange multipliers|hyperpage}{204}
-\indexentry{dual variables|hyperpage}{204}
-\indexentry{Karush-Kuhn-Tucker|hyperpage}{204}
-\indexentry{constraint qualification|hyperpage}{204}
-\indexentry{no|hyperpage}{204}
-\indexentry{gradient of $z$ at ${x}^*$ is a positive combination of the gradients of the constraints at ${x}^*$.|hyperpage}{205}
-\indexentry{complementary slackness|hyperpage}{205}
-\indexentry{gradient of $z$ at ${x}^*$ is a positive combination of the gradients of the \textbf  {binding} constraints at ${x}^*$.|hyperpage}{205}
-\indexentry{always binding|hyperpage}{205}
-\indexentry{gradient of $z$ at ${x}^*$ is a linear combination of the gradients of the \textbf  {binding} constraints at ${x}^*$.|hyperpage}{205}
-\indexentry{surplus variables|hyperpage}{206}
-\indexentry{binding|hyperpage}{208}
-\indexentry{row|hyperpage}{208}
-\indexentry{slack variables|hyperpage}{209}
-\indexentry{Thus, two linear programming problems are dual to each other if and only if they share KKT conditions with the primal and dual feasibility conditions swapped.|hyperpage}{210}
-\indexentry{better|hyperpage}{210}
-\indexentry{local maximum|hyperpage}{211}
-\indexentry{does not|hyperpage}{212}
-\indexentry{Note, the gradient of the binding constraint has been scaled larger for visual effect.|hyperpage}{212}
-\indexentry{concave|hyperpage}{213}
-\indexentry{Weak duality|hyperpage}{213}
-\indexentry{strong duality|hyperpage}{213}
-\indexentry{directional derivative|hyperpage}{218}
-\indexentry{descent direction|hyperpage}{218}
-\indexentry{minimize|hyperpage}{228}
-\indexentry{step size|hyperpage}{230}
-\indexentry{line search|hyperpage}{230}
-\indexentry{谐波分析|hyperpage}{235}
-\indexentry{直流分量|hyperpage}{235}
-\indexentry{一次谐波|hyperpage}{235}
-\indexentry{基波|hyperpage}{235}
-\indexentry{二次谐波|hyperpage}{235}
-\indexentry{三次谐波|hyperpage}{235}
+\indexentry{对偶问题的解|hyperpage}{202}
+\indexentry{对偶目标的最优值|hyperpage}{202}
+\indexentry{凸优化|hyperpage}{203}
+\indexentry{拉格朗日算子|hyperpage}{203}
+\indexentry{主问题|hyperpage}{203}
+\indexentry{对偶问题|hyperpage}{203}
+\indexentry{主问题|hyperpage}{203}
+\indexentry{对偶问题|hyperpage}{203}
+\indexentry{弱对偶性|hyperpage}{203}
+\indexentry{Lagrange multipliers|hyperpage}{205}
+\indexentry{dual variables|hyperpage}{205}
+\indexentry{Karush-Kuhn-Tucker|hyperpage}{205}
+\indexentry{constraint qualification|hyperpage}{205}
+\indexentry{no|hyperpage}{205}
+\indexentry{gradient of $z$ at ${x}^*$ is a positive combination of the gradients of the constraints at ${x}^*$.|hyperpage}{206}
+\indexentry{complementary slackness|hyperpage}{206}
+\indexentry{gradient of $z$ at ${x}^*$ is a positive combination of the gradients of the \textbf  {binding} constraints at ${x}^*$.|hyperpage}{206}
+\indexentry{always binding|hyperpage}{206}
+\indexentry{gradient of $z$ at ${x}^*$ is a linear combination of the gradients of the \textbf  {binding} constraints at ${x}^*$.|hyperpage}{206}
+\indexentry{surplus variables|hyperpage}{207}
+\indexentry{binding|hyperpage}{209}
+\indexentry{row|hyperpage}{209}
+\indexentry{slack variables|hyperpage}{210}
+\indexentry{Thus, two linear programming problems are dual to each other if and only if they share KKT conditions with the primal and dual feasibility conditions swapped.|hyperpage}{211}
+\indexentry{better|hyperpage}{211}
+\indexentry{local maximum|hyperpage}{212}
+\indexentry{does not|hyperpage}{213}
+\indexentry{Note, the gradient of the binding constraint has been scaled larger for visual effect.|hyperpage}{213}
+\indexentry{concave|hyperpage}{214}
+\indexentry{Weak duality|hyperpage}{214}
+\indexentry{strong duality|hyperpage}{214}
+\indexentry{directional derivative|hyperpage}{219}
+\indexentry{descent direction|hyperpage}{219}
+\indexentry{minimize|hyperpage}{229}
+\indexentry{step size|hyperpage}{231}
+\indexentry{line search|hyperpage}{231}
+\indexentry{谐波分析|hyperpage}{236}
+\indexentry{直流分量|hyperpage}{236}
+\indexentry{一次谐波|hyperpage}{236}
+\indexentry{基波|hyperpage}{236}
+\indexentry{二次谐波|hyperpage}{236}
+\indexentry{三次谐波|hyperpage}{236}

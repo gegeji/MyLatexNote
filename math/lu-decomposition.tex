@@ -47,6 +47,8 @@
 
 消元法通过elimination matrices $E$进行消元操作，使得主对角线以下的元素为0. Multiply the $ j^{\text {th }} $ equation by $ \ell_{i j} $ and subtract from the $ i^{\text {th }} $ equation. (This eliminates $ x_{j} $ from equation $ i $.) We need a lot of these simple matrices $ E_{i j} $, one for every nonzero to be eliminated below the main diagonal.
 
+\subsection{消元法的本质}
+
 \begin{definition}[Elementary matrix, Elimination matrix]
     The elementary matrix or elimination matrix $ E_{i j} $ has the extra nonzero entry $ -\ell $ in the $ i, j $ position. Then $ E_{i j} $ subtracts a multiple $ \ell $ of row $ j $ from row $ i $.
 \end{definition}
@@ -57,17 +59,73 @@
     \begin{equation}Ax= b \Rightarrow EAx = Eb\end{equation}
 \end{theorem}
 
+\begin{example}[Inverse of an elimination matrix]
+    If $ E $ subtracts 5 times row 1 from row 2 , then $ E^{-1} $ adds 5 times row 1 to row 2 :
+$$
+\begin{array}{c}
+\boldsymbol{E} \text { subtracts } \\
+\boldsymbol{E}^{-1} \text { adds }
+\end{array} \quad E=\left[\begin{array}{rll}
+1 & 0 & 0 \\
+-\mathbf{5} & 1 & 0 \\
+0 & 0 & 1
+\end{array}\right] \quad \text { and } \quad E^{-1}=\left[\begin{array}{lll}
+1 & 0 & 0 \\
+\mathbf{5} & 1 & 0 \\
+0 & 0 & 1
+\end{array}\right]
+$$
+Multiply $ E E^{-1} $ to get the identity matrix $ I $. Also multiply $ E^{-1} E $ to get $ I $. We are adding and subtracting the same 5 times row 1 . If $ A C=I $ then automatically $ C A=I $.
+\end{example}
+
+\begin{example}
+    Suppose $ F $ subtracts 4 times row 2 from row 3 , and $ F^{-1} $ adds it back:
+$$
+F=\left[\begin{array}{rrr}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & -4 & 1
+\end{array}\right] \text { and } F^{-1}=\left[\begin{array}{lll}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 4 & 1
+\end{array}\right] \text {. }
+$$
+
+Now multiply $ F $ by the matrix $ E $ in Example 2 to find $ F E $. Also multiply $ E^{-1} $ times $ F^{-1} $ to find $ (F E)^{-1} $. Notice the orders $ F E $ and $ E^{-1} F^{-1} $ !
+$$
+F E=\left[\begin{array}{rrr}
+1 & 0 & 0 \\
+-5 & 1 & 0 \\
+20 & -4 & 1
+\end{array}\right] \quad \text { is inverted by } \quad E^{-1} F^{-1}=\left[\begin{array}{ccc}
+1 & 0 & 0 \\
+5 & 1 & 0 \\
+0 & 4 & 1
+\end{array}\right]
+$$
+
+
+\end{example}
+
+The result is beautiful and correct. The product $ F E $ contains  ``20'' but its inverse doesn't. $ E $ subtracts 5 times row 1 from row 2 . Then $ F $ subtracts 4 times the new row 2 (changed by row 1) from row 3 . In this order $ F E $, row 3 feels an effect from row 1 .
+
+In the order $ E^{-1} F^{-1} $, that effect does not happen. First $ F^{-1} $ adds 4 times row 2 to row 3 . After that, $ E^{-1} $ adds 5 times row 1 to row 2 . There is no 20 , because row 3 doesn't change again. In this order $ E^{-1} F^{-1} $, row 3 feels no effect from row 1 .
+
+This is why the next section chooses $ A=L U $, to go back from the triangular $ U $ to $ A $. \textbf{The multipliers fall into place perfectly in the lower triangular $ L $}.
+
 \begin{definition}[Permutation matrices $P$]
     $  P_{i j} $ is the identity matrix with rows $ i $ and $ j $ reversed. When this \term{permutation matrix} $ P_{i j} $ multiplies a matrix, it exchanges rows $ i $ and $ j $.
 \end{definition}
+
+
+\subsection{Computing $A^{-1}$ by Gauss-Jordan Elimination}
 
 \begin{definition}[Augmented matrix]
     \begin{equation} \left[\begin{matrix}
                 A & b
             \end{matrix}\right]\end{equation}
 \end{definition}
-
-\subsubsection{Computing $A^{-1}$ by Gauss-Jordan Elimination}
 
 \begin{center}
     Multiply $ \left[\begin{matrix}
@@ -168,6 +226,25 @@ $ \left(E_{32} E_{31} E_{21}\right) A=U \quad $ becomes $ \quad A=\left(E_{21}^{
           & =\left(\begin{array}{ccccc}1 & 0 & 0 & \cdots & 0 \\ \vdots & \ddots & 0 & \ddots & 0 \\ l_{r 1} & \cdots & 1 & \ddots & \vdots \\ \vdots & & \vdots & \ddots & 0 \\ l_{n 1} & \cdots & l_{n r} & \cdots & 1\end{array}\right) \cdot \left(\begin{array}{cccc}u_{11} & u_{12} & \cdots & u_{1 n} \\ 0 & u_{22} & \cdots & u_{2 n} \\ \vdots & 0 & \ddots & \vdots \\ 0 & 0 & 0 & u_{n n}\end{array}\right)
     \end{aligned}
 \end{equation}
+
+\begin{remark}
+    First point: Every inverse matrix $ E^{-1} $ is lower triangular. Its off-diagonal entry is $ \ell_{i j} $, to undo the subtraction produced by $ -\ell_{i j} . $ The main diagonals of $ E $ and $ E^{-1} $ contain 1's.
+\end{remark}
+
+\begin{remark}
+    Second point: Equation (2) shows a lower triangular matrix (the product of the $ E_{i j} $ ) multiplying $ A . $ It also shows all the $ E_{i j}^{-1} $ multiplying $ U $ to bring back $ A . $ This lower triangular product of inverses is $ L $.
+\end{remark}
+
+One reason for working with the inverses is that we want to factor $ A $, not $ U $. The "inverse form" gives $ A=L U $. Another reason is that we get something extra, almost more than we deserve. This is the third point, showing that $ L $ is exactly right.
+
+\begin{remark}
+    Third point: Each multiplier $ \ell_{i j} $ goes directly into its $ i, j $ position-\textbf{unchanged}-in the product of inverses which is $ L $. Usually matrix multiplication will mix up all the numbers. Here that doesn't happen. The order is right for the inverse matrices, to keep the $ \ell $'s unchanged. The reason is given below in equation (2).
+Since each $ E^{-1} $ has 1's down its diagonal, the final good point is that $ L $ does too.
+\end{remark}
+
+Since each $ E^{-1} $ has 1's down its diagonal, the final good point is that $ L $ does too.
+
+This is \textbf{elimination without row exchanges}. The upper triangular $ U $ has the pivots on its diagonal. The lower triangular $ L $ has all 1 's on its diagonal. \textbf{The multipliers $ \ell_{i j} $ are below the diagonal of $ L $}.
 
 \subsection{$A = LDU$}
 
